@@ -33,7 +33,7 @@ Na raiz do projeto ficam apenas os documentos mais recentes e úteis para estudo
 A Semana 1 possui:
 
 - 300 questões principais, divididas em 50 questões por dia;
-- 120 questões extras de revisão fixa, cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM e caderno de erros;
+- 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM e caderno de erros;
 - 420 questões no total.
 
 ## Observações

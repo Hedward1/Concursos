@@ -4,11 +4,11 @@
 
 Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`.
 
-**Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. Todas as 300 questões são autorais e estão marcadas como `Questão autoral no estilo Instituto Consulplan`. As provas públicas da banca foram usadas somente como referência de estilo de cobrança.
+**Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. As 300 questões principais e as 120 questões extras são autorais e estão marcadas como `Questão autoral no estilo Instituto Consulplan`. As provas públicas da banca foram usadas somente como referência de estilo de cobrança.
 
 **Formato:** todas as questões têm quatro alternativas, de A) a D), conforme o edital do CRA-PR 2026.
 
-**Total:** 300 questões, sendo exatamente 50 por dia.
+**Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões extras de revisão fixa (20 por dia).
 
 **Nível pretendido:** médio a difícil, com assertivas completas, verdadeiro/falso, estudos de caso, comandos SQL, cenários de órgão público e distratores plausíveis.
 
@@ -36,7 +36,7 @@ Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista
 
 **Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -512,6 +512,229 @@ B) 183.
 C) 177.
 D) 187.
 
+## Questões extras de revisão fixa do Dia 1
+
+#### Extra Dia 1.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um candidato confundiu a atuação do CFA com a do CRA-PR. Considerando a estrutura do Sistema CFA/CRAs, assinale a alternativa correta.
+
+A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) O CFA atua em plano nacional e normativo; o CRA-PR exerce registro e fiscalização no âmbito regional do Paraná.
+D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+
+#### Extra Dia 1.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a Lei Federal nº 4.769/1965, assinale a alternativa correta.
+
+A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+B) O Regimento Interno substitui a lei federal que disciplina a profissão.
+C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+D) A lei é uma base legal do exercício da profissão de Administrador e da organização do Sistema CFA/CRAs.
+
+#### Extra Dia 1.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Na leitura da legislação específica, um aluno separou lei e decreto. Assinale a alternativa correta.
+
+A) O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965.
+B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+
+#### Extra Dia 1.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+O edital cobra Regimento Interno do CRA-PR. Sobre sua função, assinale a alternativa correta.
+
+A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+B) O Regimento Interno organiza órgãos, competências e funcionamento do CRA-PR.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+
+#### Extra Dia 1.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a natureza institucional do CRA-PR, conforme a apostila de estudo, assinale a alternativa correta.
+
+A) O Regimento Interno substitui a lei federal que disciplina a profissão.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) O CRA-PR é tratado como autarquia com personalidade jurídica de direito público e autonomia administrativa.
+D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+
+#### Extra Dia 1.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+A RN CFA nº 651/2024 foi citada no estudo da Semana 1. Assinale a alternativa correta.
+
+A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+B) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+C) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+D) Ela foi usada como norma oficial que aprova o Regimento Interno do CRA-PR.
+
+#### Extra Dia 1.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o Código de Ética indicado no edital vigente, assinale a alternativa correta.
+
+A) A apostila usa a RN CFA nº 671/2025 porque ela aparece no edital retificado e foi tratada como Código de Ética vigente.
+B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+
+#### Extra Dia 1.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma empresa presta serviços típicos de Administração no Paraná. Em relação ao Sistema CFA/CRAs, assinale a alternativa correta.
+
+A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+B) A pessoa jurídica pode se sujeitar a registro e fiscalização quando atua em atividade abrangida pelo campo profissional.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+
+#### Extra Dia 1.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um profissional registrado utiliza informações confidenciais de cliente para obter vantagem em outra contratação. Assinale a alternativa correta.
+
+A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) A conduta viola o dever de sigilo profissional, salvo hipótese legal ou justa causa que autorize a revelação.
+D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+
+#### Extra Dia 1.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um administrador permite que terceiro use seu nome e registro para assinar trabalho que ele não acompanhou. Assinale a alternativa correta.
+
+A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+D) Emprestar nome ou registro profissional pode caracterizar infração ética e uso indevido da habilitação.
+
+#### Extra Dia 1.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em uma ação fiscalizatória, a empresa se recusa a apresentar documentos básicos sobre atividade profissional regulada. Assinale a alternativa correta.
+
+A) Dificultar fiscalização regular pode ensejar apuração no âmbito competente do conselho.
+B) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+C) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+
+#### Extra Dia 1.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a Lei nº 12.514/2011 na leitura dirigida, assinale a alternativa correta.
+
+A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+B) Ela é relevante por tratar de contribuições devidas aos conselhos profissionais.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+
+#### Extra Dia 1.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+A RN CFA nº 649/2024 aparece na leitura dirigida da Semana 1. Assinale a alternativa correta.
+
+A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Ela deve ser estudada como regulamento de registro do Sistema CFA/CRAs.
+D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+
+#### Extra Dia 1.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a RN CFA nº 670/2025, conforme a leitura dirigida da apostila, assinale a alternativa correta.
+
+A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+D) Ela deve ser lida em conjunto com a RN CFA nº 649/2024, pois altera o regulamento de registro.
+
+#### Extra Dia 1.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Quanto às normas RN CFA nº 546/2018, 626/2023 e 589/2020 no material da Semana 1, assinale a alternativa correta.
+
+A) Quando o resumo completo estiver pendente, o estudo deve priorizar leitura oficial e evitar decorar prazo ou sanção sem confirmação.
+B) O Regimento Interno substitui a lei federal que disciplina a profissão.
+C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+
+#### Extra Dia 1.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia o trecho: "O relatório foi enviado à Diretoria após a consolidação dos dados; por isso, a decisão foi adiada." A expressão "por isso" indica:
+
+A) oposição entre envio do relatório e decisão adiada.
+B) conclusão ou consequência em relação ao fato anterior.
+C) explicação da causa sem relação com consequência.
+D) adição de informação independente.
+
+#### Extra Dia 1.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+No trecho "A comissão revisou o edital e encaminhou suas conclusões", o pronome "suas" retoma:
+
+A) as conclusões do edital.
+B) as conclusões do candidato.
+C) as conclusões da comissão.
+D) as conclusões da banca e do órgão simultaneamente.
+
+#### Extra Dia 1.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a reescrita que preserva o sentido de: "Somente os documentos conferidos serão encaminhados."
+
+A) Todos os documentos, conferidos ou não, serão encaminhados.
+B) Nenhum documento conferido será encaminhado.
+C) Os documentos serão conferidos depois do encaminhamento.
+D) Apenas os documentos conferidos serão encaminhados.
+
+#### Extra Dia 1.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa em que a crase está corretamente empregada.
+
+A) O processo foi encaminhado à unidade responsável.
+B) O servidor começou à revisar os autos.
+C) A equipe respondeu à todos os interessados.
+D) O relatório foi enviado à setor técnico.
+
+#### Extra Dia 1.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia: "Embora o sistema estivesse disponível, muitos usuários não concluíram o cadastro." A oração iniciada por "Embora" expressa:
+
+A) causa direta.
+B) concessão.
+C) conclusão.
+D) condição necessária.
+
+
 ## Gabarito do Dia 1
 
 1. C
@@ -564,6 +787,30 @@ D) 187.
 48. D
 49. C
 50. B
+
+### Gabarito das questões extras de revisão fixa do Dia 1
+
+Extra Dia 1.1: C
+Extra Dia 1.2: D
+Extra Dia 1.3: A
+Extra Dia 1.4: B
+Extra Dia 1.5: C
+Extra Dia 1.6: D
+Extra Dia 1.7: A
+Extra Dia 1.8: B
+Extra Dia 1.9: C
+Extra Dia 1.10: D
+Extra Dia 1.11: A
+Extra Dia 1.12: B
+Extra Dia 1.13: C
+Extra Dia 1.14: D
+Extra Dia 1.15: A
+Extra Dia 1.16: B
+Extra Dia 1.17: C
+Extra Dia 1.18: D
+Extra Dia 1.19: A
+Extra Dia 1.20: B
+
 
 ## Comentários do Dia 1
 
@@ -1170,13 +1417,235 @@ D) 187.
 - **Como pensar para acertar:** Transforme a letra em decimal e aplique valor posicional: dezena hexadecimal vale vezes 16.
 - **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
+### Comentários das questões extras de revisão fixa do Dia 1
+
+#### Comentário Extra Dia 1.1
+
+- **Alternativa correta:** C.
+- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está correta:** A distinção central é nacional/normativo para o CFA e regional/executivo para o CRA.
+- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **Conceito cobrado:** Competência do CFA e do CRA-PR.
+- **Pegadinha usada:** Trocar competência nacional por competência regional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.2
+
+- **Alternativa correta:** D.
+- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **D) está correta:** A Lei nº 4.769/1965 estrutura a profissão e sustenta a atuação dos conselhos.
+- **Conceito cobrado:** Lei nº 4.769/1965.
+- **Pegadinha usada:** Tratar a lei como norma meramente interna do CRA-PR.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.3
+
+- **Alternativa correta:** A.
+- **A) está correta:** O decreto detalha a execução da lei, por isso deve ser lido junto da Lei nº 4.769/1965.
+- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **Conceito cobrado:** Decreto nº 61.934/1967.
+- **Pegadinha usada:** Confundir norma regulamentadora com lei criadora.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.4
+
+- **Alternativa correta:** B.
+- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **B) está correta:** O Regimento é a referência interna para entender como o conselho regional se estrutura e decide.
+- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **Conceito cobrado:** Regimento Interno do CRA-PR.
+- **Pegadinha usada:** Confundir regimento com código de ética.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.5
+
+- **Alternativa correta:** C.
+- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **C) está correta:** A apostila destaca o CRA-PR como autarquia de direito público no contexto do Sistema CFA/CRAs.
+- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **Conceito cobrado:** Natureza jurídica do CRA-PR.
+- **Pegadinha usada:** Tratar conselho profissional como órgão sem personalidade própria.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.6
+
+- **Alternativa correta:** D.
+- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **B) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **C) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **D) está correta:** A referência à RN 651/2024 serve para vincular o Regimento Interno à fonte oficial do CFA.
+- **Conceito cobrado:** RN CFA nº 651/2024.
+- **Pegadinha usada:** Atribuir à RN 651/2024 conteúdo de ética profissional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.7
+
+- **Alternativa correta:** A.
+- **A) está correta:** A RN 671/2025 é a referência ética adotada no material aprovado para a Semana 1.
+- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **Conceito cobrado:** RN CFA nº 671/2025.
+- **Pegadinha usada:** Usar automaticamente a RN 640/2024 apesar da retificação indicada.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.8
+
+- **Alternativa correta:** B.
+- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **B) está correta:** O foco da fiscalização não se limita à pessoa física quando a pessoa jurídica exerce atividade profissional regulada.
+- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Conceito cobrado:** Registro de pessoa jurídica.
+- **Pegadinha usada:** Achar que apenas profissionais individuais podem ser fiscalizados.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.9
+
+- **Alternativa correta:** C.
+- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **C) está correta:** O sigilo protege informações obtidas no exercício profissional e não pode ser afastado por conveniência pessoal.
+- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **Conceito cobrado:** Sigilo profissional.
+- **Pegadinha usada:** Tratar sigilo como escolha comercial do profissional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.10
+
+- **Alternativa correta:** D.
+- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **D) está correta:** A regularidade profissional exige responsabilidade real pelo trabalho, não mera cessão formal do registro.
+- **Conceito cobrado:** Uso indevido de nome ou registro.
+- **Pegadinha usada:** Exigir dano financeiro para reconhecer irregularidade ética.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.11
+
+- **Alternativa correta:** A.
+- **A) está correta:** A fiscalização depende de colaboração mínima do fiscalizado quando há competência do CRA.
+- **B) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **C) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **Conceito cobrado:** Fiscalização profissional.
+- **Pegadinha usada:** Supor que a fiscalização só ocorre após decisão judicial.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.12
+
+- **Alternativa correta:** B.
+- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **B) está correta:** A norma foi incluída porque anuidade, taxas e cobrança podem aparecer em contexto de conselhos.
+- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **Conceito cobrado:** Lei nº 12.514/2011.
+- **Pegadinha usada:** Ignorar normas financeiras dos conselhos por parecerem administrativas.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.13
+
+- **Alternativa correta:** C.
+- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está correta:** Registro é atividade central do CRA e a RN 649/2024 foi apontada como regulamento de registro.
+- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **Conceito cobrado:** RN CFA nº 649/2024.
+- **Pegadinha usada:** Confundir registro com sanção ética.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.14
+
+- **Alternativa correta:** D.
+- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **D) está correta:** Norma alteradora não deve ser estudada isoladamente; deve ser conectada ao texto alterado.
+- **Conceito cobrado:** RN CFA nº 670/2025.
+- **Pegadinha usada:** Ler norma alteradora como se fosse conteúdo autônomo sem relação com registro.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.15
+
+- **Alternativa correta:** A.
+- **A) está correta:** A apostila sinaliza ponto pendente de confirmação para não transformar hipótese em certeza de prova.
+- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **Conceito cobrado:** Normas pendentes de confirmação.
+- **Pegadinha usada:** Criar regra específica sem fonte oficial consolidada.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 1.16
+
+- **Alternativa correta:** B.
+- **A) está errada:** Oposição seria indicada por conectores como 'mas' ou 'contudo'.
+- **B) está correta:** O conector 'por isso' estabelece consequência.
+- **C) está errada:** O conector retoma o fato anterior para apresentar efeito.
+- **D) está errada:** Não há mera soma de ideias; há relação conclusiva.
+- **Conceito cobrado:** Coesão por conectores.
+- **Pegadinha usada:** Confundir conclusão com oposição.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 1.17
+
+- **Alternativa correta:** C.
+- **A) está errada:** Edital não é agente que conclui; o referente lógico é comissão.
+- **B) está errada:** Candidato não aparece no trecho.
+- **C) está correta:** O pronome possessivo deve ser interpretado pelo referente compatível no texto.
+- **D) está errada:** Não há dois referentes expressos nessa frase.
+- **Conceito cobrado:** Referência pronominal.
+- **Pegadinha usada:** Escolher referente próximo sem observar sentido.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 1.18
+
+- **Alternativa correta:** D.
+- **A) está errada:** Altera o sentido restritivo de 'somente'.
+- **B) está errada:** Inverte completamente o sentido.
+- **C) está errada:** Muda a ordem lógica dos fatos.
+- **D) está correta:** 'Somente' equivale a 'apenas' no contexto.
+- **Conceito cobrado:** Reescrita e manutenção de sentido.
+- **Pegadinha usada:** Perder palavra restritiva.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 1.19
+
+- **Alternativa correta:** A.
+- **A) está correta:** Há preposição 'a' + artigo feminino em 'à unidade'.
+- **B) está errada:** Não há crase antes de verbo.
+- **C) está errada:** Não há artigo feminino antes de 'todos'.
+- **D) está errada:** Não há artigo feminino antes de palavra masculina.
+- **Conceito cobrado:** Crase.
+- **Pegadinha usada:** Aplicar crase antes de verbo, masculino ou pronome indefinido.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 1.20
+
+- **Alternativa correta:** B.
+- **A) está errada:** Causa indicaria motivo; 'embora' introduz fato contrário à expectativa.
+- **B) está correta:** 'Embora' introduz concessão.
+- **C) está errada:** Conclusão seria marcada por 'logo', 'portanto' ou equivalente.
+- **D) está errada:** Condição seria introduzida por 'se', 'caso' ou equivalente.
+- **Conceito cobrado:** Valor semântico de conjunção.
+- **Pegadinha usada:** Confundir concessão com causa.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
 ---
 
 # Dia 2 — Sistemas Operacionais
 
 **Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -1646,6 +2115,229 @@ B) aumento automático de espaço em disco.
 C) criação automática de usuários.
 D) desativação de todo o escalonamento.
 
+## Questões extras de revisão fixa do Dia 2
+
+#### Extra Dia 2.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre os princípios do art. 37 da Constituição, assinale a alternativa correta.
+
+A) Publicidade impede qualquer sigilo em documentos públicos.
+B) Legalidade, impessoalidade, moralidade, publicidade e eficiência formam o núcleo expresso conhecido como LIMPE.
+C) Responsabilidade civil do Estado dispensa dano e nexo causal.
+D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+
+#### Extra Dia 2.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Um órgão público decide contratar servidor por afinidade pessoal, sem critério objetivo. Qual princípio é diretamente afetado?
+
+A) Impessoalidade, pois a atuação administrativa deve buscar finalidade pública e critérios objetivos.
+B) Autarquia integra a Administração Direta porque executa serviço público.
+C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+D) Pregão é modalidade voltada à alienação de bens públicos.
+
+#### Extra Dia 2.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre Administração Direta e Indireta, assinale a alternativa correta.
+
+A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+B) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+D) Administração Direta é composta pelos entes federativos e seus órgãos; Administração Indireta reúne entidades com personalidade própria.
+
+#### Extra Dia 2.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+No contexto dos conselhos profissionais, assinale a alternativa correta.
+
+A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+C) Conselhos profissionais são frequentemente tratados como autarquias corporativas ou entidades de fiscalização profissional.
+D) Publicidade impede qualquer sigilo em documentos públicos.
+
+#### Extra Dia 2.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre autarquias, assinale a alternativa correta.
+
+A) Responsabilidade civil do Estado dispensa dano e nexo causal.
+B) Autarquia possui personalidade jurídica própria e integra a Administração Indireta.
+C) Pregão é modalidade voltada à alienação de bens públicos.
+D) Autarquia integra a Administração Direta porque executa serviço público.
+
+#### Extra Dia 2.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Uma autoridade pratica ato sem competência legal. Qual elemento do ato administrativo está comprometido?
+
+A) Competência.
+B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+
+#### Extra Dia 2.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre finalidade do ato administrativo, assinale a alternativa correta.
+
+A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+B) Publicidade impede qualquer sigilo em documentos públicos.
+C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+D) O ato deve perseguir finalidade pública; desvio para interesse pessoal pode invalidá-lo.
+
+#### Extra Dia 2.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+A Administração anulou ato ilegal após constatar vício. Assinale a alternativa correta.
+
+A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+B) Autarquia integra a Administração Direta porque executa serviço público.
+C) A anulação relaciona-se ao controle de legalidade do ato administrativo.
+D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+
+#### Extra Dia 2.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre LAI e transparência, assinale a alternativa correta.
+
+A) Pregão é modalidade voltada à alienação de bens públicos.
+B) A publicidade é regra, mas informações protegidas por sigilo legal ou dados pessoais exigem tratamento adequado.
+C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+
+#### Extra Dia 2.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre LGPD na Administração Pública, assinale a alternativa correta.
+
+A) O tratamento de dados pessoais deve observar finalidade, necessidade, segurança e base legal adequada.
+B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+
+#### Extra Dia 2.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre improbidade administrativa, assinale a alternativa correta.
+
+A) Publicidade impede qualquer sigilo em documentos públicos.
+B) Responsabilidade civil do Estado dispensa dano e nexo causal.
+C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+D) Improbidade não é qualquer ilegalidade; exige enquadramento na lei e requisitos próprios, inclusive elemento subjetivo quando exigido.
+
+#### Extra Dia 2.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Servidor usa o cargo para obter vantagem patrimonial indevida. Em tese, a situação se aproxima de qual categoria clássica?
+
+A) Autarquia integra a Administração Direta porque executa serviço público.
+B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+C) Enriquecimento ilícito.
+D) Pregão é modalidade voltada à alienação de bens públicos.
+
+#### Extra Dia 2.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Em licitação, o edital definiu critério e exigências. Durante o julgamento, a Administração quer ignorá-los. Assinale a alternativa correta.
+
+A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+B) A vinculação ao edital impede julgamento contrário às regras previamente estabelecidas.
+C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+
+#### Extra Dia 2.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre dispensa e inexigibilidade de licitação, assinale a alternativa correta.
+
+A) Na dispensa, a competição é possível em tese, mas a lei autoriza não licitar; na inexigibilidade, a competição é inviável.
+B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+D) Publicidade impede qualquer sigilo em documentos públicos.
+
+#### Extra Dia 2.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Para aquisição de bem ou serviço comum, a modalidade ordinariamente associada pela Lei nº 14.133/2021 é:
+
+A) Responsabilidade civil do Estado dispensa dano e nexo causal.
+B) Pregão é modalidade voltada à alienação de bens públicos.
+C) Autarquia integra a Administração Direta porque executa serviço público.
+D) Pregão.
+
+#### Extra Dia 2.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a frase em que a concordância verbal está adequada.
+
+A) Haviam muitos processos pendentes no setor.
+B) Existia muitos processos pendentes no setor.
+C) Havia muitos processos pendentes no setor.
+D) Foi analisado as planilhas do setor.
+
+#### Extra Dia 2.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+No período "O servidor informou ao candidato que seu recurso fora analisado", há possível ambiguidade porque:
+
+A) o verbo 'informou' está sem complemento.
+B) o pronome 'seu' pode se referir ao servidor ou ao candidato.
+C) a forma 'fora' indica futuro do presente.
+D) a palavra 'recurso' impede qualquer dupla interpretação.
+
+#### Extra Dia 2.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a frase em que "onde" foi empregado adequadamente.
+
+A) O setor onde os documentos são arquivados será reorganizado.
+B) A situação onde ocorreu o erro será analisada.
+C) A norma onde consta o prazo foi revogada.
+D) O procedimento onde o candidato recorreu foi digital.
+
+#### Extra Dia 2.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa em que a pontuação preserva melhor a clareza.
+
+A) Após a conferência dos dados a equipe, publicou o resultado.
+B) Após, a conferência dos dados a equipe publicou o resultado.
+C) Após a conferência, dos dados a equipe publicou, o resultado.
+D) Após a conferência dos dados, a equipe publicou o resultado.
+
+#### Extra Dia 2.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia: "O parecer não elimina a necessidade de nova análise." Infere-se corretamente que:
+
+A) a nova análise foi dispensada pelo parecer.
+B) o parecer proibiu qualquer análise futura.
+C) ainda será necessária nova análise.
+D) a análise anterior foi anulada automaticamente.
+
+
 ## Gabarito do Dia 2
 
 1. B
@@ -1698,6 +2390,30 @@ D) desativação de todo o escalonamento.
 48. C
 49. B
 50. A
+
+### Gabarito das questões extras de revisão fixa do Dia 2
+
+Extra Dia 2.1: B
+Extra Dia 2.2: A
+Extra Dia 2.3: D
+Extra Dia 2.4: C
+Extra Dia 2.5: B
+Extra Dia 2.6: A
+Extra Dia 2.7: D
+Extra Dia 2.8: C
+Extra Dia 2.9: B
+Extra Dia 2.10: A
+Extra Dia 2.11: D
+Extra Dia 2.12: C
+Extra Dia 2.13: B
+Extra Dia 2.14: A
+Extra Dia 2.15: D
+Extra Dia 2.16: C
+Extra Dia 2.17: B
+Extra Dia 2.18: A
+Extra Dia 2.19: D
+Extra Dia 2.20: C
+
 
 ## Comentários do Dia 2
 
@@ -2304,13 +3020,235 @@ D) desativação de todo o escalonamento.
 - **Como pensar para acertar:** Se dois fluxos mexem no mesmo dado, pergunte como o acesso é protegido.
 - **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
+### Comentários das questões extras de revisão fixa do Dia 2
+
+#### Comentário Extra Dia 2.1
+
+- **Alternativa correta:** B.
+- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **B) está correta:** A sigla LIMPE resume os princípios expressos mais cobrados.
+- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **Conceito cobrado:** Princípios expressos da Administração Pública.
+- **Pegadinha usada:** Trocar princípio expresso por princípio implícito ou absoluto.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.2
+
+- **Alternativa correta:** A.
+- **A) está correta:** Favorecimento pessoal é incompatível com impessoalidade.
+- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **Conceito cobrado:** Impessoalidade.
+- **Pegadinha usada:** Confundir impessoalidade com ausência de identificação do agente.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.3
+
+- **Alternativa correta:** D.
+- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **B) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **D) está correta:** A distinção principal é órgão sem personalidade própria versus entidade com personalidade jurídica.
+- **Conceito cobrado:** Organização administrativa.
+- **Pegadinha usada:** Chamar autarquia de órgão da Administração Direta.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.4
+
+- **Alternativa correta:** C.
+- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **C) está correta:** A apostila associa o CRA-PR à natureza autárquica e à fiscalização profissional.
+- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **Conceito cobrado:** Conselhos profissionais e autarquias.
+- **Pegadinha usada:** Tratar conselho profissional como associação privada comum.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.5
+
+- **Alternativa correta:** B.
+- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **B) está correta:** Esse é o ponto de prova mais direto sobre autarquias.
+- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **Conceito cobrado:** Autarquia.
+- **Pegadinha usada:** Achar que toda entidade pública é órgão sem personalidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.6
+
+- **Alternativa correta:** A.
+- **A) está correta:** Competência é o poder legalmente atribuído ao agente ou órgão para praticar o ato.
+- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **Conceito cobrado:** Elementos do ato administrativo.
+- **Pegadinha usada:** Confundir competência com motivo do ato.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.7
+
+- **Alternativa correta:** D.
+- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **D) está correta:** Finalidade pública é elemento obrigatório do ato administrativo.
+- **Conceito cobrado:** Finalidade pública.
+- **Pegadinha usada:** Considerar conveniência pessoal como finalidade administrativa legítima.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.8
+
+- **Alternativa correta:** C.
+- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **C) está correta:** Ato ilegal deve ser tratado pelo prisma da legalidade, não apenas da conveniência.
+- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **Conceito cobrado:** Controle do ato administrativo.
+- **Pegadinha usada:** Confundir anulação por ilegalidade com revogação por mérito.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.9
+
+- **Alternativa correta:** B.
+- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **B) está correta:** Transparência pública convive com exceções justificadas.
+- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **Conceito cobrado:** LAI e publicidade.
+- **Pegadinha usada:** Tratar publicidade como exposição irrestrita de todo dado.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.10
+
+- **Alternativa correta:** A.
+- **A) está correta:** A LGPD exige controle sobre por que e como dados pessoais são tratados.
+- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **Conceito cobrado:** LGPD.
+- **Pegadinha usada:** Achar que órgão público pode tratar qualquer dado sem finalidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.11
+
+- **Alternativa correta:** D.
+- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **B) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **D) está correta:** A apostila reforça que erro administrativo não vira improbidade automaticamente.
+- **Conceito cobrado:** Improbidade administrativa.
+- **Pegadinha usada:** Equiparar ilegalidade simples a improbidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.12
+
+- **Alternativa correta:** C.
+- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **C) está correta:** Obter vantagem patrimonial indevida é o exemplo clássico de enriquecimento ilícito.
+- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **Conceito cobrado:** Atos de improbidade.
+- **Pegadinha usada:** Confundir vantagem pessoal com mera falha formal.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.13
+
+- **Alternativa correta:** B.
+- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **B) está correta:** Edital vincula Administração e licitantes.
+- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **Conceito cobrado:** Vinculação ao edital.
+- **Pegadinha usada:** Achar que o edital é só orientação sem força vinculante.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.14
+
+- **Alternativa correta:** A.
+- **A) está correta:** Essa diferença é uma das mais cobradas em noções de licitação.
+- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **Conceito cobrado:** Contratação direta.
+- **Pegadinha usada:** Inverter dispensa e inexigibilidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.15
+
+- **Alternativa correta:** D.
+- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **D) está correta:** Pregão é a modalidade típica para bens e serviços comuns.
+- **Conceito cobrado:** Modalidades de licitação.
+- **Pegadinha usada:** Trocar pregão por leilão ou concurso.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 2.16
+
+- **Alternativa correta:** C.
+- **A) está errada:** Com sentido de existir, 'haver' é impessoal e fica no singular.
+- **B) está errada:** Com 'existir', o verbo concorda: existiam muitos processos.
+- **C) está correta:** Verbo haver com sentido de existir permanece no singular.
+- **D) está errada:** O particípio deve concordar: foram analisadas as planilhas.
+- **Conceito cobrado:** Concordância verbal.
+- **Pegadinha usada:** Flexionar indevidamente verbo impessoal.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 2.17
+
+- **Alternativa correta:** B.
+- **A) está errada:** O verbo possui complemento indireto e oração completiva.
+- **B) está correta:** Pronome possessivo pode gerar ambiguidade referencial.
+- **C) está errada:** Fora é mais-que-perfeito, não futuro.
+- **D) está errada:** A ambiguidade permanece no pronome possessivo.
+- **Conceito cobrado:** Ambiguidade.
+- **Pegadinha usada:** Ignorar dupla referência possível.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 2.18
+
+- **Alternativa correta:** A.
+- **A) está correta:** 'Onde' retoma lugar físico.
+- **B) está errada:** 'Onde' deve indicar lugar físico; 'situação em que' seria melhor.
+- **C) está errada:** Para norma, use 'em que' ou 'na qual'.
+- **D) está errada:** Não se trata propriamente de lugar físico.
+- **Conceito cobrado:** Emprego de onde.
+- **Pegadinha usada:** Usar 'onde' para qualquer referência abstrata.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 2.19
+
+- **Alternativa correta:** D.
+- **A) está errada:** A vírgula separa indevidamente sujeito e verbo.
+- **B) está errada:** A vírgula fragmenta a locução introdutória.
+- **C) está errada:** As vírgulas quebram relações sintáticas essenciais.
+- **D) está correta:** Adjunto adverbial antecipado pode ser separado por vírgula.
+- **Conceito cobrado:** Pontuação.
+- **Pegadinha usada:** Separar sujeito e verbo por vírgula.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 2.20
+
+- **Alternativa correta:** C.
+- **A) está errada:** O texto diz o contrário: não elimina a necessidade.
+- **B) está errada:** Não há ideia de proibição.
+- **C) está correta:** A inferência deve respeitar a negação presente no texto.
+- **D) está errada:** O trecho não afirma anulação.
+- **Conceito cobrado:** Interpretação literal e inferência.
+- **Pegadinha usada:** Ignorar o alcance do 'não'.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
 ---
 
 # Dia 3 — Banco de Dados Base e SQL
 
 **Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -2768,6 +3706,229 @@ B) remover situações repetidas da tabela física.
 C) filtrar apenas grupos com total maior que zero por HAVING.
 D) contar profissionais por situação e ordenar os grupos do maior para o menor total.
 
+## Questões extras de revisão fixa do Dia 3
+
+#### Extra Dia 3.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em caso de infração ética, a aplicação de sanção pelo sistema profissional deve observar qual diretriz geral?
+
+A) Apuração regular, competência do órgão e respeito ao contraditório e à defesa.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+
+#### Extra Dia 3.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre pessoas jurídicas no Código de Ética estudado, assinale a alternativa correta.
+
+A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A RN CFA nº 671/2025 também disciplina pessoas jurídicas, observadas suas especificidades.
+D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+
+#### Extra Dia 3.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma questão afirma que a suspensão e o cancelamento previstos para profissionais se aplicam indistintamente à pessoa jurídica. Conforme a apostila, assinale a alternativa correta.
+
+A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+B) A afirmação é problemática, pois o material destaca que suspensão e cancelamento não se aplicam à pessoa jurídica na RN CFA nº 671/2025.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+
+#### Extra Dia 3.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre jurisdição do CRA-PR, assinale a alternativa correta.
+
+A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) A atuação regional do CRA-PR vincula-se ao Estado do Paraná, sem eliminar a coordenação normativa do Sistema CFA/CRAs.
+
+#### Extra Dia 3.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em uma prova, a alternativa diz que o Regimento Interno é irrelevante porque não trata de SQL, redes ou sistemas. Assinale a alternativa correta.
+
+A) A alternativa é incorreta; o Regimento é conteúdo expresso e organiza competências e funcionamento do CRA-PR.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+
+#### Extra Dia 3.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um fiscal do CRA atua em caso de exercício profissional sem registro. Assinale a alternativa que melhor representa a lógica da fiscalização.
+
+A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) A fiscalização busca verificar regularidade do exercício profissional no campo da Administração.
+D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+
+#### Extra Dia 3.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre publicidade profissional no campo ético, assinale a alternativa correta.
+
+A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+B) A divulgação profissional deve evitar informação enganosa, uso indevido de título ou promessa incompatível com a ética.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+
+#### Extra Dia 3.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma sociedade empresária contrata profissional sem registro para executar atividade típica fiscalizada pelo CRA. Assinale a alternativa correta.
+
+A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O caso pode envolver irregularidade de exercício profissional e exigir análise pelo CRA competente.
+
+#### Extra Dia 3.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre dever de atualização cadastral e regularidade perante conselho profissional, assinale a alternativa correta.
+
+A) Regularidade cadastral e registral facilita fiscalização e comprovação da habilitação perante terceiros.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+
+#### Extra Dia 3.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+A respeito da leitura de normas do edital, assinale a alternativa correta.
+
+A) O Regimento Interno substitui a lei federal que disciplina a profissão.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) A norma expressamente indicada no edital deve prevalecer no plano de estudo até que retificação oficial demonstre mudança.
+D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+
+#### Extra Dia 3.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma alternativa afirma que a RN CFA nº 680/2025 foi estudada na Semana 1 apenas para decorar artigo e prazo. Assinale a correta.
+
+A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+B) Na Semana 1, a leitura dirigida busca localizar tema e relevância da norma, sem inventar artigo, prazo ou sanção não confirmado.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+
+#### Extra Dia 3.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o vínculo entre ética e fiscalização, assinale a alternativa correta.
+
+A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) A fiscalização verifica regularidade profissional; a ética orienta condutas esperadas no exercício da profissão.
+
+#### Extra Dia 3.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em situação de conflito de interesses, o profissional deve agir conforme qual orientação geral?
+
+A) Preservar a confiança profissional, evitar benefício indevido e respeitar deveres éticos e legais.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+
+#### Extra Dia 3.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre recurso ou defesa em processo disciplinar, assinale a alternativa correta em termos gerais.
+
+A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) A atuação sancionadora deve respeitar devido processo, competência e possibilidade de defesa.
+D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+
+#### Extra Dia 3.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma questão mistura 'CFA', 'CRA-PR' e 'Conselho Regional de outro Estado'. Qual é a estratégia mais segura?
+
+A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+B) Separar competência nacional, competência regional e jurisdição territorial antes de julgar as alternativas.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+
+#### Extra Dia 3.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa em que o uso de 'porque' está correto.
+
+A) Não sei porque o prazo foi reaberto.
+B) O prazo foi reaberto por quê houve instabilidade.
+C) Esse é o porque da reabertura do prazo.
+D) O prazo foi reaberto porque houve instabilidade no sistema.
+
+#### Extra Dia 3.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a frase com regência adequada.
+
+A) O candidato recorreu da decisão administrativa.
+B) O candidato recorreu a decisão administrativa.
+C) O candidato preferiu recorrer do que aceitar.
+D) O candidato assistiu o julgamento no sentido de presenciar.
+
+#### Extra Dia 3.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia: "Os sistemas foram atualizados; contudo, os relatórios permaneceram inconsistentes." O conector "contudo" expressa:
+
+A) adição simples.
+B) finalidade.
+C) oposição ou contraste.
+D) conclusão inevitável.
+
+#### Extra Dia 3.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa que apresenta tese adequada para uma discursiva sobre tecnologia no serviço público.
+
+A) Tecnologia existe desde a Antiguidade e há muitos sistemas no mundo.
+B) A transformação digital melhora serviços públicos quando combina eficiência, segurança da informação e inclusão do usuário.
+C) Vou falar sobre tecnologia porque o tema é importante.
+D) O serviço público deve usar computadores sempre, sem exceção.
+
+#### Extra Dia 3.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a frase em que a concordância nominal está adequada.
+
+A) Segue anexo as planilhas revisadas.
+B) Seguem anexo as planilhas revisadas.
+C) Segue anexas as planilhas revisadas.
+D) Seguem anexas as planilhas revisadas.
+
+
 ## Gabarito do Dia 3
 
 1. A
@@ -2820,6 +3981,30 @@ D) contar profissionais por situação e ordenar os grupos do maior para o menor
 48. B
 49. D
 50. D
+
+### Gabarito das questões extras de revisão fixa do Dia 3
+
+Extra Dia 3.1: A
+Extra Dia 3.2: C
+Extra Dia 3.3: B
+Extra Dia 3.4: D
+Extra Dia 3.5: A
+Extra Dia 3.6: C
+Extra Dia 3.7: B
+Extra Dia 3.8: D
+Extra Dia 3.9: A
+Extra Dia 3.10: C
+Extra Dia 3.11: B
+Extra Dia 3.12: D
+Extra Dia 3.13: A
+Extra Dia 3.14: C
+Extra Dia 3.15: B
+Extra Dia 3.16: D
+Extra Dia 3.17: A
+Extra Dia 3.18: C
+Extra Dia 3.19: B
+Extra Dia 3.20: D
+
 
 ## Comentários do Dia 3
 
@@ -3425,6 +4610,228 @@ D) contar profissionais por situação e ordenar os grupos do maior para o menor
 - **Como pensar para acertar:** Leia cláusula por cláusula: SELECT, GROUP BY, ORDER BY.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
+### Comentários das questões extras de revisão fixa do Dia 3
+
+#### Comentário Extra Dia 3.1
+
+- **Alternativa correta:** A.
+- **A) está correta:** Mesmo quando a questão não exige artigo, sanção administrativa pressupõe processo regular.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **Conceito cobrado:** Sanções ético-disciplinares.
+- **Pegadinha usada:** Tratar penalidade como ato automático sem procedimento.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.2
+
+- **Alternativa correta:** C.
+- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **C) está correta:** O material de estudo expressamente inclui profissionais e pessoas jurídicas no campo ético da RN 671/2025.
+- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **Conceito cobrado:** Código de Ética e pessoa jurídica.
+- **Pegadinha usada:** Achar que o Código de Ética só alcança pessoa física.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.3
+
+- **Alternativa correta:** B.
+- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **B) está correta:** A apostila chama atenção para esse detalhe como ponto típico de prova.
+- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Conceito cobrado:** Sanções e pessoa jurídica.
+- **Pegadinha usada:** Aplicar automaticamente toda sanção de pessoa física à pessoa jurídica.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.4
+
+- **Alternativa correta:** D.
+- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **D) está correta:** O CRA-PR é regional, mas não isolado do sistema nacional.
+- **Conceito cobrado:** Jurisdição regional.
+- **Pegadinha usada:** Transformar autonomia regional em independência normativa absoluta.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.5
+
+- **Alternativa correta:** A.
+- **A) está correta:** Para a prova, conteúdo expresso do edital deve ser tratado como prioritário, ainda que não seja técnico de TI.
+- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **Conceito cobrado:** Importância do Regimento.
+- **Pegadinha usada:** Subestimar legislação específica por ser menos técnica.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.6
+
+- **Alternativa correta:** C.
+- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está correta:** A função do conselho regional é proteger a regularidade do exercício profissional, não apenas arrecadar.
+- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **Conceito cobrado:** Exercício sem registro.
+- **Pegadinha usada:** Reduzir fiscalização a cobrança de anuidade.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.7
+
+- **Alternativa correta:** B.
+- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **B) está correta:** Ética profissional também alcança a forma como o serviço é apresentado ao público.
+- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **Conceito cobrado:** Publicidade profissional.
+- **Pegadinha usada:** Achar que publicidade é sempre livre de controle ético.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.8
+
+- **Alternativa correta:** D.
+- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **D) está correta:** A competência fiscalizatória alcança situações práticas de exercício de atividade regulada.
+- **Conceito cobrado:** Registro e exercício profissional.
+- **Pegadinha usada:** Achar que contrato privado afasta fiscalização profissional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.9
+
+- **Alternativa correta:** A.
+- **A) está correta:** O registro profissional não é mera formalidade sem efeito; ele conecta profissional, conselho e fiscalização.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **Conceito cobrado:** Regularidade registral.
+- **Pegadinha usada:** Tratar cadastro como informação sem relevância jurídica.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.10
+
+- **Alternativa correta:** C.
+- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **C) está correta:** O material foi construído para seguir a versão oficial vigente do edital, não a norma mais recente sem vínculo comprovado.
+- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **Conceito cobrado:** Edital como guia de estudo.
+- **Pegadinha usada:** Trocar conteúdo do edital por atualização não confirmada.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.11
+
+- **Alternativa correta:** B.
+- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **B) está correta:** A abordagem aprovada evita cobrança literal não confirmada em fonte oficial no material.
+- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **Conceito cobrado:** Leitura dirigida de normas adicionais.
+- **Pegadinha usada:** Criar detalhe literal sem comprovação.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.12
+
+- **Alternativa correta:** D.
+- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **D) está correta:** Os dois blocos são complementares: um controla regularidade e outro disciplina conduta.
+- **Conceito cobrado:** Fiscalização e ética.
+- **Pegadinha usada:** Achar que fiscalização e ética são temas sem conexão.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.13
+
+- **Alternativa correta:** A.
+- **A) está correta:** Conduta ética envolve lealdade, probidade e responsabilidade no exercício profissional.
+- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Conceito cobrado:** Conflito de interesses.
+- **Pegadinha usada:** Tratar conflito de interesses como assunto privado sem impacto profissional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.14
+
+- **Alternativa correta:** C.
+- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **C) está correta:** Mesmo sem decorar prazos, o candidato deve reconhecer garantias básicas do processo administrativo sancionador.
+- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **Conceito cobrado:** Processo ético-disciplinar.
+- **Pegadinha usada:** Confundir sanção administrativa com punição informal.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.15
+
+- **Alternativa correta:** B.
+- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **B) está correta:** A resposta depende de identificar quem pratica o ato e em que âmbito territorial.
+- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **Conceito cobrado:** Competência e jurisdição.
+- **Pegadinha usada:** Responder pela sigla sem observar o âmbito de atuação.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 3.16
+
+- **Alternativa correta:** D.
+- **A) está errada:** Em pergunta indireta, usa-se 'por que'.
+- **B) está errada:** No meio da frase explicativa, usa-se 'porque'.
+- **C) está errada:** Substantivado, usa-se 'porquê'.
+- **D) está correta:** 'Porque' introduz explicação ou causa.
+- **Conceito cobrado:** Uso dos porquês.
+- **Pegadinha usada:** Trocar pergunta indireta, explicação e substantivo.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 3.17
+
+- **Alternativa correta:** A.
+- **A) está correta:** Recorrer, no sentido de interpor recurso contra algo, rege 'de'.
+- **B) está errada:** Nesse sentido, 'recorrer' pede preposição 'de'.
+- **C) está errada:** Com 'preferir', a construção adequada não é 'do que' nesse padrão.
+- **D) está errada:** No sentido de presenciar, a norma culta tradicional pede 'assistiu ao'.
+- **Conceito cobrado:** Regência verbal.
+- **Pegadinha usada:** Usar preposição inadequada por influência da fala.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 3.18
+
+- **Alternativa correta:** C.
+- **A) está errada:** Adição seria marcada por 'e', 'além disso'.
+- **B) está errada:** Finalidade seria marcada por 'para que'.
+- **C) está correta:** 'Contudo' é conector adversativo.
+- **D) está errada:** Conclusão seria marcada por 'logo', 'portanto'.
+- **Conceito cobrado:** Coesão sequencial.
+- **Pegadinha usada:** Confundir contraste com consequência.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 3.19
+
+- **Alternativa correta:** B.
+- **A) está errada:** É abertura genérica, sem tese clara.
+- **B) está correta:** Boa tese apresenta posição clara e defensável.
+- **C) está errada:** Metalinguagem e ausência de posição argumentativa.
+- **D) está errada:** Tese absoluta e pouco defensável.
+- **Conceito cobrado:** Discursiva: tese.
+- **Pegadinha usada:** Começar com frase genérica sem ponto de vista.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 3.20
+
+- **Alternativa correta:** D.
+- **A) está errada:** O adjetivo deve concordar com 'planilhas'.
+- **B) está errada:** 'Anexo' deve ir ao feminino plural.
+- **C) está errada:** O verbo também deve concordar com o sujeito plural.
+- **D) está correta:** 'Anexas' concorda com 'planilhas' e 'seguem' concorda com sujeito plural.
+- **Conceito cobrado:** Concordância nominal e verbal.
+- **Pegadinha usada:** Tratar 'anexo' como invariável em qualquer caso.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
 ---
 
 # Dia 4 — Legislação CRA-PR/CFA
@@ -3433,7 +4840,7 @@ D) contar profissionais por situação e ordenar os grupos do maior para o menor
 
 **Confirmação prévia das normas do Dia 4:** foram utilizadas fontes oficiais para orientar as questões de Lei 4.769/1965, Decreto 61.934/1967, Lei 12.514/2011, RN CFA 649/2024, RN CFA 670/2025, RN CFA 546/2018, RN CFA 626/2023, RN CFA 589/2020, RN CFA 651/2024, RN CFA 671/2025, RN CFA 680/2025 e Regimento Interno do CRA-PR. As questões evitam cobrar artigo, prazo ou penalidade específica quando isso exigiria reprodução literal ou confirmação pontual além da ementa/fonte oficial consultada.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -3885,6 +5292,229 @@ B) Ambos tratam exclusivamente de informática básica.
 C) A lei estabelece base legal e o decreto detalha sua regulamentação.
 D) O decreto elimina a necessidade de ler a lei.
 
+## Questões extras de revisão fixa do Dia 4
+
+#### Extra Dia 4.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre concorrência, concurso e leilão, assinale a alternativa correta.
+
+A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+D) Concurso seleciona trabalho técnico, científico ou artístico; leilão se associa à alienação de bens.
+
+#### Extra Dia 4.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre responsabilidade civil do Estado por ato comissivo, assinale a alternativa correta.
+
+A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+B) Em regra, exige conduta estatal, dano e nexo causal, admitidas excludentes que rompam o nexo.
+C) Publicidade impede qualquer sigilo em documentos públicos.
+D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+
+#### Extra Dia 4.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Em caso de omissão estatal, qual cuidado a prova costuma exigir?
+
+A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+B) Autarquia integra a Administração Direta porque executa serviço público.
+C) Verificar dever jurídico de agir, falha do serviço, dano e nexo causal no caso concreto.
+D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+
+#### Extra Dia 4.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Se a vítima concorre para o dano, qual efeito isso pode ter na responsabilidade civil do Estado?
+
+A) Pode atuar como atenuante ou reduzir a indenização, conforme o caso.
+B) Pregão é modalidade voltada à alienação de bens públicos.
+C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+
+#### Extra Dia 4.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Uma enchente inevitável e imprevisível causa dano sem relação com falha administrativa. Em responsabilidade civil, o ponto central é:
+
+A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+D) Possível excludente por caso fortuito ou força maior, se rompido o nexo causal.
+
+#### Extra Dia 4.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre poder de polícia administrativa, assinale a alternativa correta.
+
+A) Publicidade impede qualquer sigilo em documentos públicos.
+B) Consiste em limitar ou condicionar direitos em benefício do interesse público, nos termos da lei.
+C) Responsabilidade civil do Estado dispensa dano e nexo causal.
+D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+
+#### Extra Dia 4.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Quanto ao princípio da moralidade, assinale a alternativa correta.
+
+A) Autarquia integra a Administração Direta porque executa serviço público.
+B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+C) Exige atuação ética, proba e compatível com padrões de honestidade administrativa.
+D) Pregão é modalidade voltada à alienação de bens públicos.
+
+#### Extra Dia 4.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre motivação do ato administrativo, assinale a alternativa correta.
+
+A) Motivação explicita razões de fato e de direito que justificam o ato quando exigida.
+B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+
+#### Extra Dia 4.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Em contratação pública, selecionar proposta por favorecimento viola especialmente:
+
+A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+C) Publicidade impede qualquer sigilo em documentos públicos.
+D) Impessoalidade, moralidade e isonomia.
+
+#### Extra Dia 4.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre fases do procedimento licitatório, assinale a alternativa correta.
+
+A) Responsabilidade civil do Estado dispensa dano e nexo causal.
+B) A Administração deve planejar, divulgar, receber propostas, julgar, habilitar quando cabível e encerrar conforme a lei.
+C) Pregão é modalidade voltada à alienação de bens públicos.
+D) Autarquia integra a Administração Direta porque executa serviço público.
+
+#### Extra Dia 4.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia: "A equipe revisou os acessos que estavam vencidos." A oração "que estavam vencidos" restringe:
+
+A) a equipe responsável pela revisão.
+B) todos os servidores do órgão.
+C) os acessos revisados.
+D) o ato de revisar, e não o objeto revisado.
+
+#### Extra Dia 4.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa em que não há crase.
+
+A) O usuário começou a preencher o formulário.
+B) O memorando foi enviado à chefia.
+C) A reunião ocorrerá às 14 horas.
+D) A servidora referiu-se à norma vigente.
+
+#### Extra Dia 4.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a reescrita que mantém o sentido de: 'Ainda que o sistema falhe, o protocolo deve ser registrado.'
+
+A) Como o sistema falha, o protocolo deve ser registrado.
+B) Se o sistema falhar, o protocolo será sempre cancelado.
+C) O protocolo deve ser registrado para que o sistema falhe.
+D) Mesmo que o sistema falhe, o protocolo deve ser registrado.
+
+#### Extra Dia 4.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Assinale a alternativa com linguagem mais adequada a documento administrativo.
+
+A) Manda logo esse processo para quem resolve.
+B) Solicita-se o encaminhamento dos autos ao setor competente.
+C) Eu acho que seria legal vocês mandarem isso.
+D) Tipo assim, passa o arquivo para o pessoal ver.
+
+#### Extra Dia 4.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Língua Portuguesa/interpretação.
+
+Leia: "A medida foi adotada para reduzir atrasos no atendimento." A expressão "para reduzir" indica:
+
+A) causa já ocorrida.
+B) concessão.
+C) finalidade.
+D) oposição.
+
+#### Extra Dia 4.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Raciocínio Lógico-Matemático.
+
+Em um setor, 80 processos foram analisados em 5 dias por 4 servidores, com produtividade constante. Quantos processos 6 servidores analisariam em 5 dias?
+
+A) 120 processos.
+B) 96 processos.
+C) 100 processos.
+D) 160 processos.
+
+#### Extra Dia 4.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Raciocínio Lógico-Matemático.
+
+Em uma turma, 32 estudam Legislação, 24 estudam Português e 10 estudam ambas. Quantos estudam pelo menos uma dessas matérias?
+
+A) 56.
+B) 42.
+C) 66.
+D) 46.
+
+#### Extra Dia 4.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Raciocínio Lógico-Matemático.
+
+A negação da proposição 'Todo fiscal conferiu o relatório' é:
+
+A) Nenhum fiscal conferiu o relatório.
+B) Algum fiscal não conferiu o relatório.
+C) Todo fiscal não conferiu o relatório.
+D) Algum fiscal conferiu o relatório.
+
+#### Extra Dia 4.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Raciocínio Lógico-Matemático.
+
+Uma sequência tem primeiro termo 7 e razão 3. Qual é o 8º termo dessa PA?
+
+A) 24.
+B) 31.
+C) 28.
+D) 56.
+
+#### Extra Dia 4.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Raciocínio Lógico-Matemático.
+
+Uma senha é escolhida ao acaso entre 10 opções igualmente prováveis, das quais 3 estão bloqueadas. Qual é a probabilidade de escolher uma senha não bloqueada?
+
+A) 7/10.
+B) 3/10.
+C) 1/7.
+D) 7/3.
+
+
 ## Gabarito do Dia 4
 
 1. D
@@ -3937,6 +5567,30 @@ D) O decreto elimina a necessidade de ler a lei.
 48. A
 49. D
 50. C
+
+### Gabarito das questões extras de revisão fixa do Dia 4
+
+Extra Dia 4.1: D
+Extra Dia 4.2: B
+Extra Dia 4.3: C
+Extra Dia 4.4: A
+Extra Dia 4.5: D
+Extra Dia 4.6: B
+Extra Dia 4.7: C
+Extra Dia 4.8: A
+Extra Dia 4.9: D
+Extra Dia 4.10: B
+Extra Dia 4.11: C
+Extra Dia 4.12: A
+Extra Dia 4.13: D
+Extra Dia 4.14: B
+Extra Dia 4.15: C
+Extra Dia 4.16: A
+Extra Dia 4.17: D
+Extra Dia 4.18: B
+Extra Dia 4.19: C
+Extra Dia 4.20: A
+
 
 ## Comentários do Dia 4
 
@@ -4543,13 +6197,235 @@ D) O decreto elimina a necessidade de ler a lei.
 - **Como pensar para acertar:** Comece pela lei, depois leia o decreto e normas do CFA.
 - **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
 
+### Comentários das questões extras de revisão fixa do Dia 4
+
+#### Comentário Extra Dia 4.1
+
+- **Alternativa correta:** D.
+- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **D) está correta:** A modalidade deve ser escolhida conforme objeto.
+- **Conceito cobrado:** Modalidades de licitação.
+- **Pegadinha usada:** Escolher modalidade pelo nome mais conhecido, não pelo objeto.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.2
+
+- **Alternativa correta:** B.
+- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **B) está correta:** Responsabilidade objetiva não elimina a necessidade de dano e nexo.
+- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **Conceito cobrado:** Responsabilidade civil do Estado.
+- **Pegadinha usada:** Achar que basta haver ato público para indenização automática.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.3
+
+- **Alternativa correta:** C.
+- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **C) está correta:** Omissão exige análise mais cuidadosa da falha e do dever de atuação.
+- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **Conceito cobrado:** Responsabilidade por omissão.
+- **Pegadinha usada:** Aplicar automaticamente a mesma lógica de todo ato comissivo.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.4
+
+- **Alternativa correta:** A.
+- **A) está correta:** Culpa concorrente não apaga necessariamente o dano, mas pode repercutir no valor.
+- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **Conceito cobrado:** Atenuantes da responsabilidade.
+- **Pegadinha usada:** Tratar culpa concorrente sempre como exclusão total.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.5
+
+- **Alternativa correta:** D.
+- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **D) está correta:** Excludentes afastam responsabilidade quando rompem o nexo.
+- **Conceito cobrado:** Excludentes de responsabilidade.
+- **Pegadinha usada:** Ignorar nexo causal e responsabilizar sempre.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.6
+
+- **Alternativa correta:** B.
+- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **B) está correta:** Fiscalização profissional é exemplo de atuação administrativa limitadora em nome do interesse público.
+- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **Conceito cobrado:** Poder de polícia.
+- **Pegadinha usada:** Confundir poder de polícia administrativa com polícia judiciária penal.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.7
+
+- **Alternativa correta:** C.
+- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **C) está correta:** Moralidade administrativa vai além da legalidade formal.
+- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **Conceito cobrado:** Moralidade.
+- **Pegadinha usada:** Reduzir moralidade a opinião pessoal do gestor.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.8
+
+- **Alternativa correta:** A.
+- **A) está correta:** Motivar é apresentar fundamentos, não apenas repetir conclusão.
+- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **Conceito cobrado:** Motivação.
+- **Pegadinha usada:** Confundir motivo com motivação.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.9
+
+- **Alternativa correta:** D.
+- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **D) está correta:** Favorecimento quebra tratamento objetivo entre concorrentes.
+- **Conceito cobrado:** Princípios licitatórios.
+- **Pegadinha usada:** Achar que contratação pública admite preferência pessoal.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.10
+
+- **Alternativa correta:** B.
+- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **B) está correta:** A licitação não se resume à escolha informal do fornecedor.
+- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **Conceito cobrado:** Procedimento licitatório.
+- **Pegadinha usada:** Ignorar planejamento e publicidade da contratação.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 4.11
+
+- **Alternativa correta:** C.
+- **A) está errada:** O pronome relativo retoma 'acessos'.
+- **B) está errada:** Servidores não são mencionados.
+- **C) está correta:** O pronome relativo retoma termo antecedente.
+- **D) está errada:** A oração caracteriza o substantivo 'acessos'.
+- **Conceito cobrado:** Coesão por pronome relativo.
+- **Pegadinha usada:** Escolher referente pela proximidade sem análise sintática.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 4.12
+
+- **Alternativa correta:** A.
+- **A) está correta:** Não há crase antes de verbo.
+- **B) está errada:** Há crase: enviado a + a chefia.
+- **C) está errada:** Há crase em indicação de horas.
+- **D) está errada:** Há crase: referir-se a + a norma.
+- **Conceito cobrado:** Crase.
+- **Pegadinha usada:** Marcar crase apenas pela presença da letra 'a'.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 4.13
+
+- **Alternativa correta:** D.
+- **A) está errada:** Transforma concessão em causa.
+- **B) está errada:** Altera o comando principal.
+- **C) está errada:** Cria finalidade absurda e muda o sentido.
+- **D) está correta:** 'Ainda que' e 'mesmo que' exprimem concessão.
+- **Conceito cobrado:** Reescrita e conectores.
+- **Pegadinha usada:** Trocar concessão por causa ou finalidade.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 4.14
+
+- **Alternativa correta:** B.
+- **A) está errada:** Informal e imprecisa.
+- **B) está correta:** Texto administrativo exige clareza, impessoalidade e formalidade.
+- **C) está errada:** Subjetiva e coloquial.
+- **D) está errada:** Coloquial e incompatível com formalidade.
+- **Conceito cobrado:** Linguagem administrativa.
+- **Pegadinha usada:** Confundir clareza com informalidade.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 4.15
+
+- **Alternativa correta:** C.
+- **A) está errada:** Finalidade aponta objetivo, não causa passada.
+- **B) está errada:** Concessão seria marcada por 'embora'.
+- **C) está correta:** A estrutura 'para + infinitivo' indica finalidade.
+- **D) está errada:** Oposição seria marcada por 'mas', 'porém', 'contudo'.
+- **Conceito cobrado:** Valor semântico de oração reduzida.
+- **Pegadinha usada:** Confundir finalidade com causa.
+- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+
+#### Comentário Extra Dia 4.16
+
+- **Alternativa correta:** A.
+- **A) está correta:** Com o mesmo tempo e produtividade, 80 × (6/4) = 120.
+- **B) está errada:** Esse resultado não aplica corretamente a proporcionalidade entre servidores e produção.
+- **C) está errada:** O aumento de servidores de 4 para 6 representa fator 1,5, não acréscimo fixo de 20.
+- **D) está errada:** Esse valor dobraria a produção sem dobrar a quantidade de servidores.
+- **Conceito cobrado:** Regra de três composta simples.
+- **Pegadinha usada:** Somar servidores em vez de multiplicar pelo fator proporcional.
+- **Como pensar para acertar:** Mantenha constantes tempo e produtividade; ajuste apenas a quantidade de servidores.
+
+#### Comentário Extra Dia 4.17
+
+- **Alternativa correta:** D.
+- **A) está errada:** Soma os grupos e conta duas vezes quem está nas duas matérias.
+- **B) está errada:** Subtrai a interseção em excesso.
+- **C) está errada:** Soma todos os números, inclusive a interseção, como se fossem grupos separados.
+- **D) está correta:** União = 32 + 24 - 10 = 46.
+- **Conceito cobrado:** Conjuntos.
+- **Pegadinha usada:** Contar a interseção duas vezes.
+- **Como pensar para acertar:** Use a fórmula da união: A + B - interseção.
+
+#### Comentário Extra Dia 4.18
+
+- **Alternativa correta:** B.
+- **A) está errada:** Essa é afirmação mais forte que a negação lógica.
+- **B) está correta:** A negação de 'todo A é B' é 'algum A não é B'.
+- **C) está errada:** Equivale a nenhum conferiu, não à negação mínima.
+- **D) está errada:** Isso pode ser verdadeiro junto com a proposição original.
+- **Conceito cobrado:** Negação de quantificadores.
+- **Pegadinha usada:** Negar 'todo' como 'nenhum'.
+- **Como pensar para acertar:** Procure a negação mínima que torna a proposição original falsa.
+
+#### Comentário Extra Dia 4.19
+
+- **Alternativa correta:** C.
+- **A) está errada:** Desconsidera que do 1º ao 8º termo há 7 intervalos.
+- **B) está errada:** Usa 8 intervalos em vez de 7.
+- **C) está correta:** a8 = 7 + (8 - 1) × 3 = 28.
+- **D) está errada:** Confunde PA com multiplicação por posição.
+- **Conceito cobrado:** Progressão aritmética.
+- **Pegadinha usada:** Usar n intervalos em vez de n - 1.
+- **Como pensar para acertar:** Aplique an = a1 + (n - 1)r.
+
+#### Comentário Extra Dia 4.20
+
+- **Alternativa correta:** A.
+- **A) está correta:** Há 7 opções não bloqueadas em 10 possíveis.
+- **B) está errada:** Essa é a probabilidade de escolher senha bloqueada.
+- **C) está errada:** Inverte indevidamente casos favoráveis e total.
+- **D) está errada:** Probabilidade não pode ser maior que 1 nesse caso.
+- **Conceito cobrado:** Probabilidade simples.
+- **Pegadinha usada:** Escolher o evento complementar errado.
+- **Como pensar para acertar:** Conte casos favoráveis e divida pelo total de casos possíveis.
+
 ---
 
 # Dia 5 — Língua Portuguesa e Discursiva
 
 **Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -5001,6 +6877,229 @@ B) O sistema apresentou falhas de integração e exigiu revisão dos cadastros.
 C) O sistema deu umas coisas estranhas e ficou meio ruim.
 D) A coisa do cadastro não estava legal.
 
+## Questões extras de revisão fixa do Dia 5
+
+#### Extra Dia 5.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a hierarquia prática do estudo da legislação específica, assinale a alternativa correta.
+
+A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) Lei, decreto, regimento e código de ética formam o núcleo; normas complementares entram como leitura dirigida.
+D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+
+#### Extra Dia 5.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Se uma pessoa usa título profissional sem habilitação regular, a situação deve ser analisada principalmente sob qual enfoque?
+
+A) Regularidade do exercício profissional e possível uso indevido de título ou registro.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+
+#### Extra Dia 5.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o campo de atuação fiscalizatória do CRA, assinale a alternativa correta.
+
+A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O CRA fiscaliza atividades relacionadas ao campo profissional da Administração, observada sua competência territorial.
+
+#### Extra Dia 5.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em relação ao estudo da RN CFA nº 671/2025, assinale a alternativa correta.
+
+A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+B) O foco inicial deve estar em deveres, vedações, condutas éticas e lógica das sanções, sem decorar detalhe isolado fora do edital.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+
+#### Extra Dia 5.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+A respeito da finalidade dos conselhos profissionais, assinale a alternativa correta.
+
+A) O Regimento Interno substitui a lei federal que disciplina a profissão.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) A função fiscalizatória protege a sociedade e a regularidade do exercício profissional.
+D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+
+#### Extra Dia 5.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre responsabilidade técnica em atividades de Administração, assinale a alternativa correta em termos gerais.
+
+A) A indicação de responsável deve corresponder a atuação efetiva e regular, não a assinatura formal sem participação.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+
+#### Extra Dia 5.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Se uma questão perguntar por que a RN 640/2024 não foi mantida como base principal, qual resposta é mais adequada ao material?
+
+A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) Porque a apostila adota a RN 671/2025 conforme edital retificado e observação de revogação em fonte oficial citada.
+
+#### Extra Dia 5.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a técnica de resolução de questões de legislação do CRA, assinale a alternativa correta.
+
+A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+B) Casos práticos devem ser resolvidos identificando conduta, sujeito, competência e norma-base.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+
+#### Extra Dia 5.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um enunciado afirma que todo descumprimento administrativo gera automaticamente cassação do registro. Assinale a alternativa correta.
+
+A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) A afirmação é inadequada porque sanção depende de previsão normativa, processo e proporcionalidade.
+D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+
+#### Extra Dia 5.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o Regimento Interno, assinale a alternativa correta quanto à prova.
+
+A) Ele pode ser cobrado em questões de competência, estrutura interna, órgãos e funcionamento do CRA-PR.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+
+#### Extra Dia 5.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Um terceiro anuncia serviço como se fosse registrado no CRA-PR, mas não possui registro. Assinale a alternativa correta.
+
+A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A situação pode envolver uso indevido de condição profissional e demanda verificação fiscalizatória.
+
+#### Extra Dia 5.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o Decreto nº 61.934/1967, assinale a alternativa correta.
+
+A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+B) Ele deve ser estudado como regulamento que ajuda a operacionalizar a Lei nº 4.769/1965.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+
+#### Extra Dia 5.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Se uma alternativa disser que a inadimplência elimina automaticamente a formação acadêmica do profissional, assinale a correta.
+
+A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) A inadimplência pode gerar consequências perante o conselho, mas não apaga a formação acadêmica do profissional.
+D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+
+#### Extra Dia 5.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre leitura oficial de normas, assinale a alternativa correta.
+
+A) Para detalhes como prazo, sanção específica e rito, o material deve se apoiar no texto oficial consultado.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+
+#### Extra Dia 5.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+No estudo do CRA-PR, uma questão pergunta pela sede, órgãos e funcionamento institucional. Qual bloco teórico é mais diretamente associado?
+
+A) O Regimento Interno substitui a lei federal que disciplina a profissão.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Regimento Interno do CRA-PR.
+
+#### Extra Dia 5.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre critérios de julgamento em licitação, assinale a alternativa correta.
+
+A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+B) O critério deve ser definido no instrumento convocatório e observado no julgamento.
+C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+
+#### Extra Dia 5.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Agente público descumpre dever legal, mas sem dolo ou requisito subjetivo exigido para improbidade. Assinale a alternativa mais adequada.
+
+A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+B) Publicidade impede qualquer sigilo em documentos públicos.
+C) Pode haver outra consequência jurídica, mas improbidade exige os requisitos próprios da lei.
+D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+
+#### Extra Dia 5.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre responsabilidade civil objetiva, assinale a alternativa correta.
+
+A) Ela facilita a responsabilização quanto à culpa, mas não dispensa prova de dano e nexo causal.
+B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+C) Autarquia integra a Administração Direta porque executa serviço público.
+D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+
+#### Extra Dia 5.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Em Administração Pública, órgão público é melhor descrito como:
+
+A) Pregão é modalidade voltada à alienação de bens públicos.
+B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+D) Centro de competência sem personalidade jurídica própria, integrante de uma pessoa jurídica.
+
+#### Extra Dia 5.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Administração Pública.
+
+Sobre agentes públicos, assinale a alternativa correta.
+
+A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+B) A expressão abrange pessoas que exercem função pública, ainda que em vínculos jurídicos variados.
+C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+
+
 ## Gabarito do Dia 5
 
 1. C
@@ -5053,6 +7152,30 @@ D) A coisa do cadastro não estava legal.
 48. D
 49. C
 50. B
+
+### Gabarito das questões extras de revisão fixa do Dia 5
+
+Extra Dia 5.1: C
+Extra Dia 5.2: A
+Extra Dia 5.3: D
+Extra Dia 5.4: B
+Extra Dia 5.5: C
+Extra Dia 5.6: A
+Extra Dia 5.7: D
+Extra Dia 5.8: B
+Extra Dia 5.9: C
+Extra Dia 5.10: A
+Extra Dia 5.11: D
+Extra Dia 5.12: B
+Extra Dia 5.13: C
+Extra Dia 5.14: A
+Extra Dia 5.15: D
+Extra Dia 5.16: B
+Extra Dia 5.17: C
+Extra Dia 5.18: A
+Extra Dia 5.19: D
+Extra Dia 5.20: B
+
 
 ## Comentários do Dia 5
 
@@ -5692,13 +7815,235 @@ Os temas abaixo não contam nas 50 questões objetivas. Use-os para treinar estr
 - **Conclusão:** retomou a tese e indicou solução compatível com o problema.
 - **Erros que derrubam nota:** fuga do tema, ausência de tese, texto em tópicos, excesso de generalidade, contradição e erros gramaticais recorrentes.
 
+### Comentários das questões extras de revisão fixa do Dia 5
+
+#### Comentário Extra Dia 5.1
+
+- **Alternativa correta:** C.
+- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está correta:** Essa ordem segue o material aprovado para fortalecer base antes de detalhes normativos.
+- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **Conceito cobrado:** Priorização normativa.
+- **Pegadinha usada:** Estudar apenas a norma mais longa e ignorar o núcleo do edital.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.2
+
+- **Alternativa correta:** A.
+- **A) está correta:** A proteção do título e da habilitação profissional é função típica da fiscalização.
+- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **Conceito cobrado:** Uso de título profissional.
+- **Pegadinha usada:** Tratar título profissional como expressão sem controle institucional.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.3
+
+- **Alternativa correta:** D.
+- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **D) está correta:** A fiscalização é ligada ao campo profissional e à jurisdição do conselho regional.
+- **Conceito cobrado:** Campo de fiscalização.
+- **Pegadinha usada:** Achar que qualquer atividade empresarial é automaticamente fiscalizada pelo CRA.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.4
+
+- **Alternativa correta:** B.
+- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **B) está correta:** A Semana 1 prioriza compreensão de conduta e aplicação prática em casos.
+- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **Conceito cobrado:** Estudo do Código de Ética.
+- **Pegadinha usada:** Decorar artigo sem entender a situação prática cobrada.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.5
+
+- **Alternativa correta:** C.
+- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **C) está correta:** Conselhos profissionais não existem apenas para interesses corporativos ou arrecadação.
+- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **Conceito cobrado:** Finalidade fiscalizatória.
+- **Pegadinha usada:** Reduzir conselho profissional a entidade associativa privada.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.6
+
+- **Alternativa correta:** A.
+- **A) está correta:** O material reforça que nome e registro profissional não podem ser usados como fachada.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **Conceito cobrado:** Responsabilidade profissional.
+- **Pegadinha usada:** Confundir responsabilidade técnica com mera autorização comercial.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.7
+
+- **Alternativa correta:** D.
+- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **D) está correta:** A troca foi tratada no material como vinculada à retificação e à fonte oficial, não a preferência pessoal.
+- **Conceito cobrado:** RN 671/2025 x RN 640/2024.
+- **Pegadinha usada:** Usar norma revogada sem conferir edital retificado.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.8
+
+- **Alternativa correta:** B.
+- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **B) está correta:** A banca tende a misturar sujeito e competência; por isso, a decomposição do caso reduz erro.
+- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Conceito cobrado:** Método de resolução.
+- **Pegadinha usada:** Resolver legislação apenas por palavra-chave solta.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.9
+
+- **Alternativa correta:** C.
+- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **C) está correta:** Nem toda irregularidade recebe a sanção máxima; é preciso observar a norma e o caso.
+- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **Conceito cobrado:** Proporcionalidade em sanções.
+- **Pegadinha usada:** Escolher a punição mais grave por parecer mais rígida.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.10
+
+- **Alternativa correta:** A.
+- **A) está correta:** O Regimento é conteúdo objetivo de legislação específica e permite questões institucionais.
+- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **Conceito cobrado:** Cobrança do Regimento.
+- **Pegadinha usada:** Achar que regimento só cai em prova de cargo administrativo.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.11
+
+- **Alternativa correta:** D.
+- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **D) está correta:** A publicidade de habilitação inexistente compromete a regularidade do exercício profissional.
+- **Conceito cobrado:** Uso indevido de condição profissional.
+- **Pegadinha usada:** Achar que anúncio publicitário não pode ser fiscalizado.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.12
+
+- **Alternativa correta:** B.
+- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **B) está correta:** O decreto não substitui a lei; detalha sua aplicação.
+- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **Conceito cobrado:** Relação lei-decreto.
+- **Pegadinha usada:** Confundir regulamentação com revogação da lei.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.13
+
+- **Alternativa correta:** C.
+- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **C) está correta:** É preciso diferenciar condição acadêmica, registro profissional e regularidade financeira.
+- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
+- **Conceito cobrado:** Contribuições e regularidade.
+- **Pegadinha usada:** Misturar formação, registro e anuidade como se fossem a mesma coisa.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.14
+
+- **Alternativa correta:** A.
+- **A) está correta:** A própria apostila marcou pontos pendentes para evitar afirmação sem fonte.
+- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **Conceito cobrado:** Uso de fonte oficial.
+- **Pegadinha usada:** Transformar resumo incompleto em regra literal.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.15
+
+- **Alternativa correta:** D.
+- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **D) está correta:** O Regimento concentra estrutura, órgãos e funcionamento do conselho regional.
+- **Conceito cobrado:** Regimento e estrutura.
+- **Pegadinha usada:** Responder com Código de Ética quando o foco é organização interna.
+- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+
+#### Comentário Extra Dia 5.16
+
+- **Alternativa correta:** B.
+- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **B) está correta:** Critério de julgamento não pode ser improvisado após conhecer as propostas.
+- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **Conceito cobrado:** Critérios de julgamento.
+- **Pegadinha usada:** Mudar o critério conforme o licitante preferido.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 5.17
+
+- **Alternativa correta:** C.
+- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **C) está correta:** A prova cobra a diferença entre irregularidade e improbidade.
+- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **Conceito cobrado:** Elemento subjetivo na improbidade.
+- **Pegadinha usada:** Transformar toda falha em improbidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 5.18
+
+- **Alternativa correta:** A.
+- **A) está correta:** Objetiva não significa automática.
+- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
+- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **Conceito cobrado:** Responsabilidade objetiva.
+- **Pegadinha usada:** Confundir ausência de culpa com ausência de requisitos.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 5.19
+
+- **Alternativa correta:** D.
+- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **D) está correta:** Órgãos compõem a estrutura da pessoa jurídica, mas não são pessoas jurídicas autônomas.
+- **Conceito cobrado:** Órgãos públicos.
+- **Pegadinha usada:** Confundir órgão com entidade.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
+#### Comentário Extra Dia 5.20
+
+- **Alternativa correta:** B.
+- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
+- **B) está correta:** Agente público é categoria ampla, não apenas servidor efetivo.
+- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
+- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
+- **Conceito cobrado:** Agentes públicos.
+- **Pegadinha usada:** Reduzir agente público a servidor estatutário concursado.
+- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+
 ---
 
 # Dia 6 — Administração Pública, RLM e Revisão
 
 **Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
-## Questões
+## Questões principais
 
 ### Questão 1 — Questão autoral no estilo Instituto Consulplan
 
@@ -6168,6 +8513,229 @@ B) verdadeiro
 C) indeterminado
 D) verdadeiro apenas se P implicar Q
 
+## Questões extras de revisão fixa do Dia 6
+
+#### Extra Dia 6.1 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Quanto ao Código de Ética, assinale a alternativa correta.
+
+A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+B) Ele orienta deveres, condutas vedadas e disciplina profissional de pessoas físicas e jurídicas no âmbito indicado.
+C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+
+#### Extra Dia 6.2 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre fiscalização de pessoa jurídica, assinale a alternativa correta.
+
+A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) A análise deve verificar objeto da atividade, atuação efetiva e enquadramento no campo da Administração.
+
+#### Extra Dia 6.3 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Se uma questão trouxer as expressões 'registro', 'inscrição' e 'regularidade', qual norma da leitura dirigida tende a ser central?
+
+A) RN CFA nº 649/2024, lida com as alterações da RN CFA nº 670/2025.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+
+#### Extra Dia 6.4 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre ética e sigilo, assinale a alternativa correta.
+
+A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) O dever de sigilo subsiste mesmo após o fim da relação profissional, salvo exceções legalmente justificadas.
+D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+
+#### Extra Dia 6.5 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Em uma situação de fiscalização, qual postura é compatível com a lógica institucional estudada?
+
+A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+B) Apresentar informações solicitadas dentro da competência fiscalizatória e buscar defesa pelos meios regulares se discordar.
+C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+
+#### Extra Dia 6.6 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre o estudo comparado de Lei nº 4.769/1965 e Decreto nº 61.934/1967, assinale a correta.
+
+A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A lei dá base ao exercício profissional; o decreto regulamenta sua aplicação.
+
+#### Extra Dia 6.7 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Quanto à cobrança da Consulplan em legislação específica, qual alternativa melhor descreve o risco de prova?
+
+A) Misturar competência, norma e sujeito em caso prático para testar leitura atenta.
+B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+C) O Regimento Interno substitui a lei federal que disciplina a profissão.
+D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+
+#### Extra Dia 6.8 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Se uma entidade atua fora do Paraná, mas a questão pergunta especificamente pelo CRA-PR, qual cuidado é necessário?
+
+A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+C) Verificar a jurisdição territorial e a competência do conselho regional indicado.
+D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+
+#### Extra Dia 6.9 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Uma alternativa afirma que norma de registro, Código de Ética e Regimento têm o mesmo objeto. Assinale a correta.
+
+A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+B) A afirmação é falsa: registro trata de inscrição/regularidade, ética trata de conduta e regimento trata de estrutura interna.
+C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+
+#### Extra Dia 6.10 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Legislação CRA/CFA.
+
+Sobre a preparação da Semana 1 em legislação CRA/CFA, assinale a alternativa correta.
+
+A) O Regimento Interno substitui a lei federal que disciplina a profissão.
+B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+D) A prioridade é dominar núcleo legal, competências e ética antes de tentar decorar detalhes de normas pendentes.
+
+#### Extra Dia 6.11 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em Arquitetura, assinale a alternativa correta sobre cache.
+
+A) Cache explora localidade temporal e espacial para reduzir tempo médio de acesso.
+B) Cache substitui a ULA em operações aritméticas.
+C) Cache elimina a necessidade de memória principal.
+D) Cache sempre aumenta a latência de todas as instruções.
+
+#### Extra Dia 6.12 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Sobre pipeline de CPU, assinale a alternativa correta.
+
+A) Pipeline executa todas as instruções em uma única etapa física.
+B) Pipeline impede qualquer conflito de dependência.
+C) Pipeline tende a aumentar a vazão de instruções, mas não garante menor latência individual.
+D) Pipeline substitui registradores por memória secundária.
+
+#### Extra Dia 6.13 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em Sistemas Operacionais, assinale a alternativa correta.
+
+A) Escalonamento é a tradução de SQL para plano de execução.
+B) Escalonamento define critérios para escolher qual processo ou thread usará a CPU.
+C) Escalonamento remove a necessidade de memória virtual.
+D) Escalonamento é sempre decidido pelo usuário final.
+
+#### Extra Dia 6.14 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Sobre memória virtual, assinale a alternativa correta.
+
+A) É sinônimo de memória cache L1.
+B) Elimina totalmente page faults.
+C) É implementada exclusivamente por comandos SQL.
+D) Permite usar abstração de espaço de endereçamento maior que a RAM física, com apoio de paginação e armazenamento secundário.
+
+#### Extra Dia 6.15 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em SQL, assinale a alternativa correta.
+
+A) Para filtrar grupos após agregação, usa-se HAVING; para filtrar linhas antes da agregação, usa-se WHERE.
+B) HAVING substitui SELECT em consultas com GROUP BY.
+C) WHERE deve ser usado para condição sobre COUNT(*) depois do agrupamento.
+D) GROUP BY apaga fisicamente linhas duplicadas da tabela.
+
+#### Extra Dia 6.16 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Sobre NULL em banco de dados relacional, assinale a alternativa correta.
+
+A) NULL é igual a zero em colunas numéricas.
+B) NULL é igual a string vazia.
+C) Comparações com NULL devem usar IS NULL ou IS NOT NULL.
+D) A condição = NULL é a forma recomendada para localizar nulos.
+
+#### Extra Dia 6.17 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Sobre legislação CRA/CFA, assinale a alternativa correta.
+
+A) RN 651/2024 foi estudada como norma de SQL.
+B) RN CFA nº 651/2024 foi associada ao Regimento Interno do CRA-PR; RN CFA nº 671/2025, ao Código de Ética.
+C) RN 671/2025 foi tratada como modalidade de licitação.
+D) Ambas foram ignoradas por não constarem no edital.
+
+#### Extra Dia 6.18 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em Português, assinale a alternativa correta.
+
+A) Sempre há crase antes de palavra feminina e antes de verbo.
+B) Crase é apenas acento facultativo de formalidade.
+C) A expressão 'à revisar' está correta na norma padrão.
+D) Não se usa crase antes de verbo, como em 'começou a revisar'.
+
+#### Extra Dia 6.19 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em Administração Pública, assinale a alternativa correta.
+
+A) Na dispensa, a competição pode existir, mas a lei autoriza contratar diretamente; na inexigibilidade, a competição é inviável.
+B) Dispensa e inexigibilidade são sinônimos perfeitos.
+C) Inexigibilidade ocorre quando a Administração prefere não competir por conveniência.
+D) Dispensa exige sempre competição prévia entre todos os fornecedores.
+
+#### Extra Dia 6.20 — Questão autoral no estilo Instituto Consulplan
+
+**Área:** Revisão dos erros da semana.
+
+Em RLM, se 30% de um valor correspondem a 90, qual é o valor total?
+
+A) 27.
+B) 120.
+C) 300.
+D) 270.
+
+
 ## Gabarito do Dia 6
 
 1. C
@@ -6220,6 +8788,30 @@ D) verdadeiro apenas se P implicar Q
 48. C
 49. B
 50. A
+
+### Gabarito das questões extras de revisão fixa do Dia 6
+
+Extra Dia 6.1: B
+Extra Dia 6.2: D
+Extra Dia 6.3: A
+Extra Dia 6.4: C
+Extra Dia 6.5: B
+Extra Dia 6.6: D
+Extra Dia 6.7: A
+Extra Dia 6.8: C
+Extra Dia 6.9: B
+Extra Dia 6.10: D
+Extra Dia 6.11: A
+Extra Dia 6.12: C
+Extra Dia 6.13: B
+Extra Dia 6.14: D
+Extra Dia 6.15: A
+Extra Dia 6.16: C
+Extra Dia 6.17: B
+Extra Dia 6.18: D
+Extra Dia 6.19: A
+Extra Dia 6.20: C
+
 
 ## Comentários do Dia 6
 
@@ -6831,2617 +9423,7 @@ D) verdadeiro apenas se P implicar Q
 - **Como pensar para acertar:** Calcule de dentro para fora: primeiro não Q, depois a disjunção.
 - **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
 
----
-
-# Questões Extras de Revisão Fixa — Semana 1
-
-Seção complementar criada para cobrir os blocos fixos da rotina diária de 6h líquidas. As 300 questões principais dos temas do dia permanecem inalteradas. Todas as questões abaixo são autorais, no estilo Instituto Consulplan, e seguem o formato A-D.
-
-**Total de questões extras:** 120, sendo 20 por dia.
-
-## Dia 1 — Revisão fixa: Legislação CRA/CFA e Português
-
-### Questões extras
-
-#### Extra Dia 1.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um candidato confundiu a atuação do CFA com a do CRA-PR. Considerando a estrutura do Sistema CFA/CRAs, assinale a alternativa correta.
-
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) O CFA atua em plano nacional e normativo; o CRA-PR exerce registro e fiscalização no âmbito regional do Paraná.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-
-#### Extra Dia 1.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a Lei Federal nº 4.769/1965, assinale a alternativa correta.
-
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) O Regimento Interno substitui a lei federal que disciplina a profissão.
-C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-D) A lei é uma base legal do exercício da profissão de Administrador e da organização do Sistema CFA/CRAs.
-
-#### Extra Dia 1.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Na leitura da legislação específica, um aluno separou lei e decreto. Assinale a alternativa correta.
-
-A) O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965.
-B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-
-#### Extra Dia 1.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-O edital cobra Regimento Interno do CRA-PR. Sobre sua função, assinale a alternativa correta.
-
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) O Regimento Interno organiza órgãos, competências e funcionamento do CRA-PR.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-
-#### Extra Dia 1.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a natureza institucional do CRA-PR, conforme a apostila de estudo, assinale a alternativa correta.
-
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR é tratado como autarquia com personalidade jurídica de direito público e autonomia administrativa.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-
-#### Extra Dia 1.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-A RN CFA nº 651/2024 foi citada no estudo da Semana 1. Assinale a alternativa correta.
-
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-C) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-D) Ela foi usada como norma oficial que aprova o Regimento Interno do CRA-PR.
-
-#### Extra Dia 1.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o Código de Ética indicado no edital vigente, assinale a alternativa correta.
-
-A) A apostila usa a RN CFA nº 671/2025 porque ela aparece no edital retificado e foi tratada como Código de Ética vigente.
-B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-
-#### Extra Dia 1.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma empresa presta serviços típicos de Administração no Paraná. Em relação ao Sistema CFA/CRAs, assinale a alternativa correta.
-
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) A pessoa jurídica pode se sujeitar a registro e fiscalização quando atua em atividade abrangida pelo campo profissional.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-
-#### Extra Dia 1.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um profissional registrado utiliza informações confidenciais de cliente para obter vantagem em outra contratação. Assinale a alternativa correta.
-
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A conduta viola o dever de sigilo profissional, salvo hipótese legal ou justa causa que autorize a revelação.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
-
-#### Extra Dia 1.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um administrador permite que terceiro use seu nome e registro para assinar trabalho que ele não acompanhou. Assinale a alternativa correta.
-
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-D) Emprestar nome ou registro profissional pode caracterizar infração ética e uso indevido da habilitação.
-
-#### Extra Dia 1.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em uma ação fiscalizatória, a empresa se recusa a apresentar documentos básicos sobre atividade profissional regulada. Assinale a alternativa correta.
-
-A) Dificultar fiscalização regular pode ensejar apuração no âmbito competente do conselho.
-B) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-C) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-
-#### Extra Dia 1.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a Lei nº 12.514/2011 na leitura dirigida, assinale a alternativa correta.
-
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) Ela é relevante por tratar de contribuições devidas aos conselhos profissionais.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-
-#### Extra Dia 1.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-A RN CFA nº 649/2024 aparece na leitura dirigida da Semana 1. Assinale a alternativa correta.
-
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Ela deve ser estudada como regulamento de registro do Sistema CFA/CRAs.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-
-#### Extra Dia 1.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a RN CFA nº 670/2025, conforme a leitura dirigida da apostila, assinale a alternativa correta.
-
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-D) Ela deve ser lida em conjunto com a RN CFA nº 649/2024, pois altera o regulamento de registro.
-
-#### Extra Dia 1.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Quanto às normas RN CFA nº 546/2018, 626/2023 e 589/2020 no material da Semana 1, assinale a alternativa correta.
-
-A) Quando o resumo completo estiver pendente, o estudo deve priorizar leitura oficial e evitar decorar prazo ou sanção sem confirmação.
-B) O Regimento Interno substitui a lei federal que disciplina a profissão.
-C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-
-#### Extra Dia 1.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia o trecho: "O relatório foi enviado à Diretoria após a consolidação dos dados; por isso, a decisão foi adiada." A expressão "por isso" indica:
-
-A) oposição entre envio do relatório e decisão adiada.
-B) conclusão ou consequência em relação ao fato anterior.
-C) explicação da causa sem relação com consequência.
-D) adição de informação independente.
-
-#### Extra Dia 1.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-No trecho "A comissão revisou o edital e encaminhou suas conclusões", o pronome "suas" retoma:
-
-A) as conclusões do edital.
-B) as conclusões do candidato.
-C) as conclusões da comissão.
-D) as conclusões da banca e do órgão simultaneamente.
-
-#### Extra Dia 1.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a reescrita que preserva o sentido de: "Somente os documentos conferidos serão encaminhados."
-
-A) Todos os documentos, conferidos ou não, serão encaminhados.
-B) Nenhum documento conferido será encaminhado.
-C) Os documentos serão conferidos depois do encaminhamento.
-D) Apenas os documentos conferidos serão encaminhados.
-
-#### Extra Dia 1.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa em que a crase está corretamente empregada.
-
-A) O processo foi encaminhado à unidade responsável.
-B) O servidor começou à revisar os autos.
-C) A equipe respondeu à todos os interessados.
-D) O relatório foi enviado à setor técnico.
-
-#### Extra Dia 1.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia: "Embora o sistema estivesse disponível, muitos usuários não concluíram o cadastro." A oração iniciada por "Embora" expressa:
-
-A) causa direta.
-B) concessão.
-C) conclusão.
-D) condição necessária.
-
-## Gabarito das Questões Extras do Dia 1
-
-Extra Dia 1.1: C
-Extra Dia 1.2: D
-Extra Dia 1.3: A
-Extra Dia 1.4: B
-Extra Dia 1.5: C
-Extra Dia 1.6: D
-Extra Dia 1.7: A
-Extra Dia 1.8: B
-Extra Dia 1.9: C
-Extra Dia 1.10: D
-Extra Dia 1.11: A
-Extra Dia 1.12: B
-Extra Dia 1.13: C
-Extra Dia 1.14: D
-Extra Dia 1.15: A
-Extra Dia 1.16: B
-Extra Dia 1.17: C
-Extra Dia 1.18: D
-Extra Dia 1.19: A
-Extra Dia 1.20: B
-
-## Comentários das Questões Extras do Dia 1
-
-#### Comentário Extra Dia 1.1
-
-- **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** A distinção central é nacional/normativo para o CFA e regional/executivo para o CRA.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Competência do CFA e do CRA-PR.
-- **Pegadinha usada:** Trocar competência nacional por competência regional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.2
-
-- **Alternativa correta:** D.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **D) está correta:** A Lei nº 4.769/1965 estrutura a profissão e sustenta a atuação dos conselhos.
-- **Conceito cobrado:** Lei nº 4.769/1965.
-- **Pegadinha usada:** Tratar a lei como norma meramente interna do CRA-PR.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.3
-
-- **Alternativa correta:** A.
-- **A) está correta:** O decreto detalha a execução da lei, por isso deve ser lido junto da Lei nº 4.769/1965.
-- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** Decreto nº 61.934/1967.
-- **Pegadinha usada:** Confundir norma regulamentadora com lei criadora.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.4
-
-- **Alternativa correta:** B.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está correta:** O Regimento é a referência interna para entender como o conselho regional se estrutura e decide.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Regimento Interno do CRA-PR.
-- **Pegadinha usada:** Confundir regimento com código de ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.5
-
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** A apostila destaca o CRA-PR como autarquia de direito público no contexto do Sistema CFA/CRAs.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Natureza jurídica do CRA-PR.
-- **Pegadinha usada:** Tratar conselho profissional como órgão sem personalidade própria.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.6
-
-- **Alternativa correta:** D.
-- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **B) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **C) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **D) está correta:** A referência à RN 651/2024 serve para vincular o Regimento Interno à fonte oficial do CFA.
-- **Conceito cobrado:** RN CFA nº 651/2024.
-- **Pegadinha usada:** Atribuir à RN 651/2024 conteúdo de ética profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.7
-
-- **Alternativa correta:** A.
-- **A) está correta:** A RN 671/2025 é a referência ética adotada no material aprovado para a Semana 1.
-- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **Conceito cobrado:** RN CFA nº 671/2025.
-- **Pegadinha usada:** Usar automaticamente a RN 640/2024 apesar da retificação indicada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.8
-
-- **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** O foco da fiscalização não se limita à pessoa física quando a pessoa jurídica exerce atividade profissional regulada.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Registro de pessoa jurídica.
-- **Pegadinha usada:** Achar que apenas profissionais individuais podem ser fiscalizados.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.9
-
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** O sigilo protege informações obtidas no exercício profissional e não pode ser afastado por conveniência pessoal.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Sigilo profissional.
-- **Pegadinha usada:** Tratar sigilo como escolha comercial do profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.10
-
-- **Alternativa correta:** D.
-- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **D) está correta:** A regularidade profissional exige responsabilidade real pelo trabalho, não mera cessão formal do registro.
-- **Conceito cobrado:** Uso indevido de nome ou registro.
-- **Pegadinha usada:** Exigir dano financeiro para reconhecer irregularidade ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.11
-
-- **Alternativa correta:** A.
-- **A) está correta:** A fiscalização depende de colaboração mínima do fiscalizado quando há competência do CRA.
-- **B) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **C) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Fiscalização profissional.
-- **Pegadinha usada:** Supor que a fiscalização só ocorre após decisão judicial.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.12
-
-- **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** A norma foi incluída porque anuidade, taxas e cobrança podem aparecer em contexto de conselhos.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Lei nº 12.514/2011.
-- **Pegadinha usada:** Ignorar normas financeiras dos conselhos por parecerem administrativas.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.13
-
-- **Alternativa correta:** C.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está correta:** Registro é atividade central do CRA e a RN 649/2024 foi apontada como regulamento de registro.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** RN CFA nº 649/2024.
-- **Pegadinha usada:** Confundir registro com sanção ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.14
-
-- **Alternativa correta:** D.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **D) está correta:** Norma alteradora não deve ser estudada isoladamente; deve ser conectada ao texto alterado.
-- **Conceito cobrado:** RN CFA nº 670/2025.
-- **Pegadinha usada:** Ler norma alteradora como se fosse conteúdo autônomo sem relação com registro.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.15
-
-- **Alternativa correta:** A.
-- **A) está correta:** A apostila sinaliza ponto pendente de confirmação para não transformar hipótese em certeza de prova.
-- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Normas pendentes de confirmação.
-- **Pegadinha usada:** Criar regra específica sem fonte oficial consolidada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.16
-
-- **Alternativa correta:** B.
-- **A) está errada:** Oposição seria indicada por conectores como 'mas' ou 'contudo'.
-- **B) está correta:** O conector 'por isso' estabelece consequência.
-- **C) está errada:** O conector retoma o fato anterior para apresentar efeito.
-- **D) está errada:** Não há mera soma de ideias; há relação conclusiva.
-- **Conceito cobrado:** Coesão por conectores.
-- **Pegadinha usada:** Confundir conclusão com oposição.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 1.17
-
-- **Alternativa correta:** C.
-- **A) está errada:** Edital não é agente que conclui; o referente lógico é comissão.
-- **B) está errada:** Candidato não aparece no trecho.
-- **C) está correta:** O pronome possessivo deve ser interpretado pelo referente compatível no texto.
-- **D) está errada:** Não há dois referentes expressos nessa frase.
-- **Conceito cobrado:** Referência pronominal.
-- **Pegadinha usada:** Escolher referente próximo sem observar sentido.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 1.18
-
-- **Alternativa correta:** D.
-- **A) está errada:** Altera o sentido restritivo de 'somente'.
-- **B) está errada:** Inverte completamente o sentido.
-- **C) está errada:** Muda a ordem lógica dos fatos.
-- **D) está correta:** 'Somente' equivale a 'apenas' no contexto.
-- **Conceito cobrado:** Reescrita e manutenção de sentido.
-- **Pegadinha usada:** Perder palavra restritiva.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 1.19
-
-- **Alternativa correta:** A.
-- **A) está correta:** Há preposição 'a' + artigo feminino em 'à unidade'.
-- **B) está errada:** Não há crase antes de verbo.
-- **C) está errada:** Não há artigo feminino antes de 'todos'.
-- **D) está errada:** Não há artigo feminino antes de palavra masculina.
-- **Conceito cobrado:** Crase.
-- **Pegadinha usada:** Aplicar crase antes de verbo, masculino ou pronome indefinido.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 1.20
-
-- **Alternativa correta:** B.
-- **A) está errada:** Causa indicaria motivo; 'embora' introduz fato contrário à expectativa.
-- **B) está correta:** 'Embora' introduz concessão.
-- **C) está errada:** Conclusão seria marcada por 'logo', 'portanto' ou equivalente.
-- **D) está errada:** Condição seria introduzida por 'se', 'caso' ou equivalente.
-- **Conceito cobrado:** Valor semântico de conjunção.
-- **Pegadinha usada:** Confundir concessão com causa.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
----
-
-## Dia 2 — Revisão fixa: Administração Pública e Português
-
-### Questões extras
-
-#### Extra Dia 2.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre os princípios do art. 37 da Constituição, assinale a alternativa correta.
-
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Legalidade, impessoalidade, moralidade, publicidade e eficiência formam o núcleo expresso conhecido como LIMPE.
-C) Responsabilidade civil do Estado dispensa dano e nexo causal.
-D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-
-#### Extra Dia 2.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Um órgão público decide contratar servidor por afinidade pessoal, sem critério objetivo. Qual princípio é diretamente afetado?
-
-A) Impessoalidade, pois a atuação administrativa deve buscar finalidade pública e critérios objetivos.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-D) Pregão é modalidade voltada à alienação de bens públicos.
-
-#### Extra Dia 2.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre Administração Direta e Indireta, assinale a alternativa correta.
-
-A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-B) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Administração Direta é composta pelos entes federativos e seus órgãos; Administração Indireta reúne entidades com personalidade própria.
-
-#### Extra Dia 2.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-No contexto dos conselhos profissionais, assinale a alternativa correta.
-
-A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Conselhos profissionais são frequentemente tratados como autarquias corporativas ou entidades de fiscalização profissional.
-D) Publicidade impede qualquer sigilo em documentos públicos.
-
-#### Extra Dia 2.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre autarquias, assinale a alternativa correta.
-
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) Autarquia possui personalidade jurídica própria e integra a Administração Indireta.
-C) Pregão é modalidade voltada à alienação de bens públicos.
-D) Autarquia integra a Administração Direta porque executa serviço público.
-
-#### Extra Dia 2.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Uma autoridade pratica ato sem competência legal. Qual elemento do ato administrativo está comprometido?
-
-A) Competência.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-
-#### Extra Dia 2.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre finalidade do ato administrativo, assinale a alternativa correta.
-
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Publicidade impede qualquer sigilo em documentos públicos.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) O ato deve perseguir finalidade pública; desvio para interesse pessoal pode invalidá-lo.
-
-#### Extra Dia 2.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-A Administração anulou ato ilegal após constatar vício. Assinale a alternativa correta.
-
-A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) A anulação relaciona-se ao controle de legalidade do ato administrativo.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
-
-#### Extra Dia 2.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre LAI e transparência, assinale a alternativa correta.
-
-A) Pregão é modalidade voltada à alienação de bens públicos.
-B) A publicidade é regra, mas informações protegidas por sigilo legal ou dados pessoais exigem tratamento adequado.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-
-#### Extra Dia 2.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre LGPD na Administração Pública, assinale a alternativa correta.
-
-A) O tratamento de dados pessoais deve observar finalidade, necessidade, segurança e base legal adequada.
-B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-
-#### Extra Dia 2.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre improbidade administrativa, assinale a alternativa correta.
-
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Responsabilidade civil do Estado dispensa dano e nexo causal.
-C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-D) Improbidade não é qualquer ilegalidade; exige enquadramento na lei e requisitos próprios, inclusive elemento subjetivo quando exigido.
-
-#### Extra Dia 2.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Servidor usa o cargo para obter vantagem patrimonial indevida. Em tese, a situação se aproxima de qual categoria clássica?
-
-A) Autarquia integra a Administração Direta porque executa serviço público.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) Enriquecimento ilícito.
-D) Pregão é modalidade voltada à alienação de bens públicos.
-
-#### Extra Dia 2.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Em licitação, o edital definiu critério e exigências. Durante o julgamento, a Administração quer ignorá-los. Assinale a alternativa correta.
-
-A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-B) A vinculação ao edital impede julgamento contrário às regras previamente estabelecidas.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-
-#### Extra Dia 2.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre dispensa e inexigibilidade de licitação, assinale a alternativa correta.
-
-A) Na dispensa, a competição é possível em tese, mas a lei autoriza não licitar; na inexigibilidade, a competição é inviável.
-B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-D) Publicidade impede qualquer sigilo em documentos públicos.
-
-#### Extra Dia 2.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Para aquisição de bem ou serviço comum, a modalidade ordinariamente associada pela Lei nº 14.133/2021 é:
-
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) Pregão é modalidade voltada à alienação de bens públicos.
-C) Autarquia integra a Administração Direta porque executa serviço público.
-D) Pregão.
-
-#### Extra Dia 2.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a frase em que a concordância verbal está adequada.
-
-A) Haviam muitos processos pendentes no setor.
-B) Existia muitos processos pendentes no setor.
-C) Havia muitos processos pendentes no setor.
-D) Foi analisado as planilhas do setor.
-
-#### Extra Dia 2.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-No período "O servidor informou ao candidato que seu recurso fora analisado", há possível ambiguidade porque:
-
-A) o verbo 'informou' está sem complemento.
-B) o pronome 'seu' pode se referir ao servidor ou ao candidato.
-C) a forma 'fora' indica futuro do presente.
-D) a palavra 'recurso' impede qualquer dupla interpretação.
-
-#### Extra Dia 2.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a frase em que "onde" foi empregado adequadamente.
-
-A) O setor onde os documentos são arquivados será reorganizado.
-B) A situação onde ocorreu o erro será analisada.
-C) A norma onde consta o prazo foi revogada.
-D) O procedimento onde o candidato recorreu foi digital.
-
-#### Extra Dia 2.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa em que a pontuação preserva melhor a clareza.
-
-A) Após a conferência dos dados a equipe, publicou o resultado.
-B) Após, a conferência dos dados a equipe publicou o resultado.
-C) Após a conferência, dos dados a equipe publicou, o resultado.
-D) Após a conferência dos dados, a equipe publicou o resultado.
-
-#### Extra Dia 2.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia: "O parecer não elimina a necessidade de nova análise." Infere-se corretamente que:
-
-A) a nova análise foi dispensada pelo parecer.
-B) o parecer proibiu qualquer análise futura.
-C) ainda será necessária nova análise.
-D) a análise anterior foi anulada automaticamente.
-
-## Gabarito das Questões Extras do Dia 2
-
-Extra Dia 2.1: B
-Extra Dia 2.2: A
-Extra Dia 2.3: D
-Extra Dia 2.4: C
-Extra Dia 2.5: B
-Extra Dia 2.6: A
-Extra Dia 2.7: D
-Extra Dia 2.8: C
-Extra Dia 2.9: B
-Extra Dia 2.10: A
-Extra Dia 2.11: D
-Extra Dia 2.12: C
-Extra Dia 2.13: B
-Extra Dia 2.14: A
-Extra Dia 2.15: D
-Extra Dia 2.16: C
-Extra Dia 2.17: B
-Extra Dia 2.18: A
-Extra Dia 2.19: D
-Extra Dia 2.20: C
-
-## Comentários das Questões Extras do Dia 2
-
-#### Comentário Extra Dia 2.1
-
-- **Alternativa correta:** B.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está correta:** A sigla LIMPE resume os princípios expressos mais cobrados.
-- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **Conceito cobrado:** Princípios expressos da Administração Pública.
-- **Pegadinha usada:** Trocar princípio expresso por princípio implícito ou absoluto.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.2
-
-- **Alternativa correta:** A.
-- **A) está correta:** Favorecimento pessoal é incompatível com impessoalidade.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **Conceito cobrado:** Impessoalidade.
-- **Pegadinha usada:** Confundir impessoalidade com ausência de identificação do agente.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.3
-
-- **Alternativa correta:** D.
-- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **B) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está correta:** A distinção principal é órgão sem personalidade própria versus entidade com personalidade jurídica.
-- **Conceito cobrado:** Organização administrativa.
-- **Pegadinha usada:** Chamar autarquia de órgão da Administração Direta.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.4
-
-- **Alternativa correta:** C.
-- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está correta:** A apostila associa o CRA-PR à natureza autárquica e à fiscalização profissional.
-- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **Conceito cobrado:** Conselhos profissionais e autarquias.
-- **Pegadinha usada:** Tratar conselho profissional como associação privada comum.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.5
-
-- **Alternativa correta:** B.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está correta:** Esse é o ponto de prova mais direto sobre autarquias.
-- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **Conceito cobrado:** Autarquia.
-- **Pegadinha usada:** Achar que toda entidade pública é órgão sem personalidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.6
-
-- **Alternativa correta:** A.
-- **A) está correta:** Competência é o poder legalmente atribuído ao agente ou órgão para praticar o ato.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **Conceito cobrado:** Elementos do ato administrativo.
-- **Pegadinha usada:** Confundir competência com motivo do ato.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.7
-
-- **Alternativa correta:** D.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está correta:** Finalidade pública é elemento obrigatório do ato administrativo.
-- **Conceito cobrado:** Finalidade pública.
-- **Pegadinha usada:** Considerar conveniência pessoal como finalidade administrativa legítima.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.8
-
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está correta:** Ato ilegal deve ser tratado pelo prisma da legalidade, não apenas da conveniência.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **Conceito cobrado:** Controle do ato administrativo.
-- **Pegadinha usada:** Confundir anulação por ilegalidade com revogação por mérito.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.9
-
-- **Alternativa correta:** B.
-- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **B) está correta:** Transparência pública convive com exceções justificadas.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **Conceito cobrado:** LAI e publicidade.
-- **Pegadinha usada:** Tratar publicidade como exposição irrestrita de todo dado.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.10
-
-- **Alternativa correta:** A.
-- **A) está correta:** A LGPD exige controle sobre por que e como dados pessoais são tratados.
-- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **Conceito cobrado:** LGPD.
-- **Pegadinha usada:** Achar que órgão público pode tratar qualquer dado sem finalidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.11
-
-- **Alternativa correta:** D.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **D) está correta:** A apostila reforça que erro administrativo não vira improbidade automaticamente.
-- **Conceito cobrado:** Improbidade administrativa.
-- **Pegadinha usada:** Equiparar ilegalidade simples a improbidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.12
-
-- **Alternativa correta:** C.
-- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está correta:** Obter vantagem patrimonial indevida é o exemplo clássico de enriquecimento ilícito.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **Conceito cobrado:** Atos de improbidade.
-- **Pegadinha usada:** Confundir vantagem pessoal com mera falha formal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.13
-
-- **Alternativa correta:** B.
-- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **B) está correta:** Edital vincula Administração e licitantes.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **Conceito cobrado:** Vinculação ao edital.
-- **Pegadinha usada:** Achar que o edital é só orientação sem força vinculante.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.14
-
-- **Alternativa correta:** A.
-- **A) está correta:** Essa diferença é uma das mais cobradas em noções de licitação.
-- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **Conceito cobrado:** Contratação direta.
-- **Pegadinha usada:** Inverter dispensa e inexigibilidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.15
-
-- **Alternativa correta:** D.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **D) está correta:** Pregão é a modalidade típica para bens e serviços comuns.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Trocar pregão por leilão ou concurso.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.16
-
-- **Alternativa correta:** C.
-- **A) está errada:** Com sentido de existir, 'haver' é impessoal e fica no singular.
-- **B) está errada:** Com 'existir', o verbo concorda: existiam muitos processos.
-- **C) está correta:** Verbo haver com sentido de existir permanece no singular.
-- **D) está errada:** O particípio deve concordar: foram analisadas as planilhas.
-- **Conceito cobrado:** Concordância verbal.
-- **Pegadinha usada:** Flexionar indevidamente verbo impessoal.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 2.17
-
-- **Alternativa correta:** B.
-- **A) está errada:** O verbo possui complemento indireto e oração completiva.
-- **B) está correta:** Pronome possessivo pode gerar ambiguidade referencial.
-- **C) está errada:** Fora é mais-que-perfeito, não futuro.
-- **D) está errada:** A ambiguidade permanece no pronome possessivo.
-- **Conceito cobrado:** Ambiguidade.
-- **Pegadinha usada:** Ignorar dupla referência possível.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 2.18
-
-- **Alternativa correta:** A.
-- **A) está correta:** 'Onde' retoma lugar físico.
-- **B) está errada:** 'Onde' deve indicar lugar físico; 'situação em que' seria melhor.
-- **C) está errada:** Para norma, use 'em que' ou 'na qual'.
-- **D) está errada:** Não se trata propriamente de lugar físico.
-- **Conceito cobrado:** Emprego de onde.
-- **Pegadinha usada:** Usar 'onde' para qualquer referência abstrata.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 2.19
-
-- **Alternativa correta:** D.
-- **A) está errada:** A vírgula separa indevidamente sujeito e verbo.
-- **B) está errada:** A vírgula fragmenta a locução introdutória.
-- **C) está errada:** As vírgulas quebram relações sintáticas essenciais.
-- **D) está correta:** Adjunto adverbial antecipado pode ser separado por vírgula.
-- **Conceito cobrado:** Pontuação.
-- **Pegadinha usada:** Separar sujeito e verbo por vírgula.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 2.20
-
-- **Alternativa correta:** C.
-- **A) está errada:** O texto diz o contrário: não elimina a necessidade.
-- **B) está errada:** Não há ideia de proibição.
-- **C) está correta:** A inferência deve respeitar a negação presente no texto.
-- **D) está errada:** O trecho não afirma anulação.
-- **Conceito cobrado:** Interpretação literal e inferência.
-- **Pegadinha usada:** Ignorar o alcance do 'não'.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
----
-
-## Dia 3 — Revisão fixa: Legislação CRA/CFA e Português
-
-### Questões extras
-
-#### Extra Dia 3.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em caso de infração ética, a aplicação de sanção pelo sistema profissional deve observar qual diretriz geral?
-
-A) Apuração regular, competência do órgão e respeito ao contraditório e à defesa.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-
-#### Extra Dia 3.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre pessoas jurídicas no Código de Ética estudado, assinale a alternativa correta.
-
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A RN CFA nº 671/2025 também disciplina pessoas jurídicas, observadas suas especificidades.
-D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-
-#### Extra Dia 3.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma questão afirma que a suspensão e o cancelamento previstos para profissionais se aplicam indistintamente à pessoa jurídica. Conforme a apostila, assinale a alternativa correta.
-
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) A afirmação é problemática, pois o material destaca que suspensão e cancelamento não se aplicam à pessoa jurídica na RN CFA nº 671/2025.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-
-#### Extra Dia 3.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre jurisdição do CRA-PR, assinale a alternativa correta.
-
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) A atuação regional do CRA-PR vincula-se ao Estado do Paraná, sem eliminar a coordenação normativa do Sistema CFA/CRAs.
-
-#### Extra Dia 3.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em uma prova, a alternativa diz que o Regimento Interno é irrelevante porque não trata de SQL, redes ou sistemas. Assinale a alternativa correta.
-
-A) A alternativa é incorreta; o Regimento é conteúdo expresso e organiza competências e funcionamento do CRA-PR.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-
-#### Extra Dia 3.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um fiscal do CRA atua em caso de exercício profissional sem registro. Assinale a alternativa que melhor representa a lógica da fiscalização.
-
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização busca verificar regularidade do exercício profissional no campo da Administração.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-
-#### Extra Dia 3.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre publicidade profissional no campo ético, assinale a alternativa correta.
-
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) A divulgação profissional deve evitar informação enganosa, uso indevido de título ou promessa incompatível com a ética.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-
-#### Extra Dia 3.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma sociedade empresária contrata profissional sem registro para executar atividade típica fiscalizada pelo CRA. Assinale a alternativa correta.
-
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O caso pode envolver irregularidade de exercício profissional e exigir análise pelo CRA competente.
-
-#### Extra Dia 3.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre dever de atualização cadastral e regularidade perante conselho profissional, assinale a alternativa correta.
-
-A) Regularidade cadastral e registral facilita fiscalização e comprovação da habilitação perante terceiros.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-
-#### Extra Dia 3.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-A respeito da leitura de normas do edital, assinale a alternativa correta.
-
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) A norma expressamente indicada no edital deve prevalecer no plano de estudo até que retificação oficial demonstre mudança.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-
-#### Extra Dia 3.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma alternativa afirma que a RN CFA nº 680/2025 foi estudada na Semana 1 apenas para decorar artigo e prazo. Assinale a correta.
-
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Na Semana 1, a leitura dirigida busca localizar tema e relevância da norma, sem inventar artigo, prazo ou sanção não confirmado.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-
-#### Extra Dia 3.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o vínculo entre ética e fiscalização, assinale a alternativa correta.
-
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) A fiscalização verifica regularidade profissional; a ética orienta condutas esperadas no exercício da profissão.
-
-#### Extra Dia 3.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em situação de conflito de interesses, o profissional deve agir conforme qual orientação geral?
-
-A) Preservar a confiança profissional, evitar benefício indevido e respeitar deveres éticos e legais.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-
-#### Extra Dia 3.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre recurso ou defesa em processo disciplinar, assinale a alternativa correta em termos gerais.
-
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A atuação sancionadora deve respeitar devido processo, competência e possibilidade de defesa.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
-
-#### Extra Dia 3.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma questão mistura 'CFA', 'CRA-PR' e 'Conselho Regional de outro Estado'. Qual é a estratégia mais segura?
-
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) Separar competência nacional, competência regional e jurisdição territorial antes de julgar as alternativas.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-
-#### Extra Dia 3.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa em que o uso de 'porque' está correto.
-
-A) Não sei porque o prazo foi reaberto.
-B) O prazo foi reaberto por quê houve instabilidade.
-C) Esse é o porque da reabertura do prazo.
-D) O prazo foi reaberto porque houve instabilidade no sistema.
-
-#### Extra Dia 3.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a frase com regência adequada.
-
-A) O candidato recorreu da decisão administrativa.
-B) O candidato recorreu a decisão administrativa.
-C) O candidato preferiu recorrer do que aceitar.
-D) O candidato assistiu o julgamento no sentido de presenciar.
-
-#### Extra Dia 3.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia: "Os sistemas foram atualizados; contudo, os relatórios permaneceram inconsistentes." O conector "contudo" expressa:
-
-A) adição simples.
-B) finalidade.
-C) oposição ou contraste.
-D) conclusão inevitável.
-
-#### Extra Dia 3.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa que apresenta tese adequada para uma discursiva sobre tecnologia no serviço público.
-
-A) Tecnologia existe desde a Antiguidade e há muitos sistemas no mundo.
-B) A transformação digital melhora serviços públicos quando combina eficiência, segurança da informação e inclusão do usuário.
-C) Vou falar sobre tecnologia porque o tema é importante.
-D) O serviço público deve usar computadores sempre, sem exceção.
-
-#### Extra Dia 3.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a frase em que a concordância nominal está adequada.
-
-A) Segue anexo as planilhas revisadas.
-B) Seguem anexo as planilhas revisadas.
-C) Segue anexas as planilhas revisadas.
-D) Seguem anexas as planilhas revisadas.
-
-## Gabarito das Questões Extras do Dia 3
-
-Extra Dia 3.1: A
-Extra Dia 3.2: C
-Extra Dia 3.3: B
-Extra Dia 3.4: D
-Extra Dia 3.5: A
-Extra Dia 3.6: C
-Extra Dia 3.7: B
-Extra Dia 3.8: D
-Extra Dia 3.9: A
-Extra Dia 3.10: C
-Extra Dia 3.11: B
-Extra Dia 3.12: D
-Extra Dia 3.13: A
-Extra Dia 3.14: C
-Extra Dia 3.15: B
-Extra Dia 3.16: D
-Extra Dia 3.17: A
-Extra Dia 3.18: C
-Extra Dia 3.19: B
-Extra Dia 3.20: D
-
-## Comentários das Questões Extras do Dia 3
-
-#### Comentário Extra Dia 3.1
-
-- **Alternativa correta:** A.
-- **A) está correta:** Mesmo quando a questão não exige artigo, sanção administrativa pressupõe processo regular.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **Conceito cobrado:** Sanções ético-disciplinares.
-- **Pegadinha usada:** Tratar penalidade como ato automático sem procedimento.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.2
-
-- **Alternativa correta:** C.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está correta:** O material de estudo expressamente inclui profissionais e pessoas jurídicas no campo ético da RN 671/2025.
-- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **Conceito cobrado:** Código de Ética e pessoa jurídica.
-- **Pegadinha usada:** Achar que o Código de Ética só alcança pessoa física.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.3
-
-- **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** A apostila chama atenção para esse detalhe como ponto típico de prova.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Sanções e pessoa jurídica.
-- **Pegadinha usada:** Aplicar automaticamente toda sanção de pessoa física à pessoa jurídica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.4
-
-- **Alternativa correta:** D.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está correta:** O CRA-PR é regional, mas não isolado do sistema nacional.
-- **Conceito cobrado:** Jurisdição regional.
-- **Pegadinha usada:** Transformar autonomia regional em independência normativa absoluta.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.5
-
-- **Alternativa correta:** A.
-- **A) está correta:** Para a prova, conteúdo expresso do edital deve ser tratado como prioritário, ainda que não seja técnico de TI.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **Conceito cobrado:** Importância do Regimento.
-- **Pegadinha usada:** Subestimar legislação específica por ser menos técnica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.6
-
-- **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** A função do conselho regional é proteger a regularidade do exercício profissional, não apenas arrecadar.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Exercício sem registro.
-- **Pegadinha usada:** Reduzir fiscalização a cobrança de anuidade.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.7
-
-- **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** Ética profissional também alcança a forma como o serviço é apresentado ao público.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Publicidade profissional.
-- **Pegadinha usada:** Achar que publicidade é sempre livre de controle ético.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.8
-
-- **Alternativa correta:** D.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está correta:** A competência fiscalizatória alcança situações práticas de exercício de atividade regulada.
-- **Conceito cobrado:** Registro e exercício profissional.
-- **Pegadinha usada:** Achar que contrato privado afasta fiscalização profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.9
-
-- **Alternativa correta:** A.
-- **A) está correta:** O registro profissional não é mera formalidade sem efeito; ele conecta profissional, conselho e fiscalização.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Regularidade registral.
-- **Pegadinha usada:** Tratar cadastro como informação sem relevância jurídica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.10
-
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** O material foi construído para seguir a versão oficial vigente do edital, não a norma mais recente sem vínculo comprovado.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Edital como guia de estudo.
-- **Pegadinha usada:** Trocar conteúdo do edital por atualização não confirmada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.11
-
-- **Alternativa correta:** B.
-- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **B) está correta:** A abordagem aprovada evita cobrança literal não confirmada em fonte oficial no material.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **Conceito cobrado:** Leitura dirigida de normas adicionais.
-- **Pegadinha usada:** Criar detalhe literal sem comprovação.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.12
-
-- **Alternativa correta:** D.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está correta:** Os dois blocos são complementares: um controla regularidade e outro disciplina conduta.
-- **Conceito cobrado:** Fiscalização e ética.
-- **Pegadinha usada:** Achar que fiscalização e ética são temas sem conexão.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.13
-
-- **Alternativa correta:** A.
-- **A) está correta:** Conduta ética envolve lealdade, probidade e responsabilidade no exercício profissional.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Conflito de interesses.
-- **Pegadinha usada:** Tratar conflito de interesses como assunto privado sem impacto profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.14
-
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** Mesmo sem decorar prazos, o candidato deve reconhecer garantias básicas do processo administrativo sancionador.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Processo ético-disciplinar.
-- **Pegadinha usada:** Confundir sanção administrativa com punição informal.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.15
-
-- **Alternativa correta:** B.
-- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **B) está correta:** A resposta depende de identificar quem pratica o ato e em que âmbito territorial.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **Conceito cobrado:** Competência e jurisdição.
-- **Pegadinha usada:** Responder pela sigla sem observar o âmbito de atuação.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 3.16
-
-- **Alternativa correta:** D.
-- **A) está errada:** Em pergunta indireta, usa-se 'por que'.
-- **B) está errada:** No meio da frase explicativa, usa-se 'porque'.
-- **C) está errada:** Substantivado, usa-se 'porquê'.
-- **D) está correta:** 'Porque' introduz explicação ou causa.
-- **Conceito cobrado:** Uso dos porquês.
-- **Pegadinha usada:** Trocar pergunta indireta, explicação e substantivo.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 3.17
-
-- **Alternativa correta:** A.
-- **A) está correta:** Recorrer, no sentido de interpor recurso contra algo, rege 'de'.
-- **B) está errada:** Nesse sentido, 'recorrer' pede preposição 'de'.
-- **C) está errada:** Com 'preferir', a construção adequada não é 'do que' nesse padrão.
-- **D) está errada:** No sentido de presenciar, a norma culta tradicional pede 'assistiu ao'.
-- **Conceito cobrado:** Regência verbal.
-- **Pegadinha usada:** Usar preposição inadequada por influência da fala.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 3.18
-
-- **Alternativa correta:** C.
-- **A) está errada:** Adição seria marcada por 'e', 'além disso'.
-- **B) está errada:** Finalidade seria marcada por 'para que'.
-- **C) está correta:** 'Contudo' é conector adversativo.
-- **D) está errada:** Conclusão seria marcada por 'logo', 'portanto'.
-- **Conceito cobrado:** Coesão sequencial.
-- **Pegadinha usada:** Confundir contraste com consequência.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 3.19
-
-- **Alternativa correta:** B.
-- **A) está errada:** É abertura genérica, sem tese clara.
-- **B) está correta:** Boa tese apresenta posição clara e defensável.
-- **C) está errada:** Metalinguagem e ausência de posição argumentativa.
-- **D) está errada:** Tese absoluta e pouco defensável.
-- **Conceito cobrado:** Discursiva: tese.
-- **Pegadinha usada:** Começar com frase genérica sem ponto de vista.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 3.20
-
-- **Alternativa correta:** D.
-- **A) está errada:** O adjetivo deve concordar com 'planilhas'.
-- **B) está errada:** 'Anexo' deve ir ao feminino plural.
-- **C) está errada:** O verbo também deve concordar com o sujeito plural.
-- **D) está correta:** 'Anexas' concorda com 'planilhas' e 'seguem' concorda com sujeito plural.
-- **Conceito cobrado:** Concordância nominal e verbal.
-- **Pegadinha usada:** Tratar 'anexo' como invariável em qualquer caso.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
----
-
-## Dia 4 — Revisão fixa: Administração Pública, Português e RLM
-
-### Questões extras
-
-#### Extra Dia 4.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre concorrência, concurso e leilão, assinale a alternativa correta.
-
-A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Concurso seleciona trabalho técnico, científico ou artístico; leilão se associa à alienação de bens.
-
-#### Extra Dia 4.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre responsabilidade civil do Estado por ato comissivo, assinale a alternativa correta.
-
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Em regra, exige conduta estatal, dano e nexo causal, admitidas excludentes que rompam o nexo.
-C) Publicidade impede qualquer sigilo em documentos públicos.
-D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-
-#### Extra Dia 4.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Em caso de omissão estatal, qual cuidado a prova costuma exigir?
-
-A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) Verificar dever jurídico de agir, falha do serviço, dano e nexo causal no caso concreto.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
-
-#### Extra Dia 4.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Se a vítima concorre para o dano, qual efeito isso pode ter na responsabilidade civil do Estado?
-
-A) Pode atuar como atenuante ou reduzir a indenização, conforme o caso.
-B) Pregão é modalidade voltada à alienação de bens públicos.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-
-#### Extra Dia 4.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Uma enchente inevitável e imprevisível causa dano sem relação com falha administrativa. Em responsabilidade civil, o ponto central é:
-
-A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) Possível excludente por caso fortuito ou força maior, se rompido o nexo causal.
-
-#### Extra Dia 4.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre poder de polícia administrativa, assinale a alternativa correta.
-
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Consiste em limitar ou condicionar direitos em benefício do interesse público, nos termos da lei.
-C) Responsabilidade civil do Estado dispensa dano e nexo causal.
-D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-
-#### Extra Dia 4.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Quanto ao princípio da moralidade, assinale a alternativa correta.
-
-A) Autarquia integra a Administração Direta porque executa serviço público.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) Exige atuação ética, proba e compatível com padrões de honestidade administrativa.
-D) Pregão é modalidade voltada à alienação de bens públicos.
-
-#### Extra Dia 4.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre motivação do ato administrativo, assinale a alternativa correta.
-
-A) Motivação explicita razões de fato e de direito que justificam o ato quando exigida.
-B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-
-#### Extra Dia 4.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Em contratação pública, selecionar proposta por favorecimento viola especialmente:
-
-A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Publicidade impede qualquer sigilo em documentos públicos.
-D) Impessoalidade, moralidade e isonomia.
-
-#### Extra Dia 4.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre fases do procedimento licitatório, assinale a alternativa correta.
-
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) A Administração deve planejar, divulgar, receber propostas, julgar, habilitar quando cabível e encerrar conforme a lei.
-C) Pregão é modalidade voltada à alienação de bens públicos.
-D) Autarquia integra a Administração Direta porque executa serviço público.
-
-#### Extra Dia 4.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia: "A equipe revisou os acessos que estavam vencidos." A oração "que estavam vencidos" restringe:
-
-A) a equipe responsável pela revisão.
-B) todos os servidores do órgão.
-C) os acessos revisados.
-D) o ato de revisar, e não o objeto revisado.
-
-#### Extra Dia 4.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa em que não há crase.
-
-A) O usuário começou a preencher o formulário.
-B) O memorando foi enviado à chefia.
-C) A reunião ocorrerá às 14 horas.
-D) A servidora referiu-se à norma vigente.
-
-#### Extra Dia 4.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a reescrita que mantém o sentido de: 'Ainda que o sistema falhe, o protocolo deve ser registrado.'
-
-A) Como o sistema falha, o protocolo deve ser registrado.
-B) Se o sistema falhar, o protocolo será sempre cancelado.
-C) O protocolo deve ser registrado para que o sistema falhe.
-D) Mesmo que o sistema falhe, o protocolo deve ser registrado.
-
-#### Extra Dia 4.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Assinale a alternativa com linguagem mais adequada a documento administrativo.
-
-A) Manda logo esse processo para quem resolve.
-B) Solicita-se o encaminhamento dos autos ao setor competente.
-C) Eu acho que seria legal vocês mandarem isso.
-D) Tipo assim, passa o arquivo para o pessoal ver.
-
-#### Extra Dia 4.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Língua Portuguesa/interpretação.
-
-Leia: "A medida foi adotada para reduzir atrasos no atendimento." A expressão "para reduzir" indica:
-
-A) causa já ocorrida.
-B) concessão.
-C) finalidade.
-D) oposição.
-
-#### Extra Dia 4.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Raciocínio Lógico-Matemático.
-
-Em um setor, 80 processos foram analisados em 5 dias por 4 servidores, com produtividade constante. Quantos processos 6 servidores analisariam em 5 dias?
-
-A) 120 processos.
-B) 96 processos.
-C) 100 processos.
-D) 160 processos.
-
-#### Extra Dia 4.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Raciocínio Lógico-Matemático.
-
-Em uma turma, 32 estudam Legislação, 24 estudam Português e 10 estudam ambas. Quantos estudam pelo menos uma dessas matérias?
-
-A) 56.
-B) 42.
-C) 66.
-D) 46.
-
-#### Extra Dia 4.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Raciocínio Lógico-Matemático.
-
-A negação da proposição 'Todo fiscal conferiu o relatório' é:
-
-A) Nenhum fiscal conferiu o relatório.
-B) Algum fiscal não conferiu o relatório.
-C) Todo fiscal não conferiu o relatório.
-D) Algum fiscal conferiu o relatório.
-
-#### Extra Dia 4.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Raciocínio Lógico-Matemático.
-
-Uma sequência tem primeiro termo 7 e razão 3. Qual é o 8º termo dessa PA?
-
-A) 24.
-B) 31.
-C) 28.
-D) 56.
-
-#### Extra Dia 4.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Raciocínio Lógico-Matemático.
-
-Uma senha é escolhida ao acaso entre 10 opções igualmente prováveis, das quais 3 estão bloqueadas. Qual é a probabilidade de escolher uma senha não bloqueada?
-
-A) 7/10.
-B) 3/10.
-C) 1/7.
-D) 7/3.
-
-## Gabarito das Questões Extras do Dia 4
-
-Extra Dia 4.1: D
-Extra Dia 4.2: B
-Extra Dia 4.3: C
-Extra Dia 4.4: A
-Extra Dia 4.5: D
-Extra Dia 4.6: B
-Extra Dia 4.7: C
-Extra Dia 4.8: A
-Extra Dia 4.9: D
-Extra Dia 4.10: B
-Extra Dia 4.11: C
-Extra Dia 4.12: A
-Extra Dia 4.13: D
-Extra Dia 4.14: B
-Extra Dia 4.15: C
-Extra Dia 4.16: A
-Extra Dia 4.17: D
-Extra Dia 4.18: B
-Extra Dia 4.19: C
-Extra Dia 4.20: A
-
-## Comentários das Questões Extras do Dia 4
-
-#### Comentário Extra Dia 4.1
-
-- **Alternativa correta:** D.
-- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está correta:** A modalidade deve ser escolhida conforme objeto.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Escolher modalidade pelo nome mais conhecido, não pelo objeto.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.2
-
-- **Alternativa correta:** B.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está correta:** Responsabilidade objetiva não elimina a necessidade de dano e nexo.
-- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **Conceito cobrado:** Responsabilidade civil do Estado.
-- **Pegadinha usada:** Achar que basta haver ato público para indenização automática.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.3
-
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está correta:** Omissão exige análise mais cuidadosa da falha e do dever de atuação.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **Conceito cobrado:** Responsabilidade por omissão.
-- **Pegadinha usada:** Aplicar automaticamente a mesma lógica de todo ato comissivo.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.4
-
-- **Alternativa correta:** A.
-- **A) está correta:** Culpa concorrente não apaga necessariamente o dano, mas pode repercutir no valor.
-- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **Conceito cobrado:** Atenuantes da responsabilidade.
-- **Pegadinha usada:** Tratar culpa concorrente sempre como exclusão total.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.5
-
-- **Alternativa correta:** D.
-- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está correta:** Excludentes afastam responsabilidade quando rompem o nexo.
-- **Conceito cobrado:** Excludentes de responsabilidade.
-- **Pegadinha usada:** Ignorar nexo causal e responsabilizar sempre.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.6
-
-- **Alternativa correta:** B.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está correta:** Fiscalização profissional é exemplo de atuação administrativa limitadora em nome do interesse público.
-- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **Conceito cobrado:** Poder de polícia.
-- **Pegadinha usada:** Confundir poder de polícia administrativa com polícia judiciária penal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.7
-
-- **Alternativa correta:** C.
-- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está correta:** Moralidade administrativa vai além da legalidade formal.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **Conceito cobrado:** Moralidade.
-- **Pegadinha usada:** Reduzir moralidade a opinião pessoal do gestor.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.8
-
-- **Alternativa correta:** A.
-- **A) está correta:** Motivar é apresentar fundamentos, não apenas repetir conclusão.
-- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **Conceito cobrado:** Motivação.
-- **Pegadinha usada:** Confundir motivo com motivação.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.9
-
-- **Alternativa correta:** D.
-- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **D) está correta:** Favorecimento quebra tratamento objetivo entre concorrentes.
-- **Conceito cobrado:** Princípios licitatórios.
-- **Pegadinha usada:** Achar que contratação pública admite preferência pessoal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.10
-
-- **Alternativa correta:** B.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está correta:** A licitação não se resume à escolha informal do fornecedor.
-- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **Conceito cobrado:** Procedimento licitatório.
-- **Pegadinha usada:** Ignorar planejamento e publicidade da contratação.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 4.11
-
-- **Alternativa correta:** C.
-- **A) está errada:** O pronome relativo retoma 'acessos'.
-- **B) está errada:** Servidores não são mencionados.
-- **C) está correta:** O pronome relativo retoma termo antecedente.
-- **D) está errada:** A oração caracteriza o substantivo 'acessos'.
-- **Conceito cobrado:** Coesão por pronome relativo.
-- **Pegadinha usada:** Escolher referente pela proximidade sem análise sintática.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 4.12
-
-- **Alternativa correta:** A.
-- **A) está correta:** Não há crase antes de verbo.
-- **B) está errada:** Há crase: enviado a + a chefia.
-- **C) está errada:** Há crase em indicação de horas.
-- **D) está errada:** Há crase: referir-se a + a norma.
-- **Conceito cobrado:** Crase.
-- **Pegadinha usada:** Marcar crase apenas pela presença da letra 'a'.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 4.13
-
-- **Alternativa correta:** D.
-- **A) está errada:** Transforma concessão em causa.
-- **B) está errada:** Altera o comando principal.
-- **C) está errada:** Cria finalidade absurda e muda o sentido.
-- **D) está correta:** 'Ainda que' e 'mesmo que' exprimem concessão.
-- **Conceito cobrado:** Reescrita e conectores.
-- **Pegadinha usada:** Trocar concessão por causa ou finalidade.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 4.14
-
-- **Alternativa correta:** B.
-- **A) está errada:** Informal e imprecisa.
-- **B) está correta:** Texto administrativo exige clareza, impessoalidade e formalidade.
-- **C) está errada:** Subjetiva e coloquial.
-- **D) está errada:** Coloquial e incompatível com formalidade.
-- **Conceito cobrado:** Linguagem administrativa.
-- **Pegadinha usada:** Confundir clareza com informalidade.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 4.15
-
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade aponta objetivo, não causa passada.
-- **B) está errada:** Concessão seria marcada por 'embora'.
-- **C) está correta:** A estrutura 'para + infinitivo' indica finalidade.
-- **D) está errada:** Oposição seria marcada por 'mas', 'porém', 'contudo'.
-- **Conceito cobrado:** Valor semântico de oração reduzida.
-- **Pegadinha usada:** Confundir finalidade com causa.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 4.16
-
-- **Alternativa correta:** A.
-- **A) está correta:** Com o mesmo tempo e produtividade, 80 × (6/4) = 120.
-- **B) está errada:** Esse resultado não aplica corretamente a proporcionalidade entre servidores e produção.
-- **C) está errada:** O aumento de servidores de 4 para 6 representa fator 1,5, não acréscimo fixo de 20.
-- **D) está errada:** Esse valor dobraria a produção sem dobrar a quantidade de servidores.
-- **Conceito cobrado:** Regra de três composta simples.
-- **Pegadinha usada:** Somar servidores em vez de multiplicar pelo fator proporcional.
-- **Como pensar para acertar:** Mantenha constantes tempo e produtividade; ajuste apenas a quantidade de servidores.
-
-#### Comentário Extra Dia 4.17
-
-- **Alternativa correta:** D.
-- **A) está errada:** Soma os grupos e conta duas vezes quem está nas duas matérias.
-- **B) está errada:** Subtrai a interseção em excesso.
-- **C) está errada:** Soma todos os números, inclusive a interseção, como se fossem grupos separados.
-- **D) está correta:** União = 32 + 24 - 10 = 46.
-- **Conceito cobrado:** Conjuntos.
-- **Pegadinha usada:** Contar a interseção duas vezes.
-- **Como pensar para acertar:** Use a fórmula da união: A + B - interseção.
-
-#### Comentário Extra Dia 4.18
-
-- **Alternativa correta:** B.
-- **A) está errada:** Essa é afirmação mais forte que a negação lógica.
-- **B) está correta:** A negação de 'todo A é B' é 'algum A não é B'.
-- **C) está errada:** Equivale a nenhum conferiu, não à negação mínima.
-- **D) está errada:** Isso pode ser verdadeiro junto com a proposição original.
-- **Conceito cobrado:** Negação de quantificadores.
-- **Pegadinha usada:** Negar 'todo' como 'nenhum'.
-- **Como pensar para acertar:** Procure a negação mínima que torna a proposição original falsa.
-
-#### Comentário Extra Dia 4.19
-
-- **Alternativa correta:** C.
-- **A) está errada:** Desconsidera que do 1º ao 8º termo há 7 intervalos.
-- **B) está errada:** Usa 8 intervalos em vez de 7.
-- **C) está correta:** a8 = 7 + (8 - 1) × 3 = 28.
-- **D) está errada:** Confunde PA com multiplicação por posição.
-- **Conceito cobrado:** Progressão aritmética.
-- **Pegadinha usada:** Usar n intervalos em vez de n - 1.
-- **Como pensar para acertar:** Aplique an = a1 + (n - 1)r.
-
-#### Comentário Extra Dia 4.20
-
-- **Alternativa correta:** A.
-- **A) está correta:** Há 7 opções não bloqueadas em 10 possíveis.
-- **B) está errada:** Essa é a probabilidade de escolher senha bloqueada.
-- **C) está errada:** Inverte indevidamente casos favoráveis e total.
-- **D) está errada:** Probabilidade não pode ser maior que 1 nesse caso.
-- **Conceito cobrado:** Probabilidade simples.
-- **Pegadinha usada:** Escolher o evento complementar errado.
-- **Como pensar para acertar:** Conte casos favoráveis e divida pelo total de casos possíveis.
-
----
-
-## Dia 5 — Revisão fixa: Legislação CRA/CFA e Administração Pública
-
-### Questões extras
-
-#### Extra Dia 5.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a hierarquia prática do estudo da legislação específica, assinale a alternativa correta.
-
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) Lei, decreto, regimento e código de ética formam o núcleo; normas complementares entram como leitura dirigida.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-
-#### Extra Dia 5.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Se uma pessoa usa título profissional sem habilitação regular, a situação deve ser analisada principalmente sob qual enfoque?
-
-A) Regularidade do exercício profissional e possível uso indevido de título ou registro.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-
-#### Extra Dia 5.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o campo de atuação fiscalizatória do CRA, assinale a alternativa correta.
-
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CRA fiscaliza atividades relacionadas ao campo profissional da Administração, observada sua competência territorial.
-
-#### Extra Dia 5.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em relação ao estudo da RN CFA nº 671/2025, assinale a alternativa correta.
-
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) O foco inicial deve estar em deveres, vedações, condutas éticas e lógica das sanções, sem decorar detalhe isolado fora do edital.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-
-#### Extra Dia 5.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-A respeito da finalidade dos conselhos profissionais, assinale a alternativa correta.
-
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) A função fiscalizatória protege a sociedade e a regularidade do exercício profissional.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-
-#### Extra Dia 5.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre responsabilidade técnica em atividades de Administração, assinale a alternativa correta em termos gerais.
-
-A) A indicação de responsável deve corresponder a atuação efetiva e regular, não a assinatura formal sem participação.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-
-#### Extra Dia 5.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Se uma questão perguntar por que a RN 640/2024 não foi mantida como base principal, qual resposta é mais adequada ao material?
-
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Porque a apostila adota a RN 671/2025 conforme edital retificado e observação de revogação em fonte oficial citada.
-
-#### Extra Dia 5.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a técnica de resolução de questões de legislação do CRA, assinale a alternativa correta.
-
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) Casos práticos devem ser resolvidos identificando conduta, sujeito, competência e norma-base.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-
-#### Extra Dia 5.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um enunciado afirma que todo descumprimento administrativo gera automaticamente cassação do registro. Assinale a alternativa correta.
-
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A afirmação é inadequada porque sanção depende de previsão normativa, processo e proporcionalidade.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
-
-#### Extra Dia 5.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o Regimento Interno, assinale a alternativa correta quanto à prova.
-
-A) Ele pode ser cobrado em questões de competência, estrutura interna, órgãos e funcionamento do CRA-PR.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-
-#### Extra Dia 5.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Um terceiro anuncia serviço como se fosse registrado no CRA-PR, mas não possui registro. Assinale a alternativa correta.
-
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A situação pode envolver uso indevido de condição profissional e demanda verificação fiscalizatória.
-
-#### Extra Dia 5.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o Decreto nº 61.934/1967, assinale a alternativa correta.
-
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) Ele deve ser estudado como regulamento que ajuda a operacionalizar a Lei nº 4.769/1965.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-
-#### Extra Dia 5.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Se uma alternativa disser que a inadimplência elimina automaticamente a formação acadêmica do profissional, assinale a correta.
-
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) A inadimplência pode gerar consequências perante o conselho, mas não apaga a formação acadêmica do profissional.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-
-#### Extra Dia 5.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre leitura oficial de normas, assinale a alternativa correta.
-
-A) Para detalhes como prazo, sanção específica e rito, o material deve se apoiar no texto oficial consultado.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-
-#### Extra Dia 5.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-No estudo do CRA-PR, uma questão pergunta pela sede, órgãos e funcionamento institucional. Qual bloco teórico é mais diretamente associado?
-
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Regimento Interno do CRA-PR.
-
-#### Extra Dia 5.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre critérios de julgamento em licitação, assinale a alternativa correta.
-
-A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-B) O critério deve ser definido no instrumento convocatório e observado no julgamento.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-
-#### Extra Dia 5.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Agente público descumpre dever legal, mas sem dolo ou requisito subjetivo exigido para improbidade. Assinale a alternativa mais adequada.
-
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Publicidade impede qualquer sigilo em documentos públicos.
-C) Pode haver outra consequência jurídica, mas improbidade exige os requisitos próprios da lei.
-D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-
-#### Extra Dia 5.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre responsabilidade civil objetiva, assinale a alternativa correta.
-
-A) Ela facilita a responsabilização quanto à culpa, mas não dispensa prova de dano e nexo causal.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Autarquia integra a Administração Direta porque executa serviço público.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
-
-#### Extra Dia 5.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Em Administração Pública, órgão público é melhor descrito como:
-
-A) Pregão é modalidade voltada à alienação de bens públicos.
-B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-D) Centro de competência sem personalidade jurídica própria, integrante de uma pessoa jurídica.
-
-#### Extra Dia 5.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Administração Pública.
-
-Sobre agentes públicos, assinale a alternativa correta.
-
-A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-B) A expressão abrange pessoas que exercem função pública, ainda que em vínculos jurídicos variados.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-
-## Gabarito das Questões Extras do Dia 5
-
-Extra Dia 5.1: C
-Extra Dia 5.2: A
-Extra Dia 5.3: D
-Extra Dia 5.4: B
-Extra Dia 5.5: C
-Extra Dia 5.6: A
-Extra Dia 5.7: D
-Extra Dia 5.8: B
-Extra Dia 5.9: C
-Extra Dia 5.10: A
-Extra Dia 5.11: D
-Extra Dia 5.12: B
-Extra Dia 5.13: C
-Extra Dia 5.14: A
-Extra Dia 5.15: D
-Extra Dia 5.16: B
-Extra Dia 5.17: C
-Extra Dia 5.18: A
-Extra Dia 5.19: D
-Extra Dia 5.20: B
-
-## Comentários das Questões Extras do Dia 5
-
-#### Comentário Extra Dia 5.1
-
-- **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** Essa ordem segue o material aprovado para fortalecer base antes de detalhes normativos.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Priorização normativa.
-- **Pegadinha usada:** Estudar apenas a norma mais longa e ignorar o núcleo do edital.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.2
-
-- **Alternativa correta:** A.
-- **A) está correta:** A proteção do título e da habilitação profissional é função típica da fiscalização.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Uso de título profissional.
-- **Pegadinha usada:** Tratar título profissional como expressão sem controle institucional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.3
-
-- **Alternativa correta:** D.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está correta:** A fiscalização é ligada ao campo profissional e à jurisdição do conselho regional.
-- **Conceito cobrado:** Campo de fiscalização.
-- **Pegadinha usada:** Achar que qualquer atividade empresarial é automaticamente fiscalizada pelo CRA.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.4
-
-- **Alternativa correta:** B.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está correta:** A Semana 1 prioriza compreensão de conduta e aplicação prática em casos.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Estudo do Código de Ética.
-- **Pegadinha usada:** Decorar artigo sem entender a situação prática cobrada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.5
-
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** Conselhos profissionais não existem apenas para interesses corporativos ou arrecadação.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Finalidade fiscalizatória.
-- **Pegadinha usada:** Reduzir conselho profissional a entidade associativa privada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.6
-
-- **Alternativa correta:** A.
-- **A) está correta:** O material reforça que nome e registro profissional não podem ser usados como fachada.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **Conceito cobrado:** Responsabilidade profissional.
-- **Pegadinha usada:** Confundir responsabilidade técnica com mera autorização comercial.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.7
-
-- **Alternativa correta:** D.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está correta:** A troca foi tratada no material como vinculada à retificação e à fonte oficial, não a preferência pessoal.
-- **Conceito cobrado:** RN 671/2025 x RN 640/2024.
-- **Pegadinha usada:** Usar norma revogada sem conferir edital retificado.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.8
-
-- **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** A banca tende a misturar sujeito e competência; por isso, a decomposição do caso reduz erro.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Método de resolução.
-- **Pegadinha usada:** Resolver legislação apenas por palavra-chave solta.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.9
-
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** Nem toda irregularidade recebe a sanção máxima; é preciso observar a norma e o caso.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Proporcionalidade em sanções.
-- **Pegadinha usada:** Escolher a punição mais grave por parecer mais rígida.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.10
-
-- **Alternativa correta:** A.
-- **A) está correta:** O Regimento é conteúdo objetivo de legislação específica e permite questões institucionais.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **Conceito cobrado:** Cobrança do Regimento.
-- **Pegadinha usada:** Achar que regimento só cai em prova de cargo administrativo.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.11
-
-- **Alternativa correta:** D.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está correta:** A publicidade de habilitação inexistente compromete a regularidade do exercício profissional.
-- **Conceito cobrado:** Uso indevido de condição profissional.
-- **Pegadinha usada:** Achar que anúncio publicitário não pode ser fiscalizado.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.12
-
-- **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** O decreto não substitui a lei; detalha sua aplicação.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Relação lei-decreto.
-- **Pegadinha usada:** Confundir regulamentação com revogação da lei.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.13
-
-- **Alternativa correta:** C.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está correta:** É preciso diferenciar condição acadêmica, registro profissional e regularidade financeira.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** Contribuições e regularidade.
-- **Pegadinha usada:** Misturar formação, registro e anuidade como se fossem a mesma coisa.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.14
-
-- **Alternativa correta:** A.
-- **A) está correta:** A própria apostila marcou pontos pendentes para evitar afirmação sem fonte.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Uso de fonte oficial.
-- **Pegadinha usada:** Transformar resumo incompleto em regra literal.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.15
-
-- **Alternativa correta:** D.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está correta:** O Regimento concentra estrutura, órgãos e funcionamento do conselho regional.
-- **Conceito cobrado:** Regimento e estrutura.
-- **Pegadinha usada:** Responder com Código de Ética quando o foco é organização interna.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 5.16
-
-- **Alternativa correta:** B.
-- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **B) está correta:** Critério de julgamento não pode ser improvisado após conhecer as propostas.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **Conceito cobrado:** Critérios de julgamento.
-- **Pegadinha usada:** Mudar o critério conforme o licitante preferido.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 5.17
-
-- **Alternativa correta:** C.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **C) está correta:** A prova cobra a diferença entre irregularidade e improbidade.
-- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **Conceito cobrado:** Elemento subjetivo na improbidade.
-- **Pegadinha usada:** Transformar toda falha em improbidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 5.18
-
-- **Alternativa correta:** A.
-- **A) está correta:** Objetiva não significa automática.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **Conceito cobrado:** Responsabilidade objetiva.
-- **Pegadinha usada:** Confundir ausência de culpa com ausência de requisitos.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 5.19
-
-- **Alternativa correta:** D.
-- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **D) está correta:** Órgãos compõem a estrutura da pessoa jurídica, mas não são pessoas jurídicas autônomas.
-- **Conceito cobrado:** Órgãos públicos.
-- **Pegadinha usada:** Confundir órgão com entidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 5.20
-
-- **Alternativa correta:** B.
-- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **B) está correta:** Agente público é categoria ampla, não apenas servidor efetivo.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **Conceito cobrado:** Agentes públicos.
-- **Pegadinha usada:** Reduzir agente público a servidor estatutário concursado.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
----
-
-## Dia 6 — Revisão fixa: Legislação CRA/CFA e erros/conceitos da semana
-
-### Questões extras
-
-#### Extra Dia 6.1 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Quanto ao Código de Ética, assinale a alternativa correta.
-
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Ele orienta deveres, condutas vedadas e disciplina profissional de pessoas físicas e jurídicas no âmbito indicado.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-
-#### Extra Dia 6.2 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre fiscalização de pessoa jurídica, assinale a alternativa correta.
-
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) A análise deve verificar objeto da atividade, atuação efetiva e enquadramento no campo da Administração.
-
-#### Extra Dia 6.3 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Se uma questão trouxer as expressões 'registro', 'inscrição' e 'regularidade', qual norma da leitura dirigida tende a ser central?
-
-A) RN CFA nº 649/2024, lida com as alterações da RN CFA nº 670/2025.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-
-#### Extra Dia 6.4 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre ética e sigilo, assinale a alternativa correta.
-
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O dever de sigilo subsiste mesmo após o fim da relação profissional, salvo exceções legalmente justificadas.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
-
-#### Extra Dia 6.5 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Em uma situação de fiscalização, qual postura é compatível com a lógica institucional estudada?
-
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) Apresentar informações solicitadas dentro da competência fiscalizatória e buscar defesa pelos meios regulares se discordar.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-
-#### Extra Dia 6.6 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre o estudo comparado de Lei nº 4.769/1965 e Decreto nº 61.934/1967, assinale a correta.
-
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A lei dá base ao exercício profissional; o decreto regulamenta sua aplicação.
-
-#### Extra Dia 6.7 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Quanto à cobrança da Consulplan em legislação específica, qual alternativa melhor descreve o risco de prova?
-
-A) Misturar competência, norma e sujeito em caso prático para testar leitura atenta.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-
-#### Extra Dia 6.8 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Se uma entidade atua fora do Paraná, mas a questão pergunta especificamente pelo CRA-PR, qual cuidado é necessário?
-
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Verificar a jurisdição territorial e a competência do conselho regional indicado.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-
-#### Extra Dia 6.9 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Uma alternativa afirma que norma de registro, Código de Ética e Regimento têm o mesmo objeto. Assinale a correta.
-
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) A afirmação é falsa: registro trata de inscrição/regularidade, ética trata de conduta e regimento trata de estrutura interna.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-
-#### Extra Dia 6.10 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Legislação CRA/CFA.
-
-Sobre a preparação da Semana 1 em legislação CRA/CFA, assinale a alternativa correta.
-
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) A prioridade é dominar núcleo legal, competências e ética antes de tentar decorar detalhes de normas pendentes.
-
-#### Extra Dia 6.11 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em Arquitetura, assinale a alternativa correta sobre cache.
-
-A) Cache explora localidade temporal e espacial para reduzir tempo médio de acesso.
-B) Cache substitui a ULA em operações aritméticas.
-C) Cache elimina a necessidade de memória principal.
-D) Cache sempre aumenta a latência de todas as instruções.
-
-#### Extra Dia 6.12 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Sobre pipeline de CPU, assinale a alternativa correta.
-
-A) Pipeline executa todas as instruções em uma única etapa física.
-B) Pipeline impede qualquer conflito de dependência.
-C) Pipeline tende a aumentar a vazão de instruções, mas não garante menor latência individual.
-D) Pipeline substitui registradores por memória secundária.
-
-#### Extra Dia 6.13 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em Sistemas Operacionais, assinale a alternativa correta.
-
-A) Escalonamento é a tradução de SQL para plano de execução.
-B) Escalonamento define critérios para escolher qual processo ou thread usará a CPU.
-C) Escalonamento remove a necessidade de memória virtual.
-D) Escalonamento é sempre decidido pelo usuário final.
-
-#### Extra Dia 6.14 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Sobre memória virtual, assinale a alternativa correta.
-
-A) É sinônimo de memória cache L1.
-B) Elimina totalmente page faults.
-C) É implementada exclusivamente por comandos SQL.
-D) Permite usar abstração de espaço de endereçamento maior que a RAM física, com apoio de paginação e armazenamento secundário.
-
-#### Extra Dia 6.15 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em SQL, assinale a alternativa correta.
-
-A) Para filtrar grupos após agregação, usa-se HAVING; para filtrar linhas antes da agregação, usa-se WHERE.
-B) HAVING substitui SELECT em consultas com GROUP BY.
-C) WHERE deve ser usado para condição sobre COUNT(*) depois do agrupamento.
-D) GROUP BY apaga fisicamente linhas duplicadas da tabela.
-
-#### Extra Dia 6.16 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Sobre NULL em banco de dados relacional, assinale a alternativa correta.
-
-A) NULL é igual a zero em colunas numéricas.
-B) NULL é igual a string vazia.
-C) Comparações com NULL devem usar IS NULL ou IS NOT NULL.
-D) A condição = NULL é a forma recomendada para localizar nulos.
-
-#### Extra Dia 6.17 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Sobre legislação CRA/CFA, assinale a alternativa correta.
-
-A) RN 651/2024 foi estudada como norma de SQL.
-B) RN CFA nº 651/2024 foi associada ao Regimento Interno do CRA-PR; RN CFA nº 671/2025, ao Código de Ética.
-C) RN 671/2025 foi tratada como modalidade de licitação.
-D) Ambas foram ignoradas por não constarem no edital.
-
-#### Extra Dia 6.18 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em Português, assinale a alternativa correta.
-
-A) Sempre há crase antes de palavra feminina e antes de verbo.
-B) Crase é apenas acento facultativo de formalidade.
-C) A expressão 'à revisar' está correta na norma padrão.
-D) Não se usa crase antes de verbo, como em 'começou a revisar'.
-
-#### Extra Dia 6.19 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em Administração Pública, assinale a alternativa correta.
-
-A) Na dispensa, a competição pode existir, mas a lei autoriza contratar diretamente; na inexigibilidade, a competição é inviável.
-B) Dispensa e inexigibilidade são sinônimos perfeitos.
-C) Inexigibilidade ocorre quando a Administração prefere não competir por conveniência.
-D) Dispensa exige sempre competição prévia entre todos os fornecedores.
-
-#### Extra Dia 6.20 — Questão autoral no estilo Instituto Consulplan
-
-**Área:** Revisão dos erros da semana.
-
-Em RLM, se 30% de um valor correspondem a 90, qual é o valor total?
-
-A) 27.
-B) 120.
-C) 300.
-D) 270.
-
-## Gabarito das Questões Extras do Dia 6
-
-Extra Dia 6.1: B
-Extra Dia 6.2: D
-Extra Dia 6.3: A
-Extra Dia 6.4: C
-Extra Dia 6.5: B
-Extra Dia 6.6: D
-Extra Dia 6.7: A
-Extra Dia 6.8: C
-Extra Dia 6.9: B
-Extra Dia 6.10: D
-Extra Dia 6.11: A
-Extra Dia 6.12: C
-Extra Dia 6.13: B
-Extra Dia 6.14: D
-Extra Dia 6.15: A
-Extra Dia 6.16: C
-Extra Dia 6.17: B
-Extra Dia 6.18: D
-Extra Dia 6.19: A
-Extra Dia 6.20: C
-
-## Comentários das Questões Extras do Dia 6
+### Comentários das questões extras de revisão fixa do Dia 6
 
 #### Comentário Extra Dia 6.1
 
