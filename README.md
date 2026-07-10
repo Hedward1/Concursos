@@ -4,12 +4,14 @@ Material de estudo para o concurso CRA-PR 2026, cargo Analista de Sistemas.
 
 O objetivo deste repositório é organizar um plano de preparação com foco em aprovação, priorizando os conteúdos de maior peso no edital: Conhecimentos do Cargo, Legislação CRA-PR/CFA e Língua Portuguesa.
 
-## Arquivos principais
+## Estrutura do repositório
 
-- `plano_estudos_concurso.md`: Plano Mestre de Cobertura do Edital CRA-PR 2026, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura do edital.
-- `CRA PARANA EDITAL.pdf`: edital oficial usado como base.
-- `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila teórica da Semana 1.
-- `Apostila_Questoes_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
+- `README.md`: visão geral do projeto.
+- `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
+- `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
+- `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
+- `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
+- `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
 
@@ -22,19 +24,19 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 5. Língua Portuguesa e Discursiva
 6. Administração Pública, Raciocínio Lógico-Matemático e Revisão
 
-## Organização
-
-As versões antigas e materiais intermediários ficam na pasta `old/`.
-
-Na raiz do projeto ficam apenas os documentos mais recentes e úteis para estudo direto.
-
 ## Questões
 
 A Semana 1 possui:
 
 - 300 questões principais, divididas em 50 questões por dia;
-- 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM e caderno de erros;
+- 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM, Informática e caderno de erros;
 - 420 questões no total.
+
+## Organização
+
+Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, o planejamento em `planejamento/` e o edital em `edital/`.
+
+As versões antigas e materiais intermediários permanecem na pasta `old/`.
 
 ## Observações
 

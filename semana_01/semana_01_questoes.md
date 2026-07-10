@@ -2,7 +2,7 @@
 
 ## CRA-PR 2026 - Analista de Sistemas
 
-Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`.
+Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
 **Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. As 300 questões principais e as 120 questões extras são autorais. Todas seguem o estilo de cobrança do Instituto Consulplan. As provas públicas da banca foram usadas somente como referência de estilo, sem reprodução de questões reais.
 

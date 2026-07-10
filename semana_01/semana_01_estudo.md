@@ -15,7 +15,7 @@ Material de estudo direcionado para a primeira semana de preparação, com foco 
 - **Banca:** Instituto Consulplan.
 - **Versão do edital:** Edital de Concurso Público nº 1/2026, consolidado no arquivo oficial identificado como **conforme Retificação I**.
 - **Data da retificação:** **Ponto pendente de confirmação.** O PDF oficial consolidado usado como base informa "conforme Retificação I", mas a data do ato isolado de retificação não foi localizada no próprio PDF consolidado consultado.
-- **Arquivo oficial usado:** `C:\Users\trabh\OneDrive\Documents\concurso\CRA_PARANA\CRA PARANA EDITAL.pdf`.
+- **Arquivo oficial usado:** `../edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`.
 - **Link oficial consultado:** https://cdnsite.institutoconsulplan.org.br/concursos/1330/b2c07c473c9749fea22728da3c964c06.pdf
 - **Observação sobre o Código de Ética:** o edital oficial consolidado conforme Retificação I cita a **Resolução Normativa CFA nº 671/2025** como Código de Ética dos profissionais da Administração. A página oficial do CFA da RN CFA nº 671/2025 informa expressamente que ela revogou a RN CFA nº 640/2024. Portanto, nesta apostila a RN CFA nº 671/2025 será usada apenas porque está indicada no edital vigente e há fonte oficial do CFA comprovando a revogação da RN CFA nº 640/2024.
 - **Observação sobre o Regimento Interno do CRA-PR:** a RN CFA nº 651/2024 será citada apenas como norma oficial que aprova o Regimento do Conselho Regional de Administração do Paraná, conforme fonte oficial do CFA.
@@ -63,7 +63,7 @@ Cada dia terá um tema principal, mas todos os dias também terão revisão curt
 | Bloco 1 | 2h | Tema principal do dia |
 | Bloco 2 | 1h30 | Tema principal do dia |
 | Bloco 3 | 1h | Tema principal do dia com exemplos e prática guiada |
-| Bloco 4 | 40min | Revisão rápida de Legislação CRA/CFA ou Administração Pública |
+| Bloco 4 | 40min | Revisão rápida de Legislação CRA/CFA, Administração Pública, Raciocínio Lógico-Matemático ou Informática |
 | Bloco 5 | 30min | Português, interpretação ou discursiva |
 | Bloco 6 | 20min | Caderno de erros e revisão ativa |
 
@@ -3227,7 +3227,7 @@ Ao final da Semana 1, você deve ter:
 
 ## Edital oficial e retificação usada
 
-- Instituto Consulplan. **Edital de Concurso Público CRA-PR nº 1/2026 - conforme Retificação I.** Arquivo local usado: `C:\Users\trabh\OneDrive\Documents\concurso\CRA_PARANA\CRA PARANA EDITAL.pdf`.
+- Instituto Consulplan. **Edital de Concurso Público CRA-PR nº 1/2026 - conforme Retificação I.** Arquivo local usado: `../edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`.
 - Link oficial do PDF consolidado: https://cdnsite.institutoconsulplan.org.br/concursos/1330/b2c07c473c9749fea22728da3c964c06.pdf
 - Página divulgada pelo CRA-PR sobre o concurso: https://cra-pr.org.br/cra-pr-divulga-edital-de-concurso-publico/
 - **Data do ato isolado de Retificação I:** Ponto pendente de confirmação no arquivo oficial consolidado consultado.
