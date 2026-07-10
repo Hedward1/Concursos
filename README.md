@@ -8,7 +8,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 
 - `plano_estudos_concurso.md`: plano geral de estudos e organização semanal.
 - `CRA PARANA EDITAL.pdf`: edital oficial usado como base.
-- `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_1.md`: apostila teórica da Semana 1.
+- `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila teórica da Semana 1.
 - `Apostila_Questoes_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila de questões da Semana 1, com 300 questões autorais no estilo Instituto Consulplan.
 
 ## Semana 1

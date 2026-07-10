@@ -2,7 +2,7 @@
 
 ## CRA-PR 2026 - Analista de Sistemas
 
-**Versão 1.1**
+**Versão 1.2**
 
 Material de estudo direcionado para a primeira semana de preparação, com foco em construção de base forte, revisão diária de matérias de alto peso e aderência ao edital oficial vigente.
 
@@ -192,6 +192,38 @@ Separe em grupos de 4 bits:
 
 Resultado: `E7`.
 
+### Conversão hexadecimal para decimal
+
+Para converter hexadecimal para decimal, multiplique cada dígito pela potência de 16 correspondente à sua posição. A leitura é da direita para a esquerda:
+
+- posição mais à direita: `16^0`;
+- segunda posição da direita para a esquerda: `16^1`;
+- terceira posição: `16^2`;
+- e assim por diante.
+
+Lembre a tabela básica:
+
+| Hexadecimal | Decimal |
+|---|---:|
+| A | 10 |
+| B | 11 |
+| C | 12 |
+| D | 13 |
+| E | 14 |
+| F | 15 |
+
+**Exemplo 4:** converter `B7` para decimal.
+
+`B` vale 11 e `7` vale 7.
+
+`B7 = 11 x 16^1 + 7 x 16^0 = 176 + 7 = 183`.
+
+**Exemplo 5:** converter `3F` para decimal.
+
+`F` vale 15.
+
+`3F = 3 x 16^1 + 15 x 16^0 = 48 + 15 = 63`.
+
 ### 2. Representação de dados
 
 Dados precisam ser codificados para serem processados. Os principais conceitos:
@@ -235,13 +267,82 @@ A CPU executa instruções. Para isso, usa registradores, unidade de controle, u
 
 Componentes essenciais:
 
-- **Unidade de controle:** coordena a execução das instruções.
+- **Unidade de controle:** coordena a busca, decodificação e execução das instruções.
 - **ULA/ALU:** realiza operações aritméticas e lógicas.
-- **Registradores:** pequenas áreas de armazenamento dentro da CPU, muito rápidas.
-- **Memória RAM:** memória principal, volátil, usada durante a execução.
+- **Registradores:** pequenas áreas de armazenamento dentro da CPU, extremamente rápidas.
+- **Memória RAM:** memória principal, volátil, usada durante a execução dos programas.
+- **Memória ROM:** memória não volátil, usada para armazenar instruções permanentes ou de inicialização.
+- **Firmware:** software gravado em memória não volátil, próximo ao hardware, usado para inicializar ou controlar dispositivos.
 - **Cache:** memória muito rápida entre CPU e RAM.
 - **Barramentos:** caminhos de comunicação para dados, endereços e controle.
-- **Armazenamento secundário:** SSD, HD, mídias persistentes.
+- **Armazenamento secundário:** SSD, HD e mídias persistentes.
+
+#### ROM vs RAM
+
+RAM e ROM aparecem em questões porque ambas são "memórias", mas têm funções diferentes.
+
+| Memória | Característica | Uso típico | Pegadinha |
+|---|---|---|---|
+| RAM | Volátil, leitura e escrita, rápida | Programas e dados em execução | Achar que guarda arquivos permanentemente |
+| ROM | Não volátil, tende a preservar conteúdo | Rotinas de inicialização e firmware | Achar que funciona como memória principal comum |
+
+A **RAM** perde seu conteúdo quando falta energia. Ela serve como área de trabalho do sistema em execução. A **ROM** tende a preservar o conteúdo e costuma armazenar instruções de inicialização ou componentes de firmware.
+
+#### Registradores
+
+Registradores são as áreas de armazenamento mais rápidas usadas diretamente pela CPU. Eles ficam dentro do processador e armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU.
+
+Exemplos comuns de registradores:
+
+- **contador de programa/PC:** indica a próxima instrução a ser buscada;
+- **registrador de instrução/IR:** guarda a instrução em execução;
+- **acumulador ou registradores gerais:** guardam operandos e resultados intermediários;
+- **registradores de endereço:** ajudam a localizar dados na memória;
+- **registradores de estado/flags:** indicam resultados de operações, como zero, sinal, carry ou overflow.
+
+A pegadinha é comparar registrador com RAM ou SSD. Registrador é muito menor, muito mais rápido e fica dentro da CPU. RAM é memória principal. SSD/HD são armazenamento persistente.
+
+#### Pipeline de CPU
+
+Pipeline é uma técnica em que a CPU sobrepõe etapas de execução de instruções. Em vez de esperar uma instrução passar por todas as etapas para só então iniciar a próxima, a CPU pode buscar uma instrução enquanto decodifica outra e executa uma terceira.
+
+Modelo simplificado:
+
+1. **Busca:** obter a instrução na memória.
+2. **Decodificação:** identificar qual operação será feita.
+3. **Execução:** realizar a operação.
+4. **Acesso à memória:** ler ou escrever dados, se necessário.
+5. **Escrita de resultado:** gravar o resultado no registrador ou destino.
+
+Pipeline melhora a **vazão** do processador, isto é, a quantidade de instruções concluídas por unidade de tempo. Ele não significa, necessariamente, que uma instrução individual terá menor latência.
+
+#### Throughput vs latência
+
+| Conceito | Ideia | Exemplo |
+|---|---|---|
+| Latência | Tempo para uma operação individual terminar | Tempo de uma instrução específica do início ao fim |
+| Throughput/vazão | Quantidade de operações concluídas por unidade de tempo | Instruções concluídas por ciclo ou por segundo |
+
+Na prova, a frase "pipeline sempre reduz o tempo de cada instrução" deve acender alerta. Pipeline tende a aumentar o throughput, mas uma instrução individual ainda passa por etapas e pode sofrer atrasos por dependências, desvios e conflitos de recursos.
+
+#### Cache, localidade e políticas de escrita
+
+Cache melhora desempenho porque explora o princípio da localidade:
+
+- **Localidade temporal:** se um dado foi acessado agora, há boa chance de ser acessado novamente em breve.
+- **Localidade espacial:** se um endereço foi acessado, endereços próximos tendem a ser acessados em breve.
+
+Exemplo de localidade temporal: repetir várias vezes uma variável dentro de um laço.  
+Exemplo de localidade espacial: percorrer um vetor sequencialmente.
+
+Políticas de escrita mais cobradas:
+
+| Política | Como funciona | Vantagem | Risco/atenção |
+|---|---|---|---|
+| Write-through | Escreve no cache e na memória principal imediatamente | Memória principal fica mais atualizada | Pode gerar mais tráfego de memória |
+| Write-back | Escreve primeiro no cache e atualiza a memória depois | Reduz escritas na memória principal | Exige controle de consistência, como bit de sujeira/dirty bit |
+
+Cache não substitui ULA, registradores, RAM ou SSD. Ela reduz tempo médio de acesso, mas quem executa operações aritméticas e lógicas é a ULA.
 
 ### Como funciona na prática
 
@@ -271,6 +372,14 @@ Porque reduz o tempo médio de acesso a dados e instruções frequentemente usad
 
 Não. O barramento de endereços indica onde acessar. O barramento de dados transporta o conteúdo lido ou escrito.
 
+**Exemplo 4:** pipeline sempre diminui a latência de cada instrução?
+
+Não. Pipeline tende a melhorar a vazão, permitindo que várias instruções estejam em etapas diferentes. A latência de uma instrução individual não necessariamente diminui.
+
+**Exemplo 5:** qual é a diferença entre write-through e write-back?
+
+No write-through, a escrita vai para cache e memória principal imediatamente. No write-back, a escrita fica inicialmente no cache e a memória é atualizada depois, reduzindo tráfego, mas exigindo controle de consistência.
+
 ### 4. Interrupções, periféricos e entrada/saída
 
 Interrupção é um mecanismo pelo qual um evento sinaliza à CPU que precisa de atenção. Pode vir de hardware ou software.
@@ -285,6 +394,25 @@ Exemplos:
 
 Sem interrupções, a CPU teria que consultar repetidamente cada dispositivo para saber se algo aconteceu. Isso desperdiçaria processamento.
 
+#### Polling vs interrupções
+
+No **polling**, a CPU pergunta repetidamente ao dispositivo se ele precisa de atendimento. É simples, mas pode desperdiçar processamento quando nada acontece.
+
+Na **interrupção**, o dispositivo ou controlador sinaliza quando precisa de atenção. A CPU não precisa ficar perguntando continuamente; ela pode executar outras tarefas e ser avisada quando houver evento.
+
+| Técnica | Como funciona | Ponto forte | Pegadinha |
+|---|---|---|---|
+| Polling | CPU consulta repetidamente o dispositivo | Simples de implementar | Pode desperdiçar CPU |
+| Interrupção | Dispositivo avisa a CPU quando precisa | Resposta eficiente a eventos | Não significa erro; pode ser evento normal |
+
+#### DMA
+
+DMA significa **Direct Memory Access**, ou acesso direto à memória. É uma técnica em que um controlador transfere dados entre dispositivo de E/S e memória principal com menor intervenção da CPU.
+
+Sem DMA, a CPU teria que participar mais ativamente da transferência de cada bloco de dados. Com DMA, a CPU configura a operação, o controlador realiza a transferência e a CPU é avisada ao final, normalmente por interrupção.
+
+Isso é importante em operações de disco, rede e outros dispositivos que movimentam grande volume de dados.
+
 ### Como funciona na prática
 
 Quando uma tecla é pressionada, o teclado gera um evento. O controlador de interrupção avisa a CPU. A CPU pausa temporariamente o fluxo atual, salva o contexto necessário, executa uma rotina de tratamento da interrupção e depois retorna ao que estava fazendo.
@@ -298,6 +426,14 @@ Não. Pode indicar eventos normais, como entrada de dados, término de E/S ou te
 **Exemplo 2:** por que interrupções são importantes para sistemas operacionais multitarefa?
 
 Porque permitem alternância de execução, resposta a eventos e gerenciamento eficiente de dispositivos. O temporizador, por exemplo, ajuda o SO a interromper um processo e dar tempo de CPU a outro.
+
+**Exemplo 3:** polling e interrupção resolvem o mesmo problema do mesmo jeito?
+
+Não. Ambos lidam com eventos de dispositivos, mas polling consulta repetidamente; interrupção sinaliza quando há evento.
+
+**Exemplo 4:** DMA elimina a CPU do sistema?
+
+Não. DMA reduz a intervenção da CPU na transferência de dados, mas a CPU ainda configura a operação, coordena o sistema e trata a conclusão quando necessário.
 
 ### 5. Endereçamento
 
@@ -333,21 +469,29 @@ Está na própria instrução. Exemplo conceitual: `MOV A, 5` move o valor imedi
 
 Porque o endereço virtual é a visão do processo; o físico corresponde à posição real na RAM. A tradução permite proteção, paginação e isolamento.
 
-### 6. Compiladores, ligadores e interpretadores
+### 6. Compiladores, montadores, ligadores e carregadores
 
 Esses conceitos aparecem muito em provas porque são parecidos.
 
-- **Compilador:** traduz código-fonte para código de máquina ou código intermediário antes da execução.
+- **Compilador:** traduz código-fonte de alto nível para código de máquina, código objeto ou código intermediário antes da execução.
 - **Interpretador:** lê e executa comandos durante a execução.
-- **Montador/assembler:** traduz linguagem de montagem para código de máquina.
-- **Ligador/linker:** combina módulos compilados e bibliotecas, resolvendo referências para gerar executável.
-- **Carregador/loader:** coloca o programa em memória para execução.
+- **Assembler/montador:** traduz linguagem de montagem para código de máquina.
+- **Linker/ligador:** combina módulos compilados e bibliotecas, resolvendo referências externas para gerar o executável.
+- **Loader/carregador:** coloca o executável na memória, prepara o ambiente de execução e inicia o programa.
 
 ### Como funciona na prática
 
-Em C, é comum haver compilação de vários arquivos `.c` para arquivos objeto. O linker junta esses objetos e bibliotecas para gerar um executável.
+Em C, é comum haver compilação de vários arquivos `.c` para arquivos objeto. O linker junta esses objetos e bibliotecas para gerar um executável. Depois, quando o usuário ou o sistema operacional inicia o programa, o loader carrega esse executável na memória.
 
 Em Python, normalmente há interpretação/execução por uma máquina virtual, embora existam etapas internas de bytecode. Para concurso, o contraste clássico é: compilador traduz previamente; interpretador executa instrução a instrução ou unidade a unidade.
+
+Fluxo simplificado:
+
+1. Código-fonte em linguagem de alto nível é compilado.
+2. Código assembly, quando houver, pode ser traduzido pelo assembler.
+3. Arquivos objeto e bibliotecas são combinados pelo linker.
+4. O executável é carregado na memória pelo loader.
+5. A CPU executa instruções usando registradores, cache, RAM e barramentos.
 
 ### Exemplos resolvidos - tradução de programas
 
@@ -359,13 +503,28 @@ O ligador/linker. Ele resolve referências externas entre módulos e bibliotecas
 
 O compilador traduz o programa antes da execução; o interpretador executa o código durante a execução, realizando a tradução/execução de forma incremental.
 
+**Exemplo 3:** quem coloca o executável na memória para execução?
+
+O loader/carregador. O linker gera o executável; o loader carrega esse executável na memória e prepara sua execução.
+
+**Exemplo 4:** assembler e linker fazem a mesma coisa?
+
+Não. O assembler traduz linguagem de montagem para código de máquina. O linker liga módulos e bibliotecas, resolvendo referências para formar o executável.
+
 ## Pegadinhas comuns da banca
 
 - Dizer que RAM é memória permanente.
+- Confundir ROM com RAM ou firmware com aplicativo comum.
 - Confundir cache com memória secundária.
+- Dizer que cache substitui a ULA.
+- Dizer que pipeline sempre reduz a latência de cada instrução.
+- Confundir throughput com latência.
 - Afirmar que todo número real é representado exatamente.
 - Trocar compilador por ligador.
+- Trocar linker por loader.
 - Dizer que interrupção é sempre erro.
+- Confundir polling com interrupção.
+- Achar que DMA elimina a CPU, quando na verdade reduz sua intervenção em transferências de E/S.
 - Confundir endereço lógico com endereço físico.
 - Esquecer que hexadecimal usa A=10, B=11, C=12, D=13, E=14, F=15.
 
@@ -376,12 +535,24 @@ O compilador traduz o programa antes da execução; o interpretador executa o c�
 | 1 byte | 8 bits |
 | 8 bits | 256 combinações |
 | Hexadecimal | 1 dígito = 4 bits |
+| B7 hexadecimal | 11 x 16 + 7 = 183 |
 | RAM | memória principal, volátil |
+| ROM | memória não volátil, usada em rotinas permanentes/firmware |
+| Firmware | software gravado próximo ao hardware |
 | Cache | memória rápida entre CPU e RAM |
+| Localidade temporal | reutilização de dado acessado recentemente |
+| Localidade espacial | acesso provável a endereços próximos |
+| Write-through | escreve no cache e na memória principal |
+| Write-back | escreve no cache e atualiza a memória depois |
 | ULA | operações aritméticas e lógicas |
 | Unidade de controle | coordena execução de instruções |
+| Registradores | armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU |
+| Pipeline | sobrepõe etapas para melhorar vazão |
+| DMA | transferência de E/S com menor intervenção da CPU |
+| Polling | CPU consulta repetidamente o dispositivo |
 | Linker | liga módulos e bibliotecas |
 | Loader | carrega programa na memória |
+| Assembler | traduz linguagem de montagem para código de máquina |
 | Interrupção | mecanismo de atenção da CPU a evento |
 
 ## Erros comuns
@@ -393,28 +564,37 @@ O compilador traduz o programa antes da execução; o interpretador executa o c�
 | Tratar Unicode como sinônimo de ASCII | Unicode é mais amplo |
 | Confundir barramento de dados com barramento de endereços | Um transporta conteúdo; outro indica localização |
 | Dizer que compilador executa o programa | Compilador traduz; execução é outro processo |
+| Usar "registrador" como sinônimo de memória RAM | Registrador fica dentro da CPU e é muito mais rápido |
+| Achar que pipeline sempre acelera uma instrução isolada | Pipeline melhora principalmente throughput |
+| Dizer que polling é mais eficiente em qualquer cenário | Polling pode desperdiçar CPU perguntando repetidamente |
+| Dizer que write-back e write-through são iguais | Uma política atualiza memória imediatamente; a outra posterga |
 
 ## Mini revisão do dia
 
-Arquitetura de computadores é a base física e lógica que permite a execução de programas. A CPU executa instruções usando registradores, ULA e unidade de controle. A memória segue uma hierarquia de velocidade e custo. Dados são representados em bits e bytes, normalmente com uso frequente de binário e hexadecimal. Compiladores, ligadores e interpretadores atuam em etapas diferentes da transformação do código em execução.
+Arquitetura de computadores é a base física e lógica que permite a execução de programas. A CPU executa instruções usando registradores, ULA e unidade de controle. A memória segue uma hierarquia de velocidade e custo: registradores, cache, RAM e armazenamento secundário. RAM é volátil; ROM tende a preservar conteúdo e pode armazenar firmware. Cache explora localidade temporal e espacial. Pipeline melhora vazão, mas não garante menor latência individual. Interrupções evitam que a CPU precise ficar consultando dispositivos a todo momento; polling faz essa consulta repetida; DMA reduz intervenção da CPU em transferências de E/S. Compiladores, assemblers, linkers, loaders e interpretadores atuam em etapas diferentes da transformação do código em execução.
 
 ## Checklist de domínio
 
 - [ ] Sei converter binário para decimal.
 - [ ] Sei converter hexadecimal para decimal.
+- [ ] Sei converter `B7` hexadecimal para decimal: `11 x 16 + 7 = 183`.
 - [ ] Sei agrupar binário em quartetos para obter hexadecimal.
 - [ ] Diferencio bit, byte, palavra e caractere.
-- [ ] Sei explicar CPU, ULA, registradores, RAM, cache e barramentos.
+- [ ] Sei explicar CPU, ULA, registradores, RAM, ROM, firmware, cache e barramentos.
+- [ ] Diferencio latência e throughput.
+- [ ] Sei explicar localidade temporal e localidade espacial.
+- [ ] Diferencio write-back e write-through.
 - [ ] Sei o que é interrupção e por que ela existe.
+- [ ] Diferencio polling, interrupção e DMA.
 - [ ] Diferencio endereço lógico/virtual e físico.
-- [ ] Diferencio compilador, interpretador, ligador e carregador.
+- [ ] Diferencio compilador, interpretador, assembler, linker e loader.
 
 ## Tarefa para o caderno de erros
 
 Crie uma página chamada **Arquitetura - Erros e Confusões** e registre:
 
 - bases numéricas que você confundiu;
-- conceitos trocados, como RAM/SSD, cache/RAM, compilador/linker;
+- conceitos trocados, como RAM/ROM, RAM/SSD, cache/RAM, cache/ULA, compilador/linker, linker/loader;
 - fórmulas simples: `2^n`, 1 byte = 8 bits, 1 hexadecimal = 4 bits;
 - uma tabela com A=10, B=11, C=12, D=13, E=14, F=15.
 
@@ -424,11 +604,46 @@ Crie uma página chamada **Arquitetura - Erros e Confusões** e registre:
 2. Qual é a diferença entre RAM, cache e armazenamento secundário?
 3. O que acontece, em linhas gerais, quando uma interrupção é gerada?
 4. Qual é a diferença entre endereço lógico/virtual e endereço físico?
-5. Qual é o papel do compilador, do ligador e do interpretador?
+5. Qual é o papel do assembler, do linker e do loader?
 
 ## Assuntos que serão cobrados na Apostila de Questões
 
-Sistemas de numeração, representação de dados, CPU, memória, cache, barramentos, interrupções, dispositivos de E/S, endereçamento, compiladores, ligadores e interpretadores.
+Sistemas de numeração, conversão hexadecimal para decimal, representação de dados, CPU, registradores, RAM, ROM, firmware, cache, localidade temporal e espacial, políticas write-back/write-through, barramentos, pipeline, throughput, latência, polling, interrupções, DMA, dispositivos de E/S, endereçamento, assembler, linker, loader, compiladores e interpretadores.
+
+## Tabela de revisão rápida do Dia 1
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| RAM | Memória principal volátil usada por programas em execução | Dizer que guarda arquivos permanentemente | Dados de um programa aberto ficam na RAM durante a execução |
+| ROM | Memória não volátil, voltada a conteúdo permanente ou inicialização | Tratar como RAM comum de trabalho | Rotina básica de inicialização |
+| Firmware | Software gravado próximo ao hardware | Confundir com aplicativo do usuário | Código de controle de dispositivo |
+| Registradores | Armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU | Confundir com RAM ou cache | PC indica próxima instrução |
+| ULA | Executa operações aritméticas e lógicas | Dizer que cache executa operações | Soma, comparação, AND lógico |
+| Cache | Memória rápida entre CPU e RAM | Dizer que substitui ULA ou SSD | Dado acessado repetidamente fica em cache |
+| Localidade temporal | Reuso provável de dado acessado recentemente | Confundir com proximidade de endereço | Variável usada várias vezes em um laço |
+| Localidade espacial | Acesso provável a endereços próximos | Confundir com reuso do mesmo dado | Percorrer vetor posição por posição |
+| Write-through | Escrita no cache e na memória principal | Achar que posterga atualização da memória | Alteração refletida imediatamente na RAM |
+| Write-back | Escrita no cache e atualização posterior da memória | Achar que memória principal fica atualizada imediatamente | Linha de cache marcada como dirty |
+| Pipeline | Sobreposição de etapas da CPU | Dizer que sempre reduz latência individual | Buscar uma instrução enquanto outra executa |
+| Throughput | Quantidade concluída por unidade de tempo | Confundir com tempo individual | Mais instruções concluídas por ciclo |
+| Latência | Tempo de uma operação individual | Confundir com vazão total | Tempo de uma instrução do início ao fim |
+| Polling | CPU consulta repetidamente o dispositivo | Dizer que sempre é mais eficiente | Perguntar ao dispositivo se há dado disponível |
+| Interrupção | Evento sinaliza à CPU que precisa de atenção | Dizer que sempre é erro | Teclado, timer, pacote de rede |
+| DMA | Transferência entre dispositivo e memória com menor intervenção da CPU | Dizer que elimina a CPU | Controlador move bloco de disco para RAM |
+| Assembler | Traduz assembly para código de máquina | Confundir com linker | Montar instruções assembly |
+| Linker | Liga módulos e bibliotecas | Confundir com loader | Resolver função externa entre arquivos objeto |
+| Loader | Carrega executável na memória | Confundir com linker | Iniciar execução de um programa |
+| Hexadecimal | Base 16, A=10 até F=15 | Esquecer valor de B ou F | `B7 = 11 x 16 + 7 = 183` |
+
+## Pegadinhas do Dia 1
+
+- Cache não substitui ULA: cache acelera acesso a dados; ULA executa operações aritméticas e lógicas.
+- Pipeline melhora vazão, não necessariamente a latência individual de cada instrução.
+- Linker liga módulos e bibliotecas; loader carrega o executável em memória.
+- DMA reduz intervenção da CPU em transferências de E/S, mas não elimina a CPU do sistema.
+- Polling desperdiça CPU quando fica perguntando repetidamente se o dispositivo tem evento.
+- RAM é volátil; ROM tende a preservar conteúdo e pode armazenar rotinas permanentes ou firmware.
+- `B7` hexadecimal = `11 x 16 + 7 = 183`.
 
 ---
 

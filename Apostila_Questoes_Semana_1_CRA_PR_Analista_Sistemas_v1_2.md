@@ -1,8 +1,8 @@
-# Apostila de Questões - Semana 1 v1.1
+# Apostila de Questões - Semana 1 v1.2
 
 ## CRA-PR 2026 - Analista de Sistemas
 
-Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_1.md`.
+Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`.
 
 **Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. Todas as 300 questões são autorais e estão marcadas como `Questão autoral no estilo Instituto Consulplan`. As provas públicas da banca foram usadas somente como referência de estilo de cobrança.
 
@@ -34,7 +34,7 @@ Arquivo de questões para acompanhar a `Apostila_Estudo_Semana_1_CRA_PR_Analista
 
 # Dia 1 — Arquitetura e Organização de Computadores
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 ## Questões
 
@@ -981,7 +981,7 @@ D) 187.
 ### Comentário da Questão 35
 
 - **Alternativa correta:** A.
-- **A) está correta:** Registradores guardam dados imediatos para execução de instruções.
+- **A) está correta:** Registradores armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU.
 - **B) está errada:** Registradores pertencem à CPU, não ao SSD.
 - **C) está errada:** Eles são temporários, não arquivos permanentes.
 - **D) está errada:** Registradores existem mesmo com cache.
@@ -1174,7 +1174,7 @@ D) 187.
 
 # Dia 2 — Sistemas Operacionais
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 ## Questões
 
@@ -2308,7 +2308,7 @@ D) desativação de todo o escalonamento.
 
 # Dia 3 — Banco de Dados Base e SQL
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 ## Questões
 
@@ -3429,7 +3429,7 @@ D) contar profissionais por situação e ordenar os grupos do maior para o menor
 
 # Dia 4 — Legislação CRA-PR/CFA
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 **Confirmação prévia das normas do Dia 4:** foram utilizadas fontes oficiais para orientar as questões de Lei 4.769/1965, Decreto 61.934/1967, Lei 12.514/2011, RN CFA 649/2024, RN CFA 670/2025, RN CFA 546/2018, RN CFA 626/2023, RN CFA 589/2020, RN CFA 651/2024, RN CFA 671/2025, RN CFA 680/2025 e Regimento Interno do CRA-PR. As questões evitam cobrar artigo, prazo ou penalidade específica quando isso exigiria reprodução literal ou confirmação pontual além da ementa/fonte oficial consultada.
 
@@ -4547,7 +4547,7 @@ D) O decreto elimina a necessidade de ler a lei.
 
 # Dia 5 — Língua Portuguesa e Discursiva
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 ## Questões
 
@@ -5696,7 +5696,7 @@ Os temas abaixo não contam nas 50 questões objetivas. Use-os para treinar estr
 
 # Dia 6 — Administração Pública, RLM e Revisão
 
-**Base usada:** edital vigente, apostila de estudo v1.1 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
 
 ## Questões
 
