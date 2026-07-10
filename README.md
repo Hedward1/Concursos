@@ -9,7 +9,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `plano_estudos_concurso.md`: plano geral de estudos e organização semanal.
 - `CRA PARANA EDITAL.pdf`: edital oficial usado como base.
 - `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila teórica da Semana 1.
-- `Apostila_Questoes_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila de questões da Semana 1, com 300 questões autorais no estilo Instituto Consulplan.
+- `Apostila_Questoes_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
 
 ## Semana 1
 
@@ -27,6 +27,14 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 As versões antigas e materiais intermediários ficam na pasta `old/`.
 
 Na raiz do projeto ficam apenas os documentos mais recentes e úteis para estudo direto.
+
+## Questões
+
+A Semana 1 possui:
+
+- 300 questões principais, divididas em 50 questões por dia;
+- 120 questões extras de revisão fixa, cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM e caderno de erros;
+- 420 questões no total.
 
 ## Observações
 
