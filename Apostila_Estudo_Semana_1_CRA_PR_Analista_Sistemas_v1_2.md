@@ -992,6 +992,116 @@ Em cada quadro, escreva um exemplo com suas palavras.
 
 Conceitos de SO, processos, threads, escalonamento, memória, memória virtual, paginação, segmentação, sistema de arquivos, dispositivos, concorrência, sincronização, deadlock, Windows e Linux.
 
+## Reforço de alinhamento com as questões - Dia 2
+
+As questões do Dia 2 cobram bastante diferença fina entre conceitos parecidos. Para responder com segurança, não basta decorar nomes: é preciso entender o papel prático de cada mecanismo do sistema operacional.
+
+### Kernel, chamadas de sistema e isolamento
+
+O **kernel** é o núcleo do sistema operacional. Ele controla acesso à CPU, memória, disco, rede, dispositivos e permissões. Programas comuns não devem acessar hardware diretamente; eles pedem serviços ao kernel por meio de **chamadas de sistema**.
+
+Exemplo simples: quando um editor salva um arquivo, ele não grava diretamente no disco. Ele solicita ao SO uma operação de escrita. O SO verifica permissões, sistema de arquivos, buffers e dispositivo.
+
+A pegadinha é achar que chamada de sistema é uma função comum de biblioteca. Bibliotecas podem facilitar a chamada, mas a operação protegida passa pelo kernel.
+
+### CPU-bound, I/O-bound, quantum e starvation
+
+Processos **CPU-bound** usam intensamente processamento. Processos **I/O-bound** passam muito tempo esperando entrada/saída, como disco, rede ou teclado.
+
+| Tipo de processo | Característica | Exemplo |
+|---|---|---|
+| CPU-bound | consome muito tempo de CPU | compressão, cálculo, criptografia |
+| I/O-bound | espera muito por E/S | leitura de arquivos, requisições de rede |
+
+No escalonamento **Round Robin**, cada processo recebe uma fatia de tempo, chamada **quantum**. Se o quantum é muito curto, há muitas trocas de contexto. Se é muito longo, a resposta do sistema pode piorar.
+
+**Starvation** ocorre quando um processo fica esperando indefinidamente por CPU ou recurso, geralmente por política de prioridade mal ajustada.
+
+### Memória virtual, page fault, swap e thrashing
+
+Memória virtual é uma abstração: cada processo enxerga um espaço próprio de endereçamento. A paginação divide esse espaço em páginas e mapeia páginas para molduras na RAM.
+
+**Page fault** ocorre quando o processo acessa uma página que não está carregada na memória física naquele momento. Isso não é necessariamente erro fatal; pode ser parte normal da memória virtual. O problema é quando page faults ficam excessivos.
+
+**Swap** é área em disco usada como apoio quando a RAM está pressionada. Como disco/SSD é mais lento que RAM, uso excessivo de swap degrada desempenho. Quando o sistema passa mais tempo trocando páginas do que executando trabalho útil, fala-se em **thrashing**.
+
+### Sistemas de arquivos, journaling, caminhos e backup
+
+Sistema de arquivos organiza nomes, diretórios, permissões, metadados e blocos no armazenamento.
+
+- **Caminho absoluto:** começa na raiz ou unidade, como `/var/log/syslog` ou `C:\Users\Ana\arquivo.txt`.
+- **Caminho relativo:** depende do diretório atual, como `docs/edital.pdf`.
+- **Journaling:** registra operações para recuperar consistência estrutural após falha.
+- **Backup:** cópia de segurança para recuperar dados perdidos, corrompidos ou apagados.
+
+Journaling não substitui backup. Ele ajuda o sistema de arquivos a voltar a um estado consistente, mas não garante recuperação de um documento excluído pelo usuário.
+
+### Permissões, autenticação, autorização e serviços
+
+**Autenticação** responde: "quem é você?".  
+**Autorização** responde: "o que você pode fazer?".
+
+No Linux, permissões costumam ser lidas como usuário, grupo e outros. Exemplo: `chmod 640 arquivo` significa:
+
+- dono: leitura e escrita;
+- grupo: leitura;
+- outros: sem permissão.
+
+No Windows, permissões NTFS podem ser aplicadas a usuários e grupos com regras como leitura, gravação, modificação e controle total.
+
+Serviços em segundo plano são programas que executam sem interação direta contínua do usuário. No Linux moderno, `systemd` é comum para iniciar, parar e verificar serviços, por exemplo com `systemctl status nome-do-servico`.
+
+### Concorrência, região crítica, locks e deadlock
+
+Concorrência ocorre quando múltiplos fluxos de execução disputam recursos. **Região crítica** é o trecho que acessa dado compartilhado. Para proteger esse trecho, usam-se mecanismos como mutex, semáforo e locks.
+
+Deadlock exige quatro condições clássicas:
+
+1. exclusão mútua;
+2. posse e espera;
+3. não preempção;
+4. espera circular.
+
+Se uma questão descreve apenas lentidão, fila grande ou erro de programa, não conclua automaticamente deadlock. Procure a espera circular por recursos.
+
+## Tabela de revisão rápida do Dia 2
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| Kernel | núcleo do SO, controla recursos protegidos | Confundir com aplicativo comum | Gerencia memória e chamadas de sistema |
+| Chamada de sistema | pedido de serviço ao kernel | Tratar como função comum sem privilégio | `open`, `read`, `write` conceituais |
+| Processo | programa em execução com contexto próprio | Confundir com arquivo executável parado | Navegador aberto em execução |
+| Thread | fluxo de execução dentro de processo | Achar que tem sempre memória isolada total | Aba ou tarefa interna do programa |
+| CPU-bound | usa muita CPU | Confundir com espera de disco | Criptografia pesada |
+| I/O-bound | espera E/S com frequência | Confundir com alto uso de CPU | Leitura de rede |
+| Quantum | fatia de tempo no escalonamento | Achar que é prioridade fixa | Round Robin |
+| Starvation | espera indefinida por recurso/CPU | Confundir com deadlock sempre | Baixa prioridade nunca executa |
+| Page fault | página acessada não está na RAM | Tratar sempre como falha fatal | SO carrega página do disco |
+| Swap | área em disco usada como apoio à RAM | Achar que é tão rápida quanto cache | Sistema lento por excesso de swap |
+| Thrashing | troca excessiva de páginas | Confundir com uso normal de memória virtual | Disco ativo e pouca execução útil |
+| Journaling | registro para consistência do sistema de arquivos | Confundir com backup | Recuperar estrutura após queda |
+| Backup | cópia para recuperação de dados | Achar que journaling resolve perda de arquivo | Restaurar arquivo apagado |
+| Driver | software que permite comunicação com dispositivo | Confundir com firmware ou aplicativo | Driver de impressora |
+| Spooling | fila intermediária de E/S | Confundir com driver | Fila de impressão |
+| Autenticação | verifica identidade | Confundir com autorização | Login e senha |
+| Autorização | verifica permissão | Confundir com autenticação | Acesso negado a pasta |
+| `chmod` | altera permissões Linux | Confundir com `chown` | `chmod 640 arquivo` |
+| `chown` | altera dono/grupo | Confundir com permissões numéricas | `chown usuario arquivo` |
+| Deadlock | espera circular por recursos | Chamar qualquer travamento de deadlock | Processo A espera B; B espera A |
+
+## Pegadinhas do Dia 2
+
+- Processo não é só o arquivo do programa; processo é programa em execução.
+- Thread compartilha recursos do processo, mas tem fluxo de execução próprio.
+- Page fault pode ser evento normal da memória virtual; não é sempre erro fatal.
+- Swap ajuda quando falta RAM, mas é muito mais lento que RAM e cache.
+- Journaling melhora consistência do sistema de arquivos, mas não substitui backup.
+- `chmod` muda permissões; `chown` muda proprietário.
+- Autenticação identifica o usuário; autorização define o que ele pode acessar.
+- Deadlock exige espera circular; lentidão ou fila grande não bastam.
+- Starvation é espera indefinida, mas não necessariamente espera circular.
+- Driver permite comunicação com hardware; spooling organiza fila de E/S.
+
 ---
 
 # Dia 3 - Banco de Dados Base e SQL
@@ -1389,6 +1499,159 @@ Escreva um exemplo próprio para cada diferença.
 
 Conceitos de BD, SGBD, arquitetura, independência de dados, modelo relacional, chaves, integridade, MER, mapeamento relacional, normalização, SQL ANSI, DDL, DML, DQL, filtros, agrupamentos, transações e comandos básicos.
 
+## Reforço de alinhamento com as questões - Dia 3
+
+As questões do Dia 3 exigem leitura de comandos SQL reais. A principal estratégia é separar quatro perguntas: qual tabela está sendo consultada, quais linhas passam pelo filtro, como os grupos são formados e qual comando altera estrutura ou dados.
+
+### SELECT, WHERE, ORDER BY, DISTINCT e LIMIT
+
+`SELECT` escolhe colunas. `FROM` indica a tabela. `WHERE` filtra linhas antes de agrupamento. `ORDER BY` ordena o resultado. `DISTINCT` remove duplicidades da projeção.
+
+Exemplo:
+
+```sql
+SELECT DISTINCT uf
+FROM profissional
+WHERE situacao = 'ATIVO'
+ORDER BY uf;
+```
+
+Esse comando lista UFs distintas de profissionais ativos, em ordem. A pegadinha é achar que `ORDER BY` filtra. Ele apenas ordena o que já foi selecionado.
+
+### GROUP BY, HAVING e agregações
+
+`GROUP BY` agrupa linhas. Funções como `COUNT`, `SUM`, `AVG`, `MIN` e `MAX` calculam valores por grupo. `HAVING` filtra grupos depois da agregação.
+
+Exemplo:
+
+```sql
+SELECT setor, COUNT(*) AS total
+FROM servidor
+GROUP BY setor
+HAVING COUNT(*) >= 5
+ORDER BY total DESC;
+```
+
+Interpretação:
+
+1. agrupa servidores por setor;
+2. conta servidores de cada setor;
+3. mantém apenas setores com 5 ou mais servidores;
+4. ordena do maior total para o menor.
+
+Pegadinha recorrente: coluna não agregada no `SELECT` deve estar, em regra, no `GROUP BY`.
+
+### JOIN, LEFT JOIN, NULL e IS NULL
+
+`INNER JOIN` retorna linhas com correspondência entre as tabelas. `LEFT JOIN` preserva as linhas da tabela à esquerda, mesmo sem correspondência à direita.
+
+Exemplo:
+
+```sql
+SELECT p.nome, r.numero_registro
+FROM profissional p
+LEFT JOIN registro r ON r.id_profissional = p.id;
+```
+
+Se um profissional não tiver registro correspondente, o nome ainda aparece, mas os campos de `registro` vêm como `NULL`.
+
+`NULL` significa ausência, desconhecimento ou inexistência de valor. Não se filtra `NULL` com `= NULL`; usa-se `IS NULL` ou `IS NOT NULL`.
+
+```sql
+SELECT nome
+FROM profissional
+WHERE email IS NULL;
+```
+
+### UPDATE, DELETE, TRUNCATE e DROP
+
+Esses comandos geram muita pegadinha.
+
+| Comando | O que faz | Atenção |
+|---|---|---|
+| `UPDATE` | altera valores em linhas | sem `WHERE`, pode alterar todas as linhas |
+| `DELETE` | remove linhas | com `WHERE`, remove linhas específicas |
+| `TRUNCATE` | remove todas as linhas de forma mais estrutural/rápida, conforme SGBD | não é filtro linha a linha |
+| `DROP` | remove objeto do banco, como tabela | não é para apagar apenas registros específicos |
+
+Exemplo perigoso:
+
+```sql
+UPDATE profissional
+SET situacao = 'INATIVO';
+```
+
+Sem `WHERE`, todos os profissionais podem ser alterados.
+
+### Restrições, chaves e normalização
+
+- **PRIMARY KEY:** identifica unicamente a linha e não deve aceitar `NULL`.
+- **FOREIGN KEY:** referencia chave de outra tabela e protege integridade referencial.
+- **UNIQUE:** impede repetição, mas não é necessariamente chave primária.
+- **NOT NULL:** exige preenchimento.
+- **CHECK:** limita valores permitidos por regra.
+
+Normalização:
+
+- **1FN:** atributos atômicos, sem lista repetida no mesmo campo.
+- **2FN:** em chave composta, atributo não chave depende da chave inteira.
+- **3FN:** evita dependência transitiva entre atributos não chave.
+
+Exemplo de violação da 3FN: tabela `servidor(id, id_setor, nome_setor)`. Se `nome_setor` depende de `id_setor`, e não diretamente do servidor, há dependência transitiva.
+
+### Transações, ACID, views, procedures e triggers
+
+Transação é unidade lógica de trabalho. ACID resume:
+
+- **Atomicidade:** tudo ou nada;
+- **Consistência:** preserva regras válidas;
+- **Isolamento:** transações concorrentes não devem interferir indevidamente;
+- **Durabilidade:** após commit, o resultado deve persistir.
+
+`VIEW` é uma consulta armazenada apresentada como tabela lógica. `PROCEDURE` agrupa comandos executáveis no banco. `TRIGGER` executa automaticamente diante de evento, como `INSERT` ou `UPDATE`, e pode ser usado para auditoria.
+
+## Tabela de revisão rápida do Dia 3
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| SGBD | software que gerencia banco de dados | Confundir com o próprio conjunto de dados | PostgreSQL, SQL Server |
+| Metadados | dados sobre os dados | Confundir com registro do usuário | dicionário de dados |
+| Independência física | mudar armazenamento sem afetar visão lógica | Confundir com backup | alterar índice sem mudar consulta |
+| PRIMARY KEY | identifica linha de forma única | Aceitar repetição ou `NULL` | `id_profissional` |
+| FOREIGN KEY | referencia outra tabela | Confundir com chave primária | `id_setor` em servidor |
+| UNIQUE | impede duplicidade | Achar que sempre é PK | CPF único |
+| NOT NULL | exige valor preenchido | Confundir com string vazia | email obrigatório |
+| 1FN | atributos atômicos | Guardar lista em uma coluna | telefones separados em outra tabela |
+| 2FN | sem dependência parcial | Ignorar chave composta | item de pedido |
+| 3FN | sem dependência transitiva | Guardar nome do setor no servidor | setor em tabela própria |
+| `WHERE` | filtra linhas | Usar para filtrar agregados | `WHERE uf = 'PR'` |
+| `HAVING` | filtra grupos | Usar antes do agrupamento | `HAVING COUNT(*) > 10` |
+| `GROUP BY` | forma grupos | Achar que ordena | contar por setor |
+| `ORDER BY` | ordena resultado | Achar que filtra | `ORDER BY nome` |
+| `INNER JOIN` | retorna correspondências | Achar que preserva todas da esquerda | profissional com registro |
+| `LEFT JOIN` | preserva tabela da esquerda | Achar que elimina sem correspondência | listar todos os profissionais |
+| `NULL` | ausência/desconhecimento de valor | Comparar com `= NULL` | `email IS NULL` |
+| `UPDATE` | altera linhas | Esquecer `WHERE` | alterar situação por id |
+| `DELETE` | remove linhas | Confundir com `DROP` | apagar registro específico |
+| `DROP` | remove objeto | Usar para excluir linhas filtradas | apagar tabela |
+| Trigger | rotina automática por evento | Confundir com view | auditoria após alteração |
+| View | consulta armazenada lógica | Achar que sempre guarda dados físicos | relatório de ativos |
+| Commit | confirma transação | Confundir com consulta | gravar alterações |
+| Rollback | desfaz transação não confirmada | Achar que recupera qualquer backup | desfazer erro antes do commit |
+
+## Pegadinhas do Dia 3
+
+- `WHERE` filtra linhas; `HAVING` filtra grupos.
+- `GROUP BY` agrupa; `ORDER BY` ordena.
+- `NULL` não é zero, string vazia nem texto "NULL"; use `IS NULL`.
+- `UPDATE` sem `WHERE` pode alterar todas as linhas.
+- `DELETE` remove linhas; `DROP` remove objeto.
+- `LEFT JOIN` preserva a tabela da esquerda; `INNER JOIN` exige correspondência.
+- Coluna não agregada no `SELECT` deve estar no `GROUP BY`, em regra.
+- `UNIQUE` e `PRIMARY KEY` são parecidos, mas não são sinônimos.
+- Trigger executa por evento; view representa consulta.
+- Normalização não é "dividir por dividir"; é reduzir redundância e anomalias com base em dependências.
+
 ---
 
 # Dia 4 - Legislação CRA-PR/CFA
@@ -1713,6 +1976,106 @@ Depois, crie uma tabela **Ética profissional** com:
 ## Assuntos que serão cobrados na Apostila de Questões
 
 Lei 4.769/1965, Decreto 61.934/1967, Regimento Interno do CRA-PR, RN CFA 651/2024 como norma de aprovação do Regimento, RN CFA 671/2025, deveres, direitos, infrações, sanções, competências do CFA/CRA e situações práticas de fiscalização/registro/ética.
+
+## Reforço de alinhamento com as questões - Dia 4
+
+As questões do Dia 4 usam muitos casos práticos. O caminho para acertar é identificar o sujeito da situação: profissional, pessoa jurídica, CRA regional, CFA, fiscal ou terceiro que usa indevidamente registro/nome profissional.
+
+### Registro, fiscalização e exercício irregular
+
+O Sistema CFA/CRAs existe para orientar, disciplinar e fiscalizar o exercício profissional no campo da Administração, conforme a legislação indicada no edital. Em prova, aparecem cenários como:
+
+- profissional atuando sem registro regular;
+- pessoa jurídica oferecendo serviços típicos da área de Administração;
+- uso indevido de número de registro;
+- assinatura de documento sem participação técnica real;
+- tentativa de dificultar fiscalização.
+
+Regra de raciocínio: se a atividade está ligada ao campo profissional fiscalizado, o CRA pode exigir regularidade de registro e apurar responsabilidade, respeitando processo e normas aplicáveis.
+
+### Competência do CFA x competência do CRA
+
+| Entidade | Papel central | Exemplo de prova |
+|---|---|---|
+| CFA | atuação nacional, normativa e orientadora do sistema | editar normas gerais, aprovar resoluções |
+| CRA | atuação regional, registro, fiscalização e aplicação prática na jurisdição | fiscalizar profissional ou empresa no Paraná |
+
+A pegadinha é atribuir ao CRA-PR uma competência nacional ou tratar o CFA como órgão regional de fiscalização direta cotidiana no Paraná.
+
+### Pessoa física, pessoa jurídica e responsabilidade técnica
+
+A legislação e as normas do Sistema CFA/CRAs podem envolver tanto profissionais quanto pessoas jurídicas. Uma empresa que presta serviços enquadráveis na área de Administração pode estar sujeita a registro/fiscalização. A pessoa jurídica não "substitui" automaticamente a responsabilidade técnica do profissional habilitado.
+
+Exemplo prático: uma consultoria empresarial anuncia serviços de organização e métodos, planejamento e gestão administrativa. A banca pode perguntar se o simples fato de ser pessoa jurídica afasta fiscalização. A resposta tende a ser não: a natureza da atividade é relevante.
+
+### Código de Ética: sigilo, zelo, independência e uso do registro
+
+Na RN CFA 671/2025, o foco de prova não deve ser decorar artigo isolado sem necessidade, mas entender deveres e condutas vedadas.
+
+Pontos que aparecem em caso prático:
+
+- **sigilo profissional:** proteger informações conhecidas no exercício profissional, salvo hipótese legal ou justa causa;
+- **zelo e diligência:** atuar com cuidado técnico;
+- **independência técnica:** não ceder a pressão para falsear informação ou assinar sem base;
+- **uso correto do nome e registro:** não emprestar registro, não assinar trabalho de terceiro sem participação, não facilitar exercício irregular;
+- **urbanidade com fiscalização:** colaborar com a atuação fiscalizatória.
+
+### Sanções: como estudar sem inventar prazo ou penalidade
+
+As questões desta semana evitam cobrar prazo, artigo ou penalidade específica não consolidada na apostila. Para acertar, memorize a lógica:
+
+1. há dever profissional;
+2. a conduta viola esse dever;
+3. há processo/averiguação conforme norma aplicável;
+4. pode haver sanção ética/disciplinar, conforme enquadramento.
+
+Não conclua automaticamente penalidade específica se o enunciado não trouxer base suficiente. Em legislação, a Consulplan costuma usar palavras absolutas como "sempre", "nunca", "dispensa qualquer registro" e "sem possibilidade de fiscalização" para induzir erro.
+
+### Normas do edital: função de cada uma
+
+| Norma | Função no estudo |
+|---|---|
+| Lei 4.769/1965 | base legal da profissão e do Sistema CFA/CRAs |
+| Decreto 61.934/1967 | regulamenta a lei |
+| Lei 12.514/2011 | trata de contribuições dos conselhos profissionais em linhas gerais |
+| RN CFA 649/2024 | regulamento de registro |
+| RN CFA 670/2025 | altera pontos do regulamento de registro |
+| RN CFA 651/2024 | aprova o Regimento Interno do CRA-PR |
+| RN CFA 671/2025 | Código de Ética indicado no edital vigente |
+| RN CFA 680/2025 | regulamento eleitoral do Sistema CFA/CRAs |
+
+## Tabela de revisão rápida do Dia 4
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| CFA | órgão nacional/normativo do sistema | Atribuir função regional cotidiana | editar resolução normativa |
+| CRA-PR | conselho regional com jurisdição no Paraná | Atribuir competência nacional | fiscalizar atuação no PR |
+| Registro profissional | regularidade para exercício fiscalizado | Achar que diploma sempre basta | profissional atuando sem registro |
+| Pessoa jurídica | empresa sujeita a registro/fiscalização conforme atividade | Achar que CNPJ dispensa controle | consultoria administrativa |
+| Responsabilidade técnica | vínculo entre atuação técnica e profissional habilitado | Assinar sem participar do trabalho | laudo/documento técnico |
+| Sigilo profissional | proteção de informação obtida no exercício | Usar para encobrir irregularidade | dados de cliente/processo |
+| Independência técnica | autonomia responsável dentro das normas | Ceder a pressão do contratante | alterar relatório sem base |
+| Uso indevido de registro | uso irregular de nome/número profissional | Emprestar registro a terceiro | assinar trabalho alheio |
+| Fiscalização | atuação do CRA para verificar regularidade | Dificultar ou impedir fiscal | não apresentar documentos |
+| RN 649/2024 | regulamento de registro | Confundir com Código de Ética | regras de registro |
+| RN 670/2025 | norma alteradora do registro | Estudar isolada sem RN 649 | alteração normativa |
+| RN 651/2024 | aprova Regimento do CRA-PR | Confundir com ética | estrutura do CRA-PR |
+| RN 671/2025 | Código de Ética vigente no edital | Usar RN antiga sem edital | deveres e infrações |
+| Lei 4.769/1965 | base legal da profissão | Ignorar por ser antiga | campos de atuação |
+| Decreto 61.934/1967 | regulamenta a lei | Tratar como lei autônoma sem relação | detalhamento regulamentar |
+
+## Pegadinhas do Dia 4
+
+- CFA atua em plano nacional/normativo; CRA-PR atua regionalmente no Paraná.
+- CNPJ não dispensa registro/fiscalização se a atividade estiver no campo fiscalizado.
+- Diploma não substitui automaticamente registro profissional regular.
+- Sigilo profissional não serve para acobertar irregularidade ou impedir dever legal.
+- Emprestar nome ou registro a terceiro pode caracterizar problema ético.
+- Assinar trabalho sem participação técnica real é conduta de risco.
+- RN 651/2024 aprova Regimento; RN 671/2025 é Código de Ética.
+- RN 670/2025 deve ser lida como alteração do regulamento de registro da RN 649/2024.
+- Evite decorar penalidade específica sem fonte; priorize dever, infração e lógica do processo.
+- Palavras como "sempre", "nunca" e "dispensa qualquer fiscalização" costumam indicar exagero.
 
 ---
 
@@ -2084,6 +2447,110 @@ Depois, escreva uma introdução para o tema: **"A importância da ética no uso
 ## Assuntos que serão cobrados na Apostila de Questões
 
 Interpretação de texto, inferência, semântica, coesão, classes de palavras, sintaxe, concordância, regência, crase, pontuação, reescrita e estrutura de dissertação.
+
+## Reforço de alinhamento com as questões - Dia 5
+
+As questões do Dia 5 cobram Português aplicado: pequenos textos, reescrita, conectores, pontuação, concordância, regência, crase e estratégia de leitura. O erro mais comum é resolver pela "frase bonita", e não pelo sentido exigido pelo texto.
+
+### Ideia central, inferência e extrapolação
+
+- **Ideia central:** o núcleo do texto; responde "sobre o que o texto fala e qual ponto principal defende".
+- **Inferência:** conclusão autorizada pelo texto, mesmo que não esteja escrita literalmente.
+- **Extrapolação:** conclusão que vai além do texto.
+
+Exemplo: se o texto diz que a digitalização melhora o atendimento, mas exige segurança, é inferência dizer que eficiência e proteção de dados devem caminhar juntas. É extrapolação dizer que todo serviço presencial deve acabar imediatamente.
+
+### Conectores e relações semânticas
+
+| Relação | Conectores frequentes | Ideia |
+|---|---|---|
+| Oposição/adversidade | mas, porém, contudo, entretanto | quebra expectativa |
+| Concessão | embora, ainda que, mesmo que | admite obstáculo sem impedir conclusão |
+| Conclusão | portanto, logo, assim, por isso | resultado lógico |
+| Causa | porque, visto que, uma vez que | motivo |
+| Condição | se, caso, desde que | requisito |
+| Adição | além disso, também, bem como | soma de ideias |
+
+Pegadinha: "embora" não é conclusão; é concessão. "Portanto" não é oposição; é conclusão.
+
+### Reescrita sem alteração de sentido
+
+Para aceitar uma reescrita, confira:
+
+1. o tempo verbal foi mantido?
+2. o sujeito continua o mesmo?
+3. a relação lógica entre as ideias foi preservada?
+4. não entrou generalização como "sempre", "todos", "nunca"?
+5. a regência e a concordância continuam corretas?
+
+Exemplo:
+
+Original: "Embora o sistema seja eficiente, ainda exige ajustes."  
+Reescrita equivalente: "Ainda que o sistema seja eficiente, ainda exige ajustes."  
+Reescrita não equivalente: "Como o sistema é eficiente, ainda exige ajustes." Aqui a concessão virou causa.
+
+### Concordância, regência, crase e pontuação
+
+Concordância: o verbo concorda com o sujeito. Cuidado com sujeito distante.
+
+Exemplo correto: "Os relatórios do setor de fiscalização foram enviados."  
+Núcleo do sujeito: "relatórios"; verbo no plural.
+
+Regência: alguns nomes e verbos exigem preposição.
+
+- obedecer **a** normas;
+- visar **a** um objetivo, no sentido de pretender;
+- acesso **a** informações;
+- apto **a** exercer função.
+
+Crase: ocorre quando há preposição `a` + artigo `a`. Não há crase antes de verbo, antes de masculino comum ou quando só há preposição sem artigo.
+
+Pontuação: não se separa sujeito do verbo por vírgula. A vírgula pode isolar adjunto adverbial deslocado, aposto explicativo e oração subordinada deslocada.
+
+### Discursiva: tese, desenvolvimento e conclusão
+
+Na discursiva, a banca quer resposta organizada. Uma estrutura segura:
+
+1. **Introdução:** apresenta tema e tese.
+2. **Desenvolvimento 1:** primeiro argumento com explicação.
+3. **Desenvolvimento 2:** segundo argumento com exemplo ou consequência.
+4. **Conclusão:** retoma tese e fecha com proposta/encaminhamento coerente.
+
+Evite texto meramente expositivo sem posição. Exemplo de tese: "A transformação digital no serviço público é positiva quando acompanhada de segurança da informação, capacitação e proteção de dados."
+
+## Tabela de revisão rápida do Dia 5
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| Ideia central | ponto principal do texto | Confundir detalhe com tese | texto defende segurança digital |
+| Inferência | conclusão autorizada pelo texto | Extrapolar para além do texto | eficiência exige governança |
+| Extrapolação | afirmação sem base textual | Marcar opinião pessoal | "todo atendimento presencial acabará" |
+| Coesão referencial | retomada de termos | Perder referente de pronome | "isso", "tal medida" |
+| Adversidade | oposição entre ideias | Confundir com conclusão | "mas", "porém" |
+| Concessão | obstáculo que não impede fato | Confundir com causa | "embora" |
+| Conclusão | resultado lógico | Confundir com oposição | "portanto" |
+| Condição | requisito para ocorrência | Confundir com causa | "se", "caso" |
+| Concordância verbal | verbo concorda com sujeito | Concordar com termo próximo | "Os dados foram enviados" |
+| Regência verbal | verbo exige complemento/preposição | Omitir preposição exigida | "visar a um objetivo" |
+| Regência nominal | nome exige preposição | Usar preposição inadequada | "acesso a dados" |
+| Crase | preposição `a` + artigo `a` | Usar antes de verbo | "à fiscalização", mas "a fiscalizar" |
+| Vírgula | organiza termos e orações | Separar sujeito e verbo | errado: "Os candidatos, estudaram" |
+| Reescrita | preserva sentido e correção | Trocar relação lógica | concessão virar causa |
+| Tese | posição central da discursiva | Fazer introdução sem ponto de vista | "é necessário equilibrar..." |
+| Conclusão | fechamento coerente | Trazer argumento novo no fim | retomar tese e propor caminho |
+
+## Pegadinhas do Dia 5
+
+- Inferência precisa estar autorizada pelo texto; opinião pessoal não basta.
+- "Embora" indica concessão, não causa nem conclusão.
+- "Mas" e "porém" indicam oposição; "portanto" indica conclusão.
+- Reescrita correta deve preservar sentido, tempo verbal e relação lógica.
+- Não se separa sujeito e verbo por vírgula.
+- Não há crase antes de verbo.
+- "Há" indica tempo passado ou existência; "a" pode indicar tempo futuro/distância.
+- "Onde" deve retomar lugar físico ou espaço concebido como lugar, não qualquer ideia abstrata.
+- Concordância deve seguir o núcleo do sujeito, não o termo mais próximo.
+- Na discursiva, introdução sem tese reduz força argumentativa.
 
 ---
 
@@ -2555,6 +3022,173 @@ Depois, escolha os 3 erros mais graves e programe revisão para o início da Sem
 ## Assuntos que serão cobrados na Apostila de Questões
 
 Princípios da Administração Pública, Administração Direta e Indireta, autarquias, atos administrativos, LAI, LGPD, improbidade, licitações em noção inicial, proposições, conectivos, negações, argumentos, sequências, conjuntos, regra de três, porcentagem, PA/PG e revisão mista da Semana 1.
+
+## Reforço de alinhamento com as questões - Dia 6
+
+As questões do Dia 6 misturam Administração Pública e RLM. A dificuldade está em alternar raciocínio jurídico e cálculo sem perder precisão no comando da questão.
+
+### Art. 37, Administração Indireta e conselhos profissionais
+
+Os princípios do art. 37 devem ser aplicados em situações práticas:
+
+- restrição indevida em edital pode violar impessoalidade, isonomia e competitividade;
+- publicidade é regra, mas não autoriza expor dados pessoais sem finalidade;
+- eficiência não autoriza descumprir legalidade;
+- moralidade não é opinião pessoal: é padrão jurídico de conduta administrativa.
+
+Administração Direta é formada por órgãos sem personalidade jurídica própria, como ministérios e secretarias. Administração Indireta é formada por entidades com personalidade própria, como autarquias, fundações públicas, empresas públicas e sociedades de economia mista.
+
+Conselhos profissionais costumam aparecer como autarquias corporativas ou entidades de fiscalização profissional, pois exercem poder de polícia profissional, registro e fiscalização.
+
+### Atos administrativos: elementos, atributos e desfazimento
+
+Elementos clássicos:
+
+| Elemento | Pergunta que responde |
+|---|---|
+| Competência | quem pode praticar o ato? |
+| Finalidade | para qual interesse público? |
+| Forma | como o ato deve ser exteriorizado? |
+| Motivo | quais fatos e fundamentos justificam? |
+| Objeto | qual efeito jurídico o ato produz? |
+
+Pegadinha central: competência não é escolha pessoal do agente; decorre da lei. Finalidade pública não pode ser usada como fachada para punição pessoal ou favorecimento.
+
+Diferenças importantes:
+
+- **anulação:** desfaz ato ilegal;
+- **revogação:** desfaz ato válido por conveniência e oportunidade;
+- **ato vinculado:** lei reduz margem de escolha;
+- **ato discricionário:** há escolha dentro da lei, nunca contra a lei.
+
+### Licitação: modalidade, critério, contratação direta e procedimento
+
+Em licitação, identifique primeiro o objeto.
+
+- **Pregão:** bens e serviços comuns.
+- **Concorrência:** contratações comuns de maior complexidade ou hipóteses legais.
+- **Concurso:** trabalho técnico, científico ou artístico.
+- **Leilão:** alienação de bens.
+- **Diálogo competitivo:** contratações complexas em que a solução precisa ser construída por diálogo.
+
+Critérios de julgamento:
+
+- menor preço;
+- maior desconto;
+- melhor técnica ou conteúdo artístico;
+- técnica e preço;
+- maior lance, em leilão;
+- maior retorno econômico, quando cabível.
+
+Contratação direta:
+
+- **Dispensa:** competição seria possível, mas a lei autoriza contratar diretamente.
+- **Inexigibilidade:** competição é inviável.
+
+Mesmo quando há contratação direta, deve existir processo, motivação, justificativa e controle. A banca costuma sugerir que contratação direta permite escolha livre sem formalidade; isso é erro.
+
+### Improbidade e responsabilidade civil do Estado
+
+Improbidade administrativa não é qualquer erro. Para prova, memorize: exige enquadramento legal, gravidade e elemento subjetivo quando exigido pela lei. Erro formal ou divergência técnica razoável não vira improbidade automaticamente.
+
+Responsabilidade civil do Estado:
+
+- em ato comissivo, regra geral cobrada: responsabilidade objetiva;
+- requisitos: conduta estatal, dano e nexo causal;
+- não exige prova de culpa do Estado perante a vítima, mas exige dano e nexo;
+- em ação regressiva contra agente, apuram-se dolo ou culpa;
+- culpa exclusiva da vítima pode excluir responsabilidade;
+- culpa concorrente pode atenuar indenização;
+- caso fortuito/força maior podem romper o nexo, conforme o caso.
+
+Em omissão, procure dever específico de agir, possibilidade de atuação e nexo com o dano. Não trate toda omissão como indenização automática.
+
+### RLM: lógica, conjuntos e cálculo
+
+Negações essenciais:
+
+| Proposição | Negação |
+|---|---|
+| Todo A é B | Algum A não é B |
+| Algum A é B | Nenhum A é B |
+| P e Q | não P ou não Q |
+| P ou Q | não P e não Q |
+| Se P, então Q | P e não Q |
+
+Condicional `P -> Q` só é falsa quando P é verdadeira e Q é falsa.
+
+Conjuntos:
+
+`n(A união B) = n(A) + n(B) - n(A interseção B)`.
+
+Se houver pessoas fora dos conjuntos, some esse grupo depois.
+
+Porcentagem:
+
+- aumento de 12%: multiplique por `1,12`;
+- desconto de 15%: multiplique por `0,85`;
+- para descobrir valor original após desconto, divida pelo fator final.
+
+Regra de três composta: quando houver pessoas e tempo, calcule produtividade por pessoa-tempo para evitar inversão.
+
+PA e PG:
+
+- PA: `an = a1 + (n - 1)r`;
+- soma da PA: `Sn = (a1 + an)n / 2`;
+- PG: termos multiplicam pela razão;
+- soma da PG finita: `Sn = a1(q^n - 1)/(q - 1)`, se `q` diferente de 1.
+
+Probabilidade:
+
+- com reposição: eventos tendem a manter denominador;
+- sem reposição: denominador e numerador mudam após retirada;
+- complemento: `P(não A) = 1 - P(A)`.
+
+## Tabela de revisão rápida do Dia 6
+
+| Conceito | Definição curta | Pegadinha comum | Exemplo |
+|---|---|---|---|
+| Legalidade | Administração age conforme a lei | Eficiência superar lei | edital precisa base legal |
+| Impessoalidade | vedação a favorecimento pessoal | marca direcionada sem justificativa | especificação neutra |
+| Publicidade | transparência como regra | divulgar dado pessoal sem limite | LAI com sigilo legal |
+| Autarquia | entidade da Administração Indireta de direito público | chamar de órgão da Direta | conselho profissional |
+| Órgão público | centro de competência sem personalidade própria | confundir com entidade | secretaria |
+| Competência | poder legal para agir | transferir por acordo informal | autoridade competente |
+| Finalidade | interesse público do ato | usar ato para perseguição | desvio de finalidade |
+| Anulação | desfaz ato ilegal | confundir com conveniência | ato sem competência |
+| Revogação | desfaz ato válido por mérito | usar para corrigir ilegalidade | ato inconveniente |
+| Dispensa | competição possível, lei autoriza não licitar | tratar como inexigibilidade | hipótese legal de dispensa |
+| Inexigibilidade | competição inviável | presumir em toda tecnologia | fornecedor exclusivo comprovado |
+| Pregão | bens e serviços comuns | usar para trabalho artístico | suporte técnico comum |
+| Diálogo competitivo | solução complexa definida por diálogo | confundir com credenciamento | contratação tecnológica complexa |
+| Improbidade | ilícito qualificado contra Administração | qualquer erro vira improbidade | enriquecimento ilícito/dano/princípios |
+| Responsabilidade objetiva | dano e nexo sem prova de culpa | indenização automática sem dano | colisão de veículo oficial |
+| Culpa exclusiva | rompe nexo causal | confundir com concorrente | vítima causa sozinha o dano |
+| Condicional | `P -> Q` | negar como `não P -> não Q` | negação: P e não Q |
+| De Morgan | negação de conectivos | negar mantendo o mesmo conectivo | não(P e Q)=não P ou não Q |
+| Inclusão-exclusão | união desconta interseção | somar duas vezes quem está em ambos | 18 + 12 - 7 |
+| Porcentagem reversa | recupera valor original | somar taxa ao valor final | 3400/0,85 |
+| PA | soma constante | usar n em vez de n-1 | 7, 11, 15... |
+| PG | razão multiplicativa | confundir termo com soma | 3, 6, 12... |
+| Probabilidade sem reposição | retirada altera total | manter denominador igual | 5/8 x 4/7 |
+
+## Pegadinhas do Dia 6
+
+- Eficiência não autoriza violar legalidade.
+- Publicidade não é absoluta; dados pessoais e sigilo legal limitam divulgação.
+- Autarquia é entidade da Administração Indireta; órgão público não tem personalidade própria.
+- Competência decorre da norma, não de acordo informal entre servidores.
+- Desvio de finalidade ocorre quando o ato aparenta legalidade, mas busca fim indevido.
+- Dispensa e inexigibilidade não são sinônimos.
+- Contratação direta não elimina processo, motivação e controle.
+- Improbidade não é qualquer ilegalidade ou erro formal.
+- Responsabilidade objetiva dispensa culpa, mas não dispensa dano e nexo causal.
+- Na condicional, a negação de "se P então Q" é "P e não Q".
+- A negação de "todo" é "algum não", não "nenhum".
+- Em conjuntos, subtraia a interseção para não contar duas vezes.
+- Em porcentagem reversa, divida pelo fator final; não some a taxa ao valor com desconto.
+- Em PA, até o termo `n` há `n - 1` saltos.
+- Em probabilidade sem reposição, o total muda depois da primeira retirada.
 
 ---
 
