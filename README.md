@@ -6,7 +6,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 
 ## Arquivos principais
 
-- `plano_estudos_concurso.md`: plano geral de estudos e organização semanal.
+- `plano_estudos_concurso.md`: Plano Mestre de Cobertura do Edital CRA-PR 2026, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura do edital.
 - `CRA PARANA EDITAL.pdf`: edital oficial usado como base.
 - `Apostila_Estudo_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila teórica da Semana 1.
 - `Apostila_Questoes_Semana_1_CRA_PR_Analista_Sistemas_v1_2.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
