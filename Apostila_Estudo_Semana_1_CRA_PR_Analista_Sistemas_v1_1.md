@@ -310,6 +310,15 @@ Conceitos importantes:
 - **Endereço físico:** endereço real na memória principal.
 - **Modos de endereçamento:** formas de indicar operandos, como imediato, direto, indireto, por registrador.
 
+| Modo        | Onde está o valor?                         | Exemplo               | Ideia                    |
+| ----------- | ------------------------------------------ | --------------------- | ------------------------ |
+| Imediato    | Na própria instrução                       | `MOV R1, 10`          | Use o valor 10           |
+| Direto      | Em um endereço de memória                  | `LOAD R1, [1000]`     | Busque na gaveta 1000    |
+| Indireto    | Em um endereço apontado por outro endereço | `LOAD R1, [[1000]]`   | Vá onde o bilhete mandar |
+| Registrador | Dentro da CPU                              | `ADD R1, R2`          | Use valores já na CPU    |
+| Indexado    | Base + deslocamento                        | `LOAD R1, [BASE + i]` | Acessar arrays/listas    |
+
+
 ### Como funciona na prática
 
 Em sistemas com memória virtual, o programa trabalha com endereços virtuais. O sistema operacional e a unidade de gerenciamento de memória fazem a tradução para endereços físicos. Isso permite isolamento entre processos e melhor gestão da memória.
