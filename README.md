@@ -11,6 +11,8 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
+- `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
+- `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões extras de revisão fixa.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -31,6 +33,16 @@ A Semana 1 possui:
 - 300 questões principais, divididas em 50 questões por dia;
 - 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM, Informática e caderno de erros;
 - 420 questões no total.
+
+## Semana 2
+
+A Semana 2 está concluída e aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados. Ela inclui topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
+
+Também possui:
+
+- 300 questões principais, distribuídas em 50 por dia;
+- 120 questões extras das revisões fixas de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
+- 420 questões autorais no total, todas com gabarito e comentário fundamentado na apostila.
 
 ## Organização
 

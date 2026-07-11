@@ -801,7 +801,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário da Questão 1
 
-**Alternativa correta: D.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
@@ -2923,7 +2923,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário da Questão 3
 
-**Alternativa correta: D.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
@@ -10453,3 +10453,2064 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Como pensar:** alinhe a forma de todos os itens coordenados e complete comparações.
 
 **Referência:** [Português — paralelismo e clareza](semana_02_estudo.md#s2-d5-rf-portugues).
+
+---
+
+# Dia 6 — Revisão Integrada e Estudo de Caso
+
+## Questões principais
+
+### Questão 1
+
+Em um enlace de 1 Gbit/s, a aplicação recebe 700 Mbit/s de dados úteis. A medida de 1 Gbit/s é largura de banda e a de 700 Mbit/s é:
+
+A) latência.
+B) jitter.
+C) goodput.
+D) perda.
+
+### Questão 2
+
+Sobre um switch Ethernet, assinale a correta.
+
+A) Atua apenas como repetidor multiporta.
+B) Encaminha sempre todos os quadros a todas as portas.
+C) Elimina qualquer broadcast.
+D) Aprende endereços MAC e separa domínios de colisão por porta.
+
+### Questão 3
+
+No encaminhamento de um pacote IPv4 por um roteador, normalmente:
+
+A) o quadro de enlace é removido e outro é criado para o próximo enlace.
+B) o segmento TCP vira obrigatoriamente datagrama UDP.
+C) o endereço MAC de origem é mantido até o destino final.
+D) a aplicação recebe diretamente os bits do enlace.
+
+### Questão 4
+
+Para `10.0.5.130/26`, a rede e o broadcast são, respectivamente:
+
+A) `10.0.5.0` e `10.0.5.255`.
+B) `10.0.5.64` e `10.0.5.127`.
+C) `10.0.5.128` e `10.0.5.191`.
+D) `10.0.5.130` e `10.0.5.192`.
+
+### Questão 5
+
+Um host IPv4 precisa alcançar endereço fora da própria sub-rede. Antes de transmitir, ele normalmente obtém por ARP o MAC:
+
+A) do servidor remoto.
+B) do DNS autoritativo.
+C) do switch de acesso.
+D) do gateway local.
+
+### Questão 6
+
+No IPv6, a descoberta de vizinhos é apoiada principalmente por:
+
+A) broadcast ARP.
+B) DNS recursivo.
+C) TCP.
+D) ICMPv6/Neighbor Discovery.
+
+### Questão 7
+
+Analise as assertivas sobre TCP e UDP.
+
+I. TCP oferece confirmação e ordenação no transporte.
+II. UDP fornece retransmissão nativa.
+III. Uma aplicação sobre UDP pode implementar confiabilidade própria.
+
+Está correto o que se afirma em:
+
+A) I e III, apenas.
+B) I e II, apenas.
+C) II e III, apenas.
+D) I, II e III.
+
+### Questão 8
+
+Um navegador usa HTTP/3 para acesso HTTPS. A associação usual é:
+
+A) HTTP/3 sobre TCP/80.
+B) HTTP/3 sem transporte.
+C) HTTP/3 sobre QUIC, normalmente em UDP/443.
+D) HTTP/3 sobre SMTP/25.
+
+### Questão 9
+
+Na inicialização IPv4 por DHCP, a sequência DORA corresponde a:
+
+A) Discover, Offer, Request e ACK.
+B) DNS, Offer, Route e ARP.
+C) Deliver, Open, Resolve e Accept.
+D) Discover, Order, Reply e Audit.
+
+### Questão 10
+
+Assinale a alternativa correta sobre DNS.
+
+A) Atribui máscara e gateway ao cliente.
+B) Resolve ou publica dados de nomes e pode usar UDP ou TCP.
+C) Substitui TLS na autenticação de servidor.
+D) Funciona somente por broadcast.
+
+### Questão 11
+
+Para enviar uma mensagem e manter cópia sincronizada no servidor, a combinação apropriada é:
+
+A) SMTP para envio e IMAP para acesso à caixa.
+B) POP3 para envio e SMTP para sincronização.
+C) SNMP para envio e LDAP para leitura.
+D) SFTP para envio e NTP para leitura.
+
+### Questão 12
+
+Qual associação está correta?
+
+A) FTPS é SFTP com outro nome.
+B) Telnet cifra o terminal por padrão.
+C) SFTP transfere arquivos sobre SSH.
+D) SSH é protocolo de recebimento de correio.
+
+### Questão 13
+
+Em uma inspeção de equipamentos, SNMP é usado principalmente para:
+
+A) resolver nomes.
+B) gerenciar e consultar objetos definidos em MIB/OID.
+C) atribuir endereços IPv4.
+D) cifrar tráfego web.
+
+### Questão 14
+
+NAT e PAT se distinguem porque PAT:
+
+A) substitui o roteamento IP.
+B) cifra todos os pacotes.
+C) atua apenas em IPv6.
+D) também traduz portas para multiplexar fluxos.
+
+### Questão 15
+
+Um log apresenta horários inconsistentes entre servidores. O serviço mais diretamente relacionado é:
+
+A) NTP.
+B) LDAP.
+C) FTP.
+D) ARP.
+
+### Questão 16
+
+Uma falha de validação explorável é uma vulnerabilidade; o agente capaz de explorá-la é uma ameaça; a combinação de probabilidade e impacto expressa:
+
+A) disponibilidade.
+B) auditoria.
+C) risco.
+D) não repúdio.
+
+### Questão 17
+
+Autenticação e autorização significam, respectivamente:
+
+A) registrar evento e restaurar cópia.
+B) provar identidade e verificar permissão para uma ação.
+C) cifrar conteúdo e gerar hash.
+D) detectar ataque e bloqueá-lo.
+
+### Questão 18
+
+Sobre sniffing, spoofing e ataque on-path, assinale a correta.
+
+A) Sniffing necessariamente altera o conteúdo.
+B) Spoofing é sinônimo de indisponibilidade.
+C) On-path apenas mede latência.
+D) Spoofing falsifica identidade; on-path pode interceptar e alterar tráfego.
+
+### Questão 19
+
+Uma equipe deseja detectar tráfego suspeito sem necessariamente interrompê-lo. O controle mais compatível é:
+
+A) IDS.
+B) IPS obrigatoriamente em linha.
+C) RAID.
+D) NAT.
+
+### Questão 20
+
+Ao publicar um portal acessível externamente, a arquitetura mais adequada é posicioná-lo:
+
+A) na mesma VLAN dos bancos internos, sem filtros.
+B) na DMZ, com regras estritas para os serviços internos necessários.
+C) atrás de qualquer estação usuária.
+D) fora de todo firewall.
+
+### Questão 21
+
+Uma VPN reduz o risco de interceptação no caminho, mas não garante que:
+
+A) o túnel possa proteger tráfego entre extremos.
+B) haja confidencialidade no canal configurado.
+C) o endpoint remoto esteja sem malware ou autorizado a toda ação.
+D) exista autenticação dos extremos conforme a configuração.
+
+### Questão 22
+
+Em criptografia, um hash é usado principalmente para:
+
+A) confidencialidade reversível por chave.
+B) produzir resumo de integridade, não recuperar o original.
+C) encaminhar pacotes entre redes.
+D) substituir certificado digital.
+
+### Questão 23
+
+Assinale a correta sobre assinatura digital.
+
+A) É criada com a chave pública e verificada com a privada.
+B) Oculta necessariamente todo o documento.
+C) É criada com a chave privada e verificada com a pública.
+D) É idêntica a uma senha compartilhada.
+
+### Questão 24
+
+O principal papel do TLS em HTTPS é:
+
+A) proteger o canal entre cliente e servidor, conforme autenticação e configuração.
+B) garantir que todo conteúdo publicado seja verdadeiro.
+C) eliminar vulnerabilidades da aplicação.
+D) substituir DNS e roteamento.
+
+### Questão 25
+
+Sobre WPA3-Personal, assinale a correta.
+
+A) Dispensa senha forte e atualização do AP.
+B) Usa apenas WEP.
+C) Elimina toda necessidade de segmentação.
+D) Usa SAE, mas configuração e credenciais continuam relevantes.
+
+### Questão 26
+
+Na resposta a incidente, a contenção tem por objetivo imediato:
+
+A) apagar toda evidência.
+B) limitar propagação e impacto antes da erradicação e recuperação.
+C) restaurar sem investigar persistência.
+D) publicar relatório antes de analisar.
+
+### Questão 27
+
+Com RPO de 30 minutos e incidente às 14h, o ponto recuperado deve ser, no máximo, de:
+
+A) 12h.
+B) 13h30.
+C) 14h30.
+D) qualquer horário, se houver RAID.
+
+### Questão 28
+
+Redundância e backup diferem porque:
+
+A) redundância reduz interrupção; backup permite recuperar estado ou versões anteriores.
+B) backup impede automaticamente indisponibilidade.
+C) RAID substitui cópia externa versionada.
+D) ambos têm exatamente a mesma finalidade.
+
+### Questão 29
+
+Concorrência é diferente de paralelismo porque concorrência:
+
+A) exige sempre dois núcleos físicos.
+B) nunca compartilha recursos.
+C) pode ocorrer por intercalação sem execução simultânea real.
+D) elimina condições de corrida.
+
+### Questão 30
+
+Uma condição de corrida ocorre quando:
+
+A) a CPU entra em deadlock.
+B) o resultado depende de intercalações não controladas sobre estado compartilhado.
+C) uma thread termina antes das demais.
+D) há apenas um processo no sistema.
+
+### Questão 31
+
+O mutex é apropriado quando se deseja:
+
+A) permitir vários titulares simultâneos na seção crítica.
+B) substituir toda estratégia de escalonamento.
+C) armazenar mensagens persistentes.
+D) exclusão mútua de uma seção crítica.
+
+### Questão 32
+
+No caso clássico de deadlock, as condições de Coffman devem:
+
+A) coexistir.
+B) ocorrer em momentos independentes.
+C) ser substituídas por starvation.
+D) ser ignoradas se houver semáforo.
+
+### Questão 33
+
+Starvation descreve situação em que:
+
+A) nenhum participante pode avançar por espera circular.
+B) um participante pode ser adiado indefinidamente, enquanto outros progridem.
+C) todos os recursos são liberados automaticamente.
+D) uma thread executa em paralelo.
+
+### Questão 34
+
+Em Round Robin, reduzir demais o quantum tende a:
+
+A) eliminar todas as trocas de contexto.
+B) tornar FCFS.
+C) impedir preempção.
+D) aumentar overhead de trocas de contexto.
+
+### Questão 35
+
+Polling e interrupção diferem porque:
+
+A) polling consulta repetidamente; interrupção sinaliza a CPU quando necessário.
+B) interrupção transfere dados sem CPU, como DMA.
+C) polling cifra dispositivos.
+D) ambos são sinônimos.
+
+### Questão 36
+
+O DMA contribui para desempenho ao:
+
+A) eliminar a necessidade de memória.
+B) permitir transferência de blocos com menor intervenção da CPU por unidade.
+C) substituir drivers.
+D) impedir interrupções.
+
+### Questão 37
+
+Journaling em sistema de arquivos serve principalmente para:
+
+A) ser cópia externa histórica.
+B) manter credenciais cifradas.
+C) auxiliar recuperação de consistência após falha.
+D) substituir permissões.
+
+### Questão 38
+
+Em Linux, a permissão `640` indica:
+
+A) dono lê/escreve, grupo lê, outros não têm acesso.
+B) todos leem e escrevem.
+C) dono executa, grupo escreve, outros leem.
+D) nenhuma permissão para o dono.
+
+### Questão 39
+
+No Windows, uma DACL é relevante para:
+
+A) calcular CIDR.
+B) armazenar rotas BGP.
+C) definir ACEs de permissões e negações sobre objeto.
+D) sincronizar relógio.
+
+### Questão 40
+
+Em um caso CRA, um portal deixa de responder, mas `ping` ao servidor funciona. A conclusão correta é:
+
+A) a aplicação está necessariamente saudável.
+B) o DNS está necessariamente correto.
+C) o firewall está necessariamente aberto.
+D) conectividade IP isolada não prova saúde do serviço ou da aplicação.
+
+### Questão 41
+
+Em uma investigação, logs com hora incorreta prejudicam principalmente:
+
+A) correlação temporal de eventos.
+B) cálculo de permissões NTFS.
+C) tamanho de quadros Ethernet.
+D) resolução ARP.
+
+### Questão 42
+
+Uma organização deve combinar segmentação, MFA, atualização e monitoramento porque:
+
+A) um controle único elimina todo risco.
+B) defesa em profundidade reduz dependência de uma única barreira.
+C) IDS substitui autenticação.
+D) VPN substitui correção de vulnerabilidades.
+
+### Questão 43
+
+Qual sequência descreve melhor um acesso web seguro após inicialização do cliente?
+
+A) DNS, DHCP, SMTP, ARP, TLS.
+B) DHCP, FTP, LDAP, NAT, HTTP.
+C) DHCP, DNS, transporte, TLS e HTTP.
+D) NTP, IMAP, ICMP, SSH e HTTP.
+
+### Questão 44
+
+Um proxy reverso normalmente representa:
+
+A) clientes internos perante qualquer site externo.
+B) somente o gateway IPv4.
+C) agentes SNMP.
+D) servidores publicados perante clientes.
+
+### Questão 45
+
+Sobre LDAP, assinale a correta.
+
+A) É protocolo de acesso a serviços de diretório.
+B) É mecanismo de tradução de portas.
+C) É protocolo de transferência de arquivos.
+D) É algoritmo de criptografia.
+
+### Questão 46
+
+Em um laudo técnico, afirmar que “porta 443 prova que o conteúdo é seguro” é incorreto porque:
+
+A) HTTPS nunca usa 443.
+B) a porta é convenção; segurança depende de protocolo, TLS, validação e endpoint.
+C) TLS só existe em UDP.
+D) DNS define a porta por criptografia.
+
+### Questão 47
+
+Assinale a situação que caracteriza mais diretamente indisponibilidade.
+
+A) Alteração não autorizada de dado.
+B) Divulgação de documento sigiloso.
+C) Associação errada entre usuário e grupo.
+D) DDoS que satura o enlace do órgão.
+
+### Questão 48
+
+Ao preservar uma imagem de disco antes de erradicar malware, a equipe prioriza:
+
+A) autenticação.
+B) compactação.
+C) preservação de evidência para análise.
+D) desfragmentação.
+
+### Questão 49
+
+Qual ação é de observação, e não de alteração de processo?
+
+A) `taskkill`.
+B) `Stop-Process`.
+C) `kill`.
+D) `Get-Process`.
+
+### Questão 50
+
+Considere a afirmação: “A restauração foi concluída; logo, o plano de continuidade foi validado.” Ela é insuficiente porque:
+
+A) restauração nunca deve ser testada.
+B) é preciso também validar integridade, dependências e funcionamento de negócio.
+C) backup substitui qualquer teste.
+D) RTO e RPO deixam de importar após a cópia.
+
+## Questões extras de revisão fixa do Dia 6
+
+#### Extra Dia 6.1
+
+No trecho “A segmentação ajuda, mas não substitui MFA”, a ideia central é que:
+
+A) MFA é dispensável.
+B) controles são complementares.
+C) segmentação impede todo ataque.
+D) segurança é binária.
+
+#### Extra Dia 6.2
+
+De “UDP não retransmite nativamente” infere-se que:
+
+A) UDP nunca pode transportar aplicação confiável.
+B) toda perda é corrigida por TCP.
+C) a aplicação pode implementar recuperação própria.
+D) DNS substitui UDP.
+
+#### Extra Dia 6.3
+
+Em “Embora o host responda, o serviço falhou porque houve deadlock”, os conectores indicam:
+
+A) concessão e causa.
+B) causa e finalidade.
+C) conclusão e oposição.
+D) condição e explicação.
+
+#### Extra Dia 6.4
+
+Em “A analista informou à gerente que seu acesso expirou”, para eliminar ambiguidade deve-se:
+
+A) retirar “seu”.
+B) assumir o termo mais próximo.
+C) usar plural.
+D) explicitar “acesso da analista” ou “da gerente”.
+
+#### Extra Dia 6.5
+
+Da frase “o IDS pode alertar”, conclui-se que:
+
+A) alerta é garantia universal de detecção.
+B) IDS bloqueia sempre.
+C) IDS substitui firewall.
+D) alerta é possibilidade ou capacidade, não garantia universal de detecção.
+
+#### Extra Dia 6.6
+
+A reescrita que preserva “Ainda que o backup esteja íntegro, teste a restauração” é:
+
+A) Backup íntegro proíbe teste.
+B) Teste somente se houver corrupção.
+C) Mesmo íntegro, o backup exige teste de restauração.
+D) Testar torna o backup íntegro.
+
+#### Extra Dia 6.7
+
+Assinale a frase correta.
+
+A) Haviam falhas e existe controles.
+B) Havia falhas e existem controles.
+C) Houveram falhas e existe controles.
+D) Haviam falhas e existia controles.
+
+#### Extra Dia 6.8
+
+Assinale o emprego correto de regência e crase.
+
+A) Obedeceu à política e começou à analisar registros.
+B) Obedeceu a política e começou à analisar registros.
+C) Referiu-se as regras e à todos.
+D) Obedeceu à política e começou a analisar registros.
+
+#### Extra Dia 6.9
+
+Assinale a pontuação adequada.
+
+A) Os administradores, revogaram credenciais.
+B) A equipe preservou, registros essenciais.
+C) Após a contenção, a equipe preservou os registros.
+D) Os servidores vulneráveis, foram isolados.
+
+#### Extra Dia 6.10
+
+Há paralelismo adequado em:
+
+A) Isolar hosts, a revogação de credenciais e preservar logs.
+B) Isolar hosts, revogar credenciais e a preservação de logs.
+C) Isolar hosts, que credenciais sejam revogadas e logs.
+D) Isolar hosts, revogar credenciais e preservar logs.
+
+#### Extra Dia 6.11
+
+Em enlace de 1 Gbit/s, throughput de 700 Mbit/s e goodput de 620 Mbit/s, a variação do atraso é:
+
+A) jitter.
+B) largura de banda.
+C) broadcast.
+D) CIDR.
+
+#### Extra Dia 6.12
+
+Ao rotear para novo enlace Ethernet, o equipamento:
+
+A) preserva o quadro origem intacto.
+B) recria o quadro para o próximo enlace.
+C) converte IP em DNS.
+D) elimina o pacote IP.
+
+#### Extra Dia 6.13
+
+Para `192.168.10.77/27`, a rede é:
+
+A) `192.168.10.0`.
+B) `192.168.10.32`.
+C) `192.168.10.64`.
+D) `192.168.10.77`.
+
+#### Extra Dia 6.14
+
+Para destino IPv4 remoto, o host resolve por ARP o MAC:
+
+A) do gateway local.
+B) do destino remoto.
+C) do DNS.
+D) do NAT.
+
+#### Extra Dia 6.15
+
+DHCP, DNS, TLS e HTTP têm, respectivamente, funções de:
+
+A) correio, arquivos, roteamento e tempo.
+B) configuração, nomes, proteção do canal e aplicação web.
+C) diretório, autenticação, backup e banco.
+D) gerência, NAT, Wi-Fi e arquivo.
+
+#### Extra Dia 6.16
+
+Assinale a associação correta.
+
+A) SMTP lê caixa; IMAP envia; SFTP é FTP sem cifra.
+B) NTP entrega IP; SNMP resolve nomes.
+C) SMTP envia; IMAP acessa caixa; SFTP usa SSH.
+D) LDAP traduz portas; PAT lista diretórios.
+
+#### Extra Dia 6.17
+
+Uma falha explorável, código malicioso e probabilidade/impacto representam:
+
+A) vulnerabilidade, ameaça e risco.
+B) ativo, CIA e backup.
+C) firewall, IDS e IPS.
+D) evento, NTP e VPN.
+
+#### Extra Dia 6.18
+
+Assinale a correta.
+
+A) Hash cifra reversivelmente.
+B) IPS em linha pode bloquear, e HMAC usa chave secreta para integridade/autenticidade.
+C) WPA3 dispensa senha forte.
+D) VLAN substitui firewall.
+
+#### Extra Dia 6.19
+
+Com incidente às 14h, RPO 30 min e RTO 2h, é correto:
+
+A) recuperar ponto não anterior a 13h30 e restabelecer até 2h.
+B) RPO é prazo de serviço.
+C) RTO é perda máxima de dados.
+D) RAID substitui backup.
+
+#### Extra Dia 6.20
+
+Assinale a correta sobre SO.
+
+A) DMA copia cada byte pela CPU e journaling é backup.
+B) Deadlock e starvation são sinônimos.
+C) Mutex permite todos na seção crítica.
+D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling auxilia consistência.
+
+## Gabarito do Dia 6
+
+### Questões principais
+
+| Questão | Resposta |
+|---:|:---:|
+| 1 | C |
+| 2 | D |
+| 3 | A |
+| 4 | C |
+| 5 | D |
+| 6 | D |
+| 7 | A |
+| 8 | C |
+| 9 | A |
+| 10 | B |
+| 11 | A |
+| 12 | C |
+| 13 | B |
+| 14 | D |
+| 15 | A |
+| 16 | C |
+| 17 | B |
+| 18 | D |
+| 19 | A |
+| 20 | B |
+| 21 | C |
+| 22 | B |
+| 23 | C |
+| 24 | A |
+| 25 | D |
+| 26 | B |
+| 27 | B |
+| 28 | A |
+| 29 | C |
+| 30 | B |
+| 31 | D |
+| 32 | A |
+| 33 | B |
+| 34 | D |
+| 35 | A |
+| 36 | B |
+| 37 | C |
+| 38 | A |
+| 39 | C |
+| 40 | D |
+| 41 | A |
+| 42 | B |
+| 43 | C |
+| 44 | D |
+| 45 | A |
+| 46 | B |
+| 47 | D |
+| 48 | C |
+| 49 | D |
+| 50 | B |
+
+### Questões extras
+
+| Extra | Resposta |
+|---:|:---:|
+| 6.1 | B |
+| 6.2 | C |
+| 6.3 | A |
+| 6.4 | D |
+| 6.5 | D |
+| 6.6 | C |
+| 6.7 | B |
+| 6.8 | D |
+| 6.9 | C |
+| 6.10 | D |
+| 6.11 | A |
+| 6.12 | B |
+| 6.13 | C |
+| 6.14 | A |
+| 6.15 | B |
+| 6.16 | C |
+| 6.17 | A |
+| 6.18 | B |
+| 6.19 | A |
+| 6.20 | D |
+
+
+## Comentários do Dia 6
+
+### Comentário da Questão 1
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Aplica a regra de métricas de rede exigida no cenário.
+- **C)** Correta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** métricas de rede.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+
+### Comentário da Questão 2
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de switch e domínios exigida no cenário.
+
+**Conceito:** switch e domínios.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+
+### Comentário da Questão 3
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de encapsulamento por salto exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** encapsulamento por salto.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
+
+### Comentário da Questão 4
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de CIDR e broadcast exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** CIDR e broadcast.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
+
+### Comentário da Questão 5
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Aplica a regra de gateway e ARP exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** gateway e ARP.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+
+### Comentário da Questão 6
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de IPv6 e ND exigida no cenário.
+
+**Conceito:** IPv6 e ND.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+
+### Comentário da Questão 7
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de TCP e UDP exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** TCP e UDP.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 8
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de HTTP/3 e QUIC exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** HTTP/3 e QUIC.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 9
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de DHCPv4 exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** DHCPv4.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 10
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de DNS exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** DNS.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 11
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de correio eletrônico exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** correio eletrônico.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 12
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de SFTP e SSH exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** SFTP e SSH.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 13
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de SNMP exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** SNMP.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 14
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de NAT e PAT exigida no cenário.
+
+**Conceito:** NAT e PAT.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 15
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de NTP exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** NTP.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 16
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de vulnerabilidade, ameaça e risco exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** vulnerabilidade, ameaça e risco.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+### Comentário da Questão 17
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de AAA exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** AAA.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+### Comentário da Questão 18
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de ataques de rede exigida no cenário.
+
+**Conceito:** ataques de rede.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+### Comentário da Questão 19
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de IDS exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** IDS.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 20
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de DMZ exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** DMZ.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 21
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de limites da VPN exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** limites da VPN.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 22
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de hash exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** hash.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 23
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de assinatura digital exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** assinatura digital.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 24
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de TLS exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** TLS.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 25
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de WPA3 exigida no cenário.
+
+**Conceito:** WPA3.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 26
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de contenção exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** contenção.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+### Comentário da Questão 27
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de RPO exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** RPO.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+### Comentário da Questão 28
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de redundância e backup exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** redundância e backup.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+### Comentário da Questão 29
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de concorrência exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** concorrência.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 30
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de condição de corrida exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** condição de corrida.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 31
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de mutex exigida no cenário.
+
+**Conceito:** mutex.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 32
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de deadlock exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** deadlock.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 33
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de starvation exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** starvation.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 34
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de Round Robin exigida no cenário.
+
+**Conceito:** Round Robin.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 35
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de polling e interrupção exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** polling e interrupção.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 36
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de DMA exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** DMA.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 37
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de journaling exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** journaling.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 38
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de permissões Linux exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** permissões Linux.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 39
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de DACL exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** DACL.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 40
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de diagnóstico de serviço exigida no cenário.
+
+**Conceito:** diagnóstico de serviço.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 41
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de NTP e logs exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** NTP e logs.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 42
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de defesa em profundidade exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** defesa em profundidade.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+### Comentário da Questão 43
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de fluxo web exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** fluxo web.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 44
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de proxy reverso exigida no cenário.
+
+**Conceito:** proxy reverso.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 45
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Aplica a regra de LDAP exigida no cenário.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** LDAP.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+### Comentário da Questão 46
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de porta e segurança exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** porta e segurança.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+### Comentário da Questão 47
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de DDoS exigida no cenário.
+
+**Conceito:** DDoS.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+### Comentário da Questão 48
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Correta. Aplica a regra de evidência exigida no cenário.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** evidência.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+### Comentário da Questão 49
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Correta. Aplica a regra de comandos de observação exigida no cenário.
+
+**Conceito:** comandos de observação.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+### Comentário da Questão 50
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **B)** Correta. Aplica a regra de validação de continuidade exigida no cenário.
+- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+
+**Conceito:** validação de continuidade.
+
+**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+
+**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+## Comentários das questões extras do Dia 6
+
+#### Comentário Extra Dia 6.1
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Correta. Mantém a regra de ideia central cobrada.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** ideia central.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-01).
+
+#### Comentário Extra Dia 6.2
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Correta. Mantém a regra de inferência cobrada.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** inferência.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-02).
+
+#### Comentário Extra Dia 6.3
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Mantém a regra de conectores cobrada.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** conectores.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-03).
+
+#### Comentário Extra Dia 6.4
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Correta. Mantém a regra de ambiguidade cobrada.
+
+**Conceito:** ambiguidade.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-04).
+
+#### Comentário Extra Dia 6.5
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Transforma uma possibilidade em garantia universal.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Correta. Preserva o valor modal de possibilidade do IDS.
+
+**Conceito:** modalidade.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-05).
+
+#### Comentário Extra Dia 6.6
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Correta. Mantém a regra de reescrita cobrada.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** reescrita.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-06).
+
+#### Comentário Extra Dia 6.7
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Correta. Mantém a regra de concordância cobrada.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** concordância.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-07).
+
+#### Comentário Extra Dia 6.8
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Não se usa crase antes de verbo no infinitivo.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Correta. Há regência de obedecer a e não há crase antes de “analisar”.
+
+**Conceito:** crase.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-08).
+
+#### Comentário Extra Dia 6.9
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Correta. Mantém a regra de pontuação cobrada.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** pontuação.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-09).
+
+#### Comentário Extra Dia 6.10
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Mistura infinitivos com o substantivo “preservação”.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Correta. Coordena três verbos no infinitivo com a mesma função sintática.
+
+**Conceito:** paralelismo.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-10).
+
+#### Comentário Extra Dia 6.11
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Mantém a regra de métricas cobrada.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** métricas.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+
+#### Comentário Extra Dia 6.12
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Correta. Mantém a regra de encapsulamento cobrada.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** encapsulamento.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
+
+#### Comentário Extra Dia 6.13
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Correta. Mantém a regra de CIDR cobrada.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** CIDR.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
+
+#### Comentário Extra Dia 6.14
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Mantém a regra de gateway cobrada.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** gateway.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+
+#### Comentário Extra Dia 6.15
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Correta. Mantém a regra de fluxo de protocolos cobrada.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** fluxo de protocolos.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+#### Comentário Extra Dia 6.16
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Correta. Mantém a regra de serviços de rede cobrada.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** serviços de rede.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+#### Comentário Extra Dia 6.17
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Mantém a regra de risco cobrada.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** risco.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+#### Comentário Extra Dia 6.18
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Correta. Mantém a regra de controles cobrada.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** controles.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+
+#### Comentário Extra Dia 6.19
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** Correta. Mantém a regra de RPO e RTO cobrada.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+
+**Conceito:** RPO e RTO.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+#### Comentário Extra Dia 6.20
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **B)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **C)** Incorreta. Altera o sentido, a função ou o limite da regra aplicável.
+- **D)** Correta. Mantém a regra de E/S e journaling cobrada.
+
+**Conceito:** E/S e journaling.
+
+**Pegadinha:** absolutizar, inverter a relação ou confundir conceitos próximos.
+
+**Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
+
+**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).

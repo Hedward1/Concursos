@@ -57,7 +57,9 @@ Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco p
 - **Foco técnico:** redes de computadores; segurança da informação; sistemas operacionais avançado.
 - **Tópicos do edital:** topologias, componentes, meios de transmissão, LAN/WAN, ISO/OSI, TCP/IP, HTTP, SMTP, DHCP, DNS, LDAP, proxy, SNMP, switches, roteadores, gateways, redes sem fio, VPN, gerência de rede, ataques, firewall, DMZ, Windows/Linux, concorrência, sincronização, deadlock, dispositivos e sistemas de arquivos.
 - **Revisão fixa:** Legislação CRA/CFA, Português/interpretação e Administração Pública.
-- **Entrega esperada:** Semana 2 com teoria de redes/SO/segurança e questões principais + extras.
+- **Status:** criada e concluída, com teoria, revisões fixas e 420 questões comentadas.
+- **Arquivos:** `semana_02/semana_02_estudo.md` e `semana_02/semana_02_questoes.md`.
+- **Entrega:** redes de computadores, segurança de redes e sistemas operacionais avançados aprofundados; 300 questões principais e 120 extras.
 
 ### Semana 3 - 27/07/2026 a 01/08/2026
 
@@ -124,12 +126,12 @@ Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco p
 | Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
@@ -198,9 +200,9 @@ Cada nova apostila semanal deve seguir este padrão:
 
 - [x] Arquitetura e organização de computadores: sistemas de numeração, representação de dados, lógica computacional, microprocessadores, interrupções, endereçamento, compiladores, ligadores e interpretadores. Coberto na Semana 1.
 - [x] Sistemas operacionais: conceitos, processos, memória, memória virtual, paginação, segmentação, arquivos, dispositivos, Windows/Linux. Base coberta na Semana 1.
-- [ ] Sistemas operacionais avançado: concorrência, sincronização, deadlock, práticas Windows/Linux e estudo de caso. Planejado para Semana 2.
-- [ ] Redes de computadores: conceitos, topologias, componentes, comunicação de dados, meios, LAN/WAN, ISO/OSI, TCP/IP, protocolos, equipamentos, Wi-Fi, VPN e gerência. Planejado para Semana 2.
-- [ ] Segurança em redes: ataques, firewall, DMZ, políticas de acesso, resposta a incidentes e boas práticas. Planejado para Semana 2.
+- [x] Sistemas operacionais avançado: concorrência, sincronização, deadlock, práticas Windows/Linux e estudo de caso. Aprofundado na Semana 2.
+- [x] Redes de computadores: conceitos, topologias, componentes, comunicação de dados, meios, LAN/WAN, ISO/OSI, TCP/IP, protocolos, equipamentos, Wi-Fi, VPN e gerência. Aprofundado na Semana 2.
+- [x] Segurança em redes: ataques, firewall, DMZ, políticas de acesso, resposta a incidentes e boas práticas. Aprofundado na Semana 2.
 - [x] Banco de dados base e SQL introdutório. Coberto na Semana 1.
 - [ ] Banco de dados avançado: administração de dados, independência, dicionário, arquitetura, modelo relacional, álgebra relacional, MER, normalização, mapeamento e BI. Planejado para Semana 3.
 - [ ] SQL avançado e SGBD: SQL ANSI, Transact-SQL, segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL. Planejado para Semana 3.
