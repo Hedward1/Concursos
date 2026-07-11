@@ -2145,6 +2145,23 @@ Não conclua automaticamente penalidade específica se o enunciado não trouxer 
 
 **Foco:** Administração Pública, Português e RLM. Recupere atos e seus vícios, responsabilidade estatal, LAI/LGPD, proposições e conectivos. **Base:** teoria do Dia 6. **Pegadinha:** motivo não é motivação; anulação não é revogação.
 
+### Bloco recorrente do Dia 4 — Administração Pública
+
+As Extras 4.1–4.10 exigem esta síntese. **Legalidade** vincula a Administração à norma; **impessoalidade** impede favorecimento e promoção pessoal; **moralidade** exige conduta proba; **publicidade** admite transparência com restrições legais; **eficiência** busca resultado sem afastar a legalidade. Órgão não tem personalidade; autarquia é pessoa jurídica de direito público da Administração Indireta. Em ato administrativo, **motivo** é o pressuposto fático-jurídico e **motivação** é sua exposição.
+
+Anulação afasta ato ilegal; revogação retira ato válido por mérito administrativo; convalidação só alcança vício sanável sem lesão ao interesse público ou prejuízo a terceiro. Na responsabilidade estatal, procure conduta, dano e nexo causal; culpa exclusiva da vítima e força maior podem romper ou reduzir o nexo conforme o caso. Na contratação, concurso seleciona trabalho técnico, científico ou artístico; leilão serve à alienação; dispensa e inexigibilidade dependem de hipótese legal e motivação.
+
+### Bloco recorrente do Dia 4 — Português e RLM
+
+As Extras 4.11–4.15 recuperam comando, inferência, conectores, concordância, regência, crase e pontuação: “embora” introduz concessão; “portanto”, conclusão; não se separa sujeito de verbo por vírgula; `haver` existencial é impessoal; `existir` concorda com o sujeito; crase não ocorre antes de verbo. As Extras 4.16–4.20 usam proposições, negação, conectivos, conjuntos, sequência e proporcionalidade. Para negar “todos”, basta encontrar “algum não”; para negar “nenhum”, use “algum”.
+
+| Extras | Núcleo decisivo | Erro recorrente |
+|---|---|---|
+| 4.1–4.5 | modalidades, responsabilidade e excludentes | tratar eficiência como permissão para ilegalidade |
+| 4.6–4.10 | polícia, moralidade, motivação e licitação | confundir motivo com motivação ou modalidade com objeto |
+| 4.11–4.15 | leitura e norma-padrão | transformar possibilidade em certeza |
+| 4.16–4.20 | lógica e cálculo | negar universal com outro universal |
+
 
 ## Mapa de conexões do Dia 4
 
@@ -2639,6 +2656,23 @@ Evite texto meramente expositivo sem posição. Exemplo de tese: "A transformaç
 ## Revisão fixa do Dia 5
 
 **Foco:** Legislação CRA/CFA e Administração Pública. Retome Código de Ética, registro, fiscalização, princípios, licitação e responsabilidade civil. **Base:** teoria do Dia 4 e Dia 6. **Pegadinha:** aplicar sanção ou competência fora do sujeito e da norma adequados.
+
+### Bloco recorrente do Dia 5 — Legislação CRA/CFA
+
+As Extras 5.1–5.15 usam a legislação como ferramenta de caso. A Lei nº 4.769/1965 estrutura profissão, CFA e CRAs; o Decreto nº 61.934/1967 regulamenta o exercício; o Regimento aprovado pela RN nº 651/2024 trata da estrutura e do funcionamento do CRA-PR; a RN nº 671/2025 disciplina ética e infrações. O CFA atua em âmbito nacional; o CRA fiscaliza, registra e aplica suas competências na jurisdição regional. Diploma não substitui registro quando ele é exigido; pessoa jurídica pode ser alcançada se explorar atividade enquadrada; responsabilidade técnica exige atuação real, não assinatura de fachada.
+
+Deveres éticos incluem zelo, sigilo nos limites legais, independência técnica e colaboração com fiscalização. Para resolver caso, identifique **sujeito**, **conduta**, **competência territorial** e **norma-base** antes de cogitar consequência. Sanção não é automática: exige previsão e processo regular.
+
+### Bloco recorrente do Dia 5 — Administração Pública
+
+As Extras 5.16–5.20 retomam princípios, atos, controle, LAI/LGPD, licitação e responsabilidade. Publicidade não elimina proteção de dados; transparência deve ser compatibilizada com finalidade, necessidade e restrição legal. Anulação responde a ilegalidade; revogação, a conveniência e oportunidade; contratação direta não é liberdade do gestor, mas hipótese prevista em lei.
+
+| Extras | Núcleo decisivo | Erro recorrente |
+|---|---|---|
+| 5.1–5.5 | sistema normativo, registro e fiscalização | trocar CFA por CRA ou tratar PJ como sempre dispensada |
+| 5.6–5.10 | responsabilidade técnica, ética e Regimento | confundir RN 651 com Código de Ética |
+| 5.11–5.15 | lei, decreto, jurisdição e processo | aplicar sanção sem sujeito ou processo |
+| 5.16–5.20 | princípios, atos e transparência | confundir anulação com revogação |
 
 
 ## Mapa de conexões do Dia 5
@@ -3313,6 +3347,23 @@ Fechar a semana com clareza sobre o que já foi construído e o que ainda precis
 ## Revisão fixa do Dia 6
 
 **Foco:** Legislação CRA/CFA e caderno de erros. Refaça erros dos Dias 1–5, identificando norma, conceito técnico e motivo do erro antes de consultar o gabarito. **Base:** síntese dos Dias 1–5. **Pegadinha:** decorar resposta sem registrar a regra que a torna correta.
+
+### Bloco recorrente do Dia 6 — Legislação CRA/CFA
+
+As Extras 6.1–6.10 consolidam o núcleo legal. Registro e regularidade remetem à Lei nº 4.769/1965, ao Decreto nº 61.934/1967 e ao regulamento de registro; a RN nº 670/2025 deve ser lida como alteração da RN nº 649/2024. Ética, sigilo, deveres e infrações pertencem à RN nº 671/2025; estrutura e competência interna do CRA-PR pertencem ao Regimento aprovado pela RN nº 651/2024. Não trate essas normas como se tivessem o mesmo objeto.
+
+Na fiscalização, colaboração não significa renúncia à defesa: o profissional ou entidade deve fornecer informações dentro da competência do Conselho e usar os meios regulares quando discordar. A jurisdição regional, o objeto da atividade e a participação técnica efetiva são dados decisivos.
+
+### Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1
+
+As Extras 6.11–6.20 exigem recuperar erros reais sem reler toda a semana. Use o protocolo: **(1)** indique o dia de origem; **(2)** escreva a regra em uma frase; **(3)** produza exemplo contrário; **(4)** resolva novo caso. Arquitetura: bit/byte, cache, interrupção e tradução de programas. SO: processo/thread, paginação, sincronização, deadlock, journaling e permissões. Banco: chave, `JOIN`, `NULL`, normalização e ACID. Português: comando, conectores, crase e pontuação. Administração/RLM: ato, princípio, negação e proporcionalidade.
+
+| Extras | Recuperação ativa | Pergunta de controle |
+|---|---|---|
+| 6.1–6.5 | ética, fiscalização, registro e jurisdição | qual norma trata do objeto do caso? |
+| 6.6–6.10 | Lei, Decreto, Regimento e Código | quem atua e em qual território? |
+| 6.11–6.15 | arquitetura, SO e banco | qual conceito foi confundido com seu vizinho? |
+| 6.16–6.20 | Português, Administração e RLM | qual palavra do comando decide a resposta? |
 
 ## Pontos pendentes de confirmação
 
