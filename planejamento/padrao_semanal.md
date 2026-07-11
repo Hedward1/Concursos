@@ -41,4 +41,3 @@ Confirme:
 
 - **Semana 1:** possui fixação, mapa de cobrança e prática discursiva; as revisões fixas foram explicitadas por mapeamento ativo, sem duplicar sua teoria.
 - **Semana 2:** possui revisões fixas e mapa de revisão; recebeu fixação curta, mapa de cobrança e prática discursiva para ficar no mesmo padrão.
-
