@@ -10,96 +10,96 @@
 
 Em uma LAN, o host A envia tráfego a servidor remoto. O switch de acesso conhece o MAC do gateway, mas não o do servidor remoto. A sequência correta é:
 
-A) A envia quadro ao MAC do gateway; cada roteador remove e recria o quadro do próximo enlace.  
-B) A resolve por ARP o MAC do servidor remoto e o quadro atravessa todos os roteadores intacto.  
-C) A envia pacote IP diretamente ao switch, sem quadro de enlace.  
+A) A envia quadro ao MAC do gateway; cada roteador remove e recria o quadro do próximo enlace.
+B) A resolve por ARP o MAC do servidor remoto e o quadro atravessa todos os roteadores intacto.
+C) A envia pacote IP diretamente ao switch, sem quadro de enlace.
 D) A usa DNS para descobrir o MAC do gateway.
 
 ### Questão 2
 
 Para `172.16.34.190/27`, a alternativa correta é:
 
-A) rede `172.16.34.192`, broadcast `172.16.34.223`, hosts de 193 a 222.  
-B) rede `172.16.34.160`, broadcast `172.16.34.192`, hosts de 161 a 191.  
+A) rede `172.16.34.192`, broadcast `172.16.34.223`, hosts de 193 a 222.
+B) rede `172.16.34.160`, broadcast `172.16.34.192`, hosts de 161 a 191.
 C) rede `172.16.34.0`, broadcast `172.16.34.255`, 254 hosts.
-D) rede `172.16.34.160`, broadcast `172.16.34.191`, hosts de 161 a 190.  
+D) rede `172.16.34.160`, broadcast `172.16.34.191`, hosts de 161 a 190.
 
 ### Questão 3
 
 Considere as assertivas sobre equipamentos.
 
-I. Hub repete sinais e não aprende MAC.  
-II. Switch reduz colisões por porta, mas não elimina broadcast por si só.  
+I. Hub repete sinais e não aprende MAC.
+II. Switch reduz colisões por porta, mas não elimina broadcast por si só.
 III. Roteador delimita domínios de broadcast ao encaminhar entre redes.
 
 Está correto o que se afirma em:
 
-A) I e II, apenas.  
+A) I e II, apenas.
 B) I, II e III.
-C) I e III, apenas.  
-D) II e III, apenas.  
+C) I e III, apenas.
+D) II e III, apenas.
 
 ### Questão 4
 
 Em IPv6, a alternativa correta sobre descoberta de vizinhos é:
 
-A) usa broadcast ARP idêntico ao IPv4.  
-B) depende obrigatoriamente de DHCPv4.  
-C) usa ICMPv6/Neighbor Discovery e não emprega broadcast IPv6.  
+A) usa broadcast ARP idêntico ao IPv4.
+B) depende obrigatoriamente de DHCPv4.
+C) usa ICMPv6/Neighbor Discovery e não emprega broadcast IPv6.
 D) substitui roteamento por DNS.
 
 ### Questão 5
 
 Um enlace de 1 Gbit/s apresenta throughput de 820 Mbit/s, goodput de 760 Mbit/s e atraso variável. A interpretação correta é:
 
-A) goodput inclui mais overhead que throughput.  
-B) a variação de atraso é jitter, e goodput mede dados úteis entregues.  
-C) 1 Gbit/s é a latência máxima.  
+A) goodput inclui mais overhead que throughput.
+B) a variação de atraso é jitter, e goodput mede dados úteis entregues.
+C) 1 Gbit/s é a latência máxima.
 D) jitter é sinônimo de perda de pacote.
 
 ### Questão 6
 
 O modelo OSI e TCP/IP devem ser comparados de modo que:
 
-A) OSI seja referência conceitual e TCP/IP uma arquitetura/suíte, com correspondência aproximada.  
-B) cada camada OSI tenha exatamente uma camada TCP/IP correspondente.  
-C) ambos sejam protocolos de roteamento.  
+A) OSI seja referência conceitual e TCP/IP uma arquitetura/suíte, com correspondência aproximada.
+B) cada camada OSI tenha exatamente uma camada TCP/IP correspondente.
+C) ambos sejam protocolos de roteamento.
 D) TCP/IP não possua camada de aplicação.
 
 ### Questão 7
 
 Uma rota `0.0.0.0/0` em tabela IPv4 representa:
 
-A) rede local com dois hosts.  
-B) endereço de loopback.  
+A) rede local com dois hosts.
+B) endereço de loopback.
 C) broadcast limitado.
-D) rota padrão aplicável quando não há rota mais específica.  
+D) rota padrão aplicável quando não há rota mais específica.
 
 ### Questão 8
 
 Em uma topologia física em estrela com hub central, é correto afirmar que:
 
-A) cada estação constitui domínio de colisão independente.  
-B) o hub aprende MAC e filtra tráfego.  
-C) a topologia lógica pode compartilhar meio e colisões, apesar da estrela física.  
+A) cada estação constitui domínio de colisão independente.
+B) o hub aprende MAC e filtra tráfego.
+C) a topologia lógica pode compartilhar meio e colisões, apesar da estrela física.
 D) o hub roteia entre VLANs.
 
 ### Questão 9
 
 Uma estação com máscara `/31` deve ser interpretada como:
 
-A) LAN comum de zero hosts.  
-B) rota padrão.  
-C) caso especial, normalmente aplicável a enlace ponto a ponto, sem subtrair dois mecanicamente.  
+A) LAN comum de zero hosts.
+B) rota padrão.
+C) caso especial, normalmente aplicável a enlace ponto a ponto, sem subtrair dois mecanicamente.
 D) máscara inválida em qualquer cenário.
 
 ### Questão 10
 
 Ao encapsular dados de aplicação em TCP/IP, a PDU na camada de enlace é normalmente denominada:
 
-A) segmento, sempre.  
-B) quadro.  
-C) pacote, sempre.  
+A) segmento, sempre.
+B) quadro.
+C) pacote, sempre.
 D) socket.
 
 ## Bloco 2 — Protocolos, serviços e segurança
@@ -108,90 +108,90 @@ D) socket.
 
 Um cliente recebe endereço, máscara, gateway e DNS; resolve um nome; acessa portal HTTPS. A sequência funcional mais adequada é:
 
-A) DHCP, DNS, transporte, TLS e HTTP.  
-B) DNS, DHCP, SMTP, TLS.  
-C) ARP, LDAP, FTP e HTTP.  
+A) DHCP, DNS, transporte, TLS e HTTP.
+B) DNS, DHCP, SMTP, TLS.
+C) ARP, LDAP, FTP e HTTP.
 D) NTP, ICMP, SFTP e TLS.
 
 ### Questão 12
 
 Sobre HTTP/3, assinale a correta.
 
-A) elimina TLS.  
-B) é SMTP sobre TCP/25.  
+A) elimina TLS.
+B) é SMTP sobre TCP/25.
 C) torna DNS desnecessário.
-D) usa normalmente QUIC sobre UDP/443.  
+D) usa normalmente QUIC sobre UDP/443.
 
 ### Questão 13
 
 Em uma política de correio, SMTP, IMAP e POP3 se relacionam, respectivamente, a:
 
-A) envio, acesso/sincronização e recuperação de mensagens.  
-B) criptografia, roteamento e NAT.  
-C) configuração IP, nomes e tempo.  
+A) envio, acesso/sincronização e recuperação de mensagens.
+B) criptografia, roteamento e NAT.
+C) configuração IP, nomes e tempo.
 D) autenticação, autorização e auditoria.
 
 ### Questão 14
 
 SFTP e FTPS diferem porque:
 
-A) ambos são necessariamente o mesmo protocolo.  
-B) FTPS é terminal remoto e SFTP é correio.  
+A) ambos são necessariamente o mesmo protocolo.
+B) FTPS é terminal remoto e SFTP é correio.
 C) nenhum oferece proteção de canal.
-D) SFTP transfere arquivos sobre SSH; FTPS é FTP protegido por TLS.  
+D) SFTP transfere arquivos sobre SSH; FTPS é FTP protegido por TLS.
 
 ### Questão 15
 
 Uma porta TCP/UDP conhecida:
 
-A) prova conteúdo seguro independentemente do endpoint.  
-B) é convenção de serviço, não prova isolada do protocolo efetivo ou da segurança.  
-C) identifica unicamente um usuário.  
+A) prova conteúdo seguro independentemente do endpoint.
+B) é convenção de serviço, não prova isolada do protocolo efetivo ou da segurança.
+C) identifica unicamente um usuário.
 D) substitui certificado digital.
 
 ### Questão 16
 
 Em SNMP, manager, agent, MIB e OID correspondem a:
 
-A) cliente, servidor web, banco e usuário.  
-B) camadas OSI.  
-C) elementos de gerenciamento e identificação de objetos monitorados.  
+A) cliente, servidor web, banco e usuário.
+B) camadas OSI.
+C) elementos de gerenciamento e identificação de objetos monitorados.
 D) etapas de DHCP.
 
 ### Questão 17
 
 PAT permite que vários fluxos internos compartilhem endereço público principalmente por:
 
-A) substituição de DNS por ARP.  
-B) tradução adicional de portas.  
-C) criação de certificados.  
+A) substituição de DNS por ARP.
+B) tradução adicional de portas.
+C) criação de certificados.
 D) eliminação de roteamento.
 
 ### Questão 18
 
 Um certificado TLS válido demonstra, em condições normais, que:
 
-A) a identidade associada à chave foi validada conforme a cadeia e o canal pode ser autenticado/protegido.  
-B) o endpoint está livre de malware.  
-C) o conteúdo da aplicação é verdadeiro.  
+A) a identidade associada à chave foi validada conforme a cadeia e o canal pode ser autenticado/protegido.
+B) o endpoint está livre de malware.
+C) o conteúdo da aplicação é verdadeiro.
 D) o usuário recebeu autorização para qualquer recurso.
 
 ### Questão 19
 
 Qual associação entre ataque e efeito está correta?
 
-A) sniffing: necessariamente altera dados.  
-B) DDoS: garante confidencialidade.  
+A) sniffing: necessariamente altera dados.
+B) DDoS: garante confidencialidade.
 C) phishing: atualiza sistemas.
-D) spoofing: falsifica identidade ou origem.  
+D) spoofing: falsifica identidade ou origem.
 
 ### Questão 20
 
 Em defesa em profundidade, a afirmação correta é:
 
-A) MFA torna atualização de sistemas dispensável.  
-B) VPN elimina necessidade de controle de acesso do endpoint.  
-C) segmentação, autenticação, atualização e monitoramento reduzem dependência de barreira única.  
+A) MFA torna atualização de sistemas dispensável.
+B) VPN elimina necessidade de controle de acesso do endpoint.
+C) segmentação, autenticação, atualização e monitoramento reduzem dependência de barreira única.
 D) firewall substitui backup.
 
 ## Bloco 3 — Criptografia, controles e continuidade
@@ -200,90 +200,90 @@ D) firewall substitui backup.
 
 Assinale a alternativa correta sobre hash, HMAC e assinatura digital.
 
-A) hash cifra reversivelmente; HMAC dispensa segredo.  
-B) assinatura serve apenas para ocultar conteúdo.  
-C) HMAC usa chave secreta; assinatura é produzida com chave privada e verificada com a pública.  
+A) hash cifra reversivelmente; HMAC dispensa segredo.
+B) assinatura serve apenas para ocultar conteúdo.
+C) HMAC usa chave secreta; assinatura é produzida com chave privada e verificada com a pública.
 D) hash substitui certificado.
 
 ### Questão 22
 
 Uma DMZ é empregada para:
 
-A) colocar servidor público em mesma rede de bancos internos.  
-B) isolar serviços expostos e controlar fluxos para redes internas.  
-C) eliminar necessidade de firewall.  
+A) colocar servidor público em mesma rede de bancos internos.
+B) isolar serviços expostos e controlar fluxos para redes internas.
+C) eliminar necessidade de firewall.
 D) dispensar atualização de servidores.
 
 ### Questão 23
 
 IDS e IPS diferem porque:
 
-A) IDS detecta/alerta, enquanto IPS pode atuar em linha para bloquear.  
-B) IDS sempre bloqueia e IPS só registra.  
-C) ambos são backups.  
+A) IDS detecta/alerta, enquanto IPS pode atuar em linha para bloquear.
+B) IDS sempre bloqueia e IPS só registra.
+C) ambos são backups.
 D) ambos substituem VPN.
 
 ### Questão 24
 
 WPA3-Personal melhora autenticação de acesso sem fio ao usar:
 
-A) WEP.  
-B) broadcast para autenticar.  
+A) WEP.
+B) broadcast para autenticar.
 C) apenas endereço MAC.
-D) SAE, sem dispensar senha forte e configuração segura.  
+D) SAE, sem dispensar senha forte e configuração segura.
 
 ### Questão 25
 
 Em incidente de ransomware, restaurar imediatamente antes de conter persistência é inadequado porque:
 
-A) a ameaça pode permanecer ativa e comprometer a recuperação.  
-B) backup nunca deve ser usado.  
-C) RPO elimina necessidade de investigação.  
+A) a ameaça pode permanecer ativa e comprometer a recuperação.
+B) backup nunca deve ser usado.
+C) RPO elimina necessidade de investigação.
 D) logs não são evidência.
 
 ### Questão 26
 
 RPO de 15 minutos e RTO de 4 horas significam, respectivamente:
 
-A) prazo de restabelecimento e frequência obrigatória de backup.  
-B) disponibilidade e confidencialidade.  
+A) prazo de restabelecimento e frequência obrigatória de backup.
+B) disponibilidade e confidencialidade.
 C) tamanho do backup e tempo de retenção.
-D) perda máxima tolerável de dados e prazo desejado de restabelecimento.  
+D) perda máxima tolerável de dados e prazo desejado de restabelecimento.
 
 ### Questão 27
 
 RAID não substitui backup versionado porque:
 
-A) RAID sempre fica offline.  
-B) replicação pode propagar exclusão, corrupção ou cifração maliciosa.  
-C) backup não possui cópias.  
+A) RAID sempre fica offline.
+B) replicação pode propagar exclusão, corrupção ou cifração maliciosa.
+C) backup não possui cópias.
 D) RAID não melhora disponibilidade.
 
 ### Questão 28
 
 Uma assinatura digital fornece principalmente:
 
-A) compressão de dados.  
-B) anonimato obrigatório.  
-C) integridade e vínculo verificável com o signatário, conforme o contexto criptográfico.  
+A) compressão de dados.
+B) anonimato obrigatório.
+C) integridade e vínculo verificável com o signatário, conforme o contexto criptográfico.
 D) roteamento seguro.
 
 ### Questão 29
 
 Segurança da informação como gestão de risco exige:
 
-A) comprar um produto e encerrar revisões.  
-B) identificar contexto, ativos, ameaças, vulnerabilidades, impacto, tratamento e monitoramento.  
-C) eliminar todas as ameaças existentes.  
+A) comprar um produto e encerrar revisões.
+B) identificar contexto, ativos, ameaças, vulnerabilidades, impacto, tratamento e monitoramento.
+C) eliminar todas as ameaças existentes.
 D) focar somente em software.
 
 ### Questão 30
 
 Autenticação multifator combina fatores de naturezas distintas para:
 
-A) provar identidade com evidências independentes, não apenas repetir senha.  
-B) substituir autorização.  
-C) eliminar logs.  
+A) provar identidade com evidências independentes, não apenas repetir senha.
+B) substituir autorização.
+C) eliminar logs.
 D) tornar phishing impossível.
 
 ## Bloco 4 — Sistemas operacionais avançados
@@ -292,90 +292,90 @@ D) tornar phishing impossível.
 
 Uma condição de corrida depende de:
 
-A) existência obrigatória de rede.  
-B) uso de memória somente leitura.  
+A) existência obrigatória de rede.
+B) uso de memória somente leitura.
 C) término de todas as threads.
-D) ordem de intercalação sobre estado compartilhado sem sincronização adequada.  
+D) ordem de intercalação sobre estado compartilhado sem sincronização adequada.
 
 ### Questão 32
 
 O conjunto clássico de condições de Coffman inclui:
 
-A) broadcast, NAT, DNS e DHCP.  
-B) autenticação, autorização, auditoria e não repúdio.  
-C) exclusão mútua, posse e espera, não preempção e espera circular.  
+A) broadcast, NAT, DNS e DHCP.
+B) autenticação, autorização, auditoria e não repúdio.
+C) exclusão mútua, posse e espera, não preempção e espera circular.
 D) paginação, segmentação, cache e DMA.
 
 ### Questão 33
 
 Starvation ocorre quando:
 
-A) participantes esperam circularmente sem progresso conjunto.  
-B) todas as threads terminam.  
-C) uma tarefa pode ser adiada indefinidamente enquanto outras avançam.  
+A) participantes esperam circularmente sem progresso conjunto.
+B) todas as threads terminam.
+C) uma tarefa pode ser adiada indefinidamente enquanto outras avançam.
 D) o sistema de arquivos perde consistência.
 
 ### Questão 34
 
 Livelock difere de deadlock porque no livelock:
 
-A) recursos são sempre liberados.  
-B) participantes podem mudar de estado repetidamente, mas sem progresso útil.  
-C) não há execução alguma.  
+A) recursos são sempre liberados.
+B) participantes podem mudar de estado repetidamente, mas sem progresso útil.
+C) não há execução alguma.
 D) a CPU está desligada.
 
 ### Questão 35
 
 Em escalonamento, tempo de resposta mede:
 
-A) intervalo até a primeira resposta perceptível ao usuário.  
-B) somente o tempo total de CPU.  
-C) espaço ocupado no disco.  
+A) intervalo até a primeira resposta perceptível ao usuário.
+B) somente o tempo total de CPU.
+C) espaço ocupado no disco.
 D) perda de dados tolerável.
 
 ### Questão 36
 
 Um semáforo contador é adequado para:
 
-A) substituir todas as permissões de arquivo.  
-B) garantir ausência de deadlock em qualquer desenho.  
+A) substituir todas as permissões de arquivo.
+B) garantir ausência de deadlock em qualquer desenho.
 C) armazenar dados de aplicação.
-D) representar quantidade de unidades equivalentes disponíveis.  
+D) representar quantidade de unidades equivalentes disponíveis.
 
 ### Questão 37
 
 DMA é preferível a cópia controlada por CPU, principalmente, quando:
 
-A) há transferência de blocos e se deseja reduzir intervenção por unidade.  
-B) é necessário calcular CIDR.  
-C) o dispositivo não possui driver.  
+A) há transferência de blocos e se deseja reduzir intervenção por unidade.
+B) é necessário calcular CIDR.
+C) o dispositivo não possui driver.
 D) se quer substituir interrupções em todo caso.
 
 ### Questão 38
 
 Uma DACL do Windows contém:
 
-A) somente endereços IP.  
-B) registros DNS.  
+A) somente endereços IP.
+B) registros DNS.
 C) páginas de memória.
-D) ACEs de permissão ou negação, possivelmente herdadas.  
+D) ACEs de permissão ou negação, possivelmente herdadas.
 
 ### Questão 39
 
 Em Linux, ao avaliar `rwx` para dono, grupo e outros, é incorreto:
 
-A) verificar identidade e grupo efetivos.  
-B) somar permissões entre tríades como se fossem um único direito universal.  
-C) separar leitura, escrita e execução.  
+A) verificar identidade e grupo efetivos.
+B) somar permissões entre tríades como se fossem um único direito universal.
+C) separar leitura, escrita e execução.
 D) considerar ACL quando aplicável.
 
 ### Questão 40
 
 Uma aplicação responde a ping, mas não atende na porta esperada. A análise deve:
 
-A) concluir saúde total do serviço.  
-B) ignorar logs.  
-C) separar conectividade IP de transporte, processo, firewall e aplicação.  
+A) concluir saúde total do serviço.
+B) ignorar logs.
+C) separar conectividade IP de transporte, processo, firewall e aplicação.
 D) restaurar backup sem diagnóstico.
 
 ## Bloco 5 — Estudo de caso integrado
@@ -384,91 +384,91 @@ D) restaurar backup sem diagnóstico.
 
 Um portal recebe DDoS, apresenta credenciais reutilizadas e banco acessível indevidamente. A ordem mais defensável é:
 
-A) publicar senhas para acelerar análise.  
-B) conter impacto, preservar evidências, bloquear vetores, erradicar persistência e recuperar.  
-C) restaurar sem revogar acessos.  
+A) publicar senhas para acelerar análise.
+B) conter impacto, preservar evidências, bloquear vetores, erradicar persistência e recuperar.
+C) restaurar sem revogar acessos.
 D) ignorar logs por serem volumosos.
 
 ### Questão 42
 
 Para limitar movimento lateral após comprometimento de estação, é mais diretamente útil:
 
-A) segmentação de rede e controles de acesso.  
-B) aumentar tamanho de cache.  
-C) trocar IPv4 por IPv6 sem política.  
+A) segmentação de rede e controles de acesso.
+B) aumentar tamanho de cache.
+C) trocar IPv4 por IPv6 sem política.
 D) remover todos os logs.
 
 ### Questão 43
 
 Uma consulta DNS funciona, mas HTTPS falha por certificado expirado. Isso demonstra que:
 
-A) DNS garante certificado válido.  
-B) HTTPS dispensa transporte.  
+A) DNS garante certificado válido.
+B) HTTPS dispensa transporte.
 C) certificado substitui resolução de nomes.
-D) DNS e validação TLS resolvem camadas/problemas distintos.  
+D) DNS e validação TLS resolvem camadas/problemas distintos.
 
 ### Questão 44
 
 Em acesso remoto, VPN estabelecida não autoriza usuário a qualquer recurso porque:
 
-A) VPN elimina identidade.  
-B) VPN só funciona em LAN.  
-C) túnel protegido e autorização são controles distintos.  
+A) VPN elimina identidade.
+B) VPN só funciona em LAN.
+C) túnel protegido e autorização são controles distintos.
 D) autorização é responsabilidade do DNS.
 
 ### Questão 45
 
 Logs de firewall, aplicação e sistema só permitem correlação confiável se:
 
-A) todos usarem POP3.  
-B) forem descartados após incidente.  
-C) relógios possuírem referência de tempo coerente, como NTP bem configurado.  
+A) todos usarem POP3.
+B) forem descartados após incidente.
+C) relógios possuírem referência de tempo coerente, como NTP bem configurado.
 D) houver apenas um host.
 
 ### Questão 46
 
 Uma restauração atende RPO, mas falha em validar integrações do negócio. A conclusão é:
 
-A) continuidade está integralmente validada.  
-B) recuperar dados não basta; é preciso testar dependências e serviço.  
-C) RTO não importa.  
+A) continuidade está integralmente validada.
+B) recuperar dados não basta; é preciso testar dependências e serviço.
+C) RTO não importa.
 D) backup é redundância.
 
 ### Questão 47
 
 No fluxo de requisição, NAT/PAT pode:
 
-A) traduzir endereço e, com PAT, porta, sem substituir a aplicação HTTP.  
-B) resolver nome DNS.  
-C) gerar assinatura digital.  
+A) traduzir endereço e, com PAT, porta, sem substituir a aplicação HTTP.
+B) resolver nome DNS.
+C) gerar assinatura digital.
 D) escalonar threads.
 
 ### Questão 48
 
 O princípio CIA mais diretamente afetado por alteração não autorizada de cadastro é:
 
-A) disponibilidade.  
-B) confidencialidade somente.  
+A) disponibilidade.
+B) confidencialidade somente.
 C) não repúdio exclusivamente.
-D) integridade.  
+D) integridade.
 
 ### Questão 49
 
 Uma senha armazenada corretamente deve, em regra, ser:
 
-A) guardada por função de derivação/hash apropriada com sal, não reversível como cifra comum.  
-B) cifrada com chave pública do usuário e exibida em log.  
-C) compartilhada entre contas administrativas.  
+A) guardada por função de derivação/hash apropriada com sal, não reversível como cifra comum.
+B) cifrada com chave pública do usuário e exibida em log.
+C) compartilhada entre contas administrativas.
 D) substituída por endereço MAC.
 
 ### Questão 50
 
 Em autenticação de serviço web, certificado válido e MFA não eliminam:
 
-A) necessidade de DNS.  
-B) todo uso de logs.  
+A) necessidade de DNS.
+B) todo uso de logs.
 C) necessidade de rede.
-D) necessidade de autorização e de correção de vulnerabilidades da aplicação.  
+D) necessidade de autorização e de correção de vulnerabilidades da aplicação.
 
 ## Bloco 6 — Revisão de alta dificuldade
 
@@ -476,91 +476,91 @@ D) necessidade de autorização e de correção de vulnerabilidades da aplicaç�
 
 Assinale a combinação correta: protocolo para diretório, para gerência e para sincronização de tempo.
 
-A) SMTP, DNS e DHCP.  
-B) LDAP, SNMP e NTP.  
-C) SFTP, ARP e ICMP.  
+A) SMTP, DNS e DHCP.
+B) LDAP, SNMP e NTP.
+C) SFTP, ARP e ICMP.
 D) HTTP, PAT e TLS.
 
 ### Questão 52
 
 O uso de `Get-Process`, ao contrário de `Stop-Process`, caracteriza:
 
-A) exclusão de arquivo.  
-B) alteração de DACL.  
-C) observação de processos, não alteração de estado.  
+A) exclusão de arquivo.
+B) alteração de DACL.
+C) observação de processos, não alteração de estado.
 D) restauração de backup.
 
 ### Questão 53
 
 Em roteamento, a rota mais específica normalmente:
 
-A) é ignorada se existir gateway.  
-B) prevalece sobre rota padrão para destino correspondente.  
-C) só existe em IPv6.  
+A) é ignorada se existir gateway.
+B) prevalece sobre rota padrão para destino correspondente.
+C) só existe em IPv6.
 D) substitui ARP local.
 
 ### Questão 54
 
 Se a aplicação usa UDP, é correto afirmar que:
 
-A) não há garantias nativas de ordenação/retransmissão, mas a aplicação pode criar mecanismos próprios.  
-B) não pode obter confiabilidade adicional.  
-C) todo datagrama chega duplicado.  
+A) não há garantias nativas de ordenação/retransmissão, mas a aplicação pode criar mecanismos próprios.
+B) não pode obter confiabilidade adicional.
+C) todo datagrama chega duplicado.
 D) TCP passa a ser obrigatório.
 
 ### Questão 55
 
 Qual técnica oferece confidencialidade reversível por chave?
 
-A) hash.  
-B) checksum sem chave.  
+A) hash.
+B) checksum sem chave.
 C) assinatura isolada.
-D) criptografia.  
+D) criptografia.
 
 ### Questão 56
 
 Em um incidente, erradicação significa:
 
-A) somente detectar alerta.  
-B) apagar todas as evidências.  
-C) eliminar causa/persistência maliciosa após contenção, antes da recuperação controlada.  
+A) somente detectar alerta.
+B) apagar todas as evidências.
+C) eliminar causa/persistência maliciosa após contenção, antes da recuperação controlada.
 D) aplicar RPO.
 
 ### Questão 57
 
 Uma ACL permissiva demais em servidor de arquivos é principalmente problema de:
 
-A) latência.  
-B) CIDR.  
-C) autorização.  
+A) latência.
+B) CIDR.
+C) autorização.
 D) NTP.
 
 ### Questão 58
 
 Na análise de tráfego, endereço MAC é relevante principalmente:
 
-A) para resolver nomes globalmente.  
-B) no enlace local, não como identificador fim a fim roteável.  
-C) para cifrar HTTP.  
+A) para resolver nomes globalmente.
+B) no enlace local, não como identificador fim a fim roteável.
+C) para cifrar HTTP.
 D) para autenticar pessoa usuária.
 
 ### Questão 59
 
 Um proxy reverso diante de vários servidores de aplicação pode contribuir para:
 
-A) publicação controlada e distribuição de requisições, conforme configuração.  
-B) substituir banco de dados.  
-C) eliminar TLS.  
+A) publicação controlada e distribuição de requisições, conforme configuração.
+B) substituir banco de dados.
+C) eliminar TLS.
 D) criar endereços IP por DHCP.
 
 ### Questão 60
 
 O melhor uso do caderno de erros após o simulado é:
 
-A) registrar somente a letra certa.  
-B) apagar questões erradas.  
+A) registrar somente a letra certa.
+B) apagar questões erradas.
 C) repetir respostas sem diagnóstico.
-D) classificar a falha, escrever regra, contraexemplo e seção de recuperação.  
+D) classificar a falha, escrever regra, contraexemplo e seção de recuperação.
 
 ## Gabarito
 
