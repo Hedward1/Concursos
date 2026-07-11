@@ -9,6 +9,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `README.md`: visão geral do projeto.
 - `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
+- `planejamento/padrao_semanal.md`: estrutura e checklist obrigatórios para criar ou revisar semanas de estudo.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.

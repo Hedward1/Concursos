@@ -179,6 +179,8 @@ Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco p
 
 Cada nova apostila semanal deve seguir este padrão:
 
+Consulte também `planejamento/padrao_semanal.md` antes de iniciar ou concluir uma semana. O documento consolida os blocos obrigatórios de teoria, revisões fixas, fixação, questões, discursiva quando aplicável e auditoria.
+
 - seguir a divisão do Plano Mestre;
 - abrir com a versão do edital utilizada e fontes consultadas;
 - indicar a prioridade da semana dentro da pontuação da prova;

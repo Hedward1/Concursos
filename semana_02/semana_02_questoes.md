@@ -12514,3 +12514,30 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Como pensar:** localize a regra decisiva e confira se a alternativa preserva sujeito, condição e alcance.
 
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+
+---
+
+## Temas de discursiva da Semana 2
+
+Os temas abaixo são complementares: não alteram as 420 questões objetivas, seus gabaritos ou comentários. Use até 30 linhas por resposta e aplique os critérios de autocorreção após escrever.
+
+### Tema discursivo 1 — Resposta a incidente no portal do CRA-PR
+
+**Enunciado:** Um portal de serviços do CRA-PR apresenta acesso indevido a contas e indisponibilidade parcial. Discorra sobre uma resposta que concilie preservação de evidências, contenção, erradicação, recuperação, comunicação e prevenção de recorrência.
+
+**Roteiro:** apresente a gravidade do serviço; diferencie detecção, contenção e erradicação; relacione logs, MFA, segmentação, backup, RPO/RTO e lições aprendidas; encerre com medidas de governança e capacitação.
+
+### Tema discursivo 2 — Continuidade e segurança de serviços digitais
+
+**Enunciado:** Analise como uma autarquia profissional pode combinar disponibilidade de serviços digitais, proteção de dados e continuidade operacional, sem confundir redundância com backup ou segurança de canal com segurança do endpoint.
+
+**Roteiro:** formule uma tese; desenvolva defesa em profundidade, controle de acesso, VPN/TLS, segmentação e resposta a incidentes; diferencie redundância, backup, RPO e RTO; conclua com teste de restauração e validação de negócio.
+
+### Critérios de autocorreção da discursiva
+
+- **Aderência:** respondi ao problema, sem fugir para uma lista de tecnologias?
+- **Tese e progressão:** apresentei posição clara e desenvolvi causas, controles e efeitos em ordem lógica?
+- **Precisão técnica:** diferenciei conceitos próximos, como IDS/IPS, backup/redundância e RPO/RTO?
+- **Aplicação pública:** relacionei o caso à continuidade, dados e dever institucional da autarquia?
+- **Coesão e norma:** usei conectores, referência clara, regência, concordância e pontuação corretas?
+- **Conclusão:** retomei a tese com medida verificável, como teste, política, treinamento ou revisão periódica?

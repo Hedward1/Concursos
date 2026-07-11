@@ -3253,6 +3253,36 @@ Estas provas foram usadas apenas como referência de estilo de cobrança da banc
 - Instituto Consulplan - Câmara Municipal de Belo Horizonte - Analista de Tecnologia da Informação / Desenvolvimento de Sistema - 2024: https://arquivos.qconcursos.com/prova/arquivo_prova/108319/instituto-consulplan-2024-camara-de-belo-horizonte-mg-analista-de-tecnologia-da-informacao-area-de-desenvolvimento-de-sistema-prova.pdf
 - PCI Concursos - lista de provas Consulplan para localização de provas correlatas: https://www.pciconcursos.com.br/provas/consulplan/16
 
+---
+
+# Padronização das revisões fixas — Semana 1
+
+Os blocos abaixo não repetem a teoria já estudada. Eles informam qual conhecimento anterior deve ser recuperado para responder às 20 extras de cada dia e registram o vínculo com a prática ativa.
+
+## Revisão fixa do Dia 1
+
+**Foco:** Legislação CRA/CFA e Português. Recupere Lei nº 4.769/1965, Decreto nº 61.934/1967, distinção CFA × CRA, registro e deveres; em Português, leitura de comando, conectores e inferência. **Base:** teoria do Dia 4 e Dia 5. **Pegadinha:** tratar diploma como registro ou trocar conclusão por causa.
+
+## Revisão fixa do Dia 2
+
+**Foco:** Administração Pública e Português. Recupere princípios do art. 37, organização administrativa, atos, LAI/LGPD e leitura de quantificadores. **Base:** teoria do Dia 6 e Dia 5. **Pegadinha:** eficiência não afasta legalidade; “pode” não equivale a “deve”.
+
+## Revisão fixa do Dia 3
+
+**Foco:** Legislação CRA/CFA e Português. Revise competências do Sistema, registro, fiscalização, ética, coesão e reescrita. **Base:** teoria do Dia 4 e Dia 5. **Pegadinha:** confundir competência nacional do CFA com execução regional do CRA.
+
+## Revisão fixa do Dia 4
+
+**Foco:** Administração Pública, Português e RLM. Recupere atos e seus vícios, responsabilidade estatal, LAI/LGPD, proposições e conectivos. **Base:** teoria do Dia 6. **Pegadinha:** motivo não é motivação; anulação não é revogação.
+
+## Revisão fixa do Dia 5
+
+**Foco:** Legislação CRA/CFA e Administração Pública. Retome Código de Ética, registro, fiscalização, princípios, licitação e responsabilidade civil. **Base:** teoria do Dia 4 e Dia 6. **Pegadinha:** aplicar sanção ou competência fora do sujeito e da norma adequados.
+
+## Revisão fixa do Dia 6
+
+**Foco:** Legislação CRA/CFA e caderno de erros. Refaça erros dos Dias 1–5, identificando norma, conceito técnico e motivo do erro antes de consultar o gabarito. **Base:** síntese dos Dias 1–5. **Pegadinha:** decorar resposta sem registrar a regra que a torna correta.
+
 ## Pontos pendentes de confirmação
 
 - Data oficial do ato isolado de Retificação I no site da banca, além da marcação existente no PDF consolidado "conforme Retificação I".

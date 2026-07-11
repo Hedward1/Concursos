@@ -7493,3 +7493,91 @@ Ao concluir a Semana 2, produza:
 Foram aprofundados redes, topologias, componentes, meios, LAN/WAN, OSI, TCP/IP, endereçamento, protocolos, equipamentos, redes sem fio, VPN, ataques, firewall, DMZ, segurança, concorrência, sincronização, deadlock, dispositivos, sistemas de arquivos e aspectos práticos de Windows/Linux.
 
 Padrões W3C e gerência de rede foram contextualizados, mas não esgotados. Permanecem pendentes para aprofundamento posterior, especialmente arquitetura de gerenciamento, MIB, operações SNMP em maior detalhe, métricas, observabilidade, HTML/CSS e padrões de acessibilidade e interoperabilidade do W3C.
+
+---
+
+# Padronização de fixação e mapa de cobrança — Semana 2
+
+## 5 perguntas de fixação
+
+### Dia 1
+
+1. Diferencie largura de banda, throughput, goodput, latência e jitter.
+2. Quando hub, switch e roteador diferem no encaminhamento?
+3. Qual equipamento delimita broadcast?
+4. Compare meios guiados e não guiados.
+5. Explique o papel da NIC e do AP em uma LAN.
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** topologias, meios, LAN/WAN, equipamentos e domínios. **Extras:** Legislação CRA/CFA e Português da Revisão fixa do Dia 1.
+
+## 5 perguntas de fixação
+
+### Dia 2
+
+1. Compare OSI e TCP/IP sem buscar correspondência perfeita.
+2. Qual PDU e endereço predominam em enlace, rede e transporte?
+3. Calcule rede, broadcast e hosts de um prefixo `/27`.
+4. Quando o host usa gateway e ARP?
+5. Quais diferenças de descoberta existem no IPv6?
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** camadas, encapsulamento, IPv4/IPv6, CIDR, gateway, ARP e ICMP. **Extras:** Administração Pública e Português da Revisão fixa do Dia 2.
+
+## 5 perguntas de fixação
+
+### Dia 3
+
+1. Diferencie protocolo, serviço, porta e socket.
+2. Compare TCP e UDP em garantias e uso.
+3. Descreva o fluxo DHCP, DNS, TLS e HTTP.
+4. Diferencie SMTP, IMAP, SFTP, SSH, SNMP e LDAP.
+5. Compare proxy, NAT/PAT e NTP.
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** protocolos, portas, serviços e fluxo integrado. **Extras:** Legislação CRA/CFA e Português da Revisão fixa do Dia 3.
+
+## 5 perguntas de fixação
+
+### Dia 4
+
+1. Separe ativo, ameaça, vulnerabilidade, risco e incidente.
+2. Diferencie autenticação, autorização, auditoria e não repúdio.
+3. Compare firewall, IDS, IPS, DMZ, VPN e segmentação.
+4. Diferencie cifra, hash, HMAC, assinatura e certificado.
+5. Explique RPO, RTO, backup e redundância.
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** gestão de risco, ataques, controles, criptografia e continuidade. **Extras:** Administração Pública, RLM e Português da Revisão fixa do Dia 4.
+
+## 5 perguntas de fixação
+
+### Dia 5
+
+1. Diferencie concorrência e paralelismo.
+2. Explique condição de corrida e exclusão mútua.
+3. Compare deadlock, starvation e livelock.
+4. Diferencie polling, interrupção e DMA.
+5. Explique journaling, permissões Linux e DACL Windows.
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** processos, threads, sincronização, E/S, arquivos e permissões. **Extras:** Legislação CRA/CFA e Português da Revisão fixa do Dia 5.
+
+## 5 perguntas de fixação
+
+### Dia 6
+
+1. Em um caso técnico, identifique qual camada ou protocolo decide o diagnóstico.
+2. Calcule um prefixo e justifique rede, broadcast e hosts.
+3. Escolha controles para reduzir risco sem prometer risco zero.
+4. Diferencie continuidade imediata de recuperação histórica.
+5. Relacione falha de aplicação, rede, processo, permissão e evidência.
+
+## Assuntos que serão cobrados na Apostila de Questões
+
+**Principais:** revisão integrada dos Dias 1–5 e estudo de caso. **Extras:** Português e caderno de erros do mapa de revisão mista do Dia 6.
