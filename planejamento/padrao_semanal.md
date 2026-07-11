@@ -12,8 +12,15 @@ Cada semana possui seis dias. Cada dia deve conter:
 4. `## Revisão fixa do Dia X`, identificando disciplina, assunto, origem do conteúdo e teoria que sustenta as 20 extras;
 5. `## 5 perguntas de fixação`, com recuperação ativa do tema principal;
 6. `## Assuntos que serão cobrados na Apostila de Questões`, ligando a teoria às questões principais e extras.
+7. `## Mapa de conexões do Dia`, em Mermaid e acompanhado de leitura ativa: deve mostrar fluxo, dependências, decisões e de três a cinco pegadinhas. Os nós devem apontar para seções reais da teoria quando o formato do mapa permitir.
 
 Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, inclua tema, proposta, roteiro de estrutura e critérios de autocorreção.
+
+O mapa é diário, não semanal: ele deve servir diretamente à sessão de estudo e ao respectivo caderno de erros.
+
+## Super simulado semanal
+
+Ao concluir os seis dias, prepare `## Super simulado da Semana` no arquivo de questões. Ele seleciona **60 questões já existentes** — oito principais e duas extras de cada dia — e deve ser resolvido sem consulta, em tempo contínuo. Não cria novas questões nem altera o total de 420 itens; registra os IDs selecionados, tempo sugerido, gabarito de correção e campos para erros prioritários.
 
 ## Estrutura mínima da apostila de questões
 

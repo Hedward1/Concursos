@@ -7496,6 +7496,96 @@ Padrões W3C e gerência de rede foram contextualizados, mas não esgotados. Per
 
 ---
 
+# Mapas de conexões — Semana 2
+
+## Mapa de conexões do Dia 1
+
+```mermaid
+flowchart LR
+  TOPO[Topologias] --> MEIOS[Meios de transmissão]
+  MEIOS --> ALC[PAN, LAN, MAN e WAN]
+  ALC --> NIC[NIC e enlace]
+  NIC --> SW[Hub, bridge e switch]
+  SW --> RT[Roteador, gateway e AP]
+  RT --> DOM[Colisão e broadcast]
+```
+
+**Leitura ativa:** topologia física não determina sozinha o comportamento lógico; switch aprende MAC, roteador conecta redes. **Pegadinhas:** hub × switch; capacidade × goodput; colisão × broadcast.
+
+## Mapa de conexões do Dia 2
+
+```mermaid
+flowchart LR
+  OSI[OSI e TCP/IP] --> ENC[Encapsulamento e PDUs]
+  ENC --> IPV4[IPv4 e CIDR]
+  IPV4 --> CALC[Rede, broadcast e hosts]
+  CALC --> GW[Gateway e ARP]
+  GW --> IPV6[IPv6, ICMPv6 e ND]
+```
+
+**Leitura ativa:** CIDR decide o alcance; destino remoto usa o gateway; quadro muda a cada salto. **Pegadinhas:** ARP do destino remoto; pacote × quadro; IPv6 com broadcast.
+
+## Mapa de conexões do Dia 3
+
+```mermaid
+flowchart LR
+  SOCKET[Protocolo, porta e socket] --> TRANS[TCP e UDP]
+  TRANS --> WEB[HTTP, HTTPS e TLS]
+  WEB --> BASE[DNS e DHCP]
+  BASE --> SERV[Correio, arquivos, SSH e LDAP]
+  SERV --> GER[SNMP e NTP]
+  GER --> PUB[Proxy, NAT e PAT]
+```
+
+**Leitura ativa:** cada protocolo resolve um problema próprio; o fluxo típico é configurar, resolver, transportar, proteger e atender. **Pegadinhas:** SFTP × FTPS; SMTP × IMAP; proxy × NAT.
+
+## Mapa de conexões do Dia 4
+
+```mermaid
+flowchart LR
+  RISCO[Ativo, ameaça, vulnerabilidade e risco] --> CIA[CIA e AAA]
+  CIA --> ATAQ[Malware, phishing e ataques]
+  ATAQ --> CTRL[Defesa em profundidade]
+  CTRL --> REDE[Firewall, IDS/IPS, DMZ e VPN]
+  REDE --> CRIP[Cifra, hash, assinatura e TLS]
+  CRIP --> RESP[Wi-Fi, incidente, backup e RPO/RTO]
+```
+
+**Leitura ativa:** controle reduz risco, não cria risco zero; contenção antecede erradicação; backup não é redundância. **Pegadinhas:** IDS × IPS; hash × cifra; RPO × RTO.
+
+## Mapa de conexões do Dia 5
+
+```mermaid
+flowchart LR
+  PROC[Processo e thread] --> CORR[Seção crítica e corrida]
+  CORR --> SYNC[Mutex, semáforo e monitor]
+  SYNC --> DEAD[Deadlock, starvation e livelock]
+  DEAD --> ESC[Escalonamento]
+  ESC --> IO[Interrupção, polling e DMA]
+  IO --> FS[Arquivos, journaling e permissões]
+  FS --> CMD[Comandos Windows e Linux]
+```
+
+**Leitura ativa:** sincronização protege invariantes; deadlock é impasse conjunto; comandos de observação não alteram estado. **Pegadinhas:** mutex × semáforo; interrupção × DMA; journaling × backup.
+
+## Mapa de conexões do Dia 6
+
+```mermaid
+flowchart LR
+  D1[Redes e equipamentos] --> D2[Camadas e CIDR]
+  D2 --> D3[Protocolos e serviços]
+  D3 --> D4[Segurança e continuidade]
+  D4 --> D5[Sistemas operacionais]
+  D5 --> MAPA[Revisão mista e caso CRA]
+  PT[Português técnico] --> MAPA
+  MAPA --> CE[Caderno de erros]
+```
+
+**Leitura ativa:** diagnostique em ordem: alcance, protocolo, controle, serviço e sistema operacional. **Pegadinhas:** ping não prova aplicação; TLS não prova endpoint íntegro; RAID não substitui backup.
+
+
+---
+
 # Padronização de fixação e mapa de cobrança — Semana 2
 
 ## 5 perguntas de fixação

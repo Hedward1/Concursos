@@ -3287,3 +3287,92 @@ Os blocos abaixo não repetem a teoria já estudada. Eles informam qual conhecim
 
 - Data oficial do ato isolado de Retificação I no site da banca, além da marcação existente no PDF consolidado "conforme Retificação I".
 - Texto oficial consolidado de todas as Resoluções Normativas CFA adicionais citadas no edital vigente, especialmente RN CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025, antes da elaboração da apostila de questões de Legislação CRA/CFA.
+
+---
+
+# Mapas de conexões — Semana 1
+
+## Mapa de conexões do Dia 1
+
+```mermaid
+flowchart LR
+  BIN[Sistemas de numeração] --> DADOS[Representação de dados]
+  DADOS --> CPU[CPU e cache]
+  CPU --> MEM[Memória e barramentos]
+  MEM --> IO[E/S e periféricos]
+  IO --> INT[Interrupções]
+  INT --> FERR[Compilador, ligador e carregador]
+```
+
+**Leitura ativa:** dado precisa ser representado antes de ser processado; cache não é memória secundária; interrupção não é polling. **Pegadinhas:** bit × byte; cache × RAM; compilador × interpretador.
+
+## Mapa de conexões do Dia 2
+
+```mermaid
+flowchart LR
+  PROG[Programa] --> PROC[Processo]
+  PROC --> TH[Threads e escalonamento]
+  PROC --> MV[Memória virtual]
+  TH --> SYNC[Concorrência e sincronização]
+  PROC --> FS[Sistemas de arquivos]
+  FS --> IO[Drivers e E/S]
+  IO --> WIN[Windows e Linux]
+```
+
+**Leitura ativa:** processo reúne recursos e thread executa; pronto aguarda CPU, bloqueado aguarda evento. **Pegadinhas:** concorrência × paralelismo; paginação × segmentação; journaling × backup.
+
+## Mapa de conexões do Dia 3
+
+```mermaid
+flowchart LR
+  DADOS[Dados e SGBD] --> REL[Modelo relacional]
+  REL --> CH[Chaves e integridade]
+  REL --> MER[MER e mapeamento]
+  MER --> NORM[Normalização]
+  NORM --> SQL[SQL ANSI]
+  SQL --> TX[Transações]
+```
+
+**Leitura ativa:** a modelagem define entidades e relacionamentos; o mapeamento cria tabelas; normalização reduz anomalias; SQL opera o modelo. **Pegadinhas:** chave primária × estrangeira; entidade × atributo; `WHERE` × `HAVING`.
+
+## Mapa de conexões do Dia 4
+
+```mermaid
+flowchart LR
+  LEI[Lei 4.769/1965] --> DEC[Decreto 61.934/1967]
+  LEI --> SIST[CFA e CRAs]
+  SIST --> REG[Regimento CRA-PR]
+  SIST --> REGISTRO[Registro e fiscalização]
+  REGISTRO --> ETICA[Código de Ética]
+  ETICA --> SANC[Deveres, infrações e sanções]
+```
+
+**Leitura ativa:** Lei estrutura, Decreto regulamenta, Regimento organiza e Código disciplina condutas. **Pegadinhas:** CFA × CRA; diploma × registro; dever × direito.
+
+## Mapa de conexões do Dia 5
+
+```mermaid
+flowchart LR
+  LEITURA[Leitura e comando] --> IDEIA[Ideia central e inferência]
+  IDEIA --> COESAO[Coesão e conectores]
+  COESAO --> SINT[Sintaxe e concordância]
+  SINT --> CRASE[Regência, crase e pontuação]
+  CRASE --> DISC[Discursiva clara]
+```
+
+**Leitura ativa:** primeiro localize comando e tese; depois preserve relação lógica e norma. **Pegadinhas:** inferência × extrapolação; causa × concessão; vírgula entre sujeito e verbo.
+
+## Mapa de conexões do Dia 6
+
+```mermaid
+flowchart LR
+  CF[Art. 37 e princípios] --> ORG[Organização administrativa]
+  ORG --> ATOS[Atos e desfazimento]
+  ATOS --> CONTROLE[LAI, LGPD e improbidade]
+  CONTROLE --> LIC[Licitação e responsabilidade]
+  RLM[Proposições e conectivos] --> SEQ[Sequências, conjuntos e regra de três]
+  LIC --> ERROS[Caderno de erros]
+  SEQ --> ERROS
+```
+
+**Leitura ativa:** legalidade limita eficiência; motivo não é motivação; regra lógica decide a conclusão. **Pegadinhas:** anulação × revogação; publicidade × promoção pessoal; negação de quantificadores.
