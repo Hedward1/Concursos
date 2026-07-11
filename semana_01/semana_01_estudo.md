@@ -130,6 +130,34 @@ A banca gosta de alternativas com afirmações quase corretas, trocando uma pala
 | 5 | 30min | Português: interpretação de enunciados técnicos e identificação de comando da questão |
 | 6 | 20min | Caderno de erros: conversões, siglas e conceitos confundidos |
 
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Legislação CRA/CFA (40min)
+
+**O que estudar:** a Lei nº 4.769/1965 é a base da profissão e do Sistema CFA/CRAs; o Decreto nº 61.934/1967 regulamenta o exercício. O CFA atua na coordenação e normatização nacional; o CRA atua na jurisdição regional, com registro e fiscalização. O diploma comprova formação, mas não substitui o registro quando ele é exigido para o exercício regular.
+
+**Regra de decisão:** em caso prático, identifique primeiro quem é o sujeito (CFA, CRA, profissional ou pessoa jurídica), depois a competência territorial e por fim a norma-base. Não confunda a Lei que estrutura o sistema com o Código de Ética, que disciplina condutas.
+
+**Exemplo:** se uma questão afirmar que o CRA-PR deixa de seguir norma geral do CFA por possuir autonomia administrativa, a alternativa é incorreta: autonomia não rompe a integração ao Sistema CFA/CRAs.
+
+**Pegadinha:** trocar registro por diploma, CRA por CFA ou fiscalização por mera atividade consultiva.
+
+### Bloco 5 — Português aplicado a enunciados técnicos (30min)
+
+**O que estudar:** antes de ler alternativas, sublinhe o comando: “correta”, “incorreta”, “exceto”, “infere-se” ou “equivale”. Ideia central é a afirmação que organiza o texto; inferência é conclusão autorizada pelas informações, não opinião externa. Conectores preservam relações: “porque” indica causa, “embora” concessão e “portanto” conclusão.
+
+**Regra de decisão:** alternativa tecnicamente familiar pode estar errada se responder ao comando oposto ou trocar a relação lógica do texto. Termos absolutos como “sempre”, “nunca” e “elimina qualquer” exigem prova textual ou técnica forte.
+
+**Exemplo:** de “cache pode reduzir a latência média”, não se infere que cache elimina toda demora de memória; “pode” não é “sempre”.
+
+**Pegadinha:** escolher informação verdadeira que não responde à pergunta, especialmente em itens negativos.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Registre cada erro em quatro campos: **conceito confundido**, **regra correta**, **contraexemplo** e **sinal de prova**. Neste dia, priorize conversão binário/hexadecimal, bit × byte, cache × RAM, interrupção × polling e compilador × ligador × carregador.
+
+**Exemplo de registro:** “Confundi hexadecimal com decimal. Regra: cada dígito hexadecimal vale quatro bits. Contraexemplo: `FF` é 255 decimal. Sinal: alternativa mistura bases ou usa peso decimal em número hexadecimal.”
+
 ## Teoria explicada de forma didática
 
 ### 1. Sistemas de numeração
@@ -704,6 +732,20 @@ O padrão mais comum é:
 | 5 | 30min | Português: leitura de enunciados com "exceto", "incorreta" e "não se aplica" |
 | 6 | 20min | Caderno de erros: mapa processo x thread x programa |
 
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Administração Pública (40min)
+
+Administração Direta reúne entes e órgãos; Administração Indireta reúne entidades com personalidade própria, como autarquias. Conselho profissional é autarquia: não é empresa privada nem órgão da Administração Direta. **Exemplo:** criar setor dentro de ministério é desconcentração; criar autarquia por lei é descentralização. **Pegadinha:** órgão não possui personalidade, entidade possui.
+
+### Bloco 5 — Leitura de comando negativo (30min)
+
+Em “exceto”, “incorreta” ou “não se aplica”, marque primeiro o comando e só depois avalie as alternativas. Uma alternativa verdadeira pode ser a resposta quando a pergunta pede a incorreta. **Exemplo:** se três opções descrevem processo e uma descreve programa passivo, a última atende ao comando sobre processo. **Pegadinha:** responder a questão como se ela pedisse a correta.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Use a matriz: **programa** é código passivo; **processo** é instância com recursos; **thread** é fluxo de execução. Registre também pronto × bloqueado e concorrência × paralelismo. Para cada confusão, escreva um caso de E/S que deixe a thread bloqueada.
+
 ## Teoria explicada de forma didática
 
 ### 1. Conceito e funções do sistema operacional
@@ -1185,6 +1227,20 @@ Pegadinhas frequentes: usar `WHERE` depois de `GROUP BY` no lugar errado, confun
 | Pausa | 5min | Descanso |
 | 5 | 30min | Português: interpretação de tabelas e enunciados com comandos SQL |
 | 6 | 20min | Caderno de erros: comandos SQL confundidos |
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Legislação CRA/CFA (40min)
+
+O CRA-PR registra e fiscaliza na respectiva jurisdição; o CFA exerce coordenação e normatização nacional. Fiscalização profissional busca regularidade do exercício e proteção da sociedade. **Exemplo:** uso de título ou registro sem regularidade exige analisar sujeito, atividade e competência regional. **Pegadinha:** atribuir ao CFA a execução regional ordinária.
+
+### Bloco 5 — Leitura de SQL e tabelas (30min)
+
+Leia primeiro a cláusula que restringe o resultado: `WHERE` filtra linhas antes do agrupamento; `HAVING` filtra grupos; `LEFT JOIN` preserva linhas da tabela à esquerda; `NULL` não é igual a valor comum. **Exemplo:** departamentos sem empregados pedem `LEFT JOIN` e teste `IS NULL`. **Pegadinha:** usar `= NULL`.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Registre comando, efeito e risco: `DELETE` remove linhas filtráveis; `TRUNCATE` limpa tabela conforme SGBD; `DROP` remove objeto; `UPDATE` sem `WHERE` pode afetar muitas linhas. Faça um exemplo mínimo de `SELECT`, `JOIN` e `GROUP BY` para cada erro.
 
 ## Teoria explicada de forma didática
 
@@ -1754,6 +1810,20 @@ Em legislação específica, a Consulplan costuma cobrar:
 | 5 | 30min | Português/discursiva: parágrafo argumentativo sobre ética no serviço público |
 | 6 | 20min | Caderno de erros: competências CFA x CRA |
 
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Administração Pública (40min)
+
+Art. 37 reúne legalidade, impessoalidade, moralidade, publicidade e eficiência. Legalidade não é liberdade ampla do agente; eficiência não convalida ato ilegal; publicidade institucional não pode promover autoridade. **Exemplo:** campanha oficial com nome e slogan pessoal viola impessoalidade. **Pegadinha:** tratar transparência como autorização para promoção pessoal.
+
+### Bloco 5 — Parágrafo argumentativo técnico (30min)
+
+Escreva tese, razão e consequência: “A ética profissional é indispensável porque protege a confiança no serviço e orienta decisões tecnicamente independentes.” Em seguida, desenvolva um exemplo de sigilo, responsabilidade ou fiscalização. **Pegadinha:** listar normas sem defender uma ideia central.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Construa duas colunas: **CFA** (coordenação/normatização nacional) e **CRA** (registro/fiscalização regional). Em cada erro, acrescente a norma-base: Lei, Decreto, Regimento ou Código de Ética.
+
 ## Teoria explicada de forma didática
 
 ### 1. Lei Federal nº 4.769/1965
@@ -2219,6 +2289,20 @@ Na discursiva, a banca tende a avaliar abordagem do tema, organização, progres
 | Pausa | 5min | Descanso |
 | 5 | 30min | Português/discursiva: escrever introdução e um desenvolvimento |
 | 6 | 20min | Caderno de erros: vírgula, crase, concordância e conectivos |
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Legislação CRA/CFA (40min)
+
+O Código de Ética orienta deveres, sigilo, zelo, independência e condutas vedadas. Sigilo não autoriza acobertar irregularidade; responsabilidade técnica não é assinatura sem participação. **Exemplo:** profissional pressionado a alterar laudo sem base deve preservar independência técnica. **Pegadinha:** confundir dever ético com mera faculdade comercial.
+
+### Bloco 5 — Produção discursiva (30min)
+
+Produza introdução com tese e um parágrafo de desenvolvimento. Use conectores: “além disso” para adição, “contudo” para oposição e “portanto” para conclusão. Mantenha sujeito, verbo e complemento sem vírgula indevida. **Pegadinha:** introdução que só repete o tema e não apresenta posição.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Registre quatro gatilhos: crase antes de verbo é erro; `haver` existencial fica no singular; vírgula não separa sujeito de verbo; reescrita deve preservar relação lógica. Reescreva uma frase errada e explique a correção.
 
 ## Teoria explicada de forma didática
 
@@ -2728,6 +2812,20 @@ Em RLM, usa:
 | Pausa | 5min | Descanso |
 | 5 | 30min | Português/discursiva: plano de redação em 4 parágrafos |
 | 6 | 20min | Caderno de erros: top 10 erros da semana |
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Legislação CRA/CFA (40min)
+
+Regimento trata de estrutura e funcionamento do CRA-PR; Código de Ética trata de conduta profissional. Em caso de infração, identifique conduta, sujeito, competência e processo; não conclua cassação automática. **Exemplo:** obstruir fiscalização não se resolve alegando autonomia privada. **Pegadinha:** confundir RN de Regimento com RN de Ética.
+
+### Bloco 5 — Plano de redação (30min)
+
+Antes de escrever, distribua quatro parágrafos: introdução com tese; dois desenvolvimentos com argumento e exemplo; conclusão com proposta viável. Tema público exige relacionar eficiência, legalidade, dados ou continuidade de serviço. **Pegadinha:** abrir tópico novo na conclusão.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Classifique os dez erros por origem: arquitetura, SO, banco, legislação, Português, Administração ou RLM. Para cada um, escreva regra, contraexemplo e próximo exercício de recuperação. Não registre só a letra certa.
 
 ## Teoria explicada de forma didática
 

@@ -14,6 +14,8 @@ Cada semana possui seis dias. Cada dia deve conter:
 6. `## Assuntos que serão cobrados na Apostila de Questões`, ligando a teoria às questões principais e extras.
 7. `## Mapa de conexões do Dia`, em Mermaid e acompanhado de leitura ativa: deve mostrar fluxo, dependências, decisões e de três a cinco pegadinhas. Os nós devem apontar para seções reais da teoria quando o formato do mapa permitir.
 
+O cronograma não pode apenas nomear os blocos recorrentes. Logo após a tabela de 6h, inclua `## Conteúdo dos blocos de revisão e consolidação`, com subseções para os Blocos 4, 5 e 6. Cada uma deve trazer o resumo teórico, regras, exemplo e pegadinha necessários para estudar o item daquele dia sem procurar outro capítulo.
+
 Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, inclua tema, proposta, roteiro de estrutura e critérios de autocorreção.
 
 O mapa é diário, não semanal: ele deve servir diretamente à sessão de estudo e ao respectivo caderno de erros.
