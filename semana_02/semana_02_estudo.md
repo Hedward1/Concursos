@@ -919,6 +919,21 @@ Fontes técnicas e institucionais primárias ou oficiais consultadas:
 
 ---
 
+
+## Mapa de conexões do Dia 1
+
+```mermaid
+flowchart LR
+  TOPO[Topologias] --> MEIOS[Meios de transmissão]
+  MEIOS --> ALC[PAN, LAN, MAN e WAN]
+  ALC --> NIC[NIC e enlace]
+  NIC --> SW[Hub, bridge e switch]
+  SW --> RT[Roteador, gateway e AP]
+  RT --> DOM[Colisão e broadcast]
+```
+
+**Leitura ativa:** topologia física não determina sozinha o comportamento lógico; switch aprende MAC, roteador conecta redes. **Pegadinhas:** hub × switch; capacidade × goodput; colisão × broadcast.
+
 # Dia 2 - Modelos OSI e TCP/IP, endereçamento e CIDR
 
 <a id="s2-d2-objetivo"></a>
@@ -2144,6 +2159,20 @@ Fontes técnicas e institucionais primárias ou oficiais consultadas:
 - Lei nº 14.133/2021 — Licitações e Contratos Administrativos — https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
 - RN CFA nº 651/2024 — Regimento do CRA-PR e natureza autárquica — https://documentos.cfa.org.br/?a=show&c=documento&id=955
 - Manual de Redação da Presidência da República — https://www.gov.br/pt-br/servicos/consultar-o-manual-de-redacao-da-presidencia-da-republica
+
+## Mapa de conexões do Dia 2
+
+```mermaid
+flowchart LR
+  OSI[OSI e TCP/IP] --> ENC[Encapsulamento e PDUs]
+  ENC --> IPV4[IPv4 e CIDR]
+  IPV4 --> CALC[Rede, broadcast e hosts]
+  CALC --> GW[Gateway e ARP]
+  GW --> IPV6[IPv6, ICMPv6 e ND]
+```
+
+**Leitura ativa:** CIDR decide o alcance; destino remoto usa o gateway; quadro muda a cada salto. **Pegadinhas:** ARP do destino remoto; pacote × quadro; IPv6 com broadcast.
+
 # Dia 3 — Protocolos e Serviços de Rede
 
 ## Objetivo do dia
@@ -3153,6 +3182,21 @@ Fontes primárias e registros oficiais consultados em 10 de julho de 2026:
 - ABL — Vocabulário Ortográfico da Língua Portuguesa 2025–2026: https://www.academia.org.br/nossa-lingua/vocabulario-ortografico
 
 ---
+
+
+## Mapa de conexões do Dia 3
+
+```mermaid
+flowchart LR
+  SOCKET[Protocolo, porta e socket] --> TRANS[TCP e UDP]
+  TRANS --> WEB[HTTP, HTTPS e TLS]
+  WEB --> BASE[DNS e DHCP]
+  BASE --> SERV[Correio, arquivos, SSH e LDAP]
+  SERV --> GER[SNMP e NTP]
+  GER --> PUB[Proxy, NAT e PAT]
+```
+
+**Leitura ativa:** cada protocolo resolve um problema próprio; o fluxo típico é configurar, resolver, transportar, proteger e atender. **Pegadinhas:** SFTP × FTPS; SMTP × IMAP; proxy × NAT.
 
 # Dia 4 — Segurança de Redes
 
@@ -5176,6 +5220,21 @@ Fontes primárias e orientações oficiais consultadas em 10 de julho de 2026:
 - Manual de Redação da Presidência da República, 3ª edição: https://www.gov.br/pt-br/servicos/consultar-o-manual-de-redacao-da-presidencia-da-republica
 
 ---
+
+## Mapa de conexões do Dia 4
+
+```mermaid
+flowchart LR
+  RISCO[Ativo, ameaça, vulnerabilidade e risco] --> CIA[CIA e AAA]
+  CIA --> ATAQ[Malware, phishing e ataques]
+  ATAQ --> CTRL[Defesa em profundidade]
+  CTRL --> REDE[Firewall, IDS/IPS, DMZ e VPN]
+  REDE --> CRIP[Cifra, hash, assinatura e TLS]
+  CRIP --> RESP[Wi-Fi, incidente, backup e RPO/RTO]
+```
+
+**Leitura ativa:** controle reduz risco, não cria risco zero; contenção antecede erradicação; backup não é redundância. **Pegadinhas:** IDS × IPS; hash × cifra; RPO × RTO.
+
 # Dia 5 — Sistemas Operacionais Avançados
 
 ## Objetivo do dia
@@ -6059,6 +6118,22 @@ Use marcações D1, D7 e D30 para recuperar o erro em 1, 7 e 30 dias. Não copie
 - Java Language Specification — threads, locks e monitores: https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html
 
 ---
+
+
+## Mapa de conexões do Dia 5
+
+```mermaid
+flowchart LR
+  PROC[Processo e thread] --> CORR[Seção crítica e corrida]
+  CORR --> SYNC[Mutex, semáforo e monitor]
+  SYNC --> DEAD[Deadlock, starvation e livelock]
+  DEAD --> ESC[Escalonamento]
+  ESC --> IO[Interrupção, polling e DMA]
+  IO --> FS[Arquivos, journaling e permissões]
+  FS --> CMD[Comandos Windows e Linux]
+```
+
+**Leitura ativa:** sincronização protege invariantes; deadlock é impasse conjunto; comandos de observação não alteram estado. **Pegadinhas:** mutex × semáforo; interrupção × DMA; journaling × backup.
 
 # Dia 6 — Revisão Integrada e Estudo de Caso
 
@@ -7476,97 +7551,6 @@ Conectar infraestrutura, protocolos, segurança e sistema operacional em um úni
 | 10min | Explique corrida, mutex, semáforo, starvation e deadlock |
 | 10min | Releia os cinco erros mais frequentes e agende D1, D7 e D30 |
 
-## Entrega final da semana
-
-Ao concluir a Semana 2, produza:
-
-- mapa de topologias, equipamentos e domínios;
-- quadro OSI x TCP/IP e folha de cálculo CIDR;
-- mapa de serviços, portas e transportes;
-- matriz ameaça, vulnerabilidade, risco e controle;
-- quadro de concorrência, sincronização, deadlock e escalonamento;
-- solução comentada do estudo de caso;
-- lista dos dez erros mais frequentes, com causa e regra corretiva.
-
-## Cobertura efetiva e pontos pendentes
-
-Foram aprofundados redes, topologias, componentes, meios, LAN/WAN, OSI, TCP/IP, endereçamento, protocolos, equipamentos, redes sem fio, VPN, ataques, firewall, DMZ, segurança, concorrência, sincronização, deadlock, dispositivos, sistemas de arquivos e aspectos práticos de Windows/Linux.
-
-Padrões W3C e gerência de rede foram contextualizados, mas não esgotados. Permanecem pendentes para aprofundamento posterior, especialmente arquitetura de gerenciamento, MIB, operações SNMP em maior detalhe, métricas, observabilidade, HTML/CSS e padrões de acessibilidade e interoperabilidade do W3C.
-
----
-
-# Mapas de conexões — Semana 2
-
-## Mapa de conexões do Dia 1
-
-```mermaid
-flowchart LR
-  TOPO[Topologias] --> MEIOS[Meios de transmissão]
-  MEIOS --> ALC[PAN, LAN, MAN e WAN]
-  ALC --> NIC[NIC e enlace]
-  NIC --> SW[Hub, bridge e switch]
-  SW --> RT[Roteador, gateway e AP]
-  RT --> DOM[Colisão e broadcast]
-```
-
-**Leitura ativa:** topologia física não determina sozinha o comportamento lógico; switch aprende MAC, roteador conecta redes. **Pegadinhas:** hub × switch; capacidade × goodput; colisão × broadcast.
-
-## Mapa de conexões do Dia 2
-
-```mermaid
-flowchart LR
-  OSI[OSI e TCP/IP] --> ENC[Encapsulamento e PDUs]
-  ENC --> IPV4[IPv4 e CIDR]
-  IPV4 --> CALC[Rede, broadcast e hosts]
-  CALC --> GW[Gateway e ARP]
-  GW --> IPV6[IPv6, ICMPv6 e ND]
-```
-
-**Leitura ativa:** CIDR decide o alcance; destino remoto usa o gateway; quadro muda a cada salto. **Pegadinhas:** ARP do destino remoto; pacote × quadro; IPv6 com broadcast.
-
-## Mapa de conexões do Dia 3
-
-```mermaid
-flowchart LR
-  SOCKET[Protocolo, porta e socket] --> TRANS[TCP e UDP]
-  TRANS --> WEB[HTTP, HTTPS e TLS]
-  WEB --> BASE[DNS e DHCP]
-  BASE --> SERV[Correio, arquivos, SSH e LDAP]
-  SERV --> GER[SNMP e NTP]
-  GER --> PUB[Proxy, NAT e PAT]
-```
-
-**Leitura ativa:** cada protocolo resolve um problema próprio; o fluxo típico é configurar, resolver, transportar, proteger e atender. **Pegadinhas:** SFTP × FTPS; SMTP × IMAP; proxy × NAT.
-
-## Mapa de conexões do Dia 4
-
-```mermaid
-flowchart LR
-  RISCO[Ativo, ameaça, vulnerabilidade e risco] --> CIA[CIA e AAA]
-  CIA --> ATAQ[Malware, phishing e ataques]
-  ATAQ --> CTRL[Defesa em profundidade]
-  CTRL --> REDE[Firewall, IDS/IPS, DMZ e VPN]
-  REDE --> CRIP[Cifra, hash, assinatura e TLS]
-  CRIP --> RESP[Wi-Fi, incidente, backup e RPO/RTO]
-```
-
-**Leitura ativa:** controle reduz risco, não cria risco zero; contenção antecede erradicação; backup não é redundância. **Pegadinhas:** IDS × IPS; hash × cifra; RPO × RTO.
-
-## Mapa de conexões do Dia 5
-
-```mermaid
-flowchart LR
-  PROC[Processo e thread] --> CORR[Seção crítica e corrida]
-  CORR --> SYNC[Mutex, semáforo e monitor]
-  SYNC --> DEAD[Deadlock, starvation e livelock]
-  DEAD --> ESC[Escalonamento]
-  ESC --> IO[Interrupção, polling e DMA]
-  IO --> FS[Arquivos, journaling e permissões]
-  FS --> CMD[Comandos Windows e Linux]
-```
-
-**Leitura ativa:** sincronização protege invariantes; deadlock é impasse conjunto; comandos de observação não alteram estado. **Pegadinhas:** mutex × semáforo; interrupção × DMA; journaling × backup.
 
 ## Mapa de conexões do Dia 6
 
@@ -7671,3 +7655,21 @@ flowchart LR
 ## Assuntos que serão cobrados na Apostila de Questões
 
 **Principais:** revisão integrada dos Dias 1–5 e estudo de caso. **Extras:** Português e caderno de erros do mapa de revisão mista do Dia 6.
+
+## Entrega final da semana
+
+Ao concluir a Semana 2, produza:
+
+- mapa de topologias, equipamentos e domínios;
+- quadro OSI x TCP/IP e folha de cálculo CIDR;
+- mapa de serviços, portas e transportes;
+- matriz ameaça, vulnerabilidade, risco e controle;
+- quadro de concorrência, sincronização, deadlock e escalonamento;
+- solução comentada do estudo de caso;
+- lista dos dez erros mais frequentes, com causa e regra corretiva.
+
+## Cobertura efetiva e pontos pendentes
+
+Foram aprofundados redes, topologias, componentes, meios, LAN/WAN, OSI, TCP/IP, endereçamento, protocolos, equipamentos, redes sem fio, VPN, ataques, firewall, DMZ, segurança, concorrência, sincronização, deadlock, dispositivos, sistemas de arquivos e aspectos práticos de Windows/Linux.
+
+Padrões W3C e gerência de rede foram contextualizados, mas não esgotados. Permanecem pendentes para aprofundamento posterior, especialmente arquitetura de gerenciamento, MIB, operações SNMP em maior detalhe, métricas, observabilidade, HTML/CSS e padrões de acessibilidade e interoperabilidade do W3C.
