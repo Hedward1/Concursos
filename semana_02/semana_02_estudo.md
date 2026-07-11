@@ -142,6 +142,21 @@ Estratégia de leitura: identifique primeiro a função exigida pelo enunciado. 
 Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
 
 <a id="s2-d1-teoria"></a>
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Legislação CRA/CFA (40min)
+
+Lei nº 4.769/1965 estrutura a profissão e o Sistema CFA/CRAs; Decreto nº 61.934/1967 regulamenta o exercício. CFA atua nacionalmente; CRA atua regionalmente com registro e fiscalização. **Exemplo:** diploma não substitui registro exigido. **Pegadinha:** trocar CRA por CFA.
+
+### Bloco 5 — Português técnico (30min)
+
+Identifique comando, ideia central, inferência e conectores. “Pode” não equivale a “sempre”; “embora” indica concessão. **Exemplo:** switch pode encaminhar por MAC, mas não elimina todo broadcast. **Pegadinha:** escolher fato técnico verdadeiro que não responde ao comando.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Registre topologia, equipamento, métrica e conceito confundido. Diferencie hub/switch, colisão/broadcast e largura de banda/goodput; escreva um contraexemplo para cada erro.
+
 ## Teoria explicada de forma didática
 
 <a id="s2-d1-fundamentos"></a>
@@ -1009,6 +1024,21 @@ Na resolução, separe três planos:
 Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
 
 <a id="s2-d2-teoria"></a>
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 4 — Administração Pública (40min)
+
+Legalidade vincula a Administração; eficiência não autoriza ato ilegal. Órgão não possui personalidade; autarquia é entidade de direito público. Anulação combate ilegalidade; revogação trata de mérito. **Pegadinha:** motivo é pressuposto do ato, motivação é sua exposição.
+
+### Bloco 5 — Português técnico (30min)
+
+Em cálculo de rede, leia exatamente prefixo, máscara, rede, broadcast ou hosts solicitados. “Exceto” inverte o alvo. **Exemplo:** `/27` possui blocos de 32 endereços; não aplique fórmula de hosts sem tratar exceções. **Pegadinha:** responder host quando a pergunta pede endereço de rede.
+
+### Bloco 6 — Caderno de erros (20min)
+
+Para cada erro, registre IP/prefixo, máscara, bloco, rede, broadcast e intervalo de hosts. Acrescente ARP local, gateway remoto e a diferença IPv4/IPv6.
+
 ## Teoria explicada de forma didática
 
 <a id="s2-d2-osi"></a>
@@ -2252,6 +2282,21 @@ As pausas não entram na soma. Sugestão: pausa de 10 a 15 minutos após cada bl
 | 9 | Prática guiada, checklist e caderno de erros | 15 min |
 | **Total líquido** |  | **360 min** |
 
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 7 — Legislação CRA/CFA (30min)
+
+Lei define a base profissional; Decreto regulamenta; Regimento organiza o CRA-PR; Código de Ética disciplina condutas. Antes de responder, identifique sujeito, competência e norma-base. **Pegadinha:** assinatura de fachada não equivale a responsabilidade técnica.
+
+### Bloco 8 — Português e interpretação (15min)
+
+Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP configura, TLS protege canal, HTTP realiza requisição. **Pegadinha:** trocar serviço de aplicação por protocolo de transporte ou modalidade por certeza.
+
+### Bloco 9 — Caderno de erros (15min)
+
+Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. Registre também por que uma porta não prova segurança.
+
 ## Teoria aprofundada
 
 <a id="s2-d3-protocolo-porta"></a>
@@ -3277,6 +3322,21 @@ As pausas são adicionais e não entram na soma.
 | 9 | Revisão fixa: Português em bloco curto | 10 min |
 | 10 | Prática guiada, checklist e caderno de erros | 20 min |
 | **Total líquido** |  | **360 min** |
+
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 7 — Administração Pública (25min)
+
+Princípios do art. 37, ato administrativo, LAI/LGPD e responsabilidade devem ser lidos por finalidade e limite. **Exemplo:** publicidade não autoriza promoção pessoal nem divulgação irrestrita de dado pessoal. **Pegadinha:** anulação não é revogação.
+
+### Bloco 8 — RLM e Português (25min)
+
+Negue quantificadores corretamente: negar “todos” produz “algum não”; negar “nenhum” produz “algum”. Em Português, mantenha referente, conector e alcance na reescrita. **Pegadinha:** transformar possibilidade em universalidade.
+
+### Bloco 9 — Caderno de erros (20min)
+
+Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. Escreva qual etapa de incidente evitaria a falha.
 
 ## Teoria aprofundada
 
@@ -5302,6 +5362,21 @@ Um método seguro é sublinhar no enunciado: recurso compartilhado, ordem das op
 | Revisão fixa — Português e interpretação | 10 min | Conectores, referente pronominal e inferência em texto técnico |
 | **Total** | **360 min** | **6 horas líquidas** |
 
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 8 — Legislação CRA/CFA (20min)
+
+Revise registro, fiscalização, Regimento e Código de Ética: sujeito, conduta, jurisdição e processo decidem o caso. **Pegadinha:** confundir RN de Regimento com Código ou supor sanção automática.
+
+### Bloco 9 — Português e interpretação (10min)
+
+Resolva conectores, referente pronominal e inferência sem acrescentar informação. **Exemplo:** “ainda que” mantém concessão; não vira causa. **Pegadinha:** pronome possessivo com dois antecedentes.
+
+### Bloco 10 — Caderno de erros (integrado)
+
+Classifique cada erro como processo/thread, corrida/sincronização, deadlock/starvation, polling/interrupção/DMA ou journaling/backup/permissão. Registre um cenário que diferencie os dois conceitos.
+
 ## Teoria explicada de forma didática
 
 <a id="s2-d5-concorrencia-paralelismo"></a>
@@ -6203,6 +6278,21 @@ Ao ler um cenário, organize os fatos em cinco colunas: sintoma, camada, evidên
 | Caderno de erros | 10 min | Priorizar conceitos mais errados e planejar recuperação |
 | Fechamento | 5 min | Checklist e três compromissos para a próxima semana |
 | **Total** | **360 min** | **6 horas líquidas** |
+
+
+## Conteúdo dos blocos de revisão e consolidação
+
+### Bloco 8 — Português técnico (15min)
+
+Leia tese, inferência, coesão, pontuação e reescrita em relatos técnicos. **Exemplo:** ping bem-sucedido não prova saúde da aplicação; o texto deve preservar essa ressalva. **Pegadinha:** vírgula entre sujeito e verbo ou extrapolação de dado técnico.
+
+### Bloco 9 — Caderno de erros e revisão mista (10min)
+
+Use o mapa do Dia 6: classifique erro como enlace, camada, CIDR, protocolo, controle de segurança, continuidade ou SO. Escreva regra, contraexemplo e seção de origem.
+
+### Bloco 10 — Fechamento (5min)
+
+Escolha três conceitos ainda incertos e transforme-os em pergunta de recuperação ativa para a próxima sessão.
 
 ## Teoria explicada de forma didática
 
