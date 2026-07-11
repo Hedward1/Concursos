@@ -20,7 +20,7 @@ O mapa é diário, não semanal: ele deve servir diretamente à sessão de estud
 
 ## Super simulado semanal
 
-Ao concluir os seis dias, prepare `## Super simulado da Semana` no arquivo de questões. Ele seleciona **60 questões já existentes** — oito principais e duas extras de cada dia — e deve ser resolvido sem consulta, em tempo contínuo. Não cria novas questões nem altera o total de 420 itens; registra os IDs selecionados, tempo sugerido, gabarito de correção e campos para erros prioritários.
+Ao concluir os seis dias, prepare um arquivo próprio chamado `semana_XX/semana_XX_super_simulado.md`, com **60 questões inéditas** e de dificuldade alta: dez questões integradoras por dia, cobrindo também as revisões fixas quando pertinentes. O simulado deve ser resolvido sem consulta, em tempo contínuo, e conter gabarito, comentário individual de A–D, conceito, pegadinha, raciocínio e referência à teoria. Ele é material suplementar e não altera o total oficial de 420 itens da semana.
 
 ## Estrutura mínima da apostila de questões
 
