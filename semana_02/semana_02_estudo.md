@@ -57,6 +57,21 @@ Conhecimentos do Cargo, Legislação CRA-PR/CFA e Língua Portuguesa somam 70 po
 
 Pausas sugeridas: 10 minutos após o primeiro bloco, 15 minutos após o segundo, 10 minutos após o terceiro e 5 minutos antes do caderno de erros. As pausas não integram as 6h líquidas.
 
+### Como executar cada bloco do dia
+
+A Semana 2 mantém o mesmo padrão metodológico da Semana 1. O tema técnico muda a cada dia, mas a forma de estudar deve continuar constante: teoria clara, exemplo, prática, revisão fixa, Português e caderno de erros.
+
+| Bloco | Função | Passo a passo obrigatório |
+|---|---|---|
+| Bloco principal 1 | Abrir o tema principal | **Teoria explicada de forma didática**; mapa conceitual; conceitos centrais; vocabulário técnico essencial. |
+| Bloco principal 2 | Aprofundar o tema principal | **Teoria explicada de forma didática**; diferenças entre conceitos parecidos; exemplos resolvidos; pegadinhas do Instituto Consulplan. |
+| Bloco principal 3 | Aplicar o tema principal | **Teoria explicada de forma didática** dos pontos fracos; prática guiada; questões principais; correção imediata do raciocínio. |
+| Revisão fixa | Revisar matéria recorrente | **Teoria explicada de forma didática** do assunto revisado; leitura curta; questões extras; registro das confusões mais prováveis. |
+| Português | Treinar leitura e linguagem | **Teoria explicada de forma didática** do ponto linguístico; interpretação de enunciado; reescrita; gramática aplicada ou parágrafo discursivo. |
+| Caderno de erros | Consolidar lacunas | **Teoria explicada de forma didática** apenas do erro cometido; regra curta; flashcard, mapa mental ou alerta de pegadinha; item para revisar no próximo ciclo. |
+
+Ao final de cada bloco, responda: "eu consigo explicar isso sem olhar?". Se não conseguir, o ponto deve ir para o caderno de erros.
+
 ## Mapa da Semana 2
 
 | Dia | Tema principal | Revisão fixa | Entrega do dia |
@@ -2297,7 +2312,7 @@ Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP co
 
 Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. Registre também por que uma porta não prova segurança.
 
-## Teoria aprofundada
+## Teoria explicada de forma didática
 
 <a id="s2-d3-protocolo-porta"></a>
 ### 1. Protocolo, serviço, porta e socket
@@ -3338,7 +3353,7 @@ Negue quantificadores corretamente: negar “todos” produz “algum não”; n
 
 Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. Escreva qual etapa de incidente evitaria a falha.
 
-## Teoria aprofundada
+## Teoria explicada de forma didática
 
 <a id="s2-d4-gestao-risco"></a>
 ### 1. Segurança como gestão de risco
