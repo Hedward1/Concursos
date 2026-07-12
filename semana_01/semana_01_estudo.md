@@ -69,6 +69,21 @@ Cada dia terá um tema principal, mas todos os dias também terão revisão curt
 
 Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
 
+### Como executar cada bloco do dia
+
+A lógica de estudo não vale apenas para os Blocos 1, 2 e 3. Os Blocos 4, 5 e 6 também devem seguir um passo a passo claro, para que a revisão fixa, o treino de Português/discursiva e o caderno de erros não virem apenas leitura solta.
+
+| Bloco | Função | Passo a passo obrigatório |
+|---|---|---|
+| Bloco 1 | Abrir o tema principal | **Teoria explicada de forma didática**; leitura ativa; marcação dos conceitos centrais; anotação das diferenças entre conceitos parecidos. |
+| Bloco 2 | Aprofundar o tema principal | **Teoria explicada de forma didática**; exemplos resolvidos; aplicação em situações de prova; identificação de pegadinhas da Consulplan. |
+| Bloco 3 | Praticar o tema principal | **Teoria explicada de forma didática** nos pontos que ainda ficaram fracos; exercícios guiados; questões principais; correção imediata dos erros. |
+| Bloco 4 | Revisão fixa do dia | **Teoria explicada de forma didática** do assunto revisado; leitura curta da norma ou conceito; 10 a 20 questões extras; registro das confusões mais prováveis. |
+| Bloco 5 | Português, interpretação ou discursiva | **Teoria explicada de forma didática** do ponto linguístico; leitura de trecho curto; reescrita ou análise gramatical; treino de parágrafo quando houver discursiva. |
+| Bloco 6 | Caderno de erros e revisão ativa | **Teoria explicada de forma didática** apenas do erro cometido; transformar erro em regra curta; criar flashcard, mapa mental ou alerta de pegadinha; definir o que volta no dia seguinte. |
+
+Em todos os blocos, a pergunta final deve ser: "eu sei explicar isso sem olhar?". Se a resposta for não, o ponto entra no caderno de erros.
+
 ---
 
 ## Mapa da Semana 1

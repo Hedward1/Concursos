@@ -43,6 +43,21 @@ A rotina padrão de cada dia de estudo deve ser mantida, com adaptações apenas
 
 Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco principal e os blocos fixos. As 6h são líquidas; pausas não entram na contagem.
 
+### Espinha dorsal dos blocos diários
+
+Cada dia deve ter tema próprio, mas o método de execução precisa ser constante. Os Blocos 1, 2 e 3 concentram o tema principal; os Blocos 4, 5 e 6 consolidam revisão fixa, Português/discursiva e caderno de erros.
+
+| Bloco | Papel no dia | Passo a passo |
+|---|---|---|
+| Bloco 1 | Base do tema principal | **Teoria explicada de forma didática**; conceitos centrais; definições; diferenças entre conceitos parecidos. |
+| Bloco 2 | Aprofundamento | **Teoria explicada de forma didática**; exemplos resolvidos; funcionamento na prática; pegadinhas de prova. |
+| Bloco 3 | Aplicação | **Teoria explicada de forma didática** dos pontos fracos; exercícios guiados; questões principais; correção imediata. |
+| Bloco 4 | Revisão fixa | **Teoria explicada de forma didática** da matéria revisada; leitura curta; questões extras; alerta de pegadinhas. |
+| Bloco 5 | Português/discursiva | **Teoria explicada de forma didática** do ponto linguístico; interpretação; reescrita; treino de parágrafo ou estrutura discursiva. |
+| Bloco 6 | Caderno de erros | **Teoria explicada de forma didática** do erro; regra curta de memorização; flashcard ou mapa mental; item para revisar no próximo ciclo. |
+
+Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, inclusive quando o tema principal não for técnico.
+
 ## Plano Mestre de Cobertura do Edital
 
 ### Semana 1 - 13/07/2026 a 18/07/2026
