@@ -1,4 +1,4 @@
-# Apostila de Questões - Semana 1 v1.2
+# Apostila de Questões - Semana 1 v1.3
 
 ## CRA-PR 2026 - Analista de Sistemas
 
@@ -10,7 +10,7 @@ Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
 **Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões extras de revisão fixa (20 por dia).
 
-**Nível pretendido:** médio a difícil, com assertivas completas, verdadeiro/falso, estudos de caso, comandos SQL, cenários de órgão público e distratores plausíveis.
+**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. Cada bloco de 50 questões principais adota 20/20/10; cada bloco de 20 extras adota 8/8/4. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Essa regra também se aplica a todo questionário complementar criado a partir do Dia 3. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
 
 ---
 
@@ -3251,150 +3251,167 @@ Extra Dia 2.20: C
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
 
 Em um sistema do CRA, a tabela `profissional(id_profissional, nome, uf, situacao)` deve retornar apenas profissionais ativos do Paraná. A consulta correta é:
 
-A) SELECT nome FROM profissional WHERE uf = 'PR' AND situacao = 'ATIVO';
-B) SELECT nome FROM profissional GROUP BY uf = 'PR' AND situacao = 'ATIVO';
-C) SELECT nome FROM profissional ORDER BY uf = 'PR' AND situacao = 'ATIVO';
-D) SELECT nome FROM profissional HAVING uf = 'PR' AND situacao = 'ATIVO';
+A) SELECT nome FROM profissional WHERE uf = 'PR' ORDER BY (situacao = 'ATIVO') DESC;
+B) SELECT nome FROM profissional WHERE uf = 'PR' OR situacao = 'ATIVO';
+C) SELECT nome FROM profissional WHERE uf = 'PR' AND situacao = 'ATIVO';
+D) SELECT nome FROM profissional WHERE uf <> 'PR' AND situacao = 'ATIVO';
 
 ### Questão 2
+**Nível: Médio**
 
 A tabela `anuidade(id_anuidade, id_profissional, ano, valor)` deve retornar o total de anuidades por ano. Assinale a consulta adequada.
 
-A) SELECT ano, COUNT(*) AS total FROM anuidade WHERE ano;
-B) SELECT ano, total FROM anuidade ORDER BY COUNT(*);
-C) UPDATE anuidade SET total = COUNT(*) GROUP BY ano;
-D) SELECT ano, COUNT(*) AS total FROM anuidade GROUP BY ano;
+A) SELECT ano, COUNT(*) AS total FROM anuidade GROUP BY ano;
+B) SELECT ano, COUNT(*) AS total FROM anuidade GROUP BY id_profissional;
+C) SELECT ano, SUM(valor) AS total FROM anuidade GROUP BY ano;
+D) SELECT COUNT(*) AS total FROM anuidade;
 
 ### Questão 3
+**Nível: Médio**
 
 Para listar apenas setores com mais de 20 profissionais cadastrados, considerando `profissional(id, setor)`, a consulta correta é:
 
-A) SELECT setor FROM profissional HAVING setor > 20;
-B) SELECT setor, COUNT(*) FROM profissional ORDER BY COUNT(*) > 20;
-C) SELECT setor, COUNT(*) FROM profissional GROUP BY setor HAVING COUNT(*) > 20;
-D) SELECT setor, COUNT(*) FROM profissional WHERE COUNT(*) > 20 GROUP BY setor;
+A) SELECT setor, COUNT(*) FROM profissional WHERE setor IS NOT NULL GROUP BY setor;
+B) SELECT setor, COUNT(*) FROM profissional GROUP BY setor ORDER BY COUNT(*) DESC FETCH FIRST 20 ROWS ONLY;
+C) SELECT setor, COUNT(*) FROM profissional GROUP BY setor HAVING COUNT(*) >= 20;
+D) SELECT setor, COUNT(*) FROM profissional GROUP BY setor HAVING COUNT(*) > 20;
 
 ### Questão 4
+**Nível: Médio**
 
 No modelo relacional, `id_profissional` em `anuidade` referenciando `profissional(id_profissional)` é exemplo de:
 
-A) comando DDL.
-B) chave estrangeira.
-C) chave candidata obrigatoriamente única em anuidade.
-D) atributo multivalorado em 1FN.
+A) chave estrangeira.
+B) chave primária de `anuidade`, porque identifica o profissional associado.
+C) chave candidata que deve ser única em `anuidade`.
+D) índice de pesquisa sem função de integridade referencial.
 
 ### Questão 5
+**Nível: Médio**
 
 Assinale a alternativa correta sobre chave primária.
 
-A) Identifica unicamente cada linha e não deve aceitar valor nulo.
-B) Serve apenas para ordenar alfabeticamente a tabela.
-C) Pode repetir livremente valores em uma mesma tabela.
-D) É sempre formada por exatamente uma coluna textual.
+A) Identifica unicamente cada linha e não aceita valor nulo.
+B) Impede repetição, mas pode aceitar NULL porque equivale a uma restrição UNIQUE comum.
+C) Deve ser simples; chaves compostas não podem exercer o papel de chave primária.
+D) É escolhida entre as chaves candidatas, mas só passa a exigir unicidade quando referenciada por uma FK.
 
 ### Questão 6
+**Nível: Médio**
 
 Um relacionamento N:N entre `usuario` e `perfil` deve ser implementado, no modelo relacional, por:
 
-A) uma coluna `perfis` contendo lista separada por vírgula em `usuario`.
-B) a exclusão da entidade `perfil` para evitar duplicidade.
-C) uma chave estrangeira obrigatoriamente única em `usuario`.
-D) uma tabela associativa, como `usuario_perfil(id_usuario, id_perfil)`.
+A) uma coluna `perfis` em `usuario`, contendo os identificadores em uma lista delimitada.
+B) uma FK `id_usuario` em `perfil`, permitindo que cada perfil aponte para apenas um usuário.
+C) uma tabela associativa, como `usuario_perfil(id_usuario, id_perfil)`.
+D) uma FK `id_perfil` em `usuario`, limitando cada usuário a um único perfil.
 
 ### Questão 7
+**Nível: Médio**
 
 Uma tabela `matricula(id_aluno, id_disciplina, nome_aluno, nome_disciplina)` tem chave composta `(id_aluno, id_disciplina)`. O problema de normalização mais evidente é:
 
-A) violação de ACID, pois há campos textuais.
-B) ausência de SQL, pois tabela normalizada não possui nomes.
-C) violação da 2FN, pois nomes dependem apenas de parte da chave composta.
-D) violação da 1FN, pois toda chave composta é proibida.
+A) violação de 1FN, porque uma chave composta impede que os atributos sejam atômicos.
+B) violação de 2FN, pois cada nome depende de apenas uma parte da chave composta.
+C) violação de 3FN exclusivamente, porque os nomes dependem transitivamente um do outro.
+D) nenhuma violação, pois a combinação `(id_aluno, id_disciplina)` é única.
 
 ### Questão 8
+**Nível: Médio**
 
 A tabela `servidor(id_servidor, id_departamento, nome_departamento)` pode violar a 3FN porque:
 
-A) a 3FN exige que toda tabela tenha exatamente duas colunas.
-B) `nome_departamento` depende de `id_departamento`, que não é a chave primária da tabela servidor.
-C) toda tabela com campo textual viola 3FN.
-D) a presença de chave estrangeira é proibida na 3FN.
+A) há dependência parcial de `nome_departamento` em uma parte da chave composta de `servidor`.
+B) o nome do departamento se repete em várias linhas, o que por si só viola a 1FN.
+C) `id_servidor` determina `id_departamento`, que por sua vez determina `nome_departamento`.
+D) qualquer FK para `departamento` é incompatível com a 3FN.
 
 ### Questão 9
+**Nível: Médio**
 
 Assinale a alternativa que diferencia corretamente `DELETE` e `DROP`.
 
-A) `DELETE` remove linhas; `DROP` remove objeto de banco, como uma tabela.
-B) `DELETE` remove a tabela inteira do catálogo; `DROP` remove apenas linhas filtradas.
-C) Ambos são sinônimos e sempre preservam a estrutura da tabela.
-D) `DROP` é usado para filtrar registros com `WHERE`.
+A) `DELETE` remove linhas; `DROP` remove um objeto do banco, como a tabela.
+B) `DELETE` sem WHERE remove linhas e a definição da tabela; `DROP` preserva a definição.
+C) `DELETE` e `DROP` removem somente dados, diferenciando-se apenas pela possibilidade de ROLLBACK.
+D) `DROP` esvazia a tabela e preserva sua estrutura para reutilização, enquanto `DELETE` exige filtro.
 
 ### Questão 10
+**Nível: Médio**
 
 Em `UPDATE profissional SET situacao = 'INATIVO';`, sem cláusula WHERE, o efeito provável é:
 
-A) alterar apenas a primeira linha por padrão SQL.
-B) não alterar nenhuma linha, pois WHERE é obrigatório em todo UPDATE.
-C) remover a tabela `profissional`.
-D) alterar a situação de todas as linhas da tabela.
+A) alterar a situação de todas as linhas da tabela.
+B) alterar apenas a linha de menor chave primária, por ser a primeira do plano de execução.
+C) ser rejeitado pelo SQL padrão, pois todo UPDATE exige predicado de seleção.
+D) alterar somente as linhas que já estavam ativas, por inferência do valor atribuído.
 
 ### Questão 11
+**Nível: Médio**
 
 Para localizar registros sem e-mail cadastrado em `profissional(email)`, usa-se:
 
-A) WHERE email == NULL
-B) WHERE NULL(email)
-C) WHERE email IS NULL
-D) WHERE email = NULL
+A) WHERE email = ''
+B) WHERE email <> NULL
+C) WHERE COALESCE(email, '') = ''
+D) WHERE email IS NULL
 
 ### Questão 12
+**Nível: Médio**
 
-Considere as tabelas `profissional(id, nome)` e `anuidade(id, id_profissional, ano)`. Para listar profissionais e suas anuidades, a junção correta é:
+Considere `profissional(id, nome)` e `anuidade(id, id_profissional, ano)`. Para listar somente pares profissional–anuidade com correspondência pela chave, a consulta correta é:
 
-A) SELECT p.nome, a.ano FROM profissional p WHERE a.id_profissional = p.id;
+A) SELECT p.nome, a.ano FROM profissional p JOIN anuidade a ON a.id = p.id;
 B) SELECT p.nome, a.ano FROM profissional p JOIN anuidade a ON a.id_profissional = p.id;
-C) SELECT p.nome, a.ano FROM profissional p JOIN anuidade a ON a.id = p.nome;
-D) SELECT p.nome, a.ano FROM profissional p, anuidade a;
+C) SELECT p.nome, a.ano FROM profissional p JOIN anuidade a ON a.id_profissional = a.id;
+D) SELECT p.nome, a.ano FROM profissional p CROSS JOIN anuidade a;
 
 ### Questão 13
+**Nível: Médio**
 
 Um relatório deve mostrar todos os profissionais, mesmo os que ainda não possuem anuidade lançada. A junção mais adequada, partindo de `profissional`, é:
 
-A) LEFT JOIN anuidade.
-B) INNER JOIN anuidade.
-C) CROSS JOIN anuidade.
-D) JOIN sem ON obrigatório.
+A) CROSS JOIN anuidade, combinando cada profissional com todas as anuidades.
+B) INNER JOIN anuidade ON anuidade.id_profissional = profissional.id.
+C) RIGHT JOIN anuidade ON anuidade.id_profissional = profissional.id, preservando o lado de `anuidade`.
+D) LEFT JOIN anuidade ON anuidade.id_profissional = profissional.id.
 
 ### Questão 14
+**Nível: Médio**
 
 Em SQL, `COUNT(*)` e `COUNT(email)` podem produzir resultados diferentes porque:
 
-A) `COUNT(*)` conta apenas linhas com e-mail preenchido.
-B) `COUNT(email)` sempre conta todas as linhas da tabela.
-C) Ambas as formas são inválidas em SQL.
-D) `COUNT(email)` ignora valores NULL na coluna, enquanto `COUNT(*)` conta linhas.
+A) `COUNT(*)` ignora linhas nas quais qualquer coluna contenha NULL.
+B) `COUNT(email)` ignora NULL nessa coluna, enquanto `COUNT(*)` conta as linhas.
+C) as duas expressões sempre devolvem o mesmo total, independentemente dos dados.
+D) `COUNT(email)` conta os NULLs, atribuindo zero a cada valor ausente.
 
 ### Questão 15
+**Nível: Médio**
 
 Assinale a alternativa correta sobre `PRIMARY KEY`, `UNIQUE` e `NOT NULL`.
 
-A) `NOT NULL` cria automaticamente relacionamento entre tabelas.
-B) `PRIMARY KEY` permite valores repetidos se houver índice.
-C) `PRIMARY KEY` combina unicidade e não nulidade; `UNIQUE` impede repetição; `NOT NULL` impede ausência de valor.
-D) `UNIQUE` e `NOT NULL` são sinônimos perfeitos.
+A) `UNIQUE` e `NOT NULL` formam uma chave candidata e substituem automaticamente qualquer `PRIMARY KEY` já declarada.
+B) `PRIMARY KEY` garante unicidade, mas permite NULL quando não existe uma restrição `NOT NULL` separada.
+C) `PRIMARY KEY` impõe unicidade e não nulidade; `UNIQUE` veda duplicatas não nulas; `NOT NULL` veda nulos.
+D) `NOT NULL` impede valores repetidos, enquanto `UNIQUE` exige preenchimento e define a chave primária da tabela.
 
 ### Questão 16
+**Nível: Médio**
 
 Um analista deseja impedir que `valor_anuidade` seja negativo. A restrição mais adequada é:
 
-A) DROP valor_anuidade.
+A) NOT NULL em `valor_anuidade`.
 B) CHECK (valor_anuidade >= 0).
-C) FOREIGN KEY (valor_anuidade).
-D) ORDER BY valor_anuidade.
+C) UNIQUE em `valor_anuidade`.
+D) DEFAULT 0 para `valor_anuidade`.
 
 ### Questão 17
+**Nível: Médio**
 
 V/F: Sobre SQL.
 
@@ -3404,1435 +3421,1577 @@ III. `COMMIT` desfaz uma transação confirmada.
 
 A sequência correta é:
 
-A) V, V, F.
-B) V, F, V.
+A) V, F, V.
+B) V, V, F.
 C) F, V, F.
 D) V, V, V.
 
 ### Questão 18
+**Nível: Médio**
 
 Em uma transação de pagamento, o sistema deve registrar pagamento e baixar débito. Se a baixa falhar, o registro do pagamento também deve ser desfeito. Essa exigência representa:
 
-A) projeção.
-B) cardinalidade.
-C) ordenamento.
-D) atomicidade.
+A) consistência, porque toda regra válida implica desfazer todas as etapas.
+B) isolamento, porque as duas operações não podem coexistir na mesma transação.
+C) durabilidade, porque a falha ocorre antes de qualquer confirmação.
+D) atomicidade, porque as etapas devem produzir um único resultado de tudo ou nada.
 
 ### Questão 19
+**Nível: Médio**
 
 Um índice criado sobre `numero_processo` tende a:
 
-A) eliminar a necessidade de backup.
-B) substituir a chave estrangeira em relacionamentos.
-C) melhorar consultas filtradas por `numero_processo`, com custo adicional em inserções/atualizações.
-D) garantir por si só que não haverá valores repetidos.
+A) garantir unicidade de `numero_processo`, mesmo que o índice não tenha sido declarado UNIQUE.
+B) acelerar qualquer consulta da tabela, sem custo mensurável para operações de escrita.
+C) melhorar consultas compatíveis com a chave do índice, ao custo de espaço e manutenção nas escritas.
+D) eliminar toda varredura da tabela, inclusive em filtros que não utilizem a coluna indexada.
 
 ### Questão 20
+**Nível: Médio**
 
 Uma view `vw_profissionais_ativos` pode ser usada para:
 
-A) executar sempre antes de qualquer trigger.
-B) oferecer uma visão lógica filtrada dos dados.
-C) armazenar obrigatoriamente cópia física independente em todo SGBD.
-D) substituir todas as permissões do banco automaticamente.
+A) armazenar obrigatoriamente uma cópia física autônoma dos dados retornados.
+B) conceder acesso aos dados subjacentes independentemente das permissões configuradas.
+C) aceitar INSERT, UPDATE e DELETE em qualquer definição, sem restrições do SGBD.
+D) oferecer uma visão lógica baseada em consulta, que pode filtrar e projetar dados.
 
 ### Questão 21
+**Nível: Difícil**
 
-Uma trigger definida para executar após `INSERT` em `anuidade` é:
+Uma trigger `AFTER INSERT` em `anuidade` registra auditoria na mesma transação do comando que a disparou. Não há transação autônoma específica. Se a transação principal sofrer `ROLLBACK`, é correto afirmar que:
 
-A) rotina disparada automaticamente por evento de inserção.
-B) consulta manual que o usuário deve sempre chamar por SELECT.
-C) restrição que só impede NULL.
-D) índice criado para melhorar busca textual.
+A) a trigger somente será executada depois do COMMIT, razão pela qual sua auditoria sempre persistirá.
+B) a trigger é executada pelo evento e seu registro de auditoria normalmente também será desfeito pelo ROLLBACK.
+C) a aplicação precisa executar `CALL trigger_auditoria` antes do ROLLBACK.
+D) o registro produzido pela trigger não participa das propriedades ACID da transação principal.
 
 ### Questão 22
+**Nível: Difícil**
 
-Assinale a alternativa correta sobre stored procedures.
+Uma rotina `registrar_pagamento` deve receber parâmetros, validar dados, inserir o pagamento e atualizar o débito quando chamada pela aplicação. A solução mais compatível é:
 
-A) São sempre idênticas a views simples.
-B) São obrigatoriamente chaves primárias compostas.
-C) São comandos DDL usados exclusivamente para apagar tabelas.
-D) Podem encapsular lógica e comandos SQL armazenados no SGBD.
+A) uma stored procedure, que encapsula comandos e lógica sob chamada explícita.
+B) uma trigger, pois triggers são chamadas explicitamente pela aplicação.
+C) uma restrição CHECK, capaz de executar vários comandos DML.
+D) uma view, pois toda view aceita parâmetros e executa alterações encadeadas.
 
 ### Questão 23
+**Nível: Difícil**
 
-Em álgebra relacional, seleção e projeção correspondem, respectivamente, a:
+Considere `π_nome(σ_uf = 'PR' ∧ situacao = 'ATIVO'(Profissional))`. Essa expressão de álgebra relacional representa:
 
-A) criar índices e apagar tabelas.
-B) confirmar e desfazer transações.
-C) filtrar linhas e escolher colunas.
-D) escolher colunas e filtrar linhas.
+A) todas as colunas dos profissionais, agrupadas por UF e situação.
+B) apenas os nomes de todos os profissionais, ordenados por UF.
+C) a quantidade de profissionais ativos em cada UF.
+D) os nomes dos profissionais cujas tuplas satisfazem simultaneamente UF e situação.
 
 ### Questão 24
+**Nível: Difícil**
 
-Em modelagem conceitual, uma entidade é:
+Um processo pode possuir nenhuma ou várias fiscalizações. Cada fiscalização tem número próprio, data, resultado e responsável. No MER, a representação mais adequada é:
 
-A) um backup incremental.
-B) um objeto ou conceito relevante do domínio, como Profissional ou Processo.
-C) uma coluna obrigatoriamente numérica.
-D) uma consulta SQL com WHERE.
+A) guardar todas as fiscalizações em um único atributo multivalorado de `Processo`.
+B) transformar `Fiscalizacao` em domínio do atributo `resultado`.
+C) modelar `Fiscalizacao` como entidade relacionada a `Processo` em 1:N.
+D) representar cada fiscalização como atributo derivado, sem identidade nem dados próprios.
 
 ### Questão 25
+**Nível: Difícil**
 
-Um atributo multivalorado no MER, como vários telefones de uma pessoa, costuma ser tratado no modelo relacional por:
+Uma pessoa pode ter vários telefones, e cada telefone possui tipo e indicação de principal. O mapeamento relacional que melhor preserva a 1FN é:
 
-A) tabela separada ou estrutura relacional que permita múltiplos valores atômicos.
-B) uma única coluna com todos os telefones separados por vírgula.
-C) excluir os telefones excedentes.
-D) usar `ORDER BY telefone` como substituto da modelagem.
+A) repetir todos os dados de `Pessoa` em uma nova linha para cada telefone.
+B) adicionar `telefone1`, `telefone2` e `telefone3` à tabela `Pessoa`.
+C) armazenar telefone, tipo e indicador em uma string delimitada.
+D) criar uma tabela `PessoaTelefone`, com FK para `Pessoa` e uma chave adequada.
 
 ### Questão 26
+**Nível: Difícil**
 
-Assinale a alternativa correta sobre independência física de dados.
+O DBA altera organização em disco, particionamento e índices, mas mantém tabelas, colunas e consultas usadas pela aplicação. Isso exemplifica:
 
-A) Qualquer alteração física exige reescrever todas as consultas sempre.
-B) Significa que dados não precisam de SGBD.
-C) Significa apagar as regras de integridade.
-D) Mudanças em armazenamento ou índices podem ocorrer sem alterar necessariamente a visão lógica da aplicação.
+A) independência lógica, porque o modelo conceitual foi substituído.
+B) integridade referencial, porque as FKs permaneceram válidas.
+C) independência física, pois a implementação mudou sem alterar o esquema lógico.
+D) durabilidade, porque toda mudança física exige COMMIT.
 
 ### Questão 27
+**Nível: Difícil**
 
-Um dicionário de dados é importante porque:
+Antes de executar um `ALTER TABLE`, o analista consulta o catálogo do SGBD para descobrir tipos, valores padrão, restrições e índices existentes. Ele está consultando:
 
-A) é uma tabela obrigatória de senhas em texto claro.
-B) é usado apenas para ordenar alfabeticamente relatórios.
-C) armazena metadados sobre tabelas, colunas, restrições e objetos do banco.
-D) substitui todos os dados de negócio.
+A) metadados mantidos no dicionário de dados.
+B) exclusivamente o log de transações.
+C) dados operacionais produzidos pelos usuários.
+D) uma cópia física obrigatória das tabelas de negócio.
 
 ### Questão 28
+**Nível: Difícil**
 
-Em uma consulta `SELECT setor, salario FROM servidor GROUP BY setor;`, considerando regras SQL usuais, há problema porque:
+Considere `lancamento(id_lancamento PK, setor, valor)`, com vários lançamentos por setor: `SELECT setor, id_lancamento, SUM(valor) FROM lancamento GROUP BY setor;`. Em regras SQL usuais, o problema é que:
 
-A) SELECT não permite listar mais de uma coluna.
-B) `salario` não está agregado nem aparece no GROUP BY.
-C) `setor` jamais pode aparecer em GROUP BY.
-D) GROUP BY só pode ser usado com DELETE.
+A) a presença da PK no SELECT dispensa sua agregação ou inclusão no GROUP BY.
+B) `id_lancamento` não está agregado, não integra o GROUP BY e não é determinado por `setor`.
+C) SUM só pode ser usada quando também existe uma cláusula HAVING.
+D) a função agregada deveria aparecer antes das demais expressões no SELECT.
 
 ### Questão 29
+**Nível: Difícil**
 
-Um usuário executa `DELETE FROM profissional WHERE situacao = 'INATIVO';`. O comando:
+Dentro de uma transação ainda não confirmada, executa-se `DELETE FROM profissional WHERE situacao = 'INATIVO';`. É correto afirmar que:
 
-A) remove linhas que atendem à condição, preservando a estrutura da tabela.
-B) remove a tabela `profissional` do banco.
-C) altera a situação para INATIVO.
-D) cria cópia de segurança antes de apagar.
+A) o comando exclui o objeto `profissional` e suas restrições, mas preserva os dados para eventual `ROLLBACK`.
+B) a remoção das linhas-pai sempre exclui as linhas filhas, ainda que a FK esteja configurada com `RESTRICT`.
+C) o DELETE remove as linhas permitidas e pode ser desfeito por ROLLBACK antes do COMMIT.
+D) por ser uma operação DML, a exclusão torna-se irreversível ao fim do comando, mesmo sem `COMMIT` explícito.
 
 ### Questão 30
+**Nível: Difícil**
 
-Para inserir novo profissional com nome e UF, a estrutura correta é:
+Considere `profissional(id INTEGER GENERATED ALWAYS AS IDENTITY, nome VARCHAR(100) NOT NULL, uf CHAR(2) NOT NULL DEFAULT 'PR')`. Para inserir Ana e Bruno usando o valor padrão de `uf`, emprega-se:
 
-A) SELECT INTO profissional (nome, uf) VALUES ('Ana Lima', 'PR');
-B) UPDATE INTO profissional VALUES ('Ana Lima', 'PR');
-C) DROP INTO profissional VALUES ('Ana Lima', 'PR');
-D) INSERT INTO profissional (nome, uf) VALUES ('Ana Lima', 'PR');
+A) `INSERT INTO profissional (nome, uf) VALUES ('Ana', NULL), ('Bruno', NULL);`
+B) `INSERT INTO profissional VALUES ('Ana'), ('Bruno');`
+C) `UPDATE profissional SET nome IN ('Ana', 'Bruno');`
+D) `INSERT INTO profissional (nome) VALUES ('Ana'), ('Bruno');`
 
 ### Questão 31
+**Nível: Difícil**
 
-Assinale a alternativa correta sobre transações concorrentes.
+Sobre níveis de isolamento, considerada a classificação ANSI clássica e ressalvadas implementações mais fortes dos SGBDs, assinale a correta.
 
-A) Toda concorrência elimina a necessidade de COMMIT.
-B) Concorrência impede qualquer uso de índices.
-C) Níveis de isolamento controlam interferências como leituras sujas e não repetíveis.
-D) Isolamento significa que o banco só aceita um usuário por dia.
+A) REPEATABLE READ impede leituras sujas e não repetíveis; o tratamento de fantasmas deve ser conferido no padrão e no SGBD.
+B) READ COMMITTED garante que duas leituras da mesma linha, na mesma transação, sempre retornem o mesmo valor.
+C) READ UNCOMMITTED impede leitura de valores ainda não confirmados.
+D) SERIALIZABLE elimina a necessidade de COMMIT e de mecanismos de controle de concorrência.
 
 ### Questão 32
+**Nível: Difícil**
 
-Um cadastro guarda `cpf` com restrição UNIQUE, mas a chave primária é `id_pessoa`. Isso significa que:
+Uma tabela possui `id_pessoa` como PK e `cpf` com restrição UNIQUE, mas sem NOT NULL. A interpretação mais precisa é:
 
-A) UNIQUE permite duplicidade quando há índice.
-B) `cpf` não deve repetir, mas a identificação primária da linha é `id_pessoa`.
-C) `cpf` obrigatoriamente é a chave primária.
-D) `id_pessoa` pode repetir livremente por existir CPF UNIQUE.
+A) a restrição `UNIQUE` transforma `cpf` em nova chave primária e substitui automaticamente `id_pessoa`.
+B) `id_pessoa` segue como PK; CPF não nulo duplicado é rejeitado, e NULL varia conforme o SGBD.
+C) `UNIQUE` também impõe `NOT NULL` em todos os SGBDs, tornando obrigatório o preenchimento de `cpf`.
+D) a unicidade de `cpf` permite repetir `id_pessoa` quando cada ocorrência estiver associada a um CPF distinto.
 
 ### Questão 33
+**Nível: Difícil**
 
-Em `profissional(id, nome, id_cidade)` e `cidade(id, nome)`, uma consulta para listar profissional e cidade deve relacionar:
+Para listar todos os profissionais e, quando existente, o nome de sua cidade, considerando `profissional(id, nome, id_cidade)` e `cidade(id, nome)`, usa-se:
 
-A) profissional.id_cidade = cidade.id.
-B) profissional.id = cidade.nome.
-C) profissional.nome = cidade.id.
-D) profissional.id_cidade = profissional.id.
+A) `SELECT p.nome, c.nome FROM profissional p LEFT JOIN cidade c ON c.id = p.id_cidade WHERE c.id IS NOT NULL;`
+B) `SELECT p.nome, c.nome FROM profissional p INNER JOIN cidade c ON c.id = p.id_cidade;`
+C) `SELECT p.nome, c.nome FROM profissional p LEFT JOIN cidade c ON c.id = p.id;`
+D) `SELECT p.nome, c.nome FROM profissional p LEFT JOIN cidade c ON c.id = p.id_cidade;`
 
 ### Questão 34
+**Nível: Difícil**
 
-Assinale a incorreta sobre normalização.
+Assinale a afirmativa incorreta sobre normalização e decomposição.
 
-A) A 2FN evita dependência parcial em chave composta.
-B) A 3FN evita dependência transitiva.
-C) Normalizar significa sempre eliminar todas as tabelas auxiliares para reduzir joins.
-D) A 1FN busca atributos atômicos.
+A) Com chave candidata simples, não existe dependência parcial dessa chave a ser removida pela 2FN.
+B) Uma cadeia chave → atributo não chave → outro atributo não chave pode indicar violação de 3FN.
+C) Qualquer decomposição que distribua colunas em duas tabelas preserva dados e dependências automaticamente.
+D) Normalização reduz redundâncias e anomalias, mas pode aumentar a necessidade de junções.
 
 ### Questão 35
+**Nível: Difícil**
 
-Uma consulta precisa mostrar os três maiores valores de anuidade. Em SQL padrão/variações de SGBD, a ideia correta envolve:
+Usando sintaxe SQL com FETCH, deseja-se retornar no máximo três linhas de anuidade com maior `valor`, usando o menor `id_anuidade` como desempate. A consulta correta é:
 
-A) usar WHERE valor DESC.
-B) usar DROP para remover valores menores.
-C) ordenar por valor decrescente e limitar o resultado conforme o SGBD.
-D) usar GROUP BY valor para garantir os maiores valores.
+A) `SELECT * FROM anuidade ORDER BY valor DESC, id_anuidade ASC FETCH FIRST 3 ROWS ONLY;`
+B) `SELECT * FROM anuidade ORDER BY valor ASC, id_anuidade ASC FETCH FIRST 3 ROWS ONLY;`
+C) `SELECT * FROM anuidade ORDER BY valor DESC, id_anuidade ASC OFFSET 3 ROWS;`
+D) `SELECT * FROM anuidade FETCH FIRST 3 ROWS ONLY;`
 
 ### Questão 36
+**Nível: Difícil**
 
-Assinale a alternativa correta sobre `TRUNCATE` em comparação com `DELETE`.
+Sobre DELETE, TRUNCATE e DROP, assinale a alternativa correta.
 
-A) `TRUNCATE` é comando de consulta equivalente a SELECT.
-B) `TRUNCATE` remove dados da tabela de forma estruturalmente mais ampla/rápida em muitos SGBDs, sem filtro linha a linha como DELETE com WHERE.
-C) `TRUNCATE` sempre remove apenas uma linha escolhida por WHERE.
-D) `DELETE` remove obrigatoriamente a estrutura da tabela.
+A) DELETE sem WHERE e TRUNCATE têm comportamento transacional, de log e identidade idêntico em qualquer SGBD.
+B) TRUNCATE esvazia a tabela sem predicado e preserva o objeto; transação, FKs e identidade variam por SGBD.
+C) TRUNCATE aceita WHERE para selecionar individualmente as linhas removidas.
+D) DROP TABLE esvazia a tabela, mas preserva estrutura e restrições.
 
 ### Questão 37
+**Nível: Difícil**
 
-Um relatório exibe profissionais mesmo quando a cidade não foi cadastrada. A consulta usa `LEFT JOIN cidade`. Quando não há cidade correspondente, as colunas de `cidade` tendem a aparecer como:
+Deseja-se listar todos os setores, inclusive os que não possuem profissional ativo, com a respectiva contagem. A consulta correta é:
 
-A) NULL.
-B) zero obrigatoriamente.
-C) texto “ERRO” automaticamente.
-D) a chave primária da tabela esquerda.
+A) `SELECT s.id, COUNT(p.id) FROM setor s LEFT JOIN profissional p ON p.id_setor = s.id WHERE p.ativo = 1 GROUP BY s.id;`
+B) `SELECT s.id, COUNT(p.id) FROM setor s LEFT JOIN profissional p ON p.id_setor = s.id AND p.ativo = 1 GROUP BY s.id;`
+C) `SELECT s.id, COUNT(*) FROM setor s LEFT JOIN profissional p ON p.id_setor = s.id AND p.ativo = 1 GROUP BY s.id;`
+D) `SELECT s.id, COUNT(p.id) FROM setor s INNER JOIN profissional p ON p.id_setor = s.id AND p.ativo = 1 GROUP BY s.id;`
 
 ### Questão 38
+**Nível: Difícil**
 
-Em modelagem, se uma pessoa jurídica pode ter vários responsáveis técnicos ao longo do tempo, e um profissional pode responder por várias pessoas jurídicas, a modelagem mais flexível é:
+Um profissional pode responder por várias pessoas jurídicas, e cada pessoa jurídica pode possuir vários responsáveis ao longo do tempo. O vínculo guarda início, fim e situação. A melhor solução é:
 
-A) guardar todos os responsáveis em uma coluna texto da pessoa jurídica.
-B) permitir apenas um responsável por profissional em todo o sistema.
-C) usar apenas o nome do profissional sem chave.
-D) criar relacionamento associativo com atributos como data_inicio e data_fim.
+A) colocar uma única FK `id_pessoa_juridica` em `Profissional`.
+B) colocar uma única FK `id_responsavel_atual` em `PessoaJuridica`.
+C) criar tabela associativa com FKs, período, situação e restrições de integridade.
+D) guardar nomes e períodos em uma coluna textual de histórico.
 
 ### Questão 39
+**Nível: Difícil**
 
-Assinale a correta sobre backup lógico de banco de dados.
+É necessário produzir backup lógico consistente enquanto o banco permanece disponível para escritas concorrentes. A conduta mais segura é:
 
-A) Dispensa teste de restauração.
-B) Substitui controle de permissões.
-C) Pode exportar estrutura e dados em formato recuperável, conforme ferramenta do SGBD.
-D) É sempre idêntico a copiar os arquivos físicos abertos sem consistência.
+A) usar ferramenta do SGBD com snapshot ou exportação consistente e validar o resultado mediante teste de restauração.
+B) exportar cada tabela por consultas independentes, sem snapshot ou coordenação transacional.
+C) copiar diretamente os arquivos físicos abertos pelo SGBD.
+D) criar índices adicionais, pois eles substituem mecanismos de backup e recuperação.
 
 ### Questão 40
+**Nível: Difícil**
 
-Uma tabela `documento(id_documento, tags)` armazena várias tags separadas por ponto e vírgula na coluna `tags`. O principal problema é:
+A coluna `documento.tags` contém valores como `fiscalização;anuidade;recurso`. Para consultar e restringir cada tag com integridade relacional, a melhor remodelagem é:
 
-A) impossibilidade de qualquer consulta SELECT.
-B) violação da atomicidade esperada na 1FN.
-C) excesso de chaves estrangeiras.
-D) uso obrigatório de HAVING.
+A) conservar a string e validar cada tag apenas com LIKE.
+B) duplicar toda a linha de `Documento` para cada tag.
+C) criar colunas fixas `tag1`, `tag2`, `tag3` e `tag4`.
+D) criar `DocumentoTag`, com uma tag por linha e FK para `Documento`.
 
 ### Questão 41
+**Nível: Muito difícil**
 
-Em um sistema, `numero_registro` deve ser obrigatório e não repetido, mas a PK técnica é `id`. Uma combinação adequada de restrições é:
+A tabela já possui `id` como PK. `numero_registro` deve ser obrigatório e único, enquanto `situacao` só pode assumir `A` ou `I`. A definição mais adequada é:
 
-A) NOT NULL e UNIQUE em `numero_registro`.
-B) apenas CHECK (numero_registro IS NULL).
-C) apenas FOREIGN KEY em `numero_registro` sem tabela referenciada.
-D) ORDER BY numero_registro na criação da tabela.
+A) `numero_registro VARCHAR(20) REFERENCES profissional(numero_registro), situacao CHAR(1)`
+B) `numero_registro VARCHAR(20) PRIMARY KEY, situacao CHAR(1)`
+C) `numero_registro VARCHAR(20) CHECK (numero_registro IS NOT NULL), situacao CHAR(1)`
+D) `numero_registro VARCHAR(20) NOT NULL UNIQUE, situacao CHAR(1) NOT NULL CHECK (situacao IN ('A','I'))`
 
 ### Questão 42
+**Nível: Muito difícil**
 
-Assinale a alternativa que melhor descreve SGBD.
+Uma plataforma mantém visões externas sobre um esquema lógico comum. O DBA reorganiza índices e partições sem alterar essas visões; em paralelo, o sistema precisa isolar transações concorrentes e recuperar commits após falha. A conclusão tecnicamente correta é:
 
-A) Planilha isolada sem controle de integridade ou concorrência.
-B) Apenas o arquivo físico com extensão `.db`.
-C) Somente a linguagem SQL, sem mecanismos de controle.
-D) Software que gerencia armazenamento, consulta, integridade, segurança e transações de dados.
+A) toda reorganização física exige reescrever as visões externas, enquanto o rollback, sozinho, assegura a persistência dos commits.
+B) o SGBD fornece independência física por meio dos mapeamentos entre níveis e coordena concorrência, log e recuperação para preservar as transações.
+C) cada visão externa deve possuir esquema lógico próprio, e cópias periódicas do banco substituem o controle de isolamento entre transações.
+D) a linguagem SQL, independentemente do SGBD, implementa os mapeamentos entre níveis e restaura automaticamente os commits após falha.
 
 ### Questão 43
+**Nível: Muito difícil**
 
-Um usuário recebeu permissão apenas de leitura em uma tabela. O comando relacionado a conceder essa permissão é:
+O usuário `relatorio` deve consultar apenas `id` e `nome` dos profissionais ativos, sem acessar CPF, linhas inativas ou operações de escrita. Considerando o menor privilégio e uma solução independente do filtro da aplicação, a configuração mais adequada é:
 
-A) DROP SELECT ON tabela TO usuario;
-B) UPDATE SELECT ON tabela TO usuario;
-C) GRANT SELECT ON tabela TO usuario;
-D) REVOKE SELECT ON tabela FROM usuario;
+A) criar uma view que projete `id` e `nome` e filtre `situacao = 'A'`, concedendo `SELECT` apenas sobre essa view e nenhum privilégio sobre a tabela-base.
+B) conceder `SELECT` sobre a tabela-base e exigir que cada relatório aplique corretamente o filtro de situação e omita o CPF.
+C) conceder `SELECT (id, nome)` sobre a tabela-base, pois a restrição de colunas também impede, por si só, a leitura de linhas inativas.
+D) criar a view filtrada, mas manter também `SELECT` sobre a tabela-base para que o usuário possa validar os dados exibidos.
 
 ### Questão 44
+**Nível: Muito difícil**
 
-Em uma tabela de auditoria, uma trigger registra automaticamente alterações após UPDATE em `profissional`. A principal vantagem é:
+Várias aplicações atualizam `profissional`, e toda alteração deve gerar auditoria centralizada com valores anteriores e novos. A alternativa mais adequada é:
 
-A) substituir todos os backups.
-B) automatizar o registro de eventos relevantes sem depender de ação manual do usuário.
-C) impedir qualquer UPDATE em todas as situações.
-D) eliminar necessidade de transações.
+A) associar uma trigger ao UPDATE, registrando valores anteriores e novos e observando transação, recursão e volume.
+B) depender de cada aplicação para inserir voluntariamente a auditoria após atualizar a linha.
+C) criar uma view simples, pois toda view intercepta automaticamente alterações nas tabelas-base.
+D) criar um índice, pois índices mantêm histórico completo das versões anteriores de cada linha.
 
 ### Questão 45
+**Nível: Muito difícil**
 
-Assinale a correta sobre cardinalidade mínima e máxima no MER.
+Um profissional pode não possuir anuidade ou possuir várias, cada anuidade pertence exatamente a um profissional e não pode existir mais de uma anuidade do mesmo profissional no mesmo exercício. Qual implementação traduz simultaneamente cardinalidade, participação e unicidade temporal?
 
-A) Indicam, em termos de participação, quantas ocorrências podem ou devem se relacionar.
-B) Definem apenas a cor do losango no diagrama.
-C) São comandos SQL executados no SELECT.
-D) Substituem chaves primárias no modelo relacional.
+A) manter `profissional_id` anulável em `Anuidade` e criar índice simples por `exercicio`, permitindo anuidades sem profissional.
+B) armazenar em `Profissional` uma FK obrigatória para uma única anuidade, repetindo a linha do profissional a cada novo exercício.
+C) usar `Anuidade.profissional_id` como FK `NOT NULL` e impor `UNIQUE (profissional_id, exercicio)`, sem exigir que todo profissional possua linha em `Anuidade`.
+D) criar uma tabela associativa entre `Profissional` e `Anuidade`, com FKs anuláveis, para representar um relacionamento muitos-para-muitos.
 
 ### Questão 46
+**Nível: Muito difícil**
 
-Se um atributo `cpf` determina `nome` e `nome` determina `id_setor`, em uma mesma tabela cujo identificador é `cpf`, há risco de:
+Considere `Servidor(id_servidor, nome, id_departamento, nome_departamento)`, com `id_servidor → id_departamento` e `id_departamento → nome_departamento`. A decomposição adequada para eliminar a dependência transitiva é:
 
-A) ausência de qualquer dependência funcional.
-B) violação obrigatória de 1FN por haver CPF.
-C) comando DCL inválido.
-D) dependência transitiva, se `id_setor` depende indiretamente da chave por meio de `nome`.
+A) manter `Servidor(id_servidor, nome)` e descartar os atributos de departamento, pois dependências transitivas devem ser eliminadas com perda de informação.
+B) conservar a tabela original e declarar `nome_departamento` como `UNIQUE`, impedindo que dois servidores pertençam ao mesmo departamento.
+C) separar `Servidor` e `Departamento`, ligados por `id_departamento` como FK.
+D) criar `Departamento(id_servidor, nome_departamento)` e retirar `id_departamento`, usando o servidor como identificador da unidade administrativa.
 
 ### Questão 47
+**Nível: Muito difícil**
 
-Um comando `SELECT DISTINCT uf FROM profissional;` retorna:
+A tabela contém `(uf, situacao)` = `(PR,A)`, `(PR,A)`, `(PR,I)`, `(NULL,A)` e `(NULL,A)`. O resultado de `SELECT DISTINCT uf, situacao FROM profissional` possui:
 
-A) apaga UFs duplicadas da tabela.
-B) cria índice único sobre `uf`.
-C) as UFs distintas existentes no resultado.
-D) todas as linhas originais, inclusive UFs repetidas.
+A) duas linhas, porque DISTINCT considera apenas `uf` e ignora `situacao`.
+B) cinco linhas, porque DISTINCT não atua quando a projeção possui mais de uma coluna.
+C) quatro combinações, pois cada NULL é sempre distinto de outro NULL na eliminação de duplicatas.
+D) três combinações: `(PR,A)`, `(PR,I)` e uma ocorrência de `(NULL,A)`.
 
 ### Questão 48
+**Nível: Muito difícil**
 
-Uma aplicação precisa garantir que duas operações de débito e crédito ocorram juntas. A propriedade de durabilidade em ACID garante que:
+A transação T1 atualiza um cadastro e recebe confirmação de `COMMIT`. Em seguida, T2 altera o mesmo cadastro, mas o servidor falha antes do commit de T2. Após a recuperação, qual estado respeita ACID e o papel do log de recuperação?
 
-A) ROLLBACK confirme os dados definitivamente.
-B) após COMMIT, os efeitos confirmados persistam mesmo diante de falhas previstas pelo SGBD.
-C) a transação nunca precise de log.
-D) a transação sempre ignore isolamento.
+A) reaplicar T1 e T2, pois toda alteração registrada em memória antes da falha deve tornar-se durável.
+B) preservar os efeitos confirmados de T1 e desfazer os efeitos incompletos de T2, combinando durabilidade e atomicidade.
+C) desfazer T1 e preservar T2, pois a transação mais recente substitui a anterior mesmo sem confirmação.
+D) desfazer ambas, pois o isolamento impede que qualquer transação sobreviva a uma falha do servidor.
 
 ### Questão 49
+**Nível: Muito difícil**
 
-Assinale a incorreta sobre joins.
+Assinale a afirmativa incorreta sobre junções externas.
 
-A) INNER JOIN retorna apenas linhas com correspondência segundo a condição.
-B) LEFT JOIN preserva as linhas da tabela à esquerda.
-C) Condição de junção mal definida pode produzir resultados incorretos ou produto cartesiano.
-D) JOIN sempre dispensa qualquer relação lógica entre as tabelas.
+A) Um predicado no WHERE que rejeite NULL da tabela direita pode eliminar linhas preservadas por LEFT JOIN.
+B) Mover qualquer predicado entre ON e WHERE nunca altera o resultado de uma junção externa.
+C) Após LEFT JOIN, COUNT(chave_da_direita) conta correspondências, enquanto COUNT(*) também conta a linha estendida por NULL.
+D) Um filtro da tabela direita colocado no ON pode restringir correspondências sem eliminar a linha da esquerda.
 
 ### Questão 50
+**Nível: Muito difícil**
 
-Uma consulta `SELECT situacao, COUNT(*) FROM profissional GROUP BY situacao ORDER BY COUNT(*) DESC;` tem como efeito:
+Considere `SELECT situacao, COUNT(*) AS total FROM profissional WHERE uf = 'PR' GROUP BY situacao HAVING COUNT(*) >= 10 ORDER BY total DESC;`. A consulta:
 
-A) alterar a situação de todos os profissionais.
-B) remover situações repetidas da tabela física.
-C) filtrar apenas grupos com total maior que zero por HAVING.
-D) contar profissionais por situação e ordenar os grupos do maior para o menor total.
+A) filtra o Paraná, agrupa por situação, exige dez linhas por grupo e ordena pelo total.
+B) mantém profissionais individuais cujo identificador seja maior ou igual a dez e os ordena pela situação cadastral.
+C) ordena as linhas antes dos filtros, elimina situações repetidas da tabela física e então calcula o total de cada grupo.
+D) agrupa inicialmente todas as UFs e somente depois do `HAVING` seleciona os registros do Paraná pelo `WHERE`.
 
 ## Questões extras de revisão fixa do Dia 3
 
 #### Extra Dia 3.1
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
 Em caso de infração ética, a aplicação de sanção pelo sistema profissional deve observar qual diretriz geral?
 
-A) Apuração regular, competência do órgão e respeito ao contraditório e à defesa.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+A) Toda infração ética deve ser julgada originariamente pelo CFA, ainda que o fato pertença à jurisdição regional.
+B) Havendo prova documental, o CRA pode aplicar a sanção definitiva sem ouvir o acusado, deixando a defesa apenas para eventual recurso.
+C) A competência sancionadora deve ser exercida em apuração regular, com contraditório e defesa.
+D) A denúncia transfere ao denunciante a escolha da penalidade, cabendo ao Conselho apenas executá-la.
 
 #### Extra Dia 3.2
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
 Sobre pessoas jurídicas no Código de Ética estudado, assinale a alternativa correta.
 
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A RN CFA nº 671/2025 também disciplina pessoas jurídicas, observadas suas especificidades.
-D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+A) A RN CFA nº 671/2025 também alcança pessoas jurídicas, observadas as especificidades indicadas para elas.
+B) A RN CFA nº 651/2024 é o Código de Ética, e a RN CFA nº 671/2025 trata exclusivamente do Regimento do CRA-PR.
+C) A RN CFA nº 671/2025 disciplina somente pessoas físicas, pois pessoas jurídicas ficam fora de qualquer parâmetro ético.
+D) Alcançar pessoas jurídicas significa aplicar automaticamente a elas todas as sanções previstas para profissionais, sem distinção.
 
 #### Extra Dia 3.3
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Uma questão afirma que a suspensão e o cancelamento previstos para profissionais se aplicam indistintamente à pessoa jurídica. Conforme a apostila, assinale a alternativa correta.
+Uma questão afirma que suspensão e cancelamento previstos para profissionais se aplicam indistintamente à pessoa jurídica. Conforme a apostila, assinale a alternativa correta.
 
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) A afirmação é problemática, pois o material destaca que suspensão e cancelamento não se aplicam à pessoa jurídica na RN CFA nº 671/2025.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+A) A suspensão aplica-se à pessoa jurídica, mas o cancelamento fica reservado ao profissional.
+B) A aplicação indistinta é problemática, pois o material ressalta que suspensão e cancelamento não se aplicam à pessoa jurídica na RN CFA nº 671/2025.
+C) O cancelamento aplica-se à pessoa jurídica, mas a suspensão só pode alcançar o responsável técnico.
+D) As duas sanções aplicam-se à pessoa jurídica sempre que houver dano econômico, ainda que a norma estabeleça tratamento diverso.
 
 #### Extra Dia 3.4
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
 Sobre jurisdição do CRA-PR, assinale a alternativa correta.
 
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) A atuação regional do CRA-PR vincula-se ao Estado do Paraná, sem eliminar a coordenação normativa do Sistema CFA/CRAs.
+A) O registro originário no Paraná confere ao CRA-PR jurisdição fiscalizatória sobre o profissional em todo o território nacional.
+B) O CFA executa ordinariamente registro, fiscalização e julgamento inicial de todos os fatos ocorridos no Paraná.
+C) A atuação do CRA-PR vincula-se ao Paraná, sem afastar a coordenação normativa e as competências nacionais do Sistema CFA/CRAs.
+D) Qualquer CRA pode sancionar fato ocorrido no Paraná, porque a validade nacional do registro elimina limites territoriais.
 
 #### Extra Dia 3.5
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Em uma prova, a alternativa diz que o Regimento Interno é irrelevante porque não trata de SQL, redes ou sistemas. Assinale a alternativa correta.
+Uma alternativa afirma que o Regimento Interno é irrelevante porque não trata de SQL, redes ou sistemas. Assinale a correta.
 
-A) A alternativa é incorreta; o Regimento é conteúdo expresso e organiza competências e funcionamento do CRA-PR.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+A) O Regimento interessa somente aos empregados da área jurídica, não ao cargo de Analista de Sistemas previsto no mesmo edital.
+B) O Regimento tem função apenas cerimonial e não produz regras internas sobre funcionamento ou competências.
+C) Por ser norma interna, o Regimento pode afastar a lei federal e as normas gerais do CFA em matéria regional.
+D) O Regimento é conteúdo expresso e organiza competências, órgãos e funcionamento do CRA-PR.
 
 #### Extra Dia 3.6
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
 Um fiscal do CRA atua em caso de exercício profissional sem registro. Assinale a alternativa que melhor representa a lógica da fiscalização.
 
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização busca verificar regularidade do exercício profissional no campo da Administração.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+A) A fiscalização só pode começar após denúncia formal de outro órgão público.
+B) A fiscalização verifica a regularidade do exercício no campo da Administração, inclusive registro e atividade.
+C) A fiscalização limita-se a verificar pagamento de anuidade, sem examinar habilitação ou atividade exercida.
+D) Toda inspeção local deve ser executada diretamente pelo CFA, cabendo ao CRA apenas arquivar o resultado.
 
 #### Extra Dia 3.7
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
 Sobre publicidade profissional no campo ético, assinale a alternativa correta.
 
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) A divulgação profissional deve evitar informação enganosa, uso indevido de título ou promessa incompatível com a ética.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+A) A divulgação deve evitar informação enganosa, uso indevido de título e promessa incompatível com a ética.
+B) É permitida promessa de resultado certo quando o profissional possui experiência comprovada.
+C) O uso de título profissional sem habilitação deixa de ser irregular se o anúncio informar que se trata de nome comercial.
+D) A disciplina ética alcança a execução contratual, mas não a forma de captação ou apresentação pública do serviço.
 
 #### Extra Dia 3.8
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Uma sociedade empresária contrata profissional sem registro para executar atividade típica fiscalizada pelo CRA. Assinale a alternativa correta.
+Uma sociedade empresária contrata pessoa sem registro para executar atividade típica fiscalizada pelo CRA. Assinale a alternativa correta.
 
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O caso pode envolver irregularidade de exercício profissional e exigir análise pelo CRA competente.
+A) O contrato transfere integralmente à empresa a responsabilidade pelo exercício, tornando irrelevante o registro do executor.
+B) O diploma do contratado basta para o exercício regular, ainda que falte o registro profissional exigível.
+C) Somente o profissional pode ser examinado pelo Sistema; a organização que explora a atividade fica sempre fora da fiscalização.
+D) O caso pode envolver exercício profissional irregular e responsabilidade da organização, exigindo análise pelo CRA competente.
 
 #### Extra Dia 3.9
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre dever de atualização cadastral e regularidade perante conselho profissional, assinale a alternativa correta.
+Sobre atualização cadastral e regularidade perante conselho profissional, assinale a alternativa mais precisa.
 
-A) Regularidade cadastral e registral facilita fiscalização e comprovação da habilitação perante terceiros.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+A) A atualização do endereço, por si só, regulariza exercício antes praticado sem o registro exigível.
+B) Atualização cadastral e registro regular facilitam a fiscalização, sem afastar os deveres profissionais.
+C) Uma inscrição ativa em qualquer Regional torna desnecessário comunicar mudança relevante de jurisdição ou de dados.
+D) A certidão cadastral transfere ao Conselho a responsabilidade técnica pelos atos do registrado.
 
 #### Extra Dia 3.10
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-A respeito da leitura de normas do edital, assinale a alternativa correta.
+Durante a preparação, surge norma posterior relacionada ao tema do edital. A conduta mais segura é:
 
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) A norma expressamente indicada no edital deve prevalecer no plano de estudo até que retificação oficial demonstre mudança.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+A) Norma posterior sobre tema semelhante substitui automaticamente o conteúdo do edital, mesmo sem ato oficial do concurso.
+B) A norma expressamente indicada orienta o estudo até que retificação oficial ou ato equivalente demonstre mudança do conteúdo cobrado.
+C) O edital nunca pode ser alterado depois da publicação, ainda que a Administração divulgue retificação formal.
+D) Notícia, postagem ou material de curso basta para substituir a referência normativa do edital.
 
 #### Extra Dia 3.11
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Uma alternativa afirma que a RN CFA nº 680/2025 foi estudada na Semana 1 apenas para decorar artigo e prazo. Assinale a correta.
+Na Semana 1, a RN CFA nº 680/2025 foi objeto de leitura dirigida, sem confirmação de todos os artigos, prazos e sanções. A estratégia correta é:
 
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Na Semana 1, a leitura dirigida busca localizar tema e relevância da norma, sem inventar artigo, prazo ou sanção não confirmado.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+A) Localizar tema, objeto e relevância da norma, aprofundando literalidade apenas com texto oficial confirmado.
+B) Decorar números de artigos e prazos atribuídos à RN CFA nº 680/2025, mesmo quando o material não os confirmou em fonte oficial.
+C) Excluir a norma do plano porque a primeira semana não realizou leitura integral de todos os dispositivos.
+D) Inferir sanções e prazos por analogia com outra resolução do CFA, tratando-os como se fossem texto da RN nº 680/2025.
 
 #### Extra Dia 3.12
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
 Sobre o vínculo entre ética e fiscalização, assinale a alternativa correta.
 
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) A fiscalização verifica regularidade profissional; a ética orienta condutas esperadas no exercício da profissão.
+A) A fiscalização verifica o exercício; a ética disciplina a conduta, podendo ambas incidir no mesmo fato.
+B) A fiscalização examina apenas pessoas jurídicas, enquanto a ética alcança somente pessoas físicas.
+C) A apuração ética substitui toda verificação de habilitação, registro e enquadramento da atividade.
+D) Fiscalização e ética são sinônimos: comprovar registro regular encerra qualquer análise de conduta.
 
 #### Extra Dia 3.13
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Em situação de conflito de interesses, o profissional deve agir conforme qual orientação geral?
+Um profissional percebe que possui interesse pessoal capaz de influenciar recomendação técnica feita a clientes com posições divergentes. A orientação geral mais adequada é:
 
-A) Preservar a confiança profissional, evitar benefício indevido e respeitar deveres éticos e legais.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+A) Omitir o vínculo até o encerramento do trabalho e comunicá-lo somente se o resultado for desfavorável.
+B) Prosseguir sem informar as partes sempre que não houver dano financeiro já comprovado.
+C) Obter autorização genérica de um interessado, ainda que terceiro afetado permaneça sem ciência e o dever legal seja incompatível.
+D) Revelar o conflito, evitar benefício indevido e afastar-se da decisão quando a independência estiver comprometida.
 
 #### Extra Dia 3.14
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre recurso ou defesa em processo disciplinar, assinale a alternativa correta em termos gerais.
+Sobre defesa e recurso em processo disciplinar, assinale a alternativa correta em termos gerais.
 
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A atuação sancionadora deve respeitar devido processo, competência e possibilidade de defesa.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+A) A competência pode ser escolhida pelo denunciante, desde que o acusado receba cópia da decisão final.
+B) A defesa apresentada somente depois do encerramento definitivo sempre convalida a ausência de contraditório na instrução.
+C) A atuação sancionadora deve observar órgão competente, ciência dos fatos, oportunidade de defesa e decisão fundamentada.
+D) A existência de recurso permite que a primeira instância aplique qualquer sanção antes de instaurar procedimento.
 
 #### Extra Dia 3.15
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Uma questão mistura 'CFA', 'CRA-PR' e 'Conselho Regional de outro Estado'. Qual é a estratégia mais segura?
+Uma questão mistura CFA, CRA-PR e Conselho Regional de outro Estado em um caso com registro, fiscalização e recurso. Qual estratégia é mais segura?
 
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) Separar competência nacional, competência regional e jurisdição territorial antes de julgar as alternativas.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+A) Atribuir ao CFA registro e fiscalização ordinários sempre que o profissional atue fora do estado de sua inscrição original.
+B) Permitir que um CRA de outro Estado determine diretamente a sanção no Paraná, sem observar a distribuição institucional.
+C) Atribuir todo julgamento ao CRA do primeiro registro, mesmo quando o fato e a atividade ocorram em outra jurisdição.
+D) Separar competência nacional, execução regional e jurisdição territorial antes de classificar o ato.
 
 #### Extra Dia 3.16
+**Nível: Difícil**
 
 **Área:** Língua Portuguesa/interpretação.
 
-Assinale a alternativa em que o uso de 'porque' está correto.
+Assinale a alternativa em que todas as formas destacadas estão empregadas corretamente.
 
-A) Não sei porque o prazo foi reaberto.
-B) O prazo foi reaberto por quê houve instabilidade.
-C) Esse é o porque da reabertura do prazo.
-D) O prazo foi reaberto porque houve instabilidade no sistema.
+A) O relatório não explicou **porque** o acesso falhou nem o **por que** da demora.
+B) A equipe perguntou **por quê** o serviço parou e registrou o **porque** no chamado.
+C) Perguntou-se **por que** falhou, explicou-se **porque** faltou espaço e registrou-se o **porquê**.
+D) Ninguém informou **porquê** a fila cresceu; ela cresceu **por que** faltou capacidade.
 
 #### Extra Dia 3.17
+**Nível: Muito difícil**
 
 **Área:** Língua Portuguesa/interpretação.
 
-Assinale a frase com regência adequada.
+Assinale a frase em que as duas regências verbais estão adequadas à norma-padrão.
 
-A) O candidato recorreu da decisão administrativa.
-B) O candidato recorreu a decisão administrativa.
-C) O candidato preferiu recorrer do que aceitar.
-D) O candidato assistiu o julgamento no sentido de presenciar.
+A) O candidato aspirava o cargo e obedeceu o edital durante a preparação.
+B) O candidato recorreu da decisão e assistiu ao julgamento do recurso.
+C) O candidato preferiu recorrer do que aceitar a decisão e informou o resultado os colegas.
+D) O candidato assistiu o julgamento e chegou no órgão antes da sessão.
 
 #### Extra Dia 3.18
+**Nível: Muito difícil**
 
 **Área:** Língua Portuguesa/interpretação.
 
-Leia: "Os sistemas foram atualizados; contudo, os relatórios permaneceram inconsistentes." O conector "contudo" expressa:
+Leia: “O índice reduziu o custo das leituras; contudo, elevou a manutenção das escritas. Portanto, sua adoção deve considerar o padrão de uso.” Qual reescrita preserva tanto a oposição entre os dois efeitos quanto a conclusão derivada desse contraste?
 
-A) adição simples.
-B) finalidade.
-C) oposição ou contraste.
-D) conclusão inevitável.
+A) O índice reduziu o custo das leituras; por isso, elevou a manutenção das escritas; contudo, deve-se considerar o padrão de uso.
+B) Embora o índice reduzisse o custo das leituras, elevou a manutenção das escritas, porque sua adoção considera o padrão de uso.
+C) O índice reduziu o custo das leituras; entretanto, elevou a manutenção das escritas. Logo, sua adoção deve considerar o padrão de uso.
+D) O índice reduziu o custo das leituras e elevou a manutenção das escritas, se sua adoção considerar o padrão de uso.
 
 #### Extra Dia 3.19
+**Nível: Muito difícil**
 
 **Área:** Língua Portuguesa/interpretação.
 
-Assinale a alternativa que apresenta tese adequada para uma discursiva sobre tecnologia no serviço público.
+Uma discursiva pede posicionamento sobre transformação digital no serviço público, com análise de ganhos, riscos e efeitos sobre usuários vulneráveis. Qual tese delimita uma relação causal defensável e oferece critérios para organizar o desenvolvimento?
 
-A) Tecnologia existe desde a Antiguidade e há muitos sistemas no mundo.
-B) A transformação digital melhora serviços públicos quando combina eficiência, segurança da informação e inclusão do usuário.
-C) Vou falar sobre tecnologia porque o tema é importante.
-D) O serviço público deve usar computadores sempre, sem exceção.
+A) A digitalização deve avançar sempre que reduzir custos, deixando segurança e acessibilidade para ajustes posteriores à implantação.
+B) A manutenção de atendimento presencial basta para garantir inclusão, de modo que métricas de desempenho e segurança se tornam secundárias.
+C) A tecnologia é neutra, e os resultados da transformação digital dependem exclusivamente do treinamento oferecido aos servidores.
+D) A transformação digital amplia eficiência e acesso quando integra segurança, interoperabilidade, acessibilidade e canais alternativos, com avaliação por indicadores.
 
 #### Extra Dia 3.20
+**Nível: Muito difícil**
 
 **Área:** Língua Portuguesa/interpretação.
 
-Assinale a frase em que a concordância nominal está adequada.
+Assinale a alternativa em que todas as concordâncias estão adequadas à norma-padrão.
 
-A) Segue anexo as planilhas revisadas.
-B) Seguem anexo as planilhas revisadas.
-C) Segue anexas as planilhas revisadas.
-D) Seguem anexas as planilhas revisadas.
-
+A) Seguem anexas as planilhas e inclusos os pareceres; os servidores disseram estar quites.
+B) Segue anexas as planilhas e inclusos os pareceres; os servidores disseram estar quites.
+C) Seguem anexo as planilhas e incluso os pareceres; os servidores disseram estar quites.
+D) Segue anexa as planilhas e incluso os pareceres; os servidores disseram estar quite.
 
 ## Gabarito do Dia 3
 
-1. A
-2. D
-3. C
-4. B
+1. C
+2. A
+3. D
+4. A
 5. A
-6. D
-7. C
-8. B
+6. C
+7. B
+8. C
 9. A
-10. D
-11. C
+10. A
+11. D
 12. B
-13. A
-14. D
+13. D
+14. B
 15. C
 16. B
-17. A
+17. B
 18. D
 19. C
-20. B
-21. A
-22. D
-23. C
-24. B
-25. A
-26. D
-27. C
+20. D
+21. B
+22. A
+23. D
+24. C
+25. D
+26. C
+27. A
 28. B
-29. A
+29. C
 30. D
-31. C
+31. A
 32. B
-33. A
+33. D
 34. C
-35. C
+35. A
 36. B
-37. A
-38. D
-39. C
-40. B
-41. A
-42. D
-43. C
-44. B
-45. A
-46. D
-47. C
+37. B
+38. C
+39. A
+40. D
+41. D
+42. B
+43. A
+44. A
+45. C
+46. C
+47. D
 48. B
-49. D
-50. D
+49. B
+50. A
 
 ### Gabarito das questões extras de revisão fixa do Dia 3
 
-Extra Dia 3.1: A
-Extra Dia 3.2: C
+Extra Dia 3.1: C
+Extra Dia 3.2: A
 Extra Dia 3.3: B
-Extra Dia 3.4: D
-Extra Dia 3.5: A
-Extra Dia 3.6: C
-Extra Dia 3.7: B
+Extra Dia 3.4: C
+Extra Dia 3.5: D
+Extra Dia 3.6: B
+Extra Dia 3.7: A
 Extra Dia 3.8: D
-Extra Dia 3.9: A
-Extra Dia 3.10: C
-Extra Dia 3.11: B
-Extra Dia 3.12: D
-Extra Dia 3.13: A
+Extra Dia 3.9: B
+Extra Dia 3.10: B
+Extra Dia 3.11: A
+Extra Dia 3.12: A
+Extra Dia 3.13: D
 Extra Dia 3.14: C
-Extra Dia 3.15: B
-Extra Dia 3.16: D
-Extra Dia 3.17: A
+Extra Dia 3.15: D
+Extra Dia 3.16: C
+Extra Dia 3.17: B
 Extra Dia 3.18: C
-Extra Dia 3.19: B
-Extra Dia 3.20: D
+Extra Dia 3.19: D
+Extra Dia 3.20: A
 
 
 ## Comentários do Dia 3
 
 ### Comentário da Questão 1
 
-- **Alternativa correta:** A.
-- **A) está correta:** A cláusula WHERE filtra simultaneamente UF e situação.
-- **B) está errada:** GROUP BY agrupa linhas; não é usado para filtrar condições booleanas dessa forma.
-- **C) está errada:** ORDER BY ordena o resultado; não filtra registros.
-- **D) está errada:** HAVING é usado para filtrar grupos agregados; aqui o filtro é de linhas.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A consulta filtra a UF, mas apenas ordena pela expressão de situação; ela não exclui os inativos.
+- **B) está errada:** O OR inclui também profissionais ativos de outros estados e profissionais inativos do Paraná.
+- **C) está correta:** Os dois predicados ligados por AND mantêm somente profissionais que satisfazem simultaneamente UF e situação.
+- **D) está errada:** O operador de diferença seleciona ativos que não pertencem ao Paraná.
 - **Conceito cobrado:** SELECT com WHERE.
-- **Pegadinha usada:** Trocar WHERE por GROUP BY, ORDER BY ou HAVING..
-- **Como pensar para acertar:** Filtro de linha antes de agregação pede WHERE.
+- **Pegadinha usada:** Trocar a conjunção lógica ou confundir ordenação com filtragem.
+- **Como pensar para acertar:** Traduza “ativos do Paraná” em duas condições simultâneas unidas por AND.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 2
 
-- **Alternativa correta:** D.
-- **A) está errada:** WHERE ano não agrupa nem calcula corretamente por ano.
-- **B) está errada:** Não há coluna total definida e falta agrupamento.
-- **C) está errada:** UPDATE altera dados; não é consulta de totalização.
-- **D) está correta:** COUNT com GROUP BY ano calcula o total por ano.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** GROUP BY forma um grupo por ano e COUNT conta as linhas de cada grupo.
+- **B) está errada:** O agrupamento está no profissional, não no ano solicitado, e a projeção de ano não acompanha esse agrupamento.
+- **C) está errada:** SUM calcula o valor monetário acumulado por ano, e não a quantidade de anuidades.
+- **D) está errada:** A agregação produz apenas o total geral, sem separar os registros por ano.
 - **Conceito cobrado:** GROUP BY e COUNT.
-- **Pegadinha usada:** Usar função agregada sem agrupamento adequado..
-- **Como pensar para acertar:** Quando a pergunta pede “por ano”, pense em GROUP BY ano.
+- **Pegadinha usada:** Confundir contagem, soma e total geral.
+- **Como pensar para acertar:** Identifique primeiro a medida pedida — quantidade — e depois a dimensão — ano.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 3
 
-- **Alternativa correta:** C.
-- **A) está errada:** A condição não usa agregação e setor não é quantidade.
-- **B) está errada:** ORDER BY ordena; não filtra grupos.
-- **C) está correta:** HAVING filtra grupos após o agrupamento por setor.
-- **D) está errada:** WHERE não filtra agregações como COUNT(*) depois do agrupamento.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** A consulta elimina setores nulos, mas não restringe os grupos pela quantidade de profissionais.
+- **B) está errada:** Ela retorna os vinte maiores grupos, que não são necessariamente os grupos com mais de vinte integrantes.
+- **C) está errada:** O operador >= inclui setores com exatamente vinte profissionais, contrariando “mais de 20”.
+- **D) está correta:** HAVING aplica a condição estrita depois da contagem de cada setor.
 - **Conceito cobrado:** GROUP BY e HAVING.
-- **Pegadinha usada:** Confundir WHERE e HAVING..
-- **Como pensar para acertar:** WHERE filtra linhas; HAVING filtra grupos.
+- **Pegadinha usada:** Confundir limite de linhas, ordenação e o operador estrito da condição agregada.
+- **Como pensar para acertar:** Agrupe por setor e aplique no HAVING exatamente COUNT(*) > 20.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 4
 
-- **Alternativa correta:** B.
-- **A) está errada:** A coluna é elemento estrutural; a questão pergunta o papel relacional.
-- **B) está correta:** A coluna na tabela anuidade aponta para a chave de profissional.
-- **C) está errada:** Várias anuidades podem pertencer ao mesmo profissional; não precisa ser única.
-- **D) está errada:** É uma coluna atômica de referência, não uma lista multivalorada.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A coluna na tabela filha referencia a chave da tabela `profissional`.
+- **B) está errada:** A PK identifica cada anuidade; a coluna descrita identifica o profissional referenciado.
+- **C) está errada:** Em 1:N, várias anuidades podem apontar para o mesmo profissional, portanto a coluna não precisa ser única.
+- **D) está errada:** Embora possa existir índice de apoio, o papel informado pelo enunciado é o de restrição referencial.
 - **Conceito cobrado:** Chave estrangeira.
-- **Pegadinha usada:** Achar que toda FK é única..
-- **Como pensar para acertar:** Pergunte: a coluna aponta para registro de outra tabela? Então é FK.
+- **Pegadinha usada:** Confundir a identificação da linha filha com a referência à linha pai.
+- **Como pensar para acertar:** Quando uma coluna aponta para chave de outra tabela, classifique-a como FK.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 5
 
 - **Alternativa correta:** A.
-- **A) está correta:** Chave primária garante identificação única e integridade de entidade.
-- **B) está errada:** Ordenação é feita por ORDER BY ou índices, não pela definição conceitual de PK.
-- **C) está errada:** Repetição violaria unicidade da chave primária.
-- **D) está errada:** Pode ser simples ou composta e não precisa ser textual.
+- **Nível:** Médio.
+- **A) está correta:** A PK materializa a integridade de entidade: identificação única e não nula.
+- **B) está errada:** PRIMARY KEY não é apenas UNIQUE; ela também impede NULL.
+- **C) está errada:** Uma PK pode conter mais de uma coluna quando a identificação do domínio é composta.
+- **D) está errada:** A unicidade decorre da própria restrição de PK, independentemente de existir uma FK apontando para ela.
 - **Conceito cobrado:** Chave primária.
-- **Pegadinha usada:** Reduzir chave primária a ordenação ou texto..
-- **Como pensar para acertar:** PK responde “como identifico uma linha de modo único?”.
+- **Pegadinha usada:** Tratar PRIMARY KEY como simples UNIQUE ou proibir chave composta.
+- **Como pensar para acertar:** Separe quatro ideias: candidata, escolhida como PK, única e não nula.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 6
 
-- **Alternativa correta:** D.
-- **A) está errada:** Lista no campo viola atomicidade e dificulta integridade.
-- **B) está errada:** Excluir entidade perde informação do domínio.
-- **C) está errada:** FK única representaria no máximo 1:1/1:N limitado, não N:N.
-- **D) está correta:** Relacionamentos N:N viram tabela intermediária com FKs.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A lista reúne valores não atômicos e não oferece integridade referencial individual para cada perfil.
+- **B) está errada:** Uma única FK em `perfil` modelaria outro vínculo e impediria o compartilhamento N:N pretendido.
+- **C) está correta:** A associativa representa cada par usuário–perfil e pode impor FKs e unicidade sobre o par.
+- **D) está errada:** Uma única FK em `usuario` permitiria no máximo um perfil por usuário.
 - **Conceito cobrado:** Mapeamento N:N.
-- **Pegadinha usada:** Usar lista em coluna para múltiplos valores..
-- **Como pensar para acertar:** N:N quase sempre exige tabela associativa.
+- **Pegadinha usada:** Reduzir N:N a uma FK simples ou a uma lista em coluna.
+- **Como pensar para acertar:** Se ambos os lados admitem muitos, transforme cada vínculo em uma linha associativa.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 7
 
-- **Alternativa correta:** C.
-- **A) está errada:** ACID é propriedade de transações, não forma normal.
-- **B) está errada:** Tabelas podem ter atributos textuais; o problema é dependência parcial.
-- **C) está correta:** nome_aluno depende de id_aluno; nome_disciplina depende de id_disciplina.
-- **D) está errada:** Chave composta não viola 1FN por si só.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Chave composta é compatível com 1FN; atomicidade diz respeito aos valores dos atributos.
+- **B) está correta:** `nome_aluno` depende só de `id_aluno` e `nome_disciplina` só de `id_disciplina`.
+- **C) está errada:** O defeito mostrado é dependência parcial direta, anterior à análise de dependência transitiva.
+- **D) está errada:** A unicidade da chave não impede dependências parciais de atributos não chave.
 - **Conceito cobrado:** Segunda Forma Normal.
-- **Pegadinha usada:** Não reconhecer dependência parcial..
-- **Como pensar para acertar:** Quando a chave é composta, veja se atributo depende da chave inteira.
+- **Pegadinha usada:** Achar que uma chave composta basta para garantir 2FN.
+- **Como pensar para acertar:** Para cada atributo não chave, teste se ele depende da chave composta inteira.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 8
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não existe essa exigência.
-- **B) está correta:** Há dependência transitiva de atributo não chave.
-- **C) está errada:** Campos textuais são permitidos.
-- **D) está errada:** Chaves estrangeiras são compatíveis com normalização.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** O enunciado apresenta uma chave simples, portanto não há parte de chave composta a examinar.
+- **B) está errada:** Repetição pode indicar redundância, mas 1FN trata da atomicidade de cada valor.
+- **C) está correta:** A cadeia entre chave e atributos não chave caracteriza dependência transitiva.
+- **D) está errada:** Separar `Departamento` e referenciá-lo por FK é justamente uma solução normalizada.
 - **Conceito cobrado:** Terceira Forma Normal.
-- **Pegadinha usada:** Confundir dependência transitiva com presença de texto..
-- **Como pensar para acertar:** Procure atributo não chave determinando outro atributo não chave.
+- **Pegadinha usada:** Confundir repetição visual, dependência parcial e dependência transitiva.
+- **Como pensar para acertar:** Expresse as dependências: id_servidor → id_departamento → nome_departamento.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 9
 
 - **Alternativa correta:** A.
-- **A) está correta:** DELETE é DML; DROP é DDL.
-- **B) está errada:** A alternativa inverte os comandos.
-- **C) está errada:** DROP não preserva a tabela.
-- **D) está errada:** DROP não é comando de filtro de registros.
+- **Nível:** Médio.
+- **A) está correta:** A alternativa separa corretamente manipulação de linhas e remoção de objeto.
+- **B) está errada:** DELETE não elimina a definição; DROP é que remove o objeto do catálogo.
+- **C) está errada:** DROP não se limita aos dados e a comparação transacional depende do SGBD, não define os comandos.
+- **D) está errada:** A descrição de esvaziar preservando estrutura se aproxima de TRUNCATE; DELETE também pode ser usado sem WHERE.
 - **Conceito cobrado:** DELETE x DROP.
-- **Pegadinha usada:** Confundir remoção de dados com remoção de estrutura..
-- **Como pensar para acertar:** Pergunte: quero apagar linhas ou eliminar o objeto tabela?
+- **Pegadinha usada:** Misturar DELETE, TRUNCATE e DROP.
+- **Como pensar para acertar:** Pergunte se o alvo são linhas ou o próprio objeto do esquema.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 10
 
-- **Alternativa correta:** D.
-- **A) está errada:** SQL não limita automaticamente à primeira linha.
-- **B) está errada:** WHERE é recomendável, mas não obrigatório em SQL.
-- **C) está errada:** Remover tabela é função de DROP TABLE.
-- **D) está correta:** Sem WHERE, UPDATE atinge todos os registros da tabela alvo.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** Sem predicado, todas as linhas da tabela participam da atualização.
+- **B) está errada:** A ordem física ou a PK não limitam um UPDATE sem WHERE.
+- **C) está errada:** WHERE é opcional; sua ausência amplia o conjunto-alvo em vez de tornar o comando inválido.
+- **D) está errada:** O novo valor não cria um filtro implícito sobre o estado anterior.
 - **Conceito cobrado:** UPDATE sem WHERE.
-- **Pegadinha usada:** Subestimar efeito de comando sem filtro..
-- **Como pensar para acertar:** Sempre procure WHERE em comandos de alteração.
+- **Pegadinha usada:** Inventar filtro implícito ou supor que o SGBD protege automaticamente contra UPDATE global.
+- **Como pensar para acertar:** Determine o conjunto de linhas depois do WHERE; sem WHERE, o conjunto é a tabela inteira.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 11
 
-- **Alternativa correta:** C.
-- **A) está errada:** Além de não ser SQL padrão nesse contexto, mantém erro conceitual de comparar NULL.
-- **B) está errada:** Essa não é forma padrão de testar ausência de valor.
-- **C) está correta:** NULL deve ser testado com IS NULL.
-- **D) está errada:** NULL não deve ser comparado com `=` como valor comum.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** String vazia é um valor e não equivale necessariamente à ausência representada por NULL.
+- **B) está errada:** Comparações comuns com NULL resultam em desconhecido; não localizam os nulos.
+- **C) está errada:** A expressão também seleciona e-mails cadastrados como string vazia, ampliando o resultado pedido.
+- **D) está correta:** IS NULL é o predicado próprio para testar ausência de valor.
 - **Conceito cobrado:** NULL e IS NULL.
-- **Pegadinha usada:** Comparar NULL como se fosse valor comum..
-- **Como pensar para acertar:** NULL significa ausência/desconhecido; use IS NULL.
+- **Pegadinha usada:** Confundir NULL, string vazia e comparação comum.
+- **Como pensar para acertar:** Para ausência estrita, use IS NULL sem converter o valor.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 12
 
 - **Alternativa correta:** B.
-- **A) está errada:** A tabela `a` não foi declarada no FROM/JOIN.
-- **B) está correta:** A junção relaciona FK da anuidade à PK do profissional.
-- **C) está errada:** Relaciona id de anuidade com nome, campos incompatíveis.
-- **D) está errada:** Sem condição de junção, gera produto cartesiano.
+- **Nível:** Médio.
+- **A) está errada:** Ela compara as PKs independentes das duas tabelas, não a FK da anuidade com o profissional.
+- **B) está correta:** A condição liga a FK `a.id_profissional` à PK `p.id` e retorna os pares correspondentes.
+- **C) está errada:** A condição compara duas colunas da própria tabela `anuidade` e não relaciona `profissional`.
+- **D) está errada:** CROSS JOIN produz todas as combinações, não apenas pares relacionados.
 - **Conceito cobrado:** JOIN e condição de junção.
-- **Pegadinha usada:** Produto cartesiano por falta de ON..
-- **Como pensar para acertar:** Identifique PK e FK e escreva a condição de associação.
+- **Pegadinha usada:** Usar colunas de mesmo nome ou PKs independentes no lugar do par PK–FK.
+- **Como pensar para acertar:** Localize a FK na tabela filha e iguale-a à PK da tabela pai.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 13
 
-- **Alternativa correta:** A.
-- **A) está correta:** LEFT JOIN preserva todas as linhas da tabela à esquerda.
-- **B) está errada:** INNER JOIN traria apenas profissionais com correspondência em anuidade.
-- **C) está errada:** CROSS JOIN gera combinações sem correspondência lógica.
-- **D) está errada:** Junção sem condição tende a erro ou produto cartesiano.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Produto cartesiano cria pares sem relação e não representa ausência de anuidade.
+- **B) está errada:** INNER JOIN elimina profissionais sem correspondência.
+- **C) está errada:** Partindo de `profissional`, preservar o lado direito não garante todos os profissionais.
+- **D) está correta:** LEFT JOIN preserva cada profissional e preenche com NULL quando não há anuidade correspondente.
 - **Conceito cobrado:** LEFT JOIN.
-- **Pegadinha usada:** Usar INNER JOIN quando precisa preservar ausência de correspondência..
-- **Como pensar para acertar:** Se quer todos da tabela esquerda, pense em LEFT JOIN.
+- **Pegadinha usada:** Escolher uma junção externa pelo nome sem observar qual lado precisa ser preservado.
+- **Como pensar para acertar:** Coloque o conjunto obrigatório à esquerda e use LEFT JOIN com a condição PK–FK.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 14
 
-- **Alternativa correta:** D.
-- **A) está errada:** COUNT(*) conta linhas do grupo, independentemente de coluna específica.
-- **B) está errada:** COUNT(coluna) não conta NULLs daquela coluna.
-- **C) está errada:** Ambas são formas comuns e válidas.
-- **D) está correta:** Funções agregadas tratam NULL de forma específica.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** COUNT(*) conta linhas sem examinar a nulidade de uma coluna específica.
+- **B) está correta:** A distinção entre contagem de linhas e de valores não nulos está correta.
+- **C) está errada:** Os resultados diferem quando há linhas cujo e-mail é NULL.
+- **D) está errada:** COUNT(coluna) conta valores não nulos; ele não converte cada NULL em zero contado.
 - **Conceito cobrado:** Funções agregadas e NULL.
-- **Pegadinha usada:** Ignorar o tratamento de NULL em agregações..
-- **Como pensar para acertar:** Veja se a contagem é de linhas ou de valores não nulos da coluna.
+- **Pegadinha usada:** Tratar COUNT(*) e COUNT(coluna) como sinônimos diante de NULL.
+- **Como pensar para acertar:** Pergunte se a unidade contada é a linha ou um valor presente na coluna.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 15
 
 - **Alternativa correta:** C.
-- **A) está errada:** Relacionamento é função de chave estrangeira.
-- **B) está errada:** Repetição violaria a chave primária.
-- **C) está correta:** Cada restrição tem papel próprio.
-- **D) está errada:** Um valor pode ser obrigatório sem ser único, ou único conforme regra sem ser PK.
+- **Nível:** Médio.
+- **A) está errada:** As duas restrições podem formar uma chave alternativa, mas não substituem automaticamente a PK escolhida.
+- **B) está errada:** A integridade de entidade torna a PK não nula sem declaração adicional.
+- **C) está correta:** A alternativa separa identificação, unicidade e obrigatoriedade, com a ressalva de portabilidade para NULL em UNIQUE.
+- **D) está errada:** Os efeitos foram invertidos: NOT NULL trata ausência e UNIQUE trata duplicidade.
 - **Conceito cobrado:** Restrições de integridade.
-- **Pegadinha usada:** Confundir unicidade, obrigatoriedade e relacionamento..
-- **Como pensar para acertar:** Separe: único, obrigatório, identificador e referência.
+- **Pegadinha usada:** Confundir chave primária, chave alternativa e obrigatoriedade.
+- **Como pensar para acertar:** Associe cada restrição ao seu efeito e não suponha que UNIQUE implica NOT NULL.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 16
 
 - **Alternativa correta:** B.
-- **A) está errada:** DROP removeria objeto/coluna conforme sintaxe, não validaria regra.
-- **B) está correta:** CHECK valida regra de domínio para a coluna.
-- **C) está errada:** FK referencia outra tabela; não valida faixa numérica por si só.
-- **D) está errada:** ORDER BY apenas ordena resultado.
+- **Nível:** Médio.
+- **A) está errada:** NOT NULL impede ausência, mas ainda aceita números negativos.
+- **B) está correta:** CHECK expressa diretamente o domínio permitido para o valor.
+- **C) está errada:** UNIQUE evita repetição, não limita o sinal do número.
+- **D) está errada:** DEFAULT fornece valor quando ele é omitido, mas não rejeita um negativo informado.
 - **Conceito cobrado:** CHECK constraint.
-- **Pegadinha usada:** Usar FK ou ordenação para validação de domínio..
-- **Como pensar para acertar:** Regra sobre valor permitido sugere CHECK.
+- **Pegadinha usada:** Confundir valor padrão, obrigatoriedade, unicidade e regra de domínio.
+- **Como pensar para acertar:** Quando o requisito é uma condição booleana sobre o valor, traduza-o em CHECK.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 17
 
-- **Alternativa correta:** A.
-- **A) está correta:** I e II estão corretas; COMMIT confirma, não desfaz.
-- **B) está errada:** GRANT realmente controla privilégios e COMMIT não desfaz.
-- **C) está errada:** CREATE TABLE é DDL.
-- **D) está errada:** III está errada: quem desfaz é ROLLBACK antes da confirmação.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** A sequência erra ao negar a função de GRANT e ao afirmar que COMMIT desfaz.
+- **B) está correta:** CREATE TABLE é DDL, GRANT é DCL e COMMIT confirma, portanto a sequência é V, V, F.
+- **C) está errada:** CREATE TABLE realmente define estrutura, logo a primeira proposição não é falsa.
+- **D) está errada:** A terceira proposição é falsa porque ROLLBACK, antes da confirmação, é o comando de desfazer.
 - **Conceito cobrado:** DDL, DCL e TCL.
-- **Pegadinha usada:** Trocar COMMIT e ROLLBACK..
-- **Como pensar para acertar:** Classifique comandos pelo efeito: estrutura, privilégio, transação.
+- **Pegadinha usada:** Trocar DDL/DCL e inverter COMMIT com ROLLBACK.
+- **Como pensar para acertar:** Classifique cada comando pelo efeito concreto antes de montar a sequência.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 18
 
 - **Alternativa correta:** D.
-- **A) está errada:** Projeção escolhe colunas na álgebra relacional.
-- **B) está errada:** Cardinalidade descreve relacionamentos entre entidades.
-- **C) está errada:** Ordenamento não trata consistência transacional.
-- **D) está correta:** Atomicidade exige tudo ou nada na transação.
+- **Nível:** Médio.
+- **A) está errada:** Consistência trata a passagem entre estados válidos; o requisito explícito de indivisibilidade é atomicidade.
+- **B) está errada:** Isolamento controla interferência entre transações concorrentes, não a indivisibilidade interna descrita.
+- **C) está errada:** Durabilidade protege efeitos já confirmados, enquanto o caso exige desfazer uma execução parcial.
+- **D) está correta:** A unidade lógica deve confirmar ambas as operações ou não conservar nenhuma.
 - **Conceito cobrado:** ACID: atomicidade.
-- **Pegadinha usada:** Confundir propriedades transacionais com modelagem..
-- **Como pensar para acertar:** Quando operações dependem entre si, pense em tudo-ou-nada.
+- **Pegadinha usada:** Confundir as quatro propriedades ACID diante de uma falha parcial.
+- **Como pensar para acertar:** Associe “todas as etapas ou nenhuma” diretamente à atomicidade.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 19
 
 - **Alternativa correta:** C.
-- **A) está errada:** Índice não protege contra perda de dados.
-- **B) está errada:** Índice e FK têm funções diferentes.
-- **C) está correta:** Índices aceleram leitura, mas exigem manutenção.
-- **D) está errada:** Índice comum não garante unicidade; para isso há índice/constraint UNIQUE.
+- **Nível:** Médio.
+- **A) está errada:** Índice comum não impõe unicidade; isso requer índice ou restrição UNIQUE.
+- **B) está errada:** O ganho depende do plano e do predicado, e inserções/atualizações precisam manter o índice.
+- **C) está correta:** A alternativa apresenta o benefício de leitura e o custo de manutenção sem prometer ganho universal.
+- **D) está errada:** O otimizador pode escolher varredura e o índice não ajuda automaticamente filtros em outras colunas.
 - **Conceito cobrado:** Índices.
-- **Pegadinha usada:** Tratar índice como solução universal..
-- **Como pensar para acertar:** Índice melhora alguns acessos, mas não substitui integridade nem backup.
+- **Pegadinha usada:** Tratar índice como garantia de unicidade ou aceleração universal e gratuita.
+- **Como pensar para acertar:** Relacione a coluna e o padrão de acesso, depois considere custo de espaço e escrita.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 20
 
-- **Alternativa correta:** B.
-- **A) está errada:** View e trigger têm funções diferentes.
-- **B) está correta:** View encapsula consulta e apresenta recorte lógico.
-- **C) está errada:** Nem toda view é materializada.
-- **D) está errada:** Views podem ajudar segurança, mas não substituem gestão de privilégios.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** View comum é lógica; materialização é uma modalidade específica, não obrigatória.
+- **B) está errada:** Views podem apoiar segurança, mas continuam sujeitas à política de privilégios.
+- **C) está errada:** A atualizabilidade depende da definição da view e das regras do SGBD.
+- **D) está correta:** Ela encapsula uma consulta e apresenta seu resultado como relação lógica.
 - **Conceito cobrado:** Views.
-- **Pegadinha usada:** Achar que toda view materializa dados..
-- **Como pensar para acertar:** Pense em view como consulta/visão lógica, salvo caso materializado.
+- **Pegadinha usada:** Generalizar materialização, atualizabilidade ou permissões de views.
+- **Como pensar para acertar:** Pense primeiro em consulta armazenada lógica; trate os demais comportamentos como condicionais.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 21
 
-- **Alternativa correta:** A.
-- **A) está correta:** Trigger responde a evento definido no banco.
-- **B) está errada:** Trigger é automática conforme evento.
-- **C) está errada:** Isso é NOT NULL; trigger pode ter lógica mais ampla.
-- **D) está errada:** Índice não é rotina de evento.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Uma trigger AFTER reage ao comando, não espera necessariamente o COMMIT, e não ganha persistência independente.
+- **B) está correta:** Sem transação autônoma específica, o efeito automático da trigger integra a mesma unidade transacional do INSERT.
+- **C) está errada:** Triggers são disparadas pelo evento configurado, não por chamada explícita da aplicação.
+- **D) está errada:** Os efeitos da trigger participam da transação e podem ser desfeitos com ela.
 - **Conceito cobrado:** Triggers.
-- **Pegadinha usada:** Confundir trigger com procedure chamada manualmente..
-- **Como pensar para acertar:** A palavra-chave é “disparada por evento”.
+- **Pegadinha usada:** Confundir execução automática com persistência autônoma.
+- **Como pensar para acertar:** Descubra primeiro em qual transação o efeito foi produzido; depois aplique COMMIT ou ROLLBACK à unidade inteira.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 22
 
-- **Alternativa correta:** D.
-- **A) está errada:** Views representam consultas; procedures executam lógica.
-- **B) está errada:** Procedure não é chave.
-- **C) está errada:** Procedures podem conter lógica variada; não são DROP.
-- **D) está correta:** Procedures permitem reaproveitar rotinas no banco.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Procedure é adequada para receber parâmetros e coordenar validação, inserção e atualização.
+- **B) está errada:** Trigger é ligada a evento no banco; o requisito descreve chamada explícita com parâmetros.
+- **C) está errada:** CHECK valida uma expressão sobre dados e não encapsula uma sequência geral de comandos.
+- **D) está errada:** View representa consulta e não é, por definição, uma rotina parametrizada de DML encadeado.
 - **Conceito cobrado:** Stored procedures.
-- **Pegadinha usada:** Confundir procedure e view..
-- **Como pensar para acertar:** Procedure faz; view mostra/representa consulta.
+- **Pegadinha usada:** Confundir rotina chamada, consulta lógica, evento automático e restrição declarativa.
+- **Como pensar para acertar:** Separe quem chama o objeto e se ele apenas mostra dados ou executa uma sequência de ações.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 23
 
-- **Alternativa correta:** C.
-- **A) está errada:** São operações de administração/DDL, não seleção/projeção.
-- **B) está errada:** Isso se relaciona a COMMIT/ROLLBACK.
-- **C) está correta:** Seleção restringe tuplas; projeção restringe atributos.
-- **D) está errada:** A alternativa inverte os conceitos.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** A expressão não contém agrupamento nem preserva todas as colunas.
+- **B) está errada:** A seleção interna filtra as tuplas e não há operação de ordenação.
+- **C) está errada:** Não existe função de contagem nem agrupamento na expressão.
+- **D) está correta:** Sigma seleciona as linhas pela condição e pi projeta somente o atributo `nome`.
 - **Conceito cobrado:** Álgebra relacional.
-- **Pegadinha usada:** Inverter seleção e projeção..
-- **Como pensar para acertar:** Seleção lembra condição sobre linhas; projeção lembra colunas projetadas.
+- **Pegadinha usada:** Inverter seleção e projeção ou acrescentar ordenação/agregação inexistentes.
+- **Como pensar para acertar:** Leia de dentro para fora: primeiro σ filtra tuplas; depois π escolhe atributos.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 24
 
-- **Alternativa correta:** B.
-- **A) está errada:** Backup não é elemento de MER.
-- **B) está correta:** Entidade representa algo sobre o qual se deseja guardar dados.
-- **C) está errada:** Coluna é atributo no modelo relacional.
-- **D) está errada:** Consulta não é entidade conceitual.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Uma lista em atributo perde atomicidade e dificulta representar os dados próprios de cada ocorrência.
+- **B) está errada:** Domínio restringe valores de atributo; não representa ocorrências com número, data e responsável.
+- **C) está correta:** Cada fiscalização possui identidade e atributos, e várias podem apontar para um processo.
+- **D) está errada:** Os dados são persistentes e próprios, portanto não constituem mero atributo derivado.
 - **Conceito cobrado:** Modelo Entidade-Relacionamento.
-- **Pegadinha usada:** Confundir entidade com atributo ou consulta..
-- **Como pensar para acertar:** Entidade costuma virar tabela no modelo lógico.
+- **Pegadinha usada:** Reduzir uma entidade dependente com atributos próprios a um campo ou domínio.
+- **Como pensar para acertar:** Se o conceito tem várias ocorrências e atributos próprios, modele-o como entidade e defina a cardinalidade.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 25
 
-- **Alternativa correta:** A.
-- **A) está correta:** Isso preserva 1FN e integridade.
-- **B) está errada:** Isso viola atomicidade e dificulta consultas.
-- **C) está errada:** Perde informação necessária.
-- **D) está errada:** Ordenação não resolve multivaloração.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** A repetição duplica os dados da pessoa e cria anomalias de atualização.
+- **B) está errada:** Colunas numeradas criam grupo repetido, limite artificial e muitos nulos.
+- **C) está errada:** A string reúne vários valores sem integridade individual nem consulta relacional adequada.
+- **D) está correta:** Cada telefone passa a ocupar linha própria, com atributos atômicos e vínculo referencial à pessoa.
 - **Conceito cobrado:** Atributos multivalorados e 1FN.
-- **Pegadinha usada:** Guardar listas em uma coluna..
-- **Como pensar para acertar:** Múltiplos valores pedem múltiplas linhas/entidade associada.
+- **Pegadinha usada:** Escolher colunas repetidas, lista delimitada ou duplicação da entidade principal.
+- **Como pensar para acertar:** Transforme cada ocorrência multivalorada em uma linha relacionada por FK.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 26
 
-- **Alternativa correta:** D.
-- **A) está errada:** A independência busca reduzir esse impacto.
-- **B) está errada:** A independência é propriedade da arquitetura do SGBD.
-- **C) está errada:** Integridade continua necessária.
-- **D) está correta:** Essa é a ideia de independência física.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** A estrutura lógica usada pela aplicação foi mantida; não houve substituição do modelo conceitual.
+- **B) está errada:** Integridade referencial pode continuar válida, mas não nomeia a separação entre níveis descrita.
+- **C) está correta:** Alterações de armazenamento e índices sem mudança das consultas exemplificam independência física.
+- **D) está errada:** Durabilidade trata persistência após confirmação, não desacoplamento físico–lógico.
 - **Conceito cobrado:** Independência física de dados.
-- **Pegadinha usada:** Confundir ajuste físico com mudança lógica obrigatória..
-- **Como pensar para acertar:** Índice é bom exemplo: muda desempenho/armazenamento sem mudar consulta.
+- **Pegadinha usada:** Confundir nível físico, integridade e propriedade transacional.
+- **Como pensar para acertar:** Pergunte qual nível mudou e qual nível permaneceu estável.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 27
 
-- **Alternativa correta:** C.
-- **A) está errada:** Senhas em texto claro seriam falha grave; não define dicionário.
-- **B) está errada:** Dicionário de dados descreve estrutura, não apenas ordenação.
-- **C) está correta:** Dicionário contém dados sobre os dados.
-- **D) está errada:** Metadados não substituem registros de negócio.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Tipos, defaults, constraints e índices são dados sobre objetos do banco.
+- **B) está errada:** O log registra operações para recuperação; não é o catálogo estrutural completo.
+- **C) está errada:** Os valores de negócio não descrevem a estrutura de colunas, padrões e restrições.
+- **D) está errada:** O catálogo não precisa duplicar fisicamente o conteúdo das tabelas de negócio.
 - **Conceito cobrado:** Dicionário de dados e metadados.
-- **Pegadinha usada:** Não distinguir dados e metadados..
-- **Como pensar para acertar:** Dicionário responde “como o banco está estruturado?”.
+- **Pegadinha usada:** Confundir metadados, dados de negócio, log e cópia física.
+- **Como pensar para acertar:** Se a informação descreve objetos e regras do banco, ela pertence ao dicionário de dados.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** B.
-- **A) está errada:** SELECT pode listar múltiplas expressões.
-- **B) está correta:** Coluna solta junto de agrupamento causa ambiguidade.
-- **C) está errada:** Pelo contrário, setor é a coluna agrupada.
-- **D) está errada:** GROUP BY é cláusula de consulta SELECT.
+- **Nível:** Difícil.
+- **A) está errada:** Ser PK da relação não faz `id_lancamento` ser determinado pelo setor agrupado; há vários IDs por setor.
+- **B) está correta:** A projeção mistura granularidade de setor com um ID individual sem regra que escolha um ID do grupo.
+- **C) está errada:** Agregações podem ser usadas sem HAVING; HAVING apenas filtra grupos quando necessário.
+- **D) está errada:** A ordem visual das expressões projetadas não corrige a incompatibilidade de granularidade.
 - **Conceito cobrado:** GROUP BY e colunas não agregadas.
-- **Pegadinha usada:** Selecionar coluna fora do agrupamento..
-- **Como pensar para acertar:** Toda coluna no SELECT deve ser agregada ou fazer parte do agrupamento.
+- **Pegadinha usada:** Supor que qualquer PK pode ser projetada em um agrupamento ou exigir HAVING para toda agregação.
+- **Como pensar para acertar:** Cada expressão não agregada deve ser compatível com a granularidade do grupo; aqui setor não determina um único lançamento.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 29
 
-- **Alternativa correta:** A.
-- **A) está correta:** DELETE remove registros filtrados.
-- **B) está errada:** Isso seria DROP TABLE.
-- **C) está errada:** Isso seria UPDATE, não DELETE.
-- **D) está errada:** SQL não garante backup automático nesse comando.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Excluir o objeto seria efeito de DROP TABLE, não de DELETE filtrado.
+- **B) está errada:** FKs podem restringir a exclusão ou definir ações diferentes; cascata não é automática em todos os casos.
+- **C) está correta:** DELETE atua nas linhas filtradas, preserva o objeto e integra a transação ainda não confirmada.
+- **D) está errada:** Antes da confirmação, ROLLBACK pode desfazer o DML dentro do modelo transacional descrito.
 - **Conceito cobrado:** DELETE com WHERE.
-- **Pegadinha usada:** Confundir DELETE com DROP ou UPDATE..
-- **Como pensar para acertar:** Observe o verbo SQL: DELETE remove linhas; UPDATE altera valores.
+- **Pegadinha usada:** Confundir linhas, objeto, cascata referencial e confirmação transacional.
+- **Como pensar para acertar:** Separe três perguntas: o que DELETE atinge, o que as FKs permitem e se já houve COMMIT.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 30
 
 - **Alternativa correta:** D.
-- **A) está errada:** SELECT não é a forma padrão de inserção simples com VALUES.
-- **B) está errada:** UPDATE altera linhas existentes; não usa essa estrutura.
-- **C) está errada:** DROP remove objetos; não insere dados.
-- **D) está correta:** INSERT INTO ... VALUES adiciona registro.
+- **Nível:** Difícil.
+- **A) está errada:** NULL explícito não aciona o DEFAULT e viola o NOT NULL de `uf`.
+- **B) está errada:** Sem lista de colunas, os valores não correspondem corretamente ao esquema que também contém `id` e `uf`.
+- **C) está errada:** UPDATE não insere linhas e a expressão SET apresentada não é atribuição válida.
+- **D) está correta:** Ao omitir `id` gerado e `uf`, cada linha recebe a identidade e o padrão definidos pelo esquema.
 - **Conceito cobrado:** INSERT.
-- **Pegadinha usada:** Trocar comandos DML..
-- **Como pensar para acertar:** Inserir nova linha pede INSERT INTO.
+- **Pegadinha usada:** Confundir omissão de coluna com NULL explícito e ignorar coluna de identidade.
+- **Como pensar para acertar:** Liste apenas as colunas fornecidas; deixe identidade e DEFAULT serem preenchidos pelo SGBD.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 31
 
-- **Alternativa correta:** C.
-- **A) está errada:** COMMIT continua necessário para confirmar transações.
-- **B) está errada:** Índices e concorrência podem coexistir.
-- **C) está correta:** Isolamento trata efeitos de concorrência entre transações.
-- **D) está errada:** Isolamento não proíbe concorrência; controla seus efeitos.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A alternativa associa corretamente o nível às anomalias evitadas e preserva a ressalva de implementação.
+- **B) está errada:** READ COMMITTED impede ler dado não confirmado, mas outra transação pode confirmar mudança entre as leituras.
+- **C) está errada:** READ UNCOMMITTED é justamente o nível associado à possibilidade de leitura suja.
+- **D) está errada:** Serializable é um nível forte, mas ainda depende de transações, confirmação e controle de concorrência.
 - **Conceito cobrado:** Isolamento transacional.
-- **Pegadinha usada:** Confundir isolamento com ausência total de concorrência..
-- **Como pensar para acertar:** Isolamento é controle de efeitos, não proibição absoluta de simultaneidade.
+- **Pegadinha usada:** Transformar um nível em garantia maior do que ele oferece ou dispensar o mecanismo transacional.
+- **Como pensar para acertar:** Compare cada nível com as anomalias que ele impede, sem extrapolar a garantia.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 32
 
 - **Alternativa correta:** B.
-- **A) está errada:** UNIQUE existe justamente para impedir duplicidade conforme regra.
-- **B) está correta:** UNIQUE garante unicidade sem necessariamente ser a PK.
-- **C) está errada:** UNIQUE não torna automaticamente o campo PK.
-- **D) está errada:** A PK não pode repetir.
+- **Nível:** Difícil.
+- **A) está errada:** Uma chave alternativa UNIQUE não substitui automaticamente a PK declarada.
+- **B) está correta:** A alternativa preserva os papéis distintos e evita absolutizar o tratamento de NULL entre implementações.
+- **C) está errada:** Obrigatoriedade é efeito de NOT NULL, não consequência universal de UNIQUE.
+- **D) está errada:** A PK permanece única independentemente dos valores de outra coluna.
 - **Conceito cobrado:** UNIQUE x PRIMARY KEY.
-- **Pegadinha usada:** Tratar UNIQUE como PK automaticamente..
-- **Como pensar para acertar:** Unicidade pode existir em campos que não são a chave primária.
+- **Pegadinha usada:** Confundir chave alternativa com chave primária e UNIQUE com NOT NULL.
+- **Como pensar para acertar:** Leia cada restrição separadamente e preserve a ressalva de portabilidade para NULL.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 33
 
-- **Alternativa correta:** A.
-- **A) está correta:** A FK id_cidade aponta para a PK de cidade.
-- **B) está errada:** Relaciona identificador a texto de forma incorreta.
-- **C) está errada:** Relaciona nome textual a identificador.
-- **D) está errada:** Relaciona colunas da mesma tabela sem alcançar cidade.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O predicado no WHERE rejeita o NULL do lado direito e elimina justamente os profissionais sem cidade.
+- **B) está errada:** INNER JOIN elimina os profissionais que não têm cidade correspondente.
+- **C) está errada:** A condição usa a PK do profissional em lugar da FK da cidade.
+- **D) está correta:** LEFT JOIN preserva todos os profissionais e relaciona a FK `id_cidade` à PK de `cidade`.
 - **Conceito cobrado:** Condição de JOIN por PK/FK.
-- **Pegadinha usada:** Juntar colunas com nomes parecidos sem respeitar relacionamento..
-- **Como pensar para acertar:** Identifique FK na tabela filha e PK na tabela referenciada.
+- **Pegadinha usada:** Acertar o tipo de JOIN, mas errar a chave ou neutralizar o efeito externo no WHERE.
+- **Como pensar para acertar:** Preserve a tabela obrigatória à esquerda, ligue FK à PK e não rejeite depois os NULLs da direita.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 34
 
 - **Alternativa correta:** C.
+- **Nível:** Difícil.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: esse é o ponto clássico da 2FN.
-- **B) está correta como afirmação:** Correta: esse é o foco da 3FN.
-- **C) é a incorreta:** Incorreta: normalização frequentemente cria separações/tabelas para reduzir redundância.
-- **D) está correta como afirmação:** Correta: atomicidade é foco da 1FN.
+- **A) está errada:** Dependência parcial pressupõe chave composta; a afirmação está correta.
+- **B) está errada:** A cadeia descreve dependência transitiva entre atributos não chave e está correta.
+- **C) está correta:** Decompor sem examinar junção sem perda e dependências pode eliminar associações ou permitir estados indevidos.
+- **D) está errada:** Organização e desempenho não são sinônimos; a normalização pode exigir mais joins.
 - **Conceito cobrado:** Normalização.
-- **Pegadinha usada:** Achar que normalizar é juntar tudo para evitar joins..
-- **Como pensar para acertar:** Normalização reduz redundância; desempenho pode exigir avaliação posterior.
+- **Pegadinha usada:** Tratar normalização como simples divisão física de colunas, sem analisar dependências.
+- **Como pensar para acertar:** Valide cada forma normal pelas dependências e não aceite uma decomposição só porque criou mais tabelas.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 35
 
-- **Alternativa correta:** C.
-- **A) está errada:** WHERE filtra condições, não ordena.
-- **B) está errada:** DROP remove objetos e não deve ser usado para relatório.
-- **C) está correta:** ORDER BY valor DESC combinado a LIMIT/FETCH/TOP conforme o SGBD resolve a necessidade.
-- **D) está errada:** GROUP BY agrupa; não seleciona top N por si só.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A consulta ordena pelos maiores valores, resolve empates pelo menor ID e limita a três linhas.
+- **B) está errada:** A ordenação crescente escolhe os menores valores.
+- **C) está errada:** OFFSET 3 descarta as três primeiras linhas em vez de retorná-las.
+- **D) está errada:** Sem ORDER BY, não há garantia de que as três linhas sejam as de maior valor.
 - **Conceito cobrado:** ORDER BY e limitação de resultados.
-- **Pegadinha usada:** Confundir ordenação com filtro/agrupamento..
-- **Como pensar para acertar:** Para maiores/menores, pense em ORDER BY; para quantidade, em LIMIT/FETCH/TOP.
+- **Pegadinha usada:** Limitar antes de definir uma ordem determinística ou inverter ASC/DESC.
+- **Como pensar para acertar:** Primeiro estabeleça a ordenação completa; depois aplique o limite de linhas.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 36
 
 - **Alternativa correta:** B.
-- **A) está errada:** TRUNCATE não consulta dados.
-- **B) está correta:** TRUNCATE costuma remover todas as linhas e tem comportamento próprio por SGBD.
-- **C) está errada:** TRUNCATE não é usado com filtro linha a linha como DELETE.
-- **D) está errada:** DELETE remove linhas; estrutura permanece.
+- **Nível:** Difícil.
+- **A) está errada:** Há diferenças importantes e dependentes do SGBD; a equivalência universal é falsa.
+- **B) está correta:** A descrição mantém o núcleo comum e explicita os pontos de portabilidade.
+- **C) está errada:** TRUNCATE não é remoção linha a linha com predicado.
+- **D) está errada:** DROP remove o objeto, não apenas seu conteúdo.
 - **Conceito cobrado:** DELETE x TRUNCATE.
-- **Pegadinha usada:** Tratar todos os comandos de remoção como iguais..
-- **Como pensar para acertar:** Diferencie apagar linhas filtradas, esvaziar tabela e remover objeto.
+- **Pegadinha usada:** Absolutizar detalhes dependentes do SGBD ou trocar remoção de dados por remoção de objeto.
+- **Como pensar para acertar:** Memorize o núcleo de cada comando e trate transação, log, identidade e FKs como detalhes de implementação.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 37
 
-- **Alternativa correta:** A.
-- **A) está correta:** LEFT JOIN preserva a linha da esquerda e preenche ausência da direita com NULL.
-- **B) está errada:** Ausência em junção externa é representada por NULL, não zero por regra geral.
-- **C) está errada:** SGBD não preenche automaticamente com esse texto.
-- **D) está errada:** Colunas da direita ausentes não viram PK da esquerda.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** O WHERE rejeita o NULL da linha estendida e elimina setores sem profissional ativo.
+- **B) está correta:** O filtro no ON limita correspondências ativas, LEFT preserva setores vazios e COUNT da chave direita produz zero sem par.
+- **C) está errada:** COUNT(*) conta também a linha preservada sem correspondência, produzindo um em vez de zero.
+- **D) está errada:** INNER JOIN só conserva setores com ao menos uma correspondência ativa.
 - **Conceito cobrado:** LEFT JOIN e NULL.
-- **Pegadinha usada:** Não entender como ausência de correspondência é representada..
-- **Como pensar para acertar:** LEFT preserva a esquerda; o que falta da direita vira NULL.
+- **Pegadinha usada:** Neutralizar o LEFT JOIN no WHERE ou contar a linha estendida com COUNT(*).
+- **Como pensar para acertar:** Filtre o lado opcional no ON e conte uma coluna não nula apenas quando houver correspondência.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 38
 
-- **Alternativa correta:** D.
-- **A) está errada:** Lista textual prejudica integridade e consultas.
-- **B) está errada:** Contraria o requisito de múltiplas relações.
-- **C) está errada:** Nome não garante identificação nem integridade.
-- **D) está correta:** A associação N:N com histórico precisa de tabela própria e atributos do vínculo.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Uma FK única limita o profissional a uma pessoa jurídica e não representa o histórico N:N.
+- **B) está errada:** A coluna guarda apenas o responsável atual e não permite vários vínculos nem períodos completos.
+- **C) está correta:** A associativa representa cada vínculo e seus atributos próprios ao longo do tempo.
+- **D) está errada:** Texto livre perde atomicidade, referências e validação temporal.
 - **Conceito cobrado:** Modelagem de relacionamento com atributos.
-- **Pegadinha usada:** Guardar histórico em texto livre..
-- **Como pensar para acertar:** Quando o relacionamento tem dados próprios, ele merece tabela própria.
+- **Pegadinha usada:** Modelar apenas o estado atual ou esconder histórico N:N em texto.
+- **Como pensar para acertar:** Quando o relacionamento possui atributos e multiplicidade nos dois lados, transforme-o em tabela associativa.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 39
 
-- **Alternativa correta:** C.
-- **A) está errada:** Backup sem teste pode falhar quando necessário.
-- **B) está errada:** Backup e segurança de acesso são controles distintos.
-- **C) está correta:** Backups lógicos usam dumps/exportações para restauração.
-- **D) está errada:** Cópia física sem consistência pode ser inválida.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Consistência da captura e teste de restauração tratam tanto geração quanto recuperabilidade do backup.
+- **B) está errada:** Exportações independentes podem observar instantes diferentes e quebrar relações entre tabelas.
+- **C) está errada:** Arquivos copiados durante escrita podem não representar estado recuperável e coerente.
+- **D) está errada:** Índices são estruturas de acesso e não cópias recuperáveis dos dados.
 - **Conceito cobrado:** Backup e recuperação em SGBD.
-- **Pegadinha usada:** Achar que qualquer cópia de arquivo aberto é backup válido..
-- **Como pensar para acertar:** Backup precisa ser consistente e restaurável.
+- **Pegadinha usada:** Confundir cópia de arquivos ou exportações isoladas com backup consistente e testado.
+- **Como pensar para acertar:** Verifique o ponto consistente da captura e nunca considere o backup confiável sem restauração de teste.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 40
 
-- **Alternativa correta:** B.
-- **A) está errada:** SELECT ainda é possível, mas consultas e integridade ficam ruins.
-- **B) está correta:** Múltiplos valores em uma única coluna violam 1FN.
-- **C) está errada:** O problema é ausência de estrutura relacional, não excesso de FK.
-- **D) está errada:** HAVING não corrige multivaloração.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** LIKE não cria atomicidade nem integridade individual e pode produzir correspondências imprecisas.
+- **B) está errada:** Duplicar o documento introduz redundância e anomalias de atualização.
+- **C) está errada:** Colunas numeradas criam limite artificial, grupos repetidos e muitos nulos.
+- **D) está correta:** A tabela separa as ocorrências e permite chave, FK e restrição por tag.
 - **Conceito cobrado:** 1FN e atributos multivalorados.
-- **Pegadinha usada:** Aceitar lista em campo como modelagem normalizada..
-- **Como pensar para acertar:** Se há vários valores no mesmo campo, suspeite de 1FN.
+- **Pegadinha usada:** Preservar lista delimitada ou trocar uma lista por colunas repetidas.
+- **Como pensar para acertar:** Uma ocorrência por linha permite atomicidade, chaves e consultas relacionais exatas.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 41
 
-- **Alternativa correta:** A.
-- **A) está correta:** Obrigatoriedade vem de NOT NULL; não repetição vem de UNIQUE.
-- **B) está errada:** Essa condição permitiria/forçaria nulidade, o oposto da exigência.
-- **C) está errada:** FK exige referência; não resolve unicidade/obrigatoriedade sozinha.
-- **D) está errada:** ORDER BY não cria restrição de integridade.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** Uma FK exige chave referenciada adequada e não substitui UNIQUE, NOT NULL e CHECK requeridos.
+- **B) está errada:** Criar outra PRIMARY KEY conflita com a PK técnica já existente e não restringe a situação.
+- **C) está errada:** O CHECK de não nulidade não impede duplicação e a situação continua sem domínio definido.
+- **D) está correta:** Mantém `id` como PK e expressa separadamente obrigatoriedade, unicidade e domínio de situação.
 - **Conceito cobrado:** NOT NULL e UNIQUE.
-- **Pegadinha usada:** Misturar restrição de domínio, unicidade e ordenação..
-- **Como pensar para acertar:** Traduza requisito: obrigatório = NOT NULL; não repetido = UNIQUE.
+- **Pegadinha usada:** Tentar substituir a PK técnica ou usar uma única restrição para três requisitos diferentes.
+- **Como pensar para acertar:** Traduza cada regra do domínio em sua constraint própria, sem alterar a chave já escolhida.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 42
 
-- **Alternativa correta:** D.
-- **A) está errada:** Planilha não é SGBD completo.
-- **B) está errada:** O arquivo pode armazenar dados, mas SGBD é o software gerenciador.
-- **C) está errada:** SQL é linguagem; SGBD inclui vários serviços.
-- **D) está correta:** Essa é a função do sistema gerenciador de banco de dados.
-- **Conceito cobrado:** SGBD.
-- **Pegadinha usada:** Confundir banco, arquivo, linguagem e gerenciador..
-- **Como pensar para acertar:** Procure a camada que oferece serviços de gerenciamento dos dados.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** Independência física evita a reescrita das visões por mera reorganização interna, e rollback não assegura sozinho a persistência de commits.
+- **B) está correta:** Os mapeamentos do SGBD desacoplam o nível físico dos demais, enquanto concorrência, log e recuperação preservam as propriedades transacionais.
+- **C) está errada:** As visões compartilham o esquema lógico, e backup periódico não substitui isolamento nem recuperação transacional.
+- **D) está errada:** SQL expressa operações, mas os mecanismos de mapeamento, escalonamento e recuperação são implementados pelo SGBD.
+- **Conceito cobrado:** Arquitetura de três esquemas, independência física e serviços transacionais do SGBD.
+- **Pegadinha usada:** Atribuir à linguagem ou ao backup funções operacionais do SGBD e confundir mudança física com mudança lógica.
+- **Como pensar para acertar:** Separe os níveis de abstração e identifique qual componente preserva tanto os mapeamentos quanto as garantias de transação.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 43
 
-- **Alternativa correta:** C.
-- **A) está errada:** DROP remove objetos e não concede privilégio.
-- **B) está errada:** UPDATE altera dados e não concede privilégio.
-- **C) está correta:** GRANT concede privilégio; SELECT é privilégio de leitura.
-- **D) está errada:** REVOKE remove permissão, não concede.
-- **Conceito cobrado:** DCL: GRANT e REVOKE.
-- **Pegadinha usada:** Trocar concessão e revogação..
-- **Como pensar para acertar:** Permissão concedida = GRANT; permissão retirada = REVOKE.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** A view aplica projeção e seleção no banco, e a ausência de privilégio na tabela-base impede contornar essas restrições.
+- **B) está errada:** O acesso à tabela-base expõe CPF e linhas inativas se o filtro da aplicação falhar ou for omitido.
+- **C) está errada:** Restringir colunas não restringe linhas; profissionais inativos continuariam acessíveis.
+- **D) está errada:** O privilégio mantido na tabela-base oferece um caminho de leitura que ignora a proteção da view.
+- **Conceito cobrado:** Menor privilégio, views de segurança, projeção e seleção.
+- **Pegadinha usada:** Confundir restrição de coluna com restrição de linha ou confiar em filtro aplicado apenas pelo cliente.
+- **Como pensar para acertar:** Liste dados, linhas e operações permitidos e elimine qualquer privilégio que permita ultrapassar um desses limites.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 44
 
-- **Alternativa correta:** B.
-- **A) está errada:** Auditoria não substitui backup.
-- **B) está correta:** Trigger pode executar lógica de auditoria ao ocorrer evento.
-- **C) está errada:** Trigger pode validar/bloquear dependendo da lógica, mas auditoria não significa proibição automática.
-- **D) está errada:** Transações continuam importantes.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** A trigger centraliza a reação automática, mas exige avaliação dos efeitos transacionais e operacionais.
+- **B) está errada:** A solução fica dispersa e uma aplicação pode omitir ou implementar a auditoria de forma diferente.
+- **C) está errada:** View comum representa consulta e não funciona automaticamente como interceptador de UPDATE.
+- **D) está errada:** Índice acelera acesso; não é histórico de auditoria das versões modificadas.
 - **Conceito cobrado:** Triggers de auditoria.
-- **Pegadinha usada:** Achar que trigger sempre bloqueia operação..
-- **Como pensar para acertar:** Veja o evento: após UPDATE, registre automaticamente.
+- **Pegadinha usada:** Confundir automação por evento com view, índice ou código voluntário de cada cliente.
+- **Como pensar para acertar:** Escolha o objeto acionado pelo próprio evento e avalie seu vínculo com a transação principal.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 45
 
-- **Alternativa correta:** A.
-- **A) está correta:** Cardinalidade modela obrigatoriedade e quantidade de vínculos.
-- **B) está errada:** Cor visual não é cardinalidade.
-- **C) está errada:** Cardinalidade é conceito de modelagem.
-- **D) está errada:** Cardinalidade orienta mapeamento, mas não substitui chaves.
-- **Conceito cobrado:** Cardinalidade no MER.
-- **Pegadinha usada:** Reduzir cardinalidade a detalhe visual..
-- **Como pensar para acertar:** Pergunte: uma ocorrência se relaciona com quantas da outra?
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** A FK anulável permite anuidade sem profissional, e o índice por exercício não impede duplicidade por profissional e ano.
+- **B) está errada:** A FK no lado de `Profissional` limita o vínculo e induz repetição da entidade a cada exercício.
+- **C) está correta:** A FK `NOT NULL` garante um profissional por anuidade, a ausência de linha preserva a participação opcional e a restrição composta evita duplicidade anual.
+- **D) está errada:** O domínio descreve um-para-muitos, não muitos-para-muitos, e não admite anuidades sem profissional.
+- **Conceito cobrado:** Mapeamento 1:N, participação obrigatória e chave candidata composta.
+- **Pegadinha usada:** Modelar apenas a cardinalidade máxima e esquecer participação mínima ou unicidade dependente do exercício.
+- **Como pensar para acertar:** Traduza separadamente as três regras: lado da FK, nulabilidade da FK e combinação de atributos que deve ser única.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 46
 
-- **Alternativa correta:** D.
-- **A) está errada:** O enunciado descreve dependências.
-- **B) está errada:** CPF como atributo atômico não viola 1FN por si só.
-- **C) está errada:** A questão é de normalização, não de privilégios.
-- **D) está correta:** A 3FN busca evitar dependências transitivas.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** A decomposição não deve perder a informação de departamento do servidor.
+- **B) está errada:** UNIQUE não elimina a dependência transitiva e ainda impediria vários servidores no mesmo departamento.
+- **C) está correta:** A decomposição representa cada fato em sua relação e preserva o vínculo por FK.
+- **D) está errada:** A tabela de departamento deve ser identificada pelo departamento, não pelo servidor.
 - **Conceito cobrado:** Dependência funcional e 3FN.
-- **Pegadinha usada:** Não seguir a cadeia de dependência..
-- **Como pensar para acertar:** Monte a relação: chave -> atributo não chave -> outro atributo.
+- **Pegadinha usada:** Declarar UNIQUE para mascarar dependência ou decompor com a chave errada.
+- **Como pensar para acertar:** Coloque cada atributo junto de seu determinante e mantenha a associação por chave estrangeira.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 47
 
-- **Alternativa correta:** C.
-- **A) está errada:** SELECT não altera fisicamente os dados.
-- **B) está errada:** DISTINCT não cria restrição nem índice.
-- **C) está correta:** DISTINCT elimina duplicidades no resultado projetado.
-- **D) está errada:** DISTINCT remove repetições na projeção.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** DISTINCT considera o conjunto completo de colunas projetadas, não somente a primeira.
+- **B) está errada:** A eliminação de duplicatas também se aplica a projeções com várias colunas.
+- **C) está errada:** Para eliminação de duplicatas, as duas ocorrências do mesmo par com NULL não geram linhas separadas.
+- **D) está correta:** Os pares repetidos são reduzidos a uma ocorrência, inclusive o par com NULL no resultado DISTINCT.
 - **Conceito cobrado:** DISTINCT.
-- **Pegadinha usada:** Confundir resultado da consulta com alteração permanente..
-- **Como pensar para acertar:** SELECT consulta; não muda dados sem comando de modificação.
+- **Pegadinha usada:** Aplicar DISTINCT a uma coluna isolada ou tratar cada NULL como linha distinta no resultado.
+- **Como pensar para acertar:** Forme os pares projetados e elimine repetições do par completo.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 48
 
 - **Alternativa correta:** B.
-- **A) está errada:** ROLLBACK desfaz, não confirma.
-- **B) está correta:** Durabilidade trata permanência após confirmação.
-- **C) está errada:** Logs são mecanismos comuns para durabilidade.
-- **D) está errada:** Isolamento é outra propriedade ACID.
-- **Conceito cobrado:** ACID: durabilidade.
-- **Pegadinha usada:** Trocar durabilidade por atomicidade ou rollback..
-- **Como pensar para acertar:** Depois do COMMIT, o banco deve preservar o que foi confirmado.
+- **Nível:** Muito difícil.
+- **A) está errada:** Registrar uma alteração não confirmada não autoriza torná-la permanente; T2 deve ser desfeita.
+- **B) está correta:** A recuperação conserva T1 pela durabilidade e elimina os efeitos parciais de T2 pela atomicidade.
+- **C) está errada:** A ordem temporal não substitui o estado de confirmação; uma transação sem commit não prevalece sobre outra confirmada.
+- **D) está errada:** Isolamento controla interferência concorrente, mas não exige apagar uma transação cujo commit já foi reconhecido.
+- **Conceito cobrado:** Recuperação com log, atomicidade e durabilidade.
+- **Pegadinha usada:** Confundir alteração mais recente com alteração confirmada ou tratar toda falha como motivo para desfazer todos os commits.
+- **Como pensar para acertar:** Classifique cada transação no instante da falha: committed deve sobreviver; uncommitted deve ser desfeita.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 49
 
-- **Alternativa correta:** D.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: sem correspondência, a linha fica fora.
-- **B) está correta como afirmação:** Correta: a esquerda é mantida mesmo sem correspondência.
-- **C) está correta como afirmação:** Correta: ON inadequado distorce o resultado.
-- **D) é a incorreta:** Incorreta: a junção útil depende de relação lógica e condição adequada.
+- **A) está errada:** A afirmação está correta: o filtro posterior pode neutralizar a preservação da linha esquerda.
+- **B) está correta:** A posição do predicado pode alterar quais linhas são correspondidas ou eliminadas; por isso a afirmação é incorreta.
+- **C) está errada:** A diferença entre contagem da chave direita e de linhas é correta quando não há correspondência.
+- **D) está errada:** A afirmação está correta: falhar no ON produz ausência de par, mas a linha esquerda permanece.
 - **Conceito cobrado:** JOINs.
-- **Pegadinha usada:** Achar que basta juntar tabelas sem condição lógica..
-- **Como pensar para acertar:** JOIN bom nasce do relacionamento do modelo.
+- **Pegadinha usada:** Tratar ON e WHERE como intercambiáveis em LEFT JOIN.
+- **Como pensar para acertar:** Simule uma linha sem correspondência e acompanhe o NULL pelo ON, WHERE e COUNT.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentário da Questão 50
 
-- **Alternativa correta:** D.
-- **A) está errada:** SELECT não altera dados.
-- **B) está errada:** Agrupamento não apaga registros.
-- **C) está errada:** Não há HAVING na consulta; apenas ordenação.
-- **D) está correta:** GROUP BY agrega por situação; ORDER BY COUNT(*) DESC ordena por total decrescente.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** A alternativa segue corretamente a ordem lógica FROM/WHERE/GROUP BY/HAVING/SELECT/ORDER BY.
+- **B) está errada:** A condição de dez está no HAVING sobre COUNT, não sobre identificador individual.
+- **C) está errada:** ORDER BY atua no resultado agregado e nenhum comando modifica a tabela física.
+- **D) está errada:** WHERE é aplicado antes do agrupamento, então as demais UFs nem entram nos grupos.
 - **Conceito cobrado:** GROUP BY e ORDER BY com agregação.
-- **Pegadinha usada:** Confundir consulta agregada com alteração física..
-- **Como pensar para acertar:** Leia cláusula por cláusula: SELECT, GROUP BY, ORDER BY.
+- **Pegadinha usada:** Ler o SELECT na ordem escrita e aplicar HAVING a linhas individuais.
+- **Como pensar para acertar:** Reordene mentalmente as cláusulas pela execução lógica e acompanhe o conjunto em cada etapa.
 - **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
 
 ### Comentários das questões extras de revisão fixa do Dia 3
 
 #### Comentário Extra Dia 3.1
 
-- **Alternativa correta:** A.
-- **A) está correta:** Mesmo quando a questão não exige artigo, sanção administrativa pressupõe processo regular.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A distribuição entre instâncias não desaparece só porque a matéria é ética.
+- **B) está errada:** Prova pré-constituída não elimina contraditório nem autoriza converter o recurso na primeira oportunidade de defesa.
+- **C) está correta:** Poder disciplinar exige órgão competente e procedimento que permita participação do acusado.
+- **D) está errada:** Denunciante provoca a apuração, mas não substitui o órgão julgador nem define a sanção.
 - **Conceito cobrado:** Sanções ético-disciplinares.
-- **Pegadinha usada:** Tratar penalidade como ato automático sem procedimento.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Confundir poder disciplinar com punição imediata ou escolha privada da pena.
+- **Como pensar para acertar:** Verifique competência, procedimento, contraditório e defesa antes de examinar a penalidade.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.2
 
-- **Alternativa correta:** C.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está correta:** O material de estudo expressamente inclui profissionais e pessoas jurídicas no campo ético da RN 671/2025.
-- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A alternativa preserva tanto o alcance quanto a necessidade de observar as especificidades do sujeito.
+- **B) está errada:** As funções das duas resoluções foram invertidas.
+- **C) está errada:** O material inclui pessoas jurídicas no campo da norma ética, com tratamento próprio.
+- **D) está errada:** Incidência da norma não autoriza transposição mecânica de toda sanção de pessoa física.
 - **Conceito cobrado:** Código de Ética e pessoa jurídica.
-- **Pegadinha usada:** Achar que o Código de Ética só alcança pessoa física.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Confundir o número e o objeto das resoluções ou igualar integralmente PF e PJ.
+- **Como pensar para acertar:** Identifique primeiro a norma e seu alcance; depois verifique se a consequência é específica do sujeito.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.3
 
 - **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** A apostila chama atenção para esse detalhe como ponto típico de prova.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Nível:** Médio.
+- **A) está errada:** A alternativa mantém uma transposição que a ressalva estudada não autoriza.
+- **B) está correta:** Ela reproduz o ponto específico destacado na apostila para diferenciar sujeitos e sanções.
+- **C) está errada:** A distinção proposta também atribui à pessoa jurídica sanção que o material ressalva.
+- **D) está errada:** Dano econômico não cria, por si só, sanção ou destinatário não previstos.
 - **Conceito cobrado:** Sanções e pessoa jurídica.
-- **Pegadinha usada:** Aplicar automaticamente toda sanção de pessoa física à pessoa jurídica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Confundir submissão da PJ à norma ética com identidade absoluta de sanções.
+- **Como pensar para acertar:** Separe alcance subjetivo da norma e rol de consequências aplicáveis a cada sujeito.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.4
 
-- **Alternativa correta:** D.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está correta:** O CRA-PR é regional, mas não isolado do sistema nacional.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Validade nacional do registro não transforma o Regional de origem em fiscal de todo o País.
+- **B) está errada:** Coordenação federal não absorve a execução ordinária atribuída ao Regional competente.
+- **C) está correta:** A alternativa combina jurisdição regional e integração ao sistema nacional.
+- **D) está errada:** Os limites territoriais continuam relevantes para a competência regional.
 - **Conceito cobrado:** Jurisdição regional.
-- **Pegadinha usada:** Transformar autonomia regional em independência normativa absoluta.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Confundir validade nacional, jurisdição regional e coordenação federal.
+- **Como pensar para acertar:** Localize o fato, identifique o Regional competente e só depois examine o papel nacional do CFA.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.5
 
-- **Alternativa correta:** A.
-- **A) está correta:** Para a prova, conteúdo expresso do edital deve ser tratado como prioritário, ainda que não seja técnico de TI.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** O edital define o conteúdo do cargo; a área técnica do candidato não exclui a legislação comum cobrada.
+- **B) está errada:** O Regimento disciplina a estrutura e o funcionamento interno, não sendo peça meramente simbólica.
+- **C) está errada:** Norma interna opera dentro da hierarquia e não revoga a lei ou a normatização superior aplicável.
+- **D) está correta:** Conteúdo expresso do edital e organização institucional tornam seu estudo pertinente ao concurso.
 - **Conceito cobrado:** Importância do Regimento.
-- **Pegadinha usada:** Subestimar legislação específica por ser menos técnica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Desprezar conteúdo comum do edital ou superestimar a autonomia de norma interna.
+- **Como pensar para acertar:** Parta do edital e da função institucional da norma, não apenas da especialidade técnica do cargo.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.6
 
-- **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** A função do conselho regional é proteger a regularidade do exercício profissional, não apenas arrecadar.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** O conselho regional pode atuar no âmbito de sua competência sem depender sempre de provocação externa.
+- **B) está correta:** A alternativa relaciona corretamente fiscalização ao exercício regular da profissão.
+- **C) está errada:** Cobrança não esgota o poder fiscalizatório sobre atividade, habilitação e registro.
+- **D) está errada:** A execução regional não é substituída pela coordenação normativa federal.
 - **Conceito cobrado:** Exercício sem registro.
-- **Pegadinha usada:** Reduzir fiscalização a cobrança de anuidade.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Reduzir fiscalização a cobrança ou deslocar toda execução para o CFA.
+- **Como pensar para acertar:** Pergunte qual atividade é exercida, se exige habilitação/registro e qual Regional possui jurisdição.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.7
 
-- **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** Ética profissional também alcança a forma como o serviço é apresentado ao público.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A alternativa reúne os cuidados centrais de veracidade, título e expectativa criada no público.
+- **B) está errada:** Experiência não torna eticamente segura uma garantia absoluta de resultado futuro.
+- **C) está errada:** Rótulo comercial não legitima título profissional reservado ou potencialmente enganoso.
+- **D) está errada:** A comunicação profissional também integra a conduta submetida a parâmetros éticos.
 - **Conceito cobrado:** Publicidade profissional.
-- **Pegadinha usada:** Achar que publicidade é sempre livre de controle ético.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Usar experiência, aviso comercial ou liberdade publicitária para afastar deveres éticos.
+- **Como pensar para acertar:** Teste veracidade, habilitação do título e promessa de resultado em cada alternativa.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.8
 
 - **Alternativa correta:** D.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está correta:** A competência fiscalizatória alcança situações práticas de exercício de atividade regulada.
+- **Nível:** Médio.
+- **A) está errada:** Contrato privado não elimina requisitos profissionais nem impede fiscalização.
+- **B) está errada:** Formação acadêmica e registro profissional são requisitos distintos quando a lei exige ambos.
+- **C) está errada:** A pessoa jurídica pode sujeitar-se a registro e fiscalização conforme a atividade explorada.
+- **D) está correta:** A alternativa preserva a apuração individualizada do executor, da atividade e da organização.
 - **Conceito cobrado:** Registro e exercício profissional.
-- **Pegadinha usada:** Achar que contrato privado afasta fiscalização profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Achar que contrato, diploma ou personalidade jurídica afastam automaticamente o controle profissional.
+- **Como pensar para acertar:** Separe formação, registro do executor, atividade explorada e deveres da organização.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.9
 
-- **Alternativa correta:** A.
-- **A) está correta:** O registro profissional não é mera formalidade sem efeito; ele conecta profissional, conselho e fiscalização.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Correção posterior de dado não apaga automaticamente irregularidade material anterior.
+- **B) está correta:** A alternativa reconhece a função probatória e fiscalizatória sem transformar cadastro em salvo-conduto.
+- **C) está errada:** Validade do registro não elimina deveres de atualização e regras de jurisdição aplicáveis.
+- **D) está errada:** Certidão comprova situação; não desloca autoria nem responsabilidade técnica.
 - **Conceito cobrado:** Regularidade registral.
-- **Pegadinha usada:** Tratar cadastro como informação sem relevância jurídica.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Transformar regularidade documental em cura automática ou transferência de responsabilidade.
+- **Como pensar para acertar:** Diferencie prova cadastral, habilitação para exercer e responsabilidade pelos atos praticados.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.10
 
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** O material foi construído para seguir a versão oficial vigente do edital, não a norma mais recente sem vínculo comprovado.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Atualidade da norma e delimitação do conteúdo do concurso são questões relacionadas, mas a substituição não é automática.
+- **B) está correta:** A alternativa usa fonte oficial e mantém rastreabilidade da mudança de conteúdo.
+- **C) está errada:** Retificação oficial pode alterar legitimamente o instrumento convocatório.
+- **D) está errada:** Fonte informal pode alertar para mudança, mas não substitui o ato oficial do concurso.
 - **Conceito cobrado:** Edital como guia de estudo.
-- **Pegadinha usada:** Trocar conteúdo do edital por atualização não confirmada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Escolher entre atualização automática e congelamento absoluto, ignorando a retificação oficial.
+- **Como pensar para acertar:** Separe vigência normativa da delimitação editalícia e procure o ato oficial que conecte as duas.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.11
 
-- **Alternativa correta:** B.
-- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **B) está correta:** A abordagem aprovada evita cobrança literal não confirmada em fonte oficial no material.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A leitura dirigida estabelece mapa confiável e reserva cobrança literal para fonte oficial.
+- **B) está errada:** Memorização de detalhe não verificado cria falsa segurança e conteúdo possivelmente inexistente.
+- **C) está errada:** Leitura inicial não exaustiva não torna a norma irrelevante para o edital.
+- **D) está errada:** Analogia pode ajudar a formular perguntas, mas não pode ser apresentada como literalidade da norma.
 - **Conceito cobrado:** Leitura dirigida de normas adicionais.
-- **Pegadinha usada:** Criar detalhe literal sem comprovação.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Inventar literalidade, excluir a norma ou importar detalhes de outro ato.
+- **Como pensar para acertar:** Registre apenas o que a fonte confirma e mantenha separados mapa temático, hipótese e texto literal.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.12
 
-- **Alternativa correta:** D.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está correta:** Os dois blocos são complementares: um controla regularidade e outro disciplina conduta.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Um fato pode envolver simultaneamente exercício irregular e violação de dever profissional.
+- **B) está errada:** O alcance dos controles não se divide de modo absoluto por pessoa física e jurídica.
+- **C) está errada:** Conduta e regularidade são dimensões distintas e complementares.
+- **D) está errada:** Regularidade registral não impede que a conduta profissional seja eticamente questionada.
 - **Conceito cobrado:** Fiscalização e ética.
-- **Pegadinha usada:** Achar que fiscalização e ética são temas sem conexão.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Fundir os controles ou torná-los mutuamente exclusivos.
+- **Como pensar para acertar:** Pergunte separadamente: o sujeito podia exercer a atividade e, ao exercê-la, agiu de modo ético?
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.13
 
-- **Alternativa correta:** A.
-- **A) está correta:** Conduta ética envolve lealdade, probidade e responsabilidade no exercício profissional.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Comunicação tardia não permite prevenir ou gerir o conflito no momento relevante.
+- **B) está errada:** Conflito pode comprometer imparcialidade sem que o dano econômico já tenha ocorrido.
+- **C) está errada:** Consentimento não afasta automaticamente dever legal nem resolve interesse de todas as partes afetadas.
+- **D) está correta:** Transparência e prevenção protegem confiança e independência antes da decisão.
 - **Conceito cobrado:** Conflito de interesses.
-- **Pegadinha usada:** Tratar conflito de interesses como assunto privado sem impacto profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Condicionar o conflito ao dano consumado ou tentar curá-lo por autorização insuficiente e tardia.
+- **Como pensar para acertar:** Avalie independência, transparência, sujeitos afetados e necessidade de impedimento antes de atuar.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.14
 
 - **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** Mesmo sem decorar prazos, o candidato deve reconhecer garantias básicas do processo administrativo sancionador.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
+- **Nível:** Difícil.
+- **A) está errada:** Competência decorre das normas do sistema, não da preferência da parte.
+- **B) está errada:** Defesa tardia não substitui automaticamente participação útil na formação da decisão.
+- **C) está correta:** A alternativa reúne garantias mínimas de processo sancionador regular.
+- **D) está errada:** Recurso não autoriza eliminar instrução e contraditório na instância inicial.
 - **Conceito cobrado:** Processo ético-disciplinar.
-- **Pegadinha usada:** Confundir sanção administrativa com punição informal.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Usar o recurso como justificativa para suprimir competência, instrução ou defesa inicial.
+- **Como pensar para acertar:** Examine a sequência: competência, ciência, instrução contraditória, decisão e recurso.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.15
 
-- **Alternativa correta:** B.
-- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **B) está correta:** A resposta depende de identificar quem pratica o ato e em que âmbito territorial.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Atuação interestadual não transfere automaticamente toda execução local ao órgão federal.
+- **B) está errada:** Cooperação entre órgãos não elimina regras de jurisdição e de competência decisória.
+- **C) está errada:** Registro de origem não cria competência territorial perpétua sobre qualquer fato futuro.
+- **D) está correta:** A estratégia identifica natureza, território e instância antes de escolher a sigla.
 - **Conceito cobrado:** Competência e jurisdição.
-- **Pegadinha usada:** Responder pela sigla sem observar o âmbito de atuação.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Pegadinha usada:** Responder pela sigla mais ampla ou pelo registro original sem classificar ato, lugar e instância.
+- **Como pensar para acertar:** Monte uma tabela com ato, órgão executor, território e eventual instância revisora.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; base complementar: Dias 4 e 5.
 
 #### Comentário Extra Dia 3.16
 
-- **Alternativa correta:** D.
-- **A) está errada:** Em pergunta indireta, usa-se 'por que'.
-- **B) está errada:** No meio da frase explicativa, usa-se 'porque'.
-- **C) está errada:** Substantivado, usa-se 'porquê'.
-- **D) está correta:** 'Porque' introduz explicação ou causa.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Pergunta indireta pede `por que`, e o substantivo acompanhado de artigo pede `porquê`.
+- **B) está errada:** No meio da pergunta usa-se `por que`; como substantivo, a forma é `porquê`.
+- **C) está correta:** As três ocorrências correspondem, respectivamente, a pergunta indireta, causa e substantivo.
+- **D) está errada:** A pergunta indireta exige `por que`, e a explicação causal exige `porque`.
 - **Conceito cobrado:** Uso dos porquês.
-- **Pegadinha usada:** Trocar pergunta indireta, explicação e substantivo.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Pegadinha usada:** Aplicar a mesma forma a pergunta indireta, explicação e substantivo.
+- **Como pensar para acertar:** Substitua mentalmente por “por qual razão”, “pois” ou “o motivo” em cada ocorrência.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; tópicos de Língua Portuguesa da Semana 1.
 
 #### Comentário Extra Dia 3.17
 
-- **Alternativa correta:** A.
-- **A) está correta:** Recorrer, no sentido de interpor recurso contra algo, rege 'de'.
-- **B) está errada:** Nesse sentido, 'recorrer' pede preposição 'de'.
-- **C) está errada:** Com 'preferir', a construção adequada não é 'do que' nesse padrão.
-- **D) está errada:** No sentido de presenciar, a norma culta tradicional pede 'assistiu ao'.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** No sentido de desejar, `aspirar` pede `a`, e `obedecer` também rege `a`.
+- **B) está correta:** `Recorrer da decisão` e `assistir ao julgamento`, no sentido de presenciar, seguem as regências cobradas.
+- **C) está errada:** A norma-padrão prefere a estrutura `preferiu X a Y`, e `informar` exige construção adequada dos complementos.
+- **D) está errada:** No sentido de presenciar, é `assistiu ao`; na norma tradicional, `chegou ao órgão`.
 - **Conceito cobrado:** Regência verbal.
-- **Pegadinha usada:** Usar preposição inadequada por influência da fala.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Pegadinha usada:** Avaliar apenas o primeiro verbo e deixar passar erro no segundo.
+- **Como pensar para acertar:** Identifique o sentido de cada verbo e teste separadamente a preposição exigida.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; tópicos de Língua Portuguesa da Semana 1.
 
 #### Comentário Extra Dia 3.18
 
 - **Alternativa correta:** C.
-- **A) está errada:** Adição seria marcada por 'e', 'além disso'.
-- **B) está errada:** Finalidade seria marcada por 'para que'.
-- **C) está correta:** 'Contudo' é conector adversativo.
-- **D) está errada:** Conclusão seria marcada por 'logo', 'portanto'.
-- **Conceito cobrado:** Coesão sequencial.
-- **Pegadinha usada:** Confundir contraste com consequência.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Nível:** Muito difícil.
+- **A) está errada:** `Por isso` transforma o aumento de custo em consequência da redução, e `contudo` troca a conclusão por oposição.
+- **B) está errada:** A construção concessiva não recompõe a sequência original, e `porque` introduz causa, não conclusão.
+- **C) está correta:** `Entretanto` preserva a oposição de `contudo`, e `logo` mantém a conclusão introduzida por `portanto`.
+- **D) está errada:** A coordenação com `e` enfraquece o contraste, enquanto `se` cria condição inexistente no texto.
+- **Conceito cobrado:** Coesão sequencial, equivalência de conectores e preservação de inferência.
+- **Pegadinha usada:** Substituir conectores por palavras gramaticais possíveis, mas semanticamente incompatíveis com a relação entre as orações.
+- **Como pensar para acertar:** Nomeie a relação em cada fronteira do texto e só então procure dois conectores que preservem ambas.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; tópicos de Língua Portuguesa da Semana 1.
 
 #### Comentário Extra Dia 3.19
 
-- **Alternativa correta:** B.
-- **A) está errada:** É abertura genérica, sem tese clara.
-- **B) está correta:** Boa tese apresenta posição clara e defensável.
-- **C) está errada:** Metalinguagem e ausência de posição argumentativa.
-- **D) está errada:** Tese absoluta e pouco defensável.
-- **Conceito cobrado:** Discursiva: tese.
-- **Pegadinha usada:** Começar com frase genérica sem ponto de vista.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** Subordinar segurança e acessibilidade a ajuste posterior cria uma tese unilateral que não enfrenta os riscos exigidos pelo comando.
+- **B) está errada:** Um canal presencial, isoladamente, não mede desempenho nem garante segurança ou inclusão no serviço digital.
+- **C) está errada:** Atribuir os resultados exclusivamente ao treinamento ignora desenho do serviço, infraestrutura, governança e condições de acesso.
+- **D) está correta:** A tese apresenta ganho possível, condições verificáveis e resposta ao risco de exclusão, oferecendo eixos claros para argumentação.
+- **Conceito cobrado:** Formulação de tese, relação causal condicionada e projeto argumentativo.
+- **Pegadinha usada:** Escolher uma frase categórica ou temática que menciona o assunto, mas não articula ganhos, riscos e critérios de avaliação.
+- **Como pensar para acertar:** Verifique se a tese responde ao recorte, admite condições e antecipa argumentos que possam ser desenvolvidos e comprovados.
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; tópicos de Língua Portuguesa da Semana 1.
 
 #### Comentário Extra Dia 3.20
 
-- **Alternativa correta:** D.
-- **A) está errada:** O adjetivo deve concordar com 'planilhas'.
-- **B) está errada:** 'Anexo' deve ir ao feminino plural.
-- **C) está errada:** O verbo também deve concordar com o sujeito plural.
-- **D) está correta:** 'Anexas' concorda com 'planilhas' e 'seguem' concorda com sujeito plural.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** Verbo e adjetivos concordam corretamente com `planilhas`, `pareceres` e `servidores`.
+- **B) está errada:** Os adjetivos estão ajustados, mas `segue` não concorda com o sujeito plural `as planilhas`.
+- **C) está errada:** O verbo concorda, porém `anexo` e `incluso` não concordam com os substantivos plurais.
+- **D) está errada:** O verbo deve concordar com `planilhas`, `incluso` com `pareceres` e `quite` com `servidores`.
 - **Conceito cobrado:** Concordância nominal e verbal.
-- **Pegadinha usada:** Tratar 'anexo' como invariável em qualquer caso.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Pegadinha usada:** Corrigir apenas o verbo e ignorar a flexão dos adjetivos predicativos ou anexos.
+- **Como pensar para acertar:** Localize o referente de cada forma variável e confira gênero e número um a um.
 
 ---
+- **Referência à apostila de estudo:** Dia 3 — Revisão fixa do Dia 3; tópicos de Língua Portuguesa da Semana 1.
 
 # Dia 4 — Legislação CRA-PR/CFA
 
@@ -4843,1581 +5002,1742 @@ Extra Dia 3.20: D
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
 
-Uma empresa no Paraná divulga serviços típicos de Administração sem regularidade perante o CRA competente. Em tese, a situação se relaciona principalmente com:
+Uma sociedade empresária sediada no Paraná passa a oferecer, de modo habitual, serviços técnicos enquadrados no campo da Administração, mas sustenta que o CNPJ ativo torna desnecessária qualquer providência perante o conselho profissional. À luz da legislação estudada, a conclusão correta é:
 
-A) competência exclusiva do Poder Judiciário para criar registro profissional administrativo.
-B) dispensa automática de registro por possuir CNPJ ativo.
-C) matéria apenas tributária municipal, sem relação com conselho profissional.
-D) registro e fiscalização pelo CRA-PR, conforme legislação profissional e regulamentos do Sistema CFA/CRAs.
+A) somente os sócios pessoas físicas podem estar sujeitos ao Sistema CFA/CRAs, nunca a pessoa jurídica.
+B) a natureza das atividades pode sujeitar a empresa ao registro e à fiscalização do CRA-PR, no âmbito de sua jurisdição.
+C) cabe ao CFA realizar diretamente todo registro e toda fiscalização local, pois os CRAs exercem apenas função consultiva.
+D) o CNPJ e a indicação informal de um profissional registrado tornam desnecessária a análise da atividade básica da empresa.
 
 ### Questão 2
+**Nível: Médio**
 
-Um profissional usa o número de registro de outro para assinar documento técnico. À luz do estudo do Código de Ética, a conduta:
+Um profissional permite que terceiro utilize seu número de registro para assinar documento técnico que ele não elaborou nem supervisionou. Segundo o Código de Ética estudado, essa conduta:
 
-A) é irrelevante porque registro é apenas dado cadastral sem efeito profissional.
-B) é sempre resolvida apenas por correção ortográfica do documento.
-C) é incompatível com a ética profissional e pode envolver uso indevido de nome ou registro.
-D) é regular se o documento for entregue em meio eletrônico.
+A) pode configurar uso indevido do nome ou do registro e é incompatível com a responsabilidade profissional.
+B) gera apenas necessidade de atualização cadastral, sem repercussão ética.
+C) torna-se regular se houver consentimento escrito entre os envolvidos.
+D) é admitida quando o documento eletrônico também contém a assinatura do verdadeiro autor.
 
 ### Questão 3
+**Nível: Médio**
 
-O CRA-PR identifica pessoa física exercendo atividade privativa da área de Administração sem registro. A atuação mais compatível com sua finalidade institucional é:
+O CRA-PR identifica pessoa física exercendo atividade sujeita ao registro profissional, em município paranaense, sem a regularidade exigida. A providência institucional mais compatível com suas atribuições é:
 
-A) ignorar a situação por não envolver anuidade paga.
-B) fiscalizar a regularidade do exercício profissional em sua jurisdição.
-C) editar lei federal para punir criminalmente o interessado.
-D) substituir automaticamente a atuação de todos os demais órgãos públicos.
+A) fiscalizar a regularidade do exercício profissional dentro de sua jurisdição.
+B) aguardar provocação formal do CFA, pois o CRA não pode iniciar fiscalização regional.
+C) remeter obrigatoriamente o caso ao CFA, que detém competência exclusiva para toda atuação local.
+D) limitar-se à cobrança de anuidades, porque a verificação do exercício profissional não integra suas funções.
 
 ### Questão 4
+**Nível: Médio**
 
-Assinale a alternativa correta sobre a relação entre CFA e CRA.
+Assinale a alternativa que distingue corretamente as funções do CFA e dos CRAs no sistema profissional.
 
-A) O CFA exerce função normativa/orientadora em âmbito federal do sistema, enquanto o CRA atua regionalmente.
-B) O CRA-PR pode alterar sozinho normas nacionais para todos os CRAs.
-C) O CFA é subordinado administrativamente ao CRA-PR.
-D) Cada município paranaense possui um CFA próprio.
+A) O CFA executa ordinariamente a fiscalização em cada município, e os CRAs apenas emitem pareceres consultivos.
+B) Cada CRA pode afastar norma nacional do CFA sempre que entender mais adequada uma disciplina local.
+C) O CFA exerce função normativa e orientadora em âmbito nacional, enquanto o CRA atua no registro e na fiscalização em sua região.
+D) CFA e CRA possuem a mesma competência territorial, variando apenas a denominação do órgão.
 
 ### Questão 5
+**Nível: Médio**
 
-A RN CFA nº 651/2024 aparece no estudo porque:
+No conjunto normativo indicado para o CRA-PR, a RN CFA nº 651/2024 tem por objeto:
 
-A) é o Código de Ética vigente indicado no edital.
-B) aprova o Regulamento das Eleições do Sistema CFA/CRAs.
-C) institui o Programa Especial de Recuperação de Créditos.
-D) aprova o Regimento Interno do CRA-PR.
+A) aprovar o Regimento Interno do CRA-PR.
+B) aprovar o Regulamento das Eleições do Sistema CFA/CRAs.
+C) instituir o Programa Especial de Recuperação de Créditos dos Conselhos Regionais.
+D) aprovar o Regulamento de Registro de pessoas físicas e jurídicas do Sistema CFA/CRAs.
 
 ### Questão 6
+**Nível: Médio**
 
-Segundo o edital vigente usado no material, o Código de Ética e Disciplina deve ser estudado com base na:
+De acordo com a consolidação normativa utilizada no edital, o Código de Ética e Disciplina dos Profissionais de Administração está aprovado pela:
 
-A) Lei nº 14.133/2021.
-B) RN CFA nº 649/2024 apenas.
-C) RN CFA nº 671/2025.
-D) RN CFA nº 651/2024.
+A) RN CFA nº 640/2024, que permaneceu vigente sem revogação posterior.
+B) RN CFA nº 649/2024, dedicada ao registro profissional.
+C) RN CFA nº 651/2024, que aprovou o Regimento Interno do CRA-PR.
+D) RN CFA nº 671/2025.
 
 ### Questão 7
+**Nível: Médio**
 
-Um administrador toma conhecimento de informação sensível de cliente em razão de atividade profissional lícita. A conduta esperada, segundo a lógica do Código de Ética, é:
+Um profissional conhece informação confidencial de cliente em razão de trabalho regularmente executado. Segundo o Código de Ética, ele deve:
 
-A) omitir a informação de fiscalização legítima em qualquer hipótese.
-B) guardar sigilo, salvo justa causa ou hipótese legal/profissional cabível.
-C) divulgar a informação sempre que isso gere vantagem comercial.
-D) publicar a informação em relatório aberto sem avaliar necessidade.
+A) manter silêncio absoluto até mesmo diante de dever legal específico ou requisição legítima.
+B) preservar o sigilo, ressalvadas a justa causa e as hipóteses legais ou profissionais cabíveis.
+C) tratar o sigilo como facultativo quando não conseguir identificar prejuízo econômico imediato.
+D) compartilhar a informação com parceiros comerciais sempre que eles também estiverem sujeitos a dever genérico de confidencialidade.
 
 ### Questão 8
+**Nível: Médio**
 
-Uma pessoa jurídica registrada no CRA dificulta deliberadamente uma fiscalização regular. O caso se relaciona mais diretamente com:
+Durante fiscalização regular, uma pessoa jurídica registrada oculta documentos pertinentes e cria obstáculos deliberados ao trabalho do CRA. À luz do material, essa conduta:
 
-A) deveres perante a fiscalização e possível infração ética/administrativa.
-B) direito irrestrito de impedir qualquer atuação do conselho.
-C) mero erro de concordância sem relevância institucional.
-D) competência exclusiva do setor de informática do órgão.
+A) é apenas irregularidade procedimental sem relevância quando o registro da empresa está ativo.
+B) decorre do direito de defesa, que autoriza recusa geral e imotivada a qualquer solicitação fiscalizatória.
+C) não pode ser examinada pelo Código de Ética, pois suas disposições alcançam exclusivamente pessoas físicas.
+D) pode caracterizar obstrução à fiscalização e gerar repercussão ética ou administrativa.
 
 ### Questão 9
+**Nível: Médio**
 
-A Lei Federal nº 4.769/1965 é base de estudo porque:
+A Lei Federal nº 4.769/1965 ocupa posição central no estudo porque:
 
-A) define comandos SQL para bancos relacionais.
-B) aprova o Regimento Interno do CRA-PR de 2024.
-C) regulamenta exclusivamente a Lei de Licitações.
-D) dispõe sobre o exercício da profissão de Administrador e fundamenta o Sistema CFA/CRAs.
+A) disciplina exclusivamente anuidades, taxas e execução de créditos dos conselhos.
+B) aprova diretamente o atual Regimento Interno do CRA-PR.
+C) dispõe sobre o exercício da profissão de Administrador e fornece base legal ao Sistema CFA/CRAs.
+D) institui apenas regras éticas, sem tratar da organização profissional.
 
 ### Questão 10
+**Nível: Médio**
 
-O Decreto Federal nº 61.934/1967 deve ser lido em conjunto com a Lei nº 4.769/1965 porque:
+Quanto à relação entre a Lei nº 4.769/1965 e o Decreto nº 61.934/1967, assinale a alternativa correta.
 
-A) cria nova Constituição para os CRAs.
-B) trata de Unicode e representação de dados.
-C) regulamenta a lei profissional.
-D) revoga integralmente a lei que regulamenta.
+A) O decreto pode afastar comandos da lei quando trouxer solução administrativa posterior.
+B) O decreto regulamenta a lei profissional, devendo permanecer dentro dos limites legais.
+C) O decreto constitui regimento autônomo do CRA-PR e não se relaciona ao exercício profissional.
+D) O decreto cuida apenas das eleições do Sistema CFA/CRAs.
 
 ### Questão 11
+**Nível: Médio**
 
-Assinale a alternativa correta sobre o CRA-PR conforme estudado.
+Conforme o Regimento Interno estudado, o CRA-PR é:
 
-A) É órgão municipal subordinado à prefeitura de Curitiba.
-B) É autarquia de direito público, com jurisdição no Estado do Paraná.
-C) É sindicato privado de adesão facultativa sem função fiscalizatória.
-D) Tem jurisdição nacional sobre todos os administradores do país.
+A) autarquia federal de atuação nacional, subordinada hierarquicamente ao CFA em todos os seus atos administrativos.
+B) autarquia dotada de personalidade jurídica de direito público, autonomia técnica, administrativa e financeira e jurisdição no Estado do Paraná.
+C) empresa pública estadual encarregada de executar políticas de emprego para administradores.
+D) associação privada de filiação facultativa, sem poder de fiscalização profissional.
 
 ### Questão 12
+**Nível: Médio**
 
-Um caso envolve orientação normativa geral para todos os Conselhos Regionais de Administração. A competência aponta, em regra, para:
+A edição de orientação normativa geral destinada a todos os Conselhos Regionais de Administração situa-se, em regra, na esfera do:
 
-A) CFA.
-B) CRA-PR isoladamente.
-C) qualquer pessoa jurídica registrada.
-D) setor de protocolo de uma prefeitura.
+A) coletivo de pessoas físicas e jurídicas registradas, por votação direta.
+B) Plenário do CRA-PR, por ser órgão deliberativo superior em toda a federação.
+C) conjunto dos CRAs, independentemente de deliberação ou norma nacional do CFA.
+D) CFA, por sua função normativa e orientadora nacional.
 
 ### Questão 13
+**Nível: Médio**
 
-A RN CFA nº 649/2024 e a RN CFA nº 670/2025 devem ser estudadas em conjunto porque:
+Por que a RN CFA nº 649/2024 e a RN CFA nº 670/2025 devem ser lidas em conjunto?
 
-A) ambas aprovam o Código de Ética de 2025.
-B) ambas tratam exclusivamente de eleição do sistema.
-C) ambas revogam a Lei 4.769/1965.
-D) a primeira aprova o Regulamento de Registro e a segunda o altera.
+A) A primeira aprova o Regulamento de Registro e a segunda o altera.
+B) A primeira aprova o regulamento eleitoral e a segunda altera o processo de votação.
+C) Ambas substituem integralmente a Lei nº 4.769/1965 no tema do exercício profissional.
+D) A primeira aprova o Código de Ética e a segunda disciplina suas sanções.
 
 ### Questão 14
+**Nível: Médio**
 
-A RN CFA nº 589/2020 está ligada ao estudo de:
-
-A) regimento interno específico do CRA-PR.
-B) eleições do Sistema CFA/CRAs.
-C) fiscalização do Sistema CFA/CRAs.
-D) código de ética aprovado em 2025.
-
-### Questão 15
-
-A RN CFA nº 626/2023, conforme ementa oficial, relaciona-se ao:
+No mapa de normas do edital, a RN CFA nº 589/2020 está associada ao tema:
 
 A) Regimento Interno do CRA-PR.
-B) Programa Especial de Recuperação de Créditos (PERC).
-C) Regulamento de Registro do Sistema CFA/CRAs.
+B) eleições no Sistema CFA/CRAs.
+C) fiscalização no Sistema CFA/CRAs.
+D) Código de Ética aprovado em 2025.
+
+### Questão 15
+**Nível: Médio**
+
+Conforme a ementa oficial consolidada no material, a RN CFA nº 626/2023 relaciona-se ao:
+
+A) funcionamento interno do CRA-PR.
+B) Regulamento de Registro do Sistema CFA/CRAs.
+C) Programa Especial de Recuperação de Créditos — PERC.
 D) Código de Ética e Disciplina.
 
 ### Questão 16
+**Nível: Médio**
 
-A RN CFA nº 546/2018 foi confirmada como norma que trata de:
+A RN CFA nº 546/2018 foi incluída no edital por tratar da:
 
-A) concessão de isenção de débitos pelos CRAs.
-B) regulamento eleitoral do Sistema CFA/CRAs.
-C) Código de Ética de 2025.
-D) normalização de banco de dados.
+A) aprovação do Código de Ética e Disciplina.
+B) recuperação especial de créditos por meio do PERC.
+C) alteração do Regulamento de Registro do Sistema CFA/CRAs.
+D) isenção de débitos concedida pelos Conselhos Regionais de Administração.
 
 ### Questão 17
+**Nível: Médio**
 
-A Lei nº 12.514/2011 pode aparecer na prova porque:
+A Lei nº 12.514/2011 integra o estudo do sistema de conselhos profissionais principalmente porque disciplina:
 
-A) define as atribuições da ULA em processadores.
-B) é o Código de Ética dos Profissionais de Administração.
-C) aprova o Regimento Interno do CRA-PR.
-D) trata de contribuições devidas aos conselhos profissionais.
+A) contribuições devidas aos conselhos profissionais e aspectos de sua cobrança.
+B) campos privativos de atuação previstos para o Administrador.
+C) a estrutura interna específica do CRA-PR.
+D) deveres éticos e hipóteses de sigilo dos Profissionais de Administração.
 
 ### Questão 18
+**Nível: Médio**
 
-Em um processo ético, uma sanção deve ser analisada:
+Ao analisar a consequência de uma infração ética, o candidato deve considerar:
 
-A) sem qualquer norma, apenas por opinião do fiscal.
-B) exclusivamente pelo setor de TI, independentemente do fato.
-C) conforme a norma aplicável, a gravidade da conduta e as especificidades de pessoa física ou jurídica.
-D) sempre como cancelamento automático do registro, sem gradação.
+A) que todas as sanções são aplicáveis de forma idêntica a pessoas físicas e jurídicas.
+B) que a penalidade máxima decorre automaticamente da simples comprovação material da conduta.
+C) a norma aplicável, a gravidade do caso e as especificidades previstas para pessoa física ou jurídica.
+D) que apenas decisão judicial criminal pode impor qualquer sanção no âmbito profissional.
 
 ### Questão 19
+**Nível: Médio**
 
-Um profissional assina relatório técnico sem ter orientado, supervisionado ou participado do trabalho. A pegadinha provável em prova é tratar isso como:
+Um profissional assina relatório técnico elaborado por terceiro, embora não tenha orientado, supervisionado nem participado do trabalho. À luz do Código de Ética, a melhor conclusão é:
 
-A) tema de fiscalização e ética profissional.
-B) conduta regular por mera autorização verbal informal, o que é inadequado.
-C) situação que pode envolver infração ética.
-D) uso de registro com responsabilidade profissional.
+A) a assinatura é regular se o autor material do relatório tiver dado autorização escrita.
+B) o ato torna-se regular quando a pessoa jurídica contratante possui registro ativo no CRA.
+C) a irregularidade somente existe se for demonstrado prejuízo econômico ao cliente.
+D) a conduta pode configurar infração ética: a assinatura técnica exige participação efetiva.
 
 ### Questão 20
+**Nível: Médio**
 
-Assinale a alternativa incorreta sobre sigilo profissional.
+Assinale a alternativa incorreta a respeito do sigilo profissional.
 
-A) O sigilo protege informações conhecidas em razão da atividade profissional.
-B) O sigilo deve ser interpretado com atenção a hipóteses legais e justa causa.
-C) O dever de sigilo pode conviver com obrigações legais de fiscalização.
-D) O sigilo autoriza divulgar informações sensíveis sempre que houver interesse comercial.
+A) O dever alcança informações conhecidas em razão da atividade profissional.
+B) A expectativa de vantagem comercial, por si só, autoriza a divulgação de informação confidencial.
+C) O sigilo pode conviver com obrigações legais e com atuação fiscalizatória legítima.
+D) A justa causa e as hipóteses legais precisam ser consideradas na análise do dever de sigilo.
 
 ### Questão 21
+**Nível: Difícil**
 
-Um candidato confunde RN 651/2024 com RN 671/2025. A associação correta é:
+Assinale a associação correta entre norma e objeto no conjunto estudado.
 
-A) RN 651/2024: Código de Ética; RN 671/2025: Regimento do CRA-PR.
-B) Ambas tratam apenas de licitação pública.
-C) Ambas tratam apenas de banco de dados relacional.
-D) RN 651/2024: Regimento do CRA-PR; RN 671/2025: Código de Ética.
+A) RN CFA nº 651/2024 — Código de Ética; RN CFA nº 671/2025 — Regimento Interno do CRA-PR.
+B) RN CFA nº 649/2024 — eleições; RN CFA nº 680/2025 — registro profissional.
+C) RN CFA nº 626/2023 — fiscalização; RN CFA nº 589/2020 — recuperação de créditos.
+D) RN CFA nº 651/2024 — Regimento Interno do CRA-PR; RN CFA nº 671/2025 — Código de Ética e Disciplina.
 
 ### Questão 22
+**Nível: Difícil**
 
-Em caso de pessoa jurídica atuando em áreas de Administração, o registro no CRA é relevante porque:
+Uma empresa presta de forma habitual serviços enquadrados no campo da Administração. Quanto à regularidade perante o Sistema CFA/CRAs, é correto afirmar que:
 
-A) CNPJ substitui qualquer registro profissional.
-B) somente pessoa física pode ser fiscalizada em qualquer hipótese.
-C) a fiscalização profissional também pode alcançar pessoas jurídicas conforme a legislação e regulamentos aplicáveis.
-D) pessoa jurídica nunca é mencionada no Código de Ética atual.
+A) a pessoa jurídica somente se sujeita a registro se todos os seus sócios forem Administradores.
+B) a indicação de responsável técnico registrado sempre substitui o eventual registro da pessoa jurídica.
+C) a existência de CNPJ e contrato social impede a incidência de regras profissionais sobre a empresa.
+D) a atividade pode sujeitar a pessoa jurídica a registro e fiscalização, além de exigir responsabilidade técnica.
 
 ### Questão 23
+**Nível: Difícil**
 
-A expressão “jurisdição do CRA-PR” no contexto do Regimento deve ser entendida como:
+Segundo o Regimento Interno aprovado pela RN CFA nº 651/2024, o CRA-PR possui sede na capital e jurisdição:
 
-A) abrangência mundial de qualquer empresa paranaense.
-B) âmbito territorial de atuação do Conselho Regional no Paraná.
-C) competência para julgar crimes federais.
-D) espaço de memória virtual do sistema.
+A) restrita ao município de Curitiba, com delegação eventual aos demais municípios.
+B) em todo o Estado do Paraná.
+C) sobre os três estados da Região Sul.
+D) nacional, embora a fiscalização ordinária se concentre no Paraná.
 
 ### Questão 24
+**Nível: Difícil**
 
-Um cidadão reclama que o CRA-PR não poderia fiscalizar porque “somente sindicatos representam profissões”. A resposta correta é:
+Um candidato confunde conselho profissional com sindicato. A correção conceitual adequada é:
 
-A) conselho profissional e sindicato têm naturezas diferentes; o CRA fiscaliza exercício profissional por base legal.
-B) o cidadão está correto, pois CRA é sindicato privado.
-C) o CRA só pode fiscalizar se houver filiação sindical.
-D) o CFA é uma empresa municipal de representação coletiva.
+A) o conselho exerce função pública de registro e fiscalização profissional; o sindicato representa interesses da categoria, possuindo natureza e finalidade distintas.
+B) o conselho representa interesses trabalhistas coletivos, enquanto o sindicato aplica sanções éticas e mantém o registro profissional.
+C) ambos são autarquias e diferem apenas pela abrangência territorial.
+D) o sindicato é unidade descentralizada do conselho e executa obrigatoriamente suas resoluções.
 
 ### Questão 25
+**Nível: Difícil**
 
-A RN CFA nº 680/2025, confirmada em fonte oficial, trata de:
+A norma do edital associada ao Regulamento das Eleições do Sistema CFA/CRAs é a:
 
-A) Regulamento de Registro do Sistema CFA/CRAs.
-B) Código de Ética e Disciplina.
-C) Regimento Interno do CRA-PR.
-D) Regulamento das Eleições do Sistema CFA/CRAs.
+A) RN CFA nº 546/2018.
+B) RN CFA nº 589/2020.
+C) RN CFA nº 680/2025.
+D) RN CFA nº 651/2024.
 
 ### Questão 26
+**Nível: Difícil**
 
-Assinale a alternativa correta sobre o estudo de normas adicionais do edital.
+Ao estudar uma resolução cuja íntegra não foi consolidada na apostila, mas cuja ementa oficial foi confirmada, a postura tecnicamente mais segura é:
 
-A) Questão autoral pode ser tratada como real se tiver estilo parecido.
-B) Norma citada no edital pode ser ignorada por ter leitura difícil.
-C) Quando a fonte oficial confirma apenas ementa/objeto, é prudente não criar cobrança de artigo, prazo ou sanção específica sem texto consolidado.
-D) É seguro inventar prazo provável se a norma parecer semelhante a outra.
+A) completar prazos e requisitos por analogia com outro conselho profissional.
+B) presumir que toda resolução do CFA contém o mesmo procedimento e as mesmas sanções.
+C) substituir a norma pela lei federal mais próxima, ainda que tratem de objetos diferentes.
+D) restringir a conclusão ao objeto confirmado e consultar a fonte oficial antes de afirmar prazos ou penalidades.
 
 ### Questão 27
+**Nível: Difícil**
 
-Um fiscal do CRA solicita documentos para verificar regularidade de atuação. A empresa responde com agressões pessoais e se recusa sem fundamento. O caso pode envolver:
+Durante uma diligência, o fiscalizado dirige ofensas pessoais à equipe e recusa, sem justificativa, acesso a documentos pertinentes. No plano ético-profissional, o caso pode envolver:
 
-A) competência do SGBD para impor penalidade.
-B) violação de deveres de urbanidade e cooperação com fiscalização, conforme normas aplicáveis.
-C) exercício regular e irrestrito de impedir qualquer fiscalização.
-D) matéria exclusivamente de acentuação gráfica.
+A) imunidade decorrente do direito de defesa, que abrange ofensas e obstrução deliberada.
+B) apenas inadimplemento contratual privado, porque a fiscalização não integra a atividade dos CRAs.
+C) violação de urbanidade e possível obstrução à fiscalização, sem prejuízo do devido processo para apuração.
+D) nulidade automática da diligência, independentemente da regularidade da solicitação feita.
 
 ### Questão 28
+**Nível: Difícil**
 
-Se uma norma do CFA “altera o Regulamento de Registro”, a forma correta de estudá-la é:
+Uma resolução posterior altera dispositivos do Regulamento de Registro aprovado por resolução anterior. Para identificar a disciplina vigente, deve-se:
 
-A) ler a norma alteradora junto com o regulamento alterado.
-B) ler apenas o número da norma e ignorar seu objeto.
-C) substituir todas as normas do edital por ela.
-D) usar apenas resumo informal sem fonte.
+A) ignorar a alteração enquanto a resolução original não for formalmente republicada pela União.
+B) consultar apenas a resolução alteradora, pois ela necessariamente reproduz todo o regulamento.
+C) ler o texto anterior em conjunto com as alterações posteriores, observando o alcance expresso de cada modificação.
+D) considerar revogado todo o regulamento anterior, mesmo quando a norma posterior altera apenas dispositivos determinados.
 
 ### Questão 29
+**Nível: Difícil**
 
-O Plenário do CRA-PR, conforme a lógica regimental estudada, é melhor compreendido como:
+Na estrutura do CRA-PR descrita no Regimento Interno, o órgão deliberativo superior é:
 
-A) aplicativo de protocolo eletrônico.
-B) modalidade de licitação para bens comuns.
-C) setor privado sem vínculo com a autarquia.
-D) órgão colegiado de deliberação superior.
+A) o Plenário.
+B) a Ouvidoria, por receber manifestações externas e revisar todas as decisões do conselho.
+C) a representação institucional, que substitui os órgãos colegiados nas matérias normativas.
+D) a Diretoria Executiva, responsável também pela deliberação plenária em caráter permanente.
 
 ### Questão 30
+**Nível: Difícil**
 
-A Diretoria Executiva, em comparação com o Plenário, tende a estar mais ligada:
+No desenho regimental do CRA-PR, a Diretoria Executiva está mais diretamente ligada:
 
-A) à substituição do Código de Ética por ato informal.
-B) ao julgamento de comandos SQL.
-C) à execução administrativa e condução das atividades institucionais.
-D) à edição de leis federais autônomas.
+A) à execução e à administração das deliberações e atividades do Conselho.
+B) ao controle externo de manifestações atribuído à Ouvidoria.
+C) à função deliberativa superior reservada ao Plenário.
+D) à edição de normas nacionais vinculantes para todos os CRAs.
 
 ### Questão 31
+**Nível: Difícil**
 
-Um profissional alega que, por ser servidor público, não precisa observar preceitos éticos da profissão ao atuar na área de Administração. A afirmação é:
+Servidor público regularmente inscrito no CRA exerce, em seu cargo, atividade própria do campo profissional. Quanto ao Código de Ética:
 
-A) irrelevante porque ética profissional só vale para estudantes.
-B) problemática, pois o exercício profissional pode atrair deveres éticos independentemente do vínculo.
-C) correta em qualquer hipótese, pois servidor público nunca responde perante conselho.
-D) correta apenas se o ato ocorrer em horário comercial.
+A) ele se aplica apenas ao exercício liberal e nunca alcança atividade funcional.
+B) o estatuto funcional elimina automaticamente toda responsabilidade perante o sistema profissional.
+C) os deveres éticos profissionais continuam pertinentes quando a atuação se insere no campo da profissão.
+D) a incidência depende exclusivamente de remuneração privada adicional.
 
 ### Questão 32
+**Nível: Difícil**
 
-Em questão sobre competência do CFA para orientar e disciplinar o exercício profissional, a base normativa geral citada pelas RNs costuma remeter a:
+Para compreender conjuntamente a base legal e a regulamentação do exercício profissional, o par normativo central é:
 
-A) Lei nº 4.769/1965 e Decreto nº 61.934/1967.
-B) Código de Trânsito Brasileiro apenas.
-C) Manual de SQL ANSI.
-D) Regimento de uma prefeitura municipal, exclusivamente.
+A) RN CFA nº 589/2020 e RN CFA nº 671/2025.
+B) Lei nº 12.514/2011 e RN CFA nº 626/2023.
+C) RN CFA nº 651/2024 e RN CFA nº 680/2025.
+D) Lei nº 4.769/1965 e Decreto nº 61.934/1967.
 
 ### Questão 33
+**Nível: Difícil**
 
-Assinale a incorreta sobre o Código de Ética estudado.
+Assinale a alternativa incorreta à luz dos deveres éticos estudados.
 
-A) Pode alcançar pessoas jurídicas, observadas especificidades.
-B) Inclui temas como sigilo, zelo e independência técnica.
-C) Autoriza abdicar da independência técnica sempre que houver pressão do contratante.
-D) Trata de deveres e responsabilidades no exercício das atividades de Administração.
+A) O Código de Ética alcança pessoas físicas e jurídicas, observadas as especificidades aplicáveis.
+B) O dever de sigilo admite análise de justa causa e de hipóteses legais.
+C) A independência técnica pode ser abandonada sempre que o cliente registrar a ordem por escrito.
+D) A atualização cadastral e o aperfeiçoamento profissional integram deveres relevantes.
 
 ### Questão 34
+**Nível: Difícil**
 
-Uma entidade deseja saber por que deve manter cadastro atualizado junto ao CRA. A justificativa mais ligada ao estudo é:
+A obrigação de manter endereço e dados cadastrais atualizados perante o Conselho contribui para:
 
-A) cadastro é irrelevante após o primeiro registro.
-B) cadastro serve apenas para estética do documento.
-C) regularidade cadastral permite comunicação, fiscalização e controle profissional adequados.
-D) cadastro atualizado substitui qualquer dever ético.
+A) substituir a renovação de registro por simples comunicação informal.
+B) viabilizar comunicações, fiscalização e controle regular do vínculo profissional.
+C) transferir ao CFA toda comunicação destinada ao profissional inscrito no CRA.
+D) sanar automaticamente qualquer infração anterior praticada pelo inscrito.
 
 ### Questão 35
+**Nível: Difícil**
 
-Em caso de conflito entre interesse comercial do profissional e dever de proteção do cliente/sociedade, o Código de Ética tende a privilegiar:
+Um cliente exige que o profissional omita dado tecnicamente relevante para melhorar a aparência de um parecer. A resposta compatível com o Código de Ética é:
 
-A) uso de registro por terceiros para ampliar mercado.
-B) conduta responsável, honesta, técnica e compatível com a função social da profissão.
-C) vantagem econômica imediata em qualquer hipótese.
-D) sigilo apenas quando for conveniente ao profissional.
+A) atender, pois a defesa do cliente prevalece sobre qualquer limite técnico.
+B) preservar honestidade, responsabilidade e independência técnica, recusando a omissão indevida.
+C) atender se houver cláusula contratual de confidencialidade sobre o parecer.
+D) transferir a assinatura a outro profissional, mantendo a mesma omissão.
 
 ### Questão 36
+**Nível: Difícil**
 
-Um enunciado diz que a RN CFA nº 649/2024 “aprova o regulamento de registro do sistema CFA/CRAs”. Essa afirmação está:
+A RN CFA nº 649/2024 é corretamente identificada, no material, como a norma que:
 
-A) correta, conforme ementa oficial.
-B) errada, pois a RN 649 trata de eleição.
-C) errada, pois a RN 649 é o Código de Ética.
-D) errada, pois a RN 649 aprova o Regimento do CRA-PR.
+A) aprova o Regulamento das Eleições do Sistema CFA/CRAs.
+B) institui o Programa Especial de Recuperação de Créditos dos CRAs.
+C) aprova o Regimento Interno específico do CRA-PR.
+D) aprova o Regulamento de Registro de pessoas físicas e jurídicas no Sistema CFA/CRAs.
 
 ### Questão 37
+**Nível: Difícil**
 
-Um enunciado afirma que a RN CFA nº 670/2025 revoga a Lei nº 4.769/1965. A afirmação é:
+A respeito da RN CFA nº 670/2025 e da hierarquia normativa, assinale a alternativa correta.
 
-A) correta, pois toda resolução posterior revoga lei anterior.
-B) correta apenas se o CRA-PR concordar em sessão interna.
-C) ponto de SQL, sem relação com legislação.
-D) incorreta, pois a RN 670 altera regulamento de registro aprovado por RN, não revoga lei federal.
+A) A resolução promove alterações no regulamento aprovado por outra resolução, sem poder revogar lei federal.
+B) A resolução substitui o Decreto nº 61.934/1967 em toda matéria profissional.
+C) A resolução altera automaticamente qualquer lei federal que mencione registro profissional.
+D) A resolução pode revogar a Lei nº 4.769/1965 porque é mais recente.
 
 ### Questão 38
+**Nível: Difícil**
 
-Na leitura dirigida das normas do edital, qual associação está correta?
+Assinale a sequência que associa corretamente as três resoluções aos respectivos temas: RN CFA nº 589/2020; RN CFA nº 626/2023; RN CFA nº 680/2025.
 
-A) RN 589/2020: SQL; RN 626/2023: SO; RN 680/2025: RLM.
-B) RN 589/2020: Regimento CRA-PR; RN 626/2023: Regimento CRA-PR; RN 680/2025: Regimento CRA-PR.
-C) RN 589/2020: fiscalização; RN 626/2023: PERC; RN 680/2025: eleições.
-D) RN 589/2020: eleições; RN 626/2023: Código de Ética; RN 680/2025: registro.
+A) registro; ética; regimento interno.
+B) fiscalização; PERC; eleições.
+C) eleições; fiscalização; registro.
+D) PERC; isenção de débitos; ética.
 
 ### Questão 39
+**Nível: Difícil**
 
-Assinale a alternativa que melhor representa uma questão realista sobre competência do CRA-PR.
+Uma denúncia relata exercício irregular da profissão em cidade do interior do Paraná. Em regra, a apuração fiscalizatória regional insere-se na competência do:
 
-A) Julgar definitivamente ação judicial sobre dano moral.
-B) Fiscalizar, em sua jurisdição, o exercício de atividades abrangidas pela legislação profissional.
-C) Criar crime federal novo para toda profissão regulamentada.
-D) Revogar unilateralmente a RN do CFA em todo o Brasil.
+A) CRA-PR, por exercer registro e fiscalização em sua jurisdição.
+B) CFA, porque somente o órgão nacional pode verificar exercício irregular.
+C) Plenário do CFA, como instância inicial obrigatória de toda fiscalização municipal.
+D) Poder Executivo estadual, pois o CRA não possui função fiscalizatória própria.
 
 ### Questão 40
+**Nível: Difícil**
 
-Um profissional registrado presta serviço em área de Administração e recusa aperfeiçoamento mínimo mesmo diante de mudanças normativas relevantes. O tema se relaciona ao dever de:
+O dever de aperfeiçoamento profissional deve ser compreendido como:
 
-A) aperfeiçoamento profissional e atuação responsável.
-B) usar registro de terceiro quando não souber o tema.
-C) omitir-se sempre que houver novidade normativa.
-D) transferir toda responsabilidade ao cliente.
+A) obrigação exclusiva do empregador, sem participação do inscrito.
+B) compromisso do profissional com atualização e qualidade responsável de sua atuação.
+C) faculdade sem relação com zelo, competência ou responsabilidade técnica.
+D) dever que pode ser integralmente delegado ao responsável administrativo da pessoa jurídica.
 
 ### Questão 41
+**Nível: Muito difícil**
 
-A defesa dos interesses de quem recebe os serviços profissionais deve ser compreendida:
+Um cliente pede ao profissional que omita de parecer uma limitação metodológica relevante, alegando que a informação prejudicaria a negociação. A omissão tornaria a conclusão mais favorável, mas tecnicamente incompleta. À luz dos deveres profissionais, a conduta adequada é:
 
-A) como autorização para fraudar fiscalização se beneficiar o cliente.
-B) como dispensa de sigilo e independência técnica.
-C) como substituição do Código de Ética por contrato privado.
-D) dentro dos limites da lei, da técnica e da ética profissional.
+A) omitir a limitação, porque a defesa do interesse econômico confiado prevalece enquanto não houver ordem judicial em contrário.
+B) registrar a limitação apenas em arquivo interno e entregar ao destinatário o parecer incompleto solicitado pelo cliente.
+C) recusar a distorção, explicitar a limitação relevante e defender apenas interesses legítimos, preservando independência técnica e limites éticos e legais.
+D) encerrar automaticamente o contrato sem esclarecer o problema, pois qualquer divergência técnica impede a continuidade da relação profissional.
 
 ### Questão 42
+**Nível: Muito difícil**
 
-Em uma questão sobre penalidades, se o enunciado não traz artigo específico e o material não confirmou prazo ou gradação detalhada, a postura correta é:
+O enunciado descreve uma infração, mas não informa artigo, circunstâncias agravantes nem elementos suficientes para individualizar a sanção. A resposta mais rigorosa é:
 
-A) ignorar a existência de sanções éticas.
-B) assumir que toda infração tem a mesma consequência.
-C) responder apenas com base em conceitos gerais confirmados e evitar inventar detalhe.
-D) escolher a maior penalidade sempre.
+A) reconhecer a possível infração, mas não inventar penalidade específica sem consultar a norma e os elementos do caso.
+B) aplicar automaticamente a sanção mais grave para evitar impunidade.
+C) importar a penalidade prevista em norma de outro conselho profissional.
+D) concluir que nenhuma responsabilização é possível enquanto não houver condenação judicial.
 
 ### Questão 43
+**Nível: Muito difícil**
 
-Uma pessoa jurídica registrada afirma que o Código de Ética só alcança pessoas físicas. Segundo a RN 671/2025 estudada, a afirmação é:
+Quanto à aplicação do Código de Ética às pessoas jurídicas registradas, assinale a alternativa correta.
 
-A) irrelevante, pois Código de Ética não consta do edital.
-B) incorreta, pois o Código também contempla pessoas jurídicas, observadas especificidades.
-C) correta, pois pessoa jurídica nunca exerce atividade em Administração.
-D) correta apenas se a empresa tiver contrato privado.
+A) Todas as sanções previstas para pessoa física incidem de modo idêntico sobre a pessoa jurídica.
+B) A incidência do Código sobre pessoa jurídica depende de adesão voluntária no ato de registro.
+C) A pessoa jurídica somente se submete ao Código quando todos os sócios possuem registro profissional.
+D) O Código alcança a pessoa jurídica, mas suspensão e cancelamento não se aplicam a ela.
 
 ### Questão 44
+**Nível: Muito difícil**
 
-Assinale a incorreta sobre fontes oficiais usadas no estudo.
+Durante a preparação, o candidato encontra duas versões de uma resolução em materiais não oficiais e uma questão sem indicação de prova, embora redigida no estilo da banca. Qual procedimento compromete a rastreabilidade e deve ser rejeitado?
 
-A) O edital vigente deve orientar a seleção das normas a estudar.
-B) Textos oficiais do CFA e do Planalto são fontes adequadas para legislação.
-C) Provas anteriores ajudam a entender estilo, sem transformar questão autoral em real.
-D) Uma questão criada no material pode ser chamada de real se parecer com a Consulplan.
+A) confrontar número, ementa, vigência e eventuais alterações no repositório oficial antes de consolidar o conteúdo.
+B) usar o edital para delimitar o objeto e consultar o texto oficial completo quando a ementa não resolver a dúvida.
+C) classificar como autoral uma questão apenas inspirada no estilo da banca e indicar separadamente a fonte normativa utilizada.
+D) atribuir origem oficial pela semelhança de estilo e escolher como vigente a versão mais recente do material, sem validar metadados oficiais.
 
 ### Questão 45
+**Nível: Muito difícil**
 
-A finalidade social dos conselhos profissionais se relaciona principalmente com:
+Ao planejar a fiscalização, a gestão compara dois casos: uma atividade potencialmente lesiva exercida sem habilitação e uma falha cadastral formal de baixo risco. Propõe-se priorizar apenas ações com maior arrecadação. Qual diretriz compatibiliza finalidade institucional, risco social e limites de atuação?
 
-A) garantir mercado sem qualquer controle ético.
-B) substituir todos os órgãos de controle do Estado.
-C) impedir qualquer atuação de profissionais registrados.
-D) fiscalizar o exercício profissional para proteger a sociedade e a qualidade dos serviços.
+A) concentrar toda a fiscalização nos inscritos, pois a proteção econômica da categoria é a finalidade exclusiva do sistema.
+B) priorizar o risco social, atuar dentro da competência e observar o devido processo, usando orientação, registro e fiscalização sem tratar arrecadação como fim.
+C) assumir competência sobre qualquer atividade econômica relacionada ao caso, ainda que atribuída por lei a outro órgão público.
+D) selecionar primeiro as infrações de maior retorno financeiro, pois a arrecadação substitui a análise de risco e de interesse público.
 
 ### Questão 46
+**Nível: Muito difícil**
 
-Se uma empresa explora atividade de Administração e mantém profissional habilitado apenas formalmente, sem atuação real, a banca pode explorar:
+Uma empresa indica formalmente responsável técnico, mas ele apenas empresta o nome e não orienta nem supervisiona os serviços. A análise correta é:
 
-A) tema exclusivo de pontuação e crase.
-B) inexistência de qualquer competência do CRA.
-C) responsabilidade técnica fictícia e uso indevido de registro/nome.
-D) regularidade automática pela simples existência de nome no papel.
+A) a situação pode caracterizar responsabilidade fictícia, empréstimo de nome ou registro e ausência de atuação técnica real.
+B) a irregularidade é exclusivamente contratual e não se relaciona ao uso do registro profissional.
+C) a indicação documental basta para demonstrar responsabilidade efetiva, independentemente da atuação concreta.
+D) o registro ativo da empresa elimina qualquer dever individual do responsável indicado.
 
 ### Questão 47
+**Nível: Muito difícil**
 
-Um fiscal regional aplica entendimento nacional uniformizado pelo CFA. Essa situação é compatível com:
+Uma instrução operacional do CRA-PR passa a adotar critério incompatível com norma nacional válida do CFA sobre a mesma matéria. Ao identificar o conflito, qual solução respeita a distribuição de competências do Sistema CFA/CRAs?
 
-A) competência municipal para registro profissional.
-B) a relação entre orientação normativa federal do CFA e execução regional pelos CRAs.
-C) subordinação do CFA a cada fiscal regional.
-D) ausência de qualquer norma nacional no sistema.
+A) manter o critério regional, porque a jurisdição estadual autoriza afastar unilateralmente toda orientação normativa nacional.
+B) rever o ato regional e alinhar a execução fiscalizatória à norma nacional, tratando eventual discordância pelos canais institucionais competentes.
+C) considerar a norma nacional automaticamente revogada pela instrução regional posterior, ainda que editada por órgão diverso.
+D) transferir à Diretoria Executiva do CRA-PR o poder de alterar a regra nacional para todos os Conselhos Regionais.
 
 ### Questão 48
+**Nível: Muito difícil**
 
-Em prova, uma alternativa diz: “O CRA-PR tem sede na capital do Paraná e jurisdição em todo o Estado”. Com base no Regimento estudado, a frase está:
+O CRA-PR mantém sua sede em Curitiba, instala atendimento descentralizado em Londrina e realiza fiscalização em Cascavel. Qual consequência institucional decorre corretamente da distinção entre sede, unidade de atendimento e jurisdição?
 
-A) correta.
-B) errada, porque a jurisdição é nacional.
-C) errada, porque o CRA-PR é órgão municipal.
-D) errada, porque conselho profissional não possui jurisdição administrativa.
+A) a unidade de Londrina passa a exercer jurisdição própria e independente sobre os municípios próximos.
+B) a atuação em Cascavel depende da criação prévia de um Conselho municipal com personalidade jurídica autônoma.
+C) a sede permanece na capital e a jurisdição alcança todo o Paraná; unidades descentralizadas não se tornam novos Conselhos autônomos.
+D) a instalação de atendimento fora da capital converte a jurisdição estadual do CRA-PR em competência nacional compartilhada.
 
 ### Questão 49
+**Nível: Muito difícil**
 
-A conduta de facilitar o exercício profissional a terceiro não habilitado deve ser vista como:
+Um inscrito orienta pessoa sem habilitação a exercer atividade profissional sujeita ao sistema, ainda que não obtenha lucro e não se prove dano concreto. À luz do Código de Ética:
 
-A) dever ético de solidariedade irrestrita.
-B) ato sem qualquer relevância para o CRA.
-C) apenas problema de formatação de relatório.
-D) potencial infração ética/profissional, conforme o Código e normas aplicáveis.
+A) a ausência de lucro exclui necessariamente a relevância ética da colaboração.
+B) a conduta somente pode ser examinada depois de condenação penal da pessoa auxiliada.
+C) auxiliar pessoa não habilitada a exercer a profissão pode configurar infração, mesmo sem lucro ou dano.
+D) o registro regular do inscrito autoriza que ele transfira informalmente sua habilitação.
 
 ### Questão 50
+**Nível: Muito difícil**
 
-Assinale a correta sobre a leitura da Lei 4.769/1965 e do Decreto 61.934/1967.
+A Lei nº 4.769/1965 estabelece determinado requisito profissional; o Decreto nº 61.934/1967 disciplina sua execução, e uma resolução administrativa recebe interpretação que dispensaria o requisito legal. Qual método resolve adequadamente esse conflito aparente?
 
-A) A lei é irrelevante porque há resoluções normativas.
-B) Ambos tratam exclusivamente de informática básica.
-C) A lei estabelece base legal e o decreto detalha sua regulamentação.
-D) O decreto elimina a necessidade de ler a lei.
+A) aplicar a resolução por ser mais específica e recente, ainda que a interpretação afaste diretamente o requisito previsto em lei.
+B) interpretar decreto e resolução dentro dos limites da lei, rejeitando leitura regulamentar que crie contradição ou dispense requisito legal.
+C) aplicar sempre o decreto posterior, porque a cronologia basta para que regulamento modifique a lei regulamentada.
+D) escolher livremente a norma mais favorável ao interessado, pois atos do sistema profissional possuem a mesma hierarquia da lei.
 
 ## Questões extras de revisão fixa do Dia 4
 
 #### Extra Dia 4.1
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — licitações
 
-Sobre concorrência, concurso e leilão, assinale a alternativa correta.
+Na Lei nº 14.133/2021, a modalidade destinada à escolha de trabalho técnico, científico ou artístico, com julgamento por melhor técnica ou conteúdo artístico e concessão de prêmio ou remuneração ao vencedor, é:
 
-A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Concurso seleciona trabalho técnico, científico ou artístico; leilão se associa à alienação de bens.
+A) o pregão, empregado também para a alienação de bens imóveis.
+B) o leilão, utilizado para selecionar projetos técnicos mediante prêmio.
+C) o concurso.
+D) a concorrência, necessariamente adotada sempre que houver trabalho artístico.
 
 #### Extra Dia 4.2
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — responsabilidade civil
 
-Sobre responsabilidade civil do Estado por ato comissivo, assinale a alternativa correta.
+Para examinar a responsabilidade civil objetiva do Estado por atuação de agente público, o roteiro básico deve verificar:
 
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Em regra, exige conduta estatal, dano e nexo causal, admitidas excludentes que rompam o nexo.
-C) Publicidade impede qualquer sigilo em documentos públicos.
-D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+A) conduta estatal, dano e nexo causal, além de eventual causa excludente ou atenuante.
+B) apenas o dano, pois a conduta e o nexo são presumidos de modo absoluto.
+C) dolo do agente, culpa da vítima e condenação penal prévia.
+D) culpa administrativa comprovada e inexistência de qualquer excludente.
 
 #### Extra Dia 4.3
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — omissão estatal
 
-Em caso de omissão estatal, qual cuidado a prova costuma exigir?
+Em hipótese de omissão estatal, a análise juridicamente adequada exige:
 
-A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) Verificar dever jurídico de agir, falha do serviço, dano e nexo causal no caso concreto.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+A) reconhecer responsabilidade automática sempre que houver dano em espaço público.
+B) afastar previamente qualquer responsabilidade, pois omissão nunca gera dever de indenizar.
+C) considerar suficiente a existência do dano, sem investigar possibilidade ou dever de atuação.
+D) verificar o dever concreto de agir, a falha estatal, o dano e o nexo causal segundo o caso.
 
 #### Extra Dia 4.4
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — responsabilidade civil
 
-Se a vítima concorre para o dano, qual efeito isso pode ter na responsabilidade civil do Estado?
+Se a conduta da vítima concorre para a produção do dano, essa circunstância:
 
-A) Pode atuar como atenuante ou reduzir a indenização, conforme o caso.
-B) Pregão é modalidade voltada à alienação de bens públicos.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+A) é irrelevante no regime objetivo e jamais altera a reparação.
+B) sempre rompe integralmente o nexo causal e exclui a responsabilidade estatal.
+C) pode reduzir a indenização, conforme a contribuição causal demonstrada.
+D) transfere automaticamente toda responsabilidade ao agente público.
 
 #### Extra Dia 4.5
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — nexo causal
 
-Uma enchente inevitável e imprevisível causa dano sem relação com falha administrativa. Em responsabilidade civil, o ponto central é:
+Caso fortuito ou força maior, na responsabilidade civil do Estado:
 
-A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) Possível excludente por caso fortuito ou força maior, se rompido o nexo causal.
+A) pode excluir a responsabilidade quando efetivamente romper o nexo causal.
+B) gera responsabilidade automática sempre que o fato ocorrer em bem público.
+C) atua apenas para reduzir o valor, sem possibilidade de romper o nexo causal.
+D) jamais interfere no dever de indenizar, porque a responsabilidade é objetiva.
 
 #### Extra Dia 4.6
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — poder de polícia
 
-Sobre poder de polícia administrativa, assinale a alternativa correta.
+O poder de polícia administrativa permite à Administração:
 
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Consiste em limitar ou condicionar direitos em benefício do interesse público, nos termos da lei.
-C) Responsabilidade civil do Estado dispensa dano e nexo causal.
-D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+A) restringir direitos sem base legal sempre que invocar conveniência coletiva.
+B) condicionar ou limitar direitos e atividades, nos termos da lei, em favor do interesse público.
+C) aplicar exclusivamente sanções penais, substituindo a atuação do Poder Judiciário.
+D) intervir apenas mediante ordem judicial prévia, ainda que a lei atribua competência administrativa.
 
 #### Extra Dia 4.7
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — princípios
 
-Quanto ao princípio da moralidade, assinale a alternativa correta.
+O princípio da moralidade administrativa exige atuação:
 
-A) Autarquia integra a Administração Direta porque executa serviço público.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) Exige atuação ética, proba e compatível com padrões de honestidade administrativa.
-D) Pregão é modalidade voltada à alienação de bens públicos.
+A) apenas formalmente conforme a lei, ainda que desleal ou desonesta.
+B) conforme a convicção moral pessoal do agente, independentemente de padrões institucionais.
+C) orientada exclusivamente pela eficiência, ainda que outros princípios sejam sacrificados.
+D) ética, leal e proba, para além da simples aparência de legalidade.
 
 #### Extra Dia 4.8
+**Nível: Médio**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — ato administrativo
 
-Sobre motivação do ato administrativo, assinale a alternativa correta.
+Em relação aos elementos do ato administrativo, a motivação corresponde:
 
-A) Motivação explicita razões de fato e de direito que justificam o ato quando exigida.
-B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+A) ao acontecimento material que produz o efeito do ato, confundindo-se com seu resultado.
+B) à exposição dos pressupostos de fato e de direito que sustentam a decisão.
+C) à competência legal atribuída ao agente que pratica o ato.
+D) a uma formalidade dispensável em todo ato discricionário.
 
 #### Extra Dia 4.9
+**Nível: Difícil**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — princípios
 
-Em contratação pública, selecionar proposta por favorecimento viola especialmente:
+Uma autoridade direciona fiscalização para prejudicar desafeto pessoal, embora tente apresentar justificativa formal. A conduta viola mais diretamente:
 
-A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Publicidade impede qualquer sigilo em documentos públicos.
-D) Impessoalidade, moralidade e isonomia.
+A) apenas a publicidade, porque o vício desaparece se a motivação for divulgada.
+B) somente a eficiência, pois o resultado fiscalizatório pode ser financeiramente útil.
+C) a legalidade, mas não a impessoalidade, já que a autoridade possui competência para fiscalizar.
+D) a impessoalidade e a moralidade, além de poder revelar desvio da finalidade pública.
 
 #### Extra Dia 4.10
+**Nível: Difícil**
 
-**Área:** Administração Pública.
+**Área:** Administração Pública — licitações
 
-Sobre fases do procedimento licitatório, assinale a alternativa correta.
+Em visão geral do processo licitatório da Lei nº 14.133/2021, a sequência lógica adequada é:
 
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) A Administração deve planejar, divulgar, receber propostas, julgar, habilitar quando cabível e encerrar conforme a lei.
-C) Pregão é modalidade voltada à alienação de bens públicos.
-D) Autarquia integra a Administração Direta porque executa serviço público.
+A) julgamento, fase preparatória, habilitação, divulgação do edital, propostas, fase recursal e homologação.
+B) contratação, julgamento, habilitação, fase recursal, planejamento, divulgação do edital e homologação.
+C) fase preparatória, edital, propostas ou lances, julgamento, habilitação, recursos e homologação.
+D) divulgação do edital, contratação imediata, apresentação de propostas, julgamento, habilitação e planejamento posterior à execução.
 
 #### Extra Dia 4.11
+**Nível: Difícil**
 
-**Área:** Língua Portuguesa/interpretação.
+**Área:** Língua Portuguesa — oração relativa
 
-Leia: "A equipe revisou os acessos que estavam vencidos." A oração "que estavam vencidos" restringe:
+Na frase “Os fiscais bloquearam os acessos que estavam vencidos”, sem vírgulas, a oração “que estavam vencidos” indica que:
 
-A) a equipe responsável pela revisão.
-B) todos os servidores do órgão.
-C) os acessos revisados.
-D) o ato de revisar, e não o objeto revisado.
+A) todos os acessos estavam vencidos e, por isso, todos foram bloqueados.
+B) a informação é apenas explicativa e não restringe o antecedente.
+C) o pronome relativo retoma “fiscais”, e não “acessos”.
+D) foram bloqueados especificamente os acessos que estavam vencidos.
 
 #### Extra Dia 4.12
+**Nível: Difícil**
 
-**Área:** Língua Portuguesa/interpretação.
+**Área:** Língua Portuguesa — crase
 
-Assinale a alternativa em que não há crase.
+Assinale a alternativa em que o acento indicativo de crase está empregado incorretamente.
 
-A) O usuário começou a preencher o formulário.
-B) O memorando foi enviado à chefia.
-C) A reunião ocorrerá às 14 horas.
-D) A servidora referiu-se à norma vigente.
+A) O fiscal referiu-se àquela irregularidade.
+B) A equipe começou à revisar os autos pela manhã.
+C) O processo foi encaminhado à chefia competente.
+D) A reunião terá início às 14 horas.
 
 #### Extra Dia 4.13
+**Nível: Difícil**
 
-**Área:** Língua Portuguesa/interpretação.
+**Área:** Língua Portuguesa — conectivos
 
-Assinale a reescrita que mantém o sentido de: 'Ainda que o sistema falhe, o protocolo deve ser registrado.'
+Qual reescrita preserva a relação concessiva de “Ainda que o prazo seja curto, a equipe concluirá a análise”?
 
-A) Como o sistema falha, o protocolo deve ser registrado.
-B) Se o sistema falhar, o protocolo será sempre cancelado.
-C) O protocolo deve ser registrado para que o sistema falhe.
-D) Mesmo que o sistema falhe, o protocolo deve ser registrado.
+A) Porque o prazo é curto, a equipe concluirá a análise.
+B) Mesmo que o prazo seja curto, a equipe concluirá a análise.
+C) Para que o prazo seja curto, a equipe concluirá a análise.
+D) Logo que o prazo seja curto, a equipe concluirá a análise.
 
 #### Extra Dia 4.14
+**Nível: Difícil**
 
-**Área:** Língua Portuguesa/interpretação.
+**Área:** Língua Portuguesa — redação oficial
 
-Assinale a alternativa com linguagem mais adequada a documento administrativo.
+Assinale a redação mais adequada à comunicação administrativa formal.
 
-A) Manda logo esse processo para quem resolve.
-B) Solicita-se o encaminhamento dos autos ao setor competente.
-C) Eu acho que seria legal vocês mandarem isso.
-D) Tipo assim, passa o arquivo para o pessoal ver.
+A) Solicita-se o envio do relatório até 18 de julho de 2026, para instrução do processo.
+B) A gente precisa que vocês deem uma olhada nisso rapidinho.
+C) Venho, por meio desta, humildemente, pedir o grande favor de talvez encaminhar o relatório.
+D) Penso que seria bacana mandar logo o documento, porque o setor está meio atrasado.
 
 #### Extra Dia 4.15
+**Nível: Difícil**
 
-**Área:** Língua Portuguesa/interpretação.
+**Área:** Língua Portuguesa — valor semântico
 
-Leia: "A medida foi adotada para reduzir atrasos no atendimento." A expressão "para reduzir" indica:
+Na frase “O CRA notificou a empresa para que regularizasse o registro”, a locução “para que” introduz ideia de:
 
-A) causa já ocorrida.
+A) finalidade.
 B) concessão.
-C) finalidade.
-D) oposição.
+C) causa.
+D) consequência inevitável.
 
 #### Extra Dia 4.16
+**Nível: Difícil**
 
-**Área:** Raciocínio Lógico-Matemático.
+**Área:** Raciocínio Lógico — proporcionalidade
 
-Em um setor, 80 processos foram analisados em 5 dias por 4 servidores, com produtividade constante. Quantos processos 6 servidores analisariam em 5 dias?
+Uma equipe analisa 72 processos em 6 dias, mantendo ritmo constante. No mesmo ritmo, quantos processos analisará em 10 dias?
 
-A) 120 processos.
-B) 96 processos.
-C) 100 processos.
-D) 160 processos.
+A) 126.
+B) 108.
+C) 120.
+D) 144.
 
 #### Extra Dia 4.17
+**Nível: Muito difícil**
 
-**Área:** Raciocínio Lógico-Matemático.
+**Área:** Raciocínio Lógico — conjuntos
 
-Em uma turma, 32 estudam Legislação, 24 estudam Português e 10 estudam ambas. Quantos estudam pelo menos uma dessas matérias?
+Em um grupo de 100 candidatos, 58 estudam Legislação, 50 estudam Português e 42 estudam Informática. Estudam Legislação e Português 28; Legislação e Informática 24; Português e Informática 20; e as três disciplinas, 12. As interseções aos pares incluem quem estuda as três. Quantos não estudam nenhuma delas?
 
-A) 56.
-B) 42.
-C) 66.
-D) 46.
+A) 2.
+B) 8.
+C) 10.
+D) 22.
 
 #### Extra Dia 4.18
+**Nível: Muito difícil**
 
-**Área:** Raciocínio Lógico-Matemático.
+**Área:** Raciocínio Lógico — negação de proposições
 
-A negação da proposição 'Todo fiscal conferiu o relatório' é:
+A negação lógica de “Todo fiscal conferiu o relatório e algum analista validou o parecer” é:
 
-A) Nenhum fiscal conferiu o relatório.
-B) Algum fiscal não conferiu o relatório.
-C) Todo fiscal não conferiu o relatório.
-D) Algum fiscal conferiu o relatório.
+A) Nenhum fiscal conferiu o relatório e algum analista não validou o parecer.
+B) Algum fiscal não conferiu o relatório ou nenhum analista validou o parecer.
+C) Todo fiscal não conferiu o relatório ou algum analista não validou o parecer.
+D) Algum fiscal conferiu o relatório e todo analista deixou de validar o parecer.
 
 #### Extra Dia 4.19
+**Nível: Muito difícil**
 
-**Área:** Raciocínio Lógico-Matemático.
+**Área:** Raciocínio Lógico — progressão aritmética
 
-Uma sequência tem primeiro termo 7 e razão 3. Qual é o 8º termo dessa PA?
+Um plano prevê analisar 12 processos na primeira semana e aumentar a meta em 4 processos a cada semana, durante 10 semanas. Ao final, constatou-se que 20% do total planejado correspondiam a registros duplicados e foram excluídos. Quantos processos válidos permaneceram no plano?
 
-A) 24.
-B) 31.
-C) 28.
-D) 56.
+A) 240.
+B) 300.
+C) 220.
+D) 264.
 
 #### Extra Dia 4.20
+**Nível: Muito difícil**
 
-**Área:** Raciocínio Lógico-Matemático.
+**Área:** Raciocínio Lógico — probabilidade
 
-Uma senha é escolhida ao acaso entre 10 opções igualmente prováveis, das quais 3 estão bloqueadas. Qual é a probabilidade de escolher uma senha não bloqueada?
+De 10 acessos, 3 estão bloqueados e 7 liberados. Três acessos distintos são escolhidos ao acaso, sem reposição. Qual é a probabilidade de a amostra conter exatamente dois acessos liberados e um bloqueado?
 
-A) 7/10.
-B) 3/10.
-C) 1/7.
-D) 7/3.
-
+A) 7/15.
+B) 7/24.
+C) 3/8.
+D) 21/40.
 
 ## Gabarito do Dia 4
 
-1. D
-2. C
-3. B
-4. A
-5. D
-6. C
+1. B
+2. A
+3. A
+4. C
+5. A
+6. D
 7. B
-8. A
-9. D
-10. C
+8. D
+9. C
+10. B
 11. B
-12. A
-13. D
+12. D
+13. A
 14. C
-15. B
-16. A
-17. D
+15. C
+16. D
+17. A
 18. C
-19. B
-20. D
+19. D
+20. B
 21. D
-22. C
+22. D
 23. B
 24. A
-25. D
-26. C
-27. B
-28. A
-29. D
-30. C
-31. B
-32. A
+25. C
+26. D
+27. C
+28. C
+29. A
+30. A
+31. C
+32. D
 33. C
-34. C
+34. B
 35. B
-36. A
-37. D
-38. C
-39. B
-40. A
-41. D
-42. C
-43. B
+36. D
+37. A
+38. B
+39. A
+40. B
+41. C
+42. A
+43. D
 44. D
-45. D
-46. C
+45. B
+46. A
 47. B
-48. A
-49. D
-50. C
+48. C
+49. C
+50. B
 
 ### Gabarito das questões extras de revisão fixa do Dia 4
 
-Extra Dia 4.1: D
-Extra Dia 4.2: B
-Extra Dia 4.3: C
-Extra Dia 4.4: A
-Extra Dia 4.5: D
+Extra Dia 4.1: C
+Extra Dia 4.2: A
+Extra Dia 4.3: D
+Extra Dia 4.4: C
+Extra Dia 4.5: A
 Extra Dia 4.6: B
-Extra Dia 4.7: C
-Extra Dia 4.8: A
+Extra Dia 4.7: D
+Extra Dia 4.8: B
 Extra Dia 4.9: D
-Extra Dia 4.10: B
-Extra Dia 4.11: C
-Extra Dia 4.12: A
-Extra Dia 4.13: D
-Extra Dia 4.14: B
-Extra Dia 4.15: C
-Extra Dia 4.16: A
-Extra Dia 4.17: D
+Extra Dia 4.10: C
+Extra Dia 4.11: D
+Extra Dia 4.12: B
+Extra Dia 4.13: B
+Extra Dia 4.14: A
+Extra Dia 4.15: A
+Extra Dia 4.16: C
+Extra Dia 4.17: C
 Extra Dia 4.18: B
-Extra Dia 4.19: C
-Extra Dia 4.20: A
+Extra Dia 4.19: A
+Extra Dia 4.20: D
 
 
 ## Comentários do Dia 4
 
 ### Comentário da Questão 1
 
-- **Alternativa correta:** D.
-- **A) está errada:** O Judiciário não é o órgão de registro/fiscalização profissional.
-- **B) está errada:** CNPJ não substitui regularidade profissional perante conselho quando exigida.
-- **C) está errada:** Pode haver tributos, mas o caso descreve fiscalização profissional.
-- **D) está correta:** Pessoas jurídicas que atuam em áreas abrangidas podem estar sujeitas a registro/fiscalização.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** A sujeição da pessoa jurídica não depende de todos os sócios serem profissionais; considera-se a atividade exercida.
+- **B) está correta:** A atividade básica situada no campo profissional pode sujeitar a empresa ao registro e à fiscalização do CRA-PR.
+- **C) está errada:** O CFA orienta e normatiza nacionalmente; a atuação ordinária de registro e fiscalização regional cabe ao CRA.
+- **D) está errada:** CNPJ e indicação informal de profissional não substituem a verificação das exigências de registro e responsabilidade técnica.
 - **Conceito cobrado:** Registro e fiscalização de pessoa jurídica.
-- **Pegadinha usada:** Confundir CNPJ com registro profissional..
-- **Como pensar para acertar:** Pergunte se a atividade exercida está no campo fiscalizado pelo Sistema CFA/CRA.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Pegadinha usada:** Tratar CNPJ ou indicação informal de responsável como substitutos da regularidade profissional.
+- **Como pensar para acertar:** Identifique a atividade efetivamente oferecida e, depois, o conselho regional competente.
+- **Referência à apostila de estudo:** Dia 4 — “Registro, fiscalização e exercício irregular”.
 
 ### Comentário da Questão 2
 
-- **Alternativa correta:** C.
-- **A) está errada:** Registro identifica habilitação e responsabilidade profissional.
-- **B) está errada:** O problema é ético/profissional, não textual.
-- **C) está correta:** O Código busca coibir uso indevido de registro e responsabilização técnica fictícia.
-- **D) está errada:** O meio de entrega não legitima uso indevido de registro.
-- **Conceito cobrado:** Código de Ética: uso indevido de registro.
-- **Pegadinha usada:** Tratar registro profissional como formalidade sem consequência..
-- **Como pensar para acertar:** Assinatura e registro indicam responsabilidade técnica.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** Permitir uso do próprio registro sem elaboração ou supervisão pode configurar empréstimo de nome ou registro.
+- **B) está errada:** Não se trata de simples dado cadastral: o número de registro vincula identidade e responsabilidade profissional.
+- **C) está errada:** O consentimento não transforma empréstimo de registro em atuação técnica efetiva.
+- **D) está errada:** A dupla assinatura ou o suporte eletrônico não supre a ausência de participação e responsabilidade do inscrito.
+- **Conceito cobrado:** Uso indevido do nome ou registro profissional.
+- **Pegadinha usada:** Confundir autorização formal ou assinatura eletrônica com atuação técnica real.
+- **Como pensar para acertar:** Pergunte quem elaborou, orientou ou supervisionou o trabalho cuja responsabilidade está sendo assumida.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 3
 
-- **Alternativa correta:** B.
-- **A) está errada:** Fiscalização não se limita a quem já paga anuidade.
-- **B) está correta:** CRAs atuam regionalmente em registro e fiscalização.
-- **C) está errada:** CRA não edita lei federal.
-- **D) está errada:** Conselho tem competência específica, não universal.
-- **Conceito cobrado:** Competência fiscalizatória do CRA.
-- **Pegadinha usada:** Confundir competência administrativa com legislativa..
-- **Como pensar para acertar:** Conselho regional fiscaliza o exercício profissional no território.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A fiscalização regional da regularidade do exercício profissional integra a finalidade do CRA-PR.
+- **B) está errada:** O CRA pode agir no âmbito de sua competência fiscalizatória sem depender de provocação prévia do CFA.
+- **C) está errada:** A função nacional do CFA não elimina a competência executiva e fiscalizatória do conselho regional.
+- **D) está errada:** O CRA não se limita à cobrança: registro e fiscalização são funções centrais do sistema.
+- **Conceito cobrado:** Competência fiscalizatória regional.
+- **Pegadinha usada:** Reduzir o CRA a arrecadador ou deslocar toda atuação local para o CFA.
+- **Como pensar para acertar:** Associe CFA a orientação nacional e CRA a registro e fiscalização em sua jurisdição.
+- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
 
 ### Comentário da Questão 4
 
-- **Alternativa correta:** A.
-- **A) está correta:** Essa é a lógica de sistema federal-regional de conselhos.
-- **B) está errada:** Normas nacionais cabem ao CFA, não a um regional isolado.
-- **C) está errada:** O CFA ocupa plano federal do sistema; não é subordinado ao regional.
-- **D) está errada:** O CFA é federal; os regionais são CRAs.
-- **Conceito cobrado:** Competência CFA x CRA.
-- **Pegadinha usada:** Trocar plano federal por regional..
-- **Como pensar para acertar:** Localize se a ação é normativa nacional ou execução/fiscalização local.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A fiscalização local é função típica dos CRAs; o CFA não a executa ordinariamente em cada município.
+- **B) está errada:** Norma regional não pode afastar unilateralmente disciplina nacional válida do sistema.
+- **C) está correta:** A alternativa apresenta corretamente a distribuição geral: orientação normativa nacional pelo CFA e execução regional pelo CRA.
+- **D) está errada:** As competências se articulam, mas as abrangências territoriais não são idênticas.
+- **Conceito cobrado:** Distribuição de competências no Sistema CFA/CRAs.
+- **Pegadinha usada:** Inverter o papel nacional do CFA e o papel regional dos CRAs.
+- **Como pensar para acertar:** Use a dupla ‘normatização nacional / execução regional’ como eixo de comparação.
+- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
 
 ### Comentário da Questão 5
 
-- **Alternativa correta:** D.
-- **A) está errada:** O Código de Ética indicado é a RN CFA nº 671/2025.
-- **B) está errada:** Esse objeto se relaciona à RN CFA nº 680/2025.
-- **C) está errada:** Esse tema se relaciona à RN CFA nº 626/2023.
-- **D) está correta:** A norma é fonte de aprovação/organização do Regimento do CRA-PR.
-- **Conceito cobrado:** RN CFA 651/2024 e Regimento.
-- **Pegadinha usada:** Trocar o número e objeto das resoluções..
-- **Como pensar para acertar:** Associe 651 ao Regimento do CRA-PR.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
+- **B) está errada:** O regulamento eleitoral indicado é o aprovado pela RN CFA nº 680/2025.
+- **C) está errada:** O PERC está associado à RN CFA nº 626/2023.
+- **D) está errada:** O Regulamento de Registro está associado à RN CFA nº 649/2024.
+- **Conceito cobrado:** Objeto da RN CFA nº 651/2024.
+- **Pegadinha usada:** Trocar os objetos de resoluções próximas no mapa do edital.
+- **Como pensar para acertar:** Monte pares fixos entre número, ano e objeto de cada resolução.
+- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
 
 ### Comentário da Questão 6
 
-- **Alternativa correta:** C.
-- **A) está errada:** Essa lei trata de licitações e contratos administrativos.
-- **B) está errada:** A RN 649/2024 trata do regulamento de registro.
-- **C) está correta:** O edital conforme Retificação I indica a RN 671/2025, e fonte oficial aponta revogação da RN 640/2024.
-- **D) está errada:** A RN 651/2024 aprova o Regimento do CRA-PR, não o Código de Ética.
-- **Conceito cobrado:** RN CFA 671/2025.
-- **Pegadinha usada:** Usar norma revogada ou norma de objeto diferente..
-- **Como pensar para acertar:** Siga o edital vigente e confirme a ementa da norma.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** A RN CFA nº 640/2024 foi sucedida e revogada na consolidação indicada no material.
+- **B) está errada:** A RN CFA nº 649/2024 trata do Regulamento de Registro, não do Código de Ética.
+- **C) está errada:** A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
+- **D) está correta:** A RN CFA nº 671/2025 aprova o Código de Ética e Disciplina vigente considerado no edital.
+- **Conceito cobrado:** Norma vigente do Código de Ética.
+- **Pegadinha usada:** Escolher norma anterior ou resolução de objeto diferente apenas pela proximidade numérica.
+- **Como pensar para acertar:** Diferencie a norma vigente de eventual resolução anterior mencionada no histórico.
+- **Referência à apostila de estudo:** Dia 4 — “4. Código de Ética — RN CFA nº 671/2025”.
 
 ### Comentário da Questão 7
 
 - **Alternativa correta:** B.
-- **A) está errada:** Sigilo não é escudo absoluto contra dever legal/fiscalizatório.
-- **B) está correta:** Sigilo profissional é dever, mas não deve ser lido de forma absoluta contra a lei.
-- **C) está errada:** Vantagem comercial não justifica violar sigilo.
-- **D) está errada:** Tratamento de informação deve respeitar sigilo e finalidade.
-- **Conceito cobrado:** Sigilo profissional.
-- **Pegadinha usada:** Tratar sigilo como inexistente ou absoluto..
-- **Como pensar para acertar:** Busque equilíbrio: sigilo é regra ética, mas há hipóteses legais e justa causa.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Médio.
+- **A) está errada:** O sigilo não é absoluto diante de justa causa ou obrigação legal legitimamente configurada.
+- **B) está correta:** A regra é preservar a informação, com exame das exceções justificadas previstas no ordenamento.
+- **C) está errada:** A inexistência aparente de dano econômico não torna a confidencialidade facultativa.
+- **D) está errada:** Dever genérico de confidencialidade de terceiros não autoriza compartilhamento sem necessidade e fundamento.
+- **Conceito cobrado:** Dever de sigilo e suas exceções.
+- **Pegadinha usada:** Oscilar entre sigilo absoluto e divulgação livre por conveniência.
+- **Como pensar para acertar:** Comece pela preservação do sigilo e só depois verifique justa causa ou hipótese legal concreta.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 8
 
-- **Alternativa correta:** A.
-- **A) está correta:** Obstar fiscalização é conduta relevante no sistema de controle profissional.
-- **B) está errada:** Fiscalização regular é finalidade institucional do CRA.
-- **C) está errada:** O caso é de conduta perante fiscalização.
-- **D) está errada:** Não é problema técnico de TI.
-- **Conceito cobrado:** Fiscalização do CRA e ética.
-- **Pegadinha usada:** Transformar infração em direito do fiscalizado..
-- **Como pensar para acertar:** Se há fiscalização regular, dificultar o ato é ponto sensível.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Registro ativo não neutraliza deveres de colaboração nem sana comportamento obstrutivo.
+- **B) está errada:** O direito de defesa não equivale a autorização para recusa geral e imotivada a diligência regular.
+- **C) está errada:** O Código alcança pessoas físicas e jurídicas, observadas as especificidades aplicáveis.
+- **D) está correta:** Ocultar documentos pertinentes e criar obstáculos deliberados pode caracterizar obstrução à fiscalização.
+- **Conceito cobrado:** Obstrução à fiscalização por pessoa jurídica.
+- **Pegadinha usada:** Usar direito de defesa ou registro ativo como imunidade contra fiscalização regular.
+- **Como pensar para acertar:** Separe contestação fundamentada de comportamento destinado a impedir a atividade fiscalizatória.
+- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
 
 ### Comentário da Questão 9
 
-- **Alternativa correta:** D.
-- **A) está errada:** SQL é tema de TI, não dessa lei.
-- **B) está errada:** O Regimento do CRA-PR é aprovado por RN específica do CFA.
-- **C) está errada:** A lei trata da profissão de Administrador.
-- **D) está correta:** É a lei estruturante da profissão e do sistema de conselhos.
-- **Conceito cobrado:** Lei 4.769/1965.
-- **Pegadinha usada:** Misturar lei profissional com outras áreas..
-- **Como pensar para acertar:** Identifique a lei base da profissão e dos conselhos.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Contribuições e cobrança dos conselhos são tema central da Lei nº 12.514/2011, não objeto exclusivo da Lei nº 4.769/1965.
+- **B) está errada:** O Regimento Interno atual do CRA-PR foi aprovado pela RN CFA nº 651/2024.
+- **C) está correta:** A Lei nº 4.769/1965 é a base legal do exercício profissional de Administração e da organização CFA/CRAs.
+- **D) está errada:** A lei profissional não se limita à ética; ela estrutura o exercício da profissão e o sistema.
+- **Conceito cobrado:** Função da Lei nº 4.769/1965.
+- **Pegadinha usada:** Confundir lei profissional com normas financeiras, regimentais ou exclusivamente éticas.
+- **Como pensar para acertar:** Associe a lei de 1965 à base da profissão; depois situe as normas especiais ao redor dela.
+- **Referência à apostila de estudo:** Dia 4 — “1. Lei Federal nº 4.769/1965”.
 
 ### Comentário da Questão 10
 
-- **Alternativa correta:** C.
-- **A) está errada:** Decreto não substitui Constituição.
-- **B) está errada:** Não tem relação com arquitetura de computadores.
-- **C) está correta:** Decreto regulamentar detalha a execução da lei.
-- **D) está errada:** Decreto regulamentar não revoga a lei regulamentada.
-- **Conceito cobrado:** Decreto regulamentar.
-- **Pegadinha usada:** Achar que decreto contraria ou substitui lei..
-- **Como pensar para acertar:** Decreto regulamenta dentro dos limites da lei.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Decreto regulamentar não pode afastar a lei que lhe dá fundamento.
+- **B) está correta:** A relação correta é de lei como base e decreto como regulamentação dentro dos limites legais.
+- **C) está errada:** O Decreto nº 61.934/1967 regulamenta a lei profissional, não constitui regimento local autônomo.
+- **D) está errada:** O decreto não tem como objeto exclusivo o processo eleitoral do sistema.
+- **Conceito cobrado:** Relação entre lei e decreto regulamentar.
+- **Pegadinha usada:** Supor que norma posterior e infralegal prevalece automaticamente sobre a lei.
+- **Como pensar para acertar:** Em conflito, preserve a hierarquia: o decreto detalha a execução, mas não pode contrariar a lei.
+- **Referência à apostila de estudo:** Dia 4 — “2. Decreto Federal nº 61.934/1967”.
 
 ### Comentário da Questão 11
 
 - **Alternativa correta:** B.
-- **A) está errada:** Não é órgão municipal.
-- **B) está correta:** O Regimento caracteriza o CRA-PR como autarquia regional.
-- **C) está errada:** Conselho profissional não se confunde com sindicato.
-- **D) está errada:** A jurisdição do CRA-PR é estadual.
-- **Conceito cobrado:** Natureza e jurisdição do CRA-PR.
-- **Pegadinha usada:** Confundir conselho, sindicato e órgão municipal..
-- **Como pensar para acertar:** Guarde: autarquia, direito público, jurisdição estadual.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Médio.
+- **A) está errada:** O CRA-PR não possui atuação nacional nem perde sua autonomia administrativa pela articulação com o CFA.
+- **B) está correta:** O Regimento o caracteriza como autarquia de direito público, autônoma e com jurisdição no Paraná.
+- **C) está errada:** Não se trata de empresa pública estadual destinada a políticas de emprego.
+- **D) está errada:** Conselho profissional não é associação privada facultativa; exerce funções públicas de registro e fiscalização.
+- **Conceito cobrado:** Natureza jurídica e jurisdição do CRA-PR.
+- **Pegadinha usada:** Confundir autarquia profissional com órgão subordinado, empresa estatal ou associação privada.
+- **Como pensar para acertar:** Memorize o conjunto: direito público, autonomia própria e jurisdição estadual.
+- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
 
 ### Comentário da Questão 12
 
-- **Alternativa correta:** A.
-- **A) está correta:** O CFA exerce papel uniformizador/normativo do sistema.
-- **B) está errada:** Um regional não normatiza sozinho todo o sistema.
-- **C) está errada:** Registrados cumprem normas; não editam diretrizes nacionais.
-- **D) está errada:** Não é órgão do Sistema CFA/CRAs.
-- **Conceito cobrado:** Papel normativo do CFA.
-- **Pegadinha usada:** Atribuir competência nacional ao regional..
-- **Como pensar para acertar:** Nacional/uniformizador sugere CFA.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Os registrados não editam por votação direta a orientação normativa geral dos conselhos.
+- **B) está errada:** O Plenário do CRA-PR é superior dentro do Conselho Regional, não em toda a federação.
+- **C) está errada:** Os CRAs aplicam a disciplina do sistema, mas não substituem isoladamente a competência normativa nacional.
+- **D) está correta:** A orientação normativa geral do sistema situa-se na esfera nacional do CFA.
+- **Conceito cobrado:** Função normativa nacional do CFA.
+- **Pegadinha usada:** Confundir superioridade interna do Plenário regional com competência nacional.
+- **Como pensar para acertar:** Observe a abrangência do comando: se destinado a todos os CRAs, a referência é o CFA.
+- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
 
 ### Comentário da Questão 13
 
-- **Alternativa correta:** D.
-- **A) está errada:** Código de Ética é RN 671/2025.
-- **B) está errada:** Regulamento eleitoral é RN 680/2025.
-- **C) está errada:** Resolução normativa não revoga a lei profissional.
-- **D) está correta:** Norma alteradora precisa ser lida com a norma alterada.
-- **Conceito cobrado:** Regulamento de Registro: RN 649 e RN 670.
-- **Pegadinha usada:** Ler norma alteradora isoladamente..
-- **Como pensar para acertar:** Quando a ementa diz “altera”, volte à norma principal.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A RN CFA nº 649/2024 aprovou o Regulamento de Registro e a RN CFA nº 670/2025 o alterou.
+- **B) está errada:** O regulamento eleitoral indicado no edital está na RN CFA nº 680/2025.
+- **C) está errada:** Resoluções administrativas não substituem nem revogam integralmente a lei federal profissional.
+- **D) está errada:** O Código de Ética vigente está na RN CFA nº 671/2025.
+- **Conceito cobrado:** Regulamento de Registro e norma alteradora.
+- **Pegadinha usada:** Ler a resolução alteradora isoladamente ou trocar seu objeto com ética e eleições.
+- **Como pensar para acertar:** Estude a norma-base e a norma alteradora como um conjunto, preservando a hierarquia.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 14
 
 - **Alternativa correta:** C.
-- **A) está errada:** Esse objeto é da RN 651/2024.
-- **B) está errada:** Esse objeto é da RN 680/2025.
-- **C) está correta:** A norma aprova o Regulamento de Fiscalização.
-- **D) está errada:** Esse objeto é da RN 671/2025.
-- **Conceito cobrado:** RN CFA 589/2020.
-- **Pegadinha usada:** Confundir fiscalização, ética, regimento e eleição..
-- **Como pensar para acertar:** Associe 589 a fiscalização.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Médio.
+- **A) está errada:** O Regimento Interno do CRA-PR está associado à RN CFA nº 651/2024.
+- **B) está errada:** As eleições do sistema são objeto da RN CFA nº 680/2025.
+- **C) está correta:** A RN CFA nº 589/2020 está vinculada à fiscalização no Sistema CFA/CRAs.
+- **D) está errada:** O Código de Ética vigente está associado à RN CFA nº 671/2025.
+- **Conceito cobrado:** Objeto da RN CFA nº 589/2020.
+- **Pegadinha usada:** Permutar objetos entre resoluções listadas no mesmo edital.
+- **Como pensar para acertar:** Fixe a associação ‘589/2020 — fiscalização’ sem inventar detalhes não consolidados.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 15
 
-- **Alternativa correta:** B.
-- **A) está errada:** Regimento do CRA-PR é RN 651/2024.
-- **B) está correta:** A ementa da RN 626/2023 indica o PERC.
-- **C) está errada:** Registro é RN 649/2024, alterada pela RN 670/2025.
-- **D) está errada:** Código de Ética é RN 671/2025.
-- **Conceito cobrado:** RN CFA 626/2023.
-- **Pegadinha usada:** Trocar recuperação de créditos por registro ou ética..
-- **Como pensar para acertar:** PERC = recuperação de créditos.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** O funcionamento interno do CRA-PR é disciplinado por seu Regimento, aprovado pela RN CFA nº 651/2024.
+- **B) está errada:** O Regulamento de Registro foi aprovado pela RN CFA nº 649/2024.
+- **C) está correta:** A ementa da RN CFA nº 626/2023 a relaciona ao Programa Especial de Recuperação de Créditos — PERC.
+- **D) está errada:** O Código de Ética vigente foi aprovado pela RN CFA nº 671/2025.
+- **Conceito cobrado:** Objeto da RN CFA nº 626/2023.
+- **Pegadinha usada:** Confundir recuperação de créditos com registro, ética ou regimento.
+- **Como pensar para acertar:** Associe a sigla PERC a recuperação de créditos e ao número 626/2023.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 16
 
-- **Alternativa correta:** A.
-- **A) está correta:** Esse é o objeto indicado na fonte oficial.
-- **B) está errada:** Regulamento eleitoral é RN 680/2025.
-- **C) está errada:** Código de Ética é RN 671/2025.
-- **D) está errada:** Não é tema de legislação CFA/CRA.
-- **Conceito cobrado:** RN CFA 546/2018.
-- **Pegadinha usada:** Confundir isenção de débitos com PERC ou eleição..
-- **Como pensar para acertar:** Associe 546 a isenção de débitos.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** O Código de Ética vigente foi aprovado pela RN CFA nº 671/2025.
+- **B) está errada:** O PERC está associado à RN CFA nº 626/2023.
+- **C) está errada:** A alteração do Regulamento de Registro é objeto da RN CFA nº 670/2025.
+- **D) está correta:** A RN CFA nº 546/2018 trata da concessão de isenção de débitos pelos CRAs.
+- **Conceito cobrado:** Objeto da RN CFA nº 546/2018.
+- **Pegadinha usada:** Aproximar indevidamente ‘isenção de débitos’ e ‘recuperação de créditos’.
+- **Como pensar para acertar:** Diferencie benefício de isenção, ligado à RN 546, do programa de recuperação, ligado à RN 626.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 17
 
-- **Alternativa correta:** D.
-- **A) está errada:** Isso é arquitetura de computadores.
-- **B) está errada:** Código de Ética é RN CFA nº 671/2025.
-- **C) está errada:** O Regimento é aprovado por RN CFA específica.
-- **D) está correta:** A lei é relevante para anuidades, taxas e cobrança no contexto de conselhos.
-- **Conceito cobrado:** Lei 12.514/2011.
-- **Pegadinha usada:** Ignorar normas financeiras dos conselhos..
-- **Como pensar para acertar:** Conselho profissional envolve contribuições e anuidades; por isso a lei importa.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A Lei nº 12.514/2011 disciplina contribuições devidas a conselhos profissionais e aspectos de cobrança.
+- **B) está errada:** Os campos da profissão decorrem da legislação profissional iniciada pela Lei nº 4.769/1965.
+- **C) está errada:** A estrutura interna do CRA-PR está em seu Regimento, aprovado pela RN CFA nº 651/2024.
+- **D) está errada:** Deveres éticos e sigilo são disciplinados pelo Código de Ética, não constituem o objeto principal da Lei nº 12.514/2011.
+- **Conceito cobrado:** Contribuições aos conselhos profissionais.
+- **Pegadinha usada:** Trocar o objeto financeiro da Lei nº 12.514/2011 por ética, profissão ou regimento.
+- **Como pensar para acertar:** Associe ‘12.514’ a anuidades, contribuições, taxas e cobrança dos conselhos.
+- **Referência à apostila de estudo:** Dia 4 — “Lei nº 12.514/2011 — contribuições e cobrança”.
 
 ### Comentário da Questão 18
 
 - **Alternativa correta:** C.
-- **A) está errada:** Processo sancionador exige base normativa.
-- **B) está errada:** Sanção ética é matéria institucional/jurídica, não apenas técnica.
-- **C) está correta:** Sanções dependem do caso e do sujeito alcançado.
-- **D) está errada:** Não se deve presumir pena máxima automática.
-- **Conceito cobrado:** Sanções éticas.
-- **Pegadinha usada:** Presumir pena específica sem base confirmada..
-- **Como pensar para acertar:** Sem artigo/prazo específico confirmado, fique nos critérios gerais da norma.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Médio.
+- **A) está errada:** Há especificidades de destinatário e de sanção; não se pode aplicar tudo de modo idêntico a PF e PJ.
+- **B) está errada:** A comprovação da conduta não dispensa o enquadramento normativo nem a análise da gravidade e das circunstâncias.
+- **C) está correta:** A resposta exige norma aplicável, gravidade e distinções entre pessoa física e jurídica.
+- **D) está errada:** A responsabilização ética-profissional não depende exclusivamente de condenação criminal judicial.
+- **Conceito cobrado:** Individualização de sanções éticas.
+- **Pegadinha usada:** Aplicar automaticamente a sanção máxima ou igualar pessoa física e jurídica.
+- **Como pensar para acertar:** Primeiro enquadre a conduta; depois verifique destinatário, circunstâncias e sanções admitidas.
+- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
 
 ### Comentário da Questão 19
 
-- **Alternativa correta:** B.
-- **A) está errada:** O caso realmente envolve fiscalização/ética.
-- **B) está correta:** Assinatura técnica pressupõe responsabilidade efetiva.
-- **C) está errada:** Essa afirmação está alinhada ao Código de Ética.
-- **D) está errada:** A assinatura vincula responsabilidade, por isso exige participação real.
-- **Conceito cobrado:** Responsabilidade por assinatura técnica.
-- **Pegadinha usada:** Aceitar assinatura de fachada..
-- **Como pensar para acertar:** Pergunte se houve atuação técnica real por quem assina.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Autorização do autor material não cria participação técnica do profissional que assina.
+- **B) está errada:** O registro da empresa não substitui a responsabilidade efetiva de quem subscreve o documento técnico.
+- **C) está errada:** Prejuízo econômico concreto não é condição necessária para reconhecer o desvalor ético da assinatura fictícia.
+- **D) está correta:** Assinar sem orientar, supervisionar ou participar pode configurar infração, pois atribui responsabilidade sem atuação real.
+- **Conceito cobrado:** Assinatura técnica sem participação efetiva.
+- **Pegadinha usada:** Confundir autorização formal ou registro da empresa com supervisão real.
+- **Como pensar para acertar:** Compare a responsabilidade declarada pela assinatura com a atuação efetivamente realizada.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 20
 
-- **Alternativa correta:** D.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: esse é o núcleo do dever.
-- **B) está correta como afirmação:** Correta: não é regra para acobertar ilegalidades.
-- **C) está correta como afirmação:** Correta: sigilo não elimina deveres legais.
-- **D) é a incorreta:** Incorreta: vantagem comercial não justifica violação de sigilo.
-- **Conceito cobrado:** Sigilo profissional.
-- **Pegadinha usada:** Transformar dever de sigilo em autorização de divulgação..
-- **Como pensar para acertar:** Sigilo protege o cliente/sociedade, não interesses comerciais indevidos.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **A) está errada:** A afirmação descreve corretamente a origem funcional do dever de sigilo.
+- **B) está correta:** Interesse comercial não é justa causa automática e não autoriza divulgar informação confidencial.
+- **C) está errada:** Preservar sigilo não impede o cumprimento de obrigação legal ou colaboração com fiscalização legítima.
+- **D) está errada:** O material admite análise de justa causa e das hipóteses legais pertinentes.
+- **Conceito cobrado:** Limites do sigilo profissional.
+- **Pegadinha usada:** Transformar conveniência econômica em exceção legítima ao sigilo.
+- **Como pensar para acertar:** Nos itens ‘incorreta’, marque a opção que converte interesse privado em autorização geral de divulgação.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 21
 
 - **Alternativa correta:** D.
-- **A) está errada:** A alternativa inverte os objetos.
-- **B) está errada:** Nenhuma das duas tem esse objeto central.
-- **C) está errada:** São normas do Sistema CFA/CRAs, não de TI.
-- **D) está correta:** Essa associação foi confirmada pelas fontes oficiais.
-- **Conceito cobrado:** Associação de Resoluções Normativas.
-- **Pegadinha usada:** Trocar números próximos de RNs..
-- **Como pensar para acertar:** Faça cartão de memorização número -> ementa.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Difícil.
+- **A) está errada:** Os objetos foram invertidos: RN 651 é Regimento e RN 671 é Código de Ética.
+- **B) está errada:** A RN 649 trata de registro; a RN 680, de eleições.
+- **C) está errada:** A RN 589 trata de fiscalização; a RN 626, do PERC.
+- **D) está correta:** As duas associações correspondem ao mapa normativo confirmado no material.
+- **Conceito cobrado:** Associação entre resoluções e objetos.
+- **Pegadinha usada:** Inverter pares verdadeiros ou reunir dois números corretos com objetos trocados.
+- **Como pensar para acertar:** Cheque separadamente cada metade da alternativa; ambas precisam estar corretas.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 22
 
-- **Alternativa correta:** C.
-- **A) está errada:** CNPJ é registro empresarial/fiscal, não registro em conselho profissional.
-- **B) está errada:** Pessoas jurídicas podem estar sujeitas à fiscalização conforme atividade.
-- **C) está correta:** O Sistema CFA/CRAs não se limita sempre à pessoa física.
-- **D) está errada:** A RN 671/2025 inclui pessoas jurídicas no título e no alcance.
-- **Conceito cobrado:** Pessoa jurídica no Sistema CFA/CRA.
-- **Pegadinha usada:** CNPJ como falso substituto de registro profissional..
-- **Como pensar para acertar:** Verifique atividade exercida e norma de registro/fiscalização.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** A sujeição da pessoa jurídica decorre da atividade, não da profissão de todos os sócios.
+- **B) está errada:** A responsabilidade técnica não substitui automaticamente eventual dever de registro da própria empresa.
+- **C) está errada:** CNPJ e contrato social não criam imunidade perante a regulação profissional.
+- **D) está correta:** A atividade básica pode atrair registro e fiscalização, com observância também da responsabilidade técnica.
+- **Conceito cobrado:** Registro de pessoa jurídica e responsabilidade técnica.
+- **Pegadinha usada:** Tratar registro da empresa e indicação de responsável como obrigações mutuamente excludentes.
+- **Como pensar para acertar:** Analise em camadas: atividade da pessoa jurídica, registro aplicável e atuação efetiva do responsável.
+- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
 
 ### Comentário da Questão 23
 
 - **Alternativa correta:** B.
-- **A) está errada:** O CRA-PR tem jurisdição regional, não mundial.
-- **B) está correta:** Jurisdição aqui se refere à atuação regional do CRA-PR.
-- **C) está errada:** Conselho profissional não é vara criminal.
-- **D) está errada:** É termo de TI fora de contexto.
-- **Conceito cobrado:** Jurisdição do CRA-PR.
-- **Pegadinha usada:** Importar sentido de outras áreas sem contexto..
-- **Como pensar para acertar:** No regimento de conselho, jurisdição é território de atuação.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Difícil.
+- **A) está errada:** A sede fica na capital, mas a jurisdição não se limita ao município.
+- **B) está correta:** O Regimento atribui ao CRA-PR jurisdição em todo o Estado do Paraná.
+- **C) está errada:** A jurisdição não abrange automaticamente Santa Catarina e Rio Grande do Sul.
+- **D) está errada:** O CRA-PR não possui jurisdição nacional.
+- **Conceito cobrado:** Sede e jurisdição territorial do CRA-PR.
+- **Pegadinha usada:** Confundir o local da sede administrativa com o limite territorial da competência.
+- **Como pensar para acertar:** Leia as duas informações separadamente: sede na capital; jurisdição em todo o estado.
+- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
 
 ### Comentário da Questão 24
 
 - **Alternativa correta:** A.
-- **A) está correta:** Sindicatos representam interesses; conselhos fiscalizam exercício profissional.
-- **B) está errada:** CRA não se confunde com sindicato.
-- **C) está errada:** Fiscalização profissional não depende de filiação sindical.
-- **D) está errada:** O CFA é conselho federal do sistema profissional.
-- **Conceito cobrado:** Conselho profissional x sindicato.
-- **Pegadinha usada:** Confundir representação sindical com fiscalização profissional..
-- **Como pensar para acertar:** Conselho profissional protege a sociedade por fiscalização do exercício.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Difícil.
+- **A) está correta:** Conselho e sindicato têm natureza e finalidade distintas: fiscalização pública de um lado, representação da categoria de outro.
+- **B) está errada:** A alternativa inverte as funções típicas das duas entidades.
+- **C) está errada:** Sindicato não é autarquia, e a diferença não é apenas territorial.
+- **D) está errada:** Não há relação de unidade administrativa ou subordinação necessária entre sindicato e conselho.
+- **Conceito cobrado:** Distinção entre conselho profissional e sindicato.
+- **Pegadinha usada:** Atribuir ao conselho defesa corporativa ou ao sindicato poder de polícia profissional.
+- **Como pensar para acertar:** Pergunte se a função descrita protege a sociedade pela fiscalização ou representa interesses trabalhistas da categoria.
+- **Referência à apostila de estudo:** Dia 4 — “Natureza e finalidade do Sistema CFA/CRAs”.
 
 ### Comentário da Questão 25
 
-- **Alternativa correta:** D.
-- **A) está errada:** Registro é RN 649/2024, alterada pela RN 670/2025.
-- **B) está errada:** É RN 671/2025.
-- **C) está errada:** É RN 651/2024.
-- **D) está correta:** A ementa oficial aponta o regulamento eleitoral.
-- **Conceito cobrado:** RN CFA 680/2025.
-- **Pegadinha usada:** Confundir eleição com registro ou ética..
-- **Como pensar para acertar:** Associe 680 a eleições.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** A RN 546/2018 trata de isenção de débitos.
+- **B) está errada:** A RN 589/2020 está associada à fiscalização.
+- **C) está correta:** A RN 680/2025 aprova o Regulamento das Eleições do Sistema CFA/CRAs.
+- **D) está errada:** A RN 651/2024 aprova o Regimento Interno do CRA-PR.
+- **Conceito cobrado:** Objeto da RN CFA nº 680/2025.
+- **Pegadinha usada:** Confundir eleições com regimento ou fiscalização por proximidade no edital.
+- **Como pensar para acertar:** Fixe o par ‘680/2025 — eleições’ e descarte as resoluções com objeto já conhecido.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 26
 
-- **Alternativa correta:** C.
-- **A) está errada:** Questão real exige fonte confirmada.
-- **B) está errada:** Se está no edital, deve entrar no estudo.
-- **C) está correta:** Isso evita inventar detalhe normativo.
-- **D) está errada:** Não se inventa prazo ou sanção.
-- **Conceito cobrado:** Rigor de fontes normativas.
-- **Pegadinha usada:** Inventar informação por plausibilidade..
-- **Como pensar para acertar:** Fonte oficial primeiro; detalhe específico só com texto confirmado.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Analogia não autoriza inventar prazo ou requisito para uma resolução específica.
+- **B) está errada:** Resoluções do mesmo órgão podem ter objetos e procedimentos muito diferentes.
+- **C) está errada:** Lei próxima em tema não substitui resolução expressamente indicada com objeto próprio.
+- **D) está correta:** A conclusão deve ficar no alcance da fonte confirmada até consulta ao texto oficial integral.
+- **Conceito cobrado:** Rigor metodológico no uso de fontes normativas.
+- **Pegadinha usada:** Preencher lacunas da fonte com memória, analogia ou padrão de outro conselho.
+- **Como pensar para acertar:** Diferencie o que a ementa confirma do que exigiria leitura do artigo correspondente.
+- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
 
 ### Comentário da Questão 27
 
-- **Alternativa correta:** B.
-- **A) está errada:** SGBD não aplica sanção ética.
-- **B) está correta:** A conduta hostil e obstrutiva é relevante em ética/fiscalização.
-- **C) está errada:** Não há direito irrestrito de impedir fiscalização regular.
-- **D) está errada:** A situação é institucional e ética.
-- **Conceito cobrado:** Urbanidade e fiscalização.
-- **Pegadinha usada:** Tratar obstrução como defesa legítima automática..
-- **Como pensar para acertar:** Fiscalização regular exige resposta institucional adequada.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Direito de defesa não legitima ofensa pessoal nem obstrução deliberada de diligência regular.
+- **B) está errada:** A fiscalização profissional é função institucional do CRA, e o caso não se reduz a contrato privado.
+- **C) está correta:** As condutas podem afetar urbanidade e fiscalização, mas sua apuração deve respeitar o devido processo.
+- **D) está errada:** A simples resistência não anula automaticamente a diligência; é necessário examinar a regularidade concreta.
+- **Conceito cobrado:** Urbanidade, fiscalização e devido processo.
+- **Pegadinha usada:** Usar garantias de defesa como salvo-conduto para qualquer comportamento.
+- **Como pensar para acertar:** Separe contestação legítima de ofensa e de ato material destinado a impedir a fiscalização.
+- **Referência à apostila de estudo:** Dia 4 — “Infrações recorrentes no Código de Ética”.
 
 ### Comentário da Questão 28
 
-- **Alternativa correta:** A.
-- **A) está correta:** Alterações só fazem sentido conectadas ao texto base.
-- **B) está errada:** Número sem ementa não orienta cobrança.
-- **C) está errada:** Norma alteradora não substitui todo o edital.
-- **D) está errada:** Fonte oficial é essencial.
-- **Conceito cobrado:** Norma alteradora.
-- **Pegadinha usada:** Ler alteração sem texto base..
-- **Como pensar para acertar:** Quando uma norma altera outra, estude o par.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** A validade da alteração não depende, como regra geral do enunciado, de republicação integral pela União.
+- **B) está errada:** A resolução alteradora pode não reproduzir os dispositivos que permaneceram vigentes.
+- **C) está correta:** A disciplina vigente resulta da norma-base combinada com as modificações expressamente produzidas pela norma posterior.
+- **D) está errada:** Alteração pontual não equivale a revogação total do regulamento anterior.
+- **Conceito cobrado:** Leitura de norma-base e norma alteradora.
+- **Pegadinha usada:** Adotar automaticamente revogação total ou ler apenas um dos diplomas.
+- **Como pensar para acertar:** Identifique quais dispositivos foram alterados e preserve os demais até prova de revogação.
+- **Referência à apostila de estudo:** Dia 4 — “RN CFA nº 649/2024 e RN CFA nº 670/2025”.
 
 ### Comentário da Questão 29
 
-- **Alternativa correta:** D.
-- **A) está errada:** Não é ferramenta de TI.
-- **B) está errada:** Pregão é modalidade; Plenário é órgão interno.
-- **C) está errada:** Plenário integra a estrutura institucional.
-- **D) está correta:** O Plenário exerce deliberação no âmbito do Conselho.
-- **Conceito cobrado:** Órgãos do Regimento do CRA-PR.
-- **Pegadinha usada:** Confundir órgão interno com ferramenta ou modalidade..
-- **Como pensar para acertar:** Deliberação superior dentro do Conselho aponta para Plenário.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** O Plenário é o órgão deliberativo superior na estrutura regimental.
+- **B) está errada:** A Ouvidoria recebe e trata manifestações, sem assumir a posição do Plenário.
+- **C) está errada:** Representação institucional não equivale a órgão deliberativo superior.
+- **D) está errada:** A Diretoria Executiva cumpre funções de execução e administração, não substitui o órgão deliberativo superior.
+- **Conceito cobrado:** Estrutura interna do CRA-PR.
+- **Pegadinha usada:** Confundir órgão executivo, canal de ouvidoria ou representação com instância deliberativa superior.
+- **Como pensar para acertar:** Associe ‘deliberativo superior’ ao Plenário e ‘execução/administração’ à Diretoria.
+- **Referência à apostila de estudo:** Dia 4 — “Estrutura interna do CRA-PR”.
 
 ### Comentário da Questão 30
 
-- **Alternativa correta:** C.
-- **A) está errada:** Normas éticas não são substituídas informalmente.
-- **B) está errada:** Não é tema de banco de dados.
-- **C) está correta:** A diretoria atua na gestão/execução conforme o Regimento.
-- **D) está errada:** Diretoria de conselho não edita lei federal.
-- **Conceito cobrado:** Diretoria Executiva do CRA-PR.
-- **Pegadinha usada:** Misturar órgão executivo com competência legislativa..
-- **Como pensar para acertar:** Plenário delibera; Diretoria executa/gestiona.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A Diretoria Executiva se relaciona à execução e à administração das atividades e deliberações.
+- **B) está errada:** A Ouvidoria possui finalidade própria de interlocução e tratamento de manifestações.
+- **C) está errada:** A deliberação superior compete ao Plenário.
+- **D) está errada:** Normas nacionais para todo o sistema situam-se na esfera do CFA, não da Diretoria regional.
+- **Conceito cobrado:** Função da Diretoria Executiva.
+- **Pegadinha usada:** Inverter as funções do Plenário, da Diretoria e da Ouvidoria.
+- **Como pensar para acertar:** Observe o verbo nuclear: deliberar remete ao Plenário; executar e administrar, à Diretoria.
+- **Referência à apostila de estudo:** Dia 4 — “Estrutura interna do CRA-PR”.
 
 ### Comentário da Questão 31
 
-- **Alternativa correta:** B.
-- **A) está errada:** O Código se volta a profissionais e pessoas jurídicas.
-- **B) está correta:** O Código alcança atuação profissional, inclusive em diferentes vínculos, conforme norma.
-- **C) está errada:** A generalização é indevida.
-- **D) está errada:** Horário não elimina dever profissional.
-- **Conceito cobrado:** Alcance do Código de Ética.
-- **Pegadinha usada:** Achar que vínculo funcional elimina dever profissional..
-- **Como pensar para acertar:** O foco é a atividade exercida e o registro, não apenas o tipo de vínculo.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** O Código não se restringe ao profissional liberal quando a pessoa atua no campo da profissão.
+- **B) está errada:** Regime funcional e responsabilidade profissional podem coexistir; um não elimina automaticamente o outro.
+- **C) está correta:** O vínculo público não afasta deveres éticos inerentes à atuação profissional sujeita ao sistema.
+- **D) está errada:** A incidência ética não depende de remuneração privada paralela.
+- **Conceito cobrado:** Incidência ética no exercício funcional.
+- **Pegadinha usada:** Confundir vínculo estatutário com imunidade perante deveres da profissão.
+- **Como pensar para acertar:** Olhe para a natureza da atividade exercida, não apenas para a forma do vínculo de trabalho.
+- **Referência à apostila de estudo:** Dia 4 — “Abrangência do Código de Ética”.
 
 ### Comentário da Questão 32
 
-- **Alternativa correta:** A.
-- **A) está correta:** As RNs do CFA mencionam a lei e o decreto como fundamentos.
-- **B) está errada:** Não é a base da profissão de Administração.
-- **C) está errada:** Não é fonte jurídica do Sistema CFA/CRAs.
-- **D) está errada:** A base é do Sistema CFA/CRAs e lei federal.
-- **Conceito cobrado:** Fundamentos legais do Sistema CFA/CRAs.
-- **Pegadinha usada:** Não reconhecer lei/decreto base citados nas normas..
-- **Como pensar para acertar:** Quando uma RN fundamenta competência, volte à lei profissional e ao decreto.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** RN 589 e RN 671 tratam de fiscalização e ética.
+- **B) está errada:** Lei 12.514 e RN 626 tratam de contribuições e recuperação de créditos, não formam o par profissão/regulamentação.
+- **C) está errada:** RN 651 e RN 680 tratam, respectivamente, de regimento e eleições.
+- **D) está correta:** A Lei 4.769/1965 fornece a base e o Decreto 61.934/1967 a regulamenta.
+- **Conceito cobrado:** Base legal e regulamentar da profissão.
+- **Pegadinha usada:** Formar pares apenas porque as duas normas constam do edital.
+- **Como pensar para acertar:** Procure a relação hierárquica direta: lei profissional seguida de seu decreto regulamentador.
+- **Referência à apostila de estudo:** Dia 4 — “Lei nº 4.769/1965 e Decreto nº 61.934/1967”.
 
 ### Comentário da Questão 33
 
 - **Alternativa correta:** C.
+- **Nível:** Difícil.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: a RN 671/2025 inclui pessoas jurídicas.
-- **B) está correta como afirmação:** Correta: são deveres destacados.
-- **C) é a incorreta:** Incorreta: independência técnica é valor protegido, não renunciável por pressão indevida.
-- **D) está correta como afirmação:** Correta: esse é seu objeto.
-- **Conceito cobrado:** Código de Ética: deveres.
-- **Pegadinha usada:** Transformar pressão externa em justificativa ética..
-- **Como pensar para acertar:** Ética profissional protege independência e responsabilidade técnica.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **A) está errada:** A abrangência inclui PF e PJ, com adaptações e especificidades.
+- **B) está errada:** O sigilo deve ser conjugado com justa causa e hipóteses legais.
+- **C) está correta:** Ordem escrita do cliente não elimina independência técnica nem torna lícita uma conduta inadequada.
+- **D) está errada:** Atualização cadastral e aperfeiçoamento integram os deveres destacados no material.
+- **Conceito cobrado:** Deveres éticos e independência técnica.
+- **Pegadinha usada:** Supor que ordem contratual escrita afasta responsabilidade pessoal do profissional.
+- **Como pensar para acertar:** Nos itens ‘incorreta’, desconfie de permissões absolutas criadas pela vontade do cliente.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 34
 
-- **Alternativa correta:** C.
-- **A) está errada:** Mudanças podem precisar ser comunicadas conforme normas.
-- **B) está errada:** Cadastro tem função institucional.
-- **C) está correta:** Cadastro atualizado sustenta a atuação do Conselho.
-- **D) está errada:** Regularidade cadastral não elimina deveres éticos.
-- **Conceito cobrado:** Registro e atualização cadastral.
-- **Pegadinha usada:** Tratar cadastro como formalidade inútil..
-- **Como pensar para acertar:** Conselho fiscaliza e comunica com base em dados cadastrais confiáveis.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Atualização cadastral não substitui procedimentos de registro eventualmente exigidos.
+- **B) está correta:** Dados atualizados permitem notificação, controle e fiscalização regulares.
+- **C) está errada:** A obrigação se cumpre perante o conselho competente; não transfere toda comunicação ao CFA.
+- **D) está errada:** A correção cadastral não apaga nem sana automaticamente infrações anteriores.
+- **Conceito cobrado:** Dever de atualização cadastral.
+- **Pegadinha usada:** Transformar um dever instrumental em mecanismo de renovação, transferência de competência ou anistia.
+- **Como pensar para acertar:** Pense na finalidade prática do cadastro: localizar, comunicar e controlar o vínculo profissional.
+- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
 
 ### Comentário da Questão 35
 
 - **Alternativa correta:** B.
-- **A) está errada:** Uso indevido de registro é conduta sensível/vedada.
-- **B) está correta:** Ética profissional limita atuação voltada apenas a vantagem pessoal.
-- **C) está errada:** Interesse econômico não autoriza violar deveres éticos.
-- **D) está errada:** Sigilo é dever, não conveniência unilateral.
-- **Conceito cobrado:** Finalidade ética da profissão.
-- **Pegadinha usada:** Reduzir ética a interesse comercial..
-- **Como pensar para acertar:** Quando houver conflito, procure dever profissional e interesse social.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Difícil.
+- **A) está errada:** A defesa do cliente existe dentro de limites jurídicos, técnicos e éticos.
+- **B) está correta:** Honestidade e independência técnica impedem omissão destinada a distorcer a conclusão profissional.
+- **C) está errada:** Cláusula de confidencialidade não autoriza falsidade ou supressão tecnicamente indevida.
+- **D) está errada:** Trocar o signatário não corrige a omissão e pode ampliar a irregularidade.
+- **Conceito cobrado:** Independência técnica diante de pressão do cliente.
+- **Pegadinha usada:** Tratar interesse contratual como superior à verdade técnica e à ética.
+- **Como pensar para acertar:** Pergunte se a ordem preserva a integridade do parecer; se distorce o conteúdo, deve ser recusada.
+- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
 
 ### Comentário da Questão 36
 
-- **Alternativa correta:** A.
-- **A) está correta:** A ementa oficial confirma o regulamento de registro.
-- **B) está errada:** Eleição é RN 680/2025.
-- **C) está errada:** Código de Ética é RN 671/2025.
-- **D) está errada:** Regimento do CRA-PR é RN 651/2024.
-- **Conceito cobrado:** RN CFA 649/2024.
-- **Pegadinha usada:** Trocar ementas das resoluções..
-- **Como pensar para acertar:** Memorize: 649 = registro.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O regulamento eleitoral está na RN 680/2025.
+- **B) está errada:** O PERC está associado à RN 626/2023.
+- **C) está errada:** O Regimento Interno do CRA-PR está na RN 651/2024.
+- **D) está correta:** A RN 649/2024 aprova o Regulamento de Registro de PF e PJ no sistema.
+- **Conceito cobrado:** Objeto da RN CFA nº 649/2024.
+- **Pegadinha usada:** Trocar a norma de registro por resoluções de crédito, regimento ou eleição.
+- **Como pensar para acertar:** No mapa normativo, leia ‘649’ como norma-base de registro e ‘670’ como sua alteração.
+- **Referência à apostila de estudo:** Dia 4 — “RN CFA nº 649/2024 e RN CFA nº 670/2025”.
 
 ### Comentário da Questão 37
 
-- **Alternativa correta:** D.
-- **A) está errada:** Hierarquia normativa não funciona assim.
-- **B) está errada:** Conselho regional não revoga lei federal.
-- **C) está errada:** É questão de hierarquia normativa.
-- **D) está correta:** Resolução normativa não revoga a lei profissional federal.
-- **Conceito cobrado:** Hierarquia normativa e RN 670/2025.
-- **Pegadinha usada:** Achar que norma inferior posterior revoga lei federal..
-- **Como pensar para acertar:** Observe hierarquia: RN não revoga lei federal.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A RN 670/2025 atua no plano infralegal, alterando regulamento aprovado por resolução anterior.
+- **B) está errada:** Alteração do regulamento de registro não substitui integralmente o decreto regulamentar.
+- **C) está errada:** Resolução tampouco altera automaticamente qualquer lei que trate da matéria.
+- **D) está errada:** Resolução não possui força para revogar lei federal, ainda que posterior.
+- **Conceito cobrado:** Hierarquia normativa e alcance da RN nº 670/2025.
+- **Pegadinha usada:** Aplicar o critério cronológico sem considerar a hierarquia entre lei, decreto e resolução.
+- **Como pensar para acertar:** Antes de comparar datas, identifique a espécie normativa e o objeto exato da alteração.
+- **Referência à apostila de estudo:** Dia 4 — “Hierarquia e leitura conjunta das normas”.
 
 ### Comentário da Questão 38
 
-- **Alternativa correta:** C.
-- **A) está errada:** Essas normas são de legislação CFA/CRA.
-- **B) está errada:** Regimento do CRA-PR é RN 651/2024.
-- **C) está correta:** As três associações correspondem às ementas confirmadas.
-- **D) está errada:** Todas as associações estão trocadas.
-- **Conceito cobrado:** Leitura dirigida das RNs.
-- **Pegadinha usada:** Misturar objetos normativos..
-- **Como pensar para acertar:** Use mapa número -> tema: fiscalização, PERC, eleições.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Registro, ética e regimento correspondem a outras resoluções do edital.
+- **B) está correta:** A ordem correta é RN 589 — fiscalização; RN 626 — PERC; RN 680 — eleições.
+- **C) está errada:** A sequência desloca eleições e registro para números incorretos.
+- **D) está errada:** PERC está na RN 626, isenção na RN 546 e ética na RN 671.
+- **Conceito cobrado:** Mapa de resoluções do edital.
+- **Pegadinha usada:** Apresentar três temas verdadeiros, mas fora da ordem dos números dados.
+- **Como pensar para acertar:** Resolva cada par de modo independente e só então valide a sequência completa.
+- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
 
 ### Comentário da Questão 39
 
-- **Alternativa correta:** B.
-- **A) está errada:** Conselho não substitui Poder Judiciário em ação judicial.
-- **B) está correta:** Essa é atuação típica do regional.
-- **C) está errada:** Isso é competência legislativa penal, não do CRA.
-- **D) está errada:** Regional não revoga norma nacional do CFA.
-- **Conceito cobrado:** Competência do CRA-PR.
-- **Pegadinha usada:** Extrapolar poder do conselho..
-- **Como pensar para acertar:** Conselhos têm competências administrativas específicas.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** O fato ocorrido no Paraná insere-se, em regra, na jurisdição fiscalizatória do CRA-PR.
+- **B) está errada:** A função nacional do CFA não elimina a atuação fiscalizatória regional.
+- **C) está errada:** O Plenário do CFA não é instância inicial obrigatória de toda ocorrência municipal.
+- **D) está errada:** O CRA exerce função pública de fiscalização profissional própria.
+- **Conceito cobrado:** Competência territorial de fiscalização.
+- **Pegadinha usada:** Confundir orientação nacional com execução direta de toda fiscalização local.
+- **Como pensar para acertar:** Localize o fato e associe-o ao CRA da respectiva jurisdição.
+- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
 
 ### Comentário da Questão 40
 
-- **Alternativa correta:** A.
-- **A) está correta:** O Código destaca zelo, responsabilidade e aperfeiçoamento.
-- **B) está errada:** Uso de registro de terceiro é inadequado.
-- **C) está errada:** Omissão não substitui dever profissional.
-- **D) está errada:** Responsabilidade profissional não é simplesmente transferida.
-- **Conceito cobrado:** Dever de aperfeiçoamento e zelo.
-- **Pegadinha usada:** Tratar atualização profissional como opcional irrelevante..
-- **Como pensar para acertar:** Mudança normativa exige estudo e responsabilidade técnica.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** O empregador pode apoiar a capacitação, mas isso não elimina o dever do profissional.
+- **B) está correta:** Aperfeiçoamento é dever ligado à competência, ao zelo e à qualidade responsável.
+- **C) está errada:** O Código trata atualização como relevante para a atuação responsável, não como faculdade desconectada.
+- **D) está errada:** O profissional não transfere integralmente a terceiro seu dever pessoal de qualificação.
+- **Conceito cobrado:** Aperfeiçoamento e atualização profissional.
+- **Pegadinha usada:** Externalizar o dever ao empregador ou tratá-lo como opção sem efeito ético.
+- **Como pensar para acertar:** Relacione atualização contínua com a qualidade e a responsabilidade dos serviços prestados.
+- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
 
 ### Comentário da Questão 41
 
-- **Alternativa correta:** D.
-- **A) está errada:** Interesse do cliente não justifica fraude.
-- **B) está errada:** Defesa do cliente convive com sigilo e independência.
-- **C) está errada:** Contrato não elimina norma ética.
-- **D) está correta:** O dever de defesa não autoriza condutas ilícitas ou antiéticas.
-- **Conceito cobrado:** Deveres profissionais e limites éticos.
-- **Pegadinha usada:** Usar interesse do cliente como justificativa absoluta..
-- **Como pensar para acertar:** Dever profissional tem limites jurídicos e éticos.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Interesse econômico e ausência de ordem judicial não autorizam apresentar conclusão tecnicamente incompleta.
+- **B) está errada:** Guardar a ressalva internamente não corrige a informação material omitida do parecer entregue ao destinatário.
+- **C) está correta:** O profissional deve recusar a distorção, explicitar a limitação e conciliar lealdade legítima com independência, técnica, ética e legalidade.
+- **D) está errada:** A divergência exige posicionamento técnico e registro adequado, mas não determina, por si só, encerramento automático e sem esclarecimento.
+- **Conceito cobrado:** Lealdade ao cliente, independência técnica e integridade do parecer.
+- **Pegadinha usada:** Tratar defesa do interesse confiado como autorização para omitir dado material ou como dever automático de romper o contrato.
+- **Como pensar para acertar:** Verifique se a conduta preserva simultaneamente completude técnica, limites normativos e defesa apenas de interesses legítimos.
+- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
 
 ### Comentário da Questão 42
 
-- **Alternativa correta:** C.
-- **A) está errada:** Sanções existem, mas detalhes exigem base.
-- **B) está errada:** Gradação é parte do tema ético.
-- **C) está correta:** Sem fonte específica, não se deve criar prazo/sanção exata.
-- **D) está errada:** Pena depende de norma e caso.
-- **Conceito cobrado:** Sanções e cautela normativa.
-- **Pegadinha usada:** Inventar artigo, prazo ou penalidade..
-- **Como pensar para acertar:** Conceito geral sim; detalhe específico só com fonte confirmada.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** É possível reconhecer o enquadramento em tese sem inventar penalidade que depende de norma e circunstâncias não fornecidas.
+- **B) está errada:** A sanção máxima não decorre automaticamente do reconhecimento genérico de infração.
+- **C) está errada:** Norma de outro conselho não fornece automaticamente a pena aplicável ao Sistema CFA/CRAs.
+- **D) está errada:** A apuração ético-profissional possui autonomia e não exige sempre condenação judicial.
+- **Conceito cobrado:** Rigor na determinação de sanções.
+- **Pegadinha usada:** Forçar uma pena específica quando o enunciado não traz elementos suficientes.
+- **Como pensar para acertar:** Responda apenas até onde vão a fonte e os fatos; não complete a lacuna com analogia.
+- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
 
 ### Comentário da Questão 43
 
-- **Alternativa correta:** B.
-- **A) está errada:** O Código consta no edital vigente.
-- **B) está correta:** O título e dispositivos iniciais incluem pessoas jurídicas.
-- **C) está errada:** Pessoas jurídicas podem exercer atividades nas áreas de Administração.
-- **D) está errada:** Contrato privado não afasta automaticamente a norma ética.
-- **Conceito cobrado:** Pessoa jurídica no Código de Ética.
-- **Pegadinha usada:** Excluir pessoa jurídica do alcance do Código..
-- **Como pensar para acertar:** Leia o título e o alcance subjetivo da norma.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** O material registra especificidades de sanção, portanto a aplicação não é idêntica a PF e PJ.
+- **B) está errada:** A submissão decorre da regulação profissional, não de adesão ética facultativa.
+- **C) está errada:** A composição societária não condiciona, nesses termos, a incidência ética sobre a pessoa jurídica registrada.
+- **D) está correta:** O Código alcança pessoas jurídicas; suspensão e cancelamento não se aplicam a elas segundo a consolidação estudada.
+- **Conceito cobrado:** Aplicação do Código de Ética à pessoa jurídica.
+- **Pegadinha usada:** Generalizar sanções de pessoa física ou criar condições societárias inexistentes.
+- **Como pensar para acertar:** Separe duas perguntas: o Código alcança a PJ? Sim. Todas as sanções de PF se aplicam? Não.
+- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
 
 ### Comentário da Questão 44
 
 - **Alternativa correta:** D.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: o edital é o mapa da prova.
-- **B) está correta como afirmação:** Correta: são fontes primárias/ oficiais.
-- **C) está correta como afirmação:** Correta: estilo não é fonte de autoria real.
-- **D) é a incorreta:** Incorreta: questão real exige fonte confirmada.
-- **Conceito cobrado:** Fontes e honestidade metodológica.
-- **Pegadinha usada:** Confundir estilo de banca com questão real..
-- **Como pensar para acertar:** Nunca marque como real sem prova de origem.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Muito difícil.
+- **Observação:** a questão pede o procedimento que compromete a rastreabilidade; portanto, o gabarito é a prática inadequada.
+- **A) está errada:** Conferir metadados e alterações no repositório oficial é justamente o controle necessário para identificar a versão vigente.
+- **B) está errada:** O edital delimita o objeto, e o texto oficial completo resolve dúvidas que a ementa, sozinha, não esclarece.
+- **C) está errada:** Informar a natureza autoral e separar a fonte normativa evita atribuição falsa de proveniência.
+- **D) está correta:** Estilo semelhante não prova origem oficial, e a data de material preparatório não substitui validação de vigência e autenticidade.
+- **Conceito cobrado:** Proveniência, vigência normativa e rotulagem de questões autorais.
+- **Pegadinha usada:** Confundir aparência de autenticidade ou data recente de apostila com evidência documental verificável.
+- **Como pensar para acertar:** Separe duas verificações: autenticidade da questão e vigência da norma; ambas exigem fonte identificável.
+- **Referência à apostila de estudo:** Dia 4 — “Método de estudo e controle de fontes”.
 
 ### Comentário da Questão 45
 
-- **Alternativa correta:** D.
-- **A) está errada:** Ética e fiscalização são centrais.
-- **B) está errada:** Conselhos têm função específica, não universal.
-- **C) está errada:** A fiscalização busca regularidade, não impedir atuação lícita.
-- **D) está correta:** Conselhos não existem apenas para interesse corporativo; há função pública de fiscalização.
-- **Conceito cobrado:** Função dos conselhos profissionais.
-- **Pegadinha usada:** Reduzir conselho a corporação privada..
-- **Como pensar para acertar:** Conselho profissional tem função pública de fiscalização.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** A fiscalização não se limita a proteger mercado ou renda dos inscritos e não pode ignorar risco social relevante.
+- **B) está correta:** A priorização por risco, dentro da competência e com devido processo, vincula orientação, registro e fiscalização à proteção da sociedade.
+- **C) está errada:** A finalidade pública não amplia a competência legal do Conselho para substituir indiscriminadamente outros órgãos.
+- **D) está errada:** Receita sustenta a atividade institucional, mas não substitui critérios de risco, competência e interesse público.
+- **Conceito cobrado:** Finalidade pública, planejamento por risco e limites da competência fiscalizatória.
+- **Pegadinha usada:** Usar arrecadação ou proteção corporativa como critério autônomo de prioridade e confundir finalidade com expansão de competência.
+- **Como pensar para acertar:** Relacione a medida ao risco para a sociedade, confirme a competência e só então verifique procedimento e instrumentos cabíveis.
+- **Referência à apostila de estudo:** Dia 4 — “Natureza e finalidade do Sistema CFA/CRAs”.
 
 ### Comentário da Questão 46
 
-- **Alternativa correta:** C.
-- **A) está errada:** O caso é ético/fiscalizatório.
-- **B) está errada:** O CRA tem competência de fiscalização profissional.
-- **C) está correta:** Responsável técnico deve exercer atuação efetiva conforme normas aplicáveis.
-- **D) está errada:** Formalidade sem atuação real pode ser problemática.
-- **Conceito cobrado:** Responsabilidade técnica e fiscalização.
-- **Pegadinha usada:** Confundir presença formal com atuação efetiva..
-- **Como pensar para acertar:** Pergunte se há atuação técnica real e regularidade material.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** Empréstimo de nome ou registro e responsabilidade técnica meramente formal podem configurar irregularidade.
+- **B) está errada:** A indicação fictícia alcança responsabilidade e ética profissional, não apenas o contrato.
+- **C) está errada:** Documento formal não comprova sozinho supervisão ou orientação efetivas.
+- **D) está errada:** Registro da pessoa jurídica não elimina deveres individuais de quem assume responsabilidade técnica.
+- **Conceito cobrado:** Responsabilidade técnica efetiva.
+- **Pegadinha usada:** Confundir nomeação documental com participação profissional real.
+- **Como pensar para acertar:** Compare o que o responsável declarou assumir com os atos que efetivamente praticou.
+- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
 
 ### Comentário da Questão 47
 
 - **Alternativa correta:** B.
-- **A) está errada:** O sistema profissional não é municipal nesse sentido.
-- **B) está correta:** O sistema combina uniformização nacional e atuação regional.
-- **C) está errada:** Inverte a estrutura.
-- **D) está errada:** Há função uniformizadora do CFA.
-- **Conceito cobrado:** Sistema CFA/CRAs.
-- **Pegadinha usada:** Inverter a direção da uniformização normativa..
-- **Como pensar para acertar:** Nacional orienta; regional executa/fiscaliza.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Nível:** Muito difícil.
+- **A) está errada:** Jurisdição estadual delimita a atuação regional, mas não confere poder para afastar regra nacional válida do sistema.
+- **B) está correta:** O ato regional deve ser revisto para compatibilizar a execução local, sem impedir que a discordância seja levada ao canal institucional próprio.
+- **C) está errada:** A posterioridade não produz revogação quando o órgão regional carece de competência para substituir a norma nacional.
+- **D) está errada:** A Diretoria de um CRA não recebe competência para alterar regra nacional aplicável aos demais Conselhos.
+- **Conceito cobrado:** Distribuição funcional de competências, norma nacional e execução fiscalizatória regional.
+- **Pegadinha usada:** Confundir autonomia administrativa, cronologia e hierarquia funcional com competência normativa nacional.
+- **Como pensar para acertar:** Identifique quem editou cada ato, seu alcance territorial e qual órgão possui competência para resolver o conflito.
+- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
 
 ### Comentário da Questão 48
 
-- **Alternativa correta:** A.
-- **A) está correta:** A apostila destacou sede na capital e jurisdição estadual.
-- **B) está errada:** Nacional é extrapolação indevida para um regional.
-- **C) está errada:** O CRA-PR não é órgão municipal.
-- **D) está errada:** O Regimento trata de jurisdição regional.
-- **Conceito cobrado:** Regimento do CRA-PR.
-- **Pegadinha usada:** Trocar jurisdição estadual por nacional ou municipal..
-- **Como pensar para acertar:** Memorize sede e jurisdição como dados básicos do Regimento.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Unidade descentralizada não adquire jurisdição ou personalidade autônoma apenas por funcionar fora da sede.
+- **B) está errada:** A fiscalização estadual não depende da criação de Conselho municipal em cada localidade atendida.
+- **C) está correta:** Curitiba continua sendo a sede, a jurisdição permanece estadual e o atendimento descentralizado integra o mesmo CRA-PR.
+- **D) está errada:** Descentralizar atendimento dentro do Estado não amplia a competência do Conselho para o território nacional.
+- **Conceito cobrado:** Sede, jurisdição territorial e descentralização administrativa.
+- **Pegadinha usada:** Confundir unidade de atendimento com novo ente autônomo ou extensão territorial de competência.
+- **Como pensar para acertar:** Analise separadamente endereço da sede, alcance jurídico da atuação e natureza organizacional da unidade local.
+- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
 
 ### Comentário da Questão 49
 
-- **Alternativa correta:** D.
-- **A) está errada:** Solidariedade não autoriza irregularidade profissional.
-- **B) está errada:** Exercício profissional irregular é relevante para o conselho.
-- **C) está errada:** É conduta profissional, não forma textual.
-- **D) está correta:** Facilitar atuação irregular contraria a fiscalização profissional.
-- **Conceito cobrado:** Facilitação de exercício irregular.
-- **Pegadinha usada:** Transformar ajuda indevida em dever ético..
-- **Como pensar para acertar:** Ética protege a sociedade contra atuação não habilitada.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Lucro não é requisito necessário para caracterizar auxílio ao exercício não habilitado.
+- **B) está errada:** A responsabilização ética não depende obrigatoriamente de condenação penal prévia do terceiro.
+- **C) está correta:** Auxiliar pessoa não habilitada a exercer atividade profissional pode configurar infração por si só.
+- **D) está errada:** Registro pessoal não pode ser transferido informalmente a quem não possui habilitação.
+- **Conceito cobrado:** Auxílio ao exercício profissional por não habilitado.
+- **Pegadinha usada:** Acrescentar lucro, dano ou condenação penal como requisitos indispensáveis.
+- **Como pensar para acertar:** Observe o núcleo da conduta: facilitar exercício reservado por quem não tem habilitação.
+- **Referência à apostila de estudo:** Dia 4 — “Infrações recorrentes no Código de Ética”.
 
 ### Comentário da Questão 50
 
-- **Alternativa correta:** C.
-- **A) está errada:** RNs se fundamentam na lei e no decreto.
-- **B) está errada:** O tema é profissão de Administração e sistema de conselhos.
-- **C) está correta:** Lei e decreto devem ser estudados em conjunto.
-- **D) está errada:** Regulamento não substitui a lei.
-- **Conceito cobrado:** Lei e decreto da profissão.
-- **Pegadinha usada:** Desconsiderar a base legal por existirem RNs..
-- **Como pensar para acertar:** Comece pela lei, depois leia o decreto e normas do CFA.
-- **Referência à apostila de estudo:** Dia 4 — Legislação CRA-PR/CFA.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** Especialidade e data da resolução não lhe permitem afastar requisito estabelecido por lei.
+- **B) está correta:** Decreto e resolução são interpretados dentro da base legal, sem criar contradição nem dispensar requisito reservado à lei.
+- **C) está errada:** Um decreto regulamentar posterior não modifica a lei apenas por critério cronológico.
+- **D) está errada:** A solução do conflito normativo não depende da livre escolha da regra mais favorável, mas de hierarquia e competência.
+- **Conceito cobrado:** Hierarquia normativa, poder regulamentar e limites das resoluções administrativas.
+- **Pegadinha usada:** Aplicar isoladamente cronologia, especialidade ou favorabilidade e ignorar a relação de subordinação à lei.
+- **Como pensar para acertar:** Ordene os atos por hierarquia e competência antes de usar critérios de interpretação entre normas do mesmo nível.
+- **Referência à apostila de estudo:** Dia 4 — “Lei nº 4.769/1965 e Decreto nº 61.934/1967”.
 
 ### Comentários das questões extras de revisão fixa do Dia 4
 
 #### Comentário Extra Dia 4.1
 
-- **Alternativa correta:** D.
-- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está correta:** A modalidade deve ser escolhida conforme objeto.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Escolher modalidade pelo nome mais conhecido, não pelo objeto.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Pregão destina-se a bens e serviços comuns, não à seleção descrita.
+- **B) está errada:** Leilão é modalidade ligada à alienação de bens, não ao prêmio por trabalho técnico ou artístico.
+- **C) está correta:** Concurso é a modalidade definida para escolha de trabalho técnico, científico ou artístico mediante prêmio ou remuneração.
+- **D) está errada:** Concorrência não substitui obrigatoriamente o concurso nessa hipótese específica.
+- **Conceito cobrado:** Modalidade concurso na Lei nº 14.133/2021.
+- **Pegadinha usada:** Confundir concurso público de pessoal com concurso enquanto modalidade licitatória.
+- **Como pensar para acertar:** Associe ‘trabalho técnico/científico/artístico + prêmio’ diretamente a concurso.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.2
 
-- **Alternativa correta:** B.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está correta:** Responsabilidade objetiva não elimina a necessidade de dano e nexo.
-- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **Conceito cobrado:** Responsabilidade civil do Estado.
-- **Pegadinha usada:** Achar que basta haver ato público para indenização automática.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** Conduta, dano e nexo formam o núcleo da análise, sem excluir causas de ruptura ou redução do nexo.
+- **B) está errada:** Dano isolado não basta; é necessário ligá-lo a uma conduta estatal.
+- **C) está errada:** Dolo do agente e condenação penal não são requisitos gerais da responsabilidade objetiva estatal.
+- **D) está errada:** O regime objetivo não exige, como regra, prova de culpa administrativa nesses termos.
+- **Conceito cobrado:** Elementos da responsabilidade civil objetiva do Estado.
+- **Pegadinha usada:** Confundir responsabilidade objetiva com responsabilidade automática.
+- **Como pensar para acertar:** Sempre percorra conduta, dano, nexo e possíveis excludentes ou atenuantes.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.3
 
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está correta:** Omissão exige análise mais cuidadosa da falha e do dever de atuação.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **Conceito cobrado:** Responsabilidade por omissão.
-- **Pegadinha usada:** Aplicar automaticamente a mesma lógica de todo ato comissivo.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** O simples dano em local público não torna automática a responsabilidade por omissão.
+- **B) está errada:** Omissão pode gerar responsabilidade quando havia dever e possibilidade de agir, conforme o caso.
+- **C) está errada:** Dano sem investigação da omissão e do nexo é insuficiente.
+- **D) está correta:** A análise exige dever concreto, falha, dano e nexo causal.
+- **Conceito cobrado:** Responsabilidade estatal por omissão.
+- **Pegadinha usada:** Escolher um dos absolutos: ‘sempre responde’ ou ‘nunca responde’.
+- **Como pensar para acertar:** Pergunte qual era o dever concreto de agir e como a omissão se conecta ao dano.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.4
 
-- **Alternativa correta:** A.
-- **A) está correta:** Culpa concorrente não apaga necessariamente o dano, mas pode repercutir no valor.
-- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **Conceito cobrado:** Atenuantes da responsabilidade.
-- **Pegadinha usada:** Tratar culpa concorrente sempre como exclusão total.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Mesmo no regime objetivo, a causalidade da vítima pode influir no valor devido.
+- **B) está errada:** A concorrência não rompe sempre e integralmente o nexo; isso depende de sua intensidade.
+- **C) está correta:** A participação causal da vítima pode justificar redução proporcional da reparação.
+- **D) está errada:** A responsabilidade não é automaticamente transferida ao agente público.
+- **Conceito cobrado:** Culpa concorrente da vítima.
+- **Pegadinha usada:** Confundir contribuição parcial com causa exclusiva.
+- **Como pensar para acertar:** Avalie se a vítima apenas concorreu ou foi a causa exclusiva do resultado.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.5
 
-- **Alternativa correta:** D.
-- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está correta:** Excludentes afastam responsabilidade quando rompem o nexo.
-- **Conceito cobrado:** Excludentes de responsabilidade.
-- **Pegadinha usada:** Ignorar nexo causal e responsabilizar sempre.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A ruptura efetiva do nexo por caso fortuito ou força maior pode afastar o dever de indenizar.
+- **B) está errada:** Ocorrência em bem público não basta para responsabilização automática.
+- **C) está errada:** A força maior não atua somente como redutor; pode excluir a responsabilidade se romper o nexo.
+- **D) está errada:** A objetividade do regime não elimina a necessidade de nexo causal.
+- **Conceito cobrado:** Excludentes do nexo causal.
+- **Pegadinha usada:** Entender responsabilidade objetiva como obrigação de indenizar qualquer evento.
+- **Como pensar para acertar:** Verifique se o evento externo rompeu a ligação causal entre atuação estatal e dano.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.6
 
 - **Alternativa correta:** B.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está correta:** Fiscalização profissional é exemplo de atuação administrativa limitadora em nome do interesse público.
-- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **Conceito cobrado:** Poder de polícia.
-- **Pegadinha usada:** Confundir poder de polícia administrativa com polícia judiciária penal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Nível:** Médio.
+- **A) está errada:** Poder de polícia exige competência e fundamento jurídico, não conveniência ilimitada.
+- **B) está correta:** A Administração pode condicionar direitos e atividades nos limites legais para proteger o interesse público.
+- **C) está errada:** Sanções penais pertencem ao campo jurisdicional; polícia administrativa não substitui o Judiciário.
+- **D) está errada:** A lei pode conferir atuação administrativa direta sem ordem judicial prévia em cada caso.
+- **Conceito cobrado:** Poder de polícia administrativa.
+- **Pegadinha usada:** Confundir limitação legal de direitos com poder irrestrito ou exclusivamente penal.
+- **Como pensar para acertar:** Procure a combinação ‘restrição legal + interesse público + atuação administrativa’.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.7
 
-- **Alternativa correta:** C.
-- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está correta:** Moralidade administrativa vai além da legalidade formal.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **Conceito cobrado:** Moralidade.
-- **Pegadinha usada:** Reduzir moralidade a opinião pessoal do gestor.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Legalidade formal não basta quando a conduta é desleal ou ímproba.
+- **B) está errada:** Moralidade administrativa não é a preferência moral privada de cada agente.
+- **C) está errada:** Eficiência convive com os demais princípios e não legitima seu sacrifício.
+- **D) está correta:** A exigência envolve ética institucional, lealdade e probidade.
+- **Conceito cobrado:** Princípio da moralidade administrativa.
+- **Pegadinha usada:** Reduzir moralidade à lei formal ou à moral pessoal do agente.
+- **Como pensar para acertar:** Pense em padrões objetivos de honestidade, lealdade e boa administração.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.8
 
-- **Alternativa correta:** A.
-- **A) está correta:** Motivar é apresentar fundamentos, não apenas repetir conclusão.
-- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **Conceito cobrado:** Motivação.
-- **Pegadinha usada:** Confundir motivo com motivação.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Resultado material não se confunde com motivação.
+- **B) está correta:** Motivação é a exteriorização das razões de fato e de direito da decisão.
+- **C) está errada:** Competência identifica quem pode praticar o ato, não por que ele foi praticado.
+- **D) está errada:** Atos discricionários não são, por isso, sempre dispensados de motivação.
+- **Conceito cobrado:** Motivo e motivação do ato administrativo.
+- **Pegadinha usada:** Trocar a razão do ato, sua exposição, sua competência e seu resultado.
+- **Como pensar para acertar:** Use a distinção: motivo é o pressuposto; motivação é sua exposição no ato.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.9
 
 - **Alternativa correta:** D.
-- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **D) está correta:** Favorecimento quebra tratamento objetivo entre concorrentes.
-- **Conceito cobrado:** Princípios licitatórios.
-- **Pegadinha usada:** Achar que contratação pública admite preferência pessoal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Nível:** Difícil.
+- **A) está errada:** Publicidade do motivo não corrige o uso pessoal da competência.
+- **B) está errada:** Eficiência não é o único princípio atingido, mesmo que haja resultado útil.
+- **C) está errada:** A perseguição pessoal atinge diretamente a impessoalidade e pode configurar desvio de finalidade.
+- **D) está correta:** Finalidade pública não pode ser usada como fachada para vingança pessoal; há ofensa à impessoalidade e à moralidade.
+- **Conceito cobrado:** Impessoalidade, moralidade e desvio de finalidade.
+- **Pegadinha usada:** Confundir competência formal para fiscalizar com legitimidade do propósito concreto.
+- **Como pensar para acertar:** Pergunte se a finalidade real é pública ou pessoal, ainda que o ato pareça formalmente regular.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.10
 
-- **Alternativa correta:** B.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está correta:** A licitação não se resume à escolha informal do fornecedor.
-- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **Conceito cobrado:** Procedimento licitatório.
-- **Pegadinha usada:** Ignorar planejamento e publicidade da contratação.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** A sequência inicia pelo planejamento, não pelo julgamento.
+- **B) está errada:** Não se contrata antes do planejamento, da seleção e do encerramento do procedimento.
+- **C) está correta:** A alternativa respeita a ordem geral das fases indicada pela Lei nº 14.133/2021.
+- **D) está errada:** Planejamento não é etapa facultativa posterior à execução.
+- **Conceito cobrado:** Fases gerais da licitação.
+- **Pegadinha usada:** Reposicionar planejamento e contratação para depois do julgamento.
+- **Como pensar para acertar:** Visualize o fluxo: preparar, divulgar, receber, julgar, habilitar, recorrer e homologar.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Administração Pública”.
 
 #### Comentário Extra Dia 4.11
 
-- **Alternativa correta:** C.
-- **A) está errada:** O pronome relativo retoma 'acessos'.
-- **B) está errada:** Servidores não são mencionados.
-- **C) está correta:** O pronome relativo retoma termo antecedente.
-- **D) está errada:** A oração caracteriza o substantivo 'acessos'.
-- **Conceito cobrado:** Coesão por pronome relativo.
-- **Pegadinha usada:** Escolher referente pela proximidade sem análise sintática.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Sem vírgulas, a oração não afirma necessariamente que todos os acessos estavam vencidos.
+- **B) está errada:** A ausência de vírgulas indica valor restritivo, não meramente explicativo.
+- **C) está errada:** O pronome ‘que’ retoma o antecedente imediato ‘acessos’.
+- **D) está correta:** A oração seleciona, entre os acessos, aqueles que estavam vencidos.
+- **Conceito cobrado:** Oração subordinada adjetiva restritiva.
+- **Pegadinha usada:** Ignorar o efeito semântico da ausência de vírgulas.
+- **Como pensar para acertar:** Retire mentalmente a oração: se ela delimita quais elementos são atingidos, é restritiva.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.12
 
-- **Alternativa correta:** A.
-- **A) está correta:** Não há crase antes de verbo.
-- **B) está errada:** Há crase: enviado a + a chefia.
-- **C) está errada:** Há crase em indicação de horas.
-- **D) está errada:** Há crase: referir-se a + a norma.
-- **Conceito cobrado:** Crase.
-- **Pegadinha usada:** Marcar crase apenas pela presença da letra 'a'.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
+- **A) está errada:** Em ‘àquela’, há fusão da preposição exigida com o demonstrativo.
+- **B) está correta:** Antes de verbo no infinitivo não ocorre crase: o correto é ‘começou a revisar’.
+- **C) está errada:** ‘Encaminhado à chefia’ admite preposição e artigo feminino.
+- **D) está errada:** Na indicação de horário determinado, ‘às 14 horas’ está correto.
+- **Conceito cobrado:** Emprego do acento indicativo de crase.
+- **Pegadinha usada:** Marcar crase mecanicamente antes de palavra feminina e esquecer que ‘revisar’ é verbo.
+- **Como pensar para acertar:** Teste a presença simultânea de preposição ‘a’ e artigo ou demonstrativo compatível.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.13
 
-- **Alternativa correta:** D.
-- **A) está errada:** Transforma concessão em causa.
-- **B) está errada:** Altera o comando principal.
-- **C) está errada:** Cria finalidade absurda e muda o sentido.
-- **D) está correta:** 'Ainda que' e 'mesmo que' exprimem concessão.
-- **Conceito cobrado:** Reescrita e conectores.
-- **Pegadinha usada:** Trocar concessão por causa ou finalidade.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** ‘Porque’ introduz causa, não concessão.
+- **B) está correta:** ‘Mesmo que’ preserva o valor concessivo de ‘ainda que’.
+- **C) está errada:** ‘Para que’ introduz finalidade.
+- **D) está errada:** ‘Logo que’ expressa valor temporal.
+- **Conceito cobrado:** Conectivos concessivos.
+- **Pegadinha usada:** Escolher locução gramaticalmente possível, mas com relação semântica diferente.
+- **Como pensar para acertar:** Substitua o conector e verifique se permanece a ideia de obstáculo que não impede o resultado.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.14
 
-- **Alternativa correta:** B.
-- **A) está errada:** Informal e imprecisa.
-- **B) está correta:** Texto administrativo exige clareza, impessoalidade e formalidade.
-- **C) está errada:** Subjetiva e coloquial.
-- **D) está errada:** Coloquial e incompatível com formalidade.
-- **Conceito cobrado:** Linguagem administrativa.
-- **Pegadinha usada:** Confundir clareza com informalidade.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A frase é impessoal, clara, objetiva e informa prazo e finalidade.
+- **B) está errada:** A expressão ‘a gente’ e ‘rapidinho’ são informais.
+- **C) está errada:** A redação é excessivamente cerimoniosa e imprecisa com ‘talvez’.
+- **D) está errada:** ‘Bacana’ e ‘meio atrasado’ tornam o texto coloquial e subjetivo.
+- **Conceito cobrado:** Clareza e formalidade na redação administrativa.
+- **Pegadinha usada:** Confundir formalidade com excesso de cerimônia ou linguagem rebuscada.
+- **Como pensar para acertar:** Prefira forma objetiva, impessoal, precisa e sem marcas de conversa coloquial.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.15
 
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade aponta objetivo, não causa passada.
-- **B) está errada:** Concessão seria marcada por 'embora'.
-- **C) está correta:** A estrutura 'para + infinitivo' indica finalidade.
-- **D) está errada:** Oposição seria marcada por 'mas', 'porém', 'contudo'.
-- **Conceito cobrado:** Valor semântico de oração reduzida.
-- **Pegadinha usada:** Confundir finalidade com causa.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A notificação foi feita com o objetivo de obter a regularização: relação de finalidade.
+- **B) está errada:** Não há contraste concessivo.
+- **C) está errada:** A regularização não é apresentada como causa da notificação.
+- **D) está errada:** A oração não descreve resultado inevitável, mas propósito da ação.
+- **Conceito cobrado:** Valor semântico de finalidade.
+- **Pegadinha usada:** Confundir objetivo pretendido com causa ou consequência.
+- **Como pensar para acertar:** Pergunte ‘com que finalidade o CRA notificou?’: para regularizar o registro.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.16
 
-- **Alternativa correta:** A.
-- **A) está correta:** Com o mesmo tempo e produtividade, 80 × (6/4) = 120.
-- **B) está errada:** Esse resultado não aplica corretamente a proporcionalidade entre servidores e produção.
-- **C) está errada:** O aumento de servidores de 4 para 6 representa fator 1,5, não acréscimo fixo de 20.
-- **D) está errada:** Esse valor dobraria a produção sem dobrar a quantidade de servidores.
-- **Conceito cobrado:** Regra de três composta simples.
-- **Pegadinha usada:** Somar servidores em vez de multiplicar pelo fator proporcional.
-- **Como pensar para acertar:** Mantenha constantes tempo e produtividade; ajuste apenas a quantidade de servidores.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** 126 não preserva a proporcionalidade estabelecida.
+- **B) está errada:** 108 corresponderia a 9 dias no mesmo ritmo.
+- **C) está correta:** Mantido o ritmo, 72 ÷ 6 = 12 processos por dia; em 10 dias, 12 × 10 = 120.
+- **D) está errada:** 144 corresponderia a 12 dias no ritmo calculado.
+- **Conceito cobrado:** Proporcionalidade direta.
+- **Pegadinha usada:** Multiplicar ou dividir pelos números do enunciado sem encontrar a taxa unitária.
+- **Como pensar para acertar:** Calcule primeiro a produção diária e depois multiplique pelo novo número de dias.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.17
 
-- **Alternativa correta:** D.
-- **A) está errada:** Soma os grupos e conta duas vezes quem está nas duas matérias.
-- **B) está errada:** Subtrai a interseção em excesso.
-- **C) está errada:** Soma todos os números, inclusive a interseção, como se fossem grupos separados.
-- **D) está correta:** União = 32 + 24 - 10 = 46.
-- **Conceito cobrado:** Conjuntos.
-- **Pegadinha usada:** Contar a interseção duas vezes.
-- **Como pensar para acertar:** Use a fórmula da união: A + B - interseção.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** O valor 2 decorre de descontar indevidamente a interseção tripla mais de uma vez.
+- **B) está errada:** O valor 8 resulta de ajuste incompleto das interseções no cálculo da união.
+- **C) está correta:** A união é `58 + 50 + 42 − 28 − 24 − 20 + 12 = 90`; portanto, `100 − 90 = 10` não estudam nenhuma.
+- **D) está errada:** O valor 22 confunde a interseção tripla com parcela adicional a ser retirada do complemento.
+- **Conceito cobrado:** Inclusão-exclusão com três conjuntos e cálculo do complemento.
+- **Pegadinha usada:** Subtrair as interseções aos pares sem devolver a interseção tripla, contada e retirada múltiplas vezes.
+- **Como pensar para acertar:** Calcule a união com todos os sete termos da fórmula e só depois subtraia o resultado do total.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.18
 
 - **Alternativa correta:** B.
-- **A) está errada:** Essa é afirmação mais forte que a negação lógica.
-- **B) está correta:** A negação de 'todo A é B' é 'algum A não é B'.
-- **C) está errada:** Equivale a nenhum conferiu, não à negação mínima.
-- **D) está errada:** Isso pode ser verdadeiro junto com a proposição original.
-- **Conceito cobrado:** Negação de quantificadores.
-- **Pegadinha usada:** Negar 'todo' como 'nenhum'.
-- **Como pensar para acertar:** Procure a negação mínima que torna a proposição original falsa.
+- **Nível:** Muito difícil.
+- **A) está errada:** A negação de ‘todo’ é ‘algum não’, e a negação da conjunção exige ‘ou’.
+- **B) está correta:** Por De Morgan, nega-se cada parcela: algum fiscal não conferiu ou nenhum analista validou.
+- **C) está errada:** ‘Todo fiscal não conferiu’ é mais forte que a negação correta de ‘todo fiscal conferiu’.
+- **D) está errada:** A alternativa mantém afirmações positivas que não correspondem à negação das duas parcelas.
+- **Conceito cobrado:** Negação de quantificadores e da conjunção.
+- **Pegadinha usada:** Negar apenas os verbos sem trocar ‘e’ por ‘ou’ e sem inverter adequadamente os quantificadores.
+- **Como pensar para acertar:** Aplique em duas etapas: De Morgan na conjunção e, depois, negue cada quantificador.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.19
 
-- **Alternativa correta:** C.
-- **A) está errada:** Desconsidera que do 1º ao 8º termo há 7 intervalos.
-- **B) está errada:** Usa 8 intervalos em vez de 7.
-- **C) está correta:** a8 = 7 + (8 - 1) × 3 = 28.
-- **D) está errada:** Confunde PA com multiplicação por posição.
-- **Conceito cobrado:** Progressão aritmética.
-- **Pegadinha usada:** Usar n intervalos em vez de n - 1.
-- **Como pensar para acertar:** Aplique an = a1 + (n - 1)r.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** O décimo termo é 48, a soma planejada é `10 × (12 + 48) ÷ 2 = 300` e 80% desse total corresponde a 240.
+- **B) está errada:** 300 é o total da progressão antes da exclusão dos 20% de duplicidades.
+- **C) está errada:** 220 não corresponde nem à soma da PA nem à aplicação de 80% sobre essa soma.
+- **D) está errada:** 264 resulta de aplicar percentual ou base incompatível com o total planejado.
+- **Conceito cobrado:** Soma de progressão aritmética e aplicação sucessiva de percentual.
+- **Pegadinha usada:** Parar na soma da PA ou aplicar a exclusão percentual a um termo, e não ao total acumulado.
+- **Como pensar para acertar:** Determine o último termo, calcule a soma dos dez termos e somente então retenha 80% do total.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
 
 #### Comentário Extra Dia 4.20
 
-- **Alternativa correta:** A.
-- **A) está correta:** Há 7 opções não bloqueadas em 10 possíveis.
-- **B) está errada:** Essa é a probabilidade de escolher senha bloqueada.
-- **C) está errada:** Inverte indevidamente casos favoráveis e total.
-- **D) está errada:** Probabilidade não pode ser maior que 1 nesse caso.
-- **Conceito cobrado:** Probabilidade simples.
-- **Pegadinha usada:** Escolher o evento complementar errado.
-- **Como pensar para acertar:** Conte casos favoráveis e divida pelo total de casos possíveis.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** `7/15` era a probabilidade de dois liberados em duas retiradas e não resolve a composição exigida em três escolhas.
+- **B) está errada:** `7/24` não contabiliza todas as posições possíveis para o único acesso bloqueado.
+- **C) está errada:** `3/8` corresponde a uma razão parcial e não à seleção sem reposição de uma composição específica.
+- **D) está correta:** Há `C(7,2) × C(3,1) = 63` amostras favoráveis entre `C(10,3) = 120`; logo, a probabilidade é `63/120 = 21/40`.
+- **Conceito cobrado:** Probabilidade hipergeométrica e contagem de combinações sem reposição.
+- **Pegadinha usada:** Fixar uma ordem para as categorias ou reutilizar resultado de duas retiradas em uma amostra de três.
+- **Como pensar para acertar:** Conte escolhas favoráveis por categoria e divida pelo total de subconjuntos de três acessos.
+- **Referência à apostila de estudo:** Dia 4 — “Bloco recorrente do Dia 4 — Português e RLM”.
+
 
 ---
 
@@ -6428,1357 +6748,1476 @@ Extra Dia 4.20: A
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
 
 Leia o trecho: “A digitalização de serviços públicos amplia o acesso do cidadão, mas exige mecanismos de segurança para que a eficiência não comprometa direitos.” A ideia central é:
 
-A) a eficiência administrativa é incompatível com direitos do cidadão.
-B) a segurança impede qualquer melhoria em serviços públicos.
-C) a digitalização pode ampliar o acesso, desde que acompanhada de segurança e respeito a direitos.
-D) a digitalização deve ser abandonada porque sempre viola direitos.
+A) A digitalização pode ampliar o acesso, desde que acompanhada de segurança e respeito a direitos.
+B) A segurança da informação constitui objetivo independente do acesso e da eficiência dos serviços.
+C) A ampliação do acesso só é legítima quando todos os canais presenciais são eliminados.
+D) A preservação de direitos necessariamente reduz a eficiência dos serviços digitalizados.
 
 ### Questão 2
+**Nível: Médio**
 
 No trecho “... mas exige mecanismos de segurança”, o conector “mas” estabelece relação de:
 
-A) causa.
-B) oposição/ressalva.
-C) conclusão.
-D) finalidade.
+A) causa, pois justifica por que a digitalização amplia o acesso.
+B) oposição com valor de ressalva, sem anular o benefício mencionado antes.
+C) conclusão, pois apresenta uma consequência inevitável da ampliação do acesso.
+D) condição, pois substitui a estrutura “desde que” sem alteração sintática.
 
 ### Questão 3
+**Nível: Médio**
 
-Leia: “Nem toda inovação tecnológica representa melhoria administrativa.” A inferência correta é:
+Leia: “Nem toda inovação tecnológica representa melhoria administrativa.” A inferência autorizada pelo enunciado é:
 
-A) algumas inovações tecnológicas podem não melhorar a Administração.
-B) nenhuma inovação tecnológica melhora a Administração.
-C) toda inovação tecnológica piora a Administração.
-D) inovação tecnológica e Administração são temas sem relação.
+A) A maior parte das inovações tecnológicas não produz melhoria administrativa.
+B) Existe ao menos uma inovação tecnológica que pode não representar melhoria administrativa.
+C) Nenhuma inovação tecnológica representa melhoria administrativa.
+D) Somente inovações desenvolvidas pela própria Administração produzem melhoria.
 
 ### Questão 4
+**Nível: Médio**
 
 Leia: “A transparência fortalece a confiança social, desde que respeite a proteção de dados pessoais.” Assinale a alternativa que extrapola o texto.
 
-A) A transparência pode fortalecer a confiança social.
-B) A proteção de dados pessoais deve ser considerada.
-C) Transparência e proteção de dados precisam ser conciliadas.
-D) Todo dado pessoal deve ser divulgado para garantir confiança.
+A) A transparência pode contribuir para fortalecer a confiança social.
+B) A proteção de dados pessoais funciona como limite a ser observado.
+C) A confiança social exige divulgação irrestrita de todo dado pessoal do órgão.
+D) Transparência e proteção de dados podem ser compatibilizadas.
 
 ### Questão 5
+**Nível: Médio**
 
 A reescrita que preserva o sentido de “A revisão diária reduz o esquecimento e melhora a retenção do conteúdo” é:
 
-A) A retenção melhora porque o esquecimento aumenta.
-B) A revisão diária prejudica a retenção, embora reduza o conteúdo.
-C) O esquecimento é reduzido e a retenção do conteúdo é melhorada pela revisão diária.
-D) A revisão diária elimina definitivamente qualquer esquecimento.
+A) Como melhora a retenção, a revisão diária aumenta o esquecimento do conteúdo.
+B) O esquecimento é reduzido e a retenção do conteúdo é melhorada pela revisão diária.
+C) A revisão diária reduz o conteúdo esquecido, embora prejudique sua retenção.
+D) A revisão diária impede qualquer esquecimento e assegura retenção integral do conteúdo.
 
 ### Questão 6
+**Nível: Médio**
 
-Assinale a alternativa correta quanto à concordância verbal.
+Assinale a alternativa correta quanto à concordância verbal no padrão formal.
 
-A) Existe pendências no cadastro.
-B) Faltam documentos no processo administrativo.
-C) Falta documentos no processo administrativo.
-D) Haviam muitos candidatos na sala, no sentido de existir.
+A) Existe, no cadastro, pendências que impedem a emissão da certidão.
+B) Falta, nos autos, os comprovantes exigidos pelo edital.
+C) Faltam documentos no processo administrativo encaminhado à comissão.
+D) Devem haver documentos suficientes para a análise do pedido.
 
 ### Questão 7
+**Nível: Médio**
 
-Assinale a alternativa em que a crase está corretamente empregada.
+Assinale a alternativa em que o emprego do acento indicativo de crase está correto.
 
-A) O relatório foi encaminhado à diretoria técnica.
-B) O candidato começou à revisar o edital.
-C) A servidora entregou o documento à ele.
-D) O servidor foi à pé ao protocolo.
+A) A servidora entregou a manifestação à Vossa Senhoria.
+B) O candidato começou à revisar o edital após o simulado.
+C) O relatório foi encaminhado à diretoria técnica para análise.
+D) O servidor retornou à pé ao setor de protocolo.
 
 ### Questão 8
+**Nível: Médio**
 
-A vírgula foi empregada incorretamente em:
+Assinale a alternativa em que a vírgula foi empregada incorretamente.
 
-A) Após a publicação do edital, os candidatos organizaram o cronograma.
-B) O CRA-PR, autarquia profissional, publicou orientações.
-C) Embora o conteúdo seja extenso, a revisão diária ajuda.
-D) Os candidatos, leram o edital com atenção.
+A) Após a publicação do edital, os candidatos reorganizaram o cronograma.
+B) O CRA-PR, autarquia de fiscalização profissional, divulgou novas orientações.
+C) Embora o conteúdo seja extenso, a revisão diária favorece a retenção.
+D) Os candidatos que revisaram o edital, identificaram a alteração do prazo.
 
 ### Questão 9
+**Nível: Médio**
 
-Leia: “O sistema é eficiente; contudo, depende de dados atualizados.” O conector “contudo” poderia ser substituído, sem prejuízo do sentido, por:
+Leia: “O sistema é eficiente; contudo, depende de dados atualizados.” Sem alterar a relação entre as orações, “contudo” pode ser substituído por:
 
-A) porque.
-B) a fim de que.
-C) entretanto.
-D) portanto.
+A) entretanto.
+B) por conseguinte.
+C) porquanto.
+D) contanto que.
 
 ### Questão 10
+**Nível: Médio**
 
 Assinale a alternativa correta quanto à regência verbal no padrão formal.
 
-A) A decisão implicou em mudanças, obrigatoriamente.
-B) O candidato obedeceu ao edital.
-C) O candidato obedeceu o edital.
-D) O servidor assistiu o treinamento, no sentido de ver, como única forma formal.
+A) O candidato visava o cargo de analista, no sentido de aspirar a ele.
+B) O candidato obedeceu ao edital e às orientações da banca.
+C) A equipe preferiu revisar o texto do que manter a versão anterior.
+D) Os servidores assistiram o treinamento, no sentido de presenciá-lo.
 
 ### Questão 11
+**Nível: Médio**
 
-Leia: “Os dados foram revisados, e esse procedimento reduziu inconsistências.” A expressão “esse procedimento” retoma:
+Leia: “Os dados cadastrais foram conferidos por dois servidores, e esse procedimento reduziu inconsistências.” A expressão “esse procedimento” retoma:
 
-A) a revisão dos dados.
-B) as inconsistências.
-C) apenas a palavra “dados”.
-D) uma informação externa ao texto.
+A) uma etapa do trabalho não mencionada no período.
+B) a redução das inconsistências identificadas no cadastro.
+C) apenas o substantivo “servidores”.
+D) a conferência dos dados cadastrais por dois servidores.
 
 ### Questão 12
+**Nível: Médio**
 
 No período “Se o planejamento for consistente, a execução será mais segura”, a oração introduzida por “se” expressa:
 
-A) conclusão.
-B) concessão.
-C) oposição.
-D) condição.
+A) conclusão decorrente de uma premissa já comprovada.
+B) concessão diante de um obstáculo insuficiente.
+C) oposição entre planejamento e execução.
+D) condição para que a execução seja mais segura.
 
 ### Questão 13
+**Nível: Médio**
 
-Assinale a frase em que “há” e “a” foram empregados corretamente.
+Assinale a alternativa em que “há” e “a” foram empregados corretamente.
 
-A) Há prova ocorrerá daqui a dois meses.
-B) A três meses estudo; há dois meses farei a prova.
-C) Estudo há três meses; a prova ocorrerá daqui a dois meses.
-D) Estudo a três meses; a prova ocorrerá daqui há dois meses.
+A) Estudo o conteúdo há três meses, e a prova ocorrerá daqui a vinte dias.
+B) A três meses estudo o conteúdo, e a prova será realizada há vinte dias.
+C) Há três meses ocorrerá a prova, e o edital saiu a duas semanas.
+D) Estudo o conteúdo a três meses, e a prova ocorrerá daqui há vinte dias.
 
 ### Questão 14
+**Nível: Médio**
 
-Assinale a alternativa em que há ambiguidade de referência.
+Assinale a alternativa em que há ambiguidade de referência pronominal.
 
-A) A equipe revisou o documento antes do envio.
-B) O analista informou ao coordenador que seu relatório estava incompleto.
-C) O analista informou que o relatório da equipe estava incompleto.
-D) O coordenador recebeu o relatório final ontem.
+A) A equipe revisou seu próprio relatório antes de enviá-lo à diretoria.
+B) O analista informou que o relatório elaborado pela equipe estava incompleto.
+C) O analista informou ao coordenador que seu relatório estava incompleto.
+D) O coordenador recebeu ontem o relatório final elaborado pelo analista.
 
 ### Questão 15
+**Nível: Médio**
 
-Leia: “A medida é necessária, pois reduz riscos operacionais.” No contexto, “pois” introduz ideia de:
+Leia: “A medida deve ser mantida, pois reduz riscos operacionais sem restringir o atendimento.” No contexto, “pois” introduz:
 
-A) explicação/causa.
-B) oposição.
-C) alternância.
-D) condição.
+A) explicação que fundamenta a necessidade de manter a medida.
+B) ressalva que limita a eficácia da medida.
+C) alternativa à manutenção da medida.
+D) condição necessária para a redução dos riscos.
 
 ### Questão 16
+**Nível: Médio**
 
 Assinale a alternativa correta quanto à colocação pronominal no padrão formal.
 
-A) Não deve-se ignorar o edital.
-B) Me informaram o resultado ontem, em início formal de frase.
-C) Jamais deve-se desconsiderar a legislação.
-D) Não se deve ignorar o edital.
+A) Não se deve desconsiderar a retificação publicada pela banca.
+B) Me comunicaram o resultado no início da reunião.
+C) A comissão tinha comunicado-me a alteração antes da reunião.
+D) Não deve-se desconsiderar a retificação publicada pela banca.
 
 ### Questão 17
+**Nível: Médio**
 
 Assinale a alternativa com pontuação adequada.
 
-A) Curitiba, capital do Paraná sediará, o evento.
-B) Curitiba capital, do Paraná sediará o evento.
-C) Curitiba, capital do Paraná, sediará o evento.
-D) Curitiba capital do Paraná, sediará o evento.
+A) Curitiba, capital do Paraná sediará o encontro regional em agosto.
+B) Curitiba, capital do Paraná, sediará o encontro regional em agosto.
+C) Curitiba capital do Paraná, sediará o encontro regional em agosto.
+D) Curitiba capital, do Paraná, sediará o encontro regional em agosto.
 
 ### Questão 18
+**Nível: Médio**
 
-Leia: “Apenas os candidatos que revisaram legislação específica acertaram a questão.” A palavra “apenas” indica:
+Leia: “Apenas os candidatos que revisaram a legislação específica identificaram a exceção normativa.” Considerando o alcance de “apenas”, o período afirma que:
 
-A) concessão.
-B) restrição.
-C) causa.
-D) conclusão.
+A) os candidatos identificaram somente uma exceção, embora pudessem identificar outras.
+B) todos os candidatos revisaram a legislação, mas somente alguns identificaram a exceção.
+C) a revisão da legislação foi a única atividade realizada por todos os candidatos.
+D) o grupo que identificou a exceção ficou restrito aos candidatos que revisaram a legislação específica.
 
 ### Questão 19
+**Nível: Médio**
 
-A frase correta quanto à concordância nominal é:
+Assinale a frase correta quanto à concordância nominal e verbal.
 
-A) Seguem anexos os documentos solicitados.
-B) Segue anexo os documentos solicitados.
-C) As informações seguem anexo.
-D) Os relatórios seguem anexa.
+A) Segue anexa ao processo os relatórios solicitados pela comissão.
+B) Segue anexos ao processo os documentos solicitados pela comissão.
+C) Seguem anexo ao processo as declarações solicitadas pela comissão.
+D) Seguem anexos ao processo os documentos solicitados pela comissão.
 
 ### Questão 20
+**Nível: Médio**
 
-Leia: “A política foi implementada para reduzir filas.” A expressão “para reduzir filas” indica:
+Leia: “A política de atendimento foi reformulada para reduzir filas sem excluir usuários com dificuldade de acesso digital.” A oração “para reduzir filas” expressa:
 
-A) consequência não planejada.
-B) oposição.
-C) concessão.
-D) finalidade.
+A) consequência imprevista da reformulação.
+B) contraste entre a política e o atendimento.
+C) finalidade atribuída à reformulação da política.
+D) concessão diante de uma dificuldade.
 
 ### Questão 21
+**Nível: Difícil**
 
-Assinale a alternativa em que a palavra “onde” foi empregada adequadamente.
+Assinale a alternativa em que a palavra “onde” foi empregada de acordo com a norma-padrão.
 
-A) O argumento onde o candidato se baseou é frágil.
-B) A situação onde houve dúvida foi resolvida.
-C) O prédio onde funciona o setor de atendimento passa por reforma.
-D) A norma onde o tema foi tratado é recente.
+A) O prédio onde funciona o setor de atendimento passa por reforma.
+B) A hipótese onde o prazo seria prorrogado foi rejeitada.
+C) O fundamento onde a decisão se apoiou consta do parecer.
+D) O processo onde a inconsistência foi registrada retornou à unidade.
 
 ### Questão 22
+**Nível: Difícil**
 
-Em uma dissertação, uma tese eficiente deve:
+Para o tema “digitalização de serviços públicos e proteção de direitos”, qual enunciado funciona melhor como tese de uma dissertação?
 
-A) ser substituída por uma lista de exemplos sem relação.
-B) apresentar posição clara sobre o tema.
-C) apenas copiar o tema sem posicionamento.
-D) surgir somente depois da conclusão.
+A) A digitalização dos serviços públicos avançou nas últimas décadas e integra o cotidiano administrativo.
+B) A expansão dos serviços digitais deve combinar ganho de eficiência, canais inclusivos e proteção efetiva dos dados pessoais.
+C) De que modo a Administração poderá digitalizar serviços sem produzir novos riscos aos cidadãos?
+D) Serão examinados exemplos de plataformas públicas antes de se apresentar, ao final, uma opinião sobre o tema.
 
 ### Questão 23
+**Nível: Difícil**
 
-Leia a introdução: “A tecnologia é importante. Hoje tudo é tecnologia. A tecnologia está em todos os lugares.” O principal problema é:
+Leia a introdução: “A tecnologia é importante. Hoje tudo é tecnologia. A tecnologia está em todos os lugares.” O principal problema argumentativo do trecho é:
 
-A) generalidade e ausência de tese clara.
-B) excesso de argumento técnico específico.
-C) uso obrigatório de linguagem jurídica avançada.
-D) presença de conclusão completa no início.
+A) a antecipação de uma proposta de intervenção que deveria aparecer apenas na conclusão.
+B) a delimitação excessiva do tema, que impede a inclusão de exemplos no desenvolvimento.
+C) a presença de argumento circular, embora haja tese explícita sobre serviços públicos digitais.
+D) a generalidade das afirmações e a ausência de uma tese que delimite o ponto de vista.
 
 ### Questão 24
+**Nível: Difícil**
 
-Assinale a alternativa que apresenta melhor desenvolvimento argumentativo.
+Em um desenvolvimento sobre digitalização inclusiva, assinale o trecho que apresenta argumento mais consistente.
 
-A) Digitalização é boa porque sim.
-B) Todo mundo sabe que tecnologia resolve tudo.
-C) O tema é muito debatido atualmente.
-D) A digitalização reduz deslocamentos e filas, mas exige sistemas acessíveis e seguros para não excluir cidadãos vulneráveis.
+A) A digitalização merece atenção porque constitui tema atual e frequentemente debatido pela sociedade.
+B) Os serviços digitais são eficientes quando funcionam bem, razão pela qual devem ser ampliados.
+C) A digitalização reduz deslocamentos e espera, ampliando o acesso; sem acessibilidade e canais alternativos, porém, pode excluir usuários vulneráveis.
+D) A existência de plataformas eletrônicas demonstra, por si só, que todos os cidadãos passaram a ter acesso equivalente.
 
 ### Questão 25
+**Nível: Difícil**
 
-Assinale a frase que evita linguagem informal inadequada à discursiva.
+Assinale a frase mais adequada a uma dissertação por combinar registro formal, precisão e objetividade.
 
-A) Dados são um negócio meio complicado.
-B) A parada da transparência ajuda geral.
-C) A Administração Pública deve adotar critérios transparentes na gestão de dados.
-D) A gestão de dados é tipo uma coisa muito top.
+A) É absolutamente evidente para qualquer pessoa sensata que os dados públicos exigem bastante cuidado.
+B) A meu ver, parece que talvez a transparência possa ajudar um pouco a Administração.
+C) A gestão de dados envolve certas coisas importantes, que serão resolvidas conforme for possível.
+D) A Administração deve definir finalidade, controle de acesso e prazo de retenção para os dados que trata.
 
 ### Questão 26
+**Nível: Difícil**
 
-Assinale a alternativa em que a crase é indevida.
+Assinale a alternativa em que o acento indicativo de crase foi empregado indevidamente.
 
-A) A informação foi encaminhada à autoridade competente.
-B) O servidor começou à analisar o processo.
-C) O servidor referiu-se à auditoria interna.
-D) A equipe compareceu à reunião.
+A) O servidor começou à analisar o processo após receber a defesa.
+B) A informação foi encaminhada à autoridade responsável pela decisão.
+C) A comissão fez referência àquela auditoria realizada em maio.
+D) A equipe compareceu às reuniões previstas no cronograma.
 
 ### Questão 27
+**Nível: Difícil**
 
-Leia: “Os candidatos que estudaram o edital resolveram melhor as questões.” Sem vírgulas, a oração “que estudaram o edital” tem valor:
+Leia: “Os candidatos que estudaram o edital resolveram melhor as questões.” Sem vírgulas, a oração “que estudaram o edital” permite concluir que:
 
-A) restritivo.
-B) explicativo.
-C) conclusivo.
-D) adversativo.
+A) todos os candidatos que não estudaram o edital necessariamente resolveram pior as questões.
+B) todos os candidatos estudaram o edital, e a oração apenas acrescenta informação acessória.
+C) o estudo do edital é apresentado como causa comprovada e exclusiva do melhor desempenho.
+D) a afirmação sobre melhor desempenho se restringe ao subconjunto dos candidatos que estudaram o edital.
 
 ### Questão 28
+**Nível: Difícil**
 
-Leia: “Os candidatos, que estudaram o edital, resolveram melhor as questões.” Com vírgulas, a oração destacada tem valor:
+Leia: “Os candidatos, que estudaram o edital, resolveram melhor as questões.” Considerando apenas a estrutura sintática e a pontuação, a oração entre vírgulas tem valor:
 
-A) restritivo indispensável.
-B) condicional.
-C) comparativo.
-D) explicativo.
+A) restritivo, pois seleciona apenas parte dos candidatos mencionados.
+B) condicional, pois subordina o desempenho ao estudo do edital.
+C) comparativo, pois confronta dois grupos de candidatos.
+D) explicativo, pois acrescenta informação acessória sobre todos os candidatos.
 
 ### Questão 29
+**Nível: Difícil**
 
-Assinale a alternativa que preserva paralelismo sintático.
+Assinale a alternativa que preserva o paralelismo sintático dos termos coordenados.
 
-A) O plano exige estudar, revisão e questões resolvidas.
-B) O plano exige teoria e resolver e erros.
-C) O plano exige ler a teoria, resolver questões e revisar erros.
-D) O plano exige leitura, resolver questões e que revise erros.
+A) O plano exige a análise de riscos, controlar acessos e a revisão de incidentes.
+B) O plano exige ler a teoria, resolver questões e revisar os erros registrados.
+C) O plano exige que o candidato leia a teoria, resolver questões e revisão dos erros.
+D) O plano exige leitura da teoria, resolver questões e que os erros sejam revistos.
 
 ### Questão 30
+**Nível: Difícil**
 
-Em “A equipe revisou o relatório; o coordenador, a planilha”, a vírgula em “o coordenador, a planilha” indica:
+Em “A equipe revisou o relatório; o coordenador, a planilha; e a diretora, o parecer”, as vírgulas após “coordenador” e “diretora”:
 
-A) oração subordinada adverbial.
-B) elipse do verbo “revisou”.
-C) separação indevida de sujeito e verbo.
-D) aposto explicativo.
+A) isolam vocativos dirigidos aos responsáveis por cada documento.
+B) separam indevidamente os sujeitos dos verbos expressos nas duas orações.
+C) assinalam a elipse do verbo “revisou”, recuperável na primeira oração.
+D) introduzem apostos que especificam “relatório” e “planilha”.
 
 ### Questão 31
+**Nível: Difícil**
 
 Assinale a frase correta no padrão formal.
 
-A) Faz dois anos que o sistema foi implantado.
-B) Fazem dois anos que o sistema foi implantado.
-C) Fizeram dois anos que o sistema foi implantado.
-D) Fazem-se dois anos que o sistema foi implantado.
+A) Houveram dois anos de testes antes que o sistema fosse implantado.
+B) Fazem dois anos que o sistema foi implantado e seis meses que passou pela última revisão.
+C) Devem fazer dois anos que o sistema foi implantado e seis meses que passou pela última revisão.
+D) Faz dois anos que o sistema foi implantado e seis meses que passou pela última revisão.
 
 ### Questão 32
+**Nível: Difícil**
 
 Assinale a alternativa em que “porquê” está corretamente empregado.
 
-A) Estudo porquê quero aprovação.
-B) Porquê você faltou?
-C) Não sei porque ele faltou, no sentido de motivo.
-D) O candidato explicou o porquê de sua ausência.
+A) O relatório não foi enviado porquê faltava a assinatura da chefia.
+B) Ninguém explicou o porquê da alteração realizada no cronograma.
+C) A comissão perguntou porque motivo o candidato não apresentou o documento.
+D) Porquê o prazo foi alterado sem comunicação aos interessados?
 
 ### Questão 33
+**Nível: Difícil**
 
-No trecho “A medida é eficiente, portanto deve ser mantida”, o termo “portanto” introduz:
+Leia: “A revisão cruzada detectou inconsistências que a conferência automática não identificara; portanto, o procedimento deve ser mantido.” O termo “portanto” introduz:
 
-A) concessão.
-B) condição.
-C) conclusão.
-D) oposição.
+A) conclusão sustentada pelo resultado mencionado na oração anterior.
+B) condição necessária para que as inconsistências sejam detectadas.
+C) concessão que relativiza a utilidade da revisão cruzada.
+D) oposição entre a conferência automática e a manutenção do procedimento.
 
 ### Questão 34
+**Nível: Difícil**
 
-Leia: “O relatório foi entregue pelo analista.” A expressão “pelo analista” exerce função de:
+No período “As inconsistências foram identificadas pela equipe de auditoria durante a revisão”, a expressão “pela equipe de auditoria” exerce a função de:
 
-A) adjunto adnominal de relatório.
-B) agente da passiva.
-C) sujeito paciente.
-D) objeto direto.
+A) agente da passiva, pois indica quem praticou a ação verbal.
+B) adjunto adnominal que restringe o sentido de “inconsistências”.
+C) sujeito paciente, pois recebe a ação de identificar.
+D) objeto indireto exigido pelo verbo “identificar”.
 
 ### Questão 35
+**Nível: Difícil**
 
-Assinale a alternativa que apresenta relação de causa.
+Assinale a alternativa em que a segunda oração expressa causa da ação indicada na primeira.
 
-A) O sistema foi revisado porque apresentava falhas recorrentes.
-B) O sistema foi revisado, porém continuou instável.
-C) O sistema foi revisado para reduzir riscos.
-D) Embora revisado, o sistema continuou instável.
+A) A equipe reabriu a análise para verificar a autenticidade dos documentos.
+B) A equipe reabriu a análise, embora o prazo interno já estivesse encerrado.
+C) A equipe reabriu a análise porque surgiram documentos capazes de alterar a decisão.
+D) A equipe reabriria a análise, desde que a autoridade prorrogasse o prazo.
 
 ### Questão 36
+**Nível: Difícil**
 
-Em “A norma publicada em 2025 alterou o procedimento”, o termo “publicada em 2025” funciona como:
+Em “A norma publicada em 2025 alterou o procedimento de registro”, o segmento “publicada em 2025” funciona como:
 
-A) verbo principal com sujeito oculto.
-B) conector conclusivo.
-C) objeto direto de “alterou”.
-D) caracterização/restrição da norma.
+A) oração reduzida adverbial que indica quando ocorreu a alteração do procedimento.
+B) predicado principal cujo sujeito está oculto no período.
+C) oração reduzida de particípio com valor adjetivo, que restringe a referência de “norma”.
+D) complemento nominal exigido pelo substantivo “norma”.
 
 ### Questão 37
+**Nível: Difícil**
 
-Assinale a alternativa em que a pontuação preserva melhor a clareza.
+Assinale a alternativa em que a pontuação está inteiramente adequada.
 
-A) No início da semana o candidato revisou, arquitetura, sistemas operacionais e banco de dados.
-B) No início da semana, o candidato, revisou, arquitetura.
-C) No início da semana, o candidato revisou arquitetura, sistemas operacionais e banco de dados.
-D) No início, da semana o candidato, revisou arquitetura sistemas operacionais e banco de dados.
+A) No início da semana, o candidato, conforme o cronograma, revisou arquitetura, sistemas operacionais e banco de dados.
+B) No início da semana o candidato, conforme o cronograma, revisou arquitetura sistemas operacionais e banco de dados.
+C) No início da semana, o candidato, revisou arquitetura, sistemas operacionais e banco de dados.
+D) No início, da semana, o candidato conforme o cronograma revisou, arquitetura, sistemas operacionais e banco de dados.
 
 ### Questão 38
+**Nível: Difícil**
 
-Leia: “A solução não é simples, tampouco impossível.” A palavra “tampouco” indica:
+Leia: “A solução não elimina todos os riscos, tampouco dispensa o monitoramento contínuo.” Nesse contexto, “tampouco”:
 
-A) finalidade.
-B) adição negativa, equivalente a “também não”.
-C) conclusão afirmativa.
-D) causa principal.
+A) introduz a finalidade de manter o monitoramento.
+B) conclui que os riscos persistem por falta de monitoramento.
+C) acrescenta uma segunda negação, com sentido equivalente a “também não”.
+D) explica a causa de a solução não eliminar todos os riscos.
 
 ### Questão 39
+**Nível: Difícil**
 
-A alternativa que melhor conclui uma dissertação sobre ética no uso de dados públicos é:
+Assinale a alternativa que melhor conclui uma dissertação cuja tese defende transparência compatível com a proteção de dados pessoais.
 
-A) Assim, o uso ético de dados exige transparência, segurança e responsabilidade institucional para gerar confiança social.
-B) Portanto, dados são importantes e existem computadores.
-C) Enfim, cada pessoa que faça o que quiser com dados.
-D) Conclui-se que nada pode ser feito.
+A) Portanto, a transformação digital também exige discutir a aquisição de equipamentos, tema que não foi examinado neste texto.
+B) Assim, finalidade definida, acesso controlado e prestação de contas permitem conciliar transparência e proteção de dados, fortalecendo a confiança social.
+C) Conclui-se que a publicidade deve prevalecer em qualquer hipótese, ainda que exponha dados pessoais sem necessidade.
+D) Em síntese, transparência e proteção de dados são assuntos complexos, e cada órgão decidirá livremente como agir.
 
 ### Questão 40
+**Nível: Difícil**
 
-Assinale a alternativa correta quanto à acentuação.
+Assinale a alternativa correta quanto à acentuação gráfica.
 
-A) publico, tecnico e logico nunca recebem acento.
-B) público é acentuada por ser monossílabo tônico.
-C) técnico não recebe acento por terminar em vogal.
-D) público, técnico e lógico são acentuadas por serem proparoxítonas.
+A) “Órgão”, “relatório” e “possível” recebem acento pela mesma regra.
+B) “Público”, “técnico” e “lógico” são acentuados por serem proparoxítonos.
+C) “Lógico” pode perder o acento sem alteração de pronúncia ou de classe gramatical.
+D) “Técnico” é acentuado por ser paroxítona terminada em “o”.
 
 ### Questão 41
+**Nível: Muito difícil**
 
-Leia: “O órgão publicou o edital e divulgou o cronograma.” A conjunção “e” estabelece:
+Leia: “A comissão confrontou as propostas e registrou as divergências; contudo, não homologou o resultado.” Qual reescrita preserva a adição entre as duas primeiras ações e a oposição introduzida no segmento final, sem criar relação causal inexistente?
 
-A) condição para a primeira ação.
-B) conclusão obrigatória.
-C) adição de ações.
-D) oposição entre ações.
+A) Como confrontou as propostas, a comissão registrou as divergências; portanto, não homologou o resultado.
+B) A comissão ou confrontou as propostas ou registrou as divergências; por isso, não homologou o resultado.
+C) Embora confrontasse as propostas, a comissão registrou as divergências e, por essa razão, não homologou o resultado.
+D) A comissão confrontou as propostas e registrou as divergências; entretanto, não homologou o resultado.
 
 ### Questão 42
+**Nível: Muito difícil**
 
-Assinale a alternativa com regência nominal adequada.
+Assinale a alternativa em que todas as relações de regência nominal estão adequadas ao padrão formal.
 
-A) O relatório era compatível a norma, obrigatoriamente sem artigo.
-B) O candidato estava apto ao exercício da função.
-C) O candidato estava apto o exercício da função.
-D) A decisão foi favorável o candidato.
+A) O parecer era compatível à norma e contrário o entendimento anterior.
+B) O sistema permaneceu acessível aos usuários e passível à auditoria externa.
+C) A comissão mostrou-se favorável com o recurso e avessa de nova instrução.
+D) O candidato estava apto ao exercício da função e consciente das responsabilidades do cargo.
 
 ### Questão 43
+**Nível: Muito difícil**
 
-No comando de prova “assinale a alternativa incorreta”, a estratégia adequada é:
+Em uma questão que pede a alternativa INCORRETA, lê-se: “A Administração pode anular atos ilegais e revogar atos válidos inconvenientes, produzindo, em ambos os casos, efeitos necessariamente retroativos.” A primeira parte distingue corretamente os institutos, mas o trecho final generaliza os efeitos. Qual procedimento conduz ao julgamento correto?
 
-A) destacar a palavra “incorreta” e procurar a afirmação errada.
-B) marcar a primeira alternativa que pareça familiar.
-C) ignorar palavras negativas para ganhar tempo.
-D) resolver como se a banca pedisse a correta.
+A) considerar a opção correta, porque basta uma de suas orações coordenadas reproduzir regra verdadeira.
+B) testar a proposição inteira, perceber que o qualificador “em ambos os casos” torna falsa a generalização e marcá-la após reler o comando.
+C) desconsiderar o trecho sobre efeitos, porque informações posteriores à primeira vírgula não integram o núcleo da alternativa.
+D) inverter mentalmente cada afirmação verdadeira e escolher outra opção, sem verificar o alcance de expressões como “necessariamente”.
 
 ### Questão 44
+**Nível: Muito difícil**
 
-Assinale a alternativa em que a reescrita altera o sentido original: “O candidato só revisou legislação depois de errar o simulado.”
+Considere que, no período “O candidato só revisou legislação depois de errar o simulado”, o advérbio “só” incide sobre a circunstância temporal. Assinale a reescrita que altera o sentido original.
 
-A) Somente após errar o simulado, o candidato revisou legislação.
-B) A revisão de legislação ocorreu apenas depois do erro no simulado.
-C) Foi depois de errar o simulado que o candidato revisou legislação.
-D) O candidato revisou legislação antes de errar o simulado.
+A) Somente depois de errar o simulado, o candidato revisou legislação.
+B) A revisão de legislação pelo candidato ocorreu apenas após o erro no simulado.
+C) Antes de errar o simulado, o candidato já havia revisado legislação.
+D) Foi apenas depois do erro no simulado que o candidato revisou legislação.
 
 ### Questão 45
+**Nível: Muito difícil**
 
-Leia: “A equipe, apesar das restrições orçamentárias, concluiu o projeto.” A expressão entre vírgulas indica:
+Leia: “Embora dispusesse de orçamento reduzido, a equipe concluiu as etapas essenciais; por isso, a direção manteve o cronograma.” Qual reescrita preserva simultaneamente a concessão do primeiro segmento e a consequência expressa no segundo período?
 
-A) finalidade do projeto.
-B) explicação do sujeito equipe.
-C) concessão/contraste com a conclusão do projeto.
-D) causa direta da conclusão.
+A) Ainda que tivesse orçamento reduzido, a equipe concluiu as etapas essenciais; consequentemente, a direção manteve o cronograma.
+B) Como tinha orçamento reduzido, a equipe concluiu as etapas essenciais; apesar disso, a direção manteve o cronograma.
+C) Se tivesse orçamento reduzido, a equipe concluiria as etapas essenciais; entretanto, a direção manteve o cronograma.
+D) A equipe concluiu as etapas essenciais porque tinha orçamento reduzido; ainda assim, a direção manteve o cronograma.
 
 ### Questão 46
+**Nível: Muito difícil**
 
-Assinale a frase sem problema de concordância.
+Assinale a frase inteiramente correta quanto à concordância no padrão formal.
 
-A) A maioria dos candidatos estavam preparado.
-B) Mais de um candidato acertou a questão.
-C) Mais de um candidato acertaram a questão.
-D) Os candidato acertaram a questão.
+A) Mais de um setor enviaram o parecer solicitado pela diretoria.
+B) Devem haver, nos autos, razões suficientes para rever a decisão.
+C) Um ou outro candidatos apresentaram dúvida sobre a retificação.
+D) Mais de um candidato apresentou recurso fundamentado contra o resultado.
 
 ### Questão 47
+**Nível: Muito difícil**
 
-Em uma dissertação, coesão textual é melhor definida como:
+Leia: “O órgão deve informar a finalidade do tratamento e limitar o acesso aos dados. O cumprimento conjunto **dessas exigências** reduz usos incompatíveis; **a última delas**, porém, não dispensa o registro das operações.” As duas expressões destacadas retomam, respectivamente:
 
-A) ligação formal e semântica entre partes do texto por retomadas e conectores.
-B) quantidade de linhas escritas, independentemente de sentido.
-C) uso de palavras difíceis sem relação lógica.
-D) ausência total de pronomes e conectores.
+A) apenas o dever de informar; e o conjunto indeterminado de operações futuras.
+B) uma obrigação que será anunciada depois; e a redução dos usos incompatíveis.
+C) as duas obrigações do primeiro período; e, especificamente, a limitação de acesso aos dados.
+D) apenas a finalidade do tratamento; e, especificamente, o dever de informar os titulares.
 
 ### Questão 48
+**Nível: Muito difícil**
 
-Assinale a alternativa correta quanto à ortografia.
+Complete corretamente o período: “A ___ do edital corrigiu o erro material; depois, a autoridade decidiu ___ os demais termos e recomendou ___ no tratamento dos dados pessoais.”
 
-A) excessão
-B) essessão
-C) exseção
-D) exceção
+A) ratificação — retificar — discrição.
+B) retificação — ratificar — discrição.
+C) ratificação — ratificar — descrição.
+D) retificação — retificar — descrição.
 
 ### Questão 49
+**Nível: Muito difícil**
 
-Leia: “A capacitação dos servidores é essencial, uma vez que novas tecnologias exigem atualização constante.” A expressão “uma vez que” indica:
+Leia: “A capacitação deve ser contínua, uma vez que a atualização dos sistemas modifica procedimentos e riscos; ainda assim, treinamento isolado não substitui controles técnicos.” Qual par de conectores pode substituir as expressões destacadas sem alterar, respectivamente, a causa e a oposição concessiva?
 
-A) alternância.
-B) proporção.
-C) causa/explicação.
-D) oposição.
+A) à medida que — portanto.
+B) a menos que — por conseguinte.
+C) porque — mesmo assim.
+D) embora — por essa razão.
 
 ### Questão 50
+**Nível: Muito difícil**
 
-A alternativa que mantém linguagem objetiva é:
+Em relatório administrativo, a redação deve separar fato observado de providência recomendada e fornecer elementos verificáveis. Qual trecho atende conjuntamente a esses critérios, sem apresentar inferência como fato comprovado?
 
-A) Houveram problemas muito tipo complicados.
-B) O sistema apresentou falhas de integração e exigiu revisão dos cadastros.
-C) O sistema deu umas coisas estranhas e ficou meio ruim.
-D) A coisa do cadastro não estava legal.
+A) O teste de 12 de maio registrou três falhas de integração, detalhadas nos itens 4, 7 e 9; recomenda-se corrigi-las até 20 de maio e repetir o teste.
+B) As falhas decorreram certamente de negligência da equipe, razão pela qual serão adotadas, oportunamente, todas as providências cabíveis.
+C) Foram observadas inconsistências relevantes em diversos pontos, o que demonstra a necessidade evidente de aperfeiçoar o sistema.
+D) O cadastro será regularizado no momento adequado, conforme a causa provável das falhas venha a ser confirmada pelos responsáveis.
 
 ## Questões extras de revisão fixa do Dia 5
 
 #### Extra Dia 5.1
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre a hierarquia prática do estudo da legislação específica, assinale a alternativa correta.
+Sobre a articulação entre as normas centrais da legislação profissional, assinale a alternativa correta.
 
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) Lei, decreto, regimento e código de ética formam o núcleo; normas complementares entram como leitura dirigida.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+A) O Regimento Interno pode ampliar, por decisão regional, o campo profissional definido na lei federal.
+B) As resoluções do CFA prevalecem sobre a lei e o decreto sempre que forem posteriores.
+C) A lei disciplina a profissão, o decreto a regulamenta e os atos do Sistema CFA/CRAs complementam matérias de sua competência.
+D) O decreto regulamentador cuida apenas da organização interna do CRA-PR, sem relação com a execução da lei.
 
 #### Extra Dia 5.2
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Se uma pessoa usa título profissional sem habilitação regular, a situação deve ser analisada principalmente sob qual enfoque?
+Uma pessoa sem habilitação regular anuncia-se publicamente como profissional registrado no CRA-PR. Assinale a alternativa correta.
 
-A) Regularidade do exercício profissional e possível uso indevido de título ou registro.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+A) A fiscalização somente pode atuar se um cliente comprovar prejuízo patrimonial decorrente do anúncio.
+B) O anúncio é matéria exclusivamente publicitária enquanto não houver contrato assinado com cliente.
+C) O registro obtido posteriormente torna regular, de forma retroativa, todo uso anterior do título.
+D) A situação deve ser verificada quanto à regularidade do exercício e ao possível uso indevido da condição profissional.
 
 #### Extra Dia 5.3
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre o campo de atuação fiscalizatória do CRA, assinale a alternativa correta.
+Quanto à atuação fiscalizatória no Sistema CFA/CRAs, assinale a alternativa correta.
 
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CRA fiscaliza atividades relacionadas ao campo profissional da Administração, observada sua competência territorial.
+A) Cabe exclusivamente ao CFA realizar inspeções e apurar exercício irregular em todo o território nacional.
+B) O CRA fiscaliza, em sua jurisdição, atividades relacionadas ao campo profissional da Administração.
+C) Toda atividade empresarial desenvolvida no Paraná se sujeita ao CRA-PR, ainda que alheia ao campo da Administração.
+D) A competência do CRA é definida apenas pelo domicílio de quem apresenta a denúncia.
 
 #### Extra Dia 5.4
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Em relação ao estudo da RN CFA nº 671/2025, assinale a alternativa correta.
+No estudo da RN CFA nº 671/2025 indicado pelo material, deve-se priorizar:
 
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) O foco inicial deve estar em deveres, vedações, condutas éticas e lógica das sanções, sem decorar detalhe isolado fora do edital.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+A) deveres, vedações, condutas éticas, processo e lógica de aplicação das sanções.
+B) apenas valores de anuidades e regras de cobrança administrativa.
+C) a estrutura dos órgãos internos do CRA-PR, por se tratar do seu Regimento Interno.
+D) somente a memorização da numeração dos artigos, sem relacioná-los a casos concretos.
 
 #### Extra Dia 5.5
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-A respeito da finalidade dos conselhos profissionais, assinale a alternativa correta.
+A finalidade institucional da fiscalização exercida pelos conselhos profissionais é:
 
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) A função fiscalizatória protege a sociedade e a regularidade do exercício profissional.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+A) defender exclusivamente interesses econômicos dos profissionais registrados.
+B) substituir o Poder Judiciário na solução definitiva de todo conflito contratual da categoria.
+C) definir, de forma autônoma, os currículos obrigatórios de todos os cursos superiores da área.
+D) proteger a sociedade e promover a regularidade do exercício profissional.
 
 #### Extra Dia 5.6
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre responsabilidade técnica em atividades de Administração, assinale a alternativa correta em termos gerais.
+Uma empresa indica responsável técnico que apenas empresta o nome e assina documentos, sem acompanhar as atividades. À luz do material, assinale a alternativa correta.
 
-A) A indicação de responsável deve corresponder a atuação efetiva e regular, não a assinatura formal sem participação.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+A) A indicação é suficiente quando o profissional autoriza, por escrito, o uso permanente de seu registro.
+B) A responsabilidade técnica pressupõe atuação efetiva e regular, não simples assinatura formal sem participação.
+C) A pessoa jurídica pode assumir a responsabilidade técnica em nome próprio, sem profissional identificado.
+D) A responsabilidade do indicado termina com a assinatura inicial, ainda que a atividade continue sob seu nome.
 
 #### Extra Dia 5.7
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Se uma questão perguntar por que a RN 640/2024 não foi mantida como base principal, qual resposta é mais adequada ao material?
+Por que o material adota a RN CFA nº 671/2025, e não a RN CFA nº 640/2024, como base principal do Código de Ética?
 
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Porque a apostila adota a RN 671/2025 conforme edital retificado e observação de revogação em fonte oficial citada.
+A) Porque a resolução mais recente disponível na internet sempre substitui o conteúdo do edital, mesmo sem ato oficial.
+B) Porque a RN CFA nº 651/2024 converteu-se automaticamente no novo Código de Ética.
+C) Porque a apostila segue o edital retificado e a informação de revogação indicada em fonte oficial.
+D) Porque as duas resoluções devem ser aplicadas cumulativamente aos mesmos fatos, sem análise de vigência.
 
 #### Extra Dia 5.8
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre a técnica de resolução de questões de legislação do CRA, assinale a alternativa correta.
+Diante de um caso prático de legislação do Sistema CFA/CRAs, qual sequência de análise é mais segura?
 
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) Casos práticos devem ser resolvidos identificando conduta, sujeito, competência e norma-base.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+A) Identificar a conduta, o sujeito envolvido, o órgão competente e a norma aplicável.
+B) Escolher primeiro a sanção mais severa e depois procurar uma norma que a justifique.
+C) Tratar CFA e CRA como autoridades de competência idêntica em qualquer situação.
+D) Desconsiderar expressões como “em regra” e “salvo”, porque não alteram o alcance normativo.
 
 #### Extra Dia 5.9
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Um enunciado afirma que todo descumprimento administrativo gera automaticamente cassação do registro. Assinale a alternativa correta.
+Um enunciado sustenta que qualquer descumprimento administrativo produz automaticamente a cassação do registro. Assinale a alternativa correta.
 
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A afirmação é inadequada porque sanção depende de previsão normativa, processo e proporcionalidade.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+A) A afirmação está correta, pois a cassação é consequência necessária de toda infração.
+B) A sanção pode ser aplicada sem defesa prévia quando a irregularidade estiver documentada.
+C) A proporcionalidade autoriza o conselho a criar penalidade não prevista sempre que a considerar mais justa.
+D) A afirmação está errada: a sanção exige base normativa, processo regular e adequação ao caso.
 
 #### Extra Dia 5.10
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre o Regimento Interno, assinale a alternativa correta quanto à prova.
+Em uma questão sobre a RN CFA nº 651/2024, qual conteúdo deve ser associado diretamente ao Regimento Interno do CRA-PR?
 
-A) Ele pode ser cobrado em questões de competência, estrutura interna, órgãos e funcionamento do CRA-PR.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+A) Apenas os valores anuais de contribuições e as regras de cobrança judicial.
+B) A definição originária do campo privativo da profissão em todo o território nacional.
+C) Os deveres éticos e as sanções disciplinares previstos no Código de Ética vigente.
+D) A estrutura dos órgãos, a distribuição de competências e o funcionamento institucional do conselho regional.
 
 #### Extra Dia 5.11
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Um terceiro anuncia serviço como se fosse registrado no CRA-PR, mas não possui registro. Assinale a alternativa correta.
+Um terceiro sem registro anuncia serviços e se apresenta como profissional regularmente habilitado perante o CRA-PR. Assinale a alternativa correta.
 
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A situação pode envolver uso indevido de condição profissional e demanda verificação fiscalizatória.
+A) O CRA-PR só pode verificar o anúncio depois de decisão definitiva de órgão de defesa do consumidor.
+B) A conduta pode configurar uso indevido de condição profissional e justifica verificação fiscalizatória.
+C) O fato somente interessa à fiscalização se o anúncio já tiver gerado contrato remunerado.
+D) A obtenção posterior do registro convalida automaticamente a divulgação feita quando inexistia habilitação.
 
 #### Extra Dia 5.12
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre o Decreto nº 61.934/1967, assinale a alternativa correta.
+Sobre a relação entre a Lei nº 4.769/1965 e o Decreto nº 61.934/1967, assinale a alternativa correta.
 
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) Ele deve ser estudado como regulamento que ajuda a operacionalizar a Lei nº 4.769/1965.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+A) O decreto pode ampliar livremente as atividades profissionais além dos limites definidos pela lei.
+B) O decreto regulamenta a lei e detalha sua execução, sem ocupar posição hierárquica superior.
+C) A edição do decreto revogou a lei, que deixou de integrar a base normativa da profissão.
+D) O decreto tem natureza de regimento interno e vincula somente os órgãos do CRA-PR.
 
 #### Extra Dia 5.13
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Se uma alternativa disser que a inadimplência elimina automaticamente a formação acadêmica do profissional, assinale a correta.
+Um profissional registrado deixa de pagar contribuição devida ao conselho. Qual afirmação distingue corretamente os efeitos possíveis dessa situação?
 
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) A inadimplência pode gerar consequências perante o conselho, mas não apaga a formação acadêmica do profissional.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+A) A inadimplência pode gerar consequências perante o conselho, mas não apaga a formação acadêmica.
+B) A falta de pagamento permite aplicar qualquer restrição sem processo ou fundamento normativo.
+C) A inadimplência cancela o diploma e elimina a formação acadêmica obtida pelo profissional.
+D) A contribuição deixa de ser exigível sempre que o profissional mantém vínculo acadêmico com a área.
 
 #### Extra Dia 5.14
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre leitura oficial de normas, assinale a alternativa correta.
+Para responder a uma questão que cobre prazo, rito ou sanção específica, a conduta de estudo mais segura é:
 
-A) Para detalhes como prazo, sanção específica e rito, o material deve se apoiar no texto oficial consultado.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+A) atribuir a mesma autoridade a comentários de cursos e ao texto publicado pelo órgão competente.
+B) adotar o prazo mencionado em um resumo, ainda que diverja da publicação oficial.
+C) conferir o texto oficial da norma pertinente e sua vigência, usando o resumo como apoio.
+D) aplicar automaticamente a resolução numericamente mais recente, mesmo que o edital indique outra base.
 
 #### Extra Dia 5.15
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-No estudo do CRA-PR, uma questão pergunta pela sede, órgãos e funcionamento institucional. Qual bloco teórico é mais diretamente associado?
+Uma questão solicita a norma mais diretamente relacionada à sede, aos órgãos internos e ao funcionamento institucional do CRA-PR. A resposta é:
 
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Regimento Interno do CRA-PR.
+A) o Regimento Interno do CRA-PR aprovado pela RN CFA nº 651/2024.
+B) a Lei nº 4.769/1965, apenas por disciplinar o campo profissional.
+C) o Decreto nº 61.934/1967, exclusivamente por regulamentar a lei profissional.
+D) o Código de Ética dos Profissionais de Administração.
 
 #### Extra Dia 5.16
+**Nível: Difícil**
 
 **Área:** Administração Pública.
 
 Sobre critérios de julgamento em licitação, assinale a alternativa correta.
 
-A) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-B) O critério deve ser definido no instrumento convocatório e observado no julgamento.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+A) A comissão pode alterar o critério depois de conhecer as propostas, desde que apresente motivação.
+B) O menor preço é o único critério admitido, qualquer que seja o objeto da contratação.
+C) O critério deve estar previamente definido no instrumento convocatório e orientar o julgamento.
+D) Critérios internos não publicados podem prevalecer quando a comissão os considerar tecnicamente melhores.
 
 #### Extra Dia 5.17
+**Nível: Muito difícil**
 
 **Área:** Administração Pública.
 
-Agente público descumpre dever legal, mas sem dolo ou requisito subjetivo exigido para improbidade. Assinale a alternativa mais adequada.
+Um agente descumpre dever legal, mas não se comprova o elemento subjetivo exigido para o ato de improbidade analisado. Assinale a alternativa mais adequada.
 
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Publicidade impede qualquer sigilo em documentos públicos.
-C) Pode haver outra consequência jurídica, mas improbidade exige os requisitos próprios da lei.
-D) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
+A) Toda ilegalidade configura improbidade, porque a responsabilidade nessa matéria é objetiva.
+B) O fato pode gerar outra consequência jurídica, mas a improbidade depende dos requisitos próprios previstos em lei.
+C) A ausência de improbidade exclui necessariamente qualquer consequência administrativa ou civil.
+D) A culpa simples basta para enquadrar qualquer conduta em qualquer modalidade de improbidade.
 
 #### Extra Dia 5.18
+**Nível: Muito difícil**
 
 **Área:** Administração Pública.
 
-Sobre responsabilidade civil objetiva, assinale a alternativa correta.
+Sobre a responsabilidade civil objetiva do Estado, assinale a alternativa correta.
 
-A) Ela facilita a responsabilização quanto à culpa, mas não dispensa prova de dano e nexo causal.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Autarquia integra a Administração Direta porque executa serviço público.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+A) Ela dispensa a prova de culpa do agente, mas exige dano e nexo causal, sem afastar a análise de excludentes.
+B) Ela presume dever de indenizar por todo dano ocorrido próximo a um serviço público, ainda sem nexo causal.
+C) Ela condiciona a indenização à prova, pela vítima, de dolo do agente que praticou a conduta.
+D) Ela impede o Estado de demonstrar qualquer causa capaz de romper ou atenuar o nexo causal.
 
 #### Extra Dia 5.19
+**Nível: Muito difícil**
 
 **Área:** Administração Pública.
 
-Em Administração Pública, órgão público é melhor descrito como:
+Um cidadão solicita ao CRA-PR cópia integral de um processo administrativo já encerrado. O processo contém decisões e informações de interesse coletivo, mas seus anexos incluem o CPF, o endereço residencial e um laudo médico de terceiro, sem demonstração de hipótese legal que autorize a divulgação irrestrita desses dados. À luz da LAI e da proteção de dados pessoais, a resposta juridicamente adequada é:
 
-A) Pregão é modalidade voltada à alienação de bens públicos.
-B) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-D) Centro de competência sem personalidade jurídica própria, integrante de uma pessoa jurídica.
+A) negar acesso ao processo inteiro, pois a presença de qualquer dado pessoal torna integralmente sigiloso o conjunto documental.
+B) fornecer cópia integral, pois o encerramento do processo elimina automaticamente as restrições e torna públicos todos os dados nele contidos.
+C) condicionar ao consentimento expresso do terceiro o acesso a qualquer parte do processo, inclusive às informações públicas dissociáveis de seus dados pessoais.
+D) assegurar acesso às partes de interesse público e, quando possível, ocultar os dados pessoais cuja divulgação não esteja autorizada, fundamentando eventual restrição.
 
 #### Extra Dia 5.20
+**Nível: Muito difícil**
 
 **Área:** Administração Pública.
 
-Sobre agentes públicos, assinale a alternativa correta.
+Durante o controle de ofício, o CRA-PR examina dois atos: I — um ato que concedeu benefício há dois meses e contém vício insanável de legalidade; II — uma autorização discricionária válida que, por circunstância superveniente, se tornou inconveniente ao interesse público. Observados o contraditório, quando cabível, os direitos adquiridos e os demais limites legais, a providência conceitualmente adequada é:
 
-A) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-B) A expressão abrange pessoas que exercem função pública, ainda que em vínculos jurídicos variados.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-
+A) revogar o ato I, para preservar os efeitos já produzidos, e anular o ato II, porque a inconveniência superveniente constitui vício de legalidade.
+B) convalidar o ato I, por ter produzido efeito favorável, e manter o ato II, pois somente o Poder Judiciário pode desfazer ato administrativo já eficaz.
+C) anular o ato I, em razão da ilegalidade, e revogar o ato II, por conveniência e oportunidade, pois a revogação pressupõe ato válido.
+D) anular ambos os atos, pois a inconveniência superveniente torna o ato II ilegal desde a sua origem.
 
 ## Gabarito do Dia 5
 
-1. C
+1. A
 2. B
-3. A
-4. D
-5. C
-6. B
-7. A
+3. B
+4. C
+5. B
+6. C
+7. C
 8. D
-9. C
+9. A
 10. B
-11. A
+11. D
 12. D
-13. C
-14. B
+13. A
+14. C
 15. A
-16. D
-17. C
-18. B
-19. A
-20. D
-21. C
+16. A
+17. B
+18. D
+19. D
+20. C
+21. A
 22. B
-23. A
-24. D
-25. C
-26. B
-27. A
+23. D
+24. C
+25. D
+26. A
+27. D
 28. D
-29. C
-30. B
-31. A
-32. D
-33. C
-34. B
-35. A
-36. D
-37. C
-38. B
-39. A
-40. D
-41. C
-42. B
-43. A
-44. D
-45. C
-46. B
-47. A
-48. D
+29. B
+30. C
+31. D
+32. B
+33. A
+34. A
+35. C
+36. C
+37. A
+38. C
+39. B
+40. B
+41. D
+42. D
+43. B
+44. C
+45. A
+46. D
+47. C
+48. B
 49. C
-50. B
+50. A
 
 ### Gabarito das questões extras de revisão fixa do Dia 5
 
 Extra Dia 5.1: C
-Extra Dia 5.2: A
-Extra Dia 5.3: D
-Extra Dia 5.4: B
-Extra Dia 5.5: C
-Extra Dia 5.6: A
-Extra Dia 5.7: D
-Extra Dia 5.8: B
-Extra Dia 5.9: C
-Extra Dia 5.10: A
-Extra Dia 5.11: D
+Extra Dia 5.2: D
+Extra Dia 5.3: B
+Extra Dia 5.4: A
+Extra Dia 5.5: D
+Extra Dia 5.6: B
+Extra Dia 5.7: C
+Extra Dia 5.8: A
+Extra Dia 5.9: D
+Extra Dia 5.10: D
+Extra Dia 5.11: B
 Extra Dia 5.12: B
-Extra Dia 5.13: C
-Extra Dia 5.14: A
-Extra Dia 5.15: D
-Extra Dia 5.16: B
-Extra Dia 5.17: C
+Extra Dia 5.13: A
+Extra Dia 5.14: C
+Extra Dia 5.15: A
+Extra Dia 5.16: C
+Extra Dia 5.17: B
 Extra Dia 5.18: A
 Extra Dia 5.19: D
-Extra Dia 5.20: B
+Extra Dia 5.20: C
 
 
 ## Comentários do Dia 5
 
 ### Comentário da Questão 1
 
-- **Alternativa correta:** C.
-- **A) está errada:** O texto defende compatibilização, não incompatibilidade.
-- **B) está errada:** O trecho apresenta segurança como condição, não impedimento absoluto.
-- **C) está correta:** A alternativa preserva benefício e ressalva do texto.
-- **D) está errada:** O texto não condena a digitalização; apenas condiciona seu uso responsável.
-- **Conceito cobrado:** Interpretação: ideia central.
-- **Pegadinha usada:** Transformar ressalva em negação total..
-- **Como pensar para acertar:** Procure a tese completa: benefício + condição/limite.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** Resume o benefício da digitalização e a ressalva relativa à segurança e aos direitos.
+- **B) está errada:** A segurança aparece integrada ao ganho de acesso e eficiência, não como objetivo independente.
+- **C) está errada:** O texto não condiciona a legitimidade da digitalização à eliminação dos canais presenciais.
+- **D) está errada:** O trecho não afirma que preservar direitos reduz necessariamente a eficiência.
+- **Conceito cobrado:** Interpretação e identificação da ideia central.
+- **Pegadinha usada:** Omitir uma parte da tese ou transformar ressalva em incompatibilidade.
+- **Como pensar para acertar:** Reúna a afirmação principal e o limite introduzido por “mas”.
+- **Referência à apostila de estudo:** Dia 5 — interpretação, ideia central e inferência.
 
 ### Comentário da Questão 2
 
 - **Alternativa correta:** B.
-- **A) está errada:** Causa seria indicada por porque, uma vez que, pois em certos contextos.
-- **B) está correta:** O conector contrapõe o benefício da digitalização à exigência de segurança.
-- **C) está errada:** Conclusão seria indicada por portanto, logo, assim.
-- **D) está errada:** Finalidade seria indicada por para, a fim de.
-- **Conceito cobrado:** Conectores adversativos.
-- **Pegadinha usada:** Ignorar o valor argumentativo do conector..
-- **Como pensar para acertar:** Sempre pergunte que relação o conector cria entre as ideias.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Médio.
+- **A) está errada:** A exigência de segurança não é apresentada como causa da ampliação do acesso.
+- **B) está correta:** “Mas” contrapõe uma ressalva ao benefício anterior sem negá-lo.
+- **C) está errada:** O segmento não conclui o raciocínio; limita o alcance da primeira afirmação.
+- **D) está errada:** O valor semântico é adversativo, e não condicional.
+- **Conceito cobrado:** Relação semântica de conectores.
+- **Pegadinha usada:** Confundir ressalva com causa, conclusão ou condição.
+- **Como pensar para acertar:** Substitua o conector por “porém” e verifique a preservação do contraste.
+- **Referência à apostila de estudo:** Dia 5 — semântica, coesão e conectores.
 
 ### Comentário da Questão 3
 
-- **Alternativa correta:** A.
-- **A) está correta:** “Nem toda” nega a universalidade, sem negar todos os casos.
-- **B) está errada:** A alternativa transforma negação parcial em negação total.
-- **C) está errada:** O texto não afirma piora universal.
-- **D) está errada:** O texto estabelece relação, ainda que com ressalva.
-- **Conceito cobrado:** Inferência e quantificadores.
-- **Pegadinha usada:** Confundir “nem toda” com “nenhuma”..
-- **Como pensar para acertar:** Negação de “todo” é “algum não”, não “nenhum”.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** O período não informa se a maioria das inovações falha.
+- **B) está correta:** Negar que toda inovação melhore a Administração admite ao menos um caso que não melhora.
+- **C) está errada:** “Nem toda” não equivale a “nenhuma”.
+- **D) está errada:** A origem da inovação não é mencionada.
+- **Conceito cobrado:** Inferência e alcance de quantificadores.
+- **Pegadinha usada:** Converter negação parcial em negação total ou em afirmação de maioria.
+- **Como pensar para acertar:** Traduza “nem todo A é B” por “existe A que não é B”.
+- **Referência à apostila de estudo:** Dia 5 — inferência, extrapolação e quantificadores.
 
 ### Comentário da Questão 4
 
-- **Alternativa correta:** D.
-- **A) está errada:** É compatível com o trecho.
-- **B) está errada:** É compatível com a condição apresentada.
-- **C) está errada:** É inferência autorizada pelo trecho.
-- **D) está correta:** Essa é extrapolação: o texto condiciona transparência ao respeito à proteção de dados.
-- **Conceito cobrado:** Extrapolação textual.
-- **Pegadinha usada:** Absolutizar uma ideia limitada pelo texto..
-- **Como pensar para acertar:** Veja se a alternativa ultrapassa o que o texto permite afirmar.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Reproduz a relação entre transparência e confiança admitida no texto.
+- **B) está errada:** Corresponde ao limite expresso pela locução “desde que”.
+- **C) está correta:** A divulgação irrestrita de todo dado pessoal contradiz o limite de proteção e extrapola o texto.
+- **D) está errada:** Sintetiza a compatibilização permitida pelo enunciado.
+- **Conceito cobrado:** Identificação de extrapolação textual.
+- **Pegadinha usada:** Absolutizar uma afirmação condicionada.
+- **Como pensar para acertar:** Desconfie de termos absolutos quando o texto estabelece limite explícito.
+- **Referência à apostila de estudo:** Dia 5 — inferência e extrapolação.
 
 ### Comentário da Questão 5
 
-- **Alternativa correta:** C.
-- **A) está errada:** Inverte a relação lógica.
-- **B) está errada:** Altera completamente o sentido.
-- **C) está correta:** A voz passiva preserva o sentido essencial.
-- **D) está errada:** “Reduz” não significa “elimina definitivamente”.
-- **Conceito cobrado:** Reescrita sem alteração de sentido.
-- **Pegadinha usada:** Trocar redução por eliminação absoluta..
-- **Como pensar para acertar:** Compare núcleo verbal e intensidade das palavras.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Introduz aumento do esquecimento, sentido oposto ao original.
+- **B) está correta:** A passagem para a voz passiva preserva as duas ações e seus sentidos.
+- **C) está errada:** Afirma prejuízo à retenção, enquanto o período original afirma melhora.
+- **D) está errada:** “Impede qualquer” e “integral” tornam absolutos efeitos que o original apenas apresenta como redução e melhora.
+- **Conceito cobrado:** Reescrita com preservação de sentido.
+- **Pegadinha usada:** Alterar polaridade ou intensidade lexical.
+- **Como pensar para acertar:** Compare sujeito lógico, ações, direção dos efeitos e grau das afirmações.
+- **Referência à apostila de estudo:** Dia 5 — reescrita e equivalência semântica.
 
 ### Comentário da Questão 6
 
-- **Alternativa correta:** B.
-- **A) está errada:** Com o verbo existir, o sujeito “pendências” exige plural: existem.
-- **B) está correta:** O sujeito é “documentos”, no plural; o verbo concorda.
-- **C) está errada:** O verbo deveria concordar com “documentos”.
-- **D) está errada:** Haver com sentido de existir é impessoal e fica no singular.
-- **Conceito cobrado:** Concordância verbal.
-- **Pegadinha usada:** Confundir haver impessoal com existir..
-- **Como pensar para acertar:** Ache o sujeito; cuidado com haver/existir/faltar.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Com “existir”, o sujeito plural “pendências” exige “existem”.
+- **B) está errada:** O sujeito plural “os comprovantes” exige “faltam”.
+- **C) está correta:** “Faltam” concorda com o sujeito plural “documentos”.
+- **D) está errada:** Na locução com “haver” existencial, o auxiliar permanece no singular: “deve haver”.
+- **Conceito cobrado:** Concordância verbal com existir, faltar e haver.
+- **Pegadinha usada:** Tratar “haver” existencial como verbo pessoal ou ignorar sujeito posposto.
+- **Como pensar para acertar:** Identifique o verbo e teste se há sujeito ou construção impessoal.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe e concordância verbal.
 
 ### Comentário da Questão 7
 
-- **Alternativa correta:** A.
-- **A) está correta:** Encaminhar algo a alguém + “a diretoria” gera crase.
-- **B) está errada:** Não há crase antes de verbo.
-- **C) está errada:** Não há crase antes de pronome pessoal masculino.
-- **D) está errada:** Não há crase em “a pé”, expressão com palavra masculina.
-- **Conceito cobrado:** Crase.
-- **Pegadinha usada:** Aplicar crase antes de verbo/pronome masculino..
-- **Como pensar para acertar:** Teste a regência e se o termo feminino aceita artigo.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Em regra, não se usa artigo antes do pronome de tratamento “Vossa Senhoria”.
+- **B) está errada:** Não ocorre crase antes de verbo no infinitivo.
+- **C) está correta:** A regência de “encaminhar a” encontra o artigo feminino de “a diretoria”.
+- **D) está errada:** A expressão “a pé” contém palavra masculina e não recebe crase.
+- **Conceito cobrado:** Crase: fusão da preposição com artigo feminino.
+- **Pegadinha usada:** Inserir crase antes de verbo, pronome de tratamento ou palavra masculina.
+- **Como pensar para acertar:** Verifique simultaneamente a exigência de preposição e a admissão de artigo.
+- **Referência à apostila de estudo:** Dia 5 — crase, casos obrigatórios e proibidos.
 
 ### Comentário da Questão 8
 
 - **Alternativa correta:** D.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Adjunto adverbial deslocado pode ser separado por vírgula.
-- **B) está correta como afirmação:** Aposto explicativo fica isolado por vírgulas.
-- **C) está correta como afirmação:** Oração subordinada deslocada pede vírgula.
-- **D) é a incorreta:** Não se separa sujeito do verbo por vírgula.
-- **Conceito cobrado:** Pontuação: vírgula.
-- **Pegadinha usada:** Usar vírgula por pausa intuitiva entre sujeito e verbo..
-- **Como pensar para acertar:** Não separe sujeito e predicado.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Médio.
+- **Observação:** a questão pede a alternativa em que a vírgula foi empregada incorretamente; portanto, o gabarito corresponde à frase com pontuação inadequada.
+- **A) está errada:** A vírgula isola corretamente o adjunto adverbial deslocado.
+- **B) está errada:** As vírgulas isolam o aposto explicativo.
+- **C) está errada:** A oração subordinada adverbial anteposta está corretamente separada.
+- **D) está correta:** A vírgula separa o sujeito completo “Os candidatos que revisaram o edital” do verbo “identificaram”.
+- **Conceito cobrado:** Emprego da vírgula.
+- **Pegadinha usada:** Inserir vírgula entre sujeito e predicado por percepção de pausa.
+- **Como pensar para acertar:** Localize primeiro o núcleo do sujeito e o verbo principal.
+- **Referência à apostila de estudo:** Dia 5 — pontuação e usos da vírgula.
 
 ### Comentário da Questão 9
 
-- **Alternativa correta:** C.
-- **A) está errada:** Porque indica causa/explicação.
-- **B) está errada:** A fim de que indica finalidade.
-- **C) está correta:** Entretanto também indica oposição/ressalva.
-- **D) está errada:** Portanto indica conclusão, não oposição.
-- **Conceito cobrado:** Coesão: conectores.
-- **Pegadinha usada:** Trocar oposição por conclusão..
-- **Como pensar para acertar:** Identifique a relação de contraste entre as orações.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** “Entretanto” preserva o valor adversativo de “contudo”.
+- **B) está errada:** “Por conseguinte” tem valor conclusivo.
+- **C) está errada:** “Porquanto” introduz causa ou explicação.
+- **D) está errada:** “Contanto que” introduz condição.
+- **Conceito cobrado:** Substituição de conectores com preservação de sentido.
+- **Pegadinha usada:** Escolher conector formal de relação lógica diferente.
+- **Como pensar para acertar:** Classifique a relação entre as orações antes de comparar os conectores.
+- **Referência à apostila de estudo:** Dia 5 — conectores e progressão lógica.
 
 ### Comentário da Questão 10
 
 - **Alternativa correta:** B.
-- **A) está errada:** Implicar no sentido de acarretar é tradicionalmente transitivo direto: implicou mudanças.
-- **B) está correta:** O verbo obedecer exige preposição “a”.
-- **C) está errada:** Falta a preposição exigida no padrão formal.
-- **D) está errada:** No padrão cobrado, assistir no sentido de ver pode reger “a”.
+- **Nível:** Médio.
+- **A) está errada:** No sentido de aspirar, “visar” rege preposição “a”: “visava ao cargo”.
+- **B) está correta:** “Obedecer” rege preposição “a”, presente em “ao edital” e “às orientações”.
+- **C) está errada:** Na comparação normativa, prefere-se uma coisa a outra, não “do que” outra.
+- **D) está errada:** No sentido de presenciar, “assistir” rege preposição “a”: “assistiram ao treinamento”.
 - **Conceito cobrado:** Regência verbal.
-- **Pegadinha usada:** Aplicar regência coloquial em prova formal..
-- **Como pensar para acertar:** Verbos comuns em concurso têm regências cobradas de modo padrão.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Pegadinha usada:** Empregar regência coloquial em construção formal.
+- **Como pensar para acertar:** Determine o sentido do verbo e, só então, a preposição exigida.
+- **Referência à apostila de estudo:** Dia 5 — regência verbal.
 
 ### Comentário da Questão 11
 
-- **Alternativa correta:** A.
-- **A) está correta:** O demonstrativo retoma a ação descrita anteriormente.
-- **B) está errada:** As inconsistências aparecem como resultado reduzido, não como procedimento.
-- **C) está errada:** O referente é a ação de revisar dados, não só o substantivo.
-- **D) está errada:** O referente está no próprio trecho.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** O referente está expresso no próprio período.
+- **B) está errada:** A redução das inconsistências é o efeito atribuído ao procedimento.
+- **C) está errada:** O referente não é o substantivo isolado, mas a ação descrita.
+- **D) está correta:** O demonstrativo encapsula a ação anterior de conferir os dados por dois servidores.
 - **Conceito cobrado:** Coesão referencial.
-- **Pegadinha usada:** Retomar substantivo isolado quando o pronome retoma ideia..
-- **Como pensar para acertar:** Pergunte: que ação ou termo anterior faz sentido como “procedimento”?
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Pegadinha usada:** Associar o demonstrativo ao substantivo mais próximo, e não à ideia retomada.
+- **Como pensar para acertar:** Substitua “esse procedimento” pela alternativa e verifique a coerência.
+- **Referência à apostila de estudo:** Dia 5 — coesão, referência e retomada.
 
 ### Comentário da Questão 12
 
 - **Alternativa correta:** D.
-- **A) está errada:** Conclusão seria marcada por portanto, logo.
-- **B) está errada:** Concessão seria marcada por embora, ainda que.
-- **C) está errada:** Oposição seria marcada por mas, porém, contudo.
-- **D) está correta:** A execução mais segura depende da condição apresentada.
-- **Conceito cobrado:** Relação condicional.
-- **Pegadinha usada:** Confundir condição com conclusão..
-- **Como pensar para acertar:** Se indica hipótese/condição.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Médio.
+- **A) está errada:** “Se” não apresenta conclusão de premissa comprovada.
+- **B) está errada:** Não há obstáculo admitido com valor concessivo.
+- **C) está errada:** Planejamento e execução não são contrapostos.
+- **D) está correta:** A segurança da execução depende da hipótese de o planejamento ser consistente.
+- **Conceito cobrado:** Oração subordinada adverbial condicional.
+- **Pegadinha usada:** Confundir condição com conclusão ou concessão.
+- **Como pensar para acertar:** Pergunte de qual hipótese depende o resultado da oração principal.
+- **Referência à apostila de estudo:** Dia 5 — conectores e relações condicionais.
 
 ### Comentário da Questão 13
 
-- **Alternativa correta:** C.
-- **A) está errada:** Antes de “prova” nesse contexto, o correto seria “a prova”.
-- **B) está errada:** Tempo decorrido pede “há”; futuro pede “a”.
-- **C) está correta:** Há indica tempo decorrido; a indica tempo futuro.
-- **D) está errada:** Os usos estão invertidos.
-- **Conceito cobrado:** Uso de há e a.
-- **Pegadinha usada:** Trocar passado por futuro..
-- **Como pensar para acertar:** Há = tempo decorrido; a = tempo futuro/distância.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** “Há” indica tempo decorrido, e “a” integra a expressão de tempo futuro.
+- **B) está errada:** Tempo decorrido pede “há três meses”; futuro pede “daqui a vinte dias”.
+- **C) está errada:** “Há” não marca tempo futuro, e tempo decorrido exige “há duas semanas”.
+- **D) está errada:** Os dois empregos estão invertidos.
+- **Conceito cobrado:** Distinção entre “há” e “a” em expressões temporais.
+- **Pegadinha usada:** Trocar a marca de passado pela de futuro.
+- **Como pensar para acertar:** Use “há” para tempo decorrido e “a” para tempo futuro ou distância.
+- **Referência à apostila de estudo:** Dia 5 — ortografia e emprego contextual de “há” e “a”.
 
 ### Comentário da Questão 14
 
-- **Alternativa correta:** B.
-- **A) está errada:** A estrutura é clara.
-- **B) está correta:** “Seu relatório” pode ser do analista ou do coordenador.
-- **C) está errada:** O referente está claro.
-- **D) está errada:** Não há pronome ambíguo.
-- **Conceito cobrado:** Ambiguidade e pronomes.
-- **Pegadinha usada:** Ignorar referente de possessivo..
-- **Como pensar para acertar:** Pronome possessivo pode gerar dupla leitura.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** “Seu próprio relatório” e o pronome objeto remetem claramente à equipe e ao relatório.
+- **B) está errada:** A autoria foi explicitada pela expressão “elaborado pela equipe”.
+- **C) está correta:** “Seu relatório” pode ser entendido como relatório do analista ou do coordenador.
+- **D) está errada:** Analista e coordenador têm funções sintáticas e referências claramente delimitadas.
+- **Conceito cobrado:** Ambiguidade pronominal.
+- **Pegadinha usada:** Ignorar a possibilidade de dois antecedentes para o possessivo.
+- **Como pensar para acertar:** Liste os referentes compatíveis com o pronome e verifique se há mais de um.
+- **Referência à apostila de estudo:** Dia 5 — coesão referencial e clareza.
 
 ### Comentário da Questão 15
 
 - **Alternativa correta:** A.
-- **A) está correta:** A oração explica por que a medida é necessária.
-- **B) está errada:** Oposição exigiria mas, porém, contudo.
-- **C) está errada:** Alternância seria ou...ou.
-- **D) está errada:** Condição seria marcada por se, caso.
-- **Conceito cobrado:** Conectores explicativos.
-- **Pegadinha usada:** Ler pois como adversativo sem contexto..
-- **Como pensar para acertar:** Pergunte: a segunda oração explica a primeira?
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Médio.
+- **A) está correta:** A redução de riscos fundamenta a orientação de manter a medida.
+- **B) está errada:** A segunda oração reforça, e não restringe, a primeira.
+- **C) está errada:** Não se apresentam opções alternadas.
+- **D) está errada:** A redução dos riscos é dada como razão, não como condição hipotética.
+- **Conceito cobrado:** Valor explicativo e causal de “pois”.
+- **Pegadinha usada:** Classificar o conector isoladamente, sem observar o contexto.
+- **Como pensar para acertar:** Verifique se a segunda oração responde por que a primeira é defendida.
+- **Referência à apostila de estudo:** Dia 5 — conectores de causa e explicação.
 
 ### Comentário da Questão 16
 
-- **Alternativa correta:** D.
-- **A) está errada:** A negativa favorece “não se deve”.
-- **B) está errada:** Em início de período formal, evita-se iniciar com pronome oblíquo átono.
-- **C) está errada:** “Jamais” também atrai próclise: jamais se deve.
-- **D) está correta:** Palavra negativa atrai próclise.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A próclise é motivada pelo advérbio negativo “não”.
+- **B) está errada:** No padrão formal cobrado, evita-se iniciar a oração com pronome oblíquo átono.
+- **C) está errada:** O pronome não pode ser posposto ao particípio; caberia “tinha-me comunicado” ou “me tinha comunicado”.
+- **D) está errada:** A palavra negativa atrai o pronome: “não se deve”.
 - **Conceito cobrado:** Colocação pronominal.
-- **Pegadinha usada:** Ignorar palavras atrativas..
-- **Como pensar para acertar:** Negativas como não e jamais atraem o pronome para antes do verbo.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Pegadinha usada:** Ignorar palavras atrativas ou reproduzir ordem coloquial.
+- **Como pensar para acertar:** Procure termos negativos antes do verbo e posicione o pronome antes dele.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe e colocação pronominal.
 
 ### Comentário da Questão 17
 
-- **Alternativa correta:** C.
-- **A) está errada:** A pontuação quebra a relação entre sujeito, verbo e complemento.
-- **B) está errada:** A pontuação fragmenta o termo explicativo.
-- **C) está correta:** O aposto explicativo fica isolado por vírgulas.
-- **D) está errada:** Falta isolar adequadamente o aposto e há vírgula indevida antes do verbo.
-- **Conceito cobrado:** Aposto e vírgula.
-- **Pegadinha usada:** Não isolar aposto explicativo..
-- **Como pensar para acertar:** Aposto explicativo pode ser retirado sem destruir a estrutura.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Falta a segunda vírgula para encerrar o aposto “capital do Paraná”.
+- **B) está correta:** O aposto explicativo está isolado por duas vírgulas.
+- **C) está errada:** A vírgula separa indevidamente o sujeito do verbo e não abre o aposto.
+- **D) está errada:** A pontuação fragmenta o aposto e separa o sujeito do predicado.
+- **Conceito cobrado:** Pontuação de aposto explicativo.
+- **Pegadinha usada:** Usar apenas uma vírgula em termo intercalado.
+- **Como pensar para acertar:** Retire o segmento explicativo e confira se a estrutura principal permanece íntegra.
+- **Referência à apostila de estudo:** Dia 5 — pontuação e termos intercalados.
 
 ### Comentário da Questão 18
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não há ideia de obstáculo superado.
-- **B) está correta:** A palavra limita o grupo aos candidatos que revisaram legislação específica.
-- **C) está errada:** Não explica motivo diretamente; restringe alcance.
-- **D) está errada:** Não há conclusão marcada.
-- **Conceito cobrado:** Semântica: palavra restritiva.
-- **Pegadinha usada:** Ignorar palavra que limita o alcance da frase..
-- **Como pensar para acertar:** Palavras como apenas, somente e só restringem o universo.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** “Apenas” não incide sobre a quantidade de exceções identificadas.
+- **B) está errada:** Não se afirma que todos os candidatos revisaram a legislação.
+- **C) está errada:** O período não enumera todas as atividades realizadas pelos candidatos.
+- **D) está correta:** O advérbio restringe aos candidatos que revisaram a legislação o grupo que identificou a exceção.
+- **Conceito cobrado:** Alcance semântico de advérbio restritivo.
+- **Pegadinha usada:** Deslocar mentalmente o escopo de “apenas”.
+- **Como pensar para acertar:** Identifique o constituinte imediatamente abrangido pelo advérbio.
+- **Referência à apostila de estudo:** Dia 5 — semântica contextual e restrição.
 
 ### Comentário da Questão 19
 
-- **Alternativa correta:** A.
-- **A) está correta:** “Anexos” concorda com “documentos”.
-- **B) está errada:** O verbo e o adjetivo não concordam com “documentos”.
-- **C) está errada:** O adjetivo deveria concordar: anexas.
-- **D) está errada:** O adjetivo deveria concordar com relatórios: anexos.
-- **Conceito cobrado:** Concordância nominal.
-- **Pegadinha usada:** Tratar anexo como invariável nesse contexto..
-- **Como pensar para acertar:** Anexo, incluso e obrigado costumam concordar com o termo a que se referem.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Verbo e predicativo deveriam concordar com “os relatórios”: “seguem anexos”.
+- **B) está errada:** O verbo deveria ir ao plural para concordar com “os documentos”.
+- **C) está errada:** O predicativo deveria ser “anexas”, em concordância com “as declarações”.
+- **D) está correta:** “Seguem” e “anexos” concordam com “os documentos”.
+- **Conceito cobrado:** Concordância verbal e nominal.
+- **Pegadinha usada:** Tratar “anexo” como invariável ou concordar com termo preposicionado.
+- **Como pensar para acertar:** Localize o sujeito e o substantivo caracterizado pelo adjetivo.
+- **Referência à apostila de estudo:** Dia 5 — concordância verbal e nominal.
 
 ### Comentário da Questão 20
 
-- **Alternativa correta:** D.
-- **A) está errada:** A estrutura indica propósito, não resultado acidental.
-- **B) está errada:** Não há contraste.
-- **C) está errada:** Não há embora/ainda que.
-- **D) está correta:** Mostra o objetivo da implementação da política.
-- **Conceito cobrado:** Relação de finalidade.
-- **Pegadinha usada:** Confundir finalidade com causa..
-- **Como pensar para acertar:** Pergunte: para quê?
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A redução de filas é apresentada como objetivo deliberado.
+- **B) está errada:** Não há oposição entre as ideias.
+- **C) está correta:** A estrutura “para + infinitivo” indica o propósito da reformulação.
+- **D) está errada:** O trecho não admite obstáculo com valor concessivo.
+- **Conceito cobrado:** Oração subordinada adverbial final reduzida de infinitivo.
+- **Pegadinha usada:** Confundir finalidade planejada com consequência.
+- **Como pensar para acertar:** Pergunte “a política foi reformulada para quê?”.
+- **Referência à apostila de estudo:** Dia 5 — conectores e relação de finalidade.
 
 ### Comentário da Questão 21
 
-- **Alternativa correta:** C.
-- **A) está errada:** Argumento não é lugar físico.
-- **B) está errada:** Situação não é lugar físico; use “em que”.
-- **C) está correta:** Onde retoma lugar físico.
-- **D) está errada:** Para norma, prefira “em que” ou “na qual”.
-- **Conceito cobrado:** Uso de onde.
-- **Pegadinha usada:** Usar onde para qualquer referente..
-- **Como pensar para acertar:** Reserve onde para lugar.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** “Prédio” é lugar físico retomado adequadamente por “onde”.
+- **B) está errada:** “Hipótese” é referente abstrato e não admite o uso normativo de “onde”.
+- **C) está errada:** “Fundamento” não designa lugar físico; caberia “em que” ou “no qual”.
+- **D) está errada:** “Processo” não é empregado como lugar físico; recomenda-se “em que” ou “no qual”.
+- **Conceito cobrado:** Emprego normativo do pronome relativo “onde”.
+- **Pegadinha usada:** Estender “onde” a qualquer antecedente abstrato.
+- **Como pensar para acertar:** Verifique se o antecedente nomeia efetivamente um lugar.
+- **Referência à apostila de estudo:** Dia 5 — coesão, pronomes relativos e reescrita.
 
 ### Comentário da Questão 22
 
 - **Alternativa correta:** B.
-- **A) está errada:** Exemplos precisam servir a uma posição.
-- **B) está correta:** A tese orienta os argumentos do texto.
-- **C) está errada:** Cópia do tema não mostra defesa ou recorte.
-- **D) está errada:** A tese deve aparecer cedo, em geral na introdução.
-- **Conceito cobrado:** Discursiva: tese.
-- **Pegadinha usada:** Introdução vaga sem posição..
-- **Como pensar para acertar:** Pergunte: que ponto de vista o texto defenderá?
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Difícil.
+- **A) está errada:** A frase apenas contextualiza o tema, sem defender posição.
+- **B) está correta:** Delimita a posição e antecipa os eixos argumentativos de eficiência, inclusão e proteção.
+- **C) está errada:** A pergunta problematiza o tema, mas não apresenta a resposta que será defendida.
+- **D) está errada:** O metatexto adia o posicionamento e não formula tese.
+- **Conceito cobrado:** Construção de tese dissertativa.
+- **Pegadinha usada:** Confundir contextualização, pergunta ou roteiro com posicionamento.
+- **Como pensar para acertar:** Procure uma frase discutível que possa orientar os parágrafos de desenvolvimento.
+- **Referência à apostila de estudo:** Dia 5 — discursiva: introdução e tese.
 
 ### Comentário da Questão 23
 
-- **Alternativa correta:** A.
-- **A) está correta:** O trecho repete ideia ampla sem posicionamento argumentativo.
-- **B) está errada:** Não há argumento específico; há generalidade.
-- **C) está errada:** O problema não é falta de juridiquês, mas falta de tese.
-- **D) está errada:** Não há conclusão estruturada.
-- **Conceito cobrado:** Discursiva: introdução.
-- **Pegadinha usada:** Confundir repetição genérica com contextualização..
-- **Como pensar para acertar:** Contextualize, mas apresente tese.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O trecho não propõe intervenção nem apresenta conclusão.
+- **B) está errada:** O problema é falta, e não excesso, de delimitação.
+- **C) está errada:** Há repetição, mas não existe tese explícita sobre serviços públicos digitais.
+- **D) está correta:** O trecho repete uma ideia ampla sem recorte nem posição argumentativa.
+- **Conceito cobrado:** Diagnóstico de introdução dissertativa.
+- **Pegadinha usada:** Tratar repetição temática como contextualização suficiente.
+- **Como pensar para acertar:** Pergunte qual posição concreta o restante do texto deveria demonstrar.
+- **Referência à apostila de estudo:** Dia 5 — discursiva: introdução, recorte e tese.
 
 ### Comentário da Questão 24
 
-- **Alternativa correta:** D.
-- **A) está errada:** É afirmação vaga e sem desenvolvimento.
-- **B) está errada:** Generaliza e não argumenta.
-- **C) está errada:** Frase genérica sem argumento.
-- **D) está correta:** A frase traz argumento, efeito e ressalva concreta.
-- **Conceito cobrado:** Discursiva: desenvolvimento.
-- **Pegadinha usada:** Confundir opinião solta com argumento..
-- **Como pensar para acertar:** Bom argumento explica mecanismo, consequência ou exemplo.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Atualidade do tema, isoladamente, não explica mecanismo nem consequência.
+- **B) está errada:** A formulação é circular: associa eficiência apenas ao fato de funcionar bem.
+- **C) está correta:** Apresenta benefício, mecanismo concreto e contraponto relacionado à inclusão.
+- **D) está errada:** A existência de plataforma não comprova acesso equivalente para todos.
+- **Conceito cobrado:** Qualidade do desenvolvimento argumentativo.
+- **Pegadinha usada:** Confundir afirmação formal ou atual com argumento desenvolvido.
+- **Como pensar para acertar:** Prefira o trecho que liga tese, causa, consequência e ressalva pertinente.
+- **Referência à apostila de estudo:** Dia 5 — discursiva: desenvolvimento e progressão argumentativa.
 
 ### Comentário da Questão 25
 
-- **Alternativa correta:** C.
-- **A) está errada:** Expressão coloquial e vaga.
-- **B) está errada:** Gíria e informalidade prejudicam o texto.
-- **C) está correta:** A frase é formal, clara e objetiva.
-- **D) está errada:** Linguagem informal inadequada.
-- **Conceito cobrado:** Registro formal.
-- **Pegadinha usada:** Usar oralidade em texto dissertativo..
-- **Como pensar para acertar:** Em prova, prefira clareza formal a gírias.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O apelo a “qualquer pessoa sensata” é avaliativo e substitui demonstração por pressão retórica.
+- **B) está errada:** Marcas de opinião e hesitação tornam a afirmação subjetiva e imprecisa.
+- **C) está errada:** “Certas coisas” e “conforme for possível” são expressões vagas.
+- **D) está correta:** Indica sujeito, dever e três medidas verificáveis em registro formal.
+- **Conceito cobrado:** Registro formal, precisão e objetividade.
+- **Pegadinha usada:** Confundir aparência formal com redação informativa.
+- **Como pensar para acertar:** Escolha a frase com agente, ação e critérios concretos.
+- **Referência à apostila de estudo:** Dia 5 — discursiva: linguagem formal, clareza e objetividade.
 
 ### Comentário da Questão 26
 
-- **Alternativa correta:** B.
-- **A) está errada:** Encaminhar a + a autoridade justifica crase.
-- **B) está correta:** Antes de verbo não ocorre crase.
-- **C) está errada:** Referir-se a + a auditoria justifica crase.
-- **D) está errada:** Comparecer a + a reunião justifica crase.
-- **Conceito cobrado:** Crase indevida.
-- **Pegadinha usada:** Crase antes de verbo..
-- **Como pensar para acertar:** Antes de infinitivo não há artigo feminino.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Não se emprega crase antes do infinitivo “analisar”.
+- **B) está errada:** “Encaminhar a” e o artigo de “autoridade” produzem crase.
+- **C) está errada:** Em “àquela”, fundem-se a preposição regida e o “a” inicial do demonstrativo.
+- **D) está errada:** “Comparecer a” encontra o artigo plural de “as reuniões”.
+- **Conceito cobrado:** Crase em contextos de regência.
+- **Pegadinha usada:** Aplicar mecanicamente o acento antes de qualquer termo feminino ou infinitivo.
+- **Como pensar para acertar:** Faça o teste da preposição e do artigo em cada alternativa.
+- **Referência à apostila de estudo:** Dia 5 — crase e regência.
 
 ### Comentário da Questão 27
 
-- **Alternativa correta:** A.
-- **A) está correta:** Sem vírgulas, restringe quais candidatos resolveram melhor.
-- **B) está errada:** Explicativa viria isolada por vírgulas.
-- **C) está errada:** Não há conclusão.
-- **D) está errada:** Não há oposição.
-- **Conceito cobrado:** Orações adjetivas restritivas.
-- **Pegadinha usada:** Ignorar efeito da ausência de vírgula..
-- **Como pensar para acertar:** Com vírgula explica; sem vírgula restringe.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O período nada afirma sobre o desempenho necessário de todos os que não estudaram.
+- **B) está errada:** A leitura de totalidade seria favorecida pela oração explicativa entre vírgulas.
+- **C) está errada:** A estrutura não demonstra causalidade exclusiva.
+- **D) está correta:** A oração sem vírgulas delimita quais candidatos recebem a afirmação de melhor desempenho.
+- **Conceito cobrado:** Oração subordinada adjetiva restritiva.
+- **Pegadinha usada:** Extrair causalidade ou universalidade de uma simples delimitação.
+- **Como pensar para acertar:** Observe se a oração seleciona o referente ou apenas acrescenta informação.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe, orações adjetivas e pontuação.
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** D.
-- **A) está errada:** Restritiva não é isolada por vírgulas.
-- **B) está errada:** Não há se/caso.
-- **C) está errada:** Não há comparação.
-- **D) está correta:** As vírgulas indicam informação acessória/explicativa.
-- **Conceito cobrado:** Orações adjetivas explicativas.
-- **Pegadinha usada:** Não perceber o papel das vírgulas..
-- **Como pensar para acertar:** Vírgulas mudam o alcance da oração adjetiva.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Difícil.
+- **A) está errada:** A oração restritiva não seria isolada por vírgulas.
+- **B) está errada:** Não há conector nem hipótese condicional.
+- **C) está errada:** A estrutura não estabelece comparação entre grupos.
+- **D) está correta:** As vírgulas atribuem valor explicativo à informação sobre o conjunto mencionado.
+- **Conceito cobrado:** Oração subordinada adjetiva explicativa.
+- **Pegadinha usada:** Ignorar que a pontuação altera o alcance da oração adjetiva.
+- **Como pensar para acertar:** Compare o efeito semântico de retirar ou inserir as vírgulas.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe e pontuação de orações adjetivas.
 
 ### Comentário da Questão 29
 
-- **Alternativa correta:** C.
-- **A) está errada:** Estruturas não paralelas.
-- **B) está errada:** Construção truncada e sem paralelismo.
-- **C) está correta:** Os três complementos estão no infinitivo.
-- **D) está errada:** Mistura substantivo, infinitivo e oração.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Coordena substantivo, infinitivo e novo sintagma nominal sem uniformidade.
+- **B) está correta:** Os três itens coordenados são verbos no infinitivo com seus complementos.
+- **C) está errada:** Mistura oração desenvolvida, infinitivo e substantivo.
+- **D) está errada:** Combina substantivo, infinitivo e oração desenvolvida.
 - **Conceito cobrado:** Paralelismo sintático.
-- **Pegadinha usada:** Misturar estruturas sem necessidade..
-- **Como pensar para acertar:** Itens coordenados devem ter forma semelhante.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Pegadinha usada:** Manter coerência temática, mas quebrar a forma gramatical da enumeração.
+- **Como pensar para acertar:** Isole os itens coordenados e compare sua estrutura.
+- **Referência à apostila de estudo:** Dia 5 — reescrita e paralelismo.
 
 ### Comentário da Questão 30
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não há oração subordinada.
-- **B) está correta:** A vírgula marca a omissão de termo já expresso antes.
-- **C) está errada:** Aqui o verbo está omitido, não separado.
-- **D) está errada:** “a planilha” é complemento elíptico, não aposto.
-- **Conceito cobrado:** Pontuação e elipse.
-- **Pegadinha usada:** Não reconhecer verbo omitido..
-- **Como pensar para acertar:** Veja se um termo anterior foi omitido para evitar repetição.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** “O coordenador” e “a diretora” exercem função de sujeito, não de vocativo.
+- **B) está errada:** Não há verbo expresso depois dos sujeitos; a vírgula sinaliza justamente sua elipse.
+- **C) está correta:** O verbo “revisou” foi omitido nas duas últimas orações e recuperado da primeira.
+- **D) está errada:** “A planilha” e “o parecer” são complementos do verbo elíptico, não apostos.
+- **Conceito cobrado:** Vírgula vicária e elipse verbal.
+- **Pegadinha usada:** Confundir omissão marcada por vírgula com separação indevida.
+- **Como pensar para acertar:** Reponha o verbo da primeira oração nas estruturas seguintes.
+- **Referência à apostila de estudo:** Dia 5 — pontuação e elipse.
 
 ### Comentário da Questão 31
 
-- **Alternativa correta:** A.
-- **A) está correta:** Fazer indicando tempo decorrido é impessoal e fica no singular.
-- **B) está errada:** O verbo fazer temporal fica no singular.
-- **C) está errada:** Também viola a impessoalidade temporal.
-- **D) está errada:** Construção inadequada para o sentido de tempo decorrido.
-- **Conceito cobrado:** Verbo fazer impessoal.
-- **Pegadinha usada:** Concordar fazer temporal com expressão plural..
-- **Como pensar para acertar:** Tempo decorrido: faz/há no singular.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** “Haver” com sentido de existir é impessoal: “houve dois anos de testes”.
+- **B) está errada:** A expressão plural de tempo não leva o verbo impessoal ao plural.
+- **C) está errada:** O auxiliar de locução com “fazer” temporal também deve ficar no singular: “deve fazer”.
+- **D) está correta:** “Fazer” com sentido de tempo decorrido é impessoal e permanece no singular.
+- **Conceito cobrado:** Verbos impessoais em expressões temporais e existenciais.
+- **Pegadinha usada:** Fazer o verbo concordar com a expressão plural posposta.
+- **Como pensar para acertar:** Verifique se “fazer” indica tempo e se “haver” equivale a existir.
+- **Referência à apostila de estudo:** Dia 5 — concordância e verbos impessoais.
 
 ### Comentário da Questão 32
 
-- **Alternativa correta:** D.
-- **A) está errada:** Em causa explicativa, usa-se porque, sem acento.
-- **B) está errada:** Em pergunta direta, usa-se por que separado.
-- **C) está errada:** Quando equivale a “por qual motivo”, usa-se por que.
-- **D) está correta:** Com artigo “o”, porquê é substantivo e recebe acento.
-- **Conceito cobrado:** Uso dos porquês.
-- **Pegadinha usada:** Não distinguir substantivo, pergunta e explicação..
-- **Como pensar para acertar:** Veja se há artigo, pergunta ou causa.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Na oração causal, usa-se “porque”.
+- **B) está correta:** Com artigo, “porquê” é substantivo e significa “motivo”.
+- **C) está errada:** A locução interrogativa exige “por que motivo”, com as duas palavras separadas.
+- **D) está errada:** Em pergunta direta, usa-se “por que”.
+- **Conceito cobrado:** Emprego de porque, por que e porquê.
+- **Pegadinha usada:** Escolher a forma pela entonação, sem analisar função e posição.
+- **Como pensar para acertar:** Teste “por qual motivo” e observe a presença de artigo.
+- **Referência à apostila de estudo:** Dia 5 — ortografia e emprego dos porquês.
 
 ### Comentário da Questão 33
 
-- **Alternativa correta:** C.
-- **A) está errada:** Concessão seria embora/ainda que.
-- **B) está errada:** Condição seria se/caso.
-- **C) está correta:** A manutenção decorre da eficiência afirmada antes.
-- **D) está errada:** Oposição seria mas/porém/contudo.
-- **Conceito cobrado:** Conector conclusivo.
-- **Pegadinha usada:** Trocar conclusão por causa ou oposição..
-- **Como pensar para acertar:** Portanto fecha raciocínio.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A detecção adicional de inconsistências serve de premissa para manter o procedimento.
+- **B) está errada:** A manutenção é defendida como conclusão, não como condição.
+- **C) está errada:** Não se admite obstáculo nem se relativiza a utilidade da revisão.
+- **D) está errada:** Embora haja contraste entre tipos de conferência no primeiro segmento, “portanto” liga a premissa à conclusão.
+- **Conceito cobrado:** Conector conclusivo e progressão argumentativa.
+- **Pegadinha usada:** Classificar o conector pela oposição interna do período, e não pela ligação que ele realiza.
+- **Como pensar para acertar:** Identifique exatamente quais segmentos o conector relaciona.
+- **Referência à apostila de estudo:** Dia 5 — conectores e conclusão.
 
 ### Comentário da Questão 34
 
-- **Alternativa correta:** B.
-- **A) está errada:** A expressão indica agente da ação, não característica do relatório.
-- **B) está correta:** Na voz passiva, indica quem praticou a ação.
-- **C) está errada:** O sujeito paciente é “O relatório”.
-- **D) está errada:** Na voz passiva, o objeto direto da ativa vira sujeito.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Na voz passiva, “pela equipe de auditoria” nomeia quem identificou.
+- **B) está errada:** A expressão não caracteriza o substantivo “inconsistências”.
+- **C) está errada:** O sujeito paciente é “As inconsistências”.
+- **D) está errada:** Na forma ativa, “a equipe de auditoria” seria sujeito, não objeto indireto.
 - **Conceito cobrado:** Voz passiva e agente da passiva.
-- **Pegadinha usada:** Confundir agente da passiva com sujeito..
-- **Como pensar para acertar:** Pergunte quem praticou a ação na passiva.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Pegadinha usada:** Confundir o agente introduzido por preposição com objeto indireto.
+- **Como pensar para acertar:** Converta o período para a voz ativa e identifique quem pratica a ação.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe e vozes verbais.
 
 ### Comentário da Questão 35
 
-- **Alternativa correta:** A.
-- **A) está correta:** Porque introduz a causa da revisão.
-- **B) está errada:** Porém introduz oposição.
-- **C) está errada:** Para indica finalidade.
-- **D) está errada:** Embora indica concessão.
-- **Conceito cobrado:** Relações semânticas.
-- **Pegadinha usada:** Confundir causa e finalidade..
-- **Como pensar para acertar:** Causa explica por que ocorreu; finalidade indica para quê.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** “Para verificar” expressa finalidade.
+- **B) está errada:** “Embora” introduz concessão.
+- **C) está correta:** O surgimento dos documentos explica por que a análise foi reaberta.
+- **D) está errada:** “Desde que” introduz condição.
+- **Conceito cobrado:** Relações adverbiais de causa, concessão, finalidade e condição.
+- **Pegadinha usada:** Confundir a razão de uma ação com seu objetivo.
+- **Como pensar para acertar:** Pergunte se a oração responde “por quê?”, “para quê?” ou “em que condição?”.
+- **Referência à apostila de estudo:** Dia 5 — semântica dos conectores.
 
 ### Comentário da Questão 36
 
-- **Alternativa correta:** D.
-- **A) está errada:** O verbo principal é “alterou”.
-- **B) está errada:** Não há conector conclusivo.
-- **C) está errada:** O objeto direto é “o procedimento”.
-- **D) está correta:** O particípio caracteriza qual norma está sendo mencionada.
-- **Conceito cobrado:** Termos da oração e valor adjetivo.
-- **Pegadinha usada:** Perder a estrutura sujeito-verbo-objeto..
-- **Como pensar para acertar:** Localize o verbo principal antes de classificar termos.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** “Em 2025” situa a publicação da norma, não diretamente a alteração do procedimento.
+- **B) está errada:** O verbo principal é “alterou”, cujo sujeito expresso é “A norma publicada em 2025”.
+- **C) está correta:** A estrutura reduzida de particípio equivale a “que foi publicada em 2025” e restringe o referente.
+- **D) está errada:** O segmento caracteriza “norma” e não completa nominalmente seu sentido.
+- **Conceito cobrado:** Oração reduzida de particípio com valor adjetivo.
+- **Pegadinha usada:** Associar todo marcador temporal ao verbo principal.
+- **Como pensar para acertar:** Desenvolva a oração reduzida e observe qual termo ela modifica.
+- **Referência à apostila de estudo:** Dia 5 — sintaxe do período e orações reduzidas.
 
 ### Comentário da Questão 37
 
-- **Alternativa correta:** C.
-- **A) está errada:** A vírgula após “revisou” separa verbo do complemento.
-- **B) está errada:** Separa sujeito/verbo e cria fragmentos.
-- **C) está correta:** A vírgula isola adjunto deslocado e a enumeração está clara.
-- **D) está errada:** Vírgulas fragmentam termos e falta pontuação na enumeração.
-- **Conceito cobrado:** Pontuação e enumeração.
-- **Pegadinha usada:** Inserir vírgulas entre verbo e complemento..
-- **Como pensar para acertar:** Use vírgula para deslocamentos e enumeração, não para quebrar núcleo sintático.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Os termos intercalados estão delimitados e a enumeração foi pontuada adequadamente.
+- **B) está errada:** Faltam vírgulas entre os três itens enumerados.
+- **C) está errada:** A vírgula separa indevidamente o sujeito “o candidato” do verbo “revisou”.
+- **D) está errada:** Há vírgulas que fragmentam o adjunto e separam o verbo de seu complemento.
+- **Conceito cobrado:** Pontuação de termos deslocados, intercalados e enumerados.
+- **Pegadinha usada:** Pontuar por pausas de leitura sem respeitar a estrutura sintática.
+- **Como pensar para acertar:** Marque primeiro a estrutura principal e depois isole apenas os termos acessórios.
+- **Referência à apostila de estudo:** Dia 5 — pontuação e clareza.
 
 ### Comentário da Questão 38
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não indica objetivo.
-- **B) está correta:** Tampouco reforça negação em segunda ideia.
-- **C) está errada:** Não conclui; acrescenta negação.
-- **D) está errada:** Não explica motivo.
-- **Conceito cobrado:** Semântica de conectores.
-- **Pegadinha usada:** Não reconhecer conectores negativos..
-- **Como pensar para acertar:** Tampouco = também não.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** O monitoramento não é apresentado como finalidade da primeira negação.
+- **B) está errada:** A locução não introduz conclusão.
+- **C) está correta:** “Tampouco” adiciona “não dispensa” a “não elimina”.
+- **D) está errada:** O segundo predicado não explica a causa do primeiro.
+- **Conceito cobrado:** Conector de adição negativa.
+- **Pegadinha usada:** Inferir causa ou conclusão de uma simples coordenação negativa.
+- **Como pensar para acertar:** Substitua “tampouco” por “também não”.
+- **Referência à apostila de estudo:** Dia 5 — semântica e conectores.
 
 ### Comentário da Questão 39
 
-- **Alternativa correta:** A.
-- **A) está correta:** Retoma o tema e fecha com síntese coerente.
-- **B) está errada:** É genérica e pouco relacionada à tese.
-- **C) está errada:** Contraria responsabilidade institucional.
-- **D) está errada:** Conclusão derrotista e sem proposta de fechamento coerente.
-- **Conceito cobrado:** Discursiva: conclusão.
-- **Pegadinha usada:** Conclusão genérica ou contraditória..
-- **Como pensar para acertar:** Retome tese e argumentos sem abrir assunto novo.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Abre assunto novo que o próprio trecho reconhece não ter desenvolvido.
+- **B) está correta:** Retoma a tese e sintetiza medidas compatíveis com transparência e proteção de dados.
+- **C) está errada:** Contradiz a tese ao defender publicidade irrestrita.
+- **D) está errada:** Produz fechamento vago e sugere liberdade incompatível com critérios normativos.
+- **Conceito cobrado:** Conclusão dissertativa.
+- **Pegadinha usada:** Encerrar com tema novo, contradição ou generalidade.
+- **Como pensar para acertar:** Verifique se a conclusão retoma a tese sem criar premissa inédita.
+- **Referência à apostila de estudo:** Dia 5 — discursiva: conclusão e retomada da tese.
 
 ### Comentário da Questão 40
 
-- **Alternativa correta:** D.
-- **A) está errada:** Sem acento, mudam ou perdem a grafia normativa no sentido indicado.
-- **B) está errada:** Não é monossílabo.
-- **C) está errada:** Proparoxítonas são acentuadas independentemente desse final.
-- **D) está correta:** Todas têm tonicidade antepenúltima e recebem acento.
-- **Conceito cobrado:** Acentuação gráfica.
-- **Pegadinha usada:** Aplicar regra de oxítona/paroxítona a proparoxítona..
-- **Como pensar para acertar:** Identifique a sílaba tônica.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** As palavras são acentuadas por regras distintas de paroxítonas terminadas em ditongo e em “l”.
+- **B) está correta:** As três palavras têm a antepenúltima sílaba tônica e toda proparoxítona é acentuada.
+- **C) está errada:** A forma normativa adjetiva “lógico” exige acento e tem tonicidade antepenúltima.
+- **D) está errada:** “Técnico” é proparoxítono, não paroxítono terminado em “o”.
+- **Conceito cobrado:** Regras de acentuação gráfica.
+- **Pegadinha usada:** Agrupar palavras acentuadas como se obedecessem à mesma regra.
+- **Como pensar para acertar:** Separe as sílabas e localize a sílaba tônica antes de aplicar a regra.
+- **Referência à apostila de estudo:** Dia 5 — ortografia e acentuação.
 
 ### Comentário da Questão 41
 
-- **Alternativa correta:** C.
-- **A) está errada:** Não há hipótese.
-- **B) está errada:** Não há portanto/logo.
-- **C) está correta:** Publicar e divulgar são ações somadas.
-- **D) está errada:** Não há contraste.
-- **Conceito cobrado:** Conectivo aditivo.
-- **Pegadinha usada:** Superinterpretar conector simples..
-- **Como pensar para acertar:** Nem todo conector esconde contraste; “e” geralmente soma.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** `Como` cria causa e `portanto` cria conclusão, relações que o texto não estabelece entre as três ações.
+- **B) está errada:** A correlação `ou... ou` transforma ações cumulativas em alternativas, e `por isso` acrescenta causalidade.
+- **C) está errada:** `Embora` introduz concessão e `por essa razão` apresenta a não homologação como consequência necessária.
+- **D) está correta:** `E` mantém a soma das duas ações, enquanto `entretanto` preserva a oposição de `contudo`.
+- **Conceito cobrado:** Coordenação aditiva, oposição e equivalência semântica na reescrita.
+- **Pegadinha usada:** Produzir frase gramaticalmente correta, mas trocar adição e contraste por causa, conclusão, alternância ou concessão.
+- **Como pensar para acertar:** Marque a relação lógica em cada ponto de articulação e compare as duas relações na reescrita.
+- **Referência à apostila de estudo:** Dia 5 — semântica e relações entre orações.
 
 ### Comentário da Questão 42
 
-- **Alternativa correta:** B.
-- **A) está errada:** O padrão esperado é compatível com a norma.
-- **B) está correta:** Apto rege preposição “a”; “ao exercício” está correto.
-- **C) está errada:** Falta preposição.
-- **D) está errada:** Favorável rege preposição “a”: favorável ao candidato.
-- **Conceito cobrado:** Regência nominal.
-- **Pegadinha usada:** Achar que só verbos regem preposição..
-- **Como pensar para acertar:** Nomes como apto, favorável e compatível também pedem complemento regido.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** O padrão é “compatível com a norma” e “contrário ao entendimento”.
+- **B) está errada:** “Acessível aos usuários” está correto, mas “passível” rege “de”: “passível de auditoria”.
+- **C) está errada:** O padrão é “favorável ao recurso” e “avessa a nova instrução”.
+- **D) está correta:** “Apto a” e “consciente de” regem adequadamente “ao exercício” e “das responsabilidades”.
+- **Conceito cobrado:** Regência nominal de múltiplos nomes.
+- **Pegadinha usada:** Inserir uma relação correta ao lado de outra incorreta na mesma alternativa.
+- **Como pensar para acertar:** Valide separadamente cada nome e seu complemento.
+- **Referência à apostila de estudo:** Dia 5 — regência nominal.
 
 ### Comentário da Questão 43
 
-- **Alternativa correta:** A.
-- **A) está correta:** O comando muda o alvo da questão.
-- **B) está errada:** Familiaridade não garante correção.
-- **C) está errada:** Ignorar o comando leva a erro.
-- **D) está errada:** Isso inverte o objetivo da questão.
-- **Conceito cobrado:** Leitura de enunciado.
-- **Pegadinha usada:** Errar por comando negativo..
-- **Como pensar para acertar:** Antes das alternativas, marque o comando da questão.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** Em uma afirmação composta por `e`, uma parcela verdadeira não salva a proposição quando a outra parcela é falsa.
+- **B) está correta:** A distinção entre anulação e revogação não valida a generalização de efeitos retroativos; o qualificador torna a opção incorreta.
+- **C) está errada:** O trecho final integra a proposição e altera seu valor, ainda que apareça depois de uma formulação inicialmente correta.
+- **D) está errada:** Inverter frases sem examinar conectivos e qualificadores aumenta o risco de responder à polaridade errada do comando.
+- **Conceito cobrado:** Escopo de qualificadores, conjunção lógica e leitura de comando negativo.
+- **Pegadinha usada:** Interromper a análise no fragmento verdadeiro e ignorar que `em ambos os casos` estende uma conclusão falsa aos dois institutos.
+- **Como pensar para acertar:** Decomponha a opção, teste cada parcela e o alcance dos qualificadores, recomponha seu valor e só então releia o comando.
+- **Referência à apostila de estudo:** Dia 5 — estratégia de prova, leitura do comando e eliminação.
 
 ### Comentário da Questão 44
 
-- **Alternativa correta:** D.
-- **A) está errada:** Preserva a ordem temporal e a restrição.
-- **B) está errada:** Preserva sentido.
-- **C) está errada:** Preserva ênfase e ordem temporal.
-- **D) está correta:** Altera a ordem temporal expressa por “depois”.
-- **Conceito cobrado:** Reescrita e sentido temporal.
-- **Pegadinha usada:** Trocar depois por antes..
-- **Como pensar para acertar:** Observe advérbios e marcadores temporais.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Mantém a revisão em momento posterior ao erro e preserva a restrição temporal.
+- **B) está errada:** “Apenas após” conserva o mesmo limite temporal.
+- **C) está correta:** Afirma revisão anterior ao erro e inverte a ordem temporal original.
+- **D) está errada:** A construção clivada enfatiza, sem alterar, o momento da revisão.
+- **Conceito cobrado:** Escopo adverbial e reescrita semântica.
+- **Pegadinha usada:** Ignorar a instrução sobre o alcance de “só” ou observar apenas palavras repetidas.
+- **Como pensar para acertar:** Compare a ordem dos eventos e o elemento sobre o qual recai a restrição.
+- **Referência à apostila de estudo:** Dia 5 — reescrita, escopo e marcadores temporais.
 
 ### Comentário da Questão 45
 
-- **Alternativa correta:** C.
-- **A) está errada:** Não indica objetivo.
-- **B) está errada:** Não define quem é a equipe; introduz obstáculo.
-- **C) está correta:** As restrições eram obstáculo, mas não impediram a conclusão.
-- **D) está errada:** As restrições não causaram a conclusão.
-- **Conceito cobrado:** Concessão.
-- **Pegadinha usada:** Confundir obstáculo superado com causa..
-- **Como pensar para acertar:** Apesar de = embora, ainda que.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** `Ainda que` conserva a concessão de `embora`, e `consequentemente` mantém o valor conclusivo de `por isso`.
+- **B) está errada:** `Como` converte o orçamento reduzido em causa da conclusão, e `apesar disso` troca consequência por concessão.
+- **C) está errada:** `Se` cria condição hipotética, enquanto `entretanto` apresenta oposição em lugar da consequência.
+- **D) está errada:** `Porque` transforma o obstáculo em causa, e `ainda assim` não preserva a inferência que liga conclusão e manutenção do cronograma.
+- **Conceito cobrado:** Concessão, consequência e preservação de relações lógicas em reescrita.
+- **Pegadinha usada:** Manter o assunto e a correção gramatical, mas permutar as relações entre os segmentos.
+- **Como pensar para acertar:** Analise os dois conectores separadamente e exija que a alternativa preserve ambos, não apenas o primeiro.
+- **Referência à apostila de estudo:** Dia 5 — conectores concessivos.
 
 ### Comentário da Questão 46
 
-- **Alternativa correta:** B.
-- **A) está errada:** Há mistura inadequada de concordâncias.
-- **B) está correta:** Com “mais de um”, o verbo costuma ficar no singular, salvo ideia de reciprocidade.
-- **C) está errada:** No caso simples, a concordância esperada é singular.
-- **D) está errada:** Falta plural em candidato.
-- **Conceito cobrado:** Concordância verbal e nominal.
-- **Pegadinha usada:** Não observar núcleo e estrutura fixa..
-- **Como pensar para acertar:** Procure expressões especiais e concordância interna.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** Com “mais de um”, o verbo fica normalmente no singular: “enviou”.
+- **B) está errada:** Na locução existencial, o auxiliar permanece no singular: “deve haver”.
+- **C) está errada:** O padrão é “um ou outro candidato apresentou”, com núcleo e verbo no singular.
+- **D) está correta:** A expressão “mais de um candidato” exige singular na ausência de reciprocidade ou repetição.
+- **Conceito cobrado:** Casos especiais de concordância verbal.
+- **Pegadinha usada:** Aplicar concordância puramente numérica a expressões de estrutura singular.
+- **Como pensar para acertar:** Reconheça a expressão fixa e verifique se existe exceção contextual.
+- **Referência à apostila de estudo:** Dia 5 — concordância e verbos impessoais.
 
 ### Comentário da Questão 47
 
-- **Alternativa correta:** A.
-- **A) está correta:** Coesão permite que as ideias se encadeiem.
-- **B) está errada:** Tamanho não garante coesão.
-- **C) está errada:** Vocabulário difícil não substitui conexão entre ideias.
-- **D) está errada:** Pronomes e conectores são recursos de coesão.
-- **Conceito cobrado:** Coesão textual.
-- **Pegadinha usada:** Confundir coesão com tamanho ou rebuscamento..
-- **Como pensar para acertar:** Pergunte se uma ideia leva claramente à próxima.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** `Dessas exigências` está no plural e encapsula duas obrigações, não somente o dever de informar.
+- **B) está errada:** A primeira expressão é anafórica, e `a última delas` não retoma o efeito de reduzir usos incompatíveis.
+- **C) está correta:** A primeira expressão resume as duas obrigações; `a última delas` seleciona a segunda, limitar o acesso.
+- **D) está errada:** `Finalidade` é objeto de uma obrigação, não o conjunto retomado, e a última medida não é informar titulares.
+- **Conceito cobrado:** Encapsulamento anafórico, antecedente composto e seleção referencial.
+- **Pegadinha usada:** Ignorar número, ordem dos antecedentes e o alcance do demonstrativo `última`.
+- **Como pensar para acertar:** Expanda cada expressão pelo possível antecedente e confirme concordância, posição e continuidade de sentido.
+- **Referência à apostila de estudo:** Dia 5 — coesão referencial e progressão textual.
 
 ### Comentário da Questão 48
 
-- **Alternativa correta:** D.
-- **A) está errada:** Grafia incorreta.
-- **B) está errada:** Grafia incorreta.
-- **C) está errada:** Grafia incorreta.
-- **D) está correta:** Essa é a grafia correta.
-- **Conceito cobrado:** Ortografia.
-- **Pegadinha usada:** Grafia de palavra frequente em enunciados..
-- **Como pensar para acertar:** Memorize palavras de alta frequência em provas.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** “Ratificação” confirma; não nomeia a correção do erro, e “retificar” não expressa a confirmação dos demais termos.
+- **B) está correta:** “Retificação” corrige, “ratificar” confirma e “discrição” indica reserva ou prudência.
+- **C) está errada:** “Ratificação” não corresponde à correção, e “descrição” não significa prudência no trato de dados.
+- **D) está errada:** “Retificar” significa corrigir, e “descrição” significa ato de descrever, inadequado à ideia de reserva.
+- **Conceito cobrado:** Parônimos e seleção lexical contextual.
+- **Pegadinha usada:** Confundir palavras próximas na forma, mas diferentes no sentido.
+- **Como pensar para acertar:** Substitua cada lacuna por uma definição curta antes de avaliar o conjunto.
+- **Referência à apostila de estudo:** Dia 5 — semântica contextual e precisão vocabular.
 
 ### Comentário da Questão 49
 
 - **Alternativa correta:** C.
-- **A) está errada:** Não há escolha entre alternativas.
-- **B) está errada:** Não indica aumento ou diminuição proporcional.
-- **C) está correta:** Explica por que a capacitação é essencial.
-- **D) está errada:** Não há contraste.
-- **Conceito cobrado:** Locuções conjuntivas.
-- **Pegadinha usada:** Não reconhecer locução causal..
-- **Como pensar para acertar:** Substitua mentalmente por “porque” e veja se mantém sentido.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Nível:** Muito difícil.
+- **A) está errada:** `À medida que` introduz proporção e `portanto` conclusão, alterando as duas relações originais.
+- **B) está errada:** `A menos que` cria condição excepcional e `por conseguinte` introduz consequência.
+- **C) está correta:** `Porque` preserva a justificativa causal, e `mesmo assim` mantém a oposição concessiva de `ainda assim`.
+- **D) está errada:** `Embora` é concessivo, não causal, e `por essa razão` converte a oposição em conclusão.
+- **Conceito cobrado:** Equivalência contextual de conectores causais e concessivos.
+- **Pegadinha usada:** Acertar a substituição de um conector e aceitar que o segundo altere a progressão argumentativa.
+- **Como pensar para acertar:** Determine o valor de cada expressão destacada e valide o par completo na ordem em que aparece.
+- **Referência à apostila de estudo:** Dia 5 — conectores de causa, condição, proporção e concessão.
 
 ### Comentário da Questão 50
 
-- **Alternativa correta:** B.
-- **A) está errada:** Além de informal, há erro com “houveram”.
-- **B) está correta:** A frase é específica e clara.
-- **C) está errada:** Informal e imprecisa.
-- **D) está errada:** Vaga e informal.
-- **Conceito cobrado:** Clareza e objetividade.
-- **Pegadinha usada:** Usar linguagem vaga/informal..
-- **Como pensar para acertar:** Prefira substantivos precisos e verbos claros.
-- **Referência à apostila de estudo:** Dia 5 — Língua Portuguesa e Discursiva.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** Identifica data, quantidade e localização dos achados e distingue o registro factual da correção e do reteste recomendados.
+- **B) está errada:** Afirma causa com certeza sem apresentar evidência e usa expressões vagas para ação e prazo.
+- **C) está errada:** `Diversos pontos`, `relevantes` e `necessidade evidente` não permitem conferir achados nem separar dado de avaliação.
+- **D) está errada:** Momento, causa e responsáveis permanecem indeterminados, e a providência não possui critério verificável.
+- **Conceito cobrado:** Redação administrativa, verificabilidade e distinção entre constatação e recomendação.
+- **Pegadinha usada:** Confundir tom categórico ou formal com objetividade e apresentar inferência causal como fato comprovado.
+- **Como pensar para acertar:** Procure evidência identificável, delimitação do achado e marca explícita de que a providência é recomendada.
+- **Referência à apostila de estudo:** Dia 5 — discursiva e redação objetiva.
 
 ## Temas de discursiva do Dia 5
 
@@ -7820,222 +8259,262 @@ Os temas abaixo não contam nas 50 questões objetivas. Use-os para treinar estr
 #### Comentário Extra Dia 5.1
 
 - **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** Essa ordem segue o material aprovado para fortalecer base antes de detalhes normativos.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Priorização normativa.
-- **Pegadinha usada:** Estudar apenas a norma mais longa e ignorar o núcleo do edital.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível:** Médio.
+- **A) está errada:** O Regimento organiza o conselho regional e não pode ampliar o campo profissional fixado em lei.
+- **B) está errada:** Resoluções complementam a disciplina dentro da competência normativa, mas não prevalecem sobre lei e decreto.
+- **C) está correta:** A alternativa respeita a função e a hierarquia de cada espécie normativa.
+- **D) está errada:** O decreto regulamenta a execução da lei profissional e não se limita à organização interna do CRA-PR.
+- **Conceito cobrado:** Articulação entre lei, decreto, resoluções e regimento.
+- **Pegadinha usada:** Confundir posterioridade ou detalhamento com superioridade hierárquica.
+- **Como pensar para acertar:** Identifique o fundamento legal e a função complementar de cada ato.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: hierarquia prática das fontes.
 
 #### Comentário Extra Dia 5.2
 
-- **Alternativa correta:** A.
-- **A) está correta:** A proteção do título e da habilitação profissional é função típica da fiscalização.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Uso de título profissional.
-- **Pegadinha usada:** Tratar título profissional como expressão sem controle institucional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** A atuação fiscalizatória não depende de dano patrimonial comprovado pelo cliente.
+- **B) está errada:** O possível uso indevido pode existir antes da celebração de contrato.
+- **C) está errada:** Registro posterior não torna automaticamente regular uma conduta praticada antes da habilitação.
+- **D) está correta:** A apresentação pública como registrado exige verificação de habilitação e de uso regular da condição profissional.
+- **Conceito cobrado:** Uso de título e regularidade do exercício profissional.
+- **Pegadinha usada:** Condicionar a irregularidade a contrato, prejuízo ou regularização posterior.
+- **Como pensar para acertar:** Compare a condição apresentada no anúncio com a habilitação existente naquele momento.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: registro e exercício profissional.
 
 #### Comentário Extra Dia 5.3
 
-- **Alternativa correta:** D.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está correta:** A fiscalização é ligada ao campo profissional e à jurisdição do conselho regional.
-- **Conceito cobrado:** Campo de fiscalização.
-- **Pegadinha usada:** Achar que qualquer atividade empresarial é automaticamente fiscalizada pelo CRA.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** A fiscalização regional ordinária cabe aos CRAs em suas jurisdições; o CFA atua no plano nacional e normativo.
+- **B) está correta:** Reúne os critérios material e territorial da atuação do CRA.
+- **C) está errada:** A mera condição empresarial não basta; a atividade deve guardar relação com o campo fiscalizado.
+- **D) está errada:** A competência não decorre apenas do domicílio do denunciante.
+- **Conceito cobrado:** Campo e competência territorial de fiscalização.
+- **Pegadinha usada:** Universalizar a competência do CFA ou do conselho regional.
+- **Como pensar para acertar:** Verifique simultaneamente a matéria da atividade e a jurisdição competente.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: sistema e fiscalização regional.
 
 #### Comentário Extra Dia 5.4
 
-- **Alternativa correta:** B.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está correta:** A Semana 1 prioriza compreensão de conduta e aplicação prática em casos.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Estudo do Código de Ética.
-- **Pegadinha usada:** Decorar artigo sem entender a situação prática cobrada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** O estudo dirigido associa a norma a deveres, vedações, casos, processo e sanções.
+- **B) está errada:** Anuidades e cobrança não constituem o núcleo do Código de Ética.
+- **C) está errada:** A RN CFA nº 651/2024, e não a nº 671/2025, é associada ao Regimento Interno no material.
+- **D) está errada:** Memorização isolada não permite resolver situações éticas concretas.
+- **Conceito cobrado:** Conteúdo e método de estudo do Código de Ética.
+- **Pegadinha usada:** Trocar as resoluções ou reduzir o estudo à numeração de artigos.
+- **Como pensar para acertar:** Associe cada norma a seu objeto e aplique a regra à conduta descrita.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: RN CFA nº 671/2025.
 
 #### Comentário Extra Dia 5.5
 
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** Conselhos profissionais não existem apenas para interesses corporativos ou arrecadação.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Finalidade fiscalizatória.
-- **Pegadinha usada:** Reduzir conselho profissional a entidade associativa privada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Conselho profissional não se limita à defesa econômica corporativa.
+- **B) está errada:** A fiscalização administrativa não substitui a função jurisdicional em todo conflito.
+- **C) está errada:** Definição autônoma de currículos universitários não é a finalidade indicada.
+- **D) está correta:** A proteção social e a regularidade do exercício justificam a função fiscalizatória.
+- **Conceito cobrado:** Finalidade dos conselhos profissionais.
+- **Pegadinha usada:** Equiparar conselho a associação privada, tribunal ou instituição de ensino.
+- **Como pensar para acertar:** Relacione a fiscalização ao interesse público protegido.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: finalidade institucional.
 
 #### Comentário Extra Dia 5.6
 
-- **Alternativa correta:** A.
-- **A) está correta:** O material reforça que nome e registro profissional não podem ser usados como fachada.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **Conceito cobrado:** Responsabilidade profissional.
-- **Pegadinha usada:** Confundir responsabilidade técnica com mera autorização comercial.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Autorização para usar o registro não substitui a atuação técnica efetiva.
+- **B) está correta:** Responsabilidade técnica exige participação real e regular na atividade assumida.
+- **C) está errada:** A pessoa jurídica não elimina a necessidade de profissional habilitado quando a responsabilidade técnica é exigível.
+- **D) está errada:** A responsabilidade acompanha a atividade exercida sob a indicação, e não apenas a assinatura inicial.
+- **Conceito cobrado:** Efetividade da responsabilidade técnica.
+- **Pegadinha usada:** Tratar indicação profissional como cessão formal de nome ou registro.
+- **Como pensar para acertar:** Procure evidência de acompanhamento, decisão técnica e atuação concreta.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: responsabilidade técnica.
 
 #### Comentário Extra Dia 5.7
 
-- **Alternativa correta:** D.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está correta:** A troca foi tratada no material como vinculada à retificação e à fonte oficial, não a preferência pessoal.
-- **Conceito cobrado:** RN 671/2025 x RN 640/2024.
-- **Pegadinha usada:** Usar norma revogada sem conferir edital retificado.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Novidade cronológica, sem pertinência ao edital e ato oficial, não basta para trocar a base.
+- **B) está errada:** A RN CFA nº 651/2024 é relacionada ao Regimento Interno, não ao novo Código de Ética.
+- **C) está correta:** O material fundamenta a escolha no edital retificado e na fonte oficial de vigência.
+- **D) está errada:** Normas sucessivas não se aplicam cumulativamente de modo automático aos mesmos fatos.
+- **Conceito cobrado:** Seleção da norma vigente indicada no edital.
+- **Pegadinha usada:** Aplicar automaticamente a norma numericamente mais recente ou acumular textos sucessivos.
+- **Como pensar para acertar:** Confira edital, retificação, objeto da resolução e informação oficial de vigência.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: RN nº 671/2025 e RN nº 640/2024.
 
 #### Comentário Extra Dia 5.8
 
-- **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** A banca tende a misturar sujeito e competência; por isso, a decomposição do caso reduz erro.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Método de resolução.
-- **Pegadinha usada:** Resolver legislação apenas por palavra-chave solta.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** A decomposição do caso evita confundir conduta, sujeito, competência e fundamento.
+- **B) está errada:** A sanção é consequência da análise normativa, não seu ponto de partida.
+- **C) está errada:** CFA e CRA possuem papéis distintos no sistema.
+- **D) está errada:** Ressalvas e quantificadores alteram o alcance da norma e da alternativa.
+- **Conceito cobrado:** Método de resolução de casos de legislação específica.
+- **Pegadinha usada:** Decidir por severidade, palavra-chave ou autoridade genérica.
+- **Como pensar para acertar:** Monte a sequência fato, sujeito, competência, regra e consequência.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: método de resolução.
 
 #### Comentário Extra Dia 5.9
 
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** Nem toda irregularidade recebe a sanção máxima; é preciso observar a norma e o caso.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Proporcionalidade em sanções.
-- **Pegadinha usada:** Escolher a punição mais grave por parecer mais rígida.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Nem toda infração conduz à penalidade máxima.
+- **B) está errada:** Prova documental não elimina, por si só, as garantias do processo e da defesa.
+- **C) está errada:** Proporcionalidade orienta a escolha dentro da lei; não autoriza criar sanção.
+- **D) está correta:** Penalidade requer previsão, procedimento e adequação à infração apurada.
+- **Conceito cobrado:** Legalidade, processo e proporcionalidade das sanções.
+- **Pegadinha usada:** Transformar rigor em automatismo ou em poder sancionador sem limite.
+- **Como pensar para acertar:** Verifique previsão normativa, competência, procedimento e gradação.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: sanções e processo.
 
 #### Comentário Extra Dia 5.10
 
-- **Alternativa correta:** A.
-- **A) está correta:** O Regimento é conteúdo objetivo de legislação específica e permite questões institucionais.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **Conceito cobrado:** Cobrança do Regimento.
-- **Pegadinha usada:** Achar que regimento só cai em prova de cargo administrativo.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** O Regimento não se limita a contribuições nem à cobrança.
+- **B) está errada:** A definição originária do campo profissional pertence à base legal da profissão.
+- **C) está errada:** Deveres éticos e sanções remetem ao Código de Ética vigente.
+- **D) está correta:** Estrutura, órgãos, competências e funcionamento são matérias típicas do Regimento Interno.
+- **Conceito cobrado:** Objeto do Regimento Interno do CRA-PR.
+- **Pegadinha usada:** Misturar organização institucional, campo profissional e disciplina ética.
+- **Como pensar para acertar:** Associe “quem faz o quê dentro do CRA-PR” ao Regimento.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: RN CFA nº 651/2024.
 
 #### Comentário Extra Dia 5.11
 
-- **Alternativa correta:** D.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está correta:** A publicidade de habilitação inexistente compromete a regularidade do exercício profissional.
-- **Conceito cobrado:** Uso indevido de condição profissional.
-- **Pegadinha usada:** Achar que anúncio publicitário não pode ser fiscalizado.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** A verificação fiscalizatória não depende de decisão definitiva de órgão de defesa do consumidor.
+- **B) está correta:** A apresentação como registrado sem possuir essa condição justifica apuração pelo órgão competente.
+- **C) está errada:** O anúncio pode ser relevante antes mesmo de gerar contrato remunerado.
+- **D) está errada:** Registro posterior não convalida automaticamente a apresentação anterior como habilitado.
+- **Conceito cobrado:** Publicidade e uso indevido de condição profissional.
+- **Pegadinha usada:** Exigir contrato, dano ou decisão de terceiro como condição para fiscalizar.
+- **Como pensar para acertar:** Compare o conteúdo objetivo do anúncio com a situação registral existente.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: exercício e fiscalização.
 
 #### Comentário Extra Dia 5.12
 
 - **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** O decreto não substitui a lei; detalha sua aplicação.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Relação lei-decreto.
-- **Pegadinha usada:** Confundir regulamentação com revogação da lei.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível:** Difícil.
+- **A) está errada:** Regulamentar não autoriza o decreto a ultrapassar os limites da lei.
+- **B) está correta:** O decreto detalha a execução da lei sem revogá-la nem superá-la hierarquicamente.
+- **C) está errada:** A edição do regulamento não elimina a lei regulamentada.
+- **D) está errada:** O Decreto nº 61.934/1967 não é regimento interno do CRA-PR.
+- **Conceito cobrado:** Relação entre lei e decreto regulamentador.
+- **Pegadinha usada:** Confundir detalhamento regulamentar com inovação ilimitada ou revogação.
+- **Como pensar para acertar:** Preserve a lei como fundamento e situe o decreto como ato de execução.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: Lei nº 4.769/1965 e Decreto nº 61.934/1967.
 
 #### Comentário Extra Dia 5.13
 
-- **Alternativa correta:** C.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está correta:** É preciso diferenciar condição acadêmica, registro profissional e regularidade financeira.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** Contribuições e regularidade.
-- **Pegadinha usada:** Misturar formação, registro e anuidade como se fossem a mesma coisa.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Separa corretamente formação acadêmica de situação financeira perante o conselho.
+- **B) está errada:** Consequências dependem de fundamento normativo e das garantias aplicáveis.
+- **C) está errada:** Conselho profissional não cancela diploma nem apaga formação acadêmica por inadimplência.
+- **D) está errada:** Vínculo acadêmico, por si só, não extingue contribuição regularmente devida.
+- **Conceito cobrado:** Distinção entre formação, registro e regularidade financeira.
+- **Pegadinha usada:** Tratar diploma, registro e anuidade como uma única condição.
+- **Como pensar para acertar:** Identifique qual relação jurídica cada consequência pode atingir.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: contribuições e regularidade.
 
 #### Comentário Extra Dia 5.14
 
-- **Alternativa correta:** A.
-- **A) está correta:** A própria apostila marcou pontos pendentes para evitar afirmação sem fonte.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Uso de fonte oficial.
-- **Pegadinha usada:** Transformar resumo incompleto em regra literal.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Comentário didático e ato oficial não possuem a mesma autoridade normativa.
+- **B) está errada:** Resumo auxilia o estudo, mas não prevalece sobre publicação oficial divergente.
+- **C) está correta:** Texto oficial e vigência são indispensáveis para detalhes literais como prazo, rito e penalidade.
+- **D) está errada:** Número ou data mais recente não substitui automaticamente a base indicada no edital.
+- **Conceito cobrado:** Uso de fontes oficiais no estudo normativo.
+- **Pegadinha usada:** Tomar material secundário ou novidade cronológica como fonte suficiente.
+- **Como pensar para acertar:** Confirme texto, vigência e pertinência ao edital antes de memorizar detalhe.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: conferência em fonte oficial.
 
 #### Comentário Extra Dia 5.15
 
-- **Alternativa correta:** D.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está correta:** O Regimento concentra estrutura, órgãos e funcionamento do conselho regional.
-- **Conceito cobrado:** Regimento e estrutura.
-- **Pegadinha usada:** Responder com Código de Ética quando o foco é organização interna.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A matéria institucional indicada é objeto do Regimento aprovado pela RN CFA nº 651/2024.
+- **B) está errada:** A lei profissional não é a fonte mais direta para a estrutura interna específica do CRA-PR.
+- **C) está errada:** O decreto regulamenta a lei da profissão, mas não substitui o Regimento regional.
+- **D) está errada:** O Código de Ética disciplina condutas, deveres, vedações e sanções éticas.
+- **Conceito cobrado:** Identificação da fonte normativa pela matéria.
+- **Pegadinha usada:** Escolher a norma mais ampla quando o comando pede organização interna.
+- **Como pensar para acertar:** Associe sede, órgãos e funcionamento ao ato regimental.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Legislação CRA/CFA: Regimento Interno do CRA-PR.
 
 #### Comentário Extra Dia 5.16
 
-- **Alternativa correta:** B.
-- **A) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **B) está correta:** Critério de julgamento não pode ser improvisado após conhecer as propostas.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **Conceito cobrado:** Critérios de julgamento.
-- **Pegadinha usada:** Mudar o critério conforme o licitante preferido.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Alterar o critério após conhecer as propostas viola a vinculação e a objetividade do julgamento.
+- **B) está errada:** A legislação admite critérios diversos conforme a natureza do objeto e a hipótese legal.
+- **C) está correta:** A prévia definição no instrumento convocatório permite julgamento objetivo e controle.
+- **D) está errada:** Critério não divulgado não pode prevalecer sobre as regras do certame.
+- **Conceito cobrado:** Julgamento objetivo e vinculação ao instrumento convocatório.
+- **Pegadinha usada:** Admitir mudança motivada ou critério interno depois da abertura.
+- **Como pensar para acertar:** Verifique se o critério foi definido antes e aplicado igualmente.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Administração Pública: licitações.
 
 #### Comentário Extra Dia 5.17
 
-- **Alternativa correta:** C.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **C) está correta:** A prova cobra a diferença entre irregularidade e improbidade.
-- **D) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **Conceito cobrado:** Elemento subjetivo na improbidade.
-- **Pegadinha usada:** Transformar toda falha em improbidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** Ilegalidade e improbidade não são sinônimos, e o enquadramento exige os requisitos legais.
+- **B) está correta:** O mesmo fato pode ter consequência diversa, embora falte requisito para improbidade.
+- **C) está errada:** A não configuração de improbidade não elimina automaticamente outras responsabilidades.
+- **D) está errada:** Não se pode substituir o elemento subjetivo legalmente exigido por culpa simples em qualquer hipótese.
+- **Conceito cobrado:** Distinção entre irregularidade e ato de improbidade.
+- **Pegadinha usada:** Converter todo descumprimento em improbidade ou em ausência total de responsabilidade.
+- **Como pensar para acertar:** Separe tipicidade da improbidade das esferas administrativa, civil e disciplinar.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Administração Pública: improbidade administrativa.
 
 #### Comentário Extra Dia 5.18
 
 - **Alternativa correta:** A.
-- **A) está correta:** Objetiva não significa automática.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **Conceito cobrado:** Responsabilidade objetiva.
-- **Pegadinha usada:** Confundir ausência de culpa com ausência de requisitos.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Nível:** Muito difícil.
+- **A) está correta:** A objetividade afasta a necessidade de provar culpa, mas não dano, nexo nem possíveis causas de ruptura.
+- **B) está errada:** Proximidade temporal ou espacial com o serviço não substitui o nexo causal.
+- **C) está errada:** A vítima não precisa demonstrar dolo do agente para a responsabilidade objetiva.
+- **D) está errada:** Excludentes ou atenuantes podem ser relevantes para o nexo e a extensão da responsabilidade.
+- **Conceito cobrado:** Requisitos da responsabilidade civil objetiva do Estado.
+- **Pegadinha usada:** Interpretar “objetiva” como responsabilidade automática.
+- **Como pensar para acertar:** Retire apenas a prova de culpa e preserve dano, conduta, nexo e análise de excludentes.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Administração Pública: responsabilidade civil do Estado.
 
 #### Comentário Extra Dia 5.19
 
 - **Alternativa correta:** D.
-- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **B) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **D) está correta:** Órgãos compõem a estrutura da pessoa jurídica, mas não são pessoas jurídicas autônomas.
-- **Conceito cobrado:** Órgãos públicos.
-- **Pegadinha usada:** Confundir órgão com entidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Nível:** Muito difícil.
+- **A) está errada:** A existência de dados pessoais não torna necessariamente restrito todo o processo; deve-se preservar o acesso às partes públicas que possam ser separadas.
+- **B) está errada:** O encerramento do processo não elimina a proteção da intimidade nem autoriza a divulgação irrestrita de dados pessoais, especialmente de dados relativos à saúde.
+- **C) está errada:** O consentimento pode ser relevante para a divulgação da parte protegida, mas sua ausência não impede o acesso às informações públicas que sejam dissociáveis dos dados pessoais.
+- **D) está correta:** A solução compatibiliza transparência e proteção de dados mediante acesso parcial, ocultação das informações pessoais não divulgáveis e fundamentação da restrição.
+- **Conceito cobrado:** Compatibilização entre acesso à informação pública e proteção de dados pessoais.
+- **Pegadinha usada:** Apresentar publicidade e privacidade como alternativas absolutas: sigilo integral ou divulgação integral.
+- **Como pensar para acertar:** Examine cada informação separadamente: libere o conteúdo de interesse público e restrinja apenas os dados pessoais cuja divulgação não tenha fundamento legal.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Administração Pública: publicidade, LAI/LGPD e proteção de dados pessoais.
 
 #### Comentário Extra Dia 5.20
 
-- **Alternativa correta:** B.
-- **A) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **B) está correta:** Agente público é categoria ampla, não apenas servidor efetivo.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **Conceito cobrado:** Agentes públicos.
-- **Pegadinha usada:** Reduzir agente público a servidor estatutário concursado.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** A alternativa inverte os institutos: ilegalidade conduz à anulação, enquanto inconveniência ou inoportunidade de ato válido pode justificar revogação.
+- **B) está errada:** Efeito favorável não torna convalidável um vício insanável, e a Administração pode desfazer seus próprios atos no exercício da autotutela.
+- **C) está correta:** O ato com vício insanável de legalidade deve ser anulado; o ato válido que perdeu conveniência pode ser revogado no exercício do mérito administrativo.
+- **D) está errada:** A inconveniência superveniente não transforma retroativamente um ato válido em ilegal; ela fundamenta revogação, não anulação.
+- **Conceito cobrado:** Autotutela administrativa e distinção entre anulação e revogação.
+- **Pegadinha usada:** Confundir vício de legalidade com avaliação superveniente de conveniência e oportunidade.
+- **Como pensar para acertar:** Primeiro verifique se o ato nasceu ilegal: nesse caso, pense em anulação. Se nasceu válido e apenas deixou de ser conveniente, pense em revogação.
+- **Referência à apostila de estudo:** Dia 5 — revisão fixa de Administração Pública: atos administrativos e anulação × revogação.
 
 ---
 
@@ -8046,1603 +8525,1759 @@ Os temas abaixo não contam nas 50 questões objetivas. Use-os para treinar estr
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
 
-Em processo seletivo para contratação de solução de tecnologia, servidor sugere restringir o edital a uma marca específica sem justificativa técnica. À luz dos princípios da Administração Pública, a conduta mais adequada é:
+Em licitação para solução de tecnologia, a unidade requisitante indica determinada marca como única aceitável, mas não apresenta estudo que demonstre incompatibilidade das demais opções. À luz dos princípios administrativos, a providência adequada é:
 
-A) classificar a despesa como sigilosa para afastar controle externo
-B) aceitar a indicação, pois a Administração pode escolher livremente a marca que considerar mais conhecida
-C) exigir justificativa técnica objetiva e compatível com o interesse público, evitando direcionamento indevido
-D) dispensar a licitação automaticamente, porque tecnologia sempre envolve fornecedor exclusivo
+A) manter a marca e classificar a justificativa como sigilosa, para evitar questionamentos de concorrentes.
+B) aceitar a escolha por se tratar de decisão discricionária da área técnica, ainda que não haja motivação objetiva.
+C) converter automaticamente o caso em inexigibilidade, porque produtos tecnológicos são presumidamente exclusivos.
+D) exigir justificativa técnica objetiva e pertinente ao interesse público, afastando direcionamento indevido.
 
 ### Questão 2
+**Nível: Médio**
 
-Sobre os princípios expressos do caput do art. 37 da Constituição Federal, assinale a alternativa correta.
+Assinale a alternativa que reúne apenas os princípios expressos no caput do art. 37 da Constituição Federal.
 
-A) Legalidade, impessoalidade, moralidade, publicidade e eficiência orientam a atuação administrativa direta e indireta.
-B) Legalidade, pessoalidade, moralidade, sigilo e economicidade são os princípios expressos do art. 37.
-C) Os princípios do art. 37 vinculam apenas órgãos federais, não alcançando autarquias estaduais ou municipais.
-D) A eficiência permite ignorar a legalidade quando o resultado administrativo for mais rápido.
+A) Legalidade, supremacia do interesse público, publicidade, continuidade e eficiência.
+B) Legalidade, pessoalidade, moralidade, transparência e economicidade.
+C) Legalidade, impessoalidade, moralidade, publicidade e eficiência.
+D) Impessoalidade, autotutela, motivação, publicidade e eficiência.
 
 ### Questão 3
+**Nível: Médio**
 
 Assinale a alternativa incorreta sobre Administração Direta e Indireta.
 
-A) Órgãos públicos da Administração Direta não possuem personalidade jurídica própria.
-B) Empresas públicas e sociedades de economia mista integram a Administração Indireta.
-C) Ministérios, secretarias e autarquias são órgãos despersonalizados da Administração Direta.
-D) Autarquias integram a Administração Indireta e possuem personalidade jurídica própria.
+A) Autarquias são órgãos despersonalizados da Administração Direta, embora possuam autonomia financeira.
+B) Autarquias, empresas públicas e sociedades de economia mista integram a Administração Indireta.
+C) Secretarias e ministérios são órgãos sem personalidade jurídica própria.
+D) Entidades da Administração Indireta possuem personalidade jurídica própria.
 
 ### Questão 4
+**Nível: Médio**
 
-Um conselho profissional, criado por lei para fiscalizar determinada profissão, exerce poder de polícia administrativa e arrecada contribuições vinculadas à atividade fiscalizatória. Em regra, sua natureza aproxima-se de:
+O CRA-PR exerce registro e fiscalização profissional, possui personalidade jurídica de direito público e autonomia técnica, administrativa e financeira. Essa descrição o aproxima, em regra, de:
 
-A) empresa pública exploradora de atividade econômica
-B) organização social criada por contrato de gestão, sem lei instituidora
-C) autarquia corporativa ou entidade de fiscalização profissional, com regime público em aspectos essenciais
-D) fundação privada sem qualquer prerrogativa pública
+A) empresa pública prestadora de serviço econômico em regime privado.
+B) órgão da Administração Direta estadual sem personalidade própria.
+C) autarquia corporativa ou entidade de fiscalização profissional.
+D) associação civil privada mantida apenas por contribuições voluntárias.
 
 ### Questão 5
+**Nível: Médio**
 
-Analise as assertivas sobre atos administrativos:
+Analise as assertivas sobre atos administrativos.
 
-I. Competência, finalidade, forma, motivo e objeto são elementos clássicos do ato administrativo.
+I. Competência, finalidade, forma, motivo e objeto são elementos clássicos.
 II. A presunção de legitimidade permite que o ato produza efeitos até eventual invalidação.
-III. A autoexecutoriedade está presente em todos os atos administrativos, sem exceção.
+III. A autoexecutoriedade está presente em todo ato administrativo, sem exceção.
 
 Está correto apenas o que se afirma em:
 
-A) I, II e III
-B) I e II
-C) I e III
-D) II e III
+A) I, II e III.
+B) II e III.
+C) I e III.
+D) I e II.
 
 ### Questão 6
+**Nível: Médio**
 
-No tema ato administrativo, assinale a alternativa incorreta.
+Assinale a alternativa incorreta acerca dos elementos do ato administrativo.
 
-A) Finalidade é o resultado de interesse público que a Administração busca alcançar.
-B) Motivo corresponde aos pressupostos de fato e de direito que justificam a prática do ato.
-C) Objeto é o efeito jurídico imediato produzido pelo ato administrativo.
-D) Competência pode ser livremente transferida de modo definitivo por acordo informal entre servidores.
+A) Finalidade relaciona-se ao interesse público que deve orientar o ato.
+B) Motivo corresponde aos pressupostos de fato e de direito da decisão.
+C) Objeto é o efeito jurídico imediato produzido pelo ato.
+D) Competência transfere-se definitivamente por acordo informal, sem autorização legal.
 
 ### Questão 7
+**Nível: Médio**
 
-Uma autoridade remove servidor para outra unidade exclusivamente para puni-lo por crítica feita em reunião interna, embora o ato aparente atender ao interesse do serviço. O vício mais evidente está ligado ao elemento:
+Uma autoridade remove servidor para local distante com o propósito real de puni-lo por crítica legítima, embora declare genericamente “necessidade do serviço”. O vício mais evidente recai sobre:
 
-A) objeto material inexistente
-B) competência territorial tributária
-C) publicidade externa obrigatória
-D) finalidade
+A) a forma, porque toda remoção exige decisão judicial.
+B) a finalidade, pois a competência foi usada para perseguição pessoal.
+C) o motivo, apenas porque fatos administrativos não admitem avaliação.
+D) o objeto, porque remoção nunca pode alterar a lotação.
 
 ### Questão 8
+**Nível: Médio**
 
-Em licitação para contratação de serviço comum de suporte técnico, a Administração pretende adotar modalidade adequada à disputa de bens e serviços comuns, com lances e julgamento objetivo. Em regra, a modalidade mais associada a essa lógica é:
+Para contratar serviço comum de suporte técnico, com especificações usuais de mercado e disputa por lances, a modalidade em regra mais compatível é:
 
-A) leilão
-B) diálogo competitivo
-C) pregão
-D) concurso
+A) leilão.
+B) pregão.
+C) diálogo competitivo.
+D) concurso.
 
 ### Questão 9
+**Nível: Médio**
 
 Assinale a alternativa incorreta sobre contratação direta.
 
-A) Dispensa e inexigibilidade são expressões equivalentes e podem ser usadas indistintamente pela Administração.
-B) Dispensa ocorre em hipóteses legais nas quais a competição é possível em tese, mas a lei autoriza não licitar.
-C) Inexigibilidade ocorre quando a competição é inviável, como em fornecedor exclusivo devidamente comprovado.
-D) Contratação direta exige processo com justificativas e não elimina dever de motivação.
+A) Na inexigibilidade, a competição é inviável e essa circunstância deve ser demonstrada.
+B) Na dispensa, a competição pode ser viável, mas a lei autoriza a contratação direta em hipótese específica.
+C) Dispensa e inexigibilidade são equivalentes, pois em ambas a Administração escolhe livremente não licitar.
+D) A contratação direta continua exigindo processo, justificativa, motivação e controle.
 
 ### Questão 10
+**Nível: Médio**
 
-Em contratação de objeto complexo de tecnologia, a Administração ainda não consegue definir sozinha a solução técnica mais adequada e precisa dialogar com licitantes previamente selecionados para desenvolver alternativas. A modalidade que melhor se ajusta a esse desenho é:
+A Administração precisa contratar solução inovadora e complexa, mas ainda não consegue definir os meios técnicos aptos a atender sua necessidade. Pretende dialogar com licitantes previamente selecionados antes da apresentação das propostas finais. A modalidade descrita é:
 
-A) diálogo competitivo
-B) leilão
-C) concurso
-D) credenciamento
+A) concorrência com critério de maior lance.
+B) diálogo competitivo.
+C) concurso.
+D) leilão.
 
 ### Questão 11
+**Nível: Médio**
 
-Analise as assertivas sobre licitação:
+Analise as assertivas sobre o julgamento em licitações.
 
-I. O edital vincula tanto a Administração quanto os licitantes.
-II. O julgamento deve observar critérios previamente definidos no instrumento convocatório.
-III. A Administração pode alterar critérios de julgamento após a abertura das propostas para favorecer a proposta que considere mais conveniente.
+I. O edital vincula a Administração e os licitantes.
+II. Os critérios de julgamento devem ser previamente definidos.
+III. Após conhecer as propostas, a comissão pode mudar o critério para escolher a solução que considere melhor.
 
 Está correto apenas o que se afirma em:
 
-A) I e III
-B) II e III
-C) I, II e III
-D) I e II
+A) I e III.
+B) II e III.
+C) I e II.
+D) I, II e III.
 
 ### Questão 12
+**Nível: Médio**
 
-Sobre critérios de julgamento em licitações, assinale a alternativa incorreta.
+Assinale a alternativa incorreta a respeito dos critérios de julgamento.
 
-A) Técnica e preço pode ser adequado quando qualidade técnica e preço precisam ser ponderados.
-B) A Administração pode escolher qualquer critério depois de conhecer as propostas, desde que economize recursos.
-C) Menor preço é critério possível quando o objeto admite comparação objetiva de preço.
-D) Maior desconto pode ser usado quando a disputa se dá sobre desconto aplicado a parâmetro definido.
+A) O critério pode ser escolhido depois da abertura das propostas, desde que a decisão seja motivada.
+B) Técnica e preço pode ponderar qualidade técnica e valor econômico quando cabível.
+C) Menor preço é possível quando o objeto admite comparação objetiva e atende aos requisitos definidos.
+D) Maior desconto pode incidir sobre parâmetro previamente estabelecido no edital.
 
 ### Questão 13
+**Nível: Médio**
 
-Um agente público causa dano a particular, no exercício de função administrativa, durante operação regular de fiscalização. Em regra, para responsabilização civil objetiva do Estado por ato comissivo, exige-se:
+Durante serviço, veículo oficial conduzido por agente público colide com automóvel particular. Para a responsabilidade objetiva do Estado por esse ato comissivo, a vítima deve demonstrar, em regra:
 
-A) contrato firmado entre vítima e Administração
-B) conduta estatal, dano e nexo causal
-C) dolo específico do agente e condenação penal prévia
-D) prova de culpa administrativa em todos os casos
+A) contrato anterior com a Administração e inadimplemento.
+B) conduta estatal, dano e nexo causal.
+C) dolo específico do agente e condenação penal.
+D) culpa do serviço, ainda que não exista dano comprovado.
 
 ### Questão 14
+**Nível: Médio**
 
-Assinale a alternativa incorreta sobre responsabilidade civil do Estado.
+Assinale a alternativa incorreta sobre a responsabilidade civil objetiva do Estado.
 
-A) Culpa exclusiva da vítima pode excluir o dever de indenizar.
-B) Caso fortuito ou força maior podem afastar responsabilidade quando rompem o nexo causal.
-C) Culpa concorrente da vítima pode atenuar o valor da indenização.
-D) Na responsabilidade objetiva, o dano é presumido e não precisa ser demonstrado.
+A) O dano é presumido e dispensa demonstração pela vítima.
+B) Caso fortuito ou força maior podem excluir a responsabilidade quando rompem o nexo.
+C) Culpa concorrente da vítima pode reduzir a indenização.
+D) Culpa exclusiva da vítima pode romper o nexo causal.
 
 ### Questão 15
+**Nível: Médio**
 
-Em caso de omissão estatal, como ausência de manutenção mínima de estrutura pública conhecida como perigosa, a análise costuma exigir com mais força:
+Uma estrutura pública apresenta risco conhecido, mas o órgão deixa de realizar manutenção que lhe competia. Na análise da omissão estatal, deve-se verificar especialmente:
 
-A) aplicação automática da responsabilidade objetiva em qualquer falta de serviço público
-B) inexistência de responsabilidade porque omissão nunca indeniza
-C) necessidade de contrato administrativo com a vítima
-D) verificação do dever específico de agir, possibilidade de atuação e nexo com o dano
+A) se qualquer dano ocorreu em propriedade pública, o que basta para indenização automática.
+B) se existe contrato administrativo entre o órgão e a vítima.
+C) se houve condenação disciplinar prévia do servidor responsável.
+D) o dever específico de agir, a possibilidade de atuação, a falha e o nexo com o dano.
 
 ### Questão 16
+**Nível: Médio**
 
-Sobre improbidade administrativa, assinale a alternativa correta.
+A respeito da improbidade administrativa, assinale a alternativa correta.
 
-A) Improbidade só pode ocorrer quando há enriquecimento ilícito do agente.
-B) Ato de improbidade é sempre matéria penal e só pode ser julgado após condenação criminal.
-C) Nem toda ilegalidade administrativa configura improbidade; é necessário enquadramento legal e elemento subjetivo quando exigido.
-D) Qualquer erro formal em processo administrativo, mesmo sem relevância, é improbidade automática.
+A) Toda irregularidade administrativa configura improbidade, ainda que puramente formal.
+B) Nem toda ilegalidade é improbidade; exige-se enquadramento legal e o elemento subjetivo previsto.
+C) Improbidade é matéria exclusivamente penal e pressupõe condenação criminal.
+D) Somente enriquecimento ilícito pode constituir improbidade.
 
 ### Questão 17
+**Nível: Médio**
 
-Analise as assertivas sobre improbidade:
+Analise as assertivas.
 
-I. Atos de improbidade podem envolver enriquecimento ilícito, dano ao erário ou violação de princípios, conforme enquadramento legal.
-II. O simples desacordo técnico razoável entre servidores, sem má-fé ou prejuízo relevante, caracteriza improbidade automaticamente.
-III. A responsabilização por improbidade deve observar devido processo e defesa.
+I. Atos de improbidade podem envolver enriquecimento ilícito, lesão ao erário ou violação de princípios, conforme a lei.
+II. Divergência técnica razoável caracteriza automaticamente improbidade.
+III. A responsabilização deve observar devido processo e defesa.
 
 Está correto apenas o que se afirma em:
 
-A) I, II e III
-B) I e III
-C) I e II
-D) II e III
+A) I e III.
+B) I, II e III.
+C) I e II.
+D) II e III.
 
 ### Questão 18
+**Nível: Médio**
 
-Em uma autarquia, a autoridade competente decide anular ato ilegal que concedeu vantagem indevida a servidor. A anulação administrativa decorre principalmente do princípio da:
+A Administração identifica ilegalidade em ato que ela própria praticou e decide invalidá-lo, respeitados os direitos processuais pertinentes. Essa atuação decorre principalmente do poder de:
 
-A) autotutela
-B) continuidade do serviço público
-C) especialidade
-D) hierarquia das fontes privadas
+A) autotutela.
+B) polícia judiciária.
+C) hierarquia legislativa.
+D) tutela jurisdicional.
 
 ### Questão 19
+**Nível: Médio**
 
-Assinale a alternativa incorreta sobre controle da Administração Pública.
+Assinale a alternativa incorreta sobre o controle da Administração Pública.
 
-A) Controle externo pode ser exercido pelo Legislativo com auxílio do tribunal de contas, conforme o caso.
-B) Controle judicial pode verificar legalidade de atos administrativos.
-C) Controle judicial substitui livremente o administrador para escolher a solução mais conveniente em qualquer caso.
-D) Controle interno é exercido dentro da própria estrutura administrativa.
+A) O Legislativo exerce controle externo com auxílio dos tribunais de contas, nos termos constitucionais.
+B) O Judiciário pode controlar a legalidade de atos administrativos.
+C) A própria Administração exerce controle interno sobre seus atos e agentes.
+D) O Judiciário pode substituir livremente o administrador na escolha de mérito entre opções legais igualmente válidas.
 
 ### Questão 20
+**Nível: Médio**
 
-Em pedido de acesso a documentos de procedimento administrativo, o órgão público deve partir da premissa de que:
+Diante de pedido de acesso a documentos administrativos, a premissa correta é:
 
-A) informações públicas só podem ser entregues a advogados constituídos
-B) o servidor pode negar acesso sem motivar para evitar trabalho adicional
-C) a publicidade é regra e o sigilo é exceção justificada nas hipóteses legais
-D) todo documento administrativo é sigiloso até autorização judicial
+A) todo processo é sigiloso até autorização judicial.
+B) o acesso depende sempre da demonstração de interesse jurídico individual.
+C) a publicidade é regra e o sigilo, exceção que precisa de fundamento legal.
+D) a Administração pode negar o pedido sem motivação quando o atendimento exigir trabalho adicional.
 
 ### Questão 21
+**Nível: Difícil**
 
-Um banco de dados de órgão público contém CPF, telefone e endereço de cidadãos atendidos. Ao tratar esses dados, a Administração deve:
+Um cidadão pede cópia de planilha usada em política pública. O arquivo contém resultados estatísticos de interesse coletivo, mas também CPF, telefone e endereço dos atendidos. A solução mais compatível com LAI e LGPD é:
 
-A) apagar todos os dados imediatamente, impedindo a prestação do serviço
-B) observar finalidade, necessidade, segurança e base legal para o tratamento
-C) publicar integralmente a base porque todo dado estatal é público
-D) compartilhar os dados livremente com qualquer fornecedor interessado
+A) negar integralmente o acesso, porque a presença de qualquer dado pessoal torna todo o documento sigiloso.
+B) fornecer as informações públicas cabíveis com anonimização ou ocultação dos dados pessoais desnecessários, motivando eventuais restrições.
+C) publicar a planilha integral, pois dados mantidos pelo Estado são necessariamente públicos.
+D) exigir consentimento individual de todos os titulares antes de divulgar até mesmo os dados estatísticos agregados.
 
 ### Questão 22
+**Nível: Difícil**
 
-A respeito do poder de polícia administrativa, assinale a alternativa correta.
+No exercício regular do poder de polícia, uma autarquia constata infração e aplica restrição prevista em lei após procedimento próprio. A conclusão correta é:
 
-A) permite condicionar e restringir direitos individuais em benefício do interesse público, nos limites legais
-B) autoriza qualquer restrição sem previsão legal quando a autoridade considerar conveniente
-C) é exercido exclusivamente pelo Poder Judiciário após processo penal
-D) elimina a necessidade de contraditório em todos os processos sancionadores
+A) a existência de competência legal elimina contraditório e ampla defesa em qualquer sanção aplicada no exercício do poder de polícia.
+B) a natureza preventiva do poder de polícia dispensa motivação e proporcionalidade quando a restrição estiver prevista em ato interno.
+C) toda restrição administrativa depende de condenação penal anterior, ainda que a lei atribua competência sancionadora à autarquia.
+D) a Administração pode restringir direitos no interesse público, com base legal e respeito às garantias.
 
 ### Questão 23
+**Nível: Difícil**
 
-Em processo administrativo sancionador, antes de aplicar penalidade, a Administração deve assegurar, como regra:
+Em processo administrativo sancionador, a comissão conclui a instrução sem ouvir o interessado e propõe aplicação imediata de multa. Qual sequência corrige o vício?
 
-A) decisão secreta sem ciência do interessado
-B) aplicação da sanção antes da apuração para evitar demora
-C) renúncia automática ao recurso administrativo
-D) contraditório e ampla defesa
+A) aplicar a multa, publicar o resultado e abrir defesa apenas se houver recurso.
+B) colher defesa informal depois da decisão, sem reabrir a instrução.
+C) dar ciência da imputação, assegurar defesa e produção pertinente de provas e, depois, proferir decisão motivada.
+D) submeter a proposta diretamente ao Judiciário, que substituirá o processo administrativo.
 
 ### Questão 24
+**Nível: Difícil**
 
-A motivação dos atos administrativos é especialmente relevante porque:
+Uma autoridade possui competência para decidir, mas indefere pedido usando apenas a frase “por interesse público”, sem indicar fatos nem fundamento jurídico. Nesse caso, a motivação é relevante porque:
 
-A) substitui a publicidade e torna o ato sigiloso
-B) transforma todo ato vinculado em discricionário
-C) permite controlar as razões de fato e de direito que sustentam a decisão
-D) dispensa a existência de competência legal para o ato
+A) expõe as razões de fato e de direito, permitindo controlar a legalidade e a coerência da decisão.
+B) converte automaticamente uma decisão vinculada em discricionária.
+C) substitui a competência e permite que qualquer servidor assine o ato.
+D) torna desnecessária a existência de motivo verdadeiro, desde que o texto seja formal.
 
 ### Questão 25
+**Nível: Difícil**
 
-Se a proposição P representa “o sistema está disponível” e Q representa “o usuário autenticou”, a negação de P -> Q é:
+Considere a proposição: “Se o edital é regular, então os critérios são públicos e objetivos”. Sua negação lógica é:
 
-A) não P e não Q
-B) P e não Q
-C) não P e Q
-D) não P ou Q
+A) O edital não é regular e os critérios não são públicos nem objetivos.
+B) O edital é regular e algum critério não é público ou não é objetivo.
+C) Se os critérios não são públicos ou não são objetivos, então o edital não é regular.
+D) O edital não é regular ou os critérios são públicos e objetivos.
 
 ### Questão 26
+**Nível: Difícil**
 
-Considere a proposição: “Todo processo eletrônico possui número de protocolo”. Sua negação lógica é:
+A negação de “Todo ato válido foi motivado ou algum recurso foi provido” é:
 
-A) Existe processo eletrônico que não possui número de protocolo.
-B) Nenhum processo eletrônico possui número de protocolo.
-C) Todo processo sem número de protocolo é eletrônico.
-D) Existe número de protocolo que não possui processo eletrônico.
+A) Nenhum ato válido foi motivado ou algum recurso não foi provido.
+B) Algum ato válido não foi motivado e nenhum recurso foi provido.
+C) Algum ato válido foi motivado e todo recurso foi improvido.
+D) Nenhum ato válido foi motivado ou nenhum recurso foi provido.
 
 ### Questão 27
+**Nível: Difícil**
 
-Em um setor, 18 servidores conhecem SQL, 12 conhecem Linux e 7 conhecem ambos. O número de servidores que conhece SQL ou Linux é:
+Em um grupo, 92 pessoas usam o sistema A, 71 usam o sistema B e 38 usam ambos. Quantas usam exatamente um dos dois sistemas?
 
-A) 30
-B) 37
-C) 16
-D) 23
+A) 87.
+B) 49.
+C) 54.
+D) 125.
 
 ### Questão 28
+**Nível: Difícil**
 
-Um contrato de manutenção custa R$ 48.000,00 por 12 meses. Mantidas as mesmas condições proporcionais, o custo para 5 meses será:
+Seis servidores, com produtividade uniforme, analisam 360 processos em 5 dias. Em nova etapa, dez servidores trabalharão 8 dias, mas com produtividade individual equivalente a 75% da anterior. Quantos processos serão analisados?
 
-A) R$ 24.000,00
-B) R$ 9.600,00
-C) R$ 20.000,00
-D) R$ 19.200,00
+A) 900.
+B) 600.
+C) 720.
+D) 576.
 
 ### Questão 29
+**Nível: Difícil**
 
-Um equipamento teve reajuste de 12% sobre o preço de R$ 7.500,00. O novo preço é:
+Um equipamento de R$ 7.500,00 sofre aumento de 12% e, sobre o preço reajustado, recebe desconto de 10%. O preço final é:
 
-A) R$ 6.600,00
-B) R$ 8.400,00
-C) R$ 8.250,00
-D) R$ 9.000,00
+A) R$ 7.650,00.
+B) R$ 7.500,00.
+C) R$ 7.560,00.
+D) R$ 8.250,00.
 
 ### Questão 30
+**Nível: Difícil**
 
-Após desconto de 15%, um software passou a custar R$ 3.400,00. O preço original era:
+Um serviço teve primeiro acréscimo de 25% sobre o preço original e, depois, desconto de 15% sobre o valor reajustado, passando a custar R$ 4.250,00. O preço original era:
 
-A) R$ 4.000,00
-B) R$ 3.910,00
-C) R$ 3.850,00
-D) R$ 4.250,00
+A) R$ 4.000,00.
+B) R$ 3.612,50.
+C) R$ 4.250,00.
+D) R$ 5.000,00.
 
 ### Questão 31
+**Nível: Difícil**
 
-Uma equipe resolve 36 chamados em 4 horas com 3 técnicos trabalhando no mesmo ritmo. Com 6 técnicos, em 5 horas, a quantidade esperada de chamados é:
+Quatro técnicos resolvem 160 chamados em 5 horas. Em outro turno, cinco técnicos trabalham 6 horas, mas cada um produz apenas 80% do ritmo anterior. A produção esperada é:
 
-A) 72
-B) 60
-C) 120
-D) 90
+A) 240 chamados.
+B) 160 chamados.
+C) 200 chamados.
+D) 192 chamados.
 
 ### Questão 32
+**Nível: Difícil**
 
-A sequência 7, 11, 15, 19, ... é uma progressão aritmética. O 20º termo é:
+Uma progressão aritmética tem primeiro termo 7 e razão 4. A soma dos 20 primeiros termos é:
 
-A) 87
-B) 76
-C) 83
-D) 80
+A) 83.
+B) 830.
+C) 940.
+D) 900.
 
 ### Questão 33
+**Nível: Difícil**
 
-Em uma progressão geométrica de primeiro termo 3 e razão 2, a soma dos 6 primeiros termos é:
+Em uma progressão geométrica, o primeiro termo é 3 e a razão é 2. A soma dos oito primeiros termos é:
 
-A) 63
-B) 189
-C) 96
-D) 192
+A) 384.
+B) 765.
+C) 768.
+D) 1.533.
 
 ### Questão 34
+**Nível: Difícil**
 
-Em uma urna há 5 crachás azuis e 3 vermelhos. Retirando-se dois crachás sem reposição, a probabilidade de ambos serem azuis é:
+Uma urna contém 5 crachás azuis e 3 vermelhos. Três crachás são retirados simultaneamente. A probabilidade de saírem exatamente dois azuis e um vermelho é:
 
-A) 5/14
-B) 25/64
-C) 10/28
-D) 3/8
+A) 3/8.
+B) 5/14.
+C) 15/28.
+D) 9/28.
 
 ### Questão 35
+**Nível: Difícil**
 
-Em uma comissão de 4 pessoas, há 2 analistas de sistemas entre 10 servidores. Sorteando-se 1 pessoa ao acaso, a probabilidade de não ser analista de sistemas é:
+Entre 10 servidores, 2 são analistas. Três servidores distintos são sorteados, sem reposição. A probabilidade de o grupo conter pelo menos um analista é:
 
-A) 1/5
-B) 2/5
-C) 3/5
-D) 4/5
+A) 8/15.
+B) 2/5.
+C) 7/15.
+D) 1/5.
 
 ### Questão 36
+**Nível: Difícil**
 
-A negação da proposição “O relatório foi entregue e o protocolo foi gerado” é:
+A negação de “O relatório foi entregue e o protocolo foi gerado ou a assinatura foi validada”, considerando a estrutura “R e (P ou A)”, é:
 
-A) O relatório foi entregue ou o protocolo foi gerado.
-B) Se o relatório foi entregue, então o protocolo foi gerado.
-C) O relatório não foi entregue ou o protocolo não foi gerado.
-D) O relatório não foi entregue e o protocolo não foi gerado.
+A) O relatório não foi entregue ou (o protocolo não foi gerado e a assinatura não foi validada).
+B) O relatório não foi entregue ou o protocolo não foi gerado ou a assinatura não foi validada.
+C) (O relatório não foi entregue e o protocolo não foi gerado) ou a assinatura não foi validada.
+D) O relatório foi entregue e o protocolo não foi gerado e a assinatura não foi validada.
 
 ### Questão 37
+**Nível: Difícil**
 
-Considere verdadeira a afirmação: “Se há backup íntegro, então a restauração é possível”. Se a restauração não é possível, pode-se concluir logicamente que:
+São verdadeiras as proposições: “Se existe backup íntegro, então a verificação termina sem erro” e “Se a verificação termina sem erro, então a restauração é possível”. Sabendo que a restauração não é possível, conclui-se validamente que:
 
-A) a afirmação condicional é necessariamente falsa
-B) não há backup íntegro
-C) há backup íntegro
-D) a restauração é possível mesmo sem backup
+A) a primeira condicional é falsa.
+B) existe backup íntegro, mas não foi usado.
+C) não existe backup íntegro.
+D) a verificação terminou sem erro.
 
 ### Questão 38
+**Nível: Difícil**
 
-Em uma tabela-verdade com três proposições simples independentes P, Q e R, o número de linhas é:
+Para proposições simples P, Q e R, em quantas das oito valorações possíveis a expressão `(P → Q) e (Q → R)` é verdadeira?
 
-A) 8
-B) 6
-C) 9
-D) 12
+A) 6.
+B) 3.
+C) 5.
+D) 4.
 
 ### Questão 39
+**Nível: Difícil**
 
-Em uma pesquisa interna, 40 servidores usam o sistema A, 25 usam o sistema B, 10 usam ambos e 8 não usam nenhum dos dois. O total de servidores pesquisados é:
+Em 200 servidores, 110 usam A, 90 usam B e 70 usam C. Usam A e B, 45; A e C, 30; B e C, 25; e os três sistemas, 15. Quantos usam pelo menos um dos sistemas?
 
-A) 75
-B) 55
-C) 73
-D) 63
+A) 170.
+B) 200.
+C) 155.
+D) 185.
 
 ### Questão 40
+**Nível: Difícil**
 
-Sobre a Lei de Licitações, princípios e procedimento, assinale a alternativa incorreta.
+Uma unidade planeja duas contratações previsíveis e de mesma natureza, mas propõe separá-las artificialmente para que cada valor se enquadre em hipótese de dispensa. Assinale a alternativa incorreta.
 
-A) O julgamento deve seguir critério previsto, preservando isonomia entre licitantes.
-B) A Administração pode fracionar despesa para enquadrar artificialmente a contratação em hipótese de dispensa.
-C) A fase preparatória deve buscar adequada definição do objeto e justificativa da contratação.
-D) A publicidade permite controle social, ressalvadas hipóteses legais de sigilo.
+A) O planejamento deve considerar a necessidade global e a natureza dos objetos.
+B) O fracionamento é legítimo sempre que cada processo isolado permanecer abaixo do limite legal.
+C) A contratação direta não elimina motivação, justificativa e controle.
+D) O procedimento deve preservar isonomia, planejamento e finalidade pública.
 
 ### Questão 41
+**Nível: Muito difícil**
 
-Uma contratação pública exige objeto padronizado, disputa clara e julgamento pelo menor preço. A providência mais alinhada ao princípio do julgamento objetivo é:
+Edital para serviço comum fixa requisitos técnicos mínimos e menor preço como critério. Após a abertura, a proposta de menor preço descumpre requisito essencial, e a comissão cogita dispensá-lo apenas para preservar essa proposta. A solução juridicamente mais adequada é:
 
-A) ocultar os critérios para evitar recursos
-B) definir previamente critérios mensuráveis e aplicá-los a todos os licitantes
-C) permitir que a comissão escolha a proposta que pareça mais simpática ao interesse público
-D) alterar o critério caso a proposta preferida não vença
+A) ignorar o requisito essencial, pois o menor preço sempre prevalece sobre especificações técnicas previamente divulgadas.
+B) aplicar o edital; se o requisito for ilegal, corrigir o procedimento impessoalmente, não dispensá-lo só para um licitante.
+C) alterar retroativamente o edital para dispensar o requisito apenas nessa proposta, mantendo os atos praticados e afastando nova publicidade.
+D) classificar a proposta por economicidade mesmo sem atendimento ao objeto, substituindo o julgamento objetivo por conveniência da comissão.
 
 ### Questão 42
+**Nível: Muito difícil**
 
-Um particular sofre dano porque servidor, dirigindo veículo oficial em serviço, colide por desatenção. O Estado indeniza a vítima e comprova culpa do servidor. Em tese, em relação ao agente, cabe:
+Veículo oficial em serviço causa dano a particular. A prova demonstra nexo causal, culpa concorrente da vítima e culpa do agente público. A alternativa correta é:
 
-A) ação regressiva, observados dolo ou culpa do agente
-B) cobrança regressiva automática sem apurar conduta do agente
-C) impossibilidade absoluta de regresso porque a responsabilidade estatal é objetiva
-D) transferência da indenização diretamente à seguradora privada sem processo
+A) a responsabilidade pode ser objetiva; a culpa concorrente atenua a indenização, e o regresso exige dolo ou culpa.
+B) A culpa concorrente elimina necessariamente toda responsabilidade do Estado, embora preserve ação regressiva automática contra o agente.
+C) A responsabilidade objetiva torna dispensáveis a prova do dano e do nexo causal e impede considerar qualquer causa concorrente.
+D) O Estado somente indeniza depois da condenação pessoal do agente, mas pode exercer regresso sem demonstrar dolo ou culpa.
 
 ### Questão 43
+**Nível: Muito difícil**
 
-Em controle de legalidade, a revogação de ato administrativo válido, porém inconveniente ou inoportuno, difere da anulação porque:
+A Administração descobre que licença foi concedida por autoridade absolutamente incompetente. Além disso, a licença tornou-se inconveniente à política pública atual. Para desfazer o ato, deve:
 
-A) revogação sempre decorre de ordem judicial; anulação sempre depende de licitação
-B) revogação corrige vício de competência; anulação corrige falta de orçamento
-C) revogação e anulação são sinônimos no controle administrativo
-D) revogação atua sobre mérito administrativo; anulação atua sobre ilegalidade
+A) revogá-lo exclusivamente por conveniência, pois o mérito absorve qualquer ilegalidade.
+B) anulá-lo pelo vício, observadas as garantias; revogação não encobre ilegalidade.
+C) convalidá-lo obrigatoriamente e, em seguida, revogá-lo, independentemente da natureza do vício.
+D) aguardar decisão judicial, porque a Administração não pode invalidar ato próprio favorável.
 
 ### Questão 44
+**Nível: Muito difícil**
 
-Sobre atos administrativos vinculados e discricionários, assinale a alternativa incorreta.
+A lei permite multa entre R$ 2.000,00 e R$ 20.000,00 conforme gravidade e circunstâncias. A autoridade aplica o máximo para retaliar crítica do administrado e usa motivação genérica. A conclusão correta é:
 
-A) Mesmo no ato discricionário, competência, finalidade e forma permanecem vinculadas à lei.
-B) Ato discricionário permite decisão contrária à lei quando a autoridade invoca eficiência.
-C) No ato vinculado, a lei define os requisitos de modo mais fechado, reduzindo margem de escolha.
-D) No ato discricionário, a Administração decide dentro de margem legal de conveniência e oportunidade.
+A) a discricionariedade não autoriza desvio de finalidade e exige motivação conforme os critérios legais.
+B) a existência de faixa legal torna a escolha do valor imune ao controle de finalidade, motivação e proporcionalidade.
+C) o valor máximo é sempre válido quando está dentro da faixa, ainda que a motivação não relacione gravidade e circunstâncias.
+D) em ato discricionário, o controle pode alcançar apenas a competência da autoridade, nunca finalidade, motivo ou proporcionalidade.
 
 ### Questão 45
+**Nível: Muito difícil**
 
-Em uma repartição, 60% dos processos foram concluídos no prazo. Dos 240 processos recebidos, o número de processos concluídos fora do prazo foi:
+Um setor recebeu 240 processos no primeiro mês e concluiu 60%, restando 96 pendentes. No mês seguinte, recebeu 25% mais processos e concluiu inicialmente 72%; depois, concluiu 25% dos que ainda estavam pendentes. Quantos permaneceram pendentes e qual foi a redução percentual em relação ao fim do primeiro mês?
 
-A) 120
-B) 96
-C) 144
-D) 80
+A) 84 processos e 12,5%.
+B) 72 processos e 25%.
+C) 63 processos e 25%.
+D) 63 processos e 34,375%.
 
 ### Questão 46
+**Nível: Muito difícil**
 
-Três servidores analisam 90 processos em 6 dias. Mantido o ritmo, cinco servidores analisam 150 processos em:
+Três servidores analisam 90 processos em 6 dias. Cinco servidores trabalharão 8 dias no mesmo ritmo bruto, mas 20% de sua capacidade será consumida por retrabalho. Quantos processos líquidos serão concluídos?
 
-A) 6 dias
-B) 5 dias
-C) 9 dias
-D) 10 dias
+A) 180.
+B) 200.
+C) 150.
+D) 160.
 
 ### Questão 47
+**Nível: Muito difícil**
 
-A soma dos múltiplos de 5 entre 5 e 100, inclusive, é:
+Considere os múltiplos positivos de 5 até 200, inclusive, que não são múltiplos de 10. Excluindo também, desse conjunto, os números divisíveis por 3, qual é a soma dos termos restantes?
 
-A) 1000
-B) 950
-C) 525
-D) 1050
+A) 2.000.
+B) 1.260.
+C) 1.265.
+D) 735.
 
 ### Questão 48
+**Nível: Muito difícil**
 
-Se 2^x = 64, então 2^(x+2) vale:
+Se `2^(x - 1) = 16`, qual é o valor de `4^(x + 1) / 8^(x - 2)`?
 
-A) 66
-B) 4096
-C) 256
-D) 128
+A) 2.
+B) 4.
+C) 16.
+D) 8.
 
 ### Questão 49
+**Nível: Muito difícil**
 
-Em uma equipe, a razão entre analistas e técnicos é 3:5. Se há 24 analistas, o total de servidores da equipe é:
+Em uma equipe, a razão entre analistas e técnicos é 3:5. Após a contratação de 6 analistas, sem mudança no número de técnicos, a razão passa a 9:10. Quantos servidores havia inicialmente?
 
-A) 72
-B) 64
-C) 40
-D) 48
+A) 32.
+B) 40.
+C) 48.
+D) 24.
 
 ### Questão 50
+**Nível: Muito difícil**
 
-Considere as proposições: P é falsa e Q é verdadeira. O valor lógico de P ou (não Q) é:
+Considere P falsa, Q verdadeira e R falsa. O valor lógico de `[(P ou Q) → R] se e somente se [Q e (não R)]` é:
 
-A) falso
-B) verdadeiro
-C) indeterminado
-D) verdadeiro apenas se P implicar Q
+A) indeterminado, porque P é falsa.
+B) verdadeiro.
+C) falso.
+D) verdadeiro apenas se Q implicar R.
 
 ## Questões extras de revisão fixa do Dia 6
 
 #### Extra Dia 6.1
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Quanto ao Código de Ética, assinale a alternativa correta.
+A respeito do Código de Ética indicado no edital, assinale a alternativa correta.
 
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Ele orienta deveres, condutas vedadas e disciplina profissional de pessoas físicas e jurídicas no âmbito indicado.
-C) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-D) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
+A) Ele disciplina exclusivamente pessoas físicas, deixando toda conduta de pessoa jurídica para o Regulamento de Registro.
+B) Seu objeto principal é organizar os órgãos internos do CRA-PR e distribuir competências administrativas entre eles.
+C) Ele alcança pessoas físicas e jurídicas e, por isso, aplica suspensão e cancelamento de forma idêntica a ambas.
+D) Ele disciplina deveres e condutas de pessoas físicas e jurídicas, com as especificidades cabíveis.
 
 #### Extra Dia 6.2
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre fiscalização de pessoa jurídica, assinale a alternativa correta.
+Uma empresa oferece no Paraná serviços situados no campo da Administração e indica responsável técnico que apenas assina documentos, sem participar do trabalho. A fiscalização deve:
 
-A) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-B) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) A análise deve verificar objeto da atividade, atuação efetiva e enquadramento no campo da Administração.
+A) considerar suficiente a existência do CNPJ e encerrar a análise.
+B) examinar o objeto da atividade, a regularidade aplicável e a participação técnica efetiva.
+C) presumir que a indicação formal substitui eventual registro da pessoa jurídica.
+D) verificar apenas se o responsável está adimplente, sem examinar a atividade da empresa.
 
 #### Extra Dia 6.3
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Se uma questão trouxer as expressões 'registro', 'inscrição' e 'regularidade', qual norma da leitura dirigida tende a ser central?
+Em questão sobre inscrição e regularidade de pessoas físicas e jurídicas no Sistema CFA/CRAs, a dupla normativa central indicada na leitura dirigida é:
 
-A) RN CFA nº 649/2024, lida com as alterações da RN CFA nº 670/2025.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+A) RN CFA nº 651/2024 e RN CFA nº 680/2025, tratadas como normas complementares de inscrição profissional.
+B) RNs CFA nº 649/2024 e nº 670/2025.
+C) RN CFA nº 589/2020 e RN CFA nº 626/2023, aplicadas conjuntamente à regularidade cadastral.
+D) RN CFA nº 546/2018 e RN CFA nº 671/2025, utilizadas como regulamento geral de registro.
 
 #### Extra Dia 6.4
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre ética e sigilo, assinale a alternativa correta.
+Profissional encerra contrato e, meses depois, recebe proposta comercial para revelar informação confidencial conhecida durante o serviço. A conduta adequada é:
 
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O dever de sigilo subsiste mesmo após o fim da relação profissional, salvo exceções legalmente justificadas.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+A) preservar o sigilo, ressalvada justa causa ou hipótese legal devidamente aplicável.
+B) revelar apenas se a proposta for financeiramente vantajosa ao antigo cliente.
+C) revelar a informação, pois o término do contrato extingue automaticamente o sigilo.
+D) consultar apenas o contrato, porque o Código de Ética deixa de incidir após o encerramento.
 
 #### Extra Dia 6.5
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Em uma situação de fiscalização, qual postura é compatível com a lógica institucional estudada?
+Durante fiscalização regular, o fiscalizado discorda da interpretação do CRA. A postura compatível com o material é:
 
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) Apresentar informações solicitadas dentro da competência fiscalizatória e buscar defesa pelos meios regulares se discordar.
-C) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-D) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
+A) ocultar os documentos até que o CFA decida previamente o mérito.
+B) impedir toda diligência, pois o direito de defesa suspende automaticamente a fiscalização.
+C) fornecer as informações pertinentes dentro da competência fiscalizatória e exercer defesa pelos meios regulares.
+D) emprestar o registro de terceiro para demonstrar regularidade provisória.
 
 #### Extra Dia 6.6
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre o estudo comparado de Lei nº 4.769/1965 e Decreto nº 61.934/1967, assinale a correta.
+Um ato interno de Conselho Regional pretende ampliar o conjunto de atividades profissionais para além da Lei nº 4.769/1965, invocando como fundamento geral o Decreto nº 61.934/1967. A conclusão adequada é:
 
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A lei dá base ao exercício profissional; o decreto regulamenta sua aplicação.
+A) a autonomia administrativa do CRA permite inovar livremente no campo profissional definido em lei.
+B) o decreto regulamentar pode criar obrigações primárias sem apoio legal, desde que o ato regional repita seu texto.
+C) o decreto deve permanecer nos limites da lei regulamentada, e ato interno do CRA não pode ampliar por conta própria a base legal da profissão.
+D) o critério da especialidade faz o ato interno prevalecer automaticamente sobre a lei e o decreto.
 
 #### Extra Dia 6.7
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Quanto à cobrança da Consulplan em legislação específica, qual alternativa melhor descreve o risco de prova?
+Em caso prático de legislação profissional, o roteiro mais seguro é:
 
-A) Misturar competência, norma e sujeito em caso prático para testar leitura atenta.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+A) identificar o sujeito, a competência territorial e a norma que disciplina o objeto.
+B) escolher primeiro a sanção mais grave e depois procurar uma norma compatível.
+C) atribuir toda atuação ao CFA sempre que houver conflito.
+D) tratar registro, ética, fiscalização e regimento como um único objeto normativo.
 
 #### Extra Dia 6.8
+**Nível: Médio**
 
 **Área:** Legislação CRA/CFA.
 
-Se uma entidade atua fora do Paraná, mas a questão pergunta especificamente pelo CRA-PR, qual cuidado é necessário?
+Um fato ocorre fora do Paraná, mas a alternativa atribui automaticamente sua fiscalização ao CRA-PR. Antes de aceitar a afirmação, deve-se:
 
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Verificar a jurisdição territorial e a competência do conselho regional indicado.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+A) considerar que todo CRA possui jurisdição nacional concorrente.
+B) aplicar apenas o Código de Ética, pois território nunca interfere na competência.
+C) presumir competência do CRA-PR sempre que a atividade envolver Administração.
+D) verificar a jurisdição e a competência do conselho regional correspondente.
 
 #### Extra Dia 6.9
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Uma alternativa afirma que norma de registro, Código de Ética e Regimento têm o mesmo objeto. Assinale a correta.
+Empresa no Paraná exerce atividade sujeita ao sistema sem regularidade, enquanto profissional registrado lhe empresta o número sem atuação efetiva. A associação correta é:
 
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) A afirmação é falsa: registro trata de inscrição/regularidade, ética trata de conduta e regimento trata de estrutura interna.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+A) o registro da empresa pertence exclusivamente ao Regimento Interno, enquanto o empréstimo do número é disciplinado pelo regulamento eleitoral.
+B) o registro ativo do profissional regulariza automaticamente a empresa e torna irrelevante examinar sua participação técnica ou eventual infração ética.
+C) ambas as situações são resolvidas somente pela Lei nº 12.514/2011, pois eventual irregularidade se converte em questão de anuidade e cobrança.
+D) a regularidade segue o Regulamento de Registro; o empréstimo pode violar o Código de Ética; a fiscalização cabe ao CRA-PR.
 
 #### Extra Dia 6.10
+**Nível: Difícil**
 
 **Área:** Legislação CRA/CFA.
 
-Sobre a preparação da Semana 1 em legislação CRA/CFA, assinale a alternativa correta.
+A apostila confirmou apenas a ementa oficial de determinada resolução adicional, sem consolidar seus artigos e prazos. Em uma questão autoral, a conduta metodológica correta é:
 
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) A prioridade é dominar núcleo legal, competências e ética antes de tentar decorar detalhes de normas pendentes.
+A) afirmar o objeto confirmado e conferir a fonte oficial antes de detalhar.
+B) presumir a sanção máxima aplicável a qualquer descumprimento e registrar o dado como se estivesse consolidado na fonte oficial.
+C) ignorar integralmente a resolução, inclusive para mencionar o objeto que já foi confirmado por sua ementa oficial.
+D) reproduzir o prazo de resolução semelhante de outro conselho e apresentá-lo como regra específica da norma ainda não consultada.
 
 #### Extra Dia 6.11
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Arquitetura de Computadores.
 
-Em Arquitetura, assinale a alternativa correta sobre cache.
+Uma cache tem tempo de acerto de 2 ns, taxa de acerto de 90% e penalidade adicional de 80 ns em cada falta. O tempo médio de acesso é:
 
-A) Cache explora localidade temporal e espacial para reduzir tempo médio de acesso.
-B) Cache substitui a ULA em operações aritméticas.
-C) Cache elimina a necessidade de memória principal.
-D) Cache sempre aumenta a latência de todas as instruções.
+A) 8 ns.
+B) 10 ns.
+C) 82 ns.
+D) 18 ns.
 
 #### Extra Dia 6.12
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Arquitetura de Computadores.
 
-Sobre pipeline de CPU, assinale a alternativa correta.
+Um pipeline ideal possui 5 estágios de um ciclo. Para executar 20 instruções, ocorrem ainda 6 ciclos de parada. Desconsiderando outros custos, o total é:
 
-A) Pipeline executa todas as instruções em uma única etapa física.
-B) Pipeline impede qualquer conflito de dependência.
-C) Pipeline tende a aumentar a vazão de instruções, mas não garante menor latência individual.
-D) Pipeline substitui registradores por memória secundária.
+A) 26 ciclos.
+B) 100 ciclos.
+C) 30 ciclos.
+D) 25 ciclos.
 
 #### Extra Dia 6.13
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Sistemas Operacionais.
 
-Em Sistemas Operacionais, assinale a alternativa correta.
+Três processos chegam juntos e são escalonados por Round Robin com quantum de 2, sem custo de troca. Seus surtos de CPU são P1=5, P2=3 e P3=1. A ordem de conclusão é:
 
-A) Escalonamento é a tradução de SQL para plano de execução.
-B) Escalonamento define critérios para escolher qual processo ou thread usará a CPU.
-C) Escalonamento remove a necessidade de memória virtual.
-D) Escalonamento é sempre decidido pelo usuário final.
+A) P3, P2, P1.
+B) P1, P2, P3.
+C) P2, P3, P1.
+D) P3, P1, P2.
 
 #### Extra Dia 6.14
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Sistemas Operacionais.
 
-Sobre memória virtual, assinale a alternativa correta.
+Em paginação com páginas de 4.096 bytes e numeração iniciada em zero, o endereço lógico decimal 18.500 pertence à página e ao deslocamento:
 
-A) É sinônimo de memória cache L1.
-B) Elimina totalmente page faults.
-C) É implementada exclusivamente por comandos SQL.
-D) Permite usar abstração de espaço de endereçamento maior que a RAM física, com apoio de paginação e armazenamento secundário.
+A) página 5, deslocamento 2.020.
+B) página 4, deslocamento 2.116.
+C) página 5, deslocamento 2.116.
+D) página 4, deslocamento 4.096.
 
 #### Extra Dia 6.15
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Banco de Dados.
 
-Em SQL, assinale a alternativa correta.
+Qual consulta retorna, entre empregados ativos, apenas departamentos com mais de cinco empregados?
 
-A) Para filtrar grupos após agregação, usa-se HAVING; para filtrar linhas antes da agregação, usa-se WHERE.
-B) HAVING substitui SELECT em consultas com GROUP BY.
-C) WHERE deve ser usado para condição sobre COUNT(*) depois do agrupamento.
-D) GROUP BY apaga fisicamente linhas duplicadas da tabela.
+A) `SELECT depto, COUNT(*) FROM empregado WHERE ativo = 1 AND COUNT(*) > 5 GROUP BY depto;`
+B) `SELECT depto, COUNT(*) FROM empregado HAVING ativo = 1 AND COUNT(*) > 5 GROUP BY depto;`
+C) `SELECT depto FROM empregado WHERE COUNT(*) > 5 GROUP BY depto AND ativo = 1;`
+D) `SELECT depto, COUNT(*) FROM empregado WHERE ativo = 1 GROUP BY depto HAVING COUNT(*) > 5;`
 
 #### Extra Dia 6.16
+**Nível: Difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão — Banco de Dados.
 
-Sobre NULL em banco de dados relacional, assinale a alternativa correta.
+Uma tabela possui quatro linhas na coluna `valor`: 1000, NULL, 2000 e NULL. O resultado de `COUNT(valor)` e `COUNT(*)`, respectivamente, é:
 
-A) NULL é igual a zero em colunas numéricas.
-B) NULL é igual a string vazia.
-C) Comparações com NULL devem usar IS NULL ou IS NOT NULL.
-D) A condição = NULL é a forma recomendada para localizar nulos.
+A) 4 e 4.
+B) 2 e 2.
+C) 2 e 4.
+D) 4 e 2.
 
 #### Extra Dia 6.17
+**Nível: Muito difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão integrada — Legislação CRA/CFA.
 
-Sobre legislação CRA/CFA, assinale a alternativa correta.
+No CRA-PR, o Plenário delibera sobre matéria institucional, a Diretoria executa a decisão e, em caso separado, profissional divulga dado sigiloso sem justa causa. A classificação normativa correta é:
 
-A) RN 651/2024 foi estudada como norma de SQL.
-B) RN CFA nº 651/2024 foi associada ao Regimento Interno do CRA-PR; RN CFA nº 671/2025, ao Código de Ética.
-C) RN 671/2025 foi tratada como modalidade de licitação.
-D) Ambas foram ignoradas por não constarem no edital.
+A) todas as situações pertencem exclusivamente ao Regulamento de Registro.
+B) a deliberação do Plenário é matéria do Código de Ética, e o sigilo é tema do regulamento eleitoral.
+C) estrutura interna: Regimento da RN CFA nº 651/2024; sigilo profissional: Código de Ética da RN CFA nº 671/2025.
+D) a Diretoria exerce função normativa nacional do CFA, e a divulgação é sempre regular após o término do contrato.
 
 #### Extra Dia 6.18
+**Nível: Muito difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão integrada — Língua Portuguesa.
 
-Em Português, assinale a alternativa correta.
+Assinale a frase plenamente adequada à norma-padrão e à linguagem administrativa.
 
-A) Sempre há crase antes de palavra feminina e antes de verbo.
-B) Crase é apenas acento facultativo de formalidade.
-C) A expressão 'à revisar' está correta na norma padrão.
-D) Não se usa crase antes de verbo, como em 'começou a revisar'.
+A) Embora o prazo fosse curto, a equipe começou a revisar os autos e os encaminhou à chefia.
+B) Embora o prazo fosse curto a equipe começou a revisar os autos, e encaminhou-os à chefia.
+C) Encaminhou-se os autos à chefia, embora a equipe começasse a revisá-los.
+D) A equipe começou à revisar os autos e encaminhou-os a chefia.
 
 #### Extra Dia 6.19
+**Nível: Muito difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão integrada — Administração Pública.
 
-Em Administração Pública, assinale a alternativa correta.
+A Administração comprova que somente um fornecedor pode atender legitimamente ao objeto e documenta a inviabilidade de competição. A conclusão correta é:
 
-A) Na dispensa, a competição pode existir, mas a lei autoriza contratar diretamente; na inexigibilidade, a competição é inviável.
-B) Dispensa e inexigibilidade são sinônimos perfeitos.
-C) Inexigibilidade ocorre quando a Administração prefere não competir por conveniência.
-D) Dispensa exige sempre competição prévia entre todos os fornecedores.
+A) a contratação direta afasta os princípios da impessoalidade e da economicidade.
+B) trata-se de dispensa, porque exclusividade significa competição possível não realizada.
+C) a exclusividade autoriza escolha verbal do fornecedor e elimina instrução processual.
+D) pode haver inexigibilidade, mas continuam necessários processo, motivação, justificativa e controle.
 
 #### Extra Dia 6.20
+**Nível: Muito difícil**
 
-**Área:** Revisão dos erros da semana.
+**Área:** Revisão integrada — Raciocínio Lógico-Matemático.
 
-Em RLM, se 30% de um valor correspondem a 90, qual é o valor total?
+De todos os processos analisados, 40% foram rejeitados. Dos restantes, 25% retornaram para complementação, e 135 foram aceitos definitivamente. Depois, um terço dos rejeitados foi reclassificado para complementação. Quantos processos foram analisados e qual passou a ser a diferença entre os totais em complementação e rejeitados?
 
-A) 27.
-B) 120.
-C) 300.
-D) 270.
-
+A) 225 processos e 15 processos.
+B) 300 processos e 5 processos.
+C) 300 processos e 40 processos.
+D) 360 processos e 15 processos.
 
 ## Gabarito do Dia 6
 
-1. C
-2. A
-3. C
+1. D
+2. C
+3. A
 4. C
-5. B
+5. D
 6. D
-7. D
-8. C
-9. A
-10. A
-11. D
-12. B
+7. B
+8. B
+9. C
+10. B
+11. C
+12. A
 13. B
-14. D
+14. A
 15. D
-16. C
-17. B
+16. B
+17. A
 18. A
-19. C
+19. D
 20. C
 21. B
-22. A
-23. D
-24. C
+22. D
+23. C
+24. A
 25. B
-26. A
-27. D
+26. B
+27. A
 28. C
-29. B
+29. C
 30. A
 31. D
-32. C
+32. D
 33. B
-34. A
-35. D
-36. C
-37. B
-38. A
+34. C
+35. A
+36. A
+37. C
+38. D
 39. D
 40. B
 41. B
 42. A
-43. D
-44. B
-45. B
-46. A
-47. D
-48. C
-49. B
-50. A
+43. B
+44. A
+45. D
+46. D
+47. C
+48. D
+49. A
+50. C
 
 ### Gabarito das questões extras de revisão fixa do Dia 6
 
-Extra Dia 6.1: B
-Extra Dia 6.2: D
-Extra Dia 6.3: A
-Extra Dia 6.4: C
-Extra Dia 6.5: B
-Extra Dia 6.6: D
+Extra Dia 6.1: D
+Extra Dia 6.2: B
+Extra Dia 6.3: B
+Extra Dia 6.4: A
+Extra Dia 6.5: C
+Extra Dia 6.6: C
 Extra Dia 6.7: A
-Extra Dia 6.8: C
-Extra Dia 6.9: B
-Extra Dia 6.10: D
-Extra Dia 6.11: A
+Extra Dia 6.8: D
+Extra Dia 6.9: D
+Extra Dia 6.10: A
+Extra Dia 6.11: B
 Extra Dia 6.12: C
-Extra Dia 6.13: B
-Extra Dia 6.14: D
-Extra Dia 6.15: A
+Extra Dia 6.13: A
+Extra Dia 6.14: B
+Extra Dia 6.15: D
 Extra Dia 6.16: C
-Extra Dia 6.17: B
-Extra Dia 6.18: D
-Extra Dia 6.19: A
-Extra Dia 6.20: C
+Extra Dia 6.17: C
+Extra Dia 6.18: A
+Extra Dia 6.19: D
+Extra Dia 6.20: B
 
 
 ## Comentários do Dia 6
 
 ### Comentário da Questão 1
 
-- **Alternativa correta:** C.
-- **A) está errada:** Sigilo é excepcional e não elimina controle; publicidade e motivação são regras no procedimento administrativo.
-- **B) está errada:** A escolha pública deve ser motivada e vinculada ao interesse público; preferência sem justificativa pode violar impessoalidade, isonomia e competitividade.
-- **C) está correta:** A decisão administrativa deve observar legalidade, impessoalidade, moralidade, publicidade, eficiência e princípios licitatórios, com motivação técnica quando houver especificação restritiva.
-- **D) está errada:** Exclusividade precisa ser demonstrada quando cabível; não se presume só por se tratar de tecnologia.
-- **Conceito cobrado:** Princípios do art. 37 e licitação.
-- **Pegadinha usada:** Tratar conveniência administrativa como liberdade absoluta de escolha..
-- **Como pensar para acertar:** Em restrição de edital, procure motivação técnica, isonomia e competitividade.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** Sigilo não serve para ocultar ausência de justificativa nem para afastar controle.
+- **B) está errada:** Discricionariedade técnica continua sujeita a motivação, impessoalidade e competitividade.
+- **C) está errada:** Tecnologia não gera presunção de fornecedor exclusivo nem inexigibilidade automática.
+- **D) está correta:** A indicação de marca exige fundamento objetivo ligado à necessidade pública, sem favorecimento.
+- **Conceito cobrado:** Impessoalidade, motivação e competitividade.
+- **Pegadinha usada:** Tratar preferência técnica não demonstrada como liberdade discricionária.
+- **Como pensar para acertar:** Procure uma justificativa verificável que ligue a restrição ao objeto e ao interesse público.
+- **Referência à apostila de estudo:** Dia 6 — “1. Princípios da Administração Pública” e “6. Licitação pública”.
 
 ### Comentário da Questão 2
 
-- **Alternativa correta:** A.
-- **A) está correta:** Esses são os princípios expressos do caput do art. 37, aplicáveis à Administração Pública direta e indireta.
-- **B) está errada:** Pessoalidade e sigilo não substituem impessoalidade e publicidade no rol expresso do caput.
-- **C) está errada:** O caput menciona Administração direta e indireta de qualquer dos Poderes da União, Estados, Distrito Federal e Municípios.
-- **D) está errada:** Eficiência não autoriza afastar a legalidade; os princípios atuam de forma conjunta.
-- **Conceito cobrado:** Princípios constitucionais da Administração Pública.
-- **Pegadinha usada:** Achar que eficiência supera legalidade..
-- **Como pensar para acertar:** Memorize LIMPE e lembre que nenhum princípio expresso anula os demais.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Supremacia e continuidade são princípios estudados, mas não compõem o conjunto expresso do caput.
+- **B) está errada:** Pessoalidade não integra o rol expresso; transparência e economicidade, embora relevantes, não substituem impessoalidade, publicidade e eficiência na enumeração do caput.
+- **C) está correta:** A alternativa reproduz os cinco princípios expressos, memorizados por LIMPE.
+- **D) está errada:** Autotutela e motivação não substituem legalidade e moralidade na sigla LIMPE.
+- **Conceito cobrado:** Princípios expressos do art. 37.
+- **Pegadinha usada:** Misturar princípios implícitos ou conceitos correlatos com o rol expresso.
+- **Como pensar para acertar:** Recupere a sigla LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência.
+- **Referência à apostila de estudo:** Dia 6 — “1. Princípios da Administração Pública”.
 
 ### Comentário da Questão 3
 
-- **Alternativa correta:** C.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Essa afirmação está correta: órgãos são centros de competência sem personalidade distinta da pessoa federativa.
-- **B) está correta como afirmação:** Essa afirmação está correta: ambas são entidades administrativas da Administração Indireta.
-- **C) é a incorreta:** Essa é a incorreta: autarquias não são órgãos; são entidades da Administração Indireta com personalidade própria.
-- **D) está correta como afirmação:** Essa afirmação está correta: autarquias são pessoas jurídicas de direito público integrantes da Administração Indireta.
+- **A) está correta:** Autarquia é entidade com personalidade jurídica própria, não órgão despersonalizado da Direta.
+- **B) está errada:** As três espécies mencionadas pertencem à Administração Indireta.
+- **C) está errada:** Órgãos da Administração Direta não possuem personalidade própria.
+- **D) está errada:** Personalidade própria é característica das entidades descentralizadas.
 - **Conceito cobrado:** Administração Direta e Indireta.
-- **Pegadinha usada:** Misturar órgão com entidade..
-- **Como pensar para acertar:** Separe órgão sem personalidade de entidade com personalidade própria.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Confundir órgão com entidade e autonomia com personalidade.
+- **Como pensar para acertar:** Pergunte se o sujeito possui personalidade jurídica: órgão não; entidade da Indireta, sim.
+- **Referência à apostila de estudo:** Dia 6 — “2. Organização administrativa e autarquias”.
 
 ### Comentário da Questão 4
 
 - **Alternativa correta:** C.
-- **A) está errada:** Conselho profissional não é criado para exploração empresarial de mercado.
-- **B) está errada:** Organizações sociais são entidades privadas qualificadas; a fiscalização profissional decorre de lei e poder público.
-- **C) está correta:** Conselhos profissionais costumam ser tratados como entidades de fiscalização profissional com natureza autárquica em pontos centrais, especialmente no exercício de poder de polícia.
-- **D) está errada:** A fiscalização profissional envolve competências públicas e não se resume a atividade privada.
-- **Conceito cobrado:** Autarquias e conselhos profissionais.
-- **Pegadinha usada:** Confundir conselho profissional com entidade privada comum..
-- **Como pensar para acertar:** Observe criação legal, fiscalização profissional e poder de polícia.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Médio.
+- **A) está errada:** Empresa pública possui personalidade de direito privado e não corresponde à descrição.
+- **B) está errada:** Órgão da Direta não tem personalidade jurídica própria.
+- **C) está correta:** Conselho profissional é tratado, em regra, como autarquia corporativa de fiscalização.
+- **D) está errada:** A função pública e o regime descrito afastam a natureza de associação voluntária.
+- **Conceito cobrado:** Natureza dos conselhos profissionais.
+- **Pegadinha usada:** Confundir autarquia corporativa com empresa estatal, órgão ou associação privada.
+- **Como pensar para acertar:** Associe personalidade pública, autonomia e poder de fiscalização a entidade autárquica.
+- **Referência à apostila de estudo:** Dia 6 — “2. Organização administrativa e autarquias”.
 
 ### Comentário da Questão 5
 
-- **Alternativa correta:** B.
-- **A) está errada:** A assertiva III impede o conjunto completo, pois transforma atributo eventual em universal.
-- **B) está correta:** I está correta quanto aos elementos; II está correta porque os atos presumem-se legítimos até prova ou decisão em contrário.
-- **C) está errada:** III é falsa: autoexecutoriedade não existe em todos os atos; depende de previsão legal ou urgência.
-- **D) está errada:** I também está correta; além disso, III generaliza indevidamente.
-- **Conceito cobrado:** Ato administrativo: elementos e atributos.
-- **Pegadinha usada:** Usar “todos” para generalizar atributo que não é universal..
-- **Como pensar para acertar:** Liste os elementos e trate atributos com cuidado: presunção é ampla; autoexecutoriedade não é absoluta.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** A assertiva III torna a alternativa incorreta, pois a autoexecutoriedade não é universal.
+- **B) está errada:** A assertiva I também é correta e não pode ser excluída.
+- **C) está errada:** A assertiva III continua incorreta nesta combinação.
+- **D) está correta:** I e II estão corretas; III generaliza indevidamente um atributo.
+- **Conceito cobrado:** Elementos e atributos dos atos administrativos.
+- **Pegadinha usada:** Transformar atributo presente quando cabível em atributo de todos os atos.
+- **Como pensar para acertar:** Avalie cada assertiva: os elementos são clássicos e a presunção é geral, mas a autoexecutoriedade depende do caso.
+- **Referência à apostila de estudo:** Dia 6 — “3. Atos administrativos”.
 
 ### Comentário da Questão 6
 
 - **Alternativa correta:** D.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: finalidade vincula o ato ao interesse público e ao objetivo previsto em lei.
-- **B) está correta como afirmação:** Correta: motivo envolve situação fática e fundamento jurídico.
-- **C) está correta como afirmação:** Correta: objeto é o conteúdo ou efeito imediato do ato.
-- **D) é a incorreta:** Incorreta: competência decorre de norma, é em regra irrenunciável e sua delegação/avocação seguem limites legais.
+- **A) está errada:** Finalidade deve permanecer vinculada ao interesse público.
+- **B) está errada:** Motivo reúne os pressupostos fáticos e jurídicos.
+- **C) está errada:** Objeto corresponde ao efeito jurídico do ato.
+- **D) está correta:** Competência decorre da norma e não pode ser transferida definitivamente por pacto informal.
 - **Conceito cobrado:** Elementos do ato administrativo.
-- **Pegadinha usada:** Tratar competência como propriedade pessoal do agente..
-- **Como pensar para acertar:** Competência vem da lei; não nasce de acordo informal.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Tratar competência legal como disponibilidade pessoal do agente.
+- **Como pensar para acertar:** Associe cada elemento à pergunta correspondente e desconfie de transferência sem base normativa.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 7
 
-- **Alternativa correta:** D.
-- **A) está errada:** O objeto do ato pode existir formalmente; o problema central é a intenção desviada.
-- **B) está errada:** A questão não envolve tributação nem competência territorial fiscal.
-- **C) está errada:** A publicidade pode ser relevante, mas não explica a punição disfarçada como interesse do serviço.
-- **D) está correta:** Há desvio de finalidade quando o ato é praticado com objetivo diverso do interesse público previsto, ainda que use forma aparentemente válida.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** O enunciado não indica exigência judicial de forma.
+- **B) está correta:** Usar competência para punir crítica desvia o ato de sua finalidade pública.
+- **C) está errada:** Fatos e fundamentos podem ser controlados, mas o núcleo do caso é a perseguição.
+- **D) está errada:** Remoção pode existir juridicamente; o problema está no propósito concreto.
 - **Conceito cobrado:** Desvio de finalidade.
-- **Pegadinha usada:** Confundir motivo aparente com finalidade real..
-- **Como pensar para acertar:** Procure a pergunta: o ato foi usado para alcançar finalidade pública ou objetivo pessoal/punitivo disfarçado?
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Aceitar a finalidade declarada sem confrontá-la com o objetivo real.
+- **Como pensar para acertar:** Pergunte para que o ato foi efetivamente praticado, e não apenas qual justificativa foi escrita.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 8
 
-- **Alternativa correta:** C.
-- **A) está errada:** Leilão é ligado à alienação de bens, não à contratação comum de suporte técnico.
-- **B) está errada:** Diálogo competitivo é voltado a contratações complexas em que a Administração dialoga para estruturar solução.
-- **C) está correta:** Pregão é associado à contratação de bens e serviços comuns, com disputa por lances e critério objetivo, conforme a lógica cobrada em concursos.
-- **D) está errada:** Concurso é modalidade voltada à escolha de trabalho técnico, científico ou artístico, com prêmio ou remuneração.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Trocar modalidade pelo nome conhecido sem olhar objeto da contratação..
-- **Como pensar para acertar:** Identifique primeiro o objeto: bem/serviço comum aponta para pregão.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Leilão destina-se à alienação de bens.
+- **B) está correta:** Pregão é associado a bens e serviços comuns com disputa objetiva.
+- **C) está errada:** Diálogo competitivo atende contratações complexas que exigem construção de soluções.
+- **D) está errada:** Concurso seleciona trabalho técnico, científico ou artístico.
+- **Conceito cobrado:** Modalidade pregão.
+- **Pegadinha usada:** Escolher modalidade pelo valor ou pelo caráter tecnológico, sem identificar o objeto comum.
+- **Como pensar para acertar:** Comece pelo objeto: sendo serviço comum, examine o cabimento do pregão.
+- **Referência à apostila de estudo:** Dia 6 — “6. Licitação pública”.
 
 ### Comentário da Questão 9
 
-- **Alternativa correta:** A.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) é a incorreta:** Incorreta: dispensa e inexigibilidade têm fundamentos diferentes e não são sinônimos.
-- **B) está correta como afirmação:** Correta: na dispensa, a licitação seria possível, mas a lei permite contratar diretamente em situações previstas.
-- **C) está correta como afirmação:** Correta: a inviabilidade de competição é núcleo da inexigibilidade.
-- **D) está correta como afirmação:** Correta: contratar diretamente não significa contratar sem procedimento ou sem controle.
+- **A) está errada:** A inviabilidade precisa ser demonstrada, não presumida.
+- **B) está errada:** A afirmação descreve corretamente a lógica da dispensa.
+- **C) está correta:** Dispensa pressupõe hipótese legal com competição possível; inexigibilidade, inviabilidade de competição.
+- **D) está errada:** Contratação direta não significa contratação sem processo.
 - **Conceito cobrado:** Dispensa e inexigibilidade.
-- **Pegadinha usada:** Achar que contratação direta é uma categoria única sem distinções..
-- **Como pensar para acertar:** Pergunte se a competição é possível: se sim, pode haver dispensa; se inviável, inexigibilidade.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Usar ‘sem licitação’ para tratar institutos distintos como sinônimos.
+- **Como pensar para acertar:** Pergunte se a competição é viável: se sim, pode haver dispensa legal; se não, inexigibilidade.
+- **Referência à apostila de estudo:** Dia 6 — “Licitação: modalidade, critério, contratação direta e procedimento”.
 
 ### Comentário da Questão 10
 
-- **Alternativa correta:** A.
-- **A) está correta:** O diálogo competitivo é voltado a contratações complexas em que a Administração dialoga com licitantes para desenvolver solução antes das propostas finais.
-- **B) está errada:** Leilão não serve para estruturar solução técnica complexa; está ligado à alienação de bens.
-- **C) está errada:** Concurso escolhe trabalho técnico, científico ou artístico, não estrutura contratação complexa por diálogo.
-- **D) está errada:** Credenciamento é procedimento auxiliar para contratar todos que preencham condições, não a modalidade descrita.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Confundir modalidade com procedimento auxiliar..
-- **Como pensar para acertar:** Quando houver solução complexa e diálogo para definir alternativas, pense em diálogo competitivo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Maior lance é critério ligado especialmente ao leilão, não modalidade adequada ao caso.
+- **B) está correta:** A descrição corresponde ao diálogo competitivo.
+- **C) está errada:** Concurso seleciona trabalho técnico ou artístico por prêmio.
+- **D) está errada:** Leilão aliena bens e não promove diálogo para desenvolver solução.
+- **Conceito cobrado:** Diálogo competitivo.
+- **Pegadinha usada:** Confundir complexidade do objeto com concorrência ou concurso sem observar a fase de diálogo.
+- **Como pensar para acertar:** Procure os sinais ‘solução ainda não definida’ e ‘diálogo com selecionados’.
+- **Referência à apostila de estudo:** Dia 6 — “Licitação: modalidade, critério, contratação direta e procedimento”.
 
 ### Comentário da Questão 11
 
-- **Alternativa correta:** D.
-- **A) está errada:** III viola vinculação, julgamento objetivo e isonomia.
-- **B) está errada:** I também está correta, e III é incompatível com o procedimento licitatório.
-- **C) está errada:** O conjunto não procede porque a assertiva III admite favorecimento e mudança indevida de critérios.
-- **D) está correta:** Vinculação ao edital e julgamento objetivo exigem respeito aos critérios previamente estabelecidos.
-- **Conceito cobrado:** Princípios licitatórios.
-- **Pegadinha usada:** Confundir discricionariedade com liberdade para mudar regra no meio do certame..
-- **Como pensar para acertar:** Critério de julgamento precisa estar antes e ser aplicado sem casuísmo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** A assertiva III viola vinculação ao edital e julgamento objetivo.
+- **B) está errada:** A assertiva III também torna essa combinação incorreta.
+- **C) está correta:** I e II expressam vinculação e prévia definição dos critérios.
+- **D) está errada:** Nem todas estão corretas, pois o critério não pode mudar após conhecer propostas.
+- **Conceito cobrado:** Vinculação ao edital e julgamento objetivo.
+- **Pegadinha usada:** Apresentar mudança posterior como exercício legítimo de conveniência.
+- **Como pensar para acertar:** Critérios devem existir antes da competição e valer igualmente para todos.
+- **Referência à apostila de estudo:** Dia 6 — “6. Licitação pública”.
 
 ### Comentário da Questão 12
 
-- **Alternativa correta:** B.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: esse critério combina avaliação técnica e econômica conforme o objeto.
-- **B) é a incorreta:** Incorreta: o critério deve ser definido previamente; economia não justifica surpresa ou quebra de isonomia.
-- **C) está correta como afirmação:** Correta: menor preço é critério tradicional e objetivo.
-- **D) está correta como afirmação:** Correta: o maior desconto é critério previsto para situações em que há base de comparação.
+- **A) está correta:** Escolher critério após conhecer propostas viola julgamento objetivo e vinculação.
+- **B) está errada:** Técnica e preço é critério legal quando a ponderação é cabível.
+- **C) está errada:** Menor preço pode ser usado com requisitos objetivos de qualidade.
+- **D) está errada:** Maior desconto incide sobre parâmetro previamente definido.
 - **Conceito cobrado:** Critérios de julgamento.
-- **Pegadinha usada:** Colocar economicidade acima da vinculação ao edital..
-- **Como pensar para acertar:** Critérios são fixados antes da disputa; depois aplica-se o que foi anunciado.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Confundir motivação posterior com autorização para mudar as regras da disputa.
+- **Como pensar para acertar:** O critério deve ser definido no edital, antes de a Administração conhecer as propostas.
+- **Referência à apostila de estudo:** Dia 6 — “6. Licitação pública”.
 
 ### Comentário da Questão 13
 
 - **Alternativa correta:** B.
-- **A) está errada:** Responsabilidade extracontratual não depende de contrato com a vítima.
-- **B) está correta:** Na responsabilidade objetiva por ato comissivo, a vítima deve demonstrar conduta, dano e nexo, sem necessidade de provar culpa do agente.
-- **C) está errada:** Dolo e condenação penal não são requisitos gerais da responsabilidade civil objetiva do Estado.
-- **D) está errada:** A responsabilidade objetiva dispensa prova de culpa, embora culpa possa importar para regresso.
-- **Conceito cobrado:** Responsabilidade civil do Estado.
-- **Pegadinha usada:** Achar que responsabilidade objetiva elimina nexo causal..
-- **Como pensar para acertar:** Mesmo sem culpa, procure sempre dano e nexo entre ação estatal e prejuízo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Médio.
+- **A) está errada:** Responsabilidade extracontratual não exige contrato com a vítima.
+- **B) está correta:** Conduta, dano e nexo causal são requisitos centrais do regime objetivo.
+- **C) está errada:** Dolo e condenação penal não são pressupostos da pretensão da vítima contra o Estado.
+- **D) está errada:** Sem dano não há dever de indenizar; culpa do serviço não é exigida em todo ato comissivo.
+- **Conceito cobrado:** Responsabilidade objetiva por ato comissivo.
+- **Pegadinha usada:** Confundir ausência de prova de culpa com ausência de dano ou nexo.
+- **Como pensar para acertar:** A vítima não precisa provar culpa, mas deve ligar a atuação estatal ao dano.
+- **Referência à apostila de estudo:** Dia 6 — “7. Responsabilidade civil do Estado”.
 
 ### Comentário da Questão 14
 
-- **Alternativa correta:** D.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: se o dano decorre exclusivamente da vítima, rompe-se o nexo causal.
-- **B) está correta como afirmação:** Correta: eventos externos podem excluir responsabilidade se eliminarem o nexo com a atuação estatal.
-- **C) está correta como afirmação:** Correta: concorrência causal pode reduzir a indenização conforme a participação da vítima.
-- **D) é a incorreta:** Incorreta: responsabilidade objetiva dispensa culpa, mas não dispensa prova de dano e nexo causal.
-- **Conceito cobrado:** Excludentes e atenuantes da responsabilidade civil.
-- **Pegadinha usada:** Confundir dispensa de culpa com dispensa de prova do dano..
-- **Como pensar para acertar:** Objetiva não significa automática; exige dano e nexo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **A) está correta:** Responsabilidade objetiva não presume a existência do dano.
+- **B) está errada:** Eventos externos podem excluir responsabilidade se forem causalmente decisivos.
+- **C) está errada:** Culpa concorrente pode reduzir, sem necessariamente eliminar, a indenização.
+- **D) está errada:** Culpa exclusiva pode romper totalmente o nexo.
+- **Conceito cobrado:** Nexo causal e excludentes.
+- **Pegadinha usada:** Interpretar ‘objetiva’ como ‘automática’.
+- **Como pensar para acertar:** Separe culpa do agente, dispensada perante a vítima, de dano e nexo, que continuam necessários.
+- **Referência à apostila de estudo:** Dia 6 — “7. Responsabilidade civil do Estado”.
 
 ### Comentário da Questão 15
 
 - **Alternativa correta:** D.
-- **A) está errada:** A omissão não gera responsabilidade automática em qualquer hipótese; exige análise do dever e do nexo.
-- **B) está errada:** Omissão pode gerar responsabilidade quando presentes requisitos jurídicos.
-- **C) está errada:** A responsabilidade por omissão não depende de contrato com a vítima.
-- **D) está correta:** Em omissões, a cobrança costuma avaliar se havia dever concreto de agir, possibilidade de evitar o dano e relação causal com a omissão.
-- **Conceito cobrado:** Responsabilidade por omissão.
-- **Pegadinha usada:** Usar regra de ato comissivo como fórmula automática para toda omissão..
-- **Como pensar para acertar:** Em omissão, pergunte: havia dever concreto e possibilidade real de agir?
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Médio.
+- **A) está errada:** Dano em estrutura pública não basta, isoladamente, para responsabilização automática.
+- **B) está errada:** Contrato com a vítima não é requisito geral.
+- **C) está errada:** Condenação disciplinar prévia não condiciona a análise civil.
+- **D) está correta:** Omissão exige investigar dever e possibilidade de agir, falha e relação causal.
+- **Conceito cobrado:** Responsabilidade por omissão estatal.
+- **Pegadinha usada:** Aplicar automaticamente a mesma fórmula de ato comissivo a qualquer omissão.
+- **Como pensar para acertar:** Identifique o dever concreto de proteção ou manutenção e sua conexão com o dano.
+- **Referência à apostila de estudo:** Dia 6 — “Improbidade e responsabilidade civil do Estado”.
 
 ### Comentário da Questão 16
 
-- **Alternativa correta:** C.
-- **A) está errada:** Há outras categorias além de enriquecimento ilícito, como dano ao erário e violação de princípios, conforme enquadramento legal.
-- **B) está errada:** Improbidade tem regime próprio de responsabilização civil-administrativa, ainda que possa coexistir com esfera penal.
-- **C) está correta:** A improbidade é ilícito qualificado; concurso costuma cobrar que ilegalidade simples não basta automaticamente.
-- **D) está errada:** Erro formal pode gerar correção ou nulidade, mas não necessariamente improbidade.
-- **Conceito cobrado:** Improbidade administrativa.
-- **Pegadinha usada:** Transformar toda irregularidade em improbidade..
-- **Como pensar para acertar:** Procure gravidade, enquadramento e elemento subjetivo; não pule direto para improbidade.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** Irregularidade formal pode existir sem os requisitos da improbidade.
+- **B) está correta:** A caracterização depende do tipo legal e do elemento subjetivo exigido.
+- **C) está errada:** A ação de improbidade não se confunde com persecução exclusivamente penal.
+- **D) está errada:** Há categorias além do enriquecimento ilícito, como lesão ao erário e violação de princípios.
+- **Conceito cobrado:** Ilegalidade versus improbidade.
+- **Pegadinha usada:** Converter todo erro administrativo em ato de improbidade.
+- **Como pensar para acertar:** Exija enquadramento legal e elemento subjetivo antes de concluir pela improbidade.
+- **Referência à apostila de estudo:** Dia 6 — “5. Improbidade administrativa”.
 
 ### Comentário da Questão 17
 
-- **Alternativa correta:** B.
-- **A) está errada:** O conjunto é falso por causa da assertiva II.
-- **B) está correta:** I resume categorias relevantes; III preserva garantias processuais. II generaliza indevidamente e transforma divergência técnica em improbidade automática.
-- **C) está errada:** II está errada porque improbidade não decorre automaticamente de divergência técnica razoável.
-- **D) está errada:** I também está correta, e II é a pegadinha.
-- **Conceito cobrado:** Improbidade administrativa.
-- **Pegadinha usada:** Confundir erro, divergência ou ilegalidade simples com improbidade qualificada..
-- **Como pensar para acertar:** Separe irregularidade administrativa de ato ímprobo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** I reconhece categorias legais e III preserva devido processo; II cria automatismo indevido.
+- **B) está errada:** A assertiva II é falsa, impedindo a correção de todas.
+- **C) está errada:** A combinação inclui a falsa assertiva II.
+- **D) está errada:** A assertiva I é correta e não pode ser excluída.
+- **Conceito cobrado:** Categorias e garantias na improbidade.
+- **Pegadinha usada:** Tratar divergência técnica razoável como dolo ou má-fé automática.
+- **Como pensar para acertar:** Analise o enquadramento e o elemento subjetivo, sem dispensar processo e defesa.
+- **Referência à apostila de estudo:** Dia 6 — “5. Improbidade administrativa”.
 
 ### Comentário da Questão 18
 
 - **Alternativa correta:** A.
-- **A) está correta:** A autotutela permite à Administração anular seus próprios atos ilegais e revogar atos inconvenientes ou inoportunos, observados limites e garantias.
-- **B) está errada:** Continuidade trata da permanência do serviço, não da correção de ato ilegal.
-- **C) está errada:** Especialidade limita entidades aos fins para os quais foram criadas, mas não é o fundamento principal da anulação de ato ilegal.
-- **D) está errada:** A expressão não é princípio administrativo aplicável ao caso.
-- **Conceito cobrado:** Autotutela administrativa.
-- **Pegadinha usada:** Trocar autotutela por controle externo ou por continuidade..
-- **Como pensar para acertar:** Quando a Administração corrige o próprio ato, pense em autotutela.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Médio.
+- **A) está correta:** Autotutela permite à Administração controlar e invalidar seus próprios atos ilegais.
+- **B) está errada:** Polícia judiciária não descreve o controle interno do ato administrativo.
+- **C) está errada:** Hierarquia legislativa não é poder administrativo de desfazimento.
+- **D) está errada:** Tutela jurisdicional é exercida pelo Judiciário, não pela própria Administração.
+- **Conceito cobrado:** Autotutela e anulação.
+- **Pegadinha usada:** Confundir controle administrativo próprio com controle judicial.
+- **Como pensar para acertar:** Se a Administração revê o próprio ato por ilegalidade, associe a autotutela.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 19
 
-- **Alternativa correta:** C.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: é uma forma clássica de controle externo.
-- **B) está correta como afirmação:** Correta: o Judiciário controla legalidade, respeitando limites quanto ao mérito administrativo.
-- **C) é a incorreta:** Incorreta: o Judiciário não substitui o mérito administrativo legítimo de modo amplo; atua especialmente sobre legalidade e abuso.
-- **D) está correta como afirmação:** Correta: controle interno ocorre no âmbito da própria Administração.
-- **Conceito cobrado:** Controle administrativo, legislativo e judicial.
-- **Pegadinha usada:** Confundir controle de legalidade com substituição integral do mérito administrativo..
-- **Como pensar para acertar:** Controle judicial não é administração paralela; foque legalidade, desvio e abuso.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **A) está errada:** A alternativa descreve o controle externo constitucional.
+- **B) está errada:** O Judiciário controla a legalidade do ato.
+- **C) está errada:** Controle interno ocorre dentro da própria organização administrativa.
+- **D) está correta:** O controle judicial não autoriza substituição irrestrita do mérito administrativo legítimo.
+- **Conceito cobrado:** Limites do controle judicial.
+- **Pegadinha usada:** Transformar controle de legalidade em administração direta pelo juiz.
+- **Como pensar para acertar:** Diferencie ilegalidade controlável de escolha legítima entre opções permitidas pela lei.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 20
 
 - **Alternativa correta:** C.
-- **A) está errada:** O acesso à informação não depende genericamente de representação por advogado.
-- **B) está errada:** Negativa de acesso exige fundamento; conveniência interna não basta.
-- **C) está correta:** A lógica da transparência administrativa é publicidade como regra, com sigilo apenas quando houver fundamento legal.
-- **D) está errada:** Isso inverte a regra de publicidade e transparência.
+- **Nível:** Médio.
+- **A) está errada:** Sigilo não é presumido para todos os processos.
+- **B) está errada:** A LAI não condiciona todo acesso à demonstração de interesse pessoal.
+- **C) está correta:** A regra é transparência; restrição precisa de fundamento legal.
+- **D) está errada:** Carga de trabalho não autoriza negativa imotivada de acesso.
 - **Conceito cobrado:** Publicidade e acesso à informação.
-- **Pegadinha usada:** Tratar sigilo como regra por comodidade administrativa..
-- **Como pensar para acertar:** Em prova, transparência começa pela publicidade; exceções precisam de base legal.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Pegadinha usada:** Tratar sigilo ou interesse jurídico como regra geral.
+- **Como pensar para acertar:** Parta do acesso e verifique depois se há exceção legal justificável.
+- **Referência à apostila de estudo:** Dia 6 — “4. LAI e LGPD”.
 
 ### Comentário da Questão 21
 
 - **Alternativa correta:** B.
-- **A) está errada:** Proteção de dados não significa impossibilitar serviço público; significa tratar com base e limites.
-- **B) está correta:** Tratamento de dados pessoais pelo poder público exige finalidade pública, adequação, necessidade, segurança e base legal.
-- **C) está errada:** Dados pessoais não se tornam publicáveis indiscriminadamente por estarem em órgão público.
-- **D) está errada:** Compartilhamento exige fundamento, finalidade e controles; não é livre.
-- **Conceito cobrado:** LGPD aplicada ao setor público.
-- **Pegadinha usada:** Confundir publicidade administrativa com exposição de dados pessoais..
-- **Como pensar para acertar:** Separe transparência pública de proteção de dados pessoais.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** A presença de dado pessoal não torna necessariamente sigiloso todo o conteúdo público.
+- **B) está correta:** É possível compatibilizar transparência e proteção mediante seleção, anonimização ou ocultação motivada.
+- **C) está errada:** Custódia estatal não converte CPF, telefone e endereço em dados de divulgação irrestrita.
+- **D) está errada:** Dados agregados podem ser divulgados sem exigir consentimento individual em toda hipótese, observada a base jurídica.
+- **Conceito cobrado:** Compatibilização entre LAI e LGPD.
+- **Pegadinha usada:** Escolher entre transparência total e sigilo total, como se não houvesse tratamento proporcional.
+- **Como pensar para acertar:** Separe o conteúdo público dos identificadores pessoais e divulgue apenas o necessário e juridicamente cabível.
+- **Referência à apostila de estudo:** Dia 6 — “4. LAI e LGPD”.
 
 ### Comentário da Questão 22
 
-- **Alternativa correta:** A.
-- **A) está correta:** Poder de polícia é atividade estatal de limitar ou disciplinar direitos, atividades e bens em razão do interesse público, dentro da lei.
-- **B) está errada:** Poder de polícia também se submete à legalidade e proporcionalidade.
-- **C) está errada:** Poder de polícia administrativa é exercido pela Administração, sem se confundir com polícia judiciária.
-- **D) está errada:** Processos sancionadores devem observar garantias, ainda que haja medidas cautelares em situações específicas.
-- **Conceito cobrado:** Poder de polícia.
-- **Pegadinha usada:** Associar polícia administrativa apenas a segurança pública ou processo penal..
-- **Como pensar para acertar:** Busque a ideia de limitar atividades privadas em nome do interesse público, com base legal.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Em sanções, a competência não afasta automaticamente contraditório e defesa.
+- **B) está errada:** Caráter preventivo não elimina motivação nem proporcionalidade.
+- **C) está errada:** Restrição administrativa não depende sempre de processo penal.
+- **D) está correta:** Poder de polícia admite limitações legais e proporcionais, com garantias compatíveis com o caso.
+- **Conceito cobrado:** Poder de polícia e limites jurídicos.
+- **Pegadinha usada:** Confundir poder administrativo com autorização irrestrita.
+- **Como pensar para acertar:** Verifique competência, fundamento legal, finalidade, proporcionalidade e procedimento.
+- **Referência à apostila de estudo:** Dia 6 — “Art. 37, Administração Indireta e conselhos profissionais”.
 
 ### Comentário da Questão 23
 
-- **Alternativa correta:** D.
-- **A) está errada:** Sigilo absoluto e ausência de ciência violam garantias processuais.
-- **B) está errada:** A sanção exige apuração regular, salvo medidas cautelares proporcionais e fundamentadas que não substituem o julgamento.
-- **C) está errada:** O interessado não perde automaticamente meios de impugnação por ser investigado.
-- **D) está correta:** Sanções administrativas devem observar garantias processuais, inclusive oportunidade de defesa.
-- **Conceito cobrado:** Processo administrativo sancionador.
-- **Pegadinha usada:** Confundir eficiência com punição sem processo..
-- **Como pensar para acertar:** Em sanção, procure contraditório, ampla defesa e motivação.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Defesa posterior à sanção não corrige, como regra, a falta de participação antes da decisão.
+- **B) está errada:** Defesa informal posterior, sem reabertura da instrução, não assegura contraditório efetivo antes da decisão sancionadora.
+- **C) está correta:** Ciência, defesa, prova pertinente e decisão motivada compõem a sequência regular.
+- **D) está errada:** O Judiciário não substitui obrigatoriamente toda instrução administrativa.
+- **Conceito cobrado:** Contraditório e ampla defesa no processo sancionador.
+- **Pegadinha usada:** Tratar recurso posterior como substituto suficiente da defesa prévia.
+- **Como pensar para acertar:** A sanção deve resultar de instrução participativa e terminar em decisão fundamentada.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 24
 
-- **Alternativa correta:** C.
-- **A) está errada:** Motivação não substitui publicidade; ambos podem ser necessários.
-- **B) está errada:** Motivação não altera a natureza vinculada ou discricionária do ato.
-- **C) está correta:** Motivação explicita fundamentos, permite controle e protege contra arbitrariedade.
-- **D) está errada:** Motivar não corrige incompetência; competência continua necessária.
-- **Conceito cobrado:** Motivação administrativa.
-- **Pegadinha usada:** Achar que fundamentar convalida qualquer vício..
-- **Como pensar para acertar:** Motivação mostra o porquê; não apaga falta de competência, finalidade ou objeto lícito.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** A motivação permite examinar fatos, fundamentos, coerência e finalidade.
+- **B) está errada:** Expor razões não altera a natureza vinculada ou discricionária prevista em lei.
+- **C) está errada:** Motivação não cria competência para quem não a possui.
+- **D) está errada:** Texto formal não substitui motivo verdadeiro nem sana sua inexistência.
+- **Conceito cobrado:** Motivo e motivação.
+- **Pegadinha usada:** Confundir exteriorização das razões com elemento capaz de curar qualquer vício.
+- **Como pensar para acertar:** Motivo é a base fática e jurídica; motivação é sua exposição controlável.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 25
 
 - **Alternativa correta:** B.
-- **A) está errada:** A condicional só é falsa quando P é verdadeiro e Q é falso.
-- **B) está correta:** A negação da condicional é antecedente verdadeiro e consequente falso: P ∧ ¬Q.
-- **C) está errada:** Isso nega o antecedente e mantém o consequente; não é a negação da condicional.
-- **D) está errada:** ¬P ∨ Q é equivalente à própria condicional, não à sua negação.
-- **Conceito cobrado:** Lógica proposicional: negação da condicional.
-- **Pegadinha usada:** Negar cada parte sem respeitar a tabela-verdade..
-- **Como pensar para acertar:** Condicional só falha em V -> F; transforme isso em P e não Q.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** A negação da condicional mantém o antecedente verdadeiro, não o nega.
+- **B) está correta:** Negar `E → (P e O)` resulta em `E e não(P e O)`, isto é, `E e (não P ou não O)`.
+- **C) está errada:** A contrapositiva é equivalente à original, não sua negação.
+- **D) está errada:** A disjunção proposta equivale à própria condicional em outra forma.
+- **Conceito cobrado:** Negação de condicional com consequente composto.
+- **Pegadinha usada:** Negar todas as parcelas sem aplicar a forma `P e não Q`.
+- **Como pensar para acertar:** Primeiro negue a condicional; depois aplique De Morgan ao consequente.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 26
 
-- **Alternativa correta:** A.
-- **A) está correta:** A negação de “todo A é B” é “existe A que não é B”.
-- **B) está errada:** Isso é o contrário universal, mais forte que a negação lógica.
-- **C) está errada:** Essa proposição altera a relação entre os conjuntos e não nega a original.
-- **D) está errada:** Troca sujeito e predicado, criando outra afirmação.
-- **Conceito cobrado:** Negação de quantificadores.
-- **Pegadinha usada:** Confundir negação com contrária universal..
-- **Como pensar para acertar:** Negue “todo” com “existe pelo menos um que não”.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** A alternativa mantém uma disjunção e troca quantificadores de modo inadequado.
+- **B) está correta:** Negar a disjunção exige negar ambas as parcelas e ligá-las por conjunção.
+- **C) está errada:** Ela afirma existência positiva de motivação e não nega corretamente a segunda parcela.
+- **D) está errada:** Negar “todo” não produz “nenhum”, e o conectivo final deveria ser uma conjunção.
+- **Conceito cobrado:** Negação de quantificadores e disjunção.
+- **Pegadinha usada:** Aplicar De Morgan sem inverter corretamente ‘todo’ e ‘algum’.
+- **Como pensar para acertar:** Negue cada lado: ‘todo’ vira ‘algum não’; ‘algum’ vira ‘nenhum’; ‘ou’ vira ‘e’.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 27
 
-- **Alternativa correta:** D.
-- **A) está errada:** Soma 18 + 12 sem retirar a interseção contada duas vezes.
-- **B) está errada:** Soma também a interseção, aumentando indevidamente o total.
-- **C) está errada:** Subtrai a interseção duas vezes ou usa operação inadequada.
-- **D) está correta:** Pela inclusão-exclusão: 18 + 12 - 7 = 23.
-- **Conceito cobrado:** Conjuntos: inclusão-exclusão.
-- **Pegadinha usada:** Contar duas vezes quem pertence aos dois grupos..
-- **Como pensar para acertar:** Para “ou”, some os conjuntos e subtraia a interseção uma vez.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Exatamente um é `(92 - 38) + (71 - 38) = 54 + 33 = 87`.
+- **B) está errada:** 49 não corresponde à retirada da interseção de ambos os conjuntos.
+- **C) está errada:** 54 é apenas a parcela que usa A e não B.
+- **D) está errada:** 125 é o total da união `92 + 71 - 38`, não o número em exatamente um.
+- **Conceito cobrado:** Conjuntos: exatamente um.
+- **Pegadinha usada:** Confundir união, diferença de um conjunto e exatamente um.
+- **Como pensar para acertar:** Retire a interseção de cada conjunto e some as duas partes exclusivas.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** C.
-- **A) está errada:** Esse seria o custo de 6 meses, não de 5.
-- **B) está errada:** Esse corresponde a 2,4 meses na proporção dada, não a 5 meses.
-- **C) está correta:** 48.000 / 12 = 4.000 por mês; em 5 meses, 4.000 x 5 = 20.000.
-- **D) está errada:** Esse valor decorre de aplicar 40% em vez da proporção correta de 5/12.
-- **Conceito cobrado:** Regra de três simples.
-- **Pegadinha usada:** Usar porcentagem aproximada sem calcular a razão correta..
-- **Como pensar para acertar:** Encontre primeiro o valor unitário ou monte a proporção 12 para 48.000, 5 para x.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** 900 ignora a queda de produtividade individual.
+- **B) está errada:** 600 não combina corretamente servidores, dias e produtividade.
+- **C) está correta:** A taxa original é 12 processos por servidor-dia; a nova é 9, gerando `10 × 8 × 9 = 720`.
+- **D) está errada:** 576 aplica a redução a base ou período inadequado.
+- **Conceito cobrado:** Regra de três composta com produtividade.
+- **Pegadinha usada:** Aumentar pessoas e tempo sem ajustar a produtividade relativa.
+- **Como pensar para acertar:** Calcule a taxa por servidor-dia, aplique 75% e só então multiplique pelos novos recursos.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 29
 
-- **Alternativa correta:** B.
-- **A) está errada:** Esse valor subtrai 12%, mas o enunciado fala em reajuste positivo.
-- **B) está correta:** 12% de 7.500 é 900; 7.500 + 900 = 8.400.
-- **C) está errada:** Esse valor corresponde a reajuste de 10%, não de 12%.
-- **D) está errada:** Esse valor adiciona 20%, não 12%.
-- **Conceito cobrado:** Porcentagem.
-- **Pegadinha usada:** Confundir aumento com desconto ou usar 10% por aproximação..
-- **Como pensar para acertar:** Calcule 12% = 0,12 e some ao preço inicial.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** Esse valor resulta de compensação linear inadequada entre 12% e 10%.
+- **B) está errada:** Aumento e desconto de percentuais diferentes não retornam ao preço inicial.
+- **C) está correta:** O preço passa a 8.400 e depois a `8.400 × 0,90 = 7.560`.
+- **D) está errada:** 8.250 corresponde a operação percentual diversa.
+- **Conceito cobrado:** Percentuais sucessivos.
+- **Pegadinha usada:** Somar e subtrair percentuais como se incidissem sobre a mesma base.
+- **Como pensar para acertar:** Aplique os fatores na ordem: `7.500 × 1,12 × 0,90`.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 30
 
 - **Alternativa correta:** A.
-- **A) está correta:** Se 3.400 representa 85% do preço original, então original = 3.400 / 0,85 = 4.000.
-- **B) está errada:** Esse valor soma 15% sobre 3.400, mas desconto percentual não se desfaz somando o mesmo percentual sobre o valor final.
-- **C) está errada:** Não corresponde à divisão por 0,85; mistura desconto com diferença absoluta.
-- **D) está errada:** Esse valor supõe que 3.400 seja 80% do original, não 85%.
-- **Conceito cobrado:** Porcentagem reversa.
-- **Pegadinha usada:** Somar 15% ao valor descontado para voltar ao preço original..
-- **Como pensar para acertar:** Quando o valor final é após desconto, divida por 1 - taxa.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está correta:** O fator acumulado é `1,25 × 0,85 = 1,0625`; `4.250 ÷ 1,0625 = 4.000`.
+- **B) está errada:** O cálculo usa apenas uma das transformações e não recupera a base.
+- **C) está errada:** R$ 4.250,00 é o valor final, não o original.
+- **D) está errada:** R$ 5.000,00 seria o valor antes do desconto, mas já depois do aumento.
+- **Conceito cobrado:** Porcentagem reversa com fatores sucessivos.
+- **Pegadinha usada:** Voltar ao preço original somando ou subtraindo as taxas do valor final.
+- **Como pensar para acertar:** Monte o fator acumulado e divida o preço final por ele.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 31
 
 - **Alternativa correta:** D.
-- **A) está errada:** Esse valor dobra os técnicos, mas mantém 4 horas, ignorando a quinta hora.
-- **B) está errada:** Esse valor não preserva a proporção composta entre técnicos e tempo.
-- **C) está errada:** Esse valor superestima a produção ao aplicar fator incorreto.
-- **D) está correta:** A produtividade é 36 / (4 x 3) = 3 chamados por técnico-hora; 6 x 5 x 3 = 90.
-- **Conceito cobrado:** Regra de três composta.
-- **Pegadinha usada:** Variar duas grandezas e considerar apenas uma..
-- **Como pensar para acertar:** Calcule produtividade por técnico-hora ou monte proporção com técnicos e tempo.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** 240 seria a produção com ritmo integral, sem redução a 80%.
+- **B) está errada:** 160 ignora a ampliação de horas e técnicos.
+- **C) está errada:** 200 aplica ajuste parcial e não usa a taxa por técnico-hora.
+- **D) está correta:** A taxa é 8 chamados por técnico-hora; `8 × 0,8 × 5 × 6 = 192`.
+- **Conceito cobrado:** Produtividade composta com fator de eficiência.
+- **Pegadinha usada:** Aplicar o percentual ao total antigo em vez de à taxa individual.
+- **Como pensar para acertar:** Encontre a produtividade unitária, ajuste-a e multiplique pelo novo total de técnico-horas.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 32
 
-- **Alternativa correta:** C.
-- **A) está errada:** Esse valor soma 20 razões ao primeiro termo, mas até o 20º termo há 19 intervalos.
-- **B) está errada:** Esse valor considera razão ou número de intervalos menor que o correto.
-- **C) está correta:** Em PA, an = a1 + (n-1)r. Assim, a20 = 7 + 19 x 4 = 83.
-- **D) está errada:** Esse valor usa 20 x 4 sem considerar corretamente o primeiro termo.
-- **Conceito cobrado:** Progressão aritmética.
-- **Pegadinha usada:** Usar n razões em vez de n-1..
-- **Como pensar para acertar:** Do primeiro ao vigésimo termo há 19 saltos.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** 83 é o vigésimo termo, não a soma.
+- **B) está errada:** 830 resulta de usar extremos ou número de termos incorretamente.
+- **C) está errada:** 940 excede a soma correta.
+- **D) está correta:** `a20 = 7 + 19×4 = 83`; logo `S20 = (7+83)×20/2 = 900`.
+- **Conceito cobrado:** Termo e soma de progressão aritmética.
+- **Pegadinha usada:** Calcular corretamente o último termo e marcá-lo como soma.
+- **Como pensar para acertar:** Calcule `a20` e depois aplique a média dos extremos vezes o número de termos.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 33
 
 - **Alternativa correta:** B.
-- **A) está errada:** 63 é a soma dos seis primeiros termos da PG 1,2,4,8,16,32, sem multiplicar pelo primeiro termo 3.
-- **B) está correta:** S6 = 3(2^6 - 1)/(2 - 1) = 3 x 63 = 189.
-- **C) está errada:** 96 é o sexto termo multiplicado por fator inadequado, não a soma total.
-- **D) está errada:** 192 corresponde a 3 x 64, sem subtrair 1 na fórmula da soma.
-- **Conceito cobrado:** Progressão geométrica.
-- **Pegadinha usada:** Confundir termo geral com soma da PG..
-- **Como pensar para acertar:** Para soma da PG finita, use a1(q^n - 1)/(q - 1) quando q diferente de 1.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** 384 é o oitavo termo da PG, não sua soma.
+- **B) está correta:** A soma é `3(2^8 - 1)/(2 - 1) = 3×255 = 765`.
+- **C) está errada:** 768 confunde a soma com `3×2^8`.
+- **D) está errada:** 1.533 corresponde a outra quantidade de termos.
+- **Conceito cobrado:** Soma finita de progressão geométrica.
+- **Pegadinha usada:** Trocar termo geral pela soma acumulada.
+- **Como pensar para acertar:** Use a fórmula da soma e confirme que há oito termos, de 3 a 384.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 34
 
-- **Alternativa correta:** A.
-- **A) está correta:** A probabilidade é 5/8 x 4/7 = 20/56 = 5/14.
-- **B) está errada:** Esse cálculo trataria as retiradas como independentes com reposição.
-- **C) está errada:** Embora equivalente a 5/14 se simplificado, a forma 10/28 indicaria contagem de combinações mal feita; a alternativa esperada simplificada é 5/14.
-- **D) está errada:** 3/8 é a proporção inicial de vermelhos, não a probabilidade de dois azuis.
-- **Conceito cobrado:** Probabilidade sem reposição.
-- **Pegadinha usada:** Usar reposição quando o enunciado diz sem reposição..
-- **Como pensar para acertar:** Atualize o denominador e o numerador após a primeira retirada.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** 3/8 não considera a retirada conjunta de três crachás.
+- **B) está errada:** 5/14 equivale a 10/28 e subconta as combinações.
+- **C) está correta:** Há `C(5,2)×C(3,1)=30` casos favoráveis em `C(8,3)=56`; a razão é `15/28`.
+- **D) está errada:** 9/28 não corresponde à contagem combinatória.
+- **Conceito cobrado:** Probabilidade hipergeométrica.
+- **Pegadinha usada:** Multiplicar probabilidades sem considerar as diferentes ordens ou combinações.
+- **Como pensar para acertar:** Conte combinações favoráveis e divida pelo total de grupos de três.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 35
 
-- **Alternativa correta:** D.
-- **A) está errada:** 1/5 é a probabilidade de ser analista de sistemas, não de não ser.
-- **B) está errada:** 2/5 corresponderia a 4 em 10, mas o enunciado tem 8 não analistas.
-- **C) está errada:** Não corresponde ao complemento de 2/10.
-- **D) está correta:** Há 8 servidores que não são analistas de sistemas entre 10; 8/10 = 4/5.
-- **Conceito cobrado:** Probabilidade complementar.
-- **Pegadinha usada:** Responder a probabilidade do evento, não do complemento solicitado..
-- **Como pensar para acertar:** Calcule o complemento: P(não A) = 1 - P(A).
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Use o complemento: `1 - C(8,3)/C(10,3) = 1 - 56/120 = 8/15`.
+- **B) está errada:** 2/5 não representa três retiradas sem reposição.
+- **C) está errada:** 7/15 não é o complemento correto do evento sem analistas.
+- **D) está errada:** 1/5 é a proporção de analistas em uma retirada única.
+- **Conceito cobrado:** Probabilidade pelo evento complementar.
+- **Pegadinha usada:** Usar a proporção da primeira retirada para um grupo de três.
+- **Como pensar para acertar:** É mais simples calcular ‘nenhum analista’ e subtrair o resultado de 1.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 36
 
-- **Alternativa correta:** C.
-- **A) está errada:** Essa proposição é uma disjunção sem negação dos termos.
-- **B) está errada:** Isso transforma conjunção em condicional, não é negação lógica.
-- **C) está correta:** Pela lei de De Morgan, negar P e Q resulta em não P ou não Q.
-- **D) está errada:** Isso nega os dois simultaneamente, mas a negação de conjunção exige pelo menos um falso.
-- **Conceito cobrado:** Leis de De Morgan.
-- **Pegadinha usada:** Trocar “e” por “e” ao negar, em vez de trocar para “ou”..
-- **Como pensar para acertar:** Negue os termos e troque o conectivo: não(P e Q) = não P ou não Q.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** `não[R e (P ou A)] = não R ou (não P e não A)`.
+- **B) está errada:** A alternativa nega a disjunção interna de forma incompleta, mantendo ‘ou’.
+- **C) está errada:** A negação externa de uma conjunção pede disjunção, não conjunção.
+- **D) está errada:** A alternativa mantém o relatório entregue, contrariando uma das possibilidades da negação.
+- **Conceito cobrado:** Lei de De Morgan em expressão aninhada.
+- **Pegadinha usada:** Trocar apenas um conectivo ou ignorar os parênteses.
+- **Como pensar para acertar:** Negue de fora para dentro: primeiro a conjunção; depois a disjunção interna.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 37
 
-- **Alternativa correta:** B.
-- **A) está errada:** Se o consequente é falso, a condicional só seria falsa se P fosse verdadeiro; a conclusão lógica é não P.
-- **B) está correta:** Pelo modus tollens, de P -> Q e não Q conclui-se não P.
-- **C) está errada:** Isso contradiz a consequência lógica da condicional com consequente falso.
-- **D) está errada:** O enunciado informa que a restauração não é possível.
-- **Conceito cobrado:** Argumentação lógica: modus tollens.
-- **Pegadinha usada:** Confundir modus tollens com afirmação do consequente..
-- **Como pensar para acertar:** Com P -> Q e ¬Q, conclua ¬P.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **A) está errada:** As condicionais podem permanecer verdadeiras; o dado permite aplicar contraposição.
+- **B) está errada:** A existência de backup contradiria a cadeia de implicações e o fato informado.
+- **C) está correta:** De ‘não restauração’ obtém-se ‘não verificação sem erro’ e, depois, ‘não backup íntegro’.
+- **D) está errada:** A impossibilidade de restauração impede concluir verificação sem erro.
+- **Conceito cobrado:** Encadeamento de condicionais e modus tollens.
+- **Pegadinha usada:** Afirmar o antecedente ou declarar a regra falsa diante da negação do consequente.
+- **Como pensar para acertar:** Percorra as contrapositivas da segunda condicional para a primeira.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 38
 
-- **Alternativa correta:** A.
-- **A) está correta:** Com n proposições simples, a tabela-verdade tem 2^n linhas; para 3, 2^3 = 8.
-- **B) está errada:** 6 resulta de 3 x 2, mas a combinação é exponencial, não multiplicação simples por 2.
-- **C) está errada:** 9 seria 3^2, operação sem relação com a quantidade de valores lógicos binários.
-- **D) está errada:** 12 não corresponde a 2^3.
-- **Conceito cobrado:** Tabela-verdade.
-- **Pegadinha usada:** Multiplicar n por 2 em vez de calcular 2^n..
-- **Como pensar para acertar:** Cada proposição dobra o número de combinações.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Seis ignora que `P=1,Q=0` e `Q=1,R=0` invalidam casos.
+- **B) está errada:** Três omite uma valoração em que antecedente falso torna a condicional verdadeira.
+- **C) está errada:** Cinco inclui linha em que uma das implicações é falsa.
+- **D) está correta:** As valorações 000, 001, 011 e 111 satisfazem ambas as condicionais: quatro linhas.
+- **Conceito cobrado:** Contagem de valorações em condicionais encadeadas.
+- **Pegadinha usada:** Considerar condicional verdadeira apenas quando antecedente e consequente são verdadeiros.
+- **Como pensar para acertar:** Elimine as linhas em que alguma condicional tem antecedente verdadeiro e consequente falso.
+- **Referência à apostila de estudo:** Dia 6 — “8. Raciocínio lógico: proposições e conectivos”.
 
 ### Comentário da Questão 39
 
 - **Alternativa correta:** D.
-- **A) está errada:** Soma A + B + nenhum sem retirar a interseção duplicada.
-- **B) está errada:** 55 é apenas o total que usa ao menos um sistema; falta somar quem não usa nenhum.
-- **C) está errada:** Subtrai ou soma a interseção de modo incorreto.
-- **D) está correta:** Usam ao menos um: 40 + 25 - 10 = 55. Somando os 8 que não usam nenhum, total = 63.
-- **Conceito cobrado:** Conjuntos com complemento.
-- **Pegadinha usada:** Esquecer o grupo fora dos conjuntos..
-- **Como pensar para acertar:** Calcule a união e depois some quem está fora dela.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Difícil.
+- **A) está errada:** 170 é o resultado antes de devolver a interseção tripla subtraída em excesso.
+- **B) está errada:** 200 é o universo, não necessariamente a união.
+- **C) está errada:** 155 decorre de tratamento incorreto das interseções.
+- **D) está correta:** Inclusão-exclusão: `110+90+70-45-30-25+15 = 185`.
+- **Conceito cobrado:** Inclusão-exclusão com três conjuntos.
+- **Pegadinha usada:** Subtrair as interseções duplas sem somar de volta a interseção tripla.
+- **Como pensar para acertar:** Aplique a fórmula completa e observe que quem está nos três foi retirado três vezes.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 40
 
 - **Alternativa correta:** B.
+- **Nível:** Difícil.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: julgamento objetivo e vinculação protegem a igualdade.
-- **B) é a incorreta:** Incorreta: fracionamento indevido para burlar licitação viola a finalidade do regime de contratação.
-- **C) está correta como afirmação:** Correta: planejamento e definição adequada do objeto são centrais para contratação pública.
-- **D) está correta como afirmação:** Correta: publicidade é regra com exceções justificadas.
-- **Conceito cobrado:** Licitação: planejamento e vedação ao fracionamento indevido.
-- **Pegadinha usada:** Confundir gestão por parcelas com fracionamento para burlar licitação..
-- **Como pensar para acertar:** Parcelamento técnico pode existir; fracionamento artificial para dispensar licitação é o problema.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **A) está errada:** Planejamento deve considerar a demanda global e evitar manipulação do enquadramento.
+- **B) está correta:** Separar artificialmente objetos previsíveis para alcançar dispensa não se torna legítimo pelo valor isolado.
+- **C) está errada:** Contratação direta continua documentada e controlável.
+- **D) está errada:** Isonomia e finalidade pública também regem o planejamento da contratação.
+- **Conceito cobrado:** Fracionamento indevido e contratação direta.
+- **Pegadinha usada:** Olhar apenas o valor de cada processo e ignorar a unidade planejável da necessidade.
+- **Como pensar para acertar:** Pergunte se a separação decorre de razão técnica real ou serve apenas para contornar a licitação.
+- **Referência à apostila de estudo:** Dia 6 — “Licitação: modalidade, critério, contratação direta e procedimento”.
 
 ### Comentário da Questão 41
 
 - **Alternativa correta:** B.
-- **A) está errada:** Critérios precisam ser conhecidos para possibilitar controle e competição.
-- **B) está correta:** Julgamento objetivo exige critérios claros e aplicação uniforme.
-- **C) está errada:** Simpatia ou preferência subjetiva viola objetividade e impessoalidade.
-- **D) está errada:** Mudança posterior quebra vinculação e isonomia.
-- **Conceito cobrado:** Julgamento objetivo.
-- **Pegadinha usada:** Confundir interesse público com escolha subjetiva sem critério..
-- **Como pensar para acertar:** Critério objetivo é anunciado antes e aplicado depois.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Muito difícil.
+- **A) está errada:** Menor preço só é comparável entre propostas que atendem às condições válidas do objeto.
+- **B) está correta:** Os critérios publicados devem valer para todos; eventual ilegalidade do edital exige correção impessoal do procedimento.
+- **C) está errada:** Alteração retroativa dirigida a uma proposta viola publicidade, vinculação e isonomia.
+- **D) está errada:** Economicidade não autoriza contratar objeto em desacordo com requisito essencial válido.
+- **Conceito cobrado:** Julgamento objetivo, vinculação e correção do edital.
+- **Pegadinha usada:** Usar menor preço para dispensar requisito técnico apenas do licitante preferido.
+- **Como pensar para acertar:** Primeiro verifique conformidade; depois compare preços. Se a regra for ilegal, corrija-a para todos.
+- **Referência à apostila de estudo:** Dia 6 — “Licitação: modalidade, critério, contratação direta e procedimento”.
 
 ### Comentário da Questão 42
 
 - **Alternativa correta:** A.
-- **A) está correta:** Após indenizar, o Estado pode buscar ressarcimento do agente causador quando demonstrados dolo ou culpa.
-- **B) está errada:** Regresso contra agente exige demonstração de dolo ou culpa.
-- **C) está errada:** A objetividade perante a vítima não impede regresso contra agente culpado ou doloso.
-- **D) está errada:** A questão cobra relação Estado-agente; eventual seguro não elimina requisitos de regresso.
-- **Conceito cobrado:** Responsabilidade civil e ação regressiva.
-- **Pegadinha usada:** Confundir responsabilidade objetiva do Estado com responsabilidade automática do agente..
-- **Como pensar para acertar:** Perante a vítima, o Estado responde objetivamente; contra o agente, apura dolo ou culpa.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Nível:** Muito difícil.
+- **A) está correta:** A alternativa articula corretamente três planos: regime perante a vítima, causalidade concorrente e regresso subjetivo.
+- **B) está errada:** Culpa concorrente pode atenuar, enquanto culpa exclusiva pode excluir.
+- **C) está errada:** Responsabilidade objetiva não dispensa dano e nexo nem torna excludentes irrelevantes.
+- **D) está errada:** A vítima não precisa aguardar condenação do agente; o regresso, porém, exige dolo ou culpa.
+- **Conceito cobrado:** Responsabilidade objetiva, culpa concorrente e ação regressiva.
+- **Pegadinha usada:** Misturar os requisitos da relação Estado-vítima com os da relação Estado-agente.
+- **Como pensar para acertar:** Resolva em duas relações: vítima contra Estado; depois Estado contra agente culpado ou doloso.
+- **Referência à apostila de estudo:** Dia 6 — “Improbidade e responsabilidade civil do Estado”.
 
 ### Comentário da Questão 43
 
-- **Alternativa correta:** D.
-- **A) está errada:** A afirmação mistura temas sem relação e inverte a lógica da autotutela.
-- **B) está errada:** Vício de competência é tema de legalidade, não de revogação por mérito.
-- **C) está errada:** Não são sinônimos; possuem fundamentos diferentes.
-- **D) está correta:** Revogação desfaz ato válido por conveniência/oportunidade; anulação retira ato ilegal.
-- **Conceito cobrado:** Anulação e revogação.
-- **Pegadinha usada:** Tratar todo desfazimento de ato como anulação..
-- **Como pensar para acertar:** Pergunte se o problema é ilegalidade ou conveniência.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** Revogação atua sobre ato válido e não encobre incompetência absoluta.
+- **B) está correta:** A ilegalidade conduz à anulação; a inconveniência não muda a natureza do vício.
+- **C) está errada:** Convalidação não é obrigatória nem cabível para todo vício, especialmente nos termos absolutos do caso.
+- **D) está errada:** A autotutela permite à Administração examinar e invalidar seus próprios atos ilegais.
+- **Conceito cobrado:** Anulação, revogação e vício de competência.
+- **Pegadinha usada:** Escolher revogação porque o ato também se tornou inconveniente.
+- **Como pensar para acertar:** A legalidade vem antes do mérito: ato inválido é objeto de anulação, não de revogação corretiva.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 44
 
-- **Alternativa correta:** B.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: discricionariedade não torna todos os elementos livres.
-- **B) é a incorreta:** Incorreta: discricionariedade existe dentro da legalidade; eficiência não autoriza decisão ilegal.
-- **C) está correta como afirmação:** Correta: ato vinculado deixa pouca ou nenhuma liberdade quanto à prática quando presentes requisitos.
-- **D) está correta como afirmação:** Correta: discricionariedade é liberdade dentro da lei.
-- **Conceito cobrado:** Atos vinculados e discricionários.
-- **Pegadinha usada:** Achar que discricionariedade é liberdade sem limite..
-- **Como pensar para acertar:** Discricionariedade é escolha legítima dentro da moldura legal.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** A margem discricionária permanece dentro da lei e deve servir à finalidade pública com motivação coerente.
+- **B) está errada:** Faixa legal não torna imunes ao controle a finalidade, os motivos e a proporcionalidade.
+- **C) está errada:** Validade numérica não sana retaliação nem motivação deficiente.
+- **D) está errada:** Competência não é o único elemento controlável em ato discricionário.
+- **Conceito cobrado:** Controle da discricionariedade e desvio de finalidade.
+- **Pegadinha usada:** Confundir margem de escolha com imunidade jurídica.
+- **Como pensar para acertar:** Examine não só se o valor cabe na faixa, mas por que e para que o máximo foi escolhido.
+- **Referência à apostila de estudo:** Dia 6 — “Atos administrativos: elementos, atributos e desfazimento”.
 
 ### Comentário da Questão 45
 
-- **Alternativa correta:** B.
-- **A) está errada:** 120 seria 50% do total.
-- **B) está correta:** Se 60% foram no prazo, 40% ficaram fora do prazo; 40% de 240 = 96.
-- **C) está errada:** 144 é o número concluído no prazo, não fora do prazo.
-- **D) está errada:** 80 corresponde a um terço de 240, não a 40%.
-- **Conceito cobrado:** Porcentagem e complemento.
-- **Pegadinha usada:** Responder o percentual informado em vez do complemento pedido..
-- **Como pensar para acertar:** Quando a questão pede fora do prazo, use 100% - 60%.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** 84 era a quantidade pendente antes da etapa adicional; além disso, 12,5% mede apenas a queda de 96 para 84.
+- **B) está errada:** 72 não resulta da retirada de 25% sobre os 84 atrasados do segundo mês.
+- **C) está errada:** O total 63 está correto, mas a redução deve ser calculada sobre os 96 pendentes do primeiro mês, não confundida com a taxa da etapa adicional.
+- **D) está correta:** O segundo mês teve 300 processos, 84 pendentes e 63 após a etapa adicional; a queda de 33 sobre 96 equivale a 34,375%.
+- **Conceito cobrado:** Percentuais sucessivos, complemento percentual e comparação entre bases.
+- **Pegadinha usada:** Aplicar todos os percentuais ao total inicial ou confundir taxa de regularização com redução relativa entre os meses.
+- **Como pensar para acertar:** Calcule cada mês em sua própria base, atualize as pendências e somente depois compare a diferença com o valor do primeiro mês.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 46
 
-- **Alternativa correta:** A.
-- **A) está correta:** Produtividade: 90/(3 x 6)=5 processos por servidor-dia. Cinco servidores fazem 25 por dia; 150/25 = 6 dias.
-- **B) está errada:** Esse valor supõe produtividade maior do que a informada.
-- **C) está errada:** Ignora o aumento de servidores em relação ao primeiro cenário.
-- **D) está errada:** Usa proporção direta apenas com processos, sem considerar servidores.
-- **Conceito cobrado:** Regra de três composta.
-- **Pegadinha usada:** Não ajustar simultaneamente produção e quantidade de servidores..
-- **Como pensar para acertar:** Calcule produtividade por servidor-dia para evitar inversão.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** 180 desconta 10%, e não 20%, da capacidade bruta.
+- **B) está errada:** 200 ignora que 20% da capacidade será consumida.
+- **C) está errada:** 150 aplica o percentual à produção inicial, não ao novo cenário.
+- **D) está correta:** A taxa bruta é 5 processos por servidor-dia; a capacidade bruta nova é 200 e a líquida, 160.
+- **Conceito cobrado:** Regra de três composta com perda por retrabalho.
+- **Pegadinha usada:** Calcular corretamente a produção bruta e esquecer o fator líquido.
+- **Como pensar para acertar:** Encontre a taxa unitária, projete a capacidade bruta e aplique 80%.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 47
 
-- **Alternativa correta:** D.
-- **A) está errada:** Erro comum ao considerar média 50 em vez de 52,5 ou excluir um termo.
-- **B) está errada:** Provável exclusão indevida do 100 ou do 5.
-- **C) está errada:** Metade da soma correta, como se houvesse 10 termos em vez de 20.
-- **D) está correta:** É PA de 5 a 100 com razão 5. Há 20 termos; soma = (5 + 100) x 20 / 2 = 1050.
-- **Conceito cobrado:** Progressão aritmética: soma.
-- **Pegadinha usada:** Contar termos incorretamente nos extremos inclusivos..
-- **Como pensar para acertar:** Conte os termos e use média dos extremos vezes quantidade.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** 2.000 é a soma dos números terminados em 5 antes da segunda exclusão.
+- **B) está errada:** 1.260 resulta de contagem ou soma incorreta dos termos que também são divisíveis por 3.
+- **C) está correta:** Os termos terminados em 5 somam 2.000; os divisíveis por 3 são `15, 45, ..., 195` e somam 735; resta 1.265.
+- **D) está errada:** 735 é justamente a soma do subconjunto que deve ser excluído, não a dos termos restantes.
+- **Conceito cobrado:** Progressões aritméticas, divisibilidade e diferença de subconjuntos.
+- **Pegadinha usada:** Parar após excluir múltiplos de 10 ou marcar a soma do subconjunto eliminado.
+- **Como pensar para acertar:** Forme a PA dos números terminados em 5, identifique nela a sub-PA divisível por 3 e subtraia as duas somas.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 48
 
-- **Alternativa correta:** C.
-- **A) está errada:** Expoente não se soma ao resultado da potência dessa forma.
-- **B) está errada:** Esse é 64^2, mas 2^(x+2) = 2^x x 2^2 = 64 x 4.
-- **C) está correta:** Como 2^x = 64 = 2^6, x = 6. Logo 2^(x+2)=2^8=256.
-- **D) está errada:** Esse valor seria 2^(x+1), não 2^(x+2).
-- **Conceito cobrado:** Potenciação.
-- **Pegadinha usada:** Tratar soma de expoente como soma no resultado..
-- **Como pensar para acertar:** Use propriedades: 2^(x+2)=2^x x 2^2.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** O valor 2 decorre de subtrair diretamente os expoentes sem considerar que as bases representam potências diferentes de 2.
+- **B) está errada:** O valor 4 resulta de simplificação incompleta do quociente após a substituição de `x`.
+- **C) está errada:** O valor 16 ignora parte do expoente presente no denominador.
+- **D) está correta:** De `2^(x-1)=2^4`, obtém-se `x=5`; então `4^6/8^3 = 2^12/2^9 = 2^3 = 8`.
+- **Conceito cobrado:** Equação exponencial, mudança de base e quociente de potências.
+- **Pegadinha usada:** Igualar expoentes de bases distintas ou substituir `x` sem converter numerador e denominador para a mesma base.
+- **Como pensar para acertar:** Determine `x`, escreva 4 e 8 como potências de 2 e só então subtraia os expoentes do quociente.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 49
 
-- **Alternativa correta:** B.
-- **A) está errada:** Superestima o total por atribuir valor errado a cada parte da razão.
-- **B) está correta:** 3 partes correspondem a 24, então 1 parte vale 8. Técnicos: 5 x 8 = 40. Total = 24 + 40 = 64.
-- **C) está errada:** 40 é o número de técnicos, não o total.
-- **D) está errada:** Esse valor usaria razão 3:3 ou cálculo incompleto.
-- **Conceito cobrado:** Razão e proporção.
-- **Pegadinha usada:** Confundir uma parte do grupo com o total..
-- **Como pensar para acertar:** Transforme a razão em partes e encontre o valor de uma parte.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** Se A=3k e T=5k, `(3k+6)/(5k)=9/10`, logo `k=4` e o total inicial é 32.
+- **B) está errada:** Esse total não satisfaz simultaneamente as razões antes e depois da contratação.
+- **C) está errada:** 48 corresponderia a k=6, que não gera a nova razão.
+- **D) está errada:** 24 corresponderia a k=3, também incompatível com 9:10.
+- **Conceito cobrado:** Razões com alteração de uma das parcelas.
+- **Pegadinha usada:** Aplicar a nova razão ao total antigo sem montar a equação.
+- **Como pensar para acertar:** Represente as quantidades por 3k e 5k, acrescente 6 apenas aos analistas e resolva.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
 
 ### Comentário da Questão 50
 
-- **Alternativa correta:** A.
-- **A) está correta:** P é falso; não Q é falso porque Q é verdadeiro. Falso ou falso resulta falso.
-- **B) está errada:** Não há parcela verdadeira na disjunção.
-- **C) está errada:** Com valores de P e Q dados, a expressão tem valor determinado.
-- **D) está errada:** A expressão não depende de condicional; é uma disjunção simples.
-- **Conceito cobrado:** Operadores lógicos.
-- **Pegadinha usada:** Esquecer de negar Q antes de aplicar o “ou”..
-- **Como pensar para acertar:** Calcule de dentro para fora: primeiro não Q, depois a disjunção.
-- **Referência à apostila de estudo:** Dia 6 — Administração Pública, RLM e Revisão.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Os valores de P, Q e R determinam completamente a expressão.
+- **B) está errada:** Os dois lados da bicondicional têm valores diferentes, portanto ela não é verdadeira.
+- **C) está correta:** `P ou Q` é verdadeiro e implica R falso, tornando o lado esquerdo falso; `Q e não R` é verdadeiro; a bicondicional é falsa.
+- **D) está errada:** A condição adicional proposta não faz parte da avaliação solicitada.
+- **Conceito cobrado:** Avaliação de expressão lógica composta.
+- **Pegadinha usada:** Avaliar a condicional como verdadeira apenas porque seu antecedente contém uma parcela falsa.
+- **Como pensar para acertar:** Calcule cada subexpressão, depois a condicional e, por último, compare os lados da bicondicional.
+- **Referência à apostila de estudo:** Dia 6 — “8. Raciocínio lógico: proposições e conectivos”.
 
 ### Comentários das questões extras de revisão fixa do Dia 6
 
 #### Comentário Extra Dia 6.1
 
-- **Alternativa correta:** B.
-- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **B) está correta:** A função do código é orientar e disciplinar o exercício profissional.
-- **C) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **D) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **Conceito cobrado:** Função do Código de Ética.
-- **Pegadinha usada:** Reduzir o código a uma lista de multas.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** O Código de Ética também alcança pessoas jurídicas registradas no CRA competente, observadas as especificidades aplicáveis.
+- **B) está errada:** Estrutura interna pertence ao Regimento, não ao objeto principal do Código.
+- **C) está errada:** O material registra que suspensão e cancelamento não se aplicam à PJ.
+- **D) está correta:** O Código orienta deveres e infrações de PF e PJ, com especificidades.
+- **Conceito cobrado:** Abrangência do Código de Ética.
+- **Pegadinha usada:** Ou excluir a pessoa jurídica, ou aplicar-lhe todas as sanções de modo idêntico.
+- **Como pensar para acertar:** Separe incidência do Código de aplicação específica de cada sanção.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.2
 
-- **Alternativa correta:** D.
-- **A) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **B) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está correta:** Não basta olhar a razão social; é preciso observar a atividade desempenhada.
-- **Conceito cobrado:** Fiscalização de pessoa jurídica.
-- **Pegadinha usada:** Fiscalizar apenas pelo nome fantasia da empresa.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** CNPJ não substitui regularidade profissional.
+- **B) está correta:** A fiscalização deve unir objeto da empresa, regularidade e atuação técnica real.
+- **C) está errada:** Indicação formal não basta quando o responsável não participa.
+- **D) está errada:** Adimplência isolada não comprova atuação técnica nem registro da empresa.
+- **Conceito cobrado:** Fiscalização de pessoa jurídica e responsabilidade técnica.
+- **Pegadinha usada:** Confundir documento formal com participação efetiva.
+- **Como pensar para acertar:** Examine a atividade exercida e quem realmente orienta ou supervisiona o serviço.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.3
 
-- **Alternativa correta:** A.
-- **A) está correta:** O material associa esse conjunto ao regulamento de registro.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Registro profissional.
-- **Pegadinha usada:** Buscar a resposta no Regimento quando o assunto é registro.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **A) está errada:** RN 651 trata do Regimento e RN 680, de eleições.
+- **B) está correta:** A RN 649 aprova o Regulamento de Registro e a RN 670 o altera.
+- **C) está errada:** RN 589 trata de fiscalização e RN 626, do PERC.
+- **D) está errada:** RN 546 trata de isenção e RN 671, de ética.
+- **Conceito cobrado:** Normas do Regulamento de Registro.
+- **Pegadinha usada:** Trocar o par registro/alteração por duas resoluções verdadeiras de outros objetos.
+- **Como pensar para acertar:** Fixe a norma-base 649 e sua alteradora 670.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.4
 
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** A proteção da informação não depende apenas de contrato em vigor.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Sigilo após relação profissional.
-- **Pegadinha usada:** Achar que o encerramento do contrato libera todo dado obtido.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **A) está correta:** O sigilo subsiste, ressalvado fundamento legal ou justa causa aplicável.
+- **B) está errada:** Vantagem econômica não constitui justa causa por si só.
+- **C) está errada:** O fim do contrato não libera automaticamente a informação.
+- **D) está errada:** Dever ético não é afastado apenas pelo encerramento do instrumento contratual.
+- **Conceito cobrado:** Persistência do sigilo profissional.
+- **Pegadinha usada:** Reduzir o sigilo à vigência formal do contrato.
+- **Como pensar para acertar:** Pergunte se existe exceção jurídica concreta; sem ela, preserve a confidencialidade.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.5
 
-- **Alternativa correta:** B.
-- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **B) está correta:** Cooperação e defesa regular podem coexistir; obstrução não é estratégia legítima.
-- **C) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **D) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **Conceito cobrado:** Postura perante fiscalização.
-- **Pegadinha usada:** Confundir discordância com direito de impedir fiscalização.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Discordância não autoriza ocultação até decisão nacional.
+- **B) está errada:** Direito de defesa não suspende toda fiscalização automaticamente.
+- **C) está correta:** Colaboração com diligência regular convive com defesa pelos canais próprios.
+- **D) está errada:** Registro de terceiro não demonstra regularidade e pode gerar outra infração.
+- **Conceito cobrado:** Fiscalização e exercício regular da defesa.
+- **Pegadinha usada:** Tratar defesa como autorização para obstrução.
+- **Como pensar para acertar:** Cumpra as solicitações pertinentes e conteste formalmente o que considerar indevido.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.6
 
-- **Alternativa correta:** D.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está correta:** Essa separação ajuda a resolver alternativas que trocam lei por regulamento.
-- **Conceito cobrado:** Lei e decreto.
-- **Pegadinha usada:** Ler os dois diplomas como se tivessem a mesma função formal.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **A) está errada:** Autonomia administrativa não atribui ao CRA poder para redefinir matéria reservada à lei.
+- **B) está errada:** Decreto regulamentar detalha a execução da lei; não recebe competência legislativa primária por ser repetido em ato regional.
+- **C) está correta:** Lei, decreto regulamentar e ato interno formam níveis distintos; os dois últimos devem respeitar a base legal da profissão.
+- **D) está errada:** Especialidade não autoriza norma hierarquicamente inferior a contrariar ou ampliar a lei que lhe dá fundamento.
+- **Conceito cobrado:** Hierarquia normativa e limites do poder regulamentar no Sistema CFA/CRAs.
+- **Pegadinha usada:** Confundir autonomia do conselho com competência para inovar além da lei.
+- **Como pensar para acertar:** Identifique qual norma cria a base profissional e verifique se os atos inferiores apenas a executam ou tentam ampliá-la.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.7
 
 - **Alternativa correta:** A.
-- **A) está correta:** A apostila reforça que a banca costuma trocar uma palavra essencial em alternativa plausível.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Estilo de cobrança em legislação.
-- **Pegadinha usada:** Esperar apenas pergunta literal de artigo sem contexto.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível:** Médio.
+- **A) está correta:** Sujeito, território e objeto normativo evitam as trocas mais comuns.
+- **B) está errada:** Sanção é etapa posterior ao enquadramento e não deve ser presumida.
+- **C) está errada:** CFA e CRA possuem funções articuladas, mas não idênticas.
+- **D) está errada:** Registro, ética, fiscalização e regimento têm objetos diferentes.
+- **Conceito cobrado:** Roteiro de resolução em legislação profissional.
+- **Pegadinha usada:** Começar pela penalidade ou pelo número da norma sem identificar o caso.
+- **Como pensar para acertar:** Mapeie quem praticou o quê, onde e sob qual disciplina.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.8
 
-- **Alternativa correta:** C.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está correta:** O fato de ser CRA não elimina a necessidade de observar o território da atuação.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** Jurisdição territorial.
-- **Pegadinha usada:** Responder como se todo CRA tivesse jurisdição nacional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **A) está errada:** CRAs possuem jurisdições regionais, não competência nacional concorrente automática.
+- **B) está errada:** Ética não elimina a análise territorial da fiscalização.
+- **C) está errada:** Atividade de Administração não atribui por si só todo caso ao CRA-PR.
+- **D) está correta:** O local do fato e o conselho competente precisam ser verificados.
+- **Conceito cobrado:** Jurisdição dos Conselhos Regionais.
+- **Pegadinha usada:** Associar o nome CRA-PR a fatos ocorridos em qualquer território.
+- **Como pensar para acertar:** Localize o fato antes de atribuir competência regional.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.9
 
-- **Alternativa correta:** B.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está correta:** Distinguir o objeto de cada norma é essencial para não cair em troca de rótulos.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Diferença entre normas.
-- **Pegadinha usada:** Confundir todos os atos normativos por serem do mesmo sistema.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** Regimento organiza a estrutura interna e não substitui o Regulamento de Registro.
+- **B) está errada:** Registro do profissional não sana a empresa nem legitima empréstimo de número.
+- **C) está errada:** Lei 12.514 trata de contribuições, não resolve isoladamente ambos os fatos.
+- **D) está correta:** A alternativa separa corretamente regularidade, conduta ética e competência regional.
+- **Conceito cobrado:** Integração entre registro, ética e competência.
+- **Pegadinha usada:** Usar uma única norma para fatos de objetos diferentes.
+- **Como pensar para acertar:** Divida o caso em regularidade da PJ, comportamento do profissional e órgão fiscalizador.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.10
 
-- **Alternativa correta:** D.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está correta:** A estratégia aprovada busca pontuação consistente em conteúdo de maior peso e mais previsível.
-- **Conceito cobrado:** Estratégia de estudo.
-- **Pegadinha usada:** Inverter prioridade e começar por detalhe não confirmado.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Detalhes de artigo, prazo ou pena exigem consulta ao texto oficial.
+- **B) está errada:** Sanção máxima não pode ser presumida sem base normativa e circunstâncias.
+- **C) está errada:** O objeto confirmado pela ementa pode ser utilizado com a devida limitação.
+- **D) está errada:** Analogia com outro conselho não confirma prazo específico.
+- **Conceito cobrado:** Controle de fontes normativas.
+- **Pegadinha usada:** Preencher lacuna documental com memória ou analogia.
+- **Como pensar para acertar:** Afirme somente o que a fonte consultada comprova.
+- **Referência à apostila de estudo:** Dia 6 — “Pontos pendentes de confirmação”.
 
 #### Comentário Extra Dia 6.11
 
-- **Alternativa correta:** A.
-- **A) está correta:** Cache aproveita padrões de acesso.
-- **B) está errada:** A ULA executa operações; cache é memória rápida.
-- **C) está errada:** Cache é pequena e complementar à RAM.
-- **D) está errada:** O objetivo é reduzir o tempo médio, embora haja misses.
-- **Conceito cobrado:** Cache e localidade.
-- **Pegadinha usada:** Confundir memória rápida com unidade de processamento.
-- **Como pensar para acertar:** Separe função de memória, processamento e controle.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** 8 ns considera apenas a parcela da penalidade, sem o tempo de acerto.
+- **B) está correta:** Tempo médio = `2 + 0,10×80 = 10 ns`.
+- **C) está errada:** 82 ns seria o acesso com falta, não a média ponderada.
+- **D) está errada:** 18 ns usa 20% como taxa de falta ou combina fatores incorretos.
+- **Conceito cobrado:** Tempo médio de acesso à cache.
+- **Pegadinha usada:** Usar a taxa de acerto onde deve entrar a taxa de falta.
+- **Como pensar para acertar:** Some o tempo de acerto à penalidade multiplicada por 10% de faltas.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.12
 
 - **Alternativa correta:** C.
-- **A) está errada:** Pipeline divide a execução em estágios.
-- **B) está errada:** Dependências podem gerar stalls.
-- **C) está correta:** Pipeline melhora throughput.
-- **D) está errada:** Registradores continuam sendo usados pela CPU.
-- **Conceito cobrado:** Pipeline.
-- **Pegadinha usada:** Confundir vazão com latência.
-- **Como pensar para acertar:** Pergunte se a questão fala de fluxo total ou de uma instrução isolada.
+- **Nível:** Difícil.
+- **A) está errada:** 26 soma 20 + 6 e ignora os quatro ciclos de enchimento do pipeline.
+- **B) está errada:** 100 é o tempo não segmentado de 20 instruções em cinco ciclos cada.
+- **C) está correta:** Idealmente são `5 + 19 = 24` ciclos; com seis paradas, total 30.
+- **D) está errada:** 25 erra o enchimento e ignora os stalls.
+- **Conceito cobrado:** Tempo de execução em pipeline.
+- **Pegadinha usada:** Confundir quantidade de estágios com custo por instrução depois do enchimento.
+- **Como pensar para acertar:** Use `k + n - 1` e acrescente os ciclos de parada.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.13
 
-- **Alternativa correta:** B.
-- **A) está errada:** Isso pertence a SGBD, não ao SO.
-- **B) está correta:** Escalonamento de CPU.
-- **C) está errada:** São funções diferentes do SO.
-- **D) está errada:** O sistema operacional executa políticas de escalonamento.
-- **Conceito cobrado:** Processos e SO.
-- **Pegadinha usada:** Misturar SO com banco de dados.
-- **Como pensar para acertar:** Associe CPU, processo e política de escolha.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **A) está correta:** Após P1 e P2 usarem dois ciclos, P3 termina em seu único ciclo; depois terminam P2 e P1.
+- **B) está errada:** P1 tem o maior surto e não termina primeiro com quantum 2.
+- **C) está errada:** P2 só conclui após P3 ter usado seu primeiro quantum.
+- **D) está errada:** P1 ainda possui trabalho quando P2 recebe seu último ciclo.
+- **Conceito cobrado:** Simulação de Round Robin.
+- **Pegadinha usada:** Ordenar apenas pelo tamanho dos surtos sem percorrer a fila.
+- **Como pensar para acertar:** Desconte cada quantum na ordem P1, P2, P3 e anote o momento de conclusão.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.14
 
-- **Alternativa correta:** D.
-- **A) está errada:** Cache e memória virtual têm funções distintas.
-- **B) está errada:** Page faults podem ocorrer quando a página não está na RAM.
-- **C) está errada:** É recurso de sistema operacional e hardware.
-- **D) está correta:** Memória virtual.
-- **Conceito cobrado:** SO e gerenciamento de memória.
-- **Pegadinha usada:** Confundir cache, RAM e memória virtual.
-- **Como pensar para acertar:** Identifique camada: CPU/cache, RAM ou SO/memória virtual.
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** Dividir e arredondar para cima produz página incorreta e deslocamento incompatível.
+- **B) está correta:** `18.500 = 4×4.096 + 2.116`: página 4, deslocamento 2.116.
+- **C) está errada:** O número de página também foi elevado indevidamente.
+- **D) está errada:** Deslocamento deve ser menor que o tamanho da página.
+- **Conceito cobrado:** Decomposição de endereço paginado.
+- **Pegadinha usada:** Arredondar o quociente em vez de usar divisão inteira e resto.
+- **Como pensar para acertar:** O quociente inteiro dá a página; o resto dá o deslocamento.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.15
 
-- **Alternativa correta:** A.
-- **A) está correta:** WHERE x HAVING.
-- **B) está errada:** SELECT continua definindo as colunas de saída.
-- **C) está errada:** Condição sobre agregação deve ficar no HAVING.
-- **D) está errada:** GROUP BY agrupa no resultado da consulta, não altera a tabela.
-- **Conceito cobrado:** SQL agregação.
-- **Pegadinha usada:** Filtrar grupo com WHERE.
-- **Como pensar para acertar:** Veja se a condição incide sobre linha individual ou grupo agregado.
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **A) está errada:** COUNT(*) sobre o grupo deve ser testado em HAVING, não em WHERE.
+- **B) está errada:** A ordem sintática está errada e HAVING não antecede GROUP BY nesses termos.
+- **C) está errada:** Agregação não pode ser usada assim em WHERE, e a cláusula GROUP BY está mal formada.
+- **D) está correta:** WHERE filtra linhas ativas antes do agrupamento; HAVING filtra os grupos pelo COUNT.
+- **Conceito cobrado:** WHERE, GROUP BY e HAVING.
+- **Pegadinha usada:** Usar WHERE para condição agregada ou inverter a ordem das cláusulas.
+- **Como pensar para acertar:** Filtre linhas com WHERE, agrupe e filtre resultados agregados com HAVING.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.16
 
 - **Alternativa correta:** C.
-- **A) está errada:** NULL representa ausência/desconhecimento de valor, não zero.
-- **B) está errada:** String vazia é valor; NULL é ausência de valor.
-- **C) está correta:** NULL.
-- **D) está errada:** Em SQL, deve-se usar IS NULL.
-- **Conceito cobrado:** SQL e valores ausentes.
-- **Pegadinha usada:** Tratar NULL como valor comum.
-- **Como pensar para acertar:** Lembre que NULL exige operador próprio.
+- **Nível:** Difícil.
+- **A) está errada:** COUNT(coluna) ignora NULL e não retorna 4.
+- **B) está errada:** COUNT(*) inclui todas as linhas e não retorna 2.
+- **C) está correta:** Há dois valores não nulos e quatro linhas: 2 e 4.
+- **D) está errada:** A ordem dos resultados foi invertida.
+- **Conceito cobrado:** Comportamento de COUNT diante de NULL.
+- **Pegadinha usada:** Tratar COUNT(coluna) e COUNT(*) como equivalentes.
+- **Como pensar para acertar:** Conte valores não nulos para a coluna e todas as linhas para o asterisco.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.17
 
-- **Alternativa correta:** B.
-- **A) está errada:** Ela pertence ao bloco de legislação CRA/CFA.
-- **B) está correta:** Normas CFA principais.
-- **C) está errada:** Ela foi usada como Código de Ética.
-- **D) está errada:** A apostila as tratou expressamente no Dia 4.
-- **Conceito cobrado:** Legislação CRA/CFA.
-- **Pegadinha usada:** Trocar rótulos das resoluções.
-- **Como pensar para acertar:** Associe cada número ao objeto estudado.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **A) está errada:** Regulamento de Registro não disciplina a divisão interna de funções nem substitui o Código.
+- **B) está errada:** A alternativa inverte Regimento, Ética e regulamento eleitoral.
+- **C) está correta:** RN 651/Regimento organiza Plenário e Diretoria; RN 671/Código rege o sigilo profissional.
+- **D) está errada:** A Diretoria regional não assume função normativa nacional, e sigilo não desaparece automaticamente.
+- **Conceito cobrado:** Integração entre Regimento e Código de Ética.
+- **Pegadinha usada:** Aplicar uma resolução verdadeira ao objeto errado.
+- **Como pensar para acertar:** Classifique primeiro estrutura institucional e conduta profissional; só depois associe as normas.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Legislação CRA/CFA”.
 
 #### Comentário Extra Dia 6.18
 
-- **Alternativa correta:** D.
-- **A) está errada:** Antes de verbo não há artigo feminino.
-- **B) está errada:** Crase marca fusão de preposição com artigo ou pronome.
-- **C) está errada:** Não há crase antes de verbo.
-- **D) está correta:** Crase.
-- **Conceito cobrado:** Português.
-- **Pegadinha usada:** Marcar crase pela sonoridade.
-- **Como pensar para acertar:** Verifique se há preposição e artigo feminino.
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **A) está correta:** A frase usa vírgula após a concessiva, não emprega crase antes de verbo e usa corretamente ‘à chefia’.
+- **B) está errada:** A oração concessiva anteposta pede vírgula, e a vírgula antes de ‘e’ separa indevidamente ações com o mesmo sujeito.
+- **C) está errada:** Com partícula apassivadora, o verbo deve concordar: ‘encaminharam-se os autos’.
+- **D) está errada:** Não há crase antes de infinitivo, e ‘chefia’ exige artigo no contexto.
+- **Conceito cobrado:** Crase, concordância e pontuação.
+- **Pegadinha usada:** Corrigir um fenômeno e deixar outro erro discreto na mesma alternativa.
+- **Como pensar para acertar:** Verifique separadamente a oração anteposta, a concordância e cada ocorrência de ‘a’.
+- **Referência à apostila de estudo:** Dia 6 — “Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1”.
 
 #### Comentário Extra Dia 6.19
 
-- **Alternativa correta:** A.
-- **A) está correta:** Contratação direta.
-- **B) está errada:** Elas têm fundamentos diferentes.
-- **C) está errada:** A base é inviabilidade de competição.
-- **D) está errada:** Dispensa é contratação direta em hipóteses legais.
-- **Conceito cobrado:** Licitação.
-- **Pegadinha usada:** Inverter dispensa e inexigibilidade.
-- **Como pensar para acertar:** Pergunte se a competição é possível ou inviável.
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **A) está errada:** Impessoalidade e economicidade continuam aplicáveis.
+- **B) está errada:** Inviabilidade de competição aponta para inexigibilidade, não dispensa.
+- **C) está errada:** Contratação direta não autoriza escolha oral ou ausência de processo.
+- **D) está correta:** Exclusividade comprovada pode tornar a competição inviável, mas não elimina a instrução da contratação direta.
+- **Conceito cobrado:** Inexigibilidade e formalização da contratação direta.
+- **Pegadinha usada:** Confundir ausência de licitação com ausência de procedimento e princípios.
+- **Como pensar para acertar:** Responda duas perguntas: a competição é viável? Quais deveres processuais permanecem?
+- **Referência à apostila de estudo:** Dia 6 — “Licitação: modalidade, critério, contratação direta e procedimento”.
 
 #### Comentário Extra Dia 6.20
 
-- **Alternativa correta:** C.
-- **A) está errada:** Multiplica 90 por 30%, mas o enunciado pede o total.
-- **B) está errada:** Soma 90 com 30, sem relação proporcional.
-- **C) está correta:** 90 / 0,30 = 300.
-- **D) está errada:** Subtrai 30 de 300 ou aplica fator incorreto.
-- **Conceito cobrado:** Porcentagem reversa.
-- **Pegadinha usada:** Multiplicar quando deveria dividir pelo percentual.
-- **Como pensar para acertar:** Transforme a porcentagem em decimal e divida a parte pelo percentual.
-
----
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **A) está errada:** 225 surge ao dividir 135 apenas por 60% e ainda não produz a diferença informada após a reclassificação.
+- **B) está correta:** Aceitos são 45% do total, logo houve 300 processos; rejeitados passam de 120 para 80 e a complementação de 45 para 85, diferença de 5.
+- **C) está errada:** O total 300 está correto, mas 40 é a quantidade reclassificada, não a diferença final entre 85 e 80.
+- **D) está errada:** 360 não satisfaz os 135 aceitos, pois 45% de 360 corresponde a 162.
+- **Conceito cobrado:** Percentuais condicionais, recuperação da base e reclassificação entre categorias.
+- **Pegadinha usada:** Somar percentuais de bases diferentes ou confundir quantidade transferida com diferença final.
+- **Como pensar para acertar:** Recupere o total pelos aceitos, encontre cada categoria inicial e atualize origem e destino pela mesma transferência.
+- **Referência à apostila de estudo:** Dia 6 — “RLM: lógica, conjuntos e cálculo”.
