@@ -194,7 +194,7 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 
 Cada nova apostila semanal deve seguir este padrão:
 
-Consulte também `planejamento/padrao_semanal.md` antes de iniciar ou concluir uma semana. O documento consolida os blocos obrigatórios de teoria, revisões fixas, fixação, questões, discursiva quando aplicável e auditoria.
+Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou concluir uma semana. O documento é o modelo oficial de avaliação: consolida os blocos obrigatórios de teoria, exemplos resolvidos, revisões fixas, questões, comentários, rastreabilidade e auditoria.
 
 - seguir a divisão do Plano Mestre;
 - abrir com a versão do edital utilizada e fontes consultadas;
@@ -210,6 +210,9 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar ou concluir u
 - não marcar questão como real sem fonte confirmada;
 - a informação de que as questões são autorais e no estilo Instituto Consulplan deve aparecer no cabeçalho da apostila de questões, não no título individual de cada questão;
 - manter o caderno de erros como entrega obrigatória do dia.
+- preencher a matriz de rastreabilidade entre tópico do edital, teoria, exemplos e questões;
+- submeter todas as questões à auditoria semântica individual, inclusive conferência independente do gabarito;
+- aplicar a rubrica de 100 pontos e somente aprovar a semana com nota mínima de 90 e nenhum critério eliminatório.
 
 ## Controle de Cobertura do Edital
 
@@ -291,6 +294,10 @@ Uma semana só deve ser considerada concluída quando:
 - os tópicos do edital cobertos estiverem marcados neste plano;
 - os tópicos pendentes estiverem explicitamente registrados;
 - houver validação estrutural das questões;
+- todas as questões tiverem comentário completo de A, B, C e D e referência válida à teoria;
+- os exemplos resolvidos mostrarem raciocínio, solução e erro provável;
+- a matriz de rastreabilidade não apresentar questão órfã de teoria;
+- a avaliação prevista em `planejamento/padrao_semanal.md` atingir pelo menos 90/100, sem falha eliminatória;
 - o README estiver consistente com os arquivos mais recentes;
 - o material estiver salvo no repositório.
 

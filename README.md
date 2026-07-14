@@ -1,58 +1,50 @@
 # Concursos - CRA-PR 2026
 
-Material de estudo para o concurso CRA-PR 2026, cargo Analista de Sistemas.
+Repositório de preparação para o concurso CRA-PR 2026, organizado em duas trilhas independentes e em um método compartilhado de estudo.
 
-O objetivo deste repositório é organizar um plano de preparação com foco em aprovação, priorizando os conteúdos de maior peso no edital: Conhecimentos do Cargo, Legislação CRA-PR/CFA e Língua Portuguesa.
+## Trilhas
 
-## Estrutura do repositório
+### Analista de Sistemas
 
-- `README.md`: visão geral do projeto.
-- `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
-- `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
-- `planejamento/padrao_semanal.md`: estrutura e checklist obrigatórios para criar ou revisar semanas de estudo.
-- `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
-- `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
-- `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
-- `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões extras de revisão fixa.
-- `old/`: versões antigas e materiais intermediários.
+Materiais de planejamento, teoria, questões e simulados para o cargo de Analista de Sistemas.
 
-## Semana 1
+- [Visão geral da trilha](<Analista de sistemas/README.md>)
+- [Planejamento](<Analista de sistemas/planejamento/plano_mestre_cra_pr_2026.md>)
+- [Semana 1](<Analista de sistemas/semana_01/semana_01_estudo.md>)
+- [Semana 2](<Analista de sistemas/semana_02/semana_02_estudo.md>)
 
-A Semana 1 foi montada para criar base forte nos temas iniciais:
+### Direito
 
-1. Arquitetura e Organização de Computadores
-2. Sistemas Operacionais
-3. Banco de Dados Base e SQL
-4. Legislação CRA-PR/CFA
-5. Língua Portuguesa e Discursiva
-6. Administração Pública, Raciocínio Lógico-Matemático e Revisão
+Trilha comum para os cargos de Advogado e Analista Jurídico, com controle de vigência, legislação, jurisprudência, casos e parecer jurídico.
 
-## Questões
+- [Visão geral da trilha](Direito/README.md)
+- [Plano Mestre](Direito/planejamento/plano_mestre_cra_pr_2026_direito.md)
+- [Matriz de fontes](Direito/fontes/matriz_edital_fontes.md)
+- [Semana 1](Direito/semana_01/README.md)
 
-A Semana 1 possui:
+## Método compartilhado
 
-- 300 questões principais, divididas em 50 questões por dia;
-- 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM, Informática e caderno de erros;
-- 420 questões no total.
+- [Método de Preparação para Concursos](<Método de Preparação para Concursos.pdf>)
 
-## Semana 2
-
-A Semana 2 está concluída e aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados. Ela inclui topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
-
-Também possui:
-
-- 300 questões principais, distribuídas em 50 por dia;
-- 120 questões extras das revisões fixas de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
-- 420 questões autorais no total, todas com gabarito e comentário fundamentado na apostila.
+Cada trilha adapta o método ao cargo, ao peso das disciplinas e ao tipo de prova. Na área jurídica, isso inclui controle de fontes, casos resolvidos e treino progressivo de parecer.
 
 ## Organização
 
-Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, o planejamento em `planejamento/` e o edital em `edital/`.
+```text
+CRA_PARANA/
+├── Analista de sistemas/
+│   ├── edital/
+│   ├── planejamento/
+│   ├── semana_01/
+│   ├── semana_02/
+│   └── old/
+├── Direito/
+│   ├── edital/
+│   ├── fontes/
+│   ├── planejamento/
+│   └── semana_01/
+├── Método de Preparação para Concursos.pdf
+└── README.md
+```
 
-As versões antigas e materiais intermediários permanecem na pasta `old/`.
-
-## Observações
-
-As questões da apostila são autorais e foram criadas no estilo de cobrança do Instituto Consulplan. Questões reais só devem ser usadas quando houver fonte confirmada.
-
-O material foi preparado em Markdown para facilitar conversão futura para Google Docs ou PDF.
+Os editais, retificações e atos posteriores da banca devem ser conferidos nas páginas oficiais antes de cada novo ciclo de produção.
