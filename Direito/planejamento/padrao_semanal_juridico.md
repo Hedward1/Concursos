@@ -69,12 +69,15 @@ Qualquer ocorrência abaixo reprova o material até correção:
 - julgado isolado apresentado como entendimento consolidado;
 - controvérsia jurídica transformada em regra absoluta sem ressalva;
 - questão sem quatro alternativas A a D ou sem uma única melhor resposta;
+- questão sem nível válido imediatamente abaixo do título ou bloco fora da matriz aplicável; as matrizes diárias 20/20/10 e 8/8/4 são obrigatórias, e exceções pedagógicas previamente declaradas e justificadas restringem-se a conjuntos complementares e super simulados;
+- distrator sem relação plausível com a fonte ou que atribua a ela conteúdo manifestamente estranho, absurdo, alheio ao instituto ou eliminável sem conhecimento jurídico;
+- dificuldade artificial criada por ambiguidade, fato necessário omitido, texto excessivo ou pista visual na alternativa correta;
 - gabarito incorreto, ambíguo ou incompatível com o comentário;
 - questão sem sustentação em seção real da teoria;
 - comentário que não analise A, B, C e D individualmente;
 - exemplo ou caso resolvido sem fatos relevantes, raciocínio e conclusão;
 - parecer sem espelho de conteúdo ou sem rubrica;
-- semana normal sem ao menos um parecer completo, manuscrito, cronometrado e corrigido;
+- no aceite operacional, semana normal sem ao menos um parecer completo, manuscrito, cronometrado e corrigido;
 - referência quebrada, genérica ou apontando para assunto diferente;
 - quantidade, numeração, gabarito ou comentário incompleto;
 - reprodução de questão real sem identificação e fonte confirmada;
@@ -89,7 +92,7 @@ Qualquer ocorrência abaixo reprova o material até correção:
 | Lei seca, jurisprudência e distinção de fontes | 10 | dispositivos e precedentes corretamente identificados e separados da doutrina |
 | Casos e exemplos resolvidos | 10 | ao menos dois por tópico importante, com raciocínio e erro provável |
 | Alinhamento teoria-questões | 10 | todas as questões apontam para seção e fonte válidas |
-| Qualidade das questões | 10 | clareza, plausibilidade, variedade, nível e uma resposta correta |
+| Qualidade das questões | 10 | clareza, matriz 20/20/10 e 8/8/4, plausibilidade jurídica, variedade, nível calibrado e uma resposta correta |
 | Qualidade dos comentários | 15 | A a D, conceito, base, pegadinha, estratégia e referência precisa |
 | Parecer jurídico | 10 | caso, espelho, rubrica, modelo de raciocínio e treino completo manuscrito/cronometrado |
 | Organização pedagógica | 5 | cronograma, revisões, checklist, mapas e navegação consistentes |
@@ -196,6 +199,7 @@ Para preservar legibilidade, o banco pode ser repartido por dias. São obrigató
 
 - numeração global contínua, sem reinício ou colisão;
 - um índice principal com contagem por fragmento;
+- matriz de níveis e distribuição de letras reconciliada por fragmento e no total;
 - links relativos funcionais;
 - gabaritos e comentários junto de cada item ou claramente indexados;
 - auditoria conjunta das 420 questões;
@@ -219,6 +223,29 @@ Por semana:
 
 Esse volume forma um banco adaptativo. O roteiro de estudo indica o núcleo obrigatório e preserva o restante para revisão, reparo e simulado.
 
+### Níveis obrigatórios e distribuição
+
+Use exclusivamente `Médio`, `Difícil` e `Muito difícil`. O nível deve aparecer imediatamente abaixo do título e repetir-se no comentário:
+
+```markdown
+### Questão N
+**Nível: Muito difícil**
+```
+
+Distribuição obrigatória por dia:
+
+| Bloco | Médio | Difícil | Muito difícil | Total |
+|---|---:|---:|---:|---:|
+| Principais | 20 | 20 | 10 | 50 |
+| Extras | 8 | 8 | 4 | 20 |
+| Total diário | 28 | 28 | 14 | 70 |
+
+Na semana completa, isso corresponde a 168 médias, 168 difíceis e 84 muito difíceis. A matriz padrão dos conjuntos complementares é 40%/40%/20%, com arredondamento inteiro que preserve o total e matriz declarada antes da produção: em 20 itens, 8/8/4; em 30, 12/12/6; em 60, 24/24/12. Uma exceção pedagógica só é válida quando registrada e justificada previamente no plano do conjunto.
+
+- **Médio:** exige identificar o instituto aplicável, compreender a regra e aplicá-la diretamente a um caso com fatos suficientes. Os distratores representam confusões jurídicas comuns.
+- **Difícil:** exige uma ou mais operações como distinguir institutos próximos, relacionar regra e exceção ou examinar competência, procedimento, efeito ou fonte e, em regra, percorre mais de uma etapa de raciocínio.
+- **Muito difícil:** integra institutos ou fontes, ou exige diagnóstico ou cadeia de raciocínio com múltiplas etapas, como hierarquia, vigência, competência e consequência. As alternativas devem ser próximas, mas apenas uma pode resolver integralmente o caso. Ambiguidade, controvérsia omitida e falta de fatos não aumentam legitimamente a dificuldade.
+
 ### Formatos
 
 Combinar:
@@ -233,23 +260,55 @@ Combinar:
 - aplicação de prazo ou efeito quando expressamente sustentado;
 - integração entre duas disciplinas prevista pelo caso.
 
-Distratores devem representar erros plausíveis. São proibidas alternativas absurdas, de assunto alheio, mais longas apenas para denunciar a resposta ou construídas com uma palavra aleatória.
+Cada um dos três distratores deve representar erro jurídico plausível e rastreável: confusão entre institutos, inversão de competência, regra aplicada fora do contexto, exceção generalizada, fonte inadequada, efeito parcialmente correto ou conclusão que não responde ao comando. As quatro alternativas devem preservar paralelismo gramatical e extensão, densidade e especificidade comparáveis.
+
+São proibidas opções absurdas, de assunto alheio, incompatíveis com os fatos, construídas com palavra aleatória ou redigidas para denunciar a resposta. Para a auditoria, conte os caracteres úteis depois de remover o rótulo A–D e a marcação Markdown. Gere um alerta se a correta tiver mais de 1,30 vez o comprimento do maior distrator ou menos de 0,70 vez o comprimento do menor. O alerta exige revisão e justificativa, mas não reprova automaticamente o item; nunca alongue distratores apenas para equilibrar caracteres.
+
+### Distribuição e sincronização do gabarito
+
+As letras A, B, C e D devem ficar equilibradas dentro de cada faixa de dificuldade, com diferença máxima de uma ocorrência quando a quantidade permitir. Não aceite três ou mais respostas iguais consecutivas. Sinalize para revisão qualquer motivo de duas a quatro letras que se repita três vezes seguidas; uma alternância curta e ocasional, isoladamente, não constitui falha.
+
+Resolva o item independentemente antes de registrar a chave. Se as alternativas forem reordenadas, mova junto cada explicação, atualize a tabela e confirme `questão = gabarito = comentário`. Em comando negativo, destaque `INCORRETA` ou equivalente e acrescente observação pedagógica de que o gabarito corresponde à afirmação errada.
 
 ### Comentário obrigatório
 
-Cada item deve conter:
+Em comandos positivos, cada item deve conter este núcleo canônico:
 
-1. gabarito;
-2. resposta ao comando;
-3. por que a correta está correta;
-4. análise individual de A, B, C e D;
-5. conceito cobrado;
-6. base normativa ou jurisprudencial;
-7. distinção entre literalidade e interpretação, quando relevante;
-8. pegadinha concreta do item;
-9. sequência para resolver;
-10. referência exata à teoria;
-11. data da fonte quando houver risco de atualização.
+```markdown
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **A) está errada:** explicação jurídica ligada exatamente a A.
+- **B) está correta:** fundamento aplicado aos fatos e ao comando.
+- **C) está errada:** explicação jurídica ligada exatamente a C.
+- **D) está errada:** explicação jurídica ligada exatamente a D.
+- **Conceito cobrado:** instituto ou distinção precisa.
+- **Base normativa, jurisprudencial, doutrinária ou técnica:** fundamento aplicável, priorizando fonte primária quando houver.
+- **Literalidade e interpretação:** distinção, quando relevante ao item.
+- **Pegadinha usada:** erro jurídico concreto explorado.
+- **Como pensar para acertar:** sequência reutilizável de análise.
+- **Referência à apostila de estudo:** seção ou âncora real.
+- **Data da fonte:** quando houver risco de atualização.
+```
+
+A análise da alternativa correta já deve explicar por que ela resolve o caso; não repita a opção em um campo redundante. O campo `Literalidade e interpretação` e a data da fonte devem ser usados somente quando forem relevantes, sem preencher o comentário com `Não se aplica`. Base e referência permanecem obrigatórias.
+
+Em comandos negativos, como “assinale a INCORRETA”, use a polaridade do enunciado e explicite que o gabarito identifica a afirmação errada:
+
+```markdown
+- **Gabarito:** C (a afirmação incorreta).
+- **Nível:** Difícil.
+- **A) está correta:** explicação jurídica ligada exatamente a A.
+- **B) está correta:** explicação jurídica ligada exatamente a B.
+- **C) está incorreta:** erro que torna C o gabarito.
+- **D) está correta:** explicação jurídica ligada exatamente a D.
+- **Observação:** a questão pede a alternativa incorreta; por isso, C é o gabarito.
+- **Conceito cobrado:** instituto ou distinção precisa.
+- **Base normativa, jurisprudencial, doutrinária ou técnica:** fundamento aplicável, priorizando fonte primária quando houver.
+- **Pegadinha usada:** erro jurídico concreto explorado.
+- **Como pensar para acertar:** sequência reutilizável de análise.
+- **Referência à apostila de estudo:** seção ou âncora real.
+- **Data da fonte:** quando houver risco de atualização.
+```
 
 Frases genéricas repetidas, como `contraria a regra do enunciado`, não explicam o erro e não são aceitas.
 
@@ -272,13 +331,14 @@ A Semana 8 deve conter dois pareceres completos dentro dos simulados oficiais. O
 
 ## Super simulado semanal
 
-O arquivo `semana_XX_super_simulado.md` terá 60 questões inéditas e difíceis, suplementares às 420 do banco.
+O arquivo `semana_XX_super_simulado.md` terá 60 questões inéditas e de dificuldade predominantemente alta, suplementares às 420 do banco. A matriz de 12 médias, 24 difíceis e 24 muito difíceis é uma exceção pedagógica deliberada à proporção geral para criar um teste de estresse; qualquer adaptação deve ser declarada e justificada antes da produção.
 
 Deve:
 
 - integrar os seis dias;
 - respeitar a distribuição e o estágio do cronograma;
 - conter somente A a D;
+- informar o nível no item e no comentário;
 - ser resolvido sem consulta e com tempo definido;
 - trazer comentários completos, sem boilerplate;
 - apontar para teoria e fonte reais.
@@ -292,13 +352,16 @@ Confirmar individualmente:
 - o comando é claro e suficiente;
 - há uma única melhor resposta;
 - o gabarito foi resolvido sem depender do comentário já escrito;
-- A, B, C e D são pertinentes;
+- A, B, C e D são distintas e os três distratores são pertinentes;
 - a correta e os distratores respeitam a fonte vigente;
 - a data de corte jurisprudencial foi observada;
 - o comentário responde exatamente ao comando;
+- cada explicação A–D ainda descreve a alternativa da mesma letra depois de qualquer reordenação;
 - a referência existe e ensina o conteúdo;
-- a dificuldade declarada corresponde ao esforço;
-- não há duplicação literal ou variação superficial;
+- o nível aparece logo abaixo do título, repete-se no comentário e corresponde ao esforço;
+- a correta não se destaca por extensão, especificidade, tom ou construção gramatical;
+- não há duplicação literal, duplicata aproximada ou variação superficial;
+- não há três letras iguais consecutivas nem motivo de duas a quatro letras repetido três vezes sem revisão e justificativa;
 - não há pista involuntária pelo tamanho, tom ou gramática.
 
 ## Auditoria antes do aceite
@@ -307,18 +370,23 @@ Confirmar:
 
 - quatro arquivos semanais presentes;
 - edital e fontes revalidados;
-- 300 principais, 120 extras e 420 comentários, quando o banco integral tiver sido produzido;
-- 60 itens do super simulado;
+- 300 principais, 120 extras, 420 gabaritos e 420 comentários, quando o banco integral tiver sido produzido;
+- 168 questões médias, 168 difíceis e 84 muito difíceis, com níveis sincronizados;
+- 60 itens, 60 gabaritos e 60 comentários no super simulado, com matriz de 12 médias, 24 difíceis e 24 muito difíceis, salvo adaptação previamente declarada e justificada;
 - pareceres e espelhos completos;
 - seis revisões fixas e seis mapas úteis;
 - matriz de rastreabilidade sem questão órfã;
-- zero alternativa E;
+- zero alternativa E, opção A–D duplicada ou numeração ausente;
 - zero referência quebrada;
 - zero conflito de vigência não declarado;
-- ao menos um parecer completo manuscrito, cronometrado e corrigido na semana normal;
+- gabaritos equilibrados, sem três letras iguais seguidas e sem motivos repetidos não justificados, com item, tabela e comentário sincronizados;
+- nenhuma pista indevida de comprimento, tom ou especificidade;
+- índices, links relativos, faixas globais e contagens dos fragmentos modulares reconciliados;
+- no aceite operacional, ao menos um parecer completo manuscrito, cronometrado e corrigido na semana normal;
 - auditoria semântica individual concluída;
 - rubrica de pelo menos 90/100;
-- nenhum critério eliminatório.
+- nenhum critério eliminatório;
+- diff sem conflito, placeholder ou artefato de edição e blocos fora do escopo preservados.
 
 ## Relatório de aceite
 
@@ -331,12 +399,19 @@ Confirmar:
 | Tópicos do edital cobertos | X/X |
 | Questões principais | X |
 | Questões extras | X |
+| Médio/Difícil/Muito difícil — banco (420) | 168/168/84 |
+| Gabaritos | X |
 | Comentários completos | X |
 | Referências válidas | X |
 | Pareceres completos | X |
-| Super simulado | X |
+| Super simulado | 60 |
+| Médio/Difícil/Muito difícil — super | matriz aplicada (padrão: 12/24/24) |
 | Questões órfãs | X |
 | Gabaritos divergentes | X |
+| Alertas de motivos repetidos no gabarito | 0 ou todos revisados e justificados |
+| Alertas de comprimento/alinhamento | 0 ou todos revisados |
+| Itens revisados/novos/substituídos/removidos | X/X/X/X |
+| Blocos preservados fora do escopo | lista |
 | Conflitos de vigência | X |
 | Status | Aprovado/Revisão obrigatória/Reprovado |
 
@@ -351,8 +426,30 @@ Para não confundir produção do projeto com aprendizagem do candidato, o relat
 
 O aceite de produção autoriza o uso do material, mas não muda a semana para `Concluída`. A exigência do parecer manuscrito permanece integralmente no aceite operacional.
 
+## Execução incremental, preservação e publicação
+
+Não produzir ou revisar simultaneamente bancos extensos de Direito e Analista de Sistemas. Trabalhe em uma única trilha, semana e componente por vez:
+
+1. **Delimitar:** registrar arquivos, dias, fragmentos e fontes autorizados; congelar tudo o que estiver fora do escopo.
+2. **Criar baseline:** conferir branch, status e diff; guardar hash ou comparação dos blocos já aprovados.
+3. **Produzir por lote:** limitar cada lote a no máximo dois dias, cerca de 140 questões, ou a um componente isolado como teoria, pareceres ou super simulado.
+4. **Auditar o lote:** conferir estrutura, níveis, vigência, A–D, gabaritos, comentários, referências, índices, duplicatas e preservação.
+5. **Aceitar:** preencher as evidências de produção aplicáveis ao lote; nenhuma publicação corrige auditoria pendente.
+6. **Publicar checkpoint:** criar commit atômico apenas com os arquivos do lote, enviar ao GitHub e integrar à `main` quando autorizado.
+7. **Sincronizar e prosseguir:** confirmar `main` local e remota no mesmo commit, diretório limpo e caminho de reversão antes do próximo lote.
+
+### Plano transitório de migração — julho de 2026
+
+Neste ciclo de migração, Direito começa somente depois da Semana 2 de Analista. A Semana 1 jurídica será tratada em lotes D1–D2, D3–D4 e D5–D6; pareceres e super simulado formam lotes separados quando exigirem revisão substancial. Este roteiro deixa de reger o trabalho quando os materiais legados indicados abaixo forem migrados.
+
+## Aplicação ao material jurídico existente
+
+- **Semana 1:** os três fragmentos contêm 140 itens cada, totalizando 420 questões, e o super simulado contém 60. O banco utiliza classificações e comentários legados, em parte declarados por faixa e em parte condensados na mesma linha; ainda não segue integralmente o título com `Nível`, a matriz 20/20/10 e 8/8/4 nem o comentário canônico deste padrão. A existência de relatório de aceite anterior não substitui a nova auditoria. Qualquer rótulo anterior de `Material aprovado para execução` permanece apenas como registro do padrão anterior, não vale como aceite sob esta versão e só será atualizado após a migração. O status é **Legado em migração — sem aceite sob esta versão**, com tratamento pelos três lotes definidos acima.
+- **Semanas futuras:** devem nascer no formato novo e não podem usar o legado da Semana 1 como justificativa para reduzir rastreabilidade, comentários ou calibração.
+
 ## Regra de status
 
+- `Legado em migração — sem aceite sob esta versão`: estado transitório para material produzido antes deste padrão; não representa nota, aprovação nem reprovação pela rubrica atual e deve ser substituído por um dos estados formais após a migração e a auditoria completa;
 - `Planejado`: ainda não produzido;
 - `Em produção`: arquivos incompletos;
 - `Em auditoria`: conteúdo completo, mas não aceito;
