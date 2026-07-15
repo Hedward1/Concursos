@@ -6,7 +6,7 @@
 - **Abertura e fechamento técnico:** 15/07/2026.
 - **Escopo:** Dia 1 — Arquitetura e Organização de Computadores; Dia 2 — Sistemas Operacionais; 50 questões principais e 20 complementares por dia.
 - **Situação:** **Aprovado tecnicamente**, sem bloqueadores semânticos ou mecânicos.
-- **Publicação:** PR em rascunho ainda pendente; esta é a única etapa procedural não concluída neste documento.
+- **Publicação:** [PR #7](https://github.com/Hedward1/Concursos/pull/7) aberto em rascunho contra a `main`, sem merge.
 - **Modelo pedagógico:** Dias 3 e 4, aprovados no baseline e preservados sem alteração.
 - **Fora do escopo:** Dias 5 e 6, super simulado e relatórios históricos; o lote seguinte não foi iniciado.
 
@@ -314,7 +314,7 @@ Validações independentes confirmaram resposta única, comentários A–D, difi
 - [x] o Bloco 6 não introduz conteúdo novo;
 - [x] Dias 3–6 e arquivos históricos foram preservados;
 - [x] git diff --check terminou sem erro;
-- [ ] o PR em rascunho deste lote foi publicado; etapa procedural pendente.
+- [x] o PR em rascunho deste lote foi publicado, sem merge.
 
 ## Veredito
 
@@ -325,5 +325,5 @@ Validações independentes confirmaram resposta única, comentários A–D, difi
 | Dependências de conteúdo posterior | 0 |
 | Ambiguidades remanescentes | 0 |
 | Sessões acima do limite | 0 |
-| Próximo lote | não iniciado; aguarda revisão e publicação deste PR |
-| Publicação | pendente nesta versão do relatório |
+| Próximo lote | não iniciado; aguarda revisão do PR #7 |
+| Publicação | [PR #7 em rascunho](https://github.com/Hedward1/Concursos/pull/7), sem merge |
