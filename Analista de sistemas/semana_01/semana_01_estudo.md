@@ -1238,24 +1238,151 @@ Pegadinhas frequentes: usar `WHERE` depois de `GROUP BY` no lugar errado, confun
 | Pausa | 15min | Descanso |
 | 3 | 1h | SQL ANSI: SELECT, INSERT, UPDATE, DELETE, DDL e filtros |
 | Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Legislação CRA/CFA: competências do CRA-PR e fiscalização |
+| 4 | 40min | Legislação CRA/CFA: competência, jurisdição, registro, ética e processo regular |
 | Pausa | 5min | Descanso |
-| 5 | 30min | Português: interpretação de tabelas e enunciados com comandos SQL |
-| 6 | 20min | Caderno de erros: comandos SQL confundidos |
+| 5 | 30min | Português aplicado: comando, porquês, regência, conectores, concordância e tese |
+| 6 | 20min | Recuperação ativa do que já foi estudado e atualização do caderno de erros |
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 4 — Legislação CRA/CFA (40min)
+<a id="s1-d3-b4"></a>
+### Bloco 4 — Legislação CRA/CFA: base suficiente para as Extras 3.1–3.15 (40min)
 
-O CRA-PR registra e fiscaliza na respectiva jurisdição; o CFA exerce coordenação e normatização nacional. Fiscalização profissional busca regularidade do exercício e proteção da sociedade. **Exemplo:** uso de título ou registro sem regularidade exige analisar sujeito, atividade e competência regional. **Pegadinha:** atribuir ao CFA a execução regional ordinária.
+Este bloco ensina apenas o núcleo confirmado nas fontes oficiais já relacionadas ao final da apostila. Ele não atribui artigo, prazo, rito detalhado ou sanção específica a norma cujo texto não tenha sido conferido.
 
-### Bloco 5 — Leitura de SQL e tabelas (30min)
+#### Como as fontes se encaixam
 
-Leia primeiro a cláusula que restringe o resultado: `WHERE` filtra linhas antes do agrupamento; `HAVING` filtra grupos; `LEFT JOIN` preserva linhas da tabela à esquerda; `NULL` não é igual a valor comum. **Exemplo:** departamentos sem empregados pedem `LEFT JOIN` e teste `IS NULL`. **Pegadinha:** usar `= NULL`.
+| Fonte confirmada | Função segura neste bloco | O que não presumir |
+|---|---|---|
+| Lei Federal nº 4.769/1965 | estrutura a profissão e o Sistema CFA/CRAs | procedimento detalhado não transcrito neste material |
+| Decreto Federal nº 61.934/1967 | regulamenta a execução da lei | poder para contrariar ou ampliar livremente a lei |
+| Regimento Interno do CRA-PR, aprovado pela RN CFA nº 651/2024 | organiza órgãos, funcionamento e competências internas do CRA-PR | competência nacional ou alteração do campo profissional definido em norma superior |
+| Código de Ética aprovado pela RN CFA nº 671/2025 | disciplina deveres, condutas, infrações e sanções éticas de profissionais e pessoas jurídicas, observadas as especificidades | aplicação idêntica de toda sanção a pessoa física e pessoa jurídica |
 
-### Bloco 6 — Caderno de erros (20min)
+**Controle de fonte:** o edital e suas retificações definem a referência cobrada. Uma postagem, um resumo ou a simples existência de norma numericamente posterior não substituem o edital. Se apenas o objeto ou a ementa de uma resolução estiver confirmado, é possível registrar esse objeto, mas não inventar artigo, prazo, requisito ou penalidade. A literalidade só deve ser aprofundada com o texto oficial correspondente.
 
-Registre comando, efeito e risco: `DELETE` remove linhas filtráveis; `TRUNCATE` limpa tabela conforme SGBD; `DROP` remove objeto; `UPDATE` sem `WHERE` pode afetar muitas linhas. Faça um exemplo mínimo de `SELECT`, `JOIN` e `GROUP BY` para cada erro.
+#### CFA, CRA, jurisdição e fiscalização
+
+- **CFA:** atua no plano nacional, com coordenação, orientação e normatização geral do Sistema, dentro de suas competências.
+- **CRA:** executa as atribuições regionais, registra, fiscaliza e apura situações em sua jurisdição conforme a legislação aplicável.
+- **CRA-PR:** exerce sua atuação regional no Paraná. Registro ou formação não transformam sua jurisdição em nacional.
+- **Fiscalização:** verifica a regularidade do exercício, a atividade efetivamente desenvolvida, o uso da condição profissional e a participação técnica. Seu propósito institucional é proteger a sociedade e a regularidade profissional, e não apenas conferir pagamento de anuidade.
+
+**Regra de aplicação:** antes de resolver um caso, identifique quatro elementos: **quem** praticou a conduta, **qual** atividade foi exercida, **onde** ocorreu o fato e **qual fonte** disciplina o objeto. A denúncia não escolhe o órgão competente nem a sanção.
+
+**Exemplo:** uma consultoria no Paraná divulga serviço típico da área de Administração e indica como responsável alguém que apenas cedeu o número de registro. O caminho correto é examinar a atividade da empresa, a regularidade aplicável, a participação técnica real e a competência do CRA da jurisdição. O contrato ou a existência de CNPJ não tornam irrelevante essa análise.
+
+**Pegadinha:** atribuir ao CFA a fiscalização regional ordinária ou afirmar que qualquer CRA pode sancionar diretamente fato ocorrido no Paraná sem observar a distribuição institucional e territorial.
+
+#### Ética de pessoas físicas e jurídicas
+
+O Código indicado no edital alcança profissionais e pessoas jurídicas, respeitadas as diferenças aplicáveis a cada sujeito. Entre os núcleos confirmados para estudo estão:
+
+- zelo, honestidade, responsabilidade e independência técnica;
+- sigilo profissional, ressalvada justa causa ou hipótese legal aplicável;
+- uso regular do nome, do título e do registro;
+- atuação técnica efetiva, sem assinatura de fachada ou validação de trabalho sem participação;
+- colaboração com a fiscalização, sem perda do direito de defesa;
+- atualização de endereço ou dado cadastral exigível;
+- vedação a facilitar exercício por pessoa não habilitada e a dificultar a fiscalização;
+- cuidado para não apresentar informação enganosa, promessa absoluta de resultado ou condição profissional inexistente.
+
+Ao analisar divulgação de serviço ou pressão de cliente, não procure primeiro uma pena. Verifique se a conduta preserva honestidade, independência, informação correta e atuação técnica efetiva. Se o cliente exigir conclusão que o profissional não consegue sustentar, a resposta segura é recusar a validação e manter apenas a conclusão tecnicamente fundamentada.
+
+**Pessoa jurídica não recebe automaticamente o mesmo tratamento sancionador da pessoa física.** No conteúdo confirmado da RN CFA nº 671/2025 usado nesta apostila, suspensão do exercício e cancelamento do registro profissional não são aplicados à pessoa jurídica. Isso não significa que ela esteja fora da disciplina ou da fiscalização; significa que o sujeito e a sanção precisam ser compatíveis com a fonte.
+
+#### Contraditório, defesa e decisão fundamentada
+
+Fiscalizar não autoriza punir de imediato. Quando a atuação puder resultar em sanção, o roteiro seguro é:
+
+1. verificar o órgão e a jurisdição competentes;
+2. dar ciência dos fatos atribuídos ao interessado;
+3. permitir contraditório e oportunidade de defesa;
+4. examinar as provas e a norma aplicável;
+5. produzir decisão fundamentada por autoridade competente;
+6. aplicar somente consequência prevista e adequada ao sujeito e ao caso.
+
+Prova documental, denúncia ou possibilidade de recurso posterior não dispensam defesa na apuração. Também não existe cancelamento ou cassação automática para toda irregularidade.
+
+**Exemplo resolvido:** foi apresentada denúncia documentada contra profissional no Paraná. A resposta correta não é aplicar a sanção máxima imediatamente. O CRA competente deve apurar o fato em processo regular, permitir defesa e fundamentar a decisão conforme a fonte aplicável.
+
+**Aplicação nas Extras 3.1–3.15:** separe sempre competência nacional de execução regional; fiscalização de disciplina ética; pessoa física de pessoa jurídica; norma confirmada de detalhe pendente; apuração regular de punição automática.
+
+<a id="s1-d3-b5"></a>
+### Bloco 5 — Português e interpretação aplicada: base para as Extras 3.16–3.20 (30min)
+
+#### Leitura do comando
+
+Circule a palavra que define a tarefa: **correta**, **incorreta**, **exceto**, **mantém o sentido**, **de acordo com o texto** ou **infere-se**. Uma alternativa pode estar gramaticalmente bem escrita e ainda responder a comando diferente. Em texto técnico, preserve também a relação lógica: possibilidade não é certeza; condição não é causa; oposição não é conclusão.
+
+#### Os quatro porquês
+
+| Forma | Uso | Exemplo |
+|---|---|---|
+| `por que` | pergunta direta/indireta ou equivalente a “por qual razão” | “Perguntou-se **por que** o acesso falhou.” |
+| `porque` | resposta, causa ou explicação | “O acesso falhou **porque** faltou espaço.” |
+| `por quê` | no fim da oração, antes de pausa | “O serviço parou **por quê**?” |
+| `porquê` | substantivo, normalmente com determinante | “O relatório registrou **o porquê** da falha.” |
+
+Modelo completo: “Perguntou-se **por que** o serviço falhou, explicou-se **porque** faltou espaço e registrou-se **o porquê** no chamado.”
+
+#### Regências básicas de prova
+
+- aspirar **a** um cargo, no sentido de desejar;
+- obedecer **a** uma regra ou **ao** edital;
+- assistir **a** um julgamento, no sentido de ver;
+- recorrer **de** uma decisão;
+- chegar **a** um órgão ou **ao** local;
+- informar **algo a alguém**: “informou o resultado **aos colegas**”;
+- preferir **uma coisa a outra**, e não “preferir mais” nem “preferir do que”.
+
+Exemplo correto: “O candidato aspirava **ao** cargo, obedeceu **ao** edital, recorreu **da** decisão e assistiu **ao** julgamento.”
+
+#### Conectores e preservação do sentido
+
+- `mas`, `porém`, `contudo`, `entretanto`: oposição ou ressalva;
+- `porque`, `visto que`: causa/explicação;
+- `portanto`, `logo`, `por isso`: conclusão;
+- `embora`, `ainda que`, `mesmo que`: concessão;
+- `se`, `caso`, `desde que`: condição;
+- `para que`, `a fim de que`: finalidade.
+
+Exemplo: “O índice reduziu o custo das leituras; **entretanto**, elevou a manutenção das escritas. **Logo**, sua adoção deve considerar o padrão de uso.” A primeira ligação opõe benefícios e custos; a segunda conclui. Trocar `entretanto` por `porque` alteraria o sentido.
+
+#### Concordância nominal
+
+Adjetivos e particípios usados como adjetivos concordam com o substantivo: “seguem **anexas as planilhas**”, “seguem **inclusos os pareceres**”. O adjetivo `quite` varia: “o servidor está quite”; “os servidores estão quites”.
+
+#### Tese em uma frase
+
+Tese não é enumeração de palavras positivas; é uma posição que relaciona condições e consequência. Modelo: “A transformação digital amplia eficiência e acesso quando combina segurança, interoperabilidade, acessibilidade, canais alternativos e avaliação por indicadores.” A frase defende um avanço condicionado, sem afirmar que tecnologia resolve tudo automaticamente.
+
+**Entrega do bloco:** resolva um exemplo de cada tópico — comando, porquês, regência, conectores e concordância — e escreva uma tese de uma frase. Corrija cada resposta citando a regra usada.
+
+<a id="s1-d3-b6"></a>
+### Bloco 6 — Recuperação ativa e caderno de erros (20min)
+
+Este bloco **não apresenta conceito novo e não possui banco próprio de Extras**. Recupere apenas o que já foi estudado nos Blocos 1–5 do Dia 3.
+
+Sem consultar a teoria, escolha seis pontos: dois de banco de dados, dois do Bloco 4 e dois do Bloco 5. Para cada ponto, preencha:
+
+| Campo | Registro obrigatório |
+|---|---|
+| Confusão | o que você trocou ou esqueceu |
+| Regra recuperada | explicação em uma frase, com suas palavras |
+| Contraexemplo | situação em que a regra não se aplica como você pensava |
+| Fonte interna | título exato da seção estudada |
+| Próxima ação | uma questão a refazer ou exemplo próprio a produzir |
+
+**Entrega:** seis registros completos e uma lista dos dois pontos que deverão ser retomados no início do Dia 4. Se não conseguir formular a regra sem consulta, marque o item como “não retido”; não acrescente teoria nova ao bloco.
+
+### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 3
+
+| Faixa | Bloco | Matéria | Referência suficiente |
+|---|---|---|---|
+| Extras 3.1–3.15 | Bloco 4 | Legislação CFA/CRA | [`s1-d3-b4`](#s1-d3-b4) |
+| Extras 3.16–3.20 | Bloco 5 | Língua Portuguesa e interpretação aplicada | [`s1-d3-b5`](#s1-d3-b5) |
+| Sem faixa própria | Bloco 6 | Recuperação ativa | [`s1-d3-b6`](#s1-d3-b6); entrega prática, sem questões novas |
 
 ## Teoria explicada de forma didática
 
@@ -1630,9 +1757,12 @@ ORDER BY uf;
 
 Esse comando lista UFs distintas de profissionais ativos, em ordem. A pegadinha é achar que `ORDER BY` filtra. Ele apenas ordena o que já foi selecionado.
 
+<a id="s1-d3-group-by-having"></a>
 ### GROUP BY, HAVING e agregações
 
 `GROUP BY` agrupa linhas. Funções como `COUNT`, `SUM`, `AVG`, `MIN` e `MAX` calculam valores por grupo. `HAVING` filtra grupos depois da agregação.
+
+Em contagens, diferencie: `COUNT(*)` conta todas as linhas do resultado; `COUNT(coluna)` conta apenas as linhas em que a coluna não é `NULL`. Exemplo: para os valores `1000, NULL, 2000, NULL`, `COUNT(valor)` resulta em 2 e `COUNT(*)`, em 4.
 
 Exemplo:
 
@@ -1769,7 +1899,7 @@ Transação é unidade lógica de trabalho. ACID resume:
 
 ## Revisão fixa do Dia 3
 
-**Foco:** Legislação CRA/CFA e Português. Revise competências do Sistema, registro, fiscalização, ética, coesão e reescrita. **Base:** teoria do Dia 4 e Dia 5. **Pegadinha:** confundir competência nacional do CFA com execução regional do CRA.
+**Foco:** Legislação CRA/CFA e Português. Revise competências do Sistema, registro, fiscalização, ética, comando, conectores, regência e concordância. **Base já estudada:** [Bloco 4 do Dia 3](#s1-d3-b4) e [Bloco 5 do Dia 3](#s1-d3-b5). **Pegadinha:** confundir competência nacional do CFA com execução regional do CRA ou trocar conclusão por causa.
 
 
 ## Mapa de conexões do Dia 3
@@ -1820,24 +1950,133 @@ Em legislação específica, a Consulplan costuma cobrar:
 | Pausa | 15min | Descanso |
 | 3 | 1h | Código de Ética - RN CFA 671/2025 + leitura dirigida das demais normas citadas no edital |
 | Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Administração Pública: princípios do art. 37 da CF |
+| 4 | 40min | Administração Pública e RLM programado: teoria mínima completa para as Extras 4.1–4.10 e 4.16–4.20 |
 | Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: parágrafo argumentativo sobre ética no serviço público |
-| 6 | 20min | Caderno de erros: competências CFA x CRA |
+| 5 | 30min | Português/discursiva: norma-padrão e parágrafo argumentativo completo |
+| 6 | 20min | Recuperação ativa: competências CFA x CRA e entrega do caderno de erros |
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 4 — Administração Pública (40min)
+<a id="s1-d4-b4"></a>
+### Bloco 4 — Administração Pública e RLM programado (40min)
 
-Art. 37 reúne legalidade, impessoalidade, moralidade, publicidade e eficiência. Legalidade não é liberdade ampla do agente; eficiência não convalida ato ilegal; publicidade institucional não pode promover autoridade. **Exemplo:** campanha oficial com nome e slogan pessoal viola impessoalidade. **Pegadinha:** tratar transparência como autorização para promoção pessoal.
+Este bloco contém a teoria necessária para as Extras 4.1–4.10 e 4.16–4.20. Ele não depende do Dia 6.
 
-### Bloco 5 — Parágrafo argumentativo técnico (30min)
+#### LIMPE aplicado
 
-Escreva tese, razão e consequência: “A ética profissional é indispensável porque protege a confiança no serviço e orienta decisões tecnicamente independentes.” Em seguida, desenvolva um exemplo de sigilo, responsabilidade ou fiscalização. **Pegadinha:** listar normas sem defender uma ideia central.
+| Princípio | Regra operacional | Exemplo de erro |
+|---|---|---|
+| Legalidade | a Administração atua dentro da competência e da norma | restringir direito sem base legal |
+| Impessoalidade | a atuação se dirige ao interesse público, sem favorecimento ou promoção pessoal | publicidade oficial com nome, imagem ou slogan de autoridade |
+| Moralidade | exige conduta leal, honesta e proba, não só aparência formal de legalidade | usar competência para perseguir ou beneficiar alguém |
+| Publicidade | transparência é regra, ressalvados sigilo legal e proteção de dados | divulgar dado pessoal sem finalidade ou ocultar decisão sem fundamento |
+| Eficiência | busca resultado e uso adequado de recursos, sempre dentro da lei | justificar ilegalidade porque a solução seria mais rápida |
 
-### Bloco 6 — Caderno de erros (20min)
+**Aplicação:** uma campanha institucional deve informar o cidadão, e não promover a autoridade. A publicação do ato não corrige desvio de finalidade nem transforma promoção pessoal em transparência legítima.
 
-Construa duas colunas: **CFA** (coordenação/normatização nacional) e **CRA** (registro/fiscalização regional). Em cada erro, acrescente a norma-base: Lei, Decreto, Regimento ou Código de Ética.
+#### Ato administrativo, poder de polícia e motivação
+
+Os elementos básicos do ato são **competência, finalidade, forma, motivo e objeto**. Competência responde quem pode agir; finalidade aponta o interesse público; forma é o modo exigido; motivo são os fatos e fundamentos jurídicos; objeto é o efeito produzido.
+
+Não confunda:
+
+- **motivo:** pressuposto de fato e de direito da decisão;
+- **motivação:** exposição objetiva desses pressupostos no processo ou no ato.
+
+O **poder de polícia administrativa** permite condicionar ou limitar direitos e atividades nos termos da lei para proteger o interesse público. Não é autorização para criar restrição sem base normativa nem se reduz a sanção penal.
+
+**Exemplo:** se a autoridade usa fiscalização formalmente possível para perseguir desafeto, pode haver violação de impessoalidade, moralidade e finalidade. Divulgar a decisão não elimina o vício.
+
+#### Responsabilidade civil do Estado e nexo causal
+
+No roteiro básico, procure **conduta estatal, dano e nexo causal**. Responsabilidade objetiva dispensa a vítima de provar culpa do agente na atuação comissiva típica, mas não dispensa dano nem nexo e não significa indenização automática.
+
+- **omissão:** verifique se havia dever concreto e possibilidade de agir, se houve falha estatal, dano e nexo;
+- **culpa exclusiva da vítima ou fato externo que rompa o nexo:** pode excluir a responsabilidade, conforme o caso;
+- **culpa concorrente:** pode reduzir a indenização de acordo com a contribuição causal;
+- **caso fortuito ou força maior:** só afastam a responsabilidade se efetivamente romperem o nexo analisado.
+
+**Exemplo:** dano ocorrido em espaço público, sozinho, não basta. É preciso relacioná-lo a ação ou omissão juridicamente relevante do Estado. Se a vítima contribuiu em parte, a análise é de atenuação; se causou sozinha o evento e rompeu o nexo, pode haver exclusão.
+
+<a id="s1-d4-contratacao-publica"></a>
+#### Contratação pública: modalidade, fases e motivação objetiva
+
+O objeto orienta a modalidade e o critério. Para esta faixa:
+
+- **concurso:** seleção de trabalho técnico, científico ou artístico, com prêmio ou remuneração ao vencedor;
+- **leilão:** alienação de bens;
+- **pregão:** bens e serviços comuns;
+- **concorrência:** hipóteses definidas pela Lei nº 14.133/2021 conforme objeto e regime aplicável.
+
+Na **dispensa**, a competição seria possível, mas a lei autoriza contratar diretamente em hipótese específica. Na **inexigibilidade**, a competição é inviável, como pode ocorrer diante de exclusividade efetivamente comprovada. Nenhuma das duas permite escolha verbal ou sem instrução: continuam necessários processo, motivação, justificativa e controle.
+
+Sequência geral: **fase preparatória → divulgação do edital → propostas/lances → julgamento → habilitação → recursos → homologação**. A ordem pode ter ajustes legalmente admitidos, mas não começa pela contratação e não deixa o planejamento para depois.
+
+Motivação objetiva significa registrar necessidade, objeto, base legal, critério, justificativas e elementos técnicos verificáveis. Mesmo contratação direta exige processo, justificativa e controle; preferência pessoal não substitui motivação.
+
+<a id="s1-d4-rlm-extras"></a>
+#### Microtrilha de RLM para as Extras 4.16–4.20
+
+1. **Proporcionalidade direta:** encontre a taxa unitária. Exemplo: 48 processos em 4 dias correspondem a 12 por dia; em 7 dias, 84.
+2. **Três conjuntos:** `n(A união B união C) = n(A) + n(B) + n(C) - n(A interseção B) - n(A interseção C) - n(B interseção C) + n(A interseção B interseção C)`. Para achar “nenhum”, subtraia a união do total.
+3. **Negação:** `não(P e Q) = não P ou não Q`; a negação de “todo A é B” é “algum A não é B”; a negação de “algum A é B” é “nenhum A é B”.
+4. **PA:** `an = a1 + (n - 1)r` e `Sn = n(a1 + an)/2`. Primeiro calcule o total planejado; depois aplique o percentual restante.
+5. **Probabilidade sem reposição:** o total diminui após cada retirada. Para “exatamente dois de um tipo e um de outro”, conte as combinações favoráveis e divida pelas combinações totais. Use `C(n,k) = n!/[k!(n-k)!]`; com `a` itens de um tipo e `b` de outro, escolher exatamente dois do primeiro e um do segundo produz `C(a,2) x C(b,1)` casos favoráveis em `C(a+b,3)` casos totais.
+6. **Percentuais sucessivos:** cada taxa incide sobre a base indicada, não necessariamente sobre o total inicial. Se 40% de `T` são rejeitados, restam `0,60T`; se 25% dos restantes vão para complementação, esse grupo vale `0,25 x 0,60T = 0,15T`, e os aceitos valem `0,45T`. Se parte de um grupo muda de classificação, subtraia da origem e some ao destino antes de comparar os totais finais.
+
+**Exemplo integrado de conjuntos:** em 60 candidatos, 35 estudam A, 30 estudam B, 20 estudam C, as interseções aos pares são 15, 12 e 10, e 5 estudam as três. A união é `35 + 30 + 20 - 15 - 12 - 10 + 5 = 53`; portanto, 7 não estudam nenhuma.
+
+**Exemplo de probabilidade:** entre 5 acessos liberados e 2 bloqueados, escolher 2 sem reposição e obter um de cada tipo tem `5 x 2 = 10` pares favoráveis em `C(7,2) = 21` pares possíveis: `10/21`.
+
+**Pegadinhas do bloco:** eficiência acima da lei; publicidade como promoção; dano sem nexo; culpa concorrente tratada como exclusiva; concurso confundido com concorrência; somar interseções duas vezes; negar conjunção mantendo `e`; manter denominador em retirada sem reposição.
+
+<a id="s1-d4-b5"></a>
+### Bloco 5 — Português e parágrafo argumentativo completo (30min)
+
+#### Regras necessárias para as Extras 4.11–4.15
+
+- oração adjetiva **restritiva**, sem vírgulas, delimita o antecedente: “Foram bloqueados os acessos **que estavam vencidos**” significa apenas os vencidos;
+- oração adjetiva **explicativa**, entre vírgulas, acrescenta informação sobre todo o antecedente;
+- há crase quando um termo exige preposição `a` e o seguinte admite artigo ou integra pronome iniciado por `a`: `referiu-se àquela irregularidade`, `encaminhou à chefia`;
+- não há crase antes de verbo: `começou a revisar`;
+- `embora`, `ainda que` e `mesmo que` indicam concessão;
+- `para que` e `a fim de que` indicam finalidade;
+- linguagem administrativa deve ser objetiva, formal e impessoal: prefira “Solicita-se o envio do relatório até 18 de julho de 2026, para instrução do processo” a pedidos vagos ou coloquiais.
+
+#### Estrutura do parágrafo
+
+Use quatro movimentos: **tópico frasal**, **explicação**, **exemplo** e **fechamento**.
+
+**Modelo completo:**
+
+> A ética profissional é indispensável à atuação dos conselhos porque preserva a confiança social e orienta decisões tecnicamente independentes. Quando um responsável se recusa a alterar relatório sem base ou protege informação sigilosa nos limites legais, ele impede que interesses particulares deformem a finalidade do serviço. Essa postura também fortalece a fiscalização, pois permite que os fatos sejam apurados com transparência, defesa e critérios objetivos. Assim, ética e competência técnica se complementam na proteção da sociedade.
+
+**Comentário do modelo:**
+
+- primeira frase: apresenta a tese;
+- segunda: explica e concretiza com dois exemplos;
+- terceira: mostra consequência institucional;
+- quarta: conclui o raciocínio sem abrir assunto novo.
+
+**Aplicação:** escreva outro parágrafo com a tese “A motivação objetiva melhora a legitimidade da contratação pública”. Use um exemplo, um conector de consequência e uma frase final. Revise crase, concordância e pontuação antes de entregar.
+
+**Pegadinha:** enumerar normas ou palavras como “ética”, “transparência” e “eficiência” sem explicar a relação entre elas não constitui argumento.
+
+<a id="s1-d4-b6"></a>
+### Bloco 6 — Recuperação CFA x CRA e caderno de erros (20min)
+
+Este bloco não acrescenta norma ou conceito. Sem consultar, construa duas colunas: **CFA** — coordenação e normatização nacional — e **CRA** — registro, fiscalização e execução regional dentro da jurisdição. Para cada erro, associe apenas uma das fontes já estudadas: Lei, Decreto, Regimento aprovado pela RN nº 651/2024 ou Código de Ética aprovado pela RN nº 671/2025.
+
+**Entrega:** cinco casos classificados com `sujeito | conduta | território | órgão | fonte | motivo da classificação`. Depois confira o Bloco 4 do Dia 3 e marque em outra cor qualquer classificação corrigida. Não use resolução pendente para preencher lacuna.
+
+### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 4
+
+| Faixa | Bloco | Matéria | Referência suficiente |
+|---|---|---|---|
+| Extras 4.1–4.10 | Bloco 4 | Administração Pública | [`s1-d4-b4`](#s1-d4-b4), itens LIMPE, ato, responsabilidade e contratação |
+| Extras 4.11–4.15 | Bloco 5 | Português e escrita administrativa | [`s1-d4-b5`](#s1-d4-b5) |
+| Extras 4.16–4.20 | Bloco 4 | RLM programado | [`s1-d4-b4`](#s1-d4-b4), microtrilha de RLM |
+| Sem faixa própria | Bloco 6 | Recuperação CFA x CRA | [`s1-d4-b6`](#s1-d4-b6); entrega prática, sem questões novas |
 
 ## Teoria explicada de forma didática
 
@@ -1899,6 +2138,7 @@ Não. Decreto regulamentar detalha a execução da lei, mas não pode inovar con
 
 Não. Ele regulamenta a lei. Ambos devem ser lidos em conjunto.
 
+<a id="s1-d4-regimento"></a>
 ### 3. Regimento Interno do CRA-PR e RN CFA nº 651/2024
 
 O edital cita o Regimento Interno do CRA-PR. A fonte oficial do CFA informa que a **Resolução Normativa CFA nº 651/2024 aprova o Regimento do Conselho Regional de Administração do Paraná**. Por isso, nesta apostila a RN CFA nº 651/2024 é usada apenas como a norma de aprovação/organização do Regimento.
@@ -1937,6 +2177,7 @@ Não. O Plenário é órgão colegiado de deliberação superior do CRA-PR e dec
 
 Não. Ela está sendo citada porque aprova o Regimento do CRA-PR, que é conteúdo indicado no edital.
 
+<a id="s1-d4-codigo-etica"></a>
 ### 4. Código de Ética - RN CFA nº 671/2025
 
 O edital consolidado conforme Retificação I cita a RN CFA nº 671/2025. A página oficial do CFA informa que essa norma aprova o Código de Ética e Disciplina dos Profissionais de Administração e das Pessoas Jurídicas e revoga a RN CFA nº 640/2024.
@@ -2017,34 +2258,32 @@ Segundo o texto da RN CFA 671/2025, as sanções de suspensão e cancelamento n�
 
 ### 5. Leitura dirigida das demais normas do edital
 
-O edital oficial consolidado conforme Retificação I também cita a Lei nº 12.514/2011 e as Resoluções Normativas CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020, 651/2024 e 680/2025. Nesta Semana 1, a leitura será dirigida, sem aprofundar todos os artigos. O objetivo é entender o assunto de cada norma e por que ela pode cair.
+O edital oficial consolidado conforme Retificação I também cita a Lei nº 12.514/2011 e as Resoluções Normativas CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020, 651/2024 e 680/2025. Nesta Semana 1, somente conteúdo efetivamente consolidado na apostila pode fundamentar questão. A presença do número em uma lista não equivale a ensino da norma.
 
-Antes da apostila de questões, as fontes oficiais de cada norma serão novamente conferidas. Quando uma descrição abaixo estiver baseada no título/ementa oficial já localizada, ela será tratada como orientação de estudo; se o texto integral ainda não tiver sido consolidado no material, o aprofundamento ficará marcado para revisão posterior.
-
-| Norma | O que trata | Por que pode cair |
+| Norma | Estado nesta versão | Uso permitido nas questões da Semana 1 |
 |---|---|---|
-| Lei nº 12.514/2011 | Regras gerais sobre contribuições devidas aos conselhos profissionais, incluindo anuidades, taxas e execução de débitos | Conselhos profissionais dependem de registro, anuidades e cobrança; a banca pode cobrar natureza das contribuições e consequências da inadimplência |
-| RN CFA nº 649/2024 | Regulamento de Registro do Sistema CFA/CRAs | Registro é atividade central do CRA; pode cair em questões sobre inscrição, regularidade, pessoas físicas/jurídicas e competência fiscalizatória |
-| RN CFA nº 670/2025 | Altera o Regulamento de Registro do Sistema CFA/CRAs aprovado pela RN CFA nº 649/2024 | Pode cair como atualização do regulamento de registro; atenção a mudanças de requisitos, procedimentos ou enquadramentos |
-| RN CFA nº 546/2018 | Norma do Sistema CFA/CRAs citada expressamente no edital vigente | Ponto pendente de confirmação para resumo completo antes da apostila de questões; por estar no edital, deve entrar no checklist de leitura normativa |
-| RN CFA nº 626/2023 | Norma do Sistema CFA/CRAs citada expressamente no edital vigente | Ponto pendente de confirmação para resumo completo antes da apostila de questões; pode ser usada em questão literal ou de competência institucional |
-| RN CFA nº 589/2020 | Norma do Sistema CFA/CRAs citada expressamente no edital vigente | Ponto pendente de confirmação para resumo completo antes da apostila de questões; manter atenção a ementa, sujeitos alcançados e obrigações |
-| RN CFA nº 651/2024 | Aprova o Regimento do Conselho Regional de Administração do Paraná | Pode cair diretamente porque o edital cobra Regimento Interno do CRA-PR; estudar organização, órgãos, competências e jurisdição |
-| RN CFA nº 680/2025 | Norma do Sistema CFA/CRAs citada expressamente no edital vigente | Ponto pendente de confirmação para resumo completo antes da apostila de questões; por ser norma recente no edital, merece leitura literal dirigida |
+| Lei nº 12.514/2011 | núcleo geral de contribuições confirmado | apenas distinções gerais sobre contribuições; sem prazo, valor ou consequência não explicados |
+| RN CFA nº 649/2024 | texto detalhado não consolidado no material | não usar como base de requisito, procedimento, prazo ou sanção |
+| RN CFA nº 670/2025 | texto detalhado não consolidado no material | não usar como base; não inferir alteração específica |
+| RN CFA nº 546/2018 | objeto e texto não consolidados no material | não usar como base de questão |
+| RN CFA nº 626/2023 | objeto e texto não consolidados no material | não usar como base de questão |
+| RN CFA nº 589/2020 | objeto e texto não consolidados no material | não usar como base de questão |
+| RN CFA nº 651/2024 | Regimento do CRA-PR consolidado nas seções anteriores | usar para estrutura, órgãos, funcionamento, competências internas e jurisdição explicados |
+| RN CFA nº 680/2025 | objeto e texto não consolidados no material | não usar como base de questão |
 
 #### Como estudar essa leitura dirigida
 
-1. Leia primeiro a ementa da norma para saber o assunto.
-2. Identifique quem é alcançado: profissional, pessoa jurídica, CRA, CFA, registrado ou candidato a registro.
-3. Marque verbos de obrigação: deverá, compete, fica obrigado, é vedado, poderá.
+1. Leia primeiro a publicação e a ementa oficiais para identificar objeto e vigência.
+2. Só depois do texto consolidado, identifique sujeitos, deveres e competências.
+3. Registre verbos de obrigação e exceções sem retirar o trecho do contexto.
 4. Separe regras de competência do CFA e do CRA.
-5. Registre prazos, penalidades e requisitos objetivos.
+5. Só registre prazo, penalidade ou requisito objetivo quando a fonte oficial tiver sido conferida e a explicação correspondente tiver sido incorporada à apostila.
 
 #### Exemplos de cobrança provável
 
 **Exemplo 1:** uma questão pode afirmar que a RN CFA nº 651/2024 criou o Código de Ética. A afirmação estaria errada, porque essa norma aprova o Regimento do CRA-PR. O Código de Ética indicado no edital vigente é a RN CFA nº 671/2025.
 
-**Exemplo 2:** uma questão pode apresentar caso de pessoa jurídica atuando em área de Administração sem regularidade registral. O caminho de resolução envolve Lei 4.769/1965, Decreto 61.934/1967 e regulamento de registro do Sistema CFA/CRAs.
+**Exemplo 2:** uma questão pode apresentar pessoa jurídica atuando em área de Administração. Nesta versão, é possível examinar a natureza da atividade, a competência regional e a necessidade de conferir regularidade na fonte aplicável; requisito específico de registro não explicado não pode decidir a resposta.
 
 **Exemplo 3:** uma questão pode misturar anuidade, taxa e multa. A Lei nº 12.514/2011 é relevante porque trata de contribuições devidas aos conselhos profissionais.
 
@@ -2184,11 +2423,9 @@ Não conclua automaticamente penalidade específica se o enunciado não trouxer 
 | Lei 4.769/1965 | base legal da profissão e do Sistema CFA/CRAs |
 | Decreto 61.934/1967 | regulamenta a lei |
 | Lei 12.514/2011 | trata de contribuições dos conselhos profissionais em linhas gerais |
-| RN CFA 649/2024 | regulamento de registro |
-| RN CFA 670/2025 | altera pontos do regulamento de registro |
 | RN CFA 651/2024 | aprova o Regimento Interno do CRA-PR |
 | RN CFA 671/2025 | Código de Ética indicado no edital vigente |
-| RN CFA 680/2025 | regulamento eleitoral do Sistema CFA/CRAs |
+| RNs 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025 | catalogadas no edital, mas fora da base resolutiva desta semana enquanto o conteúdo não estiver consolidado |
 
 ## Tabela de revisão rápida do Dia 4
 
@@ -2203,10 +2440,9 @@ Não conclua automaticamente penalidade específica se o enunciado não trouxer 
 | Independência técnica | autonomia responsável dentro das normas | Ceder a pressão do contratante | alterar relatório sem base |
 | Uso indevido de registro | uso irregular de nome/número profissional | Emprestar registro a terceiro | assinar trabalho alheio |
 | Fiscalização | atuação do CRA para verificar regularidade | Dificultar ou impedir fiscal | não apresentar documentos |
-| RN 649/2024 | regulamento de registro | Confundir com Código de Ética | regras de registro |
-| RN 670/2025 | norma alteradora do registro | Estudar isolada sem RN 649 | alteração normativa |
 | RN 651/2024 | aprova Regimento do CRA-PR | Confundir com ética | estrutura do CRA-PR |
 | RN 671/2025 | Código de Ética vigente no edital | Usar RN antiga sem edital | deveres e infrações |
+| RNs adicionais pendentes | apenas catalogadas nesta versão | inferir conteúdo pelo número ou por resumo | não fundamentam as questões desta semana |
 | Lei 4.769/1965 | base legal da profissão | Ignorar por ser antiga | campos de atuação |
 | Decreto 61.934/1967 | regulamenta a lei | Tratar como lei autônoma sem relação | detalhamento regulamentar |
 
@@ -2219,7 +2455,7 @@ Não conclua automaticamente penalidade específica se o enunciado não trouxer 
 - Emprestar nome ou registro a terceiro pode caracterizar problema ético.
 - Assinar trabalho sem participação técnica real é conduta de risco.
 - RN 651/2024 aprova Regimento; RN 671/2025 é Código de Ética.
-- RN 670/2025 deve ser lida como alteração do regulamento de registro da RN 649/2024.
+- Norma apenas catalogada ou pendente não fundamenta literalidade, prazo, requisito ou sanção.
 - Evite decorar penalidade específica sem fonte; priorize dever, infração e lógica do processo.
 - Palavras como "sempre", "nunca" e "dispensa qualquer fiscalização" costumam indicar exagero.
 
@@ -2228,24 +2464,22 @@ Não conclua automaticamente penalidade específica se o enunciado não trouxer 
 
 ## Revisão fixa do Dia 4
 
-**Foco:** Administração Pública, Português e RLM. Recupere atos e seus vícios, responsabilidade estatal, LAI/LGPD, proposições e conectivos. **Base:** teoria do Dia 6. **Pegadinha:** motivo não é motivação; anulação não é revogação.
+**Foco:** Administração Pública, Português e RLM. Recupere LIMPE, motivo e motivação, responsabilidade e nexo, contratação, linguagem administrativa e a microtrilha lógica. **Base já estudada:** [Bloco 4 do Dia 4](#s1-d4-b4) e [Bloco 5 do Dia 4](#s1-d4-b5). **Pegadinha:** motivo não é motivação; dano não elimina a necessidade de nexo.
 
 ### Bloco recorrente do Dia 4 — Administração Pública
 
-As Extras 4.1–4.10 exigem esta síntese. **Legalidade** vincula a Administração à norma; **impessoalidade** impede favorecimento e promoção pessoal; **moralidade** exige conduta proba; **publicidade** admite transparência com restrições legais; **eficiência** busca resultado sem afastar a legalidade. Órgão não tem personalidade; autarquia é pessoa jurídica de direito público da Administração Indireta. Em ato administrativo, **motivo** é o pressuposto fático-jurídico e **motivação** é sua exposição.
-
-Anulação afasta ato ilegal; revogação retira ato válido por mérito administrativo; convalidação só alcança vício sanável sem lesão ao interesse público ou prejuízo a terceiro. Na responsabilidade estatal, procure conduta, dano e nexo causal; culpa exclusiva da vítima e força maior podem romper ou reduzir o nexo conforme o caso. Na contratação, concurso seleciona trabalho técnico, científico ou artístico; leilão serve à alienação; dispensa e inexigibilidade dependem de hipótese legal e motivação.
+As Extras 4.1–4.10 recuperam exclusivamente a miniaula já dada no [Bloco 4](#s1-d4-b4): modalidades, conduta/dano/nexo, omissão, causas que rompem ou atenuam o nexo, poder de polícia, moralidade, motivação e sequência geral da licitação. Esta seção é índice de revisão, não capítulo novo.
 
 ### Bloco recorrente do Dia 4 — Português e RLM
 
-As Extras 4.11–4.15 recuperam comando, inferência, conectores, concordância, regência, crase e pontuação: “embora” introduz concessão; “portanto”, conclusão; não se separa sujeito de verbo por vírgula; `haver` existencial é impessoal; `existir` concorda com o sujeito; crase não ocorre antes de verbo. As Extras 4.16–4.20 usam proposições, negação, conectivos, conjuntos, sequência e proporcionalidade. Para negar “todos”, basta encontrar “algum não”; para negar “nenhum”, use “algum”.
+As Extras 4.11–4.15 recuperam as regras e o modelo do [Bloco 5](#s1-d4-b5). As Extras 4.16–4.20 recuperam proporcionalidade, conjuntos, negação, PA e probabilidade sem reposição já ensinados na microtrilha do [Bloco 4](#s1-d4-b4). Não use esta síntese para acrescentar regra que não esteja nesses blocos.
 
 | Extras | Núcleo decisivo | Erro recorrente |
 |---|---|---|
-| 4.1–4.5 | modalidades, responsabilidade e excludentes | tratar eficiência como permissão para ilegalidade |
+| 4.1–4.5 | modalidades, responsabilidade e nexo | presumir responsabilidade apenas pela existência do dano |
 | 4.6–4.10 | polícia, moralidade, motivação e licitação | confundir motivo com motivação ou modalidade com objeto |
-| 4.11–4.15 | leitura e norma-padrão | transformar possibilidade em certeza |
-| 4.16–4.20 | lógica e cálculo | negar universal com outro universal |
+| 4.11–4.15 | restrição/explicação, crase, conectores e redação oficial | trocar concessão por causa ou usar crase antes de verbo |
+| 4.16–4.20 | proporcionalidade, conjuntos, negação, PA e probabilidade | contar interseção duas vezes ou manter denominador sem reposição |
 
 
 ## Mapa de conexões do Dia 4
@@ -2300,24 +2534,134 @@ Na discursiva, a banca tende a avaliar abordagem do tema, organização, progres
 | Pausa | 15min | Descanso |
 | 3 | 1h | Discursiva: estrutura, tese, argumentos e parágrafo |
 | Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Legislação CRA/CFA: Código de Ética e deveres |
+| 4 | 40min | Consolidação legal confirmada: Lei, Decreto, Regimento, Ética e aplicação em casos |
 | Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: escrever introdução e um desenvolvimento |
-| 6 | 20min | Caderno de erros: vírgula, crase, concordância e conectivos |
+| 5 | 30min | Português/discursiva: modelo de introdução e desenvolvimento com revisão guiada |
+| 6 | 20min | Recuperação ativa: vírgula, crase, concordância, conectivos e reescrita já estudados |
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 4 — Legislação CRA/CFA (40min)
+<a id="s1-d5-b4"></a>
+### Bloco 4 — Legislação confirmada e aplicação em casos: base para as Extras 5.1–5.20 (40min)
 
-O Código de Ética orienta deveres, sigilo, zelo, independência e condutas vedadas. Sigilo não autoriza acobertar irregularidade; responsabilidade técnica não é assinatura sem participação. **Exemplo:** profissional pressionado a alterar laudo sem base deve preservar independência técnica. **Pegadinha:** confundir dever ético com mera faculdade comercial.
+As vinte Extras legais deste dia devem ser resolvidas somente com as fontes confirmadas abaixo. Resolução adicional marcada como pendente não serve de fundamento para resposta.
 
-### Bloco 5 — Produção discursiva (30min)
+#### Hierarquia funcional das fontes
 
-Produza introdução com tese e um parágrafo de desenvolvimento. Use conectores: “além disso” para adição, “contudo” para oposição e “portanto” para conclusão. Mantenha sujeito, verbo e complemento sem vírgula indevida. **Pegadinha:** introdução que só repete o tema e não apresenta posição.
+| Fonte | Conteúdo seguro | Limite |
+|---|---|---|
+| Lei nº 4.769/1965 | disciplina a profissão e estrutura o Sistema CFA/CRAs | ato inferior não pode ampliar livremente o campo definido em lei |
+| Decreto nº 61.934/1967 | regulamenta e detalha a execução da lei | não revoga nem ocupa posição superior à lei |
+| Regimento do CRA-PR, aprovado pela RN nº 651/2024 | organiza Plenário, Diretoria e demais órgãos, funcionamento, jurisdição e competências internas | não é Código de Ética nem cria competência nacional para o CRA-PR |
+| Código de Ética da RN nº 671/2025 | deveres, direitos, infrações e sanções éticas de profissionais e pessoas jurídicas, com as especificidades cabíveis | não regula a estrutura interna do CRA-PR |
+| Lei nº 12.514/2011 | contribuições devidas aos conselhos profissionais em linhas gerais | inadimplência não apaga diploma nem autoriza consequência inventada |
 
-### Bloco 6 — Caderno de erros (20min)
+**Regra:** lei disciplina, decreto regulamenta e atos do Sistema complementam matérias dentro de sua competência. Norma interna não afasta lei federal; número mais recente não significa prevalência automática; vigência e objeto precisam ser conferidos na fonte oficial e no edital.
 
-Registre quatro gatilhos: crase antes de verbo é erro; `haver` existencial fica no singular; vírgula não separa sujeito de verbo; reescrita deve preservar relação lógica. Reescreva uma frase errada e explique a correção.
+No Regimento confirmado, o **Plenário** é o órgão colegiado de deliberação superior, enquanto a **Diretoria Executiva** executa e administra dentro de suas competências. Também integram a organização Ouvidoria, Comissões, Grupos de Trabalho e Órgãos de Representação. Essa estrutura não deve ser confundida com dever ou infração do Código de Ética.
+
+#### Registro, fiscalização e jurisdição
+
+Para resolver caso de anúncio, prestação de serviço ou organização, pergunte:
+
+1. a atividade está ligada ao campo profissional fiscalizado?
+2. quem atua: pessoa física, pessoa jurídica ou ambas?
+3. qual é a jurisdição do fato e da atividade?
+4. há participação técnica efetiva ou apenas indicação formal?
+5. qual fonte confirmada trata do objeto?
+
+O CRA atua regionalmente na verificação da regularidade do exercício. O CFA coordena e normatiza nacionalmente dentro de suas atribuições; ele não substitui automaticamente a fiscalização cotidiana de cada Regional. Nem toda atividade empresarial se submete ao CRA: a natureza da atividade é decisiva. Em sentido inverso, CNPJ, contrato ou diploma não dispensam registro exigível nem regularizam retroativamente uso anterior indevido da condição profissional.
+
+**Finalidade:** fiscalização profissional protege a sociedade e a regularidade do exercício; não depende necessariamente de dano patrimonial já consumado nem se limita a cobrar anuidade.
+
+**Exemplo:** pessoa sem registro exigível anuncia serviço usando título profissional e só se registra depois. A fiscalização pode examinar a situação anterior; a regularização posterior não transforma automaticamente o passado em exercício regular.
+
+#### Responsabilidade técnica e ética
+
+Responsabilidade técnica exige atuação real, orientação e supervisão. Ceder nome ou registro, assinar trabalho alheio ou aceitar indicação sem participar da atividade são situações de risco. A pessoa jurídica não assume, sozinha, a responsabilidade técnica que exige profissional habilitado e identificado.
+
+Núcleos éticos confirmados:
+
+- zelo, honestidade, responsabilidade e aperfeiçoamento;
+- independência técnica diante de pressão de cliente ou superior;
+- sigilo profissional, salvo justa causa ou hipótese legal aplicável;
+- urbanidade e colaboração regular com a fiscalização;
+- uso correto do nome, do título e do registro;
+- não facilitar exercício por pessoa não habilitada;
+- não assinar documento sem orientação, supervisão ou participação;
+- não dificultar a fiscalização;
+- não usar informação enganosa ou promessa absoluta incompatível com atuação ética;
+- comunicar dado cadastral cuja atualização seja exigida.
+
+O Código alcança pessoas físicas e jurídicas com as especificidades de cada sujeito. Não conclua que todas as sanções se aplicam indistintamente: suspensão do exercício e cancelamento do registro profissional não se aplicam à pessoa jurídica segundo o conteúdo confirmado usado nesta apostila.
+
+As espécies gerais confirmadas no Código incluem advertência escrita e reservada, censura pública, suspensão do exercício e cancelamento do registro profissional, além das regras de multa e gradação cabíveis. A lista não autoriza escolher pena por intuição: sujeito, previsão, processo e circunstâncias precisam ser examinados.
+
+**Exemplo:** profissional pressionado a alterar laudo sem base deve preservar independência, registrar o fundamento técnico e não validar informação falsa. Sigilo não serve para acobertar irregularidade nem desaparece automaticamente quando termina o contrato.
+
+#### Processo, sanção e controle de fonte
+
+Use a sequência `sujeito → conduta → jurisdição → órgão competente → norma → processo → consequência possível`. A sanção:
+
+- precisa ter base normativa;
+- deve ser compatível com o sujeito;
+- depende de apuração regular, ciência dos fatos, contraditório, defesa e decisão fundamentada;
+- não é escolhida pelo denunciante;
+- não se torna automática porque existe documento, dano ou infração aparente.
+
+Resumo de curso é apoio, não fonte normativa final. Quando houver divergência sobre prazo, requisito, sanção ou vigência, consulte a publicação oficial. Se a apostila declarou uma resolução pendente, a resposta não pode depender de literalidade dessa resolução.
+
+#### Roteiro de resolução das vinte Extras
+
+1. Circule o sujeito e o território.
+2. Nomeie o objeto: profissão, regulamentação, estrutura interna, ética ou contribuição.
+3. Escolha a fonte pelo objeto, não pelo número da norma.
+4. Elimine alternativas absolutas: “sempre”, “automaticamente”, “qualquer sanção”, “exclusivamente”.
+5. Verifique se a alternativa troca CFA por CRA, lei por decreto, Regimento por Código ou formação por registro.
+6. Em caso sancionador, exija processo, competência e fundamentação.
+
+**Pegadinhas:** Regimento tratado como Código; decreto acima da lei; diploma confundido com registro; pessoa jurídica sempre fora da fiscalização; responsabilidade técnica de fachada; inadimplência tratada como cancelamento de diploma; sanção criada por proporcionalidade; resumo privado equiparado à publicação oficial.
+
+<a id="s1-d5-b5"></a>
+### Bloco 5 — Produção discursiva com modelo guiado (30min)
+
+Produza uma introdução e um desenvolvimento usando a sequência `contexto → recorte → tese` e `argumento → explicação → exemplo → consequência`.
+
+**Tema:** ética no uso de tecnologias pelo poder público.
+
+**Introdução-modelo:**
+
+> A digitalização pode ampliar o acesso do cidadão aos serviços públicos, mas também aumenta a responsabilidade do Estado sobre dados e decisões automatizadas. Nesse cenário, eficiência não pode ser separada de segurança, transparência e controle. Assim, o uso ético da tecnologia pública depende de governança capaz de proteger direitos sem impedir a inovação.
+
+**Desenvolvimento-modelo:**
+
+> Em primeiro lugar, a governança de dados reduz riscos de exposição indevida e de decisões sem fundamento verificável. Quando um órgão define finalidade, acesso, registro de operações e mecanismos de revisão, a tecnologia deixa de funcionar como caixa-preta e passa a apoiar uma atuação responsável. Desse modo, segurança e prestação de contas fortalecem, em vez de atrasar, a transformação digital.
+
+**Leitura do modelo:** a introdução contextualiza, delimita e assume posição; o desenvolvimento enuncia argumento, explica, exemplifica e apresenta consequência. `Mas` marca oposição; `assim` e `desse modo` conduzem à conclusão. Não há vírgula entre sujeito e verbo.
+
+**Entrega:** escreva os dois parágrafos sobre outro tema e sublinhe tese, argumento, exemplo e consequência. Faça uma revisão específica de conectores, crase, concordância e pontuação.
+
+<a id="s1-d5-b6"></a>
+### Bloco 6 — Recuperação de Português e caderno de erros (20min)
+
+Este bloco não ensina regra nova e não possui faixa própria de Extras. Sem consulta, recupere as regras já estudadas no Dia 5:
+
+1. não há crase antes de verbo;
+2. `haver` com sentido de existir permanece no singular;
+3. vírgula não separa sujeito de verbo nem verbo de complemento;
+4. reescrita deve preservar sujeito, tempo verbal e relação lógica;
+5. `embora` indica concessão, e `portanto`, conclusão;
+6. adjetivo concorda com o substantivo a que se refere.
+
+**Entrega:** corrija três frases do seu caderno e, para cada uma, registre `forma original | forma corrigida | regra recuperada | seção de origem`. Termine escrevendo, sem consulta, uma frase com concessão e outra com conclusão. Se a justificativa depender de regra não estudada, não a acrescente: marque-a para semana posterior.
+
+### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 5
+
+| Faixa | Bloco | Matéria | Referência suficiente |
+|---|---|---|---|
+| Extras 5.1–5.20 | Bloco 4 | Legislação CFA/CRA confirmada | [`s1-d5-b4`](#s1-d5-b4) |
+| Sem faixa própria | Bloco 5 | Produção discursiva | [`s1-d5-b5`](#s1-d5-b5); entrega textual guiada |
+| Sem faixa própria | Bloco 6 | Recuperação de Português | [`s1-d5-b6`](#s1-d5-b6); entrega prática, sem questões novas |
 
 ## Teoria explicada de forma didática
 
@@ -2686,6 +3030,7 @@ Original: "Embora o sistema seja eficiente, ainda exige ajustes."
 Reescrita equivalente: "Ainda que o sistema seja eficiente, ainda exige ajustes."  
 Reescrita não equivalente: "Como o sistema é eficiente, ainda exige ajustes." Aqui a concessão virou causa.
 
+<a id="s1-d5-concordancia-regencia-crase-pontuacao"></a>
 ### Concordância, regência, crase e pontuação
 
 Concordância: o verbo concorda com o sujeito. Cuidado com sujeito distante.
@@ -2754,24 +3099,24 @@ Evite texto meramente expositivo sem posição. Exemplo de tese: "A transformaç
 
 ## Revisão fixa do Dia 5
 
-**Foco:** Legislação CRA/CFA e Administração Pública. Retome Código de Ética, registro, fiscalização, princípios, licitação e responsabilidade civil. **Base:** teoria do Dia 4 e Dia 6. **Pegadinha:** aplicar sanção ou competência fora do sujeito e da norma adequados.
+**Foco:** Legislação CRA/CFA e produção escrita. Retome hierarquia das fontes, CFA x CRA, jurisdição, fiscalização, responsabilidade técnica, ética, processo e controle de fonte. **Base já estudada:** [Bloco 4 do Dia 5](#s1-d5-b4) e [Bloco 5 do Dia 5](#s1-d5-b5). **Pegadinha:** aplicar sanção ou competência fora do sujeito e da norma adequados.
 
 ### Bloco recorrente do Dia 5 — Legislação CRA/CFA
 
-As Extras 5.1–5.15 usam a legislação como ferramenta de caso. A Lei nº 4.769/1965 estrutura profissão, CFA e CRAs; o Decreto nº 61.934/1967 regulamenta o exercício; o Regimento aprovado pela RN nº 651/2024 trata da estrutura e do funcionamento do CRA-PR; a RN nº 671/2025 disciplina ética e infrações. O CFA atua em âmbito nacional; o CRA fiscaliza, registra e aplica suas competências na jurisdição regional. Diploma não substitui registro quando ele é exigido; pessoa jurídica pode ser alcançada se explorar atividade enquadrada; responsabilidade técnica exige atuação real, não assinatura de fachada.
+As Extras 5.1–5.20 usam legislação confirmada como ferramenta de caso. A Lei nº 4.769/1965 estrutura profissão, CFA e CRAs; o Decreto nº 61.934/1967 regulamenta o exercício; o Regimento aprovado pela RN nº 651/2024 trata da estrutura e do funcionamento do CRA-PR; a RN nº 671/2025 disciplina ética e infrações; a Lei nº 12.514/2011 aparece somente no núcleo geral de contribuições ensinado. O CFA atua em âmbito nacional; o CRA fiscaliza e executa suas competências na jurisdição regional. Diploma não substitui registro quando ele é exigido; pessoa jurídica pode ser alcançada conforme a atividade; responsabilidade técnica exige atuação real, não assinatura de fachada.
 
 Deveres éticos incluem zelo, sigilo nos limites legais, independência técnica e colaboração com fiscalização. Para resolver caso, identifique **sujeito**, **conduta**, **competência territorial** e **norma-base** antes de cogitar consequência. Sanção não é automática: exige previsão e processo regular.
 
-### Bloco recorrente do Dia 5 — Administração Pública
+### Bloco recorrente do Dia 5 — Processo e controle de fonte
 
-As Extras 5.16–5.20 retomam princípios, atos, controle, LAI/LGPD, licitação e responsabilidade. Publicidade não elimina proteção de dados; transparência deve ser compatibilizada com finalidade, necessidade e restrição legal. Anulação responde a ilegalidade; revogação, a conveniência e oportunidade; contratação direta não é liberdade do gestor, mas hipótese prevista em lei.
+As Extras finais continuam no mesmo Bloco 4 legal. Nenhuma delas pode depender de RN adicional pendente. Para resolver, identifique sujeito, objeto, território, fonte confirmada, órgão e processo; se a alternativa exige prazo, requisito ou sanção não ensinados, ela extrapola a base da semana.
 
 | Extras | Núcleo decisivo | Erro recorrente |
 |---|---|---|
 | 5.1–5.5 | sistema normativo, registro e fiscalização | trocar CFA por CRA ou tratar PJ como sempre dispensada |
 | 5.6–5.10 | responsabilidade técnica, ética e Regimento | confundir RN 651 com Código de Ética |
 | 5.11–5.15 | lei, decreto, jurisdição e processo | aplicar sanção sem sujeito ou processo |
-| 5.16–5.20 | princípios, atos e transparência | confundir anulação com revogação |
+| 5.16–5.20 | aplicação legal, fonte oficial e limites da inferência | usar norma pendente ou consequência automática |
 
 
 ## Mapa de conexões do Dia 5
@@ -2823,24 +3168,126 @@ Em RLM, usa:
 | Pausa | 15min | Descanso |
 | 3 | 1h | Revisão técnica: arquitetura, SO e banco de dados |
 | Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Legislação CRA/CFA: Regimento e Código de Ética |
+| 4 | 40min | Consolidação legal confirmada: Regimento, Ética, fiscalização, jurisdição e controle de fonte |
 | Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: plano de redação em 4 parágrafos |
-| 6 | 20min | Caderno de erros: top 10 erros da semana |
+| 5 | 30min | Português/discursiva: plano preenchido de redação em 4 parágrafos |
+| 6 | 20min | Retenção dos Dias 1–5: Extras 6.11–6.20 e entrega do Top 10 de erros |
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 4 — Legislação CRA/CFA (40min)
+<a id="s1-d6-b4"></a>
+### Bloco 4 — Legislação consolidada: base para as Extras 6.1–6.10 (40min)
 
-Regimento trata de estrutura e funcionamento do CRA-PR; Código de Ética trata de conduta profissional. Em caso de infração, identifique conduta, sujeito, competência e processo; não conclua cassação automática. **Exemplo:** obstruir fiscalização não se resolve alegando autonomia privada. **Pegadinha:** confundir RN de Regimento com RN de Ética.
+Este bloco fecha a revisão legal com quatro fontes confirmadas: Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento do CRA-PR aprovado pela RN nº 651/2024 e Código de Ética aprovado pela RN nº 671/2025. A Lei nº 12.514/2011 pode ser usada somente para o núcleo geral de contribuições já estudado. Resolução ainda pendente de consolidação **não é base de literalidade, prazo, requisito ou sanção**.
 
-### Bloco 5 — Plano de redação (30min)
+#### Classifique primeiro o objeto
 
-Antes de escrever, distribua quatro parágrafos: introdução com tese; dois desenvolvimentos com argumento e exemplo; conclusão com proposta viável. Tema público exige relacionar eficiência, legalidade, dados ou continuidade de serviço. **Pegadinha:** abrir tópico novo na conclusão.
+| Objeto do caso | Fonte/núcleo de análise |
+|---|---|
+| campo profissional e estrutura legal do Sistema | Lei nº 4.769/1965 |
+| execução e regulamentação da lei | Decreto nº 61.934/1967 |
+| Plenário, Diretoria, órgãos, funcionamento e competência interna do CRA-PR | Regimento aprovado pela RN nº 651/2024 |
+| sigilo, zelo, independência, infração e disciplina ética | Código da RN nº 671/2025 |
+| anuidade e contribuição, apenas em linhas gerais | Lei nº 12.514/2011 |
 
-### Bloco 6 — Caderno de erros (20min)
+Não trate registro, fiscalização, ética e Regimento como um único objeto. Um mesmo fato pode exigir mais de uma análise: a regularidade do exercício é verificada na fiscalização; a conduta do profissional ou da pessoa jurídica pode também ter repercussão ética; a competência do órgão interno é localizada no Regimento.
 
-Classifique os dez erros por origem: arquitetura, SO, banco, legislação, Português, Administração ou RLM. Para cada um, escreva regra, contraexemplo e próximo exercício de recuperação. Não registre só a letra certa.
+#### Pessoa física, pessoa jurídica e participação técnica
+
+O Código alcança pessoas físicas e jurídicas, observadas suas especificidades. Isso impede duas conclusões extremas: pessoa jurídica não está automaticamente fora da disciplina, mas também não recebe toda sanção destinada ao profissional. Suspensão do exercício e cancelamento do registro profissional não são aplicados à pessoa jurídica no conteúdo confirmado usado nesta apostila.
+
+Em caso envolvendo empresa, examine:
+
+1. objeto real da atividade;
+2. regularidade exigível segundo fonte oficial aplicável;
+3. jurisdição do fato;
+4. profissional indicado;
+5. participação técnica efetiva, e não simples cessão de nome ou registro.
+
+**Exemplo:** uma empresa apresenta CNPJ e indica responsável que não acompanha o serviço. O CNPJ não encerra a análise, e a indicação formal não prova atuação técnica. Devem ser examinados atividade, regularidade, jurisdição e participação real.
+
+#### Sigilo, fiscalização e defesa
+
+Sigilo profissional permanece como dever, ressalvada justa causa ou hipótese legal aplicável; o fim do contrato não autoriza divulgação automática. Da mesma forma, autonomia privada não permite impedir fiscalização competente.
+
+Colaborar com a fiscalização significa fornecer informações pertinentes dentro da competência do Conselho. Isso não elimina contraditório ou defesa: eventual discordância deve ser apresentada pelos meios regulares, e consequência sancionadora depende de processo e fundamentação.
+
+**Exemplo:** diante de diligência regular, ocultar todos os documentos sob alegação genérica de defesa é inadequado. O interessado deve atender ao que for pertinente e pode contestar exigência ou conclusão no procedimento próprio.
+
+#### Competência e território
+
+O CFA exerce coordenação e normatização nacional dentro de suas atribuições. O CRA atua regionalmente em registro, fiscalização e execução de suas competências. Antes de escolher o órgão, identifique onde ocorreu a atividade e qual Conselho Regional possui jurisdição. O primeiro registro, a origem da denúncia ou o simples fato de a atividade envolver Administração não conferem competência nacional concorrente a qualquer CRA.
+
+#### Hierarquia e controle de fonte
+
+O decreto regulamenta a lei dentro de seus limites. O Regimento organiza internamente o CRA-PR e não amplia por conta própria o campo profissional. Em material de estudo:
+
+- afirme somente objeto, vigência e conteúdo confirmados;
+- consulte o texto oficial antes de detalhar artigo, prazo, requisito ou sanção;
+- não transplante regra de resolução semelhante;
+- não escolha a norma apenas pelo número mais recente;
+- registre como pendente aquilo que a fonte disponível ainda não permite afirmar.
+
+**Roteiro para as Extras 6.1–6.10:** `sujeito → atividade/conduta → território → objeto normativo → fonte confirmada → órgão competente → processo`. Elimine alternativas que confundam Regimento com Ética, CFA com CRA, pessoa física com jurídica, indicação formal com atuação efetiva ou conteúdo confirmado com inferência.
+
+<a id="s1-d6-b5"></a>
+### Bloco 5 — Plano preenchido de redação (30min)
+
+**Tema:** caminhos para uma transformação digital segura e inclusiva no serviço público.
+
+| Parágrafo | Função | Plano preenchido |
+|---|---|---|
+| 1 — Introdução | contexto + recorte + tese | A digitalização amplia acesso e eficiência, mas só produz benefício público duradouro quando combina segurança, inclusão e governança. |
+| 2 — Desenvolvimento 1 | argumento + explicação + exemplo | Integração e simplificação reduzem filas e retrabalho; serviço interoperável evita que o cidadão repita dados e etapas em diferentes órgãos. |
+| 3 — Desenvolvimento 2 | argumento + contraste + consequência | Sem proteção de dados, acessibilidade e canal alternativo, o ganho tecnológico pode gerar exclusão e perda de confiança; segurança e capacitação devem acompanhar a implantação. |
+| 4 — Conclusão | retomada + encaminhamento | O poder público deve planejar, medir resultados, proteger dados, capacitar equipes e manter atendimento acessível, para que inovação e direitos avancem juntos. |
+
+**Modelo de encadeamento:**
+
+- introdução: “Nesse contexto” → tese;
+- desenvolvimento 1: “Em primeiro lugar” → benefício explicado;
+- desenvolvimento 2: “Além disso” ou “Contudo” → risco e condição;
+- conclusão: “Portanto” → encaminhamento coerente.
+
+**Entrega:** transforme cada célula da última coluna em duas ou três frases e produza quatro parágrafos. Ao revisar, confirme: tese explícita, um exemplo por desenvolvimento, conectores coerentes, ausência de argumento novo na conclusão, concordância e pontuação.
+
+**Pegadinha:** proposta genérica como “é preciso conscientizar” não fecha o raciocínio se não indicar quem deve agir, por qual meio e com qual finalidade.
+
+<a id="s1-d6-b6"></a>
+### Bloco 6 — Protocolo de retenção dos Dias 1–5 (20min)
+
+O Bloco 6 não introduz teoria. As Extras 6.11–6.20 verificam retenção de assuntos já ensinados e devem apontar para suas seções de origem:
+
+| Extras | Origem obrigatória na apostila | Conteúdo recuperado |
+|---|---|---|
+| 6.11 | Dia 1, “Cache, localidade e políticas de escrita” | localidade espacial e aproveitamento de blocos |
+| 6.12 | Dia 1, “Pipeline de CPU” | distinção entre vazão, latência e efeito das paradas |
+| 6.13 | Dia 2, “CPU-bound, I/O-bound, quantum e starvation” | Round Robin e quantum |
+| 6.14 | Dia 2, “Memória virtual, page fault, swap e thrashing” | page fault e memória virtual |
+| 6.15 | Dia 3, “GROUP BY, HAVING e agregações” | filtro de linhas e de grupos |
+| 6.16 | Dia 3, “GROUP BY, HAVING e agregações” | contagem com valor nulo e total de linhas |
+| 6.17 | Dia 4, “Regimento Interno do CRA-PR e RN CFA nº 651/2024” e “Código de Ética - RN CFA nº 671/2025” | estrutura interna e sigilo |
+| 6.18 | Dia 5, “Concordância, regência, crase e pontuação” | norma-padrão e linguagem administrativa |
+| 6.19 | Dia 4, Bloco 4, “Contratação pública: modalidade, fases e motivação objetiva” | contratação direta motivada |
+| 6.20 | Dia 4, Bloco 4, “Microtrilha de RLM para as Extras 4.16–4.20” | percentuais sucessivos e comparação de grupos |
+
+Para cada Extra:
+
+1. responda sem consulta e registre o raciocínio, não apenas a letra;
+2. atribua confiança `alta`, `média` ou `baixa`;
+3. confira a seção de origem indicada na tabela;
+4. se errar, escreva a regra recuperada e um contraexemplo;
+5. resolva novamente após um intervalo curto.
+
+**Entrega prática:** tabela com as dez Extras, resposta inicial, confiança, resultado, regra recuperada e data de nova tentativa. Seis ou mais acertos com confiança real encerram o bloco; abaixo disso, selecione os três erros de maior impacto para abrir a Semana 2.
+
+### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 6
+
+| Faixa | Bloco | Matéria | Referência suficiente |
+|---|---|---|---|
+| Extras 6.1–6.10 | Bloco 4 | Legislação CFA/CRA confirmada | [`s1-d6-b4`](#s1-d6-b4) |
+| Sem faixa própria | Bloco 5 | Planejamento discursivo | [`s1-d6-b5`](#s1-d6-b5); entrega textual guiada |
+| Extras 6.11–6.20 | Bloco 6 | Retenção integrada dos Dias 1–5 | [`s1-d6-b6`](#s1-d6-b6), com seção de origem por questão |
 
 ## Teoria explicada de forma didática
 
@@ -3463,25 +3910,27 @@ Fechar a semana com clareza sobre o que já foi construído e o que ainda precis
 
 ### Bloco recorrente do Dia 6 — Legislação CRA/CFA
 
-As Extras 6.1–6.10 consolidam o núcleo legal. Registro e regularidade remetem à Lei nº 4.769/1965, ao Decreto nº 61.934/1967 e ao regulamento de registro; a RN nº 670/2025 deve ser lida como alteração da RN nº 649/2024. Ética, sigilo, deveres e infrações pertencem à RN nº 671/2025; estrutura e competência interna do CRA-PR pertencem ao Regimento aprovado pela RN nº 651/2024. Não trate essas normas como se tivessem o mesmo objeto.
+As Extras 6.1–6.10 consolidam apenas o núcleo do [Bloco 4 do Dia 6](#s1-d6-b4). Lei nº 4.769/1965 e Decreto nº 61.934/1967 estruturam e regulamentam a profissão; ética, sigilo, deveres e infrações pertencem à RN nº 671/2025; estrutura e competência interna do CRA-PR pertencem ao Regimento aprovado pela RN nº 651/2024. Requisito específico de registro não ensinado e RN adicional pendente ficam fora da base resolutiva.
 
 Na fiscalização, colaboração não significa renúncia à defesa: o profissional ou entidade deve fornecer informações dentro da competência do Conselho e usar os meios regulares quando discordar. A jurisdição regional, o objeto da atividade e a participação técnica efetiva são dados decisivos.
 
 ### Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1
 
-As Extras 6.11–6.20 exigem recuperar erros reais sem reler toda a semana. Use o protocolo: **(1)** indique o dia de origem; **(2)** escreva a regra em uma frase; **(3)** produza exemplo contrário; **(4)** resolva novo caso. Arquitetura: bit/byte, cache, interrupção e tradução de programas. SO: processo/thread, paginação, sincronização, deadlock, journaling e permissões. Banco: chave, `JOIN`, `NULL`, normalização e ACID. Português: comando, conectores, crase e pontuação. Administração/RLM: ato, princípio, negação e proporcionalidade.
+As Extras 6.11–6.20 seguem o protocolo e as origens já definidos no [Bloco 6 do Dia 6](#s1-d6-b6): **(1)** indicar a seção de origem; **(2)** resolver sem consulta; **(3)** registrar confiança; **(4)** conferir a regra; **(5)** produzir contraexemplo e repetir o item errado. Esta seção não acrescenta teoria.
 
 | Extras | Recuperação ativa | Pergunta de controle |
 |---|---|---|
 | 6.1–6.5 | ética, fiscalização, registro e jurisdição | qual norma trata do objeto do caso? |
 | 6.6–6.10 | Lei, Decreto, Regimento e Código | quem atua e em qual território? |
-| 6.11–6.15 | arquitetura, SO e banco | qual conceito foi confundido com seu vizinho? |
-| 6.16–6.20 | Português, Administração e RLM | qual palavra do comando decide a resposta? |
+| 6.11–6.12 | arquitetura do Dia 1 | qual princípio de localidade ou efeito do pipeline explica o caso? |
+| 6.13–6.14 | sistemas operacionais do Dia 2 | qual regra de escalonamento ou memória virtual decide o caso? |
+| 6.15–6.16 | banco de dados do Dia 3 | o filtro atua em linha, grupo, valor ou contagem total? |
+| 6.17–6.20 | legislação, Português, Administração e RLM já estudados | qual seção dos Dias 3–5 contém a regra? |
 
 ## Pontos pendentes de confirmação
 
 - Data oficial do ato isolado de Retificação I no site da banca, além da marcação existente no PDF consolidado "conforme Retificação I".
-- Texto oficial consolidado de todas as Resoluções Normativas CFA adicionais citadas no edital vigente, especialmente RN CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025, antes da elaboração da apostila de questões de Legislação CRA/CFA.
+- Texto oficial consolidado das Resoluções Normativas CFA adicionais citadas no edital vigente, especialmente RN CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025. Até que cada conteúdo seja conferido, ensinado e incorporado, essas normas permanecem excluídas da base das questões.
 
 
 ## Mapa de conexões do Dia 6

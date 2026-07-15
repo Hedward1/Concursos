@@ -68,6 +68,26 @@ Cada semana possui seis dias. Cada dia deve conter:
 
 O cronograma não pode apenas nomear os blocos recorrentes. Logo após a tabela de 6h, inclua `## Conteúdo dos blocos de revisão e consolidação`, com subseções para os Blocos 4, 5 e 6. Cada uma deve trazer o resumo teórico, regras, exemplo e pegadinha necessários para estudar o item daquele dia sem procurar outro capítulo.
 
+### Contrato pedagógico dos Blocos 4, 5 e 6
+
+Os Blocos 1, 2 e 3 concentram o tema principal. Os três blocos finais têm funções fixas e não podem ser deslocados para números maiores apenas porque o tema técnico foi dividido em mais etapas:
+
+| Bloco | Função obrigatória | Evidência mínima antes das questões |
+|---|---|---|
+| 4 | Matéria fixa ou revisão programada | disciplina, origem do conteúdo, conceito, regra, exemplo, aplicação, pegadinha e seção de referência |
+| 5 | Português ou prática discursiva | regra linguística ou estrutura textual, modelo comentado e orientação de autocorreção |
+| 6 | Revisão ativa e caderno de erros | conteúdo de origem já estudado, pergunta de recuperação, correção do erro e entrega prática |
+
+Regras obrigatórias:
+
+- ensinar antes de cobrar, considerando a ordem real dos dias; citar um tema ou prometer aprofundamento futuro não constitui cobertura;
+- não usar como base de uma questão norma, comando, fórmula ou conceito ainda marcado como pendente;
+- quando o Bloco 4 recuperar conteúdo anterior, indicar semana, dia e seção de origem;
+- não solicitar texto no Bloco 5 antes de apresentar estrutura, modelo ou exemplo suficiente;
+- não introduzir conteúdo novo no Bloco 6: ele deve recuperar o dia atual ou dias anteriores e terminar com lista de erros, regras recuperadas, respostas sem consulta ou plano de revisão;
+- criar IDs únicos por semana, dia e bloco, como `s2-d3-b4`, evitando links ambíguos para títulos repetidos;
+- declarar a faixa de questões principais ou extras associada a cada bloco; se um bloco tiver apenas entrega prática e nenhum item objetivo, registrar isso expressamente.
+
 Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, inclua tema, proposta, roteiro de estrutura e critérios de autocorreção.
 
 O mapa é diário, não semanal: ele deve servir diretamente à sessão de estudo e ao respectivo caderno de erros.
@@ -98,6 +118,8 @@ Antes de criar as questões, monte uma matriz por dia com:
 
 Uma questão só pode entrar na apostila quando houver uma seção correspondente na teoria da própria semana ou uma referência explícita à revisão de semana anterior. As referências devem usar títulos ou âncoras reais e permanecer válidas após qualquer reorganização.
 
+Antes da produção, a leitura da seção indicada deve ser suficiente para resolver o item sem informação externa. Não considere coberta a questão cuja referência apenas mencione o assunto, aponte para um dia futuro ou leve a uma lista de tópicos sem regra, exemplo ou aplicação.
+
 ## Super simulado semanal
 
 Ao concluir os seis dias, prepare um arquivo próprio chamado `semana_XX/semana_XX_super_simulado.md`, com **60 questões inéditas**: dez questões integradoras por dia, cobrindo também as revisões fixas quando pertinentes. Salvo justificativa registrada no plano da semana, distribua 24 questões médias, 24 difíceis e 12 muito difíceis. O simulado deve ser resolvido sem consulta, em tempo contínuo, e conter gabarito, nível, comentário individual de A–D, conceito, pegadinha, raciocínio e referência à teoria. Ele é material suplementar e não altera o total oficial de 420 itens da semana.
@@ -112,6 +134,19 @@ Por dia:
 - gabarito de 70 itens e 70 comentários;
 - comentário com alternativa correta, análise de A–D, conceito, pegadinha, modo de raciocínio e seção real da apostila;
 - distribuição equilibrada de respostas e proibição de enunciados literalmente duplicados.
+
+Toda questão vinculada aos Blocos 4, 5 ou 6 deve informar junto ao enunciado, sem depender do comentário:
+
+```markdown
+**Dia:** 3
+**Bloco:** 4 — Legislação CRA/CFA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** competências do CRA
+**Nível:** Difícil
+**Referência:** [Dia 3 — Bloco 4](semana_XX_estudo.md#sX-d3-b4)
+```
+
+O comentário repete o nível e a mesma referência. Questões principais também entram na auditoria de cobertura; quando pertencem aos Blocos 1–3 e já estão corretamente cobertas, não precisam ser reescritas apenas para alterar a organização dos blocos.
 
 As extras devem utilizar a `Revisão fixa do Dia X`. Questões de revisão mista devem apontar para um mapa de revisão ou para seções específicas já estudadas.
 
@@ -205,6 +240,25 @@ Além da contagem automática, todas as questões devem ser lidas com este check
 - não há três letras iguais consecutivas nem motivo de duas a quatro letras repetido três vezes sem revisão e justificativa;
 - a linguagem está adequada ao nível e ao estilo do Instituto Consulplan.
 
+### Auditoria pedagógica de cobertura dos Blocos 4, 5 e 6
+
+Antes de editar, classifique cada questão principal ou extra relacionada aos blocos:
+
+- `Coberta`: teoria anterior e suficiente, referência válida e bloco adequado;
+- `Parcialmente coberta`: há base anterior, mas falta regra, exemplo, aplicação ou detalhe indispensável;
+- `Não coberta`: a resposta depende de conteúdo ausente;
+- `Cobrada antes do momento correto`: a teoria aparece somente em dia ou etapa posterior;
+- `Inadequada para o bloco`: o item não cumpre a função pedagógica do bloco;
+- `Ambígua`: mais de uma leitura ou resposta permanece defensável.
+
+Para cada item que não esteja `Coberto`, escolha uma ação rastreável: complementar teoria suficiente antes da cobrança; mover para depois do ensino; reformular; substituir; ou remover quando estiver fora do planejamento. Uma frase isolada adicionada apenas para legitimar o gabarito não corrige falta de cobertura.
+
+Registre a auditoria nesta tabela:
+
+| Semana | Dia | Bloco | Matéria | Questões verificadas | Problemas encontrados | Correções |
+|---|---:|---:|---|---:|---:|---:|
+| Semana X | Dia X | 4, 5 ou 6 | disciplina | quantidade | quantidade | quantidade |
+
 ## Auditoria antes de concluir uma semana
 
 Confirme:
@@ -213,8 +267,11 @@ Confirme:
 - 168 questões médias, 168 difíceis e 84 muito difíceis, com nível idêntico no item e no comentário;
 - 60 questões, 60 gabaritos e 60 comentários no super simulado, com matriz padrão de 24 médias, 24 difíceis e 12 muito difíceis, salvo exceção previamente justificada;
 - seis revisões fixas, seis blocos de fixação e seis mapas de cobrança;
+- Blocos 4, 5 e 6 identificados em todos os dias, sem conteúdo novo no Bloco 6 e com entrega prática registrada;
 - zero alternativa E, opção A–D duplicada, numeração ausente, duplicidade literal ou referência inexistente;
 - todas as referências presentes no arquivo de estudo;
+- nenhuma referência aponta para conteúdo futuro, superficial ou apenas pendente;
+- todas as questões dos Blocos 4, 5 e 6 contêm Dia, Bloco, Matéria, Assunto, Nível e Referência junto ao item;
 - todas as 420 questões aprovadas na auditoria semântica individual;
 - gabaritos equilibrados, sem três letras iguais seguidas e sem motivos repetidos não justificados, com item, tabela e comentário sincronizados;
 - nenhum viés indevido de comprimento, tom ou especificidade na alternativa correta;
@@ -246,6 +303,9 @@ Ao finalizar, registre no fim da apostila de estudo ou em relatório de revisão
 | Gabaritos divergentes | 0 |
 | Alertas de motivos repetidos no gabarito | 0 ou todos revisados e justificados |
 | Alertas de comprimento/alinhamento | 0 ou todos revisados |
+| Questões B4–B6 cobertas/parciais/não cobertas/antecipadas/inadequadas/ambíguas | X/X/X/X/X/X |
+| Conteúdo novo introduzido no Bloco 6 | 0 |
+| Referências a conteúdo futuro ou superficial | 0 |
 | Itens revisados/novos/substituídos/removidos | X/X/X/X |
 | Blocos preservados fora do escopo | lista |
 | Status final | Aprovado/Revisão obrigatória/Reprovado |
@@ -270,5 +330,5 @@ Neste ciclo de migração, a ordem é: padrões semanais; Semana 2 de Analista e
 
 ## Aplicação às semanas existentes
 
-- **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. Os Dias 3–6 foram revisados quanto a níveis, distratores, comentários, gabaritos e calibração cognitiva; somam 112 médias, 112 difíceis e 56 muito difíceis. Os Dias 1–2 foram preservados e ainda não possuem classificação de nível. A precisão das referências teóricas também permanece pendente, sobretudo no Dia 3. Portanto, a Semana 1 possui **conformidade parcial** e não está integralmente aceita pelo novo padrão.
-- **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente, mas os itens ainda não possuem os três níveis deste padrão e os comentários usam formato legado. O Dia 4 mistura hierarquias de título nos comentários, e uma checagem amostral já encontrou divergência na Questão 1 do Dia 1 entre o cabeçalho do comentário (`B`) e o gabarito/análise (`D`). A migração ocorrerá em três lotes de dois dias, cada um auditado e publicado separadamente. Referências existentes não dispensam a auditoria semântica, a recalibração dos níveis e o preenchimento da rubrica.
+- **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. As 80 extras dos Blocos 4–6 nos Dias 3–6 foram auditadas, identificadas, niveladas e ligadas a teoria suficiente anterior; gabaritos, comentários e referências foram sincronizados. Os 200 itens principais desses dias, pertencentes aos Blocos 1–3, foram preservados. Os Dias 1–2 permaneceram intactos e ainda não possuem classificação de nível; por isso, a semana conserva **conformidade parcial** fora do recorte B4–B6 agora aceito.
+- **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente. As 120 extras dos Blocos 4–6 foram auditadas, receberam os seis metadados obrigatórios e níveis na matriz 48/48/24; os blocos foram normalizados, os comentários do Dia 6 foram individualizados e as divergências de cabeçalho da Questão 1 do Dia 1 e da Questão 3 do Dia 2 foram corrigidas. As 300 principais continuam no formato legado, sem níveis, e serão migradas em três lotes de dois dias; portanto, a semana segue **em migração** fora do recorte B4–B6 aceito.

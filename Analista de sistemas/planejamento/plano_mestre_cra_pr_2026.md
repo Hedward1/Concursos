@@ -54,9 +54,9 @@ Cada dia deve ter tema próprio, mas o método de execução precisa ser constan
 | Bloco 3 | Aplicação | **Teoria explicada de forma didática** dos pontos fracos; exercícios guiados; questões principais; correção imediata. |
 | Bloco 4 | Revisão fixa | **Teoria explicada de forma didática** da matéria revisada; leitura curta; questões extras; alerta de pegadinhas. |
 | Bloco 5 | Português/discursiva | **Teoria explicada de forma didática** do ponto linguístico; interpretação; reescrita; treino de parágrafo ou estrutura discursiva. |
-| Bloco 6 | Caderno de erros | **Teoria explicada de forma didática** do erro; regra curta de memorização; flashcard ou mapa mental; item para revisar no próximo ciclo. |
+| Bloco 6 | Caderno de erros | **Sem conteúdo novo:** recuperar a teoria já estudada; registrar regra, causa do erro e contraexemplo; responder sem consulta; definir o próximo ciclo de revisão. |
 
-Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, inclusive quando o tema principal não for técnico.
+Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, inclusive quando o tema principal não for técnico. Cada questão dos Blocos 4–6 deve trazer Dia, Bloco, Matéria, Assunto, Nível e Referência; a referência deve apontar para teoria ensinada antes da cobrança. O Bloco 6 termina com entrega prática e jamais funciona como capítulo novo.
 
 ## Plano Mestre de Cobertura do Edital
 
@@ -72,7 +72,7 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 - **Foco técnico:** redes de computadores; segurança da informação; sistemas operacionais avançado.
 - **Tópicos do edital:** topologias, componentes, meios de transmissão, LAN/WAN, ISO/OSI, TCP/IP, HTTP, SMTP, DHCP, DNS, LDAP, proxy, SNMP, switches, roteadores, gateways, redes sem fio, VPN, gerência de rede, ataques, firewall, DMZ, Windows/Linux, concorrência, sincronização, deadlock, dispositivos e sistemas de arquivos.
 - **Revisão fixa:** Legislação CRA/CFA, Português/interpretação e Administração Pública.
-- **Status:** criada e concluída, com teoria, revisões fixas e 420 questões comentadas.
+- **Status:** em migração pelo padrão atual. A cobertura das 120 extras dos Blocos 4–6 foi verificada e a numeração dos blocos foi normalizada; permanece a migração geral dos níveis/comentários das 300 principais.
 - **Arquivos:** `semana_02/semana_02_estudo.md` e `semana_02/semana_02_questoes.md`.
 - **Entrega:** redes de computadores, segurança de redes e sistemas operacionais avançados aprofundados; 300 questões principais e 120 extras.
 
@@ -141,12 +141,12 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 | Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Concluído | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
@@ -203,6 +203,8 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - conter teoria suficiente para responder às questões da própria semana;
 - trazer exemplos resolvidos, pegadinhas, tabela de revisão rápida e checklist por dia;
 - conter questões principais do tema do dia e questões extras dos blocos fixos;
+- manter os Blocos 4, 5 e 6 com suas funções fixas, ensinar antes de cobrar e proibir conteúdo novo no caderno de erros;
+- identificar em cada questão de Bloco 4–6 o Dia, Bloco, Matéria, Assunto, Nível e Referência;
 - usar quatro alternativas, A-D;
 - separar gabarito e comentários;
 - indicar quais tópicos do edital foram cobertos;
@@ -210,6 +212,7 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - não marcar questão como real sem fonte confirmada;
 - a informação de que as questões são autorais e no estilo Instituto Consulplan deve aparecer no cabeçalho da apostila de questões, não no título individual de cada questão;
 - manter o caderno de erros como entrega obrigatória do dia.
+- auditar a cobertura como coberta, parcial, não coberta, antecipada, inadequada ou ambígua antes de editar o banco;
 - preencher a matriz de rastreabilidade entre tópico do edital, teoria, exemplos e questões;
 - submeter todas as questões à auditoria semântica individual, inclusive conferência independente do gabarito;
 - aplicar a rubrica de 100 pontos e somente aprovar a semana com nota mínima de 90 e nenhum critério eliminatório.
