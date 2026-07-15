@@ -2,7 +2,7 @@
 
 ## CRA-PR 2026 - Analista de Sistemas
 
-**Versão 1.2**
+**Versão 1.3**
 
 Material de estudo direcionado para a primeira semana de preparação, com foco em construção de base forte, revisão diária de matérias de alto peso e aderência ao edital oficial vigente.
 
@@ -47,40 +47,40 @@ Esta apostila é a parte de estudo teórico da Semana 1. A apostila de questões
 
 Use o material assim:
 
-1. Leia o objetivo e o motivo de cobrança do dia.
-2. Estude a teoria com atenção ativa.
-3. Refaça os exemplos resolvidos sem olhar a resolução.
-4. Marque as pegadinhas e os erros comuns.
-5. Preencha o checklist.
-6. Registre no caderno de erros tudo que você errou, confundiu ou demorou para responder.
+1. Leia abertura, objetivo, orientação e entregas do dia.
+2. Percorra os Blocos 1–5 na ordem, estudando teoria, aprofundamento, prática guiada, matéria fixa e Português/discursiva antes da cobrança.
+3. Execute o Bloco 6 sem consulta, corrija a recuperação e registre regra, contraexemplo, âncora e próxima revisão no caderno de erros.
+4. Faça mini revisão, perguntas de fixação e checklist.
+5. Abra o roteiro do banco e resolva somente a amostra indicada de até 10 Essenciais.
+6. Corrija A–D integralmente, complete o caderno de erros, agende D+2/D+7 e encerre a sessão.
 
-### Rotina diária fixa de 6h líquidas
+### Rotina diária em até três sessões reais
 
-Cada dia terá um tema principal, mas todos os dias também terão revisão curta de matérias de alto peso.
+Cada dia é uma unidade distribuída em no máximo três sessões de 2h30 a 3h líquidas. O banco completo alimenta D+2, D+7 e o ciclo seguinte; ele não cria sessões extras no mesmo dia. Pausas de 10 a 15 minutos ficam fora do tempo líquido.
 
-| Bloco | Tempo líquido | Atividade |
-|---|---:|---|
-| Bloco 1 | 2h | Tema principal do dia |
-| Bloco 2 | 1h30 | Tema principal do dia |
-| Bloco 3 | 1h | Tema principal do dia com exemplos e prática guiada |
-| Bloco 4 | 40min | Revisão rápida de Legislação CRA/CFA, Administração Pública, Raciocínio Lógico-Matemático ou Informática |
-| Bloco 5 | 30min | Português, interpretação ou discursiva |
-| Bloco 6 | 20min | Caderno de erros e revisão ativa |
-
-Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
+| Ordem física | Função |
+|---|---|
+| Abertura | objetivo, orientação e entregas |
+| Bloco 1 | teoria principal |
+| Bloco 2 | aprofundamento |
+| Bloco 3 | exemplos e prática guiada |
+| Bloco 4 | matéria fixa programada |
+| Bloco 5 | Português ou discursiva |
+| Bloco 6 | recuperação ativa, sem conteúdo novo |
+| Fechamento | mini revisão → fixação → checklist → roteiro de questões → correção |
 
 ### Como executar cada bloco do dia
 
-A lógica de estudo não vale apenas para os Blocos 1, 2 e 3. Os Blocos 4, 5 e 6 também devem seguir um passo a passo claro, para que a revisão fixa, o treino de Português/discursiva e o caderno de erros não virem apenas leitura solta.
+A lógica de estudo não vale apenas para os Blocos 1, 2 e 3. Os Blocos 4, 5 e 6 também devem seguir um passo a passo claro, para que a matéria fixa, o treino de Português/discursiva e o caderno de erros não virem apenas leitura solta.
 
 | Bloco | Função | Passo a passo obrigatório |
 |---|---|---|
 | Bloco 1 | Abrir o tema principal | **Teoria explicada de forma didática**; leitura ativa; marcação dos conceitos centrais; anotação das diferenças entre conceitos parecidos. |
 | Bloco 2 | Aprofundar o tema principal | **Teoria explicada de forma didática**; exemplos resolvidos; aplicação em situações de prova; identificação de pegadinhas da Consulplan. |
-| Bloco 3 | Praticar o tema principal | **Teoria explicada de forma didática** nos pontos que ainda ficaram fracos; exercícios guiados; questões principais; correção imediata dos erros. |
-| Bloco 4 | Revisão fixa do dia | **Teoria explicada de forma didática** do assunto revisado; leitura curta da norma ou conceito; 10 a 20 questões extras; registro das confusões mais prováveis. |
+| Bloco 3 | Praticar o tema principal | Exercícios guiados e casos resolvidos; o banco classificado começa apenas depois de toda a base do dia. |
+| Bloco 4 | Matéria fixa do dia | Teoria suficiente e fonte oficial antes das questões extras correspondentes. |
 | Bloco 5 | Português, interpretação ou discursiva | **Teoria explicada de forma didática** do ponto linguístico; leitura de trecho curto; reescrita ou análise gramatical; treino de parágrafo quando houver discursiva. |
-| Bloco 6 | Caderno de erros e revisão ativa | **Teoria explicada de forma didática** apenas do erro cometido; transformar erro em regra curta; criar flashcard, mapa mental ou alerta de pegadinha; definir o que volta no dia seguinte. |
+| Bloco 6 | Recuperação e caderno de erros | Recuperar sem consulta somente conteúdo já ensinado; transformar erro em regra curta e agendar retorno, sem abrir assunto novo. |
 
 Em todos os blocos, a pergunta final deve ser: "eu sei explicar isso sem olhar?". Se a resposta for não, o ponto entra no caderno de erros.
 
@@ -130,51 +130,21 @@ A Consulplan costuma cobrar esse tema de quatro formas:
 
 A banca gosta de alternativas com afirmações quase corretas, trocando uma palavra essencial: volátil por permanente, compilação por interpretação, memória principal por memória secundária, endereço físico por endereço lógico.
 
-## Cronograma de 6h líquidas com pausas sugeridas
+## Orientação e jornada de estudo
 
-| Bloco | Tempo | Atividade |
-|---|---:|---|
-| 1 | 2h | Sistemas de numeração, representação de dados e aritmética computacional |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | CPU, memória, barramentos, cache, periféricos e interrupções |
-| Pausa | 15min | Descanso |
-| 3 | 1h | Endereçamento, compiladores, ligadores e interpretadores + exemplos |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Legislação CRA/CFA: Lei 4.769/1965, finalidade do Sistema CFA/CRA |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português: interpretação de enunciados técnicos e identificação de comando da questão |
-| 6 | 20min | Caderno de erros: conversões, siglas e conceitos confundidos |
+Estude na ordem física abaixo. Os Blocos 1 a 5 apresentam a base antes da cobrança; o Bloco 6 apenas recupera o que já foi estudado. Pausas de 10 a 15 minutos ficam fora do tempo líquido.
 
-## Conteúdo dos blocos de revisão e consolidação
+| Sessão | Tempo líquido | Percurso | Entrega verificável |
+|---|---:|---|---|
+| A | 2h50 | Abertura + Bloco 1 | conversões feitas sem consulta e mapa CPU–memória |
+| B | 2h50 | Blocos 2 e 3 | três casos técnicos resolvidos e explicados |
+| C | 3h | Blocos 4 e 5 + Bloco 6 + revisão, fixação, checklist, 10 questões e correção | caderno de erros preenchido e primeira passagem corrigida |
 
-### Bloco 4 — Legislação CRA/CFA (40min)
+Na Sessão C, use: 45min para o Bloco 4, 30min para o Bloco 5, 20min para o Bloco 6, 15min para mini revisão/fixação/checklist, 30min para resolver as 10 essenciais e 40min para corrigi-las.
 
-**O que estudar:** a Lei nº 4.769/1965 é a base da profissão e do Sistema CFA/CRAs; o Decreto nº 61.934/1967 regulamenta o exercício. O CFA atua na coordenação e normatização nacional; o CRA atua na jurisdição regional, com registro e fiscalização. O diploma comprova formação, mas não substitui o registro quando ele é exigido para o exercício regular.
+## Bloco 1 — Teoria principal: representação, CPU e memória
 
-**Regra de decisão:** em caso prático, identifique primeiro quem é o sujeito (CFA, CRA, profissional ou pessoa jurídica), depois a competência territorial e por fim a norma-base. Não confunda a Lei que estrutura o sistema com o Código de Ética, que disciplina condutas.
-
-**Exemplo:** se uma questão afirmar que o CRA-PR deixa de seguir norma geral do CFA por possuir autonomia administrativa, a alternativa é incorreta: autonomia não rompe a integração ao Sistema CFA/CRAs.
-
-**Pegadinha:** trocar registro por diploma, CRA por CFA ou fiscalização por mera atividade consultiva.
-
-### Bloco 5 — Português aplicado a enunciados técnicos (30min)
-
-**O que estudar:** antes de ler alternativas, sublinhe o comando: “correta”, “incorreta”, “exceto”, “infere-se” ou “equivale”. Ideia central é a afirmação que organiza o texto; inferência é conclusão autorizada pelas informações, não opinião externa. Conectores preservam relações: “porque” indica causa, “embora” concessão e “portanto” conclusão.
-
-**Regra de decisão:** alternativa tecnicamente familiar pode estar errada se responder ao comando oposto ou trocar a relação lógica do texto. Termos absolutos como “sempre”, “nunca” e “elimina qualquer” exigem prova textual ou técnica forte.
-
-**Exemplo:** de “cache pode reduzir a latência média”, não se infere que cache elimina toda demora de memória; “pode” não é “sempre”.
-
-**Pegadinha:** escolher informação verdadeira que não responde à pergunta, especialmente em itens negativos.
-
-### Bloco 6 — Caderno de erros (20min)
-
-Registre cada erro em quatro campos: **conceito confundido**, **regra correta**, **contraexemplo** e **sinal de prova**. Neste dia, priorize conversão binário/hexadecimal, bit × byte, cache × RAM, interrupção × polling e compilador × ligador × carregador.
-
-**Exemplo de registro:** “Confundi hexadecimal com decimal. Regra: cada dígito hexadecimal vale quatro bits. Contraexemplo: `FF` é 255 decimal. Sinal: alternativa mistura bases ou usa peso decimal em número hexadecimal.”
-
-## Teoria explicada de forma didática
-
+<a id="s1-d1-numeracao"></a>
 ### 1. Sistemas de numeração
 
 Computadores trabalham internamente com sinais binários. Por isso, a base 2 é central em computação. Em provas, você precisa dominar principalmente:
@@ -267,6 +237,7 @@ Lembre a tabela básica:
 
 `3F = 3 x 16^1 + 15 x 16^0 = 48 + 15 = 63`.
 
+<a id="s1-d1-representacao-dados"></a>
 ### 2. Representação de dados
 
 Dados precisam ser codificados para serem processados. Os principais conceitos:
@@ -304,7 +275,21 @@ Porque a contagem inclui o zero. Com 8 bits, temos 256 combinações possíveis.
 
 ASCII é uma codificação menor, historicamente voltada a caracteres básicos. Unicode é um padrão mais amplo para representar caracteres de vários idiomas, símbolos e acentos.
 
-### 3. CPU, memória, barramentos e cache
+#### Inteiros com sinal e complemento de dois
+
+Com `n` bits, um inteiro **sem sinal** representa de `0` a `2^n - 1`. Em complemento de dois, o intervalo é de `-2^(n-1)` a `2^(n-1) - 1`. Para obter o negativo de um valor na mesma largura, inverta os bits e some 1.
+
+Exemplo em 8 bits: `00000101` representa `+5`; invertendo (`11111010`) e somando 1, obtém-se `11111011`, que representa `-5`. Não aplique esse procedimento sem verificar a largura e a codificação pedidas.
+
+Para combinar hexadecimal e complemento de dois, primeiro expanda cada dígito em quatro bits. Em 8 bits, `F4` = `1111 0100`; como o bit mais significativo é 1, sua leitura com sinal é negativa (`-12`). Só depois faça a operação, retenha a largura pedida e verifique overflow.
+
+<a id="s1-d1-von-neumann-ciclo"></a>
+### 3. Programa armazenado e ciclo de instrução
+
+No modelo de programa armazenado associado à arquitetura de von Neumann, instruções e dados residem na memória e percorrem caminhos compartilhados. A unidade de controle coordena o ciclo de **busca, decodificação e execução**; o contador de programa aponta a próxima instrução, e o registrador de instrução mantém a instrução corrente. O modelo não significa que dados e instruções sejam indistinguíveis para o programa nem que toda implementação moderna possua apenas um nível de memória.
+
+<a id="s1-d1-cpu-componentes"></a>
+### 4. CPU, memória, barramentos e cache
 
 A CPU executa instruções. Para isso, usa registradores, unidade de controle, unidade lógica e aritmética e comunicação com memória.
 
@@ -320,7 +305,13 @@ Componentes essenciais:
 - **Barramentos:** caminhos de comunicação para dados, endereços e controle.
 - **Armazenamento secundário:** SSD, HD e mídias persistentes.
 
-#### ROM vs RAM
+<a id="s1-d1-firmware"></a>
+#### Firmware
+
+Firmware é software armazenado em memória não volátil e estreitamente ligado à inicialização ou ao controle de um equipamento. Ele não é sinônimo de ROM — ROM é um tipo de memória — nem de aplicativo comum do usuário. Uma atualização de firmware altera o código de controle e precisa respeitar compatibilidade e procedimento do fabricante.
+
+<a id="s1-d1-hierarquia-memoria"></a>
+#### Hierarquia de memória, ROM e RAM
 
 RAM e ROM aparecem em questões porque ambas são "memórias", mas têm funções diferentes.
 
@@ -330,6 +321,23 @@ RAM e ROM aparecem em questões porque ambas são "memórias", mas têm funçõe
 | ROM | Não volátil, tende a preservar conteúdo | Rotinas de inicialização e firmware | Achar que funciona como memória principal comum |
 
 A **RAM** perde seu conteúdo quando falta energia. Ela serve como área de trabalho do sistema em execução. A **ROM** tende a preservar o conteúdo e costuma armazenar instruções de inicialização ou componentes de firmware.
+
+## Bloco 2 — Aprofundamento: desempenho, E/S, endereçamento e tradução
+
+<a id="s1-d1-arquitetura-32-64"></a>
+### Arquiteturas de 32 e 64 bits, barramentos e capacidade
+
+“32 bits” ou “64 bits” pode se referir à largura natural de registradores, operandos ou endereços, conforme o contexto. Não conclua que todo barramento possui a mesma largura. Se há `n` linhas independentes de endereço e cada endereço identifica um byte, o espaço teórico diretamente endereçável é `2^n` bytes; limitações da implementação e do sistema podem reduzir o espaço utilizável.
+
+- **largura do barramento de dados:** quantidade transferida por operação, não o endereço alcançável;
+- **largura do barramento de endereços:** quantidade de posições distinguíveis;
+- **largura de palavra/registrador:** tamanho natural de certos operandos da CPU;
+- **largura de banda:** volume transferido por unidade de tempo;
+- **latência:** demora até uma operação individual produzir resposta.
+
+Se largura por transferência dobra e a taxa de transferências permanece comprovadamente igual, a **largura de banda bruta teórica do barramento** dobra. A **vazão efetiva do sistema**, porém, também depende de controlador, protocolo, memória, contenção e carga; sem esses dados, não se garante que o desempenho observado dobre. Mantenha pico teórico, vazão efetiva e latência como perguntas diferentes.
+
+Um sistema de 64 bits não é automaticamente duas vezes mais rápido: desempenho também depende de frequência, microarquitetura, memória, software e carga.
 
 #### Registradores
 
@@ -345,7 +353,9 @@ Exemplos comuns de registradores:
 
 A pegadinha é comparar registrador com RAM ou SSD. Registrador é muito menor, muito mais rápido e fica dentro da CPU. RAM é memória principal. SSD/HD são armazenamento persistente.
 
-#### Pipeline de CPU
+<a id="pipeline-de-cpu"></a>
+<a id="s1-d1-pipeline-desempenho"></a>
+#### Pipeline, vazão, latência e hazards
 
 Pipeline é uma técnica em que a CPU sobrepõe etapas de execução de instruções. Em vez de esperar uma instrução passar por todas as etapas para só então iniciar a próxima, a CPU pode buscar uma instrução enquanto decodifica outra e executa uma terceira.
 
@@ -357,7 +367,7 @@ Modelo simplificado:
 4. **Acesso à memória:** ler ou escrever dados, se necessário.
 5. **Escrita de resultado:** gravar o resultado no registrador ou destino.
 
-Pipeline melhora a **vazão** do processador, isto é, a quantidade de instruções concluídas por unidade de tempo. Ele não significa, necessariamente, que uma instrução individual terá menor latência.
+Pipeline melhora a **vazão** do processador, isto é, a quantidade de instruções concluídas por unidade de tempo. Ele não significa, necessariamente, que uma instrução individual terá menor latência. Dependência de dados, desvio ainda não resolvido e disputa de recurso provocam hazards; a CPU pode encaminhar resultados, prever desvios ou inserir bolhas, mas cada medida tem custo e não elimina todo atraso.
 
 #### Throughput vs latência
 
@@ -368,7 +378,9 @@ Pipeline melhora a **vazão** do processador, isto é, a quantidade de instruç�
 
 Na prova, a frase "pipeline sempre reduz o tempo de cada instrução" deve acender alerta. Pipeline tende a aumentar o throughput, mas uma instrução individual ainda passa por etapas e pode sofrer atrasos por dependências, desvios e conflitos de recursos.
 
-#### Cache, localidade e políticas de escrita
+<a id="cache-localidade-e-políticas-de-escrita"></a>
+<a id="s1-d1-cache-localidade"></a>
+#### Cache, acerto, falta e localidade
 
 Cache melhora desempenho porque explora o princípio da localidade:
 
@@ -377,6 +389,11 @@ Cache melhora desempenho porque explora o princípio da localidade:
 
 Exemplo de localidade temporal: repetir várias vezes uma variável dentro de um laço.  
 Exemplo de localidade espacial: percorrer um vetor sequencialmente.
+
+Um **hit** ocorre quando o bloco procurado já está no nível consultado; um **miss** exige buscá-lo em nível mais lento. A taxa de acertos isolada não determina todo o desempenho: considere também a penalidade da falta e o tempo de acerto. O tempo médio pode ser raciocinado como “tempo de acerto + taxa de faltas × penalidade da falta”.
+
+<a id="s1-d1-cache-escrita"></a>
+#### Políticas de escrita da cache
 
 Políticas de escrita mais cobradas:
 
@@ -423,7 +440,8 @@ Não. Pipeline tende a melhorar a vazão, permitindo que várias instruções es
 
 No write-through, a escrita vai para cache e memória principal imediatamente. No write-back, a escrita fica inicialmente no cache e a memória é atualizada depois, reduzindo tráfego, mas exigindo controle de consistência.
 
-### 4. Interrupções, periféricos e entrada/saída
+<a id="s1-d1-interrupcoes-io"></a>
+### 5. Interrupções, periféricos e entrada/saída
 
 Interrupção é um mecanismo pelo qual um evento sinaliza à CPU que precisa de atenção. Pode vir de hardware ou software.
 
@@ -437,6 +455,9 @@ Exemplos:
 
 Sem interrupções, a CPU teria que consultar repetidamente cada dispositivo para saber se algo aconteceu. Isso desperdiçaria processamento.
 
+Interrupções **mascaráveis** podem ser temporariamente inibidas conforme a política da CPU/controlador; as não mascaráveis são reservadas a eventos que não devem ser ignorados pelo mecanismo comum. “Mascarável” não significa falsa nem sem prioridade: descreve a possibilidade de adiamento/bloqueio controlado.
+
+<a id="s1-d1-polling-dma"></a>
 #### Polling vs interrupções
 
 No **polling**, a CPU pergunta repetidamente ao dispositivo se ele precisa de atendimento. É simples, mas pode desperdiçar processamento quando nada acontece.
@@ -478,7 +499,8 @@ Não. Ambos lidam com eventos de dispositivos, mas polling consulta repetidament
 
 Não. DMA reduz a intervenção da CPU na transferência de dados, mas a CPU ainda configura a operação, coordena o sistema e trata a conclusão quando necessário.
 
-### 5. Endereçamento
+<a id="s1-d1-enderecamento"></a>
+### 6. Endereçamento
 
 Endereçamento é o modo como a arquitetura localiza dados e instruções. Em termos simples, a CPU precisa saber onde buscar operandos e onde gravar resultados.
 
@@ -512,7 +534,8 @@ Está na própria instrução. Exemplo conceitual: `MOV A, 5` move o valor imedi
 
 Porque o endereço virtual é a visão do processo; o físico corresponde à posição real na RAM. A tradução permite proteção, paginação e isolamento.
 
-### 6. Compiladores, montadores, ligadores e carregadores
+<a id="s1-d1-traducao-programas"></a>
+### 7. Compiladores, montadores, ligadores e carregadores
 
 Esses conceitos aparecem muito em provas porque são parecidos.
 
@@ -554,7 +577,28 @@ O loader/carregador. O linker gera o executável; o loader carrega esse executá
 
 Não. O assembler traduz linguagem de montagem para código de máquina. O linker liga módulos e bibliotecas, resolvendo referências para formar o executável.
 
-## Pegadinhas comuns da banca
+## Bloco 3 — Exemplos e prática guiada
+
+Resolva falando em voz alta a **regra**, os **dados do caso** e a **conclusão**. Esses três passos separam uma questão difícil de uma definição decorada.
+
+1. **Cache com decisão dupla:** um laço percorre um vetor sequencialmente e o repete diversas vezes. Há localidade espacial na varredura e temporal na repetição; ainda assim, uma linha modificada em write-back pode permanecer apenas na cache até a substituição/sincronização. Portanto, desempenho e consistência são decisões diferentes.
+2. **Pipeline com dependência:** a segunda instrução usa o resultado da primeira. A sobreposição pode elevar a vazão global, mas a dependência pode exigir encaminhamento ou espera; não se conclui que a latência individual sempre caiu.
+3. **E/S em três etapas:** a CPU configura o controlador DMA; o controlador move o bloco entre dispositivo e RAM; ao fim, uma interrupção comunica a conclusão. DMA reduz participação na transferência, não elimina configuração nem tratamento.
+4. **Tradução completa:** fonte → compilador → objeto; objetos/bibliotecas → linker → executável; executável → loader → memória. Assembler só entra quando existe código assembly a montar.
+5. **Capacidade e desempenho:** 32 linhas de endereço byte a byte dão `2^32` bytes teóricos, mas não informam a largura do barramento de dados nem garantem uma taxa de transferência específica.
+
+### Mapa de conexões
+
+```mermaid
+flowchart LR
+  BIN[Sistemas de numeração] --> DADOS[Representação de dados]
+  DADOS --> CPU[CPU e ciclo de instrução]
+  CPU --> MEM[Hierarquia e cache]
+  MEM --> IO[E/S, interrupções e DMA]
+  CPU --> FERR[Compilar, ligar e carregar]
+```
+
+### Pegadinhas comuns da banca
 
 - Dizer que RAM é memória permanente.
 - Confundir ROM com RAM ou firmware com aplicativo comum.
@@ -571,7 +615,7 @@ Não. O assembler traduz linguagem de montagem para código de máquina. O linke
 - Confundir endereço lógico com endereço físico.
 - Esquecer que hexadecimal usa A=10, B=11, C=12, D=13, E=14, F=15.
 
-## O que memorizar
+### O que memorizar
 
 | Conceito | Memorização objetiva |
 |---|---|
@@ -598,7 +642,7 @@ Não. O assembler traduz linguagem de montagem para código de máquina. O linke
 | Assembler | traduz linguagem de montagem para código de máquina |
 | Interrupção | mecanismo de atenção da CPU a evento |
 
-## Erros comuns
+### Erros comuns
 
 | Erro | Correção |
 |---|---|
@@ -612,10 +656,103 @@ Não. O assembler traduz linguagem de montagem para código de máquina. O linke
 | Dizer que polling é mais eficiente em qualquer cenário | Polling pode desperdiçar CPU perguntando repetidamente |
 | Dizer que write-back e write-through são iguais | Uma política atualiza memória imediatamente; a outra posterga |
 
+## Bloco 4 — Legislação CRA-PR/CFA (45min)
+
+Use apenas a versão oficial vigente indicada nos links. A Lei e o Decreto dão a base; resoluções disciplinam organização, ética, registro e procedimento sem contrariar a norma superior.
+
+<a id="s1-d1-lei-decreto"></a>
+### Lei, decreto e competência do Sistema
+
+- A [Lei nº 4.769/1965](https://www.planalto.gov.br/ccivil_03/leis/l4769.htm) disciplina o exercício da profissão e institui o CFA e os CRAs.
+- O [Decreto nº 61.934/1967](https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61934.htm) regulamenta a Lei. Decreto regulamentar detalha a execução da lei; não a substitui nem pode contrariá-la.
+
+<a id="s1-d1-cfa-cra"></a>
+### CFA × CRA e jurisdição
+
+O CFA exerce funções normativas e de coordenação em âmbito nacional. O CRA registra e fiscaliza dentro de sua jurisdição, decide matérias regionais nos limites das normas do Sistema e aplica o procedimento cabível. Autonomia administrativa regional não rompe a vinculação ao sistema normativo nacional.
+
+Regra de decisão: identifique **sujeito → território → ato pedido → norma aplicável**. Diploma demonstra formação; quando a atividade profissional exige registro, ele não é substituto do registro.
+
+<a id="s1-d1-regimento-natureza"></a>
+### CRA-PR: natureza, estrutura e Regimento
+
+Segundo o art. 1º do [Regimento do CRA-PR — RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955), o CRA-PR é **autarquia dotada de personalidade jurídica de direito público, com autonomia técnica, administrativa e financeira**. Possui sede na capital do Paraná e jurisdição em todo o estado nas matérias de sua competência. O Regimento organiza seus órgãos, distribui competências internas e disciplina o funcionamento do Conselho. Autonomia não é soberania: o CRA-PR executa as diretrizes e normas do CFA, registra e fiscaliza regionalmente e não se torna empresa privada nem órgão do Governo estadual.
+
+<a id="s1-d1-etica"></a>
+### Ética, sigilo e responsabilidade
+
+O [Código de Ética — RN CFA nº 671/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1038) orienta deveres e vedações. O art. 4º preserva dignidade, prerrogativas e independência profissional também no vínculo de emprego ou serviço público; o art. 5º exige independência técnica; e o art. 6º veda assinar documento de terceiro sem orientação/supervisão ou trabalho do qual não participou. A violação do sigilo é infração quando ocorre **sem justa causa**. Analise casos por quatro filtros: dever profissional, titular da informação, justa causa/base legítima para revelar e limitação ao necessário. Sigilo não autoriza ocultar ilícito por interesse pessoal; também não permite divulgar informação apenas por curiosidade. Assinar trabalho alheio, emprestar registro ou permitir uso indevido de identificação pode gerar responsabilidade própria.
+
+<a id="s1-d1-registro-pj"></a>
+### Registro de pessoa física e pessoa jurídica
+
+O registro decorre da atividade efetivamente exercida e dos critérios da norma aplicável, não apenas do nome empresarial. Para pessoa jurídica, a [Lei nº 6.839/1980](https://www.planalto.gov.br/ccivil_03/leis/l6839.htm) manda considerar a atividade básica ou a natureza dos serviços prestados, e a norma profissional disciplina o procedimento e eventual responsável técnico. A [RN CFA nº 649/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=951) **aprova o Regulamento de Registro do Sistema CFA/CRAs**; consulte-a com as alterações vigentes, confirmando redação consolidada e vigência sem presumir revogação total.
+
+<a id="s1-d1-registro-rn649-670"></a>
+### Alteração normativa e vigência
+
+A [RN CFA nº 670/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1033) altera pontos da RN nº 649. Ao comparar normas, verifique número, objeto, artigo alterado e data de vigência. Norma posterior especial pode modificar apenas dispositivos determinados; o restante da norma anterior continua aplicável.
+
+<a id="s1-d1-fiscalizacao-processo"></a>
+### Fiscalização e processo
+
+A [RN CFA nº 589/2020](https://documentos.cfa.org.br/?a=show&c=documento&id=745) aprova o Regulamento de Fiscalização do Sistema CFA/CRAs. Fiscalizar inclui apurar fatos, documentar indícios, instruir o processo e encaminhar decisão à autoridade competente. Solicitações, intimações e notificações regulares devem partir de autoridade competente e seguir o rito; omitir fato relevante, obstar ou dificultar a fiscalização pode ter consequência própria, mas indício não equivale a condenação automática. Competência, contraditório, motivação e decisão impedem que o fiscal ou uma parte pule etapas.
+
+<a id="s1-d1-contribuicoes"></a>
+### Anuidades e contribuições
+
+A [Lei nº 12.514/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12514.htm) contém regras gerais sobre contribuições devidas aos conselhos profissionais. Em casos, separe fato gerador, sujeito obrigado, exercício de referência e regra vigente; não confunda sanção ética com cobrança de anuidade.
+
+<a id="s1-d1-normas-dirigidas"></a>
+### Ordem de consulta das normas dirigidas
+
+Para questão literal, consulte: Lei nº 4.769/1965 → Decreto nº 61.934/1967 → Regimento/RN nº 651 → Código de Ética/RN nº 671 → registro/RN nº 649 e alteração/RN nº 670 → norma processual ou financeira indicada. A numeração da resolução, sozinha, nunca prova seu conteúdo.
+
+## Bloco 5 — Português e interpretação aplicada (30min)
+
+<a id="s1-d1-portugues-conectores"></a>
+### Comando, inferência e conectores
+
+Marque o comando (“correta”, “incorreta”, “exceto”, “infere-se”) antes das alternativas. Inferência precisa ser autorizada pelo texto. “Porque” indica causa/explicação, “portanto” conclusão e “embora” concessão; trocar o conector pode inverter a relação lógica.
+
+<a id="s1-d1-portugues-referencia"></a>
+### Referência pronominal e ambiguidade
+
+Localize o antecedente compatível em forma e sentido. Em `seu/sua`, a concordância se faz com a **coisa possuída**, não identifica por si só o possuidor; se dois possuidores forem plausíveis, o contexto precisa resolver ou a redação é ambígua. Para pronomes em geral, não escolha o referente apenas por proximidade.
+
+<a id="s1-d1-portugues-reescrita"></a>
+### Reescrita e restrição
+
+“Somente X pode Y” restringe o sujeito autorizado; “X pode somente Y” restringe a ação. Preserve modalizadores: “pode” não equivale a “deve”, e “em regra” admite exceção. Uma reescrita correta mantém informação e relação lógica, ainda que mude a ordem.
+
+<a id="s1-d1-portugues-crase"></a>
+### Crase em contexto de prova
+
+Há crase quando a regência exige preposição `a` e o termo seguinte admite artigo feminino `a/as`: “referiu-se **à** norma”. Não ocorre diante de verbo, termo masculino ou quando falta artigo: “começou **a** revisar”. Teste pelo masculino (“ao regulamento”) quando possível.
+
+## Bloco 6 — Recuperação ativa e caderno de erros (20min)
+
+Sem consultar a teoria, complete: `1 byte = __ bits`; `B7₁₆ = __₁₀`; pipeline melhora principalmente __; write-back exige controle de __; DMA segue as etapas __/__/__; CFA atua em âmbito __ e CRA em âmbito __; “embora” expressa __. Só então confira as respostas.
+
+Registre cada erro em seis campos: **conceito confundido**, **regra correta**, **contraexemplo**, **sinal de prova**, **âncora interna consultada** e **próxima revisão (D+2 ou D+7)**. Não acrescente assunto novo neste bloco.
+
+**Entrega do caderno:** crie a página `Arquitetura — Erros e Confusões` e registre as bases que confundiu, trocas como RAM/ROM, cache/RAM, compilador/linker e linker/loader, além das relações `2^n`, `1 byte = 8 bits` e `1 hexadecimal = 4 bits`.
+
+<a id="s1-d1-mini-revisao"></a>
 ## Mini revisão do dia
 
 Arquitetura de computadores é a base física e lógica que permite a execução de programas. A CPU executa instruções usando registradores, ULA e unidade de controle. A memória segue uma hierarquia de velocidade e custo: registradores, cache, RAM e armazenamento secundário. RAM é volátil; ROM tende a preservar conteúdo e pode armazenar firmware. Cache explora localidade temporal e espacial. Pipeline melhora vazão, mas não garante menor latência individual. Interrupções evitam que a CPU precise ficar consultando dispositivos a todo momento; polling faz essa consulta repetida; DMA reduz intervenção da CPU em transferências de E/S. Compiladores, assemblers, linkers, loaders e interpretadores atuam em etapas diferentes da transformação do código em execução.
 
+<a id="s1-d1-fixacao"></a>
+## 5 perguntas de fixação
+
+1. Como complemento de dois e inteiro sem sinal mudam a leitura do mesmo padrão de bits?
+2. Por que pipeline pode elevar vazão sem reduzir a latência de uma instrução dependente?
+3. Quais decisões continuam sob responsabilidade da CPU quando há DMA?
+4. Como lei, decreto e resolução se relacionam sem que a norma inferior contrarie a superior?
+5. Que informação muda entre “somente o CRA pode fiscalizar” e “o CRA pode somente fiscalizar”?
+
+<a id="s1-d1-checklist"></a>
 ## Checklist de domínio
 
 - [ ] Sei converter binário para decimal.
@@ -632,83 +769,25 @@ Arquitetura de computadores é a base física e lógica que permite a execução
 - [ ] Diferencio endereço lógico/virtual e físico.
 - [ ] Diferencio compilador, interpretador, assembler, linker e loader.
 
-## Tarefa para o caderno de erros
+<a id="s1-d1-roteiro-questoes"></a>
+## Roteiro do banco completo de 70 questões
 
-Crie uma página chamada **Arquitetura - Erros e Confusões** e registre:
+O banco não é uma jornada única de 70 itens. Resolva por finalidade:
 
-- bases numéricas que você confundiu;
-- conceitos trocados, como RAM/ROM, RAM/SSD, cache/RAM, cache/ULA, compilador/linker, linker/loader;
-- fórmulas simples: `2^n`, 1 byte = 8 bits, 1 hexadecimal = 4 bits;
-- uma tabela com A=10, B=11, C=12, D=13, E=14, F=15.
+| Momento | Questões | Regra |
+|---|---|---|
+| Primeira passagem, hoje | Q1, Q2, Q3, Q5, Q6, Q7, Q11, Q13, E1 e E16 | exatamente 10 essenciais, em 30min |
+| D+2 | Q9, Q12, Q16, Q17, Q25, E2, E3, E8, E13 e E19 | concluir as essenciais e iniciar aprofundamento |
+| Até antes do D+7 | todas marcadas como **Aprofundamento** | resolver em sessões curtas, com teoria já estudada |
+| D+7 | todas marcadas como **Revisão** | medir retenção sem consulta |
+| Ciclo seguinte | todas marcadas como **Simulado** | resolver sob tempo e sem pistas |
 
-## 5 perguntas de fixação
+<a id="s1-d1-correcao"></a>
+## Correção e fechamento
 
-1. Por que o hexadecimal é útil para representar dados binários?
-2. Qual é a diferença entre RAM, cache e armazenamento secundário?
-3. O que acontece, em linhas gerais, quando uma interrupção é gerada?
-4. Qual é a diferença entre endereço lógico/virtual e endereço físico?
-5. Qual é o papel do assembler, do linker e do loader?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Sistemas de numeração, conversão hexadecimal para decimal, representação de dados, CPU, registradores, RAM, ROM, firmware, cache, localidade temporal e espacial, políticas write-back/write-through, barramentos, pipeline, throughput, latência, polling, interrupções, DMA, dispositivos de E/S, endereçamento, assembler, linker, loader, compiladores e interpretadores.
-
-## Tabela de revisão rápida do Dia 1
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
-|---|---|---|---|
-| RAM | Memória principal volátil usada por programas em execução | Dizer que guarda arquivos permanentemente | Dados de um programa aberto ficam na RAM durante a execução |
-| ROM | Memória não volátil, voltada a conteúdo permanente ou inicialização | Tratar como RAM comum de trabalho | Rotina básica de inicialização |
-| Firmware | Software gravado próximo ao hardware | Confundir com aplicativo do usuário | Código de controle de dispositivo |
-| Registradores | Armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU | Confundir com RAM ou cache | PC indica próxima instrução |
-| ULA | Executa operações aritméticas e lógicas | Dizer que cache executa operações | Soma, comparação, AND lógico |
-| Cache | Memória rápida entre CPU e RAM | Dizer que substitui ULA ou SSD | Dado acessado repetidamente fica em cache |
-| Localidade temporal | Reuso provável de dado acessado recentemente | Confundir com proximidade de endereço | Variável usada várias vezes em um laço |
-| Localidade espacial | Acesso provável a endereços próximos | Confundir com reuso do mesmo dado | Percorrer vetor posição por posição |
-| Write-through | Escrita no cache e na memória principal | Achar que posterga atualização da memória | Alteração refletida imediatamente na RAM |
-| Write-back | Escrita no cache e atualização posterior da memória | Achar que memória principal fica atualizada imediatamente | Linha de cache marcada como dirty |
-| Pipeline | Sobreposição de etapas da CPU | Dizer que sempre reduz latência individual | Buscar uma instrução enquanto outra executa |
-| Throughput | Quantidade concluída por unidade de tempo | Confundir com tempo individual | Mais instruções concluídas por ciclo |
-| Latência | Tempo de uma operação individual | Confundir com vazão total | Tempo de uma instrução do início ao fim |
-| Polling | CPU consulta repetidamente o dispositivo | Dizer que sempre é mais eficiente | Perguntar ao dispositivo se há dado disponível |
-| Interrupção | Evento sinaliza à CPU que precisa de atenção | Dizer que sempre é erro | Teclado, timer, pacote de rede |
-| DMA | Transferência entre dispositivo e memória com menor intervenção da CPU | Dizer que elimina a CPU | Controlador move bloco de disco para RAM |
-| Assembler | Traduz assembly para código de máquina | Confundir com linker | Montar instruções assembly |
-| Linker | Liga módulos e bibliotecas | Confundir com loader | Resolver função externa entre arquivos objeto |
-| Loader | Carrega executável na memória | Confundir com linker | Iniciar execução de um programa |
-| Hexadecimal | Base 16, A=10 até F=15 | Esquecer valor de B ou F | `B7 = 11 x 16 + 7 = 183` |
-
-## Pegadinhas do Dia 1
-
-- Cache não substitui ULA: cache acelera acesso a dados; ULA executa operações aritméticas e lógicas.
-- Pipeline melhora vazão, não necessariamente a latência individual de cada instrução.
-- Linker liga módulos e bibliotecas; loader carrega o executável em memória.
-- DMA reduz intervenção da CPU em transferências de E/S, mas não elimina a CPU do sistema.
-- Polling desperdiça CPU quando fica perguntando repetidamente se o dispositivo tem evento.
-- RAM é volátil; ROM tende a preservar conteúdo e pode armazenar rotinas permanentes ou firmware.
-- `B7` hexadecimal = `11 x 16 + 7 = 183`.
+Corrija as 10 da primeira passagem integralmente, inclusive as acertadas. Para cada erro ou acerto inseguro, anote: `ID → regra decisiva → por que descartei A/B/C/D → âncora da teoria → data de retorno`. Feche a sessão somente após agendar D+2; não avance para o saldo do banco por impulso.
 
 ---
-
-
-## Revisão fixa do Dia 1
-
-**Foco:** Legislação CRA/CFA e Português. Recupere Lei nº 4.769/1965, Decreto nº 61.934/1967, distinção CFA × CRA, registro e deveres; em Português, leitura de comando, conectores e inferência. **Base:** teoria do Dia 4 e Dia 5. **Pegadinha:** tratar diploma como registro ou trocar conclusão por causa.
-
-
-## Mapa de conexões do Dia 1
-
-```mermaid
-flowchart LR
-  BIN[Sistemas de numeração] --> DADOS[Representação de dados]
-  DADOS --> CPU[CPU e cache]
-  CPU --> MEM[Memória e barramentos]
-  MEM --> IO[E/S e periféricos]
-  IO --> INT[Interrupções]
-  INT --> FERR[Compilador, ligador e carregador]
-```
-
-**Leitura ativa:** dado precisa ser representado antes de ser processado; cache não é memória secundária; interrupção não é polling. **Pegadinhas:** bit × byte; cache × RAM; compilador × interpretador.
 
 # Dia 2 - Sistemas Operacionais
 
@@ -732,38 +811,22 @@ O padrão mais comum é:
 - comparação entre Windows e Linux;
 - alternativas que confundem processo, programa e thread.
 
-## Cronograma de 6h líquidas com pausas sugeridas
+## Orientação e jornada de estudo
 
-| Bloco | Tempo | Atividade |
-|---|---:|---|
-| 1 | 2h | Conceitos de SO, processos, threads e escalonamento |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | Memória, memória virtual, paginação e segmentação |
-| Pausa | 15min | Descanso |
-| 3 | 1h | Arquivos, dispositivos, concorrência, sincronização e deadlock |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Revisão rápida de Administração Pública: administração direta, indireta e autarquia |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português: leitura de enunciados com "exceto", "incorreta" e "não se aplica" |
-| 6 | 20min | Caderno de erros: mapa processo x thread x programa |
+Estude na ordem física abaixo. Todo conceito cobrado hoje aparece nos Blocos 1 a 5; o Bloco 6 é somente recuperação. Pausas de 10 a 15 minutos ficam fora do tempo líquido.
 
-## Conteúdo dos blocos de revisão e consolidação
+| Sessão | Tempo líquido | Percurso | Entrega verificável |
+|---|---:|---|---|
+| A | 2h50 | Abertura + Bloco 1 | mapa kernel–processo–memória e estados explicados |
+| B | 2h50 | Blocos 2 e 3 | três diagnósticos de SO resolvidos |
+| C | 3h | Blocos 4 e 5 + Bloco 6 + revisão, fixação, checklist, 10 questões e correção | caderno de erros e primeira passagem corrigida |
 
-### Bloco 4 — Administração Pública (40min)
+Na Sessão C, use: 45min para o Bloco 4, 30min para o Bloco 5, 20min para o Bloco 6, 15min para mini revisão/fixação/checklist, 30min para resolver as 10 essenciais e 40min para corrigi-las.
 
-Administração Direta reúne entes e órgãos; Administração Indireta reúne entidades com personalidade própria, como autarquias. Conselho profissional é autarquia: não é empresa privada nem órgão da Administração Direta. **Exemplo:** criar setor dentro de ministério é desconcentração; criar autarquia por lei é descentralização. **Pegadinha:** órgão não possui personalidade, entidade possui.
+## Bloco 1 — Teoria principal: kernel, processos e memória
 
-### Bloco 5 — Leitura de comando negativo (30min)
-
-Em “exceto”, “incorreta” ou “não se aplica”, marque primeiro o comando e só depois avalie as alternativas. Uma alternativa verdadeira pode ser a resposta quando a pergunta pede a incorreta. **Exemplo:** se três opções descrevem processo e uma descreve programa passivo, a última atende ao comando sobre processo. **Pegadinha:** responder a questão como se ela pedisse a correta.
-
-### Bloco 6 — Caderno de erros (20min)
-
-Use a matriz: **programa** é código passivo; **processo** é instância com recursos; **thread** é fluxo de execução. Registre também pronto × bloqueado e concorrência × paralelismo. Para cada confusão, escreva um caso de E/S que deixe a thread bloqueada.
-
-## Teoria explicada de forma didática
-
-### 1. Conceito e funções do sistema operacional
+<a id="s1-d2-so-kernel"></a>
+### 1. Conceito, kernel e chamadas de sistema
 
 Sistema operacional é o software básico que intermedeia usuário, aplicações e hardware.
 
@@ -779,6 +842,8 @@ Principais funções:
 
 Sem sistema operacional, cada programa teria que lidar diretamente com hardware, disco, teclado, vídeo, memória, rede e permissões. Isso seria inseguro, ineficiente e impraticável.
 
+O **kernel** é o núcleo privilegiado que arbitra CPU, memória, dispositivos e proteção. Aplicações pedem operações protegidas por **chamadas de sistema**; uma biblioteca pode oferecer a interface, mas o serviço protegido é executado pelo kernel. Separar modo usuário e modo kernel limita o dano de uma aplicação defeituosa.
+
 ### Como funciona na prática
 
 Quando você salva um arquivo em uma pasta, não é o editor de texto que grava diretamente no hardware. Ele pede ao sistema operacional, por meio de serviços do sistema, que realize a operação. O SO verifica permissões, localiza o sistema de arquivos e aciona drivers de dispositivo.
@@ -793,7 +858,8 @@ Não. São aplicativos ou utilitários. Sistema operacional é a camada que perm
 
 Não. Ele gerencia hardware e recursos lógicos, como processos, memória, arquivos, permissões, usuários e comunicação entre processos.
 
-### 2. Processos, threads e escalonamento
+<a id="s1-d2-processos-estados"></a>
+### 2. Processos, threads e estados
 
 Um **programa** é um conjunto de instruções armazenado. Um **processo** é um programa em execução, com contexto próprio: código, dados, pilha, registradores, espaço de endereçamento e recursos associados.
 
@@ -808,6 +874,10 @@ Conceitos importantes:
 - **bloqueado/esperando:** processo aguarda evento, como E/S;
 - **preemptivo:** o SO pode interromper um processo;
 - **não preemptivo:** o processo executa até terminar ou bloquear voluntariamente.
+
+Uma **troca de contexto** salva o estado da execução interrompida e restaura o da próxima. Ela possibilita multitarefa, mas consome tempo sem realizar diretamente o trabalho da aplicação. No Unix/Linux, um processo encerrado cujo status ainda não foi coletado pelo pai fica **zumbi**; se o pai termina antes do filho, o filho fica **órfão** e é adotado por processo do sistema. Zumbi não é processo executando descontroladamente.
+
+Sinais comunicam eventos a processos. `kill` envia um sinal; o nome não garante que todo uso encerre imediatamente o processo. Primeiro identifique sinal, alvo e tratamento possível.
 
 ### Como funciona na prática
 
@@ -827,7 +897,17 @@ Sim. Esse é o ponto central da preempção. O SO pode interromper a execução 
 
 Não. Programa é passivo, armazenado. Processo é ativo, em execução.
 
-### 3. Gerenciamento de memória, memória virtual, paginação e segmentação
+<a id="cpu-bound-io-bound-quantum-e-starvation"></a>
+<a id="s1-d2-escalonamento"></a>
+### 3. Escalonamento, quantum e starvation
+
+Processos **CPU-bound** consomem longos trechos de CPU; processos **I/O-bound** bloqueiam com frequência aguardando disco, rede ou teclado. No Round Robin, um **quantum** curto melhora a oportunidade de resposta, mas aumenta trocas de contexto; um quantum muito longo reduz esse custo, porém aproxima a política de uma fila simples e pode piorar a interatividade.
+
+**Starvation** é espera indefinida causada, por exemplo, por prioridades que sempre favorecem outros processos. Ela não exige a espera circular do deadlock. Aging é uma técnica para elevar gradualmente a prioridade de quem espera.
+
+<a id="memória-virtual-page-fault-swap-e-thrashing"></a>
+<a id="s1-d2-memoria-virtual"></a>
+### 4. Memória virtual, paginação e segmentação
 
 A memória principal é limitada. O sistema operacional precisa dividir, proteger e controlar a memória usada pelos processos.
 
@@ -849,6 +929,12 @@ A memória principal é limitada. O sistema operacional precisa dividir, protege
 
 Se há pouca RAM, o SO pode mover páginas menos usadas para disco. Isso permite continuar executando, mas se o uso de disco for intenso, o sistema fica lento. Esse fenômeno pode aparecer como degradação de desempenho por paginação excessiva.
 
+Um **page fault** ocorre quando a página referenciada não está presente na RAM; se o acesso é válido, o SO pode carregá-la e retomar a instrução. Se o endereço é inválido ou viola proteção, o resultado é falha. **Swap** é apoio em armazenamento secundário e é muito mais lento que RAM. **Thrashing** ocorre quando faltas e trocas dominam o tempo, restando pouca execução útil.
+
+Para conter thrashing, reduza a pressão sobre o conjunto de trabalho: diminua processos/carga concorrente, ajuste a alocação quando cabível ou amplie RAM. Apenas aumentar swap não remove a diferença de velocidade nem garante mais execução útil.
+
+Isolamento impede que um processo leia ou escreva arbitrariamente no espaço de outro, mas não proíbe comunicação legítima. **Pipes, filas, sockets e memória compartilhada controlada** são mecanismos de IPC mediados/configurados pelo SO; permissões e sincronização determinam quem comunica e como o dado permanece consistente.
+
 ### Exemplos resolvidos - memória
 
 **Exemplo 1:** memória virtual é a mesma coisa que memória RAM?
@@ -863,7 +949,10 @@ Fixo. Essa é uma diferença clássica em relação à segmentação, que usa se
 
 Porque cada processo trabalha em seu próprio espaço de endereçamento. Um processo não deve acessar livremente a memória de outro.
 
-### 4. Sistemas de arquivos
+## Bloco 2 — Aprofundamento: arquivos, dispositivos, segurança e concorrência
+
+<a id="s1-d2-arquivos-backup"></a>
+### 5. Sistemas de arquivos, journaling e backup
 
 Sistema de arquivos organiza dados em unidades como arquivos e diretórios. Ele controla nomes, permissões, metadados, localização física e estrutura de armazenamento.
 
@@ -892,7 +981,10 @@ Não. Caminho absoluto parte da raiz ou unidade, como `C:\Dados\relatorio.pdf` o
 
 Não. Journaling ajuda na consistência do sistema de arquivos após falha. Backup permite recuperar dados perdidos, corrompidos ou apagados.
 
-### 5. Dispositivos e drivers
+Uma política de backup define escopo, periodicidade, retenção, cópias isoladas e responsabilidade. “Backup concluído” não prova recuperabilidade: teste de restauração, integridade e tempo de recuperação precisam ser verificados. Journaling recupera consistência estrutural após interrupção; não é uma cópia histórica do dado.
+
+<a id="s1-d2-dispositivos-spooling"></a>
+### 6. Dispositivos, drivers e spooling
 
 Dispositivos de entrada e saída são controlados por drivers. Driver é software que permite ao sistema operacional se comunicar com hardware específico.
 
@@ -908,6 +1000,8 @@ Exemplos:
 
 Quando um usuário imprime documento, o aplicativo envia a solicitação ao SO. O SO usa o subsistema de impressão e o driver da impressora para transformar dados em comandos compatíveis com o dispositivo.
 
+**Spooling** mantém trabalhos em uma fila intermediária para que processos compartilhem um dispositivo de atendimento sequencial, como impressora. Driver traduz/controla a comunicação com o hardware; spooling organiza a espera. São papéis diferentes.
+
 ### Exemplos resolvidos - dispositivos
 
 **Exemplo 1:** um driver é hardware?
@@ -918,7 +1012,20 @@ Não. Driver é software de controle de hardware.
 
 Não. Pode ser problema de software, configuração, compatibilidade ou driver ausente/incorreto.
 
-### 6. Concorrência, sincronização e deadlock
+<a id="s1-d2-seguranca-permissoes"></a>
+### 7. Autenticação, autorização e permissões
+
+**Autenticação** verifica identidade; **autorização** decide ações permitidas. Privilégio mínimo concede apenas o necessário. No Linux, `chmod 640 arquivo` dá leitura/escrita ao dono, leitura ao grupo e nenhuma permissão aos outros; `chown` altera proprietário/grupo. No NTFS, permissões podem ser atribuídas a usuários e grupos, herdadas e combinadas; uma regra efetiva precisa considerar o conjunto aplicável, não apenas uma entrada isolada.
+
+<a id="s1-d2-servicos-logs"></a>
+### 8. Serviços, comandos e logs
+
+Um **serviço** executa em segundo plano para oferecer uma função contínua, geralmente sem interação direta constante. `ps` oferece uma fotografia de processos; `top` apresenta visão atualizada; `systemctl status serviço` consulta uma unidade específica; `systemctl --failed` lista unidades em falha no `systemd`. Logs sustentam diagnóstico e auditoria quando possuem fonte, horário, integridade, acesso e retenção adequados. “Há log” não basta para provar causa.
+
+Manutenção segura de serviço separa atualização, teste e retorno: registre versão/configuração, aplique patch em ambiente controlado, teste função e dependências, monitore e mantenha plano de rollback. Reiniciar sem diagnóstico ou atualizar diretamente sem possibilidade de retorno não é procedimento completo.
+
+<a id="s1-d2-concorrencia"></a>
+### 9. Concorrência, região crítica e deadlock
 
 Concorrência ocorre quando múltiplos processos ou threads disputam recursos ou executam de forma intercalada.
 
@@ -935,6 +1042,8 @@ Problemas típicos:
 - mutex;
 - monitores;
 - locks.
+
+A **região crítica** acessa estado compartilhado que precisa de coordenação. Um mutex protege exclusão mútua; um semáforo também pode representar uma quantidade de recursos. Locks excessivamente amplos reduzem concorrência; locks insuficientes permitem corrida.
 
 **Deadlock** ocorre quando processos ficam presos esperando recursos uns dos outros.
 
@@ -954,6 +1063,8 @@ Imagine dois processos:
 
 Se nenhum liberar o recurso, ambos ficam bloqueados. Isso é espera circular.
 
+Um **grafo de espera** representa processo/recurso e dependências; um ciclo é indício decisivo nos modelos em que cada recurso possui uma instância, mas o contexto precisa ser observado quando há múltiplas instâncias. Prevenir deadlock significa estruturar o sistema para romper pelo menos uma condição necessária — por exemplo, impor ordem global de aquisição para eliminar espera circular. Depois de detectar, a recuperação pode abortar/retroceder um participante ou preemptar recurso quando isso for seguro e suportado; cada opção tem custo e risco de inconsistência. Detectar e recuperar é estratégia diferente de prevenir.
+
 ### Exemplos resolvidos - concorrência
 
 **Exemplo 1:** condição de corrida ocorre quando o resultado depende da ordem de execução?
@@ -968,7 +1079,8 @@ Não. É bloqueio permanente ou indefinido por dependência circular de recursos
 
 Serve para garantir exclusão mútua no acesso a recurso compartilhado.
 
-### 7. Windows e Linux
+<a id="s1-d2-windows-linux"></a>
+### 10. Windows e Linux
 
 O edital exige aspectos práticos e teóricos de Windows/Linux.
 
@@ -996,7 +1108,33 @@ Sim, porque começa na raiz `/`.
 
 Não. `chmod` altera permissões. Para proprietário, usa-se `chown`.
 
-## Pegadinhas comuns da banca
+<a id="s1-d2-virtualizacao"></a>
+### 11. Virtualização e isolamento
+
+Uma máquina virtual executa um sistema convidado sobre recursos mediados por hipervisor; contêineres compartilham o kernel do hospedeiro e isolam processos por mecanismos do SO. Por compartilhar o kernel, o contêiner **tende**, em geral, a exigir menos recursos e iniciar mais rapidamente que uma VM completa, mas oferece fronteira de isolamento diferente; isso não é garantia universal de desempenho ou segurança. Nenhuma das técnicas torna backup, atualização ou controle de acesso dispensáveis. Ao comparar, identifique **o que é compartilhado**, **qual falha se pretende isolar** e **qual custo operacional foi aceito**.
+
+## Bloco 3 — Exemplos e prática guiada
+
+1. **Quantum:** a equipe reduz o quantum e observa resposta mais rápida, mas CPU útil menor. Diagnóstico: maior frequência de preempções e trocas de contexto; não conclua starvation sem espera indefinida.
+2. **Memória:** disco ocupado, muitas faltas de página e pouca execução útil indicam thrashing. Aumentar swap pode ampliar capacidade de apoio, mas não torna o acesso equivalente à RAM nem remove a causa por si só.
+3. **Processo zumbi:** o filho terminou, mas o pai ainda não coletou o status. O recurso central retido é a entrada de controle, não um processo consumindo CPU continuamente.
+4. **Backup:** a cópia diária existe, porém a restauração nunca foi testada e a única mídia permanece conectada. Frequência foi atendida; recuperabilidade e isolamento ainda não.
+5. **Deadlock em dois filtros:** confirme primeiro retenção/espera e depois o ciclo no grafo. Se só há fila longa ou baixa prioridade, investigue contenção ou starvation.
+6. **Diagnóstico de serviço:** para listar unidades em falha, use comando direcionado (`systemctl --failed`); para uma unidade específica, consulte seu status e depois correlacione logs pelo horário.
+
+### Mapa de conexões
+
+```mermaid
+flowchart LR
+  APP[Aplicação] --> K[Kernel e chamadas]
+  K --> P[Processos e escalonamento]
+  K --> M[Memória virtual]
+  K --> FS[Arquivos e dispositivos]
+  P --> C[Concorrência e deadlock]
+  FS --> S[Permissões, serviços e logs]
+```
+
+### Pegadinhas comuns da banca
 
 - Confundir programa com processo.
 - Afirmar que processo bloqueado está usando CPU.
@@ -1007,7 +1145,7 @@ Não. `chmod` altera permissões. Para proprietário, usa-se `chown`.
 - Tratar journaling como backup.
 - Confundir permissões Linux: usuário, grupo e outros.
 
-## O que memorizar
+### O que memorizar
 
 | Conceito | Memorização objetiva |
 |---|---|
@@ -1021,7 +1159,7 @@ Não. `chmod` altera permissões. Para proprietário, usa-se `chown`.
 | Driver | software de controle de hardware |
 | Journaling | consistência do sistema de arquivos |
 
-## Erros comuns
+### Erros comuns
 
 | Erro | Correção |
 |---|---|
@@ -1031,10 +1169,84 @@ Não. `chmod` altera permissões. Para proprietário, usa-se `chown`.
 | `chmod` troca dono | `chmod` muda permissões; `chown` muda dono |
 | Journaling recupera qualquer arquivo apagado | Backup é que recupera dados perdidos |
 
+## Bloco 4 — Administração Pública e legislação aplicada (45min)
+
+<a id="s1-d2-limpe-organizacao"></a>
+### LIMPE, organização administrativa e autarquia
+
+O caput do art. 37 da [Constituição Federal](https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html) sujeita a Administração direta e indireta aos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência. Eficiência não autoriza afastar a lei; publicidade admite restrições constitucionais e legais, não sigilo por conveniência.
+
+O [Decreto-Lei nº 200/1967](https://www.planalto.gov.br/ccivil_03/decreto-lei/del0200.htm) distingue, no plano federal, Administração Direta e Indireta. **Autarquia** é entidade criada por lei, com personalidade jurídica e patrimônio próprios, destinada a atividade típica de Administração Pública. **Órgão** integra a estrutura de uma pessoa; **entidade** possui personalidade própria. Criar órgãos na mesma pessoa é desconcentração; transferir atividade a outra pessoa é descentralização. Entre Administração Direta e autarquia não há subordinação hierárquica comum, mas vinculação e controle finalístico nos limites legais. Para o CRA-PR especificamente, o art. 1º do [Regimento aprovado pela RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955) o define como autarquia com personalidade jurídica de direito público e autonomia técnica, administrativa e financeira. Use essa fonte específica em vez de generalizar a situação de qualquer conselho profissional.
+
+<a id="s1-d2-atos-controle"></a>
+### Ato administrativo, competência, anulação e revogação
+
+Na leitura tradicional, examine competência, finalidade, forma, motivo e objeto. Competência e finalidade são vinculadas ao interesse público; discricionariedade não significa liberdade sem limites. Pela [Lei nº 9.784/1999](https://www.planalto.gov.br/ccivil_03/leis/l9784.htm), a Administração deve anular ato ilegal e pode revogar ato válido por conveniência e oportunidade, respeitados direitos adquiridos. O Judiciário controla legalidade, não substitui rotineiramente o mérito administrativo.
+
+Regra prática: **ilegal → anulação**; **válido, mas inconveniente → revogação**. Antes, confirme autoridade competente, motivação e efeitos no caso concreto.
+
+<a id="s1-d2-lai-lgpd"></a>
+### LAI × LGPD
+
+A [Lei de Acesso à Informação](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm) trata publicidade como regra e sigilo como exceção legal. A [LGPD](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm) exige finalidade, adequação, necessidade, segurança e base jurídica para tratamento de dados pessoais. As leis coexistem: dado pessoal não é automaticamente secreto, e transparência não permite divulgar qualquer dado sem análise.
+
+Em caso prático, identifique: informação solicitada, existência de dado pessoal, finalidade pública, parcela divulgável, necessidade de restrição/anonimização e fundamento da decisão.
+
+<a id="s1-d2-improbidade"></a>
+### Improbidade administrativa
+
+Na redação vigente da [Lei nº 8.429/1992](https://www.planalto.gov.br/ccivil_03/leis/l8429compilada.htm), os atos de improbidade são condutas dolosas tipificadas. Ilegalidade isolada ou erro sem dolo não basta. O art. 9º trata de enriquecimento ilícito; outros tipos protegem erário e princípios nos limites legais. A análise exige conduta, elemento subjetivo, tipo e nexo — não apenas resultado indesejado.
+
+<a id="s1-d2-licitacoes"></a>
+### Licitações, pregão, dispensa e inexigibilidade
+
+Pela [Lei nº 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm), edital e julgamento vinculam Administração e licitantes às regras válidas do procedimento. Critério de julgamento não pode ser improvisado depois da apresentação das propostas; eventual alteração válida do instrumento segue procedimento, publicidade, motivação e tratamento isonômico. Pregão é adotado quando o objeto possui padrões de desempenho e qualidade objetivamente definidos como bens ou serviços comuns. **Inexigibilidade** pressupõe inviabilidade de competição; **dispensa** depende de hipótese legal. Contratação direta continua exigindo instrução e motivação, não escolha livre.
+
+## Bloco 5 — Português e interpretação aplicada (30min)
+
+<a id="s1-d2-portugues-comando"></a>
+### Comando negativo e inferência literal
+
+Circule “incorreta”, “exceto”, “não se aplica” ou “não decorre”. Depois classifique cada alternativa como verdadeira/falsa e só então aplique o comando. Uma inferência válida permanece dentro do texto; possibilidade não vira obrigação e ausência de menção não prova proibição.
+
+<a id="s1-d2-portugues-concordancia"></a>
+### Concordância e verbo haver impessoal
+
+No sentido de existir ou ocorrer, `haver` é impessoal: “havia processos pendentes”, sem plural. Em locução, o auxiliar também fica no singular: “deve haver falhas”. Quando `haver` é auxiliar de outro verbo (“eles haviam concluído”), concorda normalmente.
+
+<a id="s1-d2-portugues-ambiguidade-onde"></a>
+### Referência pronominal e uso de “onde”
+
+Pronome precisa de referente identificável; dois referentes plausíveis tornam a frase ambígua. Em `seu/sua`, gênero e número concordam com a coisa possuída, não revelam automaticamente o possuidor. `Onde` retoma lugar físico ou figurado com valor locativo; para situação, norma ou conclusão sem valor de lugar, prefira “em que”, “na qual” ou outra construção precisa.
+
+<a id="s1-d2-portugues-pontuacao"></a>
+### Pontuação e restrição de sentido
+
+Vírgulas podem marcar explicação, deslocamento ou enumeração, mas não devem separar sujeito e verbo sem elemento intercalado. Compare: “os serviços que falharam foram reiniciados” restringe o grupo; “os serviços, que falharam, foram reiniciados” apresenta a falha como explicação relativa a todos.
+
+## Bloco 6 — Recuperação ativa e caderno de erros (20min)
+
+Sem consulta, complete: programa é __; processo é __; bloqueado aguarda __; quantum curto aumenta __; page fault válido pode exigir __; journaling não substitui __; autenticação responde __; deadlock exige __; ilegalidade leva a __ e inconveniência de ato válido pode levar a __.
+
+Registre apenas conceitos já estudados em seis campos: **confusão**, **regra**, **contraexemplo**, **sinal de prova**, **âncora interna consultada** e **próxima revisão (D+2 ou D+7)**. Não abra comandos, leis ou tópicos novos neste bloco.
+
+**Entrega do caderno:** faça três quadros — programa/processo/thread/escalonamento; RAM/memória virtual/paginação/segmentação; mutex/semáforo/corrida/deadlock — e escreva um exemplo próprio em cada um.
+
+<a id="s1-d2-mini-revisao"></a>
 ## Mini revisão do dia
 
 O sistema operacional é o gerenciador central de recursos. Ele controla processos, memória, arquivos, dispositivos e segurança. Processos competem por CPU e recursos; memória virtual abstrai e protege a memória; sistemas de arquivos organizam dados; drivers permitem comunicação com hardware; concorrência exige sincronização; deadlocks ocorrem quando há espera circular.
 
+<a id="s1-d2-fixacao"></a>
+## 5 perguntas de fixação
+
+1. Como diferenciar processo bloqueado, zumbi e órfão sem olhar apenas o nome?
+2. Por que quantum muito curto e quantum muito longo produzem custos diferentes?
+3. Que evidências separam page fault normal de thrashing?
+4. Como LAI e LGPD podem ser aplicadas juntas à mesma solicitação?
+5. Que teste separa anulação de revogação e dispensa de inexigibilidade?
+
+<a id="s1-d2-checklist"></a>
 ## Checklist de domínio
 
 - [ ] Sei explicar o que é sistema operacional.
@@ -1047,160 +1259,23 @@ O sistema operacional é o gerenciador central de recursos. Ele controla process
 - [ ] Sei reconhecer deadlock.
 - [ ] Diferencio `chmod` e `chown`.
 
-## Tarefa para o caderno de erros
+<a id="s1-d2-roteiro-questoes"></a>
+## Roteiro do banco completo de 70 questões
 
-Crie três quadros:
-
-1. **Processos:** programa, processo, thread, escalonamento.
-2. **Memória:** RAM, memória virtual, paginação, segmentação.
-3. **Concorrência:** mutex, semáforo, condição de corrida, deadlock.
-
-Em cada quadro, escreva um exemplo com suas palavras.
-
-## 5 perguntas de fixação
-
-1. Qual é a diferença entre programa, processo e thread?
-2. Por que a memória virtual melhora isolamento entre processos?
-3. Como paginação e segmentação se diferenciam?
-4. Quais são as quatro condições clássicas para ocorrência de deadlock?
-5. Por que journaling não substitui uma política de backup?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Conceitos de SO, processos, threads, escalonamento, memória, memória virtual, paginação, segmentação, sistema de arquivos, dispositivos, concorrência, sincronização, deadlock, Windows e Linux.
-
-## Reforço de alinhamento com as questões - Dia 2
-
-As questões do Dia 2 cobram bastante diferença fina entre conceitos parecidos. Para responder com segurança, não basta decorar nomes: é preciso entender o papel prático de cada mecanismo do sistema operacional.
-
-### Kernel, chamadas de sistema e isolamento
-
-O **kernel** é o núcleo do sistema operacional. Ele controla acesso à CPU, memória, disco, rede, dispositivos e permissões. Programas comuns não devem acessar hardware diretamente; eles pedem serviços ao kernel por meio de **chamadas de sistema**.
-
-Exemplo simples: quando um editor salva um arquivo, ele não grava diretamente no disco. Ele solicita ao SO uma operação de escrita. O SO verifica permissões, sistema de arquivos, buffers e dispositivo.
-
-A pegadinha é achar que chamada de sistema é uma função comum de biblioteca. Bibliotecas podem facilitar a chamada, mas a operação protegida passa pelo kernel.
-
-### CPU-bound, I/O-bound, quantum e starvation
-
-Processos **CPU-bound** usam intensamente processamento. Processos **I/O-bound** passam muito tempo esperando entrada/saída, como disco, rede ou teclado.
-
-| Tipo de processo | Característica | Exemplo |
+| Momento | Questões | Regra |
 |---|---|---|
-| CPU-bound | consome muito tempo de CPU | compressão, cálculo, criptografia |
-| I/O-bound | espera muito por E/S | leitura de arquivos, requisições de rede |
+| Primeira passagem, hoje | Q1, Q2, Q3, Q6, Q9, Q13, Q15, Q18, E3 e E20 | exatamente 10 essenciais, em 30min |
+| D+2 | Q4, Q5, Q7, Q12, Q14, Q16, Q22, E1, E5 e E16 | concluir as essenciais e iniciar aprofundamento |
+| Até antes do D+7 | todas marcadas como **Aprofundamento** | resolver em sessões curtas e corrigir no mesmo dia |
+| D+7 | todas marcadas como **Revisão** | medir retenção sem consulta |
+| Ciclo seguinte | todas marcadas como **Simulado** | executar sob tempo e sem pistas |
 
-No escalonamento **Round Robin**, cada processo recebe uma fatia de tempo, chamada **quantum**. Se o quantum é muito curto, há muitas trocas de contexto. Se é muito longo, a resposta do sistema pode piorar.
+<a id="s1-d2-correcao"></a>
+## Correção e fechamento
 
-**Starvation** ocorre quando um processo fica esperando indefinidamente por CPU ou recurso, geralmente por política de prioridade mal ajustada.
-
-### Memória virtual, page fault, swap e thrashing
-
-Memória virtual é uma abstração: cada processo enxerga um espaço próprio de endereçamento. A paginação divide esse espaço em páginas e mapeia páginas para molduras na RAM.
-
-**Page fault** ocorre quando o processo acessa uma página que não está carregada na memória física naquele momento. Isso não é necessariamente erro fatal; pode ser parte normal da memória virtual. O problema é quando page faults ficam excessivos.
-
-**Swap** é área em disco usada como apoio quando a RAM está pressionada. Como disco/SSD é mais lento que RAM, uso excessivo de swap degrada desempenho. Quando o sistema passa mais tempo trocando páginas do que executando trabalho útil, fala-se em **thrashing**.
-
-### Sistemas de arquivos, journaling, caminhos e backup
-
-Sistema de arquivos organiza nomes, diretórios, permissões, metadados e blocos no armazenamento.
-
-- **Caminho absoluto:** começa na raiz ou unidade, como `/var/log/syslog` ou `C:\Users\Ana\arquivo.txt`.
-- **Caminho relativo:** depende do diretório atual, como `docs/edital.pdf`.
-- **Journaling:** registra operações para recuperar consistência estrutural após falha.
-- **Backup:** cópia de segurança para recuperar dados perdidos, corrompidos ou apagados.
-
-Journaling não substitui backup. Ele ajuda o sistema de arquivos a voltar a um estado consistente, mas não garante recuperação de um documento excluído pelo usuário.
-
-### Permissões, autenticação, autorização e serviços
-
-**Autenticação** responde: "quem é você?".  
-**Autorização** responde: "o que você pode fazer?".
-
-No Linux, permissões costumam ser lidas como usuário, grupo e outros. Exemplo: `chmod 640 arquivo` significa:
-
-- dono: leitura e escrita;
-- grupo: leitura;
-- outros: sem permissão.
-
-No Windows, permissões NTFS podem ser aplicadas a usuários e grupos com regras como leitura, gravação, modificação e controle total.
-
-Serviços em segundo plano são programas que executam sem interação direta contínua do usuário. No Linux moderno, `systemd` é comum para iniciar, parar e verificar serviços, por exemplo com `systemctl status nome-do-servico`.
-
-### Concorrência, região crítica, locks e deadlock
-
-Concorrência ocorre quando múltiplos fluxos de execução disputam recursos. **Região crítica** é o trecho que acessa dado compartilhado. Para proteger esse trecho, usam-se mecanismos como mutex, semáforo e locks.
-
-Deadlock exige quatro condições clássicas:
-
-1. exclusão mútua;
-2. posse e espera;
-3. não preempção;
-4. espera circular.
-
-Se uma questão descreve apenas lentidão, fila grande ou erro de programa, não conclua automaticamente deadlock. Procure a espera circular por recursos.
-
-## Tabela de revisão rápida do Dia 2
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
-|---|---|---|---|
-| Kernel | núcleo do SO, controla recursos protegidos | Confundir com aplicativo comum | Gerencia memória e chamadas de sistema |
-| Chamada de sistema | pedido de serviço ao kernel | Tratar como função comum sem privilégio | `open`, `read`, `write` conceituais |
-| Processo | programa em execução com contexto próprio | Confundir com arquivo executável parado | Navegador aberto em execução |
-| Thread | fluxo de execução dentro de processo | Achar que tem sempre memória isolada total | Aba ou tarefa interna do programa |
-| CPU-bound | usa muita CPU | Confundir com espera de disco | Criptografia pesada |
-| I/O-bound | espera E/S com frequência | Confundir com alto uso de CPU | Leitura de rede |
-| Quantum | fatia de tempo no escalonamento | Achar que é prioridade fixa | Round Robin |
-| Starvation | espera indefinida por recurso/CPU | Confundir com deadlock sempre | Baixa prioridade nunca executa |
-| Page fault | página acessada não está na RAM | Tratar sempre como falha fatal | SO carrega página do disco |
-| Swap | área em disco usada como apoio à RAM | Achar que é tão rápida quanto cache | Sistema lento por excesso de swap |
-| Thrashing | troca excessiva de páginas | Confundir com uso normal de memória virtual | Disco ativo e pouca execução útil |
-| Journaling | registro para consistência do sistema de arquivos | Confundir com backup | Recuperar estrutura após queda |
-| Backup | cópia para recuperação de dados | Achar que journaling resolve perda de arquivo | Restaurar arquivo apagado |
-| Driver | software que permite comunicação com dispositivo | Confundir com firmware ou aplicativo | Driver de impressora |
-| Spooling | fila intermediária de E/S | Confundir com driver | Fila de impressão |
-| Autenticação | verifica identidade | Confundir com autorização | Login e senha |
-| Autorização | verifica permissão | Confundir com autenticação | Acesso negado a pasta |
-| `chmod` | altera permissões Linux | Confundir com `chown` | `chmod 640 arquivo` |
-| `chown` | altera dono/grupo | Confundir com permissões numéricas | `chown usuario arquivo` |
-| Deadlock | espera circular por recursos | Chamar qualquer travamento de deadlock | Processo A espera B; B espera A |
-
-## Pegadinhas do Dia 2
-
-- Processo não é só o arquivo do programa; processo é programa em execução.
-- Thread compartilha recursos do processo, mas tem fluxo de execução próprio.
-- Page fault pode ser evento normal da memória virtual; não é sempre erro fatal.
-- Swap ajuda quando falta RAM, mas é muito mais lento que RAM e cache.
-- Journaling melhora consistência do sistema de arquivos, mas não substitui backup.
-- `chmod` muda permissões; `chown` muda proprietário.
-- Autenticação identifica o usuário; autorização define o que ele pode acessar.
-- Deadlock exige espera circular; lentidão ou fila grande não bastam.
-- Starvation é espera indefinida, mas não necessariamente espera circular.
-- Driver permite comunicação com hardware; spooling organiza fila de E/S.
+Corrija as 10 da primeira passagem integralmente. Registre `ID → diagnóstico correto → indícios do enunciado → descarte de A/B/C/D → âncora → retorno`. Para item administrativo, acrescente a fonte oficial e o artigo/tema consultado. Agende D+2 e encerre; o saldo do banco não cria uma quarta sessão.
 
 ---
-
-
-## Revisão fixa do Dia 2
-
-**Foco:** Administração Pública e Português. Recupere princípios do art. 37, organização administrativa, atos, LAI/LGPD e leitura de quantificadores. **Base:** teoria do Dia 6 e Dia 5. **Pegadinha:** eficiência não afasta legalidade; “pode” não equivale a “deve”.
-
-
-## Mapa de conexões do Dia 2
-
-```mermaid
-flowchart LR
-  PROG[Programa] --> PROC[Processo]
-  PROC --> TH[Threads e escalonamento]
-  PROC --> MV[Memória virtual]
-  TH --> SYNC[Concorrência e sincronização]
-  PROC --> FS[Sistemas de arquivos]
-  FS --> IO[Drivers e E/S]
-  IO --> WIN[Windows e Linux]
-```
-
-**Leitura ativa:** processo reúne recursos e thread executa; pronto aguarda CPU, bloqueado aguarda evento. **Pegadinhas:** concorrência × paralelismo; paginação × segmentação; journaling × backup.
 
 # Dia 3 - Banco de Dados Base e SQL
 

@@ -8,14 +8,15 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 
 - `README.md`: visão geral do projeto.
 - `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
-- `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
+- `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com primeira passagem em duas ou, quando necessário, até três sessões de 2h30 a 3h líquidas, cronograma até a reta final e controle de cobertura.
 - `planejamento/padrao_semanal.md`: modelo oficial de criação, avaliação e aceite das semanas, com rubrica de 100 pontos, critérios eliminatórios e auditoria de teoria, exemplos, questões e comentários.
 - `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
+- `planejamento/relatorio_auditoria_semana_01_dias_1_2.md`: relatório final da auditoria pedagógica dos 140 itens dos Dias 1 e 2, com evidências de cobertura, jornada e aceite técnico do lote.
 - `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
-- `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
+- `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões do banco complementar, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
-- `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões extras de revisão fixa.
+- `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões complementares dos Blocos 4–6.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -31,12 +32,14 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 
 Os Dias 3 e 4 foram auditados integralmente: a teoria antecede todas as cobranças e a primeira passagem termina em três sessões de 2h50, com apenas 10 Essenciais resolvidas e corrigidas. O saldo abre D+2; Revisão e Simulado ficam em D+7 e no ciclo seguinte. No Dia 4, questões reescritas por integração normativa produziram a distribuição substantiva de 30 Médias, 15 Difíceis e 5 Muito difíceis. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
 
+Os Dias 1 e 2 foram auditados integralmente e aprovados no lote próprio. A teoria antecede a cobrança; a primeira passagem cabe em três sessões de 2h50, 2h50 e 3h, com 10 Essenciais resolvidas e corrigidas por dia. O saldo segue para D+2, o Aprofundamento termina antes de D+7, a Revisão ocorre em D+7 e o Simulado no ciclo seguinte. Os Dias 5 e 6 continuam fora deste aceite.
+
 ## Questões
 
 A Semana 1 possui:
 
 - 300 questões principais, divididas em 50 questões por dia;
-- 120 questões extras de revisão fixa, organizadas dentro do respectivo dia e cobrindo os blocos diários de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM, Informática e caderno de erros;
+- 120 questões do banco complementar, organizadas por dia e vinculadas aos Blocos 4–6 de Legislação CRA/CFA, Administração Pública, Português/interpretação, RLM, Informática e caderno de erros;
 - 420 questões no total.
 
 ## Semana 2
@@ -46,10 +49,10 @@ A Semana 2 está produzida e em migração para o padrão atual. Ela aprofunda R
 Também possui:
 
 - 300 questões principais, distribuídas em 50 por dia;
-- 120 questões extras das revisões fixas de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
+- 120 questões complementares dos Blocos 4–6 de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
 - 420 questões autorais no total, todas com gabarito e comentário fundamentado na apostila.
 
-As 120 extras tiveram a cobertura dos Blocos 4–6 auditada. A migração completa das 300 principais para níveis e comentários do padrão novo continua controlada por lotes de dois dias; por isso, a semana não deve ser tratada como integralmente aceita ainda.
+As 120 questões complementares tiveram a cobertura dos Blocos 4–6 auditada. A migração completa das 300 principais para níveis e comentários do padrão novo continua controlada por lotes de dois dias; por isso, a semana não deve ser tratada como integralmente aceita ainda.
 
 ## Organização
 
