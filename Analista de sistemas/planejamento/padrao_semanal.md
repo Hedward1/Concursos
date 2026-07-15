@@ -77,17 +77,18 @@ O mapa de conexões do dia deve aparecer depois do ensino dos conceitos que repr
 
 ### Jornada executável e carga de estudo
 
-O dia pode continuar como unidade temática de aproximadamente 6 horas, mas deve ser dividido em duas sessões de até cerca de 3 horas líquidas, com ponto de parada explícito. Se teoria, prática fixa e correção excederem esse limite, crie ciclos posteriores de aprofundamento, revisão e simulado; não comprima todo o banco no primeiro contato.
+Cada dia deve ter primeira passagem executável em **duas ou, quando o volume exigir, no máximo três sessões reais de 2h30 a 3h líquidas**, sempre com ponto de parada explícito. A teoria necessária deve permanecer antes da cobrança; se leitura, prática e correção não couberem nesse limite, reduza a quantidade de questões da primeira passagem e leve o saldo do banco para D+2. Não acrescente sessões ao dia nem comprima todo o banco no primeiro contato.
 
 Cada cronograma deve distinguir:
 
 | Etapa | Conteúdo mínimo | Limite de execução |
 |---|---|---|
-| Sessão A | Blocos 1–3, leitura ativa e prática guiada | aproximadamente 3h líquidas |
-| Sessão B | Blocos 4–6, mini revisão, essenciais e correção | aproximadamente 3h líquidas |
-| Ciclo de aprofundamento | questões selecionadas, retorno às âncoras e correção | sessão própria, quando necessário |
-| Ciclo de revisão | recuperação espaçada e caderno de erros | sessão própria |
-| Simulado | itens reservados, sem consulta, e correção posterior | sessão própria |
+| Sessão A | abertura e início dos Blocos 1–3, na ordem física | 2h30 a 3h líquidas |
+| Sessão B | continuação na ordem física; conclusão dos Blocos 1–3 e avanço compatível | 2h30 a 3h líquidas |
+| Sessão C, quando necessária | conclusão ou saldo dos Blocos 4–6, mini revisão, amostra fixa de até 10 Essenciais e correção integral | 2h30 a 3h líquidas; última sessão do dia |
+| Revisão D+2 | demais Essenciais, corrigidas antes do aprofundamento; depois, retorno às âncoras e Aprofundamento | ciclo futuro próprio de 2h30 a 3h |
+| Revisão D+7 | recuperação espaçada e caderno de erros | ciclo futuro próprio de 2h30 a 3h |
+| Simulado do ciclo seguinte | itens reservados, sem consulta, e correção posterior | ciclo futuro próprio de 2h30 a 3h |
 
 O cronograma deve contabilizar separadamente leitura, resolução, correção A–D, produção discursiva e caderno de erros. A existência de 50 principais e 20 extras não significa que os 70 itens devam ser resolvidos e corrigidos na primeira passagem.
 
@@ -187,10 +188,10 @@ As extras devem utilizar a `Revisão fixa do Dia X`. Questões de revisão mista
 
 Antes da primeira questão, inclua um roteiro operacional que distribua o banco completo:
 
-- `Essenciais`: primeira passagem, em quantidade compatível com a sessão;
-- `Aprofundamento`: depois da teoria completa e da correção dos essenciais;
-- `Revisão`: recuperação espaçada, não continuação automática da primeira sessão;
-- `Simulado`: conjunto reservado, resolvido sem consulta.
+- `Essenciais`: amostra fixa de até 10 na primeira passagem, com correção integral; as demais abrem D+2;
+- `Aprofundamento`: somente depois da correção integral das Essenciais que abrem D+2; pode continuar em ciclo próprio antes de D+7;
+- `Revisão`: D+7, como recuperação espaçada, não continuação automática da primeira passagem;
+- `Simulado`: conjunto reservado para o ciclo seguinte, resolvido sem consulta.
 
 A classificação indica quando usar o item, não sua dificuldade. Uma questão média pode ser reservada para revisão, e uma questão difícil pode ser essencial se avaliar um conceito central.
 
@@ -225,6 +226,13 @@ Quando a recalibração posterior alterar a matriz, a exceção é válida somen
 - **Médio:** exige compreensão, comparação ou aplicação direta em cenário, comando, código, norma ou cálculo. Os distratores representam erros comuns, mas um candidato bem preparado consegue eliminá-los sem cadeia longa de inferências.
 - **Difícil:** exige interpretação cuidadosa, comparação de conceitos próximos, mais de uma etapa ou identificação de erro sutil. Não pode ser resolvida apenas pelo reconhecimento de palavra-chave.
 - **Muito difícil:** integra conceitos ou exige diagnóstico ou cadeia de raciocínio com múltiplas etapas; quando o conteúdo comportar aplicação, apresenta cenário e consequências suficientes e alternativas próximas. A dificuldade decorre do raciocínio exigido, nunca de ambiguidade, informação omitida ou simples aumento do texto.
+
+Antes de aceitar a distribuição final, aplique um **teste de dificuldade substantiva**:
+
+- uma questão `Difícil` deve exigir ao menos duas regras já ensinadas ou duas decisões sucessivas, com distratores que falhem em etapas diferentes;
+- uma questão `Muito difícil` deve exigir três ou mais filtros independentes — por exemplo, fonte, vigência, hierarquia, competência, sujeito, conduta, processo e consequência — ou cadeia técnica equivalente;
+- associar vários números a seus objetos, reproduzir uma tabela ou alongar o caso sem acrescentar decisão continua sendo tarefa de reconhecimento e não justifica nível elevado;
+- se um dia terminar sem nenhuma questão `Muito difícil`, o relatório deve demonstrar por que o conteúdo não permite integração legítima. Quando três ou mais regras ensinadas puderem formar um caso de resposta única, reescreva um conjunto limitado de itens em vez de aceitar dificuldade nula ou apenas trocar rótulos.
 
 ### Padrão de elaboração das questões
 
