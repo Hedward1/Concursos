@@ -10,7 +10,7 @@ Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
 **Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões extras de revisão fixa (20 por dia).
 
-**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. Cada bloco de 50 questões principais adota 20/20/10; cada bloco de 20 extras adota 8/8/4. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Essa regra também se aplica a todo questionário complementar criado a partir do Dia 3. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
+**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. A matriz de produção é 20/20/10 para 50 principais e 8/8/4 para 20 extras, mas a auditoria semântica posterior deve corrigir rótulos superestimados ou subestimados e documentar a exceção. Após a auditoria deste lote, o Dia 3 ficou em 25/18/7 e o Dia 4 em 42/8/0 nas principais; as justificativas estão em `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
 
 ---
 
@@ -3252,6 +3252,8 @@ Extra Dia 2.20: C
 
 ### Questão 1
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Consultas, ordem lógica, ordenação e limitação](semana_01_estudo.md#s1-d3-sql-consultas)
 
 Em um sistema do CRA, a tabela `profissional(id_profissional, nome, uf, situacao)` deve retornar apenas profissionais ativos do Paraná. A consulta correta é:
 
@@ -3262,8 +3264,10 @@ D) SELECT nome FROM profissional WHERE uf <> 'PR' AND situacao = 'ATIVO';
 
 ### Questão 2
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes)
 
-A tabela `anuidade(id_anuidade, id_profissional, ano, valor)` deve retornar o total de anuidades por ano. Assinale a consulta adequada.
+A tabela `anuidade(id_anuidade, id_profissional, ano, valor)` deve retornar a **quantidade de lançamentos de anuidade por ano**. Assinale a consulta adequada.
 
 A) SELECT ano, COUNT(*) AS total FROM anuidade GROUP BY ano;
 B) SELECT ano, COUNT(*) AS total FROM anuidade GROUP BY id_profissional;
@@ -3272,6 +3276,8 @@ D) SELECT COUNT(*) AS total FROM anuidade;
 
 ### Questão 3
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes)
 
 Para listar apenas setores com mais de 20 profissionais cadastrados, considerando `profissional(id, setor)`, a consulta correta é:
 
@@ -3282,6 +3288,8 @@ D) SELECT setor, COUNT(*) FROM profissional GROUP BY setor HAVING COUNT(*) > 20;
 
 ### Questão 4
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 No modelo relacional, `id_profissional` em `anuidade` referenciando `profissional(id_profissional)` é exemplo de:
 
@@ -3292,6 +3300,8 @@ D) índice de pesquisa sem função de integridade referencial.
 
 ### Questão 5
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 Assinale a alternativa correta sobre chave primária.
 
@@ -3302,6 +3312,8 @@ D) É escolhida entre as chaves candidatas, mas só passa a exigir unicidade qua
 
 ### Questão 6
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento)
 
 Um relacionamento N:N entre `usuario` e `perfil` deve ser implementado, no modelo relacional, por:
 
@@ -3312,6 +3324,8 @@ D) uma FK `id_perfil` em `usuario`, limitando cada usuário a um único perfil.
 
 ### Questão 7
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base)
 
 Uma tabela `matricula(id_aluno, id_disciplina, nome_aluno, nome_disciplina)` tem chave composta `(id_aluno, id_disciplina)`. O problema de normalização mais evidente é:
 
@@ -3322,6 +3336,8 @@ D) nenhuma violação, pois a combinação `(id_aluno, id_disciplina)` é única
 
 ### Questão 8
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base)
 
 A tabela `servidor(id_servidor, id_departamento, nome_departamento)` pode violar a 3FN porque:
 
@@ -3332,6 +3348,8 @@ D) qualquer FK para `departamento` é incompatível com a 3FN.
 
 ### Questão 9
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao)
 
 Assinale a alternativa que diferencia corretamente `DELETE` e `DROP`.
 
@@ -3342,6 +3360,8 @@ D) `DROP` esvazia a tabela e preserva sua estrutura para reutilização, enquant
 
 ### Questão 10
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao)
 
 Em `UPDATE profissional SET situacao = 'INATIVO';`, sem cláusula WHERE, o efeito provável é:
 
@@ -3352,8 +3372,10 @@ D) alterar somente as linhas que já estavam ativas, por inferência do valor at
 
 ### Questão 11
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [NULL, lógica de três valores e DISTINCT](semana_01_estudo.md#s1-d3-null-distinct)
 
-Para localizar registros sem e-mail cadastrado em `profissional(email)`, usa-se:
+Para localizar exclusivamente os registros em que `profissional.email` contém o valor SQL `NULL`, usa-se:
 
 A) WHERE email = ''
 B) WHERE email <> NULL
@@ -3362,6 +3384,8 @@ D) WHERE email IS NULL
 
 ### Questão 12
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins)
 
 Considere `profissional(id, nome)` e `anuidade(id, id_profissional, ano)`. Para listar somente pares profissional–anuidade com correspondência pela chave, a consulta correta é:
 
@@ -3372,6 +3396,8 @@ D) SELECT p.nome, a.ano FROM profissional p CROSS JOIN anuidade a;
 
 ### Questão 13
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins)
 
 Um relatório deve mostrar todos os profissionais, mesmo os que ainda não possuem anuidade lançada. A junção mais adequada, partindo de `profissional`, é:
 
@@ -3382,6 +3408,8 @@ D) LEFT JOIN anuidade ON anuidade.id_profissional = profissional.id.
 
 ### Questão 14
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes)
 
 Em SQL, `COUNT(*)` e `COUNT(email)` podem produzir resultados diferentes porque:
 
@@ -3392,6 +3420,8 @@ D) `COUNT(email)` conta os NULLs, atribuindo zero a cada valor ausente.
 
 ### Questão 15
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 Assinale a alternativa correta sobre `PRIMARY KEY`, `UNIQUE` e `NOT NULL`.
 
@@ -3402,6 +3432,8 @@ D) `NOT NULL` impede valores repetidos, enquanto `UNIQUE` exige preenchimento e 
 
 ### Questão 16
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 Um analista deseja impedir que `valor_anuidade` seja negativo. A restrição mais adequada é:
 
@@ -3412,6 +3444,8 @@ D) DEFAULT 0 para `valor_anuidade`.
 
 ### Questão 17
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [SQL ANSI básico](semana_01_estudo.md#s1-d3-sql-base)
 
 V/F: Sobre SQL.
 
@@ -3428,6 +3462,8 @@ D) V, V, V.
 
 ### Questão 18
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Transações e ACID](semana_01_estudo.md#s1-d3-transacoes-acid)
 
 Em uma transação de pagamento, o sistema deve registrar pagamento e baixar débito. Se a baixa falhar, o registro do pagamento também deve ser desfeito. Essa exigência representa:
 
@@ -3438,6 +3474,8 @@ D) atomicidade, porque as etapas devem produzir um único resultado de tudo ou n
 
 ### Questão 19
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Índices e custo de manutenção](semana_01_estudo.md#s1-d3-indices)
 
 Um índice criado sobre `numero_processo` tende a:
 
@@ -3448,6 +3486,8 @@ D) eliminar toda varredura da tabela, inclusive em filtros que não utilizem a c
 
 ### Questão 20
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Views, procedures e triggers](semana_01_estudo.md#s1-d3-objetos-programaveis)
 
 Uma view `vw_profissionais_ativos` pode ser usada para:
 
@@ -3458,6 +3498,8 @@ D) oferecer uma visão lógica baseada em consulta, que pode filtrar e projetar 
 
 ### Questão 21
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Trigger, transação, rollback e auditoria](semana_01_estudo.md#s1-d3-trigger-transacional)
 
 Uma trigger `AFTER INSERT` em `anuidade` registra auditoria na mesma transação do comando que a disparou. Não há transação autônoma específica. Se a transação principal sofrer `ROLLBACK`, é correto afirmar que:
 
@@ -3468,6 +3510,8 @@ D) o registro produzido pela trigger não participa das propriedades ACID da tra
 
 ### Questão 22
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Views, procedures e triggers](semana_01_estudo.md#s1-d3-objetos-programaveis)
 
 Uma rotina `registrar_pagamento` deve receber parâmetros, validar dados, inserir o pagamento e atualizar o débito quando chamada pela aplicação. A solução mais compatível é:
 
@@ -3478,6 +3522,8 @@ D) uma view, pois toda view aceita parâmetros e executa alterações encadeadas
 
 ### Questão 23
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Álgebra relacional](semana_01_estudo.md#s1-d3-algebra-relacional)
 
 Considere `π_nome(σ_uf = 'PR' ∧ situacao = 'ATIVO'(Profissional))`. Essa expressão de álgebra relacional representa:
 
@@ -3487,7 +3533,9 @@ C) a quantidade de profissionais ativos em cada UF.
 D) os nomes dos profissionais cujas tuplas satisfazem simultaneamente UF e situação.
 
 ### Questão 24
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento)
 
 Um processo pode possuir nenhuma ou várias fiscalizações. Cada fiscalização tem número próprio, data, resultado e responsável. No MER, a representação mais adequada é:
 
@@ -3497,7 +3545,9 @@ C) modelar `Fiscalizacao` como entidade relacionada a `Processo` em 1:N.
 D) representar cada fiscalização como atributo derivado, sem identidade nem dados próprios.
 
 ### Questão 25
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento)
 
 Uma pessoa pode ter vários telefones, e cada telefone possui tipo e indicação de principal. O mapeamento relacional que melhor preserva a 1FN é:
 
@@ -3507,7 +3557,9 @@ C) armazenar telefone, tipo e indicador em uma string delimitada.
 D) criar uma tabela `PessoaTelefone`, com FK para `Pessoa` e uma chave adequada.
 
 ### Questão 26
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Conceitos e arquitetura de SGBD](semana_01_estudo.md#s1-d3-conceitos-sgbd)
 
 O DBA altera organização em disco, particionamento e índices, mas mantém tabelas, colunas e consultas usadas pela aplicação. Isso exemplifica:
 
@@ -3517,7 +3569,9 @@ C) independência física, pois a implementação mudou sem alterar o esquema l�
 D) durabilidade, porque toda mudança física exige COMMIT.
 
 ### Questão 27
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Metadados, catálogo e independência física](semana_01_estudo.md#s1-d3-metadados-catalogo)
 
 Antes de executar um `ALTER TABLE`, o analista consulta o catálogo do SGBD para descobrir tipos, valores padrão, restrições e índices existentes. Ele está consultando:
 
@@ -3528,6 +3582,8 @@ D) uma cópia física obrigatória das tabelas de negócio.
 
 ### Questão 28
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes)
 
 Considere `lancamento(id_lancamento PK, setor, valor)`, com vários lançamentos por setor: `SELECT setor, id_lancamento, SUM(valor) FROM lancamento GROUP BY setor;`. Em regras SQL usuais, o problema é que:
 
@@ -3538,6 +3594,8 @@ D) a função agregada deveria aparecer antes das demais expressões no SELECT.
 
 ### Questão 29
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao)
 
 Dentro de uma transação ainda não confirmada, executa-se `DELETE FROM profissional WHERE situacao = 'INATIVO';`. É correto afirmar que:
 
@@ -3548,6 +3606,8 @@ D) por ser uma operação DML, a exclusão torna-se irreversível ao fim do coma
 
 ### Questão 30
 **Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao)
 
 Considere `profissional(id INTEGER GENERATED ALWAYS AS IDENTITY, nome VARCHAR(100) NOT NULL, uf CHAR(2) NOT NULL DEFAULT 'PR')`. Para inserir Ana e Bruno usando o valor padrão de `uf`, emprega-se:
 
@@ -3558,16 +3618,20 @@ D) `INSERT INTO profissional (nome) VALUES ('Ana'), ('Bruno');`
 
 ### Questão 31
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Isolamento e anomalias](semana_01_estudo.md#s1-d3-isolamento)
 
 Sobre níveis de isolamento, considerada a classificação ANSI clássica e ressalvadas implementações mais fortes dos SGBDs, assinale a correta.
 
-A) REPEATABLE READ impede leituras sujas e não repetíveis; o tratamento de fantasmas deve ser conferido no padrão e no SGBD.
+A) REPEATABLE READ impede leituras sujas e não repetíveis; na matriz ANSI clássica, fantasmas ainda podem ocorrer, embora alguns SGBDs ofereçam garantia mais forte.
 B) READ COMMITTED garante que duas leituras da mesma linha, na mesma transação, sempre retornem o mesmo valor.
 C) READ UNCOMMITTED impede leitura de valores ainda não confirmados.
 D) SERIALIZABLE elimina a necessidade de COMMIT e de mecanismos de controle de concorrência.
 
 ### Questão 32
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 Uma tabela possui `id_pessoa` como PK e `cpf` com restrição UNIQUE, mas sem NOT NULL. A interpretação mais precisa é:
 
@@ -3578,6 +3642,8 @@ D) a unicidade de `cpf` permite repetir `id_pessoa` quando cada ocorrência esti
 
 ### Questão 33
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins)
 
 Para listar todos os profissionais e, quando existente, o nome de sua cidade, considerando `profissional(id, nome, id_cidade)` e `cidade(id, nome)`, usa-se:
 
@@ -3588,6 +3654,8 @@ D) `SELECT p.nome, c.nome FROM profissional p LEFT JOIN cidade c ON c.id = p.id_
 
 ### Questão 34
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Dependências e decomposição](semana_01_estudo.md#s1-d3-normalizacao-decomposicao)
 
 Assinale a afirmativa incorreta sobre normalização e decomposição.
 
@@ -3598,6 +3666,8 @@ D) Normalização reduz redundâncias e anomalias, mas pode aumentar a necessida
 
 ### Questão 35
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Consultas, ordem lógica, ordenação e limitação](semana_01_estudo.md#s1-d3-sql-consultas)
 
 Usando sintaxe SQL com FETCH, deseja-se retornar no máximo três linhas de anuidade com maior `valor`, usando o menor `id_anuidade` como desempate. A consulta correta é:
 
@@ -3608,6 +3678,8 @@ D) `SELECT * FROM anuidade FETCH FIRST 3 ROWS ONLY;`
 
 ### Questão 36
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao)
 
 Sobre DELETE, TRUNCATE e DROP, assinale a alternativa correta.
 
@@ -3618,6 +3690,8 @@ D) DROP TABLE esvazia a tabela, mas preserva estrutura e restrições.
 
 ### Questão 37
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins)
 
 Deseja-se listar todos os setores, inclusive os que não possuem profissional ativo, com a respectiva contagem. A consulta correta é:
 
@@ -3628,6 +3702,8 @@ D) `SELECT s.id, COUNT(p.id) FROM setor s INNER JOIN profissional p ON p.id_seto
 
 ### Questão 38
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Participação, cardinalidade e vínculos temporais](semana_01_estudo.md#s1-d3-participacao-temporalidade)
 
 Um profissional pode responder por várias pessoas jurídicas, e cada pessoa jurídica pode possuir vários responsáveis ao longo do tempo. O vínculo guarda início, fim e situação. A melhor solução é:
 
@@ -3638,6 +3714,8 @@ D) guardar nomes e períodos em uma coluna textual de histórico.
 
 ### Questão 39
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Backup lógico consistente e restauração](semana_01_estudo.md#s1-d3-backup-consistente)
 
 É necessário produzir backup lógico consistente enquanto o banco permanece disponível para escritas concorrentes. A conduta mais segura é:
 
@@ -3647,7 +3725,9 @@ C) copiar diretamente os arquivos físicos abertos pelo SGBD.
 D) criar índices adicionais, pois eles substituem mecanismos de backup e recuperação.
 
 ### Questão 40
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base)
 
 A coluna `documento.tags` contém valores como `fiscalização;anuidade;recurso`. Para consultar e restringir cada tag com integridade relacional, a melhor remodelagem é:
 
@@ -3657,7 +3737,9 @@ C) criar colunas fixas `tag1`, `tag2`, `tag3` e `tag4`.
 D) criar `DocumentoTag`, com uma tag por linha e FK para `Documento`.
 
 ### Questão 41
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade)
 
 A tabela já possui `id` como PK. `numero_registro` deve ser obrigatório e único, enquanto `situacao` só pode assumir `A` ou `I`. A definição mais adequada é:
 
@@ -3668,6 +3750,8 @@ D) `numero_registro VARCHAR(20) NOT NULL UNIQUE, situacao CHAR(1) NOT NULL CHECK
 
 ### Questão 42
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Conceitos de SGBD e independência física](semana_01_estudo.md#s1-d3-conceitos-sgbd), [isolamento e anomalias](semana_01_estudo.md#s1-d3-isolamento) e [log, redo, undo e recuperação](semana_01_estudo.md#s1-d3-log-recuperacao)
 
 Uma plataforma mantém visões externas sobre um esquema lógico comum. O DBA reorganiza índices e partições sem alterar essas visões; em paralelo, o sistema precisa isolar transações concorrentes e recuperar commits após falha. A conclusão tecnicamente correta é:
 
@@ -3678,6 +3762,8 @@ D) a linguagem SQL, independentemente do SGBD, implementa os mapeamentos entre n
 
 ### Questão 43
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Segurança e menor privilégio com views](semana_01_estudo.md#s1-d3-menor-privilegio)
 
 O usuário `relatorio` deve consultar apenas `id` e `nome` dos profissionais ativos, sem acessar CPF, linhas inativas ou operações de escrita. Considerando o menor privilégio e uma solução independente do filtro da aplicação, a configuração mais adequada é:
 
@@ -3688,6 +3774,8 @@ D) criar a view filtrada, mas manter também `SELECT` sobre a tabela-base para q
 
 ### Questão 44
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Trigger, transação, rollback e auditoria](semana_01_estudo.md#s1-d3-trigger-transacional)
 
 Várias aplicações atualizam `profissional`, e toda alteração deve gerar auditoria centralizada com valores anteriores e novos. A alternativa mais adequada é:
 
@@ -3698,6 +3786,8 @@ D) criar um índice, pois índices mantêm histórico completo das versões ante
 
 ### Questão 45
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Participação, cardinalidade e vínculos temporais](semana_01_estudo.md#s1-d3-participacao-temporalidade)
 
 Um profissional pode não possuir anuidade ou possuir várias, cada anuidade pertence exatamente a um profissional e não pode existir mais de uma anuidade do mesmo profissional no mesmo exercício. Qual implementação traduz simultaneamente cardinalidade, participação e unicidade temporal?
 
@@ -3707,7 +3797,9 @@ C) usar `Anuidade.profissional_id` como FK `NOT NULL` e impor `UNIQUE (profissio
 D) criar uma tabela associativa entre `Profissional` e `Anuidade`, com FKs anuláveis, para representar um relacionamento muitos-para-muitos.
 
 ### Questão 46
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Dependências e decomposição](semana_01_estudo.md#s1-d3-normalizacao-decomposicao)
 
 Considere `Servidor(id_servidor, nome, id_departamento, nome_departamento)`, com `id_servidor → id_departamento` e `id_departamento → nome_departamento`. A decomposição adequada para eliminar a dependência transitiva é:
 
@@ -3718,6 +3810,8 @@ D) criar `Departamento(id_servidor, nome_departamento)` e retirar `id_departamen
 
 ### Questão 47
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [NULL, lógica de três valores e DISTINCT](semana_01_estudo.md#s1-d3-null-distinct)
 
 A tabela contém `(uf, situacao)` = `(PR,A)`, `(PR,A)`, `(PR,I)`, `(NULL,A)` e `(NULL,A)`. O resultado de `SELECT DISTINCT uf, situacao FROM profissional` possui:
 
@@ -3728,6 +3822,8 @@ D) três combinações: `(PR,A)`, `(PR,I)` e uma ocorrência de `(NULL,A)`.
 
 ### Questão 48
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Log, redo, undo e recuperação](semana_01_estudo.md#s1-d3-log-recuperacao)
 
 A transação T1 atualiza um cadastro e recebe confirmação de `COMMIT`. Em seguida, T2 altera o mesmo cadastro, mas o servidor falha antes do commit de T2. Após a recuperação, qual estado respeita ACID e o papel do log de recuperação?
 
@@ -3738,6 +3834,8 @@ D) desfazer ambas, pois o isolamento impede que qualquer transação sobreviva a
 
 ### Questão 49
 **Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins)
 
 Assinale a afirmativa incorreta sobre junções externas.
 
@@ -3747,7 +3845,9 @@ C) Após LEFT JOIN, COUNT(chave_da_direita) conta correspondências, enquanto CO
 D) Um filtro da tabela direita colocado no ON pode restringir correspondências sem eliminar a linha da esquerda.
 
 ### Questão 50
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes)
 
 Considere `SELECT situacao, COUNT(*) AS total FROM profissional WHERE uf = 'PR' GROUP BY situacao HAVING COUNT(*) >= 10 ORDER BY total DESC;`. A consulta:
 
@@ -3765,6 +3865,7 @@ D) agrupa inicialmente todas as UFs e somente depois do `HAVING` seleciona os re
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Sanções ético-disciplinares
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Em caso de infração ética, a aplicação de sanção pelo sistema profissional deve observar qual diretriz geral?
@@ -3781,6 +3882,7 @@ D) A denúncia transfere ao denunciante a escolha da penalidade, cabendo ao Cons
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Código de Ética e pessoa jurídica
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre pessoas jurídicas no Código de Ética estudado, assinale a alternativa correta.
@@ -3797,6 +3899,7 @@ D) Alcançar pessoas jurídicas significa aplicar automaticamente a elas todas a
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Sanções e pessoa jurídica
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Uma questão afirma que suspensão e cancelamento previstos para profissionais se aplicam indistintamente à pessoa jurídica. Conforme a apostila, assinale a alternativa correta.
@@ -3813,6 +3916,7 @@ D) As duas sanções aplicam-se à pessoa jurídica sempre que houver dano econ�
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Jurisdição regional
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre jurisdição do CRA-PR, assinale a alternativa correta.
@@ -3829,6 +3933,7 @@ D) Qualquer CRA pode sancionar fato ocorrido no Paraná, porque a validade nacio
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Importância do Regimento
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Uma alternativa afirma que o Regimento Interno é irrelevante porque não trata de SQL, redes ou sistemas. Assinale a correta.
@@ -3845,6 +3950,7 @@ D) O Regimento é conteúdo expresso e organiza competências, órgãos e funcio
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Exercício sem registro
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Um fiscal do CRA atua em caso de exercício profissional sem registro. Assinale a alternativa que melhor representa a lógica da fiscalização.
@@ -3861,6 +3967,7 @@ D) Toda inspeção local deve ser executada diretamente pelo CFA, cabendo ao CRA
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Publicidade profissional
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre publicidade profissional no campo ético, assinale a alternativa correta.
@@ -3877,6 +3984,7 @@ D) A disciplina ética alcança a execução contratual, mas não a forma de cap
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Registro e exercício profissional
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Uma sociedade empresária contrata pessoa sem registro para executar atividade típica fiscalizada pelo CRA. Assinale a alternativa correta.
@@ -3893,6 +4001,7 @@ D) O caso pode envolver exercício profissional irregular e responsabilidade da 
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Regularidade registral
 **Nível:** Difícil
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre atualização cadastral e regularidade perante conselho profissional, assinale a alternativa mais precisa.
@@ -3909,6 +4018,7 @@ D) A certidão cadastral transfere ao Conselho a responsabilidade técnica pelos
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Finalidade institucional da fiscalização profissional
 **Nível:** Difícil
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre a finalidade institucional da fiscalização exercida pelo Sistema CFA/CRAs, assinale a alternativa correta.
@@ -3925,6 +4035,7 @@ D) A fiscalização regional substitui o Poder Judiciário na solução definiti
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Registro e fiscalização de pessoa jurídica
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Uma pessoa jurídica oferece habitualmente serviços inseridos no campo da Administração no Paraná. À luz da lógica de registro e fiscalização estudada, assinale a alternativa correta.
@@ -3941,6 +4052,7 @@ D) A empresa somente pode ser examinada pelo CFA, porque os Conselhos Regionais 
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Fiscalização e ética
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre o vínculo entre ética e fiscalização, assinale a alternativa correta.
@@ -3957,6 +4069,7 @@ D) Fiscalização e ética são sinônimos: comprovar registro regular encerra q
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Independência técnica diante de pressão do cliente
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Um cliente pressiona o profissional a assinar conclusão que não encontra suporte nos dados analisados. À luz da independência técnica estudada, a conduta adequada é:
@@ -3973,6 +4086,7 @@ D) Recusar a validação sem suporte e manter somente conclusão que possa ser t
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Processo ético-disciplinar
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Sobre defesa e recurso em processo disciplinar, assinale a alternativa correta em termos gerais.
@@ -3989,6 +4103,7 @@ D) A existência de recurso permite que a primeira instância aplique qualquer s
 **Matéria:** Legislação CRA/CFA
 **Assunto:** Competência e jurisdição
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4)
 
 Uma questão mistura CFA, CRA-PR e Conselho Regional de outro Estado em um caso com registro, fiscalização e recurso. Qual estratégia é mais segura?
@@ -4005,6 +4120,7 @@ D) Separar competência nacional, execução regional e jurisdição territorial
 **Matéria:** Língua Portuguesa
 **Assunto:** Uso dos porquês
 **Nível:** Difícil
+**Uso:** Simulado
 **Referência:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5)
 
 Assinale a alternativa em que todas as formas destacadas estão empregadas corretamente.
@@ -4021,6 +4137,7 @@ D) Ninguém informou **porquê** a fila cresceu; ela cresceu **por que** faltou 
 **Matéria:** Língua Portuguesa
 **Assunto:** Regência verbal
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5)
 
 Assinale a frase em que as duas regências verbais estão adequadas à norma-padrão.
@@ -4037,6 +4154,7 @@ D) O candidato assistiu o julgamento e chegou no órgão antes da sessão.
 **Matéria:** Língua Portuguesa
 **Assunto:** Coesão sequencial, equivalência de conectores e preservação de inferência
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5)
 
 Leia: “O índice reduziu o custo das leituras; contudo, elevou a manutenção das escritas. Portanto, sua adoção deve considerar o padrão de uso.” Qual reescrita preserva tanto a oposição entre os dois efeitos quanto a conclusão derivada desse contraste?
@@ -4053,6 +4171,7 @@ D) O índice reduziu o custo das leituras e elevou a manutenção das escritas, 
 **Matéria:** Língua Portuguesa
 **Assunto:** Formulação de tese, relação causal condicionada e projeto argumentativo
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5)
 
 Uma discursiva pede posicionamento sobre transformação digital no serviço público, com análise de ganhos, riscos e efeitos sobre usuários vulneráveis. Qual tese delimita uma relação causal defensável e oferece critérios para organizar o desenvolvimento?
@@ -4069,6 +4188,7 @@ D) A transformação digital amplia eficiência e acesso quando integra seguran�
 **Matéria:** Língua Portuguesa
 **Assunto:** Concordância nominal e verbal
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5)
 
 Assinale a alternativa em que todas as concordâncias estão adequadas à norma-padrão.
@@ -4167,6 +4287,7 @@ Extra Dia 3.20: A
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** A consulta filtra a UF, mas apenas ordena pela expressão de situação; ela não exclui os inativos.
 - **B) está errada:** O OR inclui também profissionais ativos de outros estados e profissionais inativos do Paraná.
 - **C) está correta:** Os dois predicados ligados por AND mantêm somente profissionais que satisfazem simultaneamente UF e situação.
@@ -4174,25 +4295,27 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** SELECT com WHERE.
 - **Pegadinha usada:** Trocar a conjunção lógica ou confundir ordenação com filtragem.
 - **Como pensar para acertar:** Traduza “ativos do Paraná” em duas condições simultâneas unidas por AND.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Consultas, ordem lógica, ordenação e limitação](semana_01_estudo.md#s1-d3-sql-consultas).
 
 ### Comentário da Questão 2
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está correta:** GROUP BY forma um grupo por ano e COUNT conta as linhas de cada grupo.
 - **B) está errada:** O agrupamento está no profissional, não no ano solicitado, e a projeção de ano não acompanha esse agrupamento.
-- **C) está errada:** SUM calcula o valor monetário acumulado por ano, e não a quantidade de anuidades.
+- **C) está errada:** `SUM(valor)` calcula o valor monetário acumulado por ano, e não a quantidade de lançamentos solicitada.
 - **D) está errada:** A agregação produz apenas o total geral, sem separar os registros por ano.
 - **Conceito cobrado:** GROUP BY e COUNT.
 - **Pegadinha usada:** Confundir contagem, soma e total geral.
 - **Como pensar para acertar:** Identifique primeiro a medida pedida — quantidade — e depois a dimensão — ano.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes).
 
 ### Comentário da Questão 3
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** A consulta elimina setores nulos, mas não restringe os grupos pela quantidade de profissionais.
 - **B) está errada:** Ela retorna os vinte maiores grupos, que não são necessariamente os grupos com mais de vinte integrantes.
 - **C) está errada:** O operador >= inclui setores com exatamente vinte profissionais, contrariando “mais de 20”.
@@ -4200,12 +4323,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** GROUP BY e HAVING.
 - **Pegadinha usada:** Confundir limite de linhas, ordenação e o operador estrito da condição agregada.
 - **Como pensar para acertar:** Agrupe por setor e aplique no HAVING exatamente COUNT(*) > 20.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes).
 
 ### Comentário da Questão 4
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está correta:** A coluna na tabela filha referencia a chave da tabela `profissional`.
 - **B) está errada:** A PK identifica cada anuidade; a coluna descrita identifica o profissional referenciado.
 - **C) está errada:** Em 1:N, várias anuidades podem apontar para o mesmo profissional, portanto a coluna não precisa ser única.
@@ -4213,12 +4337,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Chave estrangeira.
 - **Pegadinha usada:** Confundir a identificação da linha filha com a referência à linha pai.
 - **Como pensar para acertar:** Quando uma coluna aponta para chave de outra tabela, classifique-a como FK.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 5
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está correta:** A PK materializa a integridade de entidade: identificação única e não nula.
 - **B) está errada:** PRIMARY KEY não é apenas UNIQUE; ela também impede NULL.
 - **C) está errada:** Uma PK pode conter mais de uma coluna quando a identificação do domínio é composta.
@@ -4226,12 +4351,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Chave primária.
 - **Pegadinha usada:** Tratar PRIMARY KEY como simples UNIQUE ou proibir chave composta.
 - **Como pensar para acertar:** Separe quatro ideias: candidata, escolhida como PK, única e não nula.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 6
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** A lista reúne valores não atômicos e não oferece integridade referencial individual para cada perfil.
 - **B) está errada:** Uma única FK em `perfil` modelaria outro vínculo e impediria o compartilhamento N:N pretendido.
 - **C) está correta:** A associativa representa cada par usuário–perfil e pode impor FKs e unicidade sobre o par.
@@ -4239,12 +4365,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Mapeamento N:N.
 - **Pegadinha usada:** Reduzir N:N a uma FK simples ou a uma lista em coluna.
 - **Como pensar para acertar:** Se ambos os lados admitem muitos, transforme cada vínculo em uma linha associativa.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento).
 
 ### Comentário da Questão 7
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** Chave composta é compatível com 1FN; atomicidade diz respeito aos valores dos atributos.
 - **B) está correta:** `nome_aluno` depende só de `id_aluno` e `nome_disciplina` só de `id_disciplina`.
 - **C) está errada:** O defeito mostrado é dependência parcial direta, anterior à análise de dependência transitiva.
@@ -4252,12 +4379,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Segunda Forma Normal.
 - **Pegadinha usada:** Achar que uma chave composta basta para garantir 2FN.
 - **Como pensar para acertar:** Para cada atributo não chave, teste se ele depende da chave composta inteira.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base).
 
 ### Comentário da Questão 8
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** O enunciado apresenta uma chave simples, portanto não há parte de chave composta a examinar.
 - **B) está errada:** Repetição pode indicar redundância, mas 1FN trata da atomicidade de cada valor.
 - **C) está correta:** A cadeia entre chave e atributos não chave caracteriza dependência transitiva.
@@ -4265,12 +4393,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Terceira Forma Normal.
 - **Pegadinha usada:** Confundir repetição visual, dependência parcial e dependência transitiva.
 - **Como pensar para acertar:** Expresse as dependências: id_servidor → id_departamento → nome_departamento.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base).
 
 ### Comentário da Questão 9
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está correta:** A alternativa separa corretamente manipulação de linhas e remoção de objeto.
 - **B) está errada:** DELETE não elimina a definição; DROP é que remove o objeto do catálogo.
 - **C) está errada:** DROP não se limita aos dados e a comparação transacional depende do SGBD, não define os comandos.
@@ -4278,12 +4407,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** DELETE x DROP.
 - **Pegadinha usada:** Misturar DELETE, TRUNCATE e DROP.
 - **Como pensar para acertar:** Pergunte se o alvo são linhas ou o próprio objeto do esquema.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao).
 
 ### Comentário da Questão 10
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está correta:** Sem predicado, todas as linhas da tabela participam da atualização.
 - **B) está errada:** A ordem física ou a PK não limitam um UPDATE sem WHERE.
 - **C) está errada:** WHERE é opcional; sua ausência amplia o conjunto-alvo em vez de tornar o comando inválido.
@@ -4291,25 +4421,27 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** UPDATE sem WHERE.
 - **Pegadinha usada:** Inventar filtro implícito ou supor que o SGBD protege automaticamente contra UPDATE global.
 - **Como pensar para acertar:** Determine o conjunto de linhas depois do WHERE; sem WHERE, o conjunto é a tabela inteira.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao).
 
 ### Comentário da Questão 11
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** String vazia é um valor e não equivale necessariamente à ausência representada por NULL.
 - **B) está errada:** Comparações comuns com NULL resultam em desconhecido; não localizam os nulos.
-- **C) está errada:** A expressão também seleciona e-mails cadastrados como string vazia, ampliando o resultado pedido.
-- **D) está correta:** IS NULL é o predicado próprio para testar ausência de valor.
+- **C) está errada:** `COALESCE(email, '') = ''` também seleciona string vazia, enquanto o enunciado exige exclusivamente o valor SQL `NULL`.
+- **D) está correta:** `IS NULL` testa exatamente o valor SQL `NULL` exigido.
 - **Conceito cobrado:** NULL e IS NULL.
 - **Pegadinha usada:** Confundir NULL, string vazia e comparação comum.
 - **Como pensar para acertar:** Para ausência estrita, use IS NULL sem converter o valor.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [NULL, lógica de três valores e DISTINCT](semana_01_estudo.md#s1-d3-null-distinct).
 
 ### Comentário da Questão 12
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** Ela compara as PKs independentes das duas tabelas, não a FK da anuidade com o profissional.
 - **B) está correta:** A condição liga a FK `a.id_profissional` à PK `p.id` e retorna os pares correspondentes.
 - **C) está errada:** A condição compara duas colunas da própria tabela `anuidade` e não relaciona `profissional`.
@@ -4317,12 +4449,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** JOIN e condição de junção.
 - **Pegadinha usada:** Usar colunas de mesmo nome ou PKs independentes no lugar do par PK–FK.
 - **Como pensar para acertar:** Localize a FK na tabela filha e iguale-a à PK da tabela pai.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins).
 
 ### Comentário da Questão 13
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** Produto cartesiano cria pares sem relação e não representa ausência de anuidade.
 - **B) está errada:** INNER JOIN elimina profissionais sem correspondência.
 - **C) está errada:** Partindo de `profissional`, preservar o lado direito não garante todos os profissionais.
@@ -4330,12 +4463,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** LEFT JOIN.
 - **Pegadinha usada:** Escolher uma junção externa pelo nome sem observar qual lado precisa ser preservado.
 - **Como pensar para acertar:** Coloque o conjunto obrigatório à esquerda e use LEFT JOIN com a condição PK–FK.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins).
 
 ### Comentário da Questão 14
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** COUNT(*) conta linhas sem examinar a nulidade de uma coluna específica.
 - **B) está correta:** A distinção entre contagem de linhas e de valores não nulos está correta.
 - **C) está errada:** Os resultados diferem quando há linhas cujo e-mail é NULL.
@@ -4343,12 +4477,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Funções agregadas e NULL.
 - **Pegadinha usada:** Tratar COUNT(*) e COUNT(coluna) como sinônimos diante de NULL.
 - **Como pensar para acertar:** Pergunte se a unidade contada é a linha ou um valor presente na coluna.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes).
 
 ### Comentário da Questão 15
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais
 - **A) está errada:** As duas restrições podem formar uma chave alternativa, mas não substituem automaticamente a PK escolhida.
 - **B) está errada:** A integridade de entidade torna a PK não nula sem declaração adicional.
 - **C) está correta:** A alternativa separa identificação, unicidade e obrigatoriedade, com a ressalva de portabilidade para NULL em UNIQUE.
@@ -4356,12 +4491,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Restrições de integridade.
 - **Pegadinha usada:** Confundir chave primária, chave alternativa e obrigatoriedade.
 - **Como pensar para acertar:** Associe cada restrição ao seu efeito e não suponha que UNIQUE implica NOT NULL.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 16
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** NOT NULL impede ausência, mas ainda aceita números negativos.
 - **B) está correta:** CHECK expressa diretamente o domínio permitido para o valor.
 - **C) está errada:** UNIQUE evita repetição, não limita o sinal do número.
@@ -4369,12 +4505,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** CHECK constraint.
 - **Pegadinha usada:** Confundir valor padrão, obrigatoriedade, unicidade e regra de domínio.
 - **Como pensar para acertar:** Quando o requisito é uma condição booleana sobre o valor, traduza-o em CHECK.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 17
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** A sequência erra ao negar a função de GRANT e ao afirmar que COMMIT desfaz.
 - **B) está correta:** CREATE TABLE é DDL, GRANT é DCL e COMMIT confirma, portanto a sequência é V, V, F.
 - **C) está errada:** CREATE TABLE realmente define estrutura, logo a primeira proposição não é falsa.
@@ -4382,12 +4519,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** DDL, DCL e TCL.
 - **Pegadinha usada:** Trocar DDL/DCL e inverter COMMIT com ROLLBACK.
 - **Como pensar para acertar:** Classifique cada comando pelo efeito concreto antes de montar a sequência.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [SQL ANSI básico](semana_01_estudo.md#s1-d3-sql-base).
 
 ### Comentário da Questão 18
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** Consistência trata a passagem entre estados válidos; o requisito explícito de indivisibilidade é atomicidade.
 - **B) está errada:** Isolamento controla interferência entre transações concorrentes, não a indivisibilidade interna descrita.
 - **C) está errada:** Durabilidade protege efeitos já confirmados, enquanto o caso exige desfazer uma execução parcial.
@@ -4395,12 +4533,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** ACID: atomicidade.
 - **Pegadinha usada:** Confundir as quatro propriedades ACID diante de uma falha parcial.
 - **Como pensar para acertar:** Associe “todas as etapas ou nenhuma” diretamente à atomicidade.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Transações e ACID](semana_01_estudo.md#s1-d3-transacoes-acid).
 
 ### Comentário da Questão 19
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** Índice comum não impõe unicidade; isso requer índice ou restrição UNIQUE.
 - **B) está errada:** O ganho depende do plano e do predicado, e inserções/atualizações precisam manter o índice.
 - **C) está correta:** A alternativa apresenta o benefício de leitura e o custo de manutenção sem prometer ganho universal.
@@ -4408,12 +4547,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Índices.
 - **Pegadinha usada:** Tratar índice como garantia de unicidade ou aceleração universal e gratuita.
 - **Como pensar para acertar:** Relacione a coluna e o padrão de acesso, depois considere custo de espaço e escrita.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Índices e custo de manutenção](semana_01_estudo.md#s1-d3-indices).
 
 ### Comentário da Questão 20
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** View comum é lógica; materialização é uma modalidade específica, não obrigatória.
 - **B) está errada:** Views podem apoiar segurança, mas continuam sujeitas à política de privilégios.
 - **C) está errada:** A atualizabilidade depende da definição da view e das regras do SGBD.
@@ -4421,12 +4561,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Views.
 - **Pegadinha usada:** Generalizar materialização, atualizabilidade ou permissões de views.
 - **Como pensar para acertar:** Pense primeiro em consulta armazenada lógica; trate os demais comportamentos como condicionais.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Views, procedures e triggers](semana_01_estudo.md#s1-d3-objetos-programaveis).
 
 ### Comentário da Questão 21
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está errada:** Uma trigger AFTER reage ao comando, não espera necessariamente o COMMIT, e não ganha persistência independente.
 - **B) está correta:** Sem transação autônoma específica, o efeito automático da trigger integra a mesma unidade transacional do INSERT.
 - **C) está errada:** Triggers são disparadas pelo evento configurado, não por chamada explícita da aplicação.
@@ -4434,12 +4575,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Triggers.
 - **Pegadinha usada:** Confundir execução automática com persistência autônoma.
 - **Como pensar para acertar:** Descubra primeiro em qual transação o efeito foi produzido; depois aplique COMMIT ou ROLLBACK à unidade inteira.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Trigger, transação, rollback e auditoria](semana_01_estudo.md#s1-d3-trigger-transacional).
 
 ### Comentário da Questão 22
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está correta:** Procedure é adequada para receber parâmetros e coordenar validação, inserção e atualização.
 - **B) está errada:** Trigger é ligada a evento no banco; o requisito descreve chamada explícita com parâmetros.
 - **C) está errada:** CHECK valida uma expressão sobre dados e não encapsula uma sequência geral de comandos.
@@ -4447,12 +4589,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Stored procedures.
 - **Pegadinha usada:** Confundir rotina chamada, consulta lógica, evento automático e restrição declarativa.
 - **Como pensar para acertar:** Separe quem chama o objeto e se ele apenas mostra dados ou executa uma sequência de ações.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Views, procedures e triggers](semana_01_estudo.md#s1-d3-objetos-programaveis).
 
 ### Comentário da Questão 23
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está errada:** A expressão não contém agrupamento nem preserva todas as colunas.
 - **B) está errada:** A seleção interna filtra as tuplas e não há operação de ordenação.
 - **C) está errada:** Não existe função de contagem nem agrupamento na expressão.
@@ -4460,12 +4603,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Álgebra relacional.
 - **Pegadinha usada:** Inverter seleção e projeção ou acrescentar ordenação/agregação inexistentes.
 - **Como pensar para acertar:** Leia de dentro para fora: primeiro σ filtra tuplas; depois π escolhe atributos.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Álgebra relacional](semana_01_estudo.md#s1-d3-algebra-relacional).
 
 ### Comentário da Questão 24
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** Uma lista em atributo perde atomicidade e dificulta representar os dados próprios de cada ocorrência.
 - **B) está errada:** Domínio restringe valores de atributo; não representa ocorrências com número, data e responsável.
 - **C) está correta:** Cada fiscalização possui identidade e atributos, e várias podem apontar para um processo.
@@ -4473,12 +4617,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Modelo Entidade-Relacionamento.
 - **Pegadinha usada:** Reduzir uma entidade dependente com atributos próprios a um campo ou domínio.
 - **Como pensar para acertar:** Se o conceito tem várias ocorrências e atributos próprios, modele-o como entidade e defina a cardinalidade.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento).
 
 ### Comentário da Questão 25
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** A repetição duplica os dados da pessoa e cria anomalias de atualização.
 - **B) está errada:** Colunas numeradas criam grupo repetido, limite artificial e muitos nulos.
 - **C) está errada:** A string reúne vários valores sem integridade individual nem consulta relacional adequada.
@@ -4486,12 +4631,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Atributos multivalorados e 1FN.
 - **Pegadinha usada:** Escolher colunas repetidas, lista delimitada ou duplicação da entidade principal.
 - **Como pensar para acertar:** Transforme cada ocorrência multivalorada em uma linha relacionada por FK.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Modelo Entidade-Relacionamento e mapeamento](semana_01_estudo.md#s1-d3-mer-mapeamento).
 
 ### Comentário da Questão 26
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está errada:** A estrutura lógica usada pela aplicação foi mantida; não houve substituição do modelo conceitual.
 - **B) está errada:** Integridade referencial pode continuar válida, mas não nomeia a separação entre níveis descrita.
 - **C) está correta:** Alterações de armazenamento e índices sem mudança das consultas exemplificam independência física.
@@ -4499,12 +4645,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Independência física de dados.
 - **Pegadinha usada:** Confundir nível físico, integridade e propriedade transacional.
 - **Como pensar para acertar:** Pergunte qual nível mudou e qual nível permaneceu estável.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Conceitos e arquitetura de SGBD](semana_01_estudo.md#s1-d3-conceitos-sgbd).
 
 ### Comentário da Questão 27
 
 - **Alternativa correta:** A.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento
 - **A) está correta:** Tipos, defaults, constraints e índices são dados sobre objetos do banco.
 - **B) está errada:** O log registra operações para recuperação; não é o catálogo estrutural completo.
 - **C) está errada:** Os valores de negócio não descrevem a estrutura de colunas, padrões e restrições.
@@ -4512,12 +4659,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Dicionário de dados e metadados.
 - **Pegadinha usada:** Confundir metadados, dados de negócio, log e cópia física.
 - **Como pensar para acertar:** Se a informação descreve objetos e regras do banco, ela pertence ao dicionário de dados.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Metadados, catálogo e independência física](semana_01_estudo.md#s1-d3-metadados-catalogo).
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está errada:** Ser PK da relação não faz `id_lancamento` ser determinado pelo setor agrupado; há vários IDs por setor.
 - **B) está correta:** A projeção mistura granularidade de setor com um ID individual sem regra que escolha um ID do grupo.
 - **C) está errada:** Agregações podem ser usadas sem HAVING; HAVING apenas filtra grupos quando necessário.
@@ -4525,12 +4673,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** GROUP BY e colunas não agregadas.
 - **Pegadinha usada:** Supor que qualquer PK pode ser projetada em um agrupamento ou exigir HAVING para toda agregação.
 - **Como pensar para acertar:** Cada expressão não agregada deve ser compatível com a granularidade do grupo; aqui setor não determina um único lançamento.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes).
 
 ### Comentário da Questão 29
 
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está errada:** Excluir o objeto seria efeito de DROP TABLE, não de DELETE filtrado.
 - **B) está errada:** FKs podem restringir a exclusão ou definir ações diferentes; cascata não é automática em todos os casos.
 - **C) está correta:** DELETE atua nas linhas filtradas, preserva o objeto e integra a transação ainda não confirmada.
@@ -4538,12 +4687,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** DELETE com WHERE.
 - **Pegadinha usada:** Confundir linhas, objeto, cascata referencial e confirmação transacional.
 - **Como pensar para acertar:** Separe três perguntas: o que DELETE atinge, o que as FKs permitem e se já houve COMMIT.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao).
 
 ### Comentário da Questão 30
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
+- **Uso:** Aprofundamento
 - **A) está errada:** NULL explícito não aciona o DEFAULT e viola o NOT NULL de `uf`.
 - **B) está errada:** Sem lista de colunas, os valores não correspondem corretamente ao esquema que também contém `id` e `uf`.
 - **C) está errada:** UPDATE não insere linhas e a expressão SET apresentada não é atribuição válida.
@@ -4551,25 +4701,27 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** INSERT.
 - **Pegadinha usada:** Confundir omissão de coluna com NULL explícito e ignorar coluna de identidade.
 - **Como pensar para acertar:** Liste apenas as colunas fornecidas; deixe identidade e DEFAULT serem preenchidos pelo SGBD.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao).
 
 ### Comentário da Questão 31
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
-- **A) está correta:** A alternativa associa corretamente o nível às anomalias evitadas e preserva a ressalva de implementação.
+- **Uso:** Revisão
+- **A) está correta:** A matriz ANSI associa `REPEATABLE READ` à prevenção de leituras sujas e não repetíveis, mas ainda admite fantasmas; implementações específicas podem oferecer garantia mais forte.
 - **B) está errada:** READ COMMITTED impede ler dado não confirmado, mas outra transação pode confirmar mudança entre as leituras.
 - **C) está errada:** READ UNCOMMITTED é justamente o nível associado à possibilidade de leitura suja.
 - **D) está errada:** Serializable é um nível forte, mas ainda depende de transações, confirmação e controle de concorrência.
 - **Conceito cobrado:** Isolamento transacional.
 - **Pegadinha usada:** Transformar um nível em garantia maior do que ele oferece ou dispensar o mecanismo transacional.
 - **Como pensar para acertar:** Compare cada nível com as anomalias que ele impede, sem extrapolar a garantia.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Isolamento e anomalias](semana_01_estudo.md#s1-d3-isolamento).
 
 ### Comentário da Questão 32
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está errada:** Uma chave alternativa UNIQUE não substitui automaticamente a PK declarada.
 - **B) está correta:** A alternativa preserva os papéis distintos e evita absolutizar o tratamento de NULL entre implementações.
 - **C) está errada:** Obrigatoriedade é efeito de NOT NULL, não consequência universal de UNIQUE.
@@ -4577,12 +4729,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** UNIQUE x PRIMARY KEY.
 - **Pegadinha usada:** Confundir chave alternativa com chave primária e UNIQUE com NOT NULL.
 - **Como pensar para acertar:** Leia cada restrição separadamente e preserve a ressalva de portabilidade para NULL.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 33
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está errada:** O predicado no WHERE rejeita o NULL do lado direito e elimina justamente os profissionais sem cidade.
 - **B) está errada:** INNER JOIN elimina os profissionais que não têm cidade correspondente.
 - **C) está errada:** A condição usa a PK do profissional em lugar da FK da cidade.
@@ -4590,26 +4743,28 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Condição de JOIN por PK/FK.
 - **Pegadinha usada:** Acertar o tipo de JOIN, mas errar a chave ou neutralizar o efeito externo no WHERE.
 - **Como pensar para acertar:** Preserve a tabela obrigatória à esquerda, ligue FK à PK e não rejeite depois os NULLs da direita.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins).
 
 ### Comentário da Questão 34
 
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está errada:** Dependência parcial pressupõe chave composta; a afirmação está correta.
-- **B) está errada:** A cadeia descreve dependência transitiva entre atributos não chave e está correta.
-- **C) está correta:** Decompor sem examinar junção sem perda e dependências pode eliminar associações ou permitir estados indevidos.
-- **D) está errada:** Organização e desempenho não são sinônimos; a normalização pode exigir mais joins.
+- **A) não é a resposta:** A afirmação é correta, pois dependência parcial pressupõe chave composta.
+- **B) não é a resposta:** A afirmação é correta; a cadeia pode descrever dependência transitiva entre atributos não chave.
+- **C) é a resposta:** A afirmação é incorreta; decompor sem examinar junção sem perda e dependências pode eliminar associações ou permitir estados indevidos.
+- **D) não é a resposta:** A afirmação é correta; normalização e desempenho não são sinônimos, e a decomposição pode exigir mais joins.
 - **Conceito cobrado:** Normalização.
 - **Pegadinha usada:** Tratar normalização como simples divisão física de colunas, sem analisar dependências.
 - **Como pensar para acertar:** Valide cada forma normal pelas dependências e não aceite uma decomposição só porque criou mais tabelas.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Dependências e decomposição](semana_01_estudo.md#s1-d3-normalizacao-decomposicao).
 
 ### Comentário da Questão 35
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está correta:** A consulta ordena pelos maiores valores, resolve empates pelo menor ID e limita a três linhas.
 - **B) está errada:** A ordenação crescente escolhe os menores valores.
 - **C) está errada:** OFFSET 3 descarta as três primeiras linhas em vez de retorná-las.
@@ -4617,12 +4772,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** ORDER BY e limitação de resultados.
 - **Pegadinha usada:** Limitar antes de definir uma ordem determinística ou inverter ASC/DESC.
 - **Como pensar para acertar:** Primeiro estabeleça a ordenação completa; depois aplique o limite de linhas.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Consultas, ordem lógica, ordenação e limitação](semana_01_estudo.md#s1-d3-sql-consultas).
 
 ### Comentário da Questão 36
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está errada:** Há diferenças importantes e dependentes do SGBD; a equivalência universal é falsa.
 - **B) está correta:** A descrição mantém o núcleo comum e explicita os pontos de portabilidade.
 - **C) está errada:** TRUNCATE não é remoção linha a linha com predicado.
@@ -4630,12 +4786,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** DELETE x TRUNCATE.
 - **Pegadinha usada:** Absolutizar detalhes dependentes do SGBD ou trocar remoção de dados por remoção de objeto.
 - **Como pensar para acertar:** Memorize o núcleo de cada comando e trate transação, log, identidade e FKs como detalhes de implementação.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [INSERT, UPDATE, DELETE, TRUNCATE e DROP](semana_01_estudo.md#s1-d3-comandos-alteracao).
 
 ### Comentário da Questão 37
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está errada:** O WHERE rejeita o NULL da linha estendida e elimina setores sem profissional ativo.
 - **B) está correta:** O filtro no ON limita correspondências ativas, LEFT preserva setores vazios e COUNT da chave direita produz zero sem par.
 - **C) está errada:** COUNT(*) conta também a linha preservada sem correspondência, produzindo um em vez de zero.
@@ -4643,12 +4800,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** LEFT JOIN e NULL.
 - **Pegadinha usada:** Neutralizar o LEFT JOIN no WHERE ou contar a linha estendida com COUNT(*).
 - **Como pensar para acertar:** Filtre o lado opcional no ON e conte uma coluna não nula apenas quando houver correspondência.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins).
 
 ### Comentário da Questão 38
 
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está errada:** Uma FK única limita o profissional a uma pessoa jurídica e não representa o histórico N:N.
 - **B) está errada:** A coluna guarda apenas o responsável atual e não permite vários vínculos nem períodos completos.
 - **C) está correta:** A associativa representa cada vínculo e seus atributos próprios ao longo do tempo.
@@ -4656,12 +4814,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Modelagem de relacionamento com atributos.
 - **Pegadinha usada:** Modelar apenas o estado atual ou esconder histórico N:N em texto.
 - **Como pensar para acertar:** Quando o relacionamento possui atributos e multiplicidade nos dois lados, transforme-o em tabela associativa.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Participação, cardinalidade e vínculos temporais](semana_01_estudo.md#s1-d3-participacao-temporalidade).
 
 ### Comentário da Questão 39
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
+- **Uso:** Revisão
 - **A) está correta:** Consistência da captura e teste de restauração tratam tanto geração quanto recuperabilidade do backup.
 - **B) está errada:** Exportações independentes podem observar instantes diferentes e quebrar relações entre tabelas.
 - **C) está errada:** Arquivos copiados durante escrita podem não representar estado recuperável e coerente.
@@ -4669,12 +4828,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Backup e recuperação em SGBD.
 - **Pegadinha usada:** Confundir cópia de arquivos ou exportações isoladas com backup consistente e testado.
 - **Como pensar para acertar:** Verifique o ponto consistente da captura e nunca considere o backup confiável sem restauração de teste.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Backup lógico consistente e restauração](semana_01_estudo.md#s1-d3-backup-consistente).
 
 ### Comentário da Questão 40
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão
 - **A) está errada:** LIKE não cria atomicidade nem integridade individual e pode produzir correspondências imprecisas.
 - **B) está errada:** Duplicar o documento introduz redundância e anomalias de atualização.
 - **C) está errada:** Colunas numeradas criam limite artificial, grupos repetidos e muitos nulos.
@@ -4682,12 +4842,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** 1FN e atributos multivalorados.
 - **Pegadinha usada:** Preservar lista delimitada ou trocar uma lista por colunas repetidas.
 - **Como pensar para acertar:** Uma ocorrência por linha permite atomicidade, chaves e consultas relacionais exatas.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Normalização básica](semana_01_estudo.md#s1-d3-normalizacao-base).
 
 ### Comentário da Questão 41
 
 - **Alternativa correta:** D.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado
 - **A) está errada:** Uma FK exige chave referenciada adequada e não substitui UNIQUE, NOT NULL e CHECK requeridos.
 - **B) está errada:** Criar outra PRIMARY KEY conflita com a PK técnica já existente e não restringe a situação.
 - **C) está errada:** O CHECK de não nulidade não impede duplicação e a situação continua sem domínio definido.
@@ -4695,12 +4856,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** NOT NULL e UNIQUE.
 - **Pegadinha usada:** Tentar substituir a PK técnica ou usar uma única restrição para três requisitos diferentes.
 - **Como pensar para acertar:** Traduza cada regra do domínio em sua constraint própria, sem alterar a chave já escolhida.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Restrições, valores padrão e integridade referencial](semana_01_estudo.md#s1-d3-restricoes-integridade).
 
 ### Comentário da Questão 42
 
 - **Alternativa correta:** B.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está errada:** Independência física evita a reescrita das visões por mera reorganização interna, e rollback não assegura sozinho a persistência de commits.
 - **B) está correta:** Os mapeamentos do SGBD desacoplam o nível físico dos demais, enquanto concorrência, log e recuperação preservam as propriedades transacionais.
 - **C) está errada:** As visões compartilham o esquema lógico, e backup periódico não substitui isolamento nem recuperação transacional.
@@ -4708,12 +4870,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Arquitetura de três esquemas, independência física e serviços transacionais do SGBD.
 - **Pegadinha usada:** Atribuir à linguagem ou ao backup funções operacionais do SGBD e confundir mudança física com mudança lógica.
 - **Como pensar para acertar:** Separe os níveis de abstração e identifique qual componente preserva tanto os mapeamentos quanto as garantias de transação.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Conceitos de SGBD e independência física](semana_01_estudo.md#s1-d3-conceitos-sgbd), [isolamento e anomalias](semana_01_estudo.md#s1-d3-isolamento) e [log, redo, undo e recuperação](semana_01_estudo.md#s1-d3-log-recuperacao).
 
 ### Comentário da Questão 43
 
 - **Alternativa correta:** A.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está correta:** A view aplica projeção e seleção no banco, e a ausência de privilégio na tabela-base impede contornar essas restrições.
 - **B) está errada:** O acesso à tabela-base expõe CPF e linhas inativas se o filtro da aplicação falhar ou for omitido.
 - **C) está errada:** Restringir colunas não restringe linhas; profissionais inativos continuariam acessíveis.
@@ -4721,12 +4884,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Menor privilégio, views de segurança, projeção e seleção.
 - **Pegadinha usada:** Confundir restrição de coluna com restrição de linha ou confiar em filtro aplicado apenas pelo cliente.
 - **Como pensar para acertar:** Liste dados, linhas e operações permitidos e elimine qualquer privilégio que permita ultrapassar um desses limites.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Segurança e menor privilégio com views](semana_01_estudo.md#s1-d3-menor-privilegio).
 
 ### Comentário da Questão 44
 
 - **Alternativa correta:** A.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está correta:** A trigger centraliza a reação automática, mas exige avaliação dos efeitos transacionais e operacionais.
 - **B) está errada:** A solução fica dispersa e uma aplicação pode omitir ou implementar a auditoria de forma diferente.
 - **C) está errada:** View comum representa consulta e não funciona automaticamente como interceptador de UPDATE.
@@ -4734,12 +4898,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Triggers de auditoria.
 - **Pegadinha usada:** Confundir automação por evento com view, índice ou código voluntário de cada cliente.
 - **Como pensar para acertar:** Escolha o objeto acionado pelo próprio evento e avalie seu vínculo com a transação principal.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Trigger, transação, rollback e auditoria](semana_01_estudo.md#s1-d3-trigger-transacional).
 
 ### Comentário da Questão 45
 
 - **Alternativa correta:** C.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está errada:** A FK anulável permite anuidade sem profissional, e o índice por exercício não impede duplicidade por profissional e ano.
 - **B) está errada:** A FK no lado de `Profissional` limita o vínculo e induz repetição da entidade a cada exercício.
 - **C) está correta:** A FK `NOT NULL` garante um profissional por anuidade, a ausência de linha preserva a participação opcional e a restrição composta evita duplicidade anual.
@@ -4747,12 +4912,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Mapeamento 1:N, participação obrigatória e chave candidata composta.
 - **Pegadinha usada:** Modelar apenas a cardinalidade máxima e esquecer participação mínima ou unicidade dependente do exercício.
 - **Como pensar para acertar:** Traduza separadamente as três regras: lado da FK, nulabilidade da FK e combinação de atributos que deve ser única.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Participação, cardinalidade e vínculos temporais](semana_01_estudo.md#s1-d3-participacao-temporalidade).
 
 ### Comentário da Questão 46
 
 - **Alternativa correta:** C.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado
 - **A) está errada:** A decomposição não deve perder a informação de departamento do servidor.
 - **B) está errada:** UNIQUE não elimina a dependência transitiva e ainda impediria vários servidores no mesmo departamento.
 - **C) está correta:** A decomposição representa cada fato em sua relação e preserva o vínculo por FK.
@@ -4760,12 +4926,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Dependência funcional e 3FN.
 - **Pegadinha usada:** Declarar UNIQUE para mascarar dependência ou decompor com a chave errada.
 - **Como pensar para acertar:** Coloque cada atributo junto de seu determinante e mantenha a associação por chave estrangeira.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Dependências e decomposição](semana_01_estudo.md#s1-d3-normalizacao-decomposicao).
 
 ### Comentário da Questão 47
 
 - **Alternativa correta:** D.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está errada:** DISTINCT considera o conjunto completo de colunas projetadas, não somente a primeira.
 - **B) está errada:** A eliminação de duplicatas também se aplica a projeções com várias colunas.
 - **C) está errada:** Para eliminação de duplicatas, as duas ocorrências do mesmo par com NULL não geram linhas separadas.
@@ -4773,12 +4940,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** DISTINCT.
 - **Pegadinha usada:** Aplicar DISTINCT a uma coluna isolada ou tratar cada NULL como linha distinta no resultado.
 - **Como pensar para acertar:** Forme os pares projetados e elimine repetições do par completo.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [NULL, lógica de três valores e DISTINCT](semana_01_estudo.md#s1-d3-null-distinct).
 
 ### Comentário da Questão 48
 
 - **Alternativa correta:** B.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **A) está errada:** Registrar uma alteração não confirmada não autoriza torná-la permanente; T2 deve ser desfeita.
 - **B) está correta:** A recuperação conserva T1 pela durabilidade e elimina os efeitos parciais de T2 pela atomicidade.
 - **C) está errada:** A ordem temporal não substitui o estado de confirmação; uma transação sem commit não prevalece sobre outra confirmada.
@@ -4786,26 +4954,28 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** Recuperação com log, atomicidade e durabilidade.
 - **Pegadinha usada:** Confundir alteração mais recente com alteração confirmada ou tratar toda falha como motivo para desfazer todos os commits.
 - **Como pensar para acertar:** Classifique cada transação no instante da falha: committed deve sobreviver; uncommitted deve ser desfeita.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Log, redo, undo e recuperação](semana_01_estudo.md#s1-d3-log-recuperacao).
 
 ### Comentário da Questão 49
 
 - **Alternativa correta:** B.
 - **Nível:** Muito difícil.
+- **Uso:** Simulado
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está errada:** A afirmação está correta: o filtro posterior pode neutralizar a preservação da linha esquerda.
-- **B) está correta:** A posição do predicado pode alterar quais linhas são correspondidas ou eliminadas; por isso a afirmação é incorreta.
-- **C) está errada:** A diferença entre contagem da chave direita e de linhas é correta quando não há correspondência.
-- **D) está errada:** A afirmação está correta: falhar no ON produz ausência de par, mas a linha esquerda permanece.
+- **A) não é a resposta:** A afirmação é correta; o filtro posterior pode neutralizar a preservação da linha esquerda.
+- **B) é a resposta:** A afirmação é incorreta; a posição do predicado pode alterar quais linhas são correspondidas ou eliminadas.
+- **C) não é a resposta:** A afirmação é correta; `COUNT(chave_da_direita)` e `COUNT(*)` diferem quando não há correspondência.
+- **D) não é a resposta:** A afirmação é correta; falhar no `ON` produz ausência de par, mas a linha esquerda permanece.
 - **Conceito cobrado:** JOINs.
 - **Pegadinha usada:** Tratar ON e WHERE como intercambiáveis em LEFT JOIN.
 - **Como pensar para acertar:** Simule uma linha sem correspondência e acompanhe o NULL pelo ON, WHERE e COUNT.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Junções, ON e WHERE](semana_01_estudo.md#s1-d3-joins).
 
 ### Comentário da Questão 50
 
 - **Alternativa correta:** A.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado
 - **A) está correta:** A alternativa segue corretamente a ordem lógica FROM/WHERE/GROUP BY/HAVING/SELECT/ORDER BY.
 - **B) está errada:** A condição de dez está no HAVING sobre COUNT, não sobre identificador individual.
 - **C) está errada:** ORDER BY atua no resultado agregado e nenhum comando modifica a tabela física.
@@ -4813,11 +4983,13 @@ Extra Dia 3.20: A
 - **Conceito cobrado:** GROUP BY e ORDER BY com agregação.
 - **Pegadinha usada:** Ler o SELECT na ordem escrita e aplicar HAVING a linhas individuais.
 - **Como pensar para acertar:** Reordene mentalmente as cláusulas pela execução lógica e acompanhe o conjunto em cada etapa.
-- **Referência à apostila de estudo:** Dia 3 — Banco de Dados Base e SQL.
+- **Referência à apostila de estudo:** [Agregações, GROUP BY, HAVING e contagens](semana_01_estudo.md#s1-d3-agregacoes).
 
 ### Comentários das questões extras de revisão fixa do Dia 3
 
 #### Comentário Extra Dia 3.1
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
@@ -4832,6 +5004,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.2
 
+- **Uso:** Essenciais.
+
 - **Alternativa correta:** A.
 - **Nível:** Médio.
 - **A) está correta:** A alternativa preserva tanto o alcance quanto a necessidade de observar as especificidades do sujeito.
@@ -4844,6 +5018,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.3
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
@@ -4858,6 +5034,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.4
 
+- **Uso:** Essenciais.
+
 - **Alternativa correta:** C.
 - **Nível:** Médio.
 - **A) está errada:** Validade nacional do registro não transforma o Regional de origem em fiscal de todo o País.
@@ -4870,6 +5048,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.5
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
@@ -4884,6 +5064,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.6
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** B.
 - **Nível:** Médio.
 - **A) está errada:** O conselho regional pode atuar no âmbito de sua competência sem depender sempre de provocação externa.
@@ -4896,6 +5078,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.7
+
+- **Uso:** Aprofundamento.
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
@@ -4910,6 +5094,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.8
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** D.
 - **Nível:** Médio.
 - **A) está errada:** Contrato privado não elimina requisitos profissionais nem impede fiscalização.
@@ -4922,6 +5108,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.9
+
+- **Uso:** Aprofundamento.
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
@@ -4936,6 +5124,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.10
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
 - **A) está errada:** A proteção corporativa dos registrados não substitui a finalidade pública da fiscalização profissional.
@@ -4948,6 +5138,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.11
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
@@ -4962,6 +5154,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.12
 
+- **Uso:** Revisão.
+
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
 - **A) está correta:** Um fato pode envolver simultaneamente exercício irregular e violação de dever profissional.
@@ -4974,6 +5168,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.13
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
@@ -4988,6 +5184,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.14
 
+- **Uso:** Revisão.
+
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
 - **A) está errada:** Competência decorre das normas do sistema, não da preferência da parte.
@@ -5000,6 +5198,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 4 — Legislação CRA/CFA](semana_01_estudo.md#s1-d3-b4).
 
 #### Comentário Extra Dia 3.15
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
@@ -5014,6 +5214,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.16
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
 - **A) está errada:** Pergunta indireta pede `por que`, e o substantivo acompanhado de artigo pede `porquê`.
@@ -5026,6 +5228,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5).
 
 #### Comentário Extra Dia 3.17
+
+- **Uso:** Simulado.
 
 - **Alternativa correta:** B.
 - **Nível:** Muito difícil.
@@ -5040,6 +5244,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.18
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** C.
 - **Nível:** Muito difícil.
 - **A) está errada:** `Por isso` transforma o aumento de custo em consequência da redução, e `contudo` troca a conclusão por oposição.
@@ -5053,6 +5259,8 @@ Extra Dia 3.20: A
 
 #### Comentário Extra Dia 3.19
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** D.
 - **Nível:** Muito difícil.
 - **A) está errada:** Subordinar segurança e acessibilidade a ajuste posterior cria uma tese unilateral que não enfrenta os riscos exigidos pelo comando.
@@ -5065,6 +5273,8 @@ Extra Dia 3.20: A
 - **Referência à apostila de estudo:** [Dia 3 — Bloco 5 — Língua Portuguesa](semana_01_estudo.md#s1-d3-b5).
 
 #### Comentário Extra Dia 3.20
+
+- **Uso:** Simulado.
 
 - **Alternativa correta:** A.
 - **Nível:** Muito difícil.
@@ -5089,6 +5299,8 @@ Extra Dia 3.20: A
 
 ### Questão 1
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
 
 Uma sociedade empresária sediada no Paraná passa a oferecer, de modo habitual, serviços técnicos enquadrados no campo da Administração, mas sustenta que o CNPJ ativo torna desnecessária qualquer providência perante o conselho profissional. À luz da legislação estudada, a conclusão correta é:
 
@@ -5099,6 +5311,8 @@ D) o CNPJ e a indicação informal de um profissional registrado tornam desneces
 
 ### Questão 2
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
 
 Um profissional permite que terceiro utilize seu número de registro para assinar documento técnico que ele não elaborou nem supervisionou. Segundo o Código de Ética estudado, essa conduta:
 
@@ -5109,6 +5323,8 @@ D) é admitida quando o documento eletrônico também contém a assinatura do ve
 
 ### Questão 3
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
 O CRA-PR identifica pessoa física exercendo atividade sujeita ao registro profissional, em município paranaense, sem a regularidade exigida. A providência institucional mais compatível com suas atribuições é:
 
@@ -5119,6 +5335,8 @@ D) limitar-se à cobrança de anuidades, porque a verificação do exercício pr
 
 ### Questão 4
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
 Assinale a alternativa que distingue corretamente as funções do CFA e dos CRAs no sistema profissional.
 
@@ -5129,6 +5347,8 @@ D) CFA e CRA possuem a mesma competência territorial, variando apenas a denomin
 
 ### Questão 5
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
 
 No conjunto normativo indicado para o CRA-PR, a RN CFA nº 651/2024 tem por objeto:
 
@@ -5139,6 +5359,8 @@ D) aprovar o Regulamento de Registro de pessoas físicas e jurídicas do Sistema
 
 ### Questão 6
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Código de Ética e RN 671/2025](semana_01_estudo.md#s1-d4-codigo-etica)
 
 De acordo com a consolidação normativa utilizada no edital, o Código de Ética e Disciplina dos Profissionais de Administração está aprovado pela:
 
@@ -5149,6 +5371,8 @@ D) RN CFA nº 671/2025.
 
 ### Questão 7
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Um profissional conhece informação confidencial de cliente em razão de trabalho regularmente executado. Segundo o Código de Ética, ele deve:
 
@@ -5159,6 +5383,8 @@ D) compartilhar a informação com parceiros comerciais sempre que eles também 
 
 ### Questão 8
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
 
 Durante fiscalização regular, uma pessoa jurídica registrada oculta documentos pertinentes e cria obstáculos deliberados ao trabalho do CRA. À luz do material, essa conduta:
 
@@ -5169,6 +5395,8 @@ D) pode caracterizar obstrução à fiscalização e gerar repercussão ética o
 
 ### Questão 9
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Lei 4.769/1965](semana_01_estudo.md#s1-d4-lei-4769)
 
 A Lei Federal nº 4.769/1965 ocupa posição central no estudo porque:
 
@@ -5179,6 +5407,8 @@ D) institui apenas regras éticas, sem tratar da organização profissional.
 
 ### Questão 10
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Decreto 61.934/1967](semana_01_estudo.md#s1-d4-decreto-61934)
 
 Quanto à relação entre a Lei nº 4.769/1965 e o Decreto nº 61.934/1967, assinale a alternativa correta.
 
@@ -5189,6 +5419,8 @@ D) O decreto cuida apenas das eleições do Sistema CFA/CRAs.
 
 ### Questão 11
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
 
 Conforme o Regimento Interno estudado, o CRA-PR é:
 
@@ -5199,6 +5431,8 @@ D) associação privada de filiação facultativa, sem poder de fiscalização p
 
 ### Questão 12
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
 A edição de orientação normativa geral destinada a todos os Conselhos Regionais de Administração situa-se, em regra, na esfera do:
 
@@ -5209,6 +5443,8 @@ D) CFA, por sua função normativa e orientadora nacional.
 
 ### Questão 13
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670)
 
 Por que a RN CFA nº 649/2024 e a RN CFA nº 670/2025 devem ser lidas em conjunto?
 
@@ -5219,6 +5455,8 @@ D) A primeira aprova o Código de Ética e a segunda disciplina suas sanções.
 
 ### Questão 14
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589)
 
 No mapa de normas do edital, a RN CFA nº 589/2020 está associada ao tema:
 
@@ -5229,6 +5467,8 @@ D) Código de Ética aprovado em 2025.
 
 ### Questão 15
 **Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626)
 
 Conforme a ementa oficial consolidada no material, a RN CFA nº 626/2023 relaciona-se ao:
 
@@ -5239,6 +5479,8 @@ D) Código de Ética e Disciplina.
 
 ### Questão 16
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546)
 
 A RN CFA nº 546/2018 foi incluída no edital por tratar da:
 
@@ -5249,6 +5491,8 @@ D) isenção de débitos concedida pelos Conselhos Regionais de Administração.
 
 ### Questão 17
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514)
 
 A Lei nº 12.514/2011 integra o estudo do sistema de conselhos profissionais principalmente porque disciplina:
 
@@ -5259,6 +5503,8 @@ D) deveres éticos e hipóteses de sigilo dos Profissionais de Administração.
 
 ### Questão 18
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
 Ao analisar a consequência de uma infração ética, o candidato deve considerar:
 
@@ -5269,6 +5515,8 @@ D) que apenas decisão judicial criminal pode impor qualquer sanção no âmbito
 
 ### Questão 19
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
 
 Um profissional assina relatório técnico elaborado por terceiro, embora não tenha orientado, supervisionado nem participado do trabalho. À luz do Código de Ética, a melhor conclusão é:
 
@@ -5279,6 +5527,8 @@ D) a conduta pode configurar infração ética: a assinatura técnica exige part
 
 ### Questão 20
 **Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Assinale a alternativa incorreta a respeito do sigilo profissional.
 
@@ -5288,7 +5538,9 @@ C) O sigilo pode conviver com obrigações legais e com atuação fiscalizatóri
 D) A justa causa e as hipóteses legais precisam ser consideradas na análise do dever de sigilo.
 
 ### Questão 21
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns)
 
 Assinale a associação correta entre norma e objeto no conjunto estudado.
 
@@ -5298,7 +5550,9 @@ C) RN CFA nº 626/2023 — fiscalização; RN CFA nº 589/2020 — recuperação
 D) RN CFA nº 651/2024 — Regimento Interno do CRA-PR; RN CFA nº 671/2025 — Código de Ética e Disciplina.
 
 ### Questão 22
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
 
 Uma empresa presta de forma habitual serviços enquadrados no campo da Administração. Quanto à regularidade perante o Sistema CFA/CRAs, é correto afirmar que:
 
@@ -5308,7 +5562,9 @@ C) a existência de CNPJ e contrato social impede a incidência de regras profis
 D) a atividade pode sujeitar a pessoa jurídica a registro e fiscalização, além de exigir responsabilidade técnica.
 
 ### Questão 23
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
 
 Segundo o Regimento Interno aprovado pela RN CFA nº 651/2024, o CRA-PR possui sede na capital e jurisdição:
 
@@ -5318,7 +5574,9 @@ C) sobre os três estados da Região Sul.
 D) nacional, embora a fiscalização ordinária se concentre no Paraná.
 
 ### Questão 24
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Conselho profissional × sindicato](semana_01_estudo.md#s1-d4-conselho-sindicato)
 
 Um candidato confunde conselho profissional com sindicato. A correção conceitual adequada é:
 
@@ -5328,7 +5586,9 @@ C) ambos são autarquias e diferem apenas pela abrangência territorial.
 D) o sindicato é unidade descentralizada do conselho e executa obrigatoriamente suas resoluções.
 
 ### Questão 25
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680)
 
 A norma do edital associada ao Regulamento das Eleições do Sistema CFA/CRAs é a:
 
@@ -5338,7 +5598,9 @@ C) RN CFA nº 680/2025.
 D) RN CFA nº 651/2024.
 
 ### Questão 26
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
 Ao estudar uma resolução cuja íntegra não foi consolidada na apostila, mas cuja ementa oficial foi confirmada, a postura tecnicamente mais segura é:
 
@@ -5348,7 +5610,9 @@ C) substituir a norma pela lei federal mais próxima, ainda que tratem de objeto
 D) restringir a conclusão ao objeto confirmado e consultar a fonte oficial antes de afirmar prazos ou penalidades.
 
 ### Questão 27
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
 
 Durante uma diligência, o fiscalizado dirige ofensas pessoais à equipe e recusa, sem justificativa, acesso a documentos pertinentes. No plano ético-profissional, o caso pode envolver:
 
@@ -5358,7 +5622,9 @@ C) violação de urbanidade e possível obstrução à fiscalização, sem preju
 D) nulidade automática da diligência, independentemente da regularidade da solicitação feita.
 
 ### Questão 28
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670)
 
 Uma resolução posterior altera dispositivos do Regulamento de Registro aprovado por resolução anterior. Para identificar a disciplina vigente, deve-se:
 
@@ -5368,7 +5634,9 @@ C) ler o texto anterior em conjunto com as alterações posteriores, observando 
 D) considerar revogado todo o regulamento anterior, mesmo quando a norma posterior altera apenas dispositivos determinados.
 
 ### Questão 29
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
 
 Na estrutura do CRA-PR descrita no Regimento Interno, o órgão deliberativo superior é:
 
@@ -5378,7 +5646,9 @@ C) a representação institucional, que substitui os órgãos colegiados nas mat
 D) a Diretoria Executiva, responsável também pela deliberação plenária em caráter permanente.
 
 ### Questão 30
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Diretoria Executiva](semana_01_estudo.md#s1-d4-diretoria)
 
 No desenho regimental do CRA-PR, a Diretoria Executiva está mais diretamente ligada:
 
@@ -5388,7 +5658,9 @@ C) à função deliberativa superior reservada ao Plenário.
 D) à edição de normas nacionais vinculantes para todos os CRAs.
 
 ### Questão 31
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Servidor público regularmente inscrito no CRA exerce, em seu cargo, atividade própria do campo profissional. Quanto ao Código de Ética:
 
@@ -5398,7 +5670,9 @@ C) os deveres éticos profissionais continuam pertinentes quando a atuação se 
 D) a incidência depende exclusivamente de remuneração privada adicional.
 
 ### Questão 32
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Lei e decreto regulamentar](semana_01_estudo.md#s1-d4-decreto-61934)
 
 Para compreender conjuntamente a base legal e a regulamentação do exercício profissional, o par normativo central é:
 
@@ -5408,7 +5682,9 @@ C) RN CFA nº 651/2024 e RN CFA nº 680/2025.
 D) Lei nº 4.769/1965 e Decreto nº 61.934/1967.
 
 ### Questão 33
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Assinale a alternativa incorreta à luz dos deveres éticos estudados.
 
@@ -5418,7 +5694,9 @@ C) A independência técnica pode ser abandonada sempre que o cliente registrar 
 D) A atualização cadastral e o aperfeiçoamento profissional integram deveres relevantes.
 
 ### Questão 34
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 A obrigação de manter endereço e dados cadastrais atualizados perante o Conselho contribui para:
 
@@ -5428,7 +5706,9 @@ C) transferir ao CFA toda comunicação destinada ao profissional inscrito no CR
 D) sanar automaticamente qualquer infração anterior praticada pelo inscrito.
 
 ### Questão 35
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Um cliente exige que o profissional omita dado tecnicamente relevante para melhorar a aparência de um parecer. A resposta compatível com o Código de Ética é:
 
@@ -5438,7 +5718,9 @@ C) atender se houver cláusula contratual de confidencialidade sobre o parecer.
 D) transferir a assinatura a outro profissional, mantendo a mesma omissão.
 
 ### Questão 36
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670)
 
 A RN CFA nº 649/2024 é corretamente identificada, no material, como a norma que:
 
@@ -5449,6 +5731,8 @@ D) aprova o Regulamento de Registro de pessoas físicas e jurídicas no Sistema 
 
 ### Questão 37
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670) e [hierarquia das fontes](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
 A respeito da RN CFA nº 670/2025 e da hierarquia normativa, assinale a alternativa correta.
 
@@ -5459,6 +5743,8 @@ D) A resolução pode revogar a Lei nº 4.769/1965 porque é mais recente.
 
 ### Questão 38
 **Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns)
 
 Assinale a sequência que associa corretamente as três resoluções aos respectivos temas: RN CFA nº 589/2020; RN CFA nº 626/2023; RN CFA nº 680/2025.
 
@@ -5468,7 +5754,9 @@ C) eleições; fiscalização; registro.
 D) PERC; isenção de débitos; ética.
 
 ### Questão 39
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
 Uma denúncia relata exercício irregular da profissão em cidade do interior do Paraná. Em regra, a apuração fiscalizatória regional insere-se na competência do:
 
@@ -5478,7 +5766,9 @@ C) Plenário do CFA, como instância inicial obrigatória de toda fiscalização
 D) Poder Executivo estadual, pois o CRA não possui função fiscalizatória própria.
 
 ### Questão 40
-**Nível: Difícil**
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 O dever de aperfeiçoamento profissional deve ser compreendido como:
 
@@ -5488,7 +5778,9 @@ C) faculdade sem relação com zelo, competência ou responsabilidade técnica.
 D) dever que pode ser integralmente delegado ao responsável administrativo da pessoa jurídica.
 
 ### Questão 41
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
 
 Um cliente pede ao profissional que omita de parecer uma limitação metodológica relevante, alegando que a informação prejudicaria a negociação. A omissão tornaria a conclusão mais favorável, mas tecnicamente incompleta. À luz dos deveres profissionais, a conduta adequada é:
 
@@ -5498,7 +5790,9 @@ C) recusar a distorção, explicitar a limitação relevante e defender apenas i
 D) encerrar automaticamente o contrato sem esclarecer o problema, pois qualquer divergência técnica impede a continuidade da relação profissional.
 
 ### Questão 42
-**Nível: Muito difícil**
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
 O enunciado descreve uma infração, mas não informa artigo, circunstâncias agravantes nem elementos suficientes para individualizar a sanção. A resposta mais rigorosa é:
 
@@ -5508,7 +5802,9 @@ C) importar a penalidade prevista em norma de outro conselho profissional.
 D) concluir que nenhuma responsabilização é possível enquanto não houver condenação judicial.
 
 ### Questão 43
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
 Quanto à aplicação do Código de Ética às pessoas jurídicas registradas, assinale a alternativa correta.
 
@@ -5518,7 +5814,9 @@ C) A pessoa jurídica somente se submete ao Código quando todos os sócios poss
 D) O Código alcança a pessoa jurídica, mas suspensão e cancelamento não se aplicam a ela.
 
 ### Questão 44
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
 Durante a preparação, o candidato encontra duas versões de uma resolução em materiais não oficiais e uma questão sem indicação de prova, embora redigida no estilo da banca. Qual procedimento compromete a rastreabilidade e deve ser rejeitado?
 
@@ -5528,17 +5826,21 @@ C) classificar como autoral uma questão apenas inspirada no estilo da banca e i
 D) atribuir origem oficial pela semelhança de estilo e escolher como vigente a versão mais recente do material, sem validar metadados oficiais.
 
 ### Questão 45
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589)
 
-Ao planejar a fiscalização, a gestão compara dois casos: uma atividade potencialmente lesiva exercida sem habilitação e uma falha cadastral formal de baixo risco. Propõe-se priorizar apenas ações com maior arrecadação. Qual diretriz compatibiliza finalidade institucional, risco social e limites de atuação?
+Em processo administrativo fiscal decorrente de fato punível ocorrido no Paraná, o fiscalizado sustenta, simultaneamente, que apenas o CFA poderia aplicar sanção e que eventual penalidade profissional afastaria qualquer outra consequência prevista em lei. À luz do Regulamento de Fiscalização estudado, assinale a conclusão correta.
 
-A) concentrar toda a fiscalização nos inscritos, pois a proteção econômica da categoria é a finalidade exclusiva do sistema.
-B) priorizar o risco social, atuar dentro da competência e observar o devido processo, usando orientação, registro e fiscalização sem tratar arrecadação como fim.
-C) assumir competência sobre qualquer atividade econômica relacionada ao caso, ainda que atribuída por lei a outro órgão público.
-D) selecionar primeiro as infrações de maior retorno financeiro, pois a arrecadação substitui a análise de risco e de interesse público.
+A) O CFA possui competência originária exclusiva para sancionar toda infração ocorrida nas jurisdições regionais, e sua decisão substitui qualquer consequência legal.
+B) A competência originária para aplicar sanção é do CRA onde ocorreu o fato punível, e a sanção profissional não afasta a possibilidade de outras penas previstas em lei.
+C) O CRA limita-se ao cadastro dos inscritos; toda sanção por exercício profissional irregular depende de decisão judicial prévia.
+D) O fiscalizado pode escolher qualquer CRA para julgar o caso, e a primeira sanção aplicada extingue as demais consequências possíveis.
 
 ### Questão 46
-**Nível: Muito difícil**
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
 
 Uma empresa indica formalmente responsável técnico, mas ele apenas empresta o nome e não orienta nem supervisiona os serviços. A análise correta é:
 
@@ -5548,7 +5850,9 @@ C) a indicação documental basta para demonstrar responsabilidade efetiva, inde
 D) o registro ativo da empresa elimina qualquer dever individual do responsável indicado.
 
 ### Questão 47
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
 Uma instrução operacional do CRA-PR passa a adotar critério incompatível com norma nacional válida do CFA sobre a mesma matéria. Ao identificar o conflito, qual solução respeita a distribuição de competências do Sistema CFA/CRAs?
 
@@ -5558,7 +5862,9 @@ C) considerar a norma nacional automaticamente revogada pela instrução regiona
 D) transferir à Diretoria Executiva do CRA-PR o poder de alterar a regra nacional para todos os Conselhos Regionais.
 
 ### Questão 48
-**Nível: Muito difícil**
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
 
 O CRA-PR mantém sua sede em Curitiba, instala atendimento descentralizado em Londrina e realiza fiscalização em Cascavel. Qual consequência institucional decorre corretamente da distinção entre sede, unidade de atendimento e jurisdição?
 
@@ -5568,7 +5874,9 @@ C) a sede permanece na capital e a jurisdição alcança todo o Paraná; unidade
 D) a instalação de atendimento fora da capital converte a jurisdição estadual do CRA-PR em competência nacional compartilhada.
 
 ### Questão 49
-**Nível: Muito difícil**
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
 
 Um inscrito orienta pessoa sem habilitação a exercer atividade profissional sujeita ao sistema, ainda que não obtenha lucro e não se prove dano concreto. À luz do Código de Ética:
 
@@ -5578,7 +5886,9 @@ C) auxiliar pessoa não habilitada a exercer a profissão pode configurar infra�
 D) o registro regular do inscrito autoriza que ele transfira informalmente sua habilitação.
 
 ### Questão 50
-**Nível: Muito difícil**
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
 A Lei nº 4.769/1965 estabelece determinado requisito profissional; o Decreto nº 61.934/1967 disciplina sua execução, e uma resolução administrativa recebe interpretação que dispensaria o requisito legal. Qual método resolve adequadamente esse conflito aparente?
 
@@ -5596,6 +5906,7 @@ D) escolher livremente a norma mais favorável ao interessado, pois atos do sist
 **Matéria:** Administração Pública
 **Assunto:** Modalidade concurso na Lei nº 14.133/2021
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Na Lei nº 14.133/2021, a modalidade destinada à escolha de trabalho técnico, científico ou artístico, com julgamento por melhor técnica ou conteúdo artístico e concessão de prêmio ou remuneração ao vencedor, é:
@@ -5612,6 +5923,7 @@ D) a concorrência, necessariamente adotada sempre que houver trabalho artístic
 **Matéria:** Administração Pública
 **Assunto:** Elementos da responsabilidade civil objetiva do Estado
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Para examinar a responsabilidade civil objetiva do Estado por atuação de agente público, o roteiro básico deve verificar:
@@ -5628,6 +5940,7 @@ D) culpa administrativa comprovada e inexistência de qualquer excludente.
 **Matéria:** Administração Pública
 **Assunto:** Publicidade administrativa e proteção de dados pessoais
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Um relatório administrativo contém decisões de interesse coletivo e, nos anexos, dados pessoais sem relação necessária com a divulgação. Qual conduta é compatível com a publicidade administrativa estudada?
@@ -5644,6 +5957,7 @@ D) Dar acesso às partes de interesse público e resguardar os dados pessoais se
 **Matéria:** Administração Pública
 **Assunto:** Culpa concorrente da vítima
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Se a conduta da vítima concorre para a produção do dano, essa circunstância:
@@ -5660,6 +5974,7 @@ D) transfere automaticamente toda responsabilidade ao agente público.
 **Matéria:** Administração Pública
 **Assunto:** Excludentes do nexo causal
 **Nível:** Médio
+**Uso:** Essenciais
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Caso fortuito ou força maior, na responsabilidade civil do Estado:
@@ -5676,6 +5991,7 @@ D) jamais interfere no dever de indenizar, porque a responsabilidade é objetiva
 **Matéria:** Administração Pública
 **Assunto:** Motivação objetiva do ato administrativo
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Ao indeferir um pedido administrativo, a autoridade apresenta apenas a frase “por conveniência do setor”, sem indicar fatos nem fundamento jurídico. À luz da motivação objetiva, a decisão:
@@ -5692,6 +6008,7 @@ D) só precisa indicar fundamento depois de eventual recurso, quando a motivaç�
 **Matéria:** Administração Pública
 **Assunto:** Princípio da moralidade administrativa
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 O princípio da moralidade administrativa exige atuação:
@@ -5708,6 +6025,7 @@ D) ética, leal e proba, para além da simples aparência de legalidade.
 **Matéria:** Administração Pública
 **Assunto:** Motivo e motivação do ato administrativo
 **Nível:** Médio
+**Uso:** Aprofundamento
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Em relação aos elementos do ato administrativo, a motivação corresponde:
@@ -5724,6 +6042,7 @@ D) a uma formalidade dispensável em todo ato discricionário.
 **Matéria:** Administração Pública
 **Assunto:** Impessoalidade, moralidade e desvio de finalidade
 **Nível:** Difícil
+**Uso:** Aprofundamento
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Uma autoridade direciona fiscalização para prejudicar desafeto pessoal, embora tente apresentar justificativa formal. A conduta viola mais diretamente:
@@ -5740,6 +6059,7 @@ D) a impessoalidade e a moralidade, além de poder revelar desvio da finalidade 
 **Matéria:** Administração Pública
 **Assunto:** Distinção entre motivo e motivação
 **Nível:** Difícil
+**Uso:** Aprofundamento
 **Referência:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4)
 
 Em um ato administrativo, a situação concreta prevista pela norma é registrada no processo e a autoridade explica por que esses fatos justificam a decisão. A distinção correta é:
@@ -5756,6 +6076,7 @@ D) motivo é sempre discricionário, e motivação somente existe quando o inter
 **Matéria:** Prática discursiva
 **Assunto:** Estrutura do parágrafo argumentativo
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5)
 
 Qual alternativa apresenta um parágrafo argumentativo completo, com ideia central, justificativa e consequência relacionada ao tema da ética no serviço público?
@@ -5772,6 +6093,7 @@ D) A ética orienta decisões imparciais porque impede que interesses privados p
 **Matéria:** Prática discursiva
 **Assunto:** Emprego do acento indicativo de crase
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5)
 
 Assinale a alternativa em que o acento indicativo de crase está empregado incorretamente.
@@ -5788,6 +6110,7 @@ D) A reunião terá início às 14 horas.
 **Matéria:** Prática discursiva
 **Assunto:** Conectivos concessivos
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5)
 
 Qual reescrita preserva a relação concessiva de “Ainda que o prazo seja curto, a equipe concluirá a análise”?
@@ -5804,6 +6127,7 @@ D) Logo que o prazo seja curto, a equipe concluirá a análise.
 **Matéria:** Prática discursiva
 **Assunto:** Formulação de tese argumentativa
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5)
 
 Para iniciar um texto sobre ética e eficiência no serviço público, assinale a tese mais adequada.
@@ -5820,6 +6144,7 @@ D) Ser eficiente é agir rapidamente, ainda que controles jurídicos e deveres �
 **Matéria:** Prática discursiva
 **Assunto:** Conclusão argumentativa e retomada da tese
 **Nível:** Difícil
+**Uso:** Revisão
 **Referência:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5)
 
 Qual conclusão encerra adequadamente um parágrafo que defendeu transparência com proteção de dados, sem introduzir argumento novo?
@@ -5836,6 +6161,7 @@ D) Logo, proteção de dados e publicidade são incompatíveis, razão pela qual
 **Matéria:** Raciocínio Lógico-Matemático
 **Assunto:** Proporcionalidade direta
 **Nível:** Difícil
+**Uso:** Simulado
 **Referência:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4)
 
 Uma equipe analisa 72 processos em 6 dias, mantendo ritmo constante. No mesmo ritmo, quantos processos analisará em 10 dias?
@@ -5852,6 +6178,7 @@ D) 144.
 **Matéria:** Raciocínio Lógico-Matemático
 **Assunto:** Inclusão-exclusão com três conjuntos e cálculo do complemento
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4)
 
 Em um grupo de 100 candidatos, 58 estudam Legislação, 50 estudam Português e 42 estudam Informática. Estudam Legislação e Português 28; Legislação e Informática 24; Português e Informática 20; e as três disciplinas, 12. As interseções aos pares incluem quem estuda as três. Quantos não estudam nenhuma delas?
@@ -5868,6 +6195,7 @@ D) 22.
 **Matéria:** Raciocínio Lógico-Matemático
 **Assunto:** Negação de quantificadores e da conjunção
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4)
 
 A negação lógica de “Todo fiscal conferiu o relatório e algum analista validou o parecer” é:
@@ -5884,6 +6212,7 @@ D) Algum fiscal conferiu o relatório e todo analista deixou de validar o parece
 **Matéria:** Raciocínio Lógico-Matemático
 **Assunto:** Soma de progressão aritmética e aplicação sucessiva de percentual
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4)
 
 Um plano prevê analisar 12 processos na primeira semana e aumentar a meta em 4 processos a cada semana, durante 10 semanas. Ao final, constatou-se que 20% do total planejado correspondiam a registros duplicados e foram excluídos. Quantos processos válidos permaneceram no plano?
@@ -5900,6 +6229,7 @@ D) 264.
 **Matéria:** Raciocínio Lógico-Matemático
 **Assunto:** Probabilidade hipergeométrica e contagem de combinações sem reposição
 **Nível:** Muito difícil
+**Uso:** Simulado
 **Referência:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4)
 
 De 10 acessos, 3 estão bloqueados e 7 liberados. Três acessos distintos são escolhidos ao acaso, sem reposição. Qual é a probabilidade de a amostra conter exatamente dois acessos liberados e um bloqueado?
@@ -5998,6 +6328,7 @@ Extra Dia 4.20: D
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** A sujeição da pessoa jurídica não depende de todos os sócios serem profissionais; considera-se a atividade exercida.
 - **B) está correta:** A atividade básica situada no campo profissional pode sujeitar a empresa ao registro e à fiscalização do CRA-PR.
 - **C) está errada:** O CFA orienta e normatiza nacionalmente; a atuação ordinária de registro e fiscalização regional cabe ao CRA.
@@ -6005,12 +6336,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Registro e fiscalização de pessoa jurídica.
 - **Pegadinha usada:** Tratar CNPJ ou indicação informal de responsável como substitutos da regularidade profissional.
 - **Como pensar para acertar:** Identifique a atividade efetivamente oferecida e, depois, o conselho regional competente.
-- **Referência à apostila de estudo:** Dia 4 — “Registro, fiscalização e exercício irregular”.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
 
 ### Comentário da Questão 2
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está correta:** Permitir uso do próprio registro sem elaboração ou supervisão pode configurar empréstimo de nome ou registro.
 - **B) está errada:** Não se trata de simples dado cadastral: o número de registro vincula identidade e responsabilidade profissional.
 - **C) está errada:** O consentimento não transforma empréstimo de registro em atuação técnica efetiva.
@@ -6018,12 +6350,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Uso indevido do nome ou registro profissional.
 - **Pegadinha usada:** Confundir autorização formal ou assinatura eletrônica com atuação técnica real.
 - **Como pensar para acertar:** Pergunte quem elaborou, orientou ou supervisionou o trabalho cuja responsabilidade está sendo assumida.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
 
 ### Comentário da Questão 3
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está correta:** A fiscalização regional da regularidade do exercício profissional integra a finalidade do CRA-PR.
 - **B) está errada:** O CRA pode agir no âmbito de sua competência fiscalizatória sem depender de provocação prévia do CFA.
 - **C) está errada:** A função nacional do CFA não elimina a competência executiva e fiscalizatória do conselho regional.
@@ -6031,12 +6364,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Competência fiscalizatória regional.
 - **Pegadinha usada:** Reduzir o CRA a arrecadador ou deslocar toda atuação local para o CFA.
 - **Como pensar para acertar:** Associe CFA a orientação nacional e CRA a registro e fiscalização em sua jurisdição.
-- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 4
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** A fiscalização local é função típica dos CRAs; o CFA não a executa ordinariamente em cada município.
 - **B) está errada:** Norma regional não pode afastar unilateralmente disciplina nacional válida do sistema.
 - **C) está correta:** A alternativa apresenta corretamente a distribuição geral: orientação normativa nacional pelo CFA e execução regional pelo CRA.
@@ -6044,12 +6378,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Distribuição de competências no Sistema CFA/CRAs.
 - **Pegadinha usada:** Inverter o papel nacional do CFA e o papel regional dos CRAs.
 - **Como pensar para acertar:** Use a dupla ‘normatização nacional / execução regional’ como eixo de comparação.
-- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 5
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está correta:** A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
 - **B) está errada:** O regulamento eleitoral indicado é o aprovado pela RN CFA nº 680/2025.
 - **C) está errada:** O PERC está associado à RN CFA nº 626/2023.
@@ -6057,12 +6392,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 651/2024.
 - **Pegadinha usada:** Trocar os objetos de resoluções próximas no mapa do edital.
 - **Como pensar para acertar:** Monte pares fixos entre número, ano e objeto de cada resolução.
-- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
 
 ### Comentário da Questão 6
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** A RN CFA nº 640/2024 foi sucedida e revogada na consolidação indicada no material.
 - **B) está errada:** A RN CFA nº 649/2024 trata do Regulamento de Registro, não do Código de Ética.
 - **C) está errada:** A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
@@ -6070,12 +6406,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Norma vigente do Código de Ética.
 - **Pegadinha usada:** Escolher norma anterior ou resolução de objeto diferente apenas pela proximidade numérica.
 - **Como pensar para acertar:** Diferencie a norma vigente de eventual resolução anterior mencionada no histórico.
-- **Referência à apostila de estudo:** Dia 4 — “4. Código de Ética — RN CFA nº 671/2025”.
+- **Referência à apostila de estudo:** [Código de Ética e RN 671/2025](semana_01_estudo.md#s1-d4-codigo-etica).
 
 ### Comentário da Questão 7
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** O sigilo não é absoluto diante de justa causa ou obrigação legal legitimamente configurada.
 - **B) está correta:** A regra é preservar a informação, com exame das exceções justificadas previstas no ordenamento.
 - **C) está errada:** A inexistência aparente de dano econômico não torna a confidencialidade facultativa.
@@ -6083,12 +6420,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Dever de sigilo e suas exceções.
 - **Pegadinha usada:** Oscilar entre sigilo absoluto e divulgação livre por conveniência.
 - **Como pensar para acertar:** Comece pela preservação do sigilo e só depois verifique justa causa ou hipótese legal concreta.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 8
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** Registro ativo não neutraliza deveres de colaboração nem sana comportamento obstrutivo.
 - **B) está errada:** O direito de defesa não equivale a autorização para recusa geral e imotivada a diligência regular.
 - **C) está errada:** O Código alcança pessoas físicas e jurídicas, observadas as especificidades aplicáveis.
@@ -6096,12 +6434,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Obstrução à fiscalização por pessoa jurídica.
 - **Pegadinha usada:** Usar direito de defesa ou registro ativo como imunidade contra fiscalização regular.
 - **Como pensar para acertar:** Separe contestação fundamentada de comportamento destinado a impedir a atividade fiscalizatória.
-- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
 
 ### Comentário da Questão 9
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** Contribuições e cobrança dos conselhos são tema central da Lei nº 12.514/2011, não objeto exclusivo da Lei nº 4.769/1965.
 - **B) está errada:** O Regimento Interno atual do CRA-PR foi aprovado pela RN CFA nº 651/2024.
 - **C) está correta:** A Lei nº 4.769/1965 é a base legal do exercício profissional de Administração e da organização CFA/CRAs.
@@ -6109,12 +6448,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Função da Lei nº 4.769/1965.
 - **Pegadinha usada:** Confundir lei profissional com normas financeiras, regimentais ou exclusivamente éticas.
 - **Como pensar para acertar:** Associe a lei de 1965 à base da profissão; depois situe as normas especiais ao redor dela.
-- **Referência à apostila de estudo:** Dia 4 — “1. Lei Federal nº 4.769/1965”.
+- **Referência à apostila de estudo:** [Lei 4.769/1965](semana_01_estudo.md#s1-d4-lei-4769).
 
 ### Comentário da Questão 10
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** Decreto regulamentar não pode afastar a lei que lhe dá fundamento.
 - **B) está correta:** A relação correta é de lei como base e decreto como regulamentação dentro dos limites legais.
 - **C) está errada:** O Decreto nº 61.934/1967 regulamenta a lei profissional, não constitui regimento local autônomo.
@@ -6122,12 +6462,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Relação entre lei e decreto regulamentar.
 - **Pegadinha usada:** Supor que norma posterior e infralegal prevalece automaticamente sobre a lei.
 - **Como pensar para acertar:** Em conflito, preserve a hierarquia: o decreto detalha a execução, mas não pode contrariar a lei.
-- **Referência à apostila de estudo:** Dia 4 — “2. Decreto Federal nº 61.934/1967”.
+- **Referência à apostila de estudo:** [Decreto 61.934/1967](semana_01_estudo.md#s1-d4-decreto-61934).
 
 ### Comentário da Questão 11
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** O CRA-PR não possui atuação nacional nem perde sua autonomia administrativa pela articulação com o CFA.
 - **B) está correta:** O Regimento o caracteriza como autarquia de direito público, autônoma e com jurisdição no Paraná.
 - **C) está errada:** Não se trata de empresa pública estadual destinada a políticas de emprego.
@@ -6135,12 +6476,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Natureza jurídica e jurisdição do CRA-PR.
 - **Pegadinha usada:** Confundir autarquia profissional com órgão subordinado, empresa estatal ou associação privada.
 - **Como pensar para acertar:** Memorize o conjunto: direito público, autonomia própria e jurisdição estadual.
-- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
 
 ### Comentário da Questão 12
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** Os registrados não editam por votação direta a orientação normativa geral dos conselhos.
 - **B) está errada:** O Plenário do CRA-PR é superior dentro do Conselho Regional, não em toda a federação.
 - **C) está errada:** Os CRAs aplicam a disciplina do sistema, mas não substituem isoladamente a competência normativa nacional.
@@ -6148,12 +6490,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Função normativa nacional do CFA.
 - **Pegadinha usada:** Confundir superioridade interna do Plenário regional com competência nacional.
 - **Como pensar para acertar:** Observe a abrangência do comando: se destinado a todos os CRAs, a referência é o CFA.
-- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 13
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está correta:** A RN CFA nº 649/2024 aprovou o Regulamento de Registro e a RN CFA nº 670/2025 o alterou.
 - **B) está errada:** O regulamento eleitoral indicado no edital está na RN CFA nº 680/2025.
 - **C) está errada:** Resoluções administrativas não substituem nem revogam integralmente a lei federal profissional.
@@ -6161,12 +6504,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Regulamento de Registro e norma alteradora.
 - **Pegadinha usada:** Ler a resolução alteradora isoladamente ou trocar seu objeto com ética e eleições.
 - **Como pensar para acertar:** Estude a norma-base e a norma alteradora como um conjunto, preservando a hierarquia.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670).
 
 ### Comentário da Questão 14
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** O Regimento Interno do CRA-PR está associado à RN CFA nº 651/2024.
 - **B) está errada:** As eleições do sistema são objeto da RN CFA nº 680/2025.
 - **C) está correta:** A RN CFA nº 589/2020 está vinculada à fiscalização no Sistema CFA/CRAs.
@@ -6174,12 +6518,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 589/2020.
 - **Pegadinha usada:** Permutar objetos entre resoluções listadas no mesmo edital.
 - **Como pensar para acertar:** Fixe a associação ‘589/2020 — fiscalização’ sem inventar detalhes não consolidados.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589).
 
 ### Comentário da Questão 15
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Essenciais.
 - **A) está errada:** O funcionamento interno do CRA-PR é disciplinado por seu Regimento, aprovado pela RN CFA nº 651/2024.
 - **B) está errada:** O Regulamento de Registro foi aprovado pela RN CFA nº 649/2024.
 - **C) está correta:** A ementa da RN CFA nº 626/2023 a relaciona ao Programa Especial de Recuperação de Créditos — PERC.
@@ -6187,12 +6532,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 626/2023.
 - **Pegadinha usada:** Confundir recuperação de créditos com registro, ética ou regimento.
 - **Como pensar para acertar:** Associe a sigla PERC a recuperação de créditos e ao número 626/2023.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626).
 
 ### Comentário da Questão 16
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** O Código de Ética vigente foi aprovado pela RN CFA nº 671/2025.
 - **B) está errada:** O PERC está associado à RN CFA nº 626/2023.
 - **C) está errada:** A alteração do Regulamento de Registro é objeto da RN CFA nº 670/2025.
@@ -6200,12 +6546,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 546/2018.
 - **Pegadinha usada:** Aproximar indevidamente ‘isenção de débitos’ e ‘recuperação de créditos’.
 - **Como pensar para acertar:** Diferencie benefício de isenção, ligado à RN 546, do programa de recuperação, ligado à RN 626.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546).
 
 ### Comentário da Questão 17
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está correta:** A Lei nº 12.514/2011 disciplina contribuições devidas a conselhos profissionais e aspectos de cobrança.
 - **B) está errada:** Os campos da profissão decorrem da legislação profissional iniciada pela Lei nº 4.769/1965.
 - **C) está errada:** A estrutura interna do CRA-PR está em seu Regimento, aprovado pela RN CFA nº 651/2024.
@@ -6213,12 +6560,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Contribuições aos conselhos profissionais.
 - **Pegadinha usada:** Trocar o objeto financeiro da Lei nº 12.514/2011 por ética, profissão ou regimento.
 - **Como pensar para acertar:** Associe ‘12.514’ a anuidades, contribuições, taxas e cobrança dos conselhos.
-- **Referência à apostila de estudo:** Dia 4 — “Lei nº 12.514/2011 — contribuições e cobrança”.
+- **Referência à apostila de estudo:** [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514).
 
 ### Comentário da Questão 18
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** Há especificidades de destinatário e de sanção; não se pode aplicar tudo de modo idêntico a PF e PJ.
 - **B) está errada:** A comprovação da conduta não dispensa o enquadramento normativo nem a análise da gravidade e das circunstâncias.
 - **C) está correta:** A resposta exige norma aplicável, gravidade e distinções entre pessoa física e jurídica.
@@ -6226,12 +6574,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Individualização de sanções éticas.
 - **Pegadinha usada:** Aplicar automaticamente a sanção máxima ou igualar pessoa física e jurídica.
 - **Como pensar para acertar:** Primeiro enquadre a conduta; depois verifique destinatário, circunstâncias e sanções admitidas.
-- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
+- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 19
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** Autorização do autor material não cria participação técnica do profissional que assina.
 - **B) está errada:** O registro da empresa não substitui a responsabilidade efetiva de quem subscreve o documento técnico.
 - **C) está errada:** Prejuízo econômico concreto não é condição necessária para reconhecer o desvalor ético da assinatura fictícia.
@@ -6239,26 +6588,28 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Assinatura técnica sem participação efetiva.
 - **Pegadinha usada:** Confundir autorização formal ou registro da empresa com supervisão real.
 - **Como pensar para acertar:** Compare a responsabilidade declarada pela assinatura com a atuação efetivamente realizada.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
 
 ### Comentário da Questão 20
 
 - **Alternativa correta:** B.
 - **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está errada:** A afirmação descreve corretamente a origem funcional do dever de sigilo.
-- **B) está correta:** Interesse comercial não é justa causa automática e não autoriza divulgar informação confidencial.
-- **C) está errada:** Preservar sigilo não impede o cumprimento de obrigação legal ou colaboração com fiscalização legítima.
-- **D) está errada:** O material admite análise de justa causa e das hipóteses legais pertinentes.
+- **A) não é a resposta:** A afirmação descreve corretamente a origem funcional do dever de sigilo.
+- **B) é a resposta:** A afirmação está incorreta, pois interesse comercial não é justa causa automática e não autoriza divulgar informação confidencial.
+- **C) não é a resposta:** A afirmação está correta: preservar sigilo não impede o cumprimento de obrigação legal ou colaboração com fiscalização legítima.
+- **D) não é a resposta:** A afirmação está correta: o material admite análise de justa causa e das hipóteses legais pertinentes.
 - **Conceito cobrado:** Limites do sigilo profissional.
 - **Pegadinha usada:** Transformar conveniência econômica em exceção legítima ao sigilo.
 - **Como pensar para acertar:** Nos itens ‘incorreta’, marque a opção que converte interesse privado em autorização geral de divulgação.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 21
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** Os objetos foram invertidos: RN 651 é Regimento e RN 671 é Código de Ética.
 - **B) está errada:** A RN 649 trata de registro; a RN 680, de eleições.
 - **C) está errada:** A RN 589 trata de fiscalização; a RN 626, do PERC.
@@ -6266,12 +6617,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Associação entre resoluções e objetos.
 - **Pegadinha usada:** Inverter pares verdadeiros ou reunir dois números corretos com objetos trocados.
 - **Como pensar para acertar:** Cheque separadamente cada metade da alternativa; ambas precisam estar corretas.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns).
 
 ### Comentário da Questão 22
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** A sujeição da pessoa jurídica decorre da atividade, não da profissão de todos os sócios.
 - **B) está errada:** A responsabilidade técnica não substitui automaticamente eventual dever de registro da própria empresa.
 - **C) está errada:** CNPJ e contrato social não criam imunidade perante a regulação profissional.
@@ -6279,12 +6631,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Registro de pessoa jurídica e responsabilidade técnica.
 - **Pegadinha usada:** Tratar registro da empresa e indicação de responsável como obrigações mutuamente excludentes.
 - **Como pensar para acertar:** Analise em camadas: atividade da pessoa jurídica, registro aplicável e atuação efetiva do responsável.
-- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
 
 ### Comentário da Questão 23
 
 - **Alternativa correta:** B.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** A sede fica na capital, mas a jurisdição não se limita ao município.
 - **B) está correta:** O Regimento atribui ao CRA-PR jurisdição em todo o Estado do Paraná.
 - **C) está errada:** A jurisdição não abrange automaticamente Santa Catarina e Rio Grande do Sul.
@@ -6292,12 +6645,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Sede e jurisdição territorial do CRA-PR.
 - **Pegadinha usada:** Confundir o local da sede administrativa com o limite territorial da competência.
 - **Como pensar para acertar:** Leia as duas informações separadamente: sede na capital; jurisdição em todo o estado.
-- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
 
 ### Comentário da Questão 24
 
 - **Alternativa correta:** A.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está correta:** Conselho e sindicato têm natureza e finalidade distintas: fiscalização pública de um lado, representação da categoria de outro.
 - **B) está errada:** A alternativa inverte as funções típicas das duas entidades.
 - **C) está errada:** Sindicato não é autarquia, e a diferença não é apenas territorial.
@@ -6305,12 +6659,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Distinção entre conselho profissional e sindicato.
 - **Pegadinha usada:** Atribuir ao conselho defesa corporativa ou ao sindicato poder de polícia profissional.
 - **Como pensar para acertar:** Pergunte se a função descrita protege a sociedade pela fiscalização ou representa interesses trabalhistas da categoria.
-- **Referência à apostila de estudo:** Dia 4 — “Natureza e finalidade do Sistema CFA/CRAs”.
+- **Referência à apostila de estudo:** [Conselho profissional × sindicato](semana_01_estudo.md#s1-d4-conselho-sindicato).
 
 ### Comentário da Questão 25
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** A RN 546/2018 trata de isenção de débitos.
 - **B) está errada:** A RN 589/2020 está associada à fiscalização.
 - **C) está correta:** A RN 680/2025 aprova o Regulamento das Eleições do Sistema CFA/CRAs.
@@ -6318,12 +6673,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 680/2025.
 - **Pegadinha usada:** Confundir eleições com regimento ou fiscalização por proximidade no edital.
 - **Como pensar para acertar:** Fixe o par ‘680/2025 — eleições’ e descarte as resoluções com objeto já conhecido.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680).
 
 ### Comentário da Questão 26
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** Analogia não autoriza inventar prazo ou requisito para uma resolução específica.
 - **B) está errada:** Resoluções do mesmo órgão podem ter objetos e procedimentos muito diferentes.
 - **C) está errada:** Lei próxima em tema não substitui resolução expressamente indicada com objeto próprio.
@@ -6331,12 +6687,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Rigor metodológico no uso de fontes normativas.
 - **Pegadinha usada:** Preencher lacunas da fonte com memória, analogia ou padrão de outro conselho.
 - **Como pensar para acertar:** Diferencie o que a ementa confirma do que exigiria leitura do artigo correspondente.
-- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
+- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 27
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** Direito de defesa não legitima ofensa pessoal nem obstrução deliberada de diligência regular.
 - **B) está errada:** A fiscalização profissional é função institucional do CRA, e o caso não se reduz a contrato privado.
 - **C) está correta:** As condutas podem afetar urbanidade e fiscalização, mas sua apuração deve respeitar o devido processo.
@@ -6344,12 +6701,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Urbanidade, fiscalização e devido processo.
 - **Pegadinha usada:** Usar garantias de defesa como salvo-conduto para qualquer comportamento.
 - **Como pensar para acertar:** Separe contestação legítima de ofensa e de ato material destinado a impedir a fiscalização.
-- **Referência à apostila de estudo:** Dia 4 — “Infrações recorrentes no Código de Ética”.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está errada:** A validade da alteração não depende, como regra geral do enunciado, de republicação integral pela União.
 - **B) está errada:** A resolução alteradora pode não reproduzir os dispositivos que permaneceram vigentes.
 - **C) está correta:** A disciplina vigente resulta da norma-base combinada com as modificações expressamente produzidas pela norma posterior.
@@ -6357,12 +6715,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Leitura de norma-base e norma alteradora.
 - **Pegadinha usada:** Adotar automaticamente revogação total ou ler apenas um dos diplomas.
 - **Como pensar para acertar:** Identifique quais dispositivos foram alterados e preserve os demais até prova de revogação.
-- **Referência à apostila de estudo:** Dia 4 — “RN CFA nº 649/2024 e RN CFA nº 670/2025”.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670).
 
 ### Comentário da Questão 29
 
 - **Alternativa correta:** A.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está correta:** O Plenário é o órgão deliberativo superior na estrutura regimental.
 - **B) está errada:** A Ouvidoria recebe e trata manifestações, sem assumir a posição do Plenário.
 - **C) está errada:** Representação institucional não equivale a órgão deliberativo superior.
@@ -6370,12 +6729,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Estrutura interna do CRA-PR.
 - **Pegadinha usada:** Confundir órgão executivo, canal de ouvidoria ou representação com instância deliberativa superior.
 - **Como pensar para acertar:** Associe ‘deliberativo superior’ ao Plenário e ‘execução/administração’ à Diretoria.
-- **Referência à apostila de estudo:** Dia 4 — “Estrutura interna do CRA-PR”.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
 
 ### Comentário da Questão 30
 
 - **Alternativa correta:** A.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
 - **A) está correta:** A Diretoria Executiva se relaciona à execução e à administração das atividades e deliberações.
 - **B) está errada:** A Ouvidoria possui finalidade própria de interlocução e tratamento de manifestações.
 - **C) está errada:** A deliberação superior compete ao Plenário.
@@ -6383,12 +6743,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Função da Diretoria Executiva.
 - **Pegadinha usada:** Inverter as funções do Plenário, da Diretoria e da Ouvidoria.
 - **Como pensar para acertar:** Observe o verbo nuclear: deliberar remete ao Plenário; executar e administrar, à Diretoria.
-- **Referência à apostila de estudo:** Dia 4 — “Estrutura interna do CRA-PR”.
+- **Referência à apostila de estudo:** [Diretoria Executiva](semana_01_estudo.md#s1-d4-diretoria).
 
 ### Comentário da Questão 31
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** O Código não se restringe ao profissional liberal quando a pessoa atua no campo da profissão.
 - **B) está errada:** Regime funcional e responsabilidade profissional podem coexistir; um não elimina automaticamente o outro.
 - **C) está correta:** O vínculo público não afasta deveres éticos inerentes à atuação profissional sujeita ao sistema.
@@ -6396,12 +6757,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Incidência ética no exercício funcional.
 - **Pegadinha usada:** Confundir vínculo estatutário com imunidade perante deveres da profissão.
 - **Como pensar para acertar:** Olhe para a natureza da atividade exercida, não apenas para a forma do vínculo de trabalho.
-- **Referência à apostila de estudo:** Dia 4 — “Abrangência do Código de Ética”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 32
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** RN 589 e RN 671 tratam de fiscalização e ética.
 - **B) está errada:** Lei 12.514 e RN 626 tratam de contribuições e recuperação de créditos, não formam o par profissão/regulamentação.
 - **C) está errada:** RN 651 e RN 680 tratam, respectivamente, de regimento e eleições.
@@ -6409,26 +6771,28 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Base legal e regulamentar da profissão.
 - **Pegadinha usada:** Formar pares apenas porque as duas normas constam do edital.
 - **Como pensar para acertar:** Procure a relação hierárquica direta: lei profissional seguida de seu decreto regulamentador.
-- **Referência à apostila de estudo:** Dia 4 — “Lei nº 4.769/1965 e Decreto nº 61.934/1967”.
+- **Referência à apostila de estudo:** [Lei e decreto regulamentar](semana_01_estudo.md#s1-d4-decreto-61934).
 
 ### Comentário da Questão 33
 
 - **Alternativa correta:** C.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está errada:** A abrangência inclui PF e PJ, com adaptações e especificidades.
-- **B) está errada:** O sigilo deve ser conjugado com justa causa e hipóteses legais.
-- **C) está correta:** Ordem escrita do cliente não elimina independência técnica nem torna lícita uma conduta inadequada.
-- **D) está errada:** Atualização cadastral e aperfeiçoamento integram os deveres destacados no material.
+- **A) não é a resposta:** A afirmação está correta: a abrangência inclui PF e PJ, com adaptações e especificidades.
+- **B) não é a resposta:** A afirmação está correta: o sigilo deve ser conjugado com justa causa e hipóteses legais.
+- **C) é a resposta:** A afirmação está incorreta, pois ordem escrita do cliente não elimina independência técnica nem torna lícita uma conduta inadequada.
+- **D) não é a resposta:** A afirmação está correta: atualização cadastral e aperfeiçoamento integram os deveres destacados no material.
 - **Conceito cobrado:** Deveres éticos e independência técnica.
 - **Pegadinha usada:** Supor que ordem contratual escrita afasta responsabilidade pessoal do profissional.
 - **Como pensar para acertar:** Nos itens ‘incorreta’, desconfie de permissões absolutas criadas pela vontade do cliente.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 34
 
 - **Alternativa correta:** B.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** Atualização cadastral não substitui procedimentos de registro eventualmente exigidos.
 - **B) está correta:** Dados atualizados permitem notificação, controle e fiscalização regulares.
 - **C) está errada:** A obrigação se cumpre perante o conselho competente; não transfere toda comunicação ao CFA.
@@ -6436,12 +6800,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Dever de atualização cadastral.
 - **Pegadinha usada:** Transformar um dever instrumental em mecanismo de renovação, transferência de competência ou anistia.
 - **Como pensar para acertar:** Pense na finalidade prática do cadastro: localizar, comunicar e controlar o vínculo profissional.
-- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 35
 
 - **Alternativa correta:** B.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** A defesa do cliente existe dentro de limites jurídicos, técnicos e éticos.
 - **B) está correta:** Honestidade e independência técnica impedem omissão destinada a distorcer a conclusão profissional.
 - **C) está errada:** Cláusula de confidencialidade não autoriza falsidade ou supressão tecnicamente indevida.
@@ -6449,12 +6814,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Independência técnica diante de pressão do cliente.
 - **Pegadinha usada:** Tratar interesse contratual como superior à verdade técnica e à ética.
 - **Como pensar para acertar:** Pergunte se a ordem preserva a integridade do parecer; se distorce o conteúdo, deve ser recusada.
-- **Referência à apostila de estudo:** Dia 4 — “Código de Ética: sigilo, zelo, independência e uso do registro”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 36
 
 - **Alternativa correta:** D.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** O regulamento eleitoral está na RN 680/2025.
 - **B) está errada:** O PERC está associado à RN 626/2023.
 - **C) está errada:** O Regimento Interno do CRA-PR está na RN 651/2024.
@@ -6462,12 +6828,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Objeto da RN CFA nº 649/2024.
 - **Pegadinha usada:** Trocar a norma de registro por resoluções de crédito, regimento ou eleição.
 - **Como pensar para acertar:** No mapa normativo, leia ‘649’ como norma-base de registro e ‘670’ como sua alteração.
-- **Referência à apostila de estudo:** Dia 4 — “RN CFA nº 649/2024 e RN CFA nº 670/2025”.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670).
 
 ### Comentário da Questão 37
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
+- **Uso:** Revisão.
 - **A) está correta:** A RN 670/2025 atua no plano infralegal, alterando regulamento aprovado por resolução anterior.
 - **B) está errada:** Alteração do regulamento de registro não substitui integralmente o decreto regulamentar.
 - **C) está errada:** Resolução tampouco altera automaticamente qualquer lei que trate da matéria.
@@ -6475,12 +6842,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Hierarquia normativa e alcance da RN nº 670/2025.
 - **Pegadinha usada:** Aplicar o critério cronológico sem considerar a hierarquia entre lei, decreto e resolução.
 - **Como pensar para acertar:** Antes de comparar datas, identifique a espécie normativa e o objeto exato da alteração.
-- **Referência à apostila de estudo:** Dia 4 — “Hierarquia e leitura conjunta das normas”.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670) e [hierarquia das fontes](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 38
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
+- **Uso:** Revisão.
 - **A) está errada:** Registro, ética e regimento correspondem a outras resoluções do edital.
 - **B) está correta:** A ordem correta é RN 589 — fiscalização; RN 626 — PERC; RN 680 — eleições.
 - **C) está errada:** A sequência desloca eleições e registro para números incorretos.
@@ -6488,12 +6856,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Mapa de resoluções do edital.
 - **Pegadinha usada:** Apresentar três temas verdadeiros, mas fora da ordem dos números dados.
 - **Como pensar para acertar:** Resolva cada par de modo independente e só então valide a sequência completa.
-- **Referência à apostila de estudo:** Dia 4 — “Normas do edital: função de cada uma”.
+- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns).
 
 ### Comentário da Questão 39
 
 - **Alternativa correta:** A.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está correta:** O fato ocorrido no Paraná insere-se, em regra, na jurisdição fiscalizatória do CRA-PR.
 - **B) está errada:** A função nacional do CFA não elimina a atuação fiscalizatória regional.
 - **C) está errada:** O Plenário do CFA não é instância inicial obrigatória de toda ocorrência municipal.
@@ -6501,12 +6870,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Competência territorial de fiscalização.
 - **Pegadinha usada:** Confundir orientação nacional com execução direta de toda fiscalização local.
 - **Como pensar para acertar:** Localize o fato e associe-o ao CRA da respectiva jurisdição.
-- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 40
 
 - **Alternativa correta:** B.
-- **Nível:** Difícil.
+- **Nível:** Médio.
+- **Uso:** Revisão.
 - **A) está errada:** O empregador pode apoiar a capacitação, mas isso não elimina o dever do profissional.
 - **B) está correta:** Aperfeiçoamento é dever ligado à competência, ao zelo e à qualidade responsável.
 - **C) está errada:** O Código trata atualização como relevante para a atuação responsável, não como faculdade desconectada.
@@ -6514,12 +6884,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Aperfeiçoamento e atualização profissional.
 - **Pegadinha usada:** Externalizar o dever ao empregador ou tratá-lo como opção sem efeito ético.
 - **Como pensar para acertar:** Relacione atualização contínua com a qualidade e a responsabilidade dos serviços prestados.
-- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 41
 
 - **Alternativa correta:** C.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
 - **A) está errada:** Interesse econômico e ausência de ordem judicial não autorizam apresentar conclusão tecnicamente incompleta.
 - **B) está errada:** Guardar a ressalva internamente não corrige a informação material omitida do parecer entregue ao destinatário.
 - **C) está correta:** O profissional deve recusar a distorção, explicitar a limitação e conciliar lealdade legítima com independência, técnica, ética e legalidade.
@@ -6527,12 +6898,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Lealdade ao cliente, independência técnica e integridade do parecer.
 - **Pegadinha usada:** Tratar defesa do interesse confiado como autorização para omitir dado material ou como dever automático de romper o contrato.
 - **Como pensar para acertar:** Verifique se a conduta preserva simultaneamente completude técnica, limites normativos e defesa apenas de interesses legítimos.
-- **Referência à apostila de estudo:** Dia 4 — “Deveres profissionais no Código de Ética”.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
 
 ### Comentário da Questão 42
 
 - **Alternativa correta:** A.
-- **Nível:** Muito difícil.
+- **Nível:** Médio.
+- **Uso:** Simulado.
 - **A) está correta:** É possível reconhecer o enquadramento em tese sem inventar penalidade que depende de norma e circunstâncias não fornecidas.
 - **B) está errada:** A sanção máxima não decorre automaticamente do reconhecimento genérico de infração.
 - **C) está errada:** Norma de outro conselho não fornece automaticamente a pena aplicável ao Sistema CFA/CRAs.
@@ -6540,12 +6912,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Rigor na determinação de sanções.
 - **Pegadinha usada:** Forçar uma pena específica quando o enunciado não traz elementos suficientes.
 - **Como pensar para acertar:** Responda apenas até onde vão a fonte e os fatos; não complete a lacuna com analogia.
-- **Referência à apostila de estudo:** Dia 4 — “Sanções: como estudar sem inventar prazo ou penalidade”.
+- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 43
 
 - **Alternativa correta:** D.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
 - **A) está errada:** O material registra especificidades de sanção, portanto a aplicação não é idêntica a PF e PJ.
 - **B) está errada:** A submissão decorre da regulação profissional, não de adesão ética facultativa.
 - **C) está errada:** A composição societária não condiciona, nesses termos, a incidência ética sobre a pessoa jurídica registrada.
@@ -6553,12 +6926,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Aplicação do Código de Ética à pessoa jurídica.
 - **Pegadinha usada:** Generalizar sanções de pessoa física ou criar condições societárias inexistentes.
 - **Como pensar para acertar:** Separe duas perguntas: o Código alcança a PJ? Sim. Todas as sanções de PF se aplicam? Não.
-- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
+- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 44
 
 - **Alternativa correta:** D.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
 - **Observação:** a questão pede o procedimento que compromete a rastreabilidade; portanto, o gabarito é a prática inadequada.
 - **A) está errada:** Conferir metadados e alterações no repositório oficial é justamente o controle necessário para identificar a versão vigente.
 - **B) está errada:** O edital delimita o objeto, e o texto oficial completo resolve dúvidas que a ementa, sozinha, não esclarece.
@@ -6567,25 +6941,27 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Proveniência, vigência normativa e rotulagem de questões autorais.
 - **Pegadinha usada:** Confundir aparência de autenticidade ou data recente de apostila com evidência documental verificável.
 - **Como pensar para acertar:** Separe duas verificações: autenticidade da questão e vigência da norma; ambas exigem fonte identificável.
-- **Referência à apostila de estudo:** Dia 4 — “Método de estudo e controle de fontes”.
+- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 45
 
 - **Alternativa correta:** B.
-- **Nível:** Muito difícil.
-- **A) está errada:** A fiscalização não se limita a proteger mercado ou renda dos inscritos e não pode ignorar risco social relevante.
-- **B) está correta:** A priorização por risco, dentro da competência e com devido processo, vincula orientação, registro e fiscalização à proteção da sociedade.
-- **C) está errada:** A finalidade pública não amplia a competência legal do Conselho para substituir indiscriminadamente outros órgãos.
-- **D) está errada:** Receita sustenta a atividade institucional, mas não substitui critérios de risco, competência e interesse público.
-- **Conceito cobrado:** Finalidade pública, planejamento por risco e limites da competência fiscalizatória.
-- **Pegadinha usada:** Usar arrecadação ou proteção corporativa como critério autônomo de prioridade e confundir finalidade com expansão de competência.
-- **Como pensar para acertar:** Relacione a medida ao risco para a sociedade, confirme a competência e só então verifique procedimento e instrumentos cabíveis.
-- **Referência à apostila de estudo:** Dia 4 — “Natureza e finalidade do Sistema CFA/CRAs”.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **A) está errada:** A função nacional do CFA não elimina a competência originária atribuída ao Conselho Regional onde ocorreu o fato punível.
+- **B) está correta:** A RN CFA nº 589/2020 atribui a competência originária ao CRA do local do fato e esclarece que as sanções da legislação profissional não afastam outras penas previstas em lei.
+- **C) está errada:** Fiscalização e aplicação de sanções administrativas profissionais integram a atuação do CRA e não dependem de condenação judicial prévia.
+- **D) está errada:** A competência não fica à livre escolha do fiscalizado, e a sanção profissional não extingue automaticamente outras consequências legais.
+- **Conceito cobrado:** Competência sancionadora regional e autonomia das consequências legais.
+- **Pegadinha usada:** Transformar a função nacional do CFA em competência originária exclusiva ou tratar a sanção profissional como excludente de todas as demais.
+- **Como pensar para acertar:** Localize primeiro onde ocorreu o fato; depois separe a sanção profissional de outras consequências previstas em lei.
+- **Referência à apostila de estudo:** [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589).
 
 ### Comentário da Questão 46
 
 - **Alternativa correta:** A.
-- **Nível:** Muito difícil.
+- **Nível:** Médio.
+- **Uso:** Simulado.
 - **A) está correta:** Empréstimo de nome ou registro e responsabilidade técnica meramente formal podem configurar irregularidade.
 - **B) está errada:** A indicação fictícia alcança responsabilidade e ética profissional, não apenas o contrato.
 - **C) está errada:** Documento formal não comprova sozinho supervisão ou orientação efetivas.
@@ -6593,12 +6969,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Responsabilidade técnica efetiva.
 - **Pegadinha usada:** Confundir nomeação documental com participação profissional real.
 - **Como pensar para acertar:** Compare o que o responsável declarou assumir com os atos que efetivamente praticou.
-- **Referência à apostila de estudo:** Dia 4 — “Pessoa física, pessoa jurídica e responsabilidade técnica”.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
 
 ### Comentário da Questão 47
 
 - **Alternativa correta:** B.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
 - **A) está errada:** Jurisdição estadual delimita a atuação regional, mas não confere poder para afastar regra nacional válida do sistema.
 - **B) está correta:** O ato regional deve ser revisto para compatibilizar a execução local, sem impedir que a discordância seja levada ao canal institucional próprio.
 - **C) está errada:** A posterioridade não produz revogação quando o órgão regional carece de competência para substituir a norma nacional.
@@ -6606,12 +6983,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Distribuição funcional de competências, norma nacional e execução fiscalizatória regional.
 - **Pegadinha usada:** Confundir autonomia administrativa, cronologia e hierarquia funcional com competência normativa nacional.
 - **Como pensar para acertar:** Identifique quem editou cada ato, seu alcance territorial e qual órgão possui competência para resolver o conflito.
-- **Referência à apostila de estudo:** Dia 4 — “Competência do CFA x competência do CRA”.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 48
 
 - **Alternativa correta:** C.
-- **Nível:** Muito difícil.
+- **Nível:** Médio.
+- **Uso:** Simulado.
 - **A) está errada:** Unidade descentralizada não adquire jurisdição ou personalidade autônoma apenas por funcionar fora da sede.
 - **B) está errada:** A fiscalização estadual não depende da criação de Conselho municipal em cada localidade atendida.
 - **C) está correta:** Curitiba continua sendo a sede, a jurisdição permanece estadual e o atendimento descentralizado integra o mesmo CRA-PR.
@@ -6619,12 +6997,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Sede, jurisdição territorial e descentralização administrativa.
 - **Pegadinha usada:** Confundir unidade de atendimento com novo ente autônomo ou extensão territorial de competência.
 - **Como pensar para acertar:** Analise separadamente endereço da sede, alcance jurídico da atuação e natureza organizacional da unidade local.
-- **Referência à apostila de estudo:** Dia 4 — “3. Regimento Interno do CRA-PR e RN CFA nº 651/2024”.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
 
 ### Comentário da Questão 49
 
 - **Alternativa correta:** C.
-- **Nível:** Muito difícil.
+- **Nível:** Médio.
+- **Uso:** Simulado.
 - **A) está errada:** Lucro não é requisito necessário para caracterizar auxílio ao exercício não habilitado.
 - **B) está errada:** A responsabilização ética não depende obrigatoriamente de condenação penal prévia do terceiro.
 - **C) está correta:** Auxiliar pessoa não habilitada a exercer atividade profissional pode configurar infração por si só.
@@ -6632,12 +7011,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Auxílio ao exercício profissional por não habilitado.
 - **Pegadinha usada:** Acrescentar lucro, dano ou condenação penal como requisitos indispensáveis.
 - **Como pensar para acertar:** Observe o núcleo da conduta: facilitar exercício reservado por quem não tem habilitação.
-- **Referência à apostila de estudo:** Dia 4 — “Infrações recorrentes no Código de Ética”.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
 
 ### Comentário da Questão 50
 
 - **Alternativa correta:** B.
-- **Nível:** Muito difícil.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
 - **A) está errada:** Especialidade e data da resolução não lhe permitem afastar requisito estabelecido por lei.
 - **B) está correta:** Decreto e resolução são interpretados dentro da base legal, sem criar contradição nem dispensar requisito reservado à lei.
 - **C) está errada:** Um decreto regulamentar posterior não modifica a lei apenas por critério cronológico.
@@ -6645,11 +7025,13 @@ Extra Dia 4.20: D
 - **Conceito cobrado:** Hierarquia normativa, poder regulamentar e limites das resoluções administrativas.
 - **Pegadinha usada:** Aplicar isoladamente cronologia, especialidade ou favorabilidade e ignorar a relação de subordinação à lei.
 - **Como pensar para acertar:** Ordene os atos por hierarquia e competência antes de usar critérios de interpretação entre normas do mesmo nível.
-- **Referência à apostila de estudo:** Dia 4 — “Lei nº 4.769/1965 e Decreto nº 61.934/1967”.
+- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentários das questões extras de revisão fixa do Dia 4
 
 #### Comentário Extra Dia 4.1
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** C.
 - **Nível:** Médio.
@@ -6664,6 +7046,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.2
 
+- **Uso:** Essenciais.
+
 - **Alternativa correta:** A.
 - **Nível:** Médio.
 - **A) está correta:** Conduta, dano e nexo formam o núcleo da análise, sem excluir causas de ruptura ou redução do nexo.
@@ -6676,6 +7060,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.3
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
@@ -6690,6 +7076,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.4
 
+- **Uso:** Essenciais.
+
 - **Alternativa correta:** C.
 - **Nível:** Médio.
 - **A) está errada:** Mesmo no regime objetivo, a causalidade da vítima pode influir no valor devido.
@@ -6702,6 +7090,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.5
+
+- **Uso:** Essenciais.
 
 - **Alternativa correta:** A.
 - **Nível:** Médio.
@@ -6716,6 +7106,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.6
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** B.
 - **Nível:** Médio.
 - **A) está errada:** Fórmula genérica de conveniência não demonstra quais fatos e normas sustentam o indeferimento.
@@ -6728,6 +7120,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.7
+
+- **Uso:** Aprofundamento.
 
 - **Alternativa correta:** D.
 - **Nível:** Médio.
@@ -6742,6 +7136,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.8
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** B.
 - **Nível:** Médio.
 - **A) está errada:** Resultado material não se confunde com motivação.
@@ -6754,6 +7150,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.9
+
+- **Uso:** Aprofundamento.
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
@@ -6768,6 +7166,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.10
 
+- **Uso:** Aprofundamento.
+
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
 - **A) está errada:** Os conceitos não se confundem nem se limitam à aparência documental do ato.
@@ -6780,6 +7180,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Administração Pública](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.11
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
@@ -6794,19 +7196,23 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.12
 
+- **Uso:** Revisão.
+
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está errada:** Em ‘àquela’, há fusão da preposição exigida com o demonstrativo.
-- **B) está correta:** Antes de verbo no infinitivo não ocorre crase: o correto é ‘começou a revisar’.
-- **C) está errada:** ‘Encaminhado à chefia’ admite preposição e artigo feminino.
-- **D) está errada:** Na indicação de horário determinado, ‘às 14 horas’ está correto.
+- **A) não é a resposta:** A afirmação está correta: em ‘àquela’, há fusão da preposição exigida com o demonstrativo.
+- **B) é a resposta:** A afirmação está incorreta, pois antes de verbo no infinitivo não ocorre crase: o correto é ‘começou a revisar’.
+- **C) não é a resposta:** A afirmação está correta: ‘encaminhado à chefia’ admite preposição e artigo feminino.
+- **D) não é a resposta:** A afirmação está correta: na indicação de horário determinado, ‘às 14 horas’ está correto.
 - **Conceito cobrado:** Emprego do acento indicativo de crase.
 - **Pegadinha usada:** Marcar crase mecanicamente antes de palavra feminina e esquecer que ‘revisar’ é verbo.
 - **Como pensar para acertar:** Teste a presença simultânea de preposição ‘a’ e artigo ou demonstrativo compatível.
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5).
 
 #### Comentário Extra Dia 4.13
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
@@ -6821,6 +7227,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.14
 
+- **Uso:** Revisão.
+
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
 - **A) está correta:** A tese assume posição clara e delimita a relação entre resultado administrativo e limites jurídicos e éticos.
@@ -6833,6 +7241,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 5 — Prática discursiva](semana_01_estudo.md#s1-d4-b5).
 
 #### Comentário Extra Dia 4.15
+
+- **Uso:** Revisão.
 
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
@@ -6847,6 +7257,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.16
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
 - **A) está errada:** 126 não preserva a proporcionalidade estabelecida.
@@ -6859,6 +7271,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.17
+
+- **Uso:** Simulado.
 
 - **Alternativa correta:** C.
 - **Nível:** Muito difícil.
@@ -6873,6 +7287,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.18
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** B.
 - **Nível:** Muito difícil.
 - **A) está errada:** A negação de ‘todo’ é ‘algum não’, e a negação da conjunção exige ‘ou’.
@@ -6886,6 +7302,8 @@ Extra Dia 4.20: D
 
 #### Comentário Extra Dia 4.19
 
+- **Uso:** Simulado.
+
 - **Alternativa correta:** A.
 - **Nível:** Muito difícil.
 - **A) está correta:** O décimo termo é 48, a soma planejada é `10 × (12 + 48) ÷ 2 = 300` e 80% desse total corresponde a 240.
@@ -6898,6 +7316,8 @@ Extra Dia 4.20: D
 - **Referência à apostila de estudo:** [Dia 4 — Bloco 4 — Raciocínio Lógico-Matemático](semana_01_estudo.md#s1-d4-b4).
 
 #### Comentário Extra Dia 4.20
+
+- **Uso:** Simulado.
 
 - **Alternativa correta:** D.
 - **Nível:** Muito difícil.

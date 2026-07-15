@@ -23,7 +23,7 @@ A ocorrência de qualquer item abaixo reprova o material, independentemente da n
 - tema cobrado nas questões sem sustentação suficiente na apostila de estudo ou em revisão anterior identificada;
 - gabarito tecnicamente incorreto, ambíguo ou incompatível com o comentário;
 - questão sem quatro alternativas A–D, com alternativa E ou sem uma única melhor resposta;
-- questão sem nível válido imediatamente abaixo do título ou bloco fora da matriz aplicável; as matrizes diárias 20/20/10 e 8/8/4 são obrigatórias, e exceções pedagógicas previamente declaradas e justificadas restringem-se a conjuntos complementares e super simulados;
+- questão sem nível válido imediatamente abaixo do título ou com dificuldade artificialmente inflada para fechar uma matriz; as matrizes diárias 20/20/10 e 8/8/4 orientam a produção, mas uma auditoria semântica posterior pode recalibrar níveis quando registrar item, motivo e distribuição final;
 - distrator absurdo, alheio ao tema, meramente cômico ou eliminável sem conhecimento do conteúdo;
 - dificuldade artificial criada por ambiguidade, informação ausente, texto desnecessariamente longo ou pista visual na alternativa correta;
 - comentário que não analise individualmente A, B, C e D;
@@ -56,17 +56,40 @@ Faixas de resultado:
 
 ## Estrutura mínima da apostila de estudo
 
-Cada semana possui seis dias. Cada dia deve conter:
+Cada semana possui seis dias. Cada dia deve funcionar quando lido de cima para baixo e seguir esta ordem física, não apenas uma ordem indicada no cronograma:
 
-1. objetivo, resultados esperados, relevância para a prova e cronograma de 6h líquidas;
-2. teoria com regras, exemplos, diferenças entre conceitos próximos e pegadinhas;
-3. prática guiada, checklist de domínio, caderno de erros e fontes;
-4. `## Revisão fixa do Dia X`, identificando disciplina, assunto, origem do conteúdo e teoria que sustenta as 20 extras;
-5. `## 5 perguntas de fixação`, com recuperação ativa do tema principal;
-6. `## Assuntos que serão cobrados na Apostila de Questões`, ligando a teoria às questões principais e extras.
-7. `## Mapa de conexões do Dia`, em Mermaid e acompanhado de leitura ativa: deve mostrar fluxo, dependências, decisões e de três a cinco pegadinhas. Os nós devem apontar para seções reais da teoria quando o formato do mapa permitir.
+1. objetivo, resultados esperados e orientação de uso;
+2. cronograma dividido em sessões executáveis;
+3. Bloco 1 — teoria principal;
+4. Bloco 2 — aprofundamento;
+5. Bloco 3 — exemplos e prática guiada;
+6. Bloco 4 — matéria fixa ou revisão programada;
+7. Bloco 5 — Português ou prática discursiva;
+8. Bloco 6 — recuperação ativa e caderno de erros, sem conteúdo novo;
+9. mini revisão e perguntas de fixação;
+10. checklist de domínio;
+11. roteiro das questões, com usos e carga distribuída;
+12. correção, registro dos erros e fechamento.
 
-O cronograma não pode apenas nomear os blocos recorrentes. Logo após a tabela de 6h, inclua `## Conteúdo dos blocos de revisão e consolidação`, com subseções para os Blocos 4, 5 e 6. Cada uma deve trazer o resumo teórico, regras, exemplo e pegadinha necessários para estudar o item daquele dia sem procurar outro capítulo.
+O mapa de conexões do dia deve aparecer depois do ensino dos conceitos que representa e antes do fechamento. Em Mermaid ou formato equivalente, deve mostrar fluxo, dependências, decisões e de três a cinco pegadinhas; seus nós devem apontar para seções reais quando o formato permitir.
+
+É proibido posicionar os Blocos 4, 5 e 6 antes dos Blocos 1, 2 e 3. Também é proibido criar, depois da revisão ou do checklist, capítulos como `Reforço de alinhamento`, `Assuntos cobrados` ou outra seção-remendo para ensinar o que as questões exigem. Todo conteúdo resolutivo deve integrar o bloco principal correspondente antes da primeira indicação de resolução.
+
+### Jornada executável e carga de estudo
+
+O dia pode continuar como unidade temática de aproximadamente 6 horas, mas deve ser dividido em duas sessões de até cerca de 3 horas líquidas, com ponto de parada explícito. Se teoria, prática fixa e correção excederem esse limite, crie ciclos posteriores de aprofundamento, revisão e simulado; não comprima todo o banco no primeiro contato.
+
+Cada cronograma deve distinguir:
+
+| Etapa | Conteúdo mínimo | Limite de execução |
+|---|---|---|
+| Sessão A | Blocos 1–3, leitura ativa e prática guiada | aproximadamente 3h líquidas |
+| Sessão B | Blocos 4–6, mini revisão, essenciais e correção | aproximadamente 3h líquidas |
+| Ciclo de aprofundamento | questões selecionadas, retorno às âncoras e correção | sessão própria, quando necessário |
+| Ciclo de revisão | recuperação espaçada e caderno de erros | sessão própria |
+| Simulado | itens reservados, sem consulta, e correção posterior | sessão própria |
+
+O cronograma deve contabilizar separadamente leitura, resolução, correção A–D, produção discursiva e caderno de erros. A existência de 50 principais e 20 extras não significa que os 70 itens devam ser resolvidos e corrigidos na primeira passagem.
 
 ### Contrato pedagógico dos Blocos 4, 5 e 6
 
@@ -87,6 +110,7 @@ Regras obrigatórias:
 - não introduzir conteúdo novo no Bloco 6: ele deve recuperar o dia atual ou dias anteriores e terminar com lista de erros, regras recuperadas, respostas sem consulta ou plano de revisão;
 - criar IDs únicos por semana, dia e bloco, como `s2-d3-b4`, evitando links ambíguos para títulos repetidos;
 - declarar a faixa de questões principais ou extras associada a cada bloco; se um bloco tiver apenas entrega prática e nenhum item objetivo, registrar isso expressamente.
+- manter o Bloco 6 fisicamente depois de todo conteúdo dos Blocos 1–5; ele não pode legitimar questão anterior nem apresentar regra, norma, fórmula ou conceito novo.
 
 Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, inclua tema, proposta, roteiro de estrutura e critérios de autocorreção.
 
@@ -134,8 +158,18 @@ Por dia:
 - gabarito de 70 itens e 70 comentários;
 - comentário com alternativa correta, análise de A–D, conceito, pegadinha, modo de raciocínio e seção real da apostila;
 - distribuição equilibrada de respostas e proibição de enunciados literalmente duplicados.
+- categoria operacional junto a cada item: `Essenciais`, `Aprofundamento`, `Revisão` ou `Simulado`;
+- referência Markdown precisa junto a cada item, inclusive nas 50 principais, apontando para âncora anterior e suficiente.
 
-Toda questão vinculada aos Blocos 4, 5 ou 6 deve informar junto ao enunciado, sem depender do comentário:
+Toda questão principal deve informar, no mínimo, sem depender do comentário:
+
+```markdown
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Referência:** [Dia 3 — JOIN e NULL](semana_XX_estudo.md#sX-d3-joins-null)
+```
+
+Toda questão extra vinculada aos Blocos 4, 5 ou 6 deve conservar os metadados completos:
 
 ```markdown
 **Dia:** 3
@@ -143,12 +177,22 @@ Toda questão vinculada aos Blocos 4, 5 ou 6 deve informar junto ao enunciado, s
 **Matéria:** Legislação CRA/CFA
 **Assunto:** competências do CRA
 **Nível:** Difícil
+**Uso:** Aprofundamento
 **Referência:** [Dia 3 — Bloco 4](semana_XX_estudo.md#sX-d3-b4)
 ```
 
-O comentário repete o nível e a mesma referência. Questões principais também entram na auditoria de cobertura; quando pertencem aos Blocos 1–3 e já estão corretamente cobertas, não precisam ser reescritas apenas para alterar a organização dos blocos.
+O comentário repete o nível, o uso e a mesma referência. A auditoria deve ler individualmente todas as principais e extras; quando uma questão já estiver correta e coberta, basta preservar seu conteúdo e tornar a rastreabilidade precisa.
 
 As extras devem utilizar a `Revisão fixa do Dia X`. Questões de revisão mista devem apontar para um mapa de revisão ou para seções específicas já estudadas.
+
+Antes da primeira questão, inclua um roteiro operacional que distribua o banco completo:
+
+- `Essenciais`: primeira passagem, em quantidade compatível com a sessão;
+- `Aprofundamento`: depois da teoria completa e da correção dos essenciais;
+- `Revisão`: recuperação espaçada, não continuação automática da primeira sessão;
+- `Simulado`: conjunto reservado, resolvido sem consulta.
+
+A classificação indica quando usar o item, não sua dificuldade. Uma questão média pode ser reservada para revisão, e uma questão difícil pode ser essencial se avaliar um conceito central.
 
 ### Níveis obrigatórios e distribuição
 
@@ -161,7 +205,7 @@ Use exclusivamente `Médio`, `Difícil` e `Muito difícil`, no formato:
 
 O mesmo vale para questões extras, blocos de questões de revisão, simulados e questionários complementares. A classificação também deve aparecer no comentário.
 
-Distribuição obrigatória por dia:
+Matriz de planejamento por dia:
 
 | Bloco | Médio | Difícil | Muito difícil | Total |
 |---|---:|---:|---:|---:|
@@ -169,7 +213,14 @@ Distribuição obrigatória por dia:
 | Extras | 8 | 8 | 4 | 20 |
 | Total diário | 28 | 28 | 14 | 70 |
 
-Na semana completa, isso corresponde a 168 médias, 168 difíceis e 84 muito difíceis. A matriz padrão dos conjuntos adicionais é 40%/40%/20%, com arredondamento inteiro que preserve o total e matriz declarada antes da produção: em 20 itens, 8/8/4; em 30, 12/12/6; em 60, 24/24/12. Uma exceção pedagógica só é válida quando registrada e justificada previamente no plano do conjunto.
+Na semana completa, a matriz planejada corresponde a 168 médias, 168 difíceis e 84 muito difíceis. Para material novo, use como alvo 40%/40%/20%, com arredondamento inteiro que preserve o total e matriz declarada antes da produção: em 20 itens, 8/8/4; em 30, 12/12/6; em 60, 24/24/12.
+
+A matriz não autoriza chamar recuperação literal de “difícil” nem questão direta de “muito difícil”. Se uma auditoria posterior demonstrar nível superestimado ou subestimado, escolha uma destas ações:
+
+1. aprofundar legitimamente o enunciado e o raciocínio, sem aumentar texto ou ambiguidade de forma artificial; ou
+2. recalibrar o rótulo no item e no comentário e registrar a distribuição final no relatório.
+
+Quando a recalibração posterior alterar a matriz, a exceção é válida somente se listar as questões afetadas, explicar o motivo e preservar a honestidade pedagógica. Contagem nunca prevalece sobre clareza, resposta única e dificuldade real.
 
 - **Médio:** exige compreensão, comparação ou aplicação direta em cenário, comando, código, norma ou cálculo. Os distratores representam erros comuns, mas um candidato bem preparado consegue eliminá-los sem cadeia longa de inferências.
 - **Difícil:** exige interpretação cuidadosa, comparação de conceitos próximos, mais de uma etapa ou identificação de erro sutil. Não pode ser resolvida apenas pelo reconhecimento de palavra-chave.
@@ -240,9 +291,9 @@ Além da contagem automática, todas as questões devem ser lidas com este check
 - não há três letras iguais consecutivas nem motivo de duas a quatro letras repetido três vezes sem revisão e justificativa;
 - a linguagem está adequada ao nível e ao estilo do Instituto Consulplan.
 
-### Auditoria pedagógica de cobertura dos Blocos 4, 5 e 6
+### Auditoria pedagógica de cobertura de principais e extras
 
-Antes de editar, classifique cada questão principal ou extra relacionada aos blocos:
+Antes de editar, classifique individualmente todas as questões principais e extras do lote. A auditoria começa em modo somente leitura, antes de reorganizar a teoria, para que o diagnóstico não seja apagado pela correção:
 
 - `Coberta`: teoria anterior e suficiente, referência válida e bloco adequado;
 - `Parcialmente coberta`: há base anterior, mas falta regra, exemplo, aplicação ou detalhe indispensável;
@@ -250,34 +301,39 @@ Antes de editar, classifique cada questão principal ou extra relacionada aos bl
 - `Cobrada antes do momento correto`: a teoria aparece somente em dia ou etapa posterior;
 - `Inadequada para o bloco`: o item não cumpre a função pedagógica do bloco;
 - `Ambígua`: mais de uma leitura ou resposta permanece defensável.
+- `Nível superestimado`: o rótulo exige cadeia de raciocínio maior do que o item realmente apresenta;
+- `Nível subestimado`: o item exige integração ou inferências acima do rótulo atribuído.
 
 Para cada item que não esteja `Coberto`, escolha uma ação rastreável: complementar teoria suficiente antes da cobrança; mover para depois do ensino; reformular; substituir; ou remover quando estiver fora do planejamento. Uma frase isolada adicionada apenas para legitimar o gabarito não corrige falta de cobertura.
 
 Registre a auditoria nesta tabela:
 
-| Semana | Dia | Bloco | Matéria | Questões verificadas | Problemas encontrados | Correções |
-|---|---:|---:|---|---:|---:|---:|
-| Semana X | Dia X | 4, 5 ou 6 | disciplina | quantidade | quantidade | quantidade |
+| Semana | Dia | Faixa | Matéria | Questões verificadas | Problemas encontrados | Correções |
+|---|---:|---|---|---:|---:|---:|
+| Semana X | Dia X | Principais 1–50 e Extras 1–20 | disciplina | 70 | quantidade | quantidade |
 
 ## Auditoria antes de concluir uma semana
 
 Confirme:
 
 - 300 principais, 120 extras, 420 gabaritos e 420 comentários;
-- 168 questões médias, 168 difíceis e 84 muito difíceis, com nível idêntico no item e no comentário;
+- distribuição de níveis planejada ou exceção pós-auditoria justificada, sempre com nível idêntico no item e no comentário;
 - 60 questões, 60 gabaritos e 60 comentários no super simulado, com matriz padrão de 24 médias, 24 difíceis e 12 muito difíceis, salvo exceção previamente justificada;
 - seis revisões fixas, seis blocos de fixação e seis mapas de cobrança;
 - Blocos 4, 5 e 6 identificados em todos os dias, sem conteúdo novo no Bloco 6 e com entrega prática registrada;
 - zero alternativa E, opção A–D duplicada, numeração ausente, duplicidade literal ou referência inexistente;
 - todas as referências presentes no arquivo de estudo;
 - nenhuma referência aponta para conteúdo futuro, superficial ou apenas pendente;
-- todas as questões dos Blocos 4, 5 e 6 contêm Dia, Bloco, Matéria, Assunto, Nível e Referência junto ao item;
+- todas as principais contêm Nível, Uso e Referência; todas as extras dos Blocos 4–6 contêm Dia, Bloco, Matéria, Assunto, Nível, Uso e Referência; migração pendente só é aceita quando estiver explicitamente fora do lote;
 - todas as 420 questões aprovadas na auditoria semântica individual;
 - gabaritos equilibrados, sem três letras iguais seguidas e sem motivos repetidos não justificados, com item, tabela e comentário sincronizados;
 - nenhum viés indevido de comprimento, tom ou especificidade na alternativa correta;
 - comandos negativos acompanhados de observação pedagógica;
 - exemplos importantes com raciocínio e resposta verificados;
 - matriz de rastreabilidade sem questão órfã ou tópico cobrado sem teoria;
+- ordem física validada: Blocos 1–3, Blocos 4–6, revisão, checklist, questões, correção e fechamento;
+- nenhuma seção-remendo posterior à revisão, ao checklist ou às questões;
+- carga de cada sessão executável em aproximadamente 3 horas líquidas e banco completo distribuído por uso;
 - rubrica preenchida com pelo menos 90/100 e zero critério eliminatório;
 - diff sem conflito, placeholder ou artefato de edição e blocos fora do escopo preservados;
 - README e Plano Mestre atualizados somente depois da validação.
@@ -292,7 +348,7 @@ Ao finalizar, registre no fim da apostila de estudo ou em relatório de revisão
 | Critérios eliminatórios encontrados | 0 ou lista de correções |
 | Questões principais | 300 |
 | Questões extras | 120 |
-| Médio/Difícil/Muito difícil — banco (420) | 168/168/84 |
+| Médio/Difícil/Muito difícil — banco (420) | distribuição final e eventual justificativa de recalibração |
 | Gabaritos | 420 |
 | Comentários completos | 420 |
 | Referências válidas | 420 |
@@ -303,9 +359,11 @@ Ao finalizar, registre no fim da apostila de estudo ou em relatório de revisão
 | Gabaritos divergentes | 0 |
 | Alertas de motivos repetidos no gabarito | 0 ou todos revisados e justificados |
 | Alertas de comprimento/alinhamento | 0 ou todos revisados |
-| Questões B4–B6 cobertas/parciais/não cobertas/antecipadas/inadequadas/ambíguas | X/X/X/X/X/X |
+| Questões principais e extras cobertas/parciais/não cobertas/antecipadas/inadequadas/ambíguas | X/X/X/X/X/X |
+| Questões com nível superestimado/subestimado após a correção | 0/0 |
 | Conteúdo novo introduzido no Bloco 6 | 0 |
 | Referências a conteúdo futuro ou superficial | 0 |
+| Sessões acima da carga planejada | 0 ou lista justificada |
 | Itens revisados/novos/substituídos/removidos | X/X/X/X |
 | Blocos preservados fora do escopo | lista |
 | Status final | Aprovado/Revisão obrigatória/Reprovado |
@@ -330,5 +388,5 @@ Neste ciclo de migração, a ordem é: padrões semanais; Semana 2 de Analista e
 
 ## Aplicação às semanas existentes
 
-- **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. As 80 extras dos Blocos 4–6 nos Dias 3–6 foram auditadas, identificadas, niveladas e ligadas a teoria suficiente anterior; gabaritos, comentários e referências foram sincronizados. Os 200 itens principais desses dias, pertencentes aos Blocos 1–3, foram preservados. Os Dias 1–2 permaneceram intactos e ainda não possuem classificação de nível; por isso, a semana conserva **conformidade parcial** fora do recorte B4–B6 agora aceito.
+- **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. As 80 extras dos Blocos 4–6 nos Dias 3–6 permanecem aceitas no recorte da auditoria anterior. As 100 principais dos Dias 3–4 receberam auditoria semântica individual, teoria anterior suficiente, uso operacional e referência precisa; seus níveis foram recalibrados com exceção documentada no relatório do lote. Os Dias 1–2 permaneceram intactos e ainda não possuem classificação de nível; as 100 principais dos Dias 5–6 continuam fora deste aceite. Por isso, a semana conserva **conformidade parcial** fora dos recortes já auditados.
 - **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente. As 120 extras dos Blocos 4–6 foram auditadas, receberam os seis metadados obrigatórios e níveis na matriz 48/48/24; os blocos foram normalizados, os comentários do Dia 6 foram individualizados e as divergências de cabeçalho da Questão 1 do Dia 1 e da Questão 3 do Dia 2 foram corrigidas. As 300 principais continuam no formato legado, sem níveis, e serão migradas em três lotes de dois dias; portanto, a semana segue **em migração** fora do recorte B4–B6 aceito.

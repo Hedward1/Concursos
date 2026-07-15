@@ -1206,7 +1206,7 @@ flowchart LR
 
 ## Objetivo do dia
 
-Construir uma base forte em banco de dados, modelo relacional, modelagem, normalização, SQL ANSI e noções iniciais de SGBD, preparando terreno para temas avançados que serão aprofundados nas semanas seguintes.
+Construir uma base forte em SGBD, modelo relacional, modelagem, normalização e SQL ANSI e aplicá-la a consultas, objetos programáveis, transações, segurança, backup e recuperação. O estudante deve chegar às questões somente depois de estudar a regra, o exemplo e a pegadinha correspondente.
 
 ## Por que esse assunto importa para a prova
 
@@ -1228,164 +1228,30 @@ A Consulplan costuma usar:
 
 Pegadinhas frequentes: usar `WHERE` depois de `GROUP BY` no lugar errado, confundir `DELETE` com `DROP`, achar que chave estrangeira precisa ser única, trocar entidade por atributo.
 
-## Cronograma de 6h líquidas com pausas sugeridas
+## Orientação de execução
 
-| Bloco | Tempo | Atividade |
+O Dia 3 é uma **unidade temática distribuída em sessões**, e não uma tarefa para ser concluída de uma vez. A sequência de leitura é obrigatória: Bloco 1, Bloco 2, Bloco 3, Bloco 4, Bloco 5, Bloco 6, revisão, questões e correção. Não antecipe o banco de questões para “testar” assunto ainda não estudado.
+
+Use um SGBD local apenas se já estiver disponível. Os exemplos também podem ser resolvidos no papel: identifique entrada, transformação e saída esperada. Marque uma regra como dominada somente quando conseguir explicá-la e produzir um exemplo próprio.
+
+## Cronograma em sessões executáveis de aproximadamente 3h líquidas
+
+| Sessão | Tempo líquido | Entrega |
 |---|---:|---|
-| 1 | 2h | Conceitos, arquitetura, modelo relacional e chaves |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | MER, mapeamento para relacional e normalização |
-| Pausa | 15min | Descanso |
-| 3 | 1h | SQL ANSI: SELECT, INSERT, UPDATE, DELETE, DDL e filtros |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Legislação CRA/CFA: competência, jurisdição, registro, ética e processo regular |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português aplicado: comando, porquês, regência, conectores, concordância e tese |
-| 6 | 20min | Recuperação ativa do que já foi estudado e atualização do caderno de erros |
+| A — fundamentos | 3h | abertura; conceitos de SGBD; arquitetura; modelo relacional; MER; normalização básica |
+| B — SQL e aprofundamento I | 3h | SQL básico; consultas; agregações; `NULL`; restrições; comandos de alteração; objetos programáveis |
+| C — aprofundamento II e blocos recorrentes | 3h | transações, isolamento, log, backup, segurança, modelagem avançada; prática guiada; Blocos 4, 5 e 6 |
+| D — primeira passagem | 3h | mini revisão; checklist; P1–P15 e E1–E5; correção completa e registros de erro |
+| E — aprofundamento | 3h | P16–P30 e E6–E10; correção A–D; exemplos próprios para os erros |
+| F — revisão e simulado | 3h | P31–P40 e E11–E15 em revisão; P41–P50 e E16–E20 em simulado; fechamento |
 
-## Conteúdo dos blocos de revisão e consolidação
+Pausas de 5 a 15 minutos ficam fora do tempo líquido. Se uma correção exigir retorno à teoria, conclua a questão atual e registre a retomada; não comprima duas sessões para “fechar o dia”.
 
-<a id="s1-d3-b4"></a>
-### Bloco 4 — Legislação CRA/CFA: base suficiente para as Extras 3.1–3.15 (40min)
+## Bloco 1 — Teoria principal: fundamentos, modelo relacional e SQL
 
-Este bloco ensina apenas o núcleo confirmado nas fontes oficiais já relacionadas ao final da apostila. Ele não atribui artigo, prazo, rito detalhado ou sanção específica a norma cujo texto não tenha sido conferido.
+Este bloco constrói o vocabulário e as regras fundamentais antes de qualquer cobrança. Leia na ordem e execute os exemplos no papel ou em um SGBD de testes. Os aprofundamentos que exigem combinar mais de uma regra aparecem no Bloco 2, ainda antes da revisão e das questões.
 
-#### Como as fontes se encaixam
-
-| Fonte confirmada | Função segura neste bloco | O que não presumir |
-|---|---|---|
-| Lei Federal nº 4.769/1965 | estrutura a profissão e o Sistema CFA/CRAs | procedimento detalhado não transcrito neste material |
-| Decreto Federal nº 61.934/1967 | regulamenta a execução da lei | poder para contrariar ou ampliar livremente a lei |
-| Regimento Interno do CRA-PR, aprovado pela RN CFA nº 651/2024 | organiza órgãos, funcionamento e competências internas do CRA-PR | competência nacional ou alteração do campo profissional definido em norma superior |
-| Código de Ética aprovado pela RN CFA nº 671/2025 | disciplina deveres, condutas, infrações e sanções éticas de profissionais e pessoas jurídicas, observadas as especificidades | aplicação idêntica de toda sanção a pessoa física e pessoa jurídica |
-
-**Controle de fonte:** o edital e suas retificações definem a referência cobrada. Uma postagem, um resumo ou a simples existência de norma numericamente posterior não substituem o edital. Se apenas o objeto ou a ementa de uma resolução estiver confirmado, é possível registrar esse objeto, mas não inventar artigo, prazo, requisito ou penalidade. A literalidade só deve ser aprofundada com o texto oficial correspondente.
-
-#### CFA, CRA, jurisdição e fiscalização
-
-- **CFA:** atua no plano nacional, com coordenação, orientação e normatização geral do Sistema, dentro de suas competências.
-- **CRA:** executa as atribuições regionais, registra, fiscaliza e apura situações em sua jurisdição conforme a legislação aplicável.
-- **CRA-PR:** exerce sua atuação regional no Paraná. Registro ou formação não transformam sua jurisdição em nacional.
-- **Fiscalização:** verifica a regularidade do exercício, a atividade efetivamente desenvolvida, o uso da condição profissional e a participação técnica. Seu propósito institucional é proteger a sociedade e a regularidade profissional, e não apenas conferir pagamento de anuidade.
-
-**Regra de aplicação:** antes de resolver um caso, identifique quatro elementos: **quem** praticou a conduta, **qual** atividade foi exercida, **onde** ocorreu o fato e **qual fonte** disciplina o objeto. A denúncia não escolhe o órgão competente nem a sanção.
-
-**Exemplo:** uma consultoria no Paraná divulga serviço típico da área de Administração e indica como responsável alguém que apenas cedeu o número de registro. O caminho correto é examinar a atividade da empresa, a regularidade aplicável, a participação técnica real e a competência do CRA da jurisdição. O contrato ou a existência de CNPJ não tornam irrelevante essa análise.
-
-**Pegadinha:** atribuir ao CFA a fiscalização regional ordinária ou afirmar que qualquer CRA pode sancionar diretamente fato ocorrido no Paraná sem observar a distribuição institucional e territorial.
-
-#### Ética de pessoas físicas e jurídicas
-
-O Código indicado no edital alcança profissionais e pessoas jurídicas, respeitadas as diferenças aplicáveis a cada sujeito. Entre os núcleos confirmados para estudo estão:
-
-- zelo, honestidade, responsabilidade e independência técnica;
-- sigilo profissional, ressalvada justa causa ou hipótese legal aplicável;
-- uso regular do nome, do título e do registro;
-- atuação técnica efetiva, sem assinatura de fachada ou validação de trabalho sem participação;
-- colaboração com a fiscalização, sem perda do direito de defesa;
-- atualização de endereço ou dado cadastral exigível;
-- vedação a facilitar exercício por pessoa não habilitada e a dificultar a fiscalização;
-- cuidado para não apresentar informação enganosa, promessa absoluta de resultado ou condição profissional inexistente.
-
-Ao analisar divulgação de serviço ou pressão de cliente, não procure primeiro uma pena. Verifique se a conduta preserva honestidade, independência, informação correta e atuação técnica efetiva. Se o cliente exigir conclusão que o profissional não consegue sustentar, a resposta segura é recusar a validação e manter apenas a conclusão tecnicamente fundamentada.
-
-**Pessoa jurídica não recebe automaticamente o mesmo tratamento sancionador da pessoa física.** No conteúdo confirmado da RN CFA nº 671/2025 usado nesta apostila, suspensão do exercício e cancelamento do registro profissional não são aplicados à pessoa jurídica. Isso não significa que ela esteja fora da disciplina ou da fiscalização; significa que o sujeito e a sanção precisam ser compatíveis com a fonte.
-
-#### Contraditório, defesa e decisão fundamentada
-
-Fiscalizar não autoriza punir de imediato. Quando a atuação puder resultar em sanção, o roteiro seguro é:
-
-1. verificar o órgão e a jurisdição competentes;
-2. dar ciência dos fatos atribuídos ao interessado;
-3. permitir contraditório e oportunidade de defesa;
-4. examinar as provas e a norma aplicável;
-5. produzir decisão fundamentada por autoridade competente;
-6. aplicar somente consequência prevista e adequada ao sujeito e ao caso.
-
-Prova documental, denúncia ou possibilidade de recurso posterior não dispensam defesa na apuração. Também não existe cancelamento ou cassação automática para toda irregularidade.
-
-**Exemplo resolvido:** foi apresentada denúncia documentada contra profissional no Paraná. A resposta correta não é aplicar a sanção máxima imediatamente. O CRA competente deve apurar o fato em processo regular, permitir defesa e fundamentar a decisão conforme a fonte aplicável.
-
-**Aplicação nas Extras 3.1–3.15:** separe sempre competência nacional de execução regional; fiscalização de disciplina ética; pessoa física de pessoa jurídica; norma confirmada de detalhe pendente; apuração regular de punição automática.
-
-<a id="s1-d3-b5"></a>
-### Bloco 5 — Português e interpretação aplicada: base para as Extras 3.16–3.20 (30min)
-
-#### Leitura do comando
-
-Circule a palavra que define a tarefa: **correta**, **incorreta**, **exceto**, **mantém o sentido**, **de acordo com o texto** ou **infere-se**. Uma alternativa pode estar gramaticalmente bem escrita e ainda responder a comando diferente. Em texto técnico, preserve também a relação lógica: possibilidade não é certeza; condição não é causa; oposição não é conclusão.
-
-#### Os quatro porquês
-
-| Forma | Uso | Exemplo |
-|---|---|---|
-| `por que` | pergunta direta/indireta ou equivalente a “por qual razão” | “Perguntou-se **por que** o acesso falhou.” |
-| `porque` | resposta, causa ou explicação | “O acesso falhou **porque** faltou espaço.” |
-| `por quê` | no fim da oração, antes de pausa | “O serviço parou **por quê**?” |
-| `porquê` | substantivo, normalmente com determinante | “O relatório registrou **o porquê** da falha.” |
-
-Modelo completo: “Perguntou-se **por que** o serviço falhou, explicou-se **porque** faltou espaço e registrou-se **o porquê** no chamado.”
-
-#### Regências básicas de prova
-
-- aspirar **a** um cargo, no sentido de desejar;
-- obedecer **a** uma regra ou **ao** edital;
-- assistir **a** um julgamento, no sentido de ver;
-- recorrer **de** uma decisão;
-- chegar **a** um órgão ou **ao** local;
-- informar **algo a alguém**: “informou o resultado **aos colegas**”;
-- preferir **uma coisa a outra**, e não “preferir mais” nem “preferir do que”.
-
-Exemplo correto: “O candidato aspirava **ao** cargo, obedeceu **ao** edital, recorreu **da** decisão e assistiu **ao** julgamento.”
-
-#### Conectores e preservação do sentido
-
-- `mas`, `porém`, `contudo`, `entretanto`: oposição ou ressalva;
-- `porque`, `visto que`: causa/explicação;
-- `portanto`, `logo`, `por isso`: conclusão;
-- `embora`, `ainda que`, `mesmo que`: concessão;
-- `se`, `caso`, `desde que`: condição;
-- `para que`, `a fim de que`: finalidade.
-
-Exemplo: “O índice reduziu o custo das leituras; **entretanto**, elevou a manutenção das escritas. **Logo**, sua adoção deve considerar o padrão de uso.” A primeira ligação opõe benefícios e custos; a segunda conclui. Trocar `entretanto` por `porque` alteraria o sentido.
-
-#### Concordância nominal
-
-Adjetivos e particípios usados como adjetivos concordam com o substantivo: “seguem **anexas as planilhas**”, “seguem **inclusos os pareceres**”. O adjetivo `quite` varia: “o servidor está quite”; “os servidores estão quites”.
-
-#### Tese em uma frase
-
-Tese não é enumeração de palavras positivas; é uma posição que relaciona condições e consequência. Modelo: “A transformação digital amplia eficiência e acesso quando combina segurança, interoperabilidade, acessibilidade, canais alternativos e avaliação por indicadores.” A frase defende um avanço condicionado, sem afirmar que tecnologia resolve tudo automaticamente.
-
-**Entrega do bloco:** resolva um exemplo de cada tópico — comando, porquês, regência, conectores e concordância — e escreva uma tese de uma frase. Corrija cada resposta citando a regra usada.
-
-<a id="s1-d3-b6"></a>
-### Bloco 6 — Recuperação ativa e caderno de erros (20min)
-
-Este bloco **não apresenta conceito novo e não possui banco próprio de Extras**. Recupere apenas o que já foi estudado nos Blocos 1–5 do Dia 3.
-
-Sem consultar a teoria, escolha seis pontos: dois de banco de dados, dois do Bloco 4 e dois do Bloco 5. Para cada ponto, preencha:
-
-| Campo | Registro obrigatório |
-|---|---|
-| Confusão | o que você trocou ou esqueceu |
-| Regra recuperada | explicação em uma frase, com suas palavras |
-| Contraexemplo | situação em que a regra não se aplica como você pensava |
-| Fonte interna | título exato da seção estudada |
-| Próxima ação | uma questão a refazer ou exemplo próprio a produzir |
-
-**Entrega:** seis registros completos e uma lista dos dois pontos que deverão ser retomados no início do Dia 4. Se não conseguir formular a regra sem consulta, marque o item como “não retido”; não acrescente teoria nova ao bloco.
-
-### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 3
-
-| Faixa | Bloco | Matéria | Referência suficiente |
-|---|---|---|---|
-| Extras 3.1–3.15 | Bloco 4 | Legislação CFA/CRA | [`s1-d3-b4`](#s1-d3-b4) |
-| Extras 3.16–3.20 | Bloco 5 | Língua Portuguesa e interpretação aplicada | [`s1-d3-b5`](#s1-d3-b5) |
-| Sem faixa própria | Bloco 6 | Recuperação ativa | [`s1-d3-b6`](#s1-d3-b6); entrega prática, sem questões novas |
-
-## Teoria explicada de forma didática
-
+<a id="s1-d3-conceitos-sgbd"></a>
 ### 1. Conceitos e arquitetura de banco de dados
 
 Banco de dados é uma coleção organizada de dados relacionados, mantida para atender necessidades de informação.
@@ -1429,6 +1295,7 @@ Não. Banco de dados é o conjunto de dados. SGBD é o sistema que gerencia esse
 
 Significa poder alterar aspectos físicos de armazenamento, como índices ou organização em disco, sem alterar a visão lógica usada pela aplicação.
 
+<a id="s1-d3-modelo-relacional-chaves"></a>
 ### 2. Modelo relacional, tabelas e chaves
 
 O modelo relacional organiza dados em relações, normalmente implementadas como tabelas.
@@ -1472,6 +1339,7 @@ Não necessariamente. Em relacionamento 1:N, vários registros da tabela filha p
 
 Não. Pela integridade de entidade, chave primária identifica unicamente cada registro e não deve ser nula.
 
+<a id="s1-d3-mer-mapeamento"></a>
 ### 3. Modelo Entidade-Relacionamento e mapeamento relacional
 
 O MER representa entidades, atributos e relacionamentos.
@@ -1511,6 +1379,7 @@ Na tabela `Anuidade`, que é o lado N do relacionamento. Ela guarda `id_profissi
 
 Criando tabela associativa, por exemplo `UsuarioPerfil(id_usuario, id_perfil)`. Essa tabela pode ter chave primária composta.
 
+<a id="s1-d3-normalizacao-base"></a>
 ### 4. Normalização
 
 Normalização organiza tabelas para reduzir redundância e evitar anomalias.
@@ -1552,6 +1421,7 @@ Sim. `nome_aluno` depende só de `id_aluno`; `nome_disciplina` depende só de `i
 
 Sim, se `nome_departamento` depende de `id_departamento`, e `id_departamento` depende do funcionário. Melhor separar tabela `Departamento`.
 
+<a id="s1-d3-sql-base"></a>
 ### 5. SQL ANSI básico
 
 SQL é linguagem declarativa para definir, consultar e manipular dados.
@@ -1633,6 +1503,7 @@ DROP TABLE profissional;
 
 remove a tabela inteira.
 
+<a id="s1-d3-transacoes-acid"></a>
 ### 6. Noções iniciais de transação e integridade
 
 Transação é uma unidade lógica de trabalho. Em banco de dados, é comum estudar ACID:
@@ -1662,7 +1533,359 @@ Desfaz alterações de uma transação ainda não confirmada.
 
 Confirma a transação, tornando as alterações persistentes conforme regras do SGBD.
 
-## Pegadinhas comuns da banca
+## Bloco 2 — Aprofundamento e integração das regras
+
+Os tópicos deste bloco combinam regras que aparecem juntas nas questões difíceis. Cada seção apresenta conceito, funcionamento, exemplo, pegadinha e aplicação de prova. Só avance quando conseguir prever o resultado do exemplo sem consultar a explicação.
+
+<a id="s1-d3-sql-consultas"></a>
+### 7. Consultas, ordem lógica, ordenação e limitação
+
+**Conceito.** Uma consulta declarativa descreve o resultado desejado. Para raciocinar, use a ordem lógica simplificada `FROM` → `WHERE` → `GROUP BY` → `HAVING` → `SELECT` → `DISTINCT` → `ORDER BY` → limitação. A ordem escrita não é a ordem mental de avaliação.
+
+**Funcionamento.** `WHERE` elimina linhas; `SELECT` projeta colunas; `ORDER BY` apenas ordena o resultado. Sem `ORDER BY`, não existe garantia de quais linhas virão primeiro. Para retornar as três maiores anuidades com desempate estável:
+
+```sql
+SELECT id_anuidade, valor
+FROM anuidade
+ORDER BY valor DESC, id_anuidade ASC
+FETCH FIRST 3 ROWS ONLY;
+```
+
+`FETCH FIRST n ROWS ONLY` limita o resultado após a ordenação. `OFFSET n ROWS` descarta as primeiras `n` linhas; não significa “retorne as primeiras n”. Alguns SGBDs oferecem `LIMIT`, mas a prova pode preferir a sintaxe indicada no enunciado.
+
+**Pegadinha de prova.** Limitar sem ordenar não produz “os maiores”; usar `OFFSET 3` descarta três linhas; ordenar só por `valor` deixa empates sem ordem determinística.
+
+**Aplicação.** Em uma alternativa, identifique filtro, chave de ordenação, direção `ASC/DESC`, desempate e só então a limitação.
+
+<a id="s1-d3-agregacoes"></a>
+<a id="s1-d3-group-by-having"></a>
+### 8. Agregações, `GROUP BY`, `HAVING` e contagens
+
+**Conceito.** `GROUP BY` muda a granularidade: várias linhas formam um grupo. `COUNT`, `SUM`, `AVG`, `MIN` e `MAX` produzem uma medida por grupo. `WHERE` filtra linhas antes do agrupamento; `HAVING` filtra grupos depois da agregação.
+
+```sql
+SELECT ano, COUNT(*) AS quantidade
+FROM anuidade
+GROUP BY ano
+HAVING COUNT(*) > 20
+ORDER BY quantidade DESC;
+```
+
+**Funcionamento.** Uma expressão não agregada projetada deve, em regra, integrar o `GROUP BY` ou ser funcionalmente determinada pelo agrupamento conforme a regra aceita pelo SGBD. Se há vários `id_lancamento` por `setor`, a consulta abaixo não pode escolher um ID individual para representar o grupo:
+
+```sql
+SELECT setor, id_lancamento, SUM(valor)
+FROM lancamento
+GROUP BY setor;
+```
+
+`COUNT(*)` conta linhas. `COUNT(email)` conta apenas valores não `NULL` de `email`. Após um `LEFT JOIN`, `COUNT(*)` conta inclusive a linha esquerda preservada sem par; `COUNT(chave_da_direita)` retorna zero se a chave direita é não nula apenas em linhas correspondentes.
+
+**Pegadinha de prova.** “Mais de 20” exige `> 20`, não `>= 20`. “Quantidade de lançamentos” pede `COUNT`; “valor total” pede `SUM(valor)`.
+
+**Aplicação.** Escreva em português a granularidade antes de escolher as cláusulas: “uma linha por ano, contendo a quantidade de anuidades”.
+
+<a id="s1-d3-null-distinct"></a>
+### 9. `NULL`, lógica de três valores e `DISTINCT`
+
+**Conceito.** `NULL` representa valor ausente, desconhecido ou não aplicável. Não é zero, string vazia nem o texto `NULL`. Comparações comuns como `email = NULL` e `email <> NULL` não produzem verdadeiro; use `IS NULL` ou `IS NOT NULL`.
+
+```sql
+SELECT nome
+FROM profissional
+WHERE email IS NULL;
+```
+
+`COALESCE(email, '') = ''` é diferente: seleciona tanto `NULL` quanto string vazia. Portanto, só é equivalente a `IS NULL` se o domínio impedir string vazia ou se o enunciado pedir explicitamente as duas situações.
+
+**Funcionamento de `DISTINCT`.** A eliminação considera o conjunto completo de colunas projetadas. Para `(PR,A)`, `(PR,A)`, `(PR,I)`, `(NULL,A)`, `(NULL,A)`, a projeção `DISTINCT uf, situacao` retorna três combinações. Na eliminação de duplicatas, as duas ocorrências do mesmo par com `NULL` não geram duas linhas.
+
+**Pegadinha de prova.** `DISTINCT` não atua apenas na primeira coluna; `COUNT(coluna)` ignora `NULL`; string vazia continua sendo um valor.
+
+**Aplicação.** Quando a questão disser “sem e-mail”, procure se ela exige SQL `NULL`, campo vazio ou ambos antes de escolher o predicado.
+
+<a id="s1-d3-joins"></a>
+### 10. Junções, lado preservado e diferença entre `ON` e `WHERE`
+
+**Conceito.** `INNER JOIN` conserva pares correspondentes. `LEFT JOIN` conserva todas as linhas da esquerda e preenche as colunas da direita com `NULL` quando não existe par.
+
+```sql
+SELECT p.nome, a.ano
+FROM profissional p
+LEFT JOIN anuidade a
+  ON a.id_profissional = p.id;
+```
+
+**Funcionamento.** Em junção externa, um filtro da tabela opcional no `ON` restringe quais linhas podem corresponder, sem eliminar a linha esquerda. O mesmo filtro no `WHERE` é avaliado depois da junção e pode rejeitar o `NULL` criado, neutralizando a preservação:
+
+```sql
+-- mantém todos os setores e conta somente profissionais ativos
+SELECT s.id, COUNT(p.id)
+FROM setor s
+LEFT JOIN profissional p
+  ON p.id_setor = s.id
+ AND p.ativo = 1
+GROUP BY s.id;
+```
+
+Se `p.ativo = 1` fosse colocado no `WHERE`, setores sem profissional ativo seriam eliminados. A coluna `p.id` deve ser chave não nula para que `COUNT(p.id)` conte apenas correspondências.
+
+**Pegadinha de prova.** Mover qualquer predicado entre `ON` e `WHERE` não é neutro em outer joins. Outra armadilha é usar `COUNT(*)` e obter um para o setor sem par.
+
+**Aplicação.** Marque primeiro qual conjunto deve sobreviver sem correspondência; coloque-o à esquerda e simule uma linha sem par até o `WHERE` e a contagem.
+
+<a id="s1-d3-algebra-relacional"></a>
+### 11. Álgebra relacional: seleção e projeção
+
+**Conceito.** Álgebra relacional descreve operações sobre relações. A seleção `σ` mantém tuplas que satisfazem um predicado; a projeção `π` escolhe atributos. Seleção reduz linhas; projeção reduz colunas.
+
+**Funcionamento e exemplo.** Leia de dentro para fora:
+
+```text
+π_nome(σ_uf = 'PR' ∧ situacao = 'ATIVO'(Profissional))
+```
+
+Primeiro `σ` conserva profissionais do Paraná e ativos; depois `π_nome` retorna apenas seus nomes. O SQL equivalente é:
+
+```sql
+SELECT nome
+FROM profissional
+WHERE uf = 'PR' AND situacao = 'ATIVO';
+```
+
+**Pegadinha de prova.** `σ` não ordena nem agrupa; `π` não conta. A expressão não contém operação que não esteja escrita.
+
+**Aplicação.** Circule o operador externo, resolva a expressão interna e anote separadamente “linhas” e “colunas”.
+
+<a id="s1-d3-restricoes-integridade"></a>
+### 12. Restrições, valores padrão e integridade referencial
+
+**Conceito.** Cada restrição traduz uma regra diferente:
+
+| Restrição | Regra |
+|---|---|
+| `PRIMARY KEY` | identifica uma linha; unicidade e não nulidade |
+| `FOREIGN KEY` | exige referência válida ou `NULL`, se permitido |
+| `UNIQUE` | impede repetição dos valores abrangidos |
+| `NOT NULL` | torna o preenchimento obrigatório |
+| `CHECK` | exige que uma condição seja verdadeira ou aceita conforme a semântica do SGBD |
+| `DEFAULT` | fornece valor quando a coluna é omitida; não valida todo valor informado |
+
+```sql
+CREATE TABLE profissional (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  numero_registro VARCHAR(20) NOT NULL UNIQUE,
+  situacao CHAR(1) NOT NULL DEFAULT 'A',
+  valor_anuidade DECIMAL(10,2) CHECK (valor_anuidade >= 0)
+);
+```
+
+**Funcionamento.** `CHECK (valor_anuidade >= 0)` rejeita negativos; `DEFAULT 0` apenas preencheria uma omissão. Uma coluna `UNIQUE` sem `NOT NULL` não se torna chave primária. O tratamento de várias ocorrências de `NULL` em unicidade deve ser conferido no SGBD; em prova portátil, não presuma que `UNIQUE` impõe `NOT NULL`.
+
+**Ações referenciais.** Uma FK pode impedir a exclusão da linha-pai (`RESTRICT`/`NO ACTION`), propagar a exclusão (`CASCADE`) ou adotar outra ação prevista. Cascata não é automática. Leia a configuração antes de afirmar o efeito.
+
+**Pegadinha de prova.** `NOT NULL` não impede negativo; `UNIQUE` não torna a coluna obrigatória; `DEFAULT` não é acionado quando se informa `NULL` explicitamente.
+
+**Aplicação.** Traduza cada requisito em uma restrição separada: obrigatório, único, domínio permitido e referência válida.
+
+<a id="s1-d3-comandos-alteracao"></a>
+### 13. `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE` e `DROP`
+
+**Conceito.** `INSERT`, `UPDATE` e `DELETE` manipulam linhas. `TRUNCATE` esvazia a tabela sem predicado e preserva o objeto. `DROP` remove o objeto do esquema.
+
+**Identidade, omissão e `NULL`.** Com a definição anterior, a inserção usa identidade e padrão quando as colunas são omitidas:
+
+```sql
+INSERT INTO profissional (numero_registro)
+VALUES ('PR-100'), ('PR-101');
+```
+
+Informar `situacao = NULL` não aciona o `DEFAULT` e viola `NOT NULL`. Em `UPDATE` ou `DELETE`, a ausência de `WHERE` amplia o alvo para todas as linhas permitidas:
+
+```sql
+UPDATE profissional SET situacao = 'I';
+```
+
+**Transação e portabilidade.** Um `DELETE` dentro de transação ainda não confirmada pode ser desfeito por `ROLLBACK`. Comportamento transacional de `TRUNCATE`, quantidade de log, reinício de identidade e restrições com FKs variam entre SGBDs; memorize o núcleo e não transforme detalhe de produto em regra universal.
+
+**Pegadinha de prova.** `DELETE` não remove a definição; `TRUNCATE` não aceita `WHERE`; `DROP TABLE` não preserva a tabela.
+
+**Aplicação.** Pergunte em ordem: o alvo é linha ou objeto? há predicado? houve `COMMIT`? existe FK que restringe a operação?
+
+<a id="s1-d3-objetos-programaveis"></a>
+### 14. Views, procedures e triggers
+
+**View — conceito e funcionamento.** Uma view comum apresenta o resultado de uma consulta como relação lógica; não é obrigatoriamente uma cópia física. Sua atualizabilidade depende da definição e do SGBD. Uma view materializada, quando disponível, armazena resultado e exige política de atualização.
+
+```sql
+CREATE VIEW vw_profissionais_ativos AS
+SELECT id, nome
+FROM profissional
+WHERE situacao = 'A';
+```
+
+**Procedure — conceito e funcionamento.** Uma stored procedure é chamada explicitamente, pode receber parâmetros e encapsular validações e vários comandos. Exemplo conceitual: `registrar_pagamento(id, valor)` valida o valor, insere o pagamento e baixa o débito na mesma unidade de trabalho.
+
+**Trigger — conceito e funcionamento.** Uma trigger é disparada automaticamente por evento como `INSERT` ou `UPDATE`. Em auditoria de `UPDATE`, pseudorregistros equivalentes a `OLD` e `NEW` — com nomes e disponibilidade dependentes do SGBD — permitem registrar valor anterior e novo.
+
+**Pegadinhas de prova.** Trigger não é chamada voluntariamente pela aplicação; view não intercepta toda alteração; índice não guarda histórico. Procedure e trigger não são sinônimos.
+
+**Aplicação.** Identifique quem inicia a execução: consulta do usuário → view; chamada explícita → procedure; evento na tabela → trigger.
+
+<a id="s1-d3-trigger-transacional"></a>
+### 15. Trigger, transação, rollback e auditoria
+
+**Conceito.** Salvo mecanismo autônomo específico e explicitamente informado, o efeito da trigger participa da mesma transação do comando que a disparou. `AFTER INSERT` significa depois do evento de inserção dentro do processamento transacional; não significa “depois do commit”.
+
+**Funcionamento.** Se um `INSERT` dispara auditoria e a transação principal sofre `ROLLBACK`, tanto a linha inserida quanto o registro de auditoria normalmente são desfeitos. Se a trigger falha, pode provocar falha do comando ou da transação conforme o SGBD.
+
+**Exemplo.** Uma trigger de `UPDATE` grava `OLD.situacao`, `NEW.situacao`, usuário e instante. Antes de adotá-la, avalie recursão, volume de escrita, retenção e se a própria tabela de auditoria dispara outra trigger.
+
+**Pegadinha de prova.** “Automática” não significa “autônoma” nem “sempre persistente”.
+
+**Aplicação.** Localize a fronteira da transação e aplique `COMMIT` ou `ROLLBACK` a todos os efeitos dentro dela.
+
+<a id="s1-d3-indices"></a>
+### 16. Índices e custo de manutenção
+
+**Conceito.** Índice é estrutura de acesso auxiliar. Pode reduzir leituras quando o predicado, a ordenação ou a junção são compatíveis com sua chave e quando o otimizador estima benefício.
+
+```sql
+CREATE INDEX ix_processo_numero ON processo(numero_processo);
+```
+
+**Funcionamento.** O índice ocupa espaço e deve ser mantido em `INSERT`, `UPDATE` e `DELETE`. Índice comum não garante unicidade; isso requer restrição ou índice `UNIQUE`. Baixa seletividade, função sobre a coluna ou filtro em outra coluna podem levar o otimizador a preferir varredura.
+
+**Pegadinha de prova.** Índice não acelera toda consulta, não elimina toda varredura e não é gratuito para escritas.
+
+**Aplicação.** Relacione coluna indexada, predicado e custo de escrita antes de escolher uma afirmação absoluta.
+
+<a id="s1-d3-metadados-catalogo"></a>
+### 17. Metadados, catálogo e independência física
+
+**Conceito.** Metadados descrevem objetos: tabelas, colunas, tipos, padrões, restrições, views e índices. O catálogo ou dicionário de dados mantém essas descrições para o SGBD e para consultas administrativas.
+
+**Funcionamento.** Consultar tipos e constraints antes de `ALTER TABLE` é consultar metadados, não o log transacional nem dados de negócio. Reorganizar índices e partições no nível interno sem alterar tabelas e consultas exemplifica independência física.
+
+**Exemplo.** O DBA troca a organização do índice de `numero_processo`; a aplicação continua executando o mesmo `SELECT` sobre o esquema lógico.
+
+**Pegadinha de prova.** Catálogo não é backup; log não é catálogo; índice não altera automaticamente a visão externa.
+
+**Aplicação.** Pergunte se a informação é o fato de negócio ou a descrição da estrutura que armazena o fato.
+
+<a id="s1-d3-normalizacao-decomposicao"></a>
+### 18. Dependências, decomposição e preservação da informação
+
+**Conceito.** Normalizar não é dividir colunas arbitrariamente. A decomposição deve representar os mesmos fatos, permitir recomposição sem linhas espúrias e, quando possível, preservar dependências relevantes.
+
+**Funcionamento.** Em `Servidor(id_servidor, nome, id_departamento, nome_departamento)`, se `id_servidor → id_departamento` e `id_departamento → nome_departamento`, há dependência transitiva. A decomposição coerente é:
+
+```text
+Servidor(id_servidor, nome, id_departamento FK)
+Departamento(id_departamento PK, nome_departamento)
+```
+
+A junção pela FK recompõe a associação. Declarar `nome_departamento UNIQUE` na tabela original não elimina a dependência e ainda impediria vários servidores no mesmo departamento.
+
+**Pegadinha de prova.** Toda decomposição não é automaticamente sem perda; descartar a chave de ligação perde informação; uma chave simples não possui dependência parcial a remover pela 2FN.
+
+**Aplicação.** Escreva as dependências com setas, coloque cada atributo junto de seu determinante e confira a chave usada para recompor.
+
+<a id="s1-d3-participacao-temporalidade"></a>
+### 19. Participação, cardinalidade e vínculos temporais
+
+**Conceito.** Cardinalidade máxima indica “um ou muitos”; participação mínima indica se a ocorrência pode faltar. Em 1:N, a FK fica no lado N. `NOT NULL` torna obrigatória a participação da linha filha; a inexistência de linha filha mantém opcional a participação do pai.
+
+**Exemplo 1:N.** Um profissional pode não ter anuidade ou ter várias; cada anuidade pertence exatamente a um profissional; não se repete o exercício para o mesmo profissional:
+
+```sql
+CREATE TABLE anuidade (
+  id_anuidade INTEGER PRIMARY KEY,
+  profissional_id INTEGER NOT NULL REFERENCES profissional(id),
+  exercicio INTEGER NOT NULL,
+  UNIQUE (profissional_id, exercicio)
+);
+```
+
+**Exemplo N:N temporal.** Se profissionais e pessoas jurídicas podem ter vários vínculos ao longo do tempo, a associativa guarda as duas FKs, início, fim e situação. Os atributos pertencem ao vínculo, não a apenas uma das entidades.
+
+**Pegadinha de prova.** Modelar só o “responsável atual” perde histórico; FK anulável permitiria anuidade sem profissional; `UNIQUE(exercicio)` impediria que pessoas diferentes tivessem anuidade no mesmo ano.
+
+**Aplicação.** Traduza separadamente máximo, mínimo, lado da FK, nulabilidade e combinação única.
+
+<a id="s1-d3-isolamento"></a>
+### 20. Isolamento e anomalias de concorrência
+
+**Conceito.** Isolamento controla o que uma transação pode observar de outras transações concorrentes. A classificação ANSI tradicional diferencia níveis pela prevenção de anomalias.
+
+| Nível | Leitura suja | Leitura não repetível | Fantasma |
+|---|---|---|---|
+| `READ UNCOMMITTED` | pode ocorrer | pode ocorrer | pode ocorrer |
+| `READ COMMITTED` | impede | pode ocorrer | pode ocorrer |
+| `REPEATABLE READ` | impede | impede | pode ocorrer na matriz ANSI; alguns SGBDs oferecem garantia mais forte |
+| `SERIALIZABLE` | impede | impede | impede no modelo serializável |
+
+- **leitura suja:** ler alteração ainda não confirmada;
+- **não repetível:** reler a mesma linha e encontrar valor confirmado diferente;
+- **fantasma:** repetir um predicado e encontrar conjunto diferente por inserção/remoção concorrente.
+
+**Funcionamento.** Implementações podem oferecer garantias mais fortes ou usar MVCC e locks de formas diferentes. O nome do nível não elimina `COMMIT`, rollback ou controle de concorrência.
+
+**Pegadinha de prova.** `READ COMMITTED` não congela a linha para toda a transação; `READ UNCOMMITTED` não impede leitura suja; isolamento não é atomicidade.
+
+**Aplicação.** Descreva o que foi lido duas vezes e se a outra transação já confirmou antes de nomear a anomalia.
+
+<a id="s1-d3-log-recuperacao"></a>
+### 21. Log, redo, undo e recuperação após falha
+
+**Conceito.** O log transacional registra informação suficiente para o mecanismo de recuperação distinguir efeitos confirmados e incompletos. `REDO` reaplica efeitos que deveriam ser duráveis; `UNDO` desfaz efeitos que não chegaram a confirmação.
+
+**Funcionamento.** Se T1 recebeu confirmação de `COMMIT` e T2 alterou o mesmo cadastro sem confirmar antes da falha, a recuperação deve preservar T1 e desfazer T2. Isso combina durabilidade para a confirmada e atomicidade para a incompleta. O algoritmo exato depende do SGBD, mas a decisão conceitual não depende de “qual transação foi a mais recente”.
+
+**Exemplo.** O pagamento e a baixa do débito formam uma transação. Se o servidor falha antes do commit, o log permite remover efeitos parciais; se o commit foi confirmado, o mecanismo deve conseguir recuperar os efeitos persistentes.
+
+**Pegadinha de prova.** Log não torna toda alteração durável; registrar uma operação não equivale a confirmá-la. `ROLLBACK` não substitui backup histórico.
+
+**Aplicação.** No instante da falha, rotule cada transação como `committed` ou `uncommitted`; associe a primeira a preservação/redo e a segunda a desfazimento/undo.
+
+<a id="s1-d3-backup-consistente"></a>
+### 22. Backup lógico consistente e restauração
+
+**Conceito.** Backup lógico exporta objetos e dados em formato reconstruível. Consistência significa capturar um estado coerente entre tabelas, mesmo com escritas concorrentes.
+
+**Funcionamento.** Use ferramenta do SGBD que ofereça snapshot consistente ou coordenação transacional. Exportar cada tabela em momentos independentes pode combinar um pagamento novo com um débito ainda antigo. Copiar arquivos físicos abertos sem método suportado também pode gerar estado irrecuperável.
+
+**Exemplo.** Durante o backup, uma transação insere pagamento e baixa débito. O snapshot deve enxergar ambas as alterações confirmadas ou nenhuma delas, e não metade.
+
+**Validação.** Um arquivo gerado não prova recuperabilidade: verifique integridade, restaure em ambiente controlado e execute testes de consistência e negócio.
+
+**Pegadinha de prova.** Índice, réplica ou log isolado não substituem backup; disponibilidade da produção não dispensa restauração de teste.
+
+**Aplicação.** Procure quatro elementos na alternativa: ferramenta suportada, ponto consistente, proteção do artefato e teste de restauração.
+
+<a id="s1-d3-menor-privilegio"></a>
+### 23. Segurança e menor privilégio com views
+
+**Conceito.** Menor privilégio concede apenas dados e operações necessários. Projeção restringe colunas; seleção restringe linhas; privilégios restringem operações e objetos.
+
+**Funcionamento e exemplo.** Para o usuário `relatorio` consultar apenas `id` e `nome` de ativos, crie a view filtrada e conceda acesso somente a ela:
+
+```sql
+CREATE VIEW vw_profissionais_ativos AS
+SELECT id, nome
+FROM profissional
+WHERE situacao = 'A';
+
+GRANT SELECT ON vw_profissionais_ativos TO relatorio;
+```
+
+O usuário não deve conservar `SELECT` sobre a tabela-base, pois isso permitiria contornar filtro e projeção. Conceder só colunas da tabela não restringe linhas inativas.
+
+**Pegadinha de prova.** Filtro da aplicação não é barreira independente; view segura perde efeito se a tabela-base continua acessível; `GRANT` amplo contradiz menor privilégio.
+
+**Aplicação.** Liste colunas, linhas, operações e objetos permitidos e elimine todo caminho alternativo que exceda um desses limites.
+
+### Pegadinhas integradas do Bloco 2
 
 - Confundir banco de dados com SGBD.
 - Achar que chave estrangeira sempre é única.
@@ -1672,7 +1895,7 @@ Confirma a transação, tornando as alterações persistentes conforme regras do
 - Achar que normalização sempre melhora desempenho. Ela melhora organização e integridade, mas pode exigir joins.
 - Dizer que SQL é linguagem procedural. SQL é predominantemente declarativa.
 
-## O que memorizar
+### O que memorizar
 
 | Conceito | Memorização objetiva |
 |---|---|
@@ -1688,7 +1911,7 @@ Confirma a transação, tornando as alterações persistentes conforme regras do
 | DCL | `GRANT`, `REVOKE` |
 | TCL | `COMMIT`, `ROLLBACK` |
 
-## Erros comuns
+### Erros comuns
 
 | Erro | Correção |
 |---|---|
@@ -1698,264 +1921,618 @@ Confirma a transação, tornando as alterações persistentes conforme regras do
 | 1FN é sobre chave primária | 1FN é sobre atomicidade dos atributos |
 | Normalização é só dividir tabelas | É aplicar dependências para reduzir redundância |
 
-## Mini revisão do dia
+## Bloco 3 — Exemplos e prática guiada
 
-Banco de dados organiza informação persistente. O SGBD gerencia armazenamento, consulta, segurança, concorrência e recuperação. O modelo relacional usa tabelas, linhas, colunas e chaves. O MER ajuda a projetar o banco antes da implementação. Normalização reduz redundância e anomalias. SQL permite definir, consultar, manipular e controlar dados.
+<a id="s1-d3-pratica-guiada"></a>
+### Caso integrado 1 — relatório por setor
 
-## Checklist de domínio
+Tabelas:
 
-- [ ] Diferencio banco de dados e SGBD.
-- [ ] Sei explicar os níveis externo, conceitual e interno.
-- [ ] Diferencio tabela, linha e coluna.
-- [ ] Sei o que é chave primária e estrangeira.
-- [ ] Mapeio 1:N e N:N para tabelas.
-- [ ] Reconheço violações de 1FN, 2FN e 3FN.
-- [ ] Diferencio DDL, DML, DQL, DCL e TCL.
-- [ ] Sei escrever `SELECT` com `WHERE`, `GROUP BY` e `ORDER BY`.
-- [ ] Sei diferenciar `DELETE` e `DROP`.
-
-## Tarefa para o caderno de erros
-
-Crie uma folha chamada **SQL que a banca tenta confundir**:
-
-- `WHERE` x `HAVING`;
-- `DELETE` x `DROP`;
-- `PRIMARY KEY` x `FOREIGN KEY`;
-- `GROUP BY` x `ORDER BY`;
-- DDL x DML x DQL x DCL x TCL.
-
-Escreva um exemplo próprio para cada diferença.
-
-## 5 perguntas de fixação
-
-1. Qual é a diferença entre banco de dados e SGBD?
-2. Como uma relação N:N deve ser mapeada para o modelo relacional?
-3. O que caracteriza uma violação da 1FN, da 2FN e da 3FN?
-4. Qual é a diferença prática entre `DELETE`, `TRUNCATE` e `DROP`?
-5. Quando se usa `WHERE` e quando se usa `HAVING`?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Conceitos de BD, SGBD, arquitetura, independência de dados, modelo relacional, chaves, integridade, MER, mapeamento relacional, normalização, SQL ANSI, DDL, DML, DQL, filtros, agrupamentos, transações e comandos básicos.
-
-## Reforço de alinhamento com as questões - Dia 3
-
-As questões do Dia 3 exigem leitura de comandos SQL reais. A principal estratégia é separar quatro perguntas: qual tabela está sendo consultada, quais linhas passam pelo filtro, como os grupos são formados e qual comando altera estrutura ou dados.
-
-### SELECT, WHERE, ORDER BY, DISTINCT e LIMIT
-
-`SELECT` escolhe colunas. `FROM` indica a tabela. `WHERE` filtra linhas antes de agrupamento. `ORDER BY` ordena o resultado. `DISTINCT` remove duplicidades da projeção.
-
-Exemplo:
-
-```sql
-SELECT DISTINCT uf
-FROM profissional
-WHERE situacao = 'ATIVO'
-ORDER BY uf;
+```text
+Setor(id PK, nome)
+Profissional(id PK, id_setor FK, situacao, email)
 ```
 
-Esse comando lista UFs distintas de profissionais ativos, em ordem. A pegadinha é achar que `ORDER BY` filtra. Ele apenas ordena o que já foi selecionado.
-
-<a id="s1-d3-group-by-having"></a>
-### GROUP BY, HAVING e agregações
-
-`GROUP BY` agrupa linhas. Funções como `COUNT`, `SUM`, `AVG`, `MIN` e `MAX` calculam valores por grupo. `HAVING` filtra grupos depois da agregação.
-
-Em contagens, diferencie: `COUNT(*)` conta todas as linhas do resultado; `COUNT(coluna)` conta apenas as linhas em que a coluna não é `NULL`. Exemplo: para os valores `1000, NULL, 2000, NULL`, `COUNT(valor)` resulta em 2 e `COUNT(*)`, em 4.
-
-Exemplo:
+Objetivo: listar todos os setores, inclusive os sem profissional ativo, e contar os ativos.
 
 ```sql
-SELECT setor, COUNT(*) AS total
-FROM servidor
-GROUP BY setor
-HAVING COUNT(*) >= 5
-ORDER BY total DESC;
+SELECT s.id, s.nome, COUNT(p.id) AS ativos
+FROM setor s
+LEFT JOIN profissional p
+  ON p.id_setor = s.id
+ AND p.situacao = 'A'
+GROUP BY s.id, s.nome
+ORDER BY ativos DESC, s.id ASC;
 ```
 
-Interpretação:
+Raciocínio guiado:
 
-1. agrupa servidores por setor;
-2. conta servidores de cada setor;
-3. mantém apenas setores com 5 ou mais servidores;
-4. ordena do maior total para o menor.
+1. `Setor` fica à esquerda porque todos devem sobreviver.
+2. O filtro de ativo fica no `ON` para limitar correspondências sem eliminar o setor.
+3. `COUNT(p.id)` gera zero sem par; `COUNT(*)` geraria um.
+4. Todas as colunas não agregadas projetadas integram o agrupamento.
+5. O segundo critério de ordenação estabiliza empates.
 
-Pegadinha recorrente: coluna não agregada no `SELECT` deve estar, em regra, no `GROUP BY`.
-
-### JOIN, LEFT JOIN, NULL e IS NULL
-
-`INNER JOIN` retorna linhas com correspondência entre as tabelas. `LEFT JOIN` preserva as linhas da tabela à esquerda, mesmo sem correspondência à direita.
-
-Exemplo:
+### Caso integrado 2 — esquema com integridade
 
 ```sql
-SELECT p.nome, r.numero_registro
-FROM profissional p
-LEFT JOIN registro r ON r.id_profissional = p.id;
+CREATE TABLE anuidade (
+  id_anuidade INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  profissional_id INTEGER NOT NULL REFERENCES profissional(id),
+  exercicio INTEGER NOT NULL,
+  valor DECIMAL(10,2) NOT NULL CHECK (valor >= 0),
+  situacao CHAR(1) NOT NULL DEFAULT 'A',
+  UNIQUE (profissional_id, exercicio)
+);
 ```
 
-Se um profissional não tiver registro correspondente, o nome ainda aparece, mas os campos de `registro` vêm como `NULL`.
+Explique cada regra sem consultar:
 
-`NULL` significa ausência, desconhecimento ou inexistência de valor. Não se filtra `NULL` com `= NULL`; usa-se `IS NULL` ou `IS NOT NULL`.
+- identidade preenche a chave quando omitida;
+- FK não nula torna obrigatório o profissional para cada anuidade;
+- `CHECK` rejeita valor negativo;
+- `DEFAULT` atua na omissão, não em `NULL` explícito;
+- unicidade composta impede repetição apenas do par profissional–exercício.
 
-```sql
-SELECT nome
-FROM profissional
-WHERE email IS NULL;
+### Caso integrado 3 — trigger e recuperação
+
+Uma transação atualiza a situação de um profissional. Uma trigger de auditoria registra valor anterior e novo. Antes do commit, o servidor falha.
+
+Resposta guiada:
+
+1. atualização e auditoria estão na mesma transação, salvo mecanismo autônomo informado;
+2. ambas estão `uncommitted`;
+3. a recuperação deve desfazer seus efeitos;
+4. se o commit tivesse sido confirmado, a durabilidade exigiria preservá-los ou refazê-los pelo mecanismo de log.
+
+### Caso integrado 4 — modelagem e decomposição
+
+Modele a responsabilidade técnica histórica:
+
+```text
+Profissional(id PK, nome)
+PessoaJuridica(id PK, razao_social)
+ResponsabilidadeTecnica(
+  profissional_id FK,
+  pessoa_juridica_id FK,
+  inicio,
+  fim,
+  situacao,
+  PK ou UNIQUE adequado ao histórico
+)
 ```
 
-### UPDATE, DELETE, TRUNCATE e DROP
+A associativa representa N:N e guarda atributos do vínculo. Não substitua o histórico por uma única FK de “responsável atual”.
 
-Esses comandos geram muita pegadinha.
+### Cinco perguntas de fixação
 
-| Comando | O que faz | Atenção |
-|---|---|---|
-| `UPDATE` | altera valores em linhas | sem `WHERE`, pode alterar todas as linhas |
-| `DELETE` | remove linhas | com `WHERE`, remove linhas específicas |
-| `TRUNCATE` | remove todas as linhas de forma mais estrutural/rápida, conforme SGBD | não é filtro linha a linha |
-| `DROP` | remove objeto do banco, como tabela | não é para apagar apenas registros específicos |
+1. Por que um filtro da tabela direita no `WHERE` pode neutralizar um `LEFT JOIN`?
+2. Em que `COUNT(*)` difere de `COUNT(coluna)`?
+3. O que ocorre com a auditoria de uma trigger quando a transação principal sofre rollback?
+4. Como distinguir `DEFAULT` acionado por omissão de `NULL` explícito?
+5. Em uma falha, por que uma transação confirmada deve sobreviver e uma incompleta deve ser desfeita?
 
-Exemplo perigoso:
+**Entrega do Bloco 3:** resolva os quatro casos, produza um contraexemplo para cada pegadinha e só então avance aos Blocos 4 e 5.
 
-```sql
-UPDATE profissional
-SET situacao = 'INATIVO';
-```
-
-Sem `WHERE`, todos os profissionais podem ser alterados.
-
-### Restrições, chaves e normalização
-
-- **PRIMARY KEY:** identifica unicamente a linha e não deve aceitar `NULL`.
-- **FOREIGN KEY:** referencia chave de outra tabela e protege integridade referencial.
-- **UNIQUE:** impede repetição, mas não é necessariamente chave primária.
-- **NOT NULL:** exige preenchimento.
-- **CHECK:** limita valores permitidos por regra.
-
-Normalização:
-
-- **1FN:** atributos atômicos, sem lista repetida no mesmo campo.
-- **2FN:** em chave composta, atributo não chave depende da chave inteira.
-- **3FN:** evita dependência transitiva entre atributos não chave.
-
-Exemplo de violação da 3FN: tabela `servidor(id, id_setor, nome_setor)`. Se `nome_setor` depende de `id_setor`, e não diretamente do servidor, há dependência transitiva.
-
-### Transações, ACID, views, procedures e triggers
-
-Transação é unidade lógica de trabalho. ACID resume:
-
-- **Atomicidade:** tudo ou nada;
-- **Consistência:** preserva regras válidas;
-- **Isolamento:** transações concorrentes não devem interferir indevidamente;
-- **Durabilidade:** após commit, o resultado deve persistir.
-
-`VIEW` é uma consulta armazenada apresentada como tabela lógica. `PROCEDURE` agrupa comandos executáveis no banco. `TRIGGER` executa automaticamente diante de evento, como `INSERT` ou `UPDATE`, e pode ser usado para auditoria.
-
-## Tabela de revisão rápida do Dia 3
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
-|---|---|---|---|
-| SGBD | software que gerencia banco de dados | Confundir com o próprio conjunto de dados | PostgreSQL, SQL Server |
-| Metadados | dados sobre os dados | Confundir com registro do usuário | dicionário de dados |
-| Independência física | mudar armazenamento sem afetar visão lógica | Confundir com backup | alterar índice sem mudar consulta |
-| PRIMARY KEY | identifica linha de forma única | Aceitar repetição ou `NULL` | `id_profissional` |
-| FOREIGN KEY | referencia outra tabela | Confundir com chave primária | `id_setor` em servidor |
-| UNIQUE | impede duplicidade | Achar que sempre é PK | CPF único |
-| NOT NULL | exige valor preenchido | Confundir com string vazia | email obrigatório |
-| 1FN | atributos atômicos | Guardar lista em uma coluna | telefones separados em outra tabela |
-| 2FN | sem dependência parcial | Ignorar chave composta | item de pedido |
-| 3FN | sem dependência transitiva | Guardar nome do setor no servidor | setor em tabela própria |
-| `WHERE` | filtra linhas | Usar para filtrar agregados | `WHERE uf = 'PR'` |
-| `HAVING` | filtra grupos | Usar antes do agrupamento | `HAVING COUNT(*) > 10` |
-| `GROUP BY` | forma grupos | Achar que ordena | contar por setor |
-| `ORDER BY` | ordena resultado | Achar que filtra | `ORDER BY nome` |
-| `INNER JOIN` | retorna correspondências | Achar que preserva todas da esquerda | profissional com registro |
-| `LEFT JOIN` | preserva tabela da esquerda | Achar que elimina sem correspondência | listar todos os profissionais |
-| `NULL` | ausência/desconhecimento de valor | Comparar com `= NULL` | `email IS NULL` |
-| `UPDATE` | altera linhas | Esquecer `WHERE` | alterar situação por id |
-| `DELETE` | remove linhas | Confundir com `DROP` | apagar registro específico |
-| `DROP` | remove objeto | Usar para excluir linhas filtradas | apagar tabela |
-| Trigger | rotina automática por evento | Confundir com view | auditoria após alteração |
-| View | consulta armazenada lógica | Achar que sempre guarda dados físicos | relatório de ativos |
-| Commit | confirma transação | Confundir com consulta | gravar alterações |
-| Rollback | desfaz transação não confirmada | Achar que recupera qualquer backup | desfazer erro antes do commit |
-
-## Pegadinhas do Dia 3
-
-- `WHERE` filtra linhas; `HAVING` filtra grupos.
-- `GROUP BY` agrupa; `ORDER BY` ordena.
-- `NULL` não é zero, string vazia nem texto "NULL"; use `IS NULL`.
-- `UPDATE` sem `WHERE` pode alterar todas as linhas.
-- `DELETE` remove linhas; `DROP` remove objeto.
-- `LEFT JOIN` preserva a tabela da esquerda; `INNER JOIN` exige correspondência.
-- Coluna não agregada no `SELECT` deve estar no `GROUP BY`, em regra.
-- `UNIQUE` e `PRIMARY KEY` são parecidos, mas não são sinônimos.
-- Trigger executa por evento; view representa consulta.
-- Normalização não é "dividir por dividir"; é reduzir redundância e anomalias com base em dependências.
-
----
-
-
-## Revisão fixa do Dia 3
-
-**Foco:** Legislação CRA/CFA e Português. Revise competências do Sistema, registro, fiscalização, ética, comando, conectores, regência e concordância. **Base já estudada:** [Bloco 4 do Dia 3](#s1-d3-b4) e [Bloco 5 do Dia 3](#s1-d3-b5). **Pegadinha:** confundir competência nacional do CFA com execução regional do CRA ou trocar conclusão por causa.
-
-
-## Mapa de conexões do Dia 3
+### Mapa de conexões dos Blocos 1–3
 
 ```mermaid
 flowchart LR
   DADOS[Dados e SGBD] --> REL[Modelo relacional]
   REL --> CH[Chaves e integridade]
-  REL --> MER[MER e mapeamento]
-  MER --> NORM[Normalização]
+  REL --> MER[MER e participação]
+  MER --> NORM[Normalização e decomposição]
   NORM --> SQL[SQL ANSI]
-  SQL --> TX[Transações]
+  SQL --> OBJ[Views, procedures, triggers e índices]
+  SQL --> TX[Transações e isolamento]
+  TX --> LOG[Log e recuperação]
+  OBJ --> SEG[Menor privilégio]
 ```
 
-**Leitura ativa:** a modelagem define entidades e relacionamentos; o mapeamento cria tabelas; normalização reduz anomalias; SQL opera o modelo. **Pegadinhas:** chave primária × estrangeira; entidade × atributo; `WHERE` × `HAVING`.
+**Leitura ativa:** a modelagem define fatos e vínculos; o mapeamento cria relações; a normalização reduz anomalias; SQL opera o modelo; transações, segurança e recuperação preservam o serviço sob concorrência e falhas.
 
-# Dia 4 - Legislação CRA-PR/CFA
+<a id="s1-d3-b4"></a>
+## Bloco 4 — Legislação CRA/CFA: base suficiente para as Extras 3.1–3.15 (40min)
 
-## Objetivo do dia
+Este bloco ensina apenas o núcleo confirmado nas fontes oficiais já relacionadas ao final da apostila. Ele não atribui artigo, prazo, rito detalhado ou sanção específica a norma cujo texto não tenha sido conferido.
 
-Estudar a legislação específica do Sistema CFA/CRA indicada no edital vigente, com foco em estrutura, finalidade, competências, fiscalização, registro, ética profissional, infrações e penalidades.
+### Como as fontes se encaixam
 
-## Por que esse assunto importa para a prova
+| Fonte confirmada | Função segura neste bloco | O que não presumir |
+|---|---|---|
+| Lei Federal nº 4.769/1965 | estrutura a profissão e o Sistema CFA/CRAs | procedimento detalhado não transcrito neste material |
+| Decreto Federal nº 61.934/1967 | regulamenta a execução da lei | poder para contrariar ou ampliar livremente a lei |
+| Regimento Interno do CRA-PR, aprovado pela RN CFA nº 651/2024 | organiza órgãos, funcionamento e competências internas do CRA-PR | competência nacional ou alteração do campo profissional definido em norma superior |
+| Código de Ética aprovado pela RN CFA nº 671/2025 | disciplina deveres, condutas, infrações e sanções éticas de profissionais e pessoas jurídicas, observadas as especificidades | aplicação idêntica de toda sanção a pessoa física e pessoa jurídica |
 
-Legislação CRA-PR/CFA vale 10 questões na prova objetiva, o mesmo número de Língua Portuguesa e o dobro de RLM, Informática e Administração Pública. É uma matéria de alta prioridade porque tem conteúdo finito e pode gerar pontos consistentes.
+**Controle de fonte:** o edital e suas retificações definem a referência cobrada. Uma postagem, um resumo ou a simples existência de norma numericamente posterior não substituem o edital. Se apenas o objeto ou a ementa de uma resolução estiver confirmado, é possível registrar esse objeto, mas não inventar artigo, prazo, requisito ou penalidade. A literalidade só deve ser aprofundada com o texto oficial correspondente.
 
-Além disso, como o concurso é para um conselho profissional, a banca tende a valorizar regras institucionais, finalidades, competências e ética.
+### CFA, CRA, jurisdição e fiscalização
 
-## Como a Consulplan costuma cobrar esse conteúdo
+- **CFA:** atua no plano nacional, com coordenação, orientação e normatização geral do Sistema, dentro de suas competências.
+- **CRA:** executa as atribuições regionais, registra, fiscaliza e apura situações em sua jurisdição conforme a legislação aplicável.
+- **CRA-PR:** exerce sua atuação regional no Paraná. Registro ou formação não transformam sua jurisdição em nacional.
+- **Fiscalização:** verifica a regularidade do exercício, a atividade efetivamente desenvolvida, o uso da condição profissional e a participação técnica. Seu propósito institucional é proteger a sociedade e a regularidade profissional, e não apenas conferir pagamento de anuidade.
 
-Em legislação específica, a Consulplan costuma cobrar:
+**Regra de aplicação:** antes de resolver um caso, identifique quatro elementos: **quem** praticou a conduta, **qual** atividade foi exercida, **onde** ocorreu o fato e **qual fonte** disciplina o objeto. A denúncia não escolhe o órgão competente nem a sanção.
 
-- literalidade moderada da norma;
-- competências do órgão;
-- composição e organização;
-- direitos, deveres e infrações;
-- trocas entre competência do CFA e do CRA;
-- alternativa incorreta com uma palavra trocada;
-- situação prática de fiscalização, registro ou conduta ética.
+**Exemplo:** uma consultoria no Paraná divulga serviço típico da área de Administração e indica como responsável alguém que apenas cedeu o número de registro. O caminho correto é examinar a atividade da empresa, a regularidade aplicável, a participação técnica real e a competência do CRA da jurisdição. O contrato ou a existência de CNPJ não tornam irrelevante essa análise.
 
-## Cronograma de 6h líquidas com pausas sugeridas
+**Pegadinha:** atribuir ao CFA a fiscalização regional ordinária ou afirmar que qualquer CRA pode sancionar diretamente fato ocorrido no Paraná sem observar a distribuição institucional e territorial.
 
-| Bloco | Tempo | Atividade |
+### Ética de pessoas físicas e jurídicas
+
+O Código indicado no edital alcança profissionais e pessoas jurídicas, respeitadas as diferenças aplicáveis a cada sujeito. Entre os núcleos confirmados para estudo estão:
+
+- zelo, honestidade, responsabilidade e independência técnica;
+- sigilo profissional, ressalvada justa causa ou hipótese legal aplicável;
+- uso regular do nome, do título e do registro;
+- atuação técnica efetiva, sem assinatura de fachada ou validação de trabalho sem participação;
+- colaboração com a fiscalização, sem perda do direito de defesa;
+- atualização de endereço ou dado cadastral exigível;
+- vedação a facilitar exercício por pessoa não habilitada e a dificultar a fiscalização;
+- cuidado para não apresentar informação enganosa, promessa absoluta de resultado ou condição profissional inexistente.
+
+Ao analisar divulgação de serviço ou pressão de cliente, não procure primeiro uma pena. Verifique se a conduta preserva honestidade, independência, informação correta e atuação técnica efetiva. Se o cliente exigir conclusão que o profissional não consegue sustentar, a resposta segura é recusar a validação e manter apenas a conclusão tecnicamente fundamentada.
+
+**Pessoa jurídica não recebe automaticamente o mesmo tratamento sancionador da pessoa física.** No conteúdo confirmado da RN CFA nº 671/2025 usado nesta apostila, suspensão do exercício e cancelamento do registro profissional não são aplicados à pessoa jurídica. Isso não significa que ela esteja fora da disciplina ou da fiscalização; significa que o sujeito e a sanção precisam ser compatíveis com a fonte.
+
+### Contraditório, defesa e decisão fundamentada
+
+Fiscalizar não autoriza punir de imediato. Quando a atuação puder resultar em sanção, o roteiro seguro é:
+
+1. verificar o órgão e a jurisdição competentes;
+2. dar ciência dos fatos atribuídos ao interessado;
+3. permitir contraditório e oportunidade de defesa;
+4. examinar as provas e a norma aplicável;
+5. produzir decisão fundamentada por autoridade competente;
+6. aplicar somente consequência prevista e adequada ao sujeito e ao caso.
+
+Prova documental, denúncia ou possibilidade de recurso posterior não dispensam defesa na apuração. Também não existe cancelamento ou cassação automática para toda irregularidade.
+
+**Exemplo resolvido:** foi apresentada denúncia documentada contra profissional no Paraná. A resposta correta não é aplicar a sanção máxima imediatamente. O CRA competente deve apurar o fato em processo regular, permitir defesa e fundamentar a decisão conforme a fonte aplicável.
+
+**Aplicação nas Extras 3.1–3.15:** separe sempre competência nacional de execução regional; fiscalização de disciplina ética; pessoa física de pessoa jurídica; norma confirmada de detalhe pendente; apuração regular de punição automática.
+
+<a id="s1-d3-b5"></a>
+## Bloco 5 — Português e interpretação aplicada: base para as Extras 3.16–3.20 (30min)
+
+### Leitura do comando
+
+Circule a palavra que define a tarefa: **correta**, **incorreta**, **exceto**, **mantém o sentido**, **de acordo com o texto** ou **infere-se**. Uma alternativa pode estar gramaticalmente bem escrita e ainda responder a comando diferente. Em texto técnico, preserve também a relação lógica: possibilidade não é certeza; condição não é causa; oposição não é conclusão.
+
+### Os quatro porquês
+
+| Forma | Uso | Exemplo |
+|---|---|---|
+| `por que` | pergunta direta/indireta ou equivalente a “por qual razão” | “Perguntou-se **por que** o acesso falhou.” |
+| `porque` | resposta, causa ou explicação | “O acesso falhou **porque** faltou espaço.” |
+| `por quê` | no fim da oração, antes de pausa | “O serviço parou **por quê**?” |
+| `porquê` | substantivo, normalmente com determinante | “O relatório registrou **o porquê** da falha.” |
+
+Modelo completo: “Perguntou-se **por que** o serviço falhou, explicou-se **porque** faltou espaço e registrou-se **o porquê** no chamado.”
+
+### Regências básicas de prova
+
+- aspirar **a** um cargo, no sentido de desejar;
+- obedecer **a** uma regra ou **ao** edital;
+- assistir **a** um julgamento, no sentido de ver;
+- recorrer **de** uma decisão;
+- chegar **a** um órgão ou **ao** local;
+- informar **algo a alguém**: “informou o resultado **aos colegas**”;
+- preferir **uma coisa a outra**, e não “preferir mais” nem “preferir do que”.
+
+Exemplo correto: “O candidato aspirava **ao** cargo, obedeceu **ao** edital, recorreu **da** decisão e assistiu **ao** julgamento.”
+
+### Conectores e preservação do sentido
+
+- `mas`, `porém`, `contudo`, `entretanto`: oposição ou ressalva;
+- `porque`, `visto que`: causa/explicação;
+- `portanto`, `logo`, `por isso`: conclusão;
+- `embora`, `ainda que`, `mesmo que`: concessão;
+- `se`, `caso`, `desde que`: condição;
+- `para que`, `a fim de que`: finalidade.
+
+Exemplo: “O índice reduziu o custo das leituras; **entretanto**, elevou a manutenção das escritas. **Logo**, sua adoção deve considerar o padrão de uso.” A primeira ligação opõe benefícios e custos; a segunda conclui. Trocar `entretanto` por `porque` alteraria o sentido.
+
+### Concordância nominal
+
+Adjetivos e particípios usados como adjetivos concordam com o substantivo: “seguem **anexas as planilhas**”, “seguem **inclusos os pareceres**”. O adjetivo `quite` varia: “o servidor está quite”; “os servidores estão quites”.
+
+### Tese em uma frase
+
+Tese não é enumeração de palavras positivas; é uma posição que relaciona condições e consequência. Modelo: “A transformação digital amplia eficiência e acesso quando combina segurança, interoperabilidade, acessibilidade, canais alternativos e avaliação por indicadores.” A frase defende um avanço condicionado, sem afirmar que tecnologia resolve tudo automaticamente.
+
+**Entrega do bloco:** resolva um exemplo de cada tópico — comando, porquês, regência, conectores e concordância — e escreva uma tese de uma frase. Corrija cada resposta citando a regra usada.
+
+### Revisão fixa dos Blocos 4 e 5
+
+**Foco:** Legislação CRA/CFA e Português. Revise competências do Sistema, registro, fiscalização, ética, comando, conectores, regência e concordância. **Base já estudada:** [Bloco 4 do Dia 3](#s1-d3-b4) e [Bloco 5 do Dia 3](#s1-d3-b5). **Pegadinha:** confundir competência nacional do CFA com execução regional do CRA ou trocar conclusão por causa.
+
+<a id="s1-d3-b6"></a>
+## Bloco 6 — Recuperação ativa e caderno de erros (20min)
+
+Este bloco **não apresenta conceito novo e não possui banco próprio de Extras**. Recupere apenas o que já foi estudado nos Blocos 1–5 do Dia 3.
+
+Sem consultar a teoria, escolha seis pontos: dois de banco de dados, dois do Bloco 4 e dois do Bloco 5. Para cada ponto, preencha:
+
+| Campo | Registro obrigatório |
+|---|---|
+| Confusão | o que você trocou ou esqueceu |
+| Regra recuperada | explicação em uma frase, com suas palavras |
+| Contraexemplo | situação em que a regra não se aplica como você pensava |
+| Fonte interna | título exato da seção estudada |
+| Próxima ação | uma questão a refazer ou exemplo próprio a produzir |
+
+**Entrega:** seis registros completos e uma lista dos dois pontos que deverão ser retomados no início do Dia 4. Se não conseguir formular a regra sem consulta, marque o item como “não retido”; não acrescente teoria nova ao bloco.
+
+### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 3
+
+| Faixa | Bloco | Matéria | Referência suficiente |
+|---|---|---|---|
+| Extras 3.1–3.15 | Bloco 4 | Legislação CFA/CRA | [`s1-d3-b4`](#s1-d3-b4) |
+| Extras 3.16–3.20 | Bloco 5 | Língua Portuguesa e interpretação aplicada | [`s1-d3-b5`](#s1-d3-b5) |
+| Sem faixa própria | Bloco 6 | Recuperação ativa | [`s1-d3-b6`](#s1-d3-b6); entrega prática, sem questões novas |
+
+## Mini revisão do Dia 3
+
+- SGBD gerencia dados, catálogo, segurança, concorrência, transações e recuperação.
+- Modelo relacional usa relações, tuplas, atributos, domínios, chaves e restrições.
+- MER define entidades, relacionamentos, cardinalidade e participação antes do mapeamento.
+- Normalização usa dependências; decompor sem analisar chaves pode perder informação.
+- `WHERE` filtra linhas; `HAVING` filtra grupos; `ORDER BY` ordena; `FETCH` limita.
+- `LEFT JOIN` preserva a esquerda; filtro da direita no `WHERE` pode eliminar essa preservação.
+- `NULL` exige `IS NULL`; `COALESCE(coluna, '') = ''` também alcança string vazia.
+- View apresenta consulta; procedure é chamada; trigger reage a evento e normalmente integra a mesma transação.
+- Índice favorece acessos compatíveis, mas ocupa espaço e aumenta manutenção de escrita.
+- Em recuperação, transação confirmada deve sobreviver; transação incompleta deve ser desfeita.
+- Backup só é confiável quando o ponto é consistente e a restauração foi testada.
+- Menor privilégio exige remover acesso alternativo que contorne a view protegida.
+
+## Checklist de domínio
+
+- [ ] Diferencio banco de dados, SGBD, catálogo, log e backup.
+- [ ] Explico níveis externo, conceitual e interno e independência física.
+- [ ] Mapeio 1:N e N:N, incluindo participação mínima e atributos do vínculo.
+- [ ] Reconheço 1FN, 2FN, 3FN e decomposição sem perda de informação.
+- [ ] Leio seleção `σ` e projeção `π` de dentro para fora.
+- [ ] Escrevo `SELECT`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY` e `FETCH`.
+- [ ] Diferencio `COUNT(*)`, `COUNT(coluna)` e `SUM(coluna)`.
+- [ ] Simulo `INNER JOIN` e `LEFT JOIN`, inclusive filtro no `ON` e no `WHERE`.
+- [ ] Diferencio `NULL`, string vazia e `DISTINCT` multicoluna.
+- [ ] Associo PK, FK, `UNIQUE`, `NOT NULL`, `CHECK` e `DEFAULT` às regras corretas.
+- [ ] Diferencio omissão de coluna, `NULL` explícito e valor gerado por identidade.
+- [ ] Diferencio `DELETE`, `TRUNCATE` e `DROP` sem absolutizar detalhe de SGBD.
+- [ ] Explico view, procedure, trigger e efeito de rollback sobre trigger não autônoma.
+- [ ] Explico benefício e custo de um índice sem prometer aceleração universal.
+- [ ] Reconheço leitura suja, não repetível e fantasma.
+- [ ] Distingo transação confirmada de incompleta em redo/undo.
+- [ ] Descrevo backup lógico consistente e teste de restauração.
+- [ ] Aplico menor privilégio com view e sem acesso à tabela-base.
+- [ ] Concluí as entregas dos Blocos 4, 5 e 6 sem acrescentar conteúdo novo ao Bloco 6.
+
+## Roteiro do banco completo de 70 questões
+
+O banco completo permanece disponível, mas não deve ser resolvido de uma vez. `P` identifica questão principal e `E`, questão extra.
+
+| Uso | Faixa | Quantidade | Momento | Meta de execução |
+|---|---|---:|---|---|
+| Essenciais | P1–P15 + E1–E5 | 20 | Sessão D, primeira passagem | resolver com consulta mínima e corrigir todas as alternativas |
+| Aprofundamento | P16–P30 + E6–E10 | 20 | Sessão E | combinar regras e voltar às âncoras específicas |
+| Revisão | P31–P40 + E11–E15 | 15 | início da Sessão F | refazer sem consulta os pontos antes errados |
+| Simulado | P41–P50 + E16–E20 | 15 | fim da Sessão F | tempo contínuo, sem consulta, correção posterior |
+
+Se a Sessão D consumir todo o tempo com teoria e correção das Essenciais, encerre ali. As demais faixas são etapas programadas, não atraso.
+
+## Correção e fechamento
+
+Para cada erro ou acerto por dúvida:
+
+1. leia novamente o comando e identifique quantificador ou negação;
+2. confira o gabarito;
+3. explique por que cada alternativa A–D está certa ou errada;
+4. abra a referência específica indicada na questão;
+5. escreva `confusão | regra correta | contraexemplo | próxima revisão`;
+6. refaça a questão após 24 horas e sete dias.
+
+**Critério de encerramento:** a sessão termina quando os itens previstos foram corrigidos e os erros registrados. Quantidade resolvida sem correção não caracteriza conclusão.
+
+# Dia 4 — Legislação CRA-PR/CFA
+
+<a id="s1-d4-abertura"></a>
+## Abertura, objetivo e orientação do dia
+
+O objetivo é compreender a base legal da profissão, a distribuição de competências no Sistema CFA/CRAs, a organização do CRA-PR, o registro e a fiscalização, a responsabilidade técnica e os deveres éticos. Ao final, o estudante deve conseguir resolver casos práticos sem completar lacunas da norma por suposição.
+
+Este dia é uma **unidade temática distribuída em sessões**. O banco tem 70 questões, mas elas não devem ser lidas, respondidas e corrigidas de uma só vez. Primeiro estude a teoria na ordem dos blocos; depois use as questões conforme a categoria operacional indicada.
+
+### Regra de leitura
+
+1. estude os Blocos 1 a 3 e faça a prática guiada;
+2. recupere as matérias fixas dos Blocos 4 e 5;
+3. execute o Bloco 6 sem consultar o texto;
+4. faça a mini revisão e o checklist;
+5. resolva apenas a faixa programada para a sessão;
+6. corrija cada erro pela referência específica e conclua o caderno de erros.
+
+## Cronograma em sessões executáveis
+
+Os tempos são líquidos; pausas ficam fora da contagem.
+
+| Sessão | Tempo estimado | Atividade e entrega |
 |---|---:|---|
-| 1 | 2h | Lei 4.769/1965 e Decreto 61.934/1967 |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | Regimento Interno do CRA-PR e RN CFA 651/2024 como norma de aprovação |
-| Pausa | 15min | Descanso |
-| 3 | 1h | Código de Ética - RN CFA 671/2025 + leitura dirigida das demais normas citadas no edital |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Administração Pública e RLM programado: teoria mínima completa para as Extras 4.1–4.10 e 4.16–4.20 |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: norma-padrão e parágrafo argumentativo completo |
-| 6 | 20min | Recuperação ativa: competências CFA x CRA e entrega do caderno de erros |
+| A — base institucional | 2h50 | Bloco 1: Lei 4.769/1965, Decreto 61.934/1967, CFA × CRA, registro, fiscalização e responsabilidade técnica; mapa de uma página |
+| B — organização e ética | 2h55 | Bloco 2: Regimento/RN 651 e Código de Ética/RN 671; quadro `dever → infração → consequência` |
+| C — normas dirigidas e matérias fixas | 2h55 | Bloco 3, Blocos 4 e 5, Bloco 6, mini revisão e checklist |
+| D — primeira passagem | até 3h | Principais 1–15 e Extras 4.1–4.5; correção e cinco registros prioritários |
+| E — aprofundamento | até 3h | Principais 16–30 e Extras 4.6–4.10; correção por fonte |
+| F — revisão | 2h15 a 2h45 | Principais 31–40 e Extras 4.11–4.15; releitura apenas dos erros |
+| G — simulado | 2h15 a 2h45 | Principais 41–50 e Extras 4.16–4.20, sem consulta; correção e fechamento |
 
-## Conteúdo dos blocos de revisão e consolidação
+Não avance para outra faixa apenas para “zerar” o banco. A correção fundamentada faz parte do tempo de estudo.
+
+<a id="s1-d4-b1"></a>
+## Bloco 1 — Teoria principal: base legal e atuação do Sistema CFA/CRAs
+
+<a id="s1-d4-lei-4769"></a>
+### 1. Lei Federal nº 4.769/1965
+
+A [Lei nº 4.769/1965](https://www.planalto.gov.br/ccivil_03/leis/l4769.htm) disciplina o exercício da profissão de Administrador e fornece a base legal do Conselho Federal de Administração e dos Conselhos Regionais. Ela estrutura a profissão, os campos de atividade, o registro e a fiscalização.
+
+Para a prova, retenha quatro relações:
+
+- **profissão regulamentada:** o exercício das atividades abrangidas submete-se às condições legais;
+- **CFA:** atua nacionalmente na orientação, disciplina e uniformização do sistema;
+- **CRA:** registra e fiscaliza na respectiva jurisdição;
+- **lei e atos inferiores:** decreto e resolução detalham a execução, mas não podem dispensar requisito criado pela lei.
+
+**Exemplo:** uma questão que atribua ao CRA-PR a edição de uma regra nacional vinculante para todos os regionais troca a função regional pela função uniformizadora do CFA.
+
+**Pegadinha:** a antiguidade da lei não a torna inferior a resolução posterior. Cronologia não autoriza ato administrativo a contrariar lei.
+
+<a id="s1-d4-decreto-61934"></a>
+### 2. Decreto Federal nº 61.934/1967
+
+O [Decreto nº 61.934/1967](https://www.planalto.gov.br/ccivil_03/decreto/antigos/d61934.htm) regulamenta a Lei nº 4.769/1965. A lei estabelece a base; o decreto organiza sua execução e detalha o funcionamento do sistema profissional.
+
+| Norma | Função | Limite |
+|---|---|---|
+| Lei 4.769/1965 | cria a disciplina legal da profissão e do sistema | só pode ser modificada por norma de hierarquia adequada |
+| Decreto 61.934/1967 | regulamenta a execução da lei | não pode contrariar nem dispensar comando legal |
+| Resolução do CFA | disciplina matéria administrativa dentro da competência legal | não revoga lei nem decreto |
+
+**Exemplo:** se uma interpretação de resolução dispensar condição expressa da lei, deve ser rejeitada; decreto e resolução são lidos dentro dos limites legais.
+
+**Pegadinha:** “mais recente” não significa “hierarquicamente superior”.
+
+<a id="s1-d4-cfa-cra"></a>
+### 3. CFA × CRA: competência nacional e execução regional
+
+| Entidade | Papel central | Exemplo de prova |
+|---|---|---|
+| CFA | orientação, disciplina, uniformização e normatização nacional | aprovar resolução aplicável ao sistema e decidir matéria de alcance nacional |
+| CRA | registro, fiscalização e execução na respectiva jurisdição | fiscalizar pessoa física ou jurídica que atue no Paraná |
+
+O CRA-PR não precisa aguardar provocação do CFA para exercer a fiscalização ordinária dentro de sua competência. Ao mesmo tempo, uma instrução regional não pode afastar unilateralmente norma nacional válida; eventual discordância deve seguir os canais institucionais.
+
+**Exemplo:** notícia de exercício irregular em município paranaense é apurada regionalmente pelo CRA-PR, sem transformar o CFA em fiscal cotidiano de cada cidade.
+
+**Pegadinha:** autonomia administrativa do CRA não significa soberania normativa perante o CFA.
+
+<a id="s1-d4-registro-fiscalizacao-rt"></a>
+### 4. Registro, fiscalização, pessoa física, pessoa jurídica e responsabilidade técnica
+
+A análise começa pela **atividade efetivamente exercida**, e não apenas pelo nome empresarial, pelo CNPJ ou pela forma do contrato. Pessoa física ou jurídica que exerça ou explore atividade abrangida pela legislação profissional pode sujeitar-se ao registro e à fiscalização do CRA competente.
+
+Para pessoa jurídica, separe duas verificações:
+
+1. a regularidade registral da própria organização, quando exigível segundo sua atividade básica ou os serviços prestados;
+2. a atuação efetiva do responsável técnico habilitado.
+
+A indicação documental de responsável técnico não substitui orientação e supervisão reais. Emprestar nome ou número de registro, assinar trabalho alheio sem participação ou permitir que terceiro aparente habilitação são problemas próprios, mesmo quando o CNPJ da empresa está ativo.
+
+**Exemplo:** uma consultoria que oferece habitualmente planejamento e organização administrativa não se torna imune à fiscalização apenas por possuir CNPJ. Também não basta indicar profissional que nunca acompanha o serviço.
+
+**Pegadinha:** `empresa registrada` e `responsabilidade técnica efetiva` são controles relacionados, mas não equivalentes.
+
+<a id="s1-d4-conselho-sindicato"></a>
+### 5. Conselho profissional × sindicato
+
+O conselho profissional é autarquia que exerce função pública de registro, orientação e fiscalização do exercício profissional. O sindicato representa interesses trabalhistas e coletivos da categoria. Um não é unidade administrativa do outro, e a filiação sindical não substitui registro profissional exigível.
+
+**Exemplo:** negociação salarial pertence à representação sindical; exame de exercício irregular pertence ao conselho profissional competente.
+
+**Pegadinha:** conselho não existe para maximizar arrecadação nem para representar exclusivamente o interesse econômico dos inscritos; sua atuação fiscalizatória decorre de finalidade pública.
+
+<a id="s1-d4-b2"></a>
+## Bloco 2 — Aprofundamento: organização do CRA-PR e ética profissional
+
+<a id="s1-d4-regimento"></a>
+### 6. Regimento Interno do CRA-PR — RN CFA nº 651/2024
+
+A [RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955) aprova o Regimento do Conselho Regional de Administração do Paraná.
+
+O CRA-PR é autarquia dotada de personalidade jurídica de direito público, com autonomia técnica, administrativa e financeira, sede na capital e jurisdição em todo o Estado do Paraná. Suas finalidades incluem executar diretrizes do CFA, fiscalizar, manter registros, julgar infrações e impor penalidades dentro da competência legal.
+
+Órgãos regimentais:
+
+- Plenário;
+- Diretoria Executiva;
+- Ouvidoria;
+- Comissões Permanentes, Especiais e Grupos de Trabalho;
+- Órgãos de Representação.
+
+O **Plenário** é o órgão colegiado de deliberação superior e primeira instância de julgamento no âmbito da jurisdição. Sede, unidade de atendimento e jurisdição não se confundem: atendimento descentralizado não cria novo conselho autônomo.
+
+<a id="s1-d4-diretoria"></a>
+#### Diretoria Executiva
+
+A Diretoria Executiva é órgão de direção do Plenário. Entre suas funções estão cumprir as decisões aprovadas pelo Plenário, promover atos de administração e gestão, acompanhar os trabalhos técnicos e administrativos e deliberar sobre matérias de sua competência. Ela não substitui a competência deliberativa superior do Plenário nem edita norma nacional para todos os CRAs.
+
+**Exemplo:** execução e gestão de uma deliberação pertencem à Diretoria dentro de sua competência; julgamento reservado ao Plenário não se transfere automaticamente.
+
+**Pegadinha:** autonomia do CRA-PR não transforma sua jurisdição estadual em atuação nacional.
+
+<a id="s1-d4-codigo-etica"></a>
+### 7. Código de Ética — RN CFA nº 671/2025
+
+A [RN CFA nº 671/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1038) aprova o Código de Ética e Disciplina dos Profissionais de Administração e das Pessoas Jurídicas e revoga a RN CFA nº 640/2024.
+
+<a id="s1-d4-etica-abrangencia-deveres"></a>
+#### Abrangência e deveres
+
+O Código alcança pessoas físicas e jurídicas registradas, observadas as especificidades das pessoas jurídicas. Para o profissional, a incidência não se limita à atividade liberal: empregado, servidor ou empregado público não pode abdicar de dignidade, prerrogativas e independência quando exerce atividade profissional abrangida.
+
+Deveres centrais:
+
+- zelo, dedicação, responsabilidade e honestidade;
+- defesa de interesses legítimos de quem recebe o serviço;
+- sigilo sobre o que se conhece no exercício profissional lícito;
+- independência técnica;
+- aperfeiçoamento contínuo;
+- preservação da reputação profissional e institucional;
+- comunicação imediata de mudança de domicílio ou endereço, inclusive eletrônico, e de fatos necessários ao controle profissional.
+
+O sigilo é regra, mas o próprio Código caracteriza como infração a violação **sem justa causa**. Não se deve transformar o dever em autorização para ocultar ilícito nem em proibição absoluta diante de dever legal legítimo.
+
+**Exemplo:** ordem escrita de cliente não legitima omissão tecnicamente relevante em parecer. O profissional registra a limitação e preserva a integridade da conclusão.
+
+<a id="s1-d4-etica-infracoes"></a>
+#### Infrações recorrentes
+
+Constituem exemplos de infração:
+
+- assinar documento elaborado por terceiro sem orientação ou supervisão;
+- assinar ou publicar trabalho técnico de que não participou;
+- violar sigilo sem justa causa;
+- obstar, omitir fato relevante ou dificultar fiscalização do CRA;
+- permitir uso do nome ou registro onde não exerce atividade profissional;
+- facilitar exercício por pessoa não habilitada ou impedida;
+- deixar de atender requisição, intimação ou notificação válida do sistema;
+- usar artifício enganoso para obter vantagem indevida.
+
+Profissionais e pessoas jurídicas devem tratar representantes do sistema com respeito, fornecer informações e facilitar seu desempenho, sem prejuízo do direito de defesa e do devido processo.
+
+**Exemplo:** empresa registrada que oculta documento pertinente e cria obstáculo deliberado não regulariza a conduta apenas por manter o cadastro ativo.
+
+<a id="s1-d4-sancoes"></a>
+#### Sanções, gradação e pessoa jurídica
+
+O Código prevê advertência escrita e reservada, censura pública, suspensão do exercício profissional e cancelamento do registro profissional, além das multas disciplinadas pela própria norma. A sanção somente pode ser aplicada após o trânsito em julgado administrativo.
+
+Na individualização, devem ser considerados o enquadramento da infração, o grau de culpa, as circunstâncias, a gravidade e eventuais atenuantes ou agravantes. Não se escolhe automaticamente a pena máxima pela mera existência do fato.
+
+As sanções de **suspensão e cancelamento não se aplicam à pessoa jurídica**. Essa diferença impede copiar mecanicamente para a organização todas as consequências previstas para a pessoa física.
+
+**Exemplo:** sem artigo, circunstâncias e elementos de individualização, é possível reconhecer possível infração, mas não inventar uma penalidade específica.
+
+**Pegadinha:** responsabilização administrativa não depende de condenação criminal, mas exige processo e decisão administrativa definitiva para a aplicação da sanção.
+
+<a id="s1-d4-b3"></a>
+## Bloco 3 — Normas dirigidas, exemplos e prática guiada
+
+O limite deste bloco é deliberado: **objeto, relação normativa, exemplo e pegadinha confirmados oficialmente**. Procedimentos, valores, prazos e requisitos não explicados continuam fora da base resolutiva.
+
+<a id="s1-d4-lei-12514"></a>
+### 8. Lei nº 12.514/2011 — contribuições e cobrança
+
+A [Lei nº 12.514/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12514.htm) trata, entre outros pontos, de contribuições devidas aos conselhos profissionais e autoriza critérios relativos a isenção, recuperação e parcelamento de créditos.
+
+**Exemplo:** questão que associe a lei aos campos privativos da Administração troca o tema de contribuições pela lei profissional.
+
+**Pegadinha:** anuidade, multa disciplinar e honorário contratual têm fundamentos distintos.
+
+<a id="s1-d4-rn-649-670"></a>
+### 9. RN CFA nº 649/2024 e RN CFA nº 670/2025 — registro
+
+A [RN CFA nº 649/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=951) aprova o Regulamento de Registro do Sistema CFA/CRAs. A [RN CFA nº 670/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1033) altera esse regulamento e, especificamente, dá nova redação ao art. 11 sobre cursos de educação profissional técnica de nível médio considerados conexos à Administração.
+
+**Exemplo:** para identificar a disciplina vigente, lê-se a RN 649 com a alteração expressa da RN 670.
+
+**Pegadinha:** alteração de um artigo não significa revogação integral do regulamento nem autoriza concluir requisitos não estudados.
+
+<a id="s1-d4-rn-546"></a>
+### 10. RN CFA nº 546/2018 — isenção de débitos
+
+A [RN CFA nº 546/2018](https://documentos.cfa.org.br/?a=show&c=documento&id=700) dispõe sobre concessão de isenção de débitos pelos Conselhos Regionais, relaciona-se à competência prevista na Lei nº 12.514/2011 e revogou a RN CFA nº 510/2017.
+
+**Exemplo:** a norma deve ser associada a isenção de débitos, não a registro, ética ou eleição.
+
+**Pegadinha:** conhecer o objeto não autoriza inventar hipótese concreta de isenção não ensinada.
+
+<a id="s1-d4-rn-626"></a>
+### 11. RN CFA nº 626/2023 — PERC
+
+A [RN CFA nº 626/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=803) dispõe sobre o Programa Especial de Recuperação de Créditos — PERC. Ela foi alterada pela RN CFA nº 627/2023, inclusive quanto a regras do parcelamento e à data de adesão.
+
+O programa teve adesão temporal em 2023. Nesta semana, cobra-se apenas seu objeto e a relação com a norma alteradora; não se apresenta o PERC como programa permanentemente aberto.
+
+**Exemplo:** `RN 626 → PERC` é associação segura.
+
+**Pegadinha:** não transportar a antiga data de adesão para 2026 nem inferir desconto atual.
+
+<a id="s1-d4-rn-589"></a>
+### 12. RN CFA nº 589/2020 — fiscalização
+
+A [RN CFA nº 589/2020](https://documentos.cfa.org.br/?a=show&c=documento&id=745) aprova o Regulamento de Fiscalização do Sistema CFA/CRAs e revogou as RNs CFA nº 446/2014 e nº 449/2014.
+
+O regulamento disciplina a fiscalização pelos CRAs e o processo administrativo fiscal decorrente. A competência originária para aplicar sanção por infração à legislação profissional é do CRA onde ocorreu o fato punível, sem excluir outras consequências previstas em lei.
+
+**Exemplo:** infração ocorrida no Paraná é tratada originariamente pelo CRA-PR dentro da jurisdição, segundo o processo aplicável.
+
+**Pegadinha:** a função nacional do CFA não elimina a atuação fiscalizatória regional; também não se deve extrair dessa norma uma política de prioridade baseada em arrecadação ou risco que o texto estudado não estabeleça.
+
+<a id="s1-d4-rn-680"></a>
+### 13. RN CFA nº 680/2025 — eleições
+
+A [RN CFA nº 680/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1058) aprova o Regulamento das Eleições do Sistema CFA/CRAs e revoga a RN CFA nº 633/2023.
+
+**Exemplo:** associação `RN 680 → eleições do Sistema CFA/CRAs` é suficiente no nível desta semana.
+
+**Pegadinha:** não confundir eleição com registro, fiscalização, ética ou regimento do CRA-PR.
+
+<a id="s1-d4-mapa-rns"></a>
+### 14. Mapa consolidado das resoluções
+
+| Norma | Objeto seguro nesta semana | Relação confirmada |
+|---|---|---|
+| RN 546/2018 | isenção de débitos pelos CRAs | Lei 12.514/2011; revoga RN 510 |
+| RN 589/2020 | Regulamento de Fiscalização | revoga RNs 446 e 449 |
+| RN 626/2023 | PERC | alterada pela RN 627; adesão temporal em 2023 |
+| RN 649/2024 | Regulamento de Registro | norma-base alterada pela RN 670 |
+| RN 651/2024 | Regimento do CRA-PR | organiza o Regional |
+| RN 670/2025 | alteração do art. 11 da RN 649 | não substitui integralmente a norma-base |
+| RN 671/2025 | Código de Ética | revoga RN 640 |
+| RN 680/2025 | Regulamento das Eleições | revoga RN 633 |
+
+<a id="s1-d4-fontes-hierarquia"></a>
+### 15. Proveniência, vigência e hierarquia
+
+Use este protocolo antes de transformar uma afirmação em gabarito:
+
+1. confirme número, data, ementa e texto no repositório oficial;
+2. verifique alteração ou revogação expressa;
+3. leia a norma-base junto com a alteradora;
+4. respeite a hierarquia `lei → decreto regulamentar → resolução`;
+5. identifique como **autoral** a questão criada para treino, ainda que imite o estilo da banca;
+6. não complete prazo, sanção ou requisito por analogia com outro conselho.
+
+**Exemplo:** duas apostilas não oficiais divergem sobre uma resolução. A versão não é escolhida pela data impressa no material; consulta-se o repositório oficial e a cadeia de alterações.
+
+**Pegadinha:** semelhança de redação não prova que uma questão saiu de prova oficial.
+
+<a id="s1-d4-pratica-guiada"></a>
+### 16. Prática guiada
+
+**Caso 1 — empresa e registro:** identifique `atividade → jurisdição → registro da PJ → atuação real do responsável técnico`.
+
+**Caso 2 — assinatura técnica:** pergunte quem elaborou, orientou ou supervisionou. Autorização do terceiro não substitui participação profissional.
+
+**Caso 3 — conflito normativo:** identifique a hierarquia. Resolução não afasta requisito legal; norma alteradora é lida com a norma-base.
+
+**Caso 4 — ética de servidor:** o vínculo público não elimina dignidade e independência quando a atividade pertence ao campo profissional.
+
+**Caso 5 — sanção:** primeiro enquadre a conduta; depois verifique sujeito, processo, circunstâncias e regra de gradação. Não comece escolhendo a penalidade máxima.
 
 <a id="s1-d4-b4"></a>
 ### Bloco 4 — Administração Pública e RLM programado (40min)
@@ -2039,6 +2616,7 @@ Motivação objetiva significa registrar necessidade, objeto, base legal, crité
 - oração adjetiva **explicativa**, entre vírgulas, acrescenta informação sobre todo o antecedente;
 - há crase quando um termo exige preposição `a` e o seguinte admite artigo ou integra pronome iniciado por `a`: `referiu-se àquela irregularidade`, `encaminhou à chefia`;
 - não há crase antes de verbo: `começou a revisar`;
+- na indicação de hora determinada, ocorre crase: `a reunião terá início às 14 horas`;
 - `embora`, `ainda que` e `mesmo que` indicam concessão;
 - `para que` e `a fim de que` indicam finalidade;
 - linguagem administrativa deve ser objetiva, formal e impessoal: prefira “Solicita-se o envio do relatório até 18 de julho de 2026, para instrução do processo” a pedidos vagos ou coloquiais.
@@ -2078,424 +2656,57 @@ Este bloco não acrescenta norma ou conceito. Sem consultar, construa duas colun
 | Extras 4.16–4.20 | Bloco 4 | RLM programado | [`s1-d4-b4`](#s1-d4-b4), microtrilha de RLM |
 | Sem faixa própria | Bloco 6 | Recuperação CFA x CRA | [`s1-d4-b6`](#s1-d4-b6); entrega prática, sem questões novas |
 
-## Teoria explicada de forma didática
-
-### 1. Lei Federal nº 4.769/1965
-
-A Lei nº 4.769/1965 dispõe sobre o exercício da profissão de Administrador e cria a estrutura básica de fiscalização profissional por meio do Conselho Federal de Administração e dos Conselhos Regionais.
-
-Ideias centrais:
-
-- regulamenta o exercício profissional;
-- estrutura o sistema de conselhos;
-- define atribuições de fiscalização;
-- estabelece base para registro profissional;
-- dá fundamento à atuação do CFA e dos CRAs.
-
-Para prova, mais importante do que decorar todos os artigos é compreender a lógica:
-
-- o CFA tem papel normativo, orientador e superior;
-- os CRAs atuam na jurisdição regional, com registro, fiscalização e execução das diretrizes;
-- a profissão tem reserva de atuação nos campos definidos em lei e regulamento.
-
-### Como funciona na prática
-
-Se uma pessoa física ou jurídica exerce atividades abrangidas pelo campo da Administração, pode estar sujeita a registro e fiscalização pelo CRA competente. O CRA-PR atua no Paraná; o CFA formula normas gerais e exerce papel de instância superior dentro do sistema.
-
-### Exemplos resolvidos - Lei 4.769/1965
-
-**Exemplo 1:** se uma questão disser que o CRA-PR formula normas gerais nacionais para todos os CRAs, está correto?
-
-Não. A competência nacional normativa é do CFA. O CRA atua regionalmente, executando e fiscalizando em sua jurisdição.
-
-**Exemplo 2:** o CRA-PR é uma associação privada de administradores?
-
-Não. O Regimento aprovado pelo CFA caracteriza o CRA-PR como autarquia dotada de personalidade jurídica de direito público, com autonomia técnica, administrativa e financeira.
-
-### 2. Decreto Federal nº 61.934/1967
-
-O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965. Em prova, regulamento costuma detalhar o que a lei estruturou.
-
-Pontos de atenção:
-
-- regulamentação do exercício profissional;
-- constituição do Conselho Federal e dos Conselhos Regionais;
-- atribuições e funcionamento;
-- registro profissional;
-- fiscalização.
-
-### Como funciona na prática
-
-A lei cria e define linhas gerais. O decreto regulamenta a execução. Em questões, a banca pode misturar atribuições da lei e do decreto; o foco deve ser compreender o sistema CFA/CRA como mecanismo de fiscalização profissional.
-
-### Exemplos resolvidos - Decreto 61.934/1967
-
-**Exemplo 1:** decreto pode contrariar a lei que regulamenta?
-
-Não. Decreto regulamentar detalha a execução da lei, mas não pode inovar contra ela.
-
-**Exemplo 2:** se o decreto trata da constituição dos conselhos, isso significa que ele substitui a Lei 4.769/1965?
-
-Não. Ele regulamenta a lei. Ambos devem ser lidos em conjunto.
-
-<a id="s1-d4-regimento"></a>
-### 3. Regimento Interno do CRA-PR e RN CFA nº 651/2024
-
-O edital cita o Regimento Interno do CRA-PR. A fonte oficial do CFA informa que a **Resolução Normativa CFA nº 651/2024 aprova o Regimento do Conselho Regional de Administração do Paraná**. Por isso, nesta apostila a RN CFA nº 651/2024 é usada apenas como a norma de aprovação/organização do Regimento.
-
-Pontos centrais do Regimento aprovado:
-
-- o CRA-PR é autarquia com personalidade jurídica de direito público;
-- tem autonomia técnica, administrativa e financeira;
-- tem sede na capital do Paraná;
-- tem jurisdição em todo o Estado do Paraná;
-- sua finalidade envolve executar diretrizes do CFA, fiscalizar o exercício profissional, organizar e manter registros, julgar infrações e impor penalidades.
-
-Órgãos indicados no Regimento:
-
-- Plenário;
-- Diretoria Executiva;
-- Ouvidoria;
-- Comissões Permanentes, Especiais e Grupos de Trabalho;
-- Órgãos de Representação.
-
-### Como funciona na prática
-
-O Regimento é a "constituição interna" do CRA-PR. Ele organiza quem decide, quem executa, quais órgãos existem, quais competências pertencem ao Plenário e à Diretoria Executiva, como a instituição atua e como se relaciona com o CFA.
-
-### Exemplos resolvidos - Regimento
-
-**Exemplo 1:** se a questão afirmar que o CRA-PR tem jurisdição nacional, está correta?
-
-Não. O CRA-PR tem jurisdição no Estado do Paraná. A atuação nacional pertence ao sistema como um todo, especialmente ao CFA no plano normativo.
-
-**Exemplo 2:** o Plenário é órgão meramente consultivo?
-
-Não. O Plenário é órgão colegiado de deliberação superior do CRA-PR e decide assuntos relacionados às competências do Conselho.
-
-**Exemplo 3:** a RN CFA 651/2024 está sendo estudada como conteúdo autônomo principal?
-
-Não. Ela está sendo citada porque aprova o Regimento do CRA-PR, que é conteúdo indicado no edital.
-
-<a id="s1-d4-codigo-etica"></a>
-### 4. Código de Ética - RN CFA nº 671/2025
-
-O edital consolidado conforme Retificação I cita a RN CFA nº 671/2025. A página oficial do CFA informa que essa norma aprova o Código de Ética e Disciplina dos Profissionais de Administração e das Pessoas Jurídicas e revoga a RN CFA nº 640/2024.
-
-Estrutura do Código:
-
-- disposições gerais;
-- regras fundamentais;
-- infrações;
-- direitos;
-- honorários profissionais;
-- deveres especiais;
-- fixação e gradação das penas;
-- disposições finais.
-
-Ideias centrais:
-
-- ética envolve conduta voltada ao bem comum e à realização individual;
-- o exercício profissional implica compromisso moral com pessoa física ou jurídica, administração pública, organizações e sociedade;
-- o código regula deveres do profissional de Administração e das pessoas jurídicas que exercem atividades nas áreas de Administração;
-- aplica-se a pessoas físicas e jurídicas registradas no CRA competente, observadas as especificidades.
-
-### Deveres que merecem atenção
-
-O Código traz deveres como:
-
-- exercer a profissão com zelo, dedicação, comprometimento, responsabilidade e honestidade;
-- defender direitos e interesses de quem recebe os serviços;
-- guardar sigilo sobre o que souber em razão do exercício profissional lícito;
-- manter independência técnica;
-- buscar aperfeiçoamento;
-- zelar pela reputação pessoal, profissional e institucional;
-- comunicar mudança de domicílio ou endereço ao CRA.
-
-### Infrações que merecem atenção
-
-Exemplos de infrações:
-
-- tratar outros profissionais sem urbanidade;
-- manter sociedade profissional que explore atividades de Administração sem registro no CRA;
-- assinar documento elaborado por terceiros sem orientação ou supervisão;
-- violar sigilo profissional sem justa causa;
-- obstar ou dificultar fiscalização do CRA;
-- permitir uso de nome ou registro onde não exerça atividade;
-- facilitar exercício profissional a terceiros não habilitados;
-- praticar assédio moral ou sexual no exercício da atividade;
-- demonstrar incapacidade técnica comprovada;
-- usar artifícios enganosos para vantagem indevida.
-
-### Penalidades
-
-O Código prevê sanções como:
-
-- advertência escrita e reservada;
-- censura pública;
-- suspensão do exercício profissional;
-- cancelamento do registro profissional.
-
-Também há previsão de multas conforme a sanção e regras de gradação.
-
-### Como funciona na prática
-
-Se um profissional de Administração assina estudo técnico feito por terceiro sem orientação ou supervisão, pode haver infração ética. Se uma pessoa jurídica explora atividade de Administração sem registro, também pode haver infração. Se o profissional dificulta fiscalização do CRA, a situação também é relevante para o código.
-
-### Exemplos resolvidos - Código de Ética
-
-**Exemplo 1:** sigilo profissional é absoluto?
-
-O dever de sigilo é regra, mas a própria formulação do Código fala em violação sem justa causa como infração. Em prova, cuidado com alternativas absolutas como "sempre", "nunca", "em nenhuma hipótese".
-
-**Exemplo 2:** pessoa jurídica também pode ser alcançada pelo Código?
-
-Sim. A RN CFA 671/2025 aprova Código de Ética e Disciplina dos Profissionais de Administração e das Pessoas Jurídicas, observadas as especificidades relativas às pessoas jurídicas.
-
-**Exemplo 3:** cancelamento do registro se aplica à pessoa jurídica?
-
-Segundo o texto da RN CFA 671/2025, as sanções de suspensão e cancelamento não se aplicam à pessoa jurídica. Esse tipo de detalhe é típico de prova.
-
-### 5. Leitura dirigida das demais normas do edital
-
-O edital oficial consolidado conforme Retificação I também cita a Lei nº 12.514/2011 e as Resoluções Normativas CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020, 651/2024 e 680/2025. Nesta Semana 1, somente conteúdo efetivamente consolidado na apostila pode fundamentar questão. A presença do número em uma lista não equivale a ensino da norma.
-
-| Norma | Estado nesta versão | Uso permitido nas questões da Semana 1 |
-|---|---|---|
-| Lei nº 12.514/2011 | núcleo geral de contribuições confirmado | apenas distinções gerais sobre contribuições; sem prazo, valor ou consequência não explicados |
-| RN CFA nº 649/2024 | texto detalhado não consolidado no material | não usar como base de requisito, procedimento, prazo ou sanção |
-| RN CFA nº 670/2025 | texto detalhado não consolidado no material | não usar como base; não inferir alteração específica |
-| RN CFA nº 546/2018 | objeto e texto não consolidados no material | não usar como base de questão |
-| RN CFA nº 626/2023 | objeto e texto não consolidados no material | não usar como base de questão |
-| RN CFA nº 589/2020 | objeto e texto não consolidados no material | não usar como base de questão |
-| RN CFA nº 651/2024 | Regimento do CRA-PR consolidado nas seções anteriores | usar para estrutura, órgãos, funcionamento, competências internas e jurisdição explicados |
-| RN CFA nº 680/2025 | objeto e texto não consolidados no material | não usar como base de questão |
-
-#### Como estudar essa leitura dirigida
-
-1. Leia primeiro a publicação e a ementa oficiais para identificar objeto e vigência.
-2. Só depois do texto consolidado, identifique sujeitos, deveres e competências.
-3. Registre verbos de obrigação e exceções sem retirar o trecho do contexto.
-4. Separe regras de competência do CFA e do CRA.
-5. Só registre prazo, penalidade ou requisito objetivo quando a fonte oficial tiver sido conferida e a explicação correspondente tiver sido incorporada à apostila.
-
-#### Exemplos de cobrança provável
-
-**Exemplo 1:** uma questão pode afirmar que a RN CFA nº 651/2024 criou o Código de Ética. A afirmação estaria errada, porque essa norma aprova o Regimento do CRA-PR. O Código de Ética indicado no edital vigente é a RN CFA nº 671/2025.
-
-**Exemplo 2:** uma questão pode apresentar pessoa jurídica atuando em área de Administração. Nesta versão, é possível examinar a natureza da atividade, a competência regional e a necessidade de conferir regularidade na fonte aplicável; requisito específico de registro não explicado não pode decidir a resposta.
-
-**Exemplo 3:** uma questão pode misturar anuidade, taxa e multa. A Lei nº 12.514/2011 é relevante porque trata de contribuições devidas aos conselhos profissionais.
-
-## Pegadinhas comuns da banca
-
-- Trocar competência do CFA por competência do CRA.
-- Dizer que o CRA-PR tem jurisdição nacional.
-- Ignorar que o CRA-PR é autarquia de direito público.
-- Usar a RN 640/2024 como se estivesse vigente no edital retificado, apesar da indicação oficial da RN 671/2025.
-- Dizer que a RN 651/2024 é Código de Ética. Não é; ela aprova o Regimento do CRA-PR.
-- Afirmar que toda sanção se aplica igualmente a pessoa física e pessoa jurídica.
-- Usar palavras absolutas: sempre, nunca, exclusivamente, em qualquer hipótese.
-
-## O que memorizar
-
-| Item | Memorização objetiva |
-|---|---|
-| Lei 4.769/1965 | base legal da profissão e do Sistema CFA/CRA |
-| Decreto 61.934/1967 | regulamenta a Lei 4.769/1965 |
-| CRA-PR | autarquia, sede na capital do PR, jurisdição estadual |
-| CFA | formula diretrizes e normas gerais do sistema |
-| RN CFA 651/2024 | aprova o Regimento do CRA-PR |
-| RN CFA 671/2025 | Código de Ética conforme edital vigente |
-| Plenário | órgão colegiado de deliberação superior |
-| Código de Ética | deveres, direitos, infrações e sanções |
-
-## Erros comuns
-
-| Erro | Correção |
-|---|---|
-| CRA-PR tem competência nacional | CRA-PR atua no Paraná |
-| RN 651/2024 é Código de Ética | RN 651/2024 aprova Regimento |
-| RN 640/2024 é a base do edital retificado | Edital consolidado indica RN 671/2025 |
-| Regimento é norma sem relevância | Regimento organiza estrutura e competências |
-| Ética é apenas conduta individual | Código também alcança pessoas jurídicas registradas |
-
+<a id="s1-d4-mini-revisao"></a>
 ## Mini revisão do dia
 
-A legislação específica deve ser estudada com foco em estrutura institucional, competências e ética. A Lei 4.769/1965 e o Decreto 61.934/1967 sustentam a profissão e o sistema de conselhos. O Regimento Interno organiza o CRA-PR e é aprovado pela RN CFA 651/2024. O Código de Ética indicado no edital vigente é a RN CFA 671/2025, que fonte oficial do CFA informa ter revogado a RN 640/2024.
+- Lei 4.769 estrutura; Decreto 61.934 regulamenta.
+- CFA orienta e uniformiza nacionalmente; CRA registra e fiscaliza regionalmente.
+- RN 651 aprova o Regimento do CRA-PR; RN 671 aprova o Código de Ética.
+- Registro da pessoa jurídica e responsabilidade técnica efetiva não são sinônimos.
+- RN 649/670 tratam do Regulamento de Registro; RN 589, de fiscalização; RN 680, de eleições.
+- RN 546 trata de isenção de débitos; RN 626, do PERC temporal de 2023.
+- Norma alteradora não revoga automaticamente toda a norma-base.
+- Sanção exige enquadramento, processo e individualização; suspensão e cancelamento não se aplicam à pessoa jurídica.
 
 ## Checklist de domínio
 
-- [ ] Sei explicar a função da Lei 4.769/1965.
-- [ ] Sei explicar a função do Decreto 61.934/1967.
-- [ ] Sei diferenciar CFA e CRA.
-- [ ] Sei que o CRA-PR tem jurisdição no Paraná.
-- [ ] Sei que o CRA-PR é autarquia de direito público.
-- [ ] Sei que a RN CFA 651/2024 aprova o Regimento do CRA-PR.
-- [ ] Sei que a RN CFA 671/2025 é o Código de Ética citado no edital vigente.
-- [ ] Sei listar deveres, infrações e sanções em linhas gerais.
+- [ ] Distingo lei, decreto e resolução pela função e hierarquia.
+- [ ] Explico CFA × CRA sem inverter competência nacional e regional.
+- [ ] Separo registro da organização de atuação efetiva do responsável técnico.
+- [ ] Identifico natureza, jurisdição, Plenário e Diretoria Executiva do CRA-PR.
+- [ ] Reconheço abrangência, deveres, infrações e sanções da RN 671.
+- [ ] Associo corretamente as oito resoluções do mapa consolidado.
+- [ ] Diferencio conselho profissional e sindicato.
+- [ ] Verifico proveniência, vigência, alteração e revogação em fonte oficial.
+- [ ] Sei que o banco de 70 questões será distribuído em quatro usos.
 
-## Tarefa para o caderno de erros
+<a id="s1-d4-roteiro-questoes"></a>
+## Roteiro de resolução das 70 questões
 
-Crie uma tabela **CFA x CRA-PR** com três colunas:
-
-- competência;
-- pertence ao CFA ou ao CRA-PR;
-- exemplo prático.
-
-Depois, crie uma tabela **Ética profissional** com:
-
-- dever;
-- infração relacionada;
-- sanção possível;
-- pegadinha provável.
-
-## 5 perguntas de fixação
-
-1. Qual é a diferença central entre a atuação do CFA e a atuação do CRA-PR?
-2. Por que a RN CFA nº 651/2024 aparece no estudo do Regimento Interno do CRA-PR?
-3. Segundo o edital vigente, qual norma deve orientar o estudo do Código de Ética?
-4. Que tipos de conduta podem configurar infração ética no exercício profissional?
-5. Por que a banca pode explorar diferenças entre pessoa física e pessoa jurídica no Código de Ética?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Lei 4.769/1965, Decreto 61.934/1967, Regimento Interno do CRA-PR, RN CFA 651/2024 como norma de aprovação do Regimento, RN CFA 671/2025, deveres, direitos, infrações, sanções, competências do CFA/CRA e situações práticas de fiscalização/registro/ética.
-
-## Reforço de alinhamento com as questões - Dia 4
-
-As questões do Dia 4 usam muitos casos práticos. O caminho para acertar é identificar o sujeito da situação: profissional, pessoa jurídica, CRA regional, CFA, fiscal ou terceiro que usa indevidamente registro/nome profissional.
-
-### Registro, fiscalização e exercício irregular
-
-O Sistema CFA/CRAs existe para orientar, disciplinar e fiscalizar o exercício profissional no campo da Administração, conforme a legislação indicada no edital. Em prova, aparecem cenários como:
-
-- profissional atuando sem registro regular;
-- pessoa jurídica oferecendo serviços típicos da área de Administração;
-- uso indevido de número de registro;
-- assinatura de documento sem participação técnica real;
-- tentativa de dificultar fiscalização.
-
-Regra de raciocínio: se a atividade está ligada ao campo profissional fiscalizado, o CRA pode exigir regularidade de registro e apurar responsabilidade, respeitando processo e normas aplicáveis.
-
-### Competência do CFA x competência do CRA
-
-| Entidade | Papel central | Exemplo de prova |
-|---|---|---|
-| CFA | atuação nacional, normativa e orientadora do sistema | editar normas gerais, aprovar resoluções |
-| CRA | atuação regional, registro, fiscalização e aplicação prática na jurisdição | fiscalizar profissional ou empresa no Paraná |
-
-A pegadinha é atribuir ao CRA-PR uma competência nacional ou tratar o CFA como órgão regional de fiscalização direta cotidiana no Paraná.
-
-### Pessoa física, pessoa jurídica e responsabilidade técnica
-
-A legislação e as normas do Sistema CFA/CRAs podem envolver tanto profissionais quanto pessoas jurídicas. Uma empresa que presta serviços enquadráveis na área de Administração pode estar sujeita a registro/fiscalização. A pessoa jurídica não "substitui" automaticamente a responsabilidade técnica do profissional habilitado.
-
-Exemplo prático: uma consultoria empresarial anuncia serviços de organização e métodos, planejamento e gestão administrativa. A banca pode perguntar se o simples fato de ser pessoa jurídica afasta fiscalização. A resposta tende a ser não: a natureza da atividade é relevante.
-
-### Código de Ética: sigilo, zelo, independência e uso do registro
-
-Na RN CFA 671/2025, o foco de prova não deve ser decorar artigo isolado sem necessidade, mas entender deveres e condutas vedadas.
-
-Pontos que aparecem em caso prático:
-
-- **sigilo profissional:** proteger informações conhecidas no exercício profissional, salvo hipótese legal ou justa causa;
-- **zelo e diligência:** atuar com cuidado técnico;
-- **independência técnica:** não ceder a pressão para falsear informação ou assinar sem base;
-- **uso correto do nome e registro:** não emprestar registro, não assinar trabalho de terceiro sem participação, não facilitar exercício irregular;
-- **urbanidade com fiscalização:** colaborar com a atuação fiscalizatória.
-
-### Sanções: como estudar sem inventar prazo ou penalidade
-
-As questões desta semana evitam cobrar prazo, artigo ou penalidade específica não consolidada na apostila. Para acertar, memorize a lógica:
-
-1. há dever profissional;
-2. a conduta viola esse dever;
-3. há processo/averiguação conforme norma aplicável;
-4. pode haver sanção ética/disciplinar, conforme enquadramento.
-
-Não conclua automaticamente penalidade específica se o enunciado não trouxer base suficiente. Em legislação, a Consulplan costuma usar palavras absolutas como "sempre", "nunca", "dispensa qualquer registro" e "sem possibilidade de fiscalização" para induzir erro.
-
-### Normas do edital: função de cada uma
-
-| Norma | Função no estudo |
-|---|---|
-| Lei 4.769/1965 | base legal da profissão e do Sistema CFA/CRAs |
-| Decreto 61.934/1967 | regulamenta a lei |
-| Lei 12.514/2011 | trata de contribuições dos conselhos profissionais em linhas gerais |
-| RN CFA 651/2024 | aprova o Regimento Interno do CRA-PR |
-| RN CFA 671/2025 | Código de Ética indicado no edital vigente |
-| RNs 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025 | catalogadas no edital, mas fora da base resolutiva desta semana enquanto o conteúdo não estiver consolidado |
-
-## Tabela de revisão rápida do Dia 4
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
+| Uso | Questões | Quando resolver | Entrega |
 |---|---|---|---|
-| CFA | órgão nacional/normativo do sistema | Atribuir função regional cotidiana | editar resolução normativa |
-| CRA-PR | conselho regional com jurisdição no Paraná | Atribuir competência nacional | fiscalizar atuação no PR |
-| Registro profissional | regularidade para exercício fiscalizado | Achar que diploma sempre basta | profissional atuando sem registro |
-| Pessoa jurídica | empresa sujeita a registro/fiscalização conforme atividade | Achar que CNPJ dispensa controle | consultoria administrativa |
-| Responsabilidade técnica | vínculo entre atuação técnica e profissional habilitado | Assinar sem participar do trabalho | laudo/documento técnico |
-| Sigilo profissional | proteção de informação obtida no exercício | Usar para encobrir irregularidade | dados de cliente/processo |
-| Independência técnica | autonomia responsável dentro das normas | Ceder a pressão do contratante | alterar relatório sem base |
-| Uso indevido de registro | uso irregular de nome/número profissional | Emprestar registro a terceiro | assinar trabalho alheio |
-| Fiscalização | atuação do CRA para verificar regularidade | Dificultar ou impedir fiscal | não apresentar documentos |
-| RN 651/2024 | aprova Regimento do CRA-PR | Confundir com ética | estrutura do CRA-PR |
-| RN 671/2025 | Código de Ética vigente no edital | Usar RN antiga sem edital | deveres e infrações |
-| RNs adicionais pendentes | apenas catalogadas nesta versão | inferir conteúdo pelo número ou por resumo | não fundamentam as questões desta semana |
-| Lei 4.769/1965 | base legal da profissão | Ignorar por ser antiga | campos de atuação |
-| Decreto 61.934/1967 | regulamenta a lei | Tratar como lei autônoma sem relação | detalhamento regulamentar |
+| Essenciais | Principais 1–15 + Extras 4.1–4.5 | primeira passagem, após o checklist | correção integral e cinco registros prioritários |
+| Aprofundamento | Principais 16–30 + Extras 4.6–4.10 | sessão posterior, com teoria já consolidada | justificativa da correta e descarte dos distratores |
+| Revisão | Principais 31–40 + Extras 4.11–4.15 | após intervalo de recuperação | releitura apenas do que gerou erro ou dúvida |
+| Simulado | Principais 41–50 + Extras 4.16–4.20 | sem consulta e com tempo marcado | taxa de acerto, causas de erro e plano de retomada |
 
-## Pegadinhas do Dia 4
+Pare ao fim da faixa programada. Não use o número de questões concluídas como substituto da correção.
 
-- CFA atua em plano nacional/normativo; CRA-PR atua regionalmente no Paraná.
-- CNPJ não dispensa registro/fiscalização se a atividade estiver no campo fiscalizado.
-- Diploma não substitui automaticamente registro profissional regular.
-- Sigilo profissional não serve para acobertar irregularidade ou impedir dever legal.
-- Emprestar nome ou registro a terceiro pode caracterizar problema ético.
-- Assinar trabalho sem participação técnica real é conduta de risco.
-- RN 651/2024 aprova Regimento; RN 671/2025 é Código de Ética.
-- Norma apenas catalogada ou pendente não fundamenta literalidade, prazo, requisito ou sanção.
-- Evite decorar penalidade específica sem fonte; priorize dever, infração e lógica do processo.
-- Palavras como "sempre", "nunca" e "dispensa qualquer fiscalização" costumam indicar exagero.
+## Correção e fechamento
 
----
+Para cada erro, registre:
 
+| Questão | Regra decisiva | Motivo do erro | Fonte/âncora | Ação de recuperação | Data de retorno |
+|---|---|---|---|---|---|
+| exemplo | CFA × CRA | inverti competência | `s1-d4-cfa-cra` | explicar em voz alta e refazer | D+2 |
 
-## Revisão fixa do Dia 4
+Feche cada sessão com três ações:
 
-**Foco:** Administração Pública, Português e RLM. Recupere LIMPE, motivo e motivação, responsabilidade e nexo, contratação, linguagem administrativa e a microtrilha lógica. **Base já estudada:** [Bloco 4 do Dia 4](#s1-d4-b4) e [Bloco 5 do Dia 4](#s1-d4-b5). **Pegadinha:** motivo não é motivação; dano não elimina a necessidade de nexo.
+1. confira o comentário e abra a referência específica;
+2. explique por que a correta é única e por que o distrator escolhido falha;
+3. atualize o caderno de erros e programe a próxima categoria, sem iniciar outra faixa no mesmo impulso.
 
-### Bloco recorrente do Dia 4 — Administração Pública
-
-As Extras 4.1–4.10 recuperam exclusivamente a miniaula já dada no [Bloco 4](#s1-d4-b4): modalidades, conduta/dano/nexo, omissão, causas que rompem ou atenuam o nexo, poder de polícia, moralidade, motivação e sequência geral da licitação. Esta seção é índice de revisão, não capítulo novo.
-
-### Bloco recorrente do Dia 4 — Português e RLM
-
-As Extras 4.11–4.15 recuperam as regras e o modelo do [Bloco 5](#s1-d4-b5). As Extras 4.16–4.20 recuperam proporcionalidade, conjuntos, negação, PA e probabilidade sem reposição já ensinados na microtrilha do [Bloco 4](#s1-d4-b4). Não use esta síntese para acrescentar regra que não esteja nesses blocos.
-
-| Extras | Núcleo decisivo | Erro recorrente |
-|---|---|---|
-| 4.1–4.5 | modalidades, responsabilidade e nexo | presumir responsabilidade apenas pela existência do dano |
-| 4.6–4.10 | polícia, moralidade, motivação e licitação | confundir motivo com motivação ou modalidade com objeto |
-| 4.11–4.15 | restrição/explicação, crase, conectores e redação oficial | trocar concessão por causa ou usar crase antes de verbo |
-| 4.16–4.20 | proporcionalidade, conjuntos, negação, PA e probabilidade | contar interseção duas vezes ou manter denominador sem reposição |
-
-
-## Mapa de conexões do Dia 4
-
-```mermaid
-flowchart LR
-  LEI[Lei 4.769/1965] --> DEC[Decreto 61.934/1967]
-  LEI --> SIST[CFA e CRAs]
-  SIST --> REG[Regimento CRA-PR]
-  SIST --> REGISTRO[Registro e fiscalização]
-  REGISTRO --> ETICA[Código de Ética]
-  ETICA --> SANC[Deveres, infrações e sanções]
-```
-
-**Leitura ativa:** Lei estrutura, Decreto regulamenta, Regimento organiza e Código disciplina condutas. **Pegadinhas:** CFA × CRA; diploma × registro; dever × direito.
-
+**Critério de conclusão do Dia 4:** teoria lida na ordem, faixa Essencial corrigida, caderno de erros iniciado e demais faixas agendadas. Concluir o banco inteiro é uma sequência de sessões, não condição para encerrar a primeira passagem.
 # Dia 5 - Língua Portuguesa e Discursiva
 
 ## Objetivo do dia
@@ -3930,7 +4141,7 @@ As Extras 6.11–6.20 seguem o protocolo e as origens já definidos no [Bloco 6 
 ## Pontos pendentes de confirmação
 
 - Data oficial do ato isolado de Retificação I no site da banca, além da marcação existente no PDF consolidado "conforme Retificação I".
-- Texto oficial consolidado das Resoluções Normativas CFA adicionais citadas no edital vigente, especialmente RN CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025. Até que cada conteúdo seja conferido, ensinado e incorporado, essas normas permanecem excluídas da base das questões.
+- O aprofundamento integral das RNs CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025 permanece pendente. No Dia 4, apenas seus objetos e relações oficialmente confirmados foram ensinados e podem fundamentar as questões correspondentes; procedimento, prazo, valor, requisito ou sanção não explicado continuam fora da base resolutiva.
 
 
 ## Mapa de conexões do Dia 6
@@ -3978,6 +4189,12 @@ Ao final da Semana 1, você deve ter:
 - Lei Federal nº 12.514/2011 - contribuições devidas aos conselhos profissionais: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12514.htm
 - Resolução Normativa CFA nº 671/2025 - Código de Ética e Disciplina dos Profissionais de Administração e das Pessoas Jurídicas: https://documentos.cfa.org.br/?a=show&c=documento&id=1038
 - Resolução Normativa CFA nº 651/2024 - aprova o Regimento do Conselho Regional de Administração do Paraná: https://documentos.cfa.org.br/?a=show&c=documento&id=955
+- Resolução Normativa CFA nº 649/2024 - aprova o Regulamento de Registro do Sistema CFA/CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=951
+- Resolução Normativa CFA nº 670/2025 - altera o Regulamento de Registro aprovado pela RN CFA nº 649/2024: https://documentos.cfa.org.br/?a=show&c=documento&id=1033
+- Resolução Normativa CFA nº 546/2018 - dispõe sobre a concessão de isenção de débitos pelos CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=700
+- Resolução Normativa CFA nº 626/2023 - dispõe sobre o Programa Especial de Recuperação de Créditos (PERC): https://documentos.cfa.org.br/?a=show&c=documento&id=803
+- Resolução Normativa CFA nº 589/2020 - aprova o Regulamento de Fiscalização do Sistema CFA/CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=745
+- Resolução Normativa CFA nº 680/2025 - aprova o Regulamento das Eleições do Sistema CFA/CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=1058
 - Constituição Federal de 1988, art. 37 e demais dispositivos de Administração Pública: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
 - Lei nº 12.527/2011 - Lei de Acesso à Informação: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm
 - Lei nº 13.709/2018 - Lei Geral de Proteção de Dados Pessoais: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm

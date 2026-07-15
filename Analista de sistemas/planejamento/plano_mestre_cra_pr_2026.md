@@ -137,8 +137,8 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 |---|---|---|---|---|---|---|
 | Semana 1 | Dia 1 | Arquitetura e organização de computadores | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 2 | Sistemas operacionais | Administração Pública + Português | Conhecimentos do Cargo | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 1 | Dia 3 | Banco de dados base e SQL | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
+| Semana 1 | Dia 3 | Banco de dados base e SQL | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
+| Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
@@ -248,7 +248,7 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Decreto Federal nº 61.934/1967. Base coberta na Semana 1.
 - [x] Regimento Interno do CRA-PR. Base coberta na Semana 1.
 - [x] Código de Ética indicado no edital vigente conforme material v1.2. Base coberta na Semana 1.
-- [x] Lei nº 12.514/2011 e RNs CFA citadas na leitura dirigida. Introdução feita na Semana 1.
+- [x] Lei nº 12.514/2011 e objetos/relações cobrados das RNs CFA nº 546/2018, 589/2020, 626/2023, 649/2024, 670/2025 e 680/2025. Fontes oficiais confirmadas e base auditada no Dia 4 da Semana 1; aprofundamento literal permanece planejado.
 - [ ] Aprofundamento literal e por casos práticos das normas CRA/CFA. Planejado para Semana 6.
 - [ ] Simulados e revisão por erros em legislação específica. Planejado para Semanas 7 a 9.
 
