@@ -1234,18 +1234,17 @@ O Dia 3 é uma **unidade temática distribuída em sessões**, e não uma tarefa
 
 Use um SGBD local apenas se já estiver disponível. Os exemplos também podem ser resolvidos no papel: identifique entrada, transformação e saída esperada. Marque uma regra como dominada somente quando conseguir explicá-la e produzir um exemplo próprio.
 
-## Cronograma em sessões executáveis de aproximadamente 3h líquidas
+## Primeira passagem em três sessões reais
 
-| Sessão | Tempo líquido | Entrega |
+O Dia 3 termina após **três sessões de 2h30 a 3h líquidas**. O restante do banco pertence ao calendário de revisão, e não a novas sessões do mesmo dia.
+
+| Sessão | Tempo líquido | Entrega e ponto de parada |
 |---|---:|---|
-| A — fundamentos | 3h | abertura; conceitos de SGBD; arquitetura; modelo relacional; MER; normalização básica |
-| B — SQL e aprofundamento I | 3h | SQL básico; consultas; agregações; `NULL`; restrições; comandos de alteração; objetos programáveis |
-| C — aprofundamento II e blocos recorrentes | 3h | transações, isolamento, log, backup, segurança, modelagem avançada; prática guiada; Blocos 4, 5 e 6 |
-| D — primeira passagem | 3h | mini revisão; checklist; P1–P15 e E1–E5; correção completa e registros de erro |
-| E — aprofundamento | 3h | P16–P30 e E6–E10; correção A–D; exemplos próprios para os erros |
-| F — revisão e simulado | 3h | P31–P40 e E11–E15 em revisão; P41–P50 e E16–E20 em simulado; fechamento |
+| A — fundamentos e SQL | 2h50 | até 2h35 para abertura, Bloco 1 e Bloco 2, itens 7–14; 15min de recuperação; encerrar após views, procedures e triggers |
+| B — aprofundamento e aplicação | 2h50 | até 2h35 para Bloco 2, itens 15–23, Bloco 3 e Bloco 4; 15min para conferir as entregas e encerrar após concluir o Bloco 4 e preparar teoricamente as Extras 3.1–3.15 |
+| C — fechamento e amostra Essencial | 2h50 | 65min para Blocos 5 e 6, mini revisão e checklist; 45min para P1–P8 + E1–E2; 60min para correção integral e caderno de erros |
 
-Pausas de 5 a 15 minutos ficam fora do tempo líquido. Se uma correção exigir retorno à teoria, conclua a questão atual e registre a retomada; não comprima duas sessões para “fechar o dia”.
+Pausas de 5 a 15 minutos ficam fora do tempo líquido. A Sessão C termina depois da correção integral da amostra fixa de 10 Essenciais: P1–P8 + E1–E2. As outras 10 Essenciais — P9–P15 + E3–E5 — abrem obrigatoriamente D+2 e devem ser corrigidas antes de qualquer questão de Aprofundamento. Não crie Sessões D, E ou F para “zerar” o banco.
 
 ## Bloco 1 — Teoria principal: fundamentos, modelo relacional e SQL
 
@@ -2217,12 +2216,12 @@ O banco completo permanece disponível, mas não deve ser resolvido de uma vez. 
 
 | Uso | Faixa | Quantidade | Momento | Meta de execução |
 |---|---|---:|---|---|
-| Essenciais | P1–P15 + E1–E5 | 20 | Sessão D, primeira passagem | resolver com consulta mínima e corrigir todas as alternativas |
-| Aprofundamento | P16–P30 + E6–E10 | 20 | Sessão E | combinar regras e voltar às âncoras específicas |
-| Revisão | P31–P40 + E11–E15 | 15 | início da Sessão F | refazer sem consulta os pontos antes errados |
-| Simulado | P41–P50 + E16–E20 | 15 | fim da Sessão F | tempo contínuo, sem consulta, correção posterior |
+| Essenciais | P1–P15 + E1–E5 | 20 | Sessão C: P1–P8 + E1–E2; abertura de D+2: P9–P15 + E3–E5 | duas amostras fixas de 10; resolver e corrigir integralmente cada uma antes de avançar |
+| Aprofundamento | P16–P30 + E6–E10 | 20 | somente depois de corrigir as 10 Essenciais que abrem D+2 | combinar regras e voltar às âncoras; se não couber em D+2, continuar em ciclo próprio antes de D+7 |
+| Revisão | P31–P40 + E11–E15 | 15 | revisão D+7, em ciclo próprio | resolver sem consulta e retomar somente os pontos errados ou duvidosos |
+| Simulado | P41–P50 + E16–E20 | 15 | simulado do ciclo seguinte | executar em tempo contínuo, sem consulta, e corrigir depois |
 
-Se a Sessão D consumir todo o tempo com teoria e correção das Essenciais, encerre ali. As demais faixas são etapas programadas, não atraso.
+A ordem de D+2 é fixa: primeiro P9–P15 + E3–E5, com correção integral; somente depois começa o Aprofundamento. Não há obrigação de concluir as 20 questões de Aprofundamento no mesmo ciclo: o saldo segue em ciclo próprio antes de D+7. D+2, D+7 e o simulado são compromissos futuros explícitos e não prolongam o Dia 3. Reserve de 2h30 a 3h para cada ciclo, incluindo correção.
 
 ## Correção e fechamento
 
@@ -2233,9 +2232,11 @@ Para cada erro ou acerto por dúvida:
 3. explique por que cada alternativa A–D está certa ou errada;
 4. abra a referência específica indicada na questão;
 5. escreva `confusão | regra correta | contraexemplo | próxima revisão`;
-6. refaça a questão após 24 horas e sete dias.
+6. refaça a questão nas revisões D+2 e D+7.
 
 **Critério de encerramento:** a sessão termina quando os itens previstos foram corrigidos e os erros registrados. Quantidade resolvida sem correção não caracteriza conclusão.
+
+**Critério de conclusão da primeira passagem do Dia 3:** três sessões encerradas, teoria percorrida na ordem, Blocos 4–6 executados e a amostra fixa P1–P8 + E1–E2 resolvida e corrigida integralmente. As outras 10 Essenciais abrem D+2 antes do Aprofundamento; as categorias globais permanecem 20 Essenciais, 20 de Aprofundamento, 15 de Revisão e 15 de Simulado.
 
 # Dia 4 — Legislação CRA-PR/CFA
 
@@ -2255,21 +2256,17 @@ Este dia é uma **unidade temática distribuída em sessões**. O banco tem 70 q
 5. resolva apenas a faixa programada para a sessão;
 6. corrija cada erro pela referência específica e conclua o caderno de erros.
 
-## Cronograma em sessões executáveis
+## Primeira passagem em três sessões reais
 
-Os tempos são líquidos; pausas ficam fora da contagem.
+Os tempos são líquidos; pausas ficam fora da contagem. O Dia 4 termina após a Sessão C. As revisões D+2, D+7 e o simulado pertencem a ciclos futuros.
 
 | Sessão | Tempo estimado | Atividade e entrega |
 |---|---:|---|
-| A — base institucional | 2h50 | Bloco 1: Lei 4.769/1965, Decreto 61.934/1967, CFA × CRA, registro, fiscalização e responsabilidade técnica; mapa de uma página |
-| B — organização e ética | 2h55 | Bloco 2: Regimento/RN 651 e Código de Ética/RN 671; quadro `dever → infração → consequência` |
-| C — normas dirigidas e matérias fixas | 2h55 | Bloco 3, Blocos 4 e 5, Bloco 6, mini revisão e checklist |
-| D — primeira passagem | até 3h | Principais 1–15 e Extras 4.1–4.5; correção e cinco registros prioritários |
-| E — aprofundamento | até 3h | Principais 16–30 e Extras 4.6–4.10; correção por fonte |
-| F — revisão | 2h15 a 2h45 | Principais 31–40 e Extras 4.11–4.15; releitura apenas dos erros |
-| G — simulado | 2h15 a 2h45 | Principais 41–50 e Extras 4.16–4.20, sem consulta; correção e fechamento |
+| A — base institucional, organização e ética | 2h50 | até 2h30 para Blocos 1 e 2; 20min para o mapa `fonte → órgão → competência` e o quadro `dever → infração → consequência` |
+| B — normas e matérias fixas | 2h50 | até 2h35 para Bloco 3 e Blocos 4 e 5; 15min para conferir as entregas e encerrar após o parágrafo argumentativo completo |
+| C — recuperação e amostra Essencial | 2h50 | 35min para Bloco 6, mini revisão e checklist; 60min para Principais 1–8 + Extras 4.1–4.2; 75min para correção integral e caderno de erros |
 
-Não avance para outra faixa apenas para “zerar” o banco. A correção fundamentada faz parte do tempo de estudo.
+A Sessão C termina depois da correção integral da amostra fixa de 10 Essenciais: Principais 1–8 + Extras 4.1–4.2. As outras 10 Essenciais — Principais 9–15 + Extras 4.3–4.5 — abrem obrigatoriamente D+2 e devem ser corrigidas antes de qualquer questão de Aprofundamento. Não avance para outra faixa nem crie Sessões D–G apenas para “zerar” o banco.
 
 <a id="s1-d4-b1"></a>
 ## Bloco 1 — Teoria principal: base legal e atuação do Sistema CFA/CRAs
@@ -2535,7 +2532,7 @@ Use este protocolo antes de transformar uma afirmação em gabarito:
 **Caso 5 — sanção:** primeiro enquadre a conduta; depois verifique sujeito, processo, circunstâncias e regra de gradação. Não comece escolhendo a penalidade máxima.
 
 <a id="s1-d4-b4"></a>
-### Bloco 4 — Administração Pública e RLM programado (40min)
+## Bloco 4 — Administração Pública e RLM programado (40min)
 
 Este bloco contém a teoria necessária para as Extras 4.1–4.10 e 4.16–4.20. Ele não depende do Dia 6.
 
@@ -2608,7 +2605,7 @@ Motivação objetiva significa registrar necessidade, objeto, base legal, crité
 **Pegadinhas do bloco:** eficiência acima da lei; publicidade como promoção; dano sem nexo; culpa concorrente tratada como exclusiva; concurso confundido com concorrência; somar interseções duas vezes; negar conjunção mantendo `e`; manter denominador em retirada sem reposição.
 
 <a id="s1-d4-b5"></a>
-### Bloco 5 — Português e parágrafo argumentativo completo (30min)
+## Bloco 5 — Português e parágrafo argumentativo completo (30min)
 
 #### Regras necessárias para as Extras 4.11–4.15
 
@@ -2641,7 +2638,7 @@ Use quatro movimentos: **tópico frasal**, **explicação**, **exemplo** e **fec
 **Pegadinha:** enumerar normas ou palavras como “ética”, “transparência” e “eficiência” sem explicar a relação entre elas não constitui argumento.
 
 <a id="s1-d4-b6"></a>
-### Bloco 6 — Recuperação CFA x CRA e caderno de erros (20min)
+## Bloco 6 — Recuperação CFA x CRA e caderno de erros (20min)
 
 Este bloco não acrescenta norma ou conceito. Sem consultar, construa duas colunas: **CFA** — coordenação e normatização nacional — e **CRA** — registro, fiscalização e execução regional dentro da jurisdição. Para cada erro, associe apenas uma das fontes já estudadas: Lei, Decreto, Regimento aprovado pela RN nº 651/2024 ou Código de Ética aprovado pela RN nº 671/2025.
 
@@ -2685,12 +2682,12 @@ Este bloco não acrescenta norma ou conceito. Sem consultar, construa duas colun
 
 | Uso | Questões | Quando resolver | Entrega |
 |---|---|---|---|
-| Essenciais | Principais 1–15 + Extras 4.1–4.5 | primeira passagem, após o checklist | correção integral e cinco registros prioritários |
-| Aprofundamento | Principais 16–30 + Extras 4.6–4.10 | sessão posterior, com teoria já consolidada | justificativa da correta e descarte dos distratores |
-| Revisão | Principais 31–40 + Extras 4.11–4.15 | após intervalo de recuperação | releitura apenas do que gerou erro ou dúvida |
-| Simulado | Principais 41–50 + Extras 4.16–4.20 | sem consulta e com tempo marcado | taxa de acerto, causas de erro e plano de retomada |
+| Essenciais | Principais 1–15 + Extras 4.1–4.5 | Sessão C: Principais 1–8 + Extras 4.1–4.2; abertura de D+2: Principais 9–15 + Extras 4.3–4.5 | duas amostras fixas de 10, cada uma com correção integral antes de avançar |
+| Aprofundamento | Principais 16–30 + Extras 4.6–4.10 | somente depois de corrigir as 10 Essenciais que abrem D+2 | justificar a correta e descartar os distratores; se não couber em D+2, continuar em ciclo próprio antes de D+7 |
+| Revisão | Principais 31–40 + Extras 4.11–4.15 | revisão D+7, em ciclo próprio | resolução sem consulta e releitura apenas do que gerou erro ou dúvida |
+| Simulado | Principais 41–50 + Extras 4.16–4.20 | simulado do ciclo seguinte | tempo marcado, taxa de acerto, causas de erro e plano de retomada |
 
-Pare ao fim da faixa programada. Não use o número de questões concluídas como substituto da correção.
+A ordem de D+2 é fixa: primeiro Principais 9–15 + Extras 4.3–4.5, com correção integral; somente depois começa o Aprofundamento. Não há obrigação de concluir as 20 questões de Aprofundamento no mesmo ciclo: o saldo segue em ciclo próprio antes de D+7. D+2, D+7 e o simulado não prolongam o Dia 4; reserve de 2h30 a 3h para cada ciclo futuro.
 
 ## Correção e fechamento
 
@@ -2706,7 +2703,7 @@ Feche cada sessão com três ações:
 2. explique por que a correta é única e por que o distrator escolhido falha;
 3. atualize o caderno de erros e programe a próxima categoria, sem iniciar outra faixa no mesmo impulso.
 
-**Critério de conclusão do Dia 4:** teoria lida na ordem, faixa Essencial corrigida, caderno de erros iniciado e demais faixas agendadas. Concluir o banco inteiro é uma sequência de sessões, não condição para encerrar a primeira passagem.
+**Critério de conclusão da primeira passagem do Dia 4:** três sessões encerradas, teoria lida na ordem e a amostra fixa Principais 1–8 + Extras 4.1–4.2 resolvida e corrigida integralmente, com caderno de erros iniciado. As outras 10 Essenciais abrem D+2 antes do Aprofundamento; as categorias globais permanecem 20 Essenciais, 20 de Aprofundamento, 15 de Revisão e 15 de Simulado.
 # Dia 5 - Língua Portuguesa e Discursiva
 
 ## Objetivo do dia

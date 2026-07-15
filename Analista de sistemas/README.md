@@ -29,7 +29,7 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 5. Língua Portuguesa e Discursiva
 6. Administração Pública, Raciocínio Lógico-Matemático e Revisão
 
-Os Dias 3 e 4 foram auditados integralmente: a teoria agora antecede todas as cobranças, o banco de 70 itens de cada dia está distribuído por uso e as sessões foram divididas em etapas executáveis de aproximadamente 3 horas líquidas. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
+Os Dias 3 e 4 foram auditados integralmente: a teoria antecede todas as cobranças e a primeira passagem termina em três sessões de 2h50, com apenas 10 Essenciais resolvidas e corrigidas. O saldo abre D+2; Revisão e Simulado ficam em D+7 e no ciclo seguinte. No Dia 4, questões reescritas por integração normativa produziram a distribuição substantiva de 30 Médias, 15 Difíceis e 5 Muito difíceis. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
 
 ## Questões
 

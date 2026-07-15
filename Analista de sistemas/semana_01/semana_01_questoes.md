@@ -10,7 +10,7 @@ Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
 **Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões extras de revisão fixa (20 por dia).
 
-**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. A matriz de produção é 20/20/10 para 50 principais e 8/8/4 para 20 extras, mas a auditoria semântica posterior deve corrigir rótulos superestimados ou subestimados e documentar a exceção. Após a auditoria deste lote, o Dia 3 ficou em 25/18/7 e o Dia 4 em 42/8/0 nas principais; as justificativas estão em `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
+**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. A matriz de produção é 20/20/10 para 50 principais e 8/8/4 para 20 extras, mas a auditoria semântica posterior deve corrigir rótulos superestimados ou subestimados e documentar a exceção. Após a auditoria deste lote, o Dia 3 ficou em 25/18/7; o Dia 4 passou a 30/15/5 depois da reescrita substantiva dos casos integrados. As justificativas estão em `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
 
 ---
 
@@ -5502,16 +5502,16 @@ C) a estrutura interna específica do CRA-PR.
 D) deveres éticos e hipóteses de sigilo dos Profissionais de Administração.
 
 ### Questão 18
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Aprofundamento
-**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Diretoria Executiva](semana_01_estudo.md#s1-d4-diretoria); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
-Ao analisar a consequência de uma infração ética, o candidato deve considerar:
+Em processo administrativo fiscal por fato ocorrido no Paraná, a unidade de fiscalização conclui a instrução. A Diretoria Executiva pretende realizar o julgamento de primeira instância por administrar as atividades do Conselho, enquanto o autuado sustenta que somente o CFA poderia julgá-lo. Qual encaminhamento compatibiliza o Regulamento de Fiscalização e o Regimento do CRA-PR?
 
-A) que todas as sanções são aplicáveis de forma idêntica a pessoas físicas e jurídicas.
-B) que a penalidade máxima decorre automaticamente da simples comprovação material da conduta.
-C) a norma aplicável, a gravidade do caso e as especificidades previstas para pessoa física ou jurídica.
-D) que apenas decisão judicial criminal pode impor qualquer sanção no âmbito profissional.
+A) Manter o processo no CRA-PR, submeter a primeira instância ao Plenário e reservar à Diretoria execução e gestão, sem deslocar ao CFA a competência regional.
+B) Manter o processo no CRA-PR, mas atribuir o julgamento de primeira instância à Diretoria por ela administrar as atividades, cabendo ao Plenário apenas executar a decisão.
+C) Remeter o julgamento inicial ao CFA e permitir que o CRA-PR apenas instrua o processo, porque a função uniformizadora federal absorve a competência regional originária.
+D) Submeter o julgamento à unidade de fiscalização e reservar ao Plenário eventual revisão, porque o órgão que instrui o processo também exerce a primeira instância decisória.
 
 ### Questão 19
 **Nível: Médio**
@@ -5538,28 +5538,28 @@ C) O sigilo pode conviver com obrigações legais e com atuação fiscalizatóri
 D) A justa causa e as hipóteses legais precisam ser consideradas na análise do dever de sigilo.
 
 ### Questão 21
-**Nível: Médio**
+**Nível: Muito difícil**
 **Uso:** Aprofundamento
-**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns)
+**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Código de Ética e RN 671/2025](semana_01_estudo.md#s1-d4-codigo-etica); [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
-Assinale a associação correta entre norma e objeto no conjunto estudado.
+Uma nota de consolidação normativa afirma que: a RN CFA nº 670/2025 substituiu integralmente a RN nº 649/2024; a RN nº 671/2025 apenas complementou a RN nº 640/2024; a RN nº 680/2025 apenas alterou a RN nº 633/2023; e o PERC da RN nº 626/2023 permanece aberto em 2026. Qual revisão corrige integralmente a nota?
 
-A) RN CFA nº 651/2024 — Código de Ética; RN CFA nº 671/2025 — Regimento Interno do CRA-PR.
-B) RN CFA nº 649/2024 — eleições; RN CFA nº 680/2025 — registro profissional.
-C) RN CFA nº 626/2023 — fiscalização; RN CFA nº 589/2020 — recuperação de créditos.
-D) RN CFA nº 651/2024 — Regimento Interno do CRA-PR; RN CFA nº 671/2025 — Código de Ética e Disciplina.
+A) Toda resolução posterior substitui a anterior sobre tema próximo e, por ser mais recente, pode afastar a lei e o decreto regulamentar.
+B) A RN nº 670 preserva a RN nº 649, mas a RN nº 671 convive com a RN nº 640, a RN nº 680 apenas altera a RN nº 633 e o PERC permanece aberto enquanto não houver revogação expressa.
+C) A RN nº 671 revoga a RN nº 640 e a RN nº 680 revoga a RN nº 633, mas a RN nº 670 elimina todo o Regulamento de Registro e a ementa da RN nº 626 basta para presumir condições atuais do PERC.
+D) A RN nº 649 permanece como base, com o art. 11 alterado pela RN nº 670; as RNs nº 671 e 680 revogam suas antecessoras; e o PERC de 2023 deve ser lido com a RN nº 627, preservados lei e decreto.
 
 ### Questão 22
-**Nível: Médio**
+**Nível: Muito difícil**
 **Uso:** Aprofundamento
-**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670)
 
-Uma empresa presta de forma habitual serviços enquadrados no campo da Administração. Quanto à regularidade perante o Sistema CFA/CRAs, é correto afirmar que:
+Uma consultoria sediada no Paraná, com CNPJ ativo, oferece habitualmente serviços no campo da Administração. Sustenta que somente o CFA poderia examinar seu registro e fiscalizá-la, pois o Regulamento de Registro é uma norma nacional aprovada por esse órgão. Assinale a análise completa.
 
-A) a pessoa jurídica somente se sujeita a registro se todos os seus sócios forem Administradores.
-B) a indicação de responsável técnico registrado sempre substitui o eventual registro da pessoa jurídica.
-C) a existência de CNPJ e contrato social impede a incidência de regras profissionais sobre a empresa.
-D) a atividade pode sujeitar a pessoa jurídica a registro e fiscalização, além de exigir responsabilidade técnica.
+A) A atividade pode exigir registro e o CRA-PR pode fiscalizar, mas o pedido registral deve ser decidido originariamente pelo CFA porque ele aprovou o regulamento nacional.
+B) O CFA uniformiza a disciplina e o CRA-PR fiscaliza no território, mas o CNPJ ativo dispensa o registro da pessoa jurídica mesmo quando os serviços prestados estão no campo profissional.
+C) A atividade pode exigir registro e o CRA-PR pode processá-lo, mas a fiscalização cotidiana cabe ao CFA porque a resolução aplicada tem alcance nacional.
+D) A atividade deve ser examinada, o CFA uniformiza a disciplina nacional e o CRA-PR processa o registro e fiscaliza a pessoa jurídica em sua jurisdição.
 
 ### Questão 23
 **Nível: Médio**
@@ -5580,10 +5580,10 @@ D) nacional, embora a fiscalização ordinária se concentre no Paraná.
 
 Um candidato confunde conselho profissional com sindicato. A correção conceitual adequada é:
 
-A) o conselho exerce função pública de registro e fiscalização profissional; o sindicato representa interesses da categoria, possuindo natureza e finalidade distintas.
+A) conselho e sindicato são autarquias voltadas à fiscalização profissional e diferem apenas pela abrangência territorial de sua atuação.
 B) o conselho representa interesses trabalhistas coletivos, enquanto o sindicato aplica sanções éticas e mantém o registro profissional.
-C) ambos são autarquias e diferem apenas pela abrangência territorial.
-D) o sindicato é unidade descentralizada do conselho e executa obrigatoriamente suas resoluções.
+C) o conselho exerce função pública de registro e fiscalização profissional; o sindicato representa interesses da categoria, possuindo natureza e finalidade distintas.
+D) o sindicato integra a estrutura descentralizada do conselho e executa suas resoluções profissionais na representação obrigatória da categoria.
 
 ### Questão 25
 **Nível: Médio**
@@ -5598,40 +5598,40 @@ C) RN CFA nº 680/2025.
 D) RN CFA nº 651/2024.
 
 ### Questão 26
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Aprofundamento
-**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
+**Referência:** [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
-Ao estudar uma resolução cuja íntegra não foi consolidada na apostila, mas cuja ementa oficial foi confirmada, a postura tecnicamente mais segura é:
+Em 2026, um resumo não oficial anuncia adesão atual ao PERC e reproduz descontos e datas históricos. O autor consultou apenas a ementa da RN CFA nº 626/2023, embora o repositório oficial indique alteração pela RN nº 627/2023. Qual procedimento produz conclusão juridicamente rastreável?
 
-A) completar prazos e requisitos por analogia com outro conselho profissional.
-B) presumir que toda resolução do CFA contém o mesmo procedimento e as mesmas sanções.
-C) substituir a norma pela lei federal mais próxima, ainda que tratem de objetos diferentes.
-D) restringir a conclusão ao objeto confirmado e consultar a fonte oficial antes de afirmar prazos ou penalidades.
+A) Adotar o resumo mais recente e apenas confrontar sua ementa, pois a data do material secundário resolve eventual divergência entre versões.
+B) Tratar a RN nº 627 como norma capaz de tornar o programa permanente e de modificar livremente a Lei nº 12.514/2011.
+C) Usar a ementa para confirmar objeto, prazos, descontos e abertura atual, porque a consulta à norma alteradora seria apenas complementar.
+D) Conferir a fonte oficial, ler as RNs nº 626 e 627 em conjunto e não transportar a adesão de 2023 nem suas condições para 2026 sem nova base oficial.
 
 ### Questão 27
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Aprofundamento
-**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Durante uma diligência, o fiscalizado dirige ofensas pessoais à equipe e recusa, sem justificativa, acesso a documentos pertinentes. No plano ético-profissional, o caso pode envolver:
+Em fiscalização regular no Paraná, o inscrito ofende a equipe, oculta documentos pertinentes e alega que o direito de defesa autoriza recusa geral. Sustenta também que apenas o CFA poderia apurar os fatos. O processo administrativo acaba de ser instaurado. Assinale a conclusão correta.
 
-A) imunidade decorrente do direito de defesa, que abrange ofensas e obstrução deliberada.
-B) apenas inadimplemento contratual privado, porque a fiscalização não integra a atividade dos CRAs.
-C) violação de urbanidade e possível obstrução à fiscalização, sem prejuízo do devido processo para apuração.
-D) nulidade automática da diligência, independentemente da regularidade da solicitação feita.
+A) A defesa não legitima obstrução; o CRA-PR atua em sua jurisdição, e qualquer sanção depende do processo e de decisão administrativa definitiva.
+B) O CRA-PR pode aplicar imediatamente a sanção máxima, pois a comprovação material dispensa contraditório e individualização.
+C) O direito de defesa torna lícitas a recusa e as ofensas, e a atuação regional depende de autorização individual do CFA.
+D) O registro ativo reduz os fatos a irregularidade procedimental sem relevância ética e impede atuação fiscalizatória regional.
 
 ### Questão 28
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Aprofundamento
-**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670)
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
-Uma resolução posterior altera dispositivos do Regulamento de Registro aprovado por resolução anterior. Para identificar a disciplina vigente, deve-se:
+Ao consolidar o Regulamento de Registro, uma equipe usa apenas o texto original da RN CFA nº 649/2024. Outra afirma que a RN nº 670/2025 revogou integralmente o regulamento e pode afastar requisitos legais por ser posterior. Qual método está correto?
 
-A) ignorar a alteração enquanto a resolução original não for formalmente republicada pela União.
-B) consultar apenas a resolução alteradora, pois ela necessariamente reproduz todo o regulamento.
-C) ler o texto anterior em conjunto com as alterações posteriores, observando o alcance expresso de cada modificação.
-D) considerar revogado todo o regulamento anterior, mesmo quando a norma posterior altera apenas dispositivos determinados.
+A) Ignorar a RN nº 670 até que todo o texto da RN nº 649 seja republicado em um único documento.
+B) Aplicar somente a RN nº 670, pois a alteração de um artigo substitui o regulamento inteiro e prevalece sobre lei e decreto.
+C) Aplicar ao art. 11 a redação da RN nº 670, preservar a RN nº 649 no restante e interpretar ambas nos limites da lei e do decreto.
+D) Permitir que cada CRA escolha entre a redação original e a alterada conforme a conveniência de sua jurisdição.
 
 ### Questão 29
 **Nível: Médio**
@@ -5658,16 +5658,16 @@ C) à função deliberativa superior reservada ao Plenário.
 D) à edição de normas nacionais vinculantes para todos os CRAs.
 
 ### Questão 31
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Revisão
-**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Servidor público regularmente inscrito no CRA exerce, em seu cargo, atividade própria do campo profissional. Quanto ao Código de Ética:
+Servidor público inscrito no CRA exerce atividade própria do campo profissional. Por ordem escrita da chefia, assina relatório integralmente preparado por terceiro, sem ter orientado ou supervisionado o trabalho, e afirma que o vínculo funcional exclui o Código de Ética. Qual análise é correta?
 
-A) ele se aplica apenas ao exercício liberal e nunca alcança atividade funcional.
-B) o estatuto funcional elimina automaticamente toda responsabilidade perante o sistema profissional.
-C) os deveres éticos profissionais continuam pertinentes quando a atuação se insere no campo da profissão.
-D) a incidência depende exclusivamente de remuneração privada adicional.
+A) O regime funcional afasta o Código, porque responsabilidade profissional somente existe no exercício liberal.
+B) A ordem escrita transfere à chefia toda responsabilidade e torna regular a assinatura sem participação técnica.
+C) O Código aplica-se; a ordem não sana assinatura sem supervisão, e eventual sanção exige processo e decisão definitiva.
+D) Somente o empregador público pode examinar a conduta, e o CRA deve aguardar condenação criminal antes de iniciar qualquer apuração.
 
 ### Questão 32
 **Nível: Médio**
@@ -5706,16 +5706,16 @@ C) transferir ao CFA toda comunicação destinada ao profissional inscrito no CR
 D) sanar automaticamente qualquer infração anterior praticada pelo inscrito.
 
 ### Questão 35
-**Nível: Médio**
+**Nível: Muito difícil**
 **Uso:** Revisão
-**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
 
-Um cliente exige que o profissional omita dado tecnicamente relevante para melhorar a aparência de um parecer. A resposta compatível com o Código de Ética é:
+Um cliente pede parecer favorável a uma operação e exige que seja retirada uma limitação metodológica relevante. Os cálculos foram produzidos por equipe que o profissional não orientou nem supervisionou, mas o cliente afirma que a defesa de seu interesse legítimo autoriza a omissão e a assinatura. Qual resposta concilia corretamente os deveres envolvidos?
 
-A) atender, pois a defesa do cliente prevalece sobre qualquer limite técnico.
-B) preservar honestidade, responsabilidade e independência técnica, recusando a omissão indevida.
-C) atender se houver cláusula contratual de confidencialidade sobre o parecer.
-D) transferir a assinatura a outro profissional, mantendo a mesma omissão.
+A) Explicitar a limitação, preservar conclusão independente e defender o interesse legítimo, mas assinar os cálculos da equipe mesmo sem tê-los orientado ou supervisionado.
+B) Defender o interesse legítimo sem distorcer o parecer, explicitar a limitação, manter independência técnica e não assinar trabalho sem participação, orientação ou supervisão.
+C) Não assinar os cálculos sem orientação, preservar conclusão independente e defender o interesse legítimo, mas omitir da versão entregue a limitação registrada internamente.
+D) Explicitar a limitação e não assinar o trabalho alheio, mas aceitar a conclusão exigida pelo cliente sempre que ela favorecer um interesse legítimo.
 
 ### Questão 36
 **Nível: Médio**
@@ -5732,26 +5732,26 @@ D) aprova o Regulamento de Registro de pessoas físicas e jurídicas no Sistema 
 ### Questão 37
 **Nível: Difícil**
 **Uso:** Revisão
-**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670) e [hierarquia das fontes](semana_01_estudo.md#s1-d4-fontes-hierarquia)
+**Referência:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
-A respeito da RN CFA nº 670/2025 e da hierarquia normativa, assinale a alternativa correta.
+Uma instrução regional determina que, no Paraná, seja mantida a redação original do art. 11 da RN CFA nº 649/2024 e afirma que a RN nº 670/2025, por ser posterior, teria revogado todo o regulamento e poderia dispensar requisito estabelecido em lei. Qual revisão resolve os três erros?
 
-A) A resolução promove alterações no regulamento aprovado por outra resolução, sem poder revogar lei federal.
-B) A resolução substitui o Decreto nº 61.934/1967 em toda matéria profissional.
-C) A resolução altera automaticamente qualquer lei federal que mencione registro profissional.
-D) A resolução pode revogar a Lei nº 4.769/1965 porque é mais recente.
+A) Aplicar a RN nº 670 ao art. 11, preservar o restante da RN nº 649, respeitar lei e decreto e alinhar a execução regional à norma nacional.
+B) Reconhecer a alteração parcial, mas preservar a redação original no Paraná porque a autonomia regional permite afastar norma nacional sobre registro.
+C) Respeitar a hierarquia legal, porém ignorar a RN nº 670 até que a RN nº 649 seja integralmente republicada pelo CFA.
+D) Aplicar a instrução regional por ser específica e a RN nº 670 por ser recente, escolhendo em cada caso a solução mais favorável, ainda que contradiga a lei.
 
 ### Questão 38
 **Nível: Difícil**
 **Uso:** Revisão
-**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns)
+**Referência:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns); [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680)
 
-Assinale a sequência que associa corretamente as três resoluções aos respectivos temas: RN CFA nº 589/2020; RN CFA nº 626/2023; RN CFA nº 680/2025.
+Ao revisar uma tabela normativa, o candidato precisa conferir não apenas o objeto, mas também a relação de alteração ou revogação e o alcance temporal ensinado. Qual linha de consolidação está integralmente correta?
 
-A) registro; ética; regimento interno.
-B) fiscalização; PERC; eleições.
-C) eleições; fiscalização; registro.
-D) PERC; isenção de débitos; ética.
+A) RN nº 589 — PERC e revogação das RNs nº 446 e 449; RN nº 626 — fiscalização alterada pela RN nº 627; RN nº 680 — registro e revogação da RN nº 633; RN nº 546 — ética e revogação da RN nº 510.
+B) RN nº 589: fiscalização, revoga RNs nº 446 e 449; RN nº 626: PERC alterado pela RN nº 627, com adesão em 2023; RN nº 680: eleições, revoga RN nº 633; RN nº 546: isenção ligada à Lei nº 12.514, revoga RN nº 510.
+C) RN nº 589 — eleições; RN nº 626 — PERC permanentemente aberto; RN nº 680 — alteração do Regulamento de Registro; RN nº 546 — fiscalização, sem relação com lei federal.
+D) RN nº 589 — fiscalização sem revogações; RN nº 626 — isenção de débitos; RN nº 680 — eleições que apenas complementam a RN nº 633; RN nº 546 — PERC alterado pela RN nº 627.
 
 ### Questão 39
 **Nível: Médio**
@@ -5780,50 +5780,50 @@ D) dever que pode ser integralmente delegado ao responsável administrativo da p
 ### Questão 41
 **Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres)
+**Referência:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Um cliente pede ao profissional que omita de parecer uma limitação metodológica relevante, alegando que a informação prejudicaria a negociação. A omissão tornaria a conclusão mais favorável, mas tecnicamente incompleta. À luz dos deveres profissionais, a conduta adequada é:
+Um profissional detém informação confidencial obtida licitamente. Durante apuração regular, recebe requisição pertinente do CRA e, ao mesmo tempo, ordem do cliente para omitir limitação técnica do parecer e recusar qualquer cooperação sob alegação de sigilo absoluto. Qual solução equilibra corretamente os deveres?
 
-A) omitir a limitação, porque a defesa do interesse econômico confiado prevalece enquanto não houver ordem judicial em contrário.
-B) registrar a limitação apenas em arquivo interno e entregar ao destinatário o parecer incompleto solicitado pelo cliente.
-C) recusar a distorção, explicitar a limitação relevante e defender apenas interesses legítimos, preservando independência técnica e limites éticos e legais.
-D) encerrar automaticamente o contrato sem esclarecer o problema, pois qualquer divergência técnica impede a continuidade da relação profissional.
+A) Obedecer integralmente ao cliente, porque defender seus interesses transforma o sigilo em impedimento absoluto à fiscalização e autoriza a omissão técnica.
+B) Divulgar publicamente todo o conteúdo confidencial, pois a existência de fiscalização elimina qualquer dever de sigilo.
+C) Resguardar o sigilo legítimo, atender adequadamente à requisição válida e preservar a independência técnica, expondo a limitação relevante.
+D) Destruir os registros e encerrar o contrato sem explicação, pois qualquer tensão entre sigilo e fiscalização afasta os deveres profissionais.
 
 ### Questão 42
-**Nível: Médio**
+**Nível: Muito difícil**
 **Uso:** Simulado
-**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
-O enunciado descreve uma infração, mas não informa artigo, circunstâncias agravantes nem elementos suficientes para individualizar a sanção. A resposta mais rigorosa é:
+Há prova documental de que uma pessoa jurídica registrada obstruiu fiscalização do CRA-PR. O processo acaba de ser instaurado, não houve contraditório nem individualização das circunstâncias, e propõe-se aplicar desde logo suspensão e multa. Qual análise é integralmente correta?
 
-A) reconhecer a possível infração, mas não inventar penalidade específica sem consultar a norma e os elementos do caso.
-B) aplicar automaticamente a sanção mais grave para evitar impunidade.
-C) importar a penalidade prevista em norma de outro conselho profissional.
-D) concluir que nenhuma responsabilização é possível enquanto não houver condenação judicial.
+A) O CRA-PR pode apurar e o Código alcança a pessoa jurídica, mas a sanção exige decisão definitiva e individualização; suspensão e cancelamento não se aplicam a esse sujeito.
+B) O CRA-PR pode apurar e suspensão e cancelamento não se aplicam à pessoa jurídica, mas a prova documental permite advertência e multa antes da decisão definitiva.
+C) O CRA-PR pode apurar e a sanção exige decisão definitiva e individualização, mas a suspensão pode atingir a pessoa jurídica quando a conduta obstrui fiscalização.
+D) O Código alcança a pessoa jurídica e a sanção exige decisão definitiva e individualização, mas a competência originária pelo fato ocorrido no Paraná pertence ao CFA.
 
 ### Questão 43
 **Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
+**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Quanto à aplicação do Código de Ética às pessoas jurídicas registradas, assinale a alternativa correta.
+Duas pessoas físicas respondem, em processos distintos, por condutas enquadradas na mesma infração ética. Uma apresenta circunstâncias potencialmente atenuantes; a outra, circunstâncias potencialmente agravantes. Antes das decisões definitivas, propõe-se aplicar a ambas a mesma sanção máxima apenas porque o enquadramento é igual. Qual método está correto?
 
-A) Todas as sanções previstas para pessoa física incidem de modo idêntico sobre a pessoa jurídica.
-B) A incidência do Código sobre pessoa jurídica depende de adesão voluntária no ato de registro.
-C) A pessoa jurídica somente se submete ao Código quando todos os sócios possuem registro profissional.
-D) O Código alcança a pessoa jurídica, mas suspensão e cancelamento não se aplicam a ela.
+A) Aplicar sanção idêntica depois de comprovado o mesmo enquadramento, pois a individualização altera apenas o valor da multa associada.
+B) Considerar as diferenças pessoais desde o início, mas executar provisoriamente a sanção antes da decisão definitiva e ajustá-la após eventual recurso.
+C) Aguardar as decisões definitivas, mas graduar a sanção apenas pelo dano econômico, sem considerar culpa, gravidade ou demais circunstâncias.
+D) Individualizar, em cada processo, a sanção segundo culpa, gravidade e circunstâncias atenuantes ou agravantes, aplicando-a somente após o trânsito em julgado administrativo.
 
 ### Questão 44
 **Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
+**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626)
 
-Durante a preparação, o candidato encontra duas versões de uma resolução em materiais não oficiais e uma questão sem indicação de prova, embora redigida no estilo da banca. Qual procedimento compromete a rastreabilidade e deve ser rejeitado?
+O candidato encontra: uma página oficial da RN nº 649 com documento relacionado à RN nº 670; uma apostila não oficial dizendo que todo o regulamento foi substituído; e uma questão sem prova identificada que anuncia PERC aberto em 2026. Qual procedimento compromete a rastreabilidade e deve ser rejeitado?
 
-A) confrontar número, ementa, vigência e eventuais alterações no repositório oficial antes de consolidar o conteúdo.
-B) usar o edital para delimitar o objeto e consultar o texto oficial completo quando a ementa não resolver a dúvida.
-C) classificar como autoral uma questão apenas inspirada no estilo da banca e indicar separadamente a fonte normativa utilizada.
-D) atribuir origem oficial pela semelhança de estilo e escolher como vigente a versão mais recente do material, sem validar metadados oficiais.
+A) Confirmar no repositório número, ementa e documentos relacionados e ler a norma-base com a alteradora dentro de seu alcance expresso.
+B) Classificar a questão como autoral, separar sua fonte normativa e verificar se a informação temporal sobre o PERC possui base oficial atual.
+C) Limitar a conclusão ao objeto confirmado quando a fonte não sustenta prazo ou requisito e respeitar a hierarquia entre lei, decreto e resolução.
+D) Presumir origem oficial pelo estilo, adotar a versão mais recente da apostila e transportar condições históricas para 2026 sem validar metadados.
 
 ### Questão 45
 **Nível: Difícil**
@@ -5838,64 +5838,64 @@ C) O CRA limita-se ao cadastro dos inscritos; toda sanção por exercício profi
 D) O fiscalizado pode escolher qualquer CRA para julgar o caso, e a primeira sanção aplicada extingue as demais consequências possíveis.
 
 ### Questão 46
-**Nível: Médio**
+**Nível: Muito difícil**
 **Uso:** Simulado
-**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt)
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Uma empresa indica formalmente responsável técnico, mas ele apenas empresta o nome e não orienta nem supervisiona os serviços. A análise correta é:
+Uma pessoa jurídica com registro ativo mantém responsável técnico apenas no papel. Empregado não habilitado usa o número desse profissional para assinar documentos, sem orientação ou supervisão. Não houve dano concreto demonstrado, e a empresa invoca esse fato e o cadastro regular contra a fiscalização do CRA-PR. Qual análise é completa?
 
-A) a situação pode caracterizar responsabilidade fictícia, empréstimo de nome ou registro e ausência de atuação técnica real.
-B) a irregularidade é exclusivamente contratual e não se relaciona ao uso do registro profissional.
-C) a indicação documental basta para demonstrar responsabilidade efetiva, independentemente da atuação concreta.
-D) o registro ativo da empresa elimina qualquer dever individual do responsável indicado.
+A) O registro ativo não comprova supervisão e o CRA-PR pode separar os sujeitos, mas a ausência de dano concreto exclui relevância profissional do uso do número e da facilitação.
+B) A ausência de dano não impede a apuração regional, mas ela deve restringir-se ao empregado, pois a execução material afasta o exame das condutas do profissional e da empresa.
+C) O registro ativo não comprova supervisão; o CRA-PR pode apurar uso do número e facilitação, separando as condutas da empresa, do profissional e do empregado antes de sancionar.
+D) O registro ativo e a ausência de dano não encerram a análise, e os sujeitos devem ser separados, mas a origem nacional das normas transfere ao CFA a fiscalização cotidiana no Paraná.
 
 ### Questão 47
 **Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
+**Referência:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
-Uma instrução operacional do CRA-PR passa a adotar critério incompatível com norma nacional válida do CFA sobre a mesma matéria. Ao identificar o conflito, qual solução respeita a distribuição de competências do Sistema CFA/CRAs?
+O CRA-PR possui autonomia administrativa e jurisdição estadual. Uma instrução regional posterior, porém, adota critério incompatível com norma nacional válida do CFA e determina que as fiscalizações locais ignorem a regra federal até nova deliberação regional. Qual resposta preserva simultaneamente autonomia, jurisdição e unidade normativa?
 
-A) manter o critério regional, porque a jurisdição estadual autoriza afastar unilateralmente toda orientação normativa nacional.
-B) rever o ato regional e alinhar a execução fiscalizatória à norma nacional, tratando eventual discordância pelos canais institucionais competentes.
-C) considerar a norma nacional automaticamente revogada pela instrução regional posterior, ainda que editada por órgão diverso.
-D) transferir à Diretoria Executiva do CRA-PR o poder de alterar a regra nacional para todos os Conselhos Regionais.
+A) Manter a instrução porque sua posterioridade e especialidade territorial bastam para revogar a norma nacional dentro do Paraná.
+B) Rever o ato, executar regionalmente a norma nacional válida e levar eventual divergência aos canais institucionais, sem confundir autonomia com soberania.
+C) Paralisar toda fiscalização no Paraná até que o CFA execute pessoalmente cada diligência, pois conflito normativo elimina a competência regional.
+D) Autorizar o Plenário ou a Diretoria do CRA-PR a alterar a regra nacional para todos os CRAs, já que o Regional possui personalidade jurídica própria.
 
 ### Questão 48
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento)
+**Referência:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra)
 
-O CRA-PR mantém sua sede em Curitiba, instala atendimento descentralizado em Londrina e realiza fiscalização em Cascavel. Qual consequência institucional decorre corretamente da distinção entre sede, unidade de atendimento e jurisdição?
+Uma unidade de atendimento do CRA-PR em Londrina declara possuir jurisdição autônoma sobre o norte do Estado, recusa encaminhar fiscalização em Cascavel por considerá-la fora de sua área e adota critério contrário a norma nacional do CFA. Qual solução reúne corretamente estrutura e competência?
 
-A) a unidade de Londrina passa a exercer jurisdição própria e independente sobre os municípios próximos.
-B) a atuação em Cascavel depende da criação prévia de um Conselho municipal com personalidade jurídica autônoma.
-C) a sede permanece na capital e a jurisdição alcança todo o Paraná; unidades descentralizadas não se tornam novos Conselhos autônomos.
-D) a instalação de atendimento fora da capital converte a jurisdição estadual do CRA-PR em competência nacional compartilhada.
+A) Manter sede em Curitiba e jurisdição estadual, tratar a unidade como atendimento descentralizado e aplicar a norma nacional na execução regional.
+B) Restringir a atuação do CRA-PR a Curitiba e transferir a fiscalização de Cascavel diretamente ao CFA, porque a sede define a jurisdição.
+C) Reconhecer a unidade como novo Conselho regional, limitado ao norte do Paraná e autorizado a criar disciplina própria.
+D) Admitir que cada unidade escolha a norma aplicável em sua área, pois a descentralização administrativa divide automaticamente a jurisdição estadual.
 
 ### Questão 49
-**Nível: Médio**
+**Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes)
+**Referência:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes)
 
-Um inscrito orienta pessoa sem habilitação a exercer atividade profissional sujeita ao sistema, ainda que não obtenha lucro e não se prove dano concreto. À luz do Código de Ética:
+Um inscrito empresta seu número de registro a pessoa não habilitada, permite que ela assine trabalhos e, depois, deixa de atender notificação válida e recusa documentos pertinentes. Não houve lucro nem dano concreto demonstrado. Qual conclusão é correta?
 
-A) a ausência de lucro exclui necessariamente a relevância ética da colaboração.
-B) a conduta somente pode ser examinada depois de condenação penal da pessoa auxiliada.
-C) auxiliar pessoa não habilitada a exercer a profissão pode configurar infração, mesmo sem lucro ou dano.
-D) o registro regular do inscrito autoriza que ele transfira informalmente sua habilitação.
+A) Ausência de lucro e dano elimina a relevância de todas as condutas, restando apenas questão contratual privada.
+B) Somente a pessoa não habilitada pode ser examinada, porque o registro regular transfere informalmente a habilitação do inscrito.
+C) Facilitação, uso do registro e obstrução devem ser apurados separadamente, mesmo sem lucro ou dano, com processo antes da sanção.
+D) O conjunto dos fatos impõe cancelamento automático do registro, sem necessidade de enquadramento, defesa ou decisão administrativa definitiva.
 
 ### Questão 50
 **Nível: Difícil**
 **Uso:** Simulado
-**Referência:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
+**Referência:** [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514); [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia)
 
-A Lei nº 4.769/1965 estabelece determinado requisito profissional; o Decreto nº 61.934/1967 disciplina sua execução, e uma resolução administrativa recebe interpretação que dispensaria o requisito legal. Qual método resolve adequadamente esse conflito aparente?
+Em 2026, instrução regional invoca a Lei nº 12.514/2011 para combinar os critérios de isenção da RN nº 546/2018 com os descontos do PERC e reabrir a adesão prevista na RN nº 626/2023, sem consultar a RN nº 627/2023. Qual análise preserva objeto, cadeia normativa, hierarquia e temporalidade?
 
-A) aplicar a resolução por ser mais específica e recente, ainda que a interpretação afaste diretamente o requisito previsto em lei.
-B) interpretar decreto e resolução dentro dos limites da lei, rejeitando leitura regulamentar que crie contradição ou dispense requisito legal.
-C) aplicar sempre o decreto posterior, porque a cronologia basta para que regulamento modifique a lei regulamentada.
-D) escolher livremente a norma mais favorável ao interessado, pois atos do sistema profissional possuem a mesma hierarquia da lei.
+A) Distinguir isenção e PERC, ler as RNs nº 626 e 627 e reconhecer a adesão de 2023, mas admitir reabertura regional em 2026 porque a lei autoriza recuperação de créditos.
+B) Distinguir a isenção da RN nº 546 do PERC, ler as RNs nº 626 e 627 em conjunto e rejeitar a combinação e a reabertura regional sem nova base oficial aplicável a 2026.
+C) Distinguir isenção e PERC e rejeitar a reabertura regional em 2026, mas dispensar a RN nº 627 porque a expiração do período de adesão torna irrelevante a norma alteradora.
+D) Ler as RNs nº 626 e 627 e rejeitar a reabertura regional em 2026, mas tratar a RN nº 546 como parte do PERC e aplicar seus critérios de isenção à recuperação de créditos.
 
 ## Questões extras de revisão fixa do Dia 4
 
@@ -6264,16 +6264,16 @@ Sem consultar, classifique cinco casos em `sujeito | conduta | território | ór
 15. C
 16. D
 17. A
-18. C
+18. A
 19. D
 20. B
 21. D
 22. D
 23. B
-24. A
+24. C
 25. C
 26. D
-27. C
+27. A
 28. C
 29. A
 30. A
@@ -6292,9 +6292,9 @@ Sem consultar, classifique cinco casos em `sujeito | conduta | território | ór
 43. D
 44. D
 45. B
-46. A
+46. C
 47. B
-48. C
+48. A
 49. C
 50. B
 
@@ -6564,17 +6564,17 @@ Extra Dia 4.20: D
 
 ### Comentário da Questão 18
 
-- **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** Há especificidades de destinatário e de sanção; não se pode aplicar tudo de modo idêntico a PF e PJ.
-- **B) está errada:** A comprovação da conduta não dispensa o enquadramento normativo nem a análise da gravidade e das circunstâncias.
-- **C) está correta:** A resposta exige norma aplicável, gravidade e distinções entre pessoa física e jurídica.
-- **D) está errada:** A responsabilização ética-profissional não depende exclusivamente de condenação criminal judicial.
-- **Conceito cobrado:** Individualização de sanções éticas.
-- **Pegadinha usada:** Aplicar automaticamente a sanção máxima ou igualar pessoa física e jurídica.
-- **Como pensar para acertar:** Primeiro enquadre a conduta; depois verifique destinatário, circunstâncias e sanções admitidas.
-- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
+- **A) está correta:** O fato permanece na competência regional originária, o Plenário exerce a primeira instância de julgamento e a Diretoria conserva suas funções executivas e administrativas.
+- **B) está errada:** Administrar as atividades do Conselho não transfere à Diretoria a primeira instância reservada ao Plenário nem reduz este a executor de decisão alheia.
+- **C) está errada:** A função nacional e uniformizadora do CFA não absorve o julgamento originário do fato ocorrido na jurisdição do CRA-PR.
+- **D) está errada:** A unidade de fiscalização instrui o processo, mas não substitui o Plenário como primeira instância decisória.
+- **Conceito cobrado:** Distribuição de funções entre fiscalização, Plenário, Diretoria Executiva, CRA-PR e CFA.
+- **Pegadinha usada:** Confundir gestão administrativa ou instrução processual com competência para julgar em primeira instância.
+- **Como pensar para acertar:** Separe `quem instrui → quem julga em primeira instância → quem executa e administra → qual órgão possui competência territorial`.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Diretoria Executiva](semana_01_estudo.md#s1-d4-diretoria); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 19
 
@@ -6608,30 +6608,30 @@ Extra Dia 4.20: D
 ### Comentário da Questão 21
 
 - **Alternativa correta:** D.
-- **Nível:** Médio.
+- **Nível:** Muito difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** Os objetos foram invertidos: RN 651 é Regimento e RN 671 é Código de Ética.
-- **B) está errada:** A RN 649 trata de registro; a RN 680, de eleições.
-- **C) está errada:** A RN 589 trata de fiscalização; a RN 626, do PERC.
-- **D) está correta:** As duas associações correspondem ao mapa normativo confirmado no material.
-- **Conceito cobrado:** Associação entre resoluções e objetos.
-- **Pegadinha usada:** Inverter pares verdadeiros ou reunir dois números corretos com objetos trocados.
-- **Como pensar para acertar:** Cheque separadamente cada metade da alternativa; ambas precisam estar corretas.
-- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns).
+- **A) está errada:** Posterioridade não produz substituição automática nem permite a resolução afastar lei ou decreto; é preciso identificar o alcance expresso de cada ato.
+- **B) está errada:** A RN nº 671 revoga a RN nº 640, a RN nº 680 revoga a RN nº 633 e a existência do ato de 2023 não mantém adesão indefinidamente aberta.
+- **C) está errada:** Apesar de acertar duas revogações, transforma alteração específica do art. 11 em revogação total e usa ementa histórica para inventar condições atuais.
+- **D) está correta:** A alternativa reconstrói corretamente norma-base, alteração parcial, duas revogações expressas, relação entre RN nº 626 e RN nº 627 e limite temporal do PERC, sem romper a hierarquia.
+- **Conceito cobrado:** Consolidação simultânea de normas-base, alterações, revogações, temporalidade e hierarquia.
+- **Pegadinha usada:** Considerar que toda norma posterior revoga integralmente a anterior ou que vigência formal equivale a programa permanentemente aberto.
+- **Como pensar para acertar:** Para cada número, registre `objeto → relação com outra norma → efeito temporal`; só depois confira a hierarquia comum a todas.
+- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Código de Ética e RN 671/2025](semana_01_estudo.md#s1-d4-codigo-etica); [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 22
 
 - **Alternativa correta:** D.
-- **Nível:** Médio.
+- **Nível:** Muito difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** A sujeição da pessoa jurídica decorre da atividade, não da profissão de todos os sócios.
-- **B) está errada:** A responsabilidade técnica não substitui automaticamente eventual dever de registro da própria empresa.
-- **C) está errada:** CNPJ e contrato social não criam imunidade perante a regulação profissional.
-- **D) está correta:** A atividade básica pode atrair registro e fiscalização, com observância também da responsabilidade técnica.
-- **Conceito cobrado:** Registro de pessoa jurídica e responsabilidade técnica.
-- **Pegadinha usada:** Tratar registro da empresa e indicação de responsável como obrigações mutuamente excludentes.
-- **Como pensar para acertar:** Analise em camadas: atividade da pessoa jurídica, registro aplicável e atuação efetiva do responsável.
-- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
+- **A) está errada:** Acerta a possível incidência do registro e a fiscalização territorial, mas a aprovação da norma nacional não desloca ao CFA a decisão originária do pedido registral.
+- **B) está errada:** Acerta a uniformização nacional e a execução regional, mas o CNPJ ativo não dispensa registro quando a atividade efetivamente exercida o exige.
+- **C) está errada:** Acerta a análise da atividade e o processamento regional do registro, mas atribui indevidamente ao CFA a fiscalização cotidiana no Paraná.
+- **D) está correta:** A alternativa percorre atividade, incidência registral, função uniformizadora do CFA e execução do registro e da fiscalização pelo CRA-PR.
+- **Conceito cobrado:** Relação entre atividade da pessoa jurídica, regulamento nacional, registro e fiscalização territorial.
+- **Pegadinha usada:** Acertar três camadas e deslocar apenas a decisão registral, a incidência sobre a pessoa jurídica ou a fiscalização para o órgão errado.
+- **Como pensar para acertar:** Resolva em quatro filtros: `atividade → necessidade de registro → quem uniformiza → quem registra e fiscaliza no território`.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670).
 
 ### Comentário da Questão 23
 
@@ -6649,13 +6649,13 @@ Extra Dia 4.20: D
 
 ### Comentário da Questão 24
 
-- **Alternativa correta:** A.
+- **Alternativa correta:** C.
 - **Nível:** Médio.
 - **Uso:** Aprofundamento.
-- **A) está correta:** Conselho e sindicato têm natureza e finalidade distintas: fiscalização pública de um lado, representação da categoria de outro.
+- **A) está errada:** Sindicato não é autarquia nem exerce fiscalização profissional; a diferença entre as entidades não é apenas territorial.
 - **B) está errada:** A alternativa inverte as funções típicas das duas entidades.
-- **C) está errada:** Sindicato não é autarquia, e a diferença não é apenas territorial.
-- **D) está errada:** Não há relação de unidade administrativa ou subordinação necessária entre sindicato e conselho.
+- **C) está correta:** Conselho e sindicato têm natureza e finalidade distintas: fiscalização pública de um lado, representação da categoria de outro.
+- **D) está errada:** Não há relação de unidade administrativa ou subordinação entre as entidades, e o sindicato não executa resoluções do conselho.
 - **Conceito cobrado:** Distinção entre conselho profissional e sindicato.
 - **Pegadinha usada:** Atribuir ao conselho defesa corporativa ou ao sindicato poder de polícia profissional.
 - **Como pensar para acertar:** Pergunte se a função descrita protege a sociedade pela fiscalização ou representa interesses trabalhistas da categoria.
@@ -6678,44 +6678,44 @@ Extra Dia 4.20: D
 ### Comentário da Questão 26
 
 - **Alternativa correta:** D.
-- **Nível:** Médio.
+- **Nível:** Difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** Analogia não autoriza inventar prazo ou requisito para uma resolução específica.
-- **B) está errada:** Resoluções do mesmo órgão podem ter objetos e procedimentos muito diferentes.
-- **C) está errada:** Lei próxima em tema não substitui resolução expressamente indicada com objeto próprio.
-- **D) está correta:** A conclusão deve ficar no alcance da fonte confirmada até consulta ao texto oficial integral.
-- **Conceito cobrado:** Rigor metodológico no uso de fontes normativas.
-- **Pegadinha usada:** Preencher lacunas da fonte com memória, analogia ou padrão de outro conselho.
-- **Como pensar para acertar:** Diferencie o que a ementa confirma do que exigiria leitura do artigo correspondente.
-- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
+- **A) está errada:** Data recente de material secundário não substitui a validação do ato e de seus documentos relacionados no repositório oficial.
+- **B) está errada:** A RN nº 627 altera ato administrativo específico; não torna o PERC permanente nem modifica livremente a lei que fornece a base geral.
+- **C) está errada:** A ementa confirma o objeto, mas não sustenta sozinha prazo, desconto ou abertura atual do programa.
+- **D) está correta:** A solução lê norma-base e alteradora, respeita o recorte temporal confirmado e evita transportar condições históricas para 2026.
+- **Conceito cobrado:** Proveniência, cadeia de alteração e temporalidade de programa de recuperação de créditos.
+- **Pegadinha usada:** Confundir texto ainda consultável com benefício permanentemente aberto ou transformar ementa em regulamento completo.
+- **Como pensar para acertar:** Confirme `fonte → norma relacionada → período alcançado`; se faltar base atual, não conclua prazo ou condição vigente.
+- **Referência à apostila de estudo:** [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 27
 
-- **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** Direito de defesa não legitima ofensa pessoal nem obstrução deliberada de diligência regular.
-- **B) está errada:** A fiscalização profissional é função institucional do CRA, e o caso não se reduz a contrato privado.
-- **C) está correta:** As condutas podem afetar urbanidade e fiscalização, mas sua apuração deve respeitar o devido processo.
-- **D) está errada:** A simples resistência não anula automaticamente a diligência; é necessário examinar a regularidade concreta.
-- **Conceito cobrado:** Urbanidade, fiscalização e devido processo.
-- **Pegadinha usada:** Usar garantias de defesa como salvo-conduto para qualquer comportamento.
-- **Como pensar para acertar:** Separe contestação legítima de ofensa e de ato material destinado a impedir a fiscalização.
-- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
+- **A) está correta:** A resposta distingue defesa legítima de obstrução, identifica o órgão territorial e preserva o estágio processual antes de qualquer consequência.
+- **B) está errada:** Competência regional não autoriza sanção imediata; contraditório, decisão definitiva e individualização continuam necessários.
+- **C) está errada:** Direito de defesa não abrange ofensa ou obstrução, e o CRA-PR não depende de autorização individual do CFA para fiscalizar sua jurisdição.
+- **D) está errada:** Registro ativo não neutraliza deveres éticos nem converte o CRA em órgão meramente cadastral.
+- **Conceito cobrado:** Articulação entre fiscalização regional, infrações éticas e devido processo administrativo.
+- **Pegadinha usada:** Escolher entre dois extremos: imunidade total em nome da defesa ou punição imediata em nome da fiscalização.
+- **Como pensar para acertar:** Verifique em ordem `regularidade da diligência → natureza da resistência → órgão territorial → estágio do processo`.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 28
 
 - **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Nível:** Difícil.
 - **Uso:** Aprofundamento.
-- **A) está errada:** A validade da alteração não depende, como regra geral do enunciado, de republicação integral pela União.
-- **B) está errada:** A resolução alteradora pode não reproduzir os dispositivos que permaneceram vigentes.
-- **C) está correta:** A disciplina vigente resulta da norma-base combinada com as modificações expressamente produzidas pela norma posterior.
-- **D) está errada:** Alteração pontual não equivale a revogação total do regulamento anterior.
-- **Conceito cobrado:** Leitura de norma-base e norma alteradora.
-- **Pegadinha usada:** Adotar automaticamente revogação total ou ler apenas um dos diplomas.
-- **Como pensar para acertar:** Identifique quais dispositivos foram alterados e preserve os demais até prova de revogação.
-- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670).
+- **A) está errada:** A alteração expressa não depende de republicação integral da norma-base para ser considerada na consolidação.
+- **B) está errada:** A RN nº 670 altera especificamente o art. 11; não substitui todo o regulamento nem supera lei e decreto.
+- **C) está correta:** A solução combina corretamente alcance da alteração, preservação da norma-base e posição hierárquica dos atos administrativos.
+- **D) está errada:** O CRA executa regionalmente a disciplina vigente, mas não escolhe livremente entre redações nacionais conflitantes.
+- **Conceito cobrado:** Consolidação de alteração parcial com controle de hierarquia e competência.
+- **Pegadinha usada:** Trocar alteração pontual por revogação integral ou autonomia executiva por liberdade normativa.
+- **Como pensar para acertar:** Localize o dispositivo alterado, substitua somente sua redação e teste o resultado contra a lei e o decreto.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 29
 
@@ -6748,16 +6748,16 @@ Extra Dia 4.20: D
 ### Comentário da Questão 31
 
 - **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Nível:** Difícil.
 - **Uso:** Revisão.
-- **A) está errada:** O Código não se restringe ao profissional liberal quando a pessoa atua no campo da profissão.
-- **B) está errada:** Regime funcional e responsabilidade profissional podem coexistir; um não elimina automaticamente o outro.
-- **C) está correta:** O vínculo público não afasta deveres éticos inerentes à atuação profissional sujeita ao sistema.
-- **D) está errada:** A incidência ética não depende de remuneração privada paralela.
-- **Conceito cobrado:** Incidência ética no exercício funcional.
-- **Pegadinha usada:** Confundir vínculo estatutário com imunidade perante deveres da profissão.
-- **Como pensar para acertar:** Olhe para a natureza da atividade exercida, não apenas para a forma do vínculo de trabalho.
-- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
+- **A) está errada:** O Código alcança o servidor quando ele exerce atividade pertencente ao campo profissional; o tipo de vínculo não cria imunidade.
+- **B) está errada:** Ordem escrita não transfere integralmente responsabilidade nem torna legítima assinatura sem orientação ou supervisão.
+- **C) está correta:** A alternativa integra incidência do Código, possível infração pela assinatura sem supervisão e necessidade de processo para definir consequência.
+- **D) está errada:** A atuação do CRA não depende de condenação criminal nem é excluída pela competência disciplinar do empregador.
+- **Conceito cobrado:** Responsabilidade ética do servidor e assinatura de trabalho sem supervisão.
+- **Pegadinha usada:** Tratar ordem hierárquica ou regime funcional como causa automática de exclusão da responsabilidade profissional.
+- **Como pensar para acertar:** Separe o vínculo de trabalho da natureza técnica do ato e pergunte se houve participação, orientação ou supervisão real.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 32
 
@@ -6805,16 +6805,16 @@ Extra Dia 4.20: D
 ### Comentário da Questão 35
 
 - **Alternativa correta:** B.
-- **Nível:** Médio.
+- **Nível:** Muito difícil.
 - **Uso:** Revisão.
-- **A) está errada:** A defesa do cliente existe dentro de limites jurídicos, técnicos e éticos.
-- **B) está correta:** Honestidade e independência técnica impedem omissão destinada a distorcer a conclusão profissional.
-- **C) está errada:** Cláusula de confidencialidade não autoriza falsidade ou supressão tecnicamente indevida.
-- **D) está errada:** Trocar o signatário não corrige a omissão e pode ampliar a irregularidade.
-- **Conceito cobrado:** Independência técnica diante de pressão do cliente.
-- **Pegadinha usada:** Tratar interesse contratual como superior à verdade técnica e à ética.
-- **Como pensar para acertar:** Pergunte se a ordem preserva a integridade do parecer; se distorce o conteúdo, deve ser recusada.
-- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
+- **A) está errada:** Preserva interesse, integridade e independência, mas admite assinatura sem participação, orientação ou supervisão do trabalho técnico.
+- **B) está correta:** A alternativa compatibiliza interesse legítimo do cliente, integridade do parecer, independência técnica e responsabilidade pela autoria ou supervisão.
+- **C) está errada:** Preserva autoria e independência, mas registrar internamente a limitação não corrige sua omissão na versão entregue ao destinatário.
+- **D) está errada:** Preserva a limitação e a autoria responsável, mas subordina a conclusão técnica ao resultado desejado pelo cliente.
+- **Conceito cobrado:** Conciliação entre interesse legítimo, integridade, independência técnica e responsabilidade pela assinatura.
+- **Pegadinha usada:** Oferecer três deveres corretamente atendidos e violar apenas o quarto, exigindo a conferência integral da alternativa.
+- **Como pensar para acertar:** Teste cada opção em quatro filtros: `interesse legítimo sem distorção → limitação explícita → independência → participação ou supervisão real`.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
 
 ### Comentário da Questão 36
 
@@ -6835,28 +6835,28 @@ Extra Dia 4.20: D
 - **Alternativa correta:** A.
 - **Nível:** Difícil.
 - **Uso:** Revisão.
-- **A) está correta:** A RN 670/2025 atua no plano infralegal, alterando regulamento aprovado por resolução anterior.
-- **B) está errada:** Alteração do regulamento de registro não substitui integralmente o decreto regulamentar.
-- **C) está errada:** Resolução tampouco altera automaticamente qualquer lei que trate da matéria.
-- **D) está errada:** Resolução não possui força para revogar lei federal, ainda que posterior.
-- **Conceito cobrado:** Hierarquia normativa e alcance da RN nº 670/2025.
-- **Pegadinha usada:** Aplicar o critério cronológico sem considerar a hierarquia entre lei, decreto e resolução.
-- **Como pensar para acertar:** Antes de comparar datas, identifique a espécie normativa e o objeto exato da alteração.
-- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670) e [hierarquia das fontes](semana_01_estudo.md#s1-d4-fontes-hierarquia).
+- **A) está correta:** A alternativa corrige simultaneamente o alcance parcial da RN nº 670, a preservação da norma-base, a hierarquia e o dever de alinhamento da execução regional.
+- **B) está errada:** Autonomia regional não autoriza manter redação nacional superada por alteração válida do CFA.
+- **C) está errada:** A republicação integral não é condição para considerar a nova redação expressamente dada ao art. 11.
+- **D) está errada:** Especificidade territorial e posterioridade não legitimam ato regional ou resolução que contradiga norma superior.
+- **Conceito cobrado:** Alteração parcial, hierarquia e distribuição normativa entre CFA e CRA.
+- **Pegadinha usada:** Resolver apenas um dos três conflitos e deixar outro erro intacto, sobretudo confundindo autonomia com soberania.
+- **Como pensar para acertar:** Teste cada ato em três eixos: `o que foi alterado → qual norma é superior → quem pode uniformizar nacionalmente`.
+- **Referência à apostila de estudo:** [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 38
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
 - **Uso:** Revisão.
-- **A) está errada:** Registro, ética e regimento correspondem a outras resoluções do edital.
-- **B) está correta:** A ordem correta é RN 589 — fiscalização; RN 626 — PERC; RN 680 — eleições.
-- **C) está errada:** A sequência desloca eleições e registro para números incorretos.
-- **D) está errada:** PERC está na RN 626, isenção na RN 546 e ética na RN 671.
-- **Conceito cobrado:** Mapa de resoluções do edital.
-- **Pegadinha usada:** Apresentar três temas verdadeiros, mas fora da ordem dos números dados.
-- **Como pensar para acertar:** Resolva cada par de modo independente e só então valide a sequência completa.
-- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns).
+- **A) está errada:** A alternativa troca os objetos de RN nº 589 e RN nº 626 e ainda atribui registro e ética às normas erradas.
+- **B) está correta:** Os quatro objetos, as revogações, a alteração da RN nº 626 e o limite temporal do PERC coincidem com o mapa consolidado.
+- **C) está errada:** Além de deslocar objetos, apresenta como permanente programa cuja adesão ensinada foi temporal em 2023.
+- **D) está errada:** Omite revogações expressas e cruza PERC, isenção e alteração normativa entre números diferentes.
+- **Conceito cobrado:** Reconstrução de objetos, alterações, revogações e temporalidade no mapa de resoluções.
+- **Pegadinha usada:** Oferecer números e temas verdadeiros, mas montar uma cadeia em que apenas uma relação oculta está trocada.
+- **Como pensar para acertar:** Não valide apenas o objeto; confira para cada linha `objeto + norma relacionada + efeito temporal`.
+- **Referência à apostila de estudo:** [Mapa consolidado das resoluções](semana_01_estudo.md#s1-d4-mapa-rns); [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546); [RN 589/2020 — fiscalização](semana_01_estudo.md#s1-d4-rn-589); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [RN 680/2025 — eleições](semana_01_estudo.md#s1-d4-rn-680).
 
 ### Comentário da Questão 39
 
@@ -6891,42 +6891,42 @@ Extra Dia 4.20: D
 - **Alternativa correta:** C.
 - **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** Interesse econômico e ausência de ordem judicial não autorizam apresentar conclusão tecnicamente incompleta.
-- **B) está errada:** Guardar a ressalva internamente não corrige a informação material omitida do parecer entregue ao destinatário.
-- **C) está correta:** O profissional deve recusar a distorção, explicitar a limitação e conciliar lealdade legítima com independência, técnica, ética e legalidade.
-- **D) está errada:** A divergência exige posicionamento técnico e registro adequado, mas não determina, por si só, encerramento automático e sem esclarecimento.
-- **Conceito cobrado:** Lealdade ao cliente, independência técnica e integridade do parecer.
-- **Pegadinha usada:** Tratar defesa do interesse confiado como autorização para omitir dado material ou como dever automático de romper o contrato.
-- **Como pensar para acertar:** Verifique se a conduta preserva simultaneamente completude técnica, limites normativos e defesa apenas de interesses legítimos.
-- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres).
+- **A) está errada:** Defender interesses legítimos não transforma sigilo em salvo-conduto para omitir limitação ou impedir fiscalização regular.
+- **B) está errada:** Fiscalização não elimina o sigilo nem autoriza divulgação pública indiscriminada de toda informação do cliente.
+- **C) está correta:** A solução preserva confidencialidade legítima, cooperação juridicamente cabível e independência técnica, sem absolutizar qualquer dever.
+- **D) está errada:** Destruição de registros e encerramento sem esclarecimento não resolvem o conflito e ainda impedem tratamento responsável das obrigações.
+- **Conceito cobrado:** Compatibilização entre sigilo, fiscalização e independência técnica.
+- **Pegadinha usada:** Escolher um dever verdadeiro e tratá-lo como absoluto, sacrificando todos os demais.
+- **Como pensar para acertar:** Pergunte separadamente `o que deve permanecer confidencial`, `o que a requisição válida alcança` e `o que a integridade técnica exige`.
+- **Referência à apostila de estudo:** [Abrangência e deveres éticos](semana_01_estudo.md#s1-d4-etica-abrangencia-deveres); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 42
 
 - **Alternativa correta:** A.
-- **Nível:** Médio.
+- **Nível:** Muito difícil.
 - **Uso:** Simulado.
-- **A) está correta:** É possível reconhecer o enquadramento em tese sem inventar penalidade que depende de norma e circunstâncias não fornecidas.
-- **B) está errada:** A sanção máxima não decorre automaticamente do reconhecimento genérico de infração.
-- **C) está errada:** Norma de outro conselho não fornece automaticamente a pena aplicável ao Sistema CFA/CRAs.
-- **D) está errada:** A apuração ético-profissional possui autonomia e não exige sempre condenação judicial.
-- **Conceito cobrado:** Rigor na determinação de sanções.
-- **Pegadinha usada:** Forçar uma pena específica quando o enunciado não traz elementos suficientes.
-- **Como pensar para acertar:** Responda apenas até onde vão a fonte e os fatos; não complete a lacuna com analogia.
-- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
+- **A) está correta:** A alternativa identifica competência regional, incidência do Código, etapa processual, individualização e sanções incompatíveis com a pessoa jurídica.
+- **B) está errada:** Acerta sujeito, competência e limite sancionatório, mas a robustez da prova não permite advertência ou multa antes da decisão administrativa definitiva.
+- **C) está errada:** Acerta competência, processo e individualização, mas suspensão e cancelamento não se aplicam à pessoa jurídica.
+- **D) está errada:** Acerta incidência, processo e individualização, mas a competência originária pelo fato ocorrido no Paraná é regional.
+- **Conceito cobrado:** Matriz completa de sanção: órgão, sujeito, processo, gradação e limite material.
+- **Pegadinha usada:** Acertar quase toda a matriz e errar somente a fase de aplicação, a sanção compatível ou o órgão territorial.
+- **Como pensar para acertar:** Percorra cinco perguntas: `quem apura`, `quem responde`, `qual fase`, `qual sanção é admitida` e `quais circunstâncias foram provadas`.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 43
 
 - **Alternativa correta:** D.
 - **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** O material registra especificidades de sanção, portanto a aplicação não é idêntica a PF e PJ.
-- **B) está errada:** A submissão decorre da regulação profissional, não de adesão ética facultativa.
-- **C) está errada:** A composição societária não condiciona, nesses termos, a incidência ética sobre a pessoa jurídica registrada.
-- **D) está correta:** O Código alcança pessoas jurídicas; suspensão e cancelamento não se aplicam a elas segundo a consolidação estudada.
-- **Conceito cobrado:** Aplicação do Código de Ética à pessoa jurídica.
-- **Pegadinha usada:** Generalizar sanções de pessoa física ou criar condições societárias inexistentes.
-- **Como pensar para acertar:** Separe duas perguntas: o Código alcança a PJ? Sim. Todas as sanções de PF se aplicam? Não.
-- **Referência à apostila de estudo:** [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
+- **A) está errada:** O mesmo enquadramento não elimina a individualização, que alcança a sanção e considera elementos além do valor da multa.
+- **B) está errada:** Circunstâncias pessoais devem ser examinadas, mas não autorizam executar sanção provisória antes da decisão administrativa definitiva.
+- **C) está errada:** Aguardar o processo é necessário, porém a gradação não se limita ao dano econômico e deve considerar culpa, gravidade e demais circunstâncias.
+- **D) está correta:** A sanção deve ser individualizada na decisão de cada processo, mas só pode ser aplicada depois do trânsito em julgado administrativo.
+- **Conceito cobrado:** Gradação individual de sanções para condutas com o mesmo enquadramento ético.
+- **Pegadinha usada:** Confundir identidade do tipo infracional com identidade obrigatória da sanção ou acertar a individualização e antecipar sua execução.
+- **Como pensar para acertar:** Separe `enquadramento → culpa e gravidade → atenuantes e agravantes → sanção individualizada na decisão → aplicação após o trânsito administrativo`.
+- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 44
 
@@ -6934,14 +6934,14 @@ Extra Dia 4.20: D
 - **Nível:** Difícil.
 - **Uso:** Simulado.
 - **Observação:** a questão pede o procedimento que compromete a rastreabilidade; portanto, o gabarito é a prática inadequada.
-- **A) está errada:** Conferir metadados e alterações no repositório oficial é justamente o controle necessário para identificar a versão vigente.
-- **B) está errada:** O edital delimita o objeto, e o texto oficial completo resolve dúvidas que a ementa, sozinha, não esclarece.
-- **C) está errada:** Informar a natureza autoral e separar a fonte normativa evita atribuição falsa de proveniência.
-- **D) está correta:** Estilo semelhante não prova origem oficial, e a data de material preparatório não substitui validação de vigência e autenticidade.
-- **Conceito cobrado:** Proveniência, vigência normativa e rotulagem de questões autorais.
-- **Pegadinha usada:** Confundir aparência de autenticidade ou data recente de apostila com evidência documental verificável.
-- **Como pensar para acertar:** Separe duas verificações: autenticidade da questão e vigência da norma; ambas exigem fonte identificável.
-- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
+- **A) está errada:** O procedimento é adequado: ele reconstrói a norma vigente a partir de fonte oficial e do alcance da alteração.
+- **B) está errada:** Rotular a questão como autoral e exigir base atual para informação temporal preserva proveniência e evita falsa atualização.
+- **C) está errada:** Limitar a conclusão ao que a fonte sustenta e respeitar a hierarquia são controles corretos de suficiência.
+- **D) está correta:** A alternativa reúne três falhas: falsa origem, escolha de versão sem validação e transporte temporal de condições históricas.
+- **Conceito cobrado:** Rastreabilidade conjunta de questão, versão normativa e efeito temporal.
+- **Pegadinha usada:** Aceitar aparência de oficialidade, material recente ou texto disponível como substitutos de metadados e cadeia de alterações.
+- **Como pensar para acertar:** Faça três auditorias independentes: `de onde veio a questão`, `qual texto normativo está vigente` e `para que período a regra vale`.
+- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia); [RNs 649/2024 e 670/2025](semana_01_estudo.md#s1-d4-rn-649-670); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626).
 
 ### Comentário da Questão 45
 
@@ -6959,73 +6959,73 @@ Extra Dia 4.20: D
 
 ### Comentário da Questão 46
 
-- **Alternativa correta:** A.
-- **Nível:** Médio.
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
 - **Uso:** Simulado.
-- **A) está correta:** Empréstimo de nome ou registro e responsabilidade técnica meramente formal podem configurar irregularidade.
-- **B) está errada:** A indicação fictícia alcança responsabilidade e ética profissional, não apenas o contrato.
-- **C) está errada:** Documento formal não comprova sozinho supervisão ou orientação efetivas.
-- **D) está errada:** Registro da pessoa jurídica não elimina deveres individuais de quem assume responsabilidade técnica.
-- **Conceito cobrado:** Responsabilidade técnica efetiva.
-- **Pegadinha usada:** Confundir nomeação documental com participação profissional real.
-- **Como pensar para acertar:** Compare o que o responsável declarou assumir com os atos que efetivamente praticou.
-- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt).
+- **A) está errada:** Acerta registro, supervisão, competência e separação dos sujeitos, mas uso do número e facilitação não dependem de dano concreto para serem apurados.
+- **B) está errada:** Acerta competência e irrelevância da ausência de dano, mas a execução material não afasta o exame das condutas do profissional e da pessoa jurídica.
+- **C) está correta:** A alternativa separa registro da organização, supervisão do responsável, habilitação do executor, sujeitos envolvidos, competência regional e fase sancionatória.
+- **D) está errada:** Acerta registro, dano e separação dos sujeitos, mas a origem nacional da norma não transfere ao CFA a fiscalização cotidiana no Paraná.
+- **Conceito cobrado:** Responsabilidade técnica fictícia integrada a uso de registro, facilitação e fiscalização regional.
+- **Pegadinha usada:** Acertar quase todas as camadas e excluir apenas a relevância da conduta, um dos sujeitos ou a competência regional.
+- **Como pensar para acertar:** Faça uma matriz `PJ registrada | RT atuou? | executor é habilitado? | quem fiscaliza? | qual fase processual?`.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 47
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** Jurisdição estadual delimita a atuação regional, mas não confere poder para afastar regra nacional válida do sistema.
-- **B) está correta:** O ato regional deve ser revisto para compatibilizar a execução local, sem impedir que a discordância seja levada ao canal institucional próprio.
-- **C) está errada:** A posterioridade não produz revogação quando o órgão regional carece de competência para substituir a norma nacional.
-- **D) está errada:** A Diretoria de um CRA não recebe competência para alterar regra nacional aplicável aos demais Conselhos.
-- **Conceito cobrado:** Distribuição funcional de competências, norma nacional e execução fiscalizatória regional.
-- **Pegadinha usada:** Confundir autonomia administrativa, cronologia e hierarquia funcional com competência normativa nacional.
-- **Como pensar para acertar:** Identifique quem editou cada ato, seu alcance territorial e qual órgão possui competência para resolver o conflito.
-- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
+- **A) está errada:** Ato regional posterior e territorialmente específico não revoga norma nacional quando falta competência para substituí-la.
+- **B) está correta:** A solução conserva a execução fiscalizatória regional, a unidade normativa nacional e o canal legítimo para divergência institucional.
+- **C) está errada:** Conflito não elimina a competência do CRA-PR nem transfere ao CFA a execução pessoal de cada diligência local.
+- **D) está errada:** Personalidade e autonomia do CRA não conferem a seus órgãos poder normativo nacional sobre todos os Regionais.
+- **Conceito cobrado:** Autonomia regional, jurisdição executiva e uniformização nacional.
+- **Pegadinha usada:** Tratar o conflito como escolha entre soberania regional e centralização completa no CFA, ignorando a distribuição complementar de funções.
+- **Como pensar para acertar:** Separe `quem normatiza nacionalmente`, `quem executa no território` e `como a divergência deve ser encaminhada`.
+- **Referência à apostila de estudo:** [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra); [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentário da Questão 48
 
-- **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** Unidade descentralizada não adquire jurisdição ou personalidade autônoma apenas por funcionar fora da sede.
-- **B) está errada:** A fiscalização estadual não depende da criação de Conselho municipal em cada localidade atendida.
-- **C) está correta:** Curitiba continua sendo a sede, a jurisdição permanece estadual e o atendimento descentralizado integra o mesmo CRA-PR.
-- **D) está errada:** Descentralizar atendimento dentro do Estado não amplia a competência do Conselho para o território nacional.
-- **Conceito cobrado:** Sede, jurisdição territorial e descentralização administrativa.
-- **Pegadinha usada:** Confundir unidade de atendimento com novo ente autônomo ou extensão territorial de competência.
-- **Como pensar para acertar:** Analise separadamente endereço da sede, alcance jurídico da atuação e natureza organizacional da unidade local.
-- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento).
+- **A) está correta:** A alternativa resolve os quatro elementos: sede, jurisdição estadual, natureza da unidade descentralizada e submissão da execução à norma nacional.
+- **B) está errada:** A sede não limita a jurisdição a Curitiba, e o CFA não substitui o CRA-PR na fiscalização ordinária de Cascavel.
+- **C) está errada:** Unidade de atendimento não se converte em Conselho autônomo nem ganha competência para formular disciplina própria.
+- **D) está errada:** Descentralização administrativa não fragmenta automaticamente a jurisdição nem autoriza escolha local da norma aplicável.
+- **Conceito cobrado:** Estrutura regimental integrada à distribuição CFA × CRA.
+- **Pegadinha usada:** Transformar localização física em personalidade, jurisdição ou poder normativo independente.
+- **Como pensar para acertar:** Diferencie `onde fica a sede`, `qual território o CRA alcança`, `o que é a unidade` e `quem uniformiza a regra nacional`.
+- **Referência à apostila de estudo:** [Regimento do CRA-PR e RN 651/2024](semana_01_estudo.md#s1-d4-regimento); [Competência CFA × CRA](semana_01_estudo.md#s1-d4-cfa-cra).
 
 ### Comentário da Questão 49
 
 - **Alternativa correta:** C.
-- **Nível:** Médio.
+- **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** Lucro não é requisito necessário para caracterizar auxílio ao exercício não habilitado.
-- **B) está errada:** A responsabilização ética não depende obrigatoriamente de condenação penal prévia do terceiro.
-- **C) está correta:** Auxiliar pessoa não habilitada a exercer atividade profissional pode configurar infração por si só.
-- **D) está errada:** Registro pessoal não pode ser transferido informalmente a quem não possui habilitação.
-- **Conceito cobrado:** Auxílio ao exercício profissional por não habilitado.
-- **Pegadinha usada:** Acrescentar lucro, dano ou condenação penal como requisitos indispensáveis.
-- **Como pensar para acertar:** Observe o núcleo da conduta: facilitar exercício reservado por quem não tem habilitação.
-- **Referência à apostila de estudo:** [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes).
+- **A) está errada:** Lucro ou dano não são requisitos necessários para examinar facilitação, uso indevido e obstrução descritos no caso.
+- **B) está errada:** Habilitação não é transferível, e a conduta do inscrito precisa ser analisada separadamente da atuação do terceiro.
+- **C) está correta:** A alternativa identifica infrações potencialmente autônomas e, ao mesmo tempo, impede punição automática sem processo.
+- **D) está errada:** A gravidade aparente do conjunto não dispensa enquadramento, defesa, decisão definitiva e individualização.
+- **Conceito cobrado:** Concurso fático de facilitação, uso do registro e descumprimento da fiscalização.
+- **Pegadinha usada:** Exigir resultado econômico para reconhecer infração ou, no extremo oposto, saltar diretamente para cancelamento automático.
+- **Como pensar para acertar:** Isole cada verbo do caso — `emprestar`, `permitir`, `não atender`, `recusar` — e depois aplique a regra processual comum.
+- **Referência à apostila de estudo:** [Registro, fiscalização e responsabilidade técnica](semana_01_estudo.md#s1-d4-registro-fiscalizacao-rt); [Infrações éticas](semana_01_estudo.md#s1-d4-etica-infracoes); [Sanções, gradação e pessoa jurídica](semana_01_estudo.md#s1-d4-sancoes).
 
 ### Comentário da Questão 50
 
 - **Alternativa correta:** B.
 - **Nível:** Difícil.
 - **Uso:** Simulado.
-- **A) está errada:** Especialidade e data da resolução não lhe permitem afastar requisito estabelecido por lei.
-- **B) está correta:** Decreto e resolução são interpretados dentro da base legal, sem criar contradição nem dispensar requisito reservado à lei.
-- **C) está errada:** Um decreto regulamentar posterior não modifica a lei apenas por critério cronológico.
-- **D) está errada:** A solução do conflito normativo não depende da livre escolha da regra mais favorável, mas de hierarquia e competência.
-- **Conceito cobrado:** Hierarquia normativa, poder regulamentar e limites das resoluções administrativas.
-- **Pegadinha usada:** Aplicar isoladamente cronologia, especialidade ou favorabilidade e ignorar a relação de subordinação à lei.
-- **Como pensar para acertar:** Ordene os atos por hierarquia e competência antes de usar critérios de interpretação entre normas do mesmo nível.
-- **Referência à apostila de estudo:** [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
+- **A) está errada:** Acerta objeto, cadeia e recorte temporal, mas a autorização legal geral não permite que instrução regional reabra em 2026 programa nacional encerrado.
+- **B) está correta:** A solução separa isenção e recuperação, consulta norma-base e alteradora e impede transportar ou combinar condições históricas sem nova base oficial.
+- **C) está errada:** Acerta objeto, hierarquia e temporalidade, mas a norma alteradora continua indispensável para reconstruir corretamente a disciplina histórica do PERC.
+- **D) está errada:** Acerta a cadeia do PERC e rejeita a reabertura, mas mistura a isenção da RN nº 546 com o objeto e as condições da recuperação de créditos.
+- **Conceito cobrado:** Distinção entre isenção e PERC com controle de fonte, alteração normativa, competência e temporalidade.
+- **Pegadinha usada:** Acertar quase toda a cadeia e errar apenas a competência para reabrir, a necessidade da norma alteradora ou o objeto da RN nº 546.
+- **Como pensar para acertar:** Verifique `objeto de cada RN → norma relacionada → período alcançado → autoridade competente → existência de base oficial atual`.
+- **Referência à apostila de estudo:** [Lei 12.514/2011 — contribuições e cobrança](semana_01_estudo.md#s1-d4-lei-12514); [RN 546/2018 — isenção de débitos](semana_01_estudo.md#s1-d4-rn-546); [RN 626/2023 — PERC](semana_01_estudo.md#s1-d4-rn-626); [Proveniência, vigência e hierarquia](semana_01_estudo.md#s1-d4-fontes-hierarquia).
 
 ### Comentários das questões extras de revisão fixa do Dia 4
 

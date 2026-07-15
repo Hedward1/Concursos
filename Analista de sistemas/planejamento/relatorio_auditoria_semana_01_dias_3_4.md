@@ -120,12 +120,27 @@ Nenhuma questão foi removida ou movida para semana posterior. Nenhuma letra de 
 
 ## Níveis recalibrados
 
-| Dia | Questões | Alteração | Distribuição final das 50 principais |
+| Dia | Questões | Alteração | Distribuição após a auditoria inicial |
 |---|---|---|---|
 | Dia 3 | Q24, Q25, Q26, Q27 e Q40; Q41, Q46 e Q50 | cinco de Difícil para Médio; três de Muito difícil para Difícil | 25 Médias / 18 Difíceis / 7 Muito difíceis |
 | Dia 4 | Q21–Q36, Q39–Q40 e Q41–Q50 | níveis ajustados conforme a cadeia real de raciocínio; Q37–Q38 permaneceram Difíceis | 42 Médias / 8 Difíceis / 0 Muito difíceis |
 
-A distribuição planejada deixou de ser usada para inflar artificialmente questões de reconhecimento literal. A exceção pós-auditoria ficou registrada no padrão semanal e neste relatório.
+A distribuição planejada deixou de ser usada para inflar artificialmente questões de reconhecimento literal. A exceção pós-auditoria ficou registrada no padrão semanal e neste relatório. O banco do Dia 4 foi aprofundado posteriormente, conforme a seção de continuidade abaixo.
+
+## Ajustes de continuidade após o veredito 8,5/10
+
+O PR nº 5 permaneceu aceito e não foi desfeito. O ajuste posterior atacou apenas os dois limites identificados na revisão: excesso de sessões e ausência de dificuldade alta substantiva no Dia 4.
+
+### Dificuldade real no Dia 4
+
+A segunda auditoria confirmou cobertura, referência suficiente, resposta única e independência externa nas 50 principais, mas identificou repetição e reconhecimento literal em parte dos níveis altos. Foram adotadas estas ações:
+
+- reescritas de Médio para Difícil: Q18, Q26, Q27, Q28, Q31, Q48 e Q49;
+- reescritas de Médio para Muito difícil: Q21, Q22, Q35, Q42 e Q46;
+- fortalecimento substantivo, sem mudança de nível: Q37, Q38, Q41, Q43, Q44, Q47 e Q50;
+- preservação da Q45, já sustentada pelos arts. 28 e 29 da RN CFA nº 589/2020.
+
+Os novos itens combinam regras anteriormente ensinadas sobre fonte, vigência, hierarquia, competência, jurisdição, sujeito, conduta, processo e consequência. A distribuição final do Dia 4 passou a **30 Médias / 15 Difíceis / 5 Muito difíceis**; nenhuma promoção decorre apenas de texto maior, quantidade de números ou troca de rótulo.
 
 ## Uso do banco e carga de estudo
 
@@ -133,8 +148,8 @@ Cada dia mantém 50 principais e 20 extras, mas o banco de 70 itens foi distribu
 
 | Uso | Questões por dia | Momento |
 |---|---:|---|
-| Essenciais | Principais 1–15 + Extras 1–5 = 20 | primeira passagem, depois dos Blocos 1–6 |
-| Aprofundamento | Principais 16–30 + Extras 6–10 = 20 | ciclo próprio, após corrigir os essenciais |
+| Essenciais | Principais 1–15 + Extras 1–5 = 20 | 10 na Sessão C; as outras 10 abrem D+2 |
+| Aprofundamento | Principais 16–30 + Extras 6–10 = 20 | após corrigir as Essenciais de D+2; ciclo próprio se necessário |
 | Revisão | Principais 31–40 + Extras 11–15 = 15 | recuperação espaçada |
 | Simulado | Principais 41–50 + Extras 16–20 = 15 | sem consulta, em ciclo posterior |
 
@@ -142,10 +157,10 @@ A classificação operacional não substitui o nível; ela indica quando resolve
 
 | Dia | Sessões | Carga por sessão | Distribuição |
 |---|---|---:|---|
-| Dia 3 | A–F | aproximadamente 3h líquidas | três sessões de teoria/blocos e três de questões, correção, revisão e simulado |
-| Dia 4 | A–G | 2h15 a 3h líquidas | três sessões de teoria/blocos e quatro faixas separadas: essenciais, aprofundamento, revisão e simulado |
+| Dia 3 | A–C | 2h50 líquidas | teoria na ordem, Blocos 4–6 e amostra inicial de 10 Essenciais com correção integral |
+| Dia 4 | A–C | 2h50 líquidas | teoria na ordem, Blocos 4–6 e amostra inicial de 10 Essenciais com correção integral |
 
-No Dia 3, a sessão F reúne a faixa de revisão e o simulado, com parada obrigatória se a correção ultrapassar as 3 horas. No Dia 4, essas duas faixas receberam sessões próprias por causa da leitura normativa e da prática fixa.
+No Dia 3, a amostra inicial é P1–P8 + E1–E2; no Dia 4, Principais 1–8 + Extras 4.1–4.2. As outras 10 Essenciais abrem D+2 e são corrigidas antes do Aprofundamento. Se o Aprofundamento não couber no tempo restante de D+2, ele continua em ciclo próprio antes de D+7. Revisão e Simulado permanecem reservados, respectivamente, para D+7 e para o ciclo seguinte.
 
 Assim, teoria, 70 questões, comentários A–D, prática discursiva e caderno de erros não são apresentados como uma única sessão de estudo.
 
