@@ -81,7 +81,22 @@ Ao final de cada bloco, responda: "eu consigo explicar isso sem olhar?". Se não
 | 3 | Protocolos e serviços de rede | Legislação CRA/CFA + Português | mapa de portas, transportes e fluxos de serviço |
 | 4 | Segurança de redes | Administração Pública + RLM + Português curto | matriz ameaça-controle e roteiro de incidente |
 | 5 | Sistemas operacionais avançados | Legislação CRA/CFA + Português | mapa de sincronização, deadlock, E/S e arquivos |
-| 6 | Revisão integrada e estudo de caso | Português + caderno de erros | diagnóstico e plano técnico para um conselho profissional |
+| 6 | Revisão integrada e estudo de caso | Revisão mista + Português + caderno de erros | diagnóstico e plano técnico para um conselho profissional |
+
+## Mapa das 120 questões extras por bloco
+
+As questões extras obedecem à função pedagógica dos Blocos 4 e 5. O Bloco 6 não abre conteúdo nem acrescenta uma terceira lista: ele transforma os resultados das questões em recuperação ativa e caderno de erros.
+
+| Dia | Bloco 4 — matéria e faixa | Bloco 5 — matéria e faixa | Bloco 6 — entrega obrigatória |
+|---|---|---|---|
+| 1 | Legislação CRA/CFA — Extras 1.1–1.15 | Português — Extras 1.16–1.20 | erros classificados, regra correta e contraexemplo |
+| 2 | Administração Pública — Extras 2.1–2.15 | Português — Extras 2.16–2.20 | memória de cálculo, conceito confundido e nova tentativa |
+| 3 | Legislação CRA/CFA — Extras 3.1–3.15 | Português — Extras 3.16–3.20 | serviço, transporte, porta, função e causa do erro |
+| 4 | Administração Pública — Extras 4.1–4.10; RLM — Extras 4.11–4.15 | Português — Extras 4.16–4.20 | ameaça, ativo, controle, etapa corretiva e revisão marcada |
+| 5 | Legislação CRA/CFA — Extras 5.1–5.15 | Português — Extras 5.16–5.20 | contraste entre conceitos, exemplo próprio e nova tentativa |
+| 6 | Revisão mista programada — Extras 6.11–6.20 | Português — Extras 6.1–6.10 | priorização dos erros, seção de origem e plano de 24 horas/7 dias |
+
+Todas as faixas acima usam a teoria da respectiva `Revisão fixa do Dia X`. No Dia 6, a revisão mista recupera somente conteúdos ensinados nos Dias 1–5. Nenhuma questão do Bloco 6 introduz matéria nova.
 
 ## Delimitação da cobertura
 
@@ -160,17 +175,20 @@ Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bl
 
 ## Conteúdo dos blocos de revisão e consolidação
 
+<a id="s2-d1-b4"></a>
 ### Bloco 4 — Legislação CRA/CFA (40min)
 
-Lei nº 4.769/1965 estrutura a profissão e o Sistema CFA/CRAs; Decreto nº 61.934/1967 regulamenta o exercício. CFA atua nacionalmente; CRA atua regionalmente com registro e fiscalização. **Exemplo:** diploma não substitui registro exigido. **Pegadinha:** trocar CRA por CFA.
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 1.1–1.15. Lei nº 4.769/1965 estrutura a profissão e o Sistema CFA/CRAs; Decreto nº 61.934/1967 regulamenta o exercício. CFA atua nacionalmente; CRA atua regionalmente com registro e fiscalização. **Exemplo:** diploma não substitui registro exigido. **Pegadinha:** trocar CRA por CFA. **Entrega:** quinze respostas corrigidas com norma-base e competência identificadas.
 
+<a id="s2-d1-b5"></a>
 ### Bloco 5 — Português técnico (30min)
 
-Identifique comando, ideia central, inferência e conectores. “Pode” não equivale a “sempre”; “embora” indica concessão. **Exemplo:** switch pode encaminhar por MAC, mas não elimina todo broadcast. **Pegadinha:** escolher fato técnico verdadeiro que não responde ao comando.
+**Função e matéria:** Português e interpretação, sustentando as Extras 1.16–1.20. Identifique comando, ideia central, inferência e conectores. “Pode” não equivale a “sempre”; “embora” indica concessão. **Exemplo:** switch pode encaminhar por MAC, mas não elimina todo broadcast. **Pegadinha:** escolher fato técnico verdadeiro que não responde ao comando. **Entrega:** cinco respostas justificadas pela relação lógica do texto.
 
+<a id="s2-d1-b6"></a>
 ### Bloco 6 — Caderno de erros (20min)
 
-Registre topologia, equipamento, métrica e conceito confundido. Diferencie hub/switch, colisão/broadcast e largura de banda/goodput; escreva um contraexemplo para cada erro.
+**Função:** recuperar e consolidar somente o que já foi estudado nos Blocos 1–5; este bloco não introduz conteúdo novo. Registre topologia, equipamento, métrica e conceito confundido. Diferencie hub/switch, colisão/broadcast e largura de banda/goodput. **Entrega:** lista de erros com regra correta, contraexemplo e data de nova tentativa.
 
 ## Teoria explicada de forma didática
 
@@ -1042,17 +1060,20 @@ Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bl
 
 ## Conteúdo dos blocos de revisão e consolidação
 
+<a id="s2-d2-b4"></a>
 ### Bloco 4 — Administração Pública (40min)
 
-Legalidade vincula a Administração; eficiência não autoriza ato ilegal. Órgão não possui personalidade; autarquia é entidade de direito público. Anulação combate ilegalidade; revogação trata de mérito. **Pegadinha:** motivo é pressuposto do ato, motivação é sua exposição.
+**Função e matéria:** revisão fixa de Administração Pública, sustentando as Extras 2.1–2.15. Legalidade vincula a Administração; eficiência não autoriza ato ilegal. Órgão não possui personalidade; autarquia é entidade de direito público. Anulação combate ilegalidade; revogação trata de mérito. **Pegadinha:** motivo é pressuposto do ato, motivação é sua exposição. **Entrega:** quinze respostas corrigidas com princípio ou instituto decisivo identificado.
 
+<a id="s2-d2-b5"></a>
 ### Bloco 5 — Português técnico (30min)
 
-Em cálculo de rede, leia exatamente prefixo, máscara, rede, broadcast ou hosts solicitados. “Exceto” inverte o alvo. **Exemplo:** `/27` possui blocos de 32 endereços; não aplique fórmula de hosts sem tratar exceções. **Pegadinha:** responder host quando a pergunta pede endereço de rede.
+**Função e matéria:** Português e interpretação de enunciados técnicos, sustentando as Extras 2.16–2.20. Em cálculo de rede, leia exatamente prefixo, máscara, rede, broadcast ou hosts solicitados. “Exceto” inverte o alvo. **Exemplo:** `/27` possui blocos de 32 endereços; não aplique fórmula de hosts sem tratar exceções. **Pegadinha:** responder host quando a pergunta pede endereço de rede. **Entrega:** cinco respostas justificadas pelo comando, pelo alcance e pela relação lógica.
 
+<a id="s2-d2-b6"></a>
 ### Bloco 6 — Caderno de erros (20min)
 
-Para cada erro, registre IP/prefixo, máscara, bloco, rede, broadcast e intervalo de hosts. Acrescente ARP local, gateway remoto e a diferença IPv4/IPv6.
+**Função:** recuperar os cálculos e conceitos já estudados, sem acrescentar teoria nova. Para cada erro, registre IP/prefixo, máscara, bloco, rede, broadcast e intervalo de hosts. Acrescente ARP local, gateway remoto e a diferença IPv4/IPv6. **Entrega:** memória de cálculo corrigida, causa do erro e nova tentativa sem consulta.
 
 ## Teoria explicada de forma didática
 
@@ -2286,31 +2307,31 @@ As pausas não entram na soma. Sugestão: pausa de 10 a 15 minutos após cada bl
 
 | Bloco | Atividade | Tempo |
 |---|---|---:|
-| 1 | Recuperação ativa: camadas, encapsulamento, IP e portas | 25 min |
-| 2 | TCP × UDP, portas e modelo cliente-servidor | 45 min |
-| 3 | HTTP/HTTPS, DNS e DHCP | 80 min |
-| 4 | SMTP, POP3, IMAP, FTP, SFTP, SSH e Telnet | 65 min |
-| 5 | SNMP, LDAP, proxy, NAT básico, PAT/NAPT e NTP | 55 min |
-| 6 | Exemplos integrados e diferenças entre conceitos | 30 min |
-| 7 | Revisão fixa: Legislação CRA/CFA | 30 min |
-| 8 | Revisão fixa: Português e interpretação | 15 min |
-| 9 | Prática guiada, checklist e caderno de erros | 15 min |
+| 1 | Recuperação ativa; TCP × UDP, portas e modelo cliente-servidor | 70 min |
+| 2 | HTTP/HTTPS, DNS, DHCP, correio eletrônico e transferência/acesso remoto | 145 min |
+| 3 | SNMP, LDAP, proxy, NAT/PAT, NTP, exemplos integrados e diferenças entre conceitos | 85 min |
+| 4 | Revisão fixa: Legislação CRA/CFA | 30 min |
+| 5 | Português e interpretação | 15 min |
+| 6 | Prática guiada, checklist e caderno de erros, sem conteúdo novo | 15 min |
 | **Total líquido** |  | **360 min** |
 
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 7 — Legislação CRA/CFA (30min)
+<a id="s2-d3-b4"></a>
+### Bloco 4 — Legislação CRA/CFA (30min)
 
-Lei define a base profissional; Decreto regulamenta; Regimento organiza o CRA-PR; Código de Ética disciplina condutas. Antes de responder, identifique sujeito, competência e norma-base. **Pegadinha:** assinatura de fachada não equivale a responsabilidade técnica.
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 3.1–3.15. Lei define a base profissional; Decreto regulamenta; Regimento organiza o CRA-PR; Código de Ética disciplina condutas. Antes de responder, identifique sujeito, competência e norma-base. **Pegadinha:** assinatura de fachada não equivale a responsabilidade técnica. **Entrega:** quinze respostas corrigidas com sujeito, competência e norma-base.
 
-### Bloco 8 — Português e interpretação (15min)
+<a id="s2-d3-b5"></a>
+### Bloco 5 — Português e interpretação (15min)
 
-Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP configura, TLS protege canal, HTTP realiza requisição. **Pegadinha:** trocar serviço de aplicação por protocolo de transporte ou modalidade por certeza.
+**Função e matéria:** Português e interpretação, sustentando as Extras 3.16–3.20. Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP configura, TLS protege canal, HTTP realiza requisição. **Pegadinha:** trocar serviço de aplicação por protocolo de transporte ou modalidade por certeza. **Entrega:** cinco respostas justificadas pelo conector, referente ou regra gramatical decisiva.
 
-### Bloco 9 — Caderno de erros (15min)
+<a id="s2-d3-b6"></a>
+### Bloco 6 — Caderno de erros (15min)
 
-Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. Registre também por que uma porta não prova segurança.
+**Função:** recuperar e comparar somente protocolos e serviços já ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. **Entrega:** tabela de erros com regra correta, contraste e explicação de por que uma porta não prova segurança.
 
 ## Teoria explicada de forma didática
 
@@ -3326,32 +3347,31 @@ As pausas são adicionais e não entram na soma.
 
 | Bloco | Atividade | Tempo |
 |---|---|---:|
-| 1 | Recuperação ativa de redes, serviços e pontos de exposição | 20 min |
-| 2 | CIA, identidade, AAA, não repúdio e conceitos de risco | 45 min |
-| 3 | Ameaças, malware, engenharia social e ataques de rede | 55 min |
-| 4 | Firewall, IDS/IPS, DMZ, VPN, segmentação e acesso | 60 min |
-| 5 | Criptografia, hash, assinatura, certificados, TLS e Wi-Fi | 65 min |
-| 6 | Resposta a incidentes, continuidade e backup | 45 min |
-| 7 | Revisão fixa: Administração Pública | 25 min |
-| 8 | Revisão fixa: Raciocínio Lógico-Matemático | 15 min |
-| 9 | Revisão fixa: Português em bloco curto | 10 min |
-| 10 | Prática guiada, checklist e caderno de erros | 20 min |
+| 1 | Recuperação ativa; CIA, identidade, AAA, não repúdio e conceitos de risco | 65 min |
+| 2 | Ameaças, malware, engenharia social, ataques e controles de rede | 115 min |
+| 3 | Criptografia, hash, assinatura, certificados, TLS, Wi-Fi, resposta a incidentes, continuidade e backup | 110 min |
+| 4 | Revisão fixa: Administração Pública e Raciocínio Lógico-Matemático | 40 min |
+| 5 | Português em bloco curto | 10 min |
+| 6 | Prática guiada, checklist e caderno de erros, sem conteúdo novo | 20 min |
 | **Total líquido** |  | **360 min** |
 
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 7 — Administração Pública (25min)
+<a id="s2-d4-b4"></a>
+### Bloco 4 — Administração Pública e RLM (40min)
 
-Princípios do art. 37, ato administrativo, LAI/LGPD e responsabilidade devem ser lidos por finalidade e limite. **Exemplo:** publicidade não autoriza promoção pessoal nem divulgação irrestrita de dado pessoal. **Pegadinha:** anulação não é revogação.
+**Função e matérias:** revisão fixa de Administração Pública, nas Extras 4.1–4.10, e de Raciocínio Lógico-Matemático, nas Extras 4.11–4.15. Princípios do art. 37, ato administrativo, LAI/LGPD e responsabilidade devem ser lidos por finalidade e limite. Em RLM, negue quantificadores corretamente: negar “todos” produz “algum não”; negar “nenhum” produz “algum”. **Exemplo:** publicidade não autoriza promoção pessoal nem divulgação irrestrita de dado pessoal. **Pegadinhas:** anulação não é revogação; possibilidade não se transforma em universalidade. **Entrega:** quinze respostas corrigidas, com regra administrativa ou transformação lógica identificada.
 
-### Bloco 8 — RLM e Português (25min)
+<a id="s2-d4-b5"></a>
+### Bloco 5 — Português (10min)
 
-Negue quantificadores corretamente: negar “todos” produz “algum não”; negar “nenhum” produz “algum”. Em Português, mantenha referente, conector e alcance na reescrita. **Pegadinha:** transformar possibilidade em universalidade.
+**Função e matéria:** Português, sustentando as Extras 4.16–4.20. Mantenha referente, conector, pontuação e alcance na reescrita. **Pegadinha:** transformar possibilidade em universalidade ou trocar causa por oposição. **Entrega:** cinco respostas justificadas pela regra linguística decisiva.
 
-### Bloco 9 — Caderno de erros (20min)
+<a id="s2-d4-b6"></a>
+### Bloco 6 — Caderno de erros (20min)
 
-Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. Escreva qual etapa de incidente evitaria a falha.
+**Função:** recuperar e consolidar somente os conteúdos já ensinados nos Blocos 1–5; este bloco não introduz resposta a incidentes, continuidade, backup ou qualquer teoria nova. Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. **Entrega:** lista priorizada de erros, regra corretiva, etapa de incidente aplicável e data de revisão.
 
 ## Teoria explicada de forma didática
 
@@ -5366,31 +5386,31 @@ Um método seguro é sublinhar no enunciado: recurso compartilhado, ordem das op
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
-| Ativação e diagnóstico | 20 min | Recuperar processo, thread, estados e troca de contexto sem consultar a teoria |
-| Concorrência, paralelismo, processos e threads | 60 min | Teoria, diagramas de intercalação e exemplos |
-| Seção crítica, sincronização e IPC | 65 min | Mutex, semáforos, monitores, variáveis de condição, spinlocks e comunicação |
-| Deadlock e problemas de progresso | 65 min | Quatro condições, estratégias de tratamento, starvation, livelock e inversão |
-| Escalonamento | 45 min | Métricas, algoritmos, preempção, quantum e prioridades |
-| Dispositivos e sistemas de arquivos | 45 min | Drivers, interrupções, DMA, polling, VFS, journaling e permissões |
-| Laboratório conceitual Windows/Linux | 30 min | Interpretar comandos e saídas sem executar alterações perigosas |
-| Revisão fixa — Legislação CRA/CFA | 20 min | Lei, Decreto, Regimento e RN CFA nº 671/2025 |
-| Revisão fixa — Português e interpretação | 10 min | Conectores, referente pronominal e inferência em texto técnico |
+| 1 | 145 min | Ativação e diagnóstico; concorrência, paralelismo, processos, threads, seção crítica, sincronização e IPC |
+| 2 | 110 min | Deadlock, problemas de progresso e escalonamento, com métricas, algoritmos, preempção e prioridades |
+| 3 | 75 min | Dispositivos, E/S, sistemas de arquivos, permissões e laboratório conceitual Windows/Linux |
+| 4 | 20 min | Revisão fixa de Legislação CRA/CFA: Lei, Decreto, Regimento e RN CFA nº 671/2025 |
+| 5 | 10 min | Português: conectores, referente pronominal e inferência em texto técnico |
+| 6 | integrado aos Blocos 1–5 | Caderno de erros e recuperação ativa, sem conteúdo novo nem acréscimo ao total líquido |
 | **Total** | **360 min** | **6 horas líquidas** |
 
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 8 — Legislação CRA/CFA (20min)
+<a id="s2-d5-b4"></a>
+### Bloco 4 — Legislação CRA/CFA (20min)
 
-Revise registro, fiscalização, Regimento e Código de Ética: sujeito, conduta, jurisdição e processo decidem o caso. **Pegadinha:** confundir RN de Regimento com Código ou supor sanção automática.
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 5.1–5.15. Revise registro, fiscalização, Regimento e Código de Ética: sujeito, conduta, jurisdição e processo decidem o caso. **Pegadinha:** confundir RN de Regimento com Código ou supor sanção automática. **Entrega:** quinze respostas corrigidas com sujeito, competência, conduta e norma-base.
 
-### Bloco 9 — Português e interpretação (10min)
+<a id="s2-d5-b5"></a>
+### Bloco 5 — Português e interpretação (10min)
 
-Resolva conectores, referente pronominal e inferência sem acrescentar informação. **Exemplo:** “ainda que” mantém concessão; não vira causa. **Pegadinha:** pronome possessivo com dois antecedentes.
+**Função e matéria:** Português e interpretação, sustentando as Extras 5.16–5.20. Resolva conectores, referente pronominal e inferência sem acrescentar informação. **Exemplo:** “ainda que” mantém concessão; não vira causa. **Pegadinha:** pronome possessivo com dois antecedentes. **Entrega:** cinco respostas justificadas por conector, referente ou inferência.
 
-### Bloco 10 — Caderno de erros (integrado)
+<a id="s2-d5-b6"></a>
+### Bloco 6 — Caderno de erros (integrado)
 
-Classifique cada erro como processo/thread, corrida/sincronização, deadlock/starvation, polling/interrupção/DMA ou journaling/backup/permissão. Registre um cenário que diferencie os dois conceitos.
+**Função:** recuperar e comparar somente conceitos ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Classifique cada erro como processo/thread, corrida/sincronização, deadlock/starvation, polling/interrupção/DMA ou journaling/backup/permissão. **Entrega:** classificação do erro, regra correta, cenário de contraste e nova tentativa agendada.
 
 ## Teoria explicada de forma didática
 
@@ -6282,32 +6302,31 @@ Ao ler um cenário, organize os fatos em cinco colunas: sintoma, camada, evidên
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
-| Diagnóstico de abertura | 15 min | Reproduzir de memória o caminho de uma requisição HTTPS |
-| Fundamentos, topologias e equipamentos | 45 min | LAN/WAN, meios, domínios, switch, roteador, gateway e AP |
-| OSI/TCP-IP e endereçamento | 55 min | Encapsulamento, PDUs, IPv4, IPv6, CIDR, ARP, ICMP e gateway |
-| Protocolos e portas | 45 min | Serviços, TCP/UDP, DNS, DHCP, correio, administração e tradução |
-| Segurança integrada | 50 min | Princípios, ataques, firewall, IDS/IPS, DMZ, VPN, TLS, Wi-Fi e backup |
-| Sistemas operacionais | 45 min | Processos, sincronização, deadlock, E/S, arquivos e diagnóstico |
-| Estudo de caso do conselho profissional | 75 min | Arquitetura, incidente, continuidade e deadlock corporativo |
-| Revisão fixa — Português | 15 min | Interpretação, coesão, pontuação e reescrita |
-| Caderno de erros | 10 min | Priorizar conceitos mais errados e planejar recuperação |
-| Fechamento | 5 min | Checklist e três compromissos para a próxima semana |
+| 1 | 115 min | Diagnóstico de abertura; fundamentos, topologias, equipamentos, OSI/TCP-IP e endereçamento |
+| 2 | 95 min | Protocolos, portas e segurança integrada: ataques, controles, TLS, Wi-Fi e backup |
+| 3 | 120 min | Sistemas operacionais e estudo de caso do conselho profissional, com arquitetura, incidente, continuidade e deadlock |
+| 4 | integrado ao Bloco 3 | Revisão mista programada dos Dias 1–5 e Extras 6.11–6.20, sem conteúdo novo nem acréscimo ao total líquido |
+| 5 | 15 min | Português: interpretação, coesão, pontuação, reescrita e Extras 6.1–6.10 |
+| 6 | 15 min | Caderno de erros, checklist e três compromissos para a próxima semana |
 | **Total** | **360 min** | **6 horas líquidas** |
 
 
 ## Conteúdo dos blocos de revisão e consolidação
 
-### Bloco 8 — Português técnico (15min)
+<a id="s2-d6-b4"></a>
+### Bloco 4 — Revisão mista programada (integrada ao Bloco 3)
 
-Leia tese, inferência, coesão, pontuação e reescrita em relatos técnicos. **Exemplo:** ping bem-sucedido não prova saúde da aplicação; o texto deve preservar essa ressalva. **Pegadinha:** vírgula entre sujeito e verbo ou extrapolação de dado técnico.
+**Função e matérias:** recuperar Redes, endereçamento, protocolos, Segurança e Sistemas Operacionais já ensinados nos Dias 1–5, sustentando as Extras 6.11–6.20. O bloco usa o mapa de revisão mista e não acrescenta teoria. **Entrega:** dez respostas sem consulta, classificadas por núcleo e vinculadas à seção de origem.
 
-### Bloco 9 — Caderno de erros e revisão mista (10min)
+<a id="s2-d6-b5"></a>
+### Bloco 5 — Português técnico (15min)
 
-Use o mapa do Dia 6: classifique erro como enlace, camada, CIDR, protocolo, controle de segurança, continuidade ou SO. Escreva regra, contraexemplo e seção de origem.
+**Função e matéria:** Português aplicado, sustentando as Extras 6.1–6.10. Leia tese, inferência, coesão, pontuação e reescrita em relatos técnicos. **Exemplo:** ping bem-sucedido não prova saúde da aplicação; o texto deve preservar essa ressalva. **Pegadinha:** vírgula entre sujeito e verbo ou extrapolação de dado técnico. **Entrega:** dez respostas justificadas pela regra linguística decisiva.
 
-### Bloco 10 — Fechamento (5min)
+<a id="s2-d6-b6"></a>
+### Bloco 6 — Caderno de erros e fechamento (15min)
 
-Escolha três conceitos ainda incertos e transforme-os em pergunta de recuperação ativa para a próxima sessão.
+**Função:** usar os resultados dos Blocos 4 e 5 para recuperar somente conteúdos já estudados; este bloco não introduz matéria nova. Classifique cada erro como enlace, camada, CIDR, protocolo, controle de segurança, continuidade, SO ou leitura linguística. **Entrega:** regra correta, contraexemplo, seção de origem, três perguntas de recuperação ativa e plano de nova tentativa em 24 horas e 7 dias.
 
 ## Teoria explicada de forma didática
 
@@ -6939,7 +6958,7 @@ Tópicos deste bloco:
 1. Português: ideia central; inferência e extrapolação; conectores; referentes e ambiguidade; quantificadores e termos absolutos; reescrita; concordância com `haver` e `existir`; regência e crase; pontuação; paralelismo e linguagem clara.
 2. Revisão mista: redes e métricas; OSI/TCP-IP, CIDR, IPv6, ARP e ICMP; protocolos e serviços; segurança, ataques, criptografia, Wi-Fi, resposta a incidentes, RPO e RTO; concorrência, deadlock, escalonamento, entrada/saída, sistemas de arquivos e permissões.
 
-### Bloco A — Português aplicado — 10 questões extras
+### Bloco 5 — Português aplicado — 10 questões extras
 
 A base gramatical e interpretativa está na **Semana 1, Dia 5 — Língua Portuguesa e Discursiva**, especialmente em [Interpretação de texto](../semana_01/semana_01_estudo.md#1-interpretação-de-texto), [Semântica e coesão](../semana_01/semana_01_estudo.md#2-semântica-e-coesão), [Sintaxe, concordância e regência](../semana_01/semana_01_estudo.md#3-sintaxe-concordância-e-regência), [Crase](../semana_01/semana_01_estudo.md#4-crase), [Pontuação](../semana_01/semana_01_estudo.md#5-pontuação) e [Reforço de alinhamento com as questões — Dia 5](../semana_01/semana_01_estudo.md#reforço-de-alinhamento-com-as-questões---dia-5). Na Semana 2, a novidade é aplicar essas regras a protocolos, segurança e sistemas operacionais, sem deixar o vocabulário técnico encobrir a estrutura linguística.
 
@@ -7158,7 +7177,7 @@ Evite nominalizações e redundâncias quando escondem a ação: `realizar a exe
 
 Recuperação de 30 segundos antes de cada questão de Português: **comando → quantificadores → conectores → referentes → regra gramatical → sentido preservado**.
 
-### Bloco B — Revisão mista e caderno de erros — 10 questões extras
+### Bloco 4 — Revisão mista programada — 10 questões extras
 
 As questões D6-RF-MX-01 a D6-RF-MX-10 devem usar conteúdos já explicados nos Dias 1 a 5. O mapa abaixo é a base obrigatória do comentário: cada comentário deve citar ao menos o **ID do núcleo** e a **seção real indicada**, além de explicar a regra que decide a resposta.
 
@@ -7183,7 +7202,7 @@ As referências do mapa usam âncoras explícitas dos Dias 1 a 5. Os IDs `D6-RF-
 <a id="s2-d6-rf-mapa-revisoes-fixas"></a>
 #### Mapa complementar — revisões fixas dos Dias 1 a 5
 
-Este mapa recupera as disciplinas recorrentes que não pertencem ao núcleo técnico das dez questões mistas. Português já está consolidado no **Bloco A**; as linhas abaixo localizam Legislação CRA/CFA, Administração Pública e RLM.
+Este mapa recupera as disciplinas recorrentes que não pertencem ao núcleo técnico das dez questões mistas. Português já está consolidado no **Bloco 5**; as linhas abaixo localizam Legislação CRA/CFA, Administração Pública e RLM.
 
 | Dia / disciplina | Seção e âncoras reais | Regra-chave para recuperação | Pegadinhas prioritárias | Origem S1/S2 |
 |---|---|---|---|---|
@@ -7194,7 +7213,7 @@ Este mapa recupera as disciplinas recorrentes que não pertencem ao núcleo téc
 | **Dia 4 — RLM** | [negação de conjunção/disjunção](#rf4-rlm-01); [condicional e quantificadores](#rf4-rlm-02); [inclusão-exclusão](#rf4-rlm-03); [porcentagem reversa](#rf4-rlm-04); [proporção](#rf4-rlm-05) | De Morgan: `¬(P ∧ Q) = ¬P ∨ ¬Q` e `¬(P ∨ Q) = ¬P ∧ ¬Q`; `¬(P → Q) = P ∧ ¬Q`. Em conjuntos, subtraia a interseção uma vez; em variações sucessivas, multiplique fatores; em proporção, determine antes se cada grandeza varia direta ou inversamente. | negar `todo` como `nenhum`; confundir contrapositiva com negação; contar interseção duas vezes; somar percentuais sucessivos; desfazer desconto acrescentando a mesma taxa; inverter razões automaticamente. | S1 — RLM do Dia 6; S2 — aplicação e aprofundamento do Dia 4 |
 | **Dia 5 — Legislação CRA/CFA** | [Legislação do Dia 5](#revisão-fixa--legislação-cracfa-1) | Para Analista de Sistemas, separe Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento do CRA-PR e Código aprovado pela RN CFA nº 671/2025. Lei disciplina, Decreto regulamenta, Regimento organiza e Código fixa deveres no seu âmbito subjetivo. CFA exerce direção normativa nacional; CRA executa e fiscaliza regionalmente. | usar a RN nº 640/2024 revogada em vez da RN nº 671/2025; importar normas exclusivas de outro cargo; tratar Código como universal para todo profissional de TI; inverter competências CFA/CRA; confundir Regimento com Código. | S1 — legislação do Dia 4; S2 — alinhamento à Retificação I e aplicação ética em TI no Dia 5 |
 
-As revisões de Português que alimentam o Bloco A podem ser conferidas em [Dia 1](#s2-d1-revisao-portugues), [Dia 2](#s2-d2-revisao-portugues), [Dia 3](#s2-d3-revisao-portugues), [Dia 4](#rf4-pt-01) e [Dia 5](#revisão-fixa--português-e-interpretação-1). No Dia 6, elas deixam de ser cinco listas separadas e passam a usar os IDs estáveis `D6-RF-PT-01` a `D6-RF-PT-10`.
+As revisões de Português que alimentam o Bloco 5 podem ser conferidas em [Dia 1](#s2-d1-revisao-portugues), [Dia 2](#s2-d2-revisao-portugues), [Dia 3](#s2-d3-revisao-portugues), [Dia 4](#rf4-pt-01) e [Dia 5](#revisão-fixa--português-e-interpretação-1). No Dia 6, elas deixam de ser cinco listas separadas e passam a usar os IDs estáveis `D6-RF-PT-01` a `D6-RF-PT-10`.
 
 <a id="s2-d6-rf-mx-01"></a>
 #### D6-RF-MX-01 — Recuperação ativa de redes e métricas

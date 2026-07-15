@@ -10,6 +10,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
 - `planejamento/padrao_semanal.md`: modelo oficial de criação, avaliação e aceite das semanas, com rubrica de 100 pontos, critérios eliminatórios e auditoria de teoria, exemplos, questões e comentários.
+- `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
@@ -37,13 +38,15 @@ A Semana 1 possui:
 
 ## Semana 2
 
-A Semana 2 está concluída e aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados. Ela inclui topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
+A Semana 2 está produzida e em migração para o padrão atual. Ela aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados, incluindo topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
 
 Também possui:
 
 - 300 questões principais, distribuídas em 50 por dia;
 - 120 questões extras das revisões fixas de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
 - 420 questões autorais no total, todas com gabarito e comentário fundamentado na apostila.
+
+As 120 extras tiveram a cobertura dos Blocos 4–6 auditada. A migração completa das 300 principais para níveis e comentários do padrão novo continua controlada por lotes de dois dias; por isso, a semana não deve ser tratada como integralmente aceita ainda.
 
 ## Organização
 
