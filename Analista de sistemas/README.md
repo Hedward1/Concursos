@@ -11,6 +11,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
 - `planejamento/padrao_semanal.md`: modelo oficial de criação, avaliação e aceite das semanas, com rubrica de 100 pontos, critérios eliminatórios e auditoria de teoria, exemplos, questões e comentários.
 - `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
+- `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
@@ -27,6 +28,8 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 4. Legislação CRA-PR/CFA
 5. Língua Portuguesa e Discursiva
 6. Administração Pública, Raciocínio Lógico-Matemático e Revisão
+
+Os Dias 3 e 4 foram auditados integralmente: a teoria agora antecede todas as cobranças, o banco de 70 itens de cada dia está distribuído por uso e as sessões foram divididas em etapas executáveis de aproximadamente 3 horas líquidas. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
 
 ## Questões
 
