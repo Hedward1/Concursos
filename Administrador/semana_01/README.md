@@ -14,6 +14,7 @@ Esta semana não tenta encerrar todo o edital. Orçamento público, licitações
 - `questoes/dias_03_e_04.md`: Q141-Q280;
 - `questoes/dias_05_e_06.md`: Q281-Q420;
 - `semana_01_super_simulado.md`: 60 questões suplementares inéditas;
+- `semana_01_dissertacoes.md`: proposta diagnóstica, modelo de 24 linhas e rubrica oficial;
 - `semana_01_caderno_erros.md`: registro de erros e acertos inseguros;
 - `relatorio_aceite.md`: auditoria técnica e pedagógica.
 
@@ -24,7 +25,7 @@ Esta semana não tenta encerrar todo o edital. Orçamento público, licitações
 3. registre erros e acertos inseguros;
 4. abra o saldo de Essenciais em D+2 e só depois avance para Aprofundamento;
 5. reserve Revisão para D+7 e Simulado para o ciclo seguinte;
-6. produza os treinos curtos de dissertação sem pular o modelo comentado;
+6. produza os treinos curtos e a dissertação diagnóstica sem pular o modelo comentado;
 7. resolva o super simulado apenas depois dos seis dias.
 
 ## Status
