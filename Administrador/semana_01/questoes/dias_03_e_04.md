@@ -3,21 +3,21 @@
 ## Roteiro operacional
 
 1. Leia integralmente a teoria do respectivo dia em `../semana_01_estudo.md` antes de responder: a teoria sempre antecede a cobrança.
-2. Na primeira passagem, resolva somente as dez Essenciais indicadas para D0, em até 30 minutos.
+2. Na primeira passagem, resolva as seis primeiras da fila de D0; avance até a décima somente enquanto houver tempo para correção integral.
 3. Antes de abrir o comentário, marque a alternativa e registre confiança de `0` a `3`.
 4. Corrija A, B, C e D; erro ou acerto com confiança `0` ou `1` vai para o caderno de erros.
-5. No D+2, comece pelas cinco Essenciais de reabertura e só então use Revisão ou Aprofundamento.
+5. No D+2, conclua o saldo da fila de D0, faça as cinco Essenciais de reabertura e só então use Revisão ou Aprofundamento.
 6. Reserve as questões de Simulado para resolução cronometrada, sem consulta e sem interrupções.
 7. Q141–Q190 e Q211–Q260 formam o banco principal; Q191–Q210 e Q261–Q280 são extras para revisões e simulados.
 
 ### Seleção operacional — Dia 3
 
-- **Primeira passagem — D0 (10):** Q141, Q145, Q149, Q153, Q157, Q161, Q165, Q170, Q178 e Q186.
+- **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q141, Q145, Q149, Q153, Q157, Q161, Q165, Q170, Q178 e Q186.
 - **Reabertura — D+2 (5):** Q151, Q174, Q190, Q199 e Q207.
 
 ### Seleção operacional — Dia 4
 
-- **Primeira passagem — D0 (10):** Q211, Q215, Q219, Q223, Q227, Q231, Q235, Q240, Q248 e Q256.
+- **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q211, Q215, Q219, Q223, Q227, Q231, Q235, Q240, Q248 e Q256.
 - **Reabertura — D+2 (5):** Q221, Q244, Q260, Q269 e Q277.
 
 ---
@@ -78,25 +78,23 @@ D) a sequência didática prova que as funções nunca se sobrepõem.
 
 Uma instituição tem equipe digital experiente, encontra integração governamental gratuita, enfrenta fraude crescente e possui sistema legado frágil. Ela pretende usar diferenciação pela acessibilidade, em rede com parceiros. Qual escolha é mais defensável?
 
-**Filtros do caso:** 1) origem e sinal de quatro fatores; 2) cruzamentos SWOT; 3) diferenciação como lente pública; 4) governança e accountability de rede
+A) Explorar a integração como oportunidade e a equipe como força, mas classificar o legado como ameaça e concentrar nos parceiros a prestação de contas.
 
-A) usar a ameaça para justificar exclusão de usuários e deixar parceiros sem papéis.
+B) Usar a equipe para conter a fraude, tratar a integração como força interna e adotar liderança em custo, embora a acessibilidade seja o diferencial declarado.
 
-B) chamar integração de força e equipe de oportunidade, pois ambas são favoráveis.
+C) Modernizar o legado antes de cooperar, considerando fraude e integração fatores externos favoráveis e transferindo aos parceiros os riscos da operação.
 
-C) cortar indiscriminadamente segurança para liderar em custo e eliminar accountability da rede.
-
-D) alavancar força e oportunidade, reduzir a exposição da fraqueza à ameaça e preservar direitos e governança.
+D) Combinar força e oportunidade, proteger o legado contra a ameaça e diferenciar o serviço por acessibilidade, com papéis e responsabilização na rede.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Diferenciação pública não autoriza exclusão, e rede exige governança.
-- **B:** Incorreta. A classificação depende da origem, não apenas do sinal.
-- **C:** Incorreta. Custo sustentável preserva qualidade; rede não apaga responsabilidade.
-- **D:** Correta. A solução combina cruzamentos SWOT, adaptação pública da estratégia e mecanismos de cooperação.
+- **A:** Incorreta. Integração e equipe foram bem lidas, mas o legado é fraqueza interna e a accountability não pode ser concentrada nos parceiros.
+- **B:** Incorreta. A equipe é força, porém a integração é oportunidade externa e o caso declara diferenciação por acessibilidade, não liderança em custo.
+- **C:** Incorreta. O legado é fraqueza, mas fraude é ameaça; além disso, aliança não transfere integralmente risco e responsabilidade.
+- **D:** Correta. A alternativa cruza força e oportunidade, enfrenta fraqueza e ameaça e preserva diferenciação pública e governança da rede.
 
 **Conceito:** Escolhas estratégicas devem integrar ambiente, capacidades, missão pública e governança.
 
@@ -248,25 +246,23 @@ D) estratégico, tático e operacional.
 
 Um serviço público adapta linguagem e canais para um segmento com barreiras específicas, busca singularidade de acesso e coopera com organizações locais. Não pretende negar atendimento aos demais. A interpretação correta é:
 
-**Filtros do caso:** 1) segmento estreito; 2) diferenciação por acessibilidade; 3) preservação de direitos; 4) responsabilidade na aliança
+A) Adotar enfoque por diferenciação e restringir permanentemente o atendimento geral ao segmento prioritário, desde que a parceria seja formalizada.
 
-A) é liderança em custo porque todo atendimento segmentado reduz despesa.
+B) Tratar a adaptação como diferenciação ampla, pois a universalidade impede qualquer recorte de necessidades ou canais para grupos específicos.
 
-B) é diferenciação ampla sem enfoque, pois setor público não admite segmentos.
+C) Reconhecer enfoque por diferenciação, mas atribuir às organizações locais a decisão final e a responsabilidade integral pelo serviço.
 
-C) a parceria transfere toda responsabilidade às organizações locais.
-
-D) enfoque por diferenciação no segmento, com direitos preservados e governança da aliança.
+D) Aplicar enfoque por diferenciação ao segmento, sem retirar direitos dos demais, e definir papéis, decisão e prestação de contas na aliança.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. O caso destaca singularidade, não posição de menor custo.
-- **B:** Incorreta. O enfoque pode ser lente analítica sem exclusão de direitos.
-- **C:** Incorreta. Aliança não elimina prestação de contas nem deveres do órgão.
-- **D:** Correta. O recorte, a singularidade, o limite público e a governança estão todos presentes.
+- **A:** Incorreta. O enfoque pode priorizar necessidades específicas, mas não autoriza retirar o atendimento devido aos demais usuários.
+- **B:** Incorreta. Universalidade de direitos não impede adaptar linguagem e canais a barreiras de um segmento.
+- **C:** Incorreta. O enquadramento estratégico é adequado, mas a cooperação não transfere competência e responsabilidade integralmente.
+- **D:** Correta. O desenho combina segmento, singularidade de acesso, preservação de direitos e governança da cooperação.
 
 **Conceito:** Enfoque pode adaptar proposta a segmento sem converter serviço público em mercado excludente.
 
@@ -418,25 +414,23 @@ D) Implantar triagem automatizada no segundo semestre.
 
 Cinco atores formam uma rede: um detém dados, outro capilaridade e outro tecnologia; metas divergem, há risco de dependência e não existe chefe único. Qual desenho responde melhor ao caso?
 
-**Filtros do caso:** 1) complementaridade de recursos; 2) metas divergentes; 3) dependência; 4) ausência de hierarquia única; 5) accountability
+A) Criar colegiado e indicadores comuns, mas dar ao detentor dos dados decisão final sobre conflitos e dispensar regra de saída para preservar continuidade.
 
-A) confiança informal e eliminação de indicadores para evitar conflito.
+B) Celebrar contratos bilaterais com cada ator e atribuir ao parceiro tecnológico a coordenação, mantendo riscos e resultados avaliados apenas separadamente.
 
-B) comando unilateral do parceiro tecnológico e transferência integral de risco.
+C) Definir objetivo, papéis, decisão, informação, solução de conflitos, indicadores, responsabilização e condições de saída compartilhadas.
 
-C) objetivo, papéis, decisão, informação, conflitos, indicadores, responsabilização e saída definidos.
-
-D) cooperação sem condição de saída, pois alianças são permanentes.
+D) Apoiar-se em confiança, métricas comuns e coordenação rotativa, deixando conflitos, dependência e desligamento para negociação quando surgirem.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Confiança não substitui informação, responsabilização e aferição.
-- **B:** Incorreta. A interdependência e a prestação de contas não desaparecem.
-- **C:** Correta. Cada risco recebe mecanismo sem converter a rede em ausência de liderança ou em hierarquia necessária.
-- **D:** Incorreta. A teoria inclui saída como componente possível de governança.
+- **A:** Incorreta. Objetivos e indicadores ajudam, mas decisão unilateral e ausência de saída agravam assimetria e dependência.
+- **B:** Incorreta. Contratos isolados e coordenação tecnológica não resolvem interdependência, conflito de metas e accountability conjunta.
+- **C:** Correta. O arranjo cobre complementaridade, divergências, dependência, coordenação sem chefe único e prestação de contas.
+- **D:** Incorreta. Confiança e métricas são úteis, porém não substituem regras prévias para conflito, dependência, responsabilização e saída.
 
 **Conceito:** Rede eficaz combina complementaridade com arquitetura de coordenação.
 
@@ -462,25 +456,23 @@ D) cooperação sem condição de saída, pois alianças são permanentes.
 
 Um sistema interno instável recebeu GUT 4×5×5; uma fraude externa crescente recebeu 5×4×4. A equipe domina segurança. Após escolher o problema de maior produto, a diretoria deve montar plano com responsável, prazo, método e recursos. Assinale a solução integral.
 
-**Filtros do caso:** 1) origem interna/externa; 2) valência SWOT; 3) produto GUT; 4) ausência de causalidade; 5) campos do 5W2H
+A) Classificar sistema, fraude e equipe como fraqueza, ameaça e força, priorizar 100 sobre 80 e detalhar a ação em 5W2H, sem inferir causalidade.
 
-A) sistema: fraqueza; fraude: ameaça; equipe: força; GUT 100 > 80; ação detalhada no 5W2H.
+B) Manter as classificações SWOT, priorizar a fraude pela gravidade 5 como critério autônomo e usar o 5W2H após confirmar que ela causa a falha interna.
 
-B) classificar sistema como ameaça, priorizar fraude por gravidade isolada e usar SWOT para executar.
+C) Priorizar o sistema pelo produto 100, mas tratá-lo como ameaça e a equipe como oportunidade, registrando no 5W2H somente responsável e prazo.
 
-C) tratar equipe como oportunidade, somar GUT e usar APO como sete campos.
-
-D) declarar que o sistema causa a fraude porque pontuou mais e executar sem responsável.
+D) Reconhecer a origem dos fatores e o produto maior do sistema, concluindo daí que ele causa a fraude e iniciando a ação sem estimar recursos.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A resposta aplica origem SWOT, cálculo GUT, limite causal e finalidade do 5W2H.
-- **B:** Incorreta. Sistema é interno, GUT usa produto e SWOT não detalha ação.
-- **C:** Incorreta. Equipe é interna, a forma usual é produto e os sete campos são 5W2H.
-- **D:** Incorreta. Pontuação não prova causalidade e o plano está incompleto.
+- **A:** Correta. Origem e valência estão corretas, 100 supera 80, GUT não prova causa e o 5W2H completa a execução.
+- **B:** Incorreta. As classificações estão corretas, mas a regra informada usa o produto, não gravidade isolada, e nenhuma pontuação confirma causalidade.
+- **C:** Incorreta. O ranking foi preservado, porém sistema é fraqueza, equipe é força e dois campos não completam o 5W2H.
+- **D:** Incorreta. A origem e a prioridade podem ser reconhecidas sem transformar correlação de pontuação em causa nem omitir recursos.
 
 **Conceito:** SWOT, GUT e 5W2H resolvem problemas diferentes e encadeáveis.
 
@@ -590,25 +582,23 @@ D) Redesenhar a triagem digital.
 
 Objetivos globais foram negociados com as áreas; cada equipe criou planos, recebeu autonomia para acompanhar indicadores e fez revisão periódica. Porém, um cronograma operacional falhou e impediu a entrega. Qual diagnóstico é correto?
 
-**Filtros do caso:** 1) negociação de objetivos; 2) autonomia e autocontrole; 3) nível operacional; 4) impacto estratégico; 5) revisão periódica
+A) Reconhecer a APO, mas substituir imediatamente o objetivo negociado, pois toda falha de cronograma demonstra erro estratégico.
 
-A) a APO elimina a necessidade de planejamento operacional.
+B) Manter o ciclo da APO: corrigir o plano operacional, medir o efeito e usar a falha como insumo para a revisão periódica dos objetivos.
 
-B) APO presente; falha operacional alimenta a revisão.
+C) Preservar objetivos e autonomia, tratando o cronograma como assunto externo à APO e dispensando acompanhamento da chefia.
 
-C) autocontrole impede acompanhamento pela chefia.
-
-D) a falha converte o cronograma em estratégia e encerra a negociação.
+D) Corrigir apenas a rotina, porque um desvio operacional jamais deve retroalimentar metas, prioridades ou premissas superiores.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Objetivos precisam de métodos, prazos e responsáveis.
-- **B:** Correta. A resposta preserva participação, autocontrole, níveis e aprendizagem.
-- **C:** Incorreta. Autocontrole convive com monitoramento e revisão.
-- **D:** Incorreta. Importância não altera automaticamente o nível, e a APO é cíclica.
+- **A:** Incorreta. Há APO, mas uma falha operacional não prova, sozinha, que o objetivo estratégico deva ser substituído.
+- **B:** Correta. A resposta atua no nível operacional e conserva medição, aprendizagem e revisão no ciclo negociado.
+- **C:** Incorreta. Planos operacionais materializam objetivos, e autocontrole não elimina acompanhamento e revisão.
+- **D:** Incorreta. A correção local é necessária, mas o desvio pode revelar premissas ou prioridades que também precisam ser revistas.
 
 **Conceito:** APO desdobra objetivos até a ação e revisa resultados.
 
@@ -760,25 +750,23 @@ D) oportunidade interna e fraqueza externa.
 
 Uma equipe negocia meta de volume, mas uma mudança externa derruba a demanda. A chefia ignora qualidade, mantém a meta congelada e avalia pessoas apenas pelo número. Na lógica da APO, a resposta mais adequada é:
 
-**Filtros do caso:** 1) mudança externa; 2) meta de volume estreita; 3) qualidade omitida; 4) revisão periódica; 5) justiça da avaliação
+A) Manter a meta porque foi negociada, registrar a mudança de demanda e avaliar o volume sem incorporar qualidade ao resultado.
 
-A) punir automaticamente, pois meta negociada nunca pode mudar.
+B) Revisar meta e premissas diante da demanda, incluir qualidade e separar desempenho controlável do efeito externo na avaliação.
 
-B) revisar objetivo e premissas, equilibrar resultados e considerar o fator externo.
+C) Reduzir a meta ao volume observado e retirar critérios de qualidade, pois a mudança ambiental os torna não comparáveis.
 
-C) abolir objetivos e medir apenas esforço.
-
-D) aumentar a meta para compensar a queda e evitar curto-prazismo.
+D) Preservar o alvo e avaliar a equipe pela comparação com outras áreas, usando o número relativo para neutralizar a queda de demanda.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. O ciclo inclui revisão, e fatores externos importam.
-- **B:** Correta. A APO admite revisão e alerta para metas estreitas e avaliação injusta.
-- **C:** Incorreta. O problema não exige eliminar resultados, mas qualificá-los.
-- **D:** Incorreta. A mudança arbitrária não corrige premissa nem qualidade.
+- **A:** Incorreta. Registrar o contexto sem rever a meta e sem medir qualidade mantém o incentivo estreito e a avaliação injusta.
+- **B:** Correta. A solução combina adaptação de premissas, equilíbrio da medida e atribuição responsável do desempenho.
+- **C:** Incorreta. A meta pode ser revista, mas qualidade continua necessária e não deve ser eliminada pelo choque de demanda.
+- **D:** Incorreta. Comparação relativa não corrige premissa desatualizada nem separa adequadamente contexto, volume e qualidade.
 
 **Conceito:** APO combina compromisso com adaptação responsável.
 
@@ -930,25 +918,23 @@ D) reduzir qualquer despesa, mesmo que direitos e qualidade sejam sacrificados.
 
 Sob prazo curto e probabilidades pouco confiáveis, um gestor usa experiência para reconhecer um padrão, mas consulta apenas dados favoráveis à primeira hipótese. A descrição correta é:
 
-**Filtros do caso:** 1) confiabilidade das probabilidades; 2) experiência sob pressão; 3) seleção de dados; 4) distinção entre modelo e viés
+A) decisão sob risco, intuição e viés de confirmação.
 
-A) decisão sob risco, racional clássica e ancoragem.
+B) decisão sob incerteza, modelo racional clássico e ancoragem.
 
-B) certeza, incrementalismo e disponibilidade.
+C) decisão sob incerteza, intuição e viés de confirmação.
 
-C) incerteza, intuição e viés de confirmação.
-
-D) decisão programada, participativa e excesso de confiança.
+D) decisão sob incerteza, intuição e viés de disponibilidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Não há probabilidades estimáveis, maximização completa nem primeiro número.
-- **B:** Incorreta. Resultados não são conhecidos, não há passos graduais nem evento memorável.
-- **C:** Correta. Pouco conhecimento define incerteza; experiência sugere intuição; seleção de evidência indica confirmação.
-- **D:** Incorreta. O caso não apresenta regra repetitiva, grupo ou certeza declarada.
+- **A:** Incorreta. Intuição e confirmação estão presentes, mas probabilidades pouco confiáveis caracterizam incerteza, não risco estimável.
+- **B:** Incorreta. A condição é de incerteza, porém reconhecimento por experiência não é cálculo clássico e não houve referência numérica inicial.
+- **C:** Correta. Probabilidades frágeis, reconhecimento experiente e seleção de dados favoráveis correspondem aos três rótulos.
+- **D:** Incorreta. Condição e modo decisório estão corretos, mas o gestor filtra evidências da hipótese inicial; não reage a evento memorável.
 
 **Conceito:** Condição, modelo e viés são eixos que podem coexistir.
 
@@ -1100,25 +1086,23 @@ D) sem relevância para resultados superiores.
 
 Um projeto consumiu 70% do orçamento; teste independente revela inviabilidade e o colegiado, para preservar consenso, rejeita alternativa de encerramento. Qual processo decisório é mais defensável?
 
-**Filtros do caso:** 1) custo passado irrecuperável; 2) evidência independente; 3) consequências futuras; 4) conformidade coletiva; 5) ponto de abandono
+A) Comparar custos e benefícios futuros, submeter premissas a revisão independente e aplicar um ponto de abandono previamente definido.
 
-A) comparar consequências futuras, usar revisão independente e definir ponto de abandono.
+B) Desconsiderar o gasto passado e prosseguir até novo teste confirmar a inviabilidade, pois a primeira revisão externa não autoriza discutir encerramento.
 
-B) continuar para recuperar o passado e evitar dissenso.
+C) Abandonar quando o custo executado superar metade do orçamento, ainda que benefícios futuros continuem superiores aos custos restantes.
 
-C) encerrar automaticamente porque todo custo afundado exige abandono.
-
-D) aumentar recursos até que o teste se torne favorável.
+D) Solicitar revisão interna, excluir o encerramento para preservar coesão do colegiado e decidir pelo investimento já comprometido.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A resposta combate escalada e pensamento de grupo sem impor resultado automático.
-- **B:** Incorreta. Gasto passado é irrecuperável, e supressão de dissenso piora a decisão.
-- **C:** Incorreta. A teoria manda comparar futuros, não adotar regra cega.
-- **D:** Incorreta. Isso reforça escalada e despreza evidência independente.
+- **A:** Correta. A alternativa retira o custo irrecuperável do cálculo, protege contestação e usa critério prospectivo de saída.
+- **B:** Incorreta. Ignorar o gasto passado é correto, mas adiar a discussão de encerramento diante de evidência independente perpetua a escalada.
+- **C:** Incorreta. Percentual já gasto não é regra automática; a comparação relevante envolve consequências futuras.
+- **D:** Incorreta. Revisão sem alternativa real de saída mantém conformidade grupal e volta a justificar a decisão pelo passado.
 
 **Conceito:** Custo afundado não decide; consequências futuras e processo crítico decidem.
 
@@ -1228,25 +1212,23 @@ D) programação.
 
 A direção define para toda a instituição o objetivo de reduzir espera com qualidade; uma diretoria fixa como indicador a mediana de dias e a meta de 12 dias até dezembro; uma equipe cria rotina semanal; o controle revela queda do prazo, mas aumento de devoluções, e a meta é revista. Qual leitura preserva todas as distinções?
 
-**Filtros do caso:** 1) escopo global, de unidade e de tarefa; 2) indicador versus meta; 3) prazo e qualidade; 4) retroalimentação do controle
+A) Reconhecer objetivo global, diretoria e rotina como estratégico, tático e operacional, mas inverter indicador e meta e ignorar as devoluções.
 
-A) tudo é operacional porque há prazo; a queda da mediana encerra o controle.
+B) Tratar a prioridade institucional como tática, o plano da diretoria como estratégico e a rotina como operacional, revendo a meta pela qualidade observada.
 
-B) o indicador é 12 dias, a meta é a mediana e devolução não importa.
+C) Distinguir indicador, meta e níveis, mas considerar as devoluções externas ao objetivo e encerrar o controle ao atingir 12 dias.
 
-C) a revisão prova fracasso do PODC e dispensa nova organização.
-
-D) estratégico global, tático na diretoria, operacional na rotina, com controle retroalimentador.
+D) Ler objetivo global, plano da diretoria e rotina como estratégico, tático e operacional, usando prazo e devoluções para retroalimentar o plano.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Prazo não define nível, e o efeito adverso impede conclusão unilateral.
-- **B:** Incorreta. Indicador e meta foram trocados, e qualidade integra o objetivo.
-- **C:** Incorreta. Revisão baseada em evidência é parte do ciclo e pode exigir redistribuição.
-- **D:** Correta. A alternativa classifica escopos, diferencia medida de meta e usa o resultado completo para revisar.
+- **A:** Incorreta. Os níveis foram reconhecidos, mas indicador e meta estão invertidos e a piora da qualidade exige análise.
+- **B:** Incorreta. A revisão é defensável, porém prioridade global é estratégica e o desdobramento da diretoria é tático.
+- **C:** Incorreta. As classificações podem ser preservadas, mas devoluções integram a qualidade do objetivo e impedem encerrar o controle.
+- **D:** Correta. A alternativa conserva escopos, separa régua e alvo e usa os dois resultados para revisar o planejamento.
 
 **Conceito:** Planejamento multinível e controle formam uma cadeia de resultados.
 
@@ -1314,25 +1296,23 @@ D) estratégico; táticos nas áreas; operacionais nas rotinas.
 
 Uma autarquia declara como missão “ser referência até 2030”, escolhe implantar um portal antes de analisar capacidades e chama “percentual digital” de meta, sem alvo nem prazo. A correção tecnicamente completa é:
 
-**Filtros do caso:** 1) presente da missão versus futuro da visão; 2) diagnóstico antes da escolha; 3) indicador sem alvo; 4) meta e iniciativa como peças distintas
+A) Reclassificar “ser referência até 2030” como visão e o percentual como indicador, mas manter o portal escolhido antes do diagnóstico e sem meta associada.
 
-A) manter tudo, pois os termos são intercambiáveis se a direção aprovar.
+B) Realizar o diagnóstico antes da escolha, porém conservar a frase futura como missão e tratar a implantação do portal como objetivo institucional.
 
-B) chamar o portal de missão e o percentual de valor.
+C) Corrigir missão e visão, diagnosticar capacidades, vincular o percentual a um objetivo e só então definir meta e iniciativa.
 
-C) corrigir visão/missão; diagnosticar; usar percentual como indicador; depois, meta e ação.
-
-D) definir primeiro uma meta numérica e dispensar diagnóstico e objetivo.
+D) Reconhecer visão e portal como iniciativa, convertendo o percentual sozinho em meta completa e dispensando a análise das capacidades.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Cada termo possui função e a lógica do planejamento impõe dependências.
-- **B:** Incorreta. Portal é ação; percentual é medida, não princípio.
-- **C:** Correta. A resposta corrige identidade, sequência e cadeia de mensuração sem inventar elementos.
-- **D:** Incorreta. Meta deve servir a objetivo e a escolha deve ser informada por diagnóstico.
+- **A:** Incorreta. Corrige dois rótulos, mas mantém a iniciativa prematura e não transforma o indicador em alvo verificável.
+- **B:** Incorreta. A ordem melhora, porém a frase é visão e o portal é iniciativa, não missão nem objetivo final.
+- **C:** Correta. A solução recompõe identidade, diagnóstico, vínculo da medida, alvo e ação em dependência lógica.
+- **D:** Incorreta. Visão e iniciativa foram reconhecidas, mas indicador sem nível e prazo não é meta e diagnóstico continua necessário.
 
 **Conceito:** Planejamento coerente alinha identidade, evidência, escolha, medida, alvo e ação.
 
@@ -2831,25 +2811,23 @@ D) objetivos conjuntos e desdobrados, participação, autocontrole, acompanhamen
 
 A direção parte do primeiro orçamento, busca apenas relatórios que o validam, superestima fraude recém-divulgada e insiste no projeto para justificar gasto passado. A sequência de vieses é:
 
-**Filtros do caso:** 1) referência inicial; 2) seleção de evidência; 3) evento fácil de lembrar; 4) investimento passado; 5) ordem dos sinais
-
-A) confirmação, ancoragem, excesso de confiança e pensamento de grupo.
+A) ancoragem, confirmação, excesso de confiança e escalada de compromisso.
 
 B) ancoragem, confirmação, disponibilidade e escalada de compromisso.
 
-C) disponibilidade, confirmação, ancoragem e racionalidade limitada.
+C) disponibilidade, confirmação, ancoragem e escalada de compromisso.
 
-D) excesso de confiança, pensamento de grupo, disponibilidade e intuição.
+D) ancoragem, disponibilidade, confirmação e pensamento de grupo.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. A ordem e os dois últimos diagnósticos não correspondem aos fatos.
-- **B:** Correta. Cada comportamento corresponde ao sinal definidor de um viés estudado.
-- **C:** Incorreta. Primeiro número é ancoragem, e gasto passado aponta escalada.
-- **D:** Incorreta. Não há certeza exagerada, consenso reprimido ou reconhecimento experiente.
+- **A:** Incorreta. Os dois primeiros e o último rótulo estão corretos, mas fraude recém-divulgada indica disponibilidade, não excesso de confiança.
+- **B:** Correta. Primeiro valor, filtro de evidências, evento saliente e defesa do gasto passado correspondem à sequência.
+- **C:** Incorreta. O primeiro orçamento produz ancoragem e a fraude lembrada produz disponibilidade; os dois rótulos foram trocados.
+- **D:** Incorreta. A ordem intermediária não corresponde aos fatos e a insistência pelo gasto passado é escalada, não pensamento de grupo.
 
 **Conceito:** Vieses distintos podem se acumular numa mesma decisão.
 
@@ -2875,25 +2853,23 @@ D) excesso de confiança, pensamento de grupo, disponibilidade e intuição.
 
 Uma decisão nova reúne especialistas sob informação incompleta. O grupo fixa critérios mínimos, escolhe opção satisfatória e usa pré-mortem e revisor independente para preservar dissenso. A leitura correta é:
 
-**Filtros do caso:** 1) novidade; 2) informação incompleta; 3) critério satisfatório; 4) conhecimento distribuído; 5) salvaguardas de dissenso
+A) racionalidade limitada com consulta técnica, mas sem decisão participativa, pois a escolha satisfatória permanece atribuída ao gestor.
 
-A) há modelo racional clássico, porque existem critérios.
+B) decisão participativa sob racionalidade clássica, porque critérios mínimos e revisão independente asseguram maximização.
 
-B) há certeza e decisão programada, pois especialistas participaram.
+C) racionalidade limitada e decisão participativa, com salvaguardas de dissenso que reduzem, sem eliminar, o risco de conformidade.
 
-C) racionalidade limitada e participação com salvaguardas contra conformidade.
-
-D) o pré-mortem elimina qualquer possibilidade de viés.
+D) racionalidade limitada e participação qualificada, com pré-mortem e revisor suficientes para afastar qualquer viés residual.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. O clássico pressupõe condições mais amplas e maximização; aqui há informação incompleta e suficiência.
-- **B:** Incorreta. Novidade e informação incompleta afastam esses rótulos.
-- **C:** Correta. Limites e suficiência indicam racionalidade limitada; especialistas e mecanismos críticos qualificam participação.
-- **D:** Incorreta. Mitigações reduzem riscos, não garantem ausência de vieses.
+- **A:** Incorreta. Há limites cognitivos, mas o próprio grupo fixa critérios e escolhe; não se trata de mera consulta individual.
+- **B:** Incorreta. Participação existe, porém critérios mínimos e solução satisfatória não equivalem a maximização clássica.
+- **C:** Correta. A alternativa reconhece limites, escolha conjunta e mitigação não absoluta do pensamento conformista.
+- **D:** Incorreta. O diagnóstico e os mecanismos são adequados, mas nenhuma salvaguarda garante ausência de vieses.
 
 **Conceito:** Bom desenho decisório reconhece limites e protege contestação.
 
@@ -2919,25 +2895,23 @@ D) o pré-mortem elimina qualquer possibilidade de viés.
 
 A fila cresce; dados mostram retrabalho por instrução ambígua. A equipe define critérios de qualidade e custo, compara melhoria da orientação e contratação, pilota a primeira, mede devoluções e usa o resultado para revisar prioridades. Qual alternativa descreve o fluxo?
 
-**Filtros do caso:** 1) sintoma versus problema; 2) critérios prévios; 3) alternativas reais; 4) piloto e medição; 5) retroalimentação
+A) A fila é sintoma, a instrução ambígua é causa operacional; critérios orientam alternativas, o piloto gera evidência e o controle revisa o plano.
 
-A) problema redefinido, alternativas avaliadas e monitoramento retroalimentando o plano.
+B) A fila é o problema central, a instrução ambígua é apenas risco e o piloto substitui a comparação porque produz dados reais.
 
-B) a contratação deveria ser automática porque fila sempre significa capacidade insuficiente.
+C) A causa é redefinida e as opções são comparadas, mas a primeira melhoria pilotada encerra a decisão se reduzir devoluções no curto prazo.
 
-C) o piloto prova certeza e elimina necessidade de monitoramento.
-
-D) a revisão de prioridades invalida a decisão anterior.
+D) O retrabalho é causa suficiente; critérios são aplicados após a contratação e a revisão serve para justificar a escolha inicial.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. O fluxo cobre diagnóstico, decisão, implementação, controle e aprendizagem.
-- **B:** Incorreta. O material apresenta múltiplas causas possíveis.
-- **C:** Incorreta. Teste não torna o futuro certo e depende de medição.
-- **D:** Incorreta. Aprendizagem pode ajustar o plano sem transformar revisão em falha.
+- **A:** Correta. O fluxo distingue sintoma e causa, compara opções, testa, mede e devolve evidência ao planejamento.
+- **B:** Incorreta. A fila é manifestação, a instrução ambígua explica o retrabalho e o piloto não substitui comparação prévia.
+- **C:** Incorreta. Diagnóstico e comparação estão presentes, mas resultado inicial não encerra monitoramento nem aprendizagem.
+- **D:** Incorreta. A instrução ambígua é a causa indicada; critérios antecedem a escolha e revisão não deve racionalizar decisão já tomada.
 
 **Conceito:** Decisão e PODC conectam evidência, ação e adaptação.
 
@@ -2959,29 +2933,27 @@ D) a revisão de prioridades invalida a decisão anterior.
 
 **Uso:** Simulado
 
-**Referência:** [Dia 3 — planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao)
+**Referência:** [Dia 3 — PODC, níveis e planejamento](../semana_01_estudo.md#dia-3-podc-niveis-planejamento), [ferramentas, estratégias, redes e alianças](../semana_01_estudo.md#dia-3-ferramentas-estrategia-redes) e [planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao).
 
 Uma organização quer ser referência futura em atendimento, detecta sistema legado interno e integração externa, prioriza problemas por GUT, detalha modernização em 5W2H, negocia objetivos por APO e, diante de probabilidades incertas, aceita solução satisfatória com ponto de abandono. A avaliação correta é:
 
-**Filtros do caso:** 1) missão versus visão; 2) origem SWOT; 3) GUT versus 5W2H; 4) participação na APO; 5) solução satisfatória; 6) ponto de abandono
+A) A frase futura é visão e os fatores seguem sua origem, mas GUT também identifica a causa e o ponto de abandono fixa o resultado ótimo.
 
-A) a frase futura é missão, GUT diagnostica o ambiente e 5W2H define estratégia genérica.
+B) SWOT, GUT e 5W2H cumprem funções distintas, porém a APO requer imposição da direção e a integração externa constitui força organizacional.
 
-B) APO exige imposição unilateral e solução satisfatória pertence ao modelo maximizador.
+C) Há visão, diagnóstico e ferramentas em funções próprias; a negociação alinha a execução, e suficiência com ponto de abandono reconhece limites decisórios.
 
-C) visão e ferramentas em suas finalidades, com racionalidade limitada e ponto de abandono.
-
-D) integração externa é força, sistema interno é ameaça e ponto de abandono demonstra certeza.
+D) Legado como fraqueza e integração como oportunidade estão corretos, mas escolha satisfatória seria maximização e abandono provaria risco mensurável.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Identidade e finalidades das ferramentas foram trocadas.
-- **B:** Incorreta. APO é participativa; suficiência caracteriza racionalidade limitada.
-- **C:** Correta. A alternativa reconhece cada conceito e o mecanismo contra compromisso irracional.
-- **D:** Incorreta. As origens SWOT estão invertidas e o ponto de abandono lida com incerteza/escalada.
+- **A:** Incorreta. Visão e origem foram reconhecidas, mas GUT prioriza sem provar causa e ponto de abandono não garante ótimo.
+- **B:** Incorreta. As ferramentas foram separadas, porém APO admite negociação e integração externa favorável é oportunidade.
+- **C:** Correta. A alternativa preserva identidade, diagnóstico, prioridade, ação, alinhamento e decisão sob limites.
+- **D:** Incorreta. SWOT está correta, mas suficiência nega maximização e ponto de abandono administra incerteza e escalada.
 
 **Conceito:** Planejamento e decisão exigem ferramentas com fronteiras conceituais claras.
 
@@ -2993,7 +2965,7 @@ D) integração externa é força, sistema interno é ameaça e ponto de abandon
 
 **Uso:** Simulado
 
-**Referência:** [Dia 3 — planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao)
+**Referência:** [Dia 3 — PODC, níveis e planejamento](../semana_01_estudo.md#dia-3-podc-niveis-planejamento), [ferramentas, estratégias, redes e alianças](../semana_01_estudo.md#dia-3-ferramentas-estrategia-redes) e [planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao).
 
 </details>
 
@@ -3056,25 +3028,23 @@ D) fatores motivacionais de Herzberg.
 
 Valores amplamente compartilhados premiam silêncio diante de erros; uma subcultura técnica promove contestação, e pesquisa recente aponta clima de medo. Qual afirmação é correta?
 
-**Filtros do caso:** 1) amplitude do compartilhamento; 2) conteúdo ético; 3) subcultura; 4) clima imediato; 5) não equivalência dos conceitos
+A) Há cultura forte e funcional pelo compartilhamento amplo; a contestação técnica é apenas variação de clima e o medo tende a ser episódico.
 
-A) a existência de subcultura torna impossível cultura forte.
+B) Há cultura forte disfuncional e clima negativo, mas a subcultura demonstra que os valores deixaram de ser amplamente compartilhados.
 
-B) clima de medo prova que todos os pressupostos mudaram recentemente.
+C) A cultura tornou-se fraca pela existência da subcultura, e o clima recente comprova mudança imediata dos pressupostos básicos.
 
-C) valores compartilhados são éticos por definição.
-
-D) cultura forte disfuncional, subcultura e clima negativo distintos.
+D) Há cultura forte disfuncional, subcultura de contestação e clima negativo, fenômenos distintos que podem coexistir.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Força não exige homogeneidade absoluta.
-- **B:** Incorreta. Clima é mais imediato e não mede toda a cultura.
-- **C:** Incorreta. Força não qualifica moralmente o conteúdo.
-- **D:** Correta. A resposta separa compartilhamento, conteúdo, variação interna e percepção atual.
+- **A:** Incorreta. Compartilhamento mede força, não funcionalidade ética; subcultura e clima também não são equivalentes.
+- **B:** Incorreta. Cultura e clima foram bem avaliados, mas uma subcultura não elimina necessariamente o compartilhamento dominante.
+- **C:** Incorreta. Subculturas podem coexistir com cultura forte, e percepção recente não prova mudança instantânea de pressupostos.
+- **D:** Correta. A alternativa separa intensidade, conteúdo, variação interna e percepção atual sem confundir os níveis.
 
 **Conceito:** Cultura forte, subcultura e clima podem coexistir com relações complexas.
 
@@ -3226,25 +3196,23 @@ D) divisional, pelo critério geográfico.
 
 A chefia melhora condições físicas, mas não oferece responsabilidade; um bônus desejado não depende do desempenho; e servidores percebem pior relação contribuição-recompensa que seus pares. O diagnóstico é:
 
-**Filtros do caso:** 1) contexto versus conteúdo; 2) desejo da recompensa; 3) ligação desempenho-recompensa; 4) contribuições; 5) referência comparativa
+A) fatores higiênicos sem motivadores, instrumentalidade baixa e iniquidade percebida.
 
-A) higiênicos sem motivadores, instrumentalidade baixa e iniquidade percebida.
+B) fatores higiênicos sem motivadores, expectativa baixa e iniquidade percebida.
 
-B) há motivadores de Herzberg, valência zero e equidade plena.
+C) fatores higiênicos sem motivadores, instrumentalidade baixa e valência negativa.
 
-C) autorrealização foi satisfeita, expectativa é zero e inexiste referência.
-
-D) Teoria Y explica os três fenômenos e dispensa intervenções distintas.
+D) motivadores presentes, instrumentalidade baixa e iniquidade percebida.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A alternativa aplica Herzberg, Vroom e Adams aos sinais específicos.
-- **B:** Incorreta. Condições são higiênicas, o bônus é desejado e a comparação é injusta.
-- **C:** Incorreta. Nenhum desses fatos foi dado.
-- **D:** Incorreta. X/Y não substituem os três modelos descritos.
+- **A:** Correta. Condições físicas pertencem ao contexto, falta responsabilidade motivadora, o bônus não decorre do desempenho e a comparação é desfavorável.
+- **B:** Incorreta. Herzberg e Adams estão corretos, mas o elo rompido é desempenho-recompensa, isto é, instrumentalidade, não esforço-desempenho.
+- **C:** Incorreta. Os dois primeiros diagnósticos estão corretos, porém o bônus é desejado; além disso, o caso informa iniquidade comparativa.
+- **D:** Incorreta. Instrumentalidade e iniquidade estão corretas, mas responsabilidade não foi oferecida; há higiene, não motivador presente.
 
 **Conceito:** Teorias motivacionais explicam mecanismos diferentes e complementares.
 
@@ -3396,25 +3364,23 @@ D) transformacional.
 
 Uma meta difícil é aceita e recebe feedback, mas o empregado não acredita que esforço possa alcançá-la; a recompensa depende do resultado, porém colegas com contribuições iguais recebem mais. Qual intervenção é mais completa?
 
-**Filtros do caso:** 1) especificidade/desafio; 2) viabilidade; 3) expectativa; 4) instrumentalidade; 5) equidade; 6) feedback
+A) Reduzir a dificuldade e oferecer treinamento, mantendo a regra de recompensa e adiando a revisão da equidade para o ciclo seguinte.
 
-A) elevar apenas a valência, sem atuar na expectativa ou na equidade.
+B) Preservar desafio e feedback, reforçar o vínculo recompensa-resultado já existente e avaliar apenas a evolução histórica do empregado.
 
-B) retirar feedback e tornar a meta vaga, sem corrigir expectativa ou justiça.
+C) Calibrar viabilidade, apoiar o elo esforço-desempenho, preservar a recompensa por resultado e rever a equidade, mantendo feedback.
 
-C) meta viável, expectativa apoiada, elo preservado e equidade revista.
-
-D) intensificar o controle, sem rever viabilidade, expectativa ou equidade.
+D) Rever recursos e comparação entre pares, mas retirar feedback e tornar a meta genérica para diminuir a pressão percebida.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. O problema inclui expectativa baixa e iniquidade.
-- **B:** Incorreta. Isso enfraquece condições da teoria de metas.
-- **C:** Correta. A solução atua em meta, Vroom e Adams sem presumir que um ajuste resolve tudo.
-- **D:** Incorreta. Rótulo gerencial não corrige viabilidade nem justiça.
+- **A:** Incorreta. Apoio pode elevar expectativa, mas a solução posterga a iniquidade e reduz desafio sem demonstrar necessidade.
+- **B:** Incorreta. A instrumentalidade já existe; a intervenção não corrige expectativa baixa nem a comparação injusta.
+- **C:** Correta. A alternativa atua em meta, expectativa, instrumentalidade e equidade sem eliminar o feedback.
+- **D:** Incorreta. Recursos e justiça importam, porém retirar feedback e especificidade enfraquece a teoria de metas.
 
 **Conceito:** Motivação depende de viabilidade percebida, elos e justiça.
 
@@ -3440,25 +3406,23 @@ D) intensificar o controle, sem rever viabilidade, expectativa ou equidade.
 
 Após mudança de chefia, cai rapidamente a percepção de justiça; influenciadores informais difundem resistência; cartazes continuam declarando participação, mas punições recorrentes desestimulam voz. A conclusão integral é:
 
-**Filtros do caso:** 1) velocidade da percepção; 2) rede espontânea; 3) artefato; 4) valor declarado; 5) pressuposto praticado; 6) resistência
+A) Houve deterioração do clima e resistência pela rede informal, mas os cartazes confirmam cultura participativa apesar das punições.
 
-A) a cultura inteira mudou instantaneamente e a rede informal deve ser extinta por ordem.
+B) Houve mudança de clima, resistência difundida informalmente e desalinhamento entre artefatos, discurso participativo e prática punitiva.
 
-B) mudança de clima, resistência informal e divergência entre discurso e pressupostos.
+C) A cultura mudou integralmente com a nova chefia; os influenciadores formam estrutura formal e os cartazes perderam função cultural.
 
-C) cartazes provam cultura participativa e a queda de percepção é irrelevante.
-
-D) punições são apenas fatores higiênicos, sem efeito cultural ou comunicacional.
+D) Há apenas clima negativo; influenciadores equivalem à liderança formal e não existe desalinhamento porque cartazes são simples comunicação.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Cultura é mais resistente e vínculos espontâneos não desaparecem por decreto.
-- **B:** Correta. Cada fato é associado ao nível ou fenômeno adequado.
-- **C:** Incorreta. Artefatos não garantem pressupostos, e clima é dado organizacional.
-- **D:** Incorreta. O caso revela o que é efetivamente tolerado e barreira à voz.
+- **A:** Incorreta. Clima e rede foram reconhecidos, mas artefatos não comprovam pressupostos quando a prática pune a voz.
+- **B:** Correta. A alternativa distingue percepção rápida, influência espontânea e incongruência entre níveis da cultura.
+- **C:** Incorreta. Mudança de clima não prova transformação cultural integral, e influenciadores não se tornam estrutura formal.
+- **D:** Incorreta. O caso inclui organização informal e desalinhamento cultural; cartazes também funcionam como artefatos.
 
 **Conceito:** Formal, informal, clima e níveis culturais precisam ser lidos em conjunto.
 
@@ -3568,25 +3532,23 @@ D) cruzar função e projeto com dupla autoridade.
 
 Em crise, a equipe inexperiente precisa de orientação de tarefa; especialistas detêm informação crítica e devem participar; a chefia usa canal técnico sem feedback e surge pensamento conformista. A resposta mais adequada é:
 
-**Filtros do caso:** 1) urgência; 2) prontidão do liderado; 3) conhecimento distribuído; 4) canal; 5) feedback; 6) conformidade
+A) Orientar todos de modo diretivo, inclusive especialistas, manter o canal técnico com feedback e concentrar a decisão para evitar conformidade.
 
-A) usar participação idêntica em toda situação, mesmo com baixa prontidão e necessidade de orientação.
+B) Orientar quem tem baixa prontidão, envolver especialistas, traduzir a mensagem, confirmar compreensão e proteger dissenso.
 
-B) orientar a baixa prontidão, envolver especialistas, usar canal claro, feedback e dissenso protegido.
+C) Adotar participação uniforme para toda a equipe, pois a crise iguala prontidão, usando feedback coletivo como único mecanismo de coordenação.
 
-C) emitir mais ordens pelo mesmo canal técnico e interpretar silêncio como compreensão, concordância e ausência de dissenso.
-
-D) substituir especialistas por autoridade formal, pois cargo é liderança.
+D) Ajustar direção à prontidão e ouvir especialistas, mas preservar o canal técnico e interpretar ausência de objeção como confirmação.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Nenhum estilo é universal e a prontidão varia.
-- **B:** Correta. A alternativa ajusta estilo por situação, aproveita conhecimento e corrige comunicação e conformidade.
-- **C:** Incorreta. Transmissão não prova compreensão nem consenso crítico.
-- **D:** Incorreta. Cargo e liderança não são sinônimos, e a informação distribuída importa.
+- **A:** Incorreta. Feedback melhora a comunicação, mas estilo único desperdiça conhecimento especializado e concentração não evita pensamento de grupo.
+- **B:** Correta. A solução diferencia prontidão, distribui participação conforme conhecimento e corrige canal, feedback e conformidade.
+- **C:** Incorreta. A participação é útil, porém prontidão não se torna homogênea pela crise e orientação de tarefa continua necessária.
+- **D:** Incorreta. Liderança e participação estão ajustadas, mas canal inadequado e silêncio não comprovam compreensão nem dissenso.
 
 **Conceito:** Direção integra liderança contingente, participação e comunicação eficaz.
 
@@ -3738,25 +3700,23 @@ D) o clima jamais muda.
 
 A organização distribui decisões rotineiras às regiões para usar conhecimento local; cada gerente recebe limite, dados e treinamento, mas a sede exige assinatura em cada ato. A leitura correta é:
 
-**Filtros do caso:** 1) alcance organizacional; 2) conhecimento local; 3) limite de autoridade; 4) informação e competência; 5) assinatura central; 6) responsabilidade final
+A) Há descentralização com delegação efetiva, pois dados e treinamento bastam; a assinatura central é controle concomitante sem limitar autoridade.
 
-A) há empowerment pleno porque as regiões possuem treinamento.
+B) O desenho busca descentralizar, mas a assinatura prévia retém a decisão na sede; responsabilidade final poderia permanecer sem microaprovação.
 
-B) autonomia regional reduzida pela assinatura central.
+C) Há mera delegação de tarefas, e a responsabilidade da sede exige assinatura prévia de cada ato regional para preservar accountability.
 
-C) a sede deixou de ter responsabilidade e por isso deve assinar tudo.
-
-D) trata-se de descentralização jurídica para outras pessoas.
+D) Existe autonomia real dentro de limites, sendo a assinatura central apenas controle posterior sobre decisões já executadas pelas regiões.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Capacidade sem autoridade prática não basta.
-- **B:** Correta. A alternativa distingue desenho amplo, ato delegado, condições e microcontrole.
-- **C:** Incorreta. Responsabilidade final não exige refazer cada decisão.
-- **D:** Incorreta. O caso é distribuição gerencial interna.
+- **A:** Incorreta. Capacidade e informação não compensam a ausência de poder decisório, e assinatura prévia restringe a delegação.
+- **B:** Correta. A alternativa distingue intenção de descentralizar, autoridade efetiva e responsabilidade final sem confundi-la com aprovação de cada ato.
+- **C:** Incorreta. O caso pretende distribuir decisões, e responsabilidade do centro não exige decidir previamente toda ocorrência.
+- **D:** Incorreta. A assinatura acontece antes da validade do ato; não é auditoria posterior nem autonomia decisória efetiva.
 
 **Conceito:** Descentralização e delegação exigem autoridade real dentro de limites.
 
@@ -3908,25 +3868,23 @@ D) componentes da equidade.
 
 A meta foi fixada, o desempenho medido e o desvio comparado. A análise mostra que uma premissa ambiental mudou, enquanto parte da falha decorreu de execução. O controle adequado deve:
 
-**Filtros do caso:** 1) padrão prévio; 2) medição; 3) comparação; 4) causa ambiental; 5) causa de execução; 6) resposta diferenciada
+A) Revisar apenas o padrão, porque a mudança ambiental absorve o desvio observado, mantendo inalterado o modo de execução.
 
-A) punir a equipe por todo desvio e manter o padrão imutável.
+B) Corrigir somente a execução, pois padrões definidos antes da medição não podem ser alterados pelo próprio controle.
 
-B) revisar toda meta sempre que houver erro operacional.
+C) Recalcular a meta pela média do desvio e aplicar uma única correção à equipe, sem separar causas externas e operacionais.
 
-C) encerrar após a comparação, pois análise e correção pertencem ao planejamento.
-
-D) corrigir a execução, revisar o padrão afetado e aprender.
+D) Corrigir a parcela de execução, revisar o padrão afetado pela nova premissa e usar ambos os resultados para aprendizagem.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Ignora causalidade e mudança externa.
-- **B:** Incorreta. A revisão deve corresponder à causa.
-- **C:** Incorreta. Analisar e responder integram controle.
-- **D:** Correta. Controle pode produzir duas respostas simultâneas conforme a causa.
+- **A:** Incorreta. A premissa mudou, mas parte da falha é de execução e também exige resposta.
+- **B:** Incorreta. Execução precisa ser corrigida, porém controle pode revelar que uma premissa do padrão perdeu validade.
+- **C:** Incorreta. Uma correção média apaga causalidades distintas e pode punir ou adaptar o componente errado.
+- **D:** Correta. O controle diferencia causas, associa respostas proporcionais e retroalimenta o planejamento.
 
 **Conceito:** Controle diagnostica causas para corrigir execução ou adaptar o plano.
 
@@ -4076,27 +4034,25 @@ D) eliminam a necessidade de acompanhamento.
 
 **Referência:** [Dia 4 — delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho)
 
-Antes de liberar um procedimento operacional, uma regra formal verifica documentos obrigatórios. Esse controle pode ser classificado como:
-
-**Filtros do caso:** 1) momento anterior; 2) objeto da tarefa; 3) regra formal; 4) independência dos eixos
+Na triagem de requerimentos, o sistema impede o início da análise enquanto faltarem documentos exigidos por norma. A checagem incide no roteiro executado pela equipe, e não nas metas da diretoria. Esse controle pode ser classificado como:
 
 A) preventivo, operacional e burocrático.
 
-B) posterior, estratégico e de clã.
+B) preventivo, tático e burocrático.
 
-C) concomitante, tático e de mercado.
+C) concomitante, operacional e burocrático.
 
-D) preventivo, estratégico e autocontrole.
+D) preventivo, operacional e de clã.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A validação ocorre antes, incide na tarefa e usa regra/procedimento.
-- **B:** Incorreta. Todos os eixos contradizem o caso.
-- **C:** Incorreta. Não ocorre durante, não focaliza unidade/programa nem usa preço.
-- **D:** Incorreta. Só o primeiro rótulo está correto.
+- **A:** Correta. A verificação antecede a liberação, alcança a tarefa e opera por regra formal.
+- **B:** Incorreta. Momento e forma estão corretos, mas o objeto é o procedimento executado, portanto operacional.
+- **C:** Incorreta. Nível e forma estão corretos, porém a checagem ocorre antes da liberação, não durante a execução.
+- **D:** Incorreta. Momento e nível estão corretos, mas documentos e regra formal caracterizam controle burocrático, não cultural.
 
 **Conceito:** Um mecanismo admite classificações simultâneas em eixos independentes.
 
@@ -4206,25 +4162,23 @@ D) diagonal.
 
 Uma organização inovadora reduz níveis, amplia a amplitude, descentraliza decisões e incentiva comunicação lateral. Porém, mantém tarefas ambíguas e gestores despreparados. Qual avaliação integra desenho e contingência?
 
-**Filtros do caso:** 1) número de níveis; 2) amplitude de controle; 3) centralização; 4) comunicação; 5) clareza de processos; 6) capacidade gerencial
+A) O desenho tende ao polo orgânico, e a amplitude maior será eficiente por si só mesmo com tarefas ambíguas e gestores despreparados.
 
-A) é mecanicista porque toda amplitude maior concentra autoridade.
+B) A estrutura é mecanicista, pois ambiguidade exige centralização; comunicação lateral e descentralização não alteram esse enquadramento.
 
-B) o desenho é automaticamente eficaz por favorecer inovação.
+C) O conjunto tende ao polo orgânico, mas ambiguidade e baixa capacidade gerencial podem converter amplitude maior em sobrecarga.
 
-C) polo orgânico; sem condições, há risco de sobrecarga.
-
-D) deve adicionar níveis sem analisar tarefas, pois menor amplitude é sempre ideal.
+D) Há desenho orgânico, porém a resposta necessária é adicionar níveis e formalização imediatamente, antes de diagnosticar tarefas e capacidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Amplitude maior não implica centralização; os demais traços são orgânicos.
-- **B:** Incorreta. Adequação depende de condições de execução.
-- **C:** Correta. A resposta reconhece o polo e as condições ausentes sem declarar fracasso inevitável.
-- **D:** Incorreta. Não existe amplitude universal.
+- **A:** Incorreta. O polo foi reconhecido, mas amplitude não produz eficácia automática quando faltam clareza e capacidade.
+- **B:** Incorreta. Os traços descritos são predominantemente orgânicos; ambiguidade é condição de risco, não critério que apaga o desenho.
+- **C:** Correta. A alternativa classifica o conjunto e aplica a contingência às condições ausentes.
+- **D:** Incorreta. O diagnóstico do polo é adequado, mas a intervenção universal repete o erro de ignorar tarefa e competência.
 
 **Conceito:** Coerência estrutural depende do conjunto de variáveis e da contingência.
 
@@ -4292,25 +4246,23 @@ D) as unidades de linha deixam de responder por seus objetivos.
 
 Um especialista responde ao gerente funcional pelo padrão técnico e ao gerente de projeto pelo prazo; uma assessoria de segurança pode impor requisitos apenas em seu domínio. As entregas ainda atravessam silos. Qual desenho de governança é mais preciso?
 
-**Filtros do caso:** 1) autoridade funcional; 2) autoridade de projeto; 3) staff delimitado; 4) silos/handoffs; 5) coordenação transversal
+A) Estrutura matricial, autoridade funcional delimitada da assessoria e mecanismos transversais para coordenar as entregas.
 
-A) matriz, staff delimitado e coordenação transversal.
+B) Estrutura matricial, staff com comando geral sobre os projetos e integração dos handoffs pela chefia técnica funcional.
 
-B) classificar tudo como funcional pura porque existe gerente técnico.
+C) Estrutura funcional, gerente de projeto como assessor sem autoridade e segurança incorporada à linha em todas as decisões.
 
-C) transformar staff em comando geral e eliminar o gerente do projeto.
-
-D) chamar handoffs de vantagem necessária e dispensar papéis claros.
+D) Estrutura matricial e staff delimitado, sendo a dupla autoridade suficiente para resolver handoffs sem coordenação adicional.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A solução distingue dois eixos de comando, exceção técnica e problema de integração.
-- **B:** Incorreta. O gerente de projeto cria a segunda dimensão.
-- **C:** Incorreta. Autoridade funcional é delimitada e não substitui toda a matriz.
-- **D:** Incorreta. Silos e ambiguidades exigem coordenação.
+- **A:** Correta. A alternativa preserva os dois eixos, limita a autoridade técnica e trata o fluxo que atravessa silos.
+- **B:** Incorreta. A matriz foi identificada, mas staff não recebe comando geral e integração não pode ficar restrita à função.
+- **C:** Incorreta. O gerente de projeto possui autoridade sobre prazo e entrega, formando segunda dimensão; segurança não vira linha geral.
+- **D:** Incorreta. Matriz e limite do staff estão corretos, porém dupla autoridade pode criar novos conflitos e não substitui coordenação transversal.
 
 **Conceito:** Matriz, linha/staff e fluxo transversal podem coexistir e exigem limites claros.
 
@@ -5809,25 +5761,23 @@ D) da departamentalização, por agrupar atividades e pessoas.
 
 Um órgão coloca valor público no topo do mapa, monitora satisfação do usuário, tempo de processo, capacitação, orçamento e redução de erros. Qual interpretação é correta?
 
-**Filtros do caso:** 1) missão pública; 2) usuário; 3) processo; 4) aprendizagem; 5) recurso; 6) leading/lagging
+A) BSC adaptado ao setor público: valor público orienta o painel, capacitação é antecedente e redução de erros é consequente.
 
-A) BSC público: capacitação antecedente; erro reduzido consequente.
+B) BSC público com orçamento como resultado final, satisfação como antecedente e redução de erros como medida de aprendizagem.
 
-B) orçamento deve substituir valor público como finalidade de lucro.
+C) Painel apenas operacional, pois missão, usuário, processos, capacidades e recursos não podem integrar uma cadeia causal pública.
 
-C) satisfação e tempo bastam; aprendizagem e integridade são irrelevantes.
-
-D) capacitação é consequente e erro reduzido é antecedente.
+D) BSC público orientado a valor, mas redução de erros é antecedente, capacitação consequente e orçamento ocupa o topo.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. A alternativa integra finalidade, equilíbrio e temporalidade dos indicadores.
-- **B:** Incorreta. Na organização pública, finanças são meio ou restrição.
-- **C:** Incorreta. Sistema equilibrado evita omissões críticas.
-- **D:** Incorreta. A ordem causal foi invertida.
+- **A:** Correta. A leitura preserva finalidade pública, equilíbrio de perspectivas e temporalidade dos dois indicadores.
+- **B:** Incorreta. Finanças são meio ou restrição; satisfação é resultado percebido e erro reduzido é medida consequente de processo.
+- **C:** Incorreta. O conjunto pode ser organizado como BSC público, desde que valor público, e não lucro, oriente a cadeia.
+- **D:** Incorreta. A finalidade foi reconhecida, mas capacitação precede desempenho, erro reduzido registra efeito e orçamento não ocupa o topo.
 
 **Conceito:** Medição pública articula missão, usuários, processos, capacidades e recursos.
 
@@ -5853,25 +5803,23 @@ D) capacitação é consequente e erro reduzido é antecedente.
 
 Uma diretora delega decisões até limite, oferece norma, dados e treinamento, acompanha amostra durante o mês e avalia resultados ao final; intervém apenas em exceções. A descrição correta é:
 
-**Filtros do caso:** 1) limite decisório; 2) informação e competência; 3) amostra durante; 4) avaliação depois; 5) exceções; 6) responsabilidade final
+A) Delegação com empowerment e controles durante e depois, mas transferência da responsabilidade final ao gerente dentro do limite.
 
-A) o acompanhamento por amostra elimina a delegação.
+B) Delegação apenas nominal, pois a amostra durante o mês elimina autonomia, embora avaliação final e responsabilidade permaneçam.
 
-B) a autoridade delimitada transfere toda responsabilidade final.
+C) Empowerment com amostra preventiva e avaliação final concomitante, compartilhando responsabilidade somente quando houver exceção.
 
-C) o treinamento é controle de mercado e a avaliação final é preventiva.
-
-D) delegação com empowerment, controles durante e depois e responsabilidade final.
+D) Delegação com autoridade delimitada e suporte, controles concomitante e posterior, gestão por exceção e responsabilidade final da diretora.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Controle proporcional não equivale a microgestão.
-- **B:** Incorreta. O superior continua responsável pelo sistema.
-- **C:** Incorreta. Treinamento dá capacidade; avaliação final é posterior.
-- **D:** Correta. Autonomia, capacidade, dois momentos de controle e accountability coexistem.
+- **A:** Incorreta. Autoridade, suporte e momentos de controle estão adequados, mas a diretora continua responsável pelo sistema delegado.
+- **B:** Incorreta. Amostragem proporcional durante a execução não elimina autonomia nem converte a delegação em nominal.
+- **C:** Incorreta. Há empowerment, porém a amostra é concomitante, a avaliação final é posterior e responsabilidade não nasce da exceção.
+- **D:** Correta. A alternativa integra poder real, capacidade, controles proporcionais, exceções e accountability final.
 
 **Conceito:** Autonomia responsável combina condições e controles em momentos adequados.
 
@@ -5893,29 +5841,27 @@ D) delegação com empowerment, controles durante e depois e responsabilidade fi
 
 **Uso:** Simulado
 
-**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao)
+**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao), [organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao) e [delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho).
 
 Uma organização quer inovação, mas mantém alta centralização, comunicação apenas vertical, punição de tentativas responsáveis e indicador único de velocidade. Ao ampliar equipes transversais, qual pacote é mais coerente?
 
-**Filtros do caso:** 1) centralização; 2) direção da comunicação; 3) punições e pressupostos; 4) equipes transversais; 5) indicador único; 6) equilíbrio de desempenho
+A) Descentralizar decisões para equipes transversais e abrir canais laterais, mantendo punições e o indicador único de velocidade durante a adaptação.
 
-A) trocar o organograma e manter punições e medida única.
+B) Alinhar reconhecimento à experimentação e acrescentar qualidade, mas conservar aprovações centralizadas e comunicação exclusivamente vertical.
 
-B) aumentar formalização e centralização porque inovação exige polo mecanicista.
+C) Dar autonomia e proteger tentativas responsáveis, substituindo velocidade apenas por satisfação e retirando controles formais das equipes.
 
-C) declarar cultura forte e eliminar controles de desempenho.
-
-D) descentralizar, comunicar, alinhar práticas à inovação e equilibrar velocidade e qualidade.
+D) Combinar direitos decisórios claros, comunicação lateral, segurança para experimentar e medidas equilibradas de velocidade, qualidade e aprendizagem.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Mudança estrutural isolada não corrige pressupostos nem incentivo.
-- **B:** Incorreta. O conjunto tende a dificultar adaptação no caso.
-- **C:** Incorreta. Força não significa adequação, e flexibilidade não exige ausência de controle.
-- **D:** Correta. A intervenção atua em estrutura, direção, cultura praticada e controle.
+- **A:** Incorreta. Estrutura e comunicação melhoram, mas punição e métrica única mantêm incentivos contrários à inovação.
+- **B:** Incorreta. Cultura e medição avançam, porém centralização e fluxo apenas vertical bloqueiam as equipes transversais.
+- **C:** Incorreta. Autonomia e segurança são coerentes, mas indicador único continua estreito e inovação não exige ausência de controles.
+- **D:** Correta. A intervenção alinha autoridade, fluxo informacional, práticas reforçadas e sistema de desempenho.
 
 **Conceito:** Coerência organizacional requer alinhamento entre desenho, comportamento e medição.
 
@@ -5927,7 +5873,7 @@ D) descentralizar, comunicar, alinhar práticas à inovação e equilibrar veloc
 
 **Uso:** Simulado
 
-**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao)
+**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao), [organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao) e [delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho).
 
 </details>
 
@@ -5937,29 +5883,27 @@ D) descentralizar, comunicar, alinhar práticas à inovação e equilibrar veloc
 
 **Uso:** Simulado
 
-**Referência:** [Dia 4 — delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho)
+**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao), [organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao) e [delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho).
 
-Uma autarquia adota matriz função-projeto, usa staff técnico com autoridade delimitada, reconhece influenciadores informais, ajusta liderança à prontidão, delega até limites e monitora capacitação e erros. Para que o desenho seja coerente, deve:
+Em uma autarquia matricial, conflitos entre gerentes atrasam projetos; a assessoria de segurança começa a decidir fora de seu domínio; líderes informais ocultam falhas; equipes inexperientes recebem autonomia sem apoio. Embora a capacitação aumente, os erros não caem. Para recuperar agilidade com accountability, a intervenção mais coerente é:
 
-**Filtros do caso:** 1) dupla autoridade; 2) staff delimitado; 3) organização informal; 4) prontidão; 5) limite delegado; 6) accountability; 7) leading/lagging
+A) Concentrar todas as decisões na assessoria para uniformizar riscos, retirar autoridade dos gerentes de projeto e usar capacitação como evidência suficiente de melhoria.
 
-A) eliminar um dos chefes para continuar chamando a estrutura de matriz e extinguir a rede informal.
+B) Clarificar direitos de decisão e limites técnicos, abrir feedback pela rede informal, calibrar apoio e autonomia e vincular capacidade a resultados.
 
-B) gerir matriz e staff, rede informal, liderança situacional, delegação responsável e indicadores antecedentes/consequentes.
+C) Manter a dupla autoridade ambígua, neutralizar influência informal por norma e ampliar delegação independentemente da prontidão das equipes.
 
-C) dar comando geral ao staff, usar um estilo único e transferir responsabilidade final ao delegado.
-
-D) classificar capacitação como resultado consequente, erros como antecedente e abolir controle para ampliar autonomia.
+D) Resolver conflitos caso a caso pela chefia, permitir veto geral da assessoria e substituir a taxa de erros por horas de treinamento.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Isso desfaz o traço matricial e presume controle impossível da rede espontânea.
-- **B:** Correta. A alternativa aplica corretamente todos os filtros sem absolutizar nenhum.
-- **C:** Incorreta. Autoridade é delimitada, liderança é contingente e responsabilidade permanece.
-- **D:** Incorreta. A temporalidade foi invertida e empowerment não é abandono.
+- **A:** Incorreta. A proposta amplia staff além do domínio, desfaz a matriz e trata indicador antecedente como resultado suficiente.
+- **B:** Correta. O pacote atua sobre autoridade, escopo técnico, informação informal, prontidão, autonomia e relação entre capacidade e desempenho.
+- **C:** Incorreta. Ambiguidade permanece, a rede informal não desaparece por norma e autonomia sem suporte repete a falha observada.
+- **D:** Incorreta. Microdecisão central, veto geral e troca do indicador de resultado por insumo reduzem agilidade e accountability.
 
 **Conceito:** Organização, direção e controle precisam operar como sistema coerente.
 
@@ -5971,6 +5915,6 @@ D) classificar capacitação como resultado consequente, erros como antecedente 
 
 **Uso:** Simulado
 
-**Referência:** [Dia 4 — delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho)
+**Referência:** [Dia 4 — estrutura e departamentalização](../semana_01_estudo.md#dia-4-estrutura-departamentalizacao), [organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao) e [delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho).
 
 </details>
