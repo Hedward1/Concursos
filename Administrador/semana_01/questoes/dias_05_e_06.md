@@ -6,7 +6,7 @@
 2. Na primeira passagem, resolva as seis primeiras da fila de D0; avance até a décima somente enquanto houver tempo para correção integral.
 3. Registre a resposta e a confiança de `0` a `3` antes de abrir o comentário.
 4. Corrija A, B, C e D. Erro ou acerto com confiança `0` ou `1` vai para o caderno de erros.
-5. Em D+2, conclua o saldo da fila de D0, faça as cinco Essenciais de reabertura e só então avance para Revisão ou Aprofundamento.
+5. Em D+2, use o bloco de 35 minutos para o saldo da fila de D0, em ordem e com correção integral; a lista de cinco Essenciais de reabertura começa em D+7.
 6. Questões de Simulado devem ser resolvidas sem consulta, com tempo controlado.
 7. Nas questões **Muito difícil**, identifique no rascunho ao menos três filtros do caso antes de comparar as alternativas compostas.
 
@@ -28,12 +28,12 @@
 ### Seleção operacional — Dia 5
 
 - **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q281, Q286, Q291, Q296, Q301, Q306, Q311, Q316, Q321 e Q326.
-- **Reabertura — D+2 (5):** Q283, Q294, Q304, Q318 e Q329.
+- **Reabertura — D+7 (5):** Q283, Q294, Q304, Q318 e Q329.
 
 ### Seleção operacional — Dia 6
 
 - **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q351, Q356, Q361, Q366, Q371, Q376, Q381, Q386, Q391 e Q396.
-- **Reabertura — D+2 (5):** Q353, Q364, Q374, Q388 e Q399.
+- **Reabertura — D+7 (5):** Q353, Q364, Q374, Q388 e Q399.
 
 ---
 
@@ -1149,7 +1149,7 @@ B) tarefas visíveis; limita-se diante de trabalho mental.
 
 C) dispensar validação com o executor.
 
-D) registrar apenas requisitos acadêmicos.
+D) registrar apenas requisitos acadêmicos formais.
 
 <details>
 <summary>Comentário e gabarito</summary>
@@ -1159,7 +1159,7 @@ D) registrar apenas requisitos acadêmicos.
 - **A:** Incorreta. Processos cognitivos podem não ser observáveis.
 - **B:** Correta. É a adequação e o limite ensinados.
 - **C:** Incorreta. Combinar métodos e validar aumenta qualidade.
-- **D:** Incorreta. Requisitos podem ser obtidos por outros métodos e especificação.
+- **D:** Incorreta. Requisitos formais podem ser obtidos por outros métodos e registrados na especificação.
 
 **Conceito:** O método de análise deve corresponder à natureza do trabalho.
 
@@ -1479,7 +1479,7 @@ D) aprendizagem demonstrada.
 
 Um curso recebeu satisfação alta e notas elevadas em prova prática. Três meses depois, o sistema não permite usar a nova técnica, o comportamento não mudou e o retrabalho permaneceu igual. Qual avaliação e resposta são coerentes?
 
-A) Confirmar sucesso nos quatro níveis, pois satisfação e prova permitem inferir aplicação e resultado organizacional.
+A) Confirmar sucesso nos quatro níveis, pois satisfação e prova permitem inferir aplicação sustentada, resultado organizacional e ausência de barreira no contexto.
 
 B) Registrar reação e aprendizagem; não presumir comportamento ou resultado; remover a barreira sistêmica e medir novamente transferência e efeito.
 
@@ -1492,7 +1492,7 @@ D) Atribuir o retrabalho aos participantes, aplicar sanção e dispensar nova me
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Reação e aprendizagem não autorizam inferir os dois níveis posteriores.
+- **A:** Incorreta. Reação e aprendizagem não autorizam inferir os dois níveis posteriores nem demonstram ausência de barreira contextual.
 - **B:** Correta. Classifica cada evidência, trata a condição de transferência e prevê nova mensuração de comportamento e resultado.
 - **C:** Incorreta. A prova apoia aprendizagem, e repetir conteúdo não remove a barreira tecnológica.
 - **D:** Incorreta. Ignora controlabilidade, transferência e necessidade de evidência posterior.
@@ -1693,7 +1693,7 @@ A) Substituir tudo por entrevista livre, porque um método flexível elimina hal
 
 B) Manter metas como critério único, converter fatores qualitativos em resultado financeiro e dispensar registros do período.
 
-C) Aplicar escolha forçada a todos, ocultar critérios e usar pesquisa de campo apenas para confirmar a classificação automática.
+C) Aplicar escolha forçada a todos, ocultar critérios, converter a classificação automática em decisão final e usar pesquisa de campo apenas para confirmá-la, sem registrar evidências contrárias.
 
 D) Criar descritores e registros nas escalas, contextualizar metas, revisar transparência da escolha forçada e reservar apoio especializado a casos complexos.
 
@@ -1704,7 +1704,7 @@ D) Criar descritores e registros nas escalas, contextualizar metas, revisar tran
 
 - **A:** Incorreta. Entrevista livre acrescenta variação e não neutraliza os quatro limites citados.
 - **B:** Incorreta. Resultado isolado pode induzir curto-prazismo e punir fatores não controláveis.
-- **C:** Incorreta. Amplia opacidade, automatismo e viés de confirmação em vez de combinar evidências.
+- **C:** Incorreta. Amplia opacidade, automatismo e viés de confirmação, além de impedir o registro e a combinação de evidências contrárias.
 - **D:** Correta. Ajusta cada método ao seu risco, à finalidade e ao custo de aplicação.
 
 **Conceito:** Métodos de avaliação possuem mecanismos, benefícios e limites distintos; o desenho deve combinar evidência, contexto e governança.
@@ -1899,7 +1899,7 @@ A) entrega = intenção declarada, mesmo sem resultado observável.
 
 B) conhecimento = querer agir; habilidade = saber; atitude = resultado final.
 
-C) competência = certificado obtido, independentemente de aplicação.
+C) competência = certificado obtido, independentemente de aplicação, contexto ou entrega observável no trabalho.
 
 D) conhecimento é saber; habilidade é fazer; atitude é disposição para agir.
 
@@ -1909,7 +1909,7 @@ D) conhecimento é saber; habilidade é fazer; atitude é disposição para agir
 
 - **A:** Incorreta. Entrega é resultado observável.
 - **B:** Incorreta. Troca os componentes e confunde atitude com entrega.
-- **C:** Incorreta. Certificado não demonstra mobilização.
+- **C:** Incorreta. Certificado não demonstra mobilização em contexto nem entrega observável.
 - **D:** Correta. Resume CHA e mobilização em contexto.
 
 **Conceito:** Competência não é estoque isolado; é capacidade mobilizada para produzir entrega.
@@ -4490,7 +4490,7 @@ A) Planejar e controlar a obra de modo preditivo, desenvolver software em increm
 
 B) Tornar tudo preditivo, congelar hipóteses de uso e aceitar feedback somente após a entrega física e o encerramento dos contratos.
 
-C) Deixar cada equipe escolher prazos, interfaces e aceite independentemente, reunindo resultados apenas na data final de entrada.
+C) Deixar cada equipe escolher prazos, interfaces e aceite independentemente, reunir resultados apenas na data final de entrada e transferir incompatibilidades à operação sem governança comum.
 
 D) Tornar tudo adaptativo, dispensar linha de base regulatória e tratar alterações físicas como backlog sem análise integrada de risco.
 
@@ -4500,7 +4500,7 @@ D) Tornar tudo adaptativo, dispensar linha de base regulatória e tratar altera�
 
 - **A:** Correta. Ajusta abordagem à incerteza de cada componente e integra dependências e decisões comuns.
 - **B:** Incorreta. Preserva a obra, mas bloqueia aprendizagem necessária e posterga risco de integração.
-- **C:** Incorreta. Autonomia sem governança conjunta compromete interface, prazo, risco e aceite.
+- **C:** Incorreta. Autonomia sem governança conjunta compromete interface, prazo, risco e aceite e transfere incompatibilidades para a operação.
 - **D:** Incorreta. Ignora estabilidade regulatória e trata mudança física como se tivesse o mesmo custo de software.
 
 **Conceito:** Híbrido combina abordagens adequadas a componentes distintos sob integração de interfaces, riscos, mudanças e valor.
@@ -4857,7 +4857,7 @@ Cinco departamentos cumprem seus SLAs locais, mas o usuário espera trinta dias,
 
 A) Elevar metas locais, premiar velocidade de cada área e tratar espera entre departamentos como responsabilidade exclusiva do usuário.
 
-B) Manter métricas locais, criar um fluxograma sem autoridade e considerar a soma dos SLAs prova suficiente de desempenho ponta a ponta.
+B) Manter métricas locais, criar um fluxograma sem autoridade, somar os SLAs como prova de desempenho ponta a ponta e atribuir cada espera à unidade que a recebe, sem coordenação transversal.
 
 C) Definir dono e responsabilidades transversais, medir tempo total, retrabalho e valor ao usuário, alinhar metas locais e coordenar melhorias com gestores funcionais.
 
@@ -4868,7 +4868,7 @@ D) Extinguir departamentos, transferir pessoas e orçamento integralmente ao don
 **Gabarito:** C.
 
 - **A:** Incorreta. Otimiza partes, agrava transferências e não cria responsabilidade pelo valor final.
-- **B:** Incorreta. Mapa e soma de indicadores não substituem mandato, coordenação e métrica transversal.
+- **B:** Incorreta. Mapa, soma de indicadores e atribuição isolada das esperas não substituem mandato, coordenação e métrica transversal.
 - **C:** Correta. Integra governança, indicadores ponta a ponta, incentivos locais e coexistência com especialização funcional.
 - **D:** Incorreta. Orientação por processos não exige abolir estrutura, autoridade técnica ou gestão de recursos.
 
@@ -4937,7 +4937,7 @@ D) atua sem indicadores, governança ou partes interessadas.
 
 O procedimento oficial prevê três aprovações, mas a prática usa planilhas paralelas, devoluções informais e exceções; gestores discordam sobre início e fim e não há linha de base de tempo. Antes do TO-BE, o que fazer?
 
-A) Desenhar a solução futura com base no procedimento, automatizar as três aprovações e medir somente após a implantação.
+A) Desenhar a solução futura com base apenas no procedimento, automatizar as três aprovações, ignorar variantes informais e medir tempo e retrabalho somente após a implantação definitiva.
 
 B) Adotar a versão da chefia, excluir exceções por não serem normativas e usar o tempo estimado no manual como linha de base.
 
@@ -4949,7 +4949,7 @@ D) Delimitar cliente, início e fim; triangular documento, observação, entrevi
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Automatiza norma não confrontada com a realidade e perde a linha de base.
+- **A:** Incorreta. Automatiza norma não confrontada com a realidade, ignora variantes e perde a linha de base anterior à mudança.
 - **B:** Incorreta. Exceções e prática real são evidência; estimativa documental não substitui medição.
 - **C:** Incorreta. Tecnologia e interface não definem processo nem garantem participação e validade.
 - **D:** Correta. Integra fronteira, múltiplas fontes, variantes, controles, validação e desempenho atual.
@@ -5626,7 +5626,7 @@ D) combinar mediana com medida de cauda/dispersão e manter extremos.
 
 </details>
 
-### Q416 — Teóricos, ferramentas e ciclo
+### Q416 — Conformidade sem adequação ao uso
 
 **Nível:** Muito difícil
 
@@ -5634,30 +5634,30 @@ D) combinar mediana com medida de cauda/dispersão e manter extremos.
 
 **Referência:** [Dia 6 — qualidade, teóricos e ferramentas](../semana_01_estudo.md#dia-6-qualidade-teoricos-ferramentas)
 
-Um gráfico de controle mostra defeitos estáveis em nível alto; Pareto destaca “cadastro incompleto”; Ishikawa lista hipóteses de regra, formulário e treinamento. A equipe quer culpar operadores e implantar a primeira ideia em toda a rede. Qual leitura e ação são coerentes?
+Um portal atende à especificação técnica e passa na inspeção final, mas usuários com baixa visão não concluem o serviço. Após o lançamento, surgem reclamações, suporte corretivo e indenizações. A direção propõe apenas ampliar a inspeção e chama todos esses gastos de prevenção. Qual diagnóstico e resposta são coerentes?
 
-A) Tratar estabilidade como causa especial individual, usar o Pareto para identificar culpados e executar Act antes de qualquer piloto.
+A) A conformidade prova qualidade plena; inspeção final é prevenção, reclamações são falhas internas e indenizações deixam de integrar custos da qualidade quando previstas no orçamento e absorvidas pelo suporte.
 
-B) Ler a variação como problema sistêmico, usar Pareto só para prioridade, testar hipóteses com dados e conduzir PDCA com piloto, Check e padronização condicionada.
+B) Há conformidade sem adequação ao uso; inspeção é avaliação, reclamações e indenizações são falhas externas, e o projeto deve incorporar acessibilidade, prevenção e testes com usuários.
 
-C) Aplicar função perda aos currículos, considerar cada ramo do Ishikawa causa comprovada e substituir o gráfico por votação da equipe.
+C) A dificuldade de acesso é causa especial externa ao processo; basta intensificar suporte após o lançamento, classificar correções como avaliação e manter requisitos e desenho sem revisão.
 
-D) Declarar o processo capaz por estar estável, implantar a ideia mais barata e usar queda de um dia como verificação e encerramento.
+D) Qualidade percebida substitui requisitos; devem-se eliminar testes técnicos, tratar suporte posterior como investimento preventivo e aceitar qualquer variação se a satisfação média aumentar.
 
 <details><summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Estabilidade sugere causa comum, Pareto não identifica pessoa culpada e Act sucede teste e verificação.
-- **B:** Correta. Integra Shewhart, prioridade, hipótese causal, experimento, comparação e sustentação.
-- **C:** Incorreta. Mistura objeto de Taguchi, natureza hipotética do Ishikawa e evidência estatística.
-- **D:** Incorreta. Estabilidade não garante capacidade, e um ponto posterior não prova efeito sustentável.
+- **A:** Incorreta. Conformidade não prova adequação ao uso; inspeção é avaliação, e reclamações e indenizações posteriores são falhas externas, ainda que orçadas.
+- **B:** Correta. Distingue dimensões da qualidade e categorias de custo e desloca a resposta de inspeção tardia para projeto acessível, prevenção e validação com usuários.
+- **C:** Incorreta. A barreira de acesso pertence ao desenho do serviço, não é causa especial externa; suporte corrige falha já manifestada, e preservar requisitos mantém o problema.
+- **D:** Incorreta. Qualidade percebida complementa requisitos; testes técnicos continuam necessários, e suporte posterior não se transforma em prevenção.
 
-**Conceito:** Controle lê variação; Pareto prioriza; Ishikawa organiza hipóteses; PDCA testa, verifica e sustenta mudança.
+**Conceito:** Qualidade de conformidade não substitui adequação ao uso ou qualidade percebida; prevenção e avaliação diferem de falhas internas e externas.
 
-**Pegadinha:** Converter estabilidade em qualidade, prioridade em causa ou piloto inicial em solução comprovada.
+**Pegadinha:** Chamar inspeção ou correção posterior de prevenção e tratar aderência técnica como qualidade completa.
 
-**Raciocínio:** Passe por seis filtros: tipo de variação, prioridade, hipótese, teste, comparação e padronização.
+**Raciocínio:** Aplique cinco filtros: requisito, uso real, momento da detecção, categoria de custo e resposta de projeto.
 
 **Nível:** Muito difícil
 
@@ -5806,7 +5806,7 @@ B) Trocar o BPMS, copiar novamente o procedimento e presumir que tecnologia mais
 
 C) Alinhar valor, validar AS-IS e dados, analisar causas e controles, desenhar TO-BE, atribuir dono, automatizar seletivamente e monitorar resultado ponta a ponta.
 
-D) Preservar automação, medir apenas quantidade, responsabilizar a última área pelas reclamações e encerrar o ciclo após estabilizar volume.
+D) Preservar automação, medir apenas quantidade, responsabilizar a última área pelas reclamações, manter ausência de dono e encerrar o ciclo após estabilizar volume, mesmo sem medir valor ao usuário.
 
 <details><summary>Comentário e gabarito</summary>
 
@@ -5815,7 +5815,7 @@ D) Preservar automação, medir apenas quantidade, responsabilizar a última ár
 - **A:** Incorreta. Mais notação e tecnologia não corrigem desperdício, métrica fragmentada ou falta de dono.
 - **B:** Incorreta. BPMS apoia execução, mas não substitui descoberta, análise, desenho e governança.
 - **C:** Correta. Integra estratégia, realidade, causa, controle, desenho, papel, automação e ciclo de desempenho.
-- **D:** Incorreta. Volume local e culpa na última área ocultam fluxo, experiência e causas transversais.
+- **D:** Incorreta. Volume local, ausência de dono e culpa na última área ocultam fluxo, experiência, valor e causas transversais.
 
 **Conceito:** BPM governa valor e melhoria ponta a ponta; BPMN representa e BPMS apoia, mas nenhum substitui o ciclo gerencial.
 
