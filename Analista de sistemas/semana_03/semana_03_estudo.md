@@ -465,9 +465,9 @@ Responda em até quatro linhas por pergunta e indique a âncora de retorno. Não
 <a id="s3-d1-roteiro"></a>
 ## Roteiro explícito do banco de 70 questões (5min)
 
-### Cobertura planejada
+### Cobertura do banco produzido
 
-| Faixa futura | Conteúdo sustentado pela teoria | Âncora |
+| Faixa | Conteúdo sustentado pela teoria | Âncora |
 |---|---|---|
 | Q1–Q12 | direitos e deveres individuais e coletivos | [`s3-d1-direitos-garantias`](#s3-d1-direitos-garantias) |
 | Q13–Q25 | centralização, descentralização, concentração, desconcentração, direta e indireta | [`s3-d1-organizacao-eixos`](#s3-d1-organizacao-eixos) |
@@ -476,18 +476,18 @@ Responda em até quatro linhas por pergunta e indique a âncora de retorno. Não
 | E1–E10 | revisão CFA/CRA | [`s3-d1-b4`](#s3-d1-b4) |
 | E11–E20 | Português: norma, quantificador e escopo | [`s3-d1-b5`](#s3-d1-b5) |
 
-### Distribuição por uso
+### Distribuição por uso auditada
 
-| Ciclo | Quantidade | Execução |
-|---|---:|---|
-| Primeira passagem | 10 das 20 Essenciais | 30min sem consulta, depois correção integral em 40min |
-| D+2 | 10 Essenciais restantes | corrigir todas antes de iniciar Aprofundamento |
-| Após as Essenciais de D+2 | 20 de Aprofundamento | fazer em blocos conforme os erros reais; concluir antes de D+7 |
-| D+7 | 15 de Revisão | sem releitura prévia; retornar apenas às âncoras frágeis |
-| Ciclo seguinte | 15 de Simulado | tempo controlado e sem consulta; corrigir depois do fechamento |
-| **Total** | **70** | **20 Essenciais + 20 Aprofundamento + 15 Revisão + 15 Simulado** |
+| Ciclo | Questões | Quantidade | Execução |
+|---|---|---:|---|
+| Primeira passagem | Q1, Q7, Q13, Q19, Q27, Q34, Q42, Q49, E3 e E14 | 10 | 30min sem consulta, depois correção integral em 40min |
+| D+2 | Q4, Q10, Q16, Q23, Q30, Q38, Q45, Q50, E7 e E18 | 10 | corrigir todas antes de iniciar Aprofundamento |
+| Aprofundamento | Q2, Q6, Q11, Q14, Q18, Q24, Q28, Q32, Q35, Q39, Q43, Q46, Q47, E1, E5, E9, E11, E12, E15 e E19 | 20 | concluir antes de D+7 |
+| Revisão | Q3, Q8, Q12, Q15, Q20, Q25, Q29, Q33, Q36, Q40, Q44, Q48, E2, E6 e E10 | 15 | D+7, sem releitura prévia |
+| Simulado | Q5, Q9, Q17, Q21, Q22, Q26, Q31, Q37, Q41, E4, E8, E13, E16, E17 e E20 | 15 | ciclo seguinte, em tempo controlado e sem consulta |
+| **Total** | **Q1–Q50 + E1–E20** | **70** | **20 Essenciais + 20 Aprofundamento + 15 Revisão + 15 Simulado** |
 
-As dez Essenciais da primeira passagem devem representar mais de um tópico. A classificação individual ficará no futuro banco; não escolha mecanicamente as dez primeiras numerações.
+As dez Essenciais da primeira passagem amostram direitos, organização, entidades, conselhos, CFA/CRA e Português. O restante permanece nos ciclos indicados.
 
 <a id="s3-d1-correcao"></a>
 ## Correção e fechamento (50min)
@@ -914,9 +914,9 @@ Responda sem consulta, em até quatro linhas cada, e anote a âncora usada para 
 <a id="s3-d2-roteiro"></a>
 ## Roteiro explícito do banco de 70 questões (5min)
 
-### Cobertura planejada
+### Cobertura do banco produzido
 
-| Faixa futura | Conteúdo sustentado pela teoria | Âncora |
+| Faixa | Conteúdo sustentado pela teoria | Âncora |
 |---|---|---|
 | Q1–Q16 | legalidade, impessoalidade, moralidade, publicidade e eficiência | [`s3-d2-principios-expressos`](#s3-d2-principios-expressos) |
 | Q17–Q28 | finalidade, motivação, razoabilidade, proporcionalidade, segurança jurídica e autotutela | [`s3-d2-principios-relacionados`](#s3-d2-principios-relacionados) |
@@ -925,18 +925,18 @@ Responda sem consulta, em até quatro linhas cada, e anote a âncora usada para 
 | E1–E10 | revisão de RLM da Semana 1 | [`s3-d2-b4`](#s3-d2-b4) |
 | E11–E20 | Português: impessoalidade, conectores e reescrita | [`s3-d2-b5`](#s3-d2-b5) |
 
-### Distribuição por uso
+### Distribuição por uso auditada
 
-| Ciclo | Quantidade | Execução |
-|---|---:|---|
-| Primeira passagem | 10 das 20 Essenciais | 30min sem consulta; correção A–D em 40min |
-| D+2 | 10 Essenciais restantes | corrigir integralmente antes do Aprofundamento |
-| Após as Essenciais de D+2 | 20 de Aprofundamento | distribuir conforme erros; terminar antes de D+7 |
-| D+7 | 15 de Revisão | resolver sem releitura e recuperar apenas âncoras frágeis |
-| Ciclo seguinte | 15 de Simulado | tempo controlado, sem consulta e com correção posterior |
-| **Total** | **70** | **20 Essenciais + 20 Aprofundamento + 15 Revisão + 15 Simulado** |
+| Ciclo | Questões | Quantidade | Execução |
+|---|---|---:|---|
+| Primeira passagem | Q1, Q4, Q8, Q12, Q29, Q34, Q42, Q46, E3 e E12 | 10 | 30min sem consulta; correção A–D em 40min |
+| D+2 | Q2, Q6, Q10, Q17, Q22, Q31, Q37, Q45, E1 e E11 | 10 | corrigir integralmente antes do Aprofundamento |
+| Aprofundamento | Q3, Q7, Q13, Q18, Q23, Q27, Q30, Q33, Q36, Q39, Q44, Q47, E2, E5, E8, E10, E14, E17, E19 e E20 | 20 | terminar antes de D+7 |
+| Revisão | Q5, Q9, Q14, Q19, Q24, Q28, Q32, Q35, Q38, Q41, Q48, E4, E7, E13 e E16 | 15 | D+7, sem releitura inicial |
+| Simulado | Q11, Q15, Q16, Q20, Q21, Q25, Q26, Q40, Q43, Q49, Q50, E6, E9, E15 e E18 | 15 | ciclo seguinte, em tempo controlado e sem consulta |
+| **Total** | **Q1–Q50 + E1–E20** | **70** | **20 Essenciais + 20 Aprofundamento + 15 Revisão + 15 Simulado** |
 
-As dez Essenciais iniciais precisam amostrar princípios e art. 37. A numeração não define uso; a futura classificação individual será auditada no banco de questões.
+As dez Essenciais iniciais amostram princípios, art. 37, RLM e Português. A numeração não define dificuldade nem valor pedagógico.
 
 <a id="s3-d2-correcao"></a>
 ## Correção e fechamento (50min)
@@ -1358,15 +1358,19 @@ ato ilegal → anulação | ato válido inconveniente → revogação | vício s
 
 Uso pedagógico e dificuldade são independentes.
 
-| Uso | Quantidade | Momento | Critério de seleção |
-|---|---:|---|---|
-| Essenciais | 20 | dez na primeira passagem e dez na abertura de D+2 | cobrir os conceitos estruturantes e erros mais prováveis; IDs serão definidos após a auditoria semântica |
-| Aprofundamento | 20 | após correção integral das Essenciais de D+2 | exigir duas ou mais decisões já ensinadas |
-| Revisão | 15 | D+7, retornando às âncoras frágeis | recuperar tópicos distribuídos, sem depender da posição numérica |
-| Simulado | 15 | ciclo seguinte, sem consulta | integrar núcleos do dia e revisões já estudadas |
-| **Total** | **70** | prática distribuída | **Q1–Q50 + E1–E20 após a produção** |
+| Uso | Questões | Quantidade | Momento |
+|---|---|---:|---|
+| Essenciais | Q1, Q3, Q8, Q11, Q17, Q21, Q28, Q30, Q36, Q38, Q42, Q45, Q46, Q49, Q50, E2, E5, E12, E14 e E17 | 20 | dez na primeira passagem e dez na abertura de D+2 |
+| Aprofundamento | Q4, Q6, Q9, Q12, Q15, Q19, Q22, Q24, Q27, Q29, Q32, Q34, Q37, Q39, Q43, Q47, E4, E9, E13 e E19 | 20 | após correção integral das Essenciais de D+2 |
+| Revisão | Q2, Q5, Q10, Q13, Q16, Q20, Q23, Q31, Q35, Q41, Q44, E1, E6, E11 e E16 | 15 | D+7, retornando às âncoras frágeis |
+| Simulado | Q7, Q14, Q18, Q25, Q26, Q33, Q40, Q48, E3, E7, E8, E10, E15, E18 e E20 | 15 | ciclo seguinte, sem consulta |
+| **Total** | **Q1–Q50 + E1–E20** | **70** | prática distribuída |
 
-Na primeira passagem, resolva somente as dez Essenciais indicadas. Não tente concluir 70 itens no dia.
+**Primeira passagem — dez Essenciais:** Q1, Q8, Q17, Q28, Q36, Q42, Q45, Q49, E2 e E12.
+
+**Abertura de D+2 — dez Essenciais restantes:** Q3, Q11, Q21, Q30, Q38, Q46, Q50, E5, E14 e E17.
+
+Na primeira passagem, resolva somente as dez indicadas. Não tente concluir 70 itens no dia.
 
 <a id="s3-d3-correcao"></a>
 
@@ -1773,15 +1777,19 @@ dolo/culpa do agente → regresso subjetivo | causa exclusiva → rompe nexo | c
 
 Uso pedagógico não é nível de dificuldade. Preserve a finalidade de cada conjunto:
 
-| Uso | Quantidade | Momento | Critério de seleção |
-|---|---:|---|---|
-| Essenciais | 20 | dez na primeira passagem e dez na abertura de D+2 | cobrir poderes, abuso, agentes e responsabilidade; IDs serão definidos após a auditoria semântica |
-| Aprofundamento | 20 | após corrigir todas as Essenciais de D+2 | combinar ao menos duas decisões já ensinadas |
-| Revisão | 15 | em D+7, retornando às âncoras dos erros | distribuir recuperação entre todos os núcleos |
-| Simulado | 15 | no ciclo seguinte, sem consulta | integrar poder, processo, vínculo e causalidade sem fórmula absoluta |
-| **Total** | **70** | prática distribuída | **Q1–Q50 + E1–E20 após a produção** |
+| Uso | Questões | Quantidade | Momento |
+|---|---|---:|---|
+| Essenciais | Q1, Q4, Q8, Q11, Q17, Q20, Q23, Q25, Q28, Q32, Q35, Q37, Q40, Q44, Q47–Q49, E3, E12 e E17 | 20 | dez na primeira passagem e dez na abertura de D+2 |
+| Aprofundamento | Q2, Q7, Q13, Q18, Q21, Q24, Q26, Q30, Q34, Q36, Q39, Q43, Q46, Q50, E1, E5, E9, E11, E15 e E19 | 20 | após corrigir todas as Essenciais de D+2 |
+| Revisão | Q3, Q9, Q14, Q19, Q22, Q27, Q31, Q38, Q42, Q45, E2, E6, E10, E13 e E16 | 15 | D+7, retornando às âncoras dos erros |
+| Simulado | Q5, Q6, Q10, Q12, Q15, Q16, Q29, Q33, Q41, E4, E7, E8, E14, E18 e E20 | 15 | ciclo seguinte, sem consulta |
+| **Total** | **Q1–Q50 + E1–E20** | **70** | prática distribuída |
 
-Na primeira passagem, faça somente dez Essenciais. Aprofundamento, Revisão e Simulado possuem sessões próprias.
+**Primeira passagem — dez Essenciais:** Q1, Q17, Q23, Q25, Q35, Q37, Q47, Q49, E3 e E12.
+
+**Abertura de D+2 — dez Essenciais restantes:** Q4, Q8, Q11, Q20, Q28, Q32, Q40, Q44, Q48 e E17.
+
+Na primeira passagem, faça somente as dez indicadas. Aprofundamento, Revisão e Simulado possuem sessões próprias.
 
 <a id="s3-d4-correcao"></a>
 

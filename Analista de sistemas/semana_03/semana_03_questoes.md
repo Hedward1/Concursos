@@ -4288,3 +4288,4278 @@ D) Como a Comissão pode divulgar, todos os dados deverão ser publicados sem re
 - **Conceito cobrado:** reescrita impessoal com condição, modalidade e exceção.
 - **Pegadinha usada:** preservar palavras centrais enquanto altera o estatuto lógico de cada uma.
 - **Como pensar para acertar:** compare sujeito, condição, verbo modal e ressalva em sequência; os quatro precisam permanecer equivalentes.
+
+
+
+# Dia 3 — Atos administrativos
+
+**Base usada:** edital vigente do CRA-PR 2026 e conteúdo ensinado no Dia 3 da apostila de estudo. A Lei nº 9.784/1999 aparece somente quando o enunciado delimita o processo administrativo federal.
+
+**Calendário de uso:**
+
+- **Primeira passagem — 10 Essenciais:** Q1, Q8, Q17, Q28, Q36, Q42, Q45, Q49, E2 e E12.
+- **Abertura de D+2 — 10 Essenciais:** Q3, Q11, Q21, Q30, Q38, Q46, Q50, E5, E14 e E17.
+- **Aprofundamento — 20 itens, antes de D+7:** Q4, Q6, Q9, Q12, Q15, Q19, Q22, Q24, Q27, Q29, Q32, Q34, Q37, Q39, Q43, Q47, E4, E9, E13 e E19.
+- **Revisão — 15 itens, em D+7:** Q2, Q5, Q10, Q13, Q16, Q20, Q23, Q31, Q35, Q41, Q44, E1, E6, E11 e E16.
+- **Simulado — 15 itens, no ciclo seguinte:** Q7, Q14, Q18, Q25, Q26, Q33, Q40, Q48, E3, E7, E8, E10, E15, E18 e E20.
+
+## Questões principais
+
+### Questão 1
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Em sentido didático, qual situação caracteriza um ato administrativo, e não mera execução material ou contrato?
+
+A) A autoridade competente suspende unilateralmente um perfil, sob regime administrativo, com efeito jurídico imediato.
+B) A equipe transfere arquivos para o servidor depois de uma decisão já tomada pela autoridade.
+C) O órgão e a empresa ajustam bilateralmente obrigações para prestar um serviço continuado.
+D) O sistema registra automaticamente, em log, o horário em que um usuário iniciou sessão.
+
+### Questão 2
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Um técnico instala equipamento para executar autorização anteriormente expedida. A instalação, considerada isoladamente, é:
+
+A) novo ato administrativo, porque toda atuação material do órgão produz efeito jurídico próprio.
+B) fato ou operação material que executa decisão anterior, sem constituir necessariamente novo ato jurídico.
+C) contrato administrativo, porque há emprego de trabalho humano e equipamento pertencente ao órgão.
+D) ato normativo, porque a execução concreta torna geral a autorização previamente concedida.
+
+### Questão 3
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+A pergunta de controle “quem pode praticar a decisão segundo o ordenamento?” identifica o elemento:
+
+A) finalidade.
+B) forma.
+C) competência.
+D) objeto.
+
+### Questão 4
+
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Uma decisão aplica advertência a um fornecedor. Nessa decomposição, a advertência aplicada corresponde:
+
+A) à competência, porque revela a autoridade que praticou o ato.
+B) à forma, porque constitui o modo de exteriorização da vontade.
+C) ao motivo, porque representa o fato e a norma que autorizam agir.
+D) ao objeto, porque é o efeito jurídico produzido pela decisão.
+
+### Questão 5
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Autoridade com poder para restringir acesso por segurança usa essa atribuição para retaliar servidor que a criticou. O vício central recai sobre:
+
+A) a forma, pois toda restrição deve ser praticada oralmente.
+B) a finalidade, pois o poder foi usado para fim particular incompatível com o interesse previsto.
+C) o objeto, pois restringir acesso é sempre consequência juridicamente impossível.
+D) a competência, pois crítica pessoal transfere a atribuição para outro órgão.
+
+### Questão 6
+
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Assinale a alternativa que distingue corretamente forma e procedimento.
+
+A) Forma é o modo de exteriorização do ato; procedimento é a sequência de atos que conduz à decisão.
+B) Forma é a sequência completa do processo; procedimento é somente a assinatura final da autoridade.
+C) Forma e procedimento são sinônimos e todo defeito em qualquer deles é necessariamente sanável.
+D) Forma se limita ao conteúdo do objeto; procedimento se limita ao motivo alegado pela autoridade.
+
+### Questão 7
+
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Uma regra permite suspender credencial quando houver compartilhamento indevido. No caso concreto, “o usuário compartilhou a senha” e “suspensão por trinta dias” correspondem, respectivamente, a:
+
+A) forma e competência.
+B) finalidade e forma.
+C) objeto e motivo.
+D) motivo e objeto.
+
+### Questão 8
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Um analista concede perfil de acesso sem delegação, embora a norma reserve a decisão ao diretor. A necessidade do perfil é real e a concessão é tecnicamente adequada. A conclusão correta é:
+
+A) o ato é válido, porque motivo e objeto adequados substituem a atribuição formal.
+B) o ato é válido, porque o ocupante de cargo técnico presume-se competente para decisões de acesso.
+C) há vício de competência, pois a regularidade do motivo e do objeto não transfere a atribuição legal.
+D) há apenas vício de finalidade, pois o analista atuou para atender necessidade administrativa real.
+
+### Questão 9
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Chefe sem atribuição normativa autoriza acesso emergencial. A necessidade técnica existe, mas o caso não demonstra urgência jurídica nem delegação válida. Para avaliar a decisão, é correto afirmar que:
+
+A) a finalidade pública presumida torna dispensável verificar a norma de competência.
+B) a necessidade integra o motivo, mas não sana a falta de competência, que deve ser verificada separadamente.
+C) a adequação técnica do objeto converte automaticamente a competência em discricionária.
+D) a ausência de delegação é irrelevante sempre que o destinatário age de boa-fé.
+
+### Questão 10
+
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+**Assinale a alternativa INCORRETA** sobre forma e garantias procedimentais.
+
+A) A forma corresponde ao modo pelo qual a vontade administrativa se exterioriza.
+B) A análise de defeito formal deve considerar se a formalidade era essencial e se houve prejuízo.
+C) Contraditório e ampla defesa são garantias constitucionais e procedimentais, não meros exemplos de forma.
+D) Todo vício de forma é sanável, ainda que recaia sobre formalidade essencial e tenha causado prejuízo.
+
+### Questão 11
+
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Uma norma reserva ao colegiado a decisão de suspender credenciais. O diretor decide sozinho, sem delegação admitida no caso, apoiado em fato verdadeiro. Qual diagnóstico combina corretamente os elementos?
+
+A) O motivo pode ser verdadeiro, mas a decisão permanece viciada quanto à competência.
+B) O motivo verdadeiro transfere a competência para quem primeiro examinou os fatos.
+C) A competência está regular, e o único controle possível recai sobre a conveniência do objeto.
+D) A decisão é válida se o colegiado concordar informalmente com a sua finalidade pública.
+
+### Questão 12
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Autoridade competente pune fornecedor por atraso mínimo normalmente tolerado em casos equivalentes. Mensagens internas mostram que a medida visou “dar uma lição” após crítica pública. A melhor análise é:
+
+A) a competência regular impede controle da finalidade e do tratamento incoerente.
+B) o atraso citado torna irrelevante investigar a adequação jurídica do motivo e o fim perseguido.
+C) a competência não elimina o possível desvio de finalidade, e o motivo ainda deve sustentar juridicamente a consequência.
+D) a punição é válida porque qualquer fato verdadeiro autoriza qualquer objeto previsto abstratamente.
+
+### Questão 13
+
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Em processo punitivo, a decisão foi assinada e publicada na forma exigida, mas o interessado não teve oportunidade de defesa. O material ensinado permite concluir que:
+
+A) assinatura e publicação tornam irrelevante qualquer garantia procedimental.
+B) a falta de defesa é sempre apenas vício de objeto, pois altera a sanção escolhida.
+C) forma e procedimento são idênticos, de modo que basta repetir a publicação.
+D) a regularidade da exteriorização não supre a violação de garantia constitucional e procedimental.
+
+### Questão 14
+
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos)
+
+Uma decisão foi tomada pela autoridade indicada na norma, para finalidade pública específica e por documento formalmente adequado. Entretanto, o fato que autorizaria a medida não ocorreu, embora a consequência escolhida fosse abstratamente lícita. Qual opção identifica corretamente o defeito?
+
+A) A finalidade substitui o fato inexistente e preserva integralmente o ato.
+B) O motivo está viciado; os demais elementos regulares não suprem o fato ausente.
+C) O objeto torna-se automaticamente ilícito sempre que a motivação é curta.
+D) A competência passa a ser inexistente porque o fato não ocorreu.
+
+### Questão 15
+
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Sobre a presunção de legitimidade e de veracidade dos atos administrativos, assinale a alternativa correta.
+
+A) É absoluta e impede a apresentação de prova contrária pelo administrado.
+B) Alcança somente a competência, sem qualquer relação com fatos afirmados pela Administração.
+C) É relativa, admite prova em contrário e não elimina controle nem defesa.
+D) Converte qualquer dado registrado em sistema em verdade jurídica definitiva.
+
+### Questão 16
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Uma certidão apenas declara a situação cadastral de uma pessoa, sem lhe impor ordem. Nesse caso:
+
+A) a certidão é imperativa porque todo ato administrativo contém comando coercitivo.
+B) a certidão perde a presunção relativa por não produzir sanção ao destinatário.
+C) a certidão é contrato porque atende a uma pretensão apresentada pelo interessado.
+D) não se atribui imperatividade ao ato apenas por ele ser administrativo.
+
+### Questão 17
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+A formulação mais segura sobre autoexecutoriedade é:
+
+A) a execução direta pode ocorrer com previsão jurídica ou urgência justificadora, dentro do direito e sob controle.
+B) todo ato administrativo pode ser executado diretamente, mesmo sem base jurídica, processo ou urgência.
+C) somente certidões e pareceres possuem autoexecutoriedade, pois dispensam concordância do destinatário.
+D) a autoexecutoriedade impede que o Poder Judiciário controle a medida depois de executada.
+
+### Questão 18
+
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+O atributo doutrinário que expressa a correspondência da atuação administrativa a figura admitida pelo ordenamento é a:
+
+A) imperatividade.
+B) tipicidade.
+C) presunção de veracidade.
+D) executoriedade.
+
+### Questão 19
+
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Em determinado fluxo, o diretor pratica o ato principal, que depende de aprovação acessória da unidade de controle. Segundo a classificação ensinada, trata-se de ato:
+
+A) simples, porque existe apenas uma providência material final.
+B) complexo, porque duas vontades autônomas se fundem para formar um único ato.
+C) geral, porque a aprovação da unidade de controle vale para todos os destinatários.
+D) composto, porque há ato principal dependente de outro ato acessório.
+
+### Questão 20
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Uma certidão que declara informação constante do cadastro é classificada, quanto à espécie doutrinária, como ato:
+
+A) punitivo.
+B) ordinatório.
+C) enunciativo.
+D) normativo.
+
+### Questão 21
+
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Um relatório administrativo atribui cinco acessos indevidos a Maria. Perícia posterior demonstra que os identificadores pertenciam a outro usuário. A Administração sustenta que a presunção de veracidade encerra a discussão. A resposta correta é:
+
+A) a presunção impede perícia contrária enquanto o ato não for revogado por conveniência.
+B) a perícia altera apenas o objeto, mas jamais alcança os fatos afirmados pela Administração.
+C) a presunção é relativa e pode ceder à prova técnica, sem eliminar controle ou defesa.
+D) o relatório deixa de ser ato administrativo apenas porque uma de suas informações foi contestada.
+
+### Questão 22
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Uma decisão impõe obrigação ao destinatário sem depender de sua concordância, mas sua execução material direta exige previsão jurídica ou urgência. Os dois planos descritos correspondem, respectivamente, a:
+
+A) imperatividade e autoexecutoriedade, atributos distintos que não se confundem.
+B) presunção de legitimidade e tipicidade, que sempre aparecem em qualquer execução material.
+C) autoexecutoriedade e imperatividade, porque executar vem antes de impor a obrigação.
+D) exigibilidade e presunção de veracidade, ambas incompatíveis com controle posterior.
+
+### Questão 23
+
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+**Assinale a alternativa INCORRETA** sobre os atributos estudados.
+
+A) Todo ato de polícia é autoexecutório, ainda que faltem previsão jurídica e urgência concreta.
+B) A imperatividade não precisa estar presente em uma certidão que apenas declara uma situação.
+C) A presunção de legitimidade é relativa e não afasta a possibilidade de controle.
+D) A tipicidade protege contra a invenção livre de restrições e sanções administrativas.
+
+### Questão 24
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Considere três desenhos: I — uma chefia forma sozinha a decisão; II — duas unidades autônomas manifestam vontades que se integram para formar uma única autorização; III — há decisão principal seguida de aprovação acessória. A classificação correta é:
+
+A) I composto; II simples; III complexo.
+B) I complexo; II composto; III simples.
+C) I simples; II composto; III complexo.
+D) I simples; II complexo; III composto.
+
+### Questão 25
+
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+Em um primeiro documento, a Administração consente unilateralmente com pretensão particular; em outro, aplica sanção que impõe obrigação ao destinatário. A classificação correta é:
+
+A) O primeiro é enunciativo e contratual; o segundo é ordinatório e sem imperatividade.
+B) O primeiro é negocial, mas continua unilateral; o segundo é punitivo e pode ser imperativo.
+C) O primeiro é normativo e geral; o segundo é enunciativo e apenas certifica um fato.
+D) O primeiro é contrato por depender de pedido; o segundo é negocial por produzir restrição.
+
+### Questão 26
+
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies)
+
+O CRA-PR expede certidão dirigida a pessoa determinada, declarando sua situação cadastral. A combinação mais adequada é:
+
+A) ato geral, punitivo e necessariamente imperativo.
+B) ato interno, normativo e autoexecutório em qualquer circunstância.
+C) ato individual e enunciativo, com presunção relativa e sem imperatividade necessária.
+D) contrato negocial, porque o interessado requereu a emissão do documento.
+
+### Questão 27
+
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Assinale a alternativa que diferencia corretamente motivo e motivação.
+
+A) Motivo é a conclusão escrita, enquanto motivação é somente a assinatura da autoridade.
+B) Motivo é o pressuposto de fato e de direito; motivação é a exposição das razões da decisão.
+C) Motivo e motivação são sinônimos e sempre existem ou faltam simultaneamente.
+D) Motivo é o efeito jurídico do ato, enquanto motivação é a competência normativa.
+
+### Questão 28
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Pela teoria dos motivos determinantes, quando a Administração declara as razões de decidir:
+
+A) a validade do ato se vincula à existência e à adequação jurídica dos motivos declarados.
+B) a autoridade pode substituir depois qualquer fato falso por motivo não indicado no ato.
+C) o conteúdo da motivação deixa de ser controlável se a decisão for discricionária.
+D) toda imprecisão redacional invalida o ato, ainda que não alcance fundamento determinante.
+
+### Questão 29
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Uma suspensão contém texto detalhado e afirma que três logs provam exportação ilícita por Ana. Auditoria mostra que os identificadores eram de Bruno. A melhor conclusão é:
+
+A) o texto extenso torna o motivo verdadeiro por presunção absoluta.
+B) há apenas falta de motivação, porque nenhuma razão foi registrada no documento.
+C) existe motivação escrita, mas o motivo determinante atribuído a Ana é falso e compromete a validade.
+D) o erro é irrelevante por se tratar de escolha discricionária da Administração.
+
+### Questão 30
+
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Autoridade remove empregado de equipe sensível escrevendo apenas “por interesse público”. Considerando que o regime aplicável exige motivação, qual diagnóstico é mais preciso?
+
+A) a frase prova que o motivo inexiste no mundo e dispensa qualquer investigação dos fatos.
+B) a motivação é insuficiente por não expor fato, regra e ligação controlável; o motivo pode ou não existir.
+C) o ato é válido porque a expressão “interesse público” substitui a indicação de fatos e fundamentos.
+D) o único defeito possível é de competência, ainda que a autoridade possua atribuição para decidir.
+
+### Questão 31
+
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+O relatório comprova uma tentativa de acesso causada por credencial expirada. A própria regra citada prevê redefinição da senha, mas a decisão aplica suspensão punitiva de noventa dias sem circunstância adicional. É correto afirmar que:
+
+A) fato verdadeiro basta para legitimar qualquer consequência abstratamente imaginável.
+B) a incongruência afeta somente a forma física do documento, e não a justificação.
+C) a teoria dos motivos determinantes não permite examinar a relação entre fato, regra e conclusão.
+D) o motivo fático existe, mas a motivação é incongruente porque a base citada não sustenta o objeto escolhido.
+
+### Questão 32
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Uma autoridade tinha três opções legalmente possíveis e escolheu uma delas. Na motivação, afirmou que o setor A suportava carga menor, mas dados disponíveis mostravam o oposto. À luz do conteúdo estudado:
+
+A) a margem de escolha não protege fundamento determinante falso, que permanece controlável.
+B) a existência de opções legais torna irrelevante a veracidade das razões declaradas.
+C) a teoria dos motivos determinantes alcança apenas decisões vinculadas.
+D) a falsidade do dado transforma automaticamente a decisão em ato contratual.
+
+### Questão 33
+
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+**Assinale a alternativa INCORRETA** sobre motivo, motivação e controle.
+
+A) Um motivo pode existir no mundo e a decisão apresentar motivação insuficiente.
+B) Um texto longo pode conter fato determinante inexistente ou juridicamente inadequado.
+C) A teoria dos motivos determinantes pode alcançar ato discricionário quando razões são declaradas.
+D) Qualquer imprecisão de redação invalida automaticamente o ato, mesmo sem atingir fundamento determinante.
+
+### Questão 34
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao)
+
+Em processo administrativo federal, uma decisão abrangida pelo art. 50 da Lei nº 9.784/1999 apresenta apenas conclusão, sem indicar fatos e fundamentos jurídicos. A análise correta é:
+
+A) a lei federal dispensa motivação sempre que a autoridade possuir competência.
+B) a regra deve ser universalizada automaticamente para qualquer ente e qualquer decisão administrativa.
+C) no âmbito federal indicado, exigem-se fatos e fundamentos em motivação clara e congruente; fora dele, verifica-se o regime próprio.
+D) a simples menção ao número da lei torna desnecessária a relação lógica entre fundamento e conclusão.
+
+### Questão 35
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Uma norma garante certidão quando o requerente apresenta todos os documentos listados. Os requisitos foram integralmente cumpridos. Nesse caso:
+
+A) a expedição é vinculada, pois a preferência gerencial não cria opção onde a norma definiu a resposta.
+B) a autoridade pode negar por conveniência, mesmo sem fundamento previsto no ordenamento.
+C) a expedição é discricionária porque toda atividade administrativa contém mérito intocável.
+D) a decisão depende exclusivamente da vontade do requerente, e não da regra aplicável.
+
+### Questão 36
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Discricionariedade administrativa significa:
+
+A) liberdade para afastar competência e finalidade quando houver vantagem técnica.
+B) impossibilidade de controle da veracidade dos fatos e da proporcionalidade.
+C) poder de escolher qualquer solução, ainda que não autorizada pelo ordenamento.
+D) margem jurídica para escolher entre opções permitidas, dentro dos limites legais e finalísticos.
+
+### Questão 37
+
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Norma permite escolher entre três horários tecnicamente seguros para manutenção. O gestor escolhe o de maior impacto apenas para prejudicar determinada unidade. Qual análise é correta?
+
+A) A existência de opções cria margem, mas a escolha concreta viola finalidade e não se torna legítima por ser discricionária.
+B) A discricionariedade afasta o controle de finalidade desde que todas as opções sejam tecnicamente possíveis.
+C) A escolha é vinculada porque qualquer pluralidade de opções elimina o mérito administrativo.
+D) A finalidade particular é irrelevante quando a autoridade registra uma das opções previstas.
+
+### Questão 38
+
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Sobre controle judicial e discricionariedade, assinale a alternativa correta.
+
+A) O Judiciário não pode examinar abuso, fatos falsos ou limites legais em ato discricionário.
+B) O Judiciário controla a legalidade, mas não substitui a Administração para revogar por mera preferência de gestão.
+C) O Judiciário pode revogar ato válido sempre que considerar outra escolha mais eficiente.
+D) A Administração pode invocar conveniência para afastar competência, igualdade e dever de motivar.
+
+### Questão 39
+
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Norma atribui exclusivamente ao colegiado a suspensão de acesso e permite escolher duração entre dez e trinta dias conforme risco comprovado. Um diretor, sem atribuição, aplica trinta dias com base em log de outro usuário e afirma agir para “disciplinar a unidade crítica”. A solução tecnicamente adequada exige reconhecer que:
+
+A) a faixa de duração torna discricionários também competência, veracidade do fato e finalidade.
+B) o colegiado pode preservar a decisão por simples concordância, pois a duração estava no intervalo normativo.
+C) a margem sobre a duração não sana incompetência, motivo falso nem possível finalidade punitiva estranha ao fim previsto.
+D) o único defeito é a falta de forma escrita, pois o objeto de trinta dias era abstratamente possível.
+
+### Questão 40
+
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade)
+
+Considere: I — norma garante certidão a quem cumpre requisitos; II — norma permite escolher uma entre três janelas seguras de manutenção; III — o gestor da janela escolhe com base em dado falso; IV — um juiz considera outra janela mais conveniente. Qual conclusão articula corretamente os quatro pontos?
+
+A) I é atuação vinculada; II contém margem legítima; III permanece controlável; IV não autoriza o juiz a substituir o mérito por preferência própria.
+B) I e II são discricionários; III é imune a controle; IV permite revogação judicial do horário escolhido.
+C) I é vinculada; II elimina todo controle; III pode ser corrigido por motivação posterior; IV autoriza o juiz a escolher a janela.
+D) I depende de conveniência; II é vinculada; III afeta apenas a forma; IV impede qualquer controle de legalidade.
+
+### Questão 41
+
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+A retirada de ato ilegal, por defeito existente desde a origem, denomina-se:
+
+A) revogação.
+B) convalidação.
+C) anulação ou invalidação.
+D) confirmação de mérito.
+
+### Questão 42
+
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+Um perfil temporário foi concedido validamente. Arquitetura nova elimina a necessidade, e o caso informa que a natureza do ato permite retirada sem atingir situação protegida. A providência adequada é:
+
+A) anulação, porque toda mudança posterior revela ilegalidade originária.
+B) revogação motivada para o futuro, por conveniência atual superveniente.
+C) convalidação, porque a arquitetura nova corrige vício existente na concessão.
+D) manutenção obrigatória, porque ato válido nunca pode ser retirado pela Administração.
+
+### Questão 43
+
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+No âmbito federal, chefe pratica ato que cabia ao superior. A competência não é exclusiva, o conteúdo é lícito, a forma omitida não é essencial e não há lesão ao interesse público nem prejuízo a terceiros. À luz do recorte ensinado, a melhor conclusão é:
+
+A) o ato deve ser revogado, pois qualquer incompetência transforma legalidade em escolha de mérito.
+B) o vício é automaticamente inexistente, porque o resultado material foi útil à Administração.
+C) a convalidação é obrigatória e ocorre sem decisão da autoridade competente.
+D) os filtros permitem convalidação, sem saneamento automático; são necessários decisão competente e exame concreto.
+
+### Questão 44
+
+**Nível:** Muito difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+A Administração identifica ilegalidade de origem em ato que produziu efeitos para terceiro de boa-fé. Há confiança legítima e efeitos já consolidados que precisam ser examinados. Qual método está de acordo com a apostila?
+
+A) Revogar o ato por conveniência, pois a boa-fé converte automaticamente ilegalidade em mérito.
+B) Examinar anulação, mas sem aplicar retroatividade mecanicamente, considerando segurança jurídica e efeitos protegidos.
+C) Convalidar qualquer vício, porque a boa-fé do terceiro torna todo defeito sanável.
+D) Manter o ato sem controle, pois efeitos consolidados impedem reconhecer ilegalidade de origem.
+
+### Questão 45
+
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+No processo federal, a Administração descobre, seis anos após a prática, ilegalidade em ato do qual decorreram efeitos favoráveis ao destinatário. O caso informa boa-fé e não comprova má-fé. Um parecer tenta aplicar o prazo do art. 54 como regra universal a qualquer ente. Qual conclusão reúne natureza, tempo, exceção e alcance?
+
+A) No recorte federal, em regra decaiu o direito de anular; a má-fé não foi comprovada, e o prazo não deve ser universalizado a outros regimes.
+B) O decurso do tempo converteu a ilegalidade em inconveniência, impondo revogação judicial para o futuro.
+C) A boa-fé convalidou automaticamente qualquer vício e eliminou a necessidade de examinar prazo e efeitos.
+D) O prazo quinquenal vale automaticamente para todos os entes, e a má-fé deve ser presumida diante da ilegalidade.
+
+### Questão 46
+
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+Em uma sanção federal, a autoridade era competente, mas usou o poder para retaliar crítica, atribuiu ao punido logs de terceiro e escolheu consequência não permitida pela norma. Qual solução respeita os filtros de convalidação?
+
+A) Convalidar a finalidade mediante declaração posterior de interesse público.
+B) Convalidar o motivo pela troca dos logs e preservar a mesma sanção.
+C) Reconhecer que finalidade desviada, motivo falso e objeto ilícito não são curados por simples ratificação.
+D) Revogar o ato, pois todos os três defeitos dizem respeito somente à conveniência administrativa.
+
+### Questão 47
+
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+Associe as situações: I — ato nasceu com motivo falso; II — ato nasceu válido, mas perdeu utilidade após mudança tecnológica e admite retirada; III — no processo federal, ato tem vício de competência não exclusiva, sem prejuízo ou lesão. A resposta correta é:
+
+A) I revogação; II anulação; III manutenção automática.
+B) I anulação; II revogação; III convalidação possível após exame.
+C) I convalidação; II anulação; III revogação por mérito.
+D) I anulação; II convalidação; III revogação judicial.
+
+### Questão 48
+
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao)
+
+**Assinale a alternativa INCORRETA** ao aplicar anulação, revogação e convalidação.
+
+A) Ato ilegal pode ser invalidado, mas segurança jurídica, boa-fé e efeitos protegidos afastam respostas retroativas mecânicas.
+B) Ato válido pode ser revogado por mérito quando sua natureza permitir e não houver situação definitivamente protegida.
+C) Defeito sanável no processo federal só admite convalidação sem lesão ao interesse público nem prejuízo a terceiros.
+D) O Judiciário pode revogar ato válido por conveniência e convalidar motivo falso para preservar o resultado administrativo.
+
+### Questão 49
+
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — integração dos atos administrativos](semana_03_estudo.md#s3-d3-integracao)
+
+Diretor suspende por noventa dias credencial de fornecedor. A norma reserva a decisão a colegiado e exclui delegação; os quatro acessos citados pertenciam a terceiro; não houve defesa; e o ato declara esses acessos como razão da sanção. A resposta mais completa é:
+
+A) Há incompetência, motivo falso e defesa suprimida; cabe invalidar, e nova decisão exige processo regular com fatos verdadeiros.
+B) O colegiado pode convalidar todos os defeitos por concordância genérica, mantendo a mesma decisão e seus fundamentos.
+C) Cabe revogação, porque os problemas descritos representam apenas mudança de conveniência após ato válido.
+D) A presunção de veracidade impede discutir os logs, e a defesa pode ser suprimida quando o objeto é tecnicamente útil.
+
+### Questão 50
+
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — integração dos atos administrativos](semana_03_estudo.md#s3-d3-integracao)
+
+Colegiado competente concedeu acesso por até seis meses, com parecer verdadeiro e motivação completa. A norma do caso define o ato como precário e admite retirada motivada quando cessar a necessidade. Tecnologia superveniente elimina a necessidade, sem prejudicar entregas ou situação protegida. A solução é:
+
+A) anular retroativamente, pois o fato novo torna falsa a motivação original.
+B) revogar motivadamente para o futuro, porque o ato nasceu válido e a mudança afeta sua conveniência atual.
+C) convalidar, pois a tecnologia nova sana defeito de competência inexistente.
+D) manter até o fim do prazo, porque nenhum ato válido e precário admite retirada administrativa.
+
+## Banco complementar do Dia 3
+
+### Extra E1
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** processo, memória e arquivos
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Um programa em execução manipula dados temporários na memória e grava um resultado persistente em arquivo. Qual conclusão respeita as distinções recuperadas?
+
+A) Processo é apenas o arquivo do programa armazenado, ainda que nenhuma execução esteja em andamento.
+B) Memória preserva permanentemente o resultado, enquanto arquivo mantém apenas dados temporários.
+C) Processo é conteúdo persistente, enquanto arquivo representa o programa em execução na memória.
+D) Processo representa execução em andamento; memória sustenta dados de trabalho; arquivo registra conteúdo persistente.
+
+### Extra E2
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** permissões e menor privilégio
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Para executar tarefa que exige apenas leitura, qual configuração melhor aplica o menor privilégio?
+
+A) Conceder ao usuário ou grupo somente a permissão de leitura necessária à tarefa.
+B) Conceder administração total para evitar novos pedidos de acesso durante o trabalho.
+C) Compartilhar uma conta privilegiada entre toda a equipe para simplificar a autenticação.
+D) Remover a identificação do usuário e confiar apenas no endereço do equipamento.
+
+### Extra E3
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** DNS, HTTPS e cliente-servidor
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Um navegador consulta o nome de um portal e depois solicita uma página protegida ao serviço remoto. A leitura coerente com a revisão é:
+
+A) o DNS executa a aplicação local, e o HTTPS substitui o servidor por arquivo offline.
+B) o DNS auxilia a resolução do nome, e o navegador atua como cliente ao solicitar recurso ao servidor via HTTPS.
+C) o HTTPS elimina a relação cliente-servidor, pois não existe pedido nem resposta nesse protocolo.
+D) o navegador funciona apenas como servidor, enquanto o portal remoto é necessariamente o cliente.
+
+### Extra E4
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** backup e restauração
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+A equipe confirma que existe uma cópia de backup, mas nunca testou integridade ou restauração. A conclusão correta é:
+
+A) a existência do arquivo prova recuperação confiável, independentemente de teste.
+B) a retenção torna desnecessário verificar se a cópia pode ser lida e restaurada.
+C) backup existente não comprova restauração confiável; integridade e recuperação precisam ser testadas.
+D) toda cópia é isolada por definição, mesmo armazenada no mesmo ambiente comprometido.
+
+### Extra E5
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** logs e autorização
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Um log registra que o perfil X abriu um arquivo. Isoladamente, esse registro:
+
+A) demonstra um evento técnico, mas não prova que o acesso estava administrativamente autorizado.
+B) comprova autorização, competência e finalidade da decisão que concedeu o perfil.
+C) substitui a verificação de identidade, regra de acesso e contexto de uso.
+D) impede qualquer correlação com outros eventos por possuir presunção absoluta.
+
+### Extra E6
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** sistema operacional e recursos
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Na revisão de sistema operacional, a descrição mais adequada é:
+
+A) o arquivo coordena processador e memória, enquanto o sistema operacional apenas preserva dados.
+B) memória, processo e arquivo são abstrações equivalentes e exercem a mesma função no sistema.
+C) cada processo gerencia diretamente todos os recursos, sem coordenação do sistema operacional.
+D) o sistema operacional coordena recursos, enquanto processos executam e arquivos preservam dados.
+
+### Extra E7
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** Internet e arquitetura cliente-servidor
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Em uma consulta comum a um portal, qual papel é corretamente atribuído aos componentes?
+
+A) O cliente mantém obrigatoriamente todos os dados do serviço e nunca envia pedido.
+B) O servidor apenas exibe a tela local e não processa solicitações remotas.
+C) O cliente solicita um recurso, e o servidor recebe a solicitação e fornece a resposta correspondente.
+D) Cliente e servidor são papéis fixos do equipamento, independentemente de quem solicita o recurso.
+
+### Extra E8
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** backup e cópia isolada
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Por que uma cópia isolada integra a estratégia de backup recuperada?
+
+A) Porque elimina a necessidade de testar restauração e integridade.
+B) Porque reduz a chance de a mesma falha ou comprometimento atingir simultaneamente origem e cópia.
+C) Porque transforma qualquer backup incremental em cópia completa sem operação adicional.
+D) Porque uma cópia no mesmo volume se torna isolada quando recebe nome e pasta diferentes.
+
+### Extra E9
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** permissões, logs e menor privilégio
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+Perfil de leitura foi usado para abrir cadastro, e o log registra o evento. A chefia conclui que o usuário estava autorizado a alterar qualquer dado. Qual análise combina corretamente as revisões?
+
+A) O log prova apenas o evento registrado; permissão de leitura e menor privilégio não autorizam alteração ampla.
+B) Qualquer evento registrado amplia automaticamente a permissão do usuário para administração total.
+C) A existência do perfil torna dispensável verificar usuário, grupo, regra e contexto do acesso.
+D) Menor privilégio significa conceder toda permissão possível e retirar apenas depois de incidente.
+
+### Extra E10
+
+**Dia:** 3
+**Bloco:** 4 — Revisão de Informática
+**Matéria:** Informática
+**Assunto:** backup, integridade e restauração
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4)
+
+A organização possui cópias periódicas, mas todas ficam conectadas ao ambiente de produção e nenhuma restauração foi testada. Qual conclusão exige os dois controles recuperados?
+
+A) Periodicidade sozinha prova integridade, isolamento e recuperação completa.
+B) Cópia conectada é necessariamente imune à mesma falha que atinge a origem.
+C) É preciso testar restauração e manter proteção ou isolamento compatível, pois existência de cópia não prova recuperação confiável.
+D) A ausência de teste é apenas problema de motivação jurídica, sem efeito sobre a confiabilidade técnica.
+
+### Extra E11
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** causa e conclusão
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+No período “Como a política limita o perfil à equipe Y, o uso é incompatível; portanto, determina-se o bloqueio”, os conectores destacados introduzem, respectivamente:
+
+A) conclusão e oposição.
+B) condição e explicação sem conclusão.
+C) oposição e finalidade.
+D) causa ou fundamento explicativo e conclusão.
+
+### Extra E12
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** ordem lógica da motivação
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Qual sequência organiza de modo mais controlável uma justificativa administrativa curta?
+
+A) regra abstrata, conclusão antecipada, fato apresentado depois e ligação apenas presumida.
+B) fato verificável, regra aplicável, ligação entre ambos e conclusão proporcional.
+C) conclusão, fato verificável, ligação causal e, por último, a regra que deveria fundamentá-la.
+D) fato verificável, conclusão imediata, regra aplicável e explicação inserida após a decisão.
+
+### Extra E13
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** conectores e relação lógica
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Assinale a reescrita que preserva a relação causal e apresenta conclusão sem trocar uma pela outra.
+
+A) “O perfil permaneceu ativo após o contrato; contudo, a norma limita o acesso à vigência, e por isso ele deve ser mantido.”
+B) “O perfil deve ser bloqueado porque a norma foi aplicada; portanto, o contrato terminou.”
+C) “Como o perfil permaneceu ativo após o contrato e a norma limita o acesso à vigência, determina-se o bloqueio.”
+D) “Como o bloqueio encerrou o contrato, a norma passou a limitar retroativamente o acesso.”
+
+### Extra E14
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** reescrita da motivação
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Qual alternativa corrige melhor “Houve irregularidade, logo aplica-se a medida cabível”, acrescentando os elementos ensinados?
+
+A) “Em 15 de julho, houve acesso após o contrato; como a norma o limita à vigência, bloqueia-se o perfil e preservam-se os registros.”
+B) “O relatório de 15 de julho indica irregularidade; por interesse público, aplica-se a medida considerada adequada.”
+C) “Após o contrato, o perfil permaneceu ativo; logo, aplica-se a sanção máxima prevista para outras infrações.”
+D) “A norma limita o acesso à vigência; como houve irregularidade, adota-se a providência escolhida pela chefia.”
+
+### Extra E15
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** ambiguidade e congruência
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Leia: “O diretor informou ao analista que seu acesso seria bloqueado após o relatório.” Qual problema prejudica a precisão do período?
+
+A) O uso de verbo no passado impede qualquer relação temporal.
+B) O possessivo “seu” pode tornar ambíguo de quem é o acesso, exigindo reescrita precisa.
+C) A conjunção “que” necessariamente transforma a oração em conclusão sem causa.
+D) A expressão “após o relatório” prova, por si, a base jurídica da medida.
+
+### Extra E16
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** concisão e ordem lógica
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Qual redação é simultaneamente concisa e logicamente ordenada?
+
+A) “Como o acesso permaneceu ativo, determina-se o bloqueio, porque a norma se aplica ao caso.”
+B) “Determina-se o bloqueio porque houve acesso; a norma que limita o perfil ao contrato será verificada depois.”
+C) “Por interesse público, o perfil será bloqueado, pois o relatório apontou irregularidade.”
+D) “O relatório identifica acesso após o contrato; como a norma o veda, determina-se o bloqueio do perfil.”
+
+### Extra E17
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** fato, regra, ligação e consequência
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Uma minuta diz: “Em 15 de julho, o perfil X acessou a base após o encerramento do contrato. A política limita o acesso à vigência contratual. Portanto, preservam-se os logs e bloqueia-se o perfil para cessar o acesso.” Qual avaliação reúne os filtros textuais ensinados?
+
+A) Há fato, regra e conclusão, mas a falta de um conector expresso torna impossível reconhecer qualquer nexo.
+B) Há fato, regra, nexo e consequência; a legalidade ainda depende de competência, base e processo.
+C) O conector “portanto” prova sozinho competência e proporcionalidade da decisão.
+D) A presença de consequência elimina a necessidade de verificar se o fato corresponde à realidade.
+
+### Extra E18
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** conectores e legalidade da decisão
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+**Assinale a alternativa INCORRETA** sobre a arquitetura textual da motivação.
+
+A) “Como” pode introduzir causa, mas a relação entre fato e regra ainda precisa ser coerente.
+B) “Portanto” pode sinalizar conclusão, sem tornar automaticamente proporcional a providência escolhida.
+C) Fato, regra e ligação lógica tornam a justificativa controlável, mas não dispensam competência e processo.
+D) Se fato e regra estão corretos, “portanto” dispensa expor a relação entre ambos, ainda que a consequência não decorra da base citada.
+
+### Extra E19
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** reescrita integrada e precisão
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Partindo de “Houve uso indevido, logo cancela-se o acesso”, qual reescrita melhora precisão, causalidade e congruência sem afirmar mais do que os dados fornecidos?
+
+A) “Logs de 14 de julho registram uso após o contrato; como a regra limita o acesso à vigência, bloqueia-se o perfil e preservam-se os registros.”
+B) “Logs de 14 de julho registram uso após o contrato; portanto, cancelam-se permanentemente os acessos de todos os usuários.”
+C) “A regra limita o acesso à vigência; como houve evento após o contrato, aplica-se suspensão punitiva de trinta dias.”
+D) “Os logs mostram acesso após o contrato; contudo, nenhuma medida cabe até que uma nova regra seja editada.”
+
+### Extra E20
+
+**Dia:** 3
+**Bloco:** 5 — Português
+**Matéria:** Língua Portuguesa
+**Assunto:** revisão final da motivação
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5)
+
+Na revisão final de uma justificativa, o redator encontra fato sem data, regra identificada, conclusão anterior à explicação e pronome ambíguo. Qual sequência de correção atende aos critérios estudados?
+
+A) Manter a ordem, acrescentar “portanto” e presumir que o pronome será entendido.
+B) Precisar apenas a regra, manter o pronome ambíguo e conservar a conclusão antes da explicação.
+C) Precisar o fato, eliminar a ambiguidade, ligar fato e regra e só então formular consequência proporcional.
+D) Nomear o referente do pronome, mas conservar o fato sem data e a consequência antes da regra.
+
+## Gabarito do Dia 3
+
+1. A
+2. B
+3. C
+4. D
+5. B
+6. A
+7. D
+8. C
+9. B
+10. D
+11. A
+12. C
+13. D
+14. B
+15. C
+16. D
+17. A
+18. B
+19. D
+20. C
+21. C
+22. A
+23. A
+24. D
+25. B
+26. C
+27. B
+28. A
+29. C
+30. B
+31. D
+32. A
+33. D
+34. C
+35. A
+36. D
+37. A
+38. B
+39. C
+40. A
+41. C
+42. B
+43. D
+44. B
+45. A
+46. C
+47. B
+48. D
+49. A
+50. B
+
+### Gabarito do banco complementar do Dia 3
+
+E1. D
+E2. A
+E3. B
+E4. C
+E5. A
+E6. D
+E7. C
+E8. B
+E9. A
+E10. C
+E11. D
+E12. B
+E13. C
+E14. A
+E15. B
+E16. D
+E17. B
+E18. D
+E19. A
+E20. C
+
+## Comentários do Dia 3
+
+### Comentário da Questão 1
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está correta:** A decisão é unilateral, praticada em função administrativa e produz efeito jurídico imediato sobre o perfil.
+- **B) está errada:** Transferir arquivos apenas executa materialmente uma decisão anterior e não constitui necessariamente novo ato jurídico.
+- **C) está errada:** O ajuste bilateral de obrigações descreve contrato, que pressupõe acordo de vontades.
+- **D) está errada:** O registro automático é evento técnico ou fato material, sem a decisão jurídica descrita no conceito.
+- **Conceito cobrado:** Distinção entre ato administrativo, operação material e contrato.
+- **Pegadinha usada:** Chamar de ato qualquer atividade realizada dentro de um órgão público.
+- **Como pensar para acertar:** Pergunte se há manifestação unilateral sob regime administrativo e efeito jurídico imediato; se houver só execução, acordo ou evento, descarte.
+
+### Comentário da Questão 2
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** A atuação material não gera, por si, novo efeito jurídico e pode apenas cumprir decisão já existente.
+- **B) está correta:** A instalação é operação concreta de execução, distinta do ato jurídico anterior que a autorizou.
+- **C) está errada:** Trabalho e equipamento não bastam para formar contrato; faltaria o acordo bilateral de vontades.
+- **D) está errada:** Executar autorização individual não cria comando geral nem transforma a providência em ato normativo.
+- **Conceito cobrado:** Fato administrativo ou execução material.
+- **Pegadinha usada:** Equiparar toda atividade da Administração a ato administrativo autônomo.
+- **Como pensar para acertar:** Localize onde nasceu o efeito jurídico; a providência posterior que apenas o concretiza tende a ser material.
+
+### Comentário da Questão 3
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Finalidade responde para qual interesse público previsto o poder deve ser usado.
+- **B) está errada:** Forma responde como a vontade é exteriorizada e quais formalidades essenciais incidem.
+- **C) está correta:** Competência identifica a autoridade ou órgão a quem o ordenamento atribuiu a prática do ato.
+- **D) está errada:** Objeto é o efeito jurídico produzido, como autorizar, advertir ou suspender.
+- **Conceito cobrado:** Competência como elemento do ato.
+- **Pegadinha usada:** Trocar as perguntas de controle dos cinco elementos.
+- **Como pensar para acertar:** Associe “quem?” à competência, “para quê?” à finalidade, “como?” à forma, “por quê?” ao motivo e “qual efeito?” ao objeto.
+
+### Comentário da Questão 4
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Competência é a atribuição para agir, não a consequência escolhida.
+- **B) está errada:** Forma é o veículo de exteriorização, como documento e formalidades, não a advertência em si.
+- **C) está errada:** Motivo reúne o fato e a base jurídica que autorizam a providência.
+- **D) está correta:** A advertência é a consequência jurídica imposta e, portanto, o objeto do ato.
+- **Conceito cobrado:** Objeto do ato administrativo.
+- **Pegadinha usada:** Confundir a consequência decidida com as razões que a justificam.
+- **Como pensar para acertar:** Reescreva o caso como “por causa de X, a autoridade fez Y”; X é motivo e Y é objeto.
+
+### Comentário da Questão 5
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** O enunciado não cria exigência de oralidade e o defeito apontado não é o modo de exteriorização.
+- **B) está correta:** A atribuição de segurança foi desviada para retaliação pessoal, fim incompatível com a finalidade pública específica.
+- **C) está errada:** Restrição de acesso pode ser objeto lícito quando autorizada e adequadamente aplicada; não é sempre impossível.
+- **D) está errada:** A crítica não redistribui competência; o problema é o uso da atribuição para finalidade imprópria.
+- **Conceito cobrado:** Finalidade e desvio do fim público.
+- **Pegadinha usada:** Presumir que autoridade competente pode usar o poder para qualquer intenção.
+- **Como pensar para acertar:** Depois de confirmar quem podia agir, verifique para qual fim a norma entregou o poder e compare com o fim real do caso.
+
+### Comentário da Questão 6
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está correta:** A forma exterioriza a vontade, enquanto o procedimento organiza a sequência de atos até a decisão.
+- **B) está errada:** A alternativa inverte os conceitos e reduz indevidamente o procedimento à assinatura.
+- **C) está errada:** Os conceitos não são sinônimos, e a possibilidade de correção depende da essencialidade e do prejuízo.
+- **D) está errada:** Objeto e motivo são elementos distintos e não definem, respectivamente, forma e procedimento.
+- **Conceito cobrado:** Diferença entre forma e procedimento.
+- **Pegadinha usada:** Tratar o documento final e todo o itinerário decisório como a mesma categoria.
+- **Como pensar para acertar:** Visualize forma como o modo de aparecer do ato e procedimento como o caminho percorrido para chegar a ele.
+
+### Comentário da Questão 7
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** O compartilhamento não é forma, e a suspensão não identifica quem possuía atribuição.
+- **B) está errada:** O fato não é finalidade e a consequência não é modo de exteriorização.
+- **C) está errada:** A alternativa troca a ordem: compartilhar é pressuposto; suspender é efeito.
+- **D) está correta:** O compartilhamento, combinado com a regra proibitiva, forma o motivo, e a suspensão é o objeto.
+- **Conceito cobrado:** Distinção entre motivo e objeto.
+- **Pegadinha usada:** Inverter causa jurídica e consequência jurídica.
+- **Como pensar para acertar:** Pergunte primeiro “o que aconteceu e qual regra incide?” e depois “qual efeito foi decidido?”.
+
+### Comentário da Questão 8
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Regularidade de motivo e objeto não desloca a atribuição conferida pela norma.
+- **B) está errada:** Competência não se presume pela formação técnica nem pela posição informal do agente.
+- **C) está correta:** Sem delegação e diante de reserva ao diretor, existe vício de competência, ainda que a medida seja útil.
+- **D) está errada:** A finalidade é administrativa e adequada no caso; o elemento diretamente defeituoso é quem decidiu.
+- **Conceito cobrado:** Autonomia dos elementos e vício de competência.
+- **Pegadinha usada:** Usar a utilidade técnica para sanar intuitivamente a incompetência.
+- **Como pensar para acertar:** Examine cada elemento isoladamente; nenhum elemento regular substitui outro que esteja ausente ou viciado.
+
+### Comentário da Questão 9
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Boa finalidade não dispensa encontrar no ordenamento a atribuição para praticar a decisão.
+- **B) está correta:** A necessidade técnica sustenta o motivo, mas competência é filtro independente e o caso exclui delegação válida.
+- **C) está errada:** Adequação do objeto não transforma a distribuição normativa de competência em escolha discricionária.
+- **D) está errada:** Boa-fé do destinatário pode importar para efeitos protegidos, mas não cria atribuição inexistente.
+- **Conceito cobrado:** Relação entre competência, motivo e objeto.
+- **Pegadinha usada:** Fazer um elemento válido compensar outro elemento ausente.
+- **Como pensar para acertar:** Resolva em duas etapas: confirme o pressuposto técnico e, separadamente, procure a autoridade legalmente habilitada.
+
+### Comentário da Questão 10
+
+- **Alternativa correta:** D (a afirmação incorreta).
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está correta:** Forma é precisamente o modo de exteriorização da vontade administrativa.
+- **B) está correta:** Essencialidade e prejuízo são filtros necessários para avaliar a consequência do defeito formal.
+- **C) está correta:** Contraditório e ampla defesa integram as garantias constitucionais e procedimentais.
+- **D) está incorreta:** Não existe saneamento universal; formalidade essencial e prejuízo podem impedir correção.
+- **Observação:** A questão pede a alternativa incorreta; por isso, D é o gabarito.
+- **Conceito cobrado:** Forma, procedimento e sanabilidade do defeito.
+- **Pegadinha usada:** Absolutizar a frase “vício de forma é sanável”.
+- **Como pensar para acertar:** Em comando negativo, valide cada regra e marque a generalização que ignora essencialidade, prejuízo e regime aplicável.
+
+### Comentário da Questão 11
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está correta:** Verdade do fato sustenta o motivo, mas não confere ao diretor atribuição reservada ao colegiado.
+- **B) está errada:** Motivo e competência são elementos diferentes; quem descobre o fato não recebe por isso poder decisório.
+- **C) está errada:** A reserva ao colegiado torna a competência irregular, antes mesmo de discutir conveniência.
+- **D) está errada:** Concordância informal não substitui a manifestação da autoridade competente nem supera a reserva normativa.
+- **Conceito cobrado:** Competência separada do motivo.
+- **Pegadinha usada:** Presumir que fato verdadeiro ou concordância posterior valida quem decidiu.
+- **Como pensar para acertar:** Faça duas perguntas independentes: o fato ocorreu? Quem a norma autorizou a decidir?
+
+### Comentário da Questão 12
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Competência regular não imuniza finalidade, motivo, proporcionalidade ou igualdade.
+- **B) está errada:** O atraso precisa ser juridicamente apto à sanção, e o propósito revelado continua relevante.
+- **C) está correta:** O caso exige examinar tanto a finalidade retaliatória quanto a adequação do motivo à consequência aplicada.
+- **D) está errada:** Um fato verdadeiro não autoriza qualquer sanção; a regra e a relação lógica com o objeto permanecem necessárias.
+- **Conceito cobrado:** Competência, finalidade e suficiência do motivo.
+- **Pegadinha usada:** Transformar poder sancionador em permissão para punir por qualquer razão.
+- **Como pensar para acertar:** Depois de confirmar competência, teste o fim real e pergunte se fato e norma sustentam exatamente a consequência.
+
+### Comentário da Questão 13
+
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Exteriorização formal correta não elimina garantias que integram o processo decisório.
+- **B) está errada:** A falta de defesa não se reduz ao objeto; é violação constitucional e procedimental.
+- **C) está errada:** Forma e procedimento não são idênticos, e republicar não oferece retroativamente a defesa suprimida.
+- **D) está correta:** Assinatura e publicação regulares não suprem a ausência de oportunidade de contraditório e ampla defesa.
+- **Conceito cobrado:** Relação entre forma e garantias procedimentais.
+- **Pegadinha usada:** Supor que documento formalmente perfeito cura o percurso decisório defeituoso.
+- **Como pensar para acertar:** Separe o modo de exteriorização do caminho de formação da decisão e confira ambos.
+
+### Comentário da Questão 14
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — conceito e cinco elementos](semana_03_estudo.md#s3-d3-atos-requisitos).
+- **A) está errada:** Finalidade pública não cria o pressuposto fático ausente.
+- **B) está correta:** O motivo falha porque o fato autorizador não ocorreu; os demais elementos regulares não compensam esse vício.
+- **C) está errada:** Objeto e motivação são categorias distintas, e o caso não informa ilicitude abstrata da consequência.
+- **D) está errada:** Inexistência do fato não altera quem recebeu competência; atinge o pressuposto da decisão.
+- **Conceito cobrado:** Independência dos cinco elementos e vício de motivo.
+- **Pegadinha usada:** Permitir compensação entre elementos do ato.
+- **Como pensar para acertar:** Marque cada elemento como regular ou irregular e recuse alternativas que transferem o defeito para outro campo.
+
+### Comentário da Questão 15
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** A presunção admite contestação e não bloqueia prova produzida pelo interessado.
+- **B) está errada:** A presunção de veracidade se relaciona justamente aos fatos afirmados, embora de modo relativo.
+- **C) está correta:** O ato é inicialmente tratado como regular, mas pode ser afastado por prova e continua sujeito a defesa e controle.
+- **D) está errada:** Registro técnico incorreto não se converte em verdade definitiva apenas porque foi usado pela Administração.
+- **Conceito cobrado:** Presunções relativas de legitimidade e veracidade.
+- **Pegadinha usada:** Confundir presunção inicial com prova absoluta e incontestável.
+- **Como pensar para acertar:** Procure a alternativa que mantém eficácia inicial sem fechar as portas ao contraditório e ao controle.
+
+### Comentário da Questão 16
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** Imperatividade não acompanha todos os atos; a certidão não contém ordem imposta ao destinatário.
+- **B) está errada:** A ausência de sanção não elimina a presunção relativa da declaração administrativa.
+- **C) está errada:** Certidão é ato unilateral enunciativo, mesmo quando emitida a pedido do interessado.
+- **D) está correta:** É preciso observar a função do ato, e uma declaração cadastral não exige imperatividade.
+- **Conceito cobrado:** Imperatividade não universal.
+- **Pegadinha usada:** Atribuir todos os atributos a todos os atos administrativos.
+- **Como pensar para acertar:** Pergunte se o ato impõe obrigação sem concordância; se apenas declara, a imperatividade não é necessária.
+
+### Comentário da Questão 17
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está correta:** A fórmula ensinada exige previsão jurídica ou urgência justificadora e preserva controle e limites do direito.
+- **B) está errada:** Autoexecutoriedade não é universal nem licença para agir sem base, pressupostos ou processo.
+- **C) está errada:** Certidões e pareceres normalmente não demandam execução material coercitiva direta.
+- **D) está errada:** A execução direta não elimina controle judicial ou administrativo posterior.
+- **Conceito cobrado:** Pressupostos e limites da autoexecutoriedade.
+- **Pegadinha usada:** Tratar execução direta como poder ilimitado da Administração.
+- **Como pensar para acertar:** Procure previsão ou urgência e, mesmo quando presentes, conserve legalidade, proporcionalidade e controle.
+
+### Comentário da Questão 18
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** Imperatividade diz respeito à imposição de obrigação sem concordância.
+- **B) está correta:** Tipicidade liga a atuação a figura admitida pelo ordenamento e limita invenções administrativas.
+- **C) está errada:** Presunção de veracidade se refere aos fatos afirmados pela Administração.
+- **D) está errada:** Executoriedade descreve execução material direta, e não correspondência a tipo jurídico.
+- **Conceito cobrado:** Tipicidade.
+- **Pegadinha usada:** Trocar os nomes dos atributos por descrições próximas.
+- **Como pensar para acertar:** Associe “figura prevista no ordenamento” à tipicidade; “impor” à imperatividade; e “executar diretamente” à executoriedade.
+
+### Comentário da Questão 19
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** O ato não se torna simples quando depende juridicamente de aprovação acessória.
+- **B) está errada:** No complexo, vontades autônomas integram a formação de um único ato, e não há ato principal seguido de acessório.
+- **C) está errada:** Generalidade se refere ao alcance dos destinatários, não à função da aprovação.
+- **D) está correta:** A descrição apresenta ato principal cuja eficácia depende de ato acessório de aprovação, configuração do composto.
+- **Conceito cobrado:** Ato composto.
+- **Pegadinha usada:** Classificar pela quantidade de participantes, sem examinar a função das vontades.
+- **Como pensar para acertar:** Identifique se as manifestações se fundem em um ato ou se uma aprova acessoriamente o ato principal.
+
+### Comentário da Questão 20
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** A certidão não aplica sanção, logo não é ato punitivo.
+- **B) está errada:** Atos ordinatórios organizam o funcionamento interno, o que não descreve a declaração cadastral.
+- **C) está correta:** Certidões declaram ou certificam situações e integram a espécie enunciativa.
+- **D) está errada:** Ato normativo veicula comando geral de execução, não informação individual certificada.
+- **Conceito cobrado:** Espécie enunciativa.
+- **Pegadinha usada:** Confundir documento oficial com comando normativo.
+- **Como pensar para acertar:** Pergunte o verbo central: certificar ou declarar aponta para ato enunciativo.
+
+### Comentário da Questão 21
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** Prova técnica pode afastar a presunção sem que a questão seja transformada em revogação por mérito.
+- **B) está errada:** A perícia atinge exatamente o pressuposto fático atribuído a Maria, e não apenas a consequência.
+- **C) está correta:** A presunção de veracidade é relativa, cede a evidência contrária e não suprime defesa ou controle.
+- **D) está errada:** Um erro factual pode viciar o ato, mas não altera automaticamente sua natureza administrativa.
+- **Conceito cobrado:** Presunção relativa diante de prova técnica.
+- **Pegadinha usada:** Usar presunção para encerrar a investigação de fato contestado.
+- **Como pensar para acertar:** Separe eficácia inicial de verdade definitiva e compare a afirmação administrativa com a prova disponível.
+
+### Comentário da Questão 22
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está correta:** Imperatividade permite impor a obrigação; autoexecutoriedade trata da possibilidade de executá-la materialmente de modo direto.
+- **B) está errada:** Presunção e tipicidade não descrevem os dois momentos de imposição e execução narrados.
+- **C) está errada:** A alternativa inverte as descrições dos atributos.
+- **D) está errada:** Exigibilidade pode envolver coerção indireta, mas presunção de veracidade não equivale a execução material e não afasta controle.
+- **Conceito cobrado:** Diferença entre imperatividade e autoexecutoriedade.
+- **Pegadinha usada:** Tratar imposição jurídica e execução material como um único atributo.
+- **Como pensar para acertar:** Primeiro pergunte se a obrigação nasce sem concordância; depois, se pode ser concretizada diretamente.
+
+### Comentário da Questão 23
+
+- **Alternativa correta:** A (a afirmação incorreta).
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está incorreta:** Nem todo ato de polícia é autoexecutório; previsão jurídica ou urgência e demais limites precisam ser verificados.
+- **B) está correta:** Certidão sem ordem não precisa apresentar imperatividade.
+- **C) está correta:** A presunção é relativa e convive com prova, defesa e controle.
+- **D) está correta:** Tipicidade impede criação livre de restrições e sanções sem figura admitida pelo direito.
+- **Observação:** A questão pede a alternativa incorreta; por isso, A é o gabarito.
+- **Conceito cobrado:** Limites e presença variável dos atributos.
+- **Pegadinha usada:** Generalizar a autoexecutoriedade a toda manifestação de polícia.
+- **Como pensar para acertar:** Em cada assertiva, procure palavras absolutas e teste se o atributo realmente aparece em todo ato.
+
+### Comentário da Questão 24
+
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** A sequência inverte todas as relações entre vontade única, integração e aprovação acessória.
+- **B) está errada:** O primeiro desenho tem uma vontade orgânica, e o terceiro não é simples porque depende de aprovação.
+- **C) está errada:** O segundo caso não é composto, pois as vontades autônomas integram a formação de um único ato.
+- **D) está correta:** Uma vontade forma ato simples; vontades autônomas integradas formam o complexo; ato principal com aprovação acessória forma o composto.
+- **Conceito cobrado:** Atos simples, complexos e compostos.
+- **Pegadinha usada:** Contar assinaturas em vez de examinar a função jurídica de cada manifestação.
+- **Como pensar para acertar:** Classifique cada desenho isoladamente e só depois compare a sequência oferecida pelas alternativas.
+
+### Comentário da Questão 25
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** Consentimento a pretensão particular é negocial, não enunciativo, e pedido não o torna contrato.
+- **B) está correta:** O primeiro ato consente unilateralmente e é negocial; o segundo aplica sanção e pode impor obrigação com imperatividade.
+- **C) está errada:** Consentimento individual não é comando geral normativo, e sanção não se limita a certificar fato.
+- **D) está errada:** A existência de requerimento não cria acordo contratual, e aplicar restrição caracteriza espécie punitiva.
+- **Conceito cobrado:** Espécies negocial e punitiva, unilateralidade e imperatividade.
+- **Pegadinha usada:** Transformar ato negocial em contrato e ignorar o efeito impositivo do ato punitivo.
+- **Como pensar para acertar:** Identifique a função de cada manifestação, depois verifique se ela continua unilateral e se impõe obrigação.
+
+### Comentário da Questão 26
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — atributos, classificações e espécies](semana_03_estudo.md#s3-d3-atos-atributos-especies).
+- **A) está errada:** O destinatário é determinado, não há punição e a certidão não impõe obrigação necessária.
+- **B) está errada:** A certidão destinada ao interessado não é comando normativo interno nem possui autoexecutoriedade universal.
+- **C) está correta:** O ato é individual e enunciativo; sua declaração possui presunção relativa e não demanda imperatividade.
+- **D) está errada:** O requerimento do interessado não converte manifestação unilateral em contrato.
+- **Conceito cobrado:** Integração entre classificação, espécie e atributos.
+- **Pegadinha usada:** Concluir natureza e atributos apenas pela existência de pedido do destinatário.
+- **Como pensar para acertar:** Identifique alcance, função e efeito separadamente: pessoa determinada, declaração e ausência de ordem.
+
+### Comentário da Questão 27
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está errada:** Assinatura pertence à exteriorização, e conclusão não define o motivo.
+- **B) está correta:** Motivo é o pressuposto fático e jurídico; motivação é a explicitação das razões adotadas.
+- **C) está errada:** Um fato pode existir sem ser bem exposto, e texto escrito pode apoiar-se em fato inexistente.
+- **D) está errada:** Efeito jurídico é objeto, e atribuição normativa é competência.
+- **Conceito cobrado:** Motivo e motivação.
+- **Pegadinha usada:** Tratar duas palavras próximas como conceitos intercambiáveis.
+- **Como pensar para acertar:** Separe o que sustenta a decisão no mundo e no direito da forma como essas razões aparecem no texto.
+
+### Comentário da Questão 28
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está correta:** Razões declaradas passam a servir de parâmetro de validade quanto à existência e adequação jurídica.
+- **B) está errada:** Não se pode substituir silenciosamente fundamento determinante falso depois da decisão.
+- **C) está errada:** A teoria também alcança escolha discricionária quando a Administração declara os motivos.
+- **D) está errada:** É preciso verificar se a imprecisão atinge fundamento determinante; nem todo erro redacional invalida automaticamente.
+- **Conceito cobrado:** Teoria dos motivos determinantes.
+- **Pegadinha usada:** Confundir vinculação aos motivos declarados com formalismo que invalida qualquer imperfeição textual.
+- **Como pensar para acertar:** Localize as razões efetivamente usadas e teste se existem, são verdadeiras e sustentam juridicamente a conclusão.
+
+### Comentário da Questão 29
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está errada:** Extensão do texto não converte dado falso em verdadeiro, e a presunção admite prova contrária.
+- **B) está errada:** Há razões registradas; o problema não é ausência de texto, mas falsidade do pressuposto determinante.
+- **C) está correta:** A motivação existe formalmente, porém o fato que sustenta a sanção foi atribuído à pessoa errada.
+- **D) está errada:** Discricionariedade não protege fundamento falso nem elimina controle dos fatos.
+- **Conceito cobrado:** Motivação existente com motivo determinante falso.
+- **Pegadinha usada:** Equiparar documento detalhado a justificativa materialmente verdadeira.
+- **Como pensar para acertar:** Faça duas verificações: existe explicação? O fato explicado corresponde à realidade e ao destinatário?
+
+### Comentário da Questão 30
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está errada:** Texto insuficiente não prova logicamente que nenhum pressuposto fático exista fora do documento.
+- **B) está correta:** A fórmula não torna controláveis os fatos, a base jurídica e o nexo com a medida; a existência do motivo exige investigação própria.
+- **C) está errada:** “Interesse público” é expressão genérica e não substitui a explicitação exigida no caso.
+- **D) está errada:** O enunciado informa atribuição da autoridade e aponta deficiência na justificação, não na competência.
+- **Conceito cobrado:** Insuficiência de motivação sem presunção de inexistência do motivo.
+- **Pegadinha usada:** Tratar falta de explicação e inexistência do fato como a mesma falha.
+- **Como pensar para acertar:** Separe “não consigo ver as razões” de “sei que o fato não ocorreu”; são diagnósticos diferentes.
+
+### Comentário da Questão 31
+
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está errada:** Veracidade do fato não autoriza consequência desconectada da própria norma citada.
+- **B) está errada:** A falha está na relação lógica entre fundamento e conclusão, não na materialidade do documento.
+- **C) está errada:** O controle dos motivos declarados inclui sua adequação jurídica ao objeto decidido.
+- **D) está correta:** Há fato real, mas falta congruência porque a regra indicada prevê redefinição e não sustenta a suspensão aplicada.
+- **Conceito cobrado:** Congruência da motivação.
+- **Pegadinha usada:** Supor que fato verdadeiro basta para qualquer objeto.
+- **Como pensar para acertar:** Construa a cadeia fato → regra → consequência e veja se cada seta é sustentada pelo enunciado.
+
+### Comentário da Questão 32
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está correta:** Mesmo dentro da margem legal, a escolha declaradamente baseada em dado falso permanece sujeita a controle.
+- **B) está errada:** Opções juridicamente possíveis não autorizam fundamentação fática contrária aos dados disponíveis.
+- **C) está errada:** A teoria alcança atos discricionários quando a Administração exterioriza razões determinantes.
+- **D) está errada:** Falsidade do dado pode viciar a decisão, mas não a transforma em acordo bilateral.
+- **Conceito cobrado:** Motivos determinantes em ato discricionário.
+- **Pegadinha usada:** Confundir margem de escolha com liberdade para inventar fatos.
+- **Como pensar para acertar:** Primeiro confirme a margem; depois controle separadamente a verdade e a adequação das razões usadas para escolher.
+
+### Comentário da Questão 33
+
+- **Alternativa correta:** D (a afirmação incorreta).
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está correta:** Pressuposto real e exposição insuficiente podem coexistir.
+- **B) está correta:** Quantidade de texto não garante existência ou adequação do fato determinante.
+- **C) está correta:** A margem discricionária não impede controle das razões declaradas.
+- **D) está incorreta:** Só a imprecisão relevante ao fundamento determinante pode comprometer a validade; não há invalidação automática de qualquer detalhe.
+- **Observação:** A questão pede a alternativa incorreta; por isso, D é o gabarito.
+- **Conceito cobrado:** Relações possíveis entre motivo, motivação e vício relevante.
+- **Pegadinha usada:** Converter teoria de controle em formalismo absoluto.
+- **Como pensar para acertar:** Em comando negativo, procure a afirmação totalizante que dispensa avaliar relevância e efeito do erro.
+
+### Comentário da Questão 34
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — motivo, motivação e motivos determinantes](semana_03_estudo.md#s3-d3-motivo-motivacao).
+- **A) está errada:** Competência para decidir não afasta o dever federal de motivar nas hipóteses abrangidas.
+- **B) está errada:** A Lei nº 9.784/1999 rege o âmbito federal e não deve ser projetada automaticamente sobre todos os regimes.
+- **C) está correta:** O caso delimitou processo federal e decisão abrangida, exigindo fatos, fundamentos e exposição explícita, clara e congruente.
+- **D) está errada:** Citar a lei não demonstra a ligação lógica entre o caso concreto e a conclusão.
+- **Conceito cobrado:** Art. 50 da Lei nº 9.784/1999 no recorte federal.
+- **Pegadinha usada:** Universalizar lei federal ou reduzir motivação à citação numérica.
+- **Como pensar para acertar:** Confirme primeiro o âmbito federal; depois procure fatos, fundamentos jurídicos e congruência, não mera referência formal.
+
+### Comentário da Questão 35
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está correta:** Requisitos preenchidos e resposta definida pela norma caracterizam atuação vinculada.
+- **B) está errada:** Preferência gerencial não cria motivo de negativa onde a lei não conferiu opção.
+- **C) está errada:** Nem toda decisão contém mérito; no caso, pressupostos e consequência estão determinados.
+- **D) está errada:** O requerente cumpre requisitos, mas a resposta deriva da norma e não de vontade particular autônoma.
+- **Conceito cobrado:** Atuação vinculada.
+- **Pegadinha usada:** Presumir discricionariedade em qualquer decisão administrativa.
+- **Como pensar para acertar:** Pergunte se, cumpridos os pressupostos, restam duas ou mais respostas juridicamente permitidas.
+
+### Comentário da Questão 36
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está errada:** Competência e finalidade permanecem vinculadas ao direito e não são afastadas por utilidade técnica.
+- **B) está errada:** Fatos, proporcionalidade e limites são controláveis mesmo quando existe margem.
+- **C) está errada:** A escolha deve estar dentro das opções admitidas pelo ordenamento.
+- **D) está correta:** Discricionariedade é margem jurídica delimitada, e não liberdade contra a lei.
+- **Conceito cobrado:** Discricionariedade limitada.
+- **Pegadinha usada:** Usar discricionariedade como sinônimo de arbitrariedade.
+- **Como pensar para acertar:** Procure simultaneamente pluralidade de opções legais e permanência dos controles jurídicos.
+
+### Comentário da Questão 37
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está correta:** Há escolha entre horários possíveis, mas o propósito de prejudicar unidade desvia a finalidade e torna a opção ilegal.
+- **B) está errada:** Possibilidade técnica não imuniza o fim concreto nem impede controle de abuso.
+- **C) está errada:** Pluralidade prevista de escolhas é justamente indício de margem, não de vinculação total.
+- **D) está errada:** Registrar opção prevista não cura finalidade particular incompatível com o interesse administrativo.
+- **Conceito cobrado:** Margem discricionária e controle de finalidade.
+- **Pegadinha usada:** Considerar lícita qualquer alternativa encontrada dentro de uma lista normativa.
+- **Como pensar para acertar:** Faça dois filtros: a opção está permitida? A razão de escolhê-la respeita finalidade e fatos?
+
+### Comentário da Questão 38
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está errada:** Abuso, falsidade dos fatos e limites normativos integram controle de legalidade.
+- **B) está correta:** O controle judicial alcança ilegalidade, mas não autoriza trocar a escolha administrativa válida por preferência do julgador.
+- **C) está errada:** Revogação por conveniência pertence à Administração, não ao exercício da função jurisdicional.
+- **D) está errada:** Conveniência opera dentro da competência, finalidade, igualdade e demais limites, não acima deles.
+- **Conceito cobrado:** Controle judicial do ato discricionário.
+- **Pegadinha usada:** Oscilar entre imunidade total e substituição integral do mérito.
+- **Como pensar para acertar:** Separe controle dos limites jurídicos de escolha da alternativa administrativa considerada mais conveniente.
+
+### Comentário da Questão 39
+
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está errada:** A faixa dá margem apenas à duração; não torna disponíveis competência, fatos ou finalidade.
+- **B) está errada:** Competência exclusiva e motivo falso não são preservados por concordância genérica posterior.
+- **C) está correta:** O caso falha em três filtros independentes: quem decidiu, veracidade do pressuposto e aderência do fim à norma.
+- **D) está errada:** O enunciado não aponta forma escrita ausente, e objeto abstratamente possível não cura os demais vícios.
+- **Conceito cobrado:** Limites múltiplos da discricionariedade.
+- **Pegadinha usada:** Expandir uma margem limitada do objeto para todos os elementos do ato.
+- **Como pensar para acertar:** Delimite primeiro onde existe escolha e aplique depois, um a um, competência, motivo e finalidade.
+
+### Comentário da Questão 40
+
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — vinculação e discricionariedade](semana_03_estudo.md#s3-d3-vinculacao-discricionariedade).
+- **A) está correta:** Requisitos com resposta única geram vinculação; opções seguras criam margem; fato falso é controlável; e juiz não substitui mérito válido.
+- **B) está errada:** A certidão não tem margem, o dado falso é controlável e revogação não é providência judicial de conveniência.
+- **C) está errada:** A escolha continua sujeita a controle, fundamento falso não se cura por acréscimo posterior e o juiz não escolhe a janela.
+- **D) está errada:** A alternativa inverte vínculo e margem, classifica falsidade como forma e nega indevidamente o controle legal.
+- **Conceito cobrado:** Vinculação, discricionariedade, motivos e controle judicial.
+- **Pegadinha usada:** Aceitar pacote parcialmente correto que erra um dos quatro filtros.
+- **Como pensar para acertar:** Resolva I a IV separadamente e só marque a opção que preserva todas as conclusões.
+
+### Comentário da Questão 41
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Revogação retira ato válido por mérito atual, não ato ilegal desde a origem.
+- **B) está errada:** Convalidação procura corrigir defeito sanável e preservar o ato, não simplesmente retirá-lo.
+- **C) está correta:** Anulação ou invalidação é o destino próprio do ato ilegal, observados os limites aplicáveis.
+- **D) está errada:** Confirmar mérito não elimina defeito originário de legalidade.
+- **Conceito cobrado:** Anulação.
+- **Pegadinha usada:** Usar “retirada” como se anulação e revogação fossem sinônimos.
+- **Como pensar para acertar:** A primeira pergunta é temporal e jurídica: o ato nasceu ilegal ou ficou apenas inconveniente depois?
+
+### Comentário da Questão 42
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Mudança superveniente não transforma retroativamente ato válido em ilegal.
+- **B) está correta:** O perfil nasceu regular, perdeu utilidade e pode ser retirado; portanto, cabe revogação motivada para o futuro.
+- **C) está errada:** Não há vício originário sanável, logo convalidação não é a categoria apropriada.
+- **D) está errada:** Atos válidos podem ser revogados quando sua natureza e as situações protegidas permitirem.
+- **Conceito cobrado:** Revogação por mérito superveniente.
+- **Pegadinha usada:** Chamar toda retirada de anulação.
+- **Como pensar para acertar:** Compare o momento da causa: ilegalidade original aponta para anulação; conveniência posterior, para revogação.
+
+### Comentário da Questão 43
+
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Incompetência é defeito de legalidade, não simples alteração de conveniência para revogação.
+- **B) está errada:** Utilidade material não faz desaparecer a atribuição incorretamente exercida.
+- **C) está errada:** O art. 55 federal admite possibilidade condicionada, e não convalidação obrigatória ou automática.
+- **D) está correta:** Competência não exclusiva, forma não essencial e ausência de lesão e prejuízo tornam o defeito potencialmente sanável, sujeito a decisão concreta.
+- **Conceito cobrado:** Filtros federais de convalidação.
+- **Pegadinha usada:** Trocar possibilidade de sanar por saneamento automático.
+- **Como pensar para acertar:** Verifique natureza do vício, interesse público, terceiro e necessidade de decisão competente antes de preservar o ato.
+
+### Comentário da Questão 44
+
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Boa-fé não altera a natureza do defeito originário nem converte anulação em revogação.
+- **B) está correta:** A ilegalidade aponta para anulação, mas seus efeitos exigem exame de confiança, segurança e situações protegidas, sem fórmula retroativa cega.
+- **C) está errada:** Boa-fé do terceiro não torna sanáveis finalidade desviada, motivo falso ou objeto ilícito.
+- **D) está errada:** Efeitos consolidados influenciam consequências, mas não proíbem reconhecer e controlar a ilegalidade.
+- **Conceito cobrado:** Anulação e proteção da segurança jurídica.
+- **Pegadinha usada:** Escolher entre retroatividade absoluta e intangibilidade absoluta.
+- **Como pensar para acertar:** Resolva em três planos: natureza do vício, destino do ato e tratamento dos efeitos protegidos.
+
+### Comentário da Questão 45
+
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está correta:** O caso é federal, envolve ato favorável praticado há mais de cinco anos e exclui má-fé comprovada; aplica-se a decadência federal em regra, sem projetar o prazo automaticamente sobre outros regimes.
+- **B) está errada:** Decadência não converte ilegalidade em conveniência, e o Judiciário não revoga ato por mérito administrativo.
+- **C) está errada:** Boa-fé influencia proteção e efeitos, mas não convalida automaticamente todo vício nem torna inútil o exame temporal.
+- **D) está errada:** O prazo estudado é regra federal específica, e a exceção depende de má-fé comprovada, não presumida pela mera ilegalidade.
+- **Conceito cobrado:** Decadência federal para anular ato favorável e limite de alcance da Lei nº 9.784/1999.
+- **Pegadinha usada:** Transformar regra federal e exceção dependente de prova em fórmula universal e presunção automática.
+- **Como pensar para acertar:** Filtre âmbito, efeito favorável, tempo decorrido, prova de má-fé e possibilidade de universalização, nessa ordem.
+
+### Comentário da Questão 46
+
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Finalidade retaliatória não se corrige pela inserção posterior de fórmula genérica de interesse público.
+- **B) está errada:** Substituir logs depois não torna verdadeiro o motivo determinante originalmente declarado nem preserva a sanção.
+- **C) está correta:** Os três filtros revelam vícios não sanáveis por ratificação: fim desviado, fato falso e consequência ilícita.
+- **D) está errada:** Os defeitos são de legalidade de origem, não mera preferência administrativa sobre ato válido.
+- **Conceito cobrado:** Limites materiais da convalidação.
+- **Pegadinha usada:** Tratar convalidação como edição retrospectiva irrestrita de qualquer elemento.
+- **Como pensar para acertar:** Classifique cada vício e descarte convalidação quando ela exigiria inventar novo fim, novo fato ou objeto permitido.
+
+### Comentário da Questão 47
+
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está errada:** Motivo falso indica ilegalidade para anulação, e perda posterior de utilidade indica revogação, não o inverso.
+- **B) está correta:** Cada situação corresponde ao filtro próprio: ilegalidade, mérito superveniente e defeito federal potencialmente sanável.
+- **C) está errada:** Motivo falso não se convalida, ato válido inconveniente não se anula e incompetência não exclusiva não é questão de mérito.
+- **D) está errada:** Ato válido inconveniente não precisa ser convalidado, e o Judiciário não revoga por conveniência.
+- **Conceito cobrado:** Escolha entre anulação, revogação e convalidação.
+- **Pegadinha usada:** Memorizar os nomes sem identificar a causa concreta em cada caso.
+- **Como pensar para acertar:** Para I, II e III, pergunte: ilegal? válido mas inconveniente? vício sanável? Só depois associe o instituto.
+
+### Comentário da Questão 48
+
+- **Alternativa correta:** D (a afirmação incorreta).
+- **Nível:** Muito difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — anulação, revogação e convalidação](semana_03_estudo.md#s3-d3-extincao-convalidacao).
+- **A) está correta:** A invalidação não autoriza ignorar automaticamente boa-fé, confiança e efeitos protegidos.
+- **B) está correta:** Validade originária, natureza revogável e ausência de situação protegida permitem decisão administrativa de mérito.
+- **C) está correta:** O art. 55 federal condiciona a convalidação de defeitos sanáveis à ausência de lesão e de prejuízo.
+- **D) está incorreta:** O Judiciário não revoga por conveniência, e fundamento falso não é preservado por convalidação.
+- **Observação:** A questão pede a alternativa incorreta; por isso, D é o gabarito.
+- **Conceito cobrado:** Sujeito, causa e limites dos três institutos.
+- **Pegadinha usada:** Reunir duas falsas competências em uma afirmação de aparência protetiva.
+- **Como pensar para acertar:** Confira em cada alternativa causa da retirada, quem pode praticá-la e quais vícios podem ser sanados.
+
+### Comentário da Questão 49
+
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — integração dos atos administrativos](semana_03_estudo.md#s3-d3-integracao).
+- **A) está correta:** A decisão reúne autoridade incompetente, fato determinante falso e defesa suprimida; a saída é invalidar e, se cabível, instaurar novo processo regular.
+- **B) está errada:** Reserva ao colegiado, falsidade do motivo e violação de defesa não são curadas por concordância genérica.
+- **C) está errada:** Os problemas existem desde a origem e são de legalidade, não mudança posterior de mérito.
+- **D) está errada:** A presunção cede à prova sobre os logs, e utilidade técnica não dispensa garantia procedimental.
+- **Conceito cobrado:** Integração entre competência, motivo, motivação, defesa e destino do ato.
+- **Pegadinha usada:** Preservar o resultado e ignorar filtros independentes da formação do ato.
+- **Como pensar para acertar:** Percorra autoridade, fato, razões, procedimento e consequência; um novo processo não é convalidação do antigo.
+
+### Comentário da Questão 50
+
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — integração dos atos administrativos](semana_03_estudo.md#s3-d3-integracao).
+- **A) está errada:** Tecnologia posterior não torna falso o parecer que era verdadeiro quando emitido.
+- **B) está correta:** O ato nasceu válido, é precário e revogável segundo o caso, perdeu utilidade e pode ser retirado para o futuro sem atingir proteção.
+- **C) está errada:** Não existe defeito originário a sanar, muito menos vício de competência.
+- **D) está errada:** O próprio enunciado informa natureza precária e hipótese de retirada motivada quando cessa a necessidade.
+- **Conceito cobrado:** Revogação de ato válido após mudança superveniente.
+- **Pegadinha usada:** Projetar fato novo para trás e inventar ilegalidade originária.
+- **Como pensar para acertar:** Fixe uma linha do tempo: validade na origem, fato novo, natureza do ato e efeitos futuros.
+
+### Comentário da Questão E1
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** O arquivo armazenado pode originar uma execução, mas processo pressupõe atividade em andamento.
+- **B) está errada:** A alternativa inverte memória de trabalho e persistência em arquivo.
+- **C) está errada:** Também há inversão: processo executa, enquanto arquivo preserva conteúdo.
+- **D) está correta:** A alternativa separa execução, espaço de trabalho e persistência conforme a revisão.
+- **Conceito cobrado:** Processo, memória e arquivo.
+- **Pegadinha usada:** Tratar recursos relacionados como sinônimos.
+- **Como pensar para acertar:** Pergunte o que está executando, onde dados temporários são mantidos e onde o resultado permanece.
+
+### Comentário da Questão E2
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está correta:** Menor privilégio concede somente a capacidade necessária, aqui limitada à leitura.
+- **B) está errada:** Administração total amplia desnecessariamente a superfície de risco.
+- **C) está errada:** Conta compartilhada compromete individualização e oferece privilégios além da tarefa.
+- **D) está errada:** Endereço do equipamento não substitui identidade e controle de permissão do usuário.
+- **Conceito cobrado:** Permissões e menor privilégio.
+- **Pegadinha usada:** Confundir conveniência operacional com autorização mínima.
+- **Como pensar para acertar:** Liste a ação estritamente exigida e conceda somente a permissão indispensável para executá-la.
+
+### Comentário da Questão E3
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** DNS auxilia a resolução de nomes; não executa a aplicação nem converte serviço remoto em arquivo local.
+- **B) está correta:** O nome precisa ser resolvido e o navegador cliente solicita o recurso ao servidor por HTTPS.
+- **C) está errada:** HTTPS continua operando em interação de pedido e resposta na arquitetura cliente-servidor.
+- **D) está errada:** Os papéis foram invertidos: o navegador solicita e o portal remoto atende.
+- **Conceito cobrado:** DNS, HTTPS e cliente-servidor.
+- **Pegadinha usada:** Misturar resolução de nome, protocolo e papel dos participantes.
+- **Como pensar para acertar:** Ordene a interação: resolver o nome, localizar o serviço, cliente pedir e servidor responder.
+
+### Comentário da Questão E4
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** Arquivo existente pode estar corrompido ou incompleto e não prova processo de recuperação.
+- **B) está errada:** Retenção e capacidade de restaurar são controles relacionados, mas distintos.
+- **C) está correta:** Confiabilidade exige verificar integridade e realizar teste de restauração, além de possuir a cópia.
+- **D) está errada:** Isolamento depende da arquitetura de armazenamento e não nasce automaticamente do rótulo backup.
+- **Conceito cobrado:** Diferença entre cópia existente e restauração confiável.
+- **Pegadinha usada:** Usar a existência da cópia como único critério de recuperação.
+- **Como pensar para acertar:** Não pergunte apenas “há backup?”; pergunte “ele está íntegro e foi restaurado com sucesso?”.
+
+### Comentário da Questão E5
+
+- **Alternativa correta:** A.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está correta:** O log documenta a ocorrência técnica, mas autorização depende de identidade, perfil, regra e contexto.
+- **B) está errada:** Evento registrado não demonstra os elementos jurídicos da decisão que concedeu acesso.
+- **C) está errada:** A correlação com controles de identidade e permissão é justamente necessária.
+- **D) está errada:** Logs podem e devem ser correlacionados e não possuem presunção técnica absoluta.
+- **Conceito cobrado:** Limites probatórios do log isolado.
+- **Pegadinha usada:** Confundir ocorrência técnica com autorização administrativa.
+- **Como pensar para acertar:** Use o log como uma peça da evidência e procure regra, identidade, perfil e contexto antes de concluir.
+
+### Comentário da Questão E6
+
+- **Alternativa correta:** D.
+- **Nível:** Médio.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** Arquivo preserva dados; quem coordena recursos de execução é o sistema operacional.
+- **B) está errada:** Memória, processo e arquivo exercem papéis técnicos distinguíveis.
+- **C) está errada:** Processos usam recursos sob coordenação do sistema operacional, não controlam isoladamente todo o hardware.
+- **D) está correta:** O sistema coordena recursos, processos representam execução e arquivos preservam conteúdo.
+- **Conceito cobrado:** Funções básicas do sistema operacional e de seus recursos.
+- **Pegadinha usada:** Reduzir o sistema operacional a um aplicativo ou confundir suas abstrações.
+- **Como pensar para acertar:** Associe o sistema à coordenação, o processo à atividade e o arquivo à persistência.
+
+### Comentário da Questão E7
+
+- **Alternativa correta:** C.
+- **Nível:** Médio.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** O cliente normalmente formula solicitações e não precisa concentrar todos os dados do serviço.
+- **B) está errada:** O servidor recebe e processa pedidos remotos, em vez de atuar apenas como tela local.
+- **C) está correta:** A relação básica é cliente solicitando recurso e servidor atendendo a solicitação.
+- **D) está errada:** Cliente e servidor são papéis definidos pela interação, não propriedades imutáveis do equipamento.
+- **Conceito cobrado:** Arquitetura cliente-servidor.
+- **Pegadinha usada:** Inverter quem pede e quem atende ou transportar termos para domínio alheio.
+- **Como pensar para acertar:** Localize a iniciativa da solicitação: quem pede é cliente; quem oferece e responde é servidor.
+
+### Comentário da Questão E8
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** Isolamento reduz risco comum, mas não comprova que a cópia restaura corretamente.
+- **B) está correta:** Separação adequada ajuda a impedir que incidente único destrua ou altere origem e cópia ao mesmo tempo.
+- **C) está errada:** Isolamento não muda automaticamente a modalidade lógica do backup.
+- **D) está errada:** Nome ou pasta diferente no mesmo volume não cria isolamento diante da mesma falha ou comprometimento.
+- **Conceito cobrado:** Cópia isolada na estratégia de backup.
+- **Pegadinha usada:** Atribuir ao isolamento funções de teste, conversão ou autorização.
+- **Como pensar para acertar:** Pergunte qual risco o isolamento trata: o comprometimento simultâneo da fonte e da recuperação.
+
+### Comentário da Questão E9
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está correta:** O evento comprova a abertura registrada, mas permissão somente de leitura não sustenta conclusão de alteração ampla.
+- **B) está errada:** Log não eleva privilégios nem muda a política de acesso.
+- **C) está errada:** Perfil é uma parte do controle e precisa ser relacionado a identidade, grupo, regra e contexto.
+- **D) está errada:** Menor privilégio reduz permissões ao mínimo necessário, exatamente o oposto da descrição.
+- **Conceito cobrado:** Integração entre log, permissão e menor privilégio.
+- **Pegadinha usada:** Transformar evidência de uso em concessão automática de novas capacidades.
+- **Como pensar para acertar:** Separe “o que ocorreu” de “o que podia ocorrer” e compare o evento com a permissão efetiva.
+
+### Comentário da Questão E10
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 4, revisão de Informática](semana_03_estudo.md#s3-d3-b4).
+- **A) está errada:** Fazer cópias periodicamente não demonstra integridade, isolamento nem êxito da restauração.
+- **B) está errada:** Conexão ao mesmo ambiente pode expor a cópia à falha ou ataque que atinge a origem.
+- **C) está correta:** O caso exige dois controles independentes: restauração testada e proteção contra comprometimento simultâneo.
+- **D) está errada:** A confiabilidade técnica da recuperação é afetada diretamente pela falta de teste e isolamento.
+- **Conceito cobrado:** Restauração confiável e cópia protegida.
+- **Pegadinha usada:** Usar periodicidade como prova de todas as qualidades do backup.
+- **Como pensar para acertar:** Avalie cópia, integridade, possibilidade de restaurar e exposição ao mesmo incidente como perguntas separadas.
+
+### Comentário da Questão E11
+
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** “Como” não conclui e “portanto” não estabelece oposição.
+- **B) está errada:** No contexto, “como” apresenta o fundamento causal, e “portanto” introduz conclusão expressa.
+- **C) está errada:** Nenhum dos conectores destacados exprime oposição ou finalidade.
+- **D) está correta:** A política funciona como razão explicativa, e o bloqueio é apresentado como conclusão.
+- **Conceito cobrado:** Valor causal e conclusivo dos conectores.
+- **Pegadinha usada:** Classificar conectores pela posição, sem observar a relação lógica.
+- **Como pensar para acertar:** Substitua mentalmente “como” por “visto que” e “portanto” por “desse modo” e confira o sentido.
+
+### Comentário da Questão E12
+
+- **Alternativa correta:** B.
+- **Nível:** Médio.
+- **Uso:** Essenciais.
+- **Momento:** Primeira passagem.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** Antecipar a conclusão e só depois trazer o fato rompe a demonstração que deveria sustentá-la.
+- **B) está correta:** A sequência permite verificar o ocorrido, a regra, o nexo e a providência resultante.
+- **C) está errada:** A conclusão aparece antes de fato e regra, e o fundamento normativo só surge ao final.
+- **D) está errada:** A providência é anunciada antes de a regra ser conectada ao fato verificado.
+- **Conceito cobrado:** Arquitetura lógica da motivação.
+- **Pegadinha usada:** Confundir presença de palavras formais com encadeamento racional.
+- **Como pensar para acertar:** Ordene a resposta como uma demonstração: dado, norma, explicação e consequência.
+
+### Comentário da Questão E13
+
+- **Alternativa correta:** C.
+- **Nível:** Difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** O texto reconhece a limitação normativa, mas conclui pela manutenção, invertendo a consequência esperada.
+- **B) está errada:** A justificativa é circular e faz o término contratual decorrer indevidamente do bloqueio.
+- **C) está correta:** “Como” apresenta fato e regra como causa, e a oração principal formula a providência decorrente.
+- **D) está errada:** A alternativa faz o bloqueio causar o término e ainda atribui efeito retroativo sem apoio na relação dada.
+- **Conceito cobrado:** Preservação da relação causal em reescrita.
+- **Pegadinha usada:** Manter conectores gramaticais, mas trocar a direção lógica entre fatos.
+- **Como pensar para acertar:** Ignore primeiro os conectores e determine causa e consequência; depois confira se as palavras as ligam nessa ordem.
+
+### Comentário da Questão E14
+
+- **Alternativa correta:** A.
+- **Nível:** Difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está correta:** A redação apresenta fato datado, regra, conexão causal e consequência delimitada.
+- **B) está errada:** Data e relatório aparecem, mas fato, regra e consequência permanecem genéricos.
+- **C) está errada:** O fato é indicado, porém a sanção máxima vem de regra relativa a outras infrações e quebra a congruência.
+- **D) está errada:** Há regra abstrata, mas “irregularidade” e “providência escolhida” não delimitam fato nem consequência.
+- **Conceito cobrado:** Reescrita completa de motivação vaga.
+- **Pegadinha usada:** Valorizar tom administrativo em lugar de informação verificável.
+- **Como pensar para acertar:** Faça quatro marcas no texto: fato, regra, ligação e providência; a alternativa correta precisa conter todas.
+
+### Comentário da Questão E15
+
+- **Alternativa correta:** B.
+- **Nível:** Difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** Tempo passado é compatível com narrativa administrativa e não produz, por si, o problema indicado.
+- **B) está correta:** “Seu” pode retomar diretor ou analista, deixando incerto o titular do acesso.
+- **C) está errada:** “Que” introduz a oração informada, sem determinar sozinho relação conclusiva.
+- **D) está errada:** A expressão temporal situa o bloqueio, mas não demonstra base jurídica.
+- **Conceito cobrado:** Ambiguidade referencial.
+- **Pegadinha usada:** Ignorar pronome ambíguo porque o contexto parece familiar ao redator.
+- **Como pensar para acertar:** Substitua o pronome por cada antecedente possível; se surgirem duas leituras, nomeie o referente.
+
+### Comentário da Questão E16
+
+- **Alternativa correta:** D.
+- **Nível:** Difícil.
+- **Uso:** Revisão.
+- **Momento:** D+7.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** A frase é curta, mas não identifica qual fato ocorreu nem qual regra concreta sustenta o bloqueio.
+- **B) está errada:** O texto anuncia a providência e adia a própria verificação da regra necessária.
+- **C) está errada:** “Interesse público” e “irregularidade” não especificam o fato e a norma aplicável.
+- **D) está correta:** A frase é breve e organiza fato, regra causal e providência sem redundância.
+- **Conceito cobrado:** Concisão com ordem lógica.
+- **Pegadinha usada:** Confundir texto curto com texto vazio ou texto formal com texto repetitivo.
+- **Como pensar para acertar:** Retire redundâncias, mas preserve os quatro componentes indispensáveis da justificativa.
+
+### Comentário da Questão E17
+
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil.
+- **Uso:** Essenciais.
+- **Momento:** D+2.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** A conexão pode ser reconhecida pela sequência e pelo valor conclusivo de “portanto”; não é obrigatório inserir outro conector.
+- **B) está correta:** A arquitetura textual está completa, mas o próprio modelo ensina que forma de exposição não prova todos os requisitos jurídicos da decisão.
+- **C) está errada:** Conector conclusivo não estabelece por si competência, adequação ou proporcionalidade.
+- **D) está errada:** Fato escrito continua sujeito à verificação de correspondência com a realidade.
+- **Conceito cobrado:** Completude textual sem presunção de legalidade integral.
+- **Pegadinha usada:** Confundir boa redação com validação automática de todos os elementos do ato.
+- **Como pensar para acertar:** Audite primeiro fato, regra, nexo e conclusão no texto; depois mantenha separados competência, verdade, base e processo.
+
+### Comentário da Questão E18
+
+- **Alternativa correta:** D (a afirmação incorreta).
+- **Nível:** Muito difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está correta:** Conector causal organiza a explicação, mas não substitui coerência material.
+- **B) está correta:** Marca de conclusão não garante que a consequência seja adequada ao fundamento.
+- **C) está correta:** Estrutura controlável e requisitos jurídicos são avaliações complementares, não equivalentes.
+- **D) está incorreta:** Mesmo com fato e regra corretos, é preciso explicitar nexo congruente e sustentar a consequência; “portanto” não fornece sozinho essa relação.
+- **Observação:** A questão pede a alternativa incorreta; por isso, D é o gabarito.
+- **Conceito cobrado:** Função limitada dos conectores na motivação.
+- **Pegadinha usada:** Usar um conector conclusivo para ocultar a falta de nexo ou uma consequência sem base.
+- **Como pensar para acertar:** Em comando negativo, separe verdade do fato, regra aplicável, ligação lógica e suporte da consequência.
+
+### Comentário da Questão E19
+
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil.
+- **Uso:** Aprofundamento.
+- **Momento:** Antes de D+7.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está correta:** A redação identifica fonte e data do fato, regra, ligação e providências limitadas ao que foi informado.
+- **B) está errada:** O fato individual é usado para cancelar permanentemente acessos de todos, consequência sem suporte.
+- **C) está errada:** A regra de vigência sustenta cessar o acesso, mas não a suspensão punitiva de trinta dias escolhida.
+- **D) está errada:** A conclusão ignora a regra já existente e cria condição futura que os dados não exigem.
+- **Conceito cobrado:** Precisão, causalidade e congruência na reescrita.
+- **Pegadinha usada:** Alongar a frase com afirmações não fornecidas e chamar isso de fundamentação.
+- **Como pensar para acertar:** Acrescente somente dados disponíveis e confira se cada conclusão tem suporte expresso no fato e na regra.
+
+### Comentário da Questão E20
+
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil.
+- **Uso:** Simulado.
+- **Momento:** Ciclo seguinte.
+- **Referência:** [Dia 3 — Bloco 5, motivo, causa e conclusão](semana_03_estudo.md#s3-d3-b5).
+- **A) está errada:** Conector não corrige fato impreciso, referência ambígua nem inversão da cadeia lógica.
+- **B) está errada:** Precisar só a norma preserva ambiguidade, falta de data e inversão entre explicação e conclusão.
+- **C) está correta:** A sequência resolve precisão factual, referência, explicação e proporcionalidade antes de fechar a decisão.
+- **D) está errada:** Resolver apenas o pronome deixa sem correção a imprecisão factual e a ordem lógica defeituosa.
+- **Conceito cobrado:** Revisão final integrada da motivação.
+- **Pegadinha usada:** Tentar resolver quatro falhas apenas com conector ou expressão genérica.
+- **Como pensar para acertar:** Revise em camadas: referentes, fatos, regra, nexo e consequência, nessa ordem.
+
+
+
+# Dia 4 — Poderes, agentes e responsabilidade civil do Estado
+
+**Base usada:** edital vigente e teoria anterior do Dia 4 da Semana 3; as construções sobre omissão são tratadas sem tese jurisprudencial universal.
+
+**Calendário de uso:**
+
+- **Primeira passagem (10):** Q1, Q17, Q23, Q25, Q35, Q37, Q47, Q49, E3 e E12.
+- **D+2 — Essenciais restantes (10):** Q4, Q8, Q11, Q20, Q28, Q32, Q40, Q44, Q48 e E17.
+- **Antes de D+7 — Aprofundamento (20):** Q2, Q7, Q13, Q18, Q21, Q24, Q26, Q30, Q34, Q36, Q39, Q43, Q46, Q50, E1, E5, E9, E11, E15 e E19.
+- **D+7 — Revisão (15):** Q3, Q9, Q14, Q19, Q22, Q27, Q31, Q38, Q42, Q45, E2, E6, E10, E13 e E16.
+- **Ciclo seguinte — Simulado (15):** Q5, Q6, Q10, Q12, Q15, Q16, Q29, Q33, Q41, E4, E7, E8, E14, E18 e E20.
+
+## Questões principais
+
+### Questão 1
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Gerente distribui chamados entre analistas subordinados e revisa as entregas. Predomina o poder:
+
+A) hierárquico, por organizar e controlar trabalho interno subordinado.
+B) disciplinar, porque toda orientação da chefia constitui sanção.
+C) regulamentar, porque a distribuição cria norma geral primária.
+D) de polícia, porque restringe atividade privada em favor da coletividade.
+
+### Questão 2
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Entre duas pessoas jurídicas administrativas distintas, a existência de supervisão permite concluir que:
+
+A) há hierarquia geral para ordens sobre qualquer assunto.
+B) vinculação e controle dependem da lei e não equivalem a subordinação interna ilimitada.
+C) a entidade supervisionada perde personalidade e se torna órgão.
+D) todo empregado da entidade recebe ordens diretas de qualquer agente supervisor.
+
+### Questão 3
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+O poder disciplinar permite à Administração:
+
+A) apurar qualquer crime comum sem observar competência penal.
+B) criar sanções primárias por ordem verbal da chefia.
+C) apurar infrações e sancionar quem mantém vínculo especial, com competência e devido processo.
+D) punir imediatamente todo contratado por qualquer falha operacional.
+
+### Questão 4
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Regulamento de execução pode:
+
+A) contrariar requisito legal para ampliar conveniência administrativa.
+B) criar livremente infração e multa sem suporte normativo.
+C) substituir a lei sempre que possuir redação geral.
+D) detalhar a fiel execução da lei dentro da competência e das normas superiores.
+
+### Questão 5
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Fiscalização do exercício profissional pelo conselho competente pode constituir:
+
+A) poder de polícia administrativa, sujeito a legalidade, proporcionalidade e defesa.
+B) polícia judiciária voltada necessariamente à apuração criminal.
+C) poder hierárquico sobre todos os profissionais da região.
+D) poder disciplinar funcional sobre qualquer cidadão sem vínculo especial.
+
+### Questão 6
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Qual distinção está correta?
+
+A) Polícia administrativa e judiciária possuem sempre o mesmo objeto.
+B) Polícia administrativa condiciona atividades; polícia judiciária apura infrações penais.
+C) Polícia judiciária é exercida por todo conselho profissional.
+D) Polícia administrativa só existe depois de condenação criminal.
+
+### Questão 7
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Chefia pretende avocar decisão reservada por norma a outra autoridade e alega que hierarquia elimina limites. A melhor análise é:
+
+A) hierarquia organiza funções, mas avocação depende dos limites jurídicos e não supera reserva normativa.
+B) toda competência pode ser avocada sem fundamento quando houver urgência gerencial.
+C) a reserva transforma o caso em poder de polícia sobre a autoridade inferior.
+D) avocação e delegação independem do ordenamento por serem atos internos.
+
+### Questão 8
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Empregado altera logs para ocultar falha. Autoridade competente informa a imputação, admite defesa e decide com prova e motivação. O caso indica:
+
+A) poder penal, porque alteração de log nunca é infração funcional.
+B) possível exercício regular do poder disciplinar, ainda sujeito à norma e proporcionalidade.
+C) poder hierárquico suficiente para punição sem apuração.
+D) poder regulamentar, pois a decisão cria regra abstrata para todos.
+
+### Questão 9
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Portaria detalha padrão de autenticação previsto em norma superior e acrescenta multa sem base competente. Conclui-se que:
+
+A) todo o documento é válido por ser técnico.
+B) todo o documento é nulo apenas por possuir generalidade.
+C) o detalhamento pode ser válido, mas a multa não se sustenta só na portaria.
+D) a multa é válida sempre que o padrão aumentar segurança.
+
+### Questão 10
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Em fiscalização profissional, qual afirmação aplica corretamente os limites do poder de polícia?
+
+A) A competência fiscalizatória presume autoexecutoriedade para qualquer restrição, independentemente da natureza da medida.
+B) A denúncia basta para sanção definitiva quando o conselho possui atribuição material sobre a profissão.
+C) O devido processo só é exigido na polícia judiciária, pois a polícia administrativa atua preventivamente.
+D) Base jurídica, competência, motivo, proporcionalidade e processo permanecem exigíveis, e nem toda medida é autoexecutória.
+
+### Questão 11
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Contratado descumpre obrigação. Para aplicar sanção no âmbito do vínculo, a Administração deve:
+
+A) localizar competência, infração, processo e limites do vínculo, sem tratar falha como infração funcional de servidor.
+B) usar poder disciplinar para impor qualquer pena penal ao representante da empresa.
+C) presumir culpa e dispensar motivação por existir contrato.
+D) converter automaticamente o contratado em empregado público subordinado.
+
+### Questão 12
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Mesmo quando a norma admite margem na dosimetria disciplinar, a escolha:
+
+A) torna o fato e a competência imunes a controle.
+B) permanece limitada por lei, proporcionalidade e motivação.
+C) permite criar nova sanção fora das opções normativas.
+D) dispensa defesa quando a autoridade considera a falta grave.
+
+### Questão 13
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Dirigente de uma entidade pretende substituir decisão interna de outra pessoa jurídica do mesmo sistema, sem norma específica, e ordenar diretamente seus empregados. Aplicando pessoa, vínculo e competência, conclui-se que:
+
+A) coordenação sistêmica não cria hierarquia geral; intervenção e ordens dependem de atribuição legal concreta.
+B) supervisão sistêmica autoriza substituir decisão regional divergente de orientação nacional, mesmo sem recurso previsto.
+C) a personalidade regional permanece, mas seus empregados ficam subordinados internamente às duas entidades em matéria sistêmica.
+D) coordenação nacional permite ordens diretas por eficiência, ainda que falte competência específica para a intervenção.
+
+### Questão 14
+**Nível:** Muito difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Empregado altera logs; chefe competente recebe prova, informa os fatos, assegura defesa e aplica sanção prevista, porém sem explicar a dosimetria máxima. Quais filtros permanecem relevantes?
+
+A) Como infração e autoria estão documentadas e houve defesa, a sanção prevista integra dosimetria insuscetível de controle.
+B) Vínculo, competência, apuração e defesa estão presentes, mas proporcionalidade e motivação da dosimetria ainda devem ser controladas.
+C) A falta de motivação é sanada pelo recurso, pois a proporcionalidade se presume quando a pena consta da norma.
+D) A dosimetria só precisa ser motivada se a autoridade escolher sanção não prevista; a pena máxima dispensa explicação.
+
+### Questão 15
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Portaria competente detalha padrão legal, cria proibição sem suporte e impõe multa nova; depois, chefia manda aplicá-la sem defesa. A análise correta combina:
+
+A) validade integral, pois competência regulamentar inclui criar obrigação e sanção sempre que houver interesse técnico.
+B) invalidade de todo o padrão técnico, porque a multa sem suporte contamina necessariamente comandos separáveis e fiéis à norma superior.
+C) possível validade do detalhamento, mas inovação punitiva sem base e aplicação sem defesa são ilegais.
+D) ordem hierárquica suficiente para aplicar imediatamente a multa, pois eventual vício normativo só alcançaria destinatários externos.
+
+### Questão 16
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes)
+
+Fiscal recebe denúncia anônima, não faz diligência, não demonstra risco e aplica sanção definitiva reservada a colegiado, sem defesa. A classificação completa é:
+
+A) polícia regular, pois a denúncia inicia atuação oficial e a competência fiscalizatória inclui implicitamente a sanção.
+B) medida hierárquica, porque o particular submetido à regulação fica funcionalmente subordinado ao fiscal durante a inspeção.
+C) cautelar válida convertida em pena, pois eventual ratificação colegiada posterior supre risco, prova e defesa ausentes.
+D) fiscalização pode ser iniciada, mas sanção falha em motivo, competência e devido processo.
+
+### Questão 17
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Agente autorizado apenas a bloquear contas internas suspende registro profissional. O caso exemplifica:
+
+A) finalidade legítima, porque a sanção buscou proteger o interesse profissional.
+B) poder regulamentar, pois o bloqueio equivale à edição de norma de execução.
+C) excesso de poder, pois o agente ultrapassou o limite material de sua competência.
+D) desvio de finalidade, embora o agente tivesse competência para suspender registros.
+
+### Questão 18
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Autoridade competente bloqueia conta para retaliar crítica pessoal. O vício central é:
+
+A) falta de personalidade jurídica.
+B) ausência necessária de forma escrita.
+C) excesso, porque nunca poderia bloquear conta.
+D) desvio de finalidade, pois usa competência para fim impróprio.
+
+### Questão 19
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Abuso de poder:
+
+A) pode ocorrer por omissão quando existe dever jurídico e possibilidade de agir.
+B) exige sempre ato material positivo e violento.
+C) corresponde somente a decisão severa.
+D) nunca se relaciona ao devido processo.
+
+### Questão 20
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Qual contraste está correto?
+
+A) Excesso e desvio tratam apenas de intensidade da sanção.
+B) Excesso atinge finalidade; desvio atinge somente forma.
+C) Excesso ultrapassa competência; desvio usa competência para finalidade alheia.
+D) Desvio existe sempre que o agente comete erro sem intenção.
+
+### Questão 21
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Autoridade deve apreciar defesa antes de manter restrição, mas deixa processo parado para pressionar desistência. Há:
+
+A) simples concentração administrativa sem efeito processual.
+B) excesso, porque toda omissão amplia competência.
+C) silêncio neutro, pois abuso exige ordem escrita.
+D) abuso omissivo com desvio de finalidade e lesão ao devido processo.
+
+### Questão 22
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Uma decisão restritiva é severa, mas foi praticada por autoridade competente, com base, finalidade adequada e processo. A severidade, isoladamente:
+
+A) não prova abuso; limites, finalidade e fatos devem ser examinados.
+B) comprova desvio de finalidade sem investigar propósito.
+C) transforma automaticamente competência em excesso.
+D) dispensa avaliar proporcionalidade por existir base legal.
+
+### Questão 23
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Gerente pode bloquear conta interna em emergência, mas suspende registro profissional de crítico, apoiado em fato não demonstrado. Aplicando limite, finalidade e motivo, há:
+
+A) excesso de competência, possível desvio retaliatório e falha do pressuposto fático.
+B) apenas desvio, porque finalidade absorve qualquer vício de competência.
+C) apenas excesso, pois motivo e finalidade nunca podem coexistir como vícios.
+D) ato válido, já que a Administração possui poder geral de segurança.
+
+### Questão 24
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder)
+
+Processo está instruído; autoridade possui dever e meios de decidir a defesa, mas mantém restrição sem decisão para pressionar o interessado. A melhor síntese é:
+
+A) omissão lícita enquanto não houver prazo numérico vencido, ainda que exista dever de decidir e propósito de pressão.
+B) dever de agir, possibilidade concreta, finalidade de pressão e defesa ignorada caracterizam abuso omissivo.
+C) excesso apenas, porque prolongar a restrição equivale sempre a exercer competência maior, independentemente da finalidade.
+D) atraso sanável por decisão posterior, pois a defesa já foi juntada e a restrição existia antes de sua apreciação.
+
+### Questão 25
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Agente público é expressão ampla que pode alcançar pessoa que exerce função estatal:
+
+A) apenas se ocupar cargo efetivo remunerado.
+B) ainda que temporariamente ou sem remuneração, conforme o ordenamento.
+C) somente se possuir vínculo estatutário federal.
+D) apenas após aprovação em concurso.
+
+### Questão 26
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Cargo público corresponde, no recorte estudado, a:
+
+A) contrato celetista de duração indeterminada.
+B) qualquer tarefa ocasional executada por particular.
+C) unidade de atribuições criada por lei, normalmente sob regime estatutário.
+D) função política sem previsão normativa.
+
+### Questão 27
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Emprego público é:
+
+A) cargo estatutário transformado pela chefia.
+B) função sem vínculo profissional.
+C) mandato político eletivo.
+D) vínculo contratual predominantemente regido pela CLT.
+
+### Questão 28
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Função pública designa:
+
+A) conjunto de atribuições exercidas, que pode acompanhar cargo ou emprego.
+B) exclusivamente cargo em comissão.
+C) somente vínculo temporário sem atribuições próprias.
+D) personalidade jurídica do órgão empregador.
+
+### Questão 29
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Segundo o edital, o Analista de Sistemas do CRA-PR aprovado em concurso é:
+
+A) servidor estatutário regido necessariamente pela Lei nº 8.112/1990.
+B) empregado público sob regime da CLT.
+C) agente político de direção constitucional.
+D) temporário contratado por necessidade excepcional.
+
+### Questão 30
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Lei autoriza contratação a prazo para necessidade temporária de excepcional interesse público, e os requisitos são cumpridos. O vínculo indica:
+
+A) cargo efetivo adquirido pelo decurso do prazo.
+B) agente temporário, sem cargo efetivo ou emprego permanente.
+C) emprego permanente celetista criado pela urgência.
+D) cargo em comissão destinado a qualquer tarefa técnica.
+
+### Questão 31
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Sobre espécies de agentes, assinale a alternativa correta.
+
+A) Particulares em colaboração nunca são agentes públicos.
+B) Todo agente administrativo é agente político.
+C) Empregados, estatutários e temporários podem integrar a categoria doutrinária de agentes administrativos.
+D) Os nomes doutrinários dispensam descrição do vínculo no enunciado.
+
+### Questão 32
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+A regra constitucional de concurso alcança investidura em:
+
+A) apenas cargo estatutário.
+B) apenas emprego de empresa privada contratada.
+C) função honorífica sem vínculo profissional.
+D) cargo ou emprego público, ressalvadas hipóteses constitucionais.
+
+### Questão 33
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Funções de confiança são exercidas:
+
+A) exclusivamente por servidores ocupantes de cargo efetivo.
+B) por qualquer particular escolhido, sem vínculo anterior.
+C) somente por empregados de empresa contratada.
+D) por temporários como forma automática de efetivação.
+
+### Questão 34
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Cargos em comissão destinam-se apenas a:
+
+A) qualquer atividade operacional permanente.
+B) direção, chefia e assessoramento, observadas condições e percentuais legais.
+C) substituir todos os cargos efetivos sem concurso.
+D) atender necessidade temporária excepcional por contrato a prazo.
+
+### Questão 35
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Analista concursado do CRA-PR ocupa emprego celetista. Norma interna o designa para “função de confiança” por equiparar concurso a cargo efetivo e, alternativamente, prevê cargo em comissão para execução técnica rotineira. Qual análise preserva vínculo e art. 37, V?
+
+A) O concurso converte o emprego em cargo efetivo e valida tanto a função quanto a comissão técnica.
+B) A autarquia pode definir os rótulos e usar comissão para atribuições técnicas permanentes por norma interna.
+C) O emprego segue celetista; concurso não cria cargo efetivo, a função é inviável e comissão não serve à execução técnica rotineira.
+D) A função é válida para todo empregado permanente, e a comissão só seria inválida se não houvesse concurso.
+
+### Questão 36
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos)
+
+Considere quatro situações: I — lei cria unidade de atribuições e a pessoa é investida sob regime estatutário; II — concurso conduz a contrato permanente predominantemente celetista; III — ocupante de cargo efetivo é designado para coordenar equipe, sem novo vínculo-base; IV — pessoa é livremente nomeada e exonerada para assessoramento. Sem confundir ingresso, regime e atribuição, a sequência é:
+
+A) emprego, cargo, temporário e função honorífica.
+B) cargo, função, emprego e contratação temporária.
+C) função, emprego, cargo em comissão e cargo efetivo.
+D) cargo, emprego, função de confiança e cargo em comissão.
+
+### Questão 37
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Na relação entre vítima e entidade abrangida pelo art. 37, § 6º, a regra é responsabilidade:
+
+A) penal automática do agente.
+B) subjetiva, sempre dependente de dolo pessoal.
+C) objetiva, sem dispensar conduta, dano e nexo causal.
+D) inexistente para pessoas privadas prestadoras de serviço público.
+
+### Questão 38
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Responsabilidade objetiva significa que a vítima:
+
+A) recebe indenização sem provar dano.
+B) não precisa provar culpa pessoal do agente, mas deve demonstrar conduta, dano e nexo.
+C) deve provar dolo para estabelecer o nexo.
+D) pode presumir qualquer lucro cessante alegado.
+
+### Questão 39
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Falha deixa portal indisponível por dois minutos em teste fechado, sem perda, prazo ou gasto. No cenário:
+
+A) falta dano comprovado para responsabilidade civil indenizatória.
+B) o dano moral é presumido pela mera falha técnica.
+C) a responsabilidade objetiva torna automática a indenização.
+D) o regresso contra o agente substitui o dano da vítima.
+
+### Questão 40
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Após indenizar, a entidade pode exercer regresso contra o agente quando houver:
+
+A) dano alegado, ainda sem prova.
+B) dolo ou culpa do agente, em relação interna subjetiva.
+C) responsabilidade automática do servidor.
+D) apenas vínculo funcional, independentemente de conduta.
+
+### Questão 41
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+A expressão constitucional “nessa qualidade” exige:
+
+A) que todo dano ocorra dentro do prédio público.
+B) que o agente esteja fora de qualquer função.
+C) conexão funcional entre atuação e exercício ou pretexto da função.
+D) condenação penal prévia do agente.
+
+### Questão 42
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Lucro cessante, para integrar dano indenizável, requer:
+
+A) simples conjectura da vítima.
+B) presunção decorrente de qualquer indisponibilidade.
+C) estimativa sem ligação com o evento.
+D) demonstração concreta, não mera hipótese.
+
+### Questão 43
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Em caso de omissão, a solução segura é:
+
+A) aplicar sempre regime objetivo, desde que exista inércia atribuída ao serviço.
+B) aplicar sempre regime subjetivo, desde que o dano resulte de fato de terceiro.
+C) verificar dever específico, possibilidade de agir, falha, evitabilidade, nexo e regime aplicável.
+D) dispensar prova do dano quando a omissão administrativa aparentar especial gravidade.
+
+### Questão 44
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Ataque de terceiro explora risco conhecido e agravado por falha estatal. A presença do terceiro:
+
+A) rompe o nexo sempre, pois fato de terceiro exclui qualquer contribuição administrativa.
+B) confirma responsabilidade integral sempre, pois a falha torna irrelevante a atuação alheia.
+C) presume dano e nexo, desde que o terceiro tenha praticado a ação imediatamente lesiva.
+D) não decide sozinha; é preciso aferir a contribuição estatal e reconstruir a cadeia causal.
+
+### Questão 45
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Se a vítima causa sozinha o dano, pode haver ruptura do nexo; se apenas concorre com falha estatal:
+
+A) pode haver redução da reparação, sem exclusão automática.
+B) a reparação sempre desaparece integralmente.
+C) a culpa concorrente torna o dano inexistente.
+D) o agente público responde penalmente de forma automática.
+
+### Questão 46
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Evento externo é apontado como força maior. Para avaliar rompimento causal, deve-se verificar:
+
+A) se o evento recebeu formalmente o nome de força maior no relatório administrativo.
+B) se foi externo e exclusivo ou se risco previsível, interno ou agravado pelo serviço preservou o nexo.
+C) se a gravidade do dano final basta para afastar qualquer análise sobre sua origem.
+D) se a vítima provou culpa pessoal do agente, ainda que a relação externa seja objetiva.
+
+### Questão 47
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Equipe tinha dever expresso, alertas, recurso e janela para corrigir vulnerabilidade, mas se omitiu. Terceiro explorou exatamente a falha e gerou despesas comprovadas. A melhor análise é:
+
+A) dever, possibilidade, omissão, dano e cadeia causal sustentam responsabilização, sujeito ao regime jurisprudencial aplicável.
+B) a ação direta do terceiro rompe o nexo mesmo quando concretiza precisamente o risco conhecido que o serviço podia reduzir.
+C) a omissão específica torna presumidos dano e causalidade, restando à vítima demonstrar somente que houve ataque externo.
+D) a pretensão contra a entidade exige confissão de culpa do agente, porque a origem do dano foi uma inércia administrativa.
+
+### Questão 48
+**Nível:** Muito difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil)
+
+Portal fica indisponível após ataque e atualização atrasada. Profissional alega perder contrato, mas prova mostra cancelamento anterior por outra causa. Aplicando conduta, dano e nexo:
+
+A) a atualização atrasada basta para presumir a perda do contrato, embora o cancelamento comprovado tenha ocorrido antes.
+B) pode haver falha, mas o contrato cancelado antes não possui nexo; eventual outro dano requer prova própria.
+C) o ataque externo rompe o nexo de todo prejuízo, mesmo se o atraso tiver contribuído para a exposição do sistema.
+D) a teoria objetiva dispensa cronologia e prova da perda quando uma falha do serviço já foi identificada.
+
+### Questão 49
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — integração](semana_03_estudo.md#s3-d4-integracao)
+
+Fiscal pode apurar denúncia, mas aplica sanção definitiva reservada ao colegiado, sem prova complementar nem defesa. A solução correta é:
+
+A) validar tudo, porque polícia transfere competência sancionadora.
+B) tratar denúncia como prova absoluta e defesa dispensável.
+C) admitir diligência inicial, mas reconhecer vícios de motivo, competência e processo na sanção.
+D) classificar a sanção como poder hierárquico sobre particular.
+
+### Questão 50
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — integração](semana_03_estudo.md#s3-d4-integracao)
+
+Empregado, em função, elimina cadastro e causa perda documentalmente quantificada. Qual sequência é correta?
+
+A) exigir culpa pessoal da vítima e presumir regresso.
+B) indenizar sem verificar nexo por ser entidade pública.
+C) responsabilizar diretamente o agente de modo objetivo e automático.
+D) vítima prova conduta, dano e nexo; culpa do agente interessa ao eventual regresso.
+
+## Banco complementar do Dia 4
+
+### Questão E1
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** posição do Sistema CFA/CRAs
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Pertencer ao Sistema CFA/CRAs:
+
+A) não cria, por si, hierarquia ilimitada entre pessoas e agentes.
+B) elimina competências regionais.
+C) transforma todo CRA em setor sem personalidade.
+D) autoriza qualquer agente do CFA a substituir decisões internas.
+
+### Questão E2
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** âmbito nacional e regional
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+No contraste revisado:
+
+A) o CRA coordena nacionalmente todos os Regionais.
+B) o CFA possui atribuições nacionais, e o CRA atua em sua jurisdição.
+C) ambos são sindicatos privados concorrentes.
+D) o CFA absorve toda fiscalização regional.
+
+### Questão E3
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** integração sem hierarquia presumida
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Para substituir decisão interna de outro conselho, é necessário:
+
+A) apenas integrar o mesmo sistema.
+B) possuir sede nacional.
+C) localizar competência oficial de controle, supervisão ou recurso.
+D) comandar o mesmo cadastro eletrônico.
+
+### Questão E4
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** jurisdição do CRA-PR
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+O CRA-PR exerce atribuições legais:
+
+A) em qualquer território, sem limites.
+B) apenas após autorização sindical.
+C) somente quando o CFA renuncia à competência.
+D) em sua jurisdição, segundo as normas aplicáveis.
+
+### Questão E5
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** Plenário e Diretoria
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Para distinguir competência do Plenário e da Diretoria do CRA-PR, deve-se:
+
+A) consultar as normas oficiais estudadas, sem inventar hierarquia ou atribuição.
+B) presumir que a Diretoria pode substituir qualquer decisão do Plenário.
+C) usar apenas a arquitetura do sistema eletrônico.
+D) atribuir ao Plenário toda tarefa operacional sem conferir o regimento.
+
+### Questão E6
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** fonte oficial e competência
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Um fluxo atribui competência apenas porque “sempre foi assim”. A resposta adequada é:
+
+A) costume interno cria competência ilimitada.
+B) competência deve ser confirmada nas fontes oficiais aplicáveis.
+C) tradição substitui ciência e defesa.
+D) uso frequente transforma órgão em entidade.
+
+### Questão E7
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** fiscalização e garantias
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Possível irregularidade profissional deve conduzir a:
+
+A) sanção automática pelo sistema.
+B) condenação penal pelo conselho.
+C) apuração por autoridade competente, com ciência, defesa e decisão motivada.
+D) suspensão definitiva baseada só em denúncia.
+
+### Questão E8
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** denúncia e prova
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Denúncia anônima sobre exercício irregular:
+
+A) prova definitivamente o fato.
+B) transfere competência ao primeiro fiscal.
+C) dispensa qualquer defesa posterior.
+D) pode iniciar diligência, mas não sustenta sozinha sanção definitiva.
+
+### Questão E9
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** sistema, competência e processo
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+CFA expede orientação nacional, e o CRA-PR instrui ocorrência em sua jurisdição. Sem apontar autoridade decisória, a plataforma central converte o registro preliminar em sanção definitiva e oferece manifestação apenas depois. A análise correta é:
+
+A) orientação e integração tecnológica não deslocam competência; é preciso autoridade, apuração, defesa prévia e decisão motivada.
+B) o alcance nacional da orientação confere competência implícita à plataforma, e a manifestação posterior convalida a sanção.
+C) a jurisdição regional impede compartilhamento de dados ou uso de plataforma central, tornando inválida até a apuração inicial.
+D) se a irregularidade material for provada depois, os vícios de competência e defesa anterior deixam de ser relevantes.
+
+### Questão E10
+**Dia:** 4
+**Bloco:** 4 — Revisão CFA/CRA
+**Matéria:** Legislação CRA/CFA
+**Assunto:** sequência processual
+**Nível:** Muito difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4)
+
+Relatório regional contém evidências, mas nenhuma decisão. Sem inventar prazo, competência recursal ou sanção automática, qual sequência preserva atribuição, apuração e garantias?
+
+A) o sistema registra, aplica a sanção e depois a autoridade decide se dará ciência ao interessado.
+B) a autoridade confirma sua competência, promove apuração, assegura ciência e defesa, decide motivadamente e admite recurso quando previsto.
+C) o órgão central escolhe a pena pela gravidade aparente, e a unidade regional apenas comunica o resultado.
+D) a autoridade apura e admite defesa, mas remete obrigatoriamente toda decisão ao CFA, ainda sem previsão de recurso.
+
+### Questão E11
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** frase temática
+**Nível:** Médio
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Em parágrafo argumentativo, a frase temática deve:
+
+A) anunciar claramente a tese do parágrafo.
+B) listar normas sem posição definida.
+C) repetir a conclusão sem explicação.
+D) apresentar exemplo antes do assunto.
+
+### Questão E12
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** regra e limites
+**Nível:** Médio
+**Uso:** Essenciais
+**Momento:** Primeira passagem
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Após a tese sobre fiscalização responsável, a explicação deve:
+
+A) usar apenas a palavra “responsabilidade”.
+B) apresentar a regra e seus limites de competência, motivo e defesa.
+C) substituir argumento por pergunta retórica.
+D) antecipar consequência sem critério.
+
+### Questão E13
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** exemplo concreto
+**Nível:** Médio
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Qual frase funciona como exemplo da tese ensinada?
+
+A) “A fiscalização profissional constitui tema relevante para toda a sociedade.”
+B) “O cumprimento da lei deve orientar a atuação responsável de qualquer conselho.”
+C) “Ao receber denúncia, o conselho pode apurar; para sancionar, precisa confirmar os fatos.”
+D) “Portanto, a fiscalização é importante, como já afirmou a frase temática inicial.”
+
+### Questão E14
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** consequência
+**Nível:** Médio
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Uma consequência adequada para o argumento é:
+
+A) repetir literalmente a tese.
+B) inserir nova norma não explicada.
+C) abandonar o tema da fiscalização.
+D) mostrar que o processo protege o coletivo e reduz abuso.
+
+### Questão E15
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** arquitetura do parágrafo
+**Nível:** Difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Qual ordem forma unidade argumentativa completa?
+
+A) tese, explicação, exemplo e consequência.
+B) consequência, lista, tese e pergunta.
+C) exemplo, novo tema, repetição e título.
+D) norma isolada, conclusão, tese e lacuna.
+
+### Questão E16
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** coesão argumentativa
+**Nível:** Difícil
+**Uso:** Revisão
+**Momento:** D+7
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+No modelo, “Embora” e “Assim” sinalizam, respectivamente:
+
+A) causa inicial e oposição entre fatos sem vínculo conclusivo.
+B) condição necessária e dúvida quanto ao desenvolvimento da tese.
+C) enumeração de argumentos e mudança para assunto independente.
+D) concessão ou limite e progressão para exemplo ou consequência.
+
+### Questão E17
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** diagnóstico de parágrafo
+**Nível:** Difícil
+**Uso:** Essenciais
+**Momento:** D+2
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+“A fiscalização é importante. Deve haver responsabilidade. A lei precisa ser cumprida.” O principal defeito é:
+
+A) excesso de exemplo concreto.
+B) tese específica apoiada por critérios verificáveis.
+C) generalidade e repetição, sem regra aplicada, exemplo ou consequência.
+D) uso excessivo de dados técnicos comprovados.
+
+### Questão E18
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** reescrita orientada
+**Nível:** Difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Qual reescrita combina tese, regra e consequência?
+
+A) “Fiscalizar é importante, portanto tudo pode ser feito.”
+B) “Há regras e há fiscalização, assuntos relevantes.”
+C) “O conselho deve agir, porque sua atuação é necessária.”
+D) “Fiscalização protege a profissão, mas exige competência e defesa; assim produz decisão legítima.”
+
+### Questão E19
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** integração argumentativa
+**Nível:** Muito difícil
+**Uso:** Aprofundamento
+**Momento:** Antes de D+7
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+O rascunho afirma: “A denúncia exige resposta estatal; logo, o conselho deve sancionar imediatamente para proteger a sociedade.” Qual revisão preserva tese, limite, exemplo e consequência sem transformar alegação em prova?
+
+A) “A denúncia exige resposta; por isso o bloqueio imediato é sempre proporcional quando a profissão tem relevância social.”
+B) “A fiscalização protege a sociedade, e lei, processo, competência e eficiência são valores que devem ser observados.”
+C) “Fiscalização efetiva protege o coletivo, mas exige competência e processo; denúncia inicia apuração, não pena, tornando a decisão legítima e controlável.”
+D) “O devido processo reduz a rapidez; portanto, a resposta mais segura é não agir até existir certeza judicial.”
+
+### Questão E20
+**Dia:** 4
+**Bloco:** 5 — Discursiva
+**Matéria:** Língua Portuguesa
+**Assunto:** revisão final
+**Nível:** Muito difícil
+**Uso:** Simulado
+**Momento:** Ciclo seguinte
+**Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5)
+
+Na revisão final, o texto diz apenas: “A fiscalização responsável é importante. A denúncia pode ser relevante. O devido processo deve ser observado. Assim, a autoridade deve agir.” Qual versão forma unidade argumentativa completa sem acrescentar fato não demonstrado?
+
+A) “A fiscalização protege a profissão. Como a denúncia aponta risco, a sanção imediata é necessária. A defesa pode ocorrer depois. Esse rito assegura eficiência.”
+B) “A fiscalização responsável observa a lei. A competência precisa ser respeitada. Há denúncias relevantes. Portanto, o conselho deve adotar providências.”
+C) “A denúncia pode iniciar apuração, mas não basta para sancionar. A autoridade deve agir conforme as normas. Por isso, a fiscalização é importante.”
+D) “Fiscalização responsável concilia efetividade e garantias: autoridade competente apura, assegura defesa e motiva medida proporcional. Denúncia inicia diligência, não prova sanção; assim, a decisão se torna legítima e controlável.”
+
+## Gabarito do Dia 4
+
+| ID | Gabarito | Nível | Uso | Momento |
+|---|:---:|---|---|---|
+| Q1 | A | Médio | Essenciais | Primeira passagem |
+| Q2 | B | Médio | Aprofundamento | Antes de D+7 |
+| Q3 | C | Médio | Revisão | D+7 |
+| Q4 | D | Médio | Essenciais | D+2 |
+| Q5 | A | Médio | Simulado | Ciclo seguinte |
+| Q6 | B | Médio | Simulado | Ciclo seguinte |
+| Q7 | A | Difícil | Aprofundamento | Antes de D+7 |
+| Q8 | B | Difícil | Essenciais | D+2 |
+| Q9 | C | Difícil | Revisão | D+7 |
+| Q10 | D | Difícil | Simulado | Ciclo seguinte |
+| Q11 | A | Difícil | Essenciais | D+2 |
+| Q12 | B | Difícil | Simulado | Ciclo seguinte |
+| Q13 | A | Muito difícil | Aprofundamento | Antes de D+7 |
+| Q14 | B | Muito difícil | Revisão | D+7 |
+| Q15 | C | Muito difícil | Simulado | Ciclo seguinte |
+| Q16 | D | Muito difícil | Simulado | Ciclo seguinte |
+| Q17 | C | Médio | Essenciais | Primeira passagem |
+| Q18 | D | Médio | Aprofundamento | Antes de D+7 |
+| Q19 | A | Médio | Revisão | D+7 |
+| Q20 | C | Difícil | Essenciais | D+2 |
+| Q21 | D | Difícil | Aprofundamento | Antes de D+7 |
+| Q22 | A | Difícil | Revisão | D+7 |
+| Q23 | A | Muito difícil | Essenciais | Primeira passagem |
+| Q24 | B | Muito difícil | Aprofundamento | Antes de D+7 |
+| Q25 | B | Médio | Essenciais | Primeira passagem |
+| Q26 | C | Médio | Aprofundamento | Antes de D+7 |
+| Q27 | D | Médio | Revisão | D+7 |
+| Q28 | A | Médio | Essenciais | D+2 |
+| Q29 | B | Médio | Simulado | Ciclo seguinte |
+| Q30 | B | Difícil | Aprofundamento | Antes de D+7 |
+| Q31 | C | Difícil | Revisão | D+7 |
+| Q32 | D | Difícil | Essenciais | D+2 |
+| Q33 | A | Difícil | Simulado | Ciclo seguinte |
+| Q34 | B | Difícil | Aprofundamento | Antes de D+7 |
+| Q35 | C | Muito difícil | Essenciais | Primeira passagem |
+| Q36 | D | Muito difícil | Aprofundamento | Antes de D+7 |
+| Q37 | C | Médio | Essenciais | Primeira passagem |
+| Q38 | B | Médio | Revisão | D+7 |
+| Q39 | A | Médio | Aprofundamento | Antes de D+7 |
+| Q40 | B | Médio | Essenciais | D+2 |
+| Q41 | C | Médio | Simulado | Ciclo seguinte |
+| Q42 | D | Médio | Revisão | D+7 |
+| Q43 | C | Difícil | Aprofundamento | Antes de D+7 |
+| Q44 | D | Difícil | Essenciais | D+2 |
+| Q45 | A | Difícil | Revisão | D+7 |
+| Q46 | B | Difícil | Aprofundamento | Antes de D+7 |
+| Q47 | A | Muito difícil | Essenciais | Primeira passagem |
+| Q48 | B | Muito difícil | Essenciais | D+2 |
+| Q49 | C | Difícil | Essenciais | Primeira passagem |
+| Q50 | D | Difícil | Aprofundamento | Antes de D+7 |
+| E1 | A | Médio | Aprofundamento | Antes de D+7 |
+| E2 | B | Médio | Revisão | D+7 |
+| E3 | C | Médio | Essenciais | Primeira passagem |
+| E4 | D | Médio | Simulado | Ciclo seguinte |
+| E5 | A | Difícil | Aprofundamento | Antes de D+7 |
+| E6 | B | Difícil | Revisão | D+7 |
+| E7 | C | Difícil | Simulado | Ciclo seguinte |
+| E8 | D | Difícil | Simulado | Ciclo seguinte |
+| E9 | A | Muito difícil | Aprofundamento | Antes de D+7 |
+| E10 | B | Muito difícil | Revisão | D+7 |
+| E11 | A | Médio | Aprofundamento | Antes de D+7 |
+| E12 | B | Médio | Essenciais | Primeira passagem |
+| E13 | C | Médio | Revisão | D+7 |
+| E14 | D | Médio | Simulado | Ciclo seguinte |
+| E15 | A | Difícil | Aprofundamento | Antes de D+7 |
+| E16 | D | Difícil | Revisão | D+7 |
+| E17 | C | Difícil | Essenciais | D+2 |
+| E18 | D | Difícil | Simulado | Ciclo seguinte |
+| E19 | C | Muito difícil | Aprofundamento | Antes de D+7 |
+| E20 | D | Muito difícil | Simulado | Ciclo seguinte |
+
+## Comentários do Dia 4
+
+### Comentário da Questão 1
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está correta:** Distribuir e revisar tarefas de subordinados é organização interna hierárquica.
+- **B) está errada:** Não há apuração nem sanção.
+- **C) está errada:** A chefia não editou norma geral.
+- **D) está errada:** Não existe restrição a atividade privada.
+- **Conceito cobrado:** Poder hierárquico.
+- **Pegadinha usada:** Chamar toda ordem de disciplinar.
+- **Como pensar para acertar:** Identifique vínculo interno, destinatário e finalidade.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 2
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Supervisão entre pessoas não cria chefia universal.
+- **B) está correta:** Controle e vinculação possuem limites legais e não apagam a personalidade.
+- **C) está errada:** A entidade continua pessoa jurídica.
+- **D) está errada:** Agentes de outra pessoa não viram subordinados diretos por presunção.
+- **Conceito cobrado:** Vinculação versus hierarquia.
+- **Pegadinha usada:** Transportar relação chefe-subordinado entre entidades.
+- **Como pensar para acertar:** Verifique se as unidades pertencem à mesma pessoa.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 3
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Poder disciplinar não substitui persecução penal.
+- **B) está errada:** Sanção exige suporte normativo e competência.
+- **C) está correta:** Vínculo especial, infração, apuração e defesa delimitam esse poder.
+- **D) está errada:** Falha contratual não autoriza punição automática.
+- **Conceito cobrado:** Poder disciplinar.
+- **Pegadinha usada:** Confundir vínculo especial com licença punitiva.
+- **Como pensar para acertar:** Procure vínculo, dever violado, competência e processo.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 4
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** Regulamento deve respeitar a lei.
+- **B) está errada:** Não pode inventar livremente infração primária.
+- **C) está errada:** Generalidade não substitui fonte legislativa.
+- **D) está correta:** A função executiva detalha cumprimento nos limites competentes.
+- **Conceito cobrado:** Poder regulamentar.
+- **Pegadinha usada:** Igualar detalhamento a inovação livre.
+- **Como pensar para acertar:** Compare cada comando com a norma superior.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 5
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está correta:** Fiscalizar atividade profissional regulada pode ser polícia administrativa.
+- **B) está errada:** O conselho não apura necessariamente crime.
+- **C) está errada:** Profissionais não são subordinados internos.
+- **D) está errada:** Poder disciplinar exige vínculo especial próprio.
+- **Conceito cobrado:** Polícia administrativa profissional.
+- **Pegadinha usada:** Confundir fiscalização com polícia judiciária ou hierarquia.
+- **Como pensar para acertar:** Observe atividade privada condicionada em interesse coletivo.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 6
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Os objetos são distintos.
+- **B) está correta:** Uma condiciona atividades; a outra se dirige à apuração penal.
+- **C) está errada:** Conselho profissional não é polícia judiciária geral.
+- **D) está errada:** Polícia administrativa atua independentemente de condenação criminal.
+- **Conceito cobrado:** Polícia administrativa e judiciária.
+- **Pegadinha usada:** Fundir atuações por causa do termo “polícia”.
+- **Como pensar para acertar:** Pergunte se há regulação administrativa ou investigação penal.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 7
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** Avocação é instrumento juridicamente limitado e não vence reserva normativa.
+- **B) está errada:** Urgência gerencial não cria competência.
+- **C) está errada:** Não se trata de restrição a particular.
+- **D) está errada:** Ambos os institutos dependem do ordenamento.
+- **Conceito cobrado:** Limites da hierarquia e avocação.
+- **Pegadinha usada:** Transformar poder interno em competência ilimitada.
+- **Como pensar para acertar:** Localize norma de competência e possibilidade de avocar.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 8
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** A conduta pode constituir infração funcional, sem excluir eventual esfera penal.
+- **B) está correta:** Vínculo, competência, apuração, defesa, prova e motivação foram observados em tese.
+- **C) está errada:** Hierarquia não autoriza pena sem processo.
+- **D) está errada:** A decisão é concreta e punitiva, não norma geral.
+- **Conceito cobrado:** Disciplina com devido processo.
+- **Pegadinha usada:** Escolher entre punição imediata e impossibilidade de punir.
+- **Como pensar para acertar:** Confira vínculo, procedimento e proporcionalidade restante.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 9
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Natureza técnica não valida multa sem base.
+- **B) está errada:** Generalidade não invalida o detalhamento fiel.
+- **C) está correta:** Cada comando deve ser testado; execução pode caber, sanção nova não.
+- **D) está errada:** Utilidade não substitui competência normativa.
+- **Conceito cobrado:** Limites do regulamento.
+- **Pegadinha usada:** Validar ou invalidar todo o ato por reflexo.
+- **Como pensar para acertar:** Separe detalhamento executivo de inovação punitiva.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 10
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Competência fiscalizatória não torna toda restrição autoexecutória nem dispensa exame da medida.
+- **B) está errada:** A denúncia pode iniciar apuração, mas não prova sozinha o fato nem autoriza pena definitiva.
+- **C) está errada:** Polícia administrativa também se submete ao devido processo aplicável.
+- **D) está correta:** Reúne os filtros jurídicos e rejeita autoexecutoriedade universal.
+- **Conceito cobrado:** Limites do poder de polícia.
+- **Pegadinha usada:** Usar o rótulo como autorização total.
+- **Como pensar para acertar:** Rejeite a generalização que elimina todos os filtros.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 11
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está correta:** A sanção contratual depende do vínculo, da infração, da competência e do processo.
+- **B) está errada:** Administração não aplica pena criminal por esse poder.
+- **C) está errada:** Contrato não elimina motivação e apuração.
+- **D) está errada:** Contratado não vira empregado público.
+- **Conceito cobrado:** Poder disciplinar e contratado.
+- **Pegadinha usada:** Universalizar o vínculo especial.
+- **Como pensar para acertar:** Delimite quem está vinculado e qual sanção a norma permite.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 12
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Margem na pena não torna fatos e competência livres.
+- **B) está correta:** Dosimetria continua submetida a lei, proporção e razões controláveis.
+- **C) está errada:** A autoridade escolhe apenas entre opções permitidas.
+- **D) está errada:** Gravidade alegada não elimina defesa.
+- **Conceito cobrado:** Discricionariedade disciplinar limitada.
+- **Pegadinha usada:** Confundir margem com arbitrariedade.
+- **Como pensar para acertar:** Separe existência da infração, opções e justificativa da pena.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 13
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** Pessoas distintas, vínculo sistêmico e competência específica impedem hierarquia presumida.
+- **B) está errada:** Supervisão não cria recurso ou poder substitutivo sem previsão normativa concreta.
+- **C) está errada:** Relação sistêmica não estabelece dupla subordinação interna dos empregados.
+- **D) está errada:** Eficiência e alcance nacional não suprem a competência específica para intervir.
+- **Conceito cobrado:** Pessoa, vínculo e competência hierárquica.
+- **Pegadinha usada:** Fazer integração institucional absorver personalidade e atribuições.
+- **Como pensar para acertar:** Filtre pessoa jurídica, relação prevista e competência concreta.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 14
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Prova e defesa não retiram do controle a escolha e a intensidade da sanção.
+- **B) está correta:** Os filtros iniciais foram atendidos, mas dosimetria exige proporção e motivação.
+- **C) está errada:** Recurso não convalida previamente motivação ausente nem faz presumir proporcionalidade.
+- **D) está errada:** A pena máxima também exige justificativa ligada aos fatos e aos critérios aplicáveis.
+- **Conceito cobrado:** Disciplina, prova, processo e dosimetria.
+- **Pegadinha usada:** Tratar garantias cumpridas como validação de qualquer pena.
+- **Como pensar para acertar:** Audite vínculo, autoria, rito, opção normativa e justificativa.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 15
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Competência para executar a lei não inclui inovação punitiva primária sem suporte.
+- **B) está errada:** A sanção inválida não contamina necessariamente detalhe técnico separável e fiel à norma superior.
+- **C) está correta:** Separa execução lícita, inovação sem suporte e aplicação processualmente viciada.
+- **D) está errada:** Ordem hierárquica não sana o fundamento normativo nem elimina defesa do destinatário.
+- **Conceito cobrado:** Fonte, conteúdo, sanção e processo regulamentar.
+- **Pegadinha usada:** Avaliar a portaria como bloco indivisível.
+- **Como pensar para acertar:** Teste competência, aderência à lei, sanção e procedimento.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+
+### Comentário da Questão 16
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Denúncia inicia apuração, mas não transfere competência sancionadora ao fiscal.
+- **B) está errada:** Sujeição à regulação não cria vínculo hierárquico interno entre particular e fiscal.
+- **C) está errada:** Ratificação posterior não transforma medida sem risco, prova e defesa em cautela e pena regulares.
+- **D) está correta:** Distingue abertura fiscalizatória de sanção sem motivo, autoridade e defesa.
+- **Conceito cobrado:** Polícia, motivo, competência e processo.
+- **Pegadinha usada:** Fazer poder de polícia legitimar toda etapa.
+- **Como pensar para acertar:** Separe fiscalização, cautela e sanção; teste cada requisito.
+- **Referência:** [Dia 4 — poderes administrativos](semana_03_estudo.md#s3-d4-poderes).
+### Comentário da Questão 17
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Finalidade protetiva não corrige falta de atribuição material.
+- **B) está errada:** A medida individual não constitui edição de regulamento de execução.
+- **C) está correta:** A medida ultrapassa o limite material concedido ao agente.
+- **D) está errada:** O agente não detinha a competência pressuposta pela alternativa.
+- **Conceito cobrado:** Excesso de poder.
+- **Pegadinha usada:** Invocar unidade da Administração.
+- **Como pensar para acertar:** Compare exatamente o que podia e o que fez.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 18
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Personalidade não está em discussão.
+- **B) está errada:** O vício descrito é de finalidade.
+- **C) está errada:** A autoridade possuía competência formal.
+- **D) está correta:** Poder legítimo foi usado para retaliação pessoal.
+- **Conceito cobrado:** Desvio de finalidade.
+- **Pegadinha usada:** Procurar incompetência onde o defeito está no fim.
+- **Como pensar para acertar:** Separe “podia agir?” de “para qual fim agiu?”.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 19
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está correta:** Inércia pode ser abusiva diante de dever e possibilidade de agir.
+- **B) está errada:** Abuso não exige ação física.
+- **C) está errada:** Dureza isolada não define abuso.
+- **D) está errada:** Omissão pode violar garantias processuais.
+- **Conceito cobrado:** Abuso por omissão.
+- **Pegadinha usada:** Tornar o silêncio sempre neutro.
+- **Como pensar para acertar:** Procure dever, meios, inércia e finalidade.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 20
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** Os conceitos se referem a competência e finalidade.
+- **B) está errada:** A alternativa inverte e acrescenta forma.
+- **C) está correta:** Excesso é ultrapassagem da atribuição; desvio é uso para fim alheio.
+- **D) está errada:** Erro não demonstra automaticamente desvio.
+- **Conceito cobrado:** Excesso versus desvio.
+- **Pegadinha usada:** Confundir limite material com propósito.
+- **Como pensar para acertar:** Pergunte “podia fazer?” e “podia fazer para isso?”.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 21
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Não há reorganização de competências.
+- **B) está errada:** O núcleo é finalidade desviada no uso omissivo, não ampliação de competência.
+- **C) está errada:** O dever jurídico retira neutralidade da inércia.
+- **D) está correta:** A omissão deliberada prolonga restrição e ignora defesa para pressionar.
+- **Conceito cobrado:** Omissão abusiva e devido processo.
+- **Pegadinha usada:** Exigir ato positivo para reconhecer abuso.
+- **Como pensar para acertar:** Verifique dever de decidir, possibilidade, intenção e garantia afetada.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 22
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está correta:** Intensidade não substitui análise de competência, fatos, fim e proporção.
+- **B) está errada:** Finalidade desviada precisa ser demonstrada.
+- **C) está errada:** Severidade não altera competência por si.
+- **D) está errada:** Proporcionalidade continua controlável.
+- **Conceito cobrado:** Diagnóstico do abuso.
+- **Pegadinha usada:** Igualar restrição forte a abuso automático.
+- **Como pensar para acertar:** Não conclua pelo resultado; percorra os filtros.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 23
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está correta:** A medida excede a atribuição, sugere retaliação e carece de fato demonstrado.
+- **B) está errada:** Finalidade não absorve incompetência.
+- **C) está errada:** Vícios de elementos distintos podem coexistir.
+- **D) está errada:** Não existe poder geral sem limites.
+- **Conceito cobrado:** Excesso, desvio e motivo.
+- **Pegadinha usada:** Exigir um único vício por ato.
+- **Como pensar para acertar:** Teste competência, finalidade e pressuposto separadamente.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 24
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Dever expresso e finalidade de pressão impedem tratar a omissão como neutra pela falta de prazo numérico.
+- **B) está correta:** Reúne dever, meios, omissão deliberada, finalidade indevida e defesa.
+- **C) está errada:** O núcleo não é ampliação de competência, mas uso omissivo do dever para finalidade indevida.
+- **D) está errada:** Decisão tardia não apaga automaticamente o prolongamento deliberado nem a defesa ignorada.
+- **Conceito cobrado:** Abuso omissivo integrado.
+- **Pegadinha usada:** Reduzir abuso a excesso ativo.
+- **Como pensar para acertar:** Filtre dever, possibilidade, propósito, processo e efeito.
+- **Referência:** [Dia 4 — abuso de poder](semana_03_estudo.md#s3-d4-abuso-poder).
+
+### Comentário da Questão 25
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Cargo efetivo não esgota o conceito.
+- **B) está correta:** Exercício de função estatal pode ser temporário ou não remunerado.
+- **C) está errada:** O conceito não se limita ao estatuto federal.
+- **D) está errada:** Há agentes sem concurso conforme o vínculo constitucional.
+- **Conceito cobrado:** Conceito amplo de agente público.
+- **Pegadinha usada:** Igualar agente a servidor efetivo.
+- **Como pensar para acertar:** Identifique exercício de função estatal e o vínculo informado.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 26
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Isso descreve emprego.
+- **B) está errada:** Tarefa particular não é unidade legal de atribuições.
+- **C) está correta:** Cargo é criado por lei e normalmente se liga ao estatuto.
+- **D) está errada:** Previsão normativa é indispensável.
+- **Conceito cobrado:** Cargo público.
+- **Pegadinha usada:** Trocar cargo por contrato ou tarefa.
+- **Como pensar para acertar:** Procure criação legal e regime estatutário.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 27
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Chefia não transforma cargo em emprego.
+- **B) está errada:** Emprego pressupõe vínculo profissional.
+- **C) está errada:** Mandato político é categoria distinta.
+- **D) está correta:** Emprego é contrato predominantemente celetista.
+- **Conceito cobrado:** Emprego público.
+- **Pegadinha usada:** Confundir contratação com estatuto.
+- **Como pensar para acertar:** Associe emprego a contrato e CLT.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 28
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está correta:** Função é o conjunto de atribuições efetivamente exercidas.
+- **B) está errada:** Não se limita a cargo em comissão.
+- **C) está errada:** Vínculo temporário também possui atribuições.
+- **D) está errada:** Função não é personalidade do empregador.
+- **Conceito cobrado:** Função pública.
+- **Pegadinha usada:** Tratar função como espécie única de posto.
+- **Como pensar para acertar:** Separe atribuições do título do vínculo.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 29
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** O edital não adota estatuto federal para o cargo.
+- **B) está correta:** Trata-se de emprego público celetista.
+- **C) está errada:** Analista não ocupa função política constitucional.
+- **D) está errada:** O vínculo é permanente do edital, não temporário excepcional.
+- **Conceito cobrado:** Regime do Analista do CRA-PR.
+- **Pegadinha usada:** Fazer autarquia e concurso implicarem estatuto.
+- **Como pensar para acertar:** Leia separadamente entidade, ingresso e regime editalício.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 30
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Prazo não gera efetividade.
+- **B) está correta:** Necessidade excepcional e requisitos legais sustentam função temporária.
+- **C) está errada:** Urgência não cria emprego permanente.
+- **D) está errada:** Cargo em comissão tem finalidade própria.
+- **Conceito cobrado:** Agente temporário.
+- **Pegadinha usada:** Classificar apenas pela curta duração.
+- **Como pensar para acertar:** Verifique lei, necessidade excepcional, prazo e natureza não permanente.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 31
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Particulares em colaboração podem integrar o conceito amplo.
+- **B) está errada:** Agente administrativo não é necessariamente político.
+- **C) está correta:** As três formas profissionais aparecem nessa categoria doutrinária.
+- **D) está errada:** Terminologia varia; descrição do vínculo é necessária.
+- **Conceito cobrado:** Espécies doutrinárias de agentes.
+- **Pegadinha usada:** Tornar rótulos variáveis absolutos.
+- **Como pensar para acertar:** Priorize a descrição do vínculo, não apenas o nome.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 32
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** Emprego público também está abrangido.
+- **B) está errada:** Empregado de particular não é investido em emprego público por isso.
+- **C) está errada:** O recorte constitucional fala em cargo ou emprego.
+- **D) está correta:** Reproduz a regra de ingresso e preserva exceções constitucionais.
+- **Conceito cobrado:** Concurso para cargo e emprego.
+- **Pegadinha usada:** Restringir concurso ao estatuto.
+- **Como pensar para acertar:** Recupere a dupla constitucional “cargo ou emprego”.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 33
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está correta:** A Constituição reserva função de confiança a ocupante de cargo efetivo.
+- **B) está errada:** Particular sem vínculo não atende ao requisito.
+- **C) está errada:** Empregado de contratada não ocupa cargo efetivo.
+- **D) está errada:** Designação não efetiva temporário.
+- **Conceito cobrado:** Função de confiança.
+- **Pegadinha usada:** Confundir confiança com livre escolha irrestrita.
+- **Como pensar para acertar:** Confira primeiro o cargo-base efetivo.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 34
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Comissão não serve a toda operação permanente.
+- **B) está correta:** O destino constitucional é direção, chefia e assessoramento.
+- **C) está errada:** Não substitui indiscriminadamente cargos efetivos.
+- **D) está errada:** Temporário possui outro fundamento.
+- **Conceito cobrado:** Cargo em comissão.
+- **Pegadinha usada:** Usar comissão para necessidade técnica comum.
+- **Como pensar para acertar:** Teste se as atribuições são direção, chefia ou assessoramento.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 35
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Concurso é forma de ingresso e não converte emprego CLT em cargo efetivo nem legitima comissão técnica rotineira.
+- **B) está errada:** Norma interna e natureza autárquica não afastam os requisitos constitucionais dos dois institutos.
+- **C) está correta:** Preserva o emprego celetista, a reserva da função a cargo efetivo e a destinação da comissão a direção, chefia ou assessoramento.
+- **D) está errada:** Função de confiança não se abre a todo empregado permanente, e cargo em comissão não depende de concurso, mas de finalidade própria.
+- **Conceito cobrado:** Emprego, função de confiança e cargo em comissão.
+- **Pegadinha usada:** Usar concurso, permanência ou rótulo interno para apagar requisitos constitucionais distintos.
+- **Como pensar para acertar:** Separe vínculo-base, forma de ingresso, requisito da função e natureza das atribuições comissionadas.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 36
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Inverte cargo e emprego e cria categorias alheias.
+- **B) está errada:** Contrato CLT é emprego, não função.
+- **C) está errada:** Investidura estatutária é em cargo, e a livre nomeação para assessoramento descrita no item IV indica cargo em comissão.
+- **D) está correta:** Associa vínculo estatutário, contrato celetista, designação do ocupante efetivo e livre provimento às categorias correspondentes.
+- **Conceito cobrado:** Cargo, emprego, função de confiança e comissão.
+- **Pegadinha usada:** Classificar pela palavra “atribuição” sem examinar vínculo.
+- **Como pensar para acertar:** Resolva cada item separadamente por fonte, regime e finalidade.
+- **Referência:** [Dia 4 — agentes públicos](semana_03_estudo.md#s3-d4-agentes-publicos).
+
+### Comentário da Questão 37
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Responsabilidade civil não produz pena automática para o agente.
+- **B) está errada:** A vítima não precisa demonstrar sempre dolo pessoal.
+- **C) está correta:** A relação externa é objetiva, mas ainda requer conduta, dano e nexo causal.
+- **D) está errada:** A regra constitucional também alcança pessoas privadas prestadoras de serviço público.
+- **Conceito cobrado:** Responsabilidade objetiva perante a vítima.
+- **Pegadinha usada:** Confundir dispensa de culpa com dispensa dos demais elementos.
+- **Como pensar para acertar:** Identifique a relação externa e confira conduta, dano e nexo.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 38
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Dano continua sendo elemento indispensável à reparação.
+- **B) está correta:** A objetividade dispensa prova da culpa pessoal, não de conduta, dano e nexo.
+- **C) está errada:** Dolo não é requisito da pretensão externa da vítima.
+- **D) está errada:** Lucro cessante exige demonstração concreta.
+- **Conceito cobrado:** Efeito e limites da responsabilidade objetiva.
+- **Pegadinha usada:** Ler “objetiva” como indenização automática.
+- **Como pensar para acertar:** Retire apenas a culpa do ônus externo e preserve os outros três elementos.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 39
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** Sem perda, gasto ou outro prejuízo demonstrado, falta dano indenizável.
+- **B) está errada:** Falha técnica isolada não torna dano moral automaticamente presumido.
+- **C) está errada:** Responsabilidade objetiva não elimina a prova do dano.
+- **D) está errada:** Regresso é relação posterior e não supre prejuízo da vítima.
+- **Conceito cobrado:** Necessidade de dano real.
+- **Pegadinha usada:** Transformar indisponibilidade mínima em indenização automática.
+- **Como pensar para acertar:** Pergunte qual prejuízo concreto o fato produziu antes de discutir culpa.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 40
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** Alegação sem dano provado não fundamenta regresso.
+- **B) está correta:** Na relação interna, a ação regressiva depende de dolo ou culpa do agente.
+- **C) está errada:** A responsabilidade pessoal do agente não é automática.
+- **D) está errada:** Vínculo funcional sozinho não prova conduta culposa ou dolosa.
+- **Conceito cobrado:** Regresso subjetivo contra o agente.
+- **Pegadinha usada:** Transportar a objetividade externa para a relação interna.
+- **Como pensar para acertar:** Separe vítima-entidade de entidade-agente.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 41
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** O local físico não define sozinho a conexão funcional.
+- **B) está errada:** Atuação inteiramente alheia à função afasta, em regra, a expressão constitucional.
+- **C) está correta:** O dano deve decorrer do exercício ou do pretexto de exercício da função.
+- **D) está errada:** Condenação penal prévia não é requisito da responsabilidade civil da entidade.
+- **Conceito cobrado:** Atuação do agente “nessa qualidade”.
+- **Pegadinha usada:** Substituir conexão funcional por local ou condenação criminal.
+- **Como pensar para acertar:** Verifique se a função possibilitou ou qualificou a atuação danosa.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 42
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Conjectura não comprova lucro que razoavelmente seria obtido.
+- **B) está errada:** Indisponibilidade não gera, por si, lucro cessante presumido.
+- **C) está errada:** Estimativa desconectada do evento não demonstra nexo nem extensão.
+- **D) está correta:** O prejuízo futuro precisa de suporte concreto, e não de mera hipótese.
+- **Conceito cobrado:** Prova do lucro cessante.
+- **Pegadinha usada:** Confundir possibilidade abstrata de ganho com dano demonstrado.
+- **Como pensar para acertar:** Exija base documental e ligação causal com o evento.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 43
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** A inércia atribuída ao serviço não torna toda omissão objetivamente regida.
+- **B) está errada:** A presença de terceiro não torna toda omissão necessariamente subjetiva.
+- **C) está correta:** Reúne dever específico, possibilidade, falha, evitabilidade, nexo e regime jurídico aplicável.
+- **D) está errada:** Gravidade aparente da omissão não elimina a prova do dano.
+- **Conceito cobrado:** Análise qualificada da omissão estatal.
+- **Pegadinha usada:** Oferecer fórmulas universais para controvérsia dependente do caso.
+- **Como pensar para acertar:** Passe pelos filtros fáticos antes de aplicar o regime jurisprudencial pertinente.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 44
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** Ato de terceiro não exclui necessariamente contribuição administrativa na cadeia causal.
+- **B) está errada:** Falha estatal não torna irrelevante a contribuição causal de terceiro.
+- **C) está errada:** A autoria imediata do terceiro não presume dano nem nexo estatal.
+- **D) está correta:** É preciso aferir a contribuição estatal e reconstruir a cadeia causal completa.
+- **Conceito cobrado:** Terceiro e nexo causal.
+- **Pegadinha usada:** Tratar causa concorrente como solução binária automática.
+- **Como pensar para acertar:** Reconstrua a cadeia e identifique a contribuição efetiva de cada conduta.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 45
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está correta:** Concorrência da vítima pode reduzir a reparação sem necessariamente romper todo o nexo.
+- **B) está errada:** Exclusão integral depende de causalidade exclusiva, não de qualquer contribuição.
+- **C) está errada:** Culpa concorrente não torna inexistente o dano já demonstrado.
+- **D) está errada:** Responsabilidade penal do agente não decorre automaticamente da concorrência causal.
+- **Conceito cobrado:** Culpa exclusiva e concorrente da vítima.
+- **Pegadinha usada:** Igualar contribuição parcial a causa exclusiva.
+- **Como pensar para acertar:** Meça se a conduta da vítima substituiu ou apenas integrou a cadeia causal.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 46
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** O nome registrado no relatório não demonstra exclusividade nem exterioridade causal.
+- **B) está correta:** Exclusividade e exterioridade devem ser comparadas à previsibilidade e à contribuição do serviço.
+- **C) está errada:** Gravidade do resultado não afasta a investigação de sua origem causal.
+- **D) está errada:** A vítima não precisa provar culpa pessoal do agente na relação objetiva externa.
+- **Conceito cobrado:** Evento externo e ruptura causal.
+- **Pegadinha usada:** Aceitar o nome do evento como conclusão jurídica.
+- **Como pensar para acertar:** Investigue previsibilidade, domínio do risco e contribuição do serviço.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 47
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está correta:** Há dever específico, meios e tempo para agir, omissão, dano comprovado e ligação com o risco explorado, sem dispensar o regime aplicável.
+- **B) está errada:** O terceiro não rompe automaticamente o nexo quando concretiza justamente o risco conhecido que o serviço podia reduzir.
+- **C) está errada:** Mesmo em omissão específica, dano e cadeia causal não se tornam presumidos pelo simples ataque.
+- **D) está errada:** A pretensão externa não depende de confissão ou prova da culpa pessoal do agente.
+- **Conceito cobrado:** Omissão, evitabilidade, terceiro e nexo.
+- **Pegadinha usada:** Fazer um único fator apagar os demais filtros preenchidos.
+- **Como pensar para acertar:** Audite dever, capacidade, falha, dano, evitabilidade, cadeia causal e regime jurisprudencial.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 48
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** A falha técnica não presume perda de contrato cancelado antes da indisponibilidade.
+- **B) está correta:** Pode existir falha, mas a cronologia afasta o nexo do dano alegado; eventual outro prejuízo precisa de prova própria.
+- **C) está errada:** Ataque de terceiro não rompe todo nexo se a falha estatal houver contribuído para a cadeia causal.
+- **D) está errada:** Objetividade não dispensa cronologia, dano comprovado ou nexo.
+- **Conceito cobrado:** Separação entre falha, dano e nexo.
+- **Pegadinha usada:** Presumir que toda perda contemporânea decorre da indisponibilidade.
+- **Como pensar para acertar:** Compare datas e causas antes de atribuir cada dano à conduta.
+- **Referência:** [Dia 4 — responsabilidade civil](semana_03_estudo.md#s3-d4-responsabilidade-civil).
+
+### Comentário da Questão 49
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Fiscalização não transfere competência sancionadora reservada ao colegiado.
+- **B) está errada:** Denúncia não é prova absoluta e não elimina defesa.
+- **C) está correta:** A diligência inicial pode ser legítima, mas a sanção sofre vícios de motivo, competência e processo.
+- **D) está errada:** Particular fiscalizado não integra cadeia hierárquica interna.
+- **Conceito cobrado:** Integração entre polícia, competência, motivo e devido processo.
+- **Pegadinha usada:** Validar a sanção porque a primeira etapa era lícita.
+- **Como pensar para acertar:** Examine separadamente apuração e decisão sancionadora.
+- **Referência:** [Dia 4 — integração](semana_03_estudo.md#s3-d4-integracao).
+
+### Comentário da Questão 50
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** A vítima não precisa provar culpa pessoal, e o regresso não é presumido.
+- **B) está errada:** Natureza pública não elimina a verificação do nexo.
+- **C) está errada:** O agente não responde diretamente de forma objetiva e automática nesse modelo.
+- **D) está correta:** Conduta funcional, dano quantificado e nexo sustentam a relação externa; dolo ou culpa importam ao regresso.
+- **Conceito cobrado:** Responsabilidade externa e ação regressiva.
+- **Pegadinha usada:** Misturar os requisitos das duas relações jurídicas.
+- **Como pensar para acertar:** Resolva primeiro vítima-entidade e só depois entidade-agente.
+- **Referência:** [Dia 4 — integração](semana_03_estudo.md#s3-d4-integracao).
+
+### Comentário da Questão E1
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** Integração sistêmica não cria hierarquia ilimitada entre pessoas jurídicas e seus agentes.
+- **B) está errada:** As competências regionais permanecem conforme as normas aplicáveis.
+- **C) está errada:** O CRA não perde personalidade por integrar o sistema.
+- **D) está errada:** Substituição de decisões depende de competência específica.
+- **Conceito cobrado:** Sistema CFA/CRAs sem hierarquia presumida.
+- **Pegadinha usada:** Confundir coordenação institucional com subordinação total.
+- **Como pensar para acertar:** Separe integração, personalidade e competência.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E2
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** O CRA não assume a coordenação nacional do sistema.
+- **B) está correta:** O CFA atua em âmbito nacional e o CRA exerce atribuições em sua jurisdição.
+- **C) está errada:** Os conselhos não são sindicatos privados concorrentes.
+- **D) está errada:** A existência do CFA não absorve toda fiscalização regional.
+- **Conceito cobrado:** Âmbitos nacional e regional.
+- **Pegadinha usada:** Transformar coordenação nacional em supressão regional.
+- **Como pensar para acertar:** Associe cada conselho ao âmbito definido nas fontes oficiais.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E3
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Pertencer ao sistema não basta para substituir decisão alheia.
+- **B) está errada:** Sede nacional não cria competência sem base normativa.
+- **C) está correta:** Controle, supervisão ou recurso exigem atribuição encontrada em fonte oficial.
+- **D) está errada:** Gestão do cadastro eletrônico não equivale a competência decisória.
+- **Conceito cobrado:** Fonte formal da competência.
+- **Pegadinha usada:** Inferir poder decisório de posição ou infraestrutura.
+- **Como pensar para acertar:** Procure a regra que autoriza a atuação concreta.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E4
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** A atuação regional possui limites territoriais e normativos.
+- **B) está errada:** Autorização sindical não condiciona as atribuições legais do conselho.
+- **C) está errada:** Competência regional não depende de renúncia do CFA.
+- **D) está correta:** O CRA-PR atua em sua jurisdição segundo as normas aplicáveis.
+- **Conceito cobrado:** Jurisdição regional do CRA-PR.
+- **Pegadinha usada:** Apresentar competência regional como ilimitada ou delegada informalmente.
+- **Como pensar para acertar:** Combine território, matéria e fonte normativa.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E5
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** A distinção depende das normas oficiais, não de atribuições presumidas.
+- **B) está errada:** Diretoria não substitui todo ato do Plenário sem competência.
+- **C) está errada:** Arquitetura de sistema não distribui poderes institucionais.
+- **D) está errada:** Nem toda tarefa operacional pertence ao Plenário; o regimento deve ser consultado.
+- **Conceito cobrado:** Competências do Plenário e da Diretoria.
+- **Pegadinha usada:** Resolver governança pela intuição sobre nomes dos órgãos.
+- **Como pensar para acertar:** Confirme a atribuição na fonte oficial pertinente.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E6
+- **Alternativa correta:** B.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** Costume interno não cria competência ilimitada.
+- **B) está correta:** A atribuição deve ser confirmada nas normas oficiais aplicáveis.
+- **C) está errada:** Tradição não suprime ciência ou defesa.
+- **D) está errada:** Frequência de uso não altera a natureza jurídica do órgão.
+- **Conceito cobrado:** Legalidade da competência administrativa.
+- **Pegadinha usada:** Converter prática repetida em fonte suficiente de poder.
+- **Como pensar para acertar:** Exija fundamento normativo antes de validar o fluxo.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E7
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Sistema eletrônico não pode impor sanção automática.
+- **B) está errada:** Conselho profissional não exerce condenação penal.
+- **C) está correta:** A irregularidade exige autoridade competente, apuração, ciência, defesa e motivação.
+- **D) está errada:** Denúncia isolada não sustenta suspensão definitiva.
+- **Conceito cobrado:** Fiscalização profissional com devido processo.
+- **Pegadinha usada:** Usar finalidade protetiva para dispensar garantias.
+- **Como pensar para acertar:** Separe notícia, instrução e sanção e teste cada requisito.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E8
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Denúncia anônima não prova definitivamente o fato.
+- **B) está errada:** Ela não transfere competência ao fiscal que a recebe.
+- **C) está errada:** Eventual sanção permanece condicionada ao contraditório e à defesa.
+- **D) está correta:** A notícia pode provocar diligência, mas requer confirmação antes de pena definitiva.
+- **Conceito cobrado:** Valor inicial e limite probatório da denúncia.
+- **Pegadinha usada:** Confundir justa causa para apurar com prova para sancionar.
+- **Como pensar para acertar:** Diferencie abertura de investigação e juízo final.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E9
+- **Alternativa correta:** A.
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** Preserva os âmbitos, exige autoridade competente e impede que automação substitua apuração, defesa e motivação.
+- **B) está errada:** Orientação nacional e plataforma não geram competência implícita nem permitem defesa apenas posterior à sanção definitiva.
+- **C) está errada:** Jurisdição regional não proíbe, por si, integração tecnológica ou compartilhamento normativamente cabível.
+- **D) está errada:** Prova posterior do fato não convalida incompetência nem supressão da defesa prévia aplicável.
+- **Conceito cobrado:** Sistema, competência e devido processo.
+- **Pegadinha usada:** Fazer centralização tecnológica produzir centralização jurídica.
+- **Como pensar para acertar:** Aplique filtros separados a âmbito, autoridade, prova e processo.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E10
+- **Alternativa correta:** B.
+- **Nível:** Muito difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** O sistema não pode sancionar antes da atuação competente, da ciência e da defesa.
+- **B) está correta:** A sequência confirma atribuição, instrui, permite participação, motiva a decisão e condiciona recurso à norma.
+- **C) está errada:** Gravidade aparente não transfere competência ao órgão central nem reduz a unidade regional a mera comunicação.
+- **D) está errada:** Não se inventa remessa obrigatória ao CFA quando o enunciado não fornece previsão recursal.
+- **Conceito cobrado:** Sequência processual sem regra inventada.
+- **Pegadinha usada:** Misturar etapas legítimas com competência ou recurso inexistente.
+- **Como pensar para acertar:** Ordene autoridade, apuração, participação, decisão e revisão normativa.
+- **Referência:** [Dia 4 — Bloco 4](semana_03_estudo.md#s3-d4-b4).
+
+### Comentário da Questão E11
+- **Alternativa correta:** A.
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** A frase temática apresenta com clareza a tese que será desenvolvida.
+- **B) está errada:** Lista sem posição não oferece núcleo argumentativo.
+- **C) está errada:** Repetir conclusão não desenvolve a ideia.
+- **D) está errada:** Exemplo anterior ao assunto deixa a função do caso pouco clara.
+- **Conceito cobrado:** Frase temática do parágrafo.
+- **Pegadinha usada:** Confundir presença de informação com apresentação de tese.
+- **Como pensar para acertar:** Pergunte qual afirmação o restante do parágrafo deverá sustentar.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E12
+- **Alternativa correta:** B.
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Momento:** Primeira passagem
+- **A) está errada:** Palavra abstrata isolada não explica a tese.
+- **B) está correta:** Regra e limites de competência, motivo e defesa dão conteúdo verificável ao argumento.
+- **C) está errada:** Pergunta retórica não substitui fundamentação.
+- **D) está errada:** Consequência sem critério deixa uma lacuna lógica.
+- **Conceito cobrado:** Explicação da tese por regra e limites.
+- **Pegadinha usada:** Tratar vocabulário temático como desenvolvimento argumentativo.
+- **Como pensar para acertar:** Depois da tese, exponha por que e sob quais condições ela vale.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E13
+- **Alternativa correta:** C.
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** É afirmação geral sobre relevância, não aplicação concreta da regra.
+- **B) está errada:** O enunciado genérico não exemplifica o limite processual.
+- **C) está correta:** Aplica a distinção entre notícia inicial e confirmação necessária para sancionar.
+- **D) está errada:** Repete a frase temática em forma de conclusão, sem oferecer caso concreto.
+- **Conceito cobrado:** Exemplo concreto na argumentação.
+- **Pegadinha usada:** Confundir frase relacionada ao tema com exemplificação.
+- **Como pensar para acertar:** Procure uma situação específica que materialize a regra explicada.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E14
+- **Alternativa correta:** D.
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** Repetição não mostra o efeito do argumento.
+- **B) está errada:** Norma nova e não explicada quebra a progressão.
+- **C) está errada:** Abandono do tema elimina a unidade.
+- **D) está correta:** Expõe o resultado institucional da observância do processo.
+- **Conceito cobrado:** Consequência argumentativa.
+- **Pegadinha usada:** Usar repetição ou informação nova como fechamento.
+- **Como pensar para acertar:** Feche mostrando o efeito lógico da regra aplicada.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E15
+- **Alternativa correta:** A.
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está correta:** A ordem apresenta posição, fundamento, aplicação e efeito.
+- **B) está errada:** Lista e pergunta não desenvolvem organicamente a tese.
+- **C) está errada:** Novo tema e repetição rompem a unidade.
+- **D) está errada:** Norma isolada e lacuna não formam progressão completa.
+- **Conceito cobrado:** Arquitetura do parágrafo argumentativo.
+- **Pegadinha usada:** Oferecer quatro elementos sem encadeamento funcional.
+- **Como pensar para acertar:** Organize tese, explicação, exemplo e consequência.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E16
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Momento:** D+7
+- **A) está errada:** “Embora” não introduz causa, e “Assim” não estabelece oposição.
+- **B) está errada:** Os conectores não expressam condição necessária nem dúvida.
+- **C) está errada:** Nenhum deles introduz enumeração ou mudança independente de assunto.
+- **D) está correta:** “Embora” marca concessão ou limite, e “Assim” conduz à progressão decorrente.
+- **Conceito cobrado:** Relações coesivas entre partes do argumento.
+- **Pegadinha usada:** Reconhecer conectores pelo som, não pela função.
+- **Como pensar para acertar:** Substitua cada conector por sua relação lógica equivalente.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E17
+- **Alternativa correta:** C.
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Momento:** D+2
+- **A) está errada:** O trecho não contém exemplo concreto.
+- **B) está errada:** As frases não apresentam tese específica nem critérios verificáveis.
+- **C) está correta:** Há generalidades repetidas, sem regra aplicada, exemplo ou efeito.
+- **D) está errada:** Nenhum dado técnico comprovado aparece no texto.
+- **Conceito cobrado:** Diagnóstico de parágrafo genérico.
+- **Pegadinha usada:** Confundir frases corretas e temáticas com argumentação desenvolvida.
+- **Como pensar para acertar:** Identifique o que o parágrafo afirma, explica, aplica e conclui.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E18
+- **Alternativa correta:** D.
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** A conclusão universal contradiz os limites da fiscalização.
+- **B) está errada:** Apenas justapõe temas sem relação argumentativa.
+- **C) está errada:** Afirma necessidade, mas não explicita regra ou consequência.
+- **D) está correta:** Liga tese, limites de competência e defesa e efeito de legitimidade.
+- **Conceito cobrado:** Reescrita com progressão argumentativa.
+- **Pegadinha usada:** Aceitar frases temáticas sem encadeamento lógico.
+- **Como pensar para acertar:** Verifique posição, fundamento e efeito no mesmo período.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E19
+- **Alternativa correta:** C.
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Momento:** Antes de D+7
+- **A) está errada:** Reitera o salto entre denúncia e bloqueio e ainda presume proporcionalidade.
+- **B) está errada:** Enumera valores sem explicar o limite, aplicar a regra à denúncia ou indicar efeito concreto.
+- **C) está correta:** Formula tese, apresenta competência e processo como limites, aplica-os à denúncia e fecha com legitimidade e controle.
+- **D) está errada:** Cria oposição falsa entre devido processo e fiscalização e propõe inércia até decisão judicial.
+- **Conceito cobrado:** Integração das funções do parágrafo.
+- **Pegadinha usada:** Disfarçar salto lógico com conector conclusivo.
+- **Como pensar para acertar:** Confira se cada oração decorre da anterior e cumpre uma função distinta.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
+
+### Comentário da Questão E20
+- **Alternativa correta:** D.
+- **Nível:** Muito difícil
+- **Uso:** Simulado
+- **Momento:** Ciclo seguinte
+- **A) está errada:** O exemplo converte denúncia em prova, posterga defesa e chama o atalho de eficiência.
+- **B) está errada:** Traz afirmações gerais, mas não explicita a regra, aplica a denúncia ou demonstra a consequência.
+- **C) está errada:** Apresenta parte do limite, porém fecha repetindo a tese e não mostra o efeito do procedimento.
+- **D) está correta:** Articula tese, regra com limites, exemplo da denúncia e consequência controlável sem antecipar o fato.
+- **Conceito cobrado:** Revisão estrutural do parágrafo.
+- **Pegadinha usada:** Confundir aumento de texto com preenchimento das funções argumentativas.
+- **Como pensar para acertar:** Marque tese, regra, exemplo e consequência e complete somente as lacunas.
+- **Referência:** [Dia 4 — Bloco 5](semana_03_estudo.md#s3-d4-b5).
