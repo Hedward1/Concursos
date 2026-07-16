@@ -69,13 +69,15 @@ Os alvos orientam o reparo e não garantem classificação.
 
 | Bloco | Tempo | Atividade |
 |---|---:|---|
-| Bloco principal | 4h30 | teoria, exemplos aplicados e até 10 questões essenciais com correção integral |
-| Revisão fixa | 40min | Conhecimentos do Cargo, Legislação CRA/CFA ou Português, conforme o dia |
-| Português/dissertação | 30min | linguagem, interpretação ou etapa do texto dissertativo |
-| Caderno de erros | 20min | causa, regra correta, recuperação ativa e agendamento |
+| Teoria principal | 1h30 | conceitos, finalidade, elementos e contrastes |
+| Exemplos e aplicação | 1h20 | ferramentas, casos e fonte oficial |
+| Questões e correção | 55min | seis Essenciais; até dez quando couber correção integral |
+| Revisão fixa | 35min | disciplina de maior peso ou revisão D+2, conforme o dia |
+| Português/dissertação | 40min | linguagem, interpretação ou etapa do texto dissertativo |
+| Recuperação e fechamento | 1h | recuperação ativa, caderno de erros e agendamento |
 | **Total** | **6h** | |
 
-O banco semanal pode ser amplo, mas a primeira passagem tem **no máximo 10 questões essenciais por dia**. O saldo é reservado para D+2, aprofundamento, D+7 e ciclo seguinte.
+O banco semanal pode ser amplo, mas a primeira passagem usa **seis questões como núcleo e no máximo dez Essenciais por dia**. A fila é ordenada; o saldo abre o D+2 e depois segue para aprofundamento, D+7 e ciclo seguinte.
 
 ## Plano de cobertura em 9 semanas
 
@@ -83,16 +85,16 @@ O banco semanal pode ser amplo, mas a primeira passagem tem **no máximo 10 ques
 
 **Foco:** núcleo de Administração Geral.
 
-| Data | Tema principal | Revisão fixa de maior peso | Português/dissertação | Status |
+| Data | Tema principal | Revisão fixa | Português/dissertação | Status |
 |---|---|---|---|---|
-| 13/07 | Teorias da Administração, evolução, Administração Pública após 1930, reformas, nova gestão pública e PDRAE | Lei nº 4.769/1965: finalidade, profissão e Sistema CFA/CRAs | interpretação + tese | Em produção |
-| 14/07 | Governança, governabilidade, accountability, transparência, participação, qualidade e gestão por resultados | Decreto nº 61.934/1967: estrutura e exercício profissional | morfologia + introdução | Em produção |
-| 15/07 | PODC, planejamento estratégico/tático/operacional, visão, missão, SWOT, GUT, 5W2H, estratégias e decisão | Regimento do CRA-PR: estrutura e competências | sintaxe + primeiro argumento | Em produção |
-| 16/07 | Organização, estruturas, departamentalização, organização informal, cultura, direção, liderança, comunicação, delegação e controle | RN nº 671/2025: âmbito, direitos e deveres | concordância + segundo argumento | Em produção |
-| 17/07 | Gestão de pessoas: equilíbrio, objetivos, recrutamento, seleção, cargos, capacitação, desempenho e competências | revisão Lei nº 4.769 + Decreto nº 61.934 | regência/crase + conclusão | Em produção |
-| 18/07 | Gestão da qualidade, excelência, ferramentas, projetos, processos, mapeamento, melhoria, estatística e BPM | revisão mista de Legislação CRA/CFA | dissertação diagnóstica de 20-30 linhas | Em produção |
+| 13/07 | Teorias da Administração, evolução, Administração Pública após 1930, reformas, nova gestão pública e PDRAE | Base CRA/CFA: finalidade da Lei nº 4.769/1965 e distinção CFA/CRA | dissertação: recorte e tese | Material aprovado para execução |
+| 14/07 | Governança, governabilidade, accountability, transparência, participação, qualidade e gestão por resultados | D+1 do Dia 1 + RLM da Base Zero | dissertação: parágrafo argumentativo | Material aprovado para execução |
+| 15/07 | PODC, planejamento estratégico/tático/operacional, visão, missão, SWOT, GUT, 5W2H, estratégias e decisão | D+2 do Dia 1 + Informática da Base Zero | Português: coesão referencial e sequencial | Material aprovado para execução |
+| 16/07 | Organização, estruturas, departamentalização, organização informal, cultura, direção, liderança, comunicação, delegação e controle | D+2 do Dia 2 + Base CRA/CFA | dissertação: contraponto e concessão | Material aprovado para execução |
+| 17/07 | Gestão de pessoas: equilíbrio, objetivos, recrutamento, seleção, cargos, capacitação, desempenho e competências | D+2 do Dia 3 + RLM da Base Zero | dissertação: introdução e conclusão | Material aprovado para execução |
+| 18/07 | Gestão da qualidade, excelência, ferramentas, projetos, processos, mapeamento, melhoria, estatística e BPM | D+2 do Dia 4 + Informática da Base Zero | dissertação diagnóstica de 20-30 linhas: planejamento, redação e revisão | Material aprovado para execução |
 
-**Entrega esperada:** primeiro contato estruturado com os itens 1 a 6 de Administração Geral, 60 questões essenciais corrigidas no máximo, caderno de erros, revisões agendadas e linha de base da dissertação.
+**Entrega esperada:** primeiro contato estruturado com os itens 1 a 6 de Administração Geral, 36 a 60 questões essenciais corrigidas conforme o tempo real, caderno de erros, revisões agendadas e linha de base da dissertação.
 
 ### Semana 2 - 20/07/2026 a 25/07/2026
 
@@ -100,12 +102,14 @@ O banco semanal pode ser amplo, mas a primeira passagem tem **no máximo 10 ques
 
 | Data | Tema principal | Revisão fixa | Português/dissertação | Status |
 |---|---|---|---|---|
-| 20/07 | Lei nº 4.769/1965 e Decreto nº 61.934/1967 | evolução, reformas e governança | interpretação + repertório pertinente | Planejado |
-| 21/07 | RN nº 651/2024 e Regimento Interno do CRA-PR | PODC, planejamento e decisão | sintaxe + organização do texto | Planejado |
+| 20/07 | Lei nº 4.769/1965 e Decreto nº 61.934/1967 | carregamento do D+2 do Dia 5: saldo da fila D0 primeiro; se terminar, iniciar o saldo do Dia 6 | interpretação + repertório pertinente | Planejado |
+| 21/07 | RN nº 651/2024 e Regimento Interno do CRA-PR | conclusão do D+2 do Dia 6: saldo da fila D0; reabertura fica para D+7 | sintaxe + organização do texto | Planejado |
 | 22/07 | RN nº 671/2025 - Código de Ética e Disciplina | organização, direção e controle | coesão + argumento | Planejado |
 | 23/07 | Lei nº 12.514/2011, RN nº 546/2018 e RNs nº 626/627; limite temporal do PERC | gestão de pessoas | concordância/regência + argumento | Planejado |
 | 24/07 | RNs nº 649/670 sobre registro e RN nº 589/2020 sobre fiscalização | qualidade e projetos | pontuação + conclusão | Planejado |
-| 25/07 | RN nº 680/2025, revogação da nº 633 e INs nº 9 a 14/2026 | processos/BPM + revisão geral | dissertação completa 2 | Planejado |
+| 25/07 | RN nº 680/2025 e revogação da nº 633; controle das INs nº 9 a 14/2026 condicionado ao corte normativo | processos/BPM + revisão geral | dissertação completa 2 | Planejado |
+
+O domingo 19/07 é preservado como descanso. Por isso, o D+2 do Dia 5 passa ao bloco de 20/07, e o saldo do Dia 6 é iniciado depois dele ou concluído em 21/07. Cada bloco mantém o teto de 35 minutos e prioriza somente o saldo não resolvido da fila D0; a lista de reabertura e qualquer remanescente seguem para D+7. A data efetiva deve ser registrada, sem criar carga adicional fora das 6 horas.
 
 **Entrega esperada:** cobertura inicial de todas as normas CFA/CRA nomeadas no programa, com vigência e relações normativas registradas.
 
@@ -145,7 +149,7 @@ O banco semanal pode ser amplo, mas a primeira passagem tem **no máximo 10 ques
 
 | Data | Tema principal | Revisão fixa | Dissertação | Status |
 |---|---|---|---|---|
-| 10/08 | Fonologia, encontros, dígrafos, divisão silábica, prosódia, acentuação e ortografia | evolução/governança | tese e repertório | Planejado |
+| 10/08 | Fonologia, encontros, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia | evolução/governança | tese e repertório | Planejado |
 | 11/08 | Estrutura e formação das palavras; classes de palavras | Lei nº 4.769/Decreto | introdução objetiva | Planejado |
 | 12/08 | Termos da oração, período composto e classificação das orações | planejamento/organização | desenvolvimento 1 | Planejado |
 | 13/08 | Concordância verbal e nominal; regência e crase | Regimento/ética | desenvolvimento 2 | Planejado |
@@ -160,7 +164,7 @@ O banco semanal pode ser amplo, mas a primeira passagem tem **no máximo 10 ques
 
 | Data | Tema principal | Revisão fixa | Português/dissertação | Status |
 |---|---|---|---|---|
-| 17/08 | Lógica dedutiva, argumentativa e quantitativa; sequências; conjuntos | Administração Geral | interpretação + tese | Planejado |
+| 17/08 | Princípio da Regressão ou Reversão; lógica dedutiva, argumentativa e quantitativa; lógica matemática qualitativa; sequências; conjuntos e conjuntos numéricos | Administração Geral | interpretação + tese | Planejado |
 | 18/08 | Razões, regra de três, análise combinatória, probabilidade, PA e PG | Legislação CRA/CFA | gramática aplicada + introdução | Planejado |
 | 19/08 | Equações, matrizes, determinantes, sistemas, polinômios, geometria e trigonometria | Conhecimentos do Cargo | coesão + desenvolvimento | Planejado |
 | 20/08 | PC-hardware, equipamentos, operacionalização e Windows | Legislação CRA/CFA | sintaxe + desenvolvimento | Planejado |
@@ -237,7 +241,7 @@ Não entra conteúdo novo pesado nesta semana.
 1. produzir uma trilha, semana e componente por vez;
 2. congelar arquivos fora do lote declarado;
 3. validar teoria e fontes antes das questões;
-4. limitar a primeira passagem a 10 questões essenciais por dia;
+4. usar seis questões como núcleo e limitar a primeira passagem a 10 Essenciais por dia;
 5. corrigir integralmente antes de aumentar o volume;
 6. reservar o saldo do banco para D+2, aprofundamento, D+7 e ciclo seguinte;
 7. não chamar uma semana de concluída sem aceite de produção e execução;

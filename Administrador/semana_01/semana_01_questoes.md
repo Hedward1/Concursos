@@ -32,16 +32,16 @@ Cada item deve ter quatro alternativas A-D, uma única melhor resposta, nível, 
 
 ## Primeira passagem e ciclos futuros
 
-| Dia | Dez Essenciais da primeira passagem | Saldo |
+| Dia | Fila ordenada de dez Essenciais | Execução e saldo |
 |---:|---|---|
-| 1 | seleção fixa indicada no fragmento Q001-Q070 | D+2, aprofundamento, D+7 e ciclo seguinte |
-| 2 | seleção fixa indicada no fragmento Q071-Q140 | D+2, aprofundamento, D+7 e ciclo seguinte |
-| 3 | seleção fixa indicada no fragmento Q141-Q210 | D+2, aprofundamento, D+7 e ciclo seguinte |
-| 4 | seleção fixa indicada no fragmento Q211-Q280 | D+2, aprofundamento, D+7 e ciclo seguinte |
-| 5 | seleção fixa indicada no fragmento Q281-Q350 | D+2, aprofundamento, D+7 e ciclo seguinte |
-| 6 | seleção fixa indicada no fragmento Q351-Q420 | D+2, aprofundamento, D+7 e ciclo seguinte |
+| 1 | seleção fixa indicada no fragmento Q001-Q070 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
+| 2 | seleção fixa indicada no fragmento Q071-Q140 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
+| 3 | seleção fixa indicada no fragmento Q141-Q210 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
+| 4 | seleção fixa indicada no fragmento Q211-Q280 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
+| 5 | seleção fixa indicada no fragmento Q281-Q350 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
+| 6 | seleção fixa indicada no fragmento Q351-Q420 | D+2: saldo D0; D+7: reabertura/Revisão; ciclos: Aprofundamento/Simulado |
 
-O banco completo não integra a primeira passagem. A correção A-D das dez Essenciais e o registro no caderno de erros encerram o contato inicial.
+O banco completo não integra a primeira passagem. Resolva seis itens da fila e avance até dez apenas se a correção A-D ainda couber no tempo; o saldo não resolvido da própria fila abre o D+2. As cinco Essenciais de reabertura ficam para D+7 e não se somam ao bloco de 35 minutos. O registro no caderno de erros encerra o contato inicial.
 
 ## Código de confiança
 

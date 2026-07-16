@@ -21,13 +21,13 @@ Esta semana não tenta encerrar todo o edital. Orçamento público, licitações
 ## Ordem de uso
 
 1. execute as sessões do dia na ordem apresentada pela apostila;
-2. encerre a primeira passagem após as dez questões Essenciais e sua correção integral;
+2. resolva seis Essenciais e avance até dez apenas se houver tempo para correção integral; leve o saldo da fila ao D+2;
 3. registre erros e acertos inseguros;
-4. abra o saldo de Essenciais em D+2 e só depois avance para Aprofundamento;
-5. reserve Revisão para D+7 e Simulado para o ciclo seguinte;
+4. abra somente o saldo da fila de D0 no bloco D+2 de 35 minutos;
+5. em D+7, execute a fila de reabertura e a Revisão; deixe Aprofundamento e Simulado para os ciclos indicados;
 6. produza os treinos curtos e a dissertação diagnóstica sem pular o modelo comentado;
 7. resolva o super simulado apenas depois dos seis dias.
 
 ## Status
 
-O status de produção será registrado em `relatorio_aceite.md`. A conclusão operacional depende da execução do candidato e do preenchimento do caderno de erros.
+Status de produção: **Material aprovado para execução**, conforme `relatorio_aceite.md`. A conclusão operacional depende da execução do candidato, das revisões programadas, da dissertação manuscrita e do preenchimento do caderno de erros.

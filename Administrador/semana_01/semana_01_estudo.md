@@ -48,11 +48,13 @@ Cada dia possui **duas sessões de 2h50 líquidas**. Faça uma pausa real de 30 
 | 4 | 35 min | revisão de conteúdo já ensinado: CRA/CFA, RLM, Informática ou conteúdo anterior |
 | 5 | 40 min | Português e dissertação: regra ensinada, modelo e treino curto |
 | 6 | 25 min | recuperação ativa, sem teoria nova |
-| Essenciais | 30 min | dez questões indicadas no banco semanal |
+| Essenciais | 30 min | seis questões; avance até dez somente se houver tempo para correção integral |
 | Correção | 25 min | correção A-D e caderno de erros |
 | Fechamento | 15 min | mini revisão e checklist |
 
-**Ponto de parada B:** encerre a primeira passagem quando tiver corrigido integralmente as dez Essenciais. O restante do banco não pertence à jornada inicial; será usado em D+2, D+7, D+21 e ciclos de aprofundamento.
+**Ponto de parada B:** encerre a primeira passagem após corrigir integralmente de seis a dez Essenciais. As dez questões listadas formam uma fila ordenada, não uma obrigação de volume. O saldo dessa fila abre o D+2; o restante do banco será usado em D+7, D+21 e ciclos de aprofundamento.
+
+**Regra operacional do D+2:** o bloco tem 35 minutos e começa pelo saldo não resolvido da fila D0, no máximo quatro itens. Trabalhe em ordem apenas enquanto couber a correção A-D. Em dias que também contêm Base Zero, preserve até dez minutos para essa revisão curta. A lista de reabertura não se soma ao saldo: ela começa em D+7, junto com eventual remanescente que não coube no bloco.
 
 ### Consolidação administrativa após a Sessão B - 20 min
 
@@ -84,7 +86,7 @@ Todo erro e todo acerto com confiança 0 ou 1 entra no caderno de erros.
 
 ## Base Zero - conteúdos que serão apenas revisados nos Blocos 4 e 5
 
-Leia esta seção antes do Dia 1. Ela não é uma terceira sessão: são 35 minutos de preparação, feitos na véspera ou divididos nos dois primeiros dias. Seu propósito é impedir que uma suposta “revisão” cobre algo nunca ensinado.
+Não reserve tempo adicional antes do Dia 1. Esta seção é a fonte curta dos conteúdos incorporados aos Blocos 4 e 5; leia cada base apenas quando o roteiro diário remeter a ela. Seu propósito é impedir que uma suposta “revisão” cobre algo nunca ensinado sem acrescentar 35 minutos às 6 horas diárias.
 
 ### Base CRA/CFA
 
@@ -131,7 +133,8 @@ Antes de escrever, transforme o tema em uma pergunta. Sua tese deve responder a 
 Ao final do dia, você deverá:
 
 - associar problema, premissa e instrumento a cada abordagem administrativa;
-- distinguir Administração Científica, Teoria Clássica, burocracia e Relações Humanas;
+- distinguir Administração Científica, Teoria Clássica, burocracia, Neoclássica e Relações Humanas;
+- situar as abordagens Estruturalista e Matemática/Quantitativa entre pessoas, estrutura e decisão;
 - explicar por que sistemas e contingência rejeitam soluções universais;
 - ordenar os principais marcos da Administração Pública brasileira após 1930;
 - diferenciar patrimonialismo, burocracia e modelo gerencial;
@@ -141,18 +144,18 @@ Ao final do dia, você deverá:
 
 ### Sessão A - 2h50
 
-- **Bloco 1 (55 min):** Taylor, Fayol e Weber.
-- **Bloco 2 (55 min):** Relações Humanas, abordagem comportamental, sistemas e contingência.
+- **Bloco 1 (55 min):** Taylor, Fayol, Weber e síntese Neoclássica pelo quadro de contraste.
+- **Bloco 2 (55 min):** Relações Humanas, Estruturalista, comportamental, Matemática/Quantitativa, sistemas e contingência em sínteses comparadas.
 - **Bloco 3 (60 min):** evolução pública brasileira, reformas, nova gestão pública e PDRAE; resolver os três casos.
 
-**Ponto de parada:** desenhe, sem consulta, uma linha com `clássicas -> humanas/comportamentais -> sistemas -> contingência` e outra com `patrimonial -> burocrática -> gerencial`. Anote ao menos uma característica e um limite de cada estágio.
+**Ponto de parada:** desenhe, sem consulta, uma linha com `clássicas/burocracia -> humanas/neoclássica/estruturalista -> comportamental/quantitativa -> sistemas -> contingência` e outra com `patrimonial -> burocrática -> gerencial`. Anote a contribuição e um limite de cada abordagem sem acrescentar tempo à sessão.
 
 ### Sessão B - 2h50
 
 - **Bloco 4 (35 min):** revisão da Base CRA/CFA.
 - **Bloco 5 (40 min):** dissertação - tese e recorte, com modelo ensinado antes do treino.
 - **Bloco 6 (25 min):** recuperação ativa do conteúdo do dia, sem consulta e sem conteúdo novo.
-- **Essenciais (30 min):** executar o roteiro de dez questões do dia.
+- **Essenciais (30 min):** corrigir ao menos seis itens da fila de dez; avançar somente enquanto a correção integral couber na jornada.
 - **Correção (25 min):** corrigir A-D e alimentar o caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist.
 
@@ -188,6 +191,16 @@ A burocracia busca previsibilidade, continuidade e igualdade formal de tratament
 
 **Pegadinha Consulplan:** chamar pessoalidade, favoritismo e confusão entre patrimônio público e privado de “burocracia”. Esses traços são patrimonialistas.
 
+### 4. Abordagem Neoclássica
+
+A abordagem Neoclássica retoma princípios clássicos de forma **pragmática e eclética**, com ênfase no processo administrativo, nos objetivos e nos resultados. A organização continua precisando planejar, organizar, dirigir e controlar, mas os princípios deixam de ser receitas rígidas e passam a funcionar como orientações ajustáveis à situação.
+
+Administração por Objetivos, descentralização e avaliação por resultados aparecem associadas a esse movimento. O tratamento completo da APO ficará no Dia 3; aqui importa reconhecer a ponte entre as funções clássicas e a gestão orientada a objetivos.
+
+**Contraste:** a Teoria Clássica tende à prescrição universal; a Neoclássica recupera suas funções com orientação prática, resultados e adaptação. Ela não se confunde com a Nova Gestão Pública, que é movimento posterior aplicado ao setor público.
+
+**Limite:** ao privilegiar objetivos e desempenho, pode simplificar relações de poder, conflitos e aspectos sociais se utilizada isoladamente.
+
 ### Quadro de contraste
 
 | Abordagem | Unidade de análise dominante | Pergunta típica | Instrumento | Risco/limite |
@@ -195,6 +208,7 @@ A burocracia busca previsibilidade, continuidade e igualdade formal de tratament
 | Científica | tarefa e operário | como executar com maior eficiência? | tempos, movimentos e padrão | mecanicismo |
 | Clássica | estrutura e administração | como organizar e administrar o todo? | funções e princípios | universalismo formal |
 | Burocrática | autoridade e aparato formal | como obter previsibilidade legítima? | regra, mérito, hierarquia | disfunção formalista |
+| Neoclássica | processo administrativo e resultados | como aplicar funções administrativas aos objetivos? | PODC, objetivos e avaliação | reduzir a organização a metas |
 
 ### Exemplo resolvido 1 - diagnóstico da abordagem
 
@@ -206,21 +220,35 @@ Uma servidora recebe ordens incompatíveis do gerente funcional e do coordenador
 
 <a id="dia-1-teorias-humanas-sistemas-contingencia"></a>
 
-## Bloco 2 - pessoas, decisões, sistemas e contingência
+## Bloco 2 - pessoas, estrutura, decisões, sistemas e contingência
 
-### 4. Relações Humanas
+### 5. Relações Humanas
 
 A abordagem das Relações Humanas desloca atenção para grupos, relações sociais, liderança, comunicação e organização informal. Os estudos de Hawthorne são associados à percepção de que produtividade não depende apenas de condições físicas e incentivos econômicos; normas do grupo, atenção, pertencimento e relações sociais influenciam o comportamento.
 
 Evite duas simplificações: ela não prova que “trabalhador feliz sempre produz mais” e não elimina a estrutura formal. Seu mérito é mostrar que o sistema social do trabalho importa.
 
-### 5. Abordagem comportamental
+### 6. Abordagem Estruturalista
+
+A abordagem Estruturalista procura integrar a organização **formal e informal** e examina a organização como unidade social complexa, atravessada por autoridade, incentivos, interesses e conflitos. Também amplia o foco para as relações entre organizações e ambiente, em vez de observar somente tarefa, estrutura interna ou grupo imediato.
+
+O conflito não é necessariamente patologia: pode revelar divergências reais e produzir mudança, embora também gere custos. O chamado “homem organizacional” desempenha papéis em diversas organizações e precisa lidar com expectativas múltiplas.
+
+**Contraste:** a burocracia explica a autoridade legal-racional e o aparato formal; o Estruturalismo compara diferentes organizações e integra estrutura formal, relações informais e conflitos. Ele não equivale à abordagem sistêmica, embora prepare uma visão mais ampla da organização e do ambiente.
+
+### 7. Abordagem comportamental
 
 A abordagem comportamental aprofunda motivação, liderança e processo decisório. Herbert Simon critica a imagem do decisor plenamente racional: informação, tempo e capacidade cognitiva são limitados. O gestor frequentemente procura solução **satisfatória**, não o ótimo matemático absoluto. Esse é o princípio da racionalidade limitada.
 
 As teorias específicas de motivação e liderança serão estudadas no Dia 4. Por ora, retenha que pessoas não são recursos passivos e decisões são centrais para explicar organizações.
 
-### 6. Abordagem sistêmica
+### 8. Abordagem Matemática ou Quantitativa
+
+A abordagem Matemática/Quantitativa usa modelos para apoiar decisões: programação linear, teoria das filas, simulação, análise de risco, probabilidades e pesquisa operacional ajudam a comparar alternativas sob restrições. O modelo torna premissas e relações verificáveis, mas sua qualidade depende dos dados e dos critérios escolhidos.
+
+**Contraste:** a abordagem comportamental explica limites cognitivos e comportamento decisório; a quantitativa estrutura o problema e calcula consequências possíveis. Otimização matemática não elimina julgamento, valores públicos nem fatores qualitativos. Uma solução ótima para custo pode ser inadequada se ignorar legalidade, equidade ou qualidade.
+
+### 9. Abordagem sistêmica
 
 A organização é um **sistema aberto**: recebe entradas do ambiente, transforma-as, gera saídas e usa retroalimentação para ajustar o funcionamento.
 
@@ -237,7 +265,7 @@ Conceitos úteis:
 
 Otimizar um departamento e piorar o resultado global é **subotimização**. Exemplo: compras reduz preço adquirindo lote enorme, mas aumenta estoque, perdas e custo total.
 
-### 7. Abordagem contingencial
+### 10. Abordagem contingencial
 
 Não existe uma única forma universalmente superior de organizar. Estrutura e práticas eficazes dependem do ajuste entre variáveis como ambiente, tecnologia, estratégia, porte e pessoas. “Depende” não significa arbitrariedade: exige diagnosticar a contingência e buscar alinhamento.
 
@@ -248,7 +276,9 @@ Ambientes estáveis e tarefas rotineiras tendem a admitir desenhos mais mecanici
 | Abordagem | Ideia-chave | Erro de prova |
 |---|---|---|
 | Relações Humanas | grupo informal e relações sociais importam | prometer causalidade automática entre satisfação e produtividade |
+| Estruturalista | formal, informal, conflitos e relações interorganizacionais | reduzi-la à burocracia ou negar todo conflito |
 | Comportamental | motivação, liderança e decisão | pressupor racionalidade ilimitada |
+| Matemática/Quantitativa | modelos apoiam decisões sob restrições | tratar o resultado do modelo como decisão automática |
 | Sistemas | partes interdependentes em ambiente aberto | otimizar parte ignorando o todo |
 | Contingência | adequação ao contexto | interpretar “depende” como ausência de método |
 
@@ -264,7 +294,7 @@ Duas unidades têm o mesmo organograma. Uma executa fiscalização repetitiva e 
 
 ## Bloco 3 - Administração Pública brasileira, reformas e PDRAE
 
-### 8. Modelos patrimonial, burocrático e gerencial
+### 11. Modelos patrimonial, burocrático e gerencial
 
 Os modelos são **tipos analíticos**. Na realidade, traços dos três podem coexistir.
 
@@ -276,7 +306,7 @@ Os modelos são **tipos analíticos**. Na realidade, traços dos três podem coe
 
 O modelo gerencial não autoriza abandonar procedimentos, legalidade, concurso ou prestação de contas. Ele procura deslocar parte do controle estrito de meios para resultados, preservando garantias públicas.
 
-### 9. Linha do tempo após 1930
+### 12. Linha do tempo após 1930
 
 #### Anos 1930 e DASP
 
@@ -294,7 +324,7 @@ O Programa Nacional de Desburocratização, iniciado em 1979, procurou simplific
 
 O Plano Diretor da Reforma do Aparelho do Estado (PDRAE), de 1995, diagnosticou crise fiscal, esgotamento de formas de intervenção e problemas administrativos. Propôs administração gerencial orientada a resultados, maior autonomia acompanhada de responsabilização, controle social e foco no cidadão.
 
-### 10. Nova Gestão Pública
+### 13. Nova Gestão Pública
 
 A chamada Nova Gestão Pública reúne tendências como definição de objetivos, indicadores, avaliação de desempenho, descentralização, contratualização de resultados, foco no usuário e emprego seletivo de práticas gerenciais. Não há modelo único nem simples “privatização da Administração”.
 
@@ -304,7 +334,7 @@ A chamada Nova Gestão Pública reúne tendências como definição de objetivos
 2. nem todo resultado público é facilmente mensurável;
 3. competição e metas podem produzir distorções se ignorarem equidade, legalidade e cooperação.
 
-### 11. O mapa do PDRAE
+### 14. O mapa do PDRAE
 
 O PDRAE separa setores do aparelho do Estado e discute a forma de propriedade mais adequada:
 
@@ -341,14 +371,17 @@ Um órgão exige concurso e procedimento formal, adota metas e, em certa unidade
 
 1. Taylor = tarefa; Fayol = organização e função administrativa.
 2. Weber descreve tipo ideal; disfunções não são os objetivos da burocracia.
-3. organização informal não foi “inventada” por Mayo; foi evidenciada como variável relevante.
-4. sistema aberto troca recursos e informação com o ambiente.
-5. contingência não prescreve uma solução universal nem dispensa diagnóstico.
-6. burocracia combate patrimonialismo, mas pode desenvolver rigidez.
-7. gerencialismo não elimina legalidade e controle.
-8. Decreto-Lei nº 200/1967 valoriza descentralização e delegação.
-9. publicização, no PDRAE, não é privatização.
-10. atividade exclusiva envolve poder estatal; serviço não exclusivo admite atuação plural.
+3. Neoclássica retoma funções administrativas com pragmatismo e foco em objetivos; não é sinônimo de Nova Gestão Pública.
+4. organização informal não foi “inventada” por Mayo; foi evidenciada como variável relevante.
+5. Estruturalismo integra formal, informal e conflitos; não se reduz à burocracia.
+6. modelo quantitativo apoia a decisão; não substitui julgamento nem critérios públicos.
+7. sistema aberto troca recursos e informação com o ambiente.
+8. contingência não prescreve uma solução universal nem dispensa diagnóstico.
+9. burocracia combate patrimonialismo, mas pode desenvolver rigidez.
+10. gerencialismo não elimina legalidade e controle.
+11. Decreto-Lei nº 200/1967 valoriza descentralização e delegação.
+12. publicização, no PDRAE, não é privatização.
+13. atividade exclusiva envolve poder estatal; serviço não exclusivo admite atuação plural.
 
 <a id="dia-1-revisao-fixa"></a>
 
@@ -394,9 +427,10 @@ Não redija o texto inteiro hoje.
 
 ## Bloco 6 - recuperação ativa sem conteúdo novo
 
-Feche a teoria e produza, de memória:
+Feche a teoria e, dentro dos mesmos 25 minutos, produza de memória uma tabela única com Científica, Clássica, Burocrática, Neoclássica, Relações Humanas, Estruturalista, Comportamental, Matemática/Quantitativa, Sistemas e Contingência. Para cada uma, registre em uma linha curta `foco -> contribuição -> limite`.
 
-- uma tabela com Taylor, Fayol, Weber, Relações Humanas, Sistemas e Contingência;
+Depois escolha **dois**, não todos, entre os seguintes prompts:
+
 - a linha histórica DASP -> Decreto-Lei nº 200/1967 -> desburocratização -> Constituição de 1988 -> PDRAE;
 - os quatro setores do PDRAE;
 - a distinção entre privatização e publicização;
@@ -406,8 +440,9 @@ Só depois compare com as seções estudadas. Lacuna não é convite a aprender 
 
 ## Mini revisão do Dia 1
 
-- Taylor racionaliza tarefas; Fayol sistematiza a administração; Weber explica a autoridade legal-racional.
-- abordagens humanas e comportamentais recolocam grupos, pessoas e decisões no centro.
+- Taylor racionaliza tarefas; Fayol sistematiza a administração; Weber explica a autoridade legal-racional; a Neoclássica liga funções a objetivos e resultados.
+- Relações Humanas destaca grupos; o Estruturalismo integra formal, informal e conflitos; a comportamental aprofunda pessoas e decisões.
+- a abordagem quantitativa modela alternativas e restrições, sem substituir julgamento.
 - sistemas enfatiza interdependência; contingência, adequação ao contexto.
 - a reforma burocrática buscou profissionalização; a gerencial acrescentou foco em resultados e responsabilização.
 - o PDRAE separa núcleo estratégico, atividades exclusivas, serviços não exclusivos e produção para o mercado.
@@ -419,6 +454,7 @@ Só depois compare com as seções estudadas. Lacuna não é convite a aprender 
 3. Como a abordagem sistêmica explica uma meta departamental que piora o serviço total?
 4. Publicização e privatização são equivalentes no PDRAE?
 5. Por que os modelos patrimonial, burocrático e gerencial podem coexistir?
+6. Como diferenciar Neoclássica, Estruturalista e Matemática/Quantitativa em um caso?
 
 ### Respostas
 
@@ -427,12 +463,16 @@ Só depois compare com as seções estudadas. Lacuna não é convite a aprender 
 3. Como subotimização: melhorar uma parte sem considerar interdependências pode aumentar retrabalho ou custo do sistema.
 4. Não. Publicização é a transferência, no desenho do Plano, de serviços não exclusivos ao setor público não estatal; privatização transfere propriedade/atividade ao setor privado.
 5. Porque são tipos analíticos e reformas não apagam imediatamente práticas anteriores; uma mesma organização pode reunir regras impessoais, metas gerenciais e favores patrimonialistas.
+6. Neoclássica retoma o processo administrativo com objetivos e resultados; Estruturalista integra organização formal, informal, conflitos e relações entre organizações; Matemática/Quantitativa modela alternativas e restrições para apoiar decisões.
 
 ## Checklist de domínio do Dia 1
 
 - [ ] associo Taylor à tarefa e Fayol à organização;
 - [ ] explico burocracia sem confundi-la com sua disfunção;
+- [ ] diferencio a retomada pragmática Neoclássica da prescrição clássica e da Nova Gestão Pública;
 - [ ] diferencio Relações Humanas e abordagem comportamental;
+- [ ] reconheço o foco Estruturalista em formal, informal e conflitos;
+- [ ] uso modelo quantitativo como apoio, sem transformar cálculo em decisão automática;
 - [ ] aplico sistema aberto, feedback e subotimização;
 - [ ] aplico contingência sem usar “depende” de modo vazio;
 - [ ] ordeno os marcos públicos após 1930;
@@ -443,9 +483,9 @@ Só depois compare com as seções estudadas. Lacuna não é convite a aprender 
 
 <a id="dia-1-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 1
+## Fila ordenada de dez Essenciais - Dia 1
 
-No banco modular, selecione as dez questões marcadas como Essenciais do Dia 1. A seleção deve verificar, nesta ordem:
+No banco modular, use as dez questões marcadas como Essenciais do Dia 1 como fila. Resolva ao menos as seis primeiras; avance até a décima somente se conseguir corrigir A-D dentro do tempo. A fila deve verificar, nesta ordem:
 
 1. Taylor versus Fayol;
 2. burocracia versus disfunção;
@@ -506,7 +546,7 @@ Ao final do dia, você deverá:
 - **Bloco 4 (35 min):** D+1 do Dia 1 e revisão de RLM já ensinada na Base Zero.
 - **Bloco 5 (40 min):** dissertação - parágrafo argumentativo, com modelo antes do treino.
 - **Bloco 6 (25 min):** recuperação ativa, sem conteúdo novo.
-- **Essenciais (30 min):** dez questões do roteiro.
+- **Essenciais (30 min):** seis questões da fila; até dez somente se houver correção integral.
 - **Correção (25 min):** correção A-D e caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist.
 
@@ -812,9 +852,9 @@ Marque dúvidas. Só consulte as âncoras depois de terminar.
 
 <a id="dia-2-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 2
+## Fila ordenada de dez Essenciais - Dia 2
 
-As dez questões marcadas no banco devem verificar:
+As dez questões marcadas no banco formam a fila ordenada; resolva seis e use as demais se o tempo permitir. Elas devem verificar:
 
 1. governança versus gestão;
 2. governabilidade;
@@ -831,7 +871,7 @@ As dez questões marcadas no banco devem verificar:
 
 Para cada Essencial, registre comando, resposta, confiança, justificativa da correta, erro das demais e âncora. Classifique a causa: conteúdo, confusão de conceito, leitura de comando, aplicação ao caso ou insegurança. Crie um contraste, por exemplo: `eficácia = meta; efetividade = mudança`. Agende D+2.
 
-**Ponto final:** dez corrigidas integralmente. O restante fica fechado.
+**Ponto final:** pare após seis a dez Essenciais integralmente corrigidas; leve o saldo da fila para D+2 e mantenha as questões de Aprofundamento fechadas.
 
 ---
 
@@ -866,7 +906,7 @@ Ao final do dia, você deverá:
 - **Bloco 4 (35 min):** D+2 do Dia 1 e Informática da Base Zero.
 - **Bloco 5 (40 min):** Português - coesão e referência, ensinadas antes do treino.
 - **Bloco 6 (25 min):** recuperação ativa sem conteúdo novo.
-- **Essenciais (30 min):** dez questões do roteiro.
+- **Essenciais (30 min):** seis questões da fila; até dez somente se houver correção integral.
 - **Correção (25 min):** correção A-D e caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist.
 
@@ -1227,7 +1267,7 @@ Sem consulta, produza:
 
 <a id="dia-3-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 3
+## Fila ordenada de dez Essenciais - Dia 3
 
 1. funções PODC;
 2. níveis de planejamento;
@@ -1242,9 +1282,9 @@ Sem consulta, produza:
 
 ## Correção e caderno de erros - Dia 3
 
-Corrija as dez em A-D. Para ferramentas, registre sempre `entrada -> finalidade -> saída`: por exemplo, `problemas avaliados -> priorização -> ranking GUT`. Para erros de decisão, escreva qual etapa foi pulada ou qual viés apareceu. Vincule ao título/âncora e agende D+2 e D+7.
+Corrija A-D em cada item efetivamente resolvido. Para ferramentas, registre sempre `entrada -> finalidade -> saída`: por exemplo, `problemas avaliados -> priorização -> ranking GUT`. Para erros de decisão, escreva qual etapa foi pulada ou qual viés apareceu. Vincule ao título/âncora e agende D+2 e D+7.
 
-**Ponto final:** pare após dez Essenciais corrigidas.
+**Ponto final:** pare após seis a dez Essenciais integralmente corrigidas; leve o saldo da fila para D+2.
 
 ---
 
@@ -1279,7 +1319,7 @@ Ao final do dia, você deverá:
 - **Bloco 4 (35 min):** D+2 do Dia 2 e revisão CRA/CFA da Base Zero.
 - **Bloco 5 (40 min):** dissertação - contraponto e concessão, ensinados antes do treino.
 - **Bloco 6 (25 min):** recuperação ativa, sem conteúdo novo.
-- **Essenciais (30 min):** dez questões do roteiro.
+- **Essenciais (30 min):** seis questões da fila; até dez somente se houver correção integral.
 - **Correção (25 min):** correção A-D e caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist.
 
@@ -1618,7 +1658,7 @@ Sem consultar:
 
 <a id="dia-4-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 4
+## Fila ordenada de dez Essenciais - Dia 4
 
 1. variáveis estruturais;
 2. funcional/divisional/matricial;
@@ -1633,9 +1673,9 @@ Sem consultar:
 
 ## Correção e caderno de erros - Dia 4
 
-Nas dez Essenciais, transforme toda resposta em contraste: `matriz = duas dimensões; funcional = especialidade única dominante`; `higiênico evita insatisfação; motivacional favorece satisfação`. Em caso, copie apenas os fatos que determinaram a classificação. Registre confiança e agende reteste.
+Na fila de dez Essenciais, transforme cada item efetivamente resolvido em contraste: `matriz = duas dimensões; funcional = especialidade única dominante`; `higiênico evita insatisfação; motivacional favorece satisfação`. Em caso, copie apenas os fatos que determinaram a classificação. Registre confiança e agende reteste.
 
-**Ponto final:** dez Essenciais corrigidas, sem avançar no banco.
+**Ponto final:** seis a dez Essenciais corrigidas, sem avançar nas questões de Aprofundamento; o saldo da fila abre o D+2.
 
 ---
 
@@ -1671,7 +1711,7 @@ Ao final do dia, você deverá:
 - **Bloco 4 (35 min):** D+2 do Dia 3 e RLM da Base Zero.
 - **Bloco 5 (40 min):** dissertação - introdução e conclusão, ensinadas antes do treino.
 - **Bloco 6 (25 min):** recuperação ativa sem conteúdo novo.
-- **Essenciais (30 min):** dez questões do roteiro.
+- **Essenciais (30 min):** seis questões da fila; até dez somente se houver correção integral.
 - **Correção (25 min):** correção A-D e caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist.
 
@@ -2012,7 +2052,7 @@ Feche a apostila e faça:
 
 <a id="dia-5-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 5
+## Fila ordenada de dez Essenciais - Dia 5
 
 1. equilíbrio organizacional;
 2. objetivos e desafios da gestão de pessoas;
@@ -2029,7 +2069,7 @@ Feche a apostila e faça:
 
 Em cada questão, registre o subsistema envolvido e a evidência decisiva. Se errou técnica, escreva `o que mede -> vantagem -> limite`. Se errou desempenho, nomeie o viés e reescreva o julgamento com evidência comportamental. Agende D+2 e D+7.
 
-**Ponto final:** dez Essenciais corrigidas.
+**Ponto final:** seis a dez Essenciais integralmente corrigidas; leve o saldo da fila para D+2.
 
 ---
 
@@ -2065,9 +2105,9 @@ Ao final do dia, você deverá:
 ### Sessão B - 2h50
 
 - **Bloco 4 (35 min):** D+2 do Dia 4 e Informática da Base Zero.
-- **Bloco 5 (40 min):** dissertação - planejamento completo e revisão, ensinados antes do treino.
-- **Bloco 6 (25 min):** recuperação integrada, sem conteúdo novo.
-- **Essenciais (30 min):** dez questões do roteiro.
+- **Bloco 5 (45 min):** dissertação diagnóstica completa, manuscrita e cronometrada.
+- **Bloco 6 (20 min):** recuperação integrada, sem conteúdo novo.
+- **Essenciais (30 min):** seis questões da fila; as quatro restantes abrem o D+2.
 - **Correção (25 min):** correção A-D e caderno de erros.
 - **Fechamento (15 min):** mini revisão e checklist semanal.
 
@@ -2469,7 +2509,7 @@ Explique por que compartilhar link “qualquer pessoa com o link” pode violar 
 
 <a id="dia-6-portugues-dissertacao"></a>
 
-## Bloco 5 - dissertação: planejamento completo e revisão
+## Bloco 5 - dissertação diagnóstica completa
 
 ### Método ensinado
 
@@ -2491,17 +2531,17 @@ Depois de redigir, revise em quatro passagens:
 
 **Checklist de frase:** sujeito e verbo concordam; pronome tem referente; vírgula não separa sujeito e verbo; conector expressa a relação correta; período longo pode ser dividido.
 
-### Treino de 25 minutos
+### Treino de 45 minutos
 
-Tema: “A melhoria contínua dos serviços depende tanto de dados quanto da participação das pessoas.”
+Tema: **“Tecnologia e inclusão: condições para que a digitalização de serviços amplie, em vez de restringir, o exercício da cidadania.”**
 
-Produza apenas o plano completo e um parágrafo de desenvolvimento. Use qualidade/processos como repertório, sem transformar o texto em resposta técnica fechada. Reserve cinco minutos para revisão pelas quatro passagens.
+Produza à mão uma dissertação completa de 20 a 30 linhas: cinco minutos para planejamento, 35 para redação e cinco para revisão pelas quatro passagens. Apresente tese clara e dois argumentos sobre acessibilidade e confiabilidade, sem transformar o texto em relatório técnico ou parecer. Só depois da execução abra o espelho e o modelo em `semana_01_dissertacoes.md`.
 
 <a id="dia-6-recuperacao-ativa"></a>
 
 ## Bloco 6 - recuperação ativa integrada sem conteúdo novo
 
-Sem consulta, em 25 minutos:
+Sem consulta, em 20 minutos, escolha quatro prompts; os demais entram na recuperação D+7:
 
 1. associe sete teóricos às contribuições;
 2. associe sete ferramentas às finalidades;
@@ -2558,7 +2598,7 @@ Sem consulta, em 25 minutos:
 
 <a id="dia-6-dez-essenciais"></a>
 
-## Roteiro das dez Essenciais - Dia 6
+## Fila ordenada de dez Essenciais - Dia 6
 
 1. teóricos da qualidade;
 2. ferramentas e PDCA;
@@ -2575,7 +2615,7 @@ Sem consulta, em 25 minutos:
 
 Corrija A-D e registre confiança. Para autor, escreva `autor -> contribuição -> confusão evitada`. Para ferramenta, escreva `pergunta -> dado -> saída`. Para estatística, refaça a conta e interprete a unidade. Para BPM, descreva o nível: disciplina, notação ou sistema. Agende D+2 e D+7.
 
-**Ponto final:** após as dez Essenciais corrigidas, a primeira passagem da Semana 1 está encerrada.
+**Ponto final:** após seis Essenciais integralmente corrigidas e a dissertação completa, a primeira passagem da Semana 1 está encerrada. As quatro questões restantes da fila abrem o D+2.
 
 ---
 
@@ -2585,9 +2625,9 @@ Corrija A-D e registre confiança. Para autor, escreva `autor -> contribuição 
 
 ## Revisão integrada em 20 conexões
 
-1. Taylor melhora tarefa; Fayol organiza a função administrativa.
-2. Weber procura previsibilidade legal-racional; patrimonialismo mistura público e privado.
-3. sistemas explica interdependência; contingência ajusta desenho ao contexto.
+1. Taylor melhora tarefa; Fayol organiza a função administrativa; a Neoclássica liga o processo a objetivos e resultados.
+2. Weber procura previsibilidade legal-racional; o Estruturalismo integra formal, informal e conflitos; patrimonialismo mistura público e privado.
+3. a abordagem comportamental explica limites do decisor; a quantitativa modela alternativas; sistemas explica interdependência e contingência ajusta desenho ao contexto.
 4. reforma burocrática fortalece mérito e regra; gerencial acrescenta resultado e responsabilização.
 5. governança direciona e monitora; gestão executa.
 6. governabilidade sustenta politicamente decisões.
@@ -2610,10 +2650,12 @@ Corrija A-D e registre confiança. Para autor, escreva `autor -> contribuição 
 
 | Momento | Ação | Limite |
 |---|---|---|
-| D+2 | refazer erros e saldo de Essenciais do dia | 40 min |
-| D+7 | questões de Revisão + mapa em branco | 60 min |
+| D+2 ou próximo bloco disponível | saldo da fila D0 em ordem; só depois, se houver tempo, um erro grave ou acerto inseguro | 35 min |
+| D+7 | fila de reabertura, eventual remanescente, questões de Revisão + mapa em branco | 60 min |
 | D+21 | reteste de erros reincidentes e questões difíceis | 60 min |
 | ciclo seguinte | Aprofundamento e Simulado | conforme plano mestre |
+
+O D+2 dos Dias 5 e 6 é carregado de forma explícita para os dois primeiros blocos de revisão da Semana 2, porque o domingo é preservado como descanso. Registre no caderno a data efetiva; não crie sessão extra nem tente reunir saldo e reabertura no mesmo bloco.
 
 ## Auditoria do caderno de erros
 
@@ -2622,8 +2664,9 @@ Ao encerrar:
 - [ ] todos os erros têm causa específica;
 - [ ] acertos com confiança 0/1 foram registrados;
 - [ ] cada registro possui regra correta e contraste;
+- [ ] cada registro contém uma aplicação nova que demonstra a regra;
 - [ ] cada registro aponta para âncora desta apostila;
-- [ ] D+2, D+7 e D+21 estão marcados;
+- [ ] D+2, D+7 e D+21 registram data efetiva e resultado;
 - [ ] os cinco erros de maior impacto viraram perguntas de recuperação.
 
 ## Fontes e referências da Semana 1

@@ -9,7 +9,7 @@ Material de preparação para o cargo de **Administrador** do concurso CRA-PR 20
 - plano mestre de nove semanas: criado;
 - método de preparação: criado;
 - padrão de qualidade semanal: criado;
-- Semana 1 - Administração Geral: em produção;
+- Semana 1 - Administração Geral: `Material aprovado para execução`;
 - Semanas 2 a 9: planejadas e ainda não produzidas.
 
 Uma semana só muda para `Material aprovado para execução` depois da auditoria prevista em `planejamento/padrao_semanal_administrador.md`. A execução real pelo candidato é registrada separadamente.
@@ -63,7 +63,7 @@ O ciclo central é:
 
 `edital -> teoria -> exemplo aplicado -> questões essenciais -> correção integral -> revisão D+2/D+7 -> caderno de erros -> simulado -> reparo`
 
-A primeira passagem contém **no máximo 10 questões essenciais por dia**, todas corrigidas e registradas. O restante do banco não aumenta artificialmente a jornada: será usado em D+2, aprofundamento, D+7 e ciclos seguintes.
+A primeira passagem contém uma fila de **no máximo 10 questões essenciais por dia**. Resolva seis como núcleo executável e só avance quando ainda puder corrigir A-D; o saldo da fila abre o D+2. O restante do banco não aumenta artificialmente a jornada: será usado em aprofundamento, D+7 e ciclos seguintes.
 
 O roteiro operacional está em `planejamento/metodo_preparacao_administrador.md`.
 
@@ -99,7 +99,7 @@ O roteiro operacional está em `planejamento/metodo_preparacao_administrador.md`
 - A Retificação I substituiu a referência à RN CFA nº 640/2024 pela RN nº 671/2025. A nº 671 revogou expressamente a nº 640.
 - A RN nº 649/2024 deve ser lida com a alteração da RN nº 670/2025.
 - A RN nº 626/2023 foi alterada pela RN nº 627/2023; seu prazo de adesão ao PERC terminou em 22/12/2023. O programa não pode ser apresentado como aberto.
-- A RN nº 680/2025 revogou a RN nº 633/2023 e é complementada pelas INs CFA nº 9 a 14/2026.
+- A RN nº 680/2025 revogou a RN nº 633/2023. As INs CFA nº 9 a 14/2026 só integram o conteúdo cobrável após conferência individual de publicação e vigência no corte do edital.
 - O item 5.3.6 do edital limita alterações normativas cobradas às que entraram em vigor até a publicação do Edital de Abertura. Uma atualização posterior deve ser registrada, mas não incorporada silenciosamente ao conteúdo cobrável.
 
 ## Regra de atualização

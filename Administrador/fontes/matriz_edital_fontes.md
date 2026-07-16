@@ -74,11 +74,11 @@ A prova discursiva é uma dissertação de conhecimento geral de 20 pontos, com 
 | Anuidades dos conselhos | [Lei nº 12.514/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12514.htm) | contribuições e cobrança pelos conselhos profissionais | Vigente, com alterações |
 | Registro | [RN CFA nº 649/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=951) e [RN nº 670/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1033) | regulamento de registro e alteração | Ler de forma consolidada |
 | Isenção | [RN CFA nº 546/2018](https://documentos.cfa.org.br/?a=show&c=documento&id=700) | isenção de débitos | Mapeada; conferir relações no CFA antes do lote |
-| Recuperação de créditos | [RN CFA nº 626/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=803) e RN nº 627/2023 | PERC e sua alteração | Prazo de adesão encerrado; não apresentar como programa aberto |
+| Recuperação de créditos | [RN CFA nº 626/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=803) e [RN nº 627/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=804) | PERC e sua alteração | Prazo de adesão encerrado; não apresentar como programa aberto |
 | Fiscalização | [RN CFA nº 589/2020](https://documentos.cfa.org.br/?a=show&c=documento&id=745) | Regulamento de Fiscalização | Mapeada; revogou as RNs 446 e 449 |
 | Regimento CRA-PR | [RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955) e [página do CRA-PR](https://cra-pr.org.br/transparencia_legislacao/transparencia-regimento-interno/) | organização, competências e funcionamento | Ativa; revogou o regimento da RN nº 263/2001 |
 | Ética | [RN CFA nº 671/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1038) | Código de Ética e Disciplina | Ativa no edital consolidado; revogou a RN nº 640/2024 |
-| Eleições | [RN CFA nº 680/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1058) e [índice oficial das INs nº 9 a 14/2026](https://documentos.cfa.org.br/?a=index&ano=&c=documento&current_page=15&ementa=&numero=&order=data_revogacao_asc&tipo_documento_id=) | regulamento eleitoral e operacionalização | RN nº 680 revogou a nº 633; ler com as INs 9-14 |
+| Eleições | [RN CFA nº 680/2025](https://documentos.cfa.org.br/?a=show&c=documento&id=1058); INs [9](https://documentos.cfa.org.br/?a=show&c=documento&id=1104), [10](https://documentos.cfa.org.br/?a=show&c=documento&id=1105), [11](https://documentos.cfa.org.br/?a=show&c=documento&id=1106), [12](https://documentos.cfa.org.br/?a=show&c=documento&id=1107), [13](https://documentos.cfa.org.br/?a=show&c=documento&id=1108) e [14/2026](https://documentos.cfa.org.br/?a=show&c=documento&id=1109) | regulamento eleitoral e controle de normas complementares | RN nº 680 revogou a nº 633; as INs não ampliam automaticamente o conteúdo cobrável sem conferência do corte do edital |
 | Língua Portuguesa | edital, gramáticas normativas e questões confirmadas da banca | programa literal e treino de prova | Selecionar por semana |
 | RLM e Informática | edital e documentação oficial dos produtos cobrados | programa literal e prática | Selecionar por semana |
 
@@ -107,11 +107,13 @@ A nº 670 alterou o Regulamento de Registro aprovado pela nº 649. Questões e r
 
 ### RN CFA nº 626/2023 e RN nº 627/2023
 
-A nº 626 foi alterada pela nº 627. A adesão ao PERC terminou em **22/12/2023**. O conteúdo pode ser cobrado porque o ato está nomeado no edital, mas o material deve distinguir regra histórica do programa e situação atual; é proibido afirmar que a adesão permanece aberta.
+A [RN nº 626/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=803) foi alterada pela [RN nº 627/2023](https://documentos.cfa.org.br/?a=show&c=documento&id=804). A adesão ao PERC terminou em **22/12/2023**. O conteúdo pode ser cobrado porque o ato está nomeado no edital, mas o material deve distinguir regra histórica do programa e situação atual; é proibido afirmar que a adesão permanece aberta.
 
 ### RN CFA nº 680/2025
 
-A nº 680 aprovou o Regulamento Eleitoral e revogou a RN nº 633/2023. Sua operacionalização é complementada pelas INs CFA nº 9 a 14/2026. A produção deve conferir o conjunto na base do CFA e respeitar o corte normativo do edital.
+A nº 680 aprovou o Regulamento Eleitoral e revogou a RN nº 633/2023. O gerenciador do CFA identifica as INs nº 9 a 14/2026, todas datadas de 08/04/2026, como orientações complementares à operacionalização do processo eleitoral. Essa data de cadastro/criação não substitui a conferência da publicação e da entrada em vigor para fins do item 5.3.6 do edital.
+
+Antes de incorporá-las ao conteúdo cobrável, conferir individualmente as INs [9](https://documentos.cfa.org.br/?a=show&c=documento&id=1104), [10](https://documentos.cfa.org.br/?a=show&c=documento&id=1105), [11](https://documentos.cfa.org.br/?a=show&c=documento&id=1106), [12](https://documentos.cfa.org.br/?a=show&c=documento&id=1107), [13](https://documentos.cfa.org.br/?a=show&c=documento&id=1108) e [14](https://documentos.cfa.org.br/?a=show&c=documento&id=1109), registrar publicação/entrada em vigor e compará-las à data de publicação do Edital de Abertura. Até essa conferência, elas servem apenas ao controle da situação operacional atual e não ampliam silenciosamente o programa.
 
 ### Regimento do CRA-PR
 
@@ -126,7 +128,7 @@ A RN nº 651/2024 aprovou o regimento atual do CRA-PR e revogou a RN nº 263/200
 | 16/07/2026 | RNs nº 649 e 670 | alteração do regulamento de registro | Semana 2 | ler em conjunto |
 | 16/07/2026 | RNs nº 626 e 627 | PERC alterado e adesão encerrada em 22/12/2023 | Semana 2 | ensinar o limite temporal |
 | 16/07/2026 | RN nº 651/2024 | regimento atual do CRA-PR | Semana 2 | bloquear a RN nº 263/2001 |
-| 16/07/2026 | RN nº 680/2025 e INs 9-14/2026 | novo regulamento eleitoral e normas complementares | Semana 2 | conferir todo o conjunto antes das questões |
+| 16/07/2026 | RN nº 680/2025 e INs 9-14/2026 | novo regulamento eleitoral; INs complementares ainda sujeitas ao teste de corte | Semana 2 | registrar publicação/entrada em vigor de cada IN antes de decidir sua incorporação |
 | 16/07/2026 | MTO 2026 | manual mantém histórico de versões | Semana 3 | registrar a versão consultada no lote |
 
 ## Checklist antes de produzir uma semana

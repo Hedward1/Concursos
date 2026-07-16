@@ -189,7 +189,7 @@ O banco pode ser dividido em `dias_01_e_02.md`, `dias_03_e_04.md` e `dias_05_e_0
 | Extras de revisão fixa | 20 | 120 |
 | **Banco total** | **70** | **420** |
 
-O roteiro diário seleciona no máximo 10 Essenciais para D0. Deve também indicar até 5 itens de reabertura em D+2. O saldo recebe uma finalidade clara: `Aprofundamento`, `Revisão` ou `Simulado`.
+O roteiro diário apresenta uma fila ordenada de no máximo 10 Essenciais para D0. A execução normal começa por seis e só avança até dez quando ainda houver tempo para correção integral; o saldo da fila abre o D+2. O roteiro deve também indicar até 5 itens de reabertura para D+7, sem duplicar os já resolvidos, e dar ao restante do banco uma finalidade clara: `Aprofundamento`, `Revisão` ou `Simulado`. Saldo de D0 e reabertura não podem ser somados no mesmo bloco de 35 minutos.
 
 ### Níveis
 

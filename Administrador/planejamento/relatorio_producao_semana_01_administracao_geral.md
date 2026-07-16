@@ -39,7 +39,7 @@ Orçamento público, licitação, ética e legislação específica do Sistema C
 
 1. usar seis dias e 6 horas líquidas por dia;
 2. ensinar antes de cobrar;
-3. selecionar no máximo 10 questões Essenciais por dia no D0;
+3. selecionar uma fila de 10 Essenciais, executar seis como núcleo e só avançar se a correção integral couber no D0;
 4. corrigir integralmente A-D antes de aumentar o volume;
 5. encaminhar o saldo do banco para D+2, aprofundamento, D+7 e ciclo seguinte;
 6. manter revisões de Conhecimentos do Cargo, Legislação CRA/CFA e Português;
@@ -55,7 +55,7 @@ Orçamento público, licitação, ética e legislação específica do Sistema C
 | `../README.md` | Criado | visão do cargo, matriz e método |
 | `../fontes/matriz_edital_fontes.md` | Criado | fontes, datas e alertas de vigência |
 | `plano_mestre_cra_pr_2026_administrador.md` | Criado | nove semanas executáveis |
-| `metodo_preparacao_administrador.md` | Criado | D0 limitado a 10 Essenciais |
+| `metodo_preparacao_administrador.md` | Criado | D0 com núcleo de seis e teto de 10 Essenciais |
 | `padrao_semanal_administrador.md` | Criado | contrato de qualidade e aceite |
 
 ## Componentes da Semana 1
@@ -71,6 +71,7 @@ Este é o quadro inicial de acompanhamento. O estado final deve ser atualizado n
 | questões D3-D4 | `../semana_01/questoes/dias_03_e_04.md` | Planejado |
 | questões D5-D6 | `../semana_01/questoes/dias_05_e_06.md` | Planejado |
 | caderno de erros | `../semana_01/semana_01_caderno_erros.md` | Em produção |
+| dissertação | `../semana_01/semana_01_dissertacoes.md` | Em produção |
 | super simulado | `../semana_01/semana_01_super_simulado.md` | Planejado |
 | auditoria final | `../semana_01/relatorio_aceite.md` | Planejado |
 
@@ -80,7 +81,7 @@ Este é o quadro inicial de acompanhamento. O estado final deve ser atualizado n
 
 | Lote | Escopo | Porta de saída |
 |---|---|---|
-| 1 | teoria e questões D1-D2 | conteúdo literal coberto, referências reais, até 10 Essenciais/dia |
+| 1 | teoria e questões D1-D2 | conteúdo literal coberto, referências reais, núcleo de seis e até 10 Essenciais/dia |
 | 2 | teoria e questões D3-D4 | planejamento, decisão, organização, direção e controle auditados |
 | 3 | teoria e questões D5-D6 | pessoas, qualidade, projetos e processos auditados |
 | 4 | super simulado | 60 itens inéditos, níveis 24/24/12 e comentários completos |
@@ -104,7 +105,7 @@ Essas normas entram nesta semana apenas como revisão previamente ensinada. A co
 | Risco | Controle |
 |---|---|
 | transformar a semana em Administração Pública da trilha de Analista | manter cargo e matriz no cabeçalho de todos os arquivos |
-| excesso de carga | limitar D0 a 10 Essenciais e distribuir o saldo |
+| excesso de carga | executar seis Essenciais, limitar D0 a 10 e distribuir o saldo |
 | teoria superficial diante de banco extenso | bloquear questão sem referência a seção anterior |
 | ferramenta ensinada como receita universal | incluir contexto, limite e alternativa comparável |
 | norma desatualizada | conferir a matriz de fontes antes de cada lote |
@@ -123,7 +124,7 @@ Essas normas entram nesta semana apenas como revisão previamente ensinada. A co
 | Médio/Difícil/Muito difícil | Pendente |
 | Gabaritos e comentários | Pendente |
 | Links e âncoras válidos | Pendente |
-| D0 com até 10 Essenciais por dia | Pendente |
+| D0 com núcleo de seis e até 10 Essenciais por dia | Pendente |
 | D+2/D+7/saldo identificados | Pendente |
 | Dissertação-modelo 20-30 linhas | Pendente |
 | Super simulado 60 | Pendente |

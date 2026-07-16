@@ -27,13 +27,13 @@ O ciclo só avança quando o candidato consegue explicar a regra, diferenciar co
 |---|---:|---|---|
 | 1 | 1h30 | teoria do tema principal | conceitos, finalidade, elementos e contrastes |
 | 2 | 1h20 | exemplos, ferramentas, casos e fonte oficial | aplicação, limites e passos de uso |
-| 3 | 1h40 | até 10 questões essenciais e correção integral | respostas justificadas e lacunas identificadas |
-| 4 | 40min | revisão fixa de disciplina de maior peso | recuperação ativa e itens do saldo do banco |
-| 5 | 30min | Português ou dissertação | domínio linguístico e produção textual |
-| 6 | 20min | caderno de erros | causa, regra correta e próxima revisão |
+| 3 | 55min | 6 a 10 questões essenciais e correção integral | respostas justificadas e lacunas identificadas |
+| 4 | 35min | revisão fixa de disciplina de maior peso | recuperação ativa e itens do saldo do banco |
+| 5 | 40min | Português ou dissertação | domínio linguístico e produção textual |
+| 6 | 1h | recuperação ativa, fechamento e caderno de erros | causa, regra correta e próxima revisão |
 | **Total** | **6h** | | |
 
-Pausas não entram nas 6 horas. No sábado, uma dissertação completa ou um simulado pode ocupar parte dos Blocos 1 a 3.
+Pausas não entram nas 6 horas. Os tempos são a configuração adotada na Semana 1; semanas futuras podem redistribuí-los sem ultrapassar 6 horas nem retirar a correção integral. No sábado, a dissertação completa pode receber cinco minutos do Bloco 6, como ocorre no Dia 6 da Semana 1.
 
 ## Bloco 1 - compreender
 
@@ -71,7 +71,7 @@ Em ferramentas como SWOT, GUT e 5W2H, o candidato deve saber finalidade, entrada
 
 ## Bloco 3 - resolver e corrigir
 
-A primeira passagem tem **no máximo 10 questões essenciais por dia**:
+A primeira passagem tem **seis questões como núcleo executável e no máximo dez Essenciais por dia**. A lista de dez é uma fila ordenada: só avance além da sexta se ainda houver tempo para corrigir integralmente A-D; o saldo abre o D+2.
 
 1. resolver sem consulta;
 2. registrar alternativa, confiança e tempo;
@@ -109,13 +109,15 @@ Esse volume é um **banco adaptativo**, não a tarefa da primeira passagem. A di
 
 | Momento | Uso do banco |
 |---|---|
-| D0 | até 10 essenciais, com correção integral |
-| D+2 | erros, acertos inseguros e pequena amostra do saldo |
+| D0 | seis essenciais como núcleo; até 10, com correção integral |
+| D+2 | saldo não resolvido da fila D0, em ordem, com correção integral; erro grave ou acerto inseguro só entra se restar tempo |
 | Aprofundamento | questões difíceis dos tópicos já compreendidos |
-| D+7 | conjunto misto e cumulativo |
+| D+7 | fila de reabertura, erros e conjunto misto cumulativo |
 | Ciclo seguinte | reparo, manutenção e simulado |
 
-É melhor corrigir 10 itens de verdade do que responder 50 superficialmente.
+É melhor corrigir de 6 a 10 itens de verdade do que responder 50 superficialmente.
+
+O bloco D+2 tem **35 minutos**. Ele não soma o saldo de até quatro Essenciais a uma lista adicional de cinco reaberturas. Execute o saldo da fila D0 na ordem e pare quando não houver tempo para correção A-D; qualquer remanescente, assim como a lista de reabertura, segue para D+7. Em dia com Base Zero no mesmo bloco, preserve o contato curto previsto no roteiro e reduza a quantidade de itens, nunca a qualidade da correção.
 
 ## Revisão espaçada
 
@@ -124,11 +126,11 @@ Cada tema recebe quatro contatos mínimos:
 | Momento | Ação |
 |---|---|
 | D0 | resumo oral de 2 minutos, checklist e caderno de erros |
-| D+2 | recuperação sem consulta e itens selecionados do saldo |
-| D+7 | questões mistas, mapa comparativo e erros refeitos |
+| D+2 | recuperação sem consulta e saldo da fila D0, até o limite real de 35 minutos |
+| D+7 | fila de reabertura, questões mistas, mapa comparativo e erros refeitos |
 | D+21 | mini simulado cumulativo e comparação do desempenho |
 
-Erro grave ou repetido pode retornar antes de D+2. O agendamento conta da data de estudo, não da criação do arquivo.
+Erro grave ou repetido pode retornar antes de D+2. O agendamento conta da data de estudo, não da criação do arquivo. Quando um dia de descanso impedir o intervalo exato, registre a data prevista e a data efetiva e use o próximo bloco disponível, sem criar uma sessão extra oculta.
 
 ## Caderno de erros de Administração
 
@@ -188,10 +190,10 @@ Não inventar dados, citações ou estatísticas. Repertório só entra quando p
 | Dia | Treino |
 |---|---|
 | Segunda | interpretar o tema, delimitar e formular tese |
-| Terça | selecionar dois argumentos e repertório pertinente |
-| Quarta | escrever introdução e primeiro desenvolvimento |
-| Quinta | escrever segundo desenvolvimento e testar a progressão |
-| Sexta | concluir e revisar os critérios microestruturais |
+| Terça | escrever um parágrafo com tópico frasal, explicação, exemplo e fechamento |
+| Quarta | treinar coesão referencial e sequencial em duas sequências argumentativas |
+| Quinta | construir contraponto, concessão e reafirmação da tese |
+| Sexta | produzir introdução e conclusão coerentes entre si |
 | Sábado | produzir texto completo manuscrito e cronometrado |
 
 Na Semana 1, o texto completo serve como diagnóstico. Da Semana 2 à 7, produzir pelo menos um texto integral por semana. Na Semana 8, os dois simulados reproduzem objetiva e dissertação em 4 horas. Na Semana 9, fazer apenas reparo leve.
@@ -225,7 +227,7 @@ Alertas obrigatórios:
 - RN nº 670/2025 altera a nº 649/2024;
 - RN nº 627/2023 altera a nº 626/2023, cujo PERC encerrou adesões em 22/12/2023;
 - RN nº 651/2024 substitui o antigo regimento da RN nº 263/2001;
-- RN nº 680/2025 revoga a nº 633/2023 e deve ser lida com as INs nº 9 a 14/2026.
+- RN nº 680/2025 revoga a nº 633/2023; as INs nº 9 a 14/2026 servem ao controle operacional atual, mas só integram o conteúdo cobrável depois da conferência individual de publicação e entrada em vigor no corte do item 5.3.6 do edital.
 
 ## Diagnóstico semanal
 
@@ -254,4 +256,4 @@ Antes de iniciar conteúdo pesado:
 5. reprogramar toda pendência com data;
 6. preservar o limite de carga da primeira passagem.
 
-Semana incompleta permanece `Em andamento` ou `Pendente`. Produção pronta e estudo executado são aceites diferentes.
+Semana com produção ainda incompleta permanece `Em produção`; falha eliminatória não sanada exige `Revisão obrigatória`. Depois do aceite de produção, o status é `Material aprovado para execução` até que o candidato conclua estudo, correções, revisões e dissertação e o aceite operacional seja registrado. Produção pronta e estudo executado são aceites diferentes.

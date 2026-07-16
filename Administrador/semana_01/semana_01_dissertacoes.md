@@ -2,7 +2,7 @@
 
 ## Regra oficial
 
-Para o cargo de Administrador, a prova discursiva é uma dissertação sobre tema de conhecimento geral. Vale 20 pontos, exige de 20 a 30 linhas e integra o tempo total de 4 horas da prova.
+Para o cargo de Administrador, a prova discursiva é uma dissertação sobre tema de conhecimento geral, de caráter eliminatório e classificatório. Vale 20 pontos, exige de 20 a 30 linhas, requer no mínimo 12 pontos para aprovação e integra o tempo total de 4 horas da prova.
 
 | Critério | Pontos |
 |---|---:|
@@ -14,7 +14,23 @@ Para o cargo de Administrador, a prova discursiva é uma dissertação sobre tem
 | Acentuação, ortografia, translineação, maiúsculas/minúsculas e pontuação | 4 |
 | **Total** | **20** |
 
-O edital desconta erros microestruturais dentro dos limites de cada critério. A autocorreção deve avaliar também fuga ao tema, gênero, quantidade de linhas, legibilidade e fragmentos escritos fora do espaço apropriado.
+Nos aspectos microestruturais, o edital aplica os seguintes descontos, sempre até o limite máximo do respectivo critério:
+
+| Grupo de erro | Desconto por ocorrência | Limite do critério |
+|---|---:|---:|
+| Estruturação sintática | 0,50 ponto | 2 pontos |
+| Morfossintaxe | 0,25 ponto | 3 pontos |
+| Desvios de acentuação, ortografia, translineação, maiúsculas/minúsculas e pontuação | 0,25 ponto | 4 pontos |
+
+O erro idêntico de ortografia é computado apenas uma vez. A mera referência a artigo de lei ou reprodução de seu texto, isoladamente, não garante pontuação. Quanto à extensão, ao espaço e à forma de resposta:
+
+- texto com menos de 20 linhas recebe nota zero;
+- fragmento que ultrapassar a 30ª linha é desconsiderado;
+- fragmento escrito fora do local apropriado também é desconsiderado;
+- a resposta deve ser manuscrita em letra legível, com caneta esferográfica de corpo transparente e tinta azul ou preta;
+- recebe nota zero o texto que não atende ao conteúdo avaliado, não apresenta texto, é ilegível, é grafado por meio diferente do determinado, contém identificação em local indevido ou incorre no limite inferior de linhas.
+
+A autocorreção deve avaliar atendimento ao tema e ao gênero, legibilidade, forma de escrita e identificação indevida antes de atribuir os 20 pontos. Esta é uma síntese operacional dos itens 5.2.7 a 5.2.12 do edital consolidado, preservado em `../edital/edital_cra_pr_2026_administrador_retificacao_1.pdf`; em caso de dúvida, prevalece a redação literal do edital.
 
 ## Progressão dos seis dias
 
