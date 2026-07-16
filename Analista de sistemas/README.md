@@ -13,6 +13,7 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
 - `planejamento/relatorio_auditoria_semana_01_dias_1_2.md`: relatório final da auditoria pedagógica dos 140 itens dos Dias 1 e 2, com evidências de cobertura, jornada e aceite técnico do lote.
 - `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
+- `planejamento/relatorio_auditoria_semana_01_dias_5_6.md`: auditoria individual dos 140 itens dos Dias 5 e 6, com reorganização pedagógica, níveis, usos, referências e carga da primeira passagem.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões do banco complementar, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
@@ -32,7 +33,9 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 
 Os Dias 3 e 4 foram auditados integralmente: a teoria antecede todas as cobranças e a primeira passagem termina em três sessões de 2h50, com apenas 10 Essenciais resolvidas e corrigidas. O saldo abre D+2; Revisão e Simulado ficam em D+7 e no ciclo seguinte. No Dia 4, questões reescritas por integração normativa produziram a distribuição substantiva de 30 Médias, 15 Difíceis e 5 Muito difíceis. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
 
-Os Dias 1 e 2 foram auditados integralmente e aprovados no lote próprio. A teoria antecede a cobrança; a primeira passagem cabe em três sessões de 2h50, 2h50 e 3h, com 10 Essenciais resolvidas e corrigidas por dia. O saldo segue para D+2, o Aprofundamento termina antes de D+7, a Revisão ocorre em D+7 e o Simulado no ciclo seguinte. Os Dias 5 e 6 continuam fora deste aceite.
+Os Dias 1 e 2 foram auditados integralmente e aprovados no lote próprio. A teoria antecede a cobrança; a primeira passagem cabe em três sessões de 2h50, 2h50 e 3h, com 10 Essenciais resolvidas e corrigidas por dia. O saldo segue para D+2, o Aprofundamento termina antes de D+7, a Revisão ocorre em D+7 e o Simulado no ciclo seguinte.
+
+Os Dias 5 e 6 foram auditados no lote próprio. O Dia 5 apresenta estrutura e modelo discursivo completo comentado antes da produção; o Dia 6 separa Administração Pública e RLM em sessões substantivas. Em ambos, o Bloco 6 apenas recupera conteúdo já estudado, a primeira passagem termina com 10 Essenciais corrigidas e o saldo do banco fica distribuído entre D+2, aprofundamento, D+7 e simulado. O aceite e as ressalvas de aprofundamento constam no relatório específico; nenhum outro lote foi incluído nessa revisão.
 
 ## Questões
 
