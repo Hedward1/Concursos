@@ -2920,7 +2920,7 @@ D) Núcleo estratégico — atividade exclusiva — serviço não exclusivo — 
 
 </details>
 
-### Q070 — Ótimo matemático e valor público
+### Q070 — Simulação, risco e decisão pública
 
 **Nível:** Muito difícil
 
@@ -2928,31 +2928,31 @@ D) Núcleo estratégico — atividade exclusiva — serviço não exclusivo — 
 
 **Referência:** [Dia 1 — pessoas, decisões, sistemas e contingência](../semana_01_estudo.md#dia-1-teorias-humanas-sistemas-contingencia)
 
-Uma agência modela a distribuição de doze fiscais entre três regiões. Busca minimizar a espera ponderada, respeita orçamento, jornada e cobertura legal mínima e testa cenários de demanda. A solução de menor espera, porém, concentra risco residual em grupo vulnerável não representado no objetivo. Qual decisão é mais defensável?
+Uma unidade simula filas usando probabilidades estimadas de chegada e atendimento para comparar agendamento, triagem prioritária e novo canal digital. A alternativa de menor espera média dobra a espera dos 5% mais demorados entre usuários que precisam de atendimento assistido, e os dados vieram de amostra pequena anterior à mudança. Qual decisão é mais defensável?
 
-A) Aplicar a solução automaticamente, porque objetivo, restrições e cenários transformam o ótimo calculado em prova suficiente de valor público.
+A) Adotar a menor média, pois uma simulação probabilística transforma a alternativa vencedora em decisão ótima e torna irrelevantes casos demorados, acesso e incerteza amostral.
 
-B) Revisar objetivo, dados e restrições, simular cenários alternativos e submeter as opções à decisão competente com legalidade e equidade explícitas.
+B) Validar dados e premissas, simular cenários e riscos, comparar média, casos demorados, acesso e qualidade e submeter os trade-offs à autoridade competente.
 
-C) Preservar a cobertura legal e escolher a distribuição atual sem analisar o modelo, pois qualquer incerteza impede comparação quantitativa útil.
+C) Descartar toda modelagem, porque probabilidades estimadas e amostra pequena impedem qualquer comparação, mesmo após validação e novos cenários.
 
-D) Retirar a cobertura mínima e a equidade da formulação para reduzir a espera, deixando ao analista aceitar sozinho os riscos residuais.
+D) Escolher apenas pelo maior fluxo total, retirar o atendimento assistido da base e deixar o analista aceitar sozinho o risco dos casos demorados.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. A formulação e os cenários melhoram a análise, mas não provam valor quando um efeito relevante ficou fora do objetivo.
-- **B:** Correta. A alternativa preserva o uso do modelo, corrige sua formulação, testa robustez e recoloca critérios públicos e competência decisória.
-- **C:** Incorreta. Incerteza recomenda cenários e sensibilidade; não autoriza descartar toda comparação estruturada.
-- **D:** Incorreta. Remover restrições públicas fabrica eficiência aparente, e o analista não recebe competência automática para aceitar riscos.
+- **A:** Incorreta. A média oculta casos muito demorados, e simulação não elimina fragilidade dos dados nem critérios públicos de acesso e qualidade.
+- **B:** Correta. A alternativa trata distribuição, incerteza, riscos e dimensões públicas e preserva a competência para decidir os trade-offs.
+- **C:** Incorreta. Incerteza exige validação, novos dados e cenários; não torna automaticamente inútil toda comparação quantitativa.
+- **D:** Incorreta. Excluir usuários e olhar apenas fluxo mascara o risco, e o analista não recebe competência automática para aceitá-lo.
 
-**Conceito:** A abordagem quantitativa apoia decisões sob restrições, mas o ótimo depende da formulação e não substitui legalidade, equidade e julgamento.
+**Conceito:** Simulação e análise de risco comparam consequências prováveis, mas dependem dos dados, das premissas e dos critérios escolhidos.
 
-**Pegadinha:** Confundir ótimo interno ao modelo com melhor decisão pública possível.
+**Pegadinha:** Usar somente a média, ignorar casos extremos ou tratar probabilidade estimada como certeza decisória.
 
-**Raciocínio:** 1) identifique objetivo, alternativas e restrições; 2) teste cenários; 3) procure efeitos omitidos; 4) preserve competência e critérios públicos.
+**Raciocínio:** 1) valide amostra e premissas; 2) compare média e casos demorados; 3) teste cenários e riscos; 4) incorpore acesso e qualidade; 5) preserve competência.
 
 **Nível:** Muito difícil
 
@@ -4466,7 +4466,7 @@ D) Tempestividade e resolutividade melhoraram, mas atendimento assistido é part
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Reconhece três dimensões, mas solução não prova eficiência sem recursos nem efetividade sem efeito social amplo.
+- **A:** Incorreta. Tempestividade e resolutividade melhoraram, mas confiabilidade e acesso foram apenas preservados; também não há recursos nem efeito social que provem eficiência ou efetividade.
 - **B:** Correta. Distingue as dimensões que melhoraram das que foram preservadas e não extrapola para custo ou mudança social ampla.
 - **C:** Incorreta. Não há dado de recursos para eficiência, e a mediana é medida válida de prazo, resistente a extremos.
 - **D:** Incorreta. Atendimento assistido evidencia acesso, não participação, e estabilidade do erro sustenta confiabilidade.

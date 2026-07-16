@@ -1885,7 +1885,7 @@ D) “Você é desinteressado e precisa mudar sua personalidade antes da próxim
 
 </details>
 
-### Q325 — Componentes da competência
+### Q325 — CHA mobilizado em entrega complexa
 
 **Nível:** Difícil
 
@@ -1893,30 +1893,30 @@ D) “Você é desinteressado e precisa mudar sua personalidade antes da próxim
 
 **Referência:** [Dia 5 — desempenho e competências](../semana_01_estudo.md#dia-5-desempenho-competencias)
 
-Na gestão por competências, a associação correta é:
+Um servidor conhece a notação de processos, mapeia casos simples corretamente em simulação e se oferece para conduzir trabalho real. Diante de um fluxo transversal complexo, copia apenas o procedimento, ignora exceções e entrega mapa não validado, rejeitado pelos usuários. A chefia considera o CHA completo e atribui o insucesso apenas ao contexto. Qual avaliação é defensável?
 
-A) entrega = intenção declarada, mesmo sem resultado observável.
+A) A rejeição invalida todo conhecimento, habilidade e atitude já observados; cabe sancionar o servidor sem decompor a entrega, a complexidade, os critérios de validação ou as condições de execução.
 
-B) conhecimento = querer agir; habilidade = saber; atitude = resultado final.
+B) A simulação comprova competência universal; copiar o procedimento no caso complexo é entrega suficiente, ainda que exceções e usuários não tenham sido validados.
 
-C) competência = certificado obtido, independentemente de aplicação, contexto ou entrega observável no trabalho.
+C) O voluntariado prova atitude e transforma qualquer produto em entrega competente; conhecimento e habilidade deixam de depender do nível requerido pela situação.
 
-D) conhecimento é saber; habilidade é fazer; atitude é disposição para agir.
+D) Há evidências parciais de CHA, mas competência exige mobilização no contexto e entrega no padrão esperado; deve-se identificar a lacuna específica e as condições que afetaram o desempenho.
 
 <details><summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Entrega é resultado observável.
-- **B:** Incorreta. Troca os componentes e confunde atitude com entrega.
-- **C:** Incorreta. Certificado não demonstra mobilização em contexto nem entrega observável.
-- **D:** Correta. Resume CHA e mobilização em contexto.
+- **A:** Incorreta. Um resultado inadequado não apaga evidências anteriores de CHA; exige decompor nível requerido, entrega e fatores contextuais antes de atribuir causa.
+- **B:** Incorreta. Desempenho em caso simples não se generaliza automaticamente, e produto sem variantes ou validação não atende ao padrão da entrega complexa.
+- **C:** Incorreta. Disposição é necessária, mas não torna qualquer produto competente nem substitui conhecimento e habilidade no nível exigido.
+- **D:** Correta. Preserva as evidências parciais, testa sua mobilização na situação real e separa lacuna individual de condições que também influenciaram a entrega.
 
-**Conceito:** Competência não é estoque isolado; é capacidade mobilizada para produzir entrega.
+**Conceito:** Competência integra conhecimento, habilidade e atitude mobilizados em determinado contexto para produzir entrega segundo um padrão observável.
 
-**Pegadinha:** Parar no inventário de conhecimentos.
+**Pegadinha:** Tratar CHA como checklist suficiente ou usar um resultado isolado para apagar todas as evidências dos componentes.
 
-**Raciocínio:** Exija CHA, contexto e resultado.
+**Raciocínio:** Aplique cinco filtros: conhecimento, habilidade, atitude, complexidade contextual e critério da entrega.
 
 **Nível:** Difícil
 
@@ -2502,7 +2502,7 @@ D) basta tornar a descrição vaga para absorver qualquer mudança.
 
 </details>
 
-### Q340 — Curso bem avaliado, resultado ausente
+### Q340 — Diagnóstico antes do curso
 
 **Nível:** Difícil
 
@@ -2510,30 +2510,30 @@ D) basta tornar a descrição vaga para absorver qualquer mudança.
 
 **Referência:** [Dia 5 — seleção, cargos e capacitação](../semana_01_estudo.md#dia-5-selecao-cargos-capacitacao)
 
-Um curso recebeu alta satisfação e gerou aprendizagem em prova. No trabalho, porém, o sistema bloqueia a nova prática e os resultados não mudam. A conclusão correta é:
+Uma estratégia passa a exigir decisões apoiadas por novo painel. A análise da tarefa identifica filtros e validações; o diagnóstico individual mostra que parte da equipe já os domina, enquanto muitos erros decorrem de instrução incompatível com o sistema. A chefia propõe o mesmo curso genérico para todos. Qual plano é adequado?
 
-A) reação e aprendizagem provam comportamento e resultado.
+A) Matricular todos porque a prioridade estratégica prova lacuna individual uniforme, manter a instrução incompatível e medir sucesso apenas por presença e satisfação final.
 
-B) a baixa transferência demonstra necessariamente falta de atitude, sem considerar barreiras do contexto.
+B) Treinar somente quem errou por último, sem analisar a tarefa, pois erro recente demonstra falta de conhecimento e elimina causas de processo.
 
-C) reação e aprendizagem ocorreram; o sistema bloqueou transferência e resultado.
+C) Combinar análises organizacional, da tarefa e individual, segmentar lacunas treináveis, corrigir a instrução e definir objetivos observáveis para quem precisa aprender.
 
-D) o conteúdo deve ser repetido sem examinar o ambiente.
+D) Substituir o curso por punição coletiva, presumir que domínio prévio impede atualização e deixar critérios de desempenho para depois da intervenção.
 
 <details><summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Níveis não se inferem automaticamente.
-- **B:** Incorreta. O enunciado identifica barreira sistêmica.
-- **C:** Correta. Separa quatro níveis e diagnostica condição de transferência.
-- **D:** Incorreta. Repetição não remove o bloqueio.
+- **A:** Incorreta. Prioridade organizacional não prova lacuna uniforme; a alternativa mantém causa de processo e reduz avaliação a participação e reação.
+- **B:** Incorreta. Recência do erro não substitui análise da tarefa e do indivíduo nem exclui uma instrução defeituosa.
+- **C:** Correta. Integra os três níveis do diagnóstico, separa lacuna treinável de causa não instrucional e alinha objetivo à necessidade real.
+- **D:** Incorreta. Punição não diagnostica causa, domínio prévio não impede necessidade futura e critérios precisam anteceder a intervenção.
 
-**Conceito:** Capacitação depende de aprendizagem e ambiente que permita aplicar.
+**Conceito:** Levantamento de necessidades combina organização, tarefa e indivíduo e distingue lacunas treináveis de problemas de processo, regra ou recurso.
 
-**Pegadinha:** Responsabilizar o participante por impedimento tecnológico.
+**Pegadinha:** Transformar prioridade estratégica ou erro recente em prescrição automática do mesmo curso para todos.
 
-**Raciocínio:** Aplique três filtros: evidência em cada nível, local da barreira e intervenção adequada.
+**Raciocínio:** Aplique cinco filtros: estratégia, tarefa, indivíduo, causa treinável e objetivo observável.
 
 **Nível:** Difícil
 
