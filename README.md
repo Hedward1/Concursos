@@ -1,6 +1,6 @@
 # Concursos - CRA-PR 2026
 
-Repositório de preparação para o concurso CRA-PR 2026, organizado em duas trilhas independentes e em um método compartilhado de estudo.
+Repositório de preparação para o concurso CRA-PR 2026, organizado em três trilhas independentes e em um método compartilhado de estudo.
 
 ## Trilhas
 
@@ -12,6 +12,15 @@ Materiais de planejamento, teoria, questões e simulados para o cargo de Analist
 - [Planejamento](<Analista de sistemas/planejamento/plano_mestre_cra_pr_2026.md>)
 - [Semana 1](<Analista de sistemas/semana_01/semana_01_estudo.md>)
 - [Semana 2](<Analista de sistemas/semana_02/semana_02_estudo.md>)
+
+### Administrador
+
+Trilha própria para o cargo de Administrador, com Administração Geral como núcleo de maior peso e ciclos separados para Administração Pública, Legislação CFA/CRA, Português, RLM, Informática e dissertação.
+
+- [Visão geral da trilha](Administrador/README.md)
+- [Plano Mestre](Administrador/planejamento/plano_mestre_cra_pr_2026_administrador.md)
+- [Matriz de fontes](Administrador/fontes/matriz_edital_fontes.md)
+- [Semana 1 - Administração Geral](Administrador/semana_01/semana_01_estudo.md)
 
 ### Direito
 
@@ -26,12 +35,17 @@ Trilha comum para os cargos de Advogado e Analista Jurídico, com controle de vi
 
 - [Método de Preparação para Concursos](<Método de Preparação para Concursos.pdf>)
 
-Cada trilha adapta o método ao cargo, ao peso das disciplinas e ao tipo de prova. Na área jurídica, isso inclui controle de fontes, casos resolvidos e treino progressivo de parecer.
+Cada trilha adapta o método ao cargo, ao peso das disciplinas e ao tipo de prova. Na trilha de Administrador, isso significa priorizar os 30 pontos de Conhecimentos do Cargo sem abandonar os 20 pontos de Legislação CFA/CRA nem a dissertação. Na área jurídica, o método inclui controle de fontes, casos resolvidos e treino progressivo de parecer.
 
 ## Organização
 
 ```text
 CRA_PARANA/
+├── Administrador/
+│   ├── edital/
+│   ├── fontes/
+│   ├── planejamento/
+│   └── semana_01/
 ├── Analista de sistemas/
 │   ├── edital/
 │   ├── planejamento/
