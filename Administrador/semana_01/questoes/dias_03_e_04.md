@@ -6,19 +6,19 @@
 2. Na primeira passagem, resolva as seis primeiras da fila de D0; avance até a décima somente enquanto houver tempo para correção integral.
 3. Antes de abrir o comentário, marque a alternativa e registre confiança de `0` a `3`.
 4. Corrija A, B, C e D; erro ou acerto com confiança `0` ou `1` vai para o caderno de erros.
-5. No D+2, conclua o saldo da fila de D0, faça as cinco Essenciais de reabertura e só então use Revisão ou Aprofundamento.
+5. No D+2, use o bloco de 35 minutos para o saldo da fila de D0, em ordem e com correção integral; as cinco Essenciais de reabertura começam em D+7.
 6. Reserve as questões de Simulado para resolução cronometrada, sem consulta e sem interrupções.
 7. Q141–Q190 e Q211–Q260 formam o banco principal; Q191–Q210 e Q261–Q280 são extras para revisões e simulados.
 
 ### Seleção operacional — Dia 3
 
 - **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q141, Q145, Q149, Q153, Q157, Q161, Q165, Q170, Q178 e Q186.
-- **Reabertura — D+2 (5):** Q151, Q174, Q190, Q199 e Q207.
+- **Reabertura — D+7 (5):** Q151, Q174, Q190, Q199 e Q207.
 
 ### Seleção operacional — Dia 4
 
 - **Fila da primeira passagem — D0 (6 obrigatórias; teto 10):** Q211, Q215, Q219, Q223, Q227, Q231, Q235, Q240, Q248 e Q256.
-- **Reabertura — D+2 (5):** Q221, Q244, Q260, Q269 e Q277.
+- **Reabertura — D+7 (5):** Q221, Q244, Q260, Q269 e Q277.
 
 ---
 
@@ -1328,45 +1328,45 @@ D) Reconhecer visão e portal como iniciativa, convertendo o percentual sozinho 
 
 </details>
 
-### Q172 — Cadeia sem salto
+### Q172 — Critérios antes do favorito
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Dia 3 — PODC, níveis e planejamento](../semana_01_estudo.md#dia-3-podc-niveis-planejamento)
+**Referência:** [Dia 3 — planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao)
 
-O objetivo é reduzir o tempo de resposta sem perder qualidade. Qual conjunto o operacionaliza sem trocar medida, alvo e ação?
+Um comitê definiu o problema como demora no atendimento. Antes de registrar critérios e restrições, o presidente apresentou seu fornecedor favorito; o grupo descartou redesenhar o processo sem avaliá-lo e comparou apenas preços. Para recuperar o encadeamento analítico, o comitê deve:
 
-A) indicador: redesenhar triagem; meta: mediana de dias; iniciativa: 12 dias.
+A) escolher o fornecedor mais barato e definir critérios de qualidade durante a implementação, pois o preço já resume as consequências relevantes.
 
-B) indicador: qualidade; meta: melhorar; iniciativa: ser referência.
+B) manter apenas os fornecedores, transformar a solução preferida em critério e deixar o monitoramento posterior suprir a falta de alternativas.
 
-C) indicador: mediana; meta: 12 dias até dezembro; iniciativa: triagem; monitoramento: comparação.
+C) suspender a escolha, explicitar critérios e restrições, gerar alternativas reais — inclusive redesenho — e só então avaliar consequências e riscos.
 
-D) meta: reduzir tempo; indicador: até dezembro; iniciativa: 20 para 12.
+D) retomar a definição do problema somente após o contrato, porque gerar alternativas antes da implementação caracteriza decisão incremental.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Ação, medida e alvo foram trocados.
-- **B:** Incorreta. A formulação não oferece medida, nível e prazo verificáveis.
-- **C:** Correta. A cadeia conserva a função de cada elemento e fecha com acompanhamento.
-- **D:** Incorreta. Prazo isolado não é indicador e mudança numérica não é iniciativa.
+- **A:** Incorreta. Escolher antes de explicitar critérios inverte o processo; preço isolado não representa qualidade, riscos e demais consequências.
+- **B:** Incorreta. Uma preferência não é critério de avaliação, e monitorar depois não corrige o fechamento prematuro do conjunto de opções.
+- **C:** Correta. Critérios e restrições orientam a geração e a comparação de alternativas; consequências e riscos devem ser avaliados antes da escolha.
+- **D:** Incorreta. O problema já foi reconhecido, e alternativas precisam ser geradas antes da decisão; incrementalismo não significa contratar primeiro.
 
-**Conceito:** Objetivo orienta; indicador mede; meta fixa nível e prazo; iniciativa age.
+**Conceito:** O processo decisório analítico encadeia problema, critérios e restrições, alternativas, avaliação, escolha, implementação e aprendizagem.
 
-**Pegadinha:** Aceitar termos relacionados como intercambiáveis.
+**Pegadinha:** Aceitar uma solução favorita como se ela fosse critério e confiar que o monitoramento reparará uma escolha mal formada.
 
-**Raciocínio:** Teste se cada peça responde a uma pergunta diferente.
+**Raciocínio:** Identifique os passos pulados: os critérios não foram fixados, uma alternativa plausível foi excluída e a avaliação ocorreu sobre conjunto artificialmente estreito.
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Dia 3 — PODC, níveis e planejamento](../semana_01_estudo.md#dia-3-podc-niveis-planejamento)
+**Referência:** [Dia 3 — planejamento operacional, APO e decisão](../semana_01_estudo.md#dia-3-operacional-apo-decisao)
 
 </details>
 
@@ -4657,45 +4657,45 @@ D) responsabilidade é fator higiênico e condição física é motivacional.
 
 </details>
 
-### Q251 — Bônus maior, elo igual
+### Q251 — Preço, valores e autoajuste
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Dia 4 — organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao)
+**Referência:** [Dia 4 — delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho)
 
-O servidor valoriza muito um bônus, acredita que esforço melhora desempenho, mas não crê que desempenho afete a recompensa. Dobrar o bônus, sem mudar a avaliação, tende a:
+Uma instituição combina três mecanismos: I) seleciona fornecedores por competição e preço e vincula pagamentos ao contrato de nível de serviço; II) socializa especialistas em valores profissionais compartilhados para orientar casos ambíguos; III) cada analista compara seu painel com o padrão e corrige a própria execução. Pela forma predominante de controle, a associação correta é:
 
-A) garantir motivação máxima pela valência.
+A) I burocrático; II de mercado; III de clã, pois todo contrato é regra formal e todo painel expressa cultura coletiva.
 
-B) reduzir a expectativa de esforço-desempenho por definição.
+B) I de mercado; II burocrático; III posterior, pois valores são sempre normas escritas e autoajuste só ocorre depois do dano.
 
-C) instrumentalidade baixa apesar da valência alta.
+C) I de mercado; II de clã/cultural; III autocontrole, sem que essas formas afastem prestação de contas ou controles complementares.
 
-D) resolver percepção de equidade automaticamente.
+D) I preventivo; II concomitante; III estratégico, pois momento, nível e forma constituem uma única classificação de controle.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Valor da recompensa não corrige ligação inexistente.
-- **B:** Incorreta. A expectativa não foi alterada.
-- **C:** Correta. Em Vroom, um elo próximo de zero compromete o conjunto.
-- **D:** Incorreta. Não há comparação de razões nem garantia de justiça.
+- **A:** Incorreta. Competição, preço e contrato apontam para mercado; valores compartilhados, para clã; painel usado pelo próprio executor não é controle de clã.
+- **B:** Incorreta. O primeiro rótulo está correto, mas valores socializados não equivalem a normas escritas, e o terceiro mecanismo descreve autocontrole.
+- **C:** Correta. O caso apresenta, respectivamente, coordenação por mercado, socialização cultural e acompanhamento pelo próprio executor; as formas podem coexistir com outros controles.
+- **D:** Incorreta. Preventivo e concomitante classificam momento, estratégico classifica nível, e nenhum desses rótulos responde à forma predominante solicitada.
 
-**Conceito:** Vroom exige expectativa, instrumentalidade e valência percebidas.
+**Conceito:** Controle de mercado usa preços, competição e contratos; controle de clã/cultural usa valores socializados; autocontrole é exercido pelo executor.
 
-**Pegadinha:** Atuar no prêmio quando o problema está na ligação desempenho-recompensa.
+**Pegadinha:** Misturar os eixos forma, momento e nível ou supor que a existência de contrato torna todo mecanismo exclusivamente burocrático.
 
-**Raciocínio:** Diagnostique cada elo antes de escolher a intervenção.
+**Raciocínio:** Identifique o mecanismo que disciplina cada situação e só depois atribua os três rótulos na ordem apresentada.
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Dia 4 — organização informal, cultura e direção](../semana_01_estudo.md#dia-4-informal-cultura-direcao)
+**Referência:** [Dia 4 — delegação, controle e desempenho](../semana_01_estudo.md#dia-4-delegacao-controle-desempenho)
 
 </details>
 
