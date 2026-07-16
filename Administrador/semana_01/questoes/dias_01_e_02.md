@@ -3,15 +3,15 @@
 ## Roteiro operacional
 
 1. Leia integralmente a teoria do respectivo dia em `../semana_01_estudo.md` antes de responder.
-2. Na primeira passagem, faça somente as dez Essenciais indicadas abaixo, em até 30 minutos.
+2. Na primeira passagem, resolva as seis primeiras da fila; avance até a décima somente enquanto houver tempo para correção integral.
 3. Antes de abrir o comentário, marque a alternativa e registre confiança de `0` a `3`.
 4. Corrija A, B, C e D; erro ou acerto com confiança `0` ou `1` vai para o caderno de erros.
-5. No D+2, comece pelas cinco Essenciais de reabertura e só então avance para Revisão ou Aprofundamento.
+5. No D+2, conclua o saldo da fila inicial, faça as cinco Essenciais de reabertura e só então avance para Revisão ou Aprofundamento.
 6. Reserve as questões de Simulado para resolução cronometrada, sem consulta e sem interrupções.
 
 ### Seleção operacional — Dia 1
 
-- **Primeira passagem (10):** Q001, Q004, Q007, Q010, Q014, Q018, Q023, Q029, Q036 e Q044.
+- **Fila da primeira passagem (6 obrigatórias; teto 10):** Q001, Q004, Q007, Q010, Q014, Q018, Q023, Q029, Q036 e Q044.
 - **Abertura do D+2 (5):** Q051, Q055, Q059, Q064 e Q069.
 
 ---
@@ -364,31 +364,31 @@ D) DASP → Decreto-Lei nº 200/1967 → desburocratização → Constituição 
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Um órgão seleciona servidores por concurso, avalia metas de entrega e, em uma unidade, distribui funções de confiança por favorecimento pessoal. A classificação mais adequada é:
+O ingresso em um órgão ocorre por concurso; autorizações seguem rito impessoal; uma unidade recebe autonomia vinculada a metas; e o diretor reserva função de confiança a parente sem qualificação. Concurso, rito e metas continuam vigentes após a nomeação. Qual leitura preserva os quatro sinais?
 
-A) coexistência de traços burocráticos, gerenciais e patrimonialistas.
+A) Mérito e controle prévio são burocráticos, a autonomia por metas é gerencial e o favorecimento revela traço patrimonialista.
 
-B) modelo exclusivamente gerencial, porque existem metas.
+B) Concurso e rito são gerenciais, a autonomia é patrimonial e a nomeação familiar constitui discricionariedade burocrática regular.
 
-C) modelo exclusivamente burocrático, porque existe concurso.
+C) A nomeação converte o órgão integralmente ao patrimonialismo e torna analiticamente irrelevantes concurso, rito e metas.
 
-D) retorno integral ao patrimonialismo, que elimina os demais traços.
+D) Todos os sinais pertencem à burocracia, pois meta, autonomia e confiança pessoal são apenas formas de autoridade legal-racional.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Concurso indica mérito burocrático; metas, orientação gerencial; favor pessoal, traço patrimonialista.
-- **B:** Incorreta. Um indicador não apaga o concurso nem o favorecimento.
-- **C:** Incorreta. O concurso não neutraliza metas e práticas pessoais presentes.
-- **D:** Incorreta. Os modelos são tipos analíticos e podem coexistir em práticas distintas.
+- **A:** Correta. Classifica separadamente mérito, controle de meios, autonomia por resultados e favorecimento pessoal.
+- **B:** Incorreta. Troca as bases dos três modelos e normaliza o parentesco sem qualificação como burocrático.
+- **C:** Incorreta. O traço patrimonial não apaga instrumentos burocráticos e gerenciais que permanecem operantes.
+- **D:** Incorreta. Meta com autonomia e favor pessoal não derivam, ambos, da autoridade legal-racional.
 
 **Conceito:** A evolução administrativa não é substituição linear e total entre modelos.
 
-**Pegadinha:** Classificar toda a organização por um único sinal isolado.
+**Pegadinha:** Deixar a prática mais grave apagar os outros mecanismos que continuam funcionando.
 
-**Raciocínio:** Associe cada prática ao respectivo modelo e preserve a simultaneidade expressa no caso.
+**Raciocínio:** 1) classifique ingresso e rito; 2) examine autonomia e metas; 3) teste pessoalidade; 4) preserve a coexistência.
 
 **Nível:** Muito difícil
 
@@ -490,31 +490,31 @@ D) Valorizou planejamento, coordenação, descentralização, delegação e cont
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Uma reforma adota metas e indicadores, mas também preserva legalidade, equidade e controle social. À luz da Nova Gestão Pública estudada, essa combinação:
+Uma secretaria concede autonomia vinculada a metas de prazo e resolutividade. Ao notar que uma unidade recusa casos complexos para cumprir a cota, mantém via recursal, auditoria, acessibilidade e controle social e manda redesenhar os incentivos. À luz da Nova Gestão Pública, a decisão é:
 
-A) é contraditória, pois gerencialismo exige eliminar controles públicos.
+A) incoerente, porque garantias, auditoria e controle social anulam a autonomia e impedem qualquer gestão orientada a resultados.
 
-B) é coerente, pois resultados não afastam garantias nem reduzem o cidadão a cliente.
+B) coerente: instrumentos gerenciais convivem com garantias públicas, e a seleção de casos exige corrigir métricas e responsabilização.
 
-C) é patrimonialista, pois toda autonomia decorre de favor pessoal.
+C) patrimonialista: a distorção da meta prova favorecimento pessoal e recomenda substituir toda avaliação por controle apenas processual.
 
-D) é exclusivamente burocrática, pois indicador é incompatível com gestão gerencial.
+D) insuficiente: a queda do prazo autorizaria manter a cota, pois acesso, via recursal e equidade são externos ao desempenho gerencial.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. A abordagem gerencial não autoriza abandonar legalidade e prestação de contas.
-- **B:** Correta. Metas devem conviver com direitos, equidade e responsabilização.
-- **C:** Incorreta. Autonomia responsável e favorecimento pessoal são categorias distintas.
-- **D:** Incorreta. Objetivos, indicadores e avaliação são tendências gerenciais.
+- **A:** Incorreta. Autonomia responsável pressupõe controle e não torna direitos incompatíveis com resultados.
+- **B:** Correta. Reconhece a orientação gerencial, o efeito perverso da cota e os limites próprios do valor público.
+- **C:** Incorreta. Gaming ou cream skimming não prova favor pessoal nem justifica abandonar toda mensuração.
+- **D:** Incorreta. Prazo isolado não compensa exclusão, falta de equidade ou enfraquecimento de garantias.
 
 **Conceito:** A Nova Gestão Pública desloca atenção para desempenho e usuário, mas não transforma o Estado em empresa privada.
 
-**Pegadinha:** Tomar emprego seletivo de práticas gerenciais como privatização total.
+**Pegadinha:** Tratar garantias como obstáculo gerencial ou, no extremo oposto, usar uma meta ruim para rejeitar toda avaliação.
 
-**Raciocínio:** Verifique simultaneamente orientação a resultados e preservação das especificidades públicas.
+**Raciocínio:** 1) identifique autonomia e resultados; 2) detecte seleção de casos; 3) teste direitos e controles; 4) corrija o incentivo.
 
 **Nível:** Muito difícil
 
@@ -572,7 +572,7 @@ D) empresa estatal voltada ao mercado e necessariamente incumbida de atividade e
 
 **Uso:** Essenciais
 
-**Referência:** [Dia 1 — teorias, sistemas e evolução pública](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
+**Referência:** [Dia 1 — sistemas e contingência](../semana_01_estudo.md#dia-1-teorias-humanas-sistemas-contingencia) + [Dia 1 — evolução pública e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
 Uma autarquia fiscalizadora aplica sanções, mede apenas quantidade de autos, premia a unidade que mais autua e ignora aumento de anulações e recursos. Assinale o diagnóstico integrado mais preciso.
 
@@ -604,7 +604,7 @@ D) Atividade exclusiva, meta gerencial estreita e subotimização do resultado i
 
 **Uso:** Essenciais
 
-**Referência:** [Dia 1 — teorias, sistemas e evolução pública](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
+**Referência:** [Dia 1 — sistemas e contingência](../semana_01_estudo.md#dia-1-teorias-humanas-sistemas-contingencia) + [Dia 1 — evolução pública e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
 </details>
 
@@ -616,31 +616,31 @@ D) Atividade exclusiva, meta gerencial estreita e subotimização do resultado i
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Considere as proposições: I. A reforma burocrática buscou combater práticas patrimonialistas. II. A orientação gerencial acrescentou autonomia com responsabilização. III. A adoção de metas extingue automaticamente controles legais. IV. Traços dos modelos podem coexistir. Está correto o que se afirma em:
+Uma autarquia mantém concurso e decisões motivadas, descentraliza a execução com metas monitoradas e descobre que uma chefia distribui encargos por lealdade pessoal. O relatório final afirma que a reforma mais recente extinguiu integralmente os modelos anteriores. O diagnóstico mais defensável é:
 
-A) I e II, apenas.
+A) Predomina apenas a burocracia, pois concurso e motivação absorvem metas, descentralização e escolhas pessoais em uma lógica única.
 
-B) I e III, apenas.
+B) Predomina apenas o gerencialismo, pois metas monitoradas tornam facultativos o controle legal e a apuração do favorecimento interno.
 
-C) I, II e IV, apenas.
+C) Há instrumentos burocráticos e gerenciais com resíduo patrimonial; descentralização requer responsabilidade, e reformas não apagam traços anteriores.
 
-D) I, II, III e IV.
+D) O favorecimento converte toda a autarquia ao patrimonialismo, invalida concurso e metas e torna desnecessário distinguir cada prática.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Embora I e II sejam verdadeiras, a combinação omite IV.
-- **B:** Incorreta. III é falsa e a combinação omite II e IV.
-- **C:** Correta. I, II e IV são verdadeiras, enquanto III é falsa.
-- **D:** Incorreta. Inclui a proposição III, que transforma foco em resultados em abandono da legalidade.
+- **A:** Incorreta. Concurso e motivação são burocráticos, mas não absorvem a autonomia por metas nem o favor pessoal.
+- **B:** Incorreta. Orientação por resultados não torna legalidade e responsabilização facultativas.
+- **C:** Correta. Classifica os três traços, preserva a responsabilização e rejeita a tese de substituição linear.
+- **D:** Incorreta. A prática patrimonial exige correção, porém não elimina os mecanismos que permanecem no órgão.
 
 **Conceito:** Reformas alteram ênfases, mas não apagam automaticamente garantias nem práticas anteriores.
 
-**Pegadinha:** Combinar três filtros verdadeiros com uma afirmação absoluta sobre extinção de controles.
+**Pegadinha:** Transformar coexistência em aprovação do favorecimento ou em domínio exclusivo do traço mais recente ou mais grave.
 
-**Raciocínio:** Julgue cada item: I verdadeira; II verdadeira; III falsa; IV verdadeira; portanto, selecione I, II e IV.
+**Raciocínio:** 1) associe cada prática a um modelo; 2) verifique a continuidade dos controles; 3) rejeite apagamentos automáticos.
 
 **Nível:** Muito difícil
 
@@ -1456,31 +1456,31 @@ D) racionalização local de inspiração científica com subotimização sistê
 
 **Referência:** [Dia 1 — teorias administrativas](../semana_01_estudo.md#dia-1-evolucao-administrativa)
 
-Uma organização seleciona por mérito, documenta competências e adapta a estrutura de duas unidades conforme tecnologia e incerteza, sem dispensar regras. A leitura correta é:
+Uma organização exige qualificação impessoal e competência documentada para ocupar cargos. Na unidade rotineira, usa maior formalização; na unidade experimental, coordenação flexível, devido à tecnologia e à incerteza. Ambas mantêm rastreabilidade das decisões. A leitura correta é:
 
-A) traços burocráticos nos critérios de autoridade e aplicação contingencial no desenho.
+A) A autoridade tem base burocrática, os desenhos são contingenciais e a adaptação não dispensa controles formais necessários.
 
-B) patrimonialismo nos critérios e universalismo clássico no desenho.
+B) A autoridade é burocrática, mas os desenhos seguem prescrição clássica universal, pois rastreabilidade exige a mesma formalização nas duas unidades.
 
-C) Relações Humanas na seleção e Administração Científica no ambiente.
+C) A seleção por competência é gerencial, a diferenciação decorre da Administração Científica e a incerteza deixa de importar quando há controles.
 
-D) gerencialismo puro, incompatível com regras formais.
+D) A autoridade é burocrática e os desenhos são contingenciais, mas a unidade flexível deveria abandonar rastreabilidade para ser orgânica.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Mérito, competência e documentação são burocráticos; diferenciação por contexto é contingencial.
-- **B:** Incorreta. Não há favor pessoal nem solução estrutural universal.
-- **C:** Incorreta. Seleção formal não é norma grupal, e Taylor não toma ambiente como filtro central.
-- **D:** Incorreta. O caso combina abordagens e preserva regras.
+- **A:** Correta. Mérito e competência sustentam autoridade legal-racional; tecnologia e incerteza explicam a diferenciação; controle permanece.
+- **B:** Incorreta. Acerta a autoridade, mas diferenciação por tecnologia e incerteza nega prescrição única; rastreabilidade não exige igual formalização.
+- **C:** Incorreta. Competência documentada sustenta mérito burocrático, e Taylor não usa incerteza ambiental como filtro central de desenho.
+- **D:** Incorreta. Acerta autoridade e contingência, mas desenho orgânico não significa decisão sem registro ou controle.
 
 **Conceito:** Abordagens podem iluminar dimensões diferentes da mesma organização.
 
-**Pegadinha:** Exigir classificação única quando o caso apresenta instrumentos de dois modelos.
+**Pegadinha:** Confundir flexibilidade com ausência de controle e formalização diferenciada com receita universal.
 
-**Raciocínio:** 1) classifique seleção; 2) classifique desenho; 3) verifique se regras foram eliminadas.
+**Raciocínio:** 1) identifique a base da autoridade; 2) compare tecnologia e incerteza; 3) verifique ajuste; 4) preserve controles necessários.
 
 **Nível:** Muito difícil
 
@@ -1498,31 +1498,31 @@ D) gerencialismo puro, incompatível com regras formais.
 
 **Referência:** [Dia 1 — pessoas, decisões, sistemas e contingência](../semana_01_estudo.md#dia-1-teorias-humanas-sistemas-contingencia)
 
-Com informação incompleta, o gestor escolhe alternativa suficiente; depois, ajusta a estrutura à tecnologia e monitora efeitos entre departamentos. O encadeamento corresponde a:
+Sob prazo curto e evidência incompleta, o gestor adota a primeira solução que satisfaz o limite legal, em vez de buscar ótimo exaustivo. Mantém fiscalização rotineira mais formalizada e organiza o laboratório digital em equipe flexível; depois mede se a rapidez de um setor desloca retrabalho para outro. O diagnóstico é:
 
-A) maximização, teoria universal e isolamento departamental.
+A) Maximização decisória, desenho universal mecanicista e eficiência local suficiente para demonstrar desempenho do sistema inteiro.
 
-B) racionalidade limitada, contingência e visão sistêmica.
+B) Racionalidade limitada na escolha, ajuste contingencial das unidades e leitura sistêmica dos efeitos entre subsistemas.
 
-C) patrimonialismo, burocracia e sistema fechado.
+C) Racionalidade limitada na escolha, padronização estrutural universal e equifinalidade comprovada pelo deslocamento do retrabalho.
 
-D) unidade de comando, Relações Humanas e privatização.
+D) Irracionalidade administrativa, ruptura patrimonial da autoridade e homeostase entendida como ausência de mudança entre os setores.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. O caso nega ótimo absoluto, solução universal e isolamento.
-- **B:** Correta. Cada expressão corresponde, na ordem, aos três filtros conceituais.
-- **C:** Incorreta. Não há favor pessoal, e o monitoramento entre setores nega fechamento.
-- **D:** Incorreta. As categorias não explicam os elementos descritos.
+- **A:** Incorreta. A solução é satisfatória, os desenhos diferem pelo contexto e a melhora local ainda precisa ser testada no todo.
+- **B:** Correta. Limites decisórios, diferenciação por contexto e efeitos cruzados sustentam os três diagnósticos.
+- **C:** Incorreta. Acerta o processo decisório, mas o caso nega padronização universal e não demonstra caminhos equivalentes.
+- **D:** Incorreta. Limitação cognitiva não é irracionalidade, e não há favor pessoal nem equilíbrio sem mudança.
 
 **Conceito:** Processo decisório, ajuste estrutural e interdependência são dimensões complementares.
 
-**Pegadinha:** Acertar duas categorias, mas errar a terceira ou trocar sua ordem.
+**Pegadinha:** Aceitar alternativa que reconhece a decisão satisfatória, mas impõe estrutura única ou dá nome errado ao efeito cruzado.
 
-**Raciocínio:** 1) solução suficiente; 2) ajuste à tecnologia; 3) efeitos cruzados entre partes.
+**Raciocínio:** 1) compare solução satisfatória e ótima; 2) relacione desenho ao contexto; 3) acompanhe o fluxo além da meta local.
 
 **Nível:** Muito difícil
 
@@ -1540,31 +1540,31 @@ D) unidade de comando, Relações Humanas e privatização.
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-No mapa do PDRAE, qual combinação está correta?
+O governo pretende transferir a execução de um serviço social de pesquisa, no qual Estado e sociedade podem atuar, para entidade sem fins lucrativos orientada ao interesse público. Haverá metas, avaliação e controle social; já regulação e sanções permanecerão em autarquia. No mapa do PDRAE, há:
 
-A) Atividade exclusiva — privada — administração patrimonial.
+A) Privatização de produção para o mercado, propriedade lucrativa e delegação regular do poder sancionador à nova entidade.
 
-B) Serviço não exclusivo — pública não estatal como possibilidade — ênfase gerencial.
+B) Publicização de serviço não exclusivo para o setor público não estatal, com ênfase gerencial e atividade exclusiva preservada no Estado.
 
-C) Núcleo estratégico — privada — administração exclusivamente empresarial.
+C) Descentralização de núcleo estratégico para empresa privada, com administração apenas burocrática e regulação transferida ao executor.
 
-D) Produção para o mercado — estatal obrigatória — burocracia exclusiva.
+D) Transparência ativa sem mudança de propriedade, orientação patrimonial e absorção da pesquisa pela atividade estatal exclusiva.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Atividade exclusiva permanece estatal, e patrimonialismo não é forma indicada.
-- **B:** Correta. Alinha função, propriedade destacada e forma administrativa do plano.
-- **C:** Incorreta. O núcleo é estatal e combina segurança burocrática e efetividade gerencial.
-- **D:** Incorreta. O plano indica propriedade privada quando cabível e orientação empresarial.
+- **A:** Incorreta. O serviço não é produção concorrencial, a entidade não é lucrativa e a sanção não foi transferida.
+- **B:** Correta. Classifica serviço, forma de propriedade, orientação administrativa e reserva estatal do poder extroverso.
+- **C:** Incorreta. Pesquisa social não é direção superior, a entidade não é empresa e regulação segue estatal.
+- **D:** Incorreta. Publicização não é divulgação de dados, e pesquisa não se torna exclusiva por receber fomento público.
 
 **Conceito:** O mapa articula setor, forma de propriedade e ênfase administrativa.
 
-**Pegadinha:** Avaliar só um componente da combinação.
+**Pegadinha:** Chamar toda transferência de privatização ou supor que financiamento público transforma a entidade em estatal.
 
-**Raciocínio:** Teste três filtros em cada alternativa: função, propriedade e orientação administrativa.
+**Raciocínio:** 1) classifique o serviço; 2) identifique propriedade e finalidade; 3) examine metas e controle; 4) preserve a sanção estatal.
 
 **Nível:** Muito difícil
 
@@ -1574,7 +1574,7 @@ D) Produção para o mercado — estatal obrigatória — burocracia exclusiva.
 
 </details>
 
-### Q038 — Publicização sob três condições
+### Q038 — Publicização sem atalho conceitual
 
 **Nível:** Muito difícil
 
@@ -1582,31 +1582,31 @@ D) Produção para o mercado — estatal obrigatória — burocracia exclusiva.
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Qual situação reúne as condições estudadas de publicização?
+O Estado transfere a execução de atividades culturais, prestadas também por organizações sociais, a entidade sem fins lucrativos. Não vende a entidade nem lhe confere poder sancionador; financia entregas pactuadas, acompanha indicadores e mantém controle de resultados. O arranjo aproxima-se de:
 
-A) Venda de empresa estatal lucrativa a grupo privado.
+A) Privatização, porque toda execução externa implica venda ao setor empresarial, ainda que não haja lucro nem alienação patrimonial.
 
-B) Delegação de poder sancionador a sociedade empresarial, sem controle.
+B) Delegação de atividade exclusiva, porque financiamento público transforma cultura em poder estatal e dispensa controle por metas.
 
-C) Fomento de entidade sem fins lucrativos em serviço não exclusivo, com metas e avaliação.
+C) Publicização de serviço não exclusivo para entidade pública não estatal, com responsabilização gerencial pelos resultados pactuados.
 
-D) Divulgação ativa de relatório por ministério.
+D) Contratualização privada com transparência ativa, sem publicização, porque a entidade permanece fora da propriedade estatal.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Venda de propriedade corresponde a privatização.
-- **B:** Incorreta. Poder sancionador integra atividade exclusiva e o desenho ainda elimina controle.
-- **C:** Correta. Combina natureza do serviço, entidade pública não estatal e responsabilização por resultados.
-- **D:** Incorreta. É publicidade/transparência, não publicização no léxico do plano.
+- **A:** Incorreta. Execução externa sem venda, lucro ou alienação não caracteriza privatização empresarial.
+- **B:** Incorreta. Cultura permanece serviço não exclusivo, e financiamento não elimina responsabilização.
+- **C:** Correta. Natureza do serviço, finalidade da entidade e controle por resultados atendem ao desenho do PDRAE.
+- **D:** Incorreta. Estar fora da propriedade estatal é compatível com o setor público não estatal; divulgação não redefine o arranjo.
 
 **Conceito:** Publicização não é venda, divulgação nem delegação irrestrita de poder estatal.
 
-**Pegadinha:** Alternativas aproximam-se por uma palavra, mas falham em um dos três requisitos.
+**Pegadinha:** Usar o verbo “transferir” para ignorar finalidade, propriedade, natureza da função e mecanismos de controle.
 
-**Raciocínio:** 1) serviço não exclusivo; 2) sem fins lucrativos; 3) metas e controle.
+**Raciocínio:** 1) teste exclusividade; 2) descarte venda e lucro; 3) identifique entidade; 4) confirme metas e avaliação.
 
 **Nível:** Muito difícil
 
@@ -1666,31 +1666,31 @@ D) DASP simboliza profissionalização; 1967 valoriza descentralização; 1988 f
 
 **Referência:** [Dia 1 — teorias administrativas](../semana_01_estudo.md#dia-1-evolucao-administrativa)
 
-Uma repartição padroniza tarefas, seleciona por mérito, fixa meta de quantidade e distribui cargo específico por favor. A interpretação mais completa é:
+Uma autarquia redesenha a triagem por estudo de tempos e método; provê cargos efetivos por concurso e competência; concede autonomia monitorada por metas; e o dirigente reserva função comissionada a aliado sem qualificação. A leitura mais precisa é:
 
-A) há técnica científica, traço burocrático, instrumento gerencial e desvio patrimonial, respectivamente.
+A) Racionalização científica da tarefa, autoridade burocrática, instrumento gerencial e resíduo patrimonial, respectivamente.
 
-B) todas as práticas são burocráticas porque ocorrem em repartição.
+B) Padronização burocrática, ingresso taylorista, contratualização patrimonial e nomeação gerencial legitimada pela confiança política.
 
-C) todas são gerenciais porque existe meta.
+C) Organização informal na triagem, seleção contingencial, burocracia nas metas e gerencialismo na escolha pessoal do aliado.
 
-D) padronização e mérito demonstram patrimonialismo, enquanto favor demonstra burocracia.
+D) Modelo gerencial exclusivo, pois a existência de meta absorve método, mérito e favorecimento em uma mesma racionalidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Cada prática possui fundamento distinto e a ordem foi preservada.
-- **B:** Incorreta. O contexto público não uniformiza categorias conceituais diferentes.
-- **C:** Incorreta. Meta é apenas um dos quatro elementos.
-- **D:** Incorreta. Inverte mérito e favor e ignora a racionalização da tarefa.
+- **A:** Correta. Associa método, mérito, autonomia por resultados e pessoalidade às respectivas abordagens.
+- **B:** Incorreta. Troca Taylor e burocracia, trata meta como favor e normaliza nomeação sem qualificação como gerencial.
+- **C:** Incorreta. Não há norma grupal na triagem, e seleção, metas e favor foram classificados de modo invertido.
+- **D:** Incorreta. Um instrumento gerencial não apaga bases científicas, burocráticas ou patrimoniais das demais práticas.
 
 **Conceito:** Organizações reais combinam técnicas e modelos; a classificação deve seguir a prática observada.
 
-**Pegadinha:** Deixar uma característica dominante apagar as demais.
+**Pegadinha:** Classificar a organização inteira pela meta ou pelo vínculo público, em vez de examinar cada mecanismo.
 
-**Raciocínio:** 1) método; 2) critério de ingresso; 3) controle de resultado; 4) pessoalidade.
+**Raciocínio:** 1) identifique o objeto da racionalização; 2) teste mérito; 3) relacione autonomia e meta; 4) procure favor pessoal.
 
 **Nível:** Muito difícil
 
@@ -2752,7 +2752,7 @@ D) a consideração de equidade, universalidade e igualdade é incompatível com
 
 </details>
 
-### Q066 — Quatro filtros organizacionais
+### Q066 — Autoridade, decisão e fluxo total
 
 **Nível:** Muito difícil
 
@@ -2760,31 +2760,31 @@ D) a consideração de equidade, universalidade e igualdade é incompatível com
 
 **Referência:** [Dia 1 — teorias administrativas](../semana_01_estudo.md#dia-1-evolucao-administrativa)
 
-Uma equipe recebe duas ordens incompatíveis, escolhe solução apenas satisfatória, melhora sua meta e piora o fluxo total. O diagnóstico correto é:
+Um analista responde a duas chefias que impõem prazos incompatíveis ao mesmo processo. Sob tempo curto e dados parciais, escolhe a primeira alternativa que satisfaz o limite legal. Sua unidade cumpre a meta encaminhando autos incompletos, mas o retrabalho aumenta o prazo total. Há:
 
-A) unidade de direção preservada, maximização e sinergia.
+A) Tensão na unidade de direção, maximização decisória e sinergia, pois a melhora da triagem necessariamente beneficia o fluxo completo.
 
-B) burocracia ideal, equifinalidade e homeostase.
+B) Tensão na unidade de comando, racionalidade limitada e equifinalidade, pois caminhos distintos produziram resultado global equivalente.
 
-C) Relações Humanas, patrimonialismo e publicização.
+C) Estrutura matricial necessariamente válida, decisão irracional e homeostase, pois o retrabalho restabelece equilíbrio sem piora sistêmica.
 
-D) tensão na unidade de comando, racionalidade limitada e subotimização.
+D) Tensão na unidade de comando, racionalidade limitada e subotimização, apesar do cumprimento da meta local de encaminhamento.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Duas ordens tensionam comando; solução não é ótima; o todo piora.
-- **B:** Incorreta. As três categorias ignoram os sinais explícitos do caso.
-- **C:** Incorreta. Relação grupal, favor e serviço não exclusivo não foram descritos.
-- **D:** Correta. A alternativa resolve, na ordem, autoridade, decisão e efeito sistêmico.
+- **A:** Incorreta. O conflito recai sobre a chefia do indivíduo, a escolha não maximiza e o fluxo global piora.
+- **B:** Incorreta. Acerta autoridade e decisão, porém não houve resultados equivalentes: a melhora local elevou o prazo total.
+- **C:** Incorreta. Dupla chefia não valida automaticamente o desenho; solução satisfatória não é irracional, e o sistema piorou.
+- **D:** Correta. As ordens tensionam comando, a escolha reflete limites decisórios e a meta local prejudica o todo.
 
 **Conceito:** Um caso pode exigir integração entre princípios clássicos, abordagem comportamental e sistemas.
 
-**Pegadinha:** Acertar apenas o último filtro e ignorar as duas condições iniciais.
+**Pegadinha:** Aceitar uma alternativa que acerta dois filtros, mas chama piora global de equifinalidade ou sinergia.
 
-**Raciocínio:** 1) conte fontes de ordem; 2) classifique a escolha; 3) compare meta local e fluxo total.
+**Raciocínio:** 1) conte chefias sobre a mesma tarefa; 2) compare satisfazer e maximizar; 3) confronte indicador local e prazo ponta a ponta.
 
 **Nível:** Muito difícil
 
@@ -2844,31 +2844,31 @@ D) I, II, III e IV.
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](../semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Qual proposta é integralmente compatível com a evolução estudada?
+Uma reforma preserva ingresso por mérito e decisões impessoais; descentraliza a execução com coordenação e responsável definido; vincula autonomia a metas de quantidade, qualidade e equidade; e mantém via recursal, legalidade e controle social. A síntese historicamente adequada é:
 
-A) Mérito e impessoalidade; descentralização coordenada; metas com responsabilização; manutenção de legalidade e equidade.
+A) Combina profissionalização burocrática, descentralização coordenada e orientação gerencial responsável, sem converter garantias em obstáculos.
 
-B) Favor pessoal; delegação sem controle; meta única de quantidade; eliminação de direitos.
+B) Retoma o patrimonialismo, pois descentralizar sempre rompe impessoalidade, e metas de equidade substituem responsabilização por lealdade.
 
-C) Mérito sem carreira; centralização absoluta; ausência de indicadores; privatização de sanções.
+C) Permanece exclusivamente burocrática, pois via recursal e legalidade impedem autonomia, indicadores e avaliação de resultados efetivos.
 
-D) Regras como fim; autonomia sem responsável; cidadão como mero comprador; confusão patrimonial.
+D) Torna-se exclusivamente gerencial, razão pela qual concurso, motivação, via recursal e controle social poderiam ser retirados sem perda pública.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Integra ganhos burocráticos, diretrizes de 1967 e orientação gerencial com limites públicos.
-- **B:** Incorreta. Combina patrimonialismo, controle difuso, métrica estreita e violação de garantias.
-- **C:** Incorreta. Reúne inconsistências com profissionalização, coordenação e atividade exclusiva.
-- **D:** Incorreta. Soma disfunções burocráticas, gerenciais e patrimoniais.
+- **A:** Correta. Reconhece mérito, descentralização coordenada, autonomia por resultados e continuidade das garantias.
+- **B:** Incorreta. Descentralização com coordenação não é favor pessoal, e equidade amplia a qualidade da meta.
+- **C:** Incorreta. Garantias podem conviver com autonomia, indicadores e avaliação; não tornam o desenho exclusivamente burocrático.
+- **D:** Incorreta. Orientação gerencial não autoriza eliminar concurso, decisão motivada, recurso ou controle social.
 
 **Conceito:** Reformar é combinar instrumentos coerentes, não substituir garantias por velocidade.
 
-**Pegadinha:** Alternativas erradas incluem um elemento verdadeiro cercado por três defeitos.
+**Pegadinha:** Usar um instrumento de determinada fase histórica para declarar exclusividade e apagar os demais componentes.
 
-**Raciocínio:** Teste quatro filtros: ingresso, coordenação, resultado e limite público.
+**Raciocínio:** 1) classifique mérito; 2) verifique descentralização e coordenação; 3) examine metas e responsabilidade; 4) preserve garantias.
 
 **Nível:** Muito difícil
 
@@ -2968,7 +2968,7 @@ D) publicização de serviço não exclusivo, porque a permanência na autarquia
 
 ### Seleção operacional — Dia 2
 
-- **Primeira passagem (10):** Q071, Q074, Q077, Q080, Q084, Q088, Q093, Q099, Q106 e Q114.
+- **Fila da primeira passagem (6 obrigatórias; teto 10):** Q071, Q074, Q077, Q080, Q084, Q088, Q093, Q099, Q106 e Q114.
 - **Abertura do D+2 (5):** Q121, Q125, Q129, Q134 e Q139.
 
 ## Questões principais — Dia 2 (Q071–Q120)
@@ -3238,6 +3238,7 @@ Assinale a associação correta.
 A) Liderança — integridade e competência; estratégia — objetivos e riscos; controle — transparência e accountability.
 
 B) Liderança — meta de produto; estratégia — protocolo diário; controle — apoio parlamentar.
+
 C) Liderança — consulta pública; estratégia — sanção; controle — favor pessoal.
 
 D) Liderança — custo do insumo; estratégia — arquivo; controle — coalizão.
@@ -3568,31 +3569,31 @@ D) preservar a autonomia da autoridade exigia ocultar os critérios usados para 
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Um serviço ficou mais rápido e barato, mas passou a excluir pessoas com deficiência e a decidir sem fundamento legal. À luz da qualidade pública:
+Um portal reduz prazo médio e gasto operacional, mas exige biometria em aparelho recente, é incompatível com leitor de tela, emite indeferimentos sem motivação legal e resolve proporção menor das demandas. À luz da qualidade pública:
 
-A) o serviço tornou-se plenamente econômico e efetivo, pois reduziu simultaneamente tempo e custo.
+A) Economicidade e efetividade estão demonstradas, pois menor gasto e prazo médio compensam barreiras de acesso e queda de solução.
 
-B) a redução de prazo compensa a exclusão de usuários e a prática de decisões sem fundamento legal.
+B) Tempestividade autoriza flexibilizar motivação e acessibilidade quando a maioria digital recebe resposta em período inferior ao anterior.
 
-C) basta medir a satisfação dos usuários digitais atendidos, independentemente dos grupos excluídos do canal.
+C) Satisfação apenas dos usuários que concluíram o fluxo basta para provar confiabilidade, equidade e resolutividade do novo canal.
 
-D) ganhos de prazo e custo não bastam diante de falhas de equidade e integridade.
+D) Há ganhos aparentes de prazo e custo, mas acesso, equidade, integridade e resolutividade impedem afirmar qualidade global.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Custo não prova qualidade preservada nem efeito social relevante.
-- **B:** Incorreta. Qualidade pública não autoriza sacrificar direitos por velocidade.
-- **C:** Incorreta. Exclui justamente o público impedido de acessar o serviço.
-- **D:** Correta. Avalia simultaneamente tempestividade, custo, equidade e legalidade.
+- **A:** Incorreta. Gasto e prazo não demonstram aquisição vantajosa nem efeito social e não compensam exclusão ou baixa solução.
+- **B:** Incorreta. Velocidade não afasta motivação legal, acesso universal e adaptação razoável do serviço.
+- **C:** Incorreta. A amostra exclui quem abandonou ou não acessou e, portanto, não prova as três dimensões.
+- **D:** Correta. Reconhece os ganhos parciais e testa, sem compensação automática, quatro falhas relevantes de qualidade.
 
 **Conceito:** Qualidade pública é multidimensional e orientada a valor, direitos e necessidade coletiva.
 
-**Pegadinha:** Eleger eficiência isolada como critério suficiente.
+**Pegadinha:** Avaliar somente quem atravessou a barreira digital e usar média de prazo para compensar direitos e solução.
 
-**Raciocínio:** 1) reconheça os ganhos; 2) teste acesso/equidade; 3) teste integridade; 4) conclua pelo conjunto.
+**Raciocínio:** 1) separe prazo e gasto; 2) identifique quem não acessa; 3) teste legalidade; 4) verifique se a demanda é resolvida.
 
 **Nível:** Muito difícil
 
@@ -3904,7 +3905,7 @@ D) o dado foi divulgado espontaneamente.
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Em programa de capacitação, orçamento, aulas ministradas, certificados, competência aplicada e melhoria duradoura do serviço são, respectivamente:
+Em um programa de capacitação, considere a sequência: orçamento liberado; instrutores conduzem módulos e tutorias; turmas e certificados são entregues; participantes aplicam a nova técnica no trabalho; falhas do serviço caem de modo duradouro. Os cinco elementos são, respectivamente:
 
 A) insumo, atividade, produto, resultado e impacto.
 
@@ -3919,16 +3920,16 @@ D) produto, atividade, insumo, resultado e eficácia.
 
 **Gabarito:** A.
 
-- **A:** Correta. Segue recursos, ação, entrega, mudança no público e efeito amplo.
-- **B:** Incorreta. Classifica aulas como produto e certificados como atividade.
-- **C:** Incorreta. Troca orçamento/aulas e certificados/competência.
-- **D:** Incorreta. Inverte os três primeiros e substitui impacto por dimensão de desempenho.
+- **A:** Correta. Orçamento é recurso; conduzir é ação; turmas e certificados são entregas; aplicação é mudança; queda duradoura é impacto.
+- **B:** Incorreta. Transforma a ação verbal dos instrutores em produto e as entregas em atividade.
+- **C:** Incorreta. Trata recurso como ação, ação como insumo e desloca entrega e mudança de posição.
+- **D:** Incorreta. Inverte recurso, ação e entrega e ainda substitui impacto por uma dimensão de desempenho.
 
 **Conceito:** `insumo → atividade → produto → resultado → impacto`.
 
-**Pegadinha:** Trocar a entrega imediata pela mudança produzida no público.
+**Pegadinha:** Tratar “conduzem módulos” como substantivo entregue ou confundir certificado com aplicação da competência.
 
-**Raciocínio:** Faça cinco perguntas: empregado, feito, entregue, mudado e transformado no longo prazo.
+**Raciocínio:** Pergunte, na ordem: qual recurso entrou, qual verbo foi executado, o que saiu, o que mudou no público e o que persistiu.
 
 **Nível:** Muito difícil
 
@@ -4156,7 +4157,7 @@ D) a retirada dos casos difíceis sem registro.
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-No atendimento do CRA, “requerimentos processados”, “solicitações corretamente concluídas no prazo” e “maior confiança e regularidade profissional” são, respectivamente:
+No atendimento do CRA, “requerimentos processados”, “maior proporção de profissionais que regularizam sua situação após a orientação” e “maior confiança pública e regularidade profissional sustentadas no setor” são, respectivamente:
 
 A) atividade, produto e resultado.
 
@@ -4171,16 +4172,16 @@ D) resultado, impacto e produto.
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Processar é atividade; requerimentos processados já são produto.
-- **B:** Correta. A primeira é entrega, a segunda mudança imediata no serviço e a terceira efeito amplo.
+- **A:** Incorreta. Processar é atividade; requerimentos já processados são produto, e regularização do público não é simples entrega.
+- **B:** Correta. A primeira é entrega; a segunda, mudança no público; a terceira, transformação ampla e sustentada.
 - **C:** Incorreta. Nenhum dos três é recurso empregado, e dimensões de desempenho não substituem a cadeia.
 - **D:** Incorreta. Inverte as três posições.
 
 **Conceito:** Produto conta o entregue; resultado observa mudança no público; impacto expressa transformação ampla e duradoura.
 
-**Pegadinha:** Tratar qualquer número de processos como resultado social.
+**Pegadinha:** Chamar serviço concluído de outcome; o resultado exige mudança observável na situação do público.
 
-**Raciocínio:** Pergunte, na ordem: o que saiu, o que mudou no usuário e qual efeito coletivo persistiu.
+**Raciocínio:** Pergunte, na ordem: o que foi entregue, o que mudou na situação profissional e qual efeito coletivo persistiu.
 
 **Nível:** Difícil
 
@@ -4408,31 +4409,31 @@ D) somente o menor prazo observado, ainda que represente um único caso e nada i
 
 **Referência:** [Dia 2 — accountability, transparência e participação](../semana_01_estudo.md#dia-2-accountability-transparencia-participacao)
 
-Um painel é inteligível; o dirigente explica desvios; a responsabilidade está definida; eventual correção respeita contraditório. O arranjo reúne:
+Uma agência publica, por iniciativa própria, painel tempestivo com dicionário, fonte e série histórica. O dirigente justifica desvios, o conselho atribui responsabilidade e eventual correção segue processo com contraditório. Não há informação sobre apoio político à agenda. O diagnóstico é:
 
-A) transparência substantiva e componentes organizacionais de boa accountability.
+A) Transparência ativa e substantiva sustenta answerability, responsabilidade e consequência legítima, sem provar governabilidade política.
 
-B) apenas publicidade formal, sem inteligibilidade, answerability ou responsável institucionalmente definido.
+B) Há transparência substantiva e answerability, mas não responsabilização nem enforcement enquanto nenhuma sanção for efetivamente aplicada.
 
-C) punição arbitrária sem informação, atribuição de responsabilidade ou respeito ao contraditório.
+C) Há accountability e governabilidade demonstradas, pois painel e conselho garantem apoio político à agenda e capacidade de implementação.
 
-D) governabilidade política, sem mecanismos de supervisão, transparência ou controle organizacional.
+D) A publicação demonstra governabilidade, mas o contraditório impede enforcement e torna incompleto o mecanismo de responsabilização.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Inteligibilidade, explicação, atribuição e consequência legítima compõem o ciclo.
-- **B:** Incorreta. Há compreensão e justificativa expressas.
-- **C:** Incorreta. Responsabilidade e contraditório afastam arbitrariedade.
-- **D:** Incorreta. Apoio político não foi descrito, enquanto há mecanismos de controle.
+- **A:** Correta. Classifica divulgação e inteligibilidade, completa os componentes de accountability e evita inferência política sem dado.
+- **B:** Incorreta. O conselho atribuiu responsabilidade, e enforcement exige possibilidade legítima de consequência, não punição já consumada.
+- **C:** Incorreta. O ciclo de accountability está descrito, mas painel e conselho não provam apoio político ou governabilidade.
+- **D:** Incorreta. Painel não prova apoio político, e contraditório qualifica, em vez de impedir, o enforcement.
 
 **Conceito:** Transparência útil sustenta, mas não substitui, accountability.
 
-**Pegadinha:** Confundir enforcement com sanção automática sem garantias.
+**Pegadinha:** Tratar transparência como prova de governabilidade ou contraditório como obstáculo à responsabilização.
 
-**Raciocínio:** 1) qualidade do dado; 2) explicação; 3) responsável; 4) consequência legítima.
+**Raciocínio:** 1) classifique a divulgação; 2) teste inteligibilidade; 3) percorra explicação, atribuição e consequência; 4) limite a inferência política.
 
 **Nível:** Muito difícil
 
@@ -4450,31 +4451,31 @@ D) governabilidade política, sem mecanismos de supervisão, transparência ou c
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Um canal digital reduz prazo, mantém decisões corretas, oferece alternativa acessível e resolve a demanda. As dimensões evidenciadas são, na ordem:
+Após mudança do canal, a mediana do prazo cai, a taxa de erro não aumenta, atendimento assistido mantém o acesso de grupos vulneráveis e cresce a proporção de demandas integralmente solucionadas. O gasto e os efeitos sociais de longo prazo não foram medidos. Conclui-se que:
 
-A) governabilidade, eficácia, economicidade e impacto.
+A) Tempestividade, confiabilidade e acesso melhoraram; como mais demandas foram solucionadas, eficiência e efetividade também estão comprovadas.
 
-B) tempestividade, confiabilidade, equidade/acesso e resolutividade.
+B) Tempestividade, confiabilidade, acesso/equidade e resolutividade melhoraram, sem base para concluir sobre custo ou efetividade.
 
-C) transparência passiva, liderança, participação e produto.
+C) Confiabilidade, equidade e eficiência melhoraram, mas a queda da mediana não permite reconhecer tempestividade sem conhecer a média.
 
-D) custo, autoridade, sanção e meta.
+D) Tempestividade e resolutividade melhoraram, mas atendimento assistido é participação, e erro estável não informa confiabilidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Apoio político e custo de insumo não aparecem no caso.
-- **B:** Correta. Cada sinal corresponde à dimensão de qualidade indicada.
-- **C:** Incorreta. Canal digital não implica pedido, mecanismo de governança ou participação.
-- **D:** Incorreta. As categorias não descrevem os quatro atributos.
+- **A:** Incorreta. Reconhece três dimensões, mas solução não prova eficiência sem recursos nem efetividade sem efeito social amplo.
+- **B:** Correta. Relaciona cada evidência à dimensão adequada e não extrapola para custo ou mudança social ampla.
+- **C:** Incorreta. Não há dado de recursos para eficiência, e a mediana é medida válida de prazo, resistente a extremos.
+- **D:** Incorreta. Atendimento assistido evidencia acesso, não participação, e estabilidade do erro sustenta confiabilidade.
 
 **Conceito:** Qualidade pública combina prazo, correção, inclusão e solução, entre outras dimensões.
 
-**Pegadinha:** Reduzir qualidade à primeira melhora visível, a velocidade.
+**Pegadinha:** Converter melhorias de qualidade em eficiência ou efetividade sem dados de recursos e efeito social.
 
-**Raciocínio:** 1) prazo; 2) consistência; 3) possibilidade de usufruir; 4) problema solucionado.
+**Raciocínio:** 1) associe prazo, erro, acesso e solução; 2) procure dados de custo; 3) procure mudança social duradoura; 4) limite a conclusão.
 
 **Nível:** Muito difícil
 
@@ -4492,31 +4493,31 @@ D) custo, autoridade, sanção e meta.
 
 **Referência:** [Dia 2 — accountability, transparência e participação](../semana_01_estudo.md#dia-2-accountability-transparencia-participacao)
 
-O órgão abre formulário, alcança público pouco representativo, não oferece informação e jamais responde às contribuições. O processo é melhor descrito como:
+Uma consulta fica aberta por 48 horas, usa anexo técnico inacessível, alcança quase só empresas reguladas e recebe votos sobre decisão já fechada. O ato final não responde às contribuições, mas o órgão cita o número de envios como prova de coprodução e accountability. O processo revela:
 
-A) participação deliberativa plena, com inclusão representativa, informação adequada e influência comprovada.
+A) Participação deliberativa suficiente, pois volume de respostas supre representatividade, informação e devolutiva em consulta não vinculante.
 
-B) participação ritualística, por falhas de inclusão, informação e devolutiva.
+B) Abertura ritualística com falhas de inclusão, informação, influência e devolutiva, sem coprodução nem accountability completa.
 
-C) accountability horizontal completa, exercida entre instituições estatais com poder de consequência.
+C) Accountability horizontal, porque empresas fiscalizam o Estado, e enforcement existe mesmo sem responsável ou consequência institucional.
 
-D) coprodução do serviço com responsabilidade compartilhada entre a organização pública e os participantes.
+D) Coprodução, pois enviar voto equivale a compartilhar a entrega, ainda que a decisão estivesse fechada e não houvesse retorno público.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Faltam condições para influência qualificada.
-- **B:** Correta. O canal existe formalmente, mas não produz participação substantiva.
-- **C:** Incorreta. Não há controle entre instituições estatais nem ciclo completo.
-- **D:** Incorreta. Não há colaboração na entrega.
+- **A:** Incorreta. Quantidade de envios não corrige exclusão, opacidade, ausência de influência ou falta de resposta.
+- **B:** Correta. O canal formal falha nos quatro requisitos e não demonstra entrega compartilhada nem ciclo de responsabilização.
+- **C:** Incorreta. Empresas não são instituições estatais de controle, e faltam atribuição e consequência.
+- **D:** Incorreta. Manifestação em consulta não equivale a colaborar na entrega, sobretudo sem consideração ou devolutiva.
 
 **Conceito:** Participação exige mais que abertura física de um canal.
 
-**Pegadinha:** Contar o formulário como prova suficiente de influência social.
+**Pegadinha:** Usar número de respostas para atribuir, de uma só vez, participação substantiva, coprodução e accountability.
 
-**Raciocínio:** Teste representatividade, informação, consideração e devolutiva.
+**Raciocínio:** 1) examine acesso e informação; 2) procure influência e resposta; 3) diferencie consulta, coprodução e responsabilização.
 
 **Nível:** Muito difícil
 
@@ -4576,31 +4577,31 @@ D) efetividade, eficácia, eficiência e economicidade.
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Um indicador social melhora após o programa, mas também ocorreram mudanças econômicas externas. A conclusão tecnicamente prudente é:
+O programa entregou todas as oficinas previstas; seis meses depois, o comportamento do público e um indicador social melhoraram. No mesmo período, renda e regras setoriais mudaram, não houve grupo comparável e ainda não se sabe se o efeito persistirá. A conclusão prudente é:
 
-A) o programa causou sozinho todo o impacto, pois a melhora posterior comprova contribuição exclusiva.
+A) Meta de produto e sequência temporal provam impacto exclusivo, mesmo sem comparação, persistência ou exame das mudanças externas.
 
-B) basta contar os produtos entregues para provar causalidade e afastar explicações econômicas concorrentes.
+B) A melhora do público prova resultado e efetividade causal; fatores econômicos só importariam se as oficinas não fossem entregues.
 
-C) o impacto exige cautela de atribuição e análise de fatores externos relevantes.
+C) Entrega e mudança observada podem ser reconhecidas, mas impacto, persistência e atribuição exigem desenho e análise dos fatores externos.
 
-D) a melhora observada deve ser ignorada por completo, porque a presença de fatores externos impede qualquer análise.
+D) Fatores externos tornam oficinas e indicador inúteis, impedindo registrar produto, resultado observado ou qualquer hipótese de contribuição.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. A simultaneidade não prova contribuição exclusiva.
-- **B:** Incorreta. Entrega não demonstra efeito nem causalidade.
-- **C:** Correta. Atribuição de impacto requer examinar explicações concorrentes.
-- **D:** Incorreta. A evidência pode ser considerada com a devida cautela.
+- **A:** Incorreta. Produto e posterioridade não demonstram causalidade exclusiva, duração ou contrafactual.
+- **B:** Incorreta. Há mudança observada, mas efetividade atribuível não decorre automaticamente do cumprimento da entrega.
+- **C:** Correta. Separa produto e resultado observado das inferências ainda frágeis sobre duração e contribuição causal.
+- **D:** Incorreta. Limites de atribuição não autorizam apagar entregas e observações válidas nem impedir análise de contribuição.
 
 **Conceito:** Impacto é mudança ampla e duradoura, influenciada potencialmente por fatores externos.
 
-**Pegadinha:** Saltar de correlação temporal para causalidade exclusiva.
+**Pegadinha:** Oscilar entre causalidade exclusiva e descarte total, sem separar entrega, mudança observada, persistência e atribuição.
 
-**Raciocínio:** 1) reconheça a melhora; 2) identifique causas externas; 3) limite a inferência.
+**Raciocínio:** 1) registre produto; 2) reconheça o resultado observado; 3) teste persistência; 4) examine contrafactual e fatores externos.
 
 **Nível:** Muito difícil
 
@@ -5250,31 +5251,31 @@ D) econômico e efetivo por definição, pois baixo custo e grande volume compro
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Para reduzir prazo sem estimular recusa de casos complexos, o painel mais robusto combina:
+O objetivo é reduzir espera sem aumentar erro, excluir casos complexos ou premiar decisões que não resolvem a demanda. A base identifica perfil do caso, retrabalho e desfecho, mas contém poucos prazos extremos. Qual painel enfrenta conjuntamente esses riscos?
 
-A) mediana de prazo, taxa de erro/retrabalho, prazo por perfil de caso e medida de resolutividade.
+A) Mediana do prazo, taxa de erro/retrabalho, prazo segmentado por complexidade e percentual de demandas resolvidas.
 
-B) somente quantidade mensal, sem indicador de qualidade, perfil de complexidade ou solução da demanda.
+B) Média do prazo, volume total, satisfação apenas dos casos concluídos e custo agregado sem segmentação de complexidade.
 
-C) apenas menor prazo e gasto total, sem representar a distribuição dos casos nem os erros ocorridos.
+C) Menor prazo observado, quantidade de decisões, gasto mensal e proporção de processos simples entre os casos selecionados.
 
-D) média geral sem segmentação, fonte ou taxa de retrabalho, ainda que casos extremos distorçam a leitura.
+D) Mediana global, reclamações espontâneas, orçamento autorizado e número de acessos ao painel sem fórmula de resolutividade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Equilibra velocidade, qualidade, complexidade e solução do problema.
-- **B:** Incorreta. Favorece visão de túnel e seleção de fáceis.
-- **C:** Incorreta. Extremo rápido e gasto não captam qualidade ou perfil.
-- **D:** Incorreta. Extremos podem distorcer a média e a ausência de fonte impede verificação.
+- **A:** Correta. Usa medida resistente aos extremos e equilibra prazo, qualidade, complexidade e solução.
+- **B:** Incorreta. Média e satisfação dos concluídos podem ocultar extremos, erros e usuários complexos excluídos.
+- **C:** Incorreta. O menor prazo incentiva seleção e, embora conte complexidade, não mede erro nem solução efetiva.
+- **D:** Incorreta. Mediana ajuda no prazo, mas reclamações, orçamento e acessos não substituem erro, segmentação e resolutividade.
 
 **Conceito:** Desenho balanceado reduz comportamento oportunista e aproxima métrica da finalidade.
 
-**Pegadinha:** Escolher painel simples que premia volume e oculta distribuição dos casos.
+**Pegadinha:** Aceitar um painel com uma boa medida de prazo, mas incapaz de revelar erro, seleção de fáceis ou solução.
 
-**Raciocínio:** 1) prazo central; 2) qualidade; 3) complexidade/equidade; 4) resultado; 5) rastreabilidade.
+**Raciocínio:** 1) trate extremos; 2) acompanhe retrabalho; 3) segmente complexidade; 4) confirme resolução; 5) rejeite métricas de vaidade.
 
 **Nível:** Muito difícil
 
@@ -5796,31 +5797,31 @@ D) participação e transparência qualificadas, mas accountability incompleta s
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](../semana_01_estudo.md#dia-2-qualidade-resultados)
 
-O orçamento cai, a meta de cursos é cumprida, mas a competência aplicada e o efeito social não melhoram. A leitura correta é:
+Após comparar propostas equivalentes em qualidade, o programa adquire a plataforma pelo menor custo total; o gasto por turma cai; a meta de turmas é cumprida. Contudo, a competência aplicada e o efeito social não melhoram. A leitura correta é:
 
-A) efetividade comprovada e eficácia ausente, pois a redução do orçamento demonstra mudança social sem meta cumprida.
+A) Efetividade e resultado foram comprovados pela compra vantajosa, embora a meta de produto e a eficiência permaneçam ausentes.
 
-B) possível eficiência/economicidade e eficácia do produto, sem resultado ou efetividade demonstrados.
+B) Há economicidade na aquisição, eficiência e eficácia do produto, sem resultado positivo ou efetividade demonstrada.
 
-C) impacto positivo para a sociedade, pois a redução do custo comprova transformação ampla e duradoura.
+C) Economicidade basta para provar impacto, ainda que aplicação da competência e mudança social tenham permanecido estáveis.
 
-D) resultado positivo no público, pois a realização dos cursos comprova aplicação das competências adquiridas.
+D) A meta de turmas prova resultado no público, mas a queda do gasto por entrega impede reconhecer eficiência operacional.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. O efeito não melhorou, e a meta foi cumprida.
-- **B:** Correta. Recursos e produto podem ter relação favorável, enquanto mudança e impacto faltam.
-- **C:** Incorreta. Custo não prova transformação social.
-- **D:** Incorreta. Curso é produto; competência aplicada seria resultado.
+- **A:** Incorreta. Compra e gasto não provam mudança, enquanto meta cumprida e menor custo por turma demonstram justamente os filtros negados.
+- **B:** Correta. A compra preserva qualidade e reduz custo; a relação gasto/produto melhora; a meta é atingida; outcome e efeito social faltam.
+- **C:** Incorreta. Aquisição vantajosa não substitui mudança no público nem transformação social.
+- **D:** Incorreta. Turmas são produto, não mudança no público, e menor gasto por entrega favorece a eficiência.
 
 **Conceito:** Cadeia lógica e dimensões de desempenho devem ser lidas em conjunto, sem saltos.
 
-**Pegadinha:** Inferir resultado ou impacto a partir de custo e entrega.
+**Pegadinha:** Confundir aquisição vantajosa com simples corte orçamentário ou usar economicidade e entrega como prova de outcome.
 
-**Raciocínio:** 1) recursos; 2) meta/produto; 3) mudança no público; 4) efeito amplo.
+**Raciocínio:** 1) teste preço e qualidade da aquisição; 2) relacione gasto e produto; 3) verifique meta; 4) procure mudança e efeito social.
 
 **Nível:** Muito difícil
 
