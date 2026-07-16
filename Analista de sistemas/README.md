@@ -14,10 +14,14 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `planejamento/relatorio_auditoria_semana_01_dias_1_2.md`: relatório final da auditoria pedagógica dos 140 itens dos Dias 1 e 2, com evidências de cobertura, jornada e aceite técnico do lote.
 - `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
 - `planejamento/relatorio_auditoria_semana_01_dias_5_6.md`: auditoria individual dos 140 itens dos Dias 5 e 6, com reorganização pedagógica, níveis, usos, referências e carga da primeira passagem.
+- `planejamento/relatorio_producao_semana_03_administracao_publica.md`: matriz editalícia, fontes oficiais, decisões de produção e auditoria final da Semana 3.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões do banco complementar, totalizando 420 questões autorais no estilo Instituto Consulplan.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
 - `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões complementares dos Blocos 4–6.
+- `semana_03/semana_03_estudo.md`: apostila temática de Administração Pública e Legislação Correlata da Semana 3.
+- `semana_03/semana_03_questoes.md`: banco da Semana 3, com 300 questões principais e 120 extras.
+- `semana_03/semana_03_super_simulado.md`: super simulado inédito de 60 itens, suplementar às 420 questões semanais.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -31,7 +35,7 @@ A Semana 1 foi montada para criar base forte nos temas iniciais:
 5. Língua Portuguesa e Discursiva
 6. Administração Pública, Raciocínio Lógico-Matemático e Revisão
 
-Os Dias 3 e 4 foram auditados integralmente: a teoria antecede todas as cobranças e a primeira passagem termina em três sessões de 2h50, com apenas 10 Essenciais resolvidas e corrigidas. O saldo abre D+2; Revisão e Simulado ficam em D+7 e no ciclo seguinte. No Dia 4, questões reescritas por integração normativa produziram a distribuição substantiva de 30 Médias, 15 Difíceis e 5 Muito difíceis. Esse aceite é específico para o lote; não transforma automaticamente toda a Semana 1 em concluída.
+Os Dias 3 e 4 foram auditados integralmente: a teoria antecede todas as cobranças e a primeira passagem termina em três sessões de 2h50, com apenas 10 Essenciais resolvidas e corrigidas. O saldo abre D+2; Revisão e Simulado ficam em D+7 e no ciclo seguinte. No Dia 4, questões reescritas por integração normativa produziram a distribuição substantiva de 30 Médias, 15 Difíceis e 5 Muito difíceis.
 
 Os Dias 1 e 2 foram auditados integralmente e aprovados no lote próprio. A teoria antecede a cobrança; a primeira passagem cabe em três sessões de 2h50, 2h50 e 3h, com 10 Essenciais resolvidas e corrigidas por dia. O saldo segue para D+2, o Aprofundamento termina antes de D+7, a Revisão ocorre em D+7 e o Simulado no ciclo seguinte.
 
@@ -57,9 +61,22 @@ Também possui:
 
 As 120 questões complementares tiveram a cobertura dos Blocos 4–6 auditada. A migração completa das 300 principais para níveis e comentários do padrão novo continua controlada por lotes de dois dias; por isso, a semana não deve ser tratada como integralmente aceita ainda.
 
+## Semana 3
+
+A Semana 3 concentra toda a Administração Pública e a Legislação Correlata previstas no edital vigente, sem deslocar para o material assuntos jurídicos estranhos ao cargo. Os seis dias cobrem direitos fundamentais e estrutura administrativa; princípios e art. 37; atos administrativos; poderes, agentes e responsabilidade civil; licitações, contratos e contratação de TIC; e LAI, LGPD e improbidade.
+
+O conjunto segue a jornada de três sessões reais por dia, com dez Essenciais na primeira passagem e o saldo distribuído entre D+2, aprofundamento, D+7 e ciclo seguinte. Ele contém:
+
+- 300 questões principais e 120 extras, totalizando 420 itens com comentários A–D e referências à teoria;
+- matriz semanal de 168 Médias, 168 Difíceis e 84 Muito difíceis;
+- 60 questões inéditas no super simulado suplementar, na matriz 24/24/12;
+- relatório próprio de fontes, cobertura, limitações e auditoria.
+
+As normas foram conferidas em fontes oficiais e possuem controle temporal até 16/07/2026. A aplicação da Lei nº 9.784/1999 permanece delimitada ao processo administrativo federal; a IN SGD/ME nº 94/2022 não é universalizada ao CRA-PR; e alterações posteriores ao corte devem ser revalidadas antes da prova.
+
 ## Organização
 
-Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, o planejamento em `planejamento/` e o edital em `edital/`.
+Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, `semana_02/` e `semana_03/`; o planejamento fica em `planejamento/` e o edital em `edital/`.
 
 As versões antigas e materiais intermediários permanecem na pasta `old/`.
 

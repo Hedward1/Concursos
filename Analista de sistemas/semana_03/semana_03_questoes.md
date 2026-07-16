@@ -50,6 +50,7 @@ Extensão do enunciado, literalidade isolada ou ambiguidade não elevam o nível
 
 - [Edital CRA-PR 2026 — Retificação I](https://cdnsite.institutoconsulplan.org.br/concursos/1330/b2c07c473c9749fea22728da3c964c06.pdf), especialmente páginas 14, 27, 28 e 35–38.
 - [Constituição consolidada — Senado Federal](https://legis.senado.leg.br/norma/579494/publicacao/16434817) e [Constituição compilada — Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm).
+- [Emenda Constitucional nº 47/2005](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc47.htm), para a faculdade e os limites do teto único do art. 37, § 12.
 - [Emenda Constitucional nº 138/2025](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc138.htm), para a redação vigente do art. 37, XVI, `b`.
 - [Lei nº 4.769/1965](https://www.planalto.gov.br/ccivil_03/leis/l4769.htm) e [Regimento do CRA-PR — RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955), somente no recorte de revisão indicado.
 - [Lei nº 9.784/1999 consolidada — Câmara dos Deputados](https://www2.camara.leg.br/legin/fed/lei/1999/lei-9784-29-janeiro-1999-322239-normaatualizada-pl.html), como apoio do processo administrativo federal, sem universalização para outros entes.
@@ -2590,7 +2591,7 @@ D) O cargo em comissão é espécie de emprego técnico permanente provido por p
 **Momento:** D+7
 **Referência:** [Dia 2 — disposições do art. 37](semana_03_estudo.md#s3-d2-art37-disposicoes)
 
-Um servidor municipal e outro do Executivo estadual comparam seus limites ao teto geral da União. Qual mapeamento respeita simultaneamente ente e Poder?
+Um servidor municipal e outro do Executivo estadual comparam seus limites ao teto geral da União. Considere que o Estado **não adotou** o teto único facultado pelo art. 37, § 12. Qual mapeamento respeita simultaneamente ente e Poder?
 
 A) ambos seguem diretamente os Ministros do STF, porque o teto é nacional e único.
 B) o municipal segue o Governador, e o estadual segue o Prefeito do município-sede.
@@ -3710,13 +3711,13 @@ D) Como a Comissão pode divulgar, todos os dados deverão ser publicados sem re
 - **Uso:** Revisão.
 - **Momento:** D+7.
 - **Referência:** [Dia 2 — disposições do art. 37](semana_03_estudo.md#s3-d2-art37-disposicoes)
-- **A) está errada:** O teto não é um único parâmetro nacional aplicado diretamente aos dois casos.
+- **A) está errada:** O teto não é um único parâmetro nacional aplicado diretamente aos dois casos; além disso, o enunciado afastou a adoção estadual do § 12.
 - **B) está errada:** Troca os parâmetros municipal e estadual do Executivo.
-- **C) está correta:** Aplica Prefeito ao Município, Governador ao Executivo estadual e reserva os Ministros do STF ao limite geral da União.
-- **D) está errada:** Nos Estados, o parâmetro varia por Poder; não é sempre o dos Desembargadores.
-- **Conceito cobrado:** teto e subtetos remuneratórios.
-- **Pegadinha usada:** trocar os chefes de Executivo ou impor o parâmetro do Judiciário a todo servidor estadual.
-- **Como pensar para acertar:** identifique primeiro o ente, depois o Poder, e só então escolha o parâmetro.
+- **C) está correta:** Como o Estado do caso não exerceu a faculdade do § 12, aplicam-se Prefeito ao Município, Governador ao Executivo estadual e Ministros do STF como limite geral da União.
+- **D) está errada:** Sem adoção do § 12, o parâmetro estadual varia por Poder; o subteto dos Desembargadores não alcança necessariamente todo servidor estadual.
+- **Conceito cobrado:** teto e subtetos remuneratórios, incluída a faculdade de teto único do art. 37, § 12.
+- **Pegadinha usada:** ignorar a premissa de não adoção do § 12 ou impor o parâmetro do Judiciário a todo servidor estadual.
+- **Como pensar para acertar:** verifique primeiro se houve adoção do § 12; se não houve, identifique o ente, depois o Poder e seu subteto.
 
 ### Comentário da Questão 33
 
@@ -11310,9 +11311,9 @@ D) decisão de segundo grau só serve se for monocrática e ainda sujeita a recu
 **Momento:** Ciclo seguinte
 **Referência:** [Dia 6 — Lei de Improbidade Administrativa](semana_03_estudo.md#s3-d6-improbidade)
 
-Réu condenado por improbidade exerce duas funções públicas. O juiz pretende limitar a perda a apenas uma delas sem apresentar fundamento ligado às circunstâncias ou à gravidade. À luz do julgamento ensinado:
+Réu condenado por ato do art. 9º exerce dois vínculos públicos, e a sentença aplica a sanção de perda da função. O juiz pretende deixar de estender a perda ao segundo vínculo sem apresentar fundamento ligado às circunstâncias ou à gravidade. À luz do julgamento ensinado:
 
-A) a regra alcança todas as funções; afastar a perda de função específica exige decisão excepcional e fundamentada.
+A) a extensão aos demais vínculos é poder-dever; deixar de promovê-la exige decisão excepcional e fundamentada.
 B) a perda alcança somente a função usada no fato, sem possibilidade de solução diferente.
 C) toda perda de função foi afastada pelo STF e não pode integrar a sanção.
 D) o juiz pode escolher livremente uma função, pois fundamentação é dispensável nessa matéria.
@@ -11324,7 +11325,7 @@ D) o juiz pode escolher livremente uma função, pois fundamentação é dispens
 **Momento:** Ciclo seguinte
 **Referência:** [Dia 6 — Lei de Improbidade Administrativa](semana_03_estudo.md#s3-d6-improbidade)
 
-Nos mesmos fatos, houve absolvição criminal transitada em julgado por insuficiência de provas, fora dos fundamentos específicos ensinados. A defesa afirma que qualquer absolvição extingue a ação de improbidade e que o prazo jamais pode superar dez anos. Qual resposta aplica os limites das ADIs?
+Em ação de improbidade baseada nos mesmos fatos examinados na esfera criminal, houve absolvição penal transitada em julgado por insuficiência de provas, fora dos fundamentos específicos ensinados. A defesa afirma que qualquer absolvição extingue a ação de improbidade e que o prazo jamais pode superar dez anos. Qual resposta aplica os limites das ADIs?
 
 A) toda absolvição criminal transitada em julgado impede a ação de improbidade, qualquer que seja o fundamento, e o prazo máximo é de dez anos.
 B) a esfera criminal jamais repercute, mesmo nas hipóteses específicas estudadas, e a ação de improbidade não possui limite máximo temporal.
@@ -12439,13 +12440,13 @@ D) Transparência e proteção são incompatíveis, embora possam ser tratadas c
 - **Uso:** Simulado.
 - **Momento:** Ciclo seguinte.
 - **Referência:** [Dia 6 — Lei de Improbidade Administrativa](semana_03_estudo.md#s3-d6-improbidade).
-- **A) está correta:** A regra alcança todas as funções públicas exercidas; limitar a perda a uma função é solução excepcional que requer fundamentação concreta.
+- **A) está correta:** No ato do art. 9º descrito, a perda é cabível e sua extensão aos demais vínculos constitui poder-dever; deixar de estendê-la é solução excepcional que requer fundamentação concreta.
 - **B) está errada:** O recorte estudado não restringe automaticamente a sanção à função usada no fato.
 - **C) está errada:** O STF não eliminou a perda da função pública como sanção.
 - **D) está errada:** Escolha judicial excepcional sem motivação ligada à gravidade e às circunstâncias não atende ao limite fixado.
-- **Conceito cobrado:** Extensão da perda da função e exceção fundamentada.
+- **Conceito cobrado:** Cabimento da perda nos arts. 9º e 10, extensão aos demais vínculos e exceção fundamentada.
 - **Pegadinha usada:** Converter a exceção em regra ou dispensar sua motivação.
-- **Como pensar para acertar:** Parta do alcance sobre todas as funções e exija razões individualizadas para preservar alguma delas.
+- **Como pensar para acertar:** Confirme primeiro se a perda é sanção cabível para o tipo; depois aplique a extensão como poder-dever e exija razões individualizadas para preservar outro vínculo.
 
 ### Comentário da Questão 42
 

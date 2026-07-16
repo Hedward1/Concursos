@@ -63,7 +63,7 @@ Cada primeira passagem deve caber em duas ou, quando o volume justificar, no má
 
 ### Semana 1 - 13/07/2026 a 18/07/2026
 
-- **Status:** criada e em auditoria incremental. Os Dias 1–2 foram auditados e aprovados tecnicamente no lote próprio; os Dias 3–4 são o modelo aprovado e congelado; os Dias 5–6 ainda aguardam lote específico. A semana não está integralmente concluída.
+- **Status:** seis dias auditados e aprovados tecnicamente nos três lotes próprios; alterações futuras exigem novo recorte auditável. O super simulado legado permanece fora desse aceite.
 - **Arquivos:** `semana_01/semana_01_estudo.md` e `semana_01/semana_01_questoes.md`.
 - **Foco:** arquitetura e organização de computadores; sistemas operacionais; banco de dados base e SQL; legislação CRA/CFA; Português e discursiva; Administração Pública e RLM.
 - **Resultado esperado:** base técnica inicial, primeiras revisões fixas e 420 questões da Semana 1.
@@ -79,52 +79,53 @@ Cada primeira passagem deve caber em duas ou, quando o volume justificar, no má
 
 ### Semana 3 - 27/07/2026 a 01/08/2026
 
-- **Foco técnico:** banco de dados avançado, SQL, modelagem, normalização, transações e índices.
-- **Tópicos do edital:** administração de dados, independência de dados, dicionário de dados, arquitetura de BD, modelo relacional, álgebra relacional, modelagem, normalização, MER, mapeamento MER-relacional, SQL ANSI, Transact-SQL, SGBD, segurança, transações, concorrência, recuperação, integridade, stored procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL.
-- **Revisão fixa:** Legislação CRA/CFA, Português, RLM e primeira revisão curta de Informática: Google Documentos, Google Planilhas e conceitos básicos de internet.
-- **Entrega esperada:** Semana 3 com SQL prático, modelagem e questões com comandos reais.
+- **Foco temático:** Administração Pública e Legislação Correlata previstas no edital vigente.
+- **Tópicos do edital:** direitos e garantias fundamentais; princípios e art. 37; organização da Administração; atos; poderes; agentes; responsabilidade civil do Estado; Lei nº 14.133/2021 e contratações de TIC; LAI; LGPD; Lei nº 8.429/1992.
+- **Revisão fixa:** Legislação CRA/CFA, RLM, Informática, Português e discursiva, sempre sobre base anteriormente ensinada.
+- **Status:** produzida e auditada em lotes; 420 itens no banco semanal e super simulado suplementar de 60 itens.
+- **Arquivos:** `semana_03/semana_03_estudo.md`, `semana_03/semana_03_questoes.md`, `semana_03/semana_03_super_simulado.md` e `planejamento/relatorio_producao_semana_03_administracao_publica.md`.
 
 ### Semana 4 - 03/08/2026 a 08/08/2026
 
-- **Foco técnico:** engenharia de software, análise de requisitos, UML, testes, qualidade e manutenção de sistemas.
-- **Tópicos do edital:** análise e projeto orientado a objetos, UML, casos de uso, classes/objetos, estados, colaboração/comunicação, sequência, atividades, componentes, implementação, ferramentas de apoio à análise/projeto/codificação, engenharia de software, cascata, espiral, reuso, prototipação, RAD, evolutivo, incremental, fases de concepção, elaboração, construção e transição, gerenciamento de projetos em noções iniciais, ITIL e COBIT em noções iniciais.
-- **Revisão fixa:** Legislação CRA/CFA e Português.
-- **Entrega esperada:** Semana 4 com teoria aplicada a cenários de órgão público e questões de requisitos/UML/testes.
+- **Foco técnico:** banco de dados avançado, SQL, modelagem, normalização, transações e índices.
+- **Tópicos do edital:** administração e independência de dados, dicionário, arquitetura, modelo e álgebra relacional, MER, normalização e mapeamento; SQL ANSI e Transact-SQL; segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL, PostgreSQL e BI.
+- **Revisão fixa:** Legislação CRA/CFA, Português, RLM e Informática.
+- **Entrega esperada:** teoria aplicada, SQL prático, modelagem e questões com comandos reais.
 
 ### Semana 5 - 10/08/2026 a 15/08/2026
 
-- **Foco técnico:** algoritmos, estruturas de dados, programação, desenvolvimento web, APIs e integração de sistemas.
-- **Tópicos do edital:** complexidade, vetores, matrizes, listas, pilhas, árvores, árvores balanceadas, B-trees, grafos, ordenação, pesquisa, hashing, métodos de acesso a arquivos, listas invertidas, abstrações de dados e controle, parâmetros por referência/valor, escopo, tipos, vinculação, verificação de tipos, tipificação forte, orientação a objetos, eventos, exceções, XML, Web Services, WSDL, UDDI, SOAP, REST, fundamentos web, front-end, back-end, APIs e integração, frameworks Python, Django, testes, deploy, produção, DevOps, containers, backup, Cloud Computing introdutório, IA generativa e governança/ética em IA em noções iniciais.
-- **Revisão fixa:** Legislação CRA/CFA, Português, Administração Pública e segunda revisão curta de Informática: Windows, ferramentas de reunião, uso operacional de microcomputadores e noções de PC-hardware.
-- **Entrega esperada:** Semana 5 com questões de lógica de programação, APIs e desenvolvimento.
+- **Foco técnico:** engenharia de software, requisitos, análise e projeto, UML, testes, qualidade e manutenção.
+- **Tópicos do edital:** orientação a objetos, casos de uso, classes/objetos, estados, comunicação, sequência, atividades, componentes e implementação; ferramentas de apoio; ciclos de vida; qualidade, testes e manutenção; gerenciamento de projetos; GED, workflow, BPM, ERP e CRM; ITIL e COBIT em nível inicial.
+- **Revisão fixa:** Legislação CRA/CFA, Português e pontos frágeis da Semana 3.
+- **Entrega esperada:** teoria aplicada a cenários de órgão público e questões de requisitos, UML, processos e testes.
 
 ### Semana 6 - 17/08/2026 a 22/08/2026
 
-- **Foco:** Legislação CRA-PR/CFA aprofundada, Administração Pública, legislação correlata, RLM, Português, discursiva e contratações de TIC.
-- **Tópicos do edital:** Lei 4.769/1965, Decreto 61.934/1967, Regimento Interno do CRA-PR, Código de Ética conforme edital vigente, Lei 12.514/2011, RNs CFA citadas no material, direitos fundamentais, art. 37 da Constituição, LAI, LGPD, Lei 8.429/1992, organização administrativa, atos administrativos, agentes públicos, poderes administrativos, licitação, responsabilidade civil do Estado, RLM completo, discursiva, contratações de TIC, Lei 14.133/2021 aplicada a TIC, IN SGD/ME 94/2022, ETP e TR.
-- **Revisão fixa:** alternância entre legislação específica, Português e RLM.
-- **Entrega esperada:** Semana 6 com fechamento forte dos blocos não técnicos e treino de discursiva.
+- **Foco técnico:** algoritmos, estruturas de dados, programação, desenvolvimento web, APIs e integração.
+- **Tópicos do edital:** complexidade, vetores, matrizes, listas, pilhas, árvores, B-trees, grafos, ordenação, pesquisa, hashing, arquivos e listas invertidas; abstrações, parâmetros, escopo, tipos, vinculação, tipificação, POO, eventos e exceções; XML, Web Services, WSDL, UDDI, SOAP, REST, Python, Django, testes, deploy, DevOps, controle de versão, containers, backup, Cloud Computing, IA generativa e noções de governança e ética em IA.
+- **Revisão fixa:** Legislação CRA/CFA, Português, Administração Pública e Informática operacional.
+- **Entrega esperada:** questões de lógica de programação, estruturas, APIs e desenvolvimento.
 
 ### Semana 7 - 24/08/2026 a 29/08/2026
 
-- **Foco:** revisão completa de Conhecimentos do Cargo, simulados por disciplina, questões, correção ativa e mapa de erros dos temas já introduzidos.
-- **Tópicos do edital:** revisão de arquitetura, SO, redes, segurança, banco de dados, SQL, algoritmos, programação, engenharia de software, UML, gerenciamento de projetos, governança de TI, ITIL, COBIT, desenvolvimento web, Django, DevOps, Cloud Computing, backup, IA generativa, governança e ética em IA, contratações de TIC, Lei 14.133/2021 aplicada a TIC, IN SGD/ME 94/2022, ETP, TR e inglês técnico. Nesta semana esses tópicos entram como revisão, questões e mapa de erros, não como primeiro contato pesado.
-- **Revisão fixa:** Legislação CRA/CFA, Português e Informática em formato de questões e mapa de erros.
-- **Entrega esperada:** simulados por disciplina, bloco de questões de Informática e mapa de erros por assunto.
+- **Foco:** aprofundamento de Legislação CRA/CFA, RLM, Português, discursiva, Informática e inglês técnico; revisão de contratações de TIC.
+- **Tópicos do edital:** normas CFA/CRA, registro, fiscalização e contribuições; RLM ainda pendente; gramática e linguagem administrativa; produções discursivas; inglês técnico; Google Documentos/Planilhas, internet, Windows, hardware, reuniões e operacionalização; Lei nº 14.133/2021, IN nº 94/2022, ETP e TR em revisão aplicada.
+- **Revisão fixa:** Administração Pública da Semana 3 e Conhecimentos do Cargo já ensinados, em questões e caderno de erros.
+- **Entrega esperada:** fechamento dos blocos não técnicos, treino discursivo e mapa de lacunas antes dos simulados.
 
 ### Semana 8 - 31/08/2026 a 05/09/2026
 
-- **Foco:** simulados completos, revisão geral, Português, Legislação, Administração, RLM e caderno de erros.
-- **Tópicos do edital:** todos os blocos, com ênfase nos pontos que ainda estiverem fracos. Informática entra como revisão final e correção de lacunas, não como primeiro contato pesado.
-- **Revisão fixa:** correção ativa de simulados e revisão dos critérios da discursiva.
-- **Entrega esperada:** pelo menos 2 simulados completos, revisão de marcações e lista final de assuntos críticos.
+- **Foco:** revisão completa de Conhecimentos do Cargo, dois simulados completos, correção ativa e mapa de erros.
+- **Tópicos do edital:** arquitetura, SO, redes, segurança, banco/SQL, algoritmos, programação, engenharia/UML, projetos, governança, desenvolvimento, Cloud, backup, IA e contratações de TIC; Informática e inglês entram como revisão, não primeiro contato pesado.
+- **Revisão fixa:** Legislação, Administração, Português, RLM e critérios da discursiva conforme erros dos simulados.
+- **Entrega esperada:** dois simulados completos corrigidos e lista final de assuntos críticos.
 
 ### Semana 9 - 07/09/2026 a 10/09/2026
 
-- **Foco:** reta final com revisão leve, mapas mentais, questões erradas, leitura de marcações e nada de conteúdo novo pesado.
-- **Tópicos do edital:** revisão panorâmica de todos os blocos.
-- **Revisão fixa:** Português, Legislação CRA/CFA, Conhecimentos do Cargo e caderno de erros.
-- **Entrega esperada:** material marcado, mapas finais e redução de erros recorrentes.
+- **Foco:** reta final guiada pelos dois simulados: revisão leve, mapas, questões erradas e nenhuma matéria nova pesada.
+- **Tópicos do edital:** revisão panorâmica de todos os blocos, priorizada pelo caderno de erros.
+- **Revisão fixa:** Português, Legislação CRA/CFA, Administração Pública, RLM, Informática, Conhecimentos do Cargo e discursiva leve.
+- **Entrega esperada:** marcações consolidadas, mapas finais e redução dos erros recorrentes.
 
 ### Dias 11/09/2026 e 12/09/2026
 
@@ -148,42 +149,42 @@ Cada primeira passagem deve caber em duas ou, quando o volume justificar, no má
 | Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 4 | DML/DDL, Transact-SQL, views, procedures e triggers | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 5 | Transações, concorrência, recuperação, integridade e segurança | Legislação CRA/CFA + Português + Informática: internet | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 6 | Índices, otimização, SQL Server, MySQL, PostgreSQL e BI | RLM + caderno de erros + revisão Google Docs/Planilhas/internet | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 4 | Dia 1 | Requisitos, análise orientada a objetos e casos de uso | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 2 | UML: classes, objetos, sequência, atividades e estados | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 3 | Componentes, implementação e ferramentas de apoio | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 4 | Engenharia de software, ciclos de vida e gerenciamento de projetos inicial | Administração Pública + RLM | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 5 | Testes, qualidade, manutenção e processos de desenvolvimento | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 6 | Revisão de engenharia/UML + noções iniciais de ITIL e COBIT | Português + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 5 | Dia 1 | Complexidade, vetores, matrizes, listas e pilhas | Legislação CRA/CFA + Português + Informática: Windows | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 5 | Dia 2 | Árvores, B-trees, grafos, ordenação, busca e hashing | Administração Pública + Português + Informática: microcomputadores PC-hardware | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 5 | Dia 3 | Linguagens: escopo, tipos, passagem de parâmetros e exceções | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 5 | Dia 4 | POO, eventos, abstrações e programação aplicada | Administração Pública + Português + ferramentas de reunião: Teams, Google Meet e Zoom | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 5 | Dia 5 | Web, APIs, XML, SOAP, REST, WSDL e UDDI | Legislação CRA/CFA + Português + uso operacional de microcomputadores | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 5 | Dia 6 | Python, Django, testes, deploy, DevOps, containers, backup, Cloud Computing e IA generativa introdutórios | Administração Pública + caderno de erros + revisão Windows/reuniões/microcomputadores | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
-| Semana 6 | Dia 1 | Legislação CRA/CFA aprofundada: lei, decreto, regimento e ética | Português + caderno de erros | Legislação CRA/CFA | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 6 | Dia 2 | Normas complementares CRA/CFA, registro, fiscalização e contribuições | Administração Pública + Português | Legislação CRA/CFA | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 6 | Dia 3 | Administração Pública: art. 37, organização, atos, agentes e poderes | Legislação CRA/CFA + Português | Administração Pública | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 6 | Dia 4 | LAI, LGPD, improbidade, licitações, contratações de TIC e responsabilidade civil | RLM + Português | Administração Pública / Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 6 | Dia 5 | Raciocínio Lógico-Matemático completo: lógica, conjuntos, regra de três, probabilidade, PA/PG | Legislação CRA/CFA + Português + revisão ETP/TR | Raciocínio Lógico-Matemático / Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 6 | Dia 6 | Português, discursiva, inglês técnico inicial e revisão Lei 14.133/IN SGD/ME 94/2022 aplicada a TIC | Legislação CRA/CFA + caderno de erros | Língua Portuguesa / Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
-| Semana 7 | Dia 1 | Revisão Conhecimentos do Cargo: arquitetura, SO, redes e segurança | Legislação CRA/CFA + Português + questões de Informática: hardware/Windows | Conhecimentos do Cargo / Informática | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 7 | Dia 2 | Revisão Conhecimentos do Cargo: banco, SQL e SGBD | Administração Pública + Português + questões de Informática: Google Docs/Planilhas/internet | Conhecimentos do Cargo / Informática | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 7 | Dia 3 | Revisão Conhecimentos do Cargo: algoritmos, programação e estruturas | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 7 | Dia 4 | Revisão Conhecimentos do Cargo: engenharia, UML, projetos, ITIL e COBIT | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 7 | Dia 5 | Revisão e questões: web, Django, DevOps, Cloud Computing, backup, IA generativa, ética em IA e contratações de TIC | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 7 | Dia 6 | Simulado técnico por disciplina, questões de Informática e mapa de erros | Caderno de erros | Conhecimentos do Cargo / Informática | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
-| Semana 8 | Dia 1 | Simulado completo 1 | Correção ativa + Português | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
-| Semana 8 | Dia 2 | Correção do simulado 1 e reforço técnico | Legislação CRA/CFA | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
-| Semana 8 | Dia 3 | Simulado completo 2 | Correção ativa + RLM | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
-| Semana 8 | Dia 4 | Correção do simulado 2 e reforço de legislação/Português | Administração Pública | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
-| Semana 8 | Dia 5 | Revisão final de Informática, inglês técnico e pontos menores do edital | Português + caderno de erros | Informática / Conhecimentos do Cargo | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
-| Semana 8 | Dia 6 | Discursiva, revisão geral e mapa final de erros | Legislação CRA/CFA | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 3 | Dia 1 | Direitos fundamentais e estrutura da Administração Pública | Legislação CFA/CRA + Português | Administração Pública | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 3 | Dia 2 | Princípios, organização e disposições do art. 37 | RLM + Português | Administração Pública | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 3 | Dia 3 | Atos administrativos | Informática + Português | Administração Pública | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 3 | Dia 4 | Poderes, agentes e responsabilidade civil do Estado | Legislação CFA/CRA + discursiva | Administração Pública | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 3 | Dia 5 | Licitações, contratos e contratações de TIC | RLM + Português | Administração Pública / Conhecimentos do Cargo | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 3 | Dia 6 | LAI, LGPD, improbidade e revisão integrada | Legislação CFA/CRA + discursiva | Administração Pública | Auditado | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md`; relatório da Semana 3 |
+| Semana 4 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática | Conhecimentos do Cargo / Informática | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática | Conhecimentos do Cargo / Informática | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY e HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 4 | DML/DDL, Transact-SQL, views, procedures e triggers | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 5 | Transações, concorrência, recuperação, integridade e segurança | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 6 | Índices, otimização, SQL Server, MySQL, PostgreSQL e BI | RLM + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 5 | Dia 1 | Requisitos, análise orientada a objetos e casos de uso | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 5 | Dia 2 | UML: classes, objetos, sequência, atividades e estados | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 5 | Dia 3 | Componentes, implementação e ferramentas de apoio | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 5 | Dia 4 | Engenharia de software, ciclos de vida e gerenciamento de projetos inicial | Administração Pública + RLM | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 5 | Dia 5 | Testes, qualidade, manutenção e processos de desenvolvimento | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 5 | Dia 6 | Gestão informacional: GED, workflow, BPM, ERP e CRM + revisão de engenharia/UML e noções iniciais de ITIL/COBIT | Português + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
+| Semana 6 | Dia 1 | Complexidade, vetores, matrizes, listas e pilhas | Legislação CRA/CFA + Português + Informática | Conhecimentos do Cargo / Informática | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 6 | Dia 2 | Árvores, B-trees, grafos, ordenação, busca e hashing | Administração Pública + Português + Informática | Conhecimentos do Cargo / Informática | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 6 | Dia 3 | Linguagens: escopo, tipos, passagem de parâmetros e exceções | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 6 | Dia 4 | POO, eventos, abstrações e programação aplicada | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 6 | Dia 5 | Web, APIs, XML, SOAP, REST, WSDL e UDDI | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 6 | Dia 6 | Python, Django, testes, deploy, DevOps, controle de versão, containers, backup, Cloud, IA generativa, governança e ética em IA | Administração Pública + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_06/semana_06_estudo.md`; `semana_06/semana_06_questoes.md` |
+| Semana 7 | Dia 1 | Legislação CRA/CFA aprofundada: lei, decreto, regimento e ética | Português + caderno de erros | Legislação CRA/CFA | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 7 | Dia 2 | Normas complementares, registro, fiscalização e contribuições | Administração Pública + Português | Legislação CRA/CFA | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 7 | Dia 3 | RLM: tópicos pendentes e aprofundamento | Legislação CRA/CFA + caderno de erros | RLM | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 7 | Dia 4 | Português, linguagem administrativa e gramática pendente | Administração Pública + Informática | Língua Portuguesa | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 7 | Dia 5 | Discursiva, inglês técnico e Informática do edital | Legislação CRA/CFA + RLM | Discursiva / Conhecimentos do Cargo / Informática | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 7 | Dia 6 | Contratações de TIC, ETP/TR e revisão da Semana 3 | Português + caderno de erros | Conhecimentos do Cargo / Administração Pública | Pendente | `semana_07/semana_07_estudo.md`; `semana_07/semana_07_questoes.md` |
+| Semana 8 | Dia 1 | Revisão técnica: arquitetura, SO, redes e segurança | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 8 | Dia 2 | Revisão técnica: banco, SQL e SGBD | Administração Pública + Informática | Conhecimentos do Cargo | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 8 | Dia 3 | Simulado completo 1 | Correção ativa + RLM | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 8 | Dia 4 | Revisão técnica: algoritmos, programação, engenharia, UML e governança | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 8 | Dia 5 | Simulado completo 2 | Correção ativa + Legislação CRA/CFA | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
+| Semana 8 | Dia 6 | Correção dos simulados, discursiva e mapa final de erros | Informática + inglês técnico | Todas | Pendente | `semana_08/semana_08_estudo.md`; `semana_08/semana_08_questoes.md` |
 | Semana 9 | Dia 1 | Mapas mentais de Conhecimentos do Cargo | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | Reta final |
 | Semana 9 | Dia 2 | Questões erradas de Legislação e Português | Administração Pública + RLM | Legislação / Português | Pendente | Reta final |
 | Semana 9 | Dia 3 | Questões erradas de Administração, RLM e Informática | Discursiva leve | Básicos | Pendente | Reta final |
@@ -228,20 +229,20 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Redes de computadores: conceitos, topologias, componentes, comunicação de dados, meios, LAN/WAN, ISO/OSI, TCP/IP, protocolos, equipamentos, Wi-Fi, VPN e gerência. Aprofundado na Semana 2.
 - [x] Segurança em redes: ataques, firewall, DMZ, políticas de acesso, resposta a incidentes e boas práticas. Aprofundado na Semana 2.
 - [x] Banco de dados base e SQL introdutório. Coberto na Semana 1.
-- [ ] Banco de dados avançado: administração de dados, independência, dicionário, arquitetura, modelo relacional, álgebra relacional, MER, normalização, mapeamento e BI. Planejado para Semana 3.
-- [ ] SQL avançado e SGBD: SQL ANSI, Transact-SQL, segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL. Planejado para Semana 3.
-- [ ] Algoritmos e estruturas de dados: complexidade, vetores, matrizes, listas, pilhas, árvores, B-trees, grafos, ordenação, pesquisa, hashing, arquivos e listas invertidas. Planejado para Semana 5.
-- [ ] Linguagens de programação: abstrações, passagem de parâmetros, escopo, tipos, vinculação, verificação de tipos, tipificação forte, POO, eventos e exceções. Planejado para Semana 5.
-- [ ] Integração de sistemas: XML, Web Services, WSDL, UDDI, SOAP e RESTful Web Services. Planejado para Semana 5.
-- [ ] Cloud Computing e backup. Introdução na Semana 5, revisão/questões na Semana 7 e revisão final na Semana 8.
-- [ ] IA generativa, governança e ética em IA. Introdução na Semana 5, revisão/questões na Semana 7 e revisão final na Semana 8.
-- [ ] Análise e projeto de sistemas: UML, casos de uso, classes, objetos, estados, comunicação, sequência, atividades, componentes e implementação. Planejado para Semana 4.
-- [ ] Engenharia de software: modelos de ciclo de vida, processos e fases. Planejado para Semana 4.
-- [ ] Gerenciamento de projetos: planejamento, acompanhamento, controle, áreas do PMBOK, escopo, WBS, tempo, custos, qualidade, recursos humanos, comunicação, risco, compras e integração. Introdução na Semana 4 e revisão/questões na Semana 7.
-- [ ] Gestão e recursos informacionais: GED, workflow, BPM, ERP, CRM, ITIL e COBIT. Noções iniciais de ITIL/COBIT na Semana 4 e revisão/questões na Semana 7.
-- [ ] Desenvolvimento web, frameworks Python, Django, testes, deploy, produção, DevOps, controle de versão e containers. Planejado para Semana 5, com revisão/questões na Semana 7.
-- [ ] Licitações e contratações de TIC: contratações de TIC, Lei 14.133/2021 aplicada a TIC, IN SGD/ME 94/2022, ETP, TR e artefatos de planejamento. Introdução na Semana 6, revisão/questões na Semana 7 e revisão final na Semana 8.
-- [ ] Noções de inglês técnico. Introdução na Semana 6, revisão/questões na Semana 7 e revisão final na Semana 8.
+- [ ] Banco de dados avançado: administração de dados, independência, dicionário, arquitetura, modelo relacional, álgebra relacional, MER, normalização, mapeamento e BI. Planejado para Semana 4.
+- [ ] SQL avançado e SGBD: SQL ANSI, Transact-SQL, segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL. Planejado para Semana 4.
+- [ ] Algoritmos e estruturas de dados: complexidade, vetores, matrizes, listas, pilhas, árvores, B-trees, grafos, ordenação, pesquisa, hashing, arquivos e listas invertidas. Planejado para Semana 6.
+- [ ] Linguagens de programação: abstrações, passagem de parâmetros, escopo, tipos, vinculação, verificação de tipos, tipificação forte, POO, eventos e exceções. Planejado para Semana 6.
+- [ ] Integração de sistemas: XML, Web Services, WSDL, UDDI, SOAP e RESTful Web Services. Planejado para Semana 6.
+- [ ] Cloud Computing e backup. Introdução na Semana 6 e revisão final na Semana 8.
+- [ ] IA generativa, governança e ética em IA. Introdução na Semana 6 e revisão final na Semana 8.
+- [ ] Análise e projeto de sistemas: UML, casos de uso, classes, objetos, estados, comunicação, sequência, atividades, componentes e implementação. Planejado para Semana 5.
+- [ ] Engenharia de software: modelos de ciclo de vida, processos e fases. Planejado para Semana 5.
+- [ ] Gerenciamento de projetos: planejamento, acompanhamento, controle, áreas do PMBOK, escopo, WBS, tempo, custos, qualidade, recursos humanos, comunicação, risco, compras e integração. Introdução na Semana 5 e revisão na Semana 8.
+- [ ] Gestão e recursos informacionais: GED, workflow, BPM, ERP, CRM, ITIL e COBIT. Noções iniciais na Semana 5 e revisão na Semana 8.
+- [ ] Desenvolvimento web, frameworks Python, Django, testes, deploy, produção, DevOps, controle de versão e containers. Planejado para Semana 6, com revisão na Semana 8.
+- [x] Licitações e contratações de TIC: Lei nº 14.133/2021, IN SGD/ME nº 94/2022, ETP, TR e artefatos de planejamento. Base coberta e auditada no Dia 5 da Semana 3; aprofundamento na Semana 7 e revisão na Semana 8.
+- [ ] Noções de inglês técnico. Planejado para Semana 7 e revisão final na Semana 8.
 
 ### Legislação CRA-PR/CFA
 
@@ -250,7 +251,7 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Regimento Interno do CRA-PR. Base coberta na Semana 1.
 - [x] Código de Ética indicado no edital vigente e conferido em fonte oficial. Base coberta na Semana 1.
 - [x] Lei nº 12.514/2011 e objetos/relações cobrados das RNs CFA nº 546/2018, 589/2020, 626/2023, 649/2024, 670/2025 e 680/2025. Fontes oficiais confirmadas e base auditada no Dia 4 da Semana 1; aprofundamento literal permanece planejado.
-- [ ] Aprofundamento literal e por casos práticos das normas CRA/CFA. Planejado para Semana 6.
+- [ ] Aprofundamento literal e por casos práticos das normas CRA/CFA. Planejado para Semana 7.
 - [ ] Simulados e revisão por erros em legislação específica. Planejado para Semanas 7 a 9.
 
 ### Língua Portuguesa e Discursiva
@@ -258,38 +259,36 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Interpretação, ideia central, inferência, pressuposto, sentido contextual, semântica, coesão, conectores e reescrita. Base auditada no Dia 5 da Semana 1; reforço contínuo nas Semanas 2 a 9.
 - [x] Sintaxe, concordância, regência, crase e pontuação. Base auditada no Dia 5 da Semana 1.
 - [x] Estrutura da dissertação, tese, argumentação, desenvolvimento, conclusão, modelo completo comentado, rubrica do edital e autocorreção. Base auditada no Dia 5 da Semana 1; produções completas permanecem planejadas para as Semanas 6 a 8.
-- [ ] Fonologia, encontros vocálicos, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia. Planejado para Semana 6.
-- [ ] Morfologia, estrutura e formação de palavras, classes de palavras e período composto. Planejado para Semana 6.
-- [ ] Aprofundamento de morfossintaxe, uso dos porquês e linguagem administrativa. Planejado para a Semana 6 e reforço contínuo até a Semana 9.
+- [ ] Fonologia, encontros vocálicos, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia. Planejado para Semana 7.
+- [ ] Morfologia, estrutura e formação de palavras, classes de palavras e período composto. Planejado para Semana 7.
+- [ ] Aprofundamento de morfossintaxe, uso dos porquês e linguagem administrativa. Planejado para a Semana 7 e reforço até a Semana 9.
 
 ### Administração Pública e Legislação Correlata
 
-- [x] Art. 37, princípios, organização administrativa, Administração Direta e Indireta, autarquias e distinção entre órgão e entidade. Base auditada no Dia 6 da Semana 1.
-- [x] Atos administrativos, motivo e motivação, agentes públicos, poderes administrativos, poder de polícia, uso e abuso do poder. Núcleo inicial auditado no Dia 6 da Semana 1; aprofundamento permanece na Semana 6.
-- [x] LAI, LGPD, Lei nº 8.429/1992, licitação, contratação direta e responsabilidade civil do Estado. Núcleo inicial auditado no Dia 6 da Semana 1; leitura literal e casos avançados permanecem na Semana 6.
-- [ ] Direitos e garantias fundamentais. Planejado para Semana 6.
-- [ ] Aprofundamento de centralização, descentralização, concentração, desconcentração, fundações, empresas públicas e sociedades de economia mista. Planejado para Semana 6.
-- [ ] Aprofundamento de agentes públicos, cargos, empregos, funções, poderes administrativos e controle. Planejado para Semana 6.
-- [ ] Licitação completa: princípios, contratação direta, dispensa, inexigibilidade, modalidades, tipos e procedimento. Reforço na Semana 6.
-- [ ] Responsabilidade civil do Estado: ato comissivo, omissão, requisitos, excludentes e atenuantes. Reforço na Semana 6.
+- [x] Direitos e garantias fundamentais; art. 37; princípios; promoção pessoal; ingresso, acumulação, teto e contratação. Cobertos e auditados nos Dias 1 e 2 da Semana 3.
+- [x] Organização administrativa: direta e indireta, centralização, descentralização, concentração, desconcentração, autarquias, fundações, empresas públicas, sociedades de economia mista e conselhos profissionais. Coberta e auditada no Dia 1 da Semana 3.
+- [x] Atos administrativos: requisitos, atributos, espécies, motivo, motivação, vinculação, discricionariedade, anulação, revogação, convalidação e motivos determinantes. Cobertos e auditados no Dia 3 da Semana 3.
+- [x] Poderes, abuso, agentes, cargos, empregos, funções e responsabilidade civil por ação e omissão, com dano, nexo, excludentes e atenuantes. Cobertos e auditados no Dia 4 da Semana 3.
+- [x] Licitação: princípios, planejamento, fases, modalidades, critérios, contratação direta, dispensa, inexigibilidade, contratos e integração com TIC. Coberta e auditada no Dia 5 da Semana 3.
+- [x] LAI, LGPD e Lei nº 8.429/1992, inclusive integração entre publicidade, proteção de dados, finalidade e improbidade. Cobertas e auditadas no Dia 6 da Semana 3.
 
 ### Raciocínio Lógico-Matemático
 
 - [x] Proposições, conectivos, equivalências, negações, quantificadores, argumentos, contagem de valorações e princípio da regressão ou reversão. Núcleo inicial auditado no Dia 6 da Semana 1.
 - [x] Sequências, conjuntos, inclusão-exclusão, proporcionalidade, regra de três, porcentagem, PA/PG e probabilidade. Núcleo inicial auditado no Dia 6 da Semana 1.
-- [ ] Aprofundamento de lógica dedutiva, argumentativa, quantitativa e qualitativa. Planejado para Semana 6.
-- [ ] Razões especiais, análise combinatória e probabilidade avançada. Planejado para Semana 6.
-- [ ] Geometria plana e espacial, trigonometria, conjuntos numéricos, equações de 1º e 2º grau, matrizes, determinantes, sistemas lineares e polinômios. Planejado para Semana 6 e revisão na Semana 8.
+- [ ] Aprofundamento de lógica dedutiva, argumentativa, quantitativa e qualitativa. Planejado para Semana 7.
+- [ ] Razões especiais, análise combinatória e probabilidade avançada. Planejado para Semana 7.
+- [ ] Geometria plana e espacial, trigonometria, conjuntos numéricos, equações de 1º e 2º grau, matrizes, determinantes, sistemas lineares e polinômios. Planejado para Semana 7 e revisão na Semana 8.
 
 ### Informática
 
-- [ ] Microcomputadores PC-hardware. Introdução curta na Semana 5, questões e mapa de erros na Semana 7, revisão final na Semana 8.
-- [ ] Windows. Contato técnico em Sistemas Operacionais na Semana 2, revisão curta de uso operacional na Semana 5, questões e mapa de erros na Semana 7, revisão final na Semana 8.
-- [ ] Google Documentos. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
-- [ ] Google Planilhas. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
-- [ ] Internet. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
-- [ ] Ferramentas de reunião: Teams, Google Meet e Zoom. Revisão curta na Semana 5, questões na Semana 7, revisão final na Semana 8.
-- [ ] Equipamentos e operacionalização de microcomputadores. Revisão curta na Semana 5, questões na Semana 7, revisão final na Semana 8.
+- [ ] Microcomputadores PC-hardware. Planejado para Semana 7 e revisão final na Semana 8.
+- [ ] Windows. Contato técnico em Sistemas Operacionais na Semana 2; uso operacional e questões na Semana 7; revisão final na Semana 8.
+- [ ] Google Documentos. Planejado para Semana 7 e revisão final na Semana 8.
+- [ ] Google Planilhas. Planejado para Semana 7 e revisão final na Semana 8.
+- [ ] Internet. Planejada para Semana 7 e revisão final na Semana 8.
+- [ ] Ferramentas de reunião: Teams, Google Meet e Zoom. Planejadas para Semana 7 e revisão final na Semana 8.
+- [ ] Equipamentos e operacionalização de microcomputadores. Planejados para Semana 7 e revisão final na Semana 8.
 
 ## Regra de avanço semanal
 

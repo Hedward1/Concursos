@@ -12,6 +12,7 @@ Materiais de planejamento, teoria, questões e simulados para o cargo de Analist
 - [Planejamento](<Analista de sistemas/planejamento/plano_mestre_cra_pr_2026.md>)
 - [Semana 1](<Analista de sistemas/semana_01/semana_01_estudo.md>)
 - [Semana 2](<Analista de sistemas/semana_02/semana_02_estudo.md>)
+- [Semana 3 — Administração Pública e Legislação Correlata](<Analista de sistemas/semana_03/semana_03_estudo.md>)
 
 ### Direito
 
@@ -37,6 +38,7 @@ CRA_PARANA/
 │   ├── planejamento/
 │   ├── semana_01/
 │   ├── semana_02/
+│   ├── semana_03/
 │   └── old/
 ├── Direito/
 │   ├── edital/

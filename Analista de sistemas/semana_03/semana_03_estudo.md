@@ -25,7 +25,8 @@ O contexto de Analista de Sistemas serve para aplicar a norma a situações conc
 
 | Tema | Fonte oficial | Limite que deve ser preservado |
 |---|---|---|
-| Direitos fundamentais e art. 37 | [Constituição consolidada — Senado Federal](https://legis.senado.leg.br/norma/579494/publicacao/16434817) e [Constituição compilada — Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm) | A proteção de dados do art. 5º, LXXIX, decorre da EC nº 115/2022. A acumulação do art. 37, XVI, `b`, deve seguir a EC nº 138/2025. |
+| Direitos fundamentais e art. 37 | [Constituição consolidada — Senado Federal](https://legis.senado.leg.br/norma/579494/publicacao/16434817) e [Constituição compilada — Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm) | A proteção de dados do art. 5º, LXXIX, decorre da EC nº 115/2022. O teto único do art. 37, § 12, foi incluído pela EC nº 47/2005. A acumulação do inciso XVI, `b`, deve seguir a EC nº 138/2025. |
+| Teto único estadual e distrital | [Emenda Constitucional nº 47/2005 — Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc47.htm) | A opção exige emenda à Constituição estadual ou à Lei Orgânica distrital, usa o parâmetro e o limite do § 12 e preserva as exceções expressas para Deputados Estaduais e Distritais e Vereadores. |
 | Alteração da acumulação por professor | [Emenda Constitucional nº 138/2025 — Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc138.htm) | Desde 22/12/2025, a alínea `b` admite um cargo de professor com outro **de qualquer natureza**, se houver compatibilidade de horários e observância do teto. |
 | Organização administrativa | Constituição, arts. 37, XIX e XX, e [Decreto-Lei nº 200/1967](https://www.planalto.gov.br/ccivil_03/decreto-lei/del0200.htm), arts. 4º e 5º | O Decreto-Lei é apoio federal e conceitual; não será apresentado como diploma nominal autônomo do edital. Concentração e desconcentração também exigem leitura doutrinária. |
 | Sistema CFA/CRAs | [Lei nº 4.769/1965](https://www.planalto.gov.br/ccivil_03/leis/l4769.htm), especialmente arts. 6º a 8º, e [Regimento do CRA-PR — RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955) | O caso do conselho contextualiza autarquia e fiscalização profissional; não autoriza generalizar toda regra interna do Sistema para outras autarquias. |
@@ -675,7 +676,9 @@ O inciso XI estrutura teto e subtetos. Para este primeiro contato, memorize o ma
 - nos Municípios, é o subsídio do Prefeito;
 - nos Estados e no Distrito Federal, o parâmetro varia por Poder: Governador no Executivo, Deputados Estaduais ou Distritais no Legislativo e Desembargadores do Tribunal de Justiça no Judiciário, estes limitados a 90,25% do subsídio dos Ministros do STF; esse parâmetro também alcança membros do Ministério Público, Procuradores e Defensores Públicos, conforme o próprio inciso XI.
 
-Não invente um único subteto para todo caso nem converta esses parâmetros em valores monetários sem dado oficial. O § 9º estende o inciso XI às empresas públicas, sociedades de economia mista e subsidiárias que recebam recursos públicos para pagamento de pessoal ou custeio em geral.
+O § 12, porém, faculta aos Estados e ao Distrito Federal adotar, em seu âmbito, **teto único**: isso exige emenda à respectiva Constituição estadual ou à Lei Orgânica do Distrito Federal, e o parâmetro passa a ser o subsídio mensal dos Desembargadores do respectivo Tribunal de Justiça, limitado a 90,25% do subsídio mensal dos Ministros do STF. Essa opção constitucional não se aplica aos subsídios dos Deputados Estaduais e Distritais nem aos dos Vereadores. Portanto, antes de aplicar os subtetos por Poder, verifique se o Estado ou o Distrito Federal exerceu a faculdade do § 12 e se o agente está entre as exceções expressas.
+
+Não presuma que todo Estado ou o Distrito Federal adotou o teto único nem converta esses parâmetros em valores monetários sem dado oficial. O § 9º estende o inciso XI às empresas públicas, sociedades de economia mista e subsidiárias que recebam recursos públicos para pagamento de pessoal ou custeio em geral.
 
 #### Acumulação após a EC nº 138/2025
 
@@ -2355,11 +2358,11 @@ Não use “feriu a moralidade” como tipo aberto. O art. 11 é taxativo. Tamb�
 
 ### 10. Alerta de atualização — ADIs 7156 e 7236
 
-O STF concluiu em 1º/07/2026 o julgamento conjunto das ADIs 7156 e 7236, com divulgação da ata no DJe em 2/07/2026. Para esta prova, trate o resultado como alerta oficial e revalide eventuais desenvolvimentos até o marco jurisprudencial do edital:
+O STF concluiu em 1º/07/2026 o julgamento conjunto das ADIs 7156 e 7236; o DJe foi divulgado em 1º/07/2026 e publicado em 2/07/2026. Para esta prova, trate o resultado como alerta oficial e revalide eventuais desenvolvimentos até o marco jurisprudencial do edital:
 
 - foram preservadas a exigência de dolo e a taxatividade do art. 11;
 - a proteção da divergência interpretativa do art. 1º, § 8º, não cobre qualquer opinião: ausentes dolo e erro grosseiro, a interpretação deve basear-se em jurisprudência assentada nos Tribunais Superiores ou no STF; na falta dela, em decisão de mérito transitada em julgado de órgão colegiado de segundo grau, ainda que o entendimento não venha posteriormente a prevalecer;
-- a perda alcança, como regra definida no julgamento, todas as funções públicas; excepcional e fundamentadamente, o juiz pode afastá-la de uma ou outra função específica, conforme as circunstâncias e a gravidade, e o § 4º do art. 12 foi invalidado;
+- nas hipóteses dos arts. 9º e 10, em que a perda da função pública é sanção cabível, o magistrado tem o poder-dever de estendê-la aos demais vínculos; somente pode deixar de fazê-lo em caráter excepcional e fundamentado, consideradas as circunstâncias e a gravidade da infração, e o § 4º do art. 12 foi invalidado;
 - não é toda absolvição criminal que impede a ação de improbidade: a decisão criminal transitada em julgado sobre os mesmos fatos produz esse efeito nos fundamentos dos arts. 65, 386, I, e 386, IV, do Código de Processo Penal;
 - foi afastada a redução automática do prazo pela metade no art. 23, § 5º, admitindo-se limite máximo de vinte anos segundo a decisão.
 

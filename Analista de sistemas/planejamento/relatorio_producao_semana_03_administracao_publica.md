@@ -1,15 +1,15 @@
-# Relatório de pré-produção — Semana 3 — Administração Pública e Legislação Correlata
+# Relatório de produção e auditoria — Semana 3 — Administração Pública e Legislação Correlata
 
 ## 1. Identificação e natureza do documento
 
 - **Trilha:** CRA-PR 2026 — Analista de Sistemas.
 - **Semana:** 3.
 - **Janela prevista no Plano Mestre:** 27/07/2026 a 01/08/2026.
-- **Disciplina deste baseline:** Conhecimentos de Administração Pública e Legislação Correlata.
-- **Status:** planejamento pré-produção; teoria, questões, gabaritos e comentários ainda inexistentes.
-- **Finalidade:** congelar o recorte do edital, a distribuição pedagógica, as âncoras e as fontes oficiais confirmadas antes da redação.
+- **Disciplina:** Conhecimentos de Administração Pública e Legislação Correlata.
+- **Status final:** teoria, banco semanal, super simulado e documentação produzidos e aprovados nas auditorias estrutural, semântica e documental.
+- **Finalidade:** registrar o baseline anterior à escrita e, nas seções finais, as evidências de produção, cobertura e aceite.
 
-Este relatório não aprova conteúdo e não autoriza tratar fonte pendente como confirmada. Uma linha marcada como planejada representa uma obrigação futura de cobertura, não teoria já produzida.
+As seções 1 a 9 preservam o baseline que autorizou a produção e, por isso, mantêm verbos no futuro e estados “planejados”. O resultado efetivamente produzido e o veredito controlador constam a partir da seção 10; uma linha do baseline não substitui a auditoria final.
 
 ### 1.1 Premissa de planejamento
 
@@ -260,13 +260,13 @@ As 70 questões do dia não serão resolvidas na primeira passagem.
 
 | Tópico | Fonte oficial confirmada | Uso e alerta de vigência | Estado |
 |---|---|---|---|
-| Direitos fundamentais e art. 37 | [Constituição consolidada — Senado](https://legis.senado.leg.br/norma/579494/publicacao/16434817) e [Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm) | EC nº 115/2022 incluiu proteção de dados no art. 5º, LXXIX; EC nº 138/2025 alterou a acumulação do art. 37, XVI, `b` | Confirmada |
+| Direitos fundamentais e art. 37 | [Constituição consolidada — Senado](https://legis.senado.leg.br/norma/579494/publicacao/16434817), [Planalto](https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm) e [EC nº 47/2005](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc47.htm) | EC nº 115/2022 incluiu a proteção de dados no art. 5º, LXXIX; EC nº 47/2005 incluiu o art. 37, § 12; EC nº 138/2025 alterou a acumulação do art. 37, XVI, `b` | Confirmada |
 | Organização administrativa | Constituição e [Decreto-Lei nº 200/1967](https://www.planalto.gov.br/ccivil_03/decreto-lei/del0200.htm) | apoio conceitual; não transforma o Decreto-Lei em norma nominal do edital | Confirmada |
 | Conselho profissional | [Lei nº 4.769/1965](https://www.planalto.gov.br/ccivil_03/leis/l4769.htm) | natureza pública e organização do Sistema CFA/CRAs, apenas para contextualizar autarquia e fiscalização | Confirmada |
 | Atos e motivação | [Lei nº 9.784/1999 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/1999/lei-9784-29-janeiro-1999-322239-normaatualizada-pl.html) | apoio federal para motivação, anulação, revogação e convalidação; não será apresentada como lei nominal do edital nem universalizada a todos os entes | Confirmada com limite |
 | LAI | [Lei nº 12.527/2011 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/2011/lei-12527-18-novembro-2011-611802-normaatualizada-pl.html) e [Planalto](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm) | Lei nº 15.141/2025 inseriu o art. 8º-B, específico para transparência remuneratória dos conselhos profissionais | Confirmada |
 | LGPD | [Lei nº 13.709/2018 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html) e [Planalto](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm) | Lei nº 15.352/2026 transformou a ANPD em Agência Nacional de Proteção de Dados, agência reguladora e autarquia especial | Confirmada |
-| Improbidade | [Lei nº 8.429/1992 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/1992/lei-8429-2-junho-1992-357452-normaatualizada-pl.html) e [Planalto](https://www.planalto.gov.br/ccivil_03/leis/l8429.htm) | redação estruturada pela Lei nº 14.230/2021; decisões de julho de 2026 nas ADIs 7156/7236 exigem conferência pelo marco do item 5.3.7 | Confirmada; jurisprudência em monitoramento |
+| Improbidade | [Lei nº 8.429/1992 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/1992/lei-8429-2-junho-1992-357452-normaatualizada-pl.html) e [Planalto](https://www.planalto.gov.br/ccivil_03/leis/l8429.htm) | redação estruturada pela Lei nº 14.230/2021; decisões oficiais das ADIs 7156/7236 conferidas no estado publicado até 16/07/2026 | Confirmada até o corte de produção; revalidar antes da prova |
 | Licitação e contratos | [Lei nº 14.133/2021 consolidada — Câmara](https://www2.camara.leg.br/legin/fed/lei/2021/lei-14133-1-abril-2021-791222-normaatualizada-pl.html) e [Planalto](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) | modalidades do art. 28; critérios do art. 33; regimes anteriores revogados nos termos do art. 193; valores de 2026 dependem do Decreto nº 12.807/2025 | Confirmada |
 | Valores de contratação direta em 2026 | [Decreto nº 12.807/2025](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12807.htm) | atualização anual do art. 182; evitar qualquer valor de ano anterior | Confirmada |
 | Contratações de TIC | [IN SGD/ME nº 94/2022 — Governo Digital](https://www.gov.br/governodigital/pt-br/contratacoes-de-tic/legislacao/processo-de-contratacao-de-solucoes-de-tic-regido-pela-lei-ndeg-14-133-de-2021) | aplica-se ao SISP federal; o edital a nomeia, mas o material não afirmará aplicação automática ao CRA-PR | Confirmada com limite |
@@ -276,8 +276,8 @@ As 70 questões do dia não serão resolvidas na primeira passagem.
 
 - Alterações de diplomas e atos normativos podem ser cobradas quando vigentes até a publicação do Edital de Abertura, conforme item 5.3.6.
 - Súmulas, jurisprudência e precedentes dos tribunais superiores podem ser considerados se publicados até 30 dias antes da prova, conforme item 5.3.7.
-- Como a prova está prevista para 13/09/2026, a jurisprudência deverá ser revalidada após o fechamento temporal correspondente, antes do aceite final.
-- As ADIs 7156/7236, julgadas em julho de 2026, serão tratadas como alerta de atualização da LIA e somente integrarão questão se a publicação oficial e o marco do item 5.3.7 forem confirmados na auditoria final.
+- Como a prova está prevista para 13/09/2026, a jurisprudência deverá ser revalidada após o fechamento temporal correspondente, antes da prova. O aceite deste material registra o estado oficial conhecido em 16/07/2026 e não substitui essa atualização pré-prova.
+- As ADIs 7156/7236 foram concluídas em 1º/07/2026 e tiveram atos oficiais de julgamento divulgados antes do corte projetado de 30 dias. O material usa apenas os limites expressamente conferidos até 16/07/2026; retificação, modulação ou desenvolvimento posterior exige nova conferência.
 - Resumos privados, cursos e apostilas não serão usados como fonte normativa final.
 
 ---
@@ -339,3 +339,184 @@ A teoria somente poderá começar quando todos os itens seguintes estiverem conc
 ## 9. Veredito pré-produção
 
 **Baseline aprovado para iniciar a teoria.** O recorte do edital, o peso da disciplina, a relação com o cargo, as faixas planejadas, as âncoras, os exemplos mínimos, as cargas, os limites e as fontes oficiais estão registrados antes da produção. Esta aprovação não antecipa o aceite final das questões nem do super simulado.
+
+---
+
+## 10. Resultado da produção
+
+### 10.1 Jornada, volume e carga inicial
+
+| Dia | Tema | Principais | Extras | Sessões | Carga inicial |
+|---|---|---:|---:|---:|---:|
+| 1 | Direitos fundamentais e estrutura da Administração Pública | 50 | 20 | 3 | 8h40 |
+| 2 | Princípios e disposições do art. 37 | 50 | 20 | 3 | 8h40 |
+| 3 | Atos administrativos | 50 | 20 | 3 | 8h40 |
+| 4 | Poderes, agentes e responsabilidade civil do Estado | 50 | 20 | 3 | 8h40 |
+| 5 | Licitações, contratos e aplicação em TIC | 50 | 20 | 3 | 8h40 |
+| 6 | LAI, LGPD, improbidade e revisão integrada | 50 | 20 | 3 | 8h40 |
+| **Total** | **Seis dias** | **300** | **120** | **18** | **52h** |
+
+A carga inicial soma abertura, Blocos 1–6, mapa, mini revisão, fixação, checklist, roteiro, dez Essenciais, correção A–D e caderno de erros. As 420 questões não pertencem a essas 52 horas: 360 itens ficam em ciclos posteriores.
+
+### 10.2 Distribuição final de dificuldade
+
+| Dia | Médias | Difíceis | Muito difíceis |
+|---|---:|---:|---:|
+| 1 | 28 | 28 | 14 |
+| 2 | 28 | 28 | 14 |
+| 3 | 28 | 28 | 14 |
+| 4 | 28 | 28 | 14 |
+| 5 | 28 | 28 | 14 |
+| 6 | 28 | 28 | 14 |
+| **Banco semanal** | **168** | **168** | **84** |
+
+Em cada dia, as 50 principais seguem 20/20/10 e as 20 extras seguem 8/8/4. As 84 Muito difíceis foram auditadas para exigir três ou mais filtros substantivos; extensão isolada não foi aceita como dificuldade.
+
+### 10.3 Distribuição final por uso
+
+| Dia | Essenciais | Aprofundamento | Revisão | Simulado |
+|---|---:|---:|---:|---:|
+| 1 | 20 | 20 | 15 | 15 |
+| 2 | 20 | 20 | 15 | 15 |
+| 3 | 20 | 20 | 15 | 15 |
+| 4 | 20 | 20 | 15 | 15 |
+| 5 | 20 | 20 | 15 | 15 |
+| 6 | 20 | 20 | 15 | 15 |
+| **Banco semanal** | **120** | **120** | **90** | **90** |
+
+### 10.4 Super simulado suplementar
+
+| Componente | Médio | Difícil | Muito difícil | Total |
+|---|---:|---:|---:|---:|
+| Dez itens integradores por dia-base | 24 | 24 | 12 | 60 |
+
+O super simulado é inédito, mistura os seis dias e não altera o total oficial de 420 questões do banco semanal.
+
+## 11. Cobertura final do edital
+
+| Tópico do edital | Dia | Seção | Questões relacionadas | Status |
+|---|---:|---|---|---|
+| Direitos e deveres individuais e coletivos | 1 | `s3-d1-direitos-garantias` | Q1–Q12 | Coberto e auditado |
+| Centralização, descentralização, concentração, desconcentração, direta e indireta | 1 | `s3-d1-organizacao-eixos` | Q13–Q25 | Coberto e auditado |
+| Autarquias, fundações, empresas públicas e sociedades de economia mista | 1 | `s3-d1-entidades` | Q26–Q40 | Coberto e auditado |
+| Conselhos profissionais, autarquia e fiscalização | 1 | `s3-d1-conselhos-autarquias` | Q41–Q50 | Coberto e auditado |
+| Legalidade, impessoalidade, moralidade, publicidade e eficiência | 2 | `s3-d2-principios-expressos` | Q1–Q16 | Coberto e auditado |
+| Finalidade, motivação, razoabilidade, proporcionalidade, segurança e autotutela | 2 | `s3-d2-principios-relacionados` | Q17–Q28 | Coberto e auditado |
+| Ingresso, acumulação, teto, contratação e demais disposições do art. 37 | 2 | `s3-d2-art37-disposicoes` | Q29–Q44 | Coberto e auditado |
+| Promoção pessoal e integração dos princípios | 2 | `s3-d2-integracao-principios` | Q45–Q50 | Coberto e auditado |
+| Conceito, elementos e requisitos do ato | 3 | `s3-d3-atos-requisitos` | Q1–Q14 | Coberto e auditado |
+| Atributos, classificação e espécies | 3 | `s3-d3-atos-atributos-especies` | Q15–Q26 | Coberto e auditado |
+| Motivo, motivação e motivos determinantes | 3 | `s3-d3-motivo-motivacao` | Q27–Q34 | Coberto e auditado |
+| Vinculação, discricionariedade, anulação, revogação, convalidação e vícios | 3 | `s3-d3-vinculacao-discricionariedade`; `s3-d3-extincao-convalidacao` | Q35–Q50 | Coberto e auditado |
+| Poderes hierárquico, disciplinar, regulamentar e de polícia | 4 | `s3-d4-poderes` | Q1–Q16 | Coberto e auditado |
+| Uso e abuso, excesso e desvio de finalidade | 4 | `s3-d4-abuso-poder` | Q17–Q24 | Coberto e auditado |
+| Agentes, cargos, empregos e funções | 4 | `s3-d4-agentes-publicos` | Q25–Q36 | Coberto e auditado |
+| Responsabilidade por ação e omissão, dano, nexo, excludentes e atenuantes | 4 | `s3-d4-responsabilidade-civil`; `s3-d4-integracao` | Q37–Q50 | Coberto e auditado |
+| Princípios, planejamento e procedimento da Lei nº 14.133/2021 | 5 | `s3-d5-licitacao-planejamento` | Q1–Q12 | Coberto e auditado |
+| Modalidades e critérios de julgamento | 5 | `s3-d5-modalidades-criterios` | Q13–Q22 | Coberto e auditado |
+| Contratação direta, dispensa e inexigibilidade | 5 | `s3-d5-contratacao-direta` | Q23–Q34 | Coberto e auditado |
+| Contratos, fiscalização, recebimento e sanções no limite ensinado | 5 | `s3-d5-contratos` | Q35–Q44 | Coberto e auditado |
+| Lei nº 14.133/2021 e IN SGD/ME nº 94/2022 em TIC | 5 | `s3-d5-integracao-tic` | Q45–Q50 | Coberto e auditado |
+| LAI e transparência ativa/passiva, acesso parcial, pedido e restrição | 6 | `s3-d6-lai` | Q1–Q14 | Coberto e auditado |
+| LGPD, Poder Público, direitos, segurança e Agência Nacional | 6 | `s3-d6-lgpd` | Q15–Q28 | Coberto e auditado |
+| Lei nº 8.429/1992: dolo, tipicidade, lesividade e irregularidade | 6 | `s3-d6-improbidade` | Q29–Q42 | Coberto e auditado |
+| Publicidade, proteção de dados, finalidade e improbidade | 6 | `s3-d6-integracao-dados`; `s3-d6-revisao-integrada` | Q43–Q50 | Coberto e auditado |
+
+Os extras E1–E20 de cada dia cobrem apenas as revisões e práticas ensinadas nos Blocos 4 e 5. O Bloco 6 não introduz conteúdo resolutivo novo.
+
+## 12. Carga distribuída e ciclos futuros
+
+| Etapa | Itens por dia | Total semanal | Regra de execução |
+|---|---:|---:|---|
+| Primeira passagem | 10 Essenciais | 60 | dentro da Sessão C, com correção integral |
+| Abertura de D+2 | 10 Essenciais | 60 | corrigir antes do Aprofundamento |
+| Aprofundamento | 20 | 120 | concluir antes de D+7 |
+| D+7 | 15 de Revisão | 90 | sem releitura inicial |
+| Ciclo seguinte | 15 de Simulado | 90 | sem consulta e em tempo controlado |
+| **Total** | **70** | **420** | **nenhum dia exige maratona do banco completo** |
+
+Os IDs de cada etapa estão registrados no roteiro da teoria e no calendário do banco. A primeira passagem usa três sessões de 2h50, 2h50 e 3h, com ponto de parada explícito.
+
+## 13. Normas, alterações e limites confirmados
+
+| Fonte oficial | Situação usada | Decisão de produção |
+|---|---|---|
+| Constituição Federal consolidada | vigente; art. 37, § 12, incluído pela EC nº 47/2005 e inciso XVI, `b`, atualizado pela EC nº 138/2025 | teto único facultativo com procedimento, parâmetro, limite e exceções expressas; redação atual da acumulação por professor; nenhum texto anterior tratado como vigente |
+| Lei nº 9.784/1999 | vigente para a Administração Pública federal | apoio a atos/processo apenas quando o enunciado delimita o âmbito federal |
+| Lei nº 14.133/2021 | regime vigente de licitações e contratos | cinco modalidades, seis critérios, planejamento e contratação direta; modalidades antigas não aparecem como atuais |
+| Decreto nº 12.807/2025 | valores vigentes desde 01/01/2026 | limites de 2026 usados somente no recorte ensinado |
+| IN SGD/ME nº 94/2022 | vigente no SISP do Poder Executivo federal | não se presume aplicação automática ao CRA-PR |
+| LAI e Lei nº 15.141/2025 | art. 8º-B vigente | lista nominal e individualizada das parcelas possíveis dos empregados; o artigo, sozinho, não impõe valor mensal efetivamente pago nem dado estranho |
+| LGPD e Lei nº 15.352/2026 | vigentes | ANPD tratada como Agência Nacional, autarquia especial e agência reguladora |
+| Lei nº 8.429/1992 após Lei nº 14.230/2021 | vigente | tipo, dolo e resultado exigido; ilegalidade ou erro isolados não bastam |
+| ADIs 7156 e 7236 | atos oficiais do julgamento conferidos até 16/07/2026 | limites jurisprudenciais reproduzidos sem extrapolação; desenvolvimentos posteriores devem ser revalidados antes da prova |
+
+Não foi localizada norma expressamente indicada no edital que estivesse revogada e ainda fosse tratada como vigente no material. Convite e tomada de preços aparecem apenas como modalidades antigas, não como opções atuais da Lei nº 14.133/2021.
+
+## 14. Limitações e assuntos adiados
+
+- Controle legislativo, judicial e administrativo não foi criado como programa autônomo porque esse recorte não consta do conteúdo comum transcrito.
+- Contratos administrativos foram limitados ao necessário para licitação, fiscalização, recebimento, sanção e contratação de TIC ensinados.
+- Administração geral, orçamento, finanças públicas, tributário e contabilidade pública permanecem fora desta semana.
+- Banco de dados, engenharia de software e programação foram deslocados, respectivamente, para as Semanas 4, 5 e 6; não foram removidos do Plano Mestre.
+- Aprofundamento CFA/CRA, RLM, Português, Informática, inglês e contratações de TIC permanece na Semana 7; a Semana 8 concentra revisão técnica e dois simulados.
+- Jurisprudência posterior a 16/07/2026 deve ser revalidada pelo corte do edital antes da prova.
+- O padrão semanal não foi alterado: a produção não revelou regra nova necessária.
+
+## 15. Substituições e correções durante a auditoria
+
+As seis bancas diárias foram produzidas por autores separados e depois submetidas a revisão cruzada. Entre as correções rastreadas:
+
+- Dia 1: Q12, Q25, Q29, Q33, Q37–Q40 e Q49–Q50 receberam distratores, casos ou referências mais precisos.
+- Dia 2: Q4/Q36 tiveram níveis recalibrados sem alterar a matriz; Q48/Q50 e E19 receberam correções de finalidade, conceito e comentário; a Q32 passou a declarar a não adoção do teto único, e a teoria incorporou o art. 37, § 12, antes dessa cobrança.
+- Dia 3: Q45 foi substituída por caso federal de decadência do art. 54, eliminando sobreposição com Q43; E18 ganhou distrator mais plausível.
+- Dia 4: Q10, Q13–Q16, Q24, Q35–Q36, Q47–Q48, E9–E10 e E19–E20 foram reforçadas; Q36 perdeu ambiguidade entre função de confiança e cargo em comissão.
+- Dia 5: Q12, Q17, Q20, Q22, Q26, Q32, Q38, Q41–Q50, E11 e E17–E20 foram reforçadas; a auditoria distinguiu regime de transição, modalidades/critérios, instrução do art. 72, recebimentos, papéis, sanções e o âmbito estritamente federal/SISP da IN nº 94/2022.
+- Dia 6: Q25/Q42 e E17 tiveram alternativas homogeneizadas; o comentário da Q29 passou a usar a formulação legal do dolo de alcançar o resultado ilícito tipificado; a Q41 delimitou a perda da função às hipóteses dos arts. 9º e 10 e separou cabimento, extensão e exceção fundamentada.
+- Super simulado: Q1, Q2, Q12, Q17, Q18, Q20–Q21, Q23–Q24, Q29, Q31–Q32, Q34, Q39, Q42, Q44, Q48, Q51 e Q54–Q60 foram substituídas ou reforçadas na auditoria semântica; a Q44 recebeu novo caso de conectores, a Q54 passou a cobrar integralmente o art. 37, § 12, e a Q57 foi delimitada como conduta comissiva.
+- Rechecagem final do super: a Q29 foi substituída por caso de PCA, estimativa e compatibilidade orçamentária; a Q51, por fato decisivo superveniente e contraditório; a Q56 recebeu referência adicional à LGPD. A segunda auditoria independente aprovou os 60 itens sem bloqueador remanescente.
+
+Nenhuma correção alterou as matrizes finais. Toda troca de gabarito foi sincronizada na questão, na tabela e no comentário.
+
+## 16. Resultado da auditoria técnica
+
+| Item | Resultado |
+|---|---:|
+| Questões principais | 300 |
+| Questões extras | 120 |
+| Banco semanal | 420 |
+| Médio/Difícil/Muito difícil — banco | 168/168/84 |
+| Gabaritos | 420 |
+| Comentários completos | 420 |
+| Referências válidas | 420 |
+| Super simulado | 60 |
+| Médio/Difícil/Muito difícil — super | 24/24/12 |
+| Alternativas A–D verificadas | 1.680 no banco + 240 no super |
+| Alternativas E | 0 |
+| Questões órfãs de teoria | 0 |
+| Gabaritos divergentes | 0 |
+| Duplicidades literais ou quase duplicidades impeditivas | 0 |
+| Alertas de comprimento/alinhamento após correção | 0 |
+| Cobertas/parciais/não cobertas/antecipadas/inadequadas/ambíguas — banco | 420/0/0/0/0/0 |
+| Níveis superestimados/subestimados após correção | 0/0 |
+| Conteúdo novo no Bloco 6 | 0 |
+| Referências futuras ou superficiais | 0 |
+| Sessões acima do limite | 0 |
+| Critérios eliminatórios remanescentes | 0 |
+| Distribuição A/B/C/D — super simulado | 15/15/15/15, sem três respostas iguais consecutivas |
+| Segunda auditoria independente do super | Aprovado, sem bloqueador remanescente |
+
+## 17. Rubrica e veredito final
+
+| Dimensão | Pontos | Resultado |
+|---|---:|---:|
+| Fidelidade ao edital e às fontes | 15 | 15 |
+| Cobertura e profundidade da teoria | 20 | 20 |
+| Exemplos e prática guiada | 15 | 15 |
+| Alinhamento entre estudo e questões | 15 | 15 |
+| Qualidade das questões | 15 | 15 |
+| Qualidade dos comentários | 15 | 15 |
+| Organização e uso pedagógico | 5 | 5 |
+| **Total** | **100** | **100** |
+
+**Veredito:** aprovado. As validações finais reproduziram 420 questões e 420 comentários no banco, 60 questões e 60 comentários no super simulado, referências existentes, matrizes corretas e nenhuma duplicidade impeditiva. Não há critério eliminatório remanescente; alteração posterior exige nova auditoria, e a jurisprudência deve ser revalidada no corte pré-prova previsto no edital.
