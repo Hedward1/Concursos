@@ -93,6 +93,8 @@ Cada cronograma deve distinguir:
 
 O cronograma deve contabilizar separadamente leitura, resolução, correção A–D, produção discursiva e caderno de erros. A existência de 50 principais e 20 extras não significa que os 70 itens devam ser resolvidos e corrigidos na primeira passagem.
 
+Em dia multidisciplinar, cada disciplina principal precisa receber teoria, exemplo e prática em tempo próprio. Não concentre dois programas extensos em um único bloco curto: selecione o núcleo essencial para as sessões A e B e encaminhe, de modo explícito, o saldo do edital para D+2, aprofundamento, D+7, simulado ou semana temática posterior.
+
 ### Contrato pedagógico dos Blocos 4, 5 e 6
 
 Os Blocos 1, 2 e 3 concentram o tema principal. Os três blocos finais têm funções fixas e não podem ser deslocados para números maiores apenas porque o tema técnico foi dividido em mais etapas:
@@ -114,7 +116,7 @@ Regras obrigatórias:
 - declarar a faixa de questões principais ou extras associada a cada bloco; se um bloco tiver apenas entrega prática e nenhum item objetivo, registrar isso expressamente.
 - manter o Bloco 6 fisicamente depois de todo conteúdo dos Blocos 1–5; ele não pode legitimar questão anterior nem apresentar regra, norma, fórmula ou conceito novo.
 
-Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, inclua tema, proposta, roteiro de estrutura e critérios de autocorreção.
+Quando a semana abranger Português/discursiva ou quando houver previsão de treino discursivo, apresente **antes de qualquer produção**: explicação da estrutura, modelo completo comentado, identificação de tese, argumento, explicação, exemplo e consequência, exemplo de erro e critérios de autocorreção. A entrega da primeira passagem deve ser delimitada pelo tempo disponível — introdução, parágrafo de desenvolvimento, plano de texto ou revisão de texto curto — e não uma redação completa sem modelo e tempo suficientes.
 
 O mapa é diário, não semanal: ele deve servir diretamente à sessão de estudo e ao respectivo caderno de erros.
 
@@ -396,9 +398,9 @@ Semanas extensas não devem ser criadas ou revisadas simultaneamente em trilhas 
 
 ### Plano transitório de migração — julho de 2026
 
-Neste ciclo de migração, o lote Semana 1 de Analista, D1–D2, está tecnicamente concluído. A ordem pendente é: Semana 1 de Analista, D5–D6; Semana 2 de Analista em lotes D1–D2, D3–D4 e D5–D6; depois Direito, também em lotes de até dois dias. Cada lote deve receber relatório, validação e publicação próprios antes da abertura do seguinte. Não editar os bancos de Analista e Direito ao mesmo tempo. Este roteiro deixa de reger o trabalho quando os materiais legados indicados abaixo forem migrados.
+Neste ciclo de migração, os três lotes da Semana 1 de Analista, D1–D2, D3–D4 e D5–D6, estão tecnicamente concluídos. Após a publicação do lote D5–D6, a ordem pendente passa a ser: Semana 2 de Analista em lotes D1–D2, D3–D4 e D5–D6; depois Direito, também em lotes de até dois dias. Cada lote deve receber relatório, validação e publicação próprios antes da abertura do seguinte. Não editar os bancos de Analista e Direito ao mesmo tempo. Este roteiro deixa de reger o trabalho quando os materiais legados indicados abaixo forem migrados.
 
 ## Aplicação às semanas existentes
 
-- **Semana 1:** a estrutura de 300 principais, 120 complementares e 420 comentários está completa. Os Dias 1–2 foram auditados individualmente e aprovados tecnicamente no lote registrado em `relatorio_auditoria_semana_01_dias_1_2.md`. Os Dias 3–4 constituem o **modelo aprovado e congelado** no commit `1fcfbe3`: a teoria antecede a cobrança, a jornada termina em no máximo três sessões e o banco foi classificado individualmente. As 100 principais dos Dias 5–6 continuam fora deste aceite. Por isso, a semana conserva **conformidade parcial** e não pode ser declarada concluída antes da validação e publicação de cada lote.
+- **Semana 1:** a estrutura de 300 principais, 120 complementares e 420 comentários está completa. Os Dias 1–2 foram auditados individualmente e aprovados tecnicamente no lote registrado em `relatorio_auditoria_semana_01_dias_1_2.md`. Os Dias 3–4 constituem o **modelo aprovado e congelado** no commit `1fcfbe3`: a teoria antecede a cobrança, a jornada termina em no máximo três sessões e o banco foi classificado individualmente. Os Dias 5–6 foram auditados individualmente e aprovados tecnicamente no lote registrado em `relatorio_auditoria_semana_01_dias_5_6.md`. Assim, os seis dias e seus 300 itens principais e 120 extras possuem lotes diários aceitos; alterações futuras exigem novo recorte auditável. O super simulado permanece fora deste aceite.
 - **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente. As 120 extras dos Blocos 4–6 foram auditadas, receberam os seis metadados obrigatórios e níveis na matriz 48/48/24; os blocos foram normalizados, os comentários do Dia 6 foram individualizados e as divergências de cabeçalho da Questão 1 do Dia 1 e da Questão 3 do Dia 2 foram corrigidas. As 300 principais continuam no formato legado, sem níveis, e serão migradas em três lotes de dois dias; portanto, a semana segue **em migração** fora do recorte B4–B6 aceito.

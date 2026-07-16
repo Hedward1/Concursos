@@ -2779,1471 +2779,1108 @@ Feche cada sessão com três ações:
 3. atualize o caderno de erros e programe a próxima categoria, sem iniciar outra faixa no mesmo impulso.
 
 **Critério de conclusão da primeira passagem do Dia 4:** três sessões encerradas, teoria lida na ordem e a amostra fixa Principais 1–8 + Extras 4.1–4.2 resolvida e corrigida integralmente, com caderno de erros iniciado. As outras 10 Essenciais abrem D+2 antes do Aprofundamento; as categorias globais permanecem 20 Essenciais, 20 de Aprofundamento, 15 de Revisão e 15 de Simulado.
-# Dia 5 - Língua Portuguesa e Discursiva
+# Dia 5 — Língua Portuguesa e Discursiva
 
-## Objetivo do dia
+<a id="s1-d5-abertura"></a>
 
-Fortalecer a base de Língua Portuguesa para a prova objetiva e iniciar treino de discursiva dissertativa, com foco em interpretação, semântica, sintaxe, concordância, regência, crase, pontuação e organização textual.
+## Abertura, objetivo e orientação do dia
 
-## Por que esse assunto importa para a prova
+Ao final do Dia 5, você deverá conseguir:
 
-Língua Portuguesa vale 10 questões na objetiva. Além disso, a prova discursiva de Analista de Sistemas será uma dissertação de 20 pontos sobre tema de conhecimento geral. Ou seja, Português impacta duas etapas: objetiva e discursiva.
+- interpretar o comando antes de analisar as alternativas;
+- localizar tema, ideia central, tese, argumentos e referentes;
+- distinguir informação expressa, inferência válida e extrapolação;
+- julgar reescritas sem alterar sentido, referência ou relação lógica;
+- aplicar regras essenciais de sintaxe, concordância, regência, crase e pontuação;
+- reconhecer a estrutura da dissertação exigida pelo edital;
+- planejar e escrever um parágrafo de desenvolvimento;
+- revisar normas profissionais estudadas no Dia 4.
 
-Interpretação também ajuda nas matérias técnicas, porque muitas questões da Consulplan exigem atenção ao comando: correta, incorreta, exceto, de acordo com o texto, infere-se, não se pode afirmar.
+> Regra do dia: a teoria e o modelo comentado vêm antes da produção e das questões.
 
-## Como a Consulplan costuma cobrar esse conteúdo
+## Primeira passagem em três sessões
 
-A Consulplan usa textos relativamente longos e cobra:
-
-- ideia central;
-- inferência;
-- sentido de palavra no contexto;
-- coesão e referência;
-- pontuação;
-- concordância;
-- regência e crase;
-- reescrita sem alteração de sentido;
-- classificação sintática básica.
-
-Na discursiva, a banca tende a avaliar abordagem do tema, organização, progressão, coesão, clareza e correção gramatical.
-
-## Cronograma de 6h líquidas com pausas sugeridas
-
-| Bloco | Tempo | Atividade |
+| Sessão | Duração | Entrega obrigatória |
 |---|---:|---|
-| 1 | 2h | Interpretação, semântica, coesão e reescrita |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | Sintaxe, concordância, regência, crase e pontuação |
-| Pausa | 15min | Descanso |
-| 3 | 1h | Discursiva: estrutura, tese, argumentos e parágrafo |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Consolidação legal confirmada: Lei, Decreto, Regimento, Ética e aplicação em casos |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: modelo de introdução e desenvolvimento com revisão guiada |
-| 6 | 20min | Recuperação ativa: vírgula, crase, concordância, conectivos e reescrita já estudados |
+| A | 2h50 | abertura e Bloco 1; ficha com ideia central, inferência e três reescritas; **pare após concluir o protocolo de reescrita** |
+| B | 2h50 | Blocos 2 e 3; leitura do modelo, do erro e da rubrica; **pare após conseguir explicar a função de cada parágrafo do modelo** |
+| C | 3h | Blocos 4 a 6, revisão, dez questões e correção A–D; **pare somente depois de registrar os erros e a próxima revisão** |
 
-## Conteúdo dos blocos de revisão e consolidação
+Faça uma pausa real entre as sessões. Não transforme a primeira passagem em maratona.
 
-<a id="s1-d5-b4"></a>
-### Bloco 4 — Legislação confirmada e aplicação em casos: base para as Extras 5.1–5.20 (40min)
+### Distribuição da Sessão C
 
-As vinte Extras legais deste dia devem ser resolvidas somente com as fontes confirmadas abaixo. Resolução adicional marcada como pendente não serve de fundamento para resposta.
+- Bloco 4: 30 min.
+- Bloco 5: 35 min.
+- Bloco 6: 20 min.
+- Mini revisão: 5 min.
+- Cinco perguntas fixas: 10 min.
+- Checklist: 5 min.
+- Roteiro do banco: 5 min.
+- Dez questões essenciais: 30 min.
+- Correção A–D e caderno de erros: 40 min.
 
-#### Hierarquia funcional das fontes
+Total: 180 minutos.
 
-| Fonte | Conteúdo seguro | Limite |
+---
+
+<a id="s1-d5-b1"></a>
+
+## Bloco 1 — Interpretação, semântica, coesão e reescrita
+
+<a id="s1-d5-interpretacao"></a>
+
+### 1. Leia primeiro o comando
+
+Antes do texto, identifique a operação pedida:
+
+- correta ou incorreta;
+- informação expressa ou inferida;
+- manutenção ou alteração de sentido;
+- referência de pronome ou expressão;
+- valor de conectivo;
+- substituição gramaticalmente possível.
+
+Uma alternativa pode ser verdadeira no mundo e, ainda assim, não responder ao texto.
+
+### 2. Tema, ideia central e tese
+
+- Tema é o assunto amplo.
+- Ideia central é o que o texto afirma sobre esse assunto.
+- Tese é a posição defendida quando há argumentação.
+- Argumento é a razão usada para sustentar a tese.
+- Exemplo ilustra; sozinho, não substitui o argumento.
+
+Teste prático: resuma o texto em uma frase sem acrescentar causa, consequência ou julgamento.
+
+### 3. Informação expressa, inferência e extrapolação
+
+- Expressa: está literalmente formulada.
+- Inferência válida: decorre necessariamente de pistas do texto.
+- Possibilidade: é compatível, mas não obrigatória.
+- Extrapolação: acrescenta dado, causa, intensidade ou universalização sem apoio.
+
+Exemplo: “Alguns processos foram digitalizados.”
+
+- Válido: ao menos um processo foi digitalizado.
+- Inválido: todos os processos foram digitalizados.
+- Inválido: a digitalização tornou todos os processos mais rápidos.
+
+### 4. Quantificadores e negação
+
+- todo: conjunto inteiro;
+- algum: ao menos um;
+- nenhum: zero elemento;
+- nem todo: ao menos uma exceção;
+- não necessariamente: a conclusão pode falhar.
+
+“Nem todos os relatórios foram aprovados” equivale a “ao menos um relatório não foi aprovado”.
+
+Não equivale a “nenhum relatório foi aprovado”.
+
+### 5. Pressuposto e subentendido
+
+Pressuposto é acionado pela própria construção.
+
+Exemplo: “A equipe voltou a auditar o sistema” pressupõe auditoria anterior.
+
+Subentendido depende do contexto e da intenção; por isso exige mais cautela.
+
+### 6. Sentido contextual
+
+Não escolha o primeiro sinônimo do dicionário. Verifique:
+
+- o campo semântico do parágrafo;
+- a polaridade positiva ou negativa;
+- o grau de intensidade;
+- a relação com as frases vizinhas;
+- o registro formal ou informal.
+
+<a id="s1-d5-semantica-coesao"></a>
+
+### 7. Conectivos e relações lógicas
+
+| Relação | Marcas frequentes | Pergunta de controle |
 |---|---|---|
-| Lei nº 4.769/1965 | disciplina a profissão e estrutura o Sistema CFA/CRAs | ato inferior não pode ampliar livremente o campo definido em lei |
-| Decreto nº 61.934/1967 | regulamenta e detalha a execução da lei | não revoga nem ocupa posição superior à lei |
-| Regimento do CRA-PR, aprovado pela RN nº 651/2024 | organiza Plenário, Diretoria e demais órgãos, funcionamento, jurisdição e competências internas | não é Código de Ética nem cria competência nacional para o CRA-PR |
-| Código de Ética da RN nº 671/2025 | deveres, direitos, infrações e sanções éticas de profissionais e pessoas jurídicas, com as especificidades cabíveis | não regula a estrutura interna do CRA-PR |
-| Lei nº 12.514/2011 | contribuições devidas aos conselhos profissionais em linhas gerais | inadimplência não apaga diploma nem autoriza consequência inventada |
+| causa | porque, visto que, porquanto | apresenta o motivo? |
+| consequência | por isso, de modo que | apresenta o efeito? |
+| conclusão | portanto, logo, assim | fecha um raciocínio? |
+| oposição | mas, porém, contudo | contrasta ideias? |
+| concessão | embora, ainda que | admite obstáculo sem anular a tese? |
+| condição | se, caso, desde que | depende de hipótese? |
+| finalidade | para que, a fim de que | indica objetivo? |
+| explicação | pois, porque | justifica ordem ou afirmação? |
 
-**Regra:** lei disciplina, decreto regulamenta e atos do Sistema complementam matérias dentro de sua competência. Norma interna não afasta lei federal; número mais recente não significa prevalência automática; vigência e objeto precisam ser conferidos na fonte oficial e no edital.
+Trocar “embora” por “portanto” altera a relação lógica, mesmo com frases gramaticais.
 
-No Regimento confirmado, o **Plenário** é o órgão colegiado de deliberação superior, enquanto a **Diretoria Executiva** executa e administra dentro de suas competências. Também integram a organização Ouvidoria, Comissões, Grupos de Trabalho e Órgãos de Representação. Essa estrutura não deve ser confundida com dever ou infração do Código de Ética.
+### 8. Referenciação e coesão
 
-#### Registro, fiscalização e jurisdição
+Pronomes, elipses e expressões resumidoras conectam as partes do texto.
 
-Para resolver caso de anúncio, prestação de serviço ou organização, pergunte:
+Procedimento para descobrir o referente:
 
-1. a atividade está ligada ao campo profissional fiscalizado?
-2. quem atua: pessoa física, pessoa jurídica ou ambas?
-3. qual é a jurisdição do fato e da atividade?
-4. há participação técnica efetiva ou apenas indicação formal?
-5. qual fonte confirmada trata do objeto?
+1. localize a expressão retomadora;
+2. procure candidatos compatíveis em número e gênero;
+3. elimine o candidato que produza incoerência;
+4. releia o período com a substituição explícita.
 
-O CRA atua regionalmente na verificação da regularidade do exercício. O CFA coordena e normatiza nacionalmente dentro de suas atribuições; ele não substitui automaticamente a fiscalização cotidiana de cada Regional. Nem toda atividade empresarial se submete ao CRA: a natureza da atividade é decisiva. Em sentido inverso, CNPJ, contrato ou diploma não dispensam registro exigível nem regularizam retroativamente uso anterior indevido da condição profissional.
+Evite pronome com dois antecedentes plausíveis.
 
-**Finalidade:** fiscalização profissional protege a sociedade e a regularidade do exercício; não depende necessariamente de dano patrimonial já consumado nem se limita a cobrar anuidade.
+### 9. Escopo
 
-**Exemplo:** pessoa sem registro exigível anuncia serviço usando título profissional e só se registra depois. A fiscalização pode examinar a situação anterior; a regularização posterior não transforma automaticamente o passado em exercício regular.
+A posição de advérbios e da negação pode mudar o alcance da frase.
 
-#### Responsabilidade técnica e ética
+- “A comissão não analisou apenas os contratos” admite análise de outros itens.
+- “A comissão analisou apenas os contratos” restringe o objeto aos contratos.
 
-Responsabilidade técnica exige atuação real, orientação e supervisão. Ceder nome ou registro, assinar trabalho alheio ou aceitar indicação sem participar da atividade são situações de risco. A pessoa jurídica não assume, sozinha, a responsabilidade técnica que exige profissional habilitado e identificado.
+<a id="s1-d5-reescrita"></a>
 
-Núcleos éticos confirmados:
+### 10. Protocolo de reescrita
 
-- zelo, honestidade, responsabilidade e aperfeiçoamento;
-- independência técnica diante de pressão de cliente ou superior;
-- sigilo profissional, salvo justa causa ou hipótese legal aplicável;
-- urbanidade e colaboração regular com a fiscalização;
-- uso correto do nome, do título e do registro;
-- não facilitar exercício por pessoa não habilitada;
-- não assinar documento sem orientação, supervisão ou participação;
-- não dificultar a fiscalização;
-- não usar informação enganosa ou promessa absoluta incompatível com atuação ética;
-- comunicar dado cadastral cuja atualização seja exigida.
+Compare original e proposta em sete pontos:
 
-O Código alcança pessoas físicas e jurídicas com as especificidades de cada sujeito. Não conclua que todas as sanções se aplicam indistintamente: suspensão do exercício e cancelamento do registro profissional não se aplicam à pessoa jurídica segundo o conteúdo confirmado usado nesta apostila.
+1. sujeito e agente;
+2. referente dos pronomes;
+3. tempo e modo verbal;
+4. negação;
+5. quantificador;
+6. relação lógica;
+7. grau de certeza ou intensidade.
 
-As espécies gerais confirmadas no Código incluem advertência escrita e reservada, censura pública, suspensão do exercício e cancelamento do registro profissional, além das regras de multa e gradação cabíveis. A lista não autoriza escolher pena por intuição: sujeito, previsão, processo e circunstâncias precisam ser examinados.
+Na voz passiva, preserve o agente quando ele for relevante.
 
-**Exemplo:** profissional pressionado a alterar laudo sem base deve preservar independência, registrar o fundamento técnico e não validar informação falsa. Sigilo não serve para acobertar irregularidade nem desaparece automaticamente quando termina o contrato.
+Oração adjetiva restritiva, sem vírgulas, seleciona parte do conjunto.
 
-#### Processo, sanção e controle de fonte
+Oração adjetiva explicativa, entre vírgulas, atribui informação ao conjunto apresentado.
 
-Use a sequência `sujeito → conduta → jurisdição → órgão competente → norma → processo → consequência possível`. A sanção:
+Mantenha paralelismo: “planejar, executar e avaliar”, e não “planejar, execução e avaliar”.
 
-- precisa ter base normativa;
-- deve ser compatível com o sujeito;
-- depende de apuração regular, ciência dos fatos, contraditório, defesa e decisão fundamentada;
-- não é escolhida pelo denunciante;
-- não se torna automática porque existe documento, dano ou infração aparente.
+---
 
-Resumo de curso é apoio, não fonte normativa final. Quando houver divergência sobre prazo, requisito, sanção ou vigência, consulte a publicação oficial. Se a apostila declarou uma resolução pendente, a resposta não pode depender de literalidade dessa resolução.
+<a id="s1-d5-b2"></a>
 
-#### Roteiro de resolução das vinte Extras
+## Bloco 2 — Gramática aplicada à prova
 
-1. Circule o sujeito e o território.
-2. Nomeie o objeto: profissão, regulamentação, estrutura interna, ética ou contribuição.
-3. Escolha a fonte pelo objeto, não pelo número da norma.
-4. Elimine alternativas absolutas: “sempre”, “automaticamente”, “qualquer sanção”, “exclusivamente”.
-5. Verifique se a alternativa troca CFA por CRA, lei por decreto, Regimento por Código ou formação por registro.
-6. Em caso sancionador, exija processo, competência e fundamentação.
+<a id="s1-d5-sintaxe"></a>
+<a id="s1-d5-sintaxe-oracoes"></a>
 
-**Pegadinhas:** Regimento tratado como Código; decreto acima da lei; diploma confundido com registro; pessoa jurídica sempre fora da fiscalização; responsabilidade técnica de fachada; inadimplência tratada como cancelamento de diploma; sanção criada por proporcionalidade; resumo privado equiparado à publicação oficial.
+### 1. Funções sintáticas essenciais
 
-<a id="s1-d5-b5"></a>
-### Bloco 5 — Produção discursiva com modelo guiado (30min)
+- objeto direto completa verbo sem preposição obrigatória;
+- objeto indireto completa verbo com preposição obrigatória;
+- complemento nominal completa nome e costuma ter valor passivo;
+- agente da passiva pratica a ação na voz passiva;
+- adjunto adverbial indica circunstância;
+- aposto explica, resume, enumera ou especifica;
+- vocativo chama o interlocutor e não integra a oração.
 
-Produza uma introdução e um desenvolvimento usando a sequência `contexto → recorte → tese` e `argumento → explicação → exemplo → consequência`.
+Em “O acesso aos dados foi autorizado pela chefia”:
 
-**Tema:** ética no uso de tecnologias pelo poder público.
+- aos dados completa o nome “acesso”;
+- pela chefia é agente da passiva.
 
-**Introdução-modelo:**
+Orações reduzidas exigem recuperação do sujeito e da relação lógica.
 
-> A digitalização pode ampliar o acesso do cidadão aos serviços públicos, mas também aumenta a responsabilidade do Estado sobre dados e decisões automatizadas. Nesse cenário, eficiência não pode ser separada de segurança, transparência e controle. Assim, o uso ético da tecnologia pública depende de governança capaz de proteger direitos sem impedir a inovação.
+“Concluída a auditoria, a equipe publicou o relatório” expressa anterioridade temporal.
 
-**Desenvolvimento-modelo:**
+O particípio depois de um nome pode formar oração reduzida com valor adjetivo: em “a norma publicada em 2025”, “publicada em 2025” delimita qual norma, como faria “que foi publicada em 2025”. Não confunda essa função com circunstância da ação principal.
 
-> Em primeiro lugar, a governança de dados reduz riscos de exposição indevida e de decisões sem fundamento verificável. Quando um órgão define finalidade, acesso, registro de operações e mecanismos de revisão, a tecnologia deixa de funcionar como caixa-preta e passa a apoiar uma atuação responsável. Desse modo, segurança e prestação de contas fortalecem, em vez de atrasar, a transformação digital.
+<a id="s1-d5-concordancia-regencia-crase-pontuacao"></a>
+<a id="s1-d5-concordancia"></a>
 
-**Leitura do modelo:** a introdução contextualiza, delimita e assume posição; o desenvolvimento enuncia argumento, explica, exemplifica e apresenta consequência. `Mas` marca oposição; `assim` e `desse modo` conduzem à conclusão. Não há vírgula entre sujeito e verbo.
+### 2. Concordância verbal e nominal
 
-**Entrega:** escreva os dois parágrafos sobre outro tema e sublinhe tese, argumento, exemplo e consequência. Faça uma revisão específica de conectores, crase, concordância e pontuação.
+- haver com sentido de existir é impessoal: “há falhas”;
+- fazer indicando tempo é impessoal: “faz dois anos”;
+- mais de um normalmente leva o verbo ao singular;
+- um ou outro normalmente leva o verbo ao singular;
+- pronome apassivador faz o verbo concordar com o sujeito paciente;
+- índice de indeterminação mantém o verbo na terceira pessoa do singular.
 
-<a id="s1-d5-b6"></a>
-### Bloco 6 — Recuperação de Português e caderno de erros (20min)
+Compare:
 
-Este bloco não ensina regra nova e não possui faixa própria de Extras. Sem consulta, recupere as regras já estudadas no Dia 5:
+- “Publicaram-se os resultados”: resultados é sujeito paciente.
+- “Precisa-se de analistas”: de analistas é objeto indireto.
 
-1. não há crase antes de verbo;
-2. `haver` com sentido de existir permanece no singular;
-3. vírgula não separa sujeito de verbo nem verbo de complemento;
-4. reescrita deve preservar sujeito, tempo verbal e relação lógica;
-5. `embora` indica concessão, e `portanto`, conclusão;
-6. adjetivo concorda com o substantivo a que se refere.
+<a id="s1-d5-regencia-crase"></a>
 
-**Entrega:** corrija três frases do seu caderno e, para cada uma, registre `forma original | forma corrigida | regra recuperada | seção de origem`. Termine escrevendo, sem consulta, uma frase com concessão e outra com conclusão. Se a justificativa depender de regra não estudada, não a acrescente: marque-a para semana posterior.
+### 3. Regência
 
-### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 5
+- assistir a algo, no sentido de presenciar;
+- aspirar a algo, no sentido de desejar;
+- obedecer a algo;
+- preferir uma coisa a outra;
+- visar a algo, no sentido de almejar;
+- informar algo a alguém ou informar alguém de algo.
 
-| Faixa | Bloco | Matéria | Referência suficiente |
-|---|---|---|---|
-| Extras 5.1–5.20 | Bloco 4 | Legislação CFA/CRA confirmada | [`s1-d5-b4`](#s1-d5-b4) |
-| Sem faixa própria | Bloco 5 | Produção discursiva | [`s1-d5-b5`](#s1-d5-b5); entrega textual guiada |
-| Sem faixa própria | Bloco 6 | Recuperação de Português | [`s1-d5-b6`](#s1-d5-b6); entrega prática, sem questões novas |
+Não aceite mistura de construções: “preferir mais X do que Y” é inadequado no padrão cobrado.
 
-## Teoria explicada de forma didática
-
-### 1. Interpretação de texto
-
-Interpretação é identificar o que o texto diz, sugere ou permite concluir. Em concurso, você deve evitar respostas baseadas em opinião pessoal.
-
-Tipos de cobrança:
-
-- **ideia central:** assunto principal + posicionamento;
-- **inferência:** conclusão autorizada pelo texto;
-- **pressuposto:** informação assumida pelo enunciado;
-- **sentido contextual:** significado da palavra no trecho;
-- **coesão:** ligação entre partes do texto.
-
-Regra prática: primeiro descubra o comando da questão; depois volte ao texto.
-
-### Como funciona na prática
-
-Se o texto diz "a tecnologia pode ampliar a eficiência, desde que acompanhada de governança", a ideia central não é "tecnologia sempre melhora tudo". A frase condiciona o benefício à governança. A banca costuma colocar alternativas absolutas para induzir erro.
-
-### Exemplos resolvidos - interpretação
-
-**Exemplo 1:** frase: "A digitalização de serviços públicos amplia o acesso, mas exige proteção de dados."
-
-Ideia central: digitalização pode ampliar acesso, desde que acompanhada de cuidado com dados.
-
-Alternativa errada típica: "A digitalização impede riscos relacionados a dados." Errada, porque o texto diz que exige proteção.
-
-**Exemplo 2:** frase: "Nem toda inovação tecnológica representa melhoria administrativa."
-
-Inferência correta: algumas inovações podem não gerar melhoria administrativa.
-
-Pegadinha: transformar "nem toda" em "nenhuma".
-
-### 2. Semântica e coesão
-
-Semântica trata do sentido das palavras e expressões. Coesão trata da ligação textual.
-
-Elementos frequentes:
-
-- pronomes retomando termos anteriores;
-- conjunções indicando oposição, causa, conclusão, condição;
-- sinônimos contextuais;
-- conectores argumentativos.
-
-Conectores importantes:
-
-- oposição: mas, porém, contudo, entretanto;
-- causa: porque, pois, uma vez que;
-- conclusão: portanto, logo, assim;
-- condição: se, caso, desde que;
-- concessão: embora, ainda que.
-
-### Como funciona na prática
-
-Em "O sistema é eficiente; contudo, exige manutenção constante", o conector "contudo" introduz oposição/ressalva. Se a alternativa disser conclusão, está errada.
-
-### Exemplos resolvidos - semântica e coesão
-
-**Exemplo 1:** "Portanto" indica causa ou conclusão?
-
-Conclusão. Ex.: "Os dados estão inconsistentes; portanto, o relatório deve ser revisado."
-
-**Exemplo 2:** em "A lei foi publicada, mas ainda depende de regulamentação", "mas" indica quê?
-
-Oposição ou ressalva. A segunda parte limita a expectativa criada pela primeira.
-
-### 3. Sintaxe, concordância e regência
-
-Sintaxe estuda as relações entre termos da oração.
-
-Termos essenciais:
-
-- sujeito;
-- predicado.
-
-Termos integrantes:
-
-- complemento verbal;
-- complemento nominal;
-- agente da passiva.
-
-Termos acessórios:
-
-- adjunto adnominal;
-- adjunto adverbial;
-- aposto.
-
-Concordância verbal: verbo concorda com o sujeito.
-
-Concordância nominal: nomes concordam em gênero e número conforme a estrutura.
-
-Regência: relação de dependência entre verbo/nome e complemento, muitas vezes com preposição.
-
-### Como funciona na prática
-
-Em "Os relatórios foram enviados", o sujeito é "Os relatórios"; o verbo fica no plural.
-
-Em "Assiste ao servidor o direito de defesa", o verbo "assistir" no sentido de caber/pertencer pede preposição, e o sujeito é "o direito de defesa".
-
-### Exemplos resolvidos - sintaxe
-
-**Exemplo 1:** "Faltam documentos no processo."
-
-Sujeito: "documentos". Como está no plural, o verbo fica no plural: faltam.
-
-**Exemplo 2:** "Havia muitos candidatos na sala."
-
-O verbo haver no sentido de existir é impessoal e fica no singular. Não se escreve "haviam muitos candidatos" nesse sentido.
+Na regência nominal, o complemento é exigido por um nome. Associações úteis de prova: compatível **com**, contrário **a**, favorável **a**, avesso **a**, consciente **de**, passível **de** e apto **a/para**. A preposição deve ser julgada junto do nome, não apenas pela sonoridade da frase.
 
 ### 4. Crase
 
-Crase é a fusão da preposição `a` com o artigo `a` ou com pronomes iniciados por `a`.
+Há crase quando a preposição a se encontra com artigo feminino a ou pronome iniciado por a.
 
-Regra prática:
+Teste duplo:
 
-- se há termo anterior exigindo preposição `a`;
-- e termo posterior aceitando artigo feminino `a`;
-- ocorre crase.
+1. o termo anterior exige preposição a?
+2. o termo seguinte admite artigo feminino?
 
-Exemplo: "Refiro-me à norma."
+Não ocorre antes de verbo, palavra masculina em regra, pronome pessoal ou artigo indefinido.
 
-Quem se refere, refere-se **a** algo. "Norma" aceita artigo: a norma. Logo: à norma.
+Ocorre em locuções femininas usuais: à medida que, às vezes, à disposição.
 
-Não ocorre crase antes de verbo, palavra masculina ou pronomes pessoais.
-
-### Como funciona na prática
-
-No texto administrativo, crase aparece muito em expressões como:
-
-- à Administração Pública;
-- à norma;
-- às informações;
-- à medida que.
-
-Mas não ocorre em:
-
-- a partir de;
-- a prazo;
-- a ele;
-- a cumprir.
-
-### Exemplos resolvidos - crase
-
-**Exemplo 1:** "O servidor encaminhou o relatório à diretoria."
-
-Há crase. Quem encaminha, encaminha algo a alguém. Diretoria aceita artigo feminino.
-
-**Exemplo 2:** "O candidato começou a estudar."
-
-Não há crase antes de verbo. "Estudar" é verbo.
+<a id="s1-d5-pontuacao"></a>
 
 ### 5. Pontuação
 
-Pontuação organiza sentido. Em prova, a vírgula é a mais cobrada.
+- não separe sujeito e verbo por vírgula;
+- não separe verbo e complemento sem intercalação justificável;
+- isole adjunto adverbial longo deslocado;
+- use vírgulas para oração explicativa;
+- não use vírgulas para oração restritiva;
+- dois-pontos introduzem explicação, enumeração ou citação;
+- ponto e vírgula separa itens complexos ou orações coordenadas extensas.
 
-Usos importantes da vírgula:
+A vírgula também pode marcar a elipse de verbo já expresso: “A equipe revisou o relatório; o coordenador, a planilha; e a diretora, o parecer”. Nas duas últimas orações, as vírgulas ocupam o lugar de “revisou”; não separam sujeito de verbo escrito.
 
-- separar adjunto adverbial deslocado;
-- isolar aposto;
-- separar orações coordenadas;
-- isolar oração explicativa;
-- separar itens de enumeração.
+<a id="s1-d5-colocacao-onde"></a>
 
-Não se deve separar por vírgula:
+### 6. Colocação pronominal, onde e aonde
 
-- sujeito e verbo;
-- verbo e complemento direto;
-- nome e complemento nominal.
+Palavra negativa, pronome relativo e conjunção subordinativa atraem pronome átono.
 
-### Como funciona na prática
+No início formal de oração, evite pronome átono antes do verbo.
 
-Errado: "Os candidatos, estudaram o edital."
+Use onde para lugar físico ou institucional concebido como lugar.
 
-Não se separa sujeito de verbo.
+Use aonde com verbo que exige movimento para destino.
 
-Certo: "Os candidatos estudaram o edital."
+Não use onde para conclusão, norma, problema ou hipótese abstrata.
 
-Com adjunto deslocado:
+### 7. Há, a e porquês
 
-"Na primeira semana, os candidatos estudaram arquitetura."
+- há: existência ou tempo decorrido;
+- a: distância ou tempo futuro;
+- porque: resposta ou causa;
+- por que: pergunta ou sequência preposição + pronome;
+- por quê: antes de pausa;
+- porquê: substantivo.
 
-### Exemplos resolvidos - pontuação
+<a id="s1-d5-acentuacao-paronimos"></a>
 
-**Exemplo 1:** "O CRA-PR, autarquia profissional, fiscaliza o exercício da profissão."
+### 8. Acentuação e parônimos
 
-As vírgulas isolam aposto explicativo.
+Todas as proparoxítonas são acentuadas.
 
-**Exemplo 2:** "Embora o conteúdo seja extenso, a revisão diária reduz o esquecimento."
+Oxítonas terminadas em a, e, o, em e ens recebem acento, com ou sem s quando cabível.
 
-Vírgula separa oração subordinada adverbial deslocada.
+Paroxítonas seguem terminações específicas; não aplique regra de oxítona por semelhança sonora.
 
-### 6. Discursiva dissertativa
-
-A prova discursiva para Analista de Sistemas será uma dissertação. O edital informa 20 pontos e tema de conhecimento geral.
-
-Estrutura segura:
-
-- **Introdução:** apresentação do tema + tese.
-- **Desenvolvimento 1:** argumento 1 com explicação e exemplo.
-- **Desenvolvimento 2:** argumento 2 com explicação e consequência.
-- **Conclusão:** retomada da tese + proposta ou fechamento coerente.
-
-Para 20 a 30 linhas, uma estrutura funcional é:
-
-- introdução: 4 a 5 linhas;
-- desenvolvimento 1: 7 a 8 linhas;
-- desenvolvimento 2: 7 a 8 linhas;
-- conclusão: 4 a 5 linhas.
-
-### Rubrica de correção da discursiva
-
-Esta tabela deve guiar seu treino. O edital informa que a dissertação vale 20 pontos e que há avaliação de aspectos macroestruturais e microestruturais. Como o padrão detalhado de resposta será publicado oportunamente pela banca, a rubrica abaixo funciona como guia de preparação, sem substituir o espelho oficial.
-
-| Critério | O que a resposta precisa demonstrar | Como perder ponto |
-|---|---|---|
-| Abordagem do tema | Responder exatamente ao tema proposto, sem fugir do recorte | Fugir do tema, tratar só assunto lateral ou escrever texto genérico |
-| Tese | Apresentar posição clara sobre o problema | Fazer introdução neutra, vaga ou apenas repetir o tema |
-| Desenvolvimento argumentativo | Explicar argumentos com causa, consequência, exemplo ou contraste | Listar ideias sem explicar, usar frases soltas ou repetir a mesma ideia |
-| Coesão | Usar conectores adequados e retomar ideias sem confusão | Saltar de uma ideia para outra sem ligação lógica |
-| Estrutura textual | Ter introdução, desenvolvimento e conclusão proporcionais | Fazer parágrafo único, conclusão ausente ou desenvolvimento desorganizado |
-| Gramática | Manter concordância, regência, crase e grafia adequadas | Acumular erros que prejudiquem clareza e formalidade |
-| Pontuação | Usar vírgula, ponto e conectores para organizar o raciocínio | Separar sujeito e verbo, criar períodos longos demais ou pontuação ambígua |
-| Conclusão | Retomar a tese e fechar o raciocínio com coerência | Apresentar ideia nova sem desenvolver ou terminar abruptamente |
-| Erros que reduzem muito a nota | Demonstrar domínio mínimo do tema e da norma padrão | Fuga total ao tema, texto ilegível, desrespeito aos direitos humanos, cópia do enunciado, rasura excessiva, linguagem informal extrema |
-
-### Como funciona na prática
-
-Tema hipotético: "Os desafios da proteção de dados na prestação de serviços públicos digitais."
-
-Tese possível: a proteção de dados é indispensável para que a digitalização gere eficiência sem comprometer direitos fundamentais.
-
-Argumento 1: digitalização amplia acesso e agilidade.
-
-Argumento 2: sem governança, pode haver exposição indevida, discriminação e perda de confiança.
-
-Conclusão: o poder público deve combinar tecnologia, transparência, segurança e capacitação.
-
-### Exemplos resolvidos - discursiva
-
-**Exemplo 1:** introdução ruim e correção.
-
-Ruim: "Hoje em dia todo mundo usa internet e isso é muito importante."
-
-Problema: genérica e sem tese.
-
-Melhor: "A expansão dos serviços públicos digitais pode ampliar o acesso do cidadão ao Estado, mas exige políticas efetivas de proteção de dados para preservar direitos e manter a confiança social."
-
-**Exemplo 2:** argumento sem desenvolvimento e correção.
-
-Fraco: "A tecnologia melhora o atendimento porque é mais rápida."
-
-Melhor: "A tecnologia pode melhorar o atendimento público ao reduzir deslocamentos, filas e etapas manuais. Entretanto, esse ganho só se concretiza quando os sistemas são acessíveis, estáveis e integrados, evitando que a digitalização apenas transfira a burocracia do balcão físico para o ambiente virtual."
-
-## Pegadinhas comuns da banca
-
-- Alternativa que extrapola o texto.
-- Troca de "alguns" por "todos".
-- "Nem todo" interpretado como "nenhum".
-- Separar sujeito e verbo por vírgula.
-- Usar crase antes de verbo.
-- Confundir "há" com "a" em indicação de tempo.
-- Trocar relação de oposição por conclusão.
-- Na discursiva, escrever texto expositivo sem tese.
-
-## O que memorizar
-
-| Tema | Memorização objetiva |
-|---|---|
-| Inferência | conclusão autorizada pelo texto |
-| Ideia central | tema + posição principal |
-| "Mas", "porém" | oposição/ressalva |
-| "Portanto", "logo" | conclusão |
-| Haver = existir | singular |
-| Crase | preposição `a` + artigo `a` |
-| Vírgula | não separa sujeito e verbo |
-| Dissertação | tese + argumentos + conclusão |
-
-## Erros comuns
-
-| Erro | Correção |
-|---|---|
-| Responder por opinião pessoal | Responder pelo texto |
-| Ignorar o comando "incorreta" | Circular o comando antes de ler alternativas |
-| Usar crase antes de verbo | Não há crase antes de verbo |
-| Separar sujeito e predicado | Não se separa sujeito e verbo por vírgula |
-| Fazer redação sem tese | A introdução deve assumir posição clara |
-
-## Mini revisão do dia
-
-Português na Consulplan exige leitura atenta e domínio de relações de sentido. Interpretação depende do texto, não da opinião do candidato. Gramática deve ser estudada pela aplicação: concordância, regência, crase e pontuação. A discursiva exige tese clara, argumentos desenvolvidos e linguagem objetiva.
-
-## Checklist de domínio
-
-- [ ] Identifico ideia central.
-- [ ] Diferencio inferência de extrapolação.
-- [ ] Reconheço conectores de oposição, causa, conclusão e condição.
-- [ ] Sei regra básica de crase.
-- [ ] Não separo sujeito e verbo por vírgula.
-- [ ] Sei usar estrutura de dissertação.
-- [ ] Consigo escrever uma tese clara.
-- [ ] Consigo desenvolver argumento com exemplo e consequência.
-
-## Tarefa para o caderno de erros
-
-Crie quatro listas:
-
-- conectores que indicam oposição;
-- conectores que indicam conclusão;
-- casos em que há crase;
-- casos em que não há crase.
-
-Depois, escreva uma introdução para o tema: **"A importância da ética no uso de tecnologias pelo poder público."**
-
-## 5 perguntas de fixação
-
-1. Qual é a diferença entre ideia central, inferência e extrapolação?
-2. Como identificar a relação de sentido expressa por conectores como "mas", "portanto" e "embora"?
-3. Em quais situações a crase costuma aparecer em textos administrativos?
-4. Por que não se deve separar sujeito e verbo por vírgula?
-5. O que uma boa tese precisa deixar claro na introdução da discursiva?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Interpretação de texto, inferência, semântica, coesão, classes de palavras, sintaxe, concordância, regência, crase, pontuação, reescrita e estrutura de dissertação.
-
-## Reforço de alinhamento com as questões - Dia 5
-
-As questões do Dia 5 cobram Português aplicado: pequenos textos, reescrita, conectores, pontuação, concordância, regência, crase e estratégia de leitura. O erro mais comum é resolver pela "frase bonita", e não pelo sentido exigido pelo texto.
-
-### Ideia central, inferência e extrapolação
-
-- **Ideia central:** o núcleo do texto; responde "sobre o que o texto fala e qual ponto principal defende".
-- **Inferência:** conclusão autorizada pelo texto, mesmo que não esteja escrita literalmente.
-- **Extrapolação:** conclusão que vai além do texto.
-
-Exemplo: se o texto diz que a digitalização melhora o atendimento, mas exige segurança, é inferência dizer que eficiência e proteção de dados devem caminhar juntas. É extrapolação dizer que todo serviço presencial deve acabar imediatamente.
-
-### Conectores e relações semânticas
-
-| Relação | Conectores frequentes | Ideia |
-|---|---|---|
-| Oposição/adversidade | mas, porém, contudo, entretanto | quebra expectativa |
-| Concessão | embora, ainda que, mesmo que | admite obstáculo sem impedir conclusão |
-| Conclusão | portanto, logo, assim, por isso | resultado lógico |
-| Causa | porque, visto que, uma vez que | motivo |
-| Condição | se, caso, desde que | requisito |
-| Adição | além disso, também, bem como | soma de ideias |
-
-Pegadinha: "embora" não é conclusão; é concessão. "Portanto" não é oposição; é conclusão.
-
-### Reescrita sem alteração de sentido
-
-Para aceitar uma reescrita, confira:
-
-1. o tempo verbal foi mantido?
-2. o sujeito continua o mesmo?
-3. a relação lógica entre as ideias foi preservada?
-4. não entrou generalização como "sempre", "todos", "nunca"?
-5. a regência e a concordância continuam corretas?
-
-Exemplo:
-
-Original: "Embora o sistema seja eficiente, ainda exige ajustes."  
-Reescrita equivalente: "Ainda que o sistema seja eficiente, ainda exige ajustes."  
-Reescrita não equivalente: "Como o sistema é eficiente, ainda exige ajustes." Aqui a concessão virou causa.
-
-<a id="s1-d5-concordancia-regencia-crase-pontuacao"></a>
-### Concordância, regência, crase e pontuação
-
-Concordância: o verbo concorda com o sujeito. Cuidado com sujeito distante.
-
-Exemplo correto: "Os relatórios do setor de fiscalização foram enviados."  
-Núcleo do sujeito: "relatórios"; verbo no plural.
-
-Regência: alguns nomes e verbos exigem preposição.
-
-- obedecer **a** normas;
-- visar **a** um objetivo, no sentido de pretender;
-- acesso **a** informações;
-- apto **a** exercer função.
-
-Crase: ocorre quando há preposição `a` + artigo `a`. Não há crase antes de verbo, antes de masculino comum ou quando só há preposição sem artigo.
-
-Pontuação: não se separa sujeito do verbo por vírgula. A vírgula pode isolar adjunto adverbial deslocado, aposto explicativo e oração subordinada deslocada.
-
-### Discursiva: tese, desenvolvimento e conclusão
-
-Na discursiva, a banca quer resposta organizada. Uma estrutura segura:
-
-1. **Introdução:** apresenta tema e tese.
-2. **Desenvolvimento 1:** primeiro argumento com explicação.
-3. **Desenvolvimento 2:** segundo argumento com exemplo ou consequência.
-4. **Conclusão:** retoma tese e fecha com proposta/encaminhamento coerente.
-
-Evite texto meramente expositivo sem posição. Exemplo de tese: "A transformação digital no serviço público é positiva quando acompanhada de segurança da informação, capacitação e proteção de dados."
-
-## Tabela de revisão rápida do Dia 5
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
-|---|---|---|---|
-| Ideia central | ponto principal do texto | Confundir detalhe com tese | texto defende segurança digital |
-| Inferência | conclusão autorizada pelo texto | Extrapolar para além do texto | eficiência exige governança |
-| Extrapolação | afirmação sem base textual | Marcar opinião pessoal | "todo atendimento presencial acabará" |
-| Coesão referencial | retomada de termos | Perder referente de pronome | "isso", "tal medida" |
-| Adversidade | oposição entre ideias | Confundir com conclusão | "mas", "porém" |
-| Concessão | obstáculo que não impede fato | Confundir com causa | "embora" |
-| Conclusão | resultado lógico | Confundir com oposição | "portanto" |
-| Condição | requisito para ocorrência | Confundir com causa | "se", "caso" |
-| Concordância verbal | verbo concorda com sujeito | Concordar com termo próximo | "Os dados foram enviados" |
-| Regência verbal | verbo exige complemento/preposição | Omitir preposição exigida | "visar a um objetivo" |
-| Regência nominal | nome exige preposição | Usar preposição inadequada | "acesso a dados" |
-| Crase | preposição `a` + artigo `a` | Usar antes de verbo | "à fiscalização", mas "a fiscalizar" |
-| Vírgula | organiza termos e orações | Separar sujeito e verbo | errado: "Os candidatos, estudaram" |
-| Reescrita | preserva sentido e correção | Trocar relação lógica | concessão virar causa |
-| Tese | posição central da discursiva | Fazer introdução sem ponto de vista | "é necessário equilibrar..." |
-| Conclusão | fechamento coerente | Trazer argumento novo no fim | retomar tese e propor caminho |
-
-## Pegadinhas do Dia 5
-
-- Inferência precisa estar autorizada pelo texto; opinião pessoal não basta.
-- "Embora" indica concessão, não causa nem conclusão.
-- "Mas" e "porém" indicam oposição; "portanto" indica conclusão.
-- Reescrita correta deve preservar sentido, tempo verbal e relação lógica.
-- Não se separa sujeito e verbo por vírgula.
-- Não há crase antes de verbo.
-- "Há" indica tempo passado ou existência; "a" pode indicar tempo futuro/distância.
-- "Onde" deve retomar lugar físico ou espaço concebido como lugar, não qualquer ideia abstrata.
-- Concordância deve seguir o núcleo do sujeito, não o termo mais próximo.
-- Na discursiva, introdução sem tese reduz força argumentativa.
+- retificar: corrigir;
+- ratificar: confirmar;
+- descrição: ato de descrever;
+- discrição: reserva;
+- sessão: reunião;
+- seção: divisão;
+- cessão: transferência.
 
 ---
 
+<a id="s1-d5-b3"></a>
 
-## Revisão fixa do Dia 5
+## Bloco 3 — Discursiva: estrutura, modelo, erro e autocorreção
 
-**Foco:** Legislação CRA/CFA e produção escrita. Retome hierarquia das fontes, CFA x CRA, jurisdição, fiscalização, responsabilidade técnica, ética, processo e controle de fonte. **Base já estudada:** [Bloco 4 do Dia 5](#s1-d5-b4) e [Bloco 5 do Dia 5](#s1-d5-b5). **Pegadinha:** aplicar sanção ou competência fora do sujeito e da norma adequados.
+<a id="s1-d5-discursiva-estrutura-modelo"></a>
+<a id="s1-d5-discursiva-estrutura"></a>
 
-### Bloco recorrente do Dia 5 — Legislação CRA/CFA
+### 1. Estrutura da dissertação
 
-As Extras 5.1–5.20 usam legislação confirmada como ferramenta de caso. A Lei nº 4.769/1965 estrutura profissão, CFA e CRAs; o Decreto nº 61.934/1967 regulamenta o exercício; o Regimento aprovado pela RN nº 651/2024 trata da estrutura e do funcionamento do CRA-PR; a RN nº 671/2025 disciplina ética e infrações; a Lei nº 12.514/2011 aparece somente no núcleo geral de contribuições ensinado. O CFA atua em âmbito nacional; o CRA fiscaliza e executa suas competências na jurisdição regional. Diploma não substitui registro quando ele é exigido; pessoa jurídica pode ser alcançada conforme a atividade; responsabilidade técnica exige atuação real, não assinatura de fachada.
+Use quatro parágrafos:
 
-Deveres éticos incluem zelo, sigilo nos limites legais, independência técnica e colaboração com fiscalização. Para resolver caso, identifique **sujeito**, **conduta**, **competência territorial** e **norma-base** antes de cogitar consequência. Sanção não é automática: exige previsão e processo regular.
+1. introdução: contexto, recorte e tese;
+2. desenvolvimento 1: argumento, explicação, exemplo e consequência;
+3. desenvolvimento 2: novo argumento, explicação, exemplo e consequência;
+4. conclusão: retomada da tese e fechamento, sem argumento novo.
 
-### Bloco recorrente do Dia 5 — Processo e controle de fonte
+<a id="s1-d5-discursiva-modelo"></a>
 
-As Extras finais continuam no mesmo Bloco 4 legal. Nenhuma delas pode depender de RN adicional pendente. Para resolver, identifique sujeito, objeto, território, fonte confirmada, órgão e processo; se a alternativa exige prazo, requisito ou sanção não ensinados, ela extrapola a base da semana.
+### 2. Modelo integral comentado
 
-| Extras | Núcleo decisivo | Erro recorrente |
-|---|---|---|
-| 5.1–5.5 | sistema normativo, registro e fiscalização | trocar CFA por CRA ou tratar PJ como sempre dispensada |
-| 5.6–5.10 | responsabilidade técnica, ética e Regimento | confundir RN 651 com Código de Ética |
-| 5.11–5.15 | lei, decreto, jurisdição e processo | aplicar sanção sem sujeito ou processo |
-| 5.16–5.20 | aplicação legal, fonte oficial e limites da inferência | usar norma pendente ou consequência automática |
+Tema: ética no uso de tecnologia pelo poder público.
 
+**Introdução — contexto, recorte e tese**
 
-## Mapa de conexões do Dia 5
+A digitalização amplia a capacidade do poder público de prestar serviços e analisar dados, mas também aumenta riscos de vigilância, exclusão e decisões opacas. Por isso, o uso ético da tecnologia depende tanto de governança dos dados quanto de mecanismos de inclusão e supervisão humana.
 
-```mermaid
-flowchart LR
-  LEITURA[Leitura e comando] --> IDEIA[Ideia central e inferência]
-  IDEIA --> COESAO[Coesão e conectores]
-  COESAO --> SINT[Sintaxe e concordância]
-  SINT --> CRASE[Regência, crase e pontuação]
-  CRASE --> DISC[Discursiva clara]
-```
+**Desenvolvimento 1 — argumento, explicação, exemplo e consequência**
 
-**Leitura ativa:** primeiro localize comando e tese; depois preserve relação lógica e norma. **Pegadinhas:** inferência × extrapolação; causa × concessão; vírgula entre sujeito e verbo.
+Em primeiro lugar, a governança dos dados limita usos incompatíveis com a finalidade pública. Regras de acesso, registro de operações e responsabilização permitem verificar quem consultou ou alterou informações. Um sistema com perfis de acesso e trilhas de auditoria, por exemplo, reduz a possibilidade de manipulação invisível. Desse modo, controle e transparência fortalecem a confiança no serviço.
 
-# Dia 6 - Administração Pública, Raciocínio Lógico-Matemático e Revisão
+**Desenvolvimento 2 — argumento, explicação, exemplo e consequência**
 
-## Objetivo do dia
+Além disso, eficiência tecnológica não pode excluir pessoas nem eliminar a revisão responsável. Canais alternativos de atendimento e análise humana de decisões automatizadas evitam que dificuldades de acesso ou erros de classificação se convertam em barreiras de direitos. Assim, inovação permanece instrumento da Administração, e não obstáculo imposto ao cidadão.
 
-Consolidar a primeira semana com Administração Pública, Raciocínio Lógico-Matemático e revisão ativa dos temas técnicos estudados nos dias 1 a 5.
+**Conclusão — retomada e fechamento**
 
-## Por que esse assunto importa para a prova
+Portanto, a transformação digital só atende ao interesse público quando combina segurança dos dados, transparência, inclusão e responsabilidade decisória. Com essas salvaguardas, a tecnologia pode elevar a eficiência sem afastar os deveres éticos que legitimam a atuação estatal.
 
-Administração Pública e RLM valem 5 questões cada. Embora tenham menor peso individual que Conhecimentos do Cargo e Legislação, são matérias importantes para alcançar nota competitiva. Administração Pública também ajuda na discursiva e na compreensão institucional do CRA-PR. RLM melhora raciocínio e velocidade em questões de lógica, conjuntos, sequências e problemas matemáticos.
+### 3. Por que o modelo funciona
 
-## Como a Consulplan costuma cobrar esse conteúdo
+- responde ao tema desde a introdução;
+- apresenta uma tese com dois eixos;
+- desenvolve um eixo em cada parágrafo;
+- usa exemplos vinculados ao argumento;
+- progride sem repetir a mesma frase;
+- conclui sem inserir assunto novo.
 
-Em Administração Pública, a banca cobra conceitos do art. 37 da Constituição, organização administrativa, autarquias, atos administrativos, agentes públicos, licitação, improbidade, LAI e LGPD.
+### 4. Exemplo inadequado
 
-Em RLM, usa:
+“A tecnologia, melhora o serviço porque é moderna. Onde todos usam sistemas, tudo fica eficiente e por isso não existem riscos. O governo deve sempre digitalizar.”
 
-- sequências;
-- proposições;
-- negações;
-- argumentos;
-- conjuntos;
-- regra de três;
-- porcentagem;
-- probabilidade simples;
-- PA e PG.
+Erros:
 
-## Cronograma de 6h líquidas com pausas sugeridas
+- vírgula entre sujeito e verbo;
+- onde retoma situação abstrata;
+- modernidade é apresentada como causa suficiente;
+- “todos”, “tudo” e “não existem” universalizam sem prova;
+- conclusão absoluta ignora condições e riscos.
 
-| Bloco | Tempo | Atividade |
-|---|---:|---|
-| 1 | 2h | Administração Pública: princípios, organização administrativa e atos |
-| Pausa | 10min | Descanso |
-| 2 | 1h30 | RLM: proposições, sequências, conjuntos e regra de três |
-| Pausa | 15min | Descanso |
-| 3 | 1h | Revisão técnica: arquitetura, SO e banco de dados |
-| Pausa | 10min | Descanso |
-| 4 | 40min | Consolidação legal confirmada: Regimento, Ética, fiscalização, jurisdição e controle de fonte |
-| Pausa | 5min | Descanso |
-| 5 | 30min | Português/discursiva: plano preenchido de redação em 4 parágrafos |
-| 6 | 20min | Retenção dos Dias 1–5: Extras 6.11–6.20 e entrega do Top 10 de erros |
+Versão corrigida:
 
-## Conteúdo dos blocos de revisão e consolidação
+“A tecnologia pode melhorar o serviço público quando sua adoção é acompanhada por planejamento, controle e inclusão. Sistemas digitais ampliam a eficiência, mas também criam riscos que exigem governança e supervisão.”
 
-<a id="s1-d6-b4"></a>
-### Bloco 4 — Legislação consolidada: base para as Extras 6.1–6.10 (40min)
+<a id="s1-d5-autocorrecao"></a>
+<a id="s1-d5-discursiva-rubrica"></a>
 
-Este bloco fecha a revisão legal com quatro fontes confirmadas: Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento do CRA-PR aprovado pela RN nº 651/2024 e Código de Ética aprovado pela RN nº 671/2025. A Lei nº 12.514/2011 pode ser usada somente para o núcleo geral de contribuições já estudado. Resolução ainda pendente de consolidação **não é base de literalidade, prazo, requisito ou sanção**.
+### 5. Rubrica oficial de 20 pontos
 
-#### Classifique primeiro o objeto
+| Critério | Valor |
+|---|---:|
+| conteúdo e compreensão da proposta | 4,00 |
+| desenvolvimento, objetividade, informatividade e macroestrutura | 4,00 |
+| coerência e progressão | 3,00 |
+| estrutura sintática | 2,00 |
+| morfossintaxe | 3,00 |
+| acentuação, ortografia, translineação, maiúsculas/minúsculas e pontuação | 4,00 |
+| total | 20,00 |
 
-| Objeto do caso | Fonte/núcleo de análise |
+Na estrutura sintática, cada erro desconta 0,50 ponto. Em morfossintaxe e nos desvios do último critério, cada erro desconta 0,25 ponto, respeitado o limite de cada dimensão.
+
+Objetividade e informatividade exigem separar **fato observado** de **providência recomendada**. Registre primeiro dado verificável — data, quantidade, etapa, item ou resultado — e só depois formule a recomendação como recomendação. Não apresente causa provável como fato comprovado nem use expressões vagas como “diversos problemas” ou “medidas cabíveis” sem elemento que permita conferência.
+
+Exemplo adequado: “O teste de 12 de maio registrou falhas nos itens 4, 7 e 9; recomenda-se corrigi-las e repetir o teste”. Exemplo inadequado: “As falhas decorreram certamente de negligência; serão tomadas as providências cabíveis”, quando o registro não demonstrou causa nem ação concreta.
+
+### 6. Autocorreção em três passagens
+
+1. Conteúdo: respondi ao tema e sustentei os dois eixos da tese?
+2. Estrutura: cada parágrafo tem função clara e há progressão?
+3. Língua: há erro de sintaxe, concordância, regência, crase, pontuação ou grafia?
+
+Marque o erro, escreva a regra aplicável e reescreva o trecho.
+
+---
+
+<a id="s1-d5-b4"></a>
+
+## Bloco 4 — Revisão normativa do Dia 4
+
+Este bloco revisa; não substitui a leitura das normas oficiais confirmadas no Dia 4.
+
+<a id="s1-d5-fontes-hierarquia"></a>
+
+### 1. Fontes e órgãos
+
+- Lei nº 4.769/1965: exercício da profissão e sistema CFA/CRAs;
+- Decreto nº 61.934/1967: regulamentação da lei profissional;
+- Resolução Normativa CFA nº 651: Regimento do CRA-PR e revogação da RN nº 263;
+- Resolução Normativa CFA nº 671: Código de Ética de profissionais e pessoas jurídicas e revogação da RN nº 640;
+- Lei nº 12.514/2011: contribuições devidas aos conselhos profissionais.
+
+No CRA-PR, o Plenário delibera e julga na esfera prevista; a Diretoria Executiva dirige e executa.
+
+A lei fornece a base e não pode ser contrariada pelo decreto regulamentar. Resoluções e Regimento detalham matérias dentro da competência conferida pelo ordenamento; ato inferior não cria, por conta própria, competência ou sanção incompatível com a norma superior. Num item sobre prazo, rito, sanção ou exceção literal, consulte o texto oficial vigente: ementa, resumo e numeração mais recente não substituem a conferência do dispositivo e de suas alterações.
+
+<a id="s1-d5-registro-fiscalizacao"></a>
+
+### 2. Registro, fiscalização e competência
+
+O CFA exerce coordenação nacional; o CRA atua regionalmente.
+
+O CRA-PR tem jurisdição no Paraná, sem deixar de integrar o sistema coordenado pelo CFA.
+
+Analise quatro elementos: atividade, sujeito, território e fonte normativa.
+
+Fiscalização protege a sociedade e a regularidade do exercício profissional.
+
+Anunciar-se como profissional registrado, ceder número ou permitir uso indevido da condição profissional não se torna regular apenas por publicidade ou contrato privado. Primeiro confira habilitação, registro, atividade e participação efetiva.
+
+Formação acadêmica, registro profissional e regularidade financeira são planos distintos. A inadimplência pode produzir os efeitos autorizados pela legislação aplicável, mas não apaga diploma, não transforma retroativamente a formação e não autoriza inventar cancelamento automático sem base normativa e processo.
+
+<a id="s1-d5-etica-responsabilidade"></a>
+
+### 3. Ética e responsabilidade
+
+Responsável técnico deve atuar de forma efetiva, não apenas emprestar o nome.
+
+Pressão hierárquica não elimina independência técnica nem dever de fundamentação.
+
+Profissional e pessoa jurídica têm deveres e consequências próprios; suas sanções não são automaticamente idênticas.
+
+O Código de Ética confirmado alcança pessoas físicas e jurídicas registradas, respeitadas as especificidades de cada sujeito. O sigilo profissional persiste depois do término do contrato; revelação depende de dever legal ou de justa causa efetivamente aplicável, não de proposta comercial, conveniência do antigo cliente ou pressão hierárquica.
+
+Na recuperação do Código, organize a leitura em quatro eixos: direitos e deveres; condutas tipificadas como infração; sanções admitidas para cada sujeito; e critérios de fixação ou gradação relacionados à gravidade e às circunstâncias. Não memorize uma sanção isolada nem a transporte automaticamente de pessoa física para pessoa jurídica.
+
+<a id="s1-d5-processo-sancao"></a>
+
+### 4. Processo de apuração
+
+Sequência de controle:
+
+1. identificar o indício;
+2. delimitar sujeito, conduta, território e competência;
+3. localizar a fonte normativa;
+4. instaurar e investigar conforme o rito aplicável;
+5. assegurar contraditório e ampla defesa;
+6. decidir de forma motivada;
+7. aplicar consequência apenas se houver suporte jurídico e probatório.
+
+---
+
+<a id="s1-d5-b5"></a>
+
+## Bloco 5 — Produção guiada
+
+Só comece após estudar o modelo, o erro e a rubrica.
+
+Tema: transparência e proteção de dados na transformação digital do serviço público.
+
+Entrega de 35 minutos:
+
+1. formule a tese com dois eixos em até cinco minutos;
+2. planeje dois argumentos em até cinco minutos;
+3. escreva um parágrafo completo de desenvolvimento em quinze minutos;
+4. use os dez minutos finais para autocorrigir conteúdo, estrutura e língua.
+
+Estrutura do parágrafo:
+
+- tópico frasal;
+- explicação;
+- exemplo concreto;
+- consequência ligada à tese.
+
+Não escreva a dissertação inteira nesta primeira passagem.
+
+---
+
+<a id="s1-d5-b6"></a>
+
+## Bloco 6 — Recuperação ativa
+
+Sem consultar a teoria, explique em uma frase cada item:
+
+1. diferença entre ideia central e tema;
+2. sentido de “nem todo”;
+3. diferença entre inferência e possibilidade;
+4. teste da crase;
+5. diferença entre oração restritiva e explicativa;
+6. função do exemplo em um desenvolvimento.
+
+Depois, corrija:
+
+| Frase | Problema esperado |
 |---|---|
-| campo profissional e estrutura legal do Sistema | Lei nº 4.769/1965 |
-| execução e regulamentação da lei | Decreto nº 61.934/1967 |
-| Plenário, Diretoria, órgãos, funcionamento e competência interna do CRA-PR | Regimento aprovado pela RN nº 651/2024 |
-| sigilo, zelo, independência, infração e disciplina ética | Código da RN nº 671/2025 |
-| anuidade e contribuição, apenas em linhas gerais | Lei nº 12.514/2011 |
+| Haviam riscos no sistema. | verbo haver impessoal |
+| O relatório onde consta a conclusão foi publicado. | onde com referente abstrato |
+| Nem todos falharam, logo ninguém acertou. | negação e conclusão inválida |
 
-Não trate registro, fiscalização, ética e Regimento como um único objeto. Um mesmo fato pode exigir mais de uma análise: a regularidade do exercício é verificada na fiscalização; a conduta do profissional ou da pessoa jurídica pode também ter repercussão ética; a competência do órgão interno é localizada no Regimento.
+---
 
-#### Pessoa física, pessoa jurídica e participação técnica
+<a id="s1-d5-conexoes"></a>
 
-O Código alcança pessoas físicas e jurídicas, observadas suas especificidades. Isso impede duas conclusões extremas: pessoa jurídica não está automaticamente fora da disciplina, mas também não recebe toda sanção destinada ao profissional. Suspensão do exercício e cancelamento do registro profissional não são aplicados à pessoa jurídica no conteúdo confirmado usado nesta apostila.
+### Mapa de conexões recuperadas
 
-Em caso envolvendo empresa, examine:
+- comando da questão → operação de leitura;
+- quantificador → alcance da conclusão;
+- conectivo → relação lógica;
+- referente → coesão;
+- sintaxe → pontuação e concordância;
+- tese → seleção dos argumentos;
+- argumento → explicação, exemplo e consequência;
+- conduta profissional → norma, competência, rito e decisão motivada.
 
-1. objeto real da atividade;
-2. regularidade exigível segundo fonte oficial aplicável;
-3. jurisdição do fato;
-4. profissional indicado;
-5. participação técnica efetiva, e não simples cessão de nome ou registro.
+## Mini revisão de cinco minutos
 
-**Exemplo:** uma empresa apresenta CNPJ e indica responsável que não acompanha o serviço. O CNPJ não encerra a análise, e a indicação formal não prova atuação técnica. Devem ser examinados atividade, regularidade, jurisdição e participação real.
+Feche o material e registre:
 
-#### Sigilo, fiscalização e defesa
+- uma regra de interpretação;
+- um conectivo e sua relação;
+- uma regra de sintaxe;
+- uma regra de crase ou regência;
+- a tese do modelo discursivo;
+- a sequência mínima do processo sancionador.
 
-Sigilo profissional permanece como dever, ressalvada justa causa ou hipótese legal aplicável; o fim do contrato não autoriza divulgação automática. Da mesma forma, autonomia privada não permite impedir fiscalização competente.
+## Perguntas de fixação
 
-Colaborar com a fiscalização significa fornecer informações pertinentes dentro da competência do Conselho. Isso não elimina contraditório ou defesa: eventual discordância deve ser apresentada pelos meios regulares, e consequência sancionadora depende de processo e fundamentação.
+1. Qual palavra do comando define o que deve ser julgado?
+2. A alternativa decorre necessariamente do texto ou apenas pode ser verdadeira?
+3. A reescrita preserva quantificador, negação e relação lógica?
+4. Cada parágrafo da discursiva cumpre uma função distinta?
+5. A resposta normativa identifica fonte, competência, defesa e motivação?
 
-**Exemplo:** diante de diligência regular, ocultar todos os documentos sob alegação genérica de defesa é inadequado. O interessado deve atender ao que for pertinente e pode contestar exigência ou conclusão no procedimento próprio.
+## Checklist de saída
 
-#### Competência e território
+- [ ] Consigo resumir a ideia central sem extrapolar.
+- [ ] Sei negar corretamente todo, algum e nenhum.
+- [ ] Identifico referentes e valores de conectivos.
+- [ ] Julgo reescrita por sentido e gramática.
+- [ ] Aplico regras centrais de concordância, regência, crase e pontuação.
+- [ ] Vi o modelo completo e o exemplo inadequado antes de produzir.
+- [ ] Usei a rubrica oficial na autocorreção.
+- [ ] Diferencio CFA, CRA-PR, Plenário e Diretoria Executiva.
+- [ ] Não tratei sanções de profissional e pessoa jurídica como idênticas.
 
-O CFA exerce coordenação e normatização nacional dentro de suas atribuições. O CRA atua regionalmente em registro, fiscalização e execução de suas competências. Antes de escolher o órgão, identifique onde ocorreu a atividade e qual Conselho Regional possui jurisdição. O primeiro registro, a origem da denúncia ou o simples fato de a atividade envolver Administração não conferem competência nacional concorrente a qualquer CRA.
+<a id="s1-d5-roteiro-banco"></a>
 
-#### Hierarquia e controle de fonte
+## Roteiro do banco de questões
 
-O decreto regulamenta a lei dentro de seus limites. O Regimento organiza internamente o CRA-PR e não amplia por conta própria o campo profissional. Em material de estudo:
+O campo Uso deve conter apenas: Essenciais, Aprofundamento, Revisão ou Simulado.
 
-- afirme somente objeto, vigência e conteúdo confirmados;
-- consulte o texto oficial antes de detalhar artigo, prazo, requisito ou sanção;
-- não transplante regra de resolução semelhante;
-- não escolha a norma apenas pelo número mais recente;
-- registre como pendente aquilo que a fonte disponível ainda não permite afirmar.
+O campo Momento registra: primeira passagem, D+2, antes de D+7, D+7 ou ciclo.
 
-**Roteiro para as Extras 6.1–6.10:** `sujeito → atividade/conduta → território → objeto normativo → fonte confirmada → órgão competente → processo`. Elimine alternativas que confundam Regimento com Ética, CFA com CRA, pessoa física com jurídica, indicação formal com atuação efetiva ou conteúdo confirmado com inferência.
+### Primeira passagem — dez essenciais
 
-<a id="s1-d6-b5"></a>
-### Bloco 5 — Plano preenchido de redação (30min)
+Resolva nesta ordem: P1, P2, P3, P6, P5, P7, P8, P22, E1 e E4. A ordem intercala os gabaritos sem mudar a seleção pedagógica.
 
-**Tema:** caminhos para uma transformação digital segura e inclusiva no serviço público.
+### D+2 — dez essenciais restantes
 
-| Parágrafo | Função | Plano preenchido |
+P10, P11, P12, P14, P17, P19, P24, P27, P31 e P39.
+
+### Aprofundamento
+
+Resolva nesta ordem: P4, P9, P13, P18, P15, P16, P20, P21, P23, P25, P26, P28, P29, P30, P32, P33, P34, P35, P36 e E2.
+
+### Revisão
+
+P37, P38, P40, P42, P43, P44, P46, P47, P48, P49, E3, E5, E6, E7 e E8.
+
+### Simulado
+
+P41, P45, P50 e E9 a E20.
+
+Questões muito difíceis: P41, P43, P48 e P50.
+
+<a id="s1-d5-correcao"></a>
+
+## Correção A–D e caderno de erros
+
+Para cada questão errada ou acertada com dúvida, registre:
+
+- A — alternativa marcada;
+- B — base usada no momento da resposta;
+- C — causa do erro: conteúdo, leitura, regra, distração ou tempo;
+- D — decisão: regra curta e data da próxima revisão.
+
+Modelo:
+
+| Questão | A | B | C | D |
+|---|---|---|---|---|
+| P__ | __ | trecho/regra | causa | correção + revisão |
+
+Encerre somente depois de programar os erros para D+2 ou D+7.
+
+# Dia 6 — Administração Pública, Raciocínio Lógico-Matemático e consolidação
+
+<a id="s1-d6-abertura"></a>
+## Abertura, objetivo e orientação do dia
+
+O objetivo é construir um núcleo inicial seguro de Administração Pública e Raciocínio Lógico-Matemático, recuperar as matérias dos Dias 1–5 e encerrar a semana com um caderno de erros utilizável. Ao final, o estudante deve conseguir distinguir regras próximas, resolver cadeias lógicas e cálculos em etapas e justificar cada resposta pela teoria anterior.
+
+O Dia 6 é uma **jornada de três sessões**, não uma ordem para resolver as 70 questões de uma vez. Leia os blocos na sequência física, faça as entregas indicadas e interrompa a primeira passagem após a correção das 10 Essenciais programadas. D+2, D+7 e simulado são ciclos futuros.
+
+### Como a banca tende a cobrar
+
+- em Administração Pública, troca princípio expresso por princípio implícito, órgão por entidade, motivo por motivação, anulação por revogação e dispensa por inexigibilidade;
+- em casos práticos, combina competência, finalidade, processo, transparência, proteção de dados e nexo causal;
+- em RLM, exige traduzir a frase antes de calcular, controlar a base de cada percentual e executar operações em ordem;
+- nas alternativas difíceis, usa uma primeira afirmação correta e introduz o erro na consequência.
+
+### Limite desta primeira semana e encaminhamentos honestos
+
+Este dia oferece o núcleo necessário ao banco do Dia 6. O aprofundamento integral do edital permanece programado para a Semana 6: direitos e garantias fundamentais em capítulo próprio; organização administrativa avançada; controle e regimes de agentes; leitura literal ampliada de licitações e improbidade; lógica dedutiva avançada; geometria, trigonometria, conjuntos numéricos, equações, matrizes, determinantes, sistemas lineares e polinômios. Esses assuntos não devem ser presumidos como dominados nem cobrados antecipadamente nesta primeira passagem.
+
+## Primeira passagem em três sessões reais
+
+Os tempos são líquidos; pausas ficam fora da contagem. Os pontos de parada impedem que o estudo se transforme em uma sessão contínua e irreal.
+
+| Sessão | Tempo | Percurso | Entrega e ponto de parada |
+|---|---:|---|---|
+| A — fundamentos administrativos | 2h50 | Bloco 1: princípios, organização, atos, poderes e agentes | quadro `regra → exemplo → erro de prova`; parar após explicar anulação × revogação e excesso × desvio |
+| B — legislação correlata e RLM | 2h50 | Bloco 2 (65min) + Bloco 3 (105min) | dois casos administrativos e seis cálculos/lógicas refeitos sem consulta; parar após conferir os exemplos de probabilidade e regressão |
+| C — matérias fixas, consolidação e amostra | 3h | Bloco 4 (40min), Bloco 5 (25min), Bloco 6 (15min), mini revisão e checklist (10min), 10 Essenciais (45min) e correção A–D/caderno de erros (45min) | encerrar após corrigir integralmente Q2, Q3, Q5, Q9, Q13, Q25, Q27, Q28, Q32 e Q34 |
+
+Não crie Sessões D, E, F ou G para “zerar” o banco. A Sessão C termina com dez respostas corrigidas, ainda que reste vontade de continuar.
+
+<a id="s1-d6-b1"></a>
+## Bloco 1 — Teoria principal: fundamentos de Administração Pública
+
+<a id="s1-d6-principios"></a>
+### 1. Princípios da Administração Pública e núcleo constitucional
+
+O caput do art. 37 da [Constituição Federal](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) apresenta cinco princípios expressos, lembrados por **LIMPE**:
+
+| Princípio | Regra operacional | Exemplo de violação |
 |---|---|---|
-| 1 — Introdução | contexto + recorte + tese | A digitalização amplia acesso e eficiência, mas só produz benefício público duradouro quando combina segurança, inclusão e governança. |
-| 2 — Desenvolvimento 1 | argumento + explicação + exemplo | Integração e simplificação reduzem filas e retrabalho; serviço interoperável evita que o cidadão repita dados e etapas em diferentes órgãos. |
-| 3 — Desenvolvimento 2 | argumento + contraste + consequência | Sem proteção de dados, acessibilidade e canal alternativo, o ganho tecnológico pode gerar exclusão e perda de confiança; segurança e capacitação devem acompanhar a implantação. |
-| 4 — Conclusão | retomada + encaminhamento | O poder público deve planejar, medir resultados, proteger dados, capacitar equipes e manter atendimento acessível, para que inovação e direitos avancem juntos. |
+| Legalidade | o agente atua dentro da competência e da autorização jurídica | criar restrição sem base normativa |
+| Impessoalidade | a atuação busca a finalidade pública, sem promoção, perseguição ou favorecimento pessoal | usar publicidade institucional para exaltar autoridade |
+| Moralidade | exige lealdade, boa-fé, honestidade e coerência ética | praticar ato aparentemente formal para beneficiar aliado |
+| Publicidade | transparência é regra, ressalvados sigilo legal e proteção legítima de dados | ocultar decisão sem fundamento ou divulgar dado pessoal desnecessário |
+| Eficiência | busca resultado adequado e bom uso de recursos dentro da lei | invocar rapidez para dispensar requisito obrigatório |
 
-**Modelo de encadeamento:**
+Supremacia e indisponibilidade do interesse público, autotutela, motivação, continuidade e segurança jurídica são princípios ou ideias relevantes, mas **não integram a lista literal do caput do art. 37**. Em comando que peça apenas princípios expressos, não misture as categorias.
 
-- introdução: “Nesse contexto” → tese;
-- desenvolvimento 1: “Em primeiro lugar” → benefício explicado;
-- desenvolvimento 2: “Além disso” ou “Contudo” → risco e condição;
-- conclusão: “Portanto” → encaminhamento coerente.
+Direitos constitucionais também limitam a atuação administrativa. Igualdade sustenta tratamento impessoal; devido processo, contraditório e ampla defesa condicionam sanções; intimidade, vida privada e proteção de dados impedem publicidade indiscriminada; direito de petição e acesso à informação permitem controle. O interesse público não elimina essas garantias.
 
-**Entrega:** transforme cada célula da última coluna em duas ou três frases e produza quatro parágrafos. Ao revisar, confirme: tese explícita, um exemplo por desenvolvimento, conectores coerentes, ausência de argumento novo na conclusão, concordância e pontuação.
+**Exemplo resolvido:** campanha oficial informa serviço público, mas destaca nome, fotografia e slogan pessoal do dirigente. Mesmo que o serviço seja útil e a despesa esteja registrada, há promoção pessoal incompatível com a impessoalidade; publicidade não saneia desvio de finalidade.
 
-**Pegadinha:** proposta genérica como “é preciso conscientizar” não fecha o raciocínio se não indicar quem deve agir, por qual meio e com qual finalidade.
+**Erro provável:** tratar eficiência como autorização para afastar legalidade. Os princípios convivem; um não revoga o outro.
 
-<a id="s1-d6-b6"></a>
-### Bloco 6 — Protocolo de retenção dos Dias 1–5 (20min)
+<a id="s1-d6-organizacao"></a>
+### 2. Organização administrativa
 
-O Bloco 6 não introduz teoria. As Extras 6.11–6.20 verificam retenção de assuntos já ensinados e devem apontar para suas seções de origem:
+**Órgão** é centro de competências sem personalidade jurídica própria; **entidade** possui personalidade jurídica. Ministérios e secretarias são órgãos da Administração Direta. Autarquias, fundações públicas, empresas públicas e sociedades de economia mista compõem a Administração Indireta, cada qual com regime próprio.
 
-| Extras | Origem obrigatória na apostila | Conteúdo recuperado |
+| Conceito | Movimento | Resultado |
 |---|---|---|
-| 6.11 | Dia 1, “Cache, localidade e políticas de escrita” | localidade espacial e aproveitamento de blocos |
-| 6.12 | Dia 1, “Pipeline de CPU” | distinção entre vazão, latência e efeito das paradas |
-| 6.13 | Dia 2, “CPU-bound, I/O-bound, quantum e starvation” | Round Robin e quantum |
-| 6.14 | Dia 2, “Memória virtual, page fault, swap e thrashing” | page fault e memória virtual |
-| 6.15 | Dia 3, “GROUP BY, HAVING e agregações” | filtro de linhas e de grupos |
-| 6.16 | Dia 3, “GROUP BY, HAVING e agregações” | contagem com valor nulo e total de linhas |
-| 6.17 | Dia 4, “Regimento Interno do CRA-PR e RN CFA nº 651/2024” e “Código de Ética - RN CFA nº 671/2025” | estrutura interna e sigilo |
-| 6.18 | Dia 5, “Concordância, regência, crase e pontuação” | norma-padrão e linguagem administrativa |
-| 6.19 | Dia 4, Bloco 4, “Contratação pública: modalidade, fases e motivação objetiva” | contratação direta motivada |
-| 6.20 | Dia 4, Bloco 4, “Microtrilha de RLM para as Extras 4.16–4.20” | percentuais sucessivos e comparação de grupos |
+| Centralização | o próprio ente político executa a atividade | União, estado ou município atua por seus órgãos |
+| Descentralização | a execução é atribuída a outra pessoa jurídica ou, conforme a técnica, a particular | surge relação entre pessoas distintas, sem hierarquia automática |
+| Concentração | competências são reunidas em menos órgãos internos | reduz-se a distribuição interna |
+| Desconcentração | competências são distribuídas entre órgãos da mesma pessoa jurídica | permanece uma só personalidade jurídica e existe hierarquia interna |
 
-Para cada Extra:
+A [Constituição, art. 37, XIX](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) estabelece que autarquia é criada por lei específica; a instituição de empresa pública, sociedade de economia mista e fundação é autorizada por lei específica. Na síntese clássica:
 
-1. responda sem consulta e registre o raciocínio, não apenas a letra;
-2. atribua confiança `alta`, `média` ou `baixa`;
-3. confira a seção de origem indicada na tabela;
-4. se errar, escreva a regra recuperada e um contraexemplo;
-5. resolva novamente após um intervalo curto.
+- **autarquia:** pessoa jurídica de direito público, criada para atividade administrativa típica, com patrimônio e capacidade administrativa próprios;
+- **fundação pública:** entidade voltada a finalidade de interesse social; seu regime depende da forma instituída e da legislação aplicável;
+- **empresa pública:** pessoa jurídica de direito privado, capital público e forma societária admitida em lei;
+- **sociedade de economia mista:** pessoa jurídica de direito privado, normalmente sociedade anônima, com controle estatal e participação privada possível.
 
-**Entrega prática:** tabela com as dez Extras, resposta inicial, confiança, resultado, regra recuperada e data de nova tentativa. Seis ou mais acertos com confiança real encerram o bloco; abaixo disso, selecione os três erros de maior impacto para abrir a Semana 2.
+Vinculação de entidade da Administração Indireta ao ente supervisor não cria subordinação hierárquica idêntica à existente entre órgãos. Há controle finalístico nos limites legais.
 
-### Mapa de cobertura dos Blocos 4, 5 e 6 — Dia 6
+O [Regimento do CRA-PR, aprovado pela RN CFA nº 651/2024](https://documentos.cfa.org.br/?a=show&c=documento&id=955), descreve o Conselho como autarquia dotada de personalidade jurídica de direito público, autonomia técnica, administrativa e financeira e jurisdição no Paraná. Por isso, ele não é secretaria estadual, associação privada nem empresa pública.
 
-| Faixa | Bloco | Matéria | Referência suficiente |
-|---|---|---|---|
-| Extras 6.1–6.10 | Bloco 4 | Legislação CFA/CRA confirmada | [`s1-d6-b4`](#s1-d6-b4) |
-| Sem faixa própria | Bloco 5 | Planejamento discursivo | [`s1-d6-b5`](#s1-d6-b5); entrega textual guiada |
-| Extras 6.11–6.20 | Bloco 6 | Retenção integrada dos Dias 1–5 | [`s1-d6-b6`](#s1-d6-b6), com seção de origem por questão |
+**Exemplo resolvido:** criar uma coordenação dentro de um ministério distribui competências na mesma pessoa jurídica: desconcentração. Criar uma autarquia por lei transfere execução a nova pessoa: descentralização.
 
-## Teoria explicada de forma didática
+**Erro provável:** dizer que toda distribuição de tarefas é descentralização. Primeiro pergunte se surgiu outra pessoa jurídica.
 
-### 1. Princípios da Administração Pública
-
-O art. 37 da Constituição Federal traz os princípios expressos:
-
-- legalidade;
-- impessoalidade;
-- moralidade;
-- publicidade;
-- eficiência.
-
-Macete: LIMPE.
-
-**Legalidade:** a Administração só pode agir conforme a lei.
-
-**Impessoalidade:** atuação voltada ao interesse público, sem favorecimento pessoal.
-
-**Moralidade:** conduta ética, honesta, proba.
-
-**Publicidade:** transparência dos atos, salvo sigilo legal.
-
-**Eficiência:** busca de melhores resultados com qualidade e uso adequado de recursos.
-
-### Como funciona na prática
-
-Se um gestor público contrata sem observar regra legal, pode violar legalidade. Se direciona ato para favorecer amigo, viola impessoalidade e moralidade. Se oculta informação pública sem fundamento legal, viola publicidade. Se mantém processo desnecessariamente lento e mal organizado, pode violar eficiência.
-
-### Exemplos resolvidos - princípios
-
-**Exemplo 1:** nomear parente para cargo por favorecimento pessoal viola qual princípio?
-
-Viola impessoalidade e moralidade. A depender do caso, pode também contrariar regras específicas de nepotismo.
-
-**Exemplo 2:** negar informação pública sem hipótese legal de sigilo afronta qual princípio?
-
-Publicidade, além de poder envolver a Lei de Acesso à Informação.
-
-### 2. Organização administrativa e autarquias
-
-A Administração Pública se divide em:
-
-- **Administração Direta:** União, Estados, Distrito Federal e Municípios, com seus órgãos.
-- **Administração Indireta:** entidades com personalidade jurídica própria, como autarquias, fundações públicas, empresas públicas e sociedades de economia mista.
-
-Autarquias:
-
-- pessoas jurídicas de direito público;
-- criadas por lei;
-- desempenham atividades típicas de Estado;
-- têm autonomia administrativa e financeira;
-- sujeitam-se a controle finalístico.
-
-Conselhos profissionais, em regra, são tratados como autarquias corporativas ou especiais, com função de fiscalização profissional.
-
-### Como funciona na prática
-
-O CRA-PR é entidade que fiscaliza o exercício profissional no Paraná. Não é sindicato, associação privada ou empresa estatal. Atua em função pública de fiscalização profissional.
-
-### Exemplos resolvidos - organização administrativa
-
-**Exemplo 1:** autarquia integra Administração Direta?
-
-Não. Autarquia integra Administração Indireta.
-
-**Exemplo 2:** autarquia tem personalidade jurídica própria?
-
-Sim. Esse é um ponto central da descentralização administrativa.
-
+<a id="s1-d6-atos"></a>
 ### 3. Atos administrativos
 
-Atos administrativos são manifestações unilaterais da Administração Pública que produzem efeitos jurídicos.
+O ato administrativo é manifestação da Administração, ou de quem exerça função administrativa, destinada a produzir efeitos jurídicos sob regime de direito público. O roteiro clássico dos elementos é **COFIFOMOB**: competência, finalidade, forma, motivo e objeto.
 
-Elementos clássicos:
+| Elemento | Pergunta de controle | Erro típico |
+|---|---|---|
+| Competência | quem podia praticar o ato? | autoridade absolutamente incompetente decide |
+| Finalidade | para qual interesse público a competência foi dada? | remoção usada para perseguir servidor |
+| Forma | qual exteriorização ou procedimento era exigido? | omissão de forma essencial |
+| Motivo | quais fatos e fundamentos jurídicos sustentam a decisão? | fato declarado inexistente ou juridicamente inadequado |
+| Objeto | qual efeito jurídico imediato o ato produz? | resultado proibido ou impossível |
 
-- competência;
-- finalidade;
-- forma;
-- motivo;
-- objeto.
+**Motivo** é o pressuposto de fato e de direito. **Motivação** é a exposição desses pressupostos. A frase “por interesse público”, sem fatos nem fundamento, não permite controlar legalidade, coerência ou adequação. Quando a Administração declara motivos, sua validade fica vinculada à existência e à veracidade deles, segundo a teoria dos motivos determinantes.
 
-Atributos:
+#### Atributos e espécies
 
-- presunção de legitimidade;
-- autoexecutoriedade, quando cabível;
-- imperatividade;
-- tipicidade.
+- **presunção de legitimidade e veracidade:** o ato produz efeitos e se presume conforme o direito até controle em sentido contrário; a presunção é relativa;
+- **imperatividade:** certos atos impõem obrigações independentemente da concordância do destinatário; não está presente em todos;
+- **autoexecutoriedade:** em hipóteses admitidas pelo ordenamento, a Administração executa diretamente a medida; não acompanha todo ato e costuma depender de previsão legal ou urgência juridicamente reconhecida;
+- **tipicidade:** o ato deve corresponder a figura e finalidade admitidas no ordenamento.
 
-### Como funciona na prática
+Quanto ao conteúdo, a classificação didática costuma reunir atos normativos, ordinatórios, negociais, enunciativos e punitivos. Quanto à liberdade decisória, atos **vinculados** têm requisitos definidos pela norma; atos **discricionários** deixam margem legítima de conveniência e oportunidade dentro da lei. Discricionariedade não protege desvio, motivo falso, desproporção ou falta de motivação exigível.
 
-Quando uma autoridade aplica penalidade administrativa seguindo competência, finalidade pública, forma prevista, motivo existente e objeto lícito, pratica ato administrativo. Se falta competência, o ato pode ser inválido.
+#### Anulação, revogação e convalidação
 
-### Exemplos resolvidos - atos
+| Providência | Causa | Quem pratica | Limite essencial |
+|---|---|---|---|
+| Anulação | ilegalidade | Administração e, quando provocado, Judiciário | observar processo, segurança jurídica e efeitos aplicáveis |
+| Revogação | conveniência ou oportunidade de ato válido | Administração | não serve para encobrir ilegalidade nem alcança ato sem margem revogável |
+| Convalidação | vício sanável, sem lesão ao interesse público nem prejuízo a terceiros | Administração competente | não é obrigatória e não corrige vício insanável |
 
-**Exemplo 1:** competência pode ser presumida livremente?
+A Administração pode invalidar seus próprios atos pela **autotutela**. A Lei nº 9.784/1999, como referência do processo administrativo federal, disciplina anulação, revogação e convalidação nos [arts. 53 a 55](https://www.planalto.gov.br/ccivil_03/leis/l9784.htm). Competência exclusiva ou absoluta, finalidade e objeto ilícito são exemplos de vícios que não devem ser tratados como automaticamente sanáveis.
 
-Não. Competência decorre da lei ou norma aplicável. Agente público não escolhe livremente suas competências.
+**Exemplo resolvido:** licença foi concedida por autoridade absolutamente incompetente e depois se tornou inconveniente. A ilegalidade vem primeiro: o ato deve ser anulado com as garantias cabíveis; revogação por mérito não apaga o vício e convalidação não é automática.
 
-**Exemplo 2:** finalidade do ato administrativo pode ser interesse pessoal da autoridade?
+**Erro provável:** concluir que estar dentro de uma faixa legal torna a decisão imune a controle. Se multa máxima é escolhida para retaliar crítica e sem relacionar gravidade e circunstâncias, há desvio de finalidade e motivação insuficiente.
 
-Não. A finalidade deve ser pública.
+<a id="s1-d6-poderes-agentes"></a>
+### 4. Poderes administrativos, processo sancionador e agentes públicos
 
-### 4. LAI e LGPD
+Poder administrativo é competência-dever para cumprir uma finalidade legal. Seu uso regular exige competência, finalidade, motivação, proporcionalidade e respeito ao processo.
 
-**LAI - Lei de Acesso à Informação:** concretiza publicidade e transparência. A regra é o acesso à informação pública; o sigilo é exceção e precisa ter fundamento legal.
+| Poder | Função | Limite de prova |
+|---|---|---|
+| Hierárquico | ordenar, coordenar, fiscalizar e distribuir funções dentro da estrutura | não cria hierarquia entre pessoas jurídicas distintas; delegação e avocação respeitam a lei |
+| Disciplinar | apurar e sancionar infrações de quem possui vínculo especial com a Administração | exige enquadramento, processo e defesa |
+| Regulamentar ou normativo | detalhar a execução da lei dentro da competência | não pode contrariar a lei nem criar obrigação primária sem suporte jurídico |
+| Polícia administrativa | condicionar direitos, bens e atividades em favor do interesse coletivo | exige base legal, competência, motivação, proporcionalidade e garantias no ato sancionador |
 
-**LGPD - Lei Geral de Proteção de Dados:** regula o tratamento de dados pessoais, inclusive pelo poder público. Exige finalidade, adequação, necessidade, segurança, transparência e responsabilização.
+**Excesso de poder** ocorre quando o agente ultrapassa sua competência. **Desvio de poder ou de finalidade** ocorre quando usa competência existente para objetivo diferente do previsto. Ambos são formas de abuso e podem invalidar o ato.
 
-Publicidade e proteção de dados não são ideias incompatíveis. A Administração deve ser transparente, mas não pode divulgar dados pessoais sem base legal ou sem necessidade.
+No processo sancionador, a sequência segura é: ciência da imputação → oportunidade de defesa e produção pertinente de provas → análise dos argumentos → decisão motivada → recurso quando cabível. Competência legal para fiscalizar não elimina contraditório e ampla defesa.
 
-### Como funciona na prática
+**Agente público** é categoria ampla. Inclui agentes políticos, servidores estatutários, empregados públicos, temporários e particulares em colaboração, conforme o vínculo. Distinga:
 
-Um conselho profissional lida com dados pessoais de registrados, processos, pagamentos e fiscalização. Precisa dar transparência a atos públicos quando cabível, mas também proteger dados pessoais de profissionais, empresas e usuários.
+- **cargo público:** conjunto de atribuições criado por lei, normalmente submetido a regime estatutário;
+- **emprego público:** vínculo contratual regido pela CLT, quando juridicamente admitido;
+- **função pública:** conjunto de atribuições, que pode existir sem cargo isolado, como em função de confiança ou contratação temporária.
 
-### Exemplos resolvidos - LAI/LGPD
+Quem mantém vínculo CLT válido para ocupar emprego público é **empregado público** e continua integrante da categoria ampla de agentes públicos. A discussão sobre validade da investidura ou regime permitido é diferente da classificação conceitual do vínculo descrito.
 
-**Exemplo 1:** publicidade significa divulgar qualquer dado pessoal sem limite?
+**Exemplo resolvido:** autarquia aplica restrição prevista em lei após processo com defesa e decisão motivada. Trata-se de poder de polícia administrativo regular; não depende de condenação penal anterior.
 
-Não. Publicidade deve respeitar hipóteses legais de sigilo e proteção de dados pessoais.
+**Erro provável:** confundir poder de polícia com polícia judiciária ou imaginar que toda medida policial administrativa seja autoexecutória e imune a defesa.
 
-**Exemplo 2:** LGPD impede todo tratamento de dados pelo poder público?
+<a id="s1-d6-b2"></a>
+## Bloco 2 — Aprofundamento: transparência, improbidade, licitações e responsabilidade estatal
 
-Não. Ela regula o tratamento, exigindo base legal, finalidade, necessidade e segurança.
+<a id="s1-d6-transparencia"></a>
+### 5. Transparência, LAI e LGPD
 
-### 5. Improbidade administrativa
+A [Lei de Acesso à Informação — Lei nº 12.527/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm) adota publicidade como regra e sigilo como exceção legalmente fundamentada. O requerente não precisa demonstrar interesse jurídico individual para pedir informação pública; eventual negativa deve indicar razão e fundamento, com informação sobre recurso.
 
-Improbidade administrativa envolve condutas ilícitas praticadas contra a Administração Pública que violam deveres de honestidade, legalidade e lealdade institucional, conforme a legislação própria. Para fins de prova, o ponto central é reconhecer que improbidade não é qualquer erro administrativo: exige enquadramento legal e, nos termos atuais da Lei de Improbidade, atenção ao elemento subjetivo exigido.
+Quando apenas parte do documento é protegida, a LAI assegura acesso à parte não sigilosa por certidão, extrato ou cópia com ocultação do trecho restrito. A presença de CPF, telefone ou endereço não transforma automaticamente estatísticas e demais informações públicas em segredo integral.
 
-Categorias clássicas de atos de improbidade:
+A [LGPD — Lei nº 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) exige finalidade pública legítima, adequação, necessidade, segurança e transparência no tratamento pelo poder público. Consentimento não é a única base legal. Na conciliação prática:
 
-- enriquecimento ilícito;
-- lesão ao erário;
-- violação aos princípios da Administração Pública.
+1. identifique a finalidade pública do pedido e a informação de interesse coletivo;
+2. localize dados pessoais que não sejam necessários ao atendimento;
+3. forneça a parte acessível com anonimização, tarjamento ou ocultação tecnicamente adequada;
+4. motive a restrição residual e preserve canal de recurso.
 
-Sanções possíveis, conforme o caso:
+**Exemplo resolvido:** planilha contém resultado agregado de política pública e dados identificadores. A resposta adequada é liberar o conteúdo público e ocultar os identificadores desnecessários, explicando a restrição; negar tudo ou publicar tudo são extremos incorretos.
 
-- perda dos bens ou valores acrescidos ilicitamente;
-- ressarcimento ao erário;
-- perda da função pública;
-- suspensão dos direitos políticos;
-- multa civil;
-- proibição de contratar com o poder público ou receber benefícios.
+**Erro provável:** afirmar que todo dado mantido pelo Estado é público ou que qualquer dado pessoal torna o arquivo integralmente sigiloso.
 
-### Como funciona na prática
+<a id="s1-d6-improbidade"></a>
+### 6. Improbidade administrativa
 
-Se um agente público usa o cargo para obter vantagem patrimonial indevida, o problema não é apenas disciplinar: pode configurar improbidade por enriquecimento ilícito. Se causa dano ao erário em conduta enquadrada na lei, pode haver improbidade por lesão ao erário. Se frustra a legalidade, impessoalidade ou publicidade com gravidade juridicamente relevante, pode haver violação a princípios.
+A [Lei nº 8.429/1992 em texto atualizado](https://www2.camara.leg.br/legin/fed/lei/1992/lei-8429-2-junho-1992-357452-normaatualizada-pl.html), após as alterações da Lei nº 14.230/2021, exige **conduta dolosa tipificada** para caracterização dos atos de improbidade. Ilegalidade, falha formal, inabilidade ou divergência interpretativa razoável não se convertem automaticamente em improbidade.
 
-### Exemplos resolvidos - improbidade
+As três famílias centrais são:
 
-**Exemplo 1:** todo ato ilegal é automaticamente improbidade?
+- enriquecimento ilícito, nos tipos do art. 9º;
+- lesão ao erário, nos tipos do art. 10;
+- atentado contra princípios da Administração, nos tipos do art. 11.
 
-Não. A ilegalidade pode existir sem improbidade. Para improbidade, é necessário enquadramento na lei e presença dos requisitos exigidos, especialmente quanto ao elemento subjetivo.
+O caminho de prova é: conduta concreta → tipo legal → dolo exigido → sujeito e nexo → processo e defesa → consequência legal. Condenação criminal prévia não é requisito para reconhecer a natureza civil-administrativa da ação de improbidade, embora o devido processo seja indispensável.
 
-**Exemplo 2:** favorecer empresa amiga em procedimento público pode envolver quais princípios?
+**Exemplo resolvido:** servidor adota interpretação técnica plausível, registra fundamentos e não busca resultado ilícito. Pode haver controle ou correção, mas a divergência, por si só, não satisfaz tipificação e dolo.
 
-Pode envolver impessoalidade, moralidade, legalidade e isonomia, além de possível repercussão em licitação e improbidade, conforme o caso.
+**Erro provável:** usar “houve ilegalidade” como conclusão suficiente. A pergunta seguinte deve ser “qual tipo doloso e quais fatos o demonstram?”.
 
-### 6. Licitação pública
+<a id="s1-d6-licitacoes"></a>
+### 7. Licitações e contratação direta
 
-Licitação é o procedimento usado pela Administração para selecionar proposta apta à contratação, preservando isonomia, competitividade, planejamento, julgamento objetivo, transparência e interesse público.
+A [Lei nº 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) organiza planejamento, seleção objetiva, isonomia, competição e controle. O edital vincula Administração e licitantes; requisito essencial não pode ser dispensado apenas para preservar uma proposta específica.
 
-#### Princípios
+#### Modalidades e critérios
 
-Além dos princípios gerais da Administração Pública, a Lei nº 14.133/2021 trabalha com princípios como:
-
-- planejamento;
-- transparência;
-- segregação de funções;
-- competitividade;
-- julgamento objetivo;
-- vinculação ao edital;
-- desenvolvimento nacional sustentável;
-- eficiência;
-- economicidade.
-
-#### Contratação direta
-
-Contratação direta ocorre quando a Administração contrata sem licitação, nas hipóteses legais. As duas categorias mais cobradas são:
-
-- **dispensa:** a competição seria possível em tese, mas a lei autoriza dispensar a licitação em situações específicas;
-- **inexigibilidade:** a competição é inviável, por exemplo por exclusividade ou singularidade conforme hipóteses legais.
-
-A pegadinha central é: dispensa não é sinônimo de inexigibilidade.
-
-#### Modalidades
-
-Modalidades da Lei nº 14.133/2021:
-
-- pregão;
-- concorrência;
-- concurso;
-- leilão;
-- diálogo competitivo.
-
-O pregão é usado para bens e serviços comuns. A concorrência é usada para contratações de maior complexidade, conforme o objeto e a lei. Concurso seleciona trabalho técnico, científico ou artístico. Leilão aliena bens. Diálogo competitivo é modalidade para contratações complexas em que a Administração dialoga com licitantes previamente selecionados para desenvolver alternativas.
-
-#### Tipos ou critérios de julgamento
-
-Critérios de julgamento incluem:
-
-- menor preço;
-- maior desconto;
-- melhor técnica ou conteúdo artístico;
-- técnica e preço;
-- maior lance, no caso de leilão;
-- maior retorno econômico.
-
-#### Procedimento
-
-Uma sequência geral do procedimento licitatório envolve:
-
-1. fase preparatória;
-2. divulgação do edital;
-3. apresentação de propostas e lances, quando aplicável;
-4. julgamento;
-5. habilitação;
-6. fase recursal;
-7. homologação.
-
-A ordem pode variar conforme a modalidade e o procedimento adotado, mas a lógica de planejamento, publicidade, julgamento e contratação deve ser preservada.
-
-### Como funciona na prática
-
-Se o CRA-PR precisa contratar solução de tecnologia, deve planejar a contratação, definir necessidade, estimar custos, avaliar riscos, elaborar documentos adequados e escolher o procedimento compatível com o objeto. Se o objeto for serviço comum, o pregão pode ser cabível. Se houver inviabilidade de competição comprovada, pode haver inexigibilidade. Se a hipótese legal autorizar contratação direta apesar de competição possível, pode haver dispensa.
-
-### Exemplos resolvidos - licitação
-
-**Exemplo 1:** dispensa e inexigibilidade são a mesma coisa?
-
-Não. Na dispensa, a competição pode existir, mas a lei autoriza não licitar. Na inexigibilidade, a competição é inviável.
-
-**Exemplo 2:** o edital vincula a Administração e os licitantes?
-
-Sim. Pelo princípio da vinculação ao edital, as regras definidas no instrumento convocatório devem ser observadas, desde que compatíveis com a lei.
-
-**Exemplo 3:** menor preço é sempre o único critério de julgamento?
-
-Não. A lei prevê outros critérios, como técnica e preço, maior desconto, melhor técnica ou conteúdo artístico, maior lance e maior retorno econômico.
-
-### 7. Responsabilidade civil do Estado
-
-Responsabilidade civil do Estado é o dever de indenizar danos causados a terceiros por atuação estatal, quando presentes os requisitos jurídicos.
-
-Pontos essenciais:
-
-- **ato comissivo:** conduta positiva do Estado, uma ação. Em regra, aplica-se responsabilidade objetiva, com base no risco administrativo.
-- **omissão:** ausência de atuação quando havia dever de agir. A depender do caso, a prova pode exigir análise de culpa do serviço, falha do serviço ou dever específico de proteção.
-- **requisitos gerais:** conduta estatal, dano e nexo causal.
-- **excludentes ou atenuantes:** culpa exclusiva da vítima, caso fortuito/força maior, fato exclusivo de terceiro, culpa concorrente da vítima.
-
-Na responsabilidade objetiva, a vítima não precisa provar culpa do agente, mas precisa demonstrar dano e nexo causal entre a atuação estatal e o dano.
-
-### Como funciona na prática
-
-Se veículo oficial causa acidente durante serviço, há ato comissivo. A discussão costuma envolver dano e nexo causal, com possível responsabilidade objetiva do Estado. Se a alegação é falta de fiscalização ou ausência de serviço, a análise pode envolver omissão e falha do serviço.
-
-### Exemplos resolvidos - responsabilidade civil
-
-**Exemplo 1:** responsabilidade objetiva significa indenização automática?
-
-Não. Ainda é necessário provar dano e nexo causal. Além disso, podem existir excludentes, como culpa exclusiva da vítima.
-
-**Exemplo 2:** se a vítima contribuiu para o dano, o Estado fica sempre totalmente isento?
-
-Não necessariamente. Culpa concorrente pode atenuar o valor da indenização, enquanto culpa exclusiva da vítima pode excluir a responsabilidade.
-
-**Exemplo 3:** ato comissivo e omissão têm a mesma análise?
-
-Nem sempre. Atos comissivos tendem a ser cobrados pela lógica objetiva do risco administrativo. Omissões podem exigir análise mais cuidadosa sobre dever de agir, falha do serviço e nexo causal.
-
-### 8. Raciocínio lógico: proposições e conectivos
-
-Proposição é uma frase declarativa que pode ser verdadeira ou falsa.
-
-Conectivos:
-
-- `e`: conjunção;
-- `ou`: disjunção;
-- `se... então`: condicional;
-- `se e somente se`: bicondicional;
-- `não`: negação.
-
-Condicional `p -> q` só é falsa quando p é verdadeira e q é falsa.
-
-### Como funciona na prática
-
-Frase: "Se estudo legislação, aumento minha pontuação."
-
-Ela não afirma que você estudou legislação. Afirma uma relação condicional entre estudar e aumentar pontuação.
-
-### Exemplos resolvidos - lógica
-
-**Exemplo 1:** negação de "Todos os candidatos estudam SQL".
-
-Negação correta: "Algum candidato não estuda SQL."
-
-Não é "Nenhum candidato estuda SQL".
-
-**Exemplo 2:** condicional "Se é autarquia, integra a Administração Indireta." Quando é falsa?
-
-Só quando a primeira parte é verdadeira e a segunda é falsa: é autarquia e não integra a Administração Indireta.
-
-### 9. Sequências, conjuntos e regra de três
-
-Sequências podem seguir soma, multiplicação, alternância, quadrados, cubos ou padrões mistos.
-
-Conjuntos usam operações:
-
-- união: elementos de A ou B;
-- interseção: elementos comuns;
-- diferença: elementos de A que não estão em B.
-
-Regra de três resolve proporcionalidade.
-
-### Como funciona na prática
-
-Em prova, sequências exigem testar padrões. Não tente apenas uma fórmula; observe diferenças, razões e alternâncias.
-
-Conjuntos aparecem em problemas com candidatos que estudam matérias diferentes.
-
-Regra de três aparece em tempo, produtividade e porcentagem.
-
-### Exemplos resolvidos - sequências e conjuntos
-
-**Exemplo 1:** sequência `3, 6, 12, 24, ?`
-
-Multiplica por 2. Próximo: 48.
-
-**Exemplo 2:** sequência `2, 5, 10, 17, 26, ?`
-
-Diferenças: 3, 5, 7, 9. Próxima diferença: 11. Próximo termo: 37.
-
-**Exemplo 3:** Em uma turma, 30 estudam Português, 20 estudam SQL e 10 estudam ambos. Quantos estudam pelo menos uma das duas?
-
-União: `30 + 20 - 10 = 40`.
-
-**Exemplo 4:** Se 4 servidores analisam 80 processos em 5 dias, mantendo a produtividade, quantos processos 8 servidores analisam em 5 dias?
-
-Dobrou o número de servidores e o tempo é igual. Processos dobram: 160.
-
-## Pegadinhas comuns da banca
-
-- Negar "todo" como "nenhum", quando o correto é "algum não".
-- Achar que condicional só é verdadeira quando as duas partes são verdadeiras.
-- Ignorar interseção em problema de conjuntos.
-- Confundir Administração Direta e Indireta.
-- Dizer que autarquia é pessoa jurídica de direito privado.
-- Tratar publicidade como divulgação irrestrita.
-- Confundir finalidade pública com vontade da autoridade.
-- Tratar dispensa e inexigibilidade como sinônimos.
-- Achar que responsabilidade objetiva dispensa prova de dano e nexo causal.
-- Confundir culpa exclusiva da vítima com culpa concorrente.
-
-## O que memorizar
-
-| Tema | Memorização objetiva |
+| Modalidade | Associação segura nesta etapa |
 |---|---|
-| LIMPE | legalidade, impessoalidade, moralidade, publicidade, eficiência |
-| Autarquia | direito público, criada por lei, Administração Indireta |
-| Ato administrativo | competência, finalidade, forma, motivo, objeto |
-| LAI | acesso é regra; sigilo é exceção |
-| LGPD | finalidade, necessidade, segurança, transparência |
-| Improbidade | ilícito grave contra a Administração, conforme enquadramento legal |
-| Dispensa | competição possível, mas lei autoriza contratar direto |
-| Inexigibilidade | competição inviável |
-| Responsabilidade objetiva | exige dano e nexo causal; não exige prova de culpa |
-| Negação de todo | algum não |
-| `p -> q` falsa | p verdadeira e q falsa |
-| União de conjuntos | A + B - interseção |
+| Pregão | aquisição de bens e serviços comuns, com padrões objetivamente definíveis |
+| Concorrência | bens e serviços especiais e obras/serviços de engenharia nas hipóteses legais |
+| Concurso | escolha de trabalho técnico, científico ou artístico, com prêmio ou remuneração |
+| Leilão | alienação de bens |
+| Diálogo competitivo | objeto complexo ou inovador em que a Administração precisa dialogar para desenvolver alternativa capaz de atender à necessidade |
 
-## Erros comuns
+Critérios de julgamento previstos incluem menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico. O critério deve estar definido antes das propostas e ser aplicado objetivamente; não pode ser inventado depois de conhecidos os concorrentes.
 
-| Erro | Correção |
+A sequência geral é: fase preparatória → divulgação do edital → propostas e lances, quando cabíveis → julgamento → habilitação → recursos → homologação. A lei admite hipóteses e ajustes próprios, mas planejamento nunca é etapa posterior à escolha pessoal do fornecedor.
+
+#### Marca, parcelamento e contratação direta
+
+A indicação de marca ou modelo é excepcional e precisa de **justificativa formal**, nas hipóteses legais do art. 41. Preferência pessoal ou afirmação genérica da área técnica não demonstram padronização, compatibilidade, exclusividade ou outra razão objetiva.
+
+No parcelamento, separar objetos pode ampliar competição e adequar a contratação quando houver fundamento técnico e econômico. **Fracionamento artificial** para fazer contratações previsíveis e de mesma natureza caberem isoladamente em dispensa por valor desvirtua planejamento e finalidade. A análise deve considerar a necessidade global e os critérios de soma e natureza aplicáveis à hipótese legal; estar abaixo do limite em cada processo, sozinho, não legitima a divisão.
+
+- **dispensa:** a competição pode ser viável, mas a lei autoriza contratação direta em hipótese expressa;
+- **inexigibilidade:** a competição é inviável e essa inviabilidade deve ser demonstrada;
+- **processo de contratação direta:** continua exigindo instrução, estimativa, razão da escolha, justificativa de preço, enquadramento jurídico, autorização e publicidade nos termos legais aplicáveis.
+
+**Exemplo resolvido 1:** suporte técnico com especificações usuais de mercado é serviço comum; em regra, o pregão é compatível. Solução inovadora cuja alternativa ainda precisa ser desenvolvida com licitantes selecionados aponta para diálogo competitivo, se presentes os requisitos legais.
+
+**Exemplo resolvido 2:** duas compras previsíveis e semelhantes são separadas apenas para ficar abaixo do limite de dispensa. A unidade deve revisar planejamento e agregação; o valor isolado de cada processo não torna o fracionamento automaticamente legítimo.
+
+**Erro provável:** tratar contratação direta como contratação livre. Ela dispensa a competição formal na hipótese legal, não o processo, a justificativa ou o controle.
+
+<a id="s1-d6-responsabilidade"></a>
+### 8. Responsabilidade civil do Estado
+
+O art. 37, § 6º, da [Constituição](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) estabelece responsabilidade das pessoas jurídicas de direito público e das prestadoras de serviço público pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado regresso contra o responsável nos casos de dolo ou culpa.
+
+Para ato comissivo típico, o roteiro objetivo exige:
+
+1. conduta estatal atribuível ao serviço;
+2. dano demonstrado;
+3. nexo causal entre conduta e dano.
+
+A vítima não precisa provar culpa do agente para essa responsabilidade objetiva, mas dano e nexo não são presumidos de modo absoluto. Culpa exclusiva da vítima ou fato externo que rompa o nexo pode excluir a responsabilidade; culpa concorrente pode reduzir a indenização segundo a contribuição causal. Caso fortuito ou força maior só exclui quando efetivamente rompe o nexo.
+
+Na omissão, evite respostas automáticas. Verifique dever específico de agir, possibilidade concreta de atuação, falha estatal, dano e nexo. A mera ocorrência em bem público não basta. A qualificação jurídica da omissão pode variar conforme a situação e a jurisprudência, mas esses elementos são indispensáveis ao caso proposto.
+
+Ação regressiva contra o agente é etapa distinta: exige dolo ou culpa. A vítima não precisa aguardar condenação pessoal do agente para buscar a pessoa jurídica responsável.
+
+**Exemplo resolvido:** veículo oficial em serviço causa dano, e a vítima contribui parcialmente. O Estado pode responder objetivamente; a contribuição da vítima atenua a reparação, e eventual regresso depende de dolo ou culpa do agente.
+
+**Erro provável:** confundir responsabilidade objetiva com indenização automática ou com impossibilidade de examinar causas concorrentes.
+
+<a id="s1-d6-b3"></a>
+## Bloco 3 — RLM, exemplos e prática guiada
+
+O RLM ocupa 105 minutos da Sessão B. Divida-o em 45 minutos de lógica, 45 minutos de conjuntos e cálculos e 15 minutos para refazer os exemplos sem consulta. Não avance se a tradução simbólica ou a base do percentual estiverem indefinidas.
+
+<a id="s1-d6-rlm-logica"></a>
+### 9. Lógica proposicional e argumentativa
+
+Uma proposição é frase declarativa com valor verdadeiro ou falso. Pergunta, ordem e sentença aberta sem valor definido não são proposições completas.
+
+| Estrutura | Símbolo | Quando é falsa |
+|---|---|---|
+| não P | `¬P` | quando P é verdadeira |
+| P e Q | `P ∧ Q` | quando pelo menos uma parcela é falsa |
+| P ou Q, inclusivo | `P ∨ Q` | somente quando ambas são falsas |
+| se P, então Q | `P → Q` | somente quando P é verdadeira e Q é falsa |
+| P se e somente se Q | `P ↔ Q` | quando os valores são diferentes |
+
+Equivalências essenciais:
+
+- `P → Q ≡ ¬P ∨ Q`;
+- contrapositiva: `P → Q ≡ ¬Q → ¬P`;
+- negação da condicional: `¬(P → Q) ≡ P ∧ ¬Q`;
+- De Morgan: `¬(P ∧ Q) ≡ ¬P ∨ ¬Q` e `¬(P ∨ Q) ≡ ¬P ∧ ¬Q`;
+- `¬(todo A é B)` equivale a `algum A não é B`;
+- `¬(algum A é B)` equivale a `nenhum A é B`.
+
+#### Exemplos resolvidos de negação
+
+**Exemplo 1:** “Se o edital é regular, então os critérios são públicos e objetivos”. Use `E → (P ∧ O)`. A negação é `E ∧ ¬(P ∧ O)`, isto é: **o edital é regular e algum critério não é público ou não é objetivo**.
+
+**Exemplo 2:** “Todo ato válido foi motivado ou algum recurso foi provido”. A negação troca o `ou` externo por `e`: **algum ato válido não foi motivado e nenhum recurso foi provido**.
+
+**Exemplo 3:** `R ∧ (P ∨ A)`. A negação é `¬R ∨ (¬P ∧ ¬A)`. Preserve os parênteses antes de aplicar De Morgan.
+
+#### Argumentos e encadeamento
+
+- **modus ponens:** `P → Q`, `P`; logo, `Q`;
+- **modus tollens:** `P → Q`, `¬Q`; logo, `¬P`;
+- **silogismo hipotético:** `P → Q`, `Q → R`; logo, `P → R`.
+
+**Exemplo encadeado:** `backup íntegro → verificação sem erro`; `verificação sem erro → restauração possível`; sabe-se `restauração não possível`. Por modus tollens, a verificação não terminou sem erro; por novo modus tollens, não existe backup íntegro nas condições do argumento. A conclusão exige duas decisões sucessivas.
+
+Para contar valorações, liste as combinações ou elimine as que tornam alguma implicação falsa. Em `(P → Q) ∧ (Q → R)`, são válidas `FFF`, `FFV`, `FVV` e `VVV`: quatro das oito valorações.
+
+**Exemplo de bicondicional:** com P falsa, Q verdadeira e R falsa, em `[(P ∨ Q) → R] ↔ [Q ∧ ¬R]`, o lado esquerdo é falso e o direito é verdadeiro; a bicondicional é falsa.
+
+**Erro provável:** negar `P → Q` como `¬P → ¬Q`. Essa é a inversa negada, não a negação da proposição.
+
+<a id="s1-d6-rlm-conjuntos-calculos"></a>
+<a id="s1-d6-rlm-regressao"></a>
+### 10. Conjuntos, proporcionalidade, sequências e probabilidade
+
+#### Conjuntos e inclusão-exclusão
+
+Para dois conjuntos:
+
+- `n(A ∪ B) = n(A) + n(B) - n(A ∩ B)`;
+- exatamente um: `n(A) + n(B) - 2n(A ∩ B)`;
+- nenhum: total do universo menos a união.
+
+Para três conjuntos:
+
+`n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A ∩ B) - n(A ∩ C) - n(B ∩ C) + n(A ∩ B ∩ C)`.
+
+O termo triplo é somado ao fim porque foi retirado em excesso nas três subtrações.
+
+**Exemplo 1:** 92 usam A, 71 usam B e 38 usam ambos. Exatamente um é `92 + 71 - 2×38 = 87`.
+
+**Exemplo 2:** em 200 pessoas, os totais A, B e C são 110, 90 e 70; interseções aos pares 45, 30 e 25; tripla 15. A união é `110 + 90 + 70 - 45 - 30 - 25 + 15 = 185`.
+
+#### Proporcionalidade, razão e porcentagens
+
+Na regra de três composta, encontre uma taxa unitária e indique quais grandezas aumentam ou reduzem o resultado. Se 6 servidores fazem 360 processos em 5 dias, a taxa é `360/(6×5) = 12` por servidor-dia. Com 10 servidores, 8 dias e 75% da produtividade: `10×8×12×0,75 = 720`.
+
+Percentuais sucessivos multiplicam fatores. Aumento de 12% e desconto de 10% produzem fator `1,12×0,90 = 1,008`; sobre R$ 7.500,00, o final é R$ 7.560,00. Para recuperar a base, divida pelos fatores: `4250/(1,25×0,85) = 4000`.
+
+Em razões, represente as partes por um fator comum. Se analistas:técnicos = `3:5`, escreva `3k` e `5k`. Após contratar 6 analistas, `(3k+6)/(5k)=9/10`; logo, `k=4` e havia `8k=32` servidores.
+
+**Coortes independentes:** não transfira saldo entre grupos quando o enunciado os separa. Uma segunda coorte 25% maior que 240 tem 300 processos; após concluir 72%, restam 84; concluir 25% desses 84 deixa 63. Em comparação aos 96 da primeira coorte, a redução é `(96-63)/96 = 34,375%`.
+
+#### Sequências, PA e PG
+
+Em sequência numérica, de letras ou figuras, procure diferenças, razões, alternâncias e ciclos antes de extrapolar. Uma regra deve explicar todos os termos apresentados, não apenas os dois últimos.
+
+- PA: `an = a1 + (n-1)r` e `Sn = n(a1+an)/2`;
+- PG, `q ≠ 1`: `an = a1·q^(n-1)` e `Sn = a1(q^n-1)/(q-1)`.
+
+**PA resolvida:** `a1=7`, `r=4`, `n=20`. `a20=7+19×4=83`; `S20=20(7+83)/2=900`.
+
+**PG resolvida:** `a1=3`, `q=2`, `n=8`. `S8=3(2^8-1)/(2-1)=765`.
+
+**Sequência filtrada:** os múltiplos de 5 que não são de 10 até 200 formam `5,15,...,195`, uma PA de 20 termos e soma 2.000. Os divisíveis por 3 dentro dela são `15,45,...,195`, sete termos e soma 735. Restam `2000-735=1265`.
+
+#### Contagem e probabilidade
+
+Se a ordem não importa, use combinações: `C(n,k)=n!/[k!(n-k)!]`. Em retirada simultânea ou sem reposição, o espaço amostral deve refletir grupos distintos, não sequências duplicadas.
+
+**Exemplo 1:** 5 crachás azuis e 3 vermelhos; escolher exatamente 2 azuis e 1 vermelho em 3 retiradas. Favoráveis: `C(5,2)×C(3,1)=30`. Total: `C(8,3)=56`. Probabilidade: `30/56=15/28`.
+
+**Exemplo 2:** entre 10 pessoas, 2 são analistas; em 3 sorteadas, a probabilidade de pelo menos um analista é o complemento de nenhum: `1-C(8,3)/C(10,3)=1-56/120=8/15`.
+
+#### Regressão ou reversão
+
+Para descobrir o valor inicial, comece pelo final e aplique as operações inversas em ordem contrária. Se houve `aumentar 20% → subtrair 18 → multiplicar por 2` e o final foi 132:
+
+1. `132 ÷ 2 = 66`;
+2. `66 + 18 = 84`;
+3. `84 ÷ 1,20 = 70`.
+
+Logo, a quantidade inicial era 70. Confirme refazendo o caminho direto: `70×1,20=84`, `84-18=66`, `66×2=132`.
+
+**Erro provável:** desfazer na mesma ordem das operações originais ou subtrair 20 pontos em vez de dividir por 1,20.
+
+### 11. Prática guiada da Sessão B
+
+Sem consulta, registre a regra e a solução:
+
+1. classifique secretaria, autarquia e empresa pública como órgão ou entidade;
+2. explique por que motivo falso e desvio de finalidade não são protegidos pela discricionariedade;
+3. negue `P → (Q ∧ R)`;
+4. faça o encadeamento `P → Q`, `Q → R`, `¬R`;
+5. calcule exatamente um em dois conjuntos e uma união de três conjuntos;
+6. resolva uma produtividade com fator de eficiência;
+7. calcule uma PA e uma PG;
+8. resolva uma probabilidade por complemento e uma por combinação;
+9. reverta três operações e confira pelo caminho direto.
+
+**Entrega:** duas respostas administrativas com fundamento e seis contas/lógicas completas. Se houver erro, reabra a âncora específica antes da Sessão C.
+
+<a id="s1-d6-b4"></a>
+## Bloco 4 — Legislação CRA/CFA consolidada (40min)
+
+Este bloco é **revisão programada do Dia 4** e não acrescenta norma. Releia somente as fontes já confirmadas: [Lei nº 4.769/1965](#s1-d4-lei-4769), [Decreto nº 61.934/1967](#s1-d4-decreto-61934), [Regimento do CRA-PR](#s1-d4-regimento), [Código de Ética](#s1-d4-codigo-etica), [registro e responsabilidade técnica](#s1-d4-registro-fiscalizacao-rt) e [controle de fontes](#s1-d4-fontes-hierarquia).
+
+Use o quadro de recuperação:
+
+| Pergunta | Resposta que deve ser recuperada do Dia 4 |
 |---|---|
-| Autarquia pertence à Administração Direta | Pertence à Administração Indireta |
-| Publicidade é absoluta | Pode haver sigilo legal e proteção de dados |
-| Competência é escolha do agente | Competência decorre da norma |
-| Dispensa = inexigibilidade | Dispensa tem competição possível; inexigibilidade tem competição inviável |
-| Responsabilidade objetiva = indenização automática | Ainda exige dano e nexo causal |
-| Negar "todos" com "nenhum" | Negação é "algum não" |
-| Somar conjuntos sem tirar interseção | Use A + B - ambos |
+| Quem o Código de Ética alcança? | pessoas físicas e jurídicas registradas, com as especificidades cabíveis; não se copiam sanções mecanicamente entre sujeitos |
+| O que torna a responsabilidade técnica efetiva? | orientação, supervisão e participação reais; assinatura ou empréstimo do número não bastam |
+| Como lei, decreto e ato interno se relacionam? | a lei fornece a base; decreto e resolução detalham dentro da competência e não podem ampliá-la sem suporte legal |
+| O sigilo acaba com o contrato? | não; permanece, ressalvadas justa causa e hipótese legal aplicável |
+| Discordar da fiscalização autoriza obstrução? | não; atende-se à diligência pertinente e exerce-se defesa pelos meios formais |
+| Qual a jurisdição do CRA-PR? | Estado do Paraná; fato de outra jurisdição exige examinar o regional competente |
+| Como resolver caso normativo? | identificar sujeito, atividade, território, órgão competente, fonte e consequência admitida |
+| O que fazer se só a ementa foi confirmada? | afirmar apenas o objeto confirmado e consultar a fonte oficial antes de detalhar artigo, prazo ou sanção |
 
-## Mini revisão do dia
+**Caso integrado:** empresa no Paraná exerce atividade sujeita ao sistema sem regularidade e profissional lhe empresta o número sem atuação efetiva. Examine separadamente registro da pessoa jurídica, participação técnica real, possível infração ética e competência fiscalizatória regional. Não use uma regularidade para apagar a outra falha.
 
-Administração Pública exige domínio de princípios, organização administrativa, autarquias, atos administrativos, transparência, proteção de dados, improbidade, licitação e responsabilidade civil do Estado. Em licitação, diferencie dispensa, inexigibilidade, modalidades e critérios de julgamento. Em responsabilidade civil, lembre que responsabilidade objetiva não elimina a necessidade de dano e nexo causal. RLM exige precisão lógica: proposições, negações, condicionais, conjuntos e padrões. A revisão da semana deve transformar erros em lista objetiva de pontos de memorização.
+**Entrega:** responda oralmente às oito perguntas e marque no caderno apenas o que precisou consultar. As Extras 6.1–6.10 usam esta revisão, mas nenhuma integra a primeira passagem.
+
+<a id="s1-d6-b5"></a>
+## Bloco 5 — Prática discursiva: plano preenchido (25min)
+
+Retome a estrutura ensinada no Dia 5; não há nova regra de redação. Tema: **transparência administrativa, proteção de dados e confiança pública**.
+
+| Parte | Conteúdo do plano |
+|---|---|
+| Tese | transparência e proteção de dados são deveres complementares, não opostos |
+| Argumento 1 | acesso à informação permite controle social e legitima decisões públicas |
+| Explicação/exemplo | dados estatísticos podem ser divulgados com ocultação de identificadores desnecessários |
+| Argumento 2 | tratamento proporcional protege titulares e evita exposição sem finalidade |
+| Consequência | conciliação fundamentada fortalece confiança e reduz decisões extremas |
+| Conclusão | órgãos devem classificar a informação, fornecer a parte pública e motivar restrições |
+
+**Entrega objetiva:** escreva uma introdução de três frases e um parágrafo de desenvolvimento com tópico frasal, explicação, exemplo e consequência. Reserve cinco minutos para autocorreção de tese, conectores, concordância, regência, crase e pontuação.
+
+<a id="s1-d6-b6"></a>
+## Bloco 6 — Recuperação ativa dos Dias 1–5 e caderno de erros (15min)
+
+Este bloco **não ensina conteúdo novo**. Feche a apostila e responda a um gatilho por dia, usando somente o que já foi estudado:
+
+| Dia recuperado | Gatilho sem consulta | Âncora de conferência posterior |
+|---|---|---|
+| 1 | localidade espacial × temporal; pipeline: vazão × latência | [`s1-d1-cache-localidade`](#s1-d1-cache-localidade), [`s1-d1-pipeline-desempenho`](#s1-d1-pipeline-desempenho) |
+| 2 | Round Robin e quantum; page fault válido | [`s1-d2-escalonamento`](#s1-d2-escalonamento), [`s1-d2-memoria-virtual`](#s1-d2-memoria-virtual) |
+| 3 | `WHERE` × `HAVING`; `COUNT(coluna)` × `COUNT(*)` | [`s1-d3-group-by-having`](#s1-d3-group-by-having) |
+| 4 | Plenário × Diretoria; inexigibilidade e processo formal | [`s1-d4-regimento`](#s1-d4-regimento), [`s1-d4-contratacao-publica`](#s1-d4-contratacao-publica) |
+| 5 | crase, concordância e pontuação em frase administrativa | [`s1-d5-concordancia-regencia-crase-pontuacao`](#s1-d5-concordancia-regencia-crase-pontuacao) |
+
+Para cada falha, registre `tema | resposta dada | regra correta | causa | âncora | data de retorno`. Só consulte a âncora depois de responder. As Extras 6.11–6.20 são distribuídas entre Revisão, Aprofundamento e Simulado; não devem ser resolvidas agora para transformar o bloco em conteúdo novo disfarçado.
+
+## Mini revisão do Dia 6
+
+- LIMPE reúne apenas os princípios expressos do caput do art. 37.
+- Órgão não tem personalidade; entidade tem. Desconcentração ocorre dentro da mesma pessoa; descentralização envolve outra pessoa.
+- Competência, finalidade, forma, motivo e objeto são elementos; motivo não é motivação.
+- Anulação combate ilegalidade; revogação examina mérito de ato válido; convalidação alcança somente vício sanável.
+- Poder de polícia exige base legal e garantias; excesso de poder difere de desvio de finalidade.
+- LAI presume acesso e permite ocultar apenas a parte protegida; LGPD impede divulgação desnecessária de dados pessoais.
+- Improbidade exige conduta dolosa tipificada; ilegalidade isolada não basta.
+- Dispensa difere de inexigibilidade; contratação direta continua formal e controlável.
+- Responsabilidade objetiva exige conduta, dano e nexo; regresso contra agente exige dolo ou culpa.
+- Negação de `P → Q` é `P ∧ ¬Q`; percentuais sucessivos multiplicam fatores; regressão inverte ordem e operação.
+
+## Perguntas de fixação
+
+1. Qual diferença entre desconcentração e descentralização?
+2. Por que revogação não resolve ato ilegal e quando a convalidação é incabível?
+3. Como fornecer planilha de interesse coletivo que contenha CPF e telefone?
+4. Qual é a negação de `P → (Q ∧ R)` e como `¬R` atua numa cadeia `P → Q → R`?
+5. Como calcular exatamente um em dois conjuntos e como desfazer três operações sucessivas?
 
 ## Checklist de domínio
 
-- [ ] Sei os princípios LIMPE.
-- [ ] Diferencio Administração Direta e Indireta.
-- [ ] Sei caracterizar autarquia.
-- [ ] Sei os elementos do ato administrativo.
-- [ ] Entendo a lógica geral da LAI e da LGPD.
-- [ ] Diferencio ilegalidade comum e improbidade administrativa.
-- [ ] Diferencio dispensa e inexigibilidade.
-- [ ] Sei as modalidades gerais da Lei nº 14.133/2021.
-- [ ] Sei os requisitos da responsabilidade civil do Estado.
-- [ ] Diferencio ato comissivo e omissão.
-- [ ] Sei negar proposições com "todo", "algum" e "nenhum".
-- [ ] Sei quando a condicional é falsa.
-- [ ] Resolvo união de conjuntos.
-- [ ] Identifico padrões simples em sequências.
-- [ ] Sei montar regra de três simples.
+- [ ] Enumero LIMPE sem inserir princípio implícito.
+- [ ] Distingo órgão, entidade, centralização, descentralização, concentração e desconcentração.
+- [ ] Explico elementos, atributos, motivo, motivação, anulação, revogação e convalidação.
+- [ ] Diferencio poderes hierárquico, disciplinar, normativo e de polícia, além de excesso e desvio.
+- [ ] Classifico cargo, emprego, função e a categoria ampla de agentes públicos.
+- [ ] Concilio LAI e LGPD por acesso parcial motivado.
+- [ ] Exijo tipificação dolosa para improbidade.
+- [ ] Distingo modalidades, critérios, dispensa, inexigibilidade, indicação de marca e fracionamento artificial.
+- [ ] Analiso ação, omissão, dano, nexo, excludentes, atenuantes e regresso.
+- [ ] Nego condicionais, aplico De Morgan e quantificadores e valido argumento encadeado.
+- [ ] Resolvo inclusão-exclusão, proporcionalidade, percentuais, PA, PG, probabilidade e regressão.
+- [ ] Recuperei os Dias 1–5 sem introduzir regra nova no Bloco 6.
+- [ ] Corrigi as 10 Essenciais da primeira passagem alternativa por alternativa.
 
-## Tarefa para o caderno de erros
+<a id="s1-d6-roteiro-questoes"></a>
+## Roteiro do banco completo de 70 questões
 
-Monte o **Top 10 erros da Semana 1**. Para cada erro, escreva:
-
-- assunto;
-- qual foi a confusão;
-- explicação correta em até 3 linhas;
-- um exemplo próprio;
-- uma frase de memorização.
-
-Depois, escolha os 3 erros mais graves e programe revisão para o início da Semana 2.
-
-## 5 perguntas de fixação
-
-1. Quais são os princípios expressos do art. 37 da Constituição Federal?
-2. Por que uma autarquia integra a Administração Indireta?
-3. Quais são os elementos do ato administrativo?
-4. Qual é a negação correta de uma proposição iniciada por "todos"?
-5. Em problemas de conjuntos, por que é preciso subtrair a interseção?
-
-## Assuntos que serão cobrados na Apostila de Questões
-
-Princípios da Administração Pública, Administração Direta e Indireta, autarquias, atos administrativos, LAI, LGPD, improbidade, licitações em noção inicial, proposições, conectivos, negações, argumentos, sequências, conjuntos, regra de três, porcentagem, PA/PG e revisão mista da Semana 1.
-
-## Reforço de alinhamento com as questões - Dia 6
-
-As questões do Dia 6 misturam Administração Pública e RLM. A dificuldade está em alternar raciocínio jurídico e cálculo sem perder precisão no comando da questão.
-
-### Art. 37, Administração Indireta e conselhos profissionais
-
-Os princípios do art. 37 devem ser aplicados em situações práticas:
-
-- restrição indevida em edital pode violar impessoalidade, isonomia e competitividade;
-- publicidade é regra, mas não autoriza expor dados pessoais sem finalidade;
-- eficiência não autoriza descumprir legalidade;
-- moralidade não é opinião pessoal: é padrão jurídico de conduta administrativa.
-
-Administração Direta é formada por órgãos sem personalidade jurídica própria, como ministérios e secretarias. Administração Indireta é formada por entidades com personalidade própria, como autarquias, fundações públicas, empresas públicas e sociedades de economia mista.
-
-Conselhos profissionais costumam aparecer como autarquias corporativas ou entidades de fiscalização profissional, pois exercem poder de polícia profissional, registro e fiscalização.
-
-### Atos administrativos: elementos, atributos e desfazimento
-
-Elementos clássicos:
-
-| Elemento | Pergunta que responde |
-|---|---|
-| Competência | quem pode praticar o ato? |
-| Finalidade | para qual interesse público? |
-| Forma | como o ato deve ser exteriorizado? |
-| Motivo | quais fatos e fundamentos justificam? |
-| Objeto | qual efeito jurídico o ato produz? |
-
-Pegadinha central: competência não é escolha pessoal do agente; decorre da lei. Finalidade pública não pode ser usada como fachada para punição pessoal ou favorecimento.
-
-Diferenças importantes:
-
-- **anulação:** desfaz ato ilegal;
-- **revogação:** desfaz ato válido por conveniência e oportunidade;
-- **ato vinculado:** lei reduz margem de escolha;
-- **ato discricionário:** há escolha dentro da lei, nunca contra a lei.
-
-### Licitação: modalidade, critério, contratação direta e procedimento
-
-Em licitação, identifique primeiro o objeto.
-
-- **Pregão:** bens e serviços comuns.
-- **Concorrência:** contratações comuns de maior complexidade ou hipóteses legais.
-- **Concurso:** trabalho técnico, científico ou artístico.
-- **Leilão:** alienação de bens.
-- **Diálogo competitivo:** contratações complexas em que a solução precisa ser construída por diálogo.
-
-Critérios de julgamento:
-
-- menor preço;
-- maior desconto;
-- melhor técnica ou conteúdo artístico;
-- técnica e preço;
-- maior lance, em leilão;
-- maior retorno econômico, quando cabível.
-
-Contratação direta:
-
-- **Dispensa:** competição seria possível, mas a lei autoriza contratar diretamente.
-- **Inexigibilidade:** competição é inviável.
-
-Mesmo quando há contratação direta, deve existir processo, motivação, justificativa e controle. A banca costuma sugerir que contratação direta permite escolha livre sem formalidade; isso é erro.
-
-### Improbidade e responsabilidade civil do Estado
-
-Improbidade administrativa não é qualquer erro. Para prova, memorize: exige enquadramento legal, gravidade e elemento subjetivo quando exigido pela lei. Erro formal ou divergência técnica razoável não vira improbidade automaticamente.
-
-Responsabilidade civil do Estado:
-
-- em ato comissivo, regra geral cobrada: responsabilidade objetiva;
-- requisitos: conduta estatal, dano e nexo causal;
-- não exige prova de culpa do Estado perante a vítima, mas exige dano e nexo;
-- em ação regressiva contra agente, apuram-se dolo ou culpa;
-- culpa exclusiva da vítima pode excluir responsabilidade;
-- culpa concorrente pode atenuar indenização;
-- caso fortuito/força maior podem romper o nexo, conforme o caso.
-
-Em omissão, procure dever específico de agir, possibilidade de atuação e nexo com o dano. Não trate toda omissão como indenização automática.
-
-### RLM: lógica, conjuntos e cálculo
-
-Negações essenciais:
-
-| Proposição | Negação |
-|---|---|
-| Todo A é B | Algum A não é B |
-| Algum A é B | Nenhum A é B |
-| P e Q | não P ou não Q |
-| P ou Q | não P e não Q |
-| Se P, então Q | P e não Q |
-
-Condicional `P -> Q` só é falsa quando P é verdadeira e Q é falsa.
-
-Conjuntos:
-
-`n(A união B) = n(A) + n(B) - n(A interseção B)`.
-
-Se houver pessoas fora dos conjuntos, some esse grupo depois.
-
-Porcentagem:
-
-- aumento de 12%: multiplique por `1,12`;
-- desconto de 15%: multiplique por `0,85`;
-- para descobrir valor original após desconto, divida pelo fator final.
-
-Regra de três composta: quando houver pessoas e tempo, calcule produtividade por pessoa-tempo para evitar inversão.
-
-PA e PG:
-
-- PA: `an = a1 + (n - 1)r`;
-- soma da PA: `Sn = (a1 + an)n / 2`;
-- PG: termos multiplicam pela razão;
-- soma da PG finita: `Sn = a1(q^n - 1)/(q - 1)`, se `q` diferente de 1.
-
-Probabilidade:
-
-- com reposição: eventos tendem a manter denominador;
-- sem reposição: denominador e numerador mudam após retirada;
-- complemento: `P(não A) = 1 - P(A)`.
-
-## Tabela de revisão rápida do Dia 6
-
-| Conceito | Definição curta | Pegadinha comum | Exemplo |
+| Uso | Questões | Quando resolver | Entrega |
 |---|---|---|---|
-| Legalidade | Administração age conforme a lei | Eficiência superar lei | edital precisa base legal |
-| Impessoalidade | vedação a favorecimento pessoal | marca direcionada sem justificativa | especificação neutra |
-| Publicidade | transparência como regra | divulgar dado pessoal sem limite | LAI com sigilo legal |
-| Autarquia | entidade da Administração Indireta de direito público | chamar de órgão da Direta | conselho profissional |
-| Órgão público | centro de competência sem personalidade própria | confundir com entidade | secretaria |
-| Competência | poder legal para agir | transferir por acordo informal | autoridade competente |
-| Finalidade | interesse público do ato | usar ato para perseguição | desvio de finalidade |
-| Anulação | desfaz ato ilegal | confundir com conveniência | ato sem competência |
-| Revogação | desfaz ato válido por mérito | usar para corrigir ilegalidade | ato inconveniente |
-| Dispensa | competição possível, lei autoriza não licitar | tratar como inexigibilidade | hipótese legal de dispensa |
-| Inexigibilidade | competição inviável | presumir em toda tecnologia | fornecedor exclusivo comprovado |
-| Pregão | bens e serviços comuns | usar para trabalho artístico | suporte técnico comum |
-| Diálogo competitivo | solução complexa definida por diálogo | confundir com credenciamento | contratação tecnológica complexa |
-| Improbidade | ilícito qualificado contra Administração | qualquer erro vira improbidade | enriquecimento ilícito/dano/princípios |
-| Responsabilidade objetiva | dano e nexo sem prova de culpa | indenização automática sem dano | colisão de veículo oficial |
-| Culpa exclusiva | rompe nexo causal | confundir com concorrente | vítima causa sozinha o dano |
-| Condicional | `P -> Q` | negar como `não P -> não Q` | negação: P e não Q |
-| De Morgan | negação de conectivos | negar mantendo o mesmo conectivo | não(P e Q)=não P ou não Q |
-| Inclusão-exclusão | união desconta interseção | somar duas vezes quem está em ambos | 18 + 12 - 7 |
-| Porcentagem reversa | recupera valor original | somar taxa ao valor final | 3400/0,85 |
-| PA | soma constante | usar n em vez de n-1 | 7, 11, 15... |
-| PG | razão multiplicativa | confundir termo com soma | 3, 6, 12... |
-| Probabilidade sem reposição | retirada altera total | manter denominador igual | 5/8 x 4/7 |
+| Essenciais — primeira passagem | Q2, Q3, Q5, Q9, Q13, Q25, Q27, Q28, Q32 e Q34 | Sessão C | 10 questões, análise A–D e caderno de erros |
+| Essenciais — saldo | Q16, Q19, Q20, Q21, Q22, Q29, Q33, Q35, Q37 e Q39 | abertura de D+2 | corrigir as 10 antes de iniciar Aprofundamento |
+| Aprofundamento | Q1, Q7, Q15, Q23, Q24, Q26, Q30, Q36, Q40, Q43, Q44, Q46, E6.2, E6.5, E6.6, E6.9, E6.12, E6.14 e E6.15 | depois do saldo Essencial; continuar em ciclo próprio antes de D+7 se necessário | regra decisiva e descarte A–D |
+| Revisão | Q4, Q6, Q8, Q11, Q12, Q14, E6.1, Q18, Q49, E6.3, E6.4, E6.7, E6.11, E6.13, E6.16 e E6.17 | D+7 | resolução sem consulta e retomada somente dos erros |
+| Simulado | Q10, Q17, Q31, Q38, Q41, Q42, Q45, Q47, Q48, Q50, E6.8, E6.10, E6.18, E6.19 e E6.20 | ciclo seguinte | tempo, taxa de acerto, causa do erro e plano de retorno |
 
-## Pegadinhas do Dia 6
+**Exceção pós-auditoria:** a distribuição final é 20 Essenciais, 19 de Aprofundamento, 16 de Revisão e 15 de Simulado. A assimetria é intencional: E6.17 recupera conteúdo já ensinado e repete a função pedagógica de item do Dia 5, por isso permanece em Revisão; nenhuma questão foi promovida artificialmente apenas para fechar uma matriz numérica.
 
-- Eficiência não autoriza violar legalidade.
-- Publicidade não é absoluta; dados pessoais e sigilo legal limitam divulgação.
-- Autarquia é entidade da Administração Indireta; órgão público não tem personalidade própria.
-- Competência decorre da norma, não de acordo informal entre servidores.
-- Desvio de finalidade ocorre quando o ato aparenta legalidade, mas busca fim indevido.
-- Dispensa e inexigibilidade não são sinônimos.
-- Contratação direta não elimina processo, motivação e controle.
-- Improbidade não é qualquer ilegalidade ou erro formal.
-- Responsabilidade objetiva dispensa culpa, mas não dispensa dano e nexo causal.
-- Na condicional, a negação de "se P então Q" é "P e não Q".
-- A negação de "todo" é "algum não", não "nenhum".
-- Em conjuntos, subtraia a interseção para não contar duas vezes.
-- Em porcentagem reversa, divida pelo fator final; não some a taxa ao valor com desconto.
-- Em PA, até o termo `n` há `n - 1` saltos.
-- Em probabilidade sem reposição, o total muda depois da primeira retirada.
+**Ordem futura:** D+2 começa pelas dez Essenciais restantes. Somente depois da correção integral inicia o Aprofundamento; o saldo pode continuar em outro ciclo antes de D+7. D+7 contém apenas Revisão. O Simulado permanece separado. Cada ciclo futuro deve caber em 2h30 a 3h e não prolonga o Dia 6.
 
----
+## Correção e fechamento
 
-# Revisão Final da Semana 1
+Corrija cada item em quatro movimentos:
 
-## Objetivo da revisão
+1. confirme a alternativa correta e a regra decisiva na âncora indicada;
+2. explique por que A, B, C e D estão certas ou erradas, sem registrar apenas a letra;
+3. classifique a causa: `conceito`, `comando`, `cálculo`, `distração` ou `tempo`;
+4. programe retorno em D+2 ou D+7 conforme o uso, sem antecipar Simulado.
 
-Fechar a semana com clareza sobre o que já foi construído e o que ainda precisa de reforço. A Semana 1 não pretende esgotar todo o edital, mas criar uma base que sustentará as próximas semanas.
+| Questão | Regra decisiva | Minha falha | Âncora | Correção escrita | Retorno |
+|---|---|---|---|---|---|
+| exemplo | `¬(P→Q)=P∧¬Q` | neguei só o consequente | `s1-d6-rlm-logica` | reescrever e testar VF | D+2 |
 
-## Roteiro de revisão de 60 minutos, se houver tempo extra
-
-| Tempo | Atividade |
-|---:|---|
-| 10min | Refaça 5 conversões de base numérica |
-| 10min | Explique processo, thread, paginação e deadlock |
-| 10min | Escreva 5 comandos SQL básicos |
-| 10min | Revise CFA x CRA-PR e RN 671/2025 |
-| 10min | Leia uma questão de Português e sublinhe o comando |
-| 10min | Resolva 2 itens de lógica e atualize o caderno de erros |
-
-
-## Revisão fixa do Dia 6
-
-**Foco:** Legislação CRA/CFA e caderno de erros. Refaça erros dos Dias 1–5, identificando norma, conceito técnico e motivo do erro antes de consultar o gabarito. **Base:** síntese dos Dias 1–5. **Pegadinha:** decorar resposta sem registrar a regra que a torna correta.
-
-### Bloco recorrente do Dia 6 — Legislação CRA/CFA
-
-As Extras 6.1–6.10 consolidam apenas o núcleo do [Bloco 4 do Dia 6](#s1-d6-b4). Lei nº 4.769/1965 e Decreto nº 61.934/1967 estruturam e regulamentam a profissão; ética, sigilo, deveres e infrações pertencem à RN nº 671/2025; estrutura e competência interna do CRA-PR pertencem ao Regimento aprovado pela RN nº 651/2024. Requisito específico de registro não ensinado e RN adicional pendente ficam fora da base resolutiva.
-
-Na fiscalização, colaboração não significa renúncia à defesa: o profissional ou entidade deve fornecer informações dentro da competência do Conselho e usar os meios regulares quando discordar. A jurisdição regional, o objeto da atividade e a participação técnica efetiva são dados decisivos.
-
-### Bloco recorrente do Dia 6 — Revisão dos erros da Semana 1
-
-As Extras 6.11–6.20 seguem o protocolo e as origens já definidos no [Bloco 6 do Dia 6](#s1-d6-b6): **(1)** indicar a seção de origem; **(2)** resolver sem consulta; **(3)** registrar confiança; **(4)** conferir a regra; **(5)** produzir contraexemplo e repetir o item errado. Esta seção não acrescenta teoria.
-
-| Extras | Recuperação ativa | Pergunta de controle |
-|---|---|---|
-| 6.1–6.5 | ética, fiscalização, registro e jurisdição | qual norma trata do objeto do caso? |
-| 6.6–6.10 | Lei, Decreto, Regimento e Código | quem atua e em qual território? |
-| 6.11–6.12 | arquitetura do Dia 1 | qual princípio de localidade ou efeito do pipeline explica o caso? |
-| 6.13–6.14 | sistemas operacionais do Dia 2 | qual regra de escalonamento ou memória virtual decide o caso? |
-| 6.15–6.16 | banco de dados do Dia 3 | o filtro atua em linha, grupo, valor ou contagem total? |
-| 6.17–6.20 | legislação, Português, Administração e RLM já estudados | qual seção dos Dias 3–5 contém a regra? |
-
-## Pontos pendentes de confirmação
-
-- Data oficial do ato isolado de Retificação I no site da banca, além da marcação existente no PDF consolidado "conforme Retificação I".
-- O aprofundamento integral das RNs CFA nº 649/2024, 670/2025, 546/2018, 626/2023, 589/2020 e 680/2025 permanece pendente. No Dia 4, apenas seus objetos e relações oficialmente confirmados foram ensinados e podem fundamentar as questões correspondentes; procedimento, prazo, valor, requisito ou sanção não explicado continuam fora da base resolutiva.
-
-
-## Mapa de conexões do Dia 6
-
-```mermaid
-flowchart LR
-  CF[Art. 37 e princípios] --> ORG[Organização administrativa]
-  ORG --> ATOS[Atos e desfazimento]
-  ATOS --> CONTROLE[LAI, LGPD e improbidade]
-  CONTROLE --> LIC[Licitação e responsabilidade]
-  RLM[Proposições e conectivos] --> SEQ[Sequências, conjuntos e regra de três]
-  LIC --> ERROS[Caderno de erros]
-  SEQ --> ERROS
-```
-
-**Leitura ativa:** legalidade limita eficiência; motivo não é motivação; regra lógica decide a conclusão. **Pegadinhas:** anulação × revogação; publicidade × promoção pessoal; negação de quantificadores.
-
-## Entrega final da semana
-
-Ao final da Semana 1, você deve ter:
-
-- resumo de arquitetura;
-- mapa de sistemas operacionais;
-- quadro de SQL;
-- tabela CFA x CRA-PR;
-- introdução de redação;
-- top 10 erros da semana;
-- lista de tópicos fracos para revisar na Semana 2.
-
----
+**Critério de conclusão da primeira passagem:** Sessões A, B e C encerradas; Blocos 1–6 percorridos na ordem; prática discursiva entregue; recuperação dos Dias 1–5 feita sem consulta inicial; Q2, Q3, Q5, Q9, Q13, Q25, Q27, Q28, Q32 e Q34 resolvidas e corrigidas A–D; caderno de erros atualizado. As demais 60 questões ficam nos ciclos indicados.
 
 # Fontes utilizadas
 
@@ -4268,8 +3905,10 @@ Ao final da Semana 1, você deve ter:
 - Resolução Normativa CFA nº 589/2020 - aprova o Regulamento de Fiscalização do Sistema CFA/CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=745
 - Resolução Normativa CFA nº 680/2025 - aprova o Regulamento das Eleições do Sistema CFA/CRAs: https://documentos.cfa.org.br/?a=show&c=documento&id=1058
 - Constituição Federal de 1988, art. 37 e demais dispositivos de Administração Pública: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+- Lei nº 9.784/1999 - processo administrativo federal, autotutela, anulação, revogação e convalidação: https://www.planalto.gov.br/ccivil_03/leis/l9784.htm
 - Lei nº 12.527/2011 - Lei de Acesso à Informação: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm
 - Lei nº 13.709/2018 - Lei Geral de Proteção de Dados Pessoais: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+- Lei nº 8.429/1992 - improbidade administrativa, em texto atualizado: https://www.planalto.gov.br/ccivil_03/leis/l8429compilada.htm
 - Lei nº 14.133/2021 - Lei de Licitações e Contratos Administrativos: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
 
 ## Provas Consulplan usadas como referência de estilo

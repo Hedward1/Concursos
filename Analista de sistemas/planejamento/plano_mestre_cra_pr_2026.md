@@ -140,8 +140,8 @@ Cada primeira passagem deve caber em duas ou, quando o volume justificar, no má
 | Semana 1 | Dia 2 | Sistemas operacionais | Administração Pública + Português | Conhecimentos do Cargo | Lote auditado/aprovado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_1_2.md` |
 | Semana 1 | Dia 3 | Banco de dados base e SQL | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Modelo aprovado/congelado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
 | Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Modelo aprovado/congelado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
-| Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
+| Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA já estudada | Língua Portuguesa | Lote auditado/aprovado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_5_6.md` |
+| Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Lote auditado/aprovado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_5_6.md` |
 | Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
@@ -255,27 +255,29 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 
 ### Língua Portuguesa e Discursiva
 
-- [x] Interpretação, semântica, coesão, sintaxe, concordância, regência, crase, pontuação e estrutura de dissertação. Base coberta na Semana 1.
+- [x] Interpretação, ideia central, inferência, pressuposto, sentido contextual, semântica, coesão, conectores e reescrita. Base auditada no Dia 5 da Semana 1; reforço contínuo nas Semanas 2 a 9.
+- [x] Sintaxe, concordância, regência, crase e pontuação. Base auditada no Dia 5 da Semana 1.
+- [x] Estrutura da dissertação, tese, argumentação, desenvolvimento, conclusão, modelo completo comentado, rubrica do edital e autocorreção. Base auditada no Dia 5 da Semana 1; produções completas permanecem planejadas para as Semanas 6 a 8.
 - [ ] Fonologia, encontros vocálicos, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia. Planejado para Semana 6.
 - [ ] Morfologia, estrutura e formação de palavras, classes de palavras e período composto. Planejado para Semana 6.
-- [ ] Reescrita, inferência, ambiguidade, conectores, uso dos porquês e linguagem administrativa. Reforço contínuo nas Semanas 2 a 9.
-- [ ] Discursiva completa com temas, estrutura, rubrica e autocorreção. Planejado para Semanas 6 a 8.
+- [ ] Aprofundamento de morfossintaxe, uso dos porquês e linguagem administrativa. Planejado para a Semana 6 e reforço contínuo até a Semana 9.
 
 ### Administração Pública e Legislação Correlata
 
-- [x] Art. 37, organização administrativa, autarquias, atos administrativos, improbidade, licitação e responsabilidade civil. Base coberta na Semana 1.
+- [x] Art. 37, princípios, organização administrativa, Administração Direta e Indireta, autarquias e distinção entre órgão e entidade. Base auditada no Dia 6 da Semana 1.
+- [x] Atos administrativos, motivo e motivação, agentes públicos, poderes administrativos, poder de polícia, uso e abuso do poder. Núcleo inicial auditado no Dia 6 da Semana 1; aprofundamento permanece na Semana 6.
+- [x] LAI, LGPD, Lei nº 8.429/1992, licitação, contratação direta e responsabilidade civil do Estado. Núcleo inicial auditado no Dia 6 da Semana 1; leitura literal e casos avançados permanecem na Semana 6.
 - [ ] Direitos e garantias fundamentais. Planejado para Semana 6.
-- [ ] LAI, LGPD e Lei 8.429/1992 com leitura dirigida. Planejado para Semana 6.
-- [ ] Centralização, descentralização, concentração, desconcentração, Administração Direta e Indireta, fundações, empresas públicas e sociedades de economia mista. Planejado para Semana 6.
-- [ ] Agentes públicos, cargos, empregos, funções, poderes administrativos, uso e abuso do poder. Planejado para Semana 6.
+- [ ] Aprofundamento de centralização, descentralização, concentração, desconcentração, fundações, empresas públicas e sociedades de economia mista. Planejado para Semana 6.
+- [ ] Aprofundamento de agentes públicos, cargos, empregos, funções, poderes administrativos e controle. Planejado para Semana 6.
 - [ ] Licitação completa: princípios, contratação direta, dispensa, inexigibilidade, modalidades, tipos e procedimento. Reforço na Semana 6.
 - [ ] Responsabilidade civil do Estado: ato comissivo, omissão, requisitos, excludentes e atenuantes. Reforço na Semana 6.
 
 ### Raciocínio Lógico-Matemático
 
-- [x] Proposições, conectivos, sequências, conjuntos, regra de três, porcentagem, PA/PG e probabilidade inicial. Base coberta na Semana 1.
-- [ ] Princípio da regressão ou reversão. Planejado para Semana 6.
-- [ ] Lógica dedutiva, argumentativa, quantitativa e qualitativa. Planejado para Semana 6.
+- [x] Proposições, conectivos, equivalências, negações, quantificadores, argumentos, contagem de valorações e princípio da regressão ou reversão. Núcleo inicial auditado no Dia 6 da Semana 1.
+- [x] Sequências, conjuntos, inclusão-exclusão, proporcionalidade, regra de três, porcentagem, PA/PG e probabilidade. Núcleo inicial auditado no Dia 6 da Semana 1.
+- [ ] Aprofundamento de lógica dedutiva, argumentativa, quantitativa e qualitativa. Planejado para Semana 6.
 - [ ] Razões especiais, análise combinatória e probabilidade avançada. Planejado para Semana 6.
 - [ ] Geometria plana e espacial, trigonometria, conjuntos numéricos, equações de 1º e 2º grau, matrizes, determinantes, sistemas lineares e polinômios. Planejado para Semana 6 e revisão na Semana 8.
 
