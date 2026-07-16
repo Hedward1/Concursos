@@ -189,7 +189,7 @@ D) publicização como transferência da rotina para entidade privada voltada ao
 
 </details>
 
-### S004 — Atividade empresarial concorrencial
+### S004 — Simplificação com responsabilização
 
 **Nível:** Médio
 
@@ -197,31 +197,31 @@ D) publicização como transferência da rotina para entidade privada voltada ao
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-No mapa do PDRAE, uma atividade econômica empresarial voltada a mercado concorrencial aproxima-se do setor de:
+Um licenciamento exige sete assinaturas prévias, embora quatro repitam a mesma conferência. A unidade pretende reduzir espera sem perder legalidade, rastreabilidade e aprendizado sobre falhas. Qual desenho é coerente?
 
-A) núcleo estratégico, sob propriedade pública não estatal.
+A) Eliminar registros, critérios e auditoria, porque orientação gerencial substitui integralmente controles administrativos.
 
-B) atividades exclusivas, sob propriedade privada obrigatória.
+B) Preservar as sete assinaturas e acrescentar uma meta de velocidade, pois controle de meios garante por si só o resultado.
 
-C) produção para o mercado, com propriedade privada quando cabível.
+C) Retirar conferências redundantes, manter controles essenciais e responsáveis identificados e acompanhar prazo, retrabalho e reclamações.
 
-D) serviços não exclusivos, com poder sancionador delegado.
+D) Transferir decisão sancionadora a qualquer particular e dispensar revisão, desde que o custo operacional diminua.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. O núcleo formula decisões superiores e permanece estatal.
-- **B:** Incorreta. Atividade exclusiva envolve poder estatal, não concorrência empresarial.
-- **C:** Correta. A função econômica de mercado corresponde ao setor e à indicação de propriedade do plano.
-- **D:** Incorreta. Serviço não exclusivo admite atuação plural, mas não se define por poder sancionador.
+- **A:** Incorreta. Simplificação não elimina legalidade, documentação nem mecanismos de controle.
+- **B:** Incorreta. Somar meta a etapas redundantes preserva o gargalo e não assegura qualidade do serviço.
+- **C:** Correta. Combina desburocratização, controle essencial, accountability e medidas de processo e experiência.
+- **D:** Incorreta. Redução de custo não autoriza transferir poder ou extinguir garantias de revisão.
 
-**Conceito:** Produção para o mercado abrange atuação empresarial concorrencial e admite propriedade privada quando cabível.
+**Conceito:** Orientação gerencial simplifica meios desnecessários, preserva garantias e amplia responsabilização por processo e resultado.
 
-**Pegadinha:** Classificar qualquer atividade do Estado como exclusiva.
+**Pegadinha:** Escolher entre formalismo integral e ausência completa de controle.
 
-**Raciocínio:** Use a natureza funcional: concorrência e produção econômica apontam para mercado, não para autoridade estatal.
+**Raciocínio:** Verifique redundância, garantia indispensável, responsável pela decisão e evidência posterior de desempenho.
 
 **Nível:** Médio
 
@@ -273,7 +273,7 @@ D) burocracia ideal e entropia organizacional.
 
 </details>
 
-### S006 — Publicização responsável
+### S006 — Autonomia em atividade exclusiva
 
 **Nível:** Difícil
 
@@ -281,31 +281,31 @@ D) burocracia ideal e entropia organizacional.
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Um serviço cultural não exclusivo passa a ser executado por entidade sem fins lucrativos, mediante metas, transparência e avaliação. A classificação correta é:
+Uma autoridade reguladora aplica sanções previstas em lei. A reforma concede aos gestores autonomia para distribuir equipes e ajustar rotinas, mas mantém competência estatal, critérios legais, recurso, auditoria e metas de resultado. A leitura correta é:
 
-A) publicização para o setor público não estatal, com responsabilização por resultados.
+A) A atividade permanece exclusiva e estatal; autonomia gerencial pode coexistir com legalidade, controle e responsabilização.
 
-B) privatização de atividade exclusiva, com transferência definitiva do poder estatal.
+B) A autonomia converte a função em serviço não exclusivo publicizado e permite à entidade parceira exercer livremente a sanção.
 
-C) publicidade administrativa, pois a divulgação do ajuste define a natureza da operação.
+C) A existência de metas transforma a regulação em produção para o mercado e torna a propriedade privada obrigatória.
 
-D) patrimonialização, porque toda cooperação externa substitui mérito por relações pessoais.
+D) A delegação operacional elimina a distinção entre interesse público e pessoal e caracteriza patrimonialismo necessário.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Natureza do serviço, ausência de lucro e controle por resultados compõem o desenho.
-- **B:** Incorreta. Cultura é serviço não exclusivo, e não houve venda nem transferência de poder sancionador.
-- **C:** Incorreta. Divulgação é requisito de transparência, não o conceito de publicização.
-- **D:** Incorreta. Um arranjo formal e controlado não implica favorecimento pessoal.
+- **A:** Correta. Poder sancionador define atividade exclusiva; a autonomia incide na gestão, sem afastar competência e garantias.
+- **B:** Incorreta. Meta e autonomia não transformam poder estatal em serviço de atuação plural.
+- **C:** Incorreta. Regulação não se torna atividade empresarial concorrencial pela adoção de metas.
+- **D:** Incorreta. Delegação formal de decisões operacionais não implica apropriação pessoal do cargo.
 
-**Conceito:** Publicização pode combinar atuação pública não estatal e mecanismos gerenciais de responsabilização.
+**Conceito:** Atividade exclusiva pode adotar administração gerencial e autonomia responsável sem transferir poder extroverso.
 
-**Pegadinha:** Confundir forma de divulgação com natureza da transferência.
+**Pegadinha:** Confundir autonomia do gestor com mudança de setor, propriedade ou titularidade do poder.
 
-**Raciocínio:** Teste três filtros: setor funcional, finalidade da entidade e modo de controle.
+**Raciocínio:** Aplique quatro filtros: natureza do poder, titularidade, alcance da autonomia e controles preservados.
 
 **Nível:** Difícil
 
@@ -315,7 +315,7 @@ D) patrimonialização, porque toda cooperação externa substitui mérito por r
 
 </details>
 
-### S007 — Dois marcos, duas ênfases
+### S007 — Garantias e aperfeiçoamento gerencial
 
 **Nível:** Difícil
 
@@ -323,31 +323,31 @@ D) patrimonialização, porque toda cooperação externa substitui mérito por r
 
 **Referência:** [Dia 1 — evolução pública, reformas e PDRAE](semana_01_estudo.md#dia-1-evolucao-publica-pdrae)
 
-Assinale a comparação historicamente adequada entre o DASP e o Decreto-Lei nº 200/1967.
+Após fortalecer mérito, concurso, procedimento e controle, um órgão reduz etapas redundantes, delega decisões operacionais, pactua resultados e melhora atendimento, sem afastar legalidade ou impessoalidade. Qual interpretação histórica é defensável?
 
-A) O DASP priorizou privatização; o decreto de 1967 restaurou pessoalidade e favor.
+A) A orientação gerencial exige revogar todas as garantias burocráticas e substituir mérito por confiança pessoal.
 
-B) O DASP implantou os quatro setores; o decreto de 1967 extinguiu a Administração Indireta.
+B) A permanência de procedimentos prova que nenhuma mudança gerencial ocorreu e que reformas são mutuamente excludentes.
 
-C) O DASP rejeitou carreiras; o decreto de 1967 proibiu descentralização e delegação.
+C) Delegação e metas restauram o patrimonialismo, ainda que competência, critério, controle e responsabilização estejam definidos.
 
-D) O DASP simbolizou profissionalização burocrática; o decreto valorizou descentralização e coordenação.
+D) Garantias burocráticas e aperfeiçoamentos gerenciais podem coexistir; reformas acrescentam ênfases sem apagar integralmente camadas anteriores.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Nenhum dos marcos possui essas finalidades patrimonialistas.
-- **B:** Incorreta. Os quatro setores pertencem ao PDRAE, e o decreto consolidou a distinção Direta/Indireta.
-- **C:** Incorreta. O DASP organizou carreiras, e o decreto valorizou descentralização e delegação.
-- **D:** Correta. Resume a ênfase profissionalizante dos anos 1930 e a racionalização descentralizadora de 1967.
+- **A:** Incorreta. Gerencialismo não legitima pessoalidade nem dispensa garantias constitucionais e administrativas.
+- **B:** Incorreta. A coexistência de camadas não impede mudança de ênfase, instrumentos e responsabilização.
+- **C:** Incorreta. Delegação formal com critérios e controle difere de apropriação pessoal da autoridade.
+- **D:** Correta. O caso preserva mérito e legalidade enquanto acrescenta autonomia, simplificação e foco em resultados.
 
-**Conceito:** Reformas sucessivas introduzem ênfases distintas sem apagar automaticamente a anterior.
+**Conceito:** Evolução administrativa é cumulativa e híbrida: burocracia protege impessoalidade; gestão gerencial busca autonomia responsável e valor público.
 
-**Pegadinha:** Transferir categorias do PDRAE para marcos anteriores.
+**Pegadinha:** Ler cada reforma como ruptura instantânea, total e incompatível com qualquer elemento anterior.
 
-**Raciocínio:** Associe DASP a mérito/carreira e o decreto a planejamento/coordenação/descentralização.
+**Raciocínio:** Separe garantia legítima de formalismo excessivo e autonomia responsável de arbítrio pessoal.
 
 **Nível:** Difícil
 
@@ -367,7 +367,7 @@ D) O DASP simbolizou profissionalização burocrática; o decreto valorizou desc
 
 Uma chefia implanta método padronizado de atendimento, mas o grupo informal cria atalhos coletivos que anulam parte do ganho esperado. A leitura adequada é:
 
-A) a presença do grupo transforma o caso integralmente em patrimonialismo.
+A) a presença do grupo transforma o caso integralmente em patrimonialismo por revelar interesse privado coletivo.
 
 B) a técnica científica atua sobre a tarefa, enquanto Relações Humanas explica a reação grupal.
 
@@ -399,7 +399,7 @@ D) o método é contingencial, e a reação social representa necessariamente ho
 
 </details>
 
-### S009 — Política, escolha e poder estatal
+### S009 — Reforma da fiscalização sob limites
 
 **Nível:** Muito difícil
 
@@ -407,31 +407,31 @@ D) o método é contingencial, e a reação social representa necessariamente ho
 
 **Referência:** [Dia 1 — evolução administrativa](semana_01_estudo.md#dia-1-evolucao-administrativa)
 
-A direção unifica o plano de fiscalização; diante de informação incompleta, escolhe solução suficiente; a unidade aplica sanção legal. Os três filtros são:
+A fiscalização precisa manter política nacional coerente, mas equipes locais enfrentam informação incompleta e contextos diferentes. Uma associação propõe aplicar sanções em nome do órgão. Qual desenho combina coordenação, decisão realista e limite estatal?
 
-A) unidade de comando, maximização racional e serviço não exclusivo.
+A) Criar planos locais incompatíveis, exigir solução ótima com informação total, transferir sanções à associação mediante meta de produtividade e dispensar revisão independente.
 
-B) unidade de direção, equifinalidade e produção para o mercado.
+B) Concentrar na cúpula toda decisão operacional, impedir pilotos e classificar a fiscalização como serviço não exclusivo por atender cidadãos.
 
-C) Administração Científica, decisão intuitiva e núcleo estratégico.
+C) Fixar somente metas individuais, escolher pela intuição da chefia e converter o poder sancionador em atividade empresarial concorrencial.
 
-D) unidade de direção, racionalidade limitada e atividade exclusiva.
+D) Unificar objetivo e critérios, permitir meios locais com teste e feedback, aceitar solução satisfatória revisável e manter sanção sob autoridade estatal responsável.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. O plano comum trata de direção; solução suficiente não é maximização; sanção é exclusiva.
-- **B:** Incorreta. Não há caminhos diversos ao mesmo resultado nem atividade empresarial concorrencial.
-- **C:** Incorreta. Não há estudo de movimentos, reconhecimento por experiência ou formulação superior de política.
-- **D:** Correta. Plano único, escolha satisfatória e poder sancionador resolvem, na ordem, os três trechos.
+- **A:** Incorreta. Fragmenta direção, pressupõe racionalidade irreal, delega indevidamente poder extroverso e ainda retira uma instância de revisão.
+- **B:** Incorreta. Coordenação nacional não exige microcentralização, e poder fiscalizatório continua exclusivo.
+- **C:** Incorreta. Meta estreita, escolha sem evidência e mercado não resolvem coerência, incerteza ou titularidade.
+- **D:** Correta. Integra unidade de direção, autonomia contingente, racionalidade limitada, aprendizagem e preservação do poder estatal.
 
-**Conceito:** Princípio clássico, modelo decisório e setor do PDRAE podem incidir sobre dimensões independentes.
+**Conceito:** Reforma coerente separa direção comum, meios adaptáveis, processo decisório sob limites e competência estatal indelegável.
 
-**Pegadinha:** Acertar um filtro e aceitar os outros dois pela aparência vocabular.
+**Pegadinha:** Tratar descentralização operacional como fragmentação política ou como autorização para transferir sanção.
 
-**Raciocínio:** 1) identifique o objeto do plano; 2) classifique a suficiência da escolha; 3) localize o poder estatal.
+**Raciocínio:** Aplique cinco filtros: objetivo comum, margem local, informação disponível, revisão por feedback e titularidade do poder.
 
 **Nível:** Muito difícil
 
@@ -441,7 +441,7 @@ D) unidade de direção, racionalidade limitada e atividade exclusiva.
 
 </details>
 
-### S010 — Serviço social sob mudança
+### S010 — Parceria, incerteza e meta local
 
 **Nível:** Muito difícil
 
@@ -449,31 +449,31 @@ D) unidade de direção, racionalidade limitada e atividade exclusiva.
 
 **Referência:** [Dia 1 — evolução administrativa](semana_01_estudo.md#dia-1-evolucao-administrativa)
 
-Um serviço não exclusivo é publicizado; a entidade adapta sua estrutura à incerteza; uma meta local aumenta entregas e piora o resultado total. O diagnóstico é:
+Uma entidade sem fins lucrativos executa serviço social mediante metas e prestação de contas. A demanda oscila por território; para bater volume, uma unidade rejeita casos complexos, reduzindo o resultado coletivo. Qual correção é coerente?
 
-A) privatização, desenho universal e sinergia.
+A) Tratar a parceria como venda privada, impor desenho idêntico a todos os territórios, premiar exclusivamente o maior volume local e ignorar efeitos sobre acesso.
 
-B) setor público não estatal, contingência e subotimização.
+B) Preservar responsabilidade pública no arranjo não estatal, adaptar capacidade ao contexto e equilibrar volume, complexidade, acesso e resultado global.
 
-C) atividade exclusiva, burocracia ideal e homeostase.
+C) Classificar o serviço como atividade exclusiva, devolver toda execução à cúpula e medir apenas conformidade documental prévia.
 
-D) produção para o mercado, racionalidade ilimitada e equifinalidade.
+D) Converter a entidade em produtora de mercado, presumir demanda perfeitamente conhecida e aceitar exclusão como sinergia sistêmica.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Publicização não é venda; adaptação nega universalismo; o todo piorou.
-- **B:** Correta. Cada categoria corresponde à forma de propriedade, ao ajuste estrutural e ao efeito sistêmico.
-- **C:** Incorreta. O serviço admite atuação plural, e as demais categorias não explicam adaptação e piora global.
-- **D:** Incorreta. Não há atividade empresarial, cálculo ilimitado ou caminhos equivalentes.
+- **A:** Incorreta. Publicização não é venda, contingência afasta uniformidade automática e volume isolado incentiva seleção adversa.
+- **B:** Correta. Combina natureza da parceria, adaptação contingencial e correção da subotimização por painel equilibrado.
+- **C:** Incorreta. O serviço admite atuação plural, e recentralizar tudo não enfrenta variação nem incentivo perverso.
+- **D:** Incorreta. Não há mercado concorrencial, certeza plena ou benefício sistêmico na exclusão de casos.
 
-**Conceito:** Forma de execução, desenho organizacional e desempenho sistêmico exigem classificações próprias.
+**Conceito:** Arranjo público não estatal exige accountability, desenho ajustado ao contexto e metas que preservem o resultado do sistema.
 
-**Pegadinha:** Tratar publicização como categoria suficiente para explicar toda a organização.
+**Pegadinha:** Usar volume local para certificar desempenho global ou confundir parceria com privatização.
 
-**Raciocínio:** 1) classifique a propriedade; 2) identifique o ajuste ao contexto; 3) compare meta local e resultado global.
+**Raciocínio:** Verifique titularidade da responsabilidade, incerteza territorial, comportamento induzido e efeito sobre acesso e resultado.
 
 **Nível:** Muito difícil
 
@@ -625,7 +625,7 @@ Uma unidade recebe reclamação, registra a manifestação e a encaminha à áre
 
 A) conselho deliberativo, porque recebeu demanda de usuário.
 
-B) conferência pública, porque articulou unidades administrativas.
+B) conferência pública, porque articulou unidades administrativas e definiu políticas públicas.
 
 C) orçamento participativo, que define prioridade financeira a partir de reclamações.
 
@@ -739,7 +739,7 @@ D) foi comprometida, porque condição vantajosa pressupõe qualidade adequada a
 
 </details>
 
-### S017 — Orientar, mudar, transformar
+### S017 — Indicador que não premia o atalho
 
 **Nível:** Difícil
 
@@ -747,31 +747,31 @@ D) foi comprometida, porque condição vantajosa pressupõe qualidade adequada a
 
 **Referência:** [Dia 2 — qualidade pública e gestão por resultados](semana_01_estudo.md#dia-2-qualidade-resultados)
 
-Em campanha de orientação, “sessões realizadas”, “redução de preenchimentos incorretos” e “maior regularidade profissional sustentada” representam:
+Uma unidade reduziu a média do prazo, mas passou a recusar casos complexos e elevou retrabalho. O painel não informa fórmula, fonte nem perfil atendido. Qual redesenho reduz gaming e permite interpretar o serviço?
 
-A) atividade, produto e eficiência.
+A) Manter apenas a média e premiar quem decidir mais rápido, porque um indicador simples impede manipulação e garante equidade.
 
-B) insumo, eficácia e governabilidade.
+B) Trocar prazo por quantidade concluída e retirar casos devolvidos do denominador, pois somente produtos finais devem ser medidos.
 
-C) produto, resultado e impacto.
+C) Combinar mediana ponta a ponta, retrabalho e acesso por perfil, documentando fórmula, fonte, periodicidade, responsável e auditoria dos casos excluídos.
 
-D) resultado, impacto e economicidade.
+D) Abandonar toda mensuração e avaliar qualidade apenas por relatos espontâneos, sem linha de base, meta ou regra comum.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Sessão realizada é entrega; redução de erro já é mudança, não simples produto.
-- **B:** Incorreta. Sessões não são recursos, e regularidade não mede apoio político.
-- **C:** Correta. A sequência passa de entrega imediata a mudança e efeito amplo sustentado.
-- **D:** Incorreta. Inverte produto e resultado e troca impacto por aquisição de recursos.
+- **A:** Incorreta. Média isolada pode ocultar cauda e incentivo estreito pode reforçar seleção de casos fáceis.
+- **B:** Incorreta. Excluir devoluções mascara falha e quantidade não informa acesso, prazo real ou qualidade.
+- **C:** Correta. Equilibra prazo, qualidade e equidade e completa a ficha técnica e o controle do incentivo perverso.
+- **D:** Incorreta. Evidência qualitativa ajuda, mas não exige abandonar comparabilidade e monitoramento.
 
-**Conceito:** A cadeia separa aquilo que foi entregue, a mudança produzida e o efeito mais amplo.
+**Conceito:** Indicadores públicos precisam de ficha técnica e combinação de quantidade, prazo, qualidade, acesso e resultado.
 
-**Pegadinha:** Chamar evento realizado de resultado final.
+**Pegadinha:** Melhorar o número por cream skimming, exclusão do denominador ou escolha de medida que oculta extremos.
 
-**Raciocínio:** Pergunte em sequência: o que saiu, o que mudou e qual transformação durou.
+**Raciocínio:** Verifique objeto, fórmula, fonte, segmentação, responsável e comportamento induzido pela meta.
 
 **Nível:** Difícil
 
@@ -797,7 +797,7 @@ B) incorreta, pois somente a ouvidoria pode formular diretrizes e deliberar pol�
 
 C) incorreta, pois toda conferência transfere competência decisória e sancionadora ao público.
 
-D) correta apenas se os três instrumentos substituírem as autoridades administrativas.
+D) correta apenas se os três instrumentos substituírem as autoridades administrativas legalmente competentes.
 
 <details>
 <summary>Comentário e gabarito</summary>
@@ -823,7 +823,7 @@ D) correta apenas se os três instrumentos substituírem as autoridades administ
 
 </details>
 
-### S019 — Três fachadas institucionais
+### S019 — Canais formais sem função substantiva
 
 **Nível:** Muito difícil
 
@@ -831,31 +831,31 @@ D) correta apenas se os três instrumentos substituírem as autoridades administ
 
 **Referência:** [Dia 2 — governança, transparência e resultados](semana_01_estudo.md#dia-2-governanca-resultados)
 
-O órgão publica arquivo indecifrável, abre consulta sem devolutiva e não define quem responde pelo resultado. O diagnóstico integrado é:
+O órgão publica planilha sem dicionário, consulta usuários depois de decidir e apresenta meta sem responsável, explicação ou consequência pelo desvio. Qual redesenho torna informação, participação e responsabilização substantivas?
 
-A) transparência substantiva, participação deliberativa e accountability horizontal.
+A) Manter a planilha, contar acessos como compreensão, encerrar a consulta sem resposta e atribuir o resultado genericamente à instituição.
 
-B) sigilo legítimo, coprodução e enforcement completo.
+B) Retirar os dados do portal, substituir consulta por campanha informativa e aplicar sanção automática sem identificar competência ou causa.
 
-C) dados abertos, governabilidade e eficiência operacional.
+C) Publicar apenas painel agregado, permitir comentários após a execução e considerar auditoria e resposta genérica ao desvio provas suficientes de accountability.
 
-D) publicidade formal pouco transparente, participação ritualística e accountability incompleta.
+D) Fornecer dados compreensíveis e reutilizáveis, consultar antes da escolha com devolutiva e atribuir responsável, prestação de contas e resposta proporcional.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. O dado não é compreensível, não houve retorno e falta responsável.
-- **B:** Incorreta. Não há fundamento de sigilo, entrega colaborativa ou consequência legítima.
-- **C:** Incorreta. Arquivo indecifrável não é dado útil, e os demais conceitos não foram evidenciados.
-- **D:** Correta. Cada falha corresponde, na ordem, à informação, à influência social e à responsabilização.
+- **A:** Incorreta. Acesso não comprova inteligibilidade, consulta sem influência é ritual e responsabilidade difusa impede cobrança.
+- **B:** Incorreta. Sigilo e sanção automática não substituem transparência, participação ou devido processo de responsabilização.
+- **C:** Incorreta. Agregação pode ser útil, mas timing tardio, auditoria isolada e resposta genérica não completam o ciclo.
+- **D:** Correta. Integra qualidade da informação, influência tempestiva, devolutiva, atribuição, explicação e resposta.
 
-**Conceito:** Existência formal de canais não assegura transparência, participação ou accountability substantivas.
+**Conceito:** Transparência, participação e accountability exigem condições de uso, influência e consequência, não apenas canais existentes.
 
-**Pegadinha:** Somar três aparências institucionais e concluir que três funções foram cumpridas.
+**Pegadinha:** Medir abertura por publicação, participação por comentário e accountability pela mera presença de controle.
 
-**Raciocínio:** 1) teste inteligibilidade; 2) procure influência e devolutiva; 3) identifique explicação, responsável e consequência.
+**Raciocínio:** Aplique seis filtros: compreensão, reutilização, momento, influência, responsável e resposta ao desempenho.
 
 **Nível:** Muito difícil
 
@@ -953,7 +953,7 @@ D) planejar, porque formula a situação futura desejada e suas prioridades.
 
 </details>
 
-### S022 — Curto prazo, alcance estratégico
+### S022 — Controle que devolve aprendizado
 
 **Nível:** Médio
 
@@ -961,31 +961,31 @@ D) planejar, porque formula a situação futura desejada e suas prioridades.
 
 **Referência:** [Dia 3 — PODC e níveis de planejamento](semana_01_estudo.md#dia-3-podc-niveis-planejamento)
 
-Durante emergência, a organização inteira redefine por três meses sua prioridade institucional e a relação com o ambiente. O plano é predominantemente:
+Um plano definiu meta de prazo e premissas de demanda. Durante a execução, o painel compara realizado e padrão, investiga o desvio, corrige recursos e devolve a nova evidência ao próximo ciclo. Predomina a função de:
 
-A) operacional, porque todo horizonte trimestral pertence à execução detalhada.
+A) planejar, porque qualquer atualização posterior transforma comparação e correção em formulação inicial.
 
-B) tático, porque decisões temporárias nunca podem alcançar a organização inteira.
+B) organizar, porque medir desvio equivale a distribuir autoridade, tarefas e relações estruturais.
 
-C) operacional, porque emergências eliminam a necessidade de direção institucional comum.
+C) dirigir, porque todo ajuste de recurso é necessariamente comunicação motivacional da liderança.
 
-D) estratégico, pois escopo e natureza prevalecem sobre uma duração cronológica fixa.
+D) controlar, pois mede, compara, diagnostica, corrige e realimenta o planejamento.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Horizonte é relativo e não classifica sozinho o planejamento.
-- **B:** Incorreta. O alcance é institucional e ambiental, não de uma única área.
-- **C:** Incorreta. A emergência exige direção, mesmo com prazo curto.
-- **D:** Correta. Prioridade global e relação ambiental são critérios estratégicos.
+- **A:** Incorreta. O plano antecede a execução; aqui o núcleo é confrontar evidência com referência e aprender.
+- **B:** Incorreta. Não houve desenho de cargos, autoridade ou divisão do trabalho.
+- **C:** Incorreta. Correção pode exigir liderança, mas o enunciado enfatiza medição e desvio.
+- **D:** Correta. Reúne as etapas do controle e mostra que ele também pode revisar premissas e padrões.
 
-**Conceito:** Níveis de planejamento se distinguem sobretudo por escopo, impacto e natureza decisória.
+**Conceito:** Controlar mede, compara, explica desvios, corrige e alimenta novo planejamento.
 
-**Pegadinha:** Aplicar tabela rígida de anos ao horizonte do plano.
+**Pegadinha:** Reduzir controle a punição posterior ou chamar toda correção de planejamento.
 
-**Raciocínio:** Ignore inicialmente os três meses e classifique quem é afetado e que decisão foi tomada.
+**Raciocínio:** Procure padrão, dado realizado, diferença, causa, ação corretiva e feedback para o ciclo.
 
 **Nível:** Médio
 
@@ -995,7 +995,7 @@ D) estratégico, pois escopo e natureza prevalecem sobre uma duração cronológ
 
 </details>
 
-### S023 — Valores que orientam decisões
+### S023 — Ação ainda não é resultado
 
 **Nível:** Médio
 
@@ -1003,31 +1003,31 @@ D) estratégico, pois escopo e natureza prevalecem sobre uma duração cronológ
 
 **Referência:** [Dia 3 — PODC e níveis de planejamento](semana_01_estudo.md#dia-3-podc-niveis-planejamento)
 
-“Impessoalidade, respeito e aprendizagem” orientam como a organização pretende decidir e se comportar. Esses enunciados são:
+No mapa estratégico aparece “implantar triagem automática até outubro”. O texto descreve uma entrega escolhida para apoiar a redução de prazo, mas não informa por si só a mudança obtida. Ele é predominantemente:
 
-A) valores organizacionais que funcionam como princípios de escolha e conduta.
+A) uma iniciativa, que precisa ser ligada a objetivo, indicador e meta de resultado.
 
-B) metas quantitativas que definem nível e prazo de desempenho esperado.
+B) uma visão, porque toda implantação tecnológica expressa o futuro aspirado da instituição.
 
-C) indicadores que medem diretamente o alcance de resultados institucionais.
+C) um indicador, porque o verbo implantar fornece automaticamente fórmula, unidade e fonte.
 
-D) iniciativas que descrevem projetos e ações estruturadas de implementação formal.
+D) um valor, porque outubro estabelece o princípio ético que orientará o comportamento.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Os termos expressam princípios que orientam decisões e comportamento.
-- **B:** Incorreta. Não há nível numérico nem prazo.
-- **C:** Incorreta. Os enunciados não especificam medidas ou fórmulas.
-- **D:** Incorreta. Eles não descrevem ação, responsável ou entrega.
+- **A:** Correta. Implantar algo é ação estruturada; prazo da entrega não prova o efeito público pretendido.
+- **B:** Incorreta. Visão descreve condição futura desejada, não um projeto específico.
+- **C:** Incorreta. Indicador requer medida definida; o enunciado apenas nomeia uma ação e um prazo.
+- **D:** Incorreta. Valor é princípio de conduta, não cronograma de implantação.
 
-**Conceito:** Valores orientam o modo de agir; missão explica razão atual e visão descreve futuro aspirado.
+**Conceito:** Iniciativa executa a estratégia; objetivo expressa direção, indicador mede e meta fixa nível e prazo.
 
-**Pegadinha:** Tratar palavra positiva como objetivo mensurável.
+**Pegadinha:** Transformar entrega tecnológica em resultado ou visão apenas porque possui data.
 
-**Raciocínio:** Pergunte se o texto mede, age, projeta futuro ou estabelece princípio.
+**Raciocínio:** Pergunte se o enunciado descreve ação, mudança pretendida, medida ou nível de desempenho.
 
 **Nível:** Médio
 
@@ -1091,7 +1091,7 @@ Duas áreas calculam GUT: uma usa escala de 1 a 5; outra, de 1 a 10, sem convers
 
 A) inadequado, pois a escala deve ser previamente definida e comparável antes da priorização.
 
-B) adequado, porque multiplicação torna qualquer escala automaticamente equivalente.
+B) adequado, porque multiplicação torna qualquer escala automaticamente equivalente e comparável.
 
 C) obrigatório, porque GUT prova causalidade independentemente do critério adotado.
 
@@ -1247,7 +1247,7 @@ D) ancoragem e viés de confirmação.
 
 </details>
 
-### S029 — Da capacidade à ação negociada
+### S029 — Diagnóstico, prioridade e execução negociada
 
 **Nível:** Muito difícil
 
@@ -1255,31 +1255,31 @@ D) ancoragem e viés de confirmação.
 
 **Referência:** [Dia 3 — planejamento, ferramentas e decisão](semana_01_estudo.md#dia-3-planejamento-decisao)
 
-A equipe identifica capacidade interna insuficiente, prioriza o problema por GUT, detalha uma ação em 5W2H e negocia objetivo desdobrado com acompanhamento. A sequência é:
+Uma integração governamental abre oportunidade, mas o sistema legado é incapaz de atendê-la. Entre vários problemas, a equipe usa GUT, investiga a causa do prioritário, detalha resposta e negocia metas desdobradas com revisões. Qual condução preserva a função de cada etapa?
 
-A) fraqueza na SWOT, priorização, plano de ação e ciclo de APO.
+A) Registrar oportunidade e fraqueza na SWOT, usar GUT apenas para prioridade, analisar causa, montar 5W2H e acompanhar objetivos negociados pela APO.
 
-B) ameaça na SWOT, causa-raiz, visão institucional e decisão intuitiva.
+B) Tratar o legado como ameaça externa, tomar a maior nota GUT como causa comprovada e converter 5W2H em visão institucional imutável.
 
-C) força interna, monitoramento de projeto, missão e gestão por comando unilateral.
+C) Chamar a integração de força interna, escolher a solução antes do diagnóstico e impor meta local sem alinhamento ou revisão periódica.
 
-D) oportunidade externa, análise de impacto, meta sem indicador e controle de mercado.
+D) Classificar todo fator favorável como oportunidade, dispensar origem e causalidade e usar APO apenas para punir desvios individuais.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Origem interna desfavorável, ranking, operacionalização e negociação acompanhada resolvem os quatro trechos.
-- **B:** Incorreta. A capacidade é interna; GUT não prova causa; 5W2H não formula visão; APO não é intuição.
-- **C:** Incorreta. Insuficiência não é força, e os demais instrumentos foram trocados.
-- **D:** Incorreta. Não há fator externo, avaliação de impacto ou controle por preços.
+- **A:** Correta. Separa origem, prioridade, causalidade, operacionalização e gestão negociada do desempenho.
+- **B:** Incorreta. Erra a origem, transforma prioridade em causa e troca plano de ação e visão.
+- **C:** Incorreta. Confunde fator externo e interno, antecipa solução e rompe alinhamento da APO.
+- **D:** Incorreta. SWOT exige origem e valência, e APO não é mecanismo exclusivamente sancionatório.
 
-**Conceito:** Ferramentas diferentes ocupam posições complementares entre diagnóstico, prioridade, ação e alinhamento.
+**Conceito:** SWOT diagnostica posição, GUT prioriza problemas, análise testa causas, 5W2H operacionaliza e APO alinha execução e revisão.
 
-**Pegadinha:** Reconhecer as ferramentas e trocar a saída produzida por cada uma.
+**Pegadinha:** Fazer uma ferramenta produzir a saída da seguinte ou usar pontuação como prova causal.
 
-**Raciocínio:** 1) classifique origem; 2) identifique ranking; 3) identifique detalhamento; 4) reconheça negociação e revisão.
+**Raciocínio:** Aplique seis filtros: origem, valência, prioridade, causa, plano executável e acompanhamento negociado.
 
 **Nível:** Muito difícil
 
@@ -1289,7 +1289,7 @@ D) oportunidade externa, análise de impacto, meta sem indicador e controle de m
 
 </details>
 
-### S030 — Regra, probabilidade e investimento passado
+### S030 — Protocolo, risco e custo afundado
 
 **Nível:** Muito difícil
 
@@ -1297,31 +1297,31 @@ D) oportunidade externa, análise de impacto, meta sem indicador e controle de m
 
 **Referência:** [Dia 3 — planejamento, ferramentas e decisão](semana_01_estudo.md#dia-3-planejamento-decisao)
 
-Uma decisão recorrente segue protocolo; suas alternativas possuem probabilidades estimáveis; a chefia insiste na pior opção para justificar gasto já realizado. O diagnóstico é:
+Pedidos recorrentes seguem protocolo e possuem probabilidades históricas de deferimento. Um novo sinal exige exceção, mas a chefia mantém o modelo antigo porque 70% do orçamento já foi gasto e seleciona apenas dados favoráveis. Qual resposta decisória é adequada?
 
-A) decisão não programada, certeza e pensamento de grupo.
+A) Aplicar o protocolo sem exceção, tratar probabilidades como certeza e manter o projeto para preservar consenso e reputação da chefia.
 
-B) decisão programada, risco e escalada de compromisso.
+B) Separar a parte programada da exceção, decidir sob risco, ignorar custo afundado, revisar evidências contraditórias e comparar apenas custos e benefícios futuros.
 
-C) decisão intuitiva, incerteza e viés de disponibilidade.
+C) Abandonar toda regra, decidir intuitivamente sem dados e classificar probabilidades estimáveis como incerteza completa.
 
-D) decisão incremental, maximização e viés de confirmação.
+D) Acrescentar pequenos gastos ao modelo antigo até confirmá-lo, pois escalada incremental transforma investimento passado em benefício futuro e elimina viés de confirmação.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. Recorrência e protocolo indicam programação; probabilidades não significam certeza.
-- **B:** Correta. Regra, probabilidade conhecida e defesa do investimento passado resolvem os três filtros.
-- **C:** Incorreta. Não há reconhecimento por experiência, probabilidades desconhecidas ou evento memorável.
-- **D:** Incorreta. Mudança gradual, ótimo absoluto e busca seletiva de evidência não foram narrados.
+- **A:** Incorreta. Regra não cobre automaticamente a novidade, risco não é certeza e reputação não torna gasto recuperável.
+- **B:** Correta. Preserva eficiência da programação, trata exceção e risco e corrige escalada e confirmação pela análise prospectiva.
+- **C:** Incorreta. A existência de exceção não elimina dados, protocolo ou probabilidades disponíveis.
+- **D:** Incorreta. Aporte gradual pode aprofundar escalada; gasto passado não altera retorno futuro, e buscar apenas sua confirmação reproduz o viés.
 
-**Conceito:** Estrutura da decisão, condição informacional e viés são eixos independentes.
+**Conceito:** Decisão pode combinar rotina programada, exceção não programada, risco mensurável e vieses ligados ao investimento anterior.
 
-**Pegadinha:** Tratar “probabilidade conhecida” como certeza ou “gasto realizado” como benefício futuro.
+**Pegadinha:** Deixar protocolo, reputação ou percentual já gasto decidir uma escolha que deve olhar consequências futuras.
 
-**Raciocínio:** 1) procure regra repetitiva; 2) classifique informação; 3) descarte custo afundado da decisão futura.
+**Raciocínio:** Separe rotina e exceção, classifique a informação, procure evidência contrária e retire custos irrecuperáveis da comparação.
 
 **Nível:** Muito difícil
 
@@ -1377,7 +1377,7 @@ D) amplitude de controle, ao aumentar subordinados diretos por gestor.
 
 </details>
 
-### S032 — Dois sentidos de processo
+### S032 — Linha e apoio especializado
 
 **Nível:** Médio
 
@@ -1385,31 +1385,31 @@ D) amplitude de controle, ao aumentar subordinados diretos por gestor.
 
 **Referência:** [Dia 4 — estrutura e departamentalização](semana_01_estudo.md#dia-4-estrutura-departamentalizacao)
 
-Assinale a distinção correta entre departamentalização por processo e gestão por processos.
+Uma diretoria decide e responde pelos atos de fiscalização. Uma unidade de ciência de dados desenvolve modelos, aconselha a diretoria e acompanha qualidade técnica, mas não comanda os fiscais. A leitura estrutural correta é:
 
-A) A primeira pode agrupar etapas técnicas; a segunda coordena o fluxo ponta a ponta orientado ao usuário.
+A) A diretoria exerce autoridade de linha; a unidade analítica atua como staff, sem absorver a decisão final.
 
-B) A primeira elimina departamentos; a segunda cria exclusivamente unidades funcionais especializadas.
+B) A unidade analítica exerce linha por dominar conhecimento, e a diretoria vira assessoria sem responsabilidade decisória.
 
-C) Ambas significam apenas dividir o trabalho por profissão e ampliar a supervisão vertical.
+C) As duas unidades formam matriz, pois qualquer conselho técnico cria automaticamente dupla chefia sobre os fiscais.
 
-D) Ambas exigem dupla autoridade funcional e de projeto como característica necessária.
+D) A existência de staff elimina hierarquia, prestação de contas e necessidade de delimitar competência decisória.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. O mesmo termo pode indicar agrupamento de etapas ou integração transversal do fluxo.
-- **B:** Incorreta. Gestão por processos pode coexistir com departamentos.
-- **C:** Incorreta. Essa descrição aproxima-se da departamentalização funcional.
-- **D:** Incorreta. Dupla autoridade caracteriza matriz, não todo desenho orientado a processo.
+- **A:** Correta. Linha decide e entrega a finalidade; staff fornece conhecimento e recomendação especializada.
+- **B:** Incorreta. Conhecimento técnico não transfere automaticamente autoridade nem responsabilidade final.
+- **C:** Incorreta. Assessoria não implica dois superiores com poder formal sobre a mesma pessoa.
+- **D:** Incorreta. Staff exige fronteira clara de papel e não extingue accountability ou hierarquia.
 
-**Conceito:** Contexto distingue o critério estrutural de agrupamento da abordagem gerencial ponta a ponta.
+**Conceito:** Órgãos de linha realizam a finalidade e detêm autoridade; staff apoia com especialização sem substituir a decisão competente.
 
-**Pegadinha:** Tratar as duas expressões como sinônimos automáticos.
+**Pegadinha:** Converter influência técnica em comando formal ou chamar toda interação lateral de matriz.
 
-**Raciocínio:** Compare a unidade observada: etapa técnica em um caso e fluxo completo no outro.
+**Raciocínio:** Identifique quem recomenda, quem decide, quem dirige a execução e quem responde pelo ato.
 
 **Nível:** Médio
 
@@ -1461,7 +1461,7 @@ D) coexistência de subculturas dentro de uma cultura organizacional mais ampla.
 
 </details>
 
-### S034 — Necessidade não desaparece
+### S034 — Pressuposto que molda o controle
 
 **Nível:** Médio
 
@@ -1469,31 +1469,31 @@ D) coexistência de subculturas dentro de uma cultura organizacional mais ampla.
 
 **Referência:** [Dia 4 — organização informal, cultura e direção](semana_01_estudo.md#dia-4-informal-cultura-direcao)
 
-Sobre a hierarquia de Maslow, a leitura mais cautelosa é:
+Um gerente presume que as pessoas evitam esforço, precisam de vigilância estreita e só respondem a ameaça. Mesmo diante de equipe experiente, concentra decisões e amplia conferências. A interpretação correta é:
 
-A) uma necessidade satisfeita desaparece definitivamente de todas as decisões futuras.
+A) A equipe pertence biologicamente ao tipo X, que não pode mudar com contexto, desenho ou experiência.
 
-B) todos os indivíduos percorrem níveis em ordem rígida, idêntica e empiricamente invariável.
+B) O comportamento descreve teoria Y, porque centralização e vigilância demonstram confiança em autodireção.
 
-C) o modelo organiza níveis de necessidade, mas não autoriza hierarquia universal absolutamente rígida.
+C) O gerente adota pressupostos da teoria X; a crença orienta o controle, mas não classifica pessoas como tipos imutáveis.
 
-D) o modelo distingue fatores higiênicos e motivacionais em duas escalas independentes.
+D) O caso comprova Herzberg, pois ameaça e supervisão são fatores motivacionais que produzem satisfação duradoura.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Necessidades podem voltar a influenciar conduta.
-- **B:** Incorreta. A rigidez universal é uma crítica conhecida e foi ressalvada na teoria.
-- **C:** Correta. Reconhece o modelo sem transformar sua representação em lei absoluta.
-- **D:** Incorreta. A distinção pertence à teoria dos dois fatores de Herzberg.
+- **A:** Incorreta. X e Y são pressupostos gerenciais, não categorias biológicas fixas dos trabalhadores.
+- **B:** Incorreta. Teoria Y pressupõe possibilidade de autodireção, responsabilidade e desenvolvimento.
+- **C:** Correta. A crença é X e pode produzir práticas centralizadoras que influenciam o próprio comportamento observado.
+- **D:** Incorreta. Herzberg não transforma ameaça e supervisão em motivadores intrínsecos duradouros.
 
-**Conceito:** Maslow propõe níveis de necessidades, cuja aplicação não deve ser mecanicamente universalizada.
+**Conceito:** McGregor descreve pressupostos do gestor sobre trabalho e responsabilidade, com efeitos no desenho de controle e autonomia.
 
-**Pegadinha:** Cobrar a figura hierárquica como sequência biológica invariável.
+**Pegadinha:** Tratar teoria X e teoria Y como personalidade natural e invariável do empregado.
 
-**Raciocínio:** Preserve a contribuição classificatória e rejeite os absolutos.
+**Raciocínio:** Localize a crença sobre esforço, a prática gerencial derivada e a cautela contra rotular a pessoa.
 
 **Nível:** Médio
 
@@ -1503,7 +1503,7 @@ D) o modelo distingue fatores higiênicos e motivacionais em duas escalas indepe
 
 </details>
 
-### S035 — Troca e transformação combinadas
+### S035 — Prontidão diferente, condução diferente
 
 **Nível:** Difícil
 
@@ -1511,31 +1511,31 @@ D) o modelo distingue fatores higiênicos e motivacionais em duas escalas indepe
 
 **Referência:** [Dia 4 — organização informal, cultura e direção](semana_01_estudo.md#dia-4-informal-cultura-direcao)
 
-Uma líder pactua metas e recompensas para a rotina, mas também comunica propósito, desenvolve a equipe e inspira mudança. A atuação combina liderança:
+Uma líder orienta detalhadamente uma equipe nova numa tarefa crítica, oferece apoio e decisão compartilhada quando a habilidade cresce e delega a especialistas comprovadamente autônomos. O diagnóstico mais adequado é:
 
-A) situacional e autocrática, necessariamente incompatíveis entre si.
+A) liderança por traços, pois o comportamento eficaz deve permanecer idêntico para qualquer tarefa e equipe.
 
-B) transacional na troca e transformacional no propósito e desenvolvimento.
+B) liderança situacional, com ajuste de direção e apoio à prontidão específica dos liderados.
 
-C) apenas transformacional, pois metas e recompensas não pertencem à liderança.
+C) liderança autocrática permanente, porque orientação inicial invalida participação e delegação posteriores.
 
-D) apenas transacional, pois inspiração não produz influência organizacional relevante.
+D) liderança laissez-faire, pois delegar a especialistas significa abandonar acompanhamento, resultado e responsabilidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** B.
 
-- **A:** Incorreta. O caso não descreve prontidão do liderado nem imposição unilateral.
-- **B:** Correta. Trocas de desempenho coexistem com inspiração, propósito e mudança.
-- **C:** Incorreta. Metas e recompensas são elementos transacionais presentes.
-- **D:** Incorreta. Desenvolvimento e propósito são sinais transformacionais.
+- **A:** Incorreta. O caso mostra variação deliberada segundo tarefa e prontidão, não estilo fixo derivado de traço.
+- **B:** Correta. Direção e apoio mudam conforme competência e compromisso exigidos naquela situação.
+- **C:** Incorreta. Orientação intensa em baixa prontidão não torna autocráticas as fases participativa e delegadora.
+- **D:** Incorreta. Delegação adequada preserva objetivo, acompanhamento e responsabilidade final.
 
-**Conceito:** Formas de liderança podem coexistir e atender dimensões diferentes do trabalho.
+**Conceito:** Liderança situacional adapta comportamento diretivo e de apoio à prontidão para uma tarefa específica.
 
-**Pegadinha:** Exigir estilo puro quando o caso apresenta comportamentos complementares.
+**Pegadinha:** Inferir estilo permanente a partir de uma fase ou confundir delegação com abandono.
 
-**Raciocínio:** Classifique separadamente o mecanismo de troca e o mecanismo de transformação.
+**Raciocínio:** Compare tarefa, competência, compromisso, direção oferecida e apoio necessário em cada momento.
 
 **Nível:** Difícil
 
@@ -1555,7 +1555,7 @@ D) apenas transacional, pois inspiração não produz influência organizacional
 
 Com receio da autoridade, subordinados retiram dados negativos antes de enviar relatório à direção. A barreira e o fluxo predominantes são:
 
-A) sobrecarga em comunicação descendente.
+A) sobrecarga informacional em comunicação descendente.
 
 B) ambiguidade em comunicação horizontal.
 
@@ -1639,7 +1639,7 @@ D) controle posterior adequado, porque a chefia decide antes de cada ato.
 
 Antes da execução, a socialização reforça valores compartilhados que orientam escolhas mesmo sem supervisão direta. O controle é, respectivamente:
 
-A) posterior e de mercado.
+A) posterior e de mercado competitivo.
 
 B) concomitante e burocrático.
 
@@ -1671,7 +1671,7 @@ D) preventivo e de clã/cultural.
 
 </details>
 
-### S039 — Dupla chefia, recompensa e silêncio
+### S039 — Matriz, incentivo e voz bloqueada
 
 **Nível:** Muito difícil
 
@@ -1679,31 +1679,31 @@ D) preventivo e de clã/cultural.
 
 **Referência:** [Dia 4 — organização, direção e controle](semana_01_estudo.md#dia-4-organizacao-direcao-controle)
 
-Um especialista responde a gerente funcional e de projeto; não vê relação entre desempenho e bônus; evita pedir esclarecimento por status. Há:
+Num projeto matricial, gerente funcional e gerente do projeto dão prioridades incompatíveis. O bônus não explica como a entrega conjunta afeta a recompensa, e profissionais juniores silenciam riscos diante do status dos chefes. Qual intervenção trata os três mecanismos?
 
-A) estrutura matricial, instrumentalidade baixa e barreira de comunicação.
+A) Definir direitos de decisão e escalada, tornar transparente o elo desempenho-recompensa e criar canais seguros de comunicação ascendente com métricas compartilhadas.
 
-B) estrutura funcional, valência nula e comunicação horizontal eficaz.
+B) Subordinar todos somente à função durante o projeto, aumentar o valor do bônus, presumir que mensagens enviadas foram compreendidas e substituir escalada por consenso espontâneo.
 
-C) estrutura divisional, expectativa alta e ausência de ruído.
+C) Manter ordens concorrentes, avaliar apenas metas locais e trocar reuniões por memorandos para eliminar conflito e ruído de status.
 
-D) estrutura em rede, equidade plena e feedback ascendente completo.
+D) Abolir chefias formais, repartir bônus igualmente sem critério e usar silêncio como evidência de concordância e equidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Dupla autoridade, elo desempenho-recompensa rompido e status resolvem os três filtros.
-- **B:** Incorreta. A autoridade é dupla, o bônus pode ser desejado e a comunicação está bloqueada.
-- **C:** Incorreta. Não há divisão autônoma, relação esforço-desempenho conhecida ou comunicação sem ruído.
-- **D:** Incorreta. Parceiros externos, comparação justa e retorno completo não foram descritos.
+- **A:** Correta. Integra governança matricial, instrumentalidade da expectativa, segurança de voz e alinhamento de medidas.
+- **B:** Incorreta. Elimina coordenação do projeto, atua sobre valência sem reparar instrumentalidade, ignora compreensão e presume consenso sem regra de escalada.
+- **C:** Incorreta. Preserva ambiguidade, subotimiza por metas locais e não remove a barreira de status.
+- **D:** Incorreta. Ausência de regra e igualdade automática não asseguram justiça, coordenação ou comunicação real.
 
-**Conceito:** Estrutura, motivação e comunicação podem gerar restrições simultâneas ao desempenho.
+**Conceito:** Desempenho matricial depende de clareza de autoridade, incentivo inteligível, objetivos comuns e comunicação psicologicamente segura.
 
-**Pegadinha:** Confundir instrumentalidade com valência e dupla autoridade com estrutura funcional simples.
+**Pegadinha:** Corrigir conflito estrutural apenas com dinheiro ou corrigir silêncio apenas enviando mais mensagens.
 
-**Raciocínio:** 1) conte eixos de autoridade; 2) localize o elo motivacional; 3) identifique a barreira ao fluxo.
+**Raciocínio:** Aplique quatro filtros: prioridade decisória, escalada, instrumentalidade e possibilidade efetiva de voz.
 
 **Nível:** Muito difícil
 
@@ -1713,7 +1713,7 @@ D) estrutura em rede, equidade plena e feedback ascendente completo.
 
 </details>
 
-### S040 — Delegação aparente e sinal antecedente
+### S040 — Autonomia nominal e painel incompleto
 
 **Nível:** Muito difícil
 
@@ -1721,31 +1721,31 @@ D) estrutura em rede, equidade plena e feedback ascendente completo.
 
 **Referência:** [Dia 4 — organização, direção e controle](semana_01_estudo.md#dia-4-organizacao-direcao-controle)
 
-A chefia diz delegar, mas assina cada ato; valida documentos durante a execução; acompanha percentual de equipe capacitada para prever erros futuros. Os filtros são:
+A chefia anuncia delegação, mas continua assinando cada decisão. Durante a execução, revisa todos os documentos; o painel mostra apenas percentual treinado, embora erros finais continuem altos. Qual diagnóstico e redesenho são coerentes?
 
-A) descentralização real, controle posterior e indicador consequente.
+A) A delegação é efetiva; basta manter revisão integral durante a execução e usar cobertura de treinamento como prova conclusiva de qualidade, acesso e resultado final, sem examinar erros residuais.
 
-B) empowerment pleno, controle preventivo e indicador de resultado social.
+B) Existe empowerment pleno; a assinatura superior é simbólica, e cobertura de curso substitui erro, prazo e resultado.
 
-C) centralização prática, controle concomitante e indicador antecedente.
+C) Há centralização prática, controle concomitante e medida antecedente; delegar exige limites e autoridade, amostragem proporcional e indicadores de erro e resultado.
 
-D) delegação completa, controle de mercado e indicador financeiro final.
+D) A situação representa controle de mercado; deve-se precificar decisões, abolir competência formal e medir apenas economia obtida.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. A assinatura retém decisão, a validação ocorre durante e capacitação precede o erro.
-- **B:** Incorreta. Não há autonomia real, e a validação já ocorre durante a atividade.
-- **C:** Correta. Cada classificação corresponde ao poder efetivo, ao momento e à posição causal da medida.
-- **D:** Incorreta. Não houve autoridade transferida, preço/competição ou medida financeira.
+- **A:** Incorreta. Assinatura retém autoridade, revisão ocorre durante e treinamento não comprova qualidade final.
+- **B:** Incorreta. Autonomia nominal não é empowerment, e indicador de capacidade não substitui entrega e efeito.
+- **C:** Correta. Classifica poder, momento e posição causal e propõe delegação e controle compatíveis com risco.
+- **D:** Incorreta. Preço e competição não foram descritos e não substituem competência nem controle administrativo.
 
-**Conceito:** Rótulo formal, momento de controle e natureza do indicador devem ser verificados pela prática.
+**Conceito:** Delegação efetiva combina autoridade e limites; controle pode ser proporcional ao risco; indicadores antecedentes precisam de medidas consequentes.
 
-**Pegadinha:** Aceitar a palavra “delegar” e ignorar quem continua decidindo.
+**Pegadinha:** Usar rótulo de autonomia, cem por cento de revisão ou cobertura de treinamento como prova de resultado.
 
-**Raciocínio:** 1) localize assinatura; 2) marque quando ocorre validação; 3) veja se a medida precede ou registra resultado.
+**Raciocínio:** Verifique quem decide, quando se controla, qual risco justifica intensidade e que indicador confirma o efeito.
 
 **Nível:** Muito difícil
 
@@ -1771,7 +1771,7 @@ Após mudança familiar, uma servidora passa a valorizar flexibilidade de horár
 
 A) equilíbrio exige igualdade monetária exata entre contribuição e incentivo.
 
-B) incentivos não econômicos são irrelevantes para a permanência organizacional.
+B) incentivos não econômicos são irrelevantes para a permanência e o desempenho organizacional.
 
 C) a utilidade percebida dos incentivos varia entre pessoas e ao longo do tempo.
 
@@ -1853,11 +1853,11 @@ D) apenas candidatos externos disponíveis no mercado de trabalho.
 
 Uma promoção interna ocupa a posição superior, mas deixa aberta a função anterior do promovido. Esse risco do recrutamento interno é denominado, no contexto estudado:
 
-A) baixa validade da técnica seletiva.
+A) baixa validade preditiva da técnica seletiva aplicada aos candidatos.
 
-B) ausência de padronização entre candidatos.
+B) ausência de padronização na comparação dos critérios entre candidatos internos.
 
-C) barreira discriminatória criada pela descrição do cargo.
+C) barreira discriminatória criada pelos requisitos formais da descrição do cargo.
 
 D) efeito cascata de vaga ao deslocar a necessidade para outra posição.
 
@@ -2021,13 +2021,13 @@ D) aumentar etapas sem relação com o cargo, porque quantidade garante validade
 
 Um profissional conhece a norma e demonstra habilidade em simulação, mas se recusa a aplicar o procedimento no trabalho real. A lacuna predominante está em:
 
-A) conhecimento, pois não reteve o conteúdo normativo.
+A) conhecimento, pois não reteve o conteúdo normativo exigido no trabalho.
 
 B) atitude, pois falta disposição para mobilizar o que sabe e sabe fazer.
 
-C) habilidade, pois a simulação não demonstrou execução técnica.
+C) habilidade, pois a simulação não demonstrou execução técnica em situação controlada.
 
-D) competência organizacional, independentemente da conduta individual.
+D) competência organizacional, independentemente da conduta individual observada.
 
 <details>
 <summary>Comentário e gabarito</summary>
@@ -2095,7 +2095,7 @@ D) estereótipo e leniência.
 
 </details>
 
-### S049 — Demanda maior sem falta de pessoas
+### S049 — Capacidade suficiente, fluxo incapaz
 
 **Nível:** Muito difícil
 
@@ -2103,31 +2103,31 @@ D) estereótipo e leniência.
 
 **Referência:** [Dia 5 — gestão de pessoas](semana_01_estudo.md#dia-5-gestao-pessoas)
 
-A demanda futura cresce; o quadro e as competências são suficientes; o gargalo decorre de aprovação redundante. A resposta estratégica inicial é:
+A demanda crescerá 30%. O quadro possui quantidade e competência totais, mas picos estão mal distribuídos, duas aprovações repetem controle e o sistema exige dupla digitação. Como responder antes de ampliar pessoal?
 
-A) redesenhar o processo antes de recrutar ou capacitar, pois a lacuna não está nas pessoas.
+A) Simular demanda por período e competência, redistribuir capacidade, eliminar redundâncias, integrar registros, pilotar o fluxo e medir a lacuna residual.
 
-B) contratar externamente, pois aumento de demanda comprova insuficiência quantitativa.
+B) Contratar imediatamente 30% mais pessoas, manter aprovações e sistema e usar aumento de demanda como prova suficiente de carência.
 
-C) aplicar treinamento técnico, pois todo gargalo decorre de lacuna individual de habilidade.
+C) Repetir capacitação técnica para todos, pois qualquer fila comprova falta de habilidade mesmo quando o trabalho e o sistema geram espera.
 
-D) promover recrutamento interno, pois movimentação elimina aprovações desnecessárias.
+D) Promover recrutamento interno e transferir pessoas aleatoriamente, sem medir picos, redesenhar decisões ou acompanhar prazo e qualidade.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** A.
 
-- **A:** Correta. Estratégia, oferta suficiente e causa processual orientam redesign como primeira resposta.
-- **B:** Incorreta. A análise já demonstrou capacidade quantitativa e qualitativa suficiente.
-- **C:** Incorreta. Conhecimento não remove etapa redundante do fluxo.
-- **D:** Incorreta. Movimentar pessoas não altera automaticamente a regra de aprovação.
+- **A:** Correta. Integra previsão, segmentação da oferta, mobilidade, processo, tecnologia, experimento e nova mensuração.
+- **B:** Incorreta. Percentual de demanda não se converte automaticamente em igual percentual de quadro, sobretudo com desperdício conhecido.
+- **C:** Incorreta. Treinamento não remove aprovação duplicada, desbalanceamento temporal ou retrabalho sistêmico.
+- **D:** Incorreta. Mobilidade sem diagnóstico e redesign apenas desloca o gargalo e pode criar outro.
 
-**Conceito:** Planejamento de pessoas escolhe resposta após comparar demanda, oferta e causa da lacuna.
+**Conceito:** Planejamento de pessoas confronta demanda e oferta por quantidade, competência e tempo antes de escolher pessoas, processo ou tecnologia.
 
-**Pegadinha:** Transformar crescimento da demanda em autorização automática para contratar.
+**Pegadinha:** Responder ao volume bruto com contratação ou curso sem localizar capacidade ociosa e causa da fila.
 
-**Raciocínio:** 1) confira quantidade; 2) confira competência; 3) localize o gargalo; 4) aja sobre sua causa.
+**Raciocínio:** Aplique seis filtros: período, competência, distribuição, regra, sistema e lacuna remanescente após o piloto.
 
 **Nível:** Muito difícil
 
@@ -2137,7 +2137,7 @@ D) promover recrutamento interno, pois movimentação elimina aprovações desne
 
 </details>
 
-### S050 — Aprendeu, mas não consegue transferir
+### S050 — Aprendizagem bloqueada pelo sistema
 
 **Nível:** Muito difícil
 
@@ -2145,31 +2145,31 @@ D) promover recrutamento interno, pois movimentação elimina aprovações desne
 
 **Referência:** [Dia 5 — gestão de pessoas](semana_01_estudo.md#dia-5-gestao-pessoas)
 
-Participantes aprovam o curso e dominam a prova prática, mas a chefia proíbe o novo método e o desempenho não muda. A leitura correta é:
+O curso recebe avaliação positiva e a prova prática confirma domínio. No trabalho, a chefia proíbe o método, o sistema não oferece permissão e o bônus premia a rotina antiga; aplicação e resultado permanecem inalterados. Qual plano avaliativo é coerente?
 
-A) reação e aprendizagem baixas, com resultado alto e necessidade de repetir o conteúdo.
+A) Declarar baixos reação e aprendizado, repetir o mesmo conteúdo e manter autoridade, sistema e incentivo sem nova medição.
 
-B) comportamento transferido, mas ausência de conhecimento e de apoio organizacional.
+B) Registrar comportamento transferido pela prova, atribuir o resultado aos participantes e usar presença como evidência de aplicação sustentada.
 
-C) resultado comprovado, pois satisfação e prova prática substituem aplicação no trabalho.
+C) Declarar resultado comprovado por satisfação e nota final, dispensando observação no trabalho e indicador organizacional posterior.
 
-D) reação e aprendizagem positivas, sem comportamento/resultado por barreira do ambiente de trabalho.
+D) Reconhecer reação e aprendizagem, tratar autoridade, acesso e incentivo, apoiar prática e então medir comportamento, transferência e resultado.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** D.
 
-- **A:** Incorreta. Satisfação e domínio foram positivos, e não houve resultado alto.
-- **B:** Incorreta. A aplicação foi bloqueada, e o conhecimento apareceu na prova.
-- **C:** Incorreta. Reação e aprendizagem não comprovam transferência ou efeito organizacional.
-- **D:** Correta. Os dois primeiros níveis ocorreram, mas a chefia impediu comportamento e resultado.
+- **A:** Incorreta. As duas primeiras evidências foram positivas, e repetir conteúdo não remove três barreiras ambientais.
+- **B:** Incorreta. Prova mede aprendizagem; comportamento exige aplicação no trabalho e não pode ser presumido pela presença.
+- **C:** Incorreta. Satisfação e aprendizagem não substituem transferência nem efeito na entrega organizacional.
+- **D:** Correta. Classifica níveis, intervém nas condições de mobilização e prevê mensuração temporal dos efeitos posteriores.
 
-**Conceito:** Transferência depende de aprendizagem e de condições organizacionais para aplicar o novo comportamento.
+**Conceito:** Transferência exige aprendizagem, oportunidade, suporte, acesso e incentivos coerentes, seguida de evidência no trabalho e no resultado.
 
-**Pegadinha:** Prescrever novo curso quando a barreira não é falta de aprendizagem.
+**Pegadinha:** Culpar o participante ou prescrever outro curso quando liderança, tecnologia e recompensa bloqueiam a aplicação.
 
-**Raciocínio:** 1) classifique reação; 2) classifique aprendizagem; 3) procure uso no trabalho; 4) identifique a barreira contextual.
+**Raciocínio:** Aplique seis filtros: reação, aprendizagem, autoridade, recurso, incentivo e medida posterior de comportamento e resultado.
 
 **Nível:** Muito difícil
 
@@ -2561,7 +2561,7 @@ D) estabilidade comprovada, pois causa especial só existe após violar uma espe
 
 </details>
 
-### S060 — Implantação híbrida e melhoria contínua
+### S060 — Projeto híbrido, transição e BPM
 
 **Nível:** Muito difícil
 
@@ -2569,31 +2569,31 @@ D) estabilidade comprovada, pois causa especial só existe após violar uma espe
 
 **Referência:** [Dia 6 — qualidade, projetos, processos e estatística](semana_01_estudo.md#dia-6-qualidade-projetos-processos)
 
-Normas estáveis orientam a infraestrutura; a jornada digital evolui por testes; SIPOC delimita o fluxo; após a entrega, o ciclo de melhoria continua. A combinação é:
+Uma implantação reúne infraestrutura regulada e estável, jornada digital ainda incerta e processo atual não validado. O produto terá operação permanente, benefícios tardios e necessidade de melhoria após a equipe temporária encerrar. Qual governança integra essas dimensões?
 
-A) projeto apenas preditivo, organograma funcional e encerramento definitivo de toda gestão do processo.
+A) Planejar tudo de modo preditivo, copiar o procedimento como AS-IS e encerrar dono, indicadores e melhoria junto com o projeto.
 
-B) projeto apenas adaptativo, EAP como cronograma e BPM restrito ao software implantado.
+B) Tratar tudo como backlog adaptativo, usar EAP como cronograma, automatizar antes da análise, atribuir benefício futuro à equipe dissolvida e dispensar responsável pela transição.
 
-C) abordagem híbrida, delimitação de processo por SIPOC e BPM contínuo após o projeto.
+C) Combinar previsibilidade física e ciclos digitais, validar fronteiras e AS-IS, integrar interfaces e aceite e transferir dono, métricas e ciclo BPM à operação.
 
-D) operação sem projeto, GUT como mapa detalhado e BPMN como sistema de automação.
+D) Classificar todo esforço como operação, usar GUT para desenhar fluxo e considerar BPMN e BPMS substitutos da governança contínua.
 
 <details>
 <summary>Comentário e gabarito</summary>
 
 **Gabarito:** C.
 
-- **A:** Incorreta. Parte digital requer adaptação, SIPOC não é organograma e o processo continua sendo gerido.
-- **B:** Incorreta. Há componente estável, EAP não define cronograma e BPM é disciplina.
-- **C:** Correta. Cada conceito corresponde à combinação de estabilidade, fronteira do fluxo e continuidade gerencial.
-- **D:** Incorreta. Há esforço temporário, GUT prioriza problemas e BPMN é notação.
+- **A:** Incorreta. Ignora incerteza digital, validação do trabalho real e continuidade da governança do processo.
+- **B:** Incorreta. Mistura decomposição e tempo, automatiza desperdício e deixa benefício sem responsável operacional.
+- **C:** Correta. Integra abordagem por componente, descoberta do processo, dependências, transição, benefício e melhoria contínua.
+- **D:** Incorreta. Projeto temporário existe, GUT não mapeia fluxo e notação ou software não substituem BPM.
 
-**Conceito:** Projeto pode implantar mudança em processo que continuará submetido à disciplina de BPM.
+**Conceito:** Projeto híbrido implanta mudança; transição entrega capacidade e responsabilidade; BPM governa o processo e seus benefícios depois.
 
-**Pegadinha:** Fazer o fim do projeto encerrar a governança e a melhoria do processo implantado.
+**Pegadinha:** Escolher uma abordagem única, automatizar procedimento não validado ou encerrar a governança com a equipe do projeto.
 
-**Raciocínio:** 1) separe componentes estáveis/incertos; 2) identifique a ferramenta de delimitação; 3) diferencie esforço temporário e gestão contínua.
+**Raciocínio:** Aplique sete filtros: estabilidade, incerteza, AS-IS, interface, aceite, dono do benefício e ciclo pós-projeto.
 
 **Nível:** Muito difícil
 
