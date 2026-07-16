@@ -52,30 +52,32 @@ Redija texto dissertativo-argumentativo, de 20 a 30 linhas, apresentando uma tes
 
 O modelo abaixo foi dividido em 24 linhas de treino. A quantidade efetiva na folha depende do tamanho da letra e da largura disponível; calibre manuscrevendo em folha semelhante à da banca. Não numere as linhas na prova.
 
-01. A digitalização tornou possível solicitar documentos, acompanhar pedidos e acessar  
-02. informações sem deslocamento. Essa conveniência, entretanto, não garante inclusão  
-03. por si só. Para ampliar a cidadania, o serviço digital precisa combinar simplicidade  
-04. e acessibilidade com segurança, apoio ao usuário e avaliação contínua dos resultados.  
-05. Em primeiro lugar, barreiras tecnológicas podem reproduzir desigualdades já existentes.  
-06. Conexão precária, dificuldade de leitura, deficiência e pouca familiaridade com sistemas  
-07. tornam um procedimento aparentemente fácil inacessível para parte da população. Por  
-08. isso, linguagem clara, compatibilidade com recursos assistivos e etapas compreensíveis  
-09. devem integrar o desenho do serviço. Também é necessário manter orientação humana  
-10. e alternativas de atendimento para quem não consegue concluir a jornada digital.  
-11. Além do acesso, a confiança condiciona a utilização das ferramentas. O cidadão precisa  
-12. saber quais dados são solicitados, por que são necessários e como poderá corrigir uma  
-13. informação ou contestar uma decisão. Canais de suporte, comunicação transparente e  
-14. proteção adequada reduzem insegurança e permitem identificar falhas antes que elas  
-15. atinjam um número maior de pessoas. Indicadores de prazo, abandono e retrabalho devem  
-16. ser analisados junto às manifestações dos usuários, e não apenas ao volume de acessos.  
-17. É verdade que a automação pode diminuir custos e acelerar respostas. Contudo, rapidez  
-18. sem resolutividade apenas transfere ao usuário o esforço antes realizado pelo órgão,  
-19. enquanto economia obtida pela exclusão de públicos vulneráveis contraria a finalidade  
-20. social do serviço. Eficiência e inclusão, portanto, precisam ser avaliadas em conjunto.  
-21. Assim, a tecnologia amplia a cidadania quando facilita a vida das pessoas sem converter  
-22. limitações individuais em impedimentos. O caminho é desenhar serviços a partir das  
-23. necessidades reais, oferecer suporte e aprender com dados e participação. Dessa forma,  
+```text
+01. A digitalização tornou possível solicitar documentos, acompanhar pedidos e acessar
+02. informações sem deslocamento. Essa conveniência, entretanto, não garante inclusão
+03. por si só. Para ampliar a cidadania, o serviço digital precisa combinar simplicidade
+04. e acessibilidade com segurança, apoio ao usuário e avaliação contínua dos resultados.
+05. Em primeiro lugar, barreiras tecnológicas podem reproduzir desigualdades já existentes.
+06. Conexão precária, dificuldade de leitura, deficiência e pouca familiaridade com sistemas
+07. tornam um procedimento aparentemente fácil inacessível para parte da população. Por
+08. isso, linguagem clara, compatibilidade com recursos assistivos e etapas compreensíveis
+09. devem integrar o desenho do serviço. Também é necessário manter orientação humana
+10. e alternativas de atendimento para quem não consegue concluir a jornada digital.
+11. Além do acesso, a confiança condiciona a utilização das ferramentas. O cidadão precisa
+12. saber quais dados são solicitados, por que são necessários e como poderá corrigir uma
+13. informação ou contestar uma decisão. Canais de suporte, comunicação transparente e
+14. proteção adequada reduzem insegurança e permitem identificar falhas antes que elas
+15. atinjam um número maior de pessoas. Indicadores de prazo, abandono e retrabalho devem
+16. ser analisados junto às manifestações dos usuários, e não apenas ao volume de acessos.
+17. É verdade que a automação pode diminuir custos e acelerar respostas. Contudo, rapidez
+18. sem resolutividade apenas transfere ao usuário o esforço antes realizado pelo órgão,
+19. enquanto economia obtida pela exclusão de públicos vulneráveis contraria a finalidade
+20. social do serviço. Eficiência e inclusão, portanto, precisam ser avaliadas em conjunto.
+21. Assim, a tecnologia amplia a cidadania quando facilita a vida das pessoas sem converter
+22. limitações individuais em impedimentos. O caminho é desenhar serviços a partir das
+23. necessidades reais, oferecer suporte e aprender com dados e participação. Dessa forma,
 24. a inovação permanece instrumento de acesso a direitos, e não uma nova barreira social.
+```
 
 ### Como o modelo se organiza
 
