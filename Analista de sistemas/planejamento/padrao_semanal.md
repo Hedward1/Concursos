@@ -42,7 +42,7 @@ A ocorrência de qualquer item abaixo reprova o material, independentemente da n
 | Cobertura e profundidade da teoria | 20 | Conceitos, funcionamento, diferenças, aplicação, memorização e pegadinhas suficientes para resolver as questões. |
 | Exemplos e prática guiada | 15 | No mínimo dois exemplos resolvidos por tópico importante, com raciocínio, solução e erro comum. |
 | Alinhamento entre estudo e questões | 15 | Toda questão aponta para seção real da teoria; nenhuma cobrança órfã; distribuição coerente com o dia. |
-| Qualidade das questões | 15 | Enunciados claros, níveis calibrados, distribuição 20/20/10 e 8/8/4, distratores plausíveis, variedade e apenas uma resposta correta. |
+| Qualidade das questões | 15 | Enunciados claros, níveis calibrados pelo raciocínio real, matriz de produção 20/20/10 e 8/8/4 ou exceção pós-auditoria documentada, distratores plausíveis, variedade e apenas uma resposta correta. |
 | Qualidade dos comentários | 15 | Correta justificada; A–D analisadas; conceito, pegadinha, estratégia de resolução e referência precisa. |
 | Organização e uso pedagógico | 5 | Cronograma, títulos, tabelas, checklist, revisão ativa e navegação consistentes. |
 | **Total** | **100** | **Aprovação mínima: 90 pontos e nenhuma falha eliminatória.** |
@@ -66,10 +66,11 @@ Cada semana possui seis dias. Cada dia deve funcionar quando lido de cima para b
 6. Bloco 4 — matéria fixa ou revisão programada;
 7. Bloco 5 — Português ou prática discursiva;
 8. Bloco 6 — recuperação ativa e caderno de erros, sem conteúdo novo;
-9. mini revisão e perguntas de fixação;
-10. checklist de domínio;
-11. roteiro das questões, com usos e carga distribuída;
-12. correção, registro dos erros e fechamento.
+9. mini revisão;
+10. perguntas de fixação;
+11. checklist de domínio;
+12. roteiro das questões, com usos e carga distribuída;
+13. correção, registro dos erros e fechamento.
 
 O mapa de conexões do dia deve aparecer depois do ensino dos conceitos que representa e antes do fechamento. Em Mermaid ou formato equivalente, deve mostrar fluxo, dependências, decisões e de três a cinco pegadinhas; seus nós devem apontar para seções reais quando o formato permitir.
 
@@ -85,7 +86,7 @@ Cada cronograma deve distinguir:
 |---|---|---|
 | Sessão A | abertura e início dos Blocos 1–3, na ordem física | 2h30 a 3h líquidas |
 | Sessão B | continuação na ordem física; conclusão dos Blocos 1–3 e avanço compatível | 2h30 a 3h líquidas |
-| Sessão C, quando necessária | conclusão ou saldo dos Blocos 4–6, mini revisão, amostra fixa de até 10 Essenciais e correção integral | 2h30 a 3h líquidas; última sessão do dia |
+| Sessão C, quando necessária | conclusão ou saldo dos Blocos 4–6, mini revisão, fixação, checklist, amostra fixa de até 10 Essenciais e correção integral | 2h30 a 3h líquidas; última sessão do dia |
 | Revisão D+2 | demais Essenciais, corrigidas antes do aprofundamento; depois, retorno às âncoras e Aprofundamento | ciclo futuro próprio de 2h30 a 3h |
 | Revisão D+7 | recuperação espaçada e caderno de erros | ciclo futuro próprio de 2h30 a 3h |
 | Simulado do ciclo seguinte | itens reservados, sem consulta, e correção posterior | ciclo futuro próprio de 2h30 a 3h |
@@ -184,7 +185,7 @@ Toda questão extra vinculada aos Blocos 4, 5 ou 6 deve conservar os metadados c
 
 O comentário repete o nível, o uso e a mesma referência. A auditoria deve ler individualmente todas as principais e extras; quando uma questão já estiver correta e coberta, basta preservar seu conteúdo e tornar a rastreabilidade precisa.
 
-As extras devem utilizar a `Revisão fixa do Dia X`. Questões de revisão mista devem apontar para um mapa de revisão ou para seções específicas já estudadas.
+As 20 questões complementares devem integrar o `Banco complementar do Dia X` e apontar para a seção anterior e suficiente correspondente. Questões de revisão mista devem apontar para um mapa de revisão ou para seções específicas já estudadas.
 
 Antes da primeira questão, inclua um roteiro operacional que distribua o banco completo:
 
@@ -294,6 +295,8 @@ Além da contagem automática, todas as questões devem ser lidas com este check
 - cada explicação ainda descreve a alternativa da mesma letra depois de qualquer reordenação;
 - o conceito aparece na teoria indicada;
 - o nível aparece logo abaixo do título, repete-se no comentário e corresponde ao esforço exigido;
+- o uso corresponde à função pedagógica individual, sem classificação automática pela numeração;
+- nível, uso, gabarito e referência coincidem no item, na tabela de respostas e no comentário;
 - a correta não se destaca indevidamente por extensão, especificidade, tom ou construção gramatical;
 - não há repetição literal, duplicata aproximada ou variação superficial de outra questão;
 - não há três letras iguais consecutivas nem motivo de duas a quatro letras repetido três vezes sem revisão e justificativa;
@@ -311,6 +314,7 @@ Antes de editar, classifique individualmente todas as questões principais e ext
 - `Ambígua`: mais de uma leitura ou resposta permanece defensável.
 - `Nível superestimado`: o rótulo exige cadeia de raciocínio maior do que o item realmente apresenta;
 - `Nível subestimado`: o item exige integração ou inferências acima do rótulo atribuído.
+- `Uso operacional inadequado`: o conteúdo pode estar correto, mas a etapa `Essenciais`, `Aprofundamento`, `Revisão` ou `Simulado` não corresponde à função pedagógica individual.
 
 Para cada item que não esteja `Coberto`, escolha uma ação rastreável: complementar teoria suficiente antes da cobrança; mover para depois do ensino; reformular; substituir; ou remover quando estiver fora do planejamento. Uma frase isolada adicionada apenas para legitimar o gabarito não corrige falta de cobertura.
 
@@ -339,7 +343,7 @@ Confirme:
 - comandos negativos acompanhados de observação pedagógica;
 - exemplos importantes com raciocínio e resposta verificados;
 - matriz de rastreabilidade sem questão órfã ou tópico cobrado sem teoria;
-- ordem física validada: Blocos 1–3, Blocos 4–6, revisão, checklist, questões, correção e fechamento;
+- ordem física validada: abertura, orientação, Blocos 1–3, Blocos 4–6, mini revisão, fixação, checklist, roteiro do banco, correção e fechamento;
 - nenhuma seção-remendo posterior à revisão, ao checklist ou às questões;
 - carga de cada sessão executável em aproximadamente 3 horas líquidas e banco completo distribuído por uso;
 - rubrica preenchida com pelo menos 90/100 e zero critério eliminatório;
@@ -392,9 +396,9 @@ Semanas extensas não devem ser criadas ou revisadas simultaneamente em trilhas 
 
 ### Plano transitório de migração — julho de 2026
 
-Neste ciclo de migração, a ordem é: padrões semanais; Semana 2 de Analista em lotes D1–D2, D3–D4 e D5–D6; depois Direito, também em lotes de até dois dias. Não editar os bancos de Analista e Direito ao mesmo tempo. Este roteiro deixa de reger o trabalho quando os materiais legados indicados abaixo forem migrados.
+Neste ciclo de migração, o lote Semana 1 de Analista, D1–D2, está tecnicamente concluído. A ordem pendente é: Semana 1 de Analista, D5–D6; Semana 2 de Analista em lotes D1–D2, D3–D4 e D5–D6; depois Direito, também em lotes de até dois dias. Cada lote deve receber relatório, validação e publicação próprios antes da abertura do seguinte. Não editar os bancos de Analista e Direito ao mesmo tempo. Este roteiro deixa de reger o trabalho quando os materiais legados indicados abaixo forem migrados.
 
 ## Aplicação às semanas existentes
 
-- **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. As 80 extras dos Blocos 4–6 nos Dias 3–6 permanecem aceitas no recorte da auditoria anterior. As 100 principais dos Dias 3–4 receberam auditoria semântica individual, teoria anterior suficiente, uso operacional e referência precisa; seus níveis foram recalibrados com exceção documentada no relatório do lote. Os Dias 1–2 permaneceram intactos e ainda não possuem classificação de nível; as 100 principais dos Dias 5–6 continuam fora deste aceite. Por isso, a semana conserva **conformidade parcial** fora dos recortes já auditados.
+- **Semana 1:** a estrutura de 300 principais, 120 complementares e 420 comentários está completa. Os Dias 1–2 foram auditados individualmente e aprovados tecnicamente no lote registrado em `relatorio_auditoria_semana_01_dias_1_2.md`. Os Dias 3–4 constituem o **modelo aprovado e congelado** no commit `1fcfbe3`: a teoria antecede a cobrança, a jornada termina em no máximo três sessões e o banco foi classificado individualmente. As 100 principais dos Dias 5–6 continuam fora deste aceite. Por isso, a semana conserva **conformidade parcial** e não pode ser declarada concluída antes da validação e publicação de cada lote.
 - **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente. As 120 extras dos Blocos 4–6 foram auditadas, receberam os seis metadados obrigatórios e níveis na matriz 48/48/24; os blocos foram normalizados, os comentários do Dia 6 foram individualizados e as divergências de cabeçalho da Questão 1 do Dia 1 e da Questão 3 do Dia 2 foram corrigidas. As 300 principais continuam no formato legado, sem níveis, e serão migradas em três lotes de dois dias; portanto, a semana segue **em migração** fora do recorte B4–B6 aceito.

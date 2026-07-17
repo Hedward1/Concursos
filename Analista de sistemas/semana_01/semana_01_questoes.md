@@ -4,13 +4,13 @@
 
 Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
-**Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. As 300 questões principais e as 120 questões extras são autorais. Todas seguem o estilo de cobrança do Instituto Consulplan. As provas públicas da banca foram usadas somente como referência de estilo, sem reprodução de questões reais.
+**Critério de autoria:** esta versão não reproduz questões reais de provas anteriores. As 300 questões principais e as 120 questões do banco complementar são autorais. Todas seguem o estilo de cobrança do Instituto Consulplan. As provas públicas da banca foram usadas somente como referência de estilo, sem reprodução de questões reais.
 
 **Formato:** todas as questões têm quatro alternativas, de A) a D), conforme o edital do CRA-PR 2026.
 
-**Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões extras de revisão fixa (20 por dia).
+**Total:** 420 questões, sendo 300 questões principais (50 por dia) e 120 questões do banco complementar (20 por dia).
 
-**Níveis a partir do Dia 3:** `Médio`, `Difícil` e `Muito difícil`. A matriz de produção é 20/20/10 para 50 principais e 8/8/4 para 20 extras, mas a auditoria semântica posterior deve corrigir rótulos superestimados ou subestimados e documentar a exceção. Após a auditoria deste lote, o Dia 3 ficou em 25/18/7; o Dia 4 passou a 30/15/5 depois da reescrita substantiva dos casos integrados. As justificativas estão em `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente. Os questionários dos Dias 1 e 2 foram preservados nesta revisão.
+**Níveis auditados:** `Médio`, `Difícil` e `Muito difícil`. A matriz 20/20/10 para 50 principais e 8/8/4 para 20 complementares orienta a produção, mas a auditoria semântica deve corrigir rótulos superestimados ou subestimados e documentar a exceção. As distribuições finais são: Dia 1, 50/16/4; Dia 2, 50/15/5; Dia 3, 25/18/7; Dia 4, 30/15/5. Os Dias 5 e 6 permanecem no formato anterior até o lote próprio. As justificativas constam dos relatórios de auditoria dos Dias 1–2 e 3–4. A dificuldade deve decorrer do conhecimento exigido e de distratores plausíveis, nunca de ambiguidade ou informação ausente.
 
 ---
 
@@ -34,11 +34,16 @@ Arquivo de questões para acompanhar a `semana_01_estudo.md`.
 
 # Dia 1 — Arquitetura e Organização de Computadores
 
-**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.3 e fontes oficiais/estilo indicadas no início deste arquivo.
+
+**Calendário de uso:** a primeira passagem termina após a resolução e a correção de `Q1`, `Q2`, `Q3`, `Q5`, `Q6`, `Q7`, `Q11`, `Q13`, `E1` e `E16`. As outras dez Essenciais — `Q9`, `Q12`, `Q16`, `Q17`, `Q25`, `E2`, `E3`, `E8`, `E13` e `E19` — abrem D+2 e devem ser corrigidas antes do Aprofundamento. O saldo de Aprofundamento continua antes de D+7; Revisão fica em D+7; Simulado pertence ao ciclo seguinte.
 
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 Em uma rotina de diagnóstico, um analista precisa converter o valor binário 101101 para decimal. O resultado correto é:
 
@@ -48,6 +53,9 @@ C) 45
 D) 37
 
 ### Questão 2
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 Um dump de memória apresenta o byte 1111 0000. Em hexadecimal, esse valor deve ser representado por:
 
@@ -57,6 +65,9 @@ C) 0F
 D) E0
 
 ### Questão 3
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 Considere as assertivas sobre unidades de informação.
 
@@ -72,102 +83,135 @@ C) II e III
 D) I, II e III
 
 ### Questão 4
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
 Assinale a alternativa incorreta sobre a hierarquia de memória.
 
 A) Registradores ficam no nível mais rápido e próximo da CPU.
-B) O SSD é normalmente mais rápido que registradores e cache.
+B) A cache, por possuir menor capacidade, é normalmente mais lenta que a RAM durante um acesso.
 C) A RAM é volátil e usada como memória principal durante a execução de programas.
 D) A memória cache costuma ser usada para manter dados frequentemente acessados próximos da CPU.
 
 ### Questão 5
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
 Durante a execução de um programa, a CPU precisa realizar uma soma e uma comparação lógica. O componente diretamente associado a essas operações é:
 
-A) Barramento de endereços
-B) Memória secundária
-C) ULA/ALU
-D) Unidade de controle
+A) unidade de controle, que coordena as etapas da instrução.
+B) cache, que aproxima dados frequentemente usados da CPU.
+C) ULA/ALU, que executa operações aritméticas e lógicas.
+D) registradores, que mantêm temporariamente operandos e resultados.
 
 ### Questão 6
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
-Um técnico afirma que a RAM é suficiente como política de armazenamento permanente porque possui alta velocidade. Essa afirmação é:
+Um técnico afirma que a RAM, por ser rápida, basta para armazenar permanentemente os dados de uma aplicação. Essa afirmação é:
 
-A) incorreta apenas se o sistema operacional for Linux.
-B) incorreta, pois a RAM é volátil e não substitui SSD/HD para persistência.
-C) correta, pois toda memória rápida é permanente por definição.
-D) correta apenas em processadores de 64 bits.
+A) correta, porque o encerramento ordenado transforma automaticamente a RAM em memória não volátil.
+B) incorreta, pois a RAM é volátil e a persistência exige SSD, HD ou outro meio não volátil.
+C) correta, porque o circuito de refresh da RAM preserva os dados mesmo depois da falta de energia.
+D) incorreta apenas quando a cache utiliza write-back e ainda possui linhas marcadas como dirty.
 
 ### Questão 7
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Interrupções e E/S](semana_01_estudo.md#s1-d1-interrupcoes-io)
 
-Em uma placa de rede, a chegada de um pacote pode sinalizar à CPU que há evento a tratar. Esse mecanismo é melhor descrito como:
+Em uma placa de rede, a chegada de um pacote faz o controlador sinalizar à CPU que existe um evento a tratar, sem consulta contínua do processador. Esse mecanismo é:
 
-A) interrupção
-B) compilação
-C) paginação
-D) normalização
+A) interrupção gerada pelo dispositivo.
+B) polling executado continuamente pela CPU.
+C) transferência por DMA sem sinal de conclusão.
+D) espera ocupada no registrador de estado.
 
 ### Questão 8
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
-Analise as assertivas sobre interrupções.
+Um controlador pode acompanhar a conclusão de uma operação de E/S por polling ou por interrupção. Considere as afirmações:
 
-I. Interrupções podem ser usadas para tratar eventos de entrada e saída.
-II. Toda interrupção representa falha irrecuperável de hardware.
-III. Interrupções de temporizador ajudam sistemas multitarefa a alternar a execução.
+I. O polling em laço apertado pode consumir ciclos mesmo quando ainda não existe evento novo.
+II. A interrupção, por si só, transfere todo o bloco do dispositivo para a RAM, dispensando DMA.
+III. A interrupção reduz a espera ativa, embora ainda exista custo para salvar contexto e executar o tratador.
 
 Está correto apenas o que se afirma em:
 
-A) I e II
-B) II e III
-C) I, II e III
-D) I e III
+A) I.
+B) I e III.
+C) II e III.
+D) I, II e III.
 
 ### Questão 9
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
 
-Um programa trabalha com endereços virtuais, e o hardware/SO traduz esses endereços para posições reais na RAM. Essa descrição se refere a:
+Um programa utiliza endereços que são traduzidos pelo hardware e pelo sistema operacional para posições reais na RAM. Essa descrição corresponde a:
 
-A) codificação ASCII de caracteres.
-B) barramento de controle substituindo a RAM.
-C) memória virtual com tradução para endereços físicos.
-D) armazenamento permanente por firmware.
+A) memória virtual com tradução de endereços virtuais para físicos.
+B) acesso direto do programa apenas a endereços físicos globais.
+C) endereçamento imediato, no qual o operando está na instrução.
+D) endereçamento direto, sem tradução e sem isolamento entre processos.
 
 ### Questão 10
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
 
 No modo de endereçamento imediato, o operando:
 
-A) fica exclusivamente em registrador indicado indiretamente.
-B) aparece na própria instrução.
-C) é obrigatoriamente buscado em uma tabela de páginas.
-D) é sempre recuperado de um arquivo no SSD.
+A) está na memória apontada por um endereço guardado em outro local.
+B) aparece como valor literal na própria instrução.
+C) está na posição de memória indicada diretamente pela instrução.
+D) resulta da soma entre um registrador-base e um deslocamento calculado.
 
 ### Questão 11
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
 Um projeto em C possui três arquivos-fonte compilados separadamente, mas um módulo chama função definida em outro. A etapa responsável por resolver referências entre módulos e bibliotecas é:
 
 A) ligação, realizada pelo linker.
-B) interpretação linha a linha.
-C) paginação por demanda.
-D) cache write-back.
+B) compilação isolada de cada arquivo-fonte.
+C) carregamento do executável pronto na memória.
+D) montagem de instruções assembly em código objeto.
 
 ### Questão 12
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
 Assinale a alternativa correta sobre compiladores e interpretadores.
 
-A) O interpretador sempre gera executável nativo independente antes de qualquer execução.
-B) O compilador só existe em sistemas operacionais Linux.
-C) O interpretador é um componente físico obrigatório da CPU.
-D) O compilador traduz o código antes da execução; o interpretador executa/traduz de modo incremental durante a execução.
+A) O interpretador sempre produz um executável nativo autônomo antes de iniciar qualquer comando.
+B) O compilador apenas carrega na memória um executável que já foi ligado por outro programa.
+C) O interpretador combina arquivos objeto e resolve referências externas antes da execução.
+D) O compilador traduz previamente o programa; o interpretador traduz ou executa unidades durante a execução.
 
 ### Questão 13
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
 
 Um analista observa que determinado algoritmo acessa repetidamente posições próximas de um vetor. Esse comportamento tende a favorecer:
 
-A) substituição da ULA pela memória cache.
-B) conversão automática de binário para Unicode.
-C) localidade espacial e melhor aproveitamento de cache.
-D) eliminação da necessidade de memória RAM.
+A) localidade temporal, porque apenas o mesmo elemento é reutilizado.
+B) ausência de localidade, porque cada posição possui endereço distinto.
+C) localidade espacial e melhor aproveitamento das linhas de cache.
+D) write-back, porque a proximidade dos endereços determina a política de escrita.
 
 ### Questão 14
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 Considere as afirmações sobre representação de caracteres.
 
@@ -183,69 +227,99 @@ C) I e II
 D) II e III
 
 ### Questão 15
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
-Um processador de 64 bits é assim chamado, em termos gerais, por características relacionadas:
+Uma arquitetura possui registradores gerais de 64 bits, barramento de endereços de 36 bits e barramento de dados de 32 bits. Admita memória endereçada por byte. Considere:
 
-A) à largura de palavra, registradores e endereçamento, conforme a arquitetura.
-B) à quantidade fixa de 64 núcleos físicos.
-C) à velocidade mínima de internet de 64 Mbps.
-D) ao tamanho obrigatório de 64 GB de RAM.
+I. A denominação “64 bits” não significa que existam 64 núcleos.
+II. Com 36 linhas de endereço, podem ser distinguidos, em tese, `2^36` endereços de byte.
+III. O barramento de dados de 32 bits pode transportar 32 bits em paralelo por transferência, sem redefinir sozinho a largura dos registradores.
+
+Está correto o que se afirma em:
+
+A) I, apenas.
+B) II e III, apenas.
+C) I e II, apenas.
+D) I, II e III.
 
 ### Questão 16
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
 Assinale a alternativa incorreta sobre barramentos em arquitetura de computadores.
 
 A) O barramento de endereços indica a posição a ser acessada.
 B) O barramento de controle carrega sinais de coordenação, como leitura e escrita.
-C) O barramento de endereços é o responsável por executar operações aritméticas.
+C) O barramento de controle executa as operações aritméticas da instrução.
 D) O barramento de dados transporta conteúdo entre componentes.
 
 ### Questão 17
+**Nível: Difícil**
+**Uso:** Essenciais
+**Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
 
-Em uma arquitetura com pipeline, a vantagem esperada é:
+Em um pipeline, uma instrução depende do resultado da anterior e, logo depois, ocorre um desvio previsto incorretamente. A interpretação correta é:
 
-A) eliminar dependências de dados entre instruções.
-B) substituir a memória cache por registradores.
-C) aumentar a vazão ao sobrepor etapas de instruções.
-D) garantir que cada instrução individual sempre tenha latência menor.
+A) instruções independentes podem se sobrepor; a dependência insere espera e a previsão errada pode descartar trabalho.
+B) a sobreposição elimina a dependência de dados, mas o desvio ainda pode reduzir a capacidade da memória principal.
+C) o desvio incorreto aumenta necessariamente a latência da RAM, enquanto a dependência altera apenas a largura dos registradores.
+D) o pipeline garante menor latência para cada instrução, mesmo quando surgem dependências e desvios incorretos.
 
 ### Questão 18
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
 
 Uma falha de cache, ou cache miss, ocorre quando:
 
-A) o programa é compilado sem bibliotecas externas.
-B) o dado procurado não está na cache e precisa ser buscado em nível inferior da hierarquia.
-C) a CPU encontra o dado na cache L1.
-D) o sistema operacional desliga a RAM por segurança.
+A) a linha está na cache, mas foi marcada como dirty depois de uma escrita.
+B) o dado é encontrado na cache e pode ser entregue como cache hit.
+C) o dado procurado não está na cache e deve ser buscado em nível inferior.
+D) a escrita atualiza cache e RAM ao mesmo tempo pela política write-through.
 
 ### Questão 19
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 Assinale a alternativa correta sobre ponto flutuante.
 
-A) Números reais podem ser representados de forma aproximada, com possibilidade de erro de arredondamento.
-B) Todo número decimal com casas fracionárias é representado exatamente.
-C) Ponto flutuante é usado apenas para armazenar caracteres Unicode.
-D) Erros de arredondamento são impossíveis em computação digital.
+A) Uma representação finita pode aproximar certos valores reais e produzir arredondamento.
+B) Todo decimal finito possui representação binária finita e exata no mesmo número de bits.
+C) O arredondamento ocorre apenas quando há divisão por zero durante uma operação.
+D) Aumentar a quantidade de bits torna exata a representação de qualquer número real.
 
 ### Questão 20
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
-Em complemento de dois, uma característica importante é:
+Em complemento de dois com 8 bits, interprete `11111100` como inteiro com sinal e some `00000101`. O resultado correto é:
 
-A) eliminar a necessidade de bit de sinal ou codificação equivalente.
-B) representar apenas números positivos.
-C) ser uma técnica exclusiva de codificação de textos.
-D) facilitar operações aritméticas com inteiros negativos no hardware.
+A) o primeiro operando vale -124 e a soma produz -119, sem overflow.
+B) o primeiro operando vale 252 e a soma produz 1, com overflow de sinal.
+C) o primeiro operando vale -4 e a soma produz 1, com overflow de sinal.
+D) o primeiro operando vale -4 e a soma produz 1, sem overflow de sinal.
 
 ### Questão 21
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
 Um arquivo executável já ligado precisa ser colocado na memória para iniciar sua execução. Essa etapa é realizada pelo:
 
-A) montador, que traduz assembly para máquina.
-B) pré-processador, que executa o programa final.
-C) carregador, ou loader.
-D) linker, que já resolveu referências antes.
+A) montador, que traduz instruções assembly para código objeto.
+B) compilador, que traduz o código-fonte e também inicia o processo.
+C) carregador, que mapeia o executável e prepara sua execução.
+D) linker, que combina os módulos e coloca o processo em execução.
 
 ### Questão 22
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 Uma palavra de máquina de 32 bits possui quantos bytes?
 
@@ -255,51 +329,75 @@ C) 2 bytes.
 D) 8 bytes.
 
 ### Questão 23
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
 
-Em um relatório técnico, throughput e latência foram usados como métricas de desempenho. A interpretação correta é:
+Dois servidores foram medidos sob a mesma carga. O servidor X concluiu 120 requisições por segundo, com latência mediana de 40 ms; o servidor Y concluiu 100 por segundo, com latência mediana de 25 ms. Conclui-se corretamente que:
 
-A) throughput mede trabalho por unidade de tempo; latência mede tempo de resposta/espera.
-B) throughput e latência são sinônimos perfeitos.
-C) latência mede apenas capacidade de disco em GB.
-D) throughput mede exclusivamente temperatura da CPU.
+A) X possui maior throughput e também menor latência que Y.
+B) X possui maior throughput, enquanto Y possui menor latência.
+C) Y possui maior throughput, enquanto X possui menor latência.
+D) Y possui menor throughput e também maior latência que X.
 
 ### Questão 24
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
 
 Considere uma instrução hipotética MOV R1, #5, na qual #5 representa o valor literal a ser carregado. Esse exemplo ilustra:
 
-A) endereçamento indireto por memória.
-B) paginação por demanda.
-C) DMA de dispositivo.
-D) endereçamento imediato.
+A) endereçamento indireto, pois `#5` contém outro endereço a consultar.
+B) endereçamento direto, pois `#5` identifica uma posição fixa da memória.
+C) endereçamento indexado, pois `#5` deve ser somado a um registrador-base.
+D) endereçamento imediato, pois o valor literal está codificado na instrução.
 
 ### Questão 25
+**Nível: Difícil**
+**Uso:** Essenciais
+**Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
-Um dispositivo de E/S transfere dados para a memória com menor intervenção da CPU. Esse mecanismo é conhecido como:
+Para receber um bloco de um dispositivo, a CPU configura endereço, tamanho e direção da operação; o controlador move o bloco para a RAM e sinaliza a conclusão. Considere:
 
-A) linkedição dinâmica.
-B) codificação ASCII.
-C) DMA, acesso direto à memória.
-D) ULA vetorial.
+I. A CPU não precisa copiar cada byte do bloco por instrução.
+II. O DMA elimina toda participação da CPU antes e depois da transferência.
+III. Uma interrupção de conclusão é compatível com o uso de DMA.
+
+Está correto apenas o que se afirma em:
+
+A) I e II.
+B) II e III.
+C) I e III.
+D) I, II e III.
 
 ### Questão 26
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Firmware](semana_01_estudo.md#s1-d1-firmware)
 
 Assinale a alternativa correta sobre firmware.
 
-A) É uma política de escalonamento de processos.
-B) É software de baixo nível associado ao controle de hardware ou dispositivo.
-C) É sempre um aplicativo de usuário instalado no navegador.
-D) É sinônimo de memória RAM volátil.
+A) É o driver carregado pelo sistema operacional para oferecer uma interface uniforme ao dispositivo.
+B) É software de baixo nível, normalmente persistente, usado para inicializar ou controlar hardware.
+C) É a memória ROM em si, independentemente de existir código nela armazenado.
+D) É qualquer aplicativo que acesse diretamente um periférico por meio do sistema operacional.
 
 ### Questão 27
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
 Um analista compara memórias e afirma: “quanto mais próximo da CPU, em geral, menor a capacidade e maior a velocidade”. A afirmação está:
 
 A) correta para a hierarquia típica de registradores/cache/RAM/armazenamento.
-B) incorreta, pois SSD é sempre menor e mais rápido que cache.
-C) incorreta, pois registradores são os maiores armazenamentos do computador.
-D) correta apenas quando não existe cache.
+B) incorreta, porque maior capacidade implica necessariamente menor latência em qualquer tecnologia.
+C) incorreta, porque a RAM fica fisicamente mais próxima da CPU que os registradores e a cache.
+D) correta apenas para memórias não voláteis, pois volatilidade define sozinha a hierarquia.
 
 ### Questão 28
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 V/F: Sobre representação de dados, marque a sequência correta.
 
@@ -315,69 +413,93 @@ C) F, F, V.
 D) V, F, V.
 
 ### Questão 29
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
 Um sistema de 64 bits pode endereçar espaços maiores que um sistema de 32 bits, em tese, porque:
 
-A) o sistema elimina a necessidade de memória virtual.
-B) o barramento de controle deixa de existir.
+A) a largura do barramento de dados determina, sozinha, todos os endereços disponíveis.
+B) a quantidade instalada de RAM deve coincidir com todo o espaço teórico representável.
 C) a largura de endereçamento permite representar mais endereços distintos.
-D) o clock do processador é obrigatoriamente 64 vezes maior.
+D) a largura arquitetural elimina a tradução entre endereços virtuais e físicos.
 
 ### Questão 30
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Programa armazenado e ciclo de instrução](semana_01_estudo.md#s1-d1-von-neumann-ciclo)
 
 Assinale a incorreta sobre execução de instruções em uma CPU.
 
-A) A CPU executa instruções sem qualquer uso de registradores.
+A) A CPU conclui instruções sem usar registradores para instrução, operandos ou resultados.
 B) A etapa de busca obtém uma instrução da memória.
 C) A etapa de decodificação interpreta qual operação deve ser realizada.
 D) A execução pode envolver a ULA, registradores e acesso à memória.
 
 ### Questão 31
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
 
 Um administrador observa que um programa acessa repetidamente o mesmo valor em curto intervalo. Esse comportamento exemplifica:
 
-A) localidade temporal.
-B) localidade espacial apenas.
-C) interrupção mascarável.
-D) endereçamento por registrador obrigatório.
+A) política write-through, pois todo reuso exige escrita imediata na RAM.
+B) localidade espacial, pois envolve apenas endereços vizinhos ao valor.
+C) ausência de localidade, pois o mesmo dado não pode permanecer na cache.
+D) localidade temporal, pois o mesmo dado tende a ser reutilizado em intervalo curto.
 
 ### Questão 32
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Programa armazenado e ciclo de instrução](semana_01_estudo.md#s1-d1-von-neumann-ciclo)
 
 Em computação, a expressão “programa armazenado” associada à arquitetura de von Neumann indica que:
 
-A) programas nunca usam memória principal.
-B) dados ficam apenas em dispositivos de entrada.
-C) a CPU deixa de buscar instruções.
-D) instruções e dados podem residir na memória para serem processados pela CPU.
+A) programas permanecem apenas no armazenamento secundário e não ocupam a memória principal.
+B) instruções ficam na CPU, enquanto apenas os dados podem ser armazenados na memória principal.
+C) dados e instruções exigem memórias totalmente separadas para que a CPU consiga executar o programa.
+D) instruções e dados podem residir na memória e ser buscados pela CPU durante o processamento.
 
 ### Questão 33
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
 Uma rotina em assembly é traduzida para código de máquina por um:
 
-A) loader, que carrega o executável em memória.
-B) escalonador, que escolhe processo para CPU.
-C) montador, ou assembler.
-D) linker, que apenas resolve referências entre objetos.
+A) loader, que mapeia na memória um executável já formado.
+B) compilador, que recebe necessariamente código-fonte de alto nível.
+C) montador, ou assembler, que converte as instruções assembly.
+D) linker, que combina objetos e resolve referências entre módulos.
 
 ### Questão 34
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
-Em um cenário de suporte, um usuário pergunta por que aumentar a RAM pode melhorar desempenho quando há muitas aplicações abertas. A explicação mais adequada é:
+Uma CPU possui registradores de 64 bits, barramento de endereços de 36 bits e barramento de dados de 32 bits. Apenas o barramento de dados passa a 64 bits. Admita endereçamento por byte e a mesma taxa máxima de transferências no barramento; não há informação de que controlador e memória sustentem o novo pico. A conclusão adequada é:
 
-A) mais RAM elimina a necessidade de sistema operacional.
-B) mais RAM pode reduzir paginação/swap e permitir manter mais dados de processos em memória principal.
-C) mais RAM aumenta automaticamente a frequência da CPU.
-D) mais RAM transforma SSD em cache L1.
+A) o espaço permanece `2^36` bytes; o pico bruto dobra sob a premissa dada, mas vazão efetiva e latência não podem ser garantidas.
+B) o espaço permanece `2^36` bytes; o pico bruto não muda, pois somente o barramento de endereços determina os bits transferidos.
+C) o espaço permanece `2^36` bytes; o pico bruto dobra e, por isso, a vazão efetiva do sistema necessariamente dobra apesar dos gargalos não medidos.
+D) o espaço passa a `2^64` bytes; o pico bruto e a vazão efetiva dobram, enquanto a latência de cada acesso cai pela metade.
 
 ### Questão 35
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
 Uma CPU usa registradores para armazenar temporariamente operandos e resultados intermediários. Essa afirmação está:
 
-A) correta, pois registradores são pequenos e muito rápidos.
-B) incorreta, pois registradores ficam apenas no SSD.
-C) incorreta, pois registradores só armazenam arquivos permanentes.
-D) correta apenas em computadores sem memória cache.
+A) correta, pois registradores são pequenos, rápidos e mantêm operandos e resultados próximos da ULA durante a execução.
+B) incorreta, pois a RAM sempre possui menor latência e substitui os registradores durante a execução.
+C) incorreta, pois a cache guarda todos os operandos diretamente usados pela ULA, sem apoio de registradores.
+D) correta apenas quando os registradores são não voláteis e preservam o resultado após o desligamento.
 
 ### Questão 36
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
 Assinale a alternativa que apresenta somente memórias voláteis ou tipicamente temporárias no processamento.
 
@@ -387,24 +509,33 @@ C) HD, RAM e fita magnética.
 D) Registradores, cache e RAM.
 
 ### Questão 37
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Interrupções e E/S](semana_01_estudo.md#s1-d1-interrupcoes-io)
 
-Uma interrupção mascarável é, em termos gerais, aquela que:
+Durante uma região crítica, a CPU mascara interrupções comuns de um dispositivo. Nesse intervalo, chega uma dessas interrupções e também um evento não mascarável. Assinale a conclusão correta.
 
-A) representa apenas erro lógico de programação.
-B) é sinônimo de cache miss.
-C) pode ser temporariamente desabilitada ou adiada pelo processador/SO em certas condições.
-D) nunca pode ser ignorada em nenhuma circunstância.
+A) ambos os eventos devem ser descartados, pois qualquer máscara apaga as interrupções pendentes.
+B) o evento comum deve ser atendido imediatamente, enquanto o não mascarável aguarda a retirada da máscara.
+C) os dois eventos são equivalentes e sua ordem depende apenas da velocidade do barramento de dados.
+D) o evento comum pode ficar pendente até a reabilitação; a máscara ordinária não bloqueia o não mascarável.
 
 ### Questão 38
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Arquiteturas, barramentos e capacidade](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
 Ao avaliar desempenho, um analista conclui que a largura de banda da memória indica:
 
-A) quantidade de instruções da linguagem SQL.
+A) tempo necessário para concluir um único acesso à memória.
 B) quantidade de dados que pode ser transferida por unidade de tempo.
-C) tempo mínimo de resposta de um único acesso, exclusivamente.
-D) número máximo de usuários cadastrados no sistema.
+C) capacidade total de armazenamento disponível nos módulos de RAM.
+D) quantidade de endereços representáveis pelo barramento de endereços.
 
 ### Questão 39
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 Em um número hexadecimal, as letras A, B, C, D, E e F correspondem, respectivamente, aos valores decimais:
 
@@ -414,33 +545,45 @@ C) 1, 2, 3, 4, 5 e 6.
 D) 16, 17, 18, 19, 20 e 21.
 
 ### Questão 40
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
 Um periférico solicita atenção da CPU após concluir operação de leitura. A vantagem do uso de interrupção nesse caso é:
 
-A) impedir qualquer multitarefa no sistema.
-B) transformar o periférico em memória principal.
-C) dispensar todos os drivers de dispositivo.
-D) evitar que a CPU consulte continuamente o dispositivo para saber se terminou.
+A) manter a CPU em espera ocupada, mas com prioridade maior que a do periférico.
+B) fazer o dispositivo mover o bloco para a RAM sem controlador nem configuração.
+C) eliminar o custo de tratamento e a necessidade de salvar qualquer contexto da CPU.
+D) permitir que a CPU execute outro trabalho e seja avisada quando a operação terminar.
 
 ### Questão 41
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Políticas de escrita da cache](semana_01_estudo.md#s1-d1-cache-escrita)
 
-Em uma arquitetura com cache write-back, a escrita modificada pode:
+Uma linha marcada como dirty permanece em uma cache write-back enquanto outro agente precisa ler a mesma região na memória principal. Assinale a alternativa correta.
 
-A) ser descartada porque cache nunca armazena dados alterados.
-B) eliminar a necessidade de coerência de cache.
-C) ser mantida temporariamente na cache e atualizada na memória principal posteriormente.
-D) ser sempre escrita simultaneamente na RAM a cada alteração.
+A) sem coerência ou limpeza, outro agente pode ler valor antigo; write-through atualiza a RAM a cada escrita e aumenta o tráfego.
+B) a marca dirty informa que a RAM já possui o valor novo; por isso, nenhum protocolo de coerência é necessário.
+C) o write-back impede qualquer leitura concorrente e transforma a linha modificada em armazenamento permanente.
+D) write-back e write-through mantêm a RAM igualmente atualizada a cada escrita, diferindo apenas no tamanho da cache.
 
 ### Questão 42
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
 Considere um sistema com barramento de dados de 64 bits. Isso significa que, em uma transferência, o barramento pode transportar:
 
-A) 64 GB de armazenamento permanente.
-B) 64 bits de dados por operação/ciclo de transferência, conforme a arquitetura.
-C) 64 endereços físicos obrigatoriamente.
-D) 64 programas simultâneos, sempre.
+A) 64 endereços distintos, independentemente da largura do barramento de endereços.
+B) 64 bits de dados em paralelo por operação de transferência, conforme a arquitetura.
+C) 64 bytes por transferência, pois cada linha do barramento representa um byte completo.
+D) 64 bits por segundo, sem relação com a frequência ou o protocolo do barramento.
 
 ### Questão 43
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 Quando se diz que um byte pode assumir 256 combinações, o intervalo sem sinal mais comum é:
 
@@ -450,258 +593,333 @@ C) 0 a 256.
 D) -128 a 255.
 
 ### Questão 44
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
-Em uma linguagem compilada tradicional, se uma biblioteca externa não é encontrada durante a geração do executável, o erro tende a ocorrer na etapa de:
+Três módulos foram compilados e produziram arquivos objeto. Ao gerar o executável, surgiu uma referência externa não resolvida; corrigida a biblioteca, o sistema iniciou o programa. A sequência correta é:
 
-A) digitação do código-fonte pela CPU.
-B) execução de ULA para soma inteira.
-C) conversão de ASCII para Unicode.
-D) ligação.
+A) o loader deveria resolver o símbolo antes da compilação, e o linker apenas copiaria o executável para a RAM.
+B) o assembler deveria combinar bibliotecas de alto nível, e o compilador carregaria o programa para execução.
+C) o linker resolve referências entre objetos e bibliotecas; depois, o loader mapeia o executável na memória.
+D) o compilador resolve necessariamente todo símbolo externo, e o loader substitui bibliotecas ausentes durante a execução.
 
 ### Questão 45
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
 Assinale a alternativa correta sobre ROM e RAM.
 
-A) RAM é apenas leitura, e ROM é leitura e escrita livre em toda execução.
-B) ROM substitui registradores durante cálculos da ULA.
+A) ROM e RAM são normalmente não voláteis, mas diferem apenas na política de escrita.
+B) A RAM armazena apenas rotinas de inicialização, enquanto a ROM recebe os dados de trabalho dos processos.
 C) ROM é tipicamente não volátil; RAM é volátil e usada na execução de programas.
-D) ROM e RAM são sempre voláteis e equivalentes.
+D) A volatilidade de ROM e RAM depende exclusivamente da frequência de clock usada pelo processador.
 
 ### Questão 46
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
 
-Uma rotina que executa muitas operações aritméticas, mas acessa pouco disco, tende a ser limitada principalmente por:
+Duas versões executam a mesma carga com clock e comportamento de cache equivalentes. A versão otimizada reduz bolhas do pipeline ao reordenar instruções independentes, conclui 40% mais tarefas por segundo e mantém a latência praticamente igual. Em uma cadeia de instruções dependentes, o ganho desaparece. O diagnóstico correto é:
 
-A) regência verbal.
-B) processamento de CPU.
-C) latência de impressora.
-D) normalização de banco.
+A) A cache explica o ganho; a cadeia dependente não melhora porque miss rate igual sempre aumenta a latência de memória.
+B) A latência de cada tarefa caiu 40%; o valor praticamente igual deve ser ignorado por medir apenas o percentil observado.
+C) O pipeline só eleva vazão quando o clock sobe; com frequência constante, a medição de tarefas por segundo é incompatível.
+D) A sobreposição elevou a vazão com instruções independentes; a cadeia limitou o paralelismo, sem evidência de ganho em cache, clock ou latência.
 
 ### Questão 47
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Firmware](semana_01_estudo.md#s1-d1-firmware)
 
 Um sistema embarcado usa firmware para inicializar dispositivo e carregar configurações básicas. A afirmação mais adequada é:
 
-A) firmware atua em nível baixo e pode inicializar/controlar hardware antes do sistema completo.
-B) firmware só existe depois que o usuário abre o editor de texto.
-C) firmware é sempre armazenado apenas em RAM volátil.
-D) firmware é um tipo de consulta agregada.
+A) o firmware atua em baixo nível e pode preparar ou controlar o hardware antes do sistema completo.
+B) o firmware substitui todo driver e toda interface oferecida posteriormente pelo sistema operacional.
+C) o firmware é necessariamente volátil e precisa ser reinstalado depois de cada desligamento.
+D) o firmware é o próprio componente físico, e não software armazenado em memória persistente.
 
 ### Questão 48
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
 Em arquitetura de computadores, a principal função dos registradores de propósito geral é:
 
-A) guardar permanentemente todos os arquivos do usuário.
-B) substituir o sistema de arquivos.
-C) controlar diretamente o registro profissional no CRA.
-D) armazenar temporariamente operandos, endereços ou resultados usados pela CPU.
+A) indicar exclusivamente o endereço da próxima instrução, como faz o contador de programa.
+B) manter exclusivamente a instrução corrente, como faz o registrador de instrução.
+C) armazenar apenas flags de zero, sinal, carry e overflow produzidas pela ULA.
+D) manter temporariamente operandos, endereços e resultados de uso geral pela CPU.
 
 ### Questão 49
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
-Uma operação de polling contínuo para verificar se um dispositivo terminou uma tarefa tende a ser menos eficiente que interrupções porque:
+Um controlador transfere blocos grandes para a RAM, enquanto pequenos estados ficam prontos em até 2 µs — menos que o custo de uma interrupção. A CPU deve trabalhar durante os blocos e reagir ao término ou erro. Qual política combina volume, espera e notificação?
 
-A) polling é sinônimo de memória cache L2.
-B) interrupções impedem qualquer retorno ao processo anterior.
-C) a CPU gasta tempo verificando repetidamente o dispositivo, mesmo sem novo evento.
-D) o dispositivo deixa de existir quando não há interrupção.
+A) aplicar polling a cada byte dos blocos e desativar interrupções, deixando o DMA apenas para consultar o estado do controlador.
+B) usar polling limitado nos estados muito curtos, DMA nos blocos e interrupção para comunicar conclusão ou erro da transferência.
+C) gerar uma interrupção por byte, reservar DMA para mensagens pequenas e consultar continuamente o estado durante todo o bloco.
+D) iniciar DMA sem endereço ou tamanho e dispensar notificação, pois o controlador substitui configuração, CPU e tratamento de erro.
 
 ### Questão 50
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
-Em uma conversão rápida, o hexadecimal B7 equivale em decimal a:
+Em complemento de dois com 8 bits, o hexadecimal `F4` é somado a `0F`. O resultado correto, interpretado como inteiro com sinal, é:
 
-A) 117.
-B) 183.
-C) 177.
-D) 187.
+A) `03`, equivalente a 3, mas com overflow de sinal.
+B) `E5`, equivalente a -27, sem overflow de sinal.
+C) `03`, equivalente a 3, sem overflow de sinal.
+D) `103`, equivalente a 259, em um registrador de 8 bits.
 
-## Questões extras de revisão fixa do Dia 1
+## Banco complementar do Dia 1
 
 #### Extra Dia 1.1
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [CFA e CRA](semana_01_estudo.md#s1-d1-cfa-cra)
 
 **Área:** Legislação CRA/CFA.
 
 Um candidato confundiu a atuação do CFA com a do CRA-PR. Considerando a estrutura do Sistema CFA/CRAs, assinale a alternativa correta.
 
-A) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-B) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-C) O CFA atua em plano nacional e normativo; o CRA-PR exerce registro e fiscalização no âmbito regional do Paraná.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+A) O CFA realiza ordinariamente os registros no Paraná, e o CRA-PR limita-se a editar normas nacionais.
+B) O CFA orienta e normatiza nacionalmente, e o CRA-PR executa registro e fiscalização em sua jurisdição.
+C) A autonomia administrativa do CRA-PR permite afastar normas gerais expedidas pelo CFA para o sistema.
+D) CFA e CRA-PR possuem competência territorial idêntica, diferenciando-se apenas pelo local de suas sedes.
 
 #### Extra Dia 1.2
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Lei 4.769/1965](semana_01_estudo.md#s1-d1-lei-decreto)
 
 **Área:** Legislação CRA/CFA.
 
 Sobre a Lei Federal nº 4.769/1965, assinale a alternativa correta.
 
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) O Regimento Interno substitui a lei federal que disciplina a profissão.
-C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-D) A lei é uma base legal do exercício da profissão de Administrador e da organização do Sistema CFA/CRAs.
+A) A lei trata apenas de cobrança de anuidades e não disciplina o exercício profissional.
+B) A lei pode ser substituída por regimento regional sempre que houver regra administrativa mais recente.
+C) A lei atribui ao CFA a execução ordinária de todo registro e fiscalização regional.
+D) A lei integra a base do exercício da profissão e da organização do Sistema CFA/CRAs.
 
 #### Extra Dia 1.3
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Lei e decreto regulamentador](semana_01_estudo.md#s1-d1-lei-decreto)
 
 **Área:** Legislação CRA/CFA.
 
 Na leitura da legislação específica, um aluno separou lei e decreto. Assinale a alternativa correta.
 
-A) O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965.
-B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+A) O decreto possui hierarquia superior à lei e pode contrariá-la para completar sua regulamentação.
+B) O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965, detalhando sua execução sem poder contrariá-la.
+C) A lei apenas executa o decreto, que constitui a fonte primária da organização profissional.
+D) Lei e decreto possuem o mesmo objeto, mas não mantêm relação de regulamentação entre si.
 
 #### Extra Dia 1.4
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
 **Área:** Legislação CRA/CFA.
 
 O edital cobra Regimento Interno do CRA-PR. Sobre sua função, assinale a alternativa correta.
 
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) O Regimento Interno organiza órgãos, competências e funcionamento do CRA-PR.
-C) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-D) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
+A) O Regimento cria a profissão e prevalece sobre a Lei nº 4.769/1965 no Paraná.
+B) O Regimento disciplina exclusivamente condutas éticas e substitui o Código de Ética.
+C) O Regimento organiza os órgãos, as competências internas e o funcionamento do CRA-PR.
+D) O Regimento é regulamento nacional de registro aplicado indistintamente a todos os CRAs.
 
 #### Extra Dia 1.5
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
 **Área:** Legislação CRA/CFA.
 
-Sobre a natureza institucional do CRA-PR, conforme a apostila de estudo, assinale a alternativa correta.
+O CRA-PR possui personalidade jurídica de direito público e autonomia administrativa, mas integra o Sistema CFA/CRAs. A conclusão correta é:
 
-A) O Regimento Interno substitui a lei federal que disciplina a profissão.
-B) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-C) O CRA-PR é tratado como autarquia com personalidade jurídica de direito público e autonomia administrativa.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+A) a personalidade pública transforma o CRA-PR em órgão subordinado hierarquicamente ao Governo do Paraná.
+B) a autonomia permite organizar sua administração, sem romper a integração ao sistema nem afastar normas nacionais do CFA.
+C) a integração ao sistema elimina a personalidade jurídica e toda competência administrativa regional.
+D) a autonomia permite ao CRA-PR substituir leis federais e normas nacionais por decisão exclusivamente interna.
 
 #### Extra Dia 1.6
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
 **Área:** Legislação CRA/CFA.
 
 A RN CFA nº 651/2024 foi citada no estudo da Semana 1. Assinale a alternativa correta.
 
-A) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-B) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-C) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-D) Ela foi usada como norma oficial que aprova o Regimento Interno do CRA-PR.
+A) A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
+B) A RN CFA nº 651/2024 aprova o Código de Ética vigente do sistema.
+C) A RN CFA nº 651/2024 institui o regulamento nacional de registro profissional.
+D) A RN CFA nº 651/2024 disciplina exclusivamente contribuições e anuidades.
 
 #### Extra Dia 1.7
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
 **Área:** Legislação CRA/CFA.
 
-Sobre o Código de Ética indicado no edital vigente, assinale a alternativa correta.
+Um profissional empregado em órgão público recebe ordem para assinar, sem revisão, parecer preparado por terceiro e contrário à sua convicção técnica. À luz da independência e da responsabilidade profissional, assinale a alternativa correta.
 
-A) A apostila usa a RN CFA nº 671/2025 porque ela aparece no edital retificado e foi tratada como Código de Ética vigente.
-B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-D) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
+A) o vínculo público transfere integralmente a responsabilidade técnica ao superior que expediu a ordem.
+B) a assinatura é regular se o documento não gerar prejuízo financeiro imediato ao órgão.
+C) o profissional deve assinar e registrar sua discordância apenas depois de eventual processo disciplinar.
+D) o profissional deve recusar autoria sem exame e preservar sua independência técnica, fundamentando a atuação.
 
 #### Extra Dia 1.8
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Registro de pessoa jurídica](semana_01_estudo.md#s1-d1-registro-pj)
 
 **Área:** Legislação CRA/CFA.
 
 Uma empresa presta serviços típicos de Administração no Paraná. Em relação ao Sistema CFA/CRAs, assinale a alternativa correta.
 
-A) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-B) A pessoa jurídica pode se sujeitar a registro e fiscalização quando atua em atividade abrangida pelo campo profissional.
-C) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-D) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
+A) a existência de CNPJ dispensa a análise da atividade básica e de eventual responsabilidade técnica.
+B) a atividade básica no campo profissional pode sujeitar a pessoa jurídica a registro, fiscalização e responsabilidade técnica aplicável.
+C) apenas os sócios pessoas físicas podem ser fiscalizados, ainda que a empresa ofereça atividade profissional regulada.
+D) a pessoa jurídica deve pedir registro diretamente ao CFA, sem atuação ordinária do conselho regional.
 
 #### Extra Dia 1.9
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
 **Área:** Legislação CRA/CFA.
 
 Um profissional registrado utiliza informações confidenciais de cliente para obter vantagem em outra contratação. Assinale a alternativa correta.
 
-A) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
-B) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-C) A conduta viola o dever de sigilo profissional, salvo hipótese legal ou justa causa que autorize a revelação.
-D) O Regimento Interno substitui a lei federal que disciplina a profissão.
+A) o uso comercial viola o sigilo; eventual revelação exige fundamento legítimo e deve limitar-se ao necessário.
+B) o registro profissional autoriza compartilhar os dados com parceiros desde que o cliente não prove dano.
+C) o sigilo impede inclusive resposta delimitada a determinação legal válida de autoridade competente.
+D) a informação deixa de ser sigilosa quando puder aumentar a competitividade do profissional registrado.
 
 #### Extra Dia 1.10
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
 **Área:** Legislação CRA/CFA.
 
 Um administrador permite que terceiro use seu nome e registro para assinar trabalho que ele não acompanhou. Assinale a alternativa correta.
 
-A) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-B) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-C) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-D) Emprestar nome ou registro profissional pode caracterizar infração ética e uso indevido da habilitação.
+A) a assinatura é regular se o terceiro possuir experiência, ainda que o registrado não examine o trabalho.
+B) a ausência de dano financeiro elimina a responsabilidade ligada à autoria e à habilitação profissional.
+C) ceder nome ou registro sem participação real pode configurar infração; assinatura implica responsabilidade técnica.
+D) o empréstimo é permitido quando o documento informa internamente quem realizou o trabalho, mesmo sem revisão.
 
 #### Extra Dia 1.11
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Fiscalização e processo](semana_01_estudo.md#s1-d1-fiscalizacao-processo)
 
 **Área:** Legislação CRA/CFA.
 
 Em uma ação fiscalizatória, a empresa se recusa a apresentar documentos básicos sobre atividade profissional regulada. Assinale a alternativa correta.
 
-A) Dificultar fiscalização regular pode ensejar apuração no âmbito competente do conselho.
-B) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
-C) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-D) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
+A) a recusa encerra a fiscalização, pois o conselho regional somente pode atuar depois de ordem judicial específica.
+B) diante de requisição regular, a obstrução pode ser apurada pelo CRA, com contraditório e defesa.
+C) a empresa deve ser sancionada imediatamente pelo CFA, sem instrução regional nem oportunidade de manifestação.
+D) a apresentação de documentos é sempre facultativa, mesmo quando pertinentes à atividade fiscalizada e regularmente solicitados.
 
 #### Extra Dia 1.12
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Contribuições aos conselhos](semana_01_estudo.md#s1-d1-contribuicoes)
 
 **Área:** Legislação CRA/CFA.
 
 Sobre a Lei nº 12.514/2011 na leitura dirigida, assinale a alternativa correta.
 
-A) O CFA executa ordinariamente o registro profissional de todos os administradores no Paraná.
-B) Ela é relevante por tratar de contribuições devidas aos conselhos profissionais.
-C) O Regimento Interno substitui a lei federal que disciplina a profissão.
-D) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
+A) a lei aprova o Regimento Interno do CRA-PR e define a composição de seus órgãos.
+B) a lei institui o Código de Ética e disciplina exclusivamente infrações profissionais.
+C) a lei substitui o regulamento de registro e define todas as modalidades de inscrição.
+D) a lei é relevante para contribuições devidas aos conselhos profissionais e sua cobrança.
 
 #### Extra Dia 1.13
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Regulamento de registro](semana_01_estudo.md#s1-d1-registro-rn649-670)
 
 **Área:** Legislação CRA/CFA.
 
 A RN CFA nº 649/2024 aparece na leitura dirigida da Semana 1. Assinale a alternativa correta.
 
-A) A norma indicada no edital pode ser trocada por resolução mais recente sem retificação oficial.
-B) Sigilo profissional é faculdade do registrado e pode ser afastado por conveniência comercial.
-C) Ela deve ser estudada como regulamento de registro do Sistema CFA/CRAs.
-D) Anuidade, taxa e cobrança administrativa são temas alheios aos conselhos profissionais.
+A) a RN CFA nº 649/2024 aprova o Regimento Interno específico do CRA-PR.
+B) a RN CFA nº 649/2024 institui o Código de Ética atualmente adotado no material.
+C) a RN CFA nº 649/2024 aprova o regulamento de registro no Sistema CFA/CRAs.
+D) a RN CFA nº 649/2024 trata exclusivamente de contribuições e cobrança de anuidades.
 
 #### Extra Dia 1.14
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [RN 649/2024 e RN 670/2025](semana_01_estudo.md#s1-d1-registro-rn649-670)
 
 **Área:** Legislação CRA/CFA.
 
-Sobre a RN CFA nº 670/2025, conforme a leitura dirigida da apostila, assinale a alternativa correta.
+Ao consolidar o regulamento de registro, o estudante encontrou a RN CFA nº 649/2024 e a RN CFA nº 670/2025. A leitura correta é:
 
-A) Pessoa jurídica que explora atividade típica de Administração nunca se sujeita a registro no Sistema CFA/CRAs.
-B) A fiscalização do CRA depende sempre de provocação prévia de outro órgão público.
-C) A RN CFA nº 651/2024 deve ser estudada como Código de Ética.
-D) Ela deve ser lida em conjunto com a RN CFA nº 649/2024, pois altera o regulamento de registro.
+A) a RN 649 é a norma-base de registro, alterada pontualmente pela RN 670; ambas devem ser lidas juntas.
+B) a RN 670 revoga integralmente a RN 649 e passa a disciplinar, sozinha, todas as modalidades de registro.
+C) a RN 649 trata de ética, enquanto a RN 670 converte seu objeto em Regimento Interno do CRA-PR.
+D) a RN 670 possui objeto financeiro autônomo e não interfere no texto do regulamento de registro.
 
 #### Extra Dia 1.15
+**Nível: Muito difícil**
+**Uso:** Simulado
+**Referência:** [Normas dirigidas e controle de fonte](semana_01_estudo.md#s1-d1-normas-dirigidas)
 
 **Área:** Legislação CRA/CFA.
 
-Quanto às normas RN CFA nº 546/2018, 626/2023 e 589/2020 no material da Semana 1, assinale a alternativa correta.
+Para resolver um caso que envolve registro de pessoa jurídica, conduta ética e competência interna do CRA-PR, o estudante separou as fontes: RN 649/2024 alterada pela RN 670/2025; RN 671/2025; e RN 651/2024. Assinale a estratégia correta.
 
-A) Quando o resumo completo estiver pendente, o estudo deve priorizar leitura oficial e evitar decorar prazo ou sanção sem confirmação.
-B) O Regimento Interno substitui a lei federal que disciplina a profissão.
-C) Emprestar o registro a terceiro é irregular apenas quando houver prejuízo financeiro comprovado.
-D) O CRA-PR pode deixar de observar as normas gerais do CFA quando editar regra interna própria.
+A) usar apenas a RN 670, porque toda norma alteradora substitui integralmente a norma-base e também resolve ética e competência interna.
+B) usar a RN 640 como fonte ética atual e ignorar a RN 671, pois a revogação oficial produziria efeitos apenas em casos futuros, não no edital vigente.
+C) aplicar 649/670 ao registro, 671 à conduta ética e 651 ao funcionamento interno, verificando em cada ponto objeto, vigência e hierarquia.
+D) aplicar a RN 651 ao registro e a RN 649 ao Código de Ética, porque uma norma regional teria prevalência e a numeração indicaria hierarquia.
 
 #### Extra Dia 1.16
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Conectores](semana_01_estudo.md#s1-d1-portugues-conectores)
 
 **Área:** Língua Portuguesa/interpretação.
 
 Leia o trecho: "O relatório foi enviado à Diretoria após a consolidação dos dados; por isso, a decisão foi adiada." A expressão "por isso" indica:
 
-A) oposição entre envio do relatório e decisão adiada.
-B) conclusão ou consequência em relação ao fato anterior.
-C) explicação da causa sem relação com consequência.
-D) adição de informação independente.
+A) condição necessária para que o envio do relatório ocorra.
+B) oposição entre a consolidação e o envio dos dados.
+C) adição de informação sem relação lógica com a anterior.
+D) conclusão ou consequência produzida a partir do fato anterior.
 
 #### Extra Dia 1.17
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Referência pronominal](semana_01_estudo.md#s1-d1-portugues-referencia)
 
 **Área:** Língua Portuguesa/interpretação.
 
-No trecho "A comissão revisou o edital e encaminhou suas conclusões", o pronome "suas" retoma:
+No trecho "A comissão revisou o edital e encaminhou suas conclusões", qual é a avaliação linguística mais precisa?
 
-A) as conclusões do edital.
-B) as conclusões do candidato.
-C) as conclusões da comissão.
-D) as conclusões da banca e do órgão simultaneamente.
+A) O possessivo é ambíguo: pode indicar conclusões da comissão ou do edital, e o contexto não resolve o possuidor.
+B) O possessivo retoma univocamente a comissão, pois o feminino plural de “suas” concorda com o possuidor.
+C) O possessivo retoma univocamente o edital, porque a proximidade sempre determina o referente pronominal.
+D) O possessivo exige um candidato oculto como possuidor, embora nenhum candidato apareça no período.
 
 #### Extra Dia 1.18
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Reescrita e restrição](semana_01_estudo.md#s1-d1-portugues-reescrita)
 
 **Área:** Língua Portuguesa/interpretação.
 
@@ -709,29 +927,35 @@ Assinale a reescrita que preserva o sentido de: "Somente os documentos conferido
 
 A) Todos os documentos, conferidos ou não, serão encaminhados.
 B) Nenhum documento conferido será encaminhado.
-C) Os documentos serão conferidos depois do encaminhamento.
-D) Apenas os documentos conferidos serão encaminhados.
+C) Apenas os documentos conferidos serão encaminhados.
+D) Os documentos serão conferidos somente depois do encaminhamento.
 
 #### Extra Dia 1.19
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Crase](semana_01_estudo.md#s1-d1-portugues-crase)
 
 **Área:** Língua Portuguesa/interpretação.
 
 Assinale a alternativa em que a crase está corretamente empregada.
 
-A) O processo foi encaminhado à unidade responsável.
-B) O servidor começou à revisar os autos.
-C) A equipe respondeu à todos os interessados.
-D) O relatório foi enviado à setor técnico.
+A) O servidor começou à revisar os autos recebidos.
+B) A equipe respondeu à todos os interessados no processo.
+C) O relatório foi encaminhado à setor técnico competente.
+D) O processo foi encaminhado à unidade responsável pela análise.
 
 #### Extra Dia 1.20
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Conectores](semana_01_estudo.md#s1-d1-portugues-conectores)
 
 **Área:** Língua Portuguesa/interpretação.
 
 Leia: "Embora o sistema estivesse disponível, muitos usuários não concluíram o cadastro." A oração iniciada por "Embora" expressa:
 
 A) causa direta.
-B) concessão.
-C) conclusão.
+B) conclusão.
+C) concessão.
 D) condição necessária.
 
 
@@ -744,22 +968,22 @@ D) condição necessária.
 5. C
 6. B
 7. A
-8. D
-9. C
+8. B
+9. A
 10. B
 11. A
 12. D
 13. C
 14. B
-15. A
+15. D
 16. C
-17. C
-18. B
+17. A
+18. C
 19. A
 20. D
 21. C
 22. B
-23. A
+23. B
 24. D
 25. C
 26. B
@@ -767,54 +991,58 @@ D) condição necessária.
 28. D
 29. C
 30. A
-31. A
+31. D
 32. D
 33. C
-34. B
+34. A
 35. A
 36. D
-37. C
+37. D
 38. B
 39. A
 40. D
-41. C
+41. A
 42. B
 43. A
-44. D
+44. C
 45. C
-46. B
+46. D
 47. A
 48. D
-49. C
-50. B
+49. B
+50. C
 
-### Gabarito das questões extras de revisão fixa do Dia 1
+### Gabarito do banco complementar do Dia 1
 
-Extra Dia 1.1: C
+Extra Dia 1.1: B
 Extra Dia 1.2: D
-Extra Dia 1.3: A
-Extra Dia 1.4: B
-Extra Dia 1.5: C
-Extra Dia 1.6: D
-Extra Dia 1.7: A
+Extra Dia 1.3: B
+Extra Dia 1.4: C
+Extra Dia 1.5: B
+Extra Dia 1.6: A
+Extra Dia 1.7: D
 Extra Dia 1.8: B
-Extra Dia 1.9: C
-Extra Dia 1.10: D
-Extra Dia 1.11: A
-Extra Dia 1.12: B
+Extra Dia 1.9: A
+Extra Dia 1.10: C
+Extra Dia 1.11: B
+Extra Dia 1.12: D
 Extra Dia 1.13: C
-Extra Dia 1.14: D
-Extra Dia 1.15: A
-Extra Dia 1.16: B
-Extra Dia 1.17: C
-Extra Dia 1.18: D
-Extra Dia 1.19: A
-Extra Dia 1.20: B
+Extra Dia 1.14: A
+Extra Dia 1.15: C
+Extra Dia 1.16: D
+Extra Dia 1.17: A
+Extra Dia 1.18: C
+Extra Dia 1.19: D
+Extra Dia 1.20: C
 
 
 ## Comentários do Dia 1
 
 ### Comentário da Questão 1
+
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 - **Alternativa correta:** C.
 - **A) está errada:** 53 inclui peso que não está marcado no binário apresentado.
@@ -822,11 +1050,14 @@ Extra Dia 1.20: B
 - **C) está correta:** 101101₂ = 32 + 8 + 4 + 1 = 45.
 - **D) está errada:** 37 resulta de ignorar o bit de peso 8; a soma posicional fica incompleta.
 - **Conceito cobrado:** Conversão de binário para decimal.
-- **Pegadinha usada:** Confundir potência de dois com valor posicional..
+- **Pegadinha usada:** Confundir potência de dois com valor posicional.
 - **Como pensar para acertar:** Escreva os pesos 32, 16, 8, 4, 2 e 1 e some apenas os que têm bit 1.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 2
+
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 - **Alternativa correta:** B.
 - **A) está errada:** FF corresponderia a 1111 1111, não a 1111 0000.
@@ -834,11 +1065,14 @@ Extra Dia 1.20: B
 - **C) está errada:** 0F inverte a ordem dos quartetos; a ordem deve ser preservada.
 - **D) está errada:** E corresponde a 1110, não a 1111.
 - **Conceito cobrado:** Conversão binário-hexadecimal.
-- **Pegadinha usada:** Inverter quartetos ou trocar F por E..
+- **Pegadinha usada:** Inverter quartetos ou trocar F por E.
 - **Como pensar para acertar:** Separe o byte em grupos de quatro bits da esquerda para a direita.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 3
+
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 - **Alternativa correta:** A.
 - **A) está correta:** I e II estão corretas; com 8 bits há 2^8 combinações.
@@ -846,132 +1080,155 @@ Extra Dia 1.20: B
 - **C) está errada:** I é verdadeira e III é falsa; a alternativa exclui uma correta e inclui uma incorreta.
 - **D) está errada:** Inclui III, que confunde quantidade de combinações com maior valor.
 - **Conceito cobrado:** Bits, bytes e representação sem sinal.
-- **Pegadinha usada:** Confundir 256 combinações com maior valor 256..
+- **Pegadinha usada:** Confundir 256 combinações com maior valor 256.
 - **Como pensar para acertar:** Separe “quantidade de valores” de “maior valor possível”.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 4
 
-- **Alternativa correta:** B.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Essa afirmação está correta: registradores estão no topo da hierarquia.
-- **B) é a incorreta:** Essa é a incorreta: SSD é persistente, mas fica muito abaixo de registradores e cache em velocidade.
-- **C) está correta como afirmação:** Essa afirmação está correta: RAM perde dados sem energia e apoia execução.
-- **D) está correta como afirmação:** Essa afirmação está correta: cache reduz o tempo médio de acesso.
-- **Conceito cobrado:** Hierarquia de memória.
-- **Pegadinha usada:** Trocar persistência por velocidade..
-- **Como pensar para acertar:** Ordene mentalmente: registradores, cache, RAM, SSD/HD.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
+- **Alternativa correta:** B.
+- **Observação:** A questão pede a alternativa incorreta.
+- **A) está correta como afirmação:** Registradores ocupam o topo da hierarquia de velocidade.
+- **B) é a incorreta:** Menor capacidade não torna a cache mais lenta; ela normalmente possui latência menor que a RAM.
+- **C) está correta como afirmação:** RAM é memória principal volátil de trabalho.
+- **D) está correta como afirmação:** Cache aproxima dados de acesso frequente da CPU.
+- **Conceito cobrado:** Hierarquia de memória.
+- **Pegadinha usada:** Inferir velocidade apenas pela capacidade.
+- **Como pensar para acertar:** Compare latência, capacidade e proximidade da CPU separadamente.
 ### Comentário da Questão 5
 
-- **Alternativa correta:** C.
-- **A) está errada:** O barramento de endereços indica posições de acesso, não executa operações.
-- **B) está errada:** SSD/HD armazenam dados de forma persistente, mas não executam operações da CPU.
-- **C) está correta:** A unidade lógica e aritmética executa operações aritméticas e lógicas.
-- **D) está errada:** A unidade de controle coordena a execução, mas não é o bloco responsável pelo cálculo em si.
-- **Conceito cobrado:** Componentes da CPU.
-- **Pegadinha usada:** Confundir coordenação da instrução com execução aritmética..
-- **Como pensar para acertar:** Associe cálculo e lógica à ULA; coordenação à unidade de controle.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
+- **Alternativa correta:** C.
+- **A) está errada:** A unidade de controle coordena, mas não realiza o cálculo lógico-aritmético.
+- **B) está errada:** A cache fornece dados rapidamente, mas não executa a operação.
+- **C) está correta:** A ULA realiza soma, comparação e outras operações lógicas.
+- **D) está errada:** Registradores guardam operandos e resultados, sem substituir a ULA.
+- **Conceito cobrado:** Componentes da CPU.
+- **Pegadinha usada:** Confundir coordenação, armazenamento e execução.
+- **Como pensar para acertar:** Localize onde cada componente atua no ciclo da instrução.
 ### Comentário da Questão 6
 
-- **Alternativa correta:** B.
-- **A) está errada:** A volatilidade da RAM independe do sistema operacional.
-- **B) está correta:** RAM apoia execução, mas perde dados sem energia; persistência exige armazenamento não volátil.
-- **C) está errada:** Velocidade não implica persistência; cache e RAM são rápidas e voláteis.
-- **D) está errada:** A largura da arquitetura não transforma RAM em armazenamento permanente.
-- **Conceito cobrado:** RAM e armazenamento secundário.
-- **Pegadinha usada:** Associar velocidade a persistência..
-- **Como pensar para acertar:** Pergunte: o dado permanece após desligar? Se não, não é armazenamento permanente.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Encerramento ordenado não muda a natureza volátil da RAM.
+- **B) está correta:** Persistência exige meio não volátil; velocidade e persistência são propriedades distintas.
+- **C) está errada:** Refresh mantém células enquanto há alimentação, não depois da falta de energia.
+- **D) está errada:** A política de escrita da cache não torna a RAM armazenamento permanente.
+- **Conceito cobrado:** RAM e persistência.
+- **Pegadinha usada:** Inferir não volatilidade a partir de velocidade ou refresh.
+- **Como pensar para acertar:** Pergunte onde o dado permanece depois de desligar a alimentação.
 ### Comentário da Questão 7
 
-- **Alternativa correta:** A.
-- **A) está correta:** A interrupção avisa a CPU de evento que demanda tratamento.
-- **B) está errada:** Compilação traduz código-fonte; não sinaliza eventos de dispositivo.
-- **C) está errada:** Paginação gerencia memória virtual; não é aviso de dispositivo.
-- **D) está errada:** Normalização é técnica de banco de dados, sem relação com sinalização da CPU.
-- **Conceito cobrado:** Interrupções de hardware.
-- **Pegadinha usada:** Tratar interrupção como erro ou como etapa de tradução..
-- **Como pensar para acertar:** Interrupção é aviso/evento; nem sempre é falha.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Interrupções e E/S](semana_01_estudo.md#s1-d1-interrupcoes-io)
 
+- **Alternativa correta:** A.
+- **A) está correta:** O dispositivo sinaliza o evento à CPU por interrupção.
+- **B) está errada:** No polling, a CPU consulta repetidamente o estado do dispositivo.
+- **C) está errada:** DMA transfere dados, mas não é sinônimo do aviso descrito.
+- **D) está errada:** Espera ocupada também exige consultas repetidas pela CPU.
+- **Conceito cobrado:** Interrupção de dispositivo.
+- **Pegadinha usada:** Confundir aviso de evento com transferência ou consulta contínua.
+- **Como pensar para acertar:** Se o dispositivo avisa a CPU, identifique interrupção.
 ### Comentário da Questão 8
 
-- **Alternativa correta:** D.
-- **A) está errada:** II é falsa porque interrupção não é necessariamente falha.
-- **B) está errada:** II é falsa e I também deveria estar incluída.
-- **C) está errada:** Inclui II, que usa generalização indevida.
-- **D) está correta:** I e III estão corretas; interrupções atendem eventos e temporizador apoia escalonamento.
-- **Conceito cobrado:** Interrupções e multitarefa.
-- **Pegadinha usada:** A palavra “toda” torna a assertiva II falsa..
-- **Como pensar para acertar:** Classifique interrupção como mecanismo de controle de eventos, não como sinônimo de erro.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 9
-
-- **Alternativa correta:** C.
-- **A) está errada:** ASCII codifica caracteres, não endereços de memória.
-- **B) está errada:** Barramento de controle coordena sinais; não substitui a memória.
-- **C) está correta:** O processo enxerga endereço virtual, que é convertido para endereço físico.
-- **D) está errada:** Firmware controla dispositivo; não descreve tradução de endereços de processo.
-- **Conceito cobrado:** Endereço virtual e endereço físico.
-- **Pegadinha usada:** Confundir endereço virtual com arquivo em disco..
-- **Como pensar para acertar:** Procure a relação processo -> endereço virtual -> tradução -> RAM física.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 10
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
 - **Alternativa correta:** B.
-- **A) está errada:** Isso descreve outra forma de endereçamento, não o imediato.
-- **B) está correta:** O valor é fornecido diretamente na instrução, como em uma movimentação de constante.
-- **C) está errada:** Tabela de páginas pertence à tradução de memória virtual, não ao modo imediato em si.
-- **D) está errada:** O modo imediato não exige armazenamento secundário.
-- **Conceito cobrado:** Modos de endereçamento.
-- **Pegadinha usada:** Misturar endereçamento de instrução com memória virtual..
-- **Como pensar para acertar:** A palavra “imediato” sugere que o valor está diretamente na instrução.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** A afirmação III também é verdadeira.
+- **B) está correta:** Polling pode desperdiçar ciclos; interrupção reduz espera ativa, mas possui overhead.
+- **C) está errada:** A afirmação II atribui à interrupção uma transferência que pertence ao DMA.
+- **D) está errada:** Inclui a afirmação II, que dispensa indevidamente o DMA.
+- **Conceito cobrado:** Polling, interrupção e custo de tratamento.
+- **Pegadinha usada:** Tratar sinalização e transferência de dados como o mesmo mecanismo.
+- **Como pensar para acertar:** Separe quem consulta, quem avisa e quem transfere o bloco.
+### Comentário da Questão 9
 
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
+
+- **Alternativa correta:** A.
+- **A) está correta:** O processo usa endereço virtual traduzido para endereço físico.
+- **B) está errada:** Processos normalmente não acessam apenas um espaço físico global sem isolamento.
+- **C) está errada:** Endereçamento imediato trata do operando codificado na instrução.
+- **D) está errada:** A descrição nega justamente a tradução e o isolamento apresentados.
+- **Conceito cobrado:** Endereço virtual e físico.
+- **Pegadinha usada:** Misturar modo de operando com tradução de memória.
+- **Como pensar para acertar:** Siga o caminho programa → endereço virtual → tradução → RAM.
+### Comentário da Questão 10
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
+
+- **Alternativa correta:** B.
+- **A) está errada:** Descreve endereçamento indireto.
+- **B) está correta:** No imediato, o literal aparece na própria instrução.
+- **C) está errada:** Descreve acesso direto a uma posição de memória.
+- **D) está errada:** Descreve forma indexada por base e deslocamento.
+- **Conceito cobrado:** Modo imediato.
+- **Pegadinha usada:** Confundir valor literal com endereço ou deslocamento.
+- **Como pensar para acertar:** Identifique se a instrução contém o valor ou apenas como encontrá-lo.
 ### Comentário da Questão 11
+
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
 - **Alternativa correta:** A.
 - **A) está correta:** O linker combina objetos e resolve referências externas.
-- **B) está errada:** Interpretação executa/traduz durante a execução; não resolve módulos compilados.
-- **C) está errada:** Paginação trata memória virtual, não montagem de executável.
-- **D) está errada:** Write-back é política de cache, não etapa de construção de programa.
-- **Conceito cobrado:** Compilador, linker e loader.
-- **Pegadinha usada:** Confundir compilador com linker..
-- **Como pensar para acertar:** Pense no fluxo: compilar arquivos, ligar objetos, carregar em memória, executar.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
+- **B) está errada:** Compilar isoladamente não resolve a chamada entre módulos.
+- **C) está errada:** O loader atua depois que o executável já foi formado.
+- **D) está errada:** O assembler traduz assembly; não liga módulos de alto nível.
+- **Conceito cobrado:** Linker.
+- **Pegadinha usada:** Trocar as etapas de compilação, ligação, montagem e carga.
+- **Como pensar para acertar:** Referência entre arquivos objeto aponta para a ligação.
 ### Comentário da Questão 12
 
-- **Alternativa correta:** D.
-- **A) está errada:** Essa descrição se aproxima mais de compilação tradicional.
-- **B) está errada:** Compiladores existem em diferentes sistemas operacionais.
-- **C) está errada:** Interpretador é software/ambiente de execução, não componente físico da CPU.
-- **D) está correta:** Essa é a distinção clássica cobrada em concursos.
-- **Conceito cobrado:** Tradução de programas.
-- **Pegadinha usada:** Transformar diferença conceitual em diferença de sistema operacional..
-- **Como pensar para acertar:** Compare quando a tradução acontece: antes ou durante a execução.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
+- **Alternativa correta:** D.
+- **A) está errada:** Produzir sempre executável nativo autônomo caracteriza outra estratégia.
+- **B) está errada:** Carregar executável é função do loader, não definição de compilador.
+- **C) está errada:** Combinar objetos e símbolos externos é função do linker.
+- **D) está correta:** Expressa o contraste clássico entre tradução prévia e execução incremental.
+- **Conceito cobrado:** Compilador e interpretador.
+- **Pegadinha usada:** Atribuir ao interpretador funções do linker ou loader.
+- **Como pensar para acertar:** Compare o momento em que tradução e execução acontecem.
 ### Comentário da Questão 13
 
-- **Alternativa correta:** C.
-- **A) está errada:** Cache armazena dados; ULA executa operações.
-- **B) está errada:** Localidade de referência não trata codificação de caracteres.
-- **C) está correta:** Acesso a posições próximas aumenta chance de linhas de cache úteis.
-- **D) está errada:** Cache melhora desempenho, mas não elimina RAM.
-- **Conceito cobrado:** Cache e localidade de referência.
-- **Pegadinha usada:** Achar que cache muda a função da CPU..
-- **Como pensar para acertar:** Associe repetição/proximidade de acessos a localidade temporal/espacial.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
 
+- **Alternativa correta:** C.
+- **A) está errada:** O cenário fala em endereços próximos, não necessariamente no mesmo elemento.
+- **B) está errada:** Vizinhança de endereços caracteriza uma forma de localidade.
+- **C) está correta:** Linhas de cache podem trazer dados vizinhos úteis ao percurso.
+- **D) está errada:** Política de escrita e padrão de acesso são decisões diferentes.
+- **Conceito cobrado:** Localidade espacial.
+- **Pegadinha usada:** Confundir proximidade espacial, reuso temporal e política de escrita.
+- **Como pensar para acertar:** Endereços vizinhos sugerem localidade espacial.
 ### Comentário da Questão 14
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Inclui II, que superestima o ASCII.
@@ -979,96 +1236,113 @@ Extra Dia 1.20: B
 - **C) está errada:** II é falsa porque ASCII é limitado.
 - **D) está errada:** II é falsa e I também deveria estar incluída.
 - **Conceito cobrado:** Codificação de caracteres.
-- **Pegadinha usada:** Confundir ASCII com Unicode..
+- **Pegadinha usada:** Confundir ASCII com Unicode.
 - **Como pensar para acertar:** Lembre que texto também é dado codificado numericamente.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 15
 
-- **Alternativa correta:** A.
-- **A) está correta:** A expressão envolve capacidades naturais de processamento/endereçamento da arquitetura.
-- **B) está errada:** 64 bits não significa possuir 64 núcleos.
-- **C) está errada:** Bits da arquitetura não são taxa de rede.
-- **D) está errada:** Arquitetura de 64 bits não impõe esse tamanho de RAM.
-- **Conceito cobrado:** Arquitetura de 32/64 bits.
-- **Pegadinha usada:** Associar bits da arquitetura a núcleos, internet ou memória instalada..
-- **Como pensar para acertar:** Veja o contexto: largura interna/endereçamento, não quantidade de componentes.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 16
-
-- **Alternativa correta:** C.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: ele transporta informação de localização.
-- **B) está correta como afirmação:** Correta: controle coordena operações.
-- **C) é a incorreta:** Incorreta: operações aritméticas são executadas pela ULA, não pelo barramento de endereços.
-- **D) está correta como afirmação:** Correta: dados trafegam pelo barramento de dados.
-- **Conceito cobrado:** Barramentos.
-- **Pegadinha usada:** Atribuir função de processamento ao meio de comunicação..
-- **Como pensar para acertar:** Separe transportar dados, indicar endereço e controlar operação.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 17
-
-- **Alternativa correta:** C.
-- **A) está errada:** Dependências podem causar hazards; o pipeline não as elimina por definição.
-- **B) está errada:** Pipeline é técnica de execução, não substituição de memória.
-- **C) está correta:** Pipelining permite que diferentes instruções ocupem etapas distintas simultaneamente.
-- **D) está errada:** Pipeline melhora vazão, mas uma instrução isolada não necessariamente fica com menor latência.
-- **Conceito cobrado:** Pipeline de CPU.
-- **Pegadinha usada:** Confundir vazão com latência individual..
-- **Como pensar para acertar:** Pense em linha de produção: mais itens por tempo, não necessariamente item isolado mais rápido.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 18
-
-- **Alternativa correta:** B.
-- **A) está errada:** Não se relaciona ao conteúdo da cache.
-- **B) está correta:** Essa é a definição de cache miss.
-- **C) está errada:** Isso seria cache hit, não miss.
-- **D) está errada:** Não é conceito de cache.
-- **Conceito cobrado:** Cache hit e cache miss.
-- **Pegadinha usada:** Trocar hit por miss..
-- **Como pensar para acertar:** Pergunte: encontrou na cache? Se sim, hit; se não, miss.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 19
-
-- **Alternativa correta:** A.
-- **A) está correta:** Representação de ponto flutuante é finita e pode aproximar valores.
-- **B) está errada:** Muitos valores decimais não têm representação binária finita exata.
-- **C) está errada:** Caracteres e números reais usam representações diferentes.
-- **D) está errada:** A limitação de precisão torna arredondamento possível.
-- **Conceito cobrado:** Representação de ponto flutuante.
-- **Pegadinha usada:** Usar “todo” e “impossível” em tema de precisão..
-- **Como pensar para acertar:** Lembre que a representação é finita; nem todo real cabe exatamente.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 20
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
 - **Alternativa correta:** D.
-- **A) está errada:** O sinal continua representado pelo padrão de bits.
-- **B) está errada:** Complemento de dois representa positivos e negativos.
-- **C) está errada:** É técnica de representação numérica, não textual.
-- **D) está correta:** Complemento de dois é a forma usual para inteiros com sinal.
-- **Conceito cobrado:** Inteiros com sinal.
-- **Pegadinha usada:** Tratar complemento de dois como texto ou como eliminação do sinal..
-- **Como pensar para acertar:** Associe complemento de dois a inteiros negativos e aritmética binária.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** As afirmações II e III também estão corretas.
+- **B) está errada:** Exclui a afirmação I, que separa largura arquitetural de quantidade de núcleos.
+- **C) está errada:** Exclui a afirmação III, pois largura do barramento de dados é independente.
+- **D) está correta:** Registradores, endereçamento e transporte têm larguras relacionadas, mas não idênticas por obrigação.
+- **Conceito cobrado:** Larguras de registrador, endereço e dados.
+- **Pegadinha usada:** Tratar o rótulo “64 bits” como medida única de toda a máquina.
+- **Como pensar para acertar:** Avalie separadamente processamento, quantidade de endereços e bits transferidos.
+### Comentário da Questão 16
 
-### Comentário da Questão 21
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
 
 - **Alternativa correta:** C.
-- **A) está errada:** O assembler traduz linguagem de montagem.
-- **B) está errada:** Pré-processamento não é execução/carregamento.
-- **C) está correta:** O loader carrega e prepara o programa em memória.
-- **D) está errada:** O linker atua antes, combinando objetos e bibliotecas.
-- **Conceito cobrado:** Loader.
-- **Pegadinha usada:** Confundir linker e loader..
-- **Como pensar para acertar:** No fluxo clássico, ligar vem antes de carregar; carregar vem antes de executar.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Observação:** A questão pede a alternativa incorreta.
+- **A) está correta como afirmação:** O barramento de endereços identifica a posição de acesso.
+- **B) está correta como afirmação:** O barramento de controle leva sinais como leitura e escrita.
+- **C) é a incorreta:** Sinais coordenam a operação; a ULA executa o cálculo aritmético.
+- **D) está correta como afirmação:** O barramento de dados transporta o conteúdo.
+- **Conceito cobrado:** Barramentos e ULA.
+- **Pegadinha usada:** Confundir coordenação do acesso com execução do cálculo.
+- **Como pensar para acertar:** Separe endereço, dados, controle e processamento.
+### Comentário da Questão 17
 
+- **Nível: Difícil**
+- **Uso:** Essenciais
+- **Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Pipeline sobrepõe etapas, mas dependências e desvios podem produzir stalls e descartes.
+- **B) está errada:** Dependência não é eliminada e não altera capacidade da RAM.
+- **C) está errada:** Desvio e dependência afetam o fluxo do pipeline, não essas larguras.
+- **D) está errada:** O ganho principal é de vazão e não há garantia de menor latência individual.
+- **Conceito cobrado:** Pipeline, dependência e desvio.
+- **Pegadinha usada:** Transformar melhora potencial de throughput em garantia de latência.
+- **Como pensar para acertar:** Identifique o paralelismo e depois os eventos que interrompem o fluxo.
+### Comentário da Questão 18
+
+- **Nível: Médio**
+- **Uso:** Aprofundamento
+- **Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
+
+- **Alternativa correta:** C.
+- **A) está errada:** Dirty indica modificação pendente, não ausência do dado.
+- **B) está errada:** Encontrar o dado é cache hit.
+- **C) está correta:** Cache miss exige buscar o dado em nível inferior.
+- **D) está errada:** Write-through é uma política de escrita, não uma falha de leitura.
+- **Conceito cobrado:** Cache hit e cache miss.
+- **Pegadinha usada:** Misturar presença do dado, estado dirty e política de escrita.
+- **Como pensar para acertar:** Primeiro pergunte se o dado procurado está na cache.
+### Comentário da Questão 19
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Uma quantidade finita de bits pode aproximar valores sem representação binária finita.
+- **B) está errada:** Nem todo decimal finito é exato em base binária com largura finita.
+- **C) está errada:** Arredondamento não se limita à divisão por zero.
+- **D) está errada:** Mais bits reduzem erro, mas não tornam exato todo número real.
+- **Conceito cobrado:** Ponto flutuante e aproximação.
+- **Pegadinha usada:** Converter maior precisão em exatidão universal.
+- **Como pensar para acertar:** Diferencie faixa, precisão e representação exata.
+### Comentário da Questão 20
+
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
+
+- **Alternativa correta:** D.
+- **A) está errada:** `11111100` não vale -124 em complemento de dois.
+- **B) está errada:** A leitura 252 ignora que o valor deve ser interpretado com sinal.
+- **C) está errada:** A soma -4 + 5 = 1 cabe no intervalo de 8 bits, sem overflow.
+- **D) está correta:** O padrão representa -4 e a soma gera `00000001`, equivalente a 1.
+- **Conceito cobrado:** Complemento de dois e overflow.
+- **Pegadinha usada:** Alternar indevidamente entre leitura com e sem sinal.
+- **Como pensar para acertar:** Interprete a largura e o sinal antes de somar e testar o intervalo.
+### Comentário da Questão 21
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
+
+- **Alternativa correta:** C.
+- **A) está errada:** O assembler traduz assembly e não carrega o executável pronto.
+- **B) está errada:** Compilar não é iniciar o processo na memória.
+- **C) está correta:** O loader mapeia o executável e prepara o início da execução.
+- **D) está errada:** O linker forma o executável, mas não inicia o processo.
+- **Conceito cobrado:** Loader.
+- **Pegadinha usada:** Confundir formação do executável com sua carga.
+- **Como pensar para acertar:** Ligar vem antes de carregar; carregar vem antes de executar.
 ### Comentário da Questão 22
+
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Confunde a quantidade de bits com bytes.
@@ -1076,71 +1350,84 @@ Extra Dia 1.20: B
 - **C) está errada:** 2 bytes correspondem a 16 bits.
 - **D) está errada:** 8 bytes correspondem a 64 bits.
 - **Conceito cobrado:** Bits e bytes.
-- **Pegadinha usada:** Não converter bit para byte..
+- **Pegadinha usada:** Não converter bit para byte.
 - **Como pensar para acertar:** Divida a quantidade de bits por 8.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 23
 
-- **Alternativa correta:** A.
-- **A) está correta:** Vazão e tempo de resposta são métricas diferentes.
-- **B) está errada:** Maior vazão não significa necessariamente menor latência.
-- **C) está errada:** Latência é tempo, não capacidade.
-- **D) está errada:** Throughput mede produção/vazão, não temperatura.
-- **Conceito cobrado:** Métricas de desempenho.
-- **Pegadinha usada:** Confundir vazão com tempo de resposta..
-- **Como pensar para acertar:** Pergunte: é quantidade produzida ou tempo para responder?
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 24
-
-- **Alternativa correta:** D.
-- **A) está errada:** No indireto, a instrução aponta para local que contém o endereço do operando.
-- **B) está errada:** Paginação é técnica de memória virtual, não modo da instrução.
-- **C) está errada:** DMA trata transferência de E/S, não operando imediato.
-- **D) está correta:** O operando literal está codificado na própria instrução.
-- **Conceito cobrado:** Modos de endereçamento.
-- **Pegadinha usada:** Não reconhecer o valor literal na instrução..
-- **Como pensar para acertar:** Valor escrito diretamente na instrução indica imediato.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 25
-
-- **Alternativa correta:** C.
-- **A) está errada:** Ligação dinâmica trata bibliotecas, não transferência de dispositivo.
-- **B) está errada:** ASCII codifica caracteres, não transfere blocos de E/S.
-- **C) está correta:** DMA permite transferência entre dispositivo e memória sem CPU mover cada byte.
-- **D) está errada:** ULA executa operações; não é mecanismo de E/S.
-- **Conceito cobrado:** Entrada/saída e DMA.
-- **Pegadinha usada:** Confundir mecanismo de E/S com processamento ou tradução de código..
-- **Como pensar para acertar:** Procure “dispositivo para memória com pouca CPU”: isso sugere DMA.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 26
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
 
 - **Alternativa correta:** B.
-- **A) está errada:** Escalonamento é função de sistema operacional.
-- **B) está correta:** Firmware fica embarcado/associado a dispositivos e fornece controle básico.
-- **C) está errada:** Aplicativos de usuário não são firmware por definição.
-- **D) está errada:** Firmware é software; RAM é memória principal volátil.
-- **Conceito cobrado:** Firmware.
-- **Pegadinha usada:** Tratar firmware como hardware puro ou aplicativo comum..
-- **Como pensar para acertar:** Firmware fica entre hardware e software, mas continua sendo software.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** X tem maior throughput, porém maior latência.
+- **B) está correta:** 120 > 100 requisições/s, enquanto 25 < 40 ms.
+- **C) está errada:** Inverte as duas comparações.
+- **D) está errada:** Y tem menor throughput, mas também menor latência.
+- **Conceito cobrado:** Throughput e latência.
+- **Pegadinha usada:** Supor que o melhor valor de uma métrica garante o melhor da outra.
+- **Como pensar para acertar:** Compare requisições por tempo e tempo por requisição separadamente.
+### Comentário da Questão 24
 
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Enderecamento](semana_01_estudo.md#s1-d1-enderecamento)
+
+- **Alternativa correta:** D.
+- **A) está errada:** `#5` é o valor e não um endereço que aponta para outro.
+- **B) está errada:** O símbolo não indica uma posição fixa de memória.
+- **C) está errada:** Não há registrador-base nem cálculo de índice.
+- **D) está correta:** O literal está codificado diretamente na instrução.
+- **Conceito cobrado:** Endereçamento imediato aplicado.
+- **Pegadinha usada:** Tratar a notação de literal como endereço.
+- **Como pensar para acertar:** Determine se o campo contém o valor ou a localização do valor.
+### Comentário da Questão 25
+
+- **Nível: Difícil**
+- **Uso:** Essenciais
+- **Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
+
+- **Alternativa correta:** C.
+- **A) está errada:** A afirmação II é falsa, pois a CPU ainda configura e trata a operação.
+- **B) está errada:** A afirmação II é falsa e a I também deveria ser incluída.
+- **C) está correta:** DMA move o bloco sem cópia byte a byte pela CPU e pode avisar por interrupção.
+- **D) está errada:** Inclui a eliminação absoluta da CPU, que não ocorre.
+- **Conceito cobrado:** DMA e interrupção de conclusão.
+- **Pegadinha usada:** Interpretar menor intervenção como ausência total da CPU.
+- **Como pensar para acertar:** Separe configuração, transferência do bloco e aviso de conclusão.
+### Comentário da Questão 26
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Firmware](semana_01_estudo.md#s1-d1-firmware)
+
+- **Alternativa correta:** B.
+- **A) está errada:** Driver e firmware são softwares distintos e atuam em camadas diferentes.
+- **B) está correta:** Firmware fornece inicialização ou controle básico próximo ao hardware.
+- **C) está errada:** ROM é um meio de armazenamento; firmware é o código nela armazenado.
+- **D) está errada:** Nem todo aplicativo que usa um dispositivo é firmware.
+- **Conceito cobrado:** Firmware.
+- **Pegadinha usada:** Confundir código, meio de armazenamento, driver e aplicativo.
+- **Como pensar para acertar:** Procure software persistente associado ao controle básico do hardware.
 ### Comentário da Questão 27
 
-- **Alternativa correta:** A.
-- **A) está correta:** Memórias próximas da CPU tendem a ser mais rápidas e menores.
-- **B) está errada:** SSD costuma ser maior e mais lento que cache.
-- **C) está errada:** Registradores são pequenos e muito rápidos.
-- **D) está errada:** A afirmação justamente envolve cache na hierarquia.
-- **Conceito cobrado:** Hierarquia de memória.
-- **Pegadinha usada:** Inverter capacidade e velocidade..
-- **Como pensar para acertar:** Pense em custo por bit: quanto mais rápido e próximo, menor tende a ser.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
+- **Alternativa correta:** A.
+- **A) está correta:** A hierarquia típica troca capacidade e custo por menor latência perto da CPU.
+- **B) está errada:** Maior capacidade não implica necessariamente menor latência.
+- **C) está errada:** Registradores e cache ficam mais próximos da execução que a RAM.
+- **D) está errada:** Volatilidade não é o único critério da hierarquia.
+- **Conceito cobrado:** Relações na hierarquia de memória.
+- **Pegadinha usada:** Converter tendência de projeto em regra baseada em uma única propriedade.
+- **Como pensar para acertar:** Considere conjuntamente proximidade, latência, custo e capacidade.
 ### Comentário da Questão 28
+
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 - **Alternativa correta:** D.
 - **A) está errada:** II está errada e III está correta.
@@ -1148,96 +1435,113 @@ Extra Dia 1.20: B
 - **C) está errada:** I deveria ser verdadeira.
 - **D) está correta:** I é verdadeira; II é falsa porque byte tem 8 bits; III é verdadeira.
 - **Conceito cobrado:** Representação de dados.
-- **Pegadinha usada:** Trocar byte por quarteto de bits..
+- **Pegadinha usada:** Trocar byte por quarteto de bits.
 - **Como pensar para acertar:** Teste cada frase de forma independente.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 29
 
-- **Alternativa correta:** C.
-- **A) está errada:** Sistemas de 64 bits também podem usar memória virtual.
-- **B) está errada:** Barramentos continuam existindo conforme a arquitetura.
-- **C) está correta:** Mais bits de endereço significam mais combinações possíveis.
-- **D) está errada:** Bits de arquitetura não determinam multiplicação de clock.
-- **Conceito cobrado:** Endereçamento em arquiteturas.
-- **Pegadinha usada:** Confundir largura de endereço com clock..
-- **Como pensar para acertar:** Mais bits significam mais combinações de endereços.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Aprofundamento
+- **Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
+- **Alternativa correta:** C.
+- **A) está errada:** Barramento de dados e largura de endereçamento são grandezas distintas.
+- **B) está errada:** Espaço teórico não precisa estar integralmente preenchido por RAM física.
+- **C) está correta:** Mais bits de endereço permitem mais combinações distintas.
+- **D) está errada:** Arquitetura de 64 bits ainda pode usar endereços virtuais e tradução.
+- **Conceito cobrado:** Capacidade de endereçamento.
+- **Pegadinha usada:** Confundir espaço representável, memória instalada e largura de dados.
+- **Como pensar para acertar:** Conte as combinações possíveis no campo de endereço.
 ### Comentário da Questão 30
 
-- **Alternativa correta:** A.
-- **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) é a incorreta:** Incorreta: registradores são fundamentais para operação interna da CPU.
-- **B) está correta como afirmação:** Correta: a CPU busca instruções para executar.
-- **C) está correta como afirmação:** Correta: decodificação entende a instrução.
-- **D) está correta como afirmação:** Correta: depende da instrução.
-- **Conceito cobrado:** Ciclo de instrução.
-- **Pegadinha usada:** Ignorar registradores no ciclo de execução..
-- **Como pensar para acertar:** Busque, decodifique e execute mentalmente; registradores aparecem no caminho.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Programa armazenado e ciclo de instrução](semana_01_estudo.md#s1-d1-von-neumann-ciclo)
 
+- **Alternativa correta:** A.
+- **Observação:** A questão pede a alternativa incorreta.
+- **A) é a incorreta:** Registradores mantêm instruções, operandos, endereços ou resultados ao longo do ciclo.
+- **B) está correta como afirmação:** A busca obtém a instrução.
+- **C) está correta como afirmação:** A decodificação identifica a operação.
+- **D) está correta como afirmação:** A execução pode combinar ULA, registradores e memória.
+- **Conceito cobrado:** Ciclo de instrução.
+- **Pegadinha usada:** Omitir os armazenamentos internos necessários ao processamento.
+- **Como pensar para acertar:** Percorra busca, decodificação, operandos, execução e resultado.
 ### Comentário da Questão 31
 
-- **Alternativa correta:** A.
-- **A) está correta:** Reuso de um mesmo dado em intervalo curto caracteriza localidade temporal.
-- **B) está errada:** Localidade espacial envolve endereços próximos, não necessariamente o mesmo dado.
-- **C) está errada:** Interrupção é evento de controle, não padrão de acesso a dado.
-- **D) está errada:** O padrão de acesso não implica obrigatoriamente esse modo de endereçamento.
-- **Conceito cobrado:** Localidade temporal.
-- **Pegadinha usada:** Confundir temporal com espacial..
-- **Como pensar para acertar:** Temporal tem relação com tempo/reuso; espacial com vizinhança de endereços.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 32
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Cache e localidade](semana_01_estudo.md#s1-d1-cache-localidade)
 
 - **Alternativa correta:** D.
-- **A) está errada:** Contraria o conceito de programa armazenado.
-- **B) está errada:** Dados podem estar na memória e no armazenamento.
-- **C) está errada:** A CPU continua buscando instruções para executar.
-- **D) está correta:** A ideia central é armazenar o programa na memória.
-- **Conceito cobrado:** Arquitetura de von Neumann.
-- **Pegadinha usada:** Negar a presença de instruções na memória..
-- **Como pensar para acertar:** A palavra-chave é memória armazenando instruções.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** Política de escrita não decorre do simples reuso de leitura.
+- **B) está errada:** Localidade espacial envolve endereços vizinhos.
+- **C) está errada:** Reuso do mesmo dado favorece, em vez de impedir, permanência na cache.
+- **D) está correta:** Reutilizar o mesmo valor em curto intervalo caracteriza localidade temporal.
+- **Conceito cobrado:** Localidade temporal.
+- **Pegadinha usada:** Misturar tempo, vizinhança e escrita.
+- **Como pensar para acertar:** Mesmo dado em pouco tempo significa localidade temporal.
+### Comentário da Questão 32
 
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Programa armazenado e ciclo de instrução](semana_01_estudo.md#s1-d1-von-neumann-ciclo)
+
+- **Alternativa correta:** D.
+- **A) está errada:** O programa precisa ser levado à memória para execução.
+- **B) está errada:** Instruções também podem residir na memória.
+- **C) está errada:** A separação física obrigatória não define o modelo de von Neumann.
+- **D) está correta:** Dados e instruções podem ser armazenados e buscados pela CPU.
+- **Conceito cobrado:** Programa armazenado.
+- **Pegadinha usada:** Transformar distinção lógica em separação física obrigatória.
+- **Como pensar para acertar:** Lembre que a CPU busca tanto instruções quanto operandos na memória.
 ### Comentário da Questão 33
 
-- **Alternativa correta:** C.
-- **A) está errada:** Loader prepara a execução, não traduz assembly.
-- **B) está errada:** Escalonador é do sistema operacional.
-- **C) está correta:** Assembler traduz linguagem de montagem para código de máquina.
-- **D) está errada:** O linker não traduz assembly diretamente.
-- **Conceito cobrado:** Assembler.
-- **Pegadinha usada:** Confundir montador, linker e loader..
-- **Como pensar para acertar:** Associe assembly a assembler/montador.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
+- **Alternativa correta:** C.
+- **A) está errada:** Loader recebe executável já formado.
+- **B) está errada:** Compilador tradicional traduz linguagem de nível mais alto.
+- **C) está correta:** Assembler traduz instruções assembly para código de máquina ou objeto.
+- **D) está errada:** Linker combina objetos; não traduz a linguagem assembly.
+- **Conceito cobrado:** Assembler.
+- **Pegadinha usada:** Trocar tradução, ligação e carregamento.
+- **Como pensar para acertar:** Relacione diretamente assembly a assembler.
 ### Comentário da Questão 34
 
-- **Alternativa correta:** B.
-- **A) está errada:** SO continua necessário para gerenciar recursos.
-- **B) está correta:** Com mais memória física, o sistema tende a depender menos de armazenamento secundário para páginas.
-- **C) está errada:** RAM não altera diretamente o clock do processador.
-- **D) está errada:** São componentes diferentes da hierarquia.
-- **Conceito cobrado:** RAM e desempenho.
-- **Pegadinha usada:** Atribuir à RAM efeitos de CPU ou SO..
-- **Como pensar para acertar:** Relacione muitas aplicações a pressão de memória e paginação.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 35
+- **Nível: Muito difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
 - **Alternativa correta:** A.
-- **A) está correta:** Registradores armazenam temporariamente operandos, endereços e resultados usados diretamente pela CPU.
-- **B) está errada:** Registradores pertencem à CPU, não ao SSD.
-- **C) está errada:** Eles são temporários, não arquivos permanentes.
-- **D) está errada:** Registradores existem mesmo com cache.
-- **Conceito cobrado:** Registradores.
-- **Pegadinha usada:** Confundir registradores de CPU com registros de arquivo/cadastro..
-- **Como pensar para acertar:** Veja o contexto: CPU e operandos indicam registradores internos.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está correta:** Separa `2^36` bytes endereçáveis, pico bruto dobrado sob a premissa e métricas efetivas ainda não demonstradas.
+- **B) está errada:** A premissa mantém a taxa de transferências e dobra os bits de cada transferência, portanto o pico bruto muda.
+- **C) está errada:** O pico bruto do barramento não prova que controlador, memória e carga entreguem o dobro de vazão efetiva.
+- **D) está errada:** A largura de dados não altera as 36 linhas de endereço, e nem vazão efetiva nem latência seguem automaticamente o pico bruto.
+- **Conceito cobrado:** Espaço endereçável, largura por transferência, pico bruto, vazão efetiva e latência.
+- **Pegadinha usada:** Transformar capacidade teórica do barramento em desempenho observado obrigatório.
+- **Como pensar para acertar:** Decida, separadamente, endereço, largura, taxa teórica, gargalos do sistema e tempo de resposta.
+### Comentário da Questão 35
 
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Registradores são pequenos, rápidos e diretamente usados pela CPU.
+- **B) está errada:** RAM possui maior latência e não elimina registradores.
+- **C) está errada:** Cache e registradores possuem papéis complementares.
+- **D) está errada:** Registradores de trabalho são temporários e não precisam ser não voláteis.
+- **Conceito cobrado:** Registradores.
+- **Pegadinha usada:** Substituir registradores por outro nível da hierarquia.
+- **Como pensar para acertar:** Identifique onde a ULA obtém operandos imediatos e grava resultados.
 ### Comentário da Questão 36
+
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
 - **Alternativa correta:** D.
 - **A) está errada:** São meios de armazenamento persistente.
@@ -1245,35 +1549,42 @@ Extra Dia 1.20: B
 - **C) está errada:** Mistura RAM volátil com meios persistentes.
 - **D) está correta:** Esses níveis são usados temporariamente durante o processamento.
 - **Conceito cobrado:** Volatilidade e hierarquia.
-- **Pegadinha usada:** Misturar RAM com armazenamento permanente..
+- **Pegadinha usada:** Misturar RAM com armazenamento permanente.
 - **Como pensar para acertar:** Separe memória de trabalho de armazenamento persistente.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 37
 
-- **Alternativa correta:** C.
-- **A) está errada:** Interrupções podem vir de hardware e eventos externos.
-- **B) está errada:** Cache miss é evento de memória, não tipo de interrupção mascarável.
-- **C) está correta:** Interrupções mascaráveis podem ser controladas conforme prioridade e contexto.
-- **D) está errada:** Isso se aproxima de interrupção não mascarável.
-- **Conceito cobrado:** Tipos de interrupção.
-- **Pegadinha usada:** Confundir mascarável com não mascarável..
-- **Como pensar para acertar:** Máscara sugere possibilidade de bloquear/adiar.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Interrupções e E/S](semana_01_estudo.md#s1-d1-interrupcoes-io)
 
+- **Alternativa correta:** D.
+- **A) está errada:** Mascarar normalmente adia eventos elegíveis; não implica descartá-los todos.
+- **B) está errada:** Inverte o tratamento esperado de evento mascarável e não mascarável.
+- **C) está errada:** A distinção decorre de prioridade e mascaramento, não da largura do barramento.
+- **D) está correta:** O evento comum pode permanecer pendente, e a máscara ordinária não bloqueia o não mascarável.
+- **Conceito cobrado:** Interrupções mascaráveis e não mascaráveis.
+- **Pegadinha usada:** Confundir adiar com apagar e inverter as prioridades.
+- **Como pensar para acertar:** Determine primeiro se o evento aceita a máscara aplicada.
 ### Comentário da Questão 38
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não se relaciona a memória.
-- **B) está correta:** Largura de banda mede taxa de transferência.
-- **C) está errada:** Isso é mais próximo de latência.
-- **D) está errada:** Não é métrica de memória.
-- **Conceito cobrado:** Largura de banda de memória.
-- **Pegadinha usada:** Confundir largura de banda com latência..
-- **Como pensar para acertar:** Taxa de transferência é “quanto por tempo”; latência é “quanto demora”.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Aprofundamento
+- **Referência:** [Arquiteturas, barramentos e capacidade](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Tempo de um único acesso descreve latência.
+- **B) está correta:** Largura de banda mede volume transferido por unidade de tempo.
+- **C) está errada:** Capacidade total é quantidade armazenável, não taxa de transferência.
+- **D) está errada:** Quantidade de endereços depende do barramento de endereços.
+- **Conceito cobrado:** Largura de banda.
+- **Pegadinha usada:** Confundir taxa, latência, capacidade e endereçamento.
+- **Como pensar para acertar:** Procure a grandeza “dados por unidade de tempo”.
 ### Comentário da Questão 39
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Sistemas de numeração](semana_01_estudo.md#s1-d1-numeracao)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Hexadecimal usa 16 símbolos; A começa no valor 10.
@@ -1281,47 +1592,56 @@ Extra Dia 1.20: B
 - **C) está errada:** Confunde letras com ordem alfabética simples.
 - **D) está errada:** Esses valores excedem um único dígito hexadecimal.
 - **Conceito cobrado:** Base hexadecimal.
-- **Pegadinha usada:** Achar que F vale 16..
+- **Pegadinha usada:** Achar que F vale 16.
 - **Como pensar para acertar:** Lembre: os dígitos vão de 0 a 15.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 40
 
-- **Alternativa correta:** D.
-- **A) está errada:** Interrupções ajudam multitarefa, não impedem.
-- **B) está errada:** Periférico continua sendo dispositivo de E/S.
-- **C) está errada:** Drivers continuam necessários para controle adequado.
-- **D) está correta:** Interrupções reduzem espera ativa/polling constante.
-- **Conceito cobrado:** Interrupções e E/S.
-- **Pegadinha usada:** Não perceber a diferença entre polling e interrupção..
-- **Como pensar para acertar:** Evento concluído avisa a CPU em vez de a CPU ficar perguntando.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
+- **Alternativa correta:** D.
+- **A) está errada:** Espera ocupada é justamente o comportamento que a interrupção pode evitar.
+- **B) está errada:** Transferência de dados ainda requer mecanismo e configuração adequados.
+- **C) está errada:** Tratar uma interrupção possui custo e pode exigir salvar contexto.
+- **D) está correta:** A CPU trabalha e recebe o aviso quando a E/S termina.
+- **Conceito cobrado:** Interrupção versus polling.
+- **Pegadinha usada:** Tratar redução de espera como eliminação de todo custo.
+- **Como pensar para acertar:** Compare “ficar consultando” com “ser avisado”.
 ### Comentário da Questão 41
 
-- **Alternativa correta:** C.
-- **A) está errada:** Cache pode armazenar linhas modificadas.
-- **B) está errada:** Coerência continua sendo preocupação em sistemas com múltiplas caches.
-- **C) está correta:** Write-back adia a escrita na memória até momento adequado.
-- **D) está errada:** Isso descreve write-through, não write-back.
-- **Conceito cobrado:** Políticas de escrita de cache.
-- **Pegadinha usada:** Confundir write-back com write-through..
-- **Como pensar para acertar:** Back sugere retorno posterior para a memória principal.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Políticas de escrita da cache](semana_01_estudo.md#s1-d1-cache-escrita)
 
+- **Alternativa correta:** A.
+- **A) está correta:** Dirty em write-back pode deixar a RAM desatualizada; write-through aumenta tráfego ao atualizar cada escrita.
+- **B) está errada:** Dirty indica precisamente que a cópia da memória pode estar antiga.
+- **C) está errada:** A política não cria armazenamento permanente nem bloqueio universal.
+- **D) está errada:** As políticas diferem no momento em que a RAM é atualizada.
+- **Conceito cobrado:** Write-back, write-through e coerência.
+- **Pegadinha usada:** Confundir estado dirty com memória principal já sincronizada.
+- **Como pensar para acertar:** Localize primeiro onde está o valor mais recente.
 ### Comentário da Questão 42
 
-- **Alternativa correta:** B.
-- **A) está errada:** Largura de barramento não é capacidade de armazenamento.
-- **B) está correta:** A largura do barramento de dados indica quantidade de bits transportados em paralelo.
-- **C) está errada:** Endereço é função do barramento de endereços, não de dados.
-- **D) está errada:** Número de programas não decorre diretamente da largura do barramento.
-- **Conceito cobrado:** Barramento de dados.
-- **Pegadinha usada:** Trocar largura do barramento por capacidade ou quantidade de programas..
-- **Como pensar para acertar:** Pergunte: é barramento de dados, endereços ou controle?
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Arquiteturas de 32 e 64 bits](semana_01_estudo.md#s1-d1-arquitetura-32-64)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Quantidade de endereços depende do barramento de endereços.
+- **B) está correta:** A largura indica quantos bits de dados trafegam em paralelo por transferência.
+- **C) está errada:** 64 bits correspondem a 8 bytes, não a 64 bytes.
+- **D) está errada:** Largura não determina sozinha a taxa por segundo.
+- **Conceito cobrado:** Barramento de dados.
+- **Pegadinha usada:** Trocar bits por bytes ou largura por frequência.
+- **Como pensar para acertar:** Separe bits por transferência de transferências por segundo.
 ### Comentário da Questão 43
+
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Há 256 valores porque o zero é contado.
@@ -1329,334 +1649,415 @@ Extra Dia 1.20: B
 - **C) está errada:** Esse intervalo teria 257 valores.
 - **D) está errada:** Mistura representação com sinal e sem sinal incorretamente.
 - **Conceito cobrado:** Intervalo sem sinal.
-- **Pegadinha usada:** Esquecer o zero..
+- **Pegadinha usada:** Esquecer o zero.
 - **Como pensar para acertar:** Quantidade de combinações é 256; maior valor é 255.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
 
 ### Comentário da Questão 44
 
-- **Alternativa correta:** D.
-- **A) está errada:** CPU não digita nem valida biblioteca no código-fonte.
-- **B) está errada:** ULA executa operações, não resolve biblioteca externa.
-- **C) está errada:** Codificação de caracteres não resolve dependências de biblioteca.
-- **D) está correta:** A resolução de símbolos externos e bibliotecas ocorre no linking.
-- **Conceito cobrado:** Ligação de programas.
-- **Pegadinha usada:** Atribuir erro de dependência ao compilador sempre, sem distinguir etapas..
-- **Como pensar para acertar:** Se o problema é símbolo/biblioteca externa, pense em linker.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Tradução de programas](semana_01_estudo.md#s1-d1-traducao-programas)
 
+- **Alternativa correta:** C.
+- **A) está errada:** Loader não resolve símbolos antes da compilação e linker não carrega processos.
+- **B) está errada:** Assembler não combina bibliotecas de alto nível e compilador não é loader.
+- **C) está correta:** Linker resolve referências; loader mapeia o executável formado.
+- **D) está errada:** Símbolos externos podem depender da ligação, e loader não inventa biblioteca ausente.
+- **Conceito cobrado:** Compilação, ligação e carregamento.
+- **Pegadinha usada:** Inverter a ordem e a responsabilidade das ferramentas.
+- **Como pensar para acertar:** Identifique o artefato existente em cada etapa: fonte, objeto e executável.
 ### Comentário da Questão 45
 
-- **Alternativa correta:** C.
-- **A) está errada:** A sigla ROM remete a memória de leitura; RAM permite acesso de leitura/escrita.
-- **B) está errada:** ROM não substitui registradores no processamento.
-- **C) está correta:** A distinção central envolve persistência e função.
-- **D) está errada:** ROM normalmente preserva conteúdo; RAM é volátil.
-- **Conceito cobrado:** ROM e RAM.
-- **Pegadinha usada:** Inverter siglas e propriedades..
-- **Como pensar para acertar:** Associe ROM a firmware/não volatilidade e RAM a execução/volatilidade.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Hierarquia de memória](semana_01_estudo.md#s1-d1-hierarquia-memoria)
 
+- **Alternativa correta:** C.
+- **A) está errada:** A RAM é normalmente volátil.
+- **B) está errada:** Inverte os usos típicos de RAM e ROM.
+- **C) está correta:** ROM tende a preservar conteúdo; RAM atende aos dados e programas em execução.
+- **D) está errada:** Clock não determina sozinho a volatilidade da memória.
+- **Conceito cobrado:** ROM e RAM.
+- **Pegadinha usada:** Inverter volatilidade, função e causa técnica.
+- **Como pensar para acertar:** Pergunte qual memória é área de trabalho e qual tende a preservar inicialização.
 ### Comentário da Questão 46
 
-- **Alternativa correta:** B.
-- **A) está errada:** Não é tema técnico do cenário.
-- **B) está correta:** Cálculo intensivo com pouca E/S tende a ser CPU-bound.
-- **C) está errada:** O cenário não envolve impressão.
-- **D) está errada:** Não há indicação de modelagem de dados.
-- **Conceito cobrado:** CPU-bound.
-- **Pegadinha usada:** Confundir gargalo de CPU com gargalo de E/S..
-- **Como pensar para acertar:** Observe o recurso mais demandado no cenário.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 47
-
-- **Alternativa correta:** A.
-- **A) está correta:** Essa é função típica de firmware em dispositivos.
-- **B) está errada:** Firmware é anterior e mais baixo nível que aplicativos de usuário.
-- **C) está errada:** Firmware costuma ficar em memória não volátil.
-- **D) está errada:** Consulta agregada é banco de dados, não firmware.
-- **Conceito cobrado:** Firmware em sistemas embarcados.
-- **Pegadinha usada:** Tratar firmware como aplicativo comum..
-- **Como pensar para acertar:** Veja inicialização e controle básico de hardware: isso aponta para firmware.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 48
+- **Nível: Muito difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Pipeline e desempenho](semana_01_estudo.md#s1-d1-pipeline-desempenho)
 
 - **Alternativa correta:** D.
-- **A) está errada:** Persistência de arquivos é função de armazenamento secundário.
-- **B) está errada:** Sistema de arquivos é abstração do SO sobre armazenamento.
-- **C) está errada:** Registro profissional é legislação, não arquitetura.
-- **D) está correta:** Registradores apoiam a execução imediata de instruções.
-- **Conceito cobrado:** Registradores de propósito geral.
-- **Pegadinha usada:** Confundir “registro” técnico com cadastro profissional..
-- **Como pensar para acertar:** Contexto CPU indica registradores internos, não registros administrativos.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** O comportamento de cache é equivalente e não explica por que somente instruções independentes ganham vazão.
+- **B) está errada:** A medição separa throughput maior de latência individual praticamente estável.
+- **C) está errada:** Melhor uso das etapas pode elevar instruções concluídas por ciclo sem alterar a frequência.
+- **D) está correta:** Integra vazão, independência de instruções, limite da cadeia dependente e ausência de mudança nas demais métricas.
+- **Conceito cobrado:** Pipeline, paralelismo entre instruções, throughput, latência e gargalo de dependência.
+- **Pegadinha usada:** Atribuir o ganho a cache/clock ou transformá-lo em melhora universal de qualquer carga.
+- **Como pensar para acertar:** Cruze três filtros: métrica que mudou, tipo de instrução que ganhou e grandezas mantidas constantes.
+### Comentário da Questão 47
 
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Firmware](semana_01_estudo.md#s1-d1-firmware)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Firmware pode executar inicialização e controle básico antes do sistema completo.
+- **B) está errada:** Drivers e interfaces do sistema continuam tendo funções próprias.
+- **C) está errada:** Firmware costuma persistir entre desligamentos.
+- **D) está errada:** Firmware é software, não o componente físico em si.
+- **Conceito cobrado:** Firmware em sistema embarcado.
+- **Pegadinha usada:** Confundir firmware com driver, hardware ou código volátil.
+- **Como pensar para acertar:** Observe a inicialização persistente e próxima do dispositivo.
+### Comentário da Questão 48
+
+- **Nível: Médio**
+- **Uso:** Simulado
+- **Referência:** [Componentes da CPU](semana_01_estudo.md#s1-d1-cpu-componentes)
+
+- **Alternativa correta:** D.
+- **A) está errada:** Essa é função específica do contador de programa.
+- **B) está errada:** Essa é função específica do registrador de instrução.
+- **C) está errada:** Flags ficam em registrador de estado, não descrevem o uso geral.
+- **D) está correta:** Registradores gerais mantêm operandos, endereços e resultados temporários.
+- **Conceito cobrado:** Tipos de registradores.
+- **Pegadinha usada:** Trocar registradores gerais por registradores especializados.
+- **Como pensar para acertar:** Diferencie armazenamento de uso geral de PC, IR e flags.
 ### Comentário da Questão 49
 
-- **Alternativa correta:** C.
-- **A) está errada:** Polling é técnica de consulta de estado, não cache.
-- **B) está errada:** Após tratar a interrupção, o sistema pode retornar ao fluxo anterior.
-- **C) está correta:** Polling pode desperdiçar ciclos de CPU em consultas repetidas.
-- **D) está errada:** O dispositivo continua existindo; a diferença é o método de aviso.
-- **Conceito cobrado:** Polling e interrupções.
-- **Pegadinha usada:** Não perceber o custo de espera ativa..
-- **Como pensar para acertar:** Compare “ficar perguntando” com “ser avisado quando acontecer”.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
-
-### Comentário da Questão 50
+- **Nível: Muito difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Polling, interrupção e DMA](semana_01_estudo.md#s1-d1-polling-dma)
 
 - **Alternativa correta:** B.
-- **A) está errada:** 117 ignora o peso posicional de base 16.
-- **B) está correta:** B vale 11; B7 = 11 x 16 + 7 = 176 + 7 = 183.
-- **C) está errada:** 177 resultaria de usar B como 10 e somar 17 indevidamente.
-- **D) está errada:** 187 soma 11 x 16 com 11, como se 7 valesse 11.
-- **Conceito cobrado:** Conversão hexadecimal-decimal.
-- **Pegadinha usada:** Errar o valor da letra ou o peso 16..
-- **Como pensar para acertar:** Transforme a letra em decimal e aplique valor posicional: dezena hexadecimal vale vezes 16.
-- **Referência à apostila de estudo:** Dia 1 — Arquitetura e Organização de Computadores.
+- **A) está errada:** Polling por byte monopoliza a CPU e inverte a função do DMA na movimentação do bloco.
+- **B) está correta:** A espera curta e limitada admite polling; o volume favorece DMA; conclusão e erro pedem notificação por interrupção.
+- **C) está errada:** Interromper por byte aumenta overhead, enquanto DMA não é mero mecanismo para mensagens pequenas.
+- **D) está errada:** DMA exige configuração e a CPU ainda precisa tratar conclusão ou falha comunicada pelo controlador.
+- **Conceito cobrado:** Seleção combinada entre polling, interrupção e DMA.
+- **Pegadinha usada:** Escolher um único mecanismo sem considerar duração, volume e evento que precisa ser comunicado.
+- **Como pensar para acertar:** Aplique três filtros: espera curta, transferência em bloco e notificação assíncrona.
+### Comentário da Questão 50
 
-### Comentários das questões extras de revisão fixa do Dia 1
+- **Nível: Difícil**
+- **Uso:** Simulado
+- **Referência:** [Representação de dados](semana_01_estudo.md#s1-d1-representacao-dados)
+
+- **Alternativa correta:** C.
+- **A) está errada:** O valor numérico 3 está correto, mas não existe overflow nessa soma.
+- **B) está errada:** A soma de `F4` (-12) com `0F` (15) não produz `E5`.
+- **C) está correta:** -12 + 15 = 3, representado por `03`, dentro da faixa de 8 bits.
+- **D) está errada:** Um registrador de 8 bits mantém apenas oito bits; além disso, a leitura ignora o sinal.
+- **Conceito cobrado:** Hexadecimal, complemento de dois e overflow.
+- **Pegadinha usada:** Misturar resultado aritmético, largura e interpretação com sinal.
+- **Como pensar para acertar:** Converta com sinal, some e só então verifique faixa e representação.
+### Comentários do banco complementar do Dia 1
 
 #### Comentário Extra Dia 1.1
 
-- **Alternativa correta:** C.
-- **A) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **B) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **C) está correta:** A distinção central é nacional/normativo para o CFA e regional/executivo para o CRA.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Competência do CFA e do CRA-PR.
-- **Pegadinha usada:** Trocar competência nacional por competência regional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [CFA e CRA](semana_01_estudo.md#s1-d1-cfa-cra)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Inverte as funções nacional e regional.
+- **B) está correta:** O CFA orienta e normatiza nacionalmente; o CRA-PR executa registro e fiscalização regional.
+- **C) está errada:** Autonomia administrativa não autoriza afastar normas gerais do sistema.
+- **D) está errada:** As competências territoriais e funcionais não são idênticas.
+- **Conceito cobrado:** CFA e CRA-PR.
+- **Pegadinha usada:** Confundir autonomia com ruptura do sistema.
+- **Como pensar para acertar:** Identifique primeiro o alcance nacional ou regional da atuação.
 #### Comentário Extra Dia 1.2
 
-- **Alternativa correta:** D.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **D) está correta:** A Lei nº 4.769/1965 estrutura a profissão e sustenta a atuação dos conselhos.
-- **Conceito cobrado:** Lei nº 4.769/1965.
-- **Pegadinha usada:** Tratar a lei como norma meramente interna do CRA-PR.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Lei 4.769/1965](semana_01_estudo.md#s1-d1-lei-decreto)
 
+- **Alternativa correta:** D.
+- **A) está errada:** A lei também disciplina a profissão e a estrutura institucional.
+- **B) está errada:** Regimento não substitui lei federal.
+- **C) está errada:** A execução regional ordinária cabe ao conselho regional.
+- **D) está correta:** A Lei nº 4.769/1965 integra a base do exercício profissional e do sistema.
+- **Conceito cobrado:** Lei nº 4.769/1965.
+- **Pegadinha usada:** Reduzir o objeto da lei ou inverter CFA e CRA.
+- **Como pensar para acertar:** Separe fonte legal, organização interna e execução regional.
 #### Comentário Extra Dia 1.3
 
-- **Alternativa correta:** A.
-- **A) está correta:** O decreto detalha a execução da lei, por isso deve ser lido junto da Lei nº 4.769/1965.
-- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** Decreto nº 61.934/1967.
-- **Pegadinha usada:** Confundir norma regulamentadora com lei criadora.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Lei e decreto regulamentador](semana_01_estudo.md#s1-d1-lei-decreto)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Decreto não pode contrariar lei sob pretexto de regulamentá-la.
+- **B) está correta:** O Decreto nº 61.934/1967 regulamenta a Lei nº 4.769/1965 e deve respeitar sua hierarquia ao detalhar a execução.
+- **C) está errada:** A relação é inversa: o decreto executa a lei.
+- **D) está errada:** As fontes mantêm relação expressa de regulamentação.
+- **Conceito cobrado:** Lei e decreto regulamentador.
+- **Pegadinha usada:** Inverter hierarquia e função normativa.
+- **Como pensar para acertar:** Identifique qual norma fornece a base e qual detalha sua execução.
 #### Comentário Extra Dia 1.4
 
-- **Alternativa correta:** B.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está correta:** O Regimento é a referência interna para entender como o conselho regional se estrutura e decide.
-- **C) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **D) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **Conceito cobrado:** Regimento Interno do CRA-PR.
-- **Pegadinha usada:** Confundir regimento com código de ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
+- **Alternativa correta:** C.
+- **A) está errada:** Regimento não cria profissão nem prevalece sobre lei.
+- **B) está errada:** Código de Ética e Regimento possuem objetos diferentes.
+- **C) está correta:** O Regimento disciplina órgãos, competências e funcionamento interno do CRA-PR.
+- **D) está errada:** Regulamento nacional de registro é outra norma.
+- **Conceito cobrado:** Função do Regimento Interno.
+- **Pegadinha usada:** Trocar organização interna por ética ou registro.
+- **Como pensar para acertar:** Relacione regimento à estrutura e ao funcionamento do órgão.
 #### Comentário Extra Dia 1.5
 
-- **Alternativa correta:** C.
-- **A) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **B) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **C) está correta:** A apostila destaca o CRA-PR como autarquia de direito público no contexto do Sistema CFA/CRAs.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Natureza jurídica do CRA-PR.
-- **Pegadinha usada:** Tratar conselho profissional como órgão sem personalidade própria.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
+- **Alternativa correta:** B.
+- **A) está errada:** O CRA-PR não se converte em órgão estadual subordinado.
+- **B) está correta:** Autonomia administrativa convive com integração e observância das normas nacionais.
+- **C) está errada:** Integrar o sistema não elimina personalidade nem competência regional.
+- **D) está errada:** Autonomia não permite substituir lei federal ou norma nacional válida.
+- **Conceito cobrado:** Natureza, autonomia e integração do CRA-PR.
+- **Pegadinha usada:** Transformar autonomia em soberania normativa.
+- **Como pensar para acertar:** Avalie separadamente personalidade, autonomia e vínculo sistêmico.
 #### Comentário Extra Dia 1.6
 
-- **Alternativa correta:** D.
-- **A) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **B) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **C) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **D) está correta:** A referência à RN 651/2024 serve para vincular o Regimento Interno à fonte oficial do CFA.
-- **Conceito cobrado:** RN CFA nº 651/2024.
-- **Pegadinha usada:** Atribuir à RN 651/2024 conteúdo de ética profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Regimento e natureza do CRA-PR](semana_01_estudo.md#s1-d1-regimento-natureza)
 
+- **Alternativa correta:** A.
+- **A) está correta:** A RN CFA nº 651/2024 aprova o Regimento Interno do CRA-PR.
+- **B) está errada:** O Código de Ética adotado é objeto de outra resolução.
+- **C) está errada:** O regulamento de registro é aprovado pela RN nº 649/2024.
+- **D) está errada:** A RN nº 651/2024 não possui objeto exclusivamente financeiro.
+- **Conceito cobrado:** Objeto da RN CFA nº 651/2024.
+- **Pegadinha usada:** Trocar Regimento, Ética e Registro.
+- **Como pensar para acertar:** Associe cada resolução ao seu objeto oficial.
 #### Comentário Extra Dia 1.7
 
-- **Alternativa correta:** A.
-- **A) está correta:** A RN 671/2025 é a referência ética adotada no material aprovado para a Semana 1.
-- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **D) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **Conceito cobrado:** RN CFA nº 671/2025.
-- **Pegadinha usada:** Usar automaticamente a RN 640/2024 apesar da retificação indicada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Simulado
+- **Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
+- **Alternativa correta:** D.
+- **A) está errada:** O vínculo público não elimina a responsabilidade profissional.
+- **B) está errada:** Ausência de dano imediato não legitima autoria sem exame.
+- **C) está errada:** O dever técnico deve orientar a conduta antes da assinatura.
+- **D) está correta:** Independência técnica e responsabilidade impedem assinatura automática de trabalho alheio e contrário à convicção.
+- **Conceito cobrado:** Independência e autoria profissional.
+- **Pegadinha usada:** Usar hierarquia funcional para afastar responsabilidade técnica.
+- **Como pensar para acertar:** Verifique autoria, exame efetivo e convicção técnica antes do vínculo empregatício.
 #### Comentário Extra Dia 1.8
 
-- **Alternativa correta:** B.
-- **A) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **B) está correta:** O foco da fiscalização não se limita à pessoa física quando a pessoa jurídica exerce atividade profissional regulada.
-- **C) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **D) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **Conceito cobrado:** Registro de pessoa jurídica.
-- **Pegadinha usada:** Achar que apenas profissionais individuais podem ser fiscalizados.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Registro de pessoa jurídica](semana_01_estudo.md#s1-d1-registro-pj)
 
+- **Alternativa correta:** B.
+- **A) está errada:** CNPJ não resolve sozinho a sujeição profissional.
+- **B) está correta:** Atividade básica no campo regulado pode exigir registro, fiscalização e responsabilidade técnica.
+- **C) está errada:** Pessoa jurídica também pode ser objeto de registro e fiscalização.
+- **D) está errada:** A atuação ordinária na jurisdição cabe ao CRA.
+- **Conceito cobrado:** Registro de pessoa jurídica.
+- **Pegadinha usada:** Tratar formalidade empresarial como substituta da regularidade profissional.
+- **Como pensar para acertar:** Comece pela atividade efetivamente oferecida e depois identifique a jurisdição.
 #### Comentário Extra Dia 1.9
 
-- **Alternativa correta:** C.
-- **A) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **B) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **C) está correta:** O sigilo protege informações obtidas no exercício profissional e não pode ser afastado por conveniência pessoal.
-- **D) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **Conceito cobrado:** Sigilo profissional.
-- **Pegadinha usada:** Tratar sigilo como escolha comercial do profissional.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
+- **Alternativa correta:** A.
+- **A) está correta:** Vantagem comercial não afasta sigilo; revelação exige fundamento legítimo e limite de necessidade.
+- **B) está errada:** Ausência de dano provado não autoriza compartilhar informação confidencial.
+- **C) está errada:** O sigilo não transforma toda determinação legal válida em impossível.
+- **D) está errada:** Interesse competitivo não retira a confidencialidade.
+- **Conceito cobrado:** Sigilo profissional e revelação legítima.
+- **Pegadinha usada:** Confundir exceção fundada com conveniência comercial.
+- **Como pensar para acertar:** Teste finalidade, fundamento e extensão da eventual revelação.
 #### Comentário Extra Dia 1.10
 
-- **Alternativa correta:** D.
-- **A) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **B) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **C) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **D) está correta:** A regularidade profissional exige responsabilidade real pelo trabalho, não mera cessão formal do registro.
-- **Conceito cobrado:** Uso indevido de nome ou registro.
-- **Pegadinha usada:** Exigir dano financeiro para reconhecer irregularidade ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Ética profissional](semana_01_estudo.md#s1-d1-etica)
 
+- **Alternativa correta:** C.
+- **A) está errada:** Experiência do terceiro não substitui exame e autoria responsáveis.
+- **B) está errada:** A infração não depende de dano financeiro consumado.
+- **C) está correta:** Nome, assinatura e registro pressupõem participação e responsabilidade reais.
+- **D) está errada:** Informação interna não corrige a cessão formal sem revisão.
+- **Conceito cobrado:** Empréstimo de nome ou registro.
+- **Pegadinha usada:** Tratar assinatura como formalidade sem autoria.
+- **Como pensar para acertar:** Pergunte quem examinou, assumiu e pode responder tecnicamente pelo trabalho.
 #### Comentário Extra Dia 1.11
 
-- **Alternativa correta:** A.
-- **A) está correta:** A fiscalização depende de colaboração mínima do fiscalizado quando há competência do CRA.
-- **B) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **C) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **D) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **Conceito cobrado:** Fiscalização profissional.
-- **Pegadinha usada:** Supor que a fiscalização só ocorre após decisão judicial.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [Fiscalização e processo](semana_01_estudo.md#s1-d1-fiscalizacao-processo)
 
+- **Alternativa correta:** B.
+- **A) está errada:** Fiscalização regular não depende sempre de ordem judicial específica.
+- **B) está correta:** Obstrução pode ser apurada regionalmente, com contraditório e defesa.
+- **C) está errada:** Não se elimina instrução e competência regional por remessa imediata ao CFA.
+- **D) está errada:** Documento pertinente e regularmente solicitado não é sempre facultativo.
+- **Conceito cobrado:** Fiscalização, competência e devido processo.
+- **Pegadinha usada:** Opor fiscalização e garantias processuais como se fossem incompatíveis.
+- **Como pensar para acertar:** Verifique validade da solicitação, órgão competente e etapa processual.
 #### Comentário Extra Dia 1.12
 
-- **Alternativa correta:** B.
-- **A) está errada:** O registro e a fiscalização regional são atribuições dos CRAs; o CFA atua em plano nacional e normativo.
-- **B) está correta:** A norma foi incluída porque anuidade, taxas e cobrança podem aparecer em contexto de conselhos.
-- **C) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **D) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **Conceito cobrado:** Lei nº 12.514/2011.
-- **Pegadinha usada:** Ignorar normas financeiras dos conselhos por parecerem administrativas.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Contribuições aos conselhos](semana_01_estudo.md#s1-d1-contribuicoes)
 
+- **Alternativa correta:** D.
+- **A) está errada:** Regimento do CRA-PR é objeto de resolução específica.
+- **B) está errada:** Código de Ética não é o objeto da Lei nº 12.514/2011.
+- **C) está errada:** A lei não substitui o regulamento técnico de registro.
+- **D) está correta:** A norma é relevante para contribuições devidas aos conselhos profissionais.
+- **Conceito cobrado:** Lei nº 12.514/2011.
+- **Pegadinha usada:** Trocar objeto financeiro por Regimento, Ética ou Registro.
+- **Como pensar para acertar:** Associe a lei às contribuições e sua cobrança.
 #### Comentário Extra Dia 1.13
 
-- **Alternativa correta:** C.
-- **A) está errada:** Para concurso, a base é o edital vigente; norma nova só substitui conteúdo se houver fonte oficial e pertinência ao edital.
-- **B) está errada:** Sigilo é dever profissional, salvo hipótese legal, autorização legítima ou justa causa reconhecida.
-- **C) está correta:** Registro é atividade central do CRA e a RN 649/2024 foi apontada como regulamento de registro.
-- **D) está errada:** A Lei nº 12.514/2011 trata de contribuições devidas aos conselhos profissionais.
-- **Conceito cobrado:** RN CFA nº 649/2024.
-- **Pegadinha usada:** Confundir registro com sanção ética.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Regulamento de registro](semana_01_estudo.md#s1-d1-registro-rn649-670)
 
+- **Alternativa correta:** C.
+- **A) está errada:** O Regimento do CRA-PR é aprovado pela RN nº 651/2024.
+- **B) está errada:** O Código de Ética adotado é a RN nº 671/2025.
+- **C) está correta:** A RN nº 649/2024 aprova o regulamento de registro.
+- **D) está errada:** Contribuições não constituem seu objeto exclusivo.
+- **Conceito cobrado:** Objeto da RN CFA nº 649/2024.
+- **Pegadinha usada:** Trocar os objetos das resoluções.
+- **Como pensar para acertar:** Use a matriz norma → objeto antes de analisar detalhes.
 #### Comentário Extra Dia 1.14
 
-- **Alternativa correta:** D.
-- **A) está errada:** A pessoa jurídica pode estar sujeita a registro e fiscalização quando atua em campo abrangido pela Administração.
-- **B) está errada:** A fiscalização profissional é função típica do conselho regional e pode ocorrer no âmbito de sua competência.
-- **C) está errada:** Na apostila, a RN CFA nº 651/2024 aparece como norma que aprova o Regimento Interno do CRA-PR; o Código de Ética é a RN CFA nº 671/2025.
-- **D) está correta:** Norma alteradora não deve ser estudada isoladamente; deve ser conectada ao texto alterado.
-- **Conceito cobrado:** RN CFA nº 670/2025.
-- **Pegadinha usada:** Ler norma alteradora como se fosse conteúdo autônomo sem relação com registro.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
+- **Nível: Difícil**
+- **Uso:** Aprofundamento
+- **Referência:** [RN 649/2024 e RN 670/2025](semana_01_estudo.md#s1-d1-registro-rn649-670)
 
+- **Alternativa correta:** A.
+- **A) está correta:** A RN nº 649 fornece o regulamento-base e a RN nº 670 altera dispositivo dele.
+- **B) está errada:** A alteração não revoga integralmente todo o regulamento.
+- **C) está errada:** Nenhuma das duas converte o objeto em Ética ou Regimento do CRA-PR.
+- **D) está errada:** A RN nº 670 interfere diretamente no regulamento de registro.
+- **Conceito cobrado:** Norma-base e norma alteradora.
+- **Pegadinha usada:** Ler a norma alteradora como substituição integral ou objeto autônomo.
+- **Como pensar para acertar:** Identifique primeiro o texto-base e depois o dispositivo alterado.
 #### Comentário Extra Dia 1.15
 
-- **Alternativa correta:** A.
-- **A) está correta:** A apostila sinaliza ponto pendente de confirmação para não transformar hipótese em certeza de prova.
-- **B) está errada:** Regimento organiza funcionamento interno; não substitui a lei federal nem o decreto regulamentador.
-- **C) está errada:** O uso indevido de nome ou registro profissional já compromete a ética e a regularidade, independentemente de dano financeiro imediato.
-- **D) está errada:** O CRA-PR tem autonomia administrativa, mas atua dentro do Sistema CFA/CRAs e não afasta a normatização geral do CFA.
-- **Conceito cobrado:** Normas pendentes de confirmação.
-- **Pegadinha usada:** Criar regra específica sem fonte oficial consolidada.
-- **Como pensar para acertar:** Identifique o sujeito da situação: CFA, CRA-PR, profissional, pessoa jurídica ou terceiro; depois elimine afirmações absolutas que contrariem o edital.
-
-#### Comentário Extra Dia 1.16
-
-- **Alternativa correta:** B.
-- **A) está errada:** Oposição seria indicada por conectores como 'mas' ou 'contudo'.
-- **B) está correta:** O conector 'por isso' estabelece consequência.
-- **C) está errada:** O conector retoma o fato anterior para apresentar efeito.
-- **D) está errada:** Não há mera soma de ideias; há relação conclusiva.
-- **Conceito cobrado:** Coesão por conectores.
-- **Pegadinha usada:** Confundir conclusão com oposição.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
-
-#### Comentário Extra Dia 1.17
+- **Nível: Muito difícil**
+- **Uso:** Simulado
+- **Referência:** [Normas dirigidas e controle de fonte](semana_01_estudo.md#s1-d1-normas-dirigidas)
 
 - **Alternativa correta:** C.
-- **A) está errada:** Edital não é agente que conclui; o referente lógico é comissão.
-- **B) está errada:** Candidato não aparece no trecho.
-- **C) está correta:** O pronome possessivo deve ser interpretado pelo referente compatível no texto.
-- **D) está errada:** Não há dois referentes expressos nessa frase.
-- **Conceito cobrado:** Referência pronominal.
-- **Pegadinha usada:** Escolher referente próximo sem observar sentido.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **A) está errada:** Norma alteradora não resolve automaticamente todos os objetos nem substitui integralmente a base.
+- **B) está errada:** A RN nº 671/2025 é a fonte ética vigente indicada, e a revogação da RN nº 640/2024 não pode ser ignorada.
+- **C) está correta:** A seleção separa registro, ética e funcionamento interno e ainda exige controle de vigência e hierarquia.
+- **D) está errada:** Inverte os objetos e usa numeração como falsa medida de hierarquia.
+- **Conceito cobrado:** Proveniência, objeto, vigência e hierarquia normativa.
+- **Pegadinha usada:** Escolher fonte pelo número ou pela novidade sem conferir o objeto.
+- **Como pensar para acertar:** Para cada problema, selecione a fonte pelo objeto e confirme sua relação temporal.
+#### Comentário Extra Dia 1.16
 
-#### Comentário Extra Dia 1.18
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Conectores](semana_01_estudo.md#s1-d1-portugues-conectores)
 
 - **Alternativa correta:** D.
-- **A) está errada:** Altera o sentido restritivo de 'somente'.
-- **B) está errada:** Inverte completamente o sentido.
-- **C) está errada:** Muda a ordem lógica dos fatos.
-- **D) está correta:** 'Somente' equivale a 'apenas' no contexto.
-- **Conceito cobrado:** Reescrita e manutenção de sentido.
-- **Pegadinha usada:** Perder palavra restritiva.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **A) está errada:** A expressão não introduz condição.
+- **B) está errada:** Oposição exigiria conector adversativo.
+- **C) está errada:** Existe relação lógica explícita com o período anterior.
+- **D) está correta:** “Por isso” introduz conclusão ou consequência.
+- **Conceito cobrado:** Conector conclusivo.
+- **Pegadinha usada:** Trocar consequência por condição, oposição ou adição.
+- **Como pensar para acertar:** Substitua mentalmente por “portanto” e teste o sentido.
+#### Comentário Extra Dia 1.17
 
-#### Comentário Extra Dia 1.19
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Referência pronominal](semana_01_estudo.md#s1-d1-portugues-referencia)
 
 - **Alternativa correta:** A.
-- **A) está correta:** Há preposição 'a' + artigo feminino em 'à unidade'.
-- **B) está errada:** Não há crase antes de verbo.
-- **C) está errada:** Não há artigo feminino antes de 'todos'.
-- **D) está errada:** Não há artigo feminino antes de palavra masculina.
-- **Conceito cobrado:** Crase.
-- **Pegadinha usada:** Aplicar crase antes de verbo, masculino ou pronome indefinido.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **A) está correta:** “Suas” concorda com “conclusões”, a coisa possuída, e não identifica sozinho se o possuidor é a comissão ou o edital.
+- **B) está errada:** A flexão do possessivo não concorda com o possuidor e, portanto, não elimina a segunda leitura.
+- **C) está errada:** Proximidade não torna o edital referente obrigatório nem resolve toda ambiguidade.
+- **D) está errada:** Não há candidato expresso nem necessidade gramatical de pressupor um referente oculto.
+- **Conceito cobrado:** Ambiguidade de pronome possessivo.
+- **Pegadinha usada:** Usar concordância ou proximidade como regra automática para identificar o possuidor.
+- **Como pensar para acertar:** Separe a coisa possuída do possuidor e teste se o contexto exclui uma das leituras.
+#### Comentário Extra Dia 1.18
 
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Reescrita e restrição](semana_01_estudo.md#s1-d1-portugues-reescrita)
+
+- **Alternativa correta:** C.
+- **A) está errada:** Remove a restrição imposta por “somente”.
+- **B) está errada:** Nega o encaminhamento autorizado pelo original.
+- **C) está correta:** “Apenas” conserva o valor restritivo de “somente”.
+- **D) está errada:** Desloca a restrição e altera a ordem dos fatos.
+- **Conceito cobrado:** Reescrita e operador restritivo.
+- **Pegadinha usada:** Preservar palavras, mas mudar o alcance da restrição.
+- **Como pensar para acertar:** Identifique exatamente qual conjunto “somente” limita.
+#### Comentário Extra Dia 1.19
+
+- **Nível: Médio**
+- **Uso:** Essenciais
+- **Referência:** [Crase](semana_01_estudo.md#s1-d1-portugues-crase)
+
+- **Alternativa correta:** D.
+- **A) está errada:** Não ocorre crase antes de verbo.
+- **B) está errada:** “Todos” não admite artigo feminino nessa construção.
+- **C) está errada:** “Setor” é substantivo masculino.
+- **D) está correta:** Há preposição `a` exigida por “encaminhar” e artigo feminino de “unidade”.
+- **Conceito cobrado:** Crase.
+- **Pegadinha usada:** Aplicar acento antes de verbo, pronome ou palavra masculina.
+- **Como pensar para acertar:** Verifique separadamente a preposição regente e a possibilidade de artigo feminino.
 #### Comentário Extra Dia 1.20
 
-- **Alternativa correta:** B.
-- **A) está errada:** Causa indicaria motivo; 'embora' introduz fato contrário à expectativa.
-- **B) está correta:** 'Embora' introduz concessão.
-- **C) está errada:** Conclusão seria marcada por 'logo', 'portanto' ou equivalente.
-- **D) está errada:** Condição seria introduzida por 'se', 'caso' ou equivalente.
-- **Conceito cobrado:** Valor semântico de conjunção.
-- **Pegadinha usada:** Confundir concessão com causa.
-- **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
+- **Nível: Médio**
+- **Uso:** Revisão
+- **Referência:** [Conectores](semana_01_estudo.md#s1-d1-portugues-conectores)
 
+- **Alternativa correta:** C.
+- **A) está errada:** “Embora” não introduz causa direta.
+- **B) está errada:** Conclusão seria marcada por “portanto” ou equivalente.
+- **C) está correta:** O conector apresenta fato contrário à expectativa sem impedir a oração principal.
+- **D) está errada:** Condição seria introduzida por “se” ou “caso”.
+- **Conceito cobrado:** Concessão.
+- **Pegadinha usada:** Confundir concessão com causa, conclusão ou condição.
+- **Como pensar para acertar:** Procure a quebra de expectativa expressa por “embora”.
 ---
 
 # Dia 2 — Sistemas Operacionais
 
-**Base usada:** edital vigente, apostila de estudo v1.2 e fontes oficiais/estilo indicadas no início deste arquivo.
+**Base usada:** edital vigente, apostila de estudo v1.3 e fontes oficiais/estilo indicadas no início deste arquivo.
+
+**Calendário de uso:** a primeira passagem termina após a resolução e a correção de `Q1`, `Q2`, `Q3`, `Q6`, `Q9`, `Q13`, `Q15`, `Q18`, `E3` e `E20`. As outras dez Essenciais — `Q4`, `Q5`, `Q7`, `Q12`, `Q14`, `Q16`, `Q22`, `E1`, `E5` e `E16` — abrem D+2 e devem ser corrigidas antes do Aprofundamento. O saldo de Aprofundamento continua antes de D+7; Revisão fica em D+7; Simulado pertence ao ciclo seguinte.
 
 ## Questões principais
 
 ### Questão 1
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
 Em um órgão público, um sistema de protocolo fica lento quando vários usuários acessam relatórios ao mesmo tempo. O sistema operacional atua nesse cenário principalmente para:
 
 A) transformar todo processo em arquivo permanente.
-B) gerenciar processos, memória, arquivos e dispositivos compartilhados.
-C) substituir o banco de dados relacional em todas as consultas.
+B) substituir o banco de dados relacional em todas as consultas.
+C) gerenciar processos, memória, arquivos e dispositivos compartilhados.
 D) eliminar a necessidade de autenticação de usuários.
 
 ### Questão 2
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 Considere as assertivas.
 
@@ -1672,6 +2073,9 @@ C) II e III.
 D) I, II e III.
 
 ### Questão 3
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 Um processo que aguarda leitura de disco ser concluída normalmente está no estado:
 
@@ -1681,24 +2085,33 @@ C) zumbi desde o início da leitura.
 D) bloqueado/esperando.
 
 ### Questão 4
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 No escalonamento preemptivo, o sistema operacional:
 
 A) desativa interrupções de temporizador permanentemente.
-B) executa apenas um programa por inicialização do computador.
-C) pode interromper um processo em execução para dar CPU a outro.
+B) pode interromper um processo em execução para dar CPU a outro.
+C) executa apenas um programa por inicialização do computador.
 D) precisa esperar o processo terminar voluntariamente em todos os casos.
 
 ### Questão 5
+**Nível: Difícil**
+**Uso:** Essenciais
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
-Em um servidor com pouca RAM, o uso intenso de swap começa a degradar o desempenho. Esse fenômeno se relaciona diretamente a:
+Um servidor apresenta 95% da RAM ocupada, faltas de página em sequência, disco saturado e pouco trabalho útil concluído. Depois de confirmar que os conjuntos de trabalho não cabem na memória física, o diagnóstico e a intervenção coerentes são:
 
-A) conversão de arquivos NTFS para ext4 sem reinicialização.
-B) paginação excessiva e possível thrashing.
-C) aumento automático do clock da CPU.
-D) eliminação de falhas de página.
+A) contenção de CPU; aumentar o quantum para impedir que páginas sejam retiradas da cache.
+B) deadlock de E/S; reiniciar o serviço para romper necessariamente a espera circular entre páginas.
+C) thrashing; reduzir a pressão de memória ou ampliar a RAM, em vez de tratar swap como substituta equivalente.
+D) journaling excessivo; desativar o registro do sistema de arquivos para eliminar as faltas de página.
 
 ### Questão 6
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
 Assinale a alternativa correta sobre paginação e segmentação.
 
@@ -1708,15 +2121,21 @@ C) Paginação impede memória virtual.
 D) Segmentação é uma política de backup de arquivos.
 
 ### Questão 7
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
 Assinale a alternativa incorreta sobre memória virtual.
 
-A) Pode apoiar execução de programas maiores que a RAM disponível, com uso de armazenamento secundário.
+A) É exatamente a mesma coisa que a memória RAM física instalada.
 B) Ajuda na proteção entre processos.
-C) É exatamente a mesma coisa que a memória RAM física instalada.
+C) Pode apoiar execução de programas maiores que a RAM disponível, com uso de armazenamento secundário.
 D) Permite que cada processo tenha uma visão própria de espaço de endereçamento.
 
 ### Questão 8
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 Um arquivo `C:\Dados\relatorio.pdf` no Windows e `/home/ana/relatorio.pdf` no Linux são exemplos de:
 
@@ -1726,15 +2145,21 @@ C) caminhos absolutos.
 D) caminhos relativos.
 
 ### Questão 9
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 Um sistema de arquivos com journaling reduz risco de inconsistência após queda de energia porque:
 
 A) elimina permissões de acesso.
 B) mantém registros auxiliares de operações para recuperação da estrutura do sistema de arquivos.
-C) substitui cópias de segurança de todos os documentos do órgão.
+C) cria cópias históricas integrais dos documentos e dispensa política separada de retenção e restauração.
 D) impede qualquer falha física no disco.
 
 ### Questão 10
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 No Linux, a sequência `chmod 640 arquivo.txt` define, em termos gerais:
 
@@ -1744,33 +2169,45 @@ C) a criação de um novo processo com PID 640.
 D) a compactação do arquivo usando nível 640.
 
 ### Questão 11
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
 Em um serviço Windows, a execução em segundo plano significa que:
 
 A) o processo nunca consome CPU ou memória.
 B) o serviço é sempre malware.
-C) o serviço não pode ser registrado em logs.
+C) o serviço não pode ser monitorado nem registrado nos logs do sistema enquanto permanecer em segundo plano.
 D) o serviço pode executar tarefas sem interação direta contínua do usuário.
 
 ### Questão 12
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Dispositivos, drivers e spooling](semana_01_estudo.md#s1-d2-dispositivos-spooling)
 
 Um driver de impressora instalado incorretamente pode impedir impressão porque o driver:
 
 A) substitui o spool de impressão e todos os serviços.
 B) é sempre dispensável em qualquer hardware moderno.
-C) é o software que permite ao SO comunicar-se adequadamente com o dispositivo.
-D) é a memória física que armazena todos os arquivos impressos.
+C) é a memória física reservada para armazenar documentos e controlar permanentemente a fila de impressão.
+D) é o software que permite ao SO comunicar-se adequadamente com o dispositivo.
 
 ### Questão 13
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 Duas threads incrementam a mesma variável global sem sincronização. Em execuções diferentes, o resultado final varia. O problema descrito é:
 
-A) falha de página irrecuperável.
-B) condição de corrida.
-C) deadlock por espera circular obrigatória.
-D) fragmentação externa de memória.
+A) falha de página, porque a variação indicaria página ausente da memória física.
+B) condição de corrida, pois o resultado depende da ordem de interleaving das operações concorrentes.
+C) deadlock, pois as threads necessariamente seguram recursos e entram em espera circular.
+D) fragmentação externa, porque os endereços da variável foram distribuídos em blocos não contíguos.
 
 ### Questão 14
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 Um mutex é usado quando se deseja:
 
@@ -1780,6 +2217,9 @@ C) ordenar arquivos em ordem alfabética.
 D) substituir o escalonador do sistema operacional.
 
 ### Questão 15
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 Considere o cenário: Processo A segura o recurso X e aguarda Y; Processo B segura Y e aguarda X. Se nenhum recurso for liberado, há exemplo de:
 
@@ -1789,24 +2229,33 @@ C) starvation sem posse de recurso.
 D) deadlock por espera circular.
 
 ### Questão 16
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 As condições clássicas associadas ao deadlock incluem:
 
 A) seleção, projeção, junção e divisão.
 B) volatilidade, persistência, Unicode e ASCII.
 C) exclusão mútua, posse e espera, não preempção e espera circular.
-D) legalidade, impessoalidade, moralidade e publicidade.
+D) legalidade, impessoalidade, moralidade e publicidade, que formam parte dos princípios administrativos expressos.
 
 ### Questão 17
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
-Um processo finalizou, mas seu processo pai ainda não coletou o status de término em sistema Unix-like. Esse processo é chamado de:
+Em um sistema Unix-like, o filho F1 terminou, mas seu pai ainda não coletou o status. O filho F2 continua executando depois que seu pai terminou e foi adotado por um processo do sistema. Nesse instante, F1 e F2 são, respectivamente:
 
-A) thread daemon obrigatória.
-B) zumbi.
-C) órfão sempre em execução ativa.
-D) bloqueado por E/S.
+A) órfão e zumbi, porque ambos perderam o processo que iniciou sua execução.
+B) bloqueado e pronto, porque a coleta do status determina a fila da CPU.
+C) zumbi e bloqueado, porque adoção impede o segundo filho de executar.
+D) zumbi e órfão, pois o primeiro aguarda coleta e o segundo perdeu o pai original.
 
 ### Questão 18
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
 V/F: Sobre chamadas de sistema.
 
@@ -1816,39 +2265,51 @@ III. Chamadas de sistema substituem a CPU durante a execução.
 
 A sequência correta é:
 
-A) V, V, F.
+A) F, V, V.
 B) V, F, V.
-C) F, V, V.
+C) V, V, F.
 D) F, F, V.
 
 ### Questão 19
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
 Um administrador usa `ps` e `top` em Linux para investigar lentidão. Essas ferramentas ajudam principalmente a:
 
 A) alterar permissões de arquivos.
-B) formatar partições obrigatoriamente.
-C) compilar kernel automaticamente.
-D) observar processos e consumo de recursos.
+B) formatar e verificar partições antes de exibir qualquer informação sobre processos ativos.
+C) observar processos e consumo de recursos.
+D) compilar kernel automaticamente.
 
 ### Questão 20
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
-Em uma política Round Robin, um quantum muito pequeno tende a:
+Em um servidor interativo com Round Robin, o quantum foi reduzido de 40 ms para 2 ms. O tempo de resposta inicial melhorou, mas cresceram as trocas de contexto e caiu a parcela de CPU dedicada ao trabalho útil. A interpretação correta é:
 
-A) impedir preempção.
-B) transformar processos I/O-bound em arquivos.
-C) aumentar a frequência de trocas de contexto.
-D) eliminar todo overhead de escalonamento.
+A) o quantum curto favoreceu a responsividade, mas elevou o overhead de preempção e restauração de contexto.
+B) o quantum curto converteu a política em não preemptiva, e a queda decorre de processos executados até o fim.
+C) o quantum passou a representar prioridade fixa, impedindo que processos I/O-bound retornassem à fila.
+D) a redução eliminou o custo de alternância; a queda de trabalho útil precisa decorrer apenas de falha de disco.
 
 ### Questão 21
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 Um processo CPU-bound é aquele que:
 
 A) é sempre um processo zumbi.
-B) usa intensamente processamento, com menor tempo relativo aguardando E/S.
-C) passa a maior parte do tempo esperando disco e rede.
+B) passa a maior parte do tempo bloqueado aguardando disco, rede ou outro dispositivo de entrada e saída.
+C) usa intensamente processamento, com menor tempo relativo aguardando E/S.
 D) não pode ser escalonado.
 
 ### Questão 22
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 Assinale a alternativa incorreta sobre permissões e usuários em sistemas operacionais.
 
@@ -1858,42 +2319,57 @@ C) Usuário administrador/root deve ser usado com cautela.
 D) Permissão de arquivo elimina a necessidade de autenticação de usuários.
 
 ### Questão 23
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
-Uma atualização do sistema operacional em servidor crítico deve ser:
+Um servidor crítico precisa receber correção de segurança, mas a equipe ainda não confirmou a compatibilidade da aplicação e nunca testou a restauração do backup disponível. A conduta tecnicamente adequada é:
 
-A) sempre aplicada sem teste e sem janela de manutenção.
-B) sempre proibida em órgãos públicos.
-C) considerada substituta de logs e backup.
-D) planejada, testada quando possível e acompanhada de política de backup/rollback.
+A) aplicar imediatamente em produção, pois correção de segurança torna desnecessários teste e retorno.
+B) adiar indefinidamente a correção, pois qualquer risco operacional torna a atualização tecnicamente proibida.
+C) testar em ambiente compatível, verificar restauração e rollback, definir janela e registrar o resultado da mudança.
+D) copiar apenas os logs atuais e atualizar, pois registros de eventos substituem imagem e backup recuperável.
 
 ### Questão 24
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
 Um sistema operacional registra eventos de autenticação, falhas de serviço e erros de dispositivo. Esses registros são importantes porque:
 
-A) substituem a necessidade de controle de acesso.
+A) substituem autenticação, autorização e todos os demais mecanismos preventivos de controle de acesso.
 B) são sempre apagados antes de qualquer análise.
 C) ajudam auditoria, diagnóstico e investigação de incidentes.
 D) impedem automaticamente todo ataque.
 
 ### Questão 25
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
-Em um sistema multitarefa, a troca de contexto consiste em:
+Um temporizador interrompe P1 enquanto ele executa; o escalonador escolhe P2, que havia sido interrompido anteriormente. Para que ambos retomem corretamente, o sistema operacional deve:
 
-A) executar apenas processos finalizados.
-B) salvar o estado de uma tarefa e restaurar o estado de outra.
-C) renomear arquivos temporários.
-D) converter memória virtual em ROM.
+A) descartar o contador de programa de P1 e reiniciar P2 desde sua primeira instrução.
+B) copiar integralmente o espaço virtual de P1 para P2, manter os registradores atuais e dispensar qualquer ponto de retomada.
+C) marcar P1 como terminado e P2 como zumbi antes de devolver a CPU ao usuário.
+D) salvar registradores e ponto de retomada de P1, restaurar o contexto de P2 e assumir o custo dessa alternância.
 
 ### Questão 26
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 A diferença entre caminho relativo e absoluto é que:
 
 A) o absoluto identifica o caminho a partir da raiz/unidade; o relativo depende do diretório atual.
-B) o relativo sempre começa com C:\ e o absoluto nunca começa com /.
+B) o relativo sempre começa pela unidade `C:\`, enquanto o absoluto nunca começa pela raiz `/` nem depende do diretório atual.
 C) o absoluto só existe em redes TCP/IP.
 D) o relativo contém permissões de execução obrigatoriamente.
 
 ### Questão 27
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 Em sistemas Unix-like, `chown` é usado para:
 
@@ -1903,87 +2379,117 @@ C) encerrar processo por sinal.
 D) alterar proprietário e/ou grupo de arquivo.
 
 ### Questão 28
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
-Um processo sofre starvation quando:
+Um processo de baixa prioridade permanece pronto, mas novas tarefas prioritárias sempre o ultrapassam. Não existe ciclo de recursos retidos, e elevar gradualmente sua prioridade faria com que voltasse a executar. O quadro e a técnica descritos são:
 
-A) termina e aguarda coleta pelo processo pai.
-B) acessa dado presente na cache.
-C) permanece indefinidamente sem receber recurso/CPU por política desfavorável.
-D) entra em espera circular segurando recurso de outro processo obrigatoriamente.
+A) starvation e aging, pois há espera indefinida por política, sem necessidade de espera circular.
+B) deadlock e journaling, pois toda espera prolongada decorre necessariamente de ciclo entre processos e operações do sistema de arquivos.
+C) processo zumbi e reaping, pois o processo já terminou e precisa ter seu status coletado.
+D) thrashing e swap, pois a fila de prontos é consequência necessária de faltas de página.
 
 ### Questão 29
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Virtualização e isolamento](semana_01_estudo.md#s1-d2-virtualizacao)
 
-Em virtualização, uma máquina virtual:
+Uma equipe compara duas opções no mesmo hospedeiro: executar um sistema convidado completo em máquina virtual ou executar a aplicação em contêiner. Ela precisa identificar o que é compartilhado, o limite de isolamento e o custo aceito. Assinale a análise correta.
 
-A) só pode executar um editor de texto.
-B) executa um ambiente isolado sobre camada de virtualização e recursos físicos compartilhados.
-C) elimina completamente a necessidade de hardware físico.
-D) é sinônimo de memória virtual.
+A) ambas compartilham obrigatoriamente o kernel do hospedeiro; a VM apenas acrescenta diretórios e não altera custo.
+B) o contêiner possui kernel convidado integralmente independente; por isso sempre isola mais falhas, exige mais recursos físicos e elimina a necessidade de atualizar o hospedeiro.
+C) a VM elimina dependência do hardware e de backup; o contêiner elimina a necessidade de controle de acesso.
+D) a VM pode executar kernel convidado sobre recursos mediados; o contêiner compartilha o kernel hospedeiro, tendendo a menor sobrecarga, mas com outro limite de isolamento.
 
 ### Questão 30
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
-Um sistema com alta taxa de falhas de página provavelmente está:
+Um processo realiza dois acessos: primeiro, a uma página válida de seu espaço virtual que não está na RAM; depois, a um endereço que não pertence ao espaço autorizado. O tratamento esperado é, respectivamente:
 
-A) buscando páginas ausentes na memória física, possivelmente com acesso a disco.
-B) executando todas as instruções diretamente da cache L1 sem falta.
-C) sem memória virtual por definição.
-D) apenas trocando proprietário de arquivos.
+A) encerrar o processo nos dois acessos, porque todo page fault representa violação fatal.
+B) carregar os dois endereços do swap, pois validade e proteção não participam da decisão.
+C) tratar a ausência carregando a página válida e sinalizar falha no acesso inválido ou não autorizado.
+D) ignorar o primeiro acesso e executar o segundo diretamente, pois a paginação remove a proteção.
 
 ### Questão 31
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Dispositivos, drivers e spooling](semana_01_estudo.md#s1-d2-dispositivos-spooling)
 
 Um servidor usa fila de impressão para organizar documentos enviados por vários setores. Essa técnica se relaciona a:
 
-A) deadlock necessariamente.
-B) segmentação de memória.
-C) linkedição de bibliotecas.
-D) spooling.
+A) deadlock, pois toda fila de dispositivo forma necessariamente ciclo entre processos e recursos.
+B) segmentação de memória, pois cada documento ocupa segmento lógico variável antes da impressão.
+C) linkedição, pois cada trabalho combina módulos de código antes de alcançar o dispositivo.
+D) spooling, que mantém trabalhos em fila intermediária para atendimento pelo dispositivo compartilhado.
 
 ### Questão 32
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Windows e Linux](semana_01_estudo.md#s1-d2-windows-linux)
 
 Assinale a alternativa correta sobre NTFS e ext4.
 
 A) São formatos de registradores da CPU.
 B) São protocolos de e-mail.
 C) São sistemas de arquivos, comuns respectivamente em Windows e Linux.
-D) São algoritmos de escalonamento de CPU.
+D) São algoritmos de escalonamento usados para dividir a CPU entre processos de Windows e Linux.
 
 ### Questão 33
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 O comando `kill` em Linux:
 
 A) lista exclusivamente diretórios ocultos.
 B) envia sinais a processos, frequentemente para solicitar encerramento.
-C) remove fisicamente o processador do computador.
+C) remove fisicamente o processador associado ao PID e encerra todos os demais processos dependentes desse hardware.
 D) altera permissões de arquivo para 755.
 
 ### Questão 34
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
-Um serviço travado mantém um lock e impede outros processos de avançar. A primeira análise técnica deve verificar:
+R1, R2 e R3 são exclusivos. P1 mantém R1 e espera R2; P2 mantém R2 e espera R3; P3 mantém R3 e espera R1. Os processos conservam o recurso enquanto esperam, e o sistema não o retira compulsoriamente. Avaliam-se três ações: I — impor ordem global `R1 → R2 → R3` para aquisições futuras; II — aumentar o quantum; III — abortar P2 e liberar R2. Assinale a análise correta.
 
-A) se há recurso compartilhado retido e dependências de espera entre processos.
-B) se a crase foi usada corretamente no nome do serviço.
-C) se a chave primária do banco é sempre nula.
-D) se o monitor possui resolução 4K.
+A) O grafo não possui ciclo por envolver três processos; I serve apenas para melhorar justiça, e III não altera as dependências.
+B) O caso é starvation de P3; aging rompe as retenções, enquanto I preserva a espera circular já existente.
+C) O grafo contém ciclo sob as demais condições; I previne nova espera circular, e III pode recuperar o caso ao liberar uma aresta do ciclo.
+D) Há deadlock, mas I o previne eliminando exclusão mútua; II libera os locks pela preempção da CPU, e III mantém R2 retido.
 
 ### Questão 35
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
-Uma política de backup consistente para estações e servidores deve considerar:
+Um servidor mantém cópia diária em volume permanentemente conectado. Um ransomware cifra os dados de produção e essa cópia; o journal preserva a consistência do sistema de arquivos, mas não recupera o conteúdo anterior. A correção da política deve priorizar:
 
-A) apenas a existência de journaling no sistema de arquivos.
-B) somente copiar atalhos da área de trabalho.
-C) desativar logs para economizar espaço sempre.
-D) periodicidade, retenção, teste de restauração e proteção contra perda/ataque.
+A) aumentar apenas o journal, porque consistência estrutural cria versões históricas dos arquivos cifrados.
+B) manter cópia isolada, definir retenção e testar restauração, além de conservar periodicidade compatível.
+C) reduzir a frequência das cópias para impedir que dados corrompidos sejam detectados durante a execução.
+D) substituir backup por logs de auditoria, pois o registro do incidente permite reconstruir qualquer arquivo.
 
 ### Questão 36
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
-Em um ambiente com múltiplos usuários, o isolamento entre processos contribui para:
+Dois processos de usuários distintos precisam trocar mensagens, mas um deles tenta ler diretamente a memória privada do outro. Qual desenho preserva isolamento sem impedir a comunicação legítima?
 
-A) dispensar permissões de arquivos.
-B) eliminar autenticação no login.
-C) impedir que um processo acesse indevidamente memória de outro.
-D) proibir qualquer comunicação legítima entre processos.
+A) negar o acesso direto e usar mecanismo de IPC controlado pelo sistema operacional, com permissões apropriadas.
+B) liberar todo o espaço de endereçamento de ambos, pois autenticação inicial torna qualquer leitura segura.
+C) desativar a memória virtual, compartilhar registradores e confiar somente nas permissões de arquivos para separar os usuários.
+D) proibir toda comunicação entre processos, porque isolamento e IPC são propriedades incompatíveis.
 
 ### Questão 37
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 Um administrador observa que um processo consome 95% de CPU por longo tempo, mas quase não acessa disco. Uma classificação inicial plausível é:
 
@@ -1993,21 +2499,27 @@ C) I/O-bound.
 D) processo zumbi.
 
 ### Questão 38
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
-V/F: Sobre deadlock.
+Um sistema exige que todo processo adquira recursos na ordem global `R1 → R2 → R3`. Considere os efeitos dessa política.
 
-I. Espera circular é uma das condições clássicas.
-II. Todo processo bloqueado está necessariamente em deadlock.
-III. Prevenção pode atacar uma das condições necessárias.
+I. A ordem impede que um processo mantenha R3 enquanto espera R1, rompendo a possibilidade de espera circular.
+II. Exclusão mútua pode continuar existindo nos recursos que não admitem compartilhamento.
+III. A política garante que nenhum processo sofrerá starvation, independentemente do escalonamento.
 
-A sequência correta é:
+Assinale a alternativa correta.
 
-A) V, F, V.
-B) V, V, F.
-C) F, V, V.
-D) F, F, V.
+A) Apenas I; a ordem também elimina obrigatoriamente a exclusão mútua.
+B) Apenas I e II; ela previne o ciclo, mas não garante justiça de atendimento.
+C) Apenas II e III; a ordem preserva o ciclo e elimina espera indefinida.
+D) I, II e III; qualquer prevenção de deadlock também impede starvation.
 
 ### Questão 39
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 Em sistemas operacionais, a diferença entre autenticação e autorização é:
 
@@ -2017,42 +2529,57 @@ C) autorização é usada apenas para memória cache.
 D) autenticação verifica identidade; autorização define permissões de acesso.
 
 ### Questão 40
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 Assinale a alternativa correta sobre sistemas multitarefa.
 
 A) Multitarefa impede uso de interrupções.
 B) Multitarefa só existe quando não há sistema operacional.
 C) A alternância rápida entre processos pode dar aparência de execução simultânea em uma CPU.
-D) Multitarefa exige obrigatoriamente um núcleo físico para cada processo existente.
+D) Multitarefa exige um núcleo físico dedicado e executando em paralelo para cada processo existente no sistema.
 
 ### Questão 41
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 Um arquivo possui permissão de leitura para o grupo, mas não para “outros”. Isso significa que:
 
 A) o arquivo se torna processo em execução.
-B) usuários pertencentes ao grupo podem ler, enquanto usuários fora do grupo e não proprietários podem não ter essa permissão.
+B) membros do grupo podem ler; usuários tratados como “outros” dependem das permissões dessa classe.
 C) qualquer usuário externo sempre pode ler o arquivo.
-D) o proprietário perde automaticamente todas as permissões.
+D) o proprietário perde automaticamente todas as permissões sempre que alguma autorização é concedida ao grupo.
 
 ### Questão 42
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
 O kernel oferece chamadas de sistema para operações de arquivo porque:
 
 A) aplicações não devem manipular hardware e estruturas críticas diretamente sem controle.
-B) aplicações precisam sempre escrever setores físicos manualmente.
+B) aplicações precisam escrever manualmente cada setor físico e decidir sozinhas proteção, concorrência e acesso ao dispositivo.
 C) o sistema de arquivos não possui permissões.
 D) o kernel é apenas uma interface gráfica.
 
 ### Questão 43
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
-Um processo órfão em Unix-like é aquele cujo:
+Em Unix-like, o pai de um processo termina enquanto o filho ainda executa. Mais tarde, o filho adotado também termina, mas o processo adotante ainda não coletou seu status. A sequência correta de classificações é:
 
-A) estado já terminou e só aguarda coleta de status pelo pai.
-B) arquivo executável foi apagado antes de iniciar.
-C) mutex foi liberado corretamente.
-D) processo pai terminou antes dele, e ele passa a ser adotado por outro processo do sistema.
+A) zumbi enquanto executa e órfão depois que termina, pois a coleta ocorre antes da adoção.
+B) órfão após perder o pai original e, depois de terminar, zumbi até que o adotante colete o status.
+C) bloqueado após perder o pai e pronto depois de terminar, porque adoção altera apenas a fila da CPU.
+D) órfão nas duas etapas, pois um processo adotado não pode gerar informação de término.
 
 ### Questão 44
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
 Assinale a incorreta sobre swap.
 
@@ -2062,15 +2589,21 @@ C) Pode apoiar a memória virtual quando a RAM está pressionada.
 D) É normalmente mais lento que acesso à RAM.
 
 ### Questão 45
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
-Um administrador quer saber quais serviços subiram com falha após reinicialização em Linux com systemd. O comando mais relacionado é:
+Após reinicializar um servidor Linux com `systemd`, o administrador precisa primeiro listar todas as unidades em falha e, depois, inspecionar uma unidade específica. A sequência mais precisa é:
 
-A) chown -R /, pois muda todos os donos e resolve falhas.
-B) systemctl status ou journalctl, conforme o caso.
-C) chmod 777, pois sempre corrige serviços.
-D) SELECT * FROM services, pois serviços são tabelas SQL.
+A) `systemctl status` sem identificar unidade; depois `chmod 777` no executável do serviço.
+B) `journalctl --vacuum-time=1s`; depois `chown -R` no diretório raiz para recriar permissões.
+C) `systemctl --failed`; depois `systemctl status nome.service` e correlação dos logs pelo horário.
+D) `ps` para alterar diretamente o estado das unidades do systemd; depois `kill -9` em todos os processos, sem selecionar o serviço investigado.
 
 ### Questão 46
+**Nível: Médio**
+**Uso:** Aprofundamento
+**Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 Em Windows, permissões NTFS são relevantes porque:
 
@@ -2080,220 +2613,283 @@ C) servem apenas para colorir ícones.
 D) só existem em mídias FAT32.
 
 ### Questão 47
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 Uma aplicação faz muitas leituras de rede e fica frequentemente bloqueada aguardando resposta externa. Ela tende a ser:
 
-A) CPU-bound puro.
-B) processo zumbi.
-C) interrupção não mascarável.
-D) I/O-bound.
+A) CPU-bound, pois a CPU seria o recurso dominante mesmo durante as esperas de rede descritas.
+B) processo zumbi, porque já teria terminado e aguardaria apenas a coleta de seu status.
+C) interrupção não mascarável, porque toda espera de rede classifica o processo como evento de hardware.
+D) I/O-bound, pois seu progresso depende das respostas externas e de períodos frequentes de espera por E/S.
 
 ### Questão 48
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 Assinale a correta sobre monitores, semáforos e mutexes.
 
 A) São modos de endereçamento da CPU.
 B) São tipos de backup incremental.
 C) São mecanismos/conceitos usados para sincronização de concorrência.
-D) São sistemas de arquivos do Windows.
+D) São sistemas de arquivos usados pelo Windows para serializar acessos concorrentes a pastas e volumes compartilhados.
 
 ### Questão 49
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 Um servidor sofreu queda brusca de energia. Após reiniciar, o sistema de arquivos usa seu journal para reduzir inconsistências. Mesmo assim, o administrador deve:
 
 A) desativar logs para impedir análise.
 B) validar dados e usar backups se houver perda ou corrupção de arquivos.
 C) descartar todos os backups por serem redundantes.
-D) remover todas as permissões para acelerar o disco.
+D) remover permissões, desativar auditoria e considerar a estrutura consistente como prova suficiente de que nenhum dado foi perdido.
 
 ### Questão 50
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 Em uma região crítica, a ausência de sincronização adequada pode gerar:
 
 A) inconsistência de dados por acesso concorrente.
-B) aumento automático de espaço em disco.
+B) aumento automático do espaço em disco e preservação do resultado, mesmo quando duas escritas se intercalam.
 C) criação automática de usuários.
 D) desativação de todo o escalonamento.
 
-## Questões extras de revisão fixa do Dia 2
+## Banco complementar do Dia 2
 
 #### Extra Dia 2.1
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 **Área:** Administração Pública.
 
-Sobre os princípios do art. 37 da Constituição, assinale a alternativa correta.
+Uma chefia afirma que a busca por eficiência permite omitir resultado administrativo cuja divulgação é obrigatória e para o qual não existe sigilo legal. À luz dos princípios expressos do art. 37, assinale a alternativa correta.
 
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Legalidade, impessoalidade, moralidade, publicidade e eficiência formam o núcleo expresso conhecido como LIMPE.
-C) Responsabilidade civil do Estado dispensa dano e nexo causal.
-D) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
+A) A eficiência prevalece isoladamente e autoriza afastar a regra jurídica quando houver ganho de tempo.
+B) A publicidade é absoluta e exige divulgação integral até mesmo de dados protegidos por restrição legal.
+C) Legalidade e publicidade continuam aplicáveis; eficiência não legitima ocultação sem fundamento jurídico.
+D) A impessoalidade exige que nenhum ato identifique o órgão responsável por sua prática ou divulgação.
 
 #### Extra Dia 2.2
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 **Área:** Administração Pública.
 
-Um órgão público decide contratar servidor por afinidade pessoal, sem critério objetivo. Qual princípio é diretamente afetado?
+Uma autoridade escolhe beneficiário de decisão administrativa apenas por amizade, embora existam critérios objetivos aplicáveis. O princípio diretamente violado é:
 
-A) Impessoalidade, pois a atuação administrativa deve buscar finalidade pública e critérios objetivos.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-D) Pregão é modalidade voltada à alienação de bens públicos.
+A) impessoalidade, porque a decisão deve perseguir finalidade pública sem favorecimento pessoal.
+B) publicidade, porque toda escolha administrativa precisa ser transmitida em sessão pública ao vivo.
+C) eficiência, porque esse princípio exige selecionar sempre a alternativa de menor custo financeiro.
+D) moralidade, exclusivamente, pois favorecimento pessoal nunca repercute sobre a impessoalidade.
 
 #### Extra Dia 2.3
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 **Área:** Administração Pública.
 
-Sobre Administração Direta e Indireta, assinale a alternativa correta.
+Assinale a alternativa que diferencia corretamente órgão e entidade na organização administrativa.
 
-A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-B) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Administração Direta é composta pelos entes federativos e seus órgãos; Administração Indireta reúne entidades com personalidade própria.
+A) Órgão e entidade possuem sempre personalidade jurídica própria, diferenciando-se apenas pelo nome legal.
+B) Entidade integra necessariamente a mesma pessoa política e resulta apenas de desconcentração interna.
+C) Órgão pertence exclusivamente à Administração Indireta, enquanto toda entidade existe apenas dentro da Administração Direta e sem personalidade própria.
+D) Órgão integra a estrutura de uma pessoa; entidade possui personalidade própria e pode compor a Administração Indireta.
 
 #### Extra Dia 2.4
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 **Área:** Administração Pública.
 
-No contexto dos conselhos profissionais, assinale a alternativa correta.
+Considerando especificamente a natureza e a atuação institucional do CRA-PR, assinale a alternativa correta.
 
-A) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-B) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-C) Conselhos profissionais são frequentemente tratados como autarquias corporativas ou entidades de fiscalização profissional.
-D) Publicidade impede qualquer sigilo em documentos públicos.
+A) É associação privada comum, sem personalidade de direito público, poder de fiscalização profissional ou vínculo com a Administração Indireta.
+B) Integra a Administração Indireta como entidade autárquica de fiscalização profissional, nos limites de sua competência.
+C) É órgão interno do CFA, sem personalidade própria e sem autonomia administrativa ou financeira.
+D) Integra a Administração Direta estadual porque sua jurisdição territorial coincide com o Estado do Paraná.
 
 #### Extra Dia 2.5
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 **Área:** Administração Pública.
 
-Sobre autarquias, assinale a alternativa correta.
+Uma lei cria entidade com personalidade jurídica própria para executar atividade administrativa típica, sujeita a controle finalístico. Essa entidade:
 
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) Autarquia possui personalidade jurídica própria e integra a Administração Indireta.
-C) Pregão é modalidade voltada à alienação de bens públicos.
-D) Autarquia integra a Administração Direta porque executa serviço público.
+A) é órgão desconcentrado, pois a personalidade própria não interfere na posição administrativa.
+B) é autarquia da Administração Indireta, distinta dos órgãos sem personalidade jurídica própria.
+C) integra a Administração Direta, porque toda atividade pública pertence à pessoa política originária.
+D) transforma-se em empresa privada, pois descentralização e personalidade afastam o regime público.
 
 #### Extra Dia 2.6
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
 **Área:** Administração Pública.
 
-Uma autoridade pratica ato sem competência legal. Qual elemento do ato administrativo está comprometido?
+Uma autoridade sem atribuição legal aplica penalidade. O ato observa a forma prevista e descreve fatos verdadeiros, mas a competência não foi delegada nem admitia escolha livre. Qual conclusão é adequada?
 
-A) Competência.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-D) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
+A) O ato é válido, porque forma e motivo corretos suprem a falta de atribuição da autoridade.
+B) O vício recai sobre a finalidade, pois competência corresponde ao resultado material produzido.
+C) A discricionariedade permite conservar o ato sempre que a autoridade alegar interesse público.
+D) O elemento competência está viciado, e a ilegalidade exige controle próprio; conveniência não sana a falta.
 
 #### Extra Dia 2.7
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
 **Área:** Administração Pública.
 
-Sobre finalidade do ato administrativo, assinale a alternativa correta.
+Uma autoridade usa poder de fiscalização formalmente existente para perseguir desafeto, e não para proteger o interesse público previsto na norma. O caso indica:
 
-A) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-B) Publicidade impede qualquer sigilo em documentos públicos.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) O ato deve perseguir finalidade pública; desvio para interesse pessoal pode invalidá-lo.
+A) desvio de finalidade, capaz de viciar o ato apesar da aparência formal de competência.
+B) mera opção de mérito insuscetível de controle, pois a finalidade pode ser escolhida pelo agente.
+C) vício apenas de forma, corrigido com nova publicação do mesmo ato e dos mesmos motivos pessoais.
+D) exercício regular de eficiência, porque alcançar rapidamente um resultado afasta a finalidade legal.
 
 #### Extra Dia 2.8
+**Nível: Difícil**
+**Uso:** Aprofundamento
+**Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
 **Área:** Administração Pública.
 
-A Administração anulou ato ilegal após constatar vício. Assinale a alternativa correta.
+A Administração identifica dois atos: X nasceu ilegal por falta de competência; Y é válido, mas deixou de ser conveniente. Respeitados os demais requisitos, as providências correspondentes são:
 
-A) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-B) Autarquia integra a Administração Direta porque executa serviço público.
-C) A anulação relaciona-se ao controle de legalidade do ato administrativo.
-D) Responsabilidade civil do Estado dispensa dano e nexo causal.
+A) revogar X e anular Y, porque mérito administrativo precede sempre a análise de legalidade.
+B) anular X por ilegalidade e revogar Y por conveniência e oportunidade.
+C) revogar ambos, pois a Administração nunca pode anular os próprios atos ilegais.
+D) anular ambos, porque todo ato inconveniente se torna automaticamente ilegal.
 
 #### Extra Dia 2.9
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [LAI e LGPD](semana_01_estudo.md#s1-d2-lai-lgpd)
 
 **Área:** Administração Pública.
 
-Sobre LAI e transparência, assinale a alternativa correta.
+Um pedido de acesso alcança documento público que contém trecho divulgável e dado pessoal protegido sem relevância para a finalidade do requerimento. A resposta compatível com a LAI é:
 
-A) Pregão é modalidade voltada à alienação de bens públicos.
-B) A publicidade é regra, mas informações protegidas por sigilo legal ou dados pessoais exigem tratamento adequado.
-C) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-D) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
+A) negar integralmente o documento, porque a presença de qualquer dado pessoal torna todo conteúdo secreto.
+B) divulgar integralmente, porque publicidade elimina a proteção jurídica de dados mantidos pelo poder público.
+C) ignorar o pedido até que o titular do dado autorize formalmente qualquer informação institucional.
+D) analisar acesso parcial, restrição ou ocultação do dado protegido e fundamentar a decisão sobre o restante.
 
 #### Extra Dia 2.10
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [LAI e LGPD](semana_01_estudo.md#s1-d2-lai-lgpd)
 
 **Área:** Administração Pública.
 
-Sobre LGPD na Administração Pública, assinale a alternativa correta.
+Um cidadão pede, com base na LAI, dados estatísticos de atendimento e a planilha bruta que também contém CPF, endereço e diagnóstico individual. O órgão precisa conciliar transparência e proteção de dados. Assinale a solução que aplica corretamente os filtros necessários.
 
-A) O tratamento de dados pessoais deve observar finalidade, necessidade, segurança e base legal adequada.
-B) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
-C) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-D) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
+A) identificar a finalidade pública, entregar a parcela estatística e avaliar anonimização ou restrição dos dados pessoais, com fundamento expresso.
+B) recusar tudo apenas porque existe CPF na planilha, sem separar conteúdo público de informação pessoal.
+C) publicar a planilha bruta integralmente, pois o pedido baseado na LAI torna finalidade, necessidade, anonimização e segurança requisitos facultativos para o poder público.
+D) exigir consentimento de todos os titulares como única base possível, mesmo para produzir estatística pública anônima.
 
 #### Extra Dia 2.11
+**Nível: Difícil**
+**Uso:** Revisão
+**Referência:** [Improbidade administrativa](semana_01_estudo.md#s1-d2-improbidade)
 
 **Área:** Administração Pública.
 
-Sobre improbidade administrativa, assinale a alternativa correta.
+Um servidor interpreta norma complexa de modo razoável, sem dolo ou benefício, e o ato é posteriormente anulado. Em outro caso, agente direciona deliberadamente ato para obter vantagem tipificada em lei. À luz da disciplina vigente, assinale a alternativa correta.
 
-A) Publicidade impede qualquer sigilo em documentos públicos.
-B) Responsabilidade civil do Estado dispensa dano e nexo causal.
-C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-D) Improbidade não é qualquer ilegalidade; exige enquadramento na lei e requisitos próprios, inclusive elemento subjetivo quando exigido.
+A) Os dois casos configuram automaticamente improbidade, porque a anulação administrativa prova o elemento subjetivo.
+B) Ilegalidade isolada não basta; o segundo caso ainda exige comprovação de conduta dolosa, tipo legal e nexo pertinente.
+C) Apenas o primeiro caso configura improbidade, pois erro interpretativo é mais grave que vantagem deliberada.
+D) Nenhum caso pode configurar improbidade, porque agentes públicos respondem somente na esfera disciplinar.
 
 #### Extra Dia 2.12
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Improbidade administrativa](semana_01_estudo.md#s1-d2-improbidade)
 
 **Área:** Administração Pública.
 
-Servidor usa o cargo para obter vantagem patrimonial indevida. Em tese, a situação se aproxima de qual categoria clássica?
+Um agente usa dolosamente o cargo para incorporar vantagem patrimonial indevida ao próprio patrimônio. Em tese, a categoria clássica mais diretamente relacionada é:
 
-A) Autarquia integra a Administração Direta porque executa serviço público.
-B) Improbidade é sinônimo de qualquer erro formal cometido pelo agente.
-C) Enriquecimento ilícito.
-D) Pregão é modalidade voltada à alienação de bens públicos.
+A) mera irregularidade formal, independentemente do benefício obtido ou do elemento subjetivo.
+B) lesão culposa presumida, porque toda vantagem dispensa tipificação e prova de conduta.
+C) enriquecimento ilícito, desde que o caso seja enquadrado nos requisitos legais aplicáveis.
+D) violação administrativa atípica, pois vantagem patrimonial nunca integra a Lei de Improbidade.
 
 #### Extra Dia 2.13
+**Nível: Difícil**
+**Uso:** Simulado
+**Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
 
 **Área:** Administração Pública.
 
-Em licitação, o edital definiu critério e exigências. Durante o julgamento, a Administração quer ignorá-los. Assinale a alternativa correta.
+Um edital válido estabelece critério objetivo de julgamento. Depois de abertas as propostas, a comissão pretende adotar critério novo para favorecer solução que considera tecnicamente melhor, sem alterar formalmente o procedimento. A conclusão correta é:
 
-A) Competência do ato administrativo pode ser escolhida livremente pela autoridade.
-B) A vinculação ao edital impede julgamento contrário às regras previamente estabelecidas.
-C) Eficiência autoriza descumprir legalidade para alcançar resultado rápido.
-D) LGPD elimina a aplicação da LAI em todos os pedidos de acesso.
+A) o critério novo pode ser aplicado sem motivação, porque julgamento técnico afasta as regras do edital.
+B) a comissão pode escolher qualquer critério após conhecer as propostas, desde que mencione eficiência.
+C) a vinculação alcança apenas licitantes; a Administração não precisa observar as regras que publicou.
+D) o julgamento deve respeitar edital e legalidade; mudança válida exige procedimento próprio, publicidade e motivação.
 
 #### Extra Dia 2.14
+**Nível: Muito difícil**
+**Uso:** Aprofundamento
+**Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
 
 **Área:** Administração Pública.
 
-Sobre dispensa e inexigibilidade de licitação, assinale a alternativa correta.
+O órgão avalia dois objetos. O primeiro é serviço comum com padrões objetivos e vários fornecedores. O segundo depende de fornecedor exclusivo, condição devidamente comprovada. Mesmo na contratação direta, haverá instrução e motivação. Assinale o enquadramento correto.
 
-A) Na dispensa, a competição é possível em tese, mas a lei autoriza não licitar; na inexigibilidade, a competição é inviável.
-B) Na inexigibilidade, a competição é possível, mas a lei prefere dispensá-la.
-C) Ato administrativo não precisa de finalidade pública se for conveniente ao gestor.
-D) Publicidade impede qualquer sigilo em documentos públicos.
+A) o primeiro conduz ordinariamente ao pregão; o segundo pode admitir inexigibilidade pela competição inviável, com processo motivado.
+B) ambos exigem inexigibilidade, porque definir padrão objetivo torna a competição tecnicamente impossível.
+C) o primeiro admite dispensa por preferência administrativa sem hipótese legal; o segundo dispensa instrução, justificativa e motivação porque a exclusividade foi alegada.
+D) ambos devem ser contratados por leilão, pois pluralidade ou exclusividade não alteram a modalidade aplicável.
 
 #### Extra Dia 2.15
+**Nível: Médio**
+**Uso:** Simulado
+**Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
 
 **Área:** Administração Pública.
 
-Para aquisição de bem ou serviço comum, a modalidade ordinariamente associada pela Lei nº 14.133/2021 é:
+Um órgão pretende contratar serviço comum, com padrões de desempenho e qualidade objetivamente definidos, e não há inviabilidade de competição demonstrada. A modalidade ordinariamente adequada é:
 
-A) Responsabilidade civil do Estado dispensa dano e nexo causal.
-B) Pregão é modalidade voltada à alienação de bens públicos.
-C) Autarquia integra a Administração Direta porque executa serviço público.
-D) Pregão.
+A) concurso, porque todo serviço prestado à Administração constitui trabalho técnico ou artístico premiado.
+B) pregão, pois o objeto comum admite disputa segundo critérios objetivos previstos na Lei nº 14.133/2021.
+C) leilão, porque serviços comuns devem ser alienados ao licitante que oferecer o maior lance.
+D) inexigibilidade, porque a descrição objetiva do objeto torna impossível comparar fornecedores concorrentes.
 
 #### Extra Dia 2.16
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Concordância e verbo haver impessoal](semana_01_estudo.md#s1-d2-portugues-concordancia)
 
 **Área:** Língua Portuguesa/interpretação.
 
 Assinale a frase em que a concordância verbal está adequada.
 
-A) Haviam muitos processos pendentes no setor.
+A) Havia muitos processos pendentes no setor.
 B) Existia muitos processos pendentes no setor.
-C) Havia muitos processos pendentes no setor.
+C) Haviam muitos processos pendentes no setor.
 D) Foi analisado as planilhas do setor.
 
 #### Extra Dia 2.17
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Referência pronominal e uso de onde](semana_01_estudo.md#s1-d2-portugues-ambiguidade-onde)
 
 **Área:** Língua Portuguesa/interpretação.
 
@@ -2302,9 +2898,12 @@ No período "O servidor informou ao candidato que seu recurso fora analisado", h
 A) o verbo 'informou' está sem complemento.
 B) o pronome 'seu' pode se referir ao servidor ou ao candidato.
 C) a forma 'fora' indica futuro do presente.
-D) a palavra 'recurso' impede qualquer dupla interpretação.
+D) a palavra 'recurso' elimina qualquer dupla interpretação, ainda que o possessivo permaneça ligado a dois antecedentes possíveis.
 
 #### Extra Dia 2.18
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Referência pronominal e uso de onde](semana_01_estudo.md#s1-d2-portugues-ambiguidade-onde)
 
 **Área:** Língua Portuguesa/interpretação.
 
@@ -2316,6 +2915,9 @@ C) A norma onde consta o prazo foi revogada.
 D) O procedimento onde o candidato recorreu foi digital.
 
 #### Extra Dia 2.19
+**Nível: Médio**
+**Uso:** Revisão
+**Referência:** [Pontuação e restrição de sentido](semana_01_estudo.md#s1-d2-portugues-pontuacao)
 
 **Área:** Língua Portuguesa/interpretação.
 
@@ -2327,6 +2929,9 @@ C) Após a conferência, dos dados a equipe publicou, o resultado.
 D) Após a conferência dos dados, a equipe publicou o resultado.
 
 #### Extra Dia 2.20
+**Nível: Médio**
+**Uso:** Essenciais
+**Referência:** [Comando negativo e inferência literal](semana_01_estudo.md#s1-d2-portugues-comando)
 
 **Área:** Língua Portuguesa/interpretação.
 
@@ -2340,75 +2945,75 @@ D) a análise anterior foi anulada automaticamente.
 
 ## Gabarito do Dia 2
 
-1. B
+1. C
 2. A
 3. D
-4. C
-5. B
+4. B
+5. C
 6. A
-7. C
+7. A
 8. C
 9. B
 10. A
 11. D
-12. C
+12. D
 13. B
 14. A
 15. D
 16. C
-17. B
-18. A
-19. D
-20. C
-21. B
+17. D
+18. C
+19. C
+20. A
+21. C
 22. D
-23. D
+23. C
 24. C
-25. B
+25. D
 26. A
 27. D
-28. C
-29. B
-30. A
+28. A
+29. D
+30. C
 31. D
 32. C
 33. B
-34. A
-35. D
-36. C
+34. C
+35. B
+36. A
 37. B
-38. A
+38. B
 39. D
 40. C
 41. B
 42. A
-43. D
+43. B
 44. B
-45. B
+45. C
 46. A
 47. D
 48. C
 49. B
 50. A
 
-### Gabarito das questões extras de revisão fixa do Dia 2
+### Gabarito do banco complementar do Dia 2
 
-Extra Dia 2.1: B
+Extra Dia 2.1: C
 Extra Dia 2.2: A
 Extra Dia 2.3: D
-Extra Dia 2.4: C
+Extra Dia 2.4: B
 Extra Dia 2.5: B
-Extra Dia 2.6: A
-Extra Dia 2.7: D
-Extra Dia 2.8: C
-Extra Dia 2.9: B
+Extra Dia 2.6: D
+Extra Dia 2.7: A
+Extra Dia 2.8: B
+Extra Dia 2.9: D
 Extra Dia 2.10: A
-Extra Dia 2.11: D
+Extra Dia 2.11: B
 Extra Dia 2.12: C
-Extra Dia 2.13: B
+Extra Dia 2.13: D
 Extra Dia 2.14: A
-Extra Dia 2.15: D
-Extra Dia 2.16: C
+Extra Dia 2.15: B
+Extra Dia 2.16: A
 Extra Dia 2.17: B
 Extra Dia 2.18: A
 Extra Dia 2.19: D
@@ -2418,18 +3023,23 @@ Extra Dia 2.20: C
 ## Comentários do Dia 2
 
 ### Comentário da Questão 1
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
-- **Alternativa correta:** B.
+- **Alternativa correta:** C.
 - **A) está errada:** Processo em execução não é convertido em arquivo por definição.
-- **B) está correta:** O SO coordena recursos para aplicações concorrentes.
-- **C) está errada:** O SO não substitui o SGBD; cada camada tem função própria.
+- **B) está errada:** O SO não substitui o SGBD; cada camada tem função própria.
+- **C) está correta:** O SO coordena recursos para aplicações concorrentes.
 - **D) está errada:** SO pode apoiar autenticação, mas não elimina a necessidade de controle.
 - **Conceito cobrado:** Funções do sistema operacional.
-- **Pegadinha usada:** Confundir SO com SGBD ou aplicativo..
+- **Pegadinha usada:** Confundir SO com SGBD ou aplicativo.
 - **Como pensar para acertar:** Identifique a camada que gerencia recursos básicos do computador.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 2
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Programa e processo estão corretamente diferenciados; thread costuma compartilhar recursos do processo.
@@ -2437,11 +3047,13 @@ Extra Dia 2.20: C
 - **C) está errada:** I é verdadeira e III é falsa.
 - **D) está errada:** Inclui III, que generaliza incorretamente thread.
 - **Conceito cobrado:** Programa, processo e thread.
-- **Pegadinha usada:** Tratar thread como processo isolado em todos os recursos..
+- **Pegadinha usada:** Tratar thread como processo isolado em todos os recursos.
 - **Como pensar para acertar:** Separe código armazenado, execução com contexto e linha de execução.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 3
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 - **Alternativa correta:** D.
 - **A) está errada:** Se aguarda E/S, em regra não está usando a CPU.
@@ -2449,35 +3061,41 @@ Extra Dia 2.20: C
 - **C) está errada:** Zumbi é processo terminado aguardando coleta de status.
 - **D) está correta:** Ele não pode prosseguir até a conclusão da E/S.
 - **Conceito cobrado:** Estados de processo.
-- **Pegadinha usada:** Confundir bloqueado com pronto ou zumbi..
+- **Pegadinha usada:** Confundir bloqueado com pronto ou zumbi.
 - **Como pensar para acertar:** Pergunte se o processo está apto a executar agora. Se depende de evento, está bloqueado.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 4
-
-- **Alternativa correta:** C.
-- **A) está errada:** Temporizador é mecanismo importante para preempção.
-- **B) está errada:** Multitarefa permite alternância entre vários processos.
-- **C) está correta:** Preempção permite retirada da CPU conforme política.
-- **D) está errada:** Isso descreve comportamento não preemptivo/cooperativo.
-- **Conceito cobrado:** Escalonamento preemptivo.
-- **Pegadinha usada:** Confundir preemptivo com cooperativo..
-- **Como pensar para acertar:** Procure a ideia de retirada forçada/controlada da CPU.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 5
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 - **Alternativa correta:** B.
-- **A) está errada:** Não há relação com conversão de sistema de arquivos.
-- **B) está correta:** Muitas trocas entre RAM e disco reduzem trabalho útil.
-- **C) está errada:** Swap não aumenta clock.
-- **D) está errada:** Uso de swap decorre justamente de pressão de memória/falhas de página.
-- **Conceito cobrado:** Memória virtual e swap.
-- **Pegadinha usada:** Achar que swap sempre melhora desempenho..
-- **Como pensar para acertar:** Swap ajuda a sobreviver à falta de RAM, mas disco é muito mais lento.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **A) está errada:** Temporizador é mecanismo importante para preempção.
+- **B) está correta:** Preempção permite retirada da CPU conforme política.
+- **C) está errada:** Multitarefa permite alternância entre vários processos.
+- **D) está errada:** Isso descreve comportamento não preemptivo/cooperativo.
+- **Conceito cobrado:** Escalonamento preemptivo.
+- **Pegadinha usada:** Confundir preemptivo com cooperativo.
+- **Como pensar para acertar:** Procure a ideia de retirada forçada/controlada da CPU.
+
+### Comentário da Questão 5
+- **Nível:** Difícil
+- **Uso:** Essenciais
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
+
+- **Alternativa correta:** C.
+- **A) está errada:** Saturação de disco e faltas de página apontam para memória; quantum não mantém páginas na cache.
+- **B) está errada:** O caso não apresenta ciclo de recursos, e reinício não é diagnóstico de deadlock.
+- **C) está correta:** Pressão de RAM, paginação intensa e pouco trabalho útil caracterizam thrashing; reduzir a demanda ou ampliar RAM ataca a causa.
+- **D) está errada:** Journal e faltas de página pertencem a mecanismos distintos; desativar registro não resolve pressão de memória.
+- **Conceito cobrado:** Thrashing, swap e diagnóstico de pressão de memória.
+- **Pegadinha usada:** Confundir o recurso saturado com a causa e propor ação que não reduz o conjunto de trabalho.
+- **Como pensar para acertar:** Confirme pressão de RAM, faltas, atividade de disco e trabalho útil antes de escolher a intervenção.
 
 ### Comentário da Questão 6
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Essa é a distinção clássica cobrada.
@@ -2485,24 +3103,28 @@ Extra Dia 2.20: C
 - **C) está errada:** Paginação é técnica comum de implementação de memória virtual.
 - **D) está errada:** Segmentação é técnica de organização de memória.
 - **Conceito cobrado:** Paginação e segmentação.
-- **Pegadinha usada:** Inverter fixo e variável..
+- **Pegadinha usada:** Inverter fixo e variável.
 - **Como pensar para acertar:** Associe página/frame a tamanho fixo e segmento a unidade lógica.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 7
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
-- **Alternativa correta:** C.
+- **Alternativa correta:** A.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
-- **A) está correta como afirmação:** Correta: disco/swap pode apoiar a memória virtual.
+- **A) é a incorreta:** Incorreta: memória virtual é abstração; RAM é memória física.
 - **B) está correta como afirmação:** Correta: espaços virtuais isolados dificultam acesso indevido.
-- **C) é a incorreta:** Incorreta: memória virtual é abstração; RAM é memória física.
+- **C) está correta como afirmação:** Correta: disco/swap pode apoiar a memória virtual.
 - **D) está correta como afirmação:** Correta: a abstração isola processos.
 - **Conceito cobrado:** Memória virtual.
-- **Pegadinha usada:** Igualar abstração virtual à RAM física..
+- **Pegadinha usada:** Igualar abstração virtual à RAM física.
 - **Como pensar para acertar:** Virtual é o que o processo enxerga; físico é onde efetivamente está na RAM.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 8
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 - **Alternativa correta:** C.
 - **A) está errada:** São localizações, não permissões.
@@ -2510,11 +3132,13 @@ Extra Dia 2.20: C
 - **C) está correta:** Ambos partem da unidade/raiz e indicam localização completa.
 - **D) está errada:** Caminho relativo depende do diretório atual; os exemplos não dependem.
 - **Conceito cobrado:** Caminhos de arquivos.
-- **Pegadinha usada:** Confundir localização de arquivo com permissão ou processo..
+- **Pegadinha usada:** Confundir localização de arquivo com permissão ou processo.
 - **Como pensar para acertar:** Caminho absoluto não depende do diretório atual.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 9
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Permissões continuam existindo.
@@ -2522,11 +3146,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Journaling não recupera necessariamente arquivos apagados ou versões antigas.
 - **D) está errada:** Journaling não evita defeito de hardware.
 - **Conceito cobrado:** Journaling.
-- **Pegadinha usada:** Achar que journaling é backup completo..
+- **Pegadinha usada:** Achar que journaling é backup completo.
 - **Como pensar para acertar:** Journaling cuida de consistência; backup cuida de recuperação de dados.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 10
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** A.
 - **A) está correta:** chmod altera permissões; 640 representa leitura/escrita para dono, leitura para grupo e nenhuma para outros.
@@ -2534,11 +3160,13 @@ Extra Dia 2.20: C
 - **C) está errada:** chmod não cria processo.
 - **D) está errada:** Não é comando de compactação.
 - **Conceito cobrado:** Permissões Linux e chmod.
-- **Pegadinha usada:** Confundir chmod e chown..
+- **Pegadinha usada:** Confundir chmod e chown.
 - **Como pensar para acertar:** Veja o verbo: mode/permissão, não owner/proprietário.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 11
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
 - **Alternativa correta:** D.
 - **A) está errada:** Serviços podem consumir recursos.
@@ -2546,23 +3174,27 @@ Extra Dia 2.20: C
 - **C) está errada:** Eventos de serviços podem aparecer em logs.
 - **D) está correta:** Serviços rodam em background para funções do sistema/aplicações.
 - **Conceito cobrado:** Serviços em segundo plano.
-- **Pegadinha usada:** Generalizar serviço como malware ou como inofensivo sem análise..
+- **Pegadinha usada:** Generalizar serviço como malware ou como inofensivo sem análise.
 - **Como pensar para acertar:** Serviço é modo de execução; a legitimidade depende do caso.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 12
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Dispositivos, drivers e spooling](semana_01_estudo.md#s1-d2-dispositivos-spooling)
 
-- **Alternativa correta:** C.
+- **Alternativa correta:** D.
 - **A) está errada:** Driver e spool têm funções diferentes.
 - **B) está errada:** Dispositivos ainda dependem de drivers ou módulos equivalentes.
-- **C) está correta:** Driver traduz comandos do SO/aplicação para o hardware específico.
-- **D) está errada:** Driver não é armazenamento físico.
+- **C) está errada:** Driver não é armazenamento físico nem fila permanente de impressão.
+- **D) está correta:** Driver traduz comandos do SO/aplicação para o hardware específico.
 - **Conceito cobrado:** Drivers de dispositivo.
-- **Pegadinha usada:** Confundir driver com hardware ou fila de impressão..
+- **Pegadinha usada:** Confundir driver com hardware ou fila de impressão.
 - **Como pensar para acertar:** Driver é camada de controle do dispositivo.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 13
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Não há indicação de página ausente ou erro de memória virtual.
@@ -2570,11 +3202,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Não há descrição de espera circular; há disputa sem sincronização.
 - **D) está errada:** O problema é concorrência, não alocação de memória.
 - **Conceito cobrado:** Condição de corrida.
-- **Pegadinha usada:** Confundir inconsistência concorrente com deadlock..
+- **Pegadinha usada:** Confundir inconsistência concorrente com deadlock.
 - **Como pensar para acertar:** Se o resultado depende do timing de threads, pense em corrida.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 14
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Mutex permite que apenas um fluxo acesse recurso protegido por vez.
@@ -2582,11 +3216,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Ordenação de arquivos não é função de mutex.
 - **D) está errada:** Mutex sincroniza acesso; não escolhe processos para CPU.
 - **Conceito cobrado:** Mutex e região crítica.
-- **Pegadinha usada:** Atribuir ao mutex funções de desempenho ou escalonamento..
+- **Pegadinha usada:** Atribuir ao mutex funções de desempenho ou escalonamento.
 - **Como pensar para acertar:** Associe mutex a “um por vez” em recurso compartilhado.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 15
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** D.
 - **A) está errada:** Cache hit ocorre quando dado é encontrado na cache.
@@ -2594,11 +3230,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Starvation é espera indefinida por política; aqui há ciclo de recursos.
 - **D) está correta:** Há dependência circular entre processos e recursos.
 - **Conceito cobrado:** Deadlock.
-- **Pegadinha usada:** Confundir espera circular com lentidão genérica..
+- **Pegadinha usada:** Confundir espera circular com lentidão genérica.
 - **Como pensar para acertar:** Procure ciclo: A espera B, B espera A.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 16
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** C.
 - **A) está errada:** São operações da álgebra relacional.
@@ -2606,71 +3244,83 @@ Extra Dia 2.20: C
 - **C) está correta:** Essas são as quatro condições clássicas.
 - **D) está errada:** São princípios administrativos, não condições de deadlock.
 - **Conceito cobrado:** Condições de deadlock.
-- **Pegadinha usada:** Confundir listas de disciplinas diferentes..
+- **Pegadinha usada:** Confundir listas de disciplinas diferentes.
 - **Como pensar para acertar:** Memorize as quatro condições como um bloco técnico de SO.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 17
-
-- **Alternativa correta:** B.
-- **A) está errada:** Daemon é processo/serviço de background, não esse estado específico.
-- **B) está correta:** Processo zumbi terminou, mas permanece na tabela até coleta do status.
-- **C) está errada:** Órfão é processo cujo pai terminou; não é a mesma definição.
-- **D) está errada:** Bloqueado aguarda evento; o processo zumbi já terminou.
-- **Conceito cobrado:** Processo zumbi.
-- **Pegadinha usada:** Confundir zumbi, órfão e bloqueado..
-- **Como pensar para acertar:** Observe: terminou, mas ainda consta para o pai coletar status.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 18
-
-- **Alternativa correta:** A.
-- **A) está correta:** I e II estão corretas; III é falsa porque chamadas não substituem hardware de execução.
-- **B) está errada:** II é verdadeira e III é falsa.
-- **C) está errada:** I é verdadeira e III é falsa.
-- **D) está errada:** I e II não deveriam ser falsas.
-- **Conceito cobrado:** Chamadas de sistema.
-- **Pegadinha usada:** Atribuir às chamadas de sistema papel físico da CPU..
-- **Como pensar para acertar:** Chamadas são interface de solicitação ao kernel.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 19
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 - **Alternativa correta:** D.
-- **A) está errada:** chmod/chown são usados para permissões/proprietário.
-- **B) está errada:** ps/top não formatam disco.
-- **C) está errada:** Essas ferramentas não compilam kernel.
-- **D) está correta:** ps lista processos e top acompanha uso em tempo real.
-- **Conceito cobrado:** Comandos Linux de processos.
-- **Pegadinha usada:** Confundir comandos de monitoramento com comandos de permissão..
-- **Como pensar para acertar:** Associe ps/top a processos e desempenho.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **A) está errada:** Inverte as classificações: F1 terminou sem coleta, enquanto F2 perdeu o pai original.
+- **B) está errada:** Coleta de status e adoção não correspondem aos estados bloqueado e pronto.
+- **C) está errada:** F1 é zumbi, mas F2 pode continuar executando após ser adotado; não fica bloqueado por definição.
+- **D) está correta:** F1 aguarda reaping como zumbi; F2 é órfão adotado por outro processo do sistema.
+- **Conceito cobrado:** Diferença entre processo zumbi e órfão.
+- **Pegadinha usada:** Tratar perda do pai e ausência de coleta do status como o mesmo evento.
+- **Como pensar para acertar:** Pergunte separadamente se o processo já terminou e se o pai original ainda existe.
 
-### Comentário da Questão 20
+### Comentário da Questão 18
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
 - **Alternativa correta:** C.
-- **A) está errada:** Round Robin é preemptivo por fatias de tempo.
-- **B) está errada:** Não há tal transformação.
-- **C) está correta:** Fatias muito pequenas geram muitas alternâncias.
-- **D) está errada:** Mais trocas tendem a aumentar overhead.
-- **Conceito cobrado:** Round Robin e quantum.
-- **Pegadinha usada:** Achar que quantum menor é sempre melhor..
-- **Como pensar para acertar:** Pense no custo de alternar tarefas.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **A) está errada:** I é verdadeira, e III é falsa.
+- **B) está errada:** II é verdadeira e III é falsa.
+- **C) está correta:** I e II estão corretas; III é falsa porque chamadas não substituem hardware de execução.
+- **D) está errada:** I e II não deveriam ser falsas.
+- **Conceito cobrado:** Chamadas de sistema.
+- **Pegadinha usada:** Atribuir às chamadas de sistema papel físico da CPU.
+- **Como pensar para acertar:** Chamadas são interface de solicitação ao kernel.
+
+### Comentário da Questão 19
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
+
+- **Alternativa correta:** C.
+- **A) está errada:** chmod/chown são usados para permissões/proprietário.
+- **B) está errada:** ps/top não formatam disco.
+- **C) está correta:** ps lista processos e top acompanha uso em tempo real.
+- **D) está errada:** Essas ferramentas não compilam kernel.
+- **Conceito cobrado:** Comandos Linux de processos.
+- **Pegadinha usada:** Confundir comandos de monitoramento com comandos de permissão.
+- **Como pensar para acertar:** Associe ps/top a processos e desempenho.
+
+### Comentário da Questão 20
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Fatias menores podem melhorar resposta inicial, mas aumentam preempções e custo de troca de contexto.
+- **B) está errada:** Round Robin continua preemptivo; quantum curto não faz cada processo executar até terminar.
+- **C) está errada:** Quantum é fatia de tempo, não prioridade fixa, e processos de E/S podem retornar à fila.
+- **D) está errada:** A própria elevação das trocas explica perda de CPU útil; não é necessário presumir falha de disco.
+- **Conceito cobrado:** Trade-off entre quantum, responsividade e overhead.
+- **Pegadinha usada:** Avaliar apenas a resposta interativa e ignorar o custo de alternância.
+- **Como pensar para acertar:** Compare simultaneamente latência percebida, número de trocas e trabalho útil concluído.
 
 ### Comentário da Questão 21
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
-- **Alternativa correta:** B.
+- **Alternativa correta:** C.
 - **A) está errada:** Zumbi já terminou; CPU-bound está ligado ao perfil de uso.
-- **B) está correta:** CPU-bound demanda CPU como recurso principal.
-- **C) está errada:** Isso descreve I/O-bound.
+- **B) está errada:** Isso descreve I/O-bound.
+- **C) está correta:** CPU-bound demanda CPU como recurso principal.
 - **D) está errada:** Todo processo executável depende de escalonamento.
 - **Conceito cobrado:** Processos CPU-bound e I/O-bound.
-- **Pegadinha usada:** Confundir gargalo de processamento com E/S..
+- **Pegadinha usada:** Confundir gargalo de processamento com E/S.
 - **Como pensar para acertar:** Identifique qual recurso limita a execução.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 22
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** D.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
@@ -2679,23 +3329,27 @@ Extra Dia 2.20: C
 - **C) está correta como afirmação:** Correta: privilégios elevados aumentam risco.
 - **D) é a incorreta:** Incorreta: permissão e autenticação são controles complementares.
 - **Conceito cobrado:** Usuários, permissões e privilégios.
-- **Pegadinha usada:** Confundir autorização com autenticação..
+- **Pegadinha usada:** Confundir autorização com autenticação.
 - **Como pensar para acertar:** Primeiro identifica o usuário; depois verifica o que ele pode fazer.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 23
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
-- **Alternativa correta:** D.
-- **A) está errada:** Ambientes críticos exigem planejamento.
-- **B) está errada:** Atualizações de segurança são necessárias; o ponto é planejar.
-- **C) está errada:** Atualização, log e backup são práticas complementares.
-- **D) está correta:** Atualizações corrigem falhas, mas podem impactar operação.
-- **Conceito cobrado:** Administração e manutenção de SO.
-- **Pegadinha usada:** Tratar atualização como sempre segura ou sempre proibida..
-- **Como pensar para acertar:** Em produção, equilíbrio entre segurança e continuidade.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **Alternativa correta:** C.
+- **A) está errada:** Urgência de segurança não elimina teste, janela e capacidade de retorno em servidor crítico.
+- **B) está errada:** Adiamento indefinido mantém a exposição; risco deve ser tratado, não convertido em proibição absoluta.
+- **C) está correta:** A sequência combina compatibilidade, restaurabilidade, rollback, janela e evidência da mudança.
+- **D) está errada:** Logs registram eventos, mas não restauram sistema ou dados como imagem e backup recuperável.
+- **Conceito cobrado:** Manutenção segura, backup e rollback.
+- **Pegadinha usada:** Escolher entre aplicação impulsiva e paralisação, sem montar controles de continuidade.
+- **Como pensar para acertar:** Verifique segurança, compatibilidade, recuperação, janela e registro como decisões complementares.
 
 ### Comentário da Questão 24
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
 - **Alternativa correta:** C.
 - **A) está errada:** Controle de acesso e logs têm funções distintas.
@@ -2703,23 +3357,27 @@ Extra Dia 2.20: C
 - **C) está correta:** Logs permitem rastrear eventos e causas prováveis.
 - **D) está errada:** Logs ajudam detectar/analisar; não impedem tudo sozinhos.
 - **Conceito cobrado:** Logs do sistema.
-- **Pegadinha usada:** Achar que log é prevenção completa..
+- **Pegadinha usada:** Achar que log é prevenção completa.
 - **Como pensar para acertar:** Log é evidência/registro; prevenção exige controles adicionais.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 25
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
-- **Alternativa correta:** B.
-- **A) está errada:** Processos finalizados não são alternados para execução útil.
-- **B) está correta:** Context switch permite alternância controlada entre execuções.
-- **C) está errada:** Não se trata de sistema de arquivos.
-- **D) está errada:** Não há conversão desse tipo.
-- **Conceito cobrado:** Troca de contexto.
-- **Pegadinha usada:** Confundir contexto de execução com contexto textual..
-- **Como pensar para acertar:** O SO precisa lembrar onde parou uma tarefa para retomar depois.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **Alternativa correta:** D.
+- **A) está errada:** Sem o contador de programa, P1 não retomaria corretamente; P2 não deve reiniciar do começo.
+- **B) está errada:** Troca de contexto não copia integralmente espaços virtuais nem conserva os registradores de P1 para P2.
+- **C) está errada:** Preempção não termina P1, e zumbi é processo já encerrado aguardando coleta.
+- **D) está correta:** O SO salva o contexto de P1, restaura o de P2 e paga overhead para alternar execuções.
+- **Conceito cobrado:** Sequência e custo da troca de contexto.
+- **Pegadinha usada:** Confundir alternância de CPU com cópia de memória ou mudança para estado terminado.
+- **Como pensar para acertar:** Identifique o estado mínimo necessário para cada processo continuar do ponto em que parou.
 
 ### Comentário da Questão 26
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Essa é a distinção prática em sistemas de arquivos.
@@ -2727,11 +3385,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Caminhos absolutos existem em sistemas de arquivos locais.
 - **D) está errada:** Permissão é outro atributo.
 - **Conceito cobrado:** Caminhos absoluto e relativo.
-- **Pegadinha usada:** Confundir sintaxe com permissão..
+- **Pegadinha usada:** Confundir sintaxe com permissão.
 - **Como pensar para acertar:** Pergunte: preciso saber o diretório atual para resolver?
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 27
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** D.
 - **A) está errada:** Isso é função típica de chmod.
@@ -2739,47 +3399,55 @@ Extra Dia 2.20: C
 - **C) está errada:** kill envia sinais a processos.
 - **D) está correta:** chown vem de change owner.
 - **Conceito cobrado:** Comandos Linux.
-- **Pegadinha usada:** Trocar chown e chmod..
+- **Pegadinha usada:** Trocar chown e chmod.
 - **Como pensar para acertar:** Owner indica proprietário; mode indica permissões.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 28
-
-- **Alternativa correta:** C.
-- **A) está errada:** Isso é processo zumbi.
-- **B) está errada:** Isso é cache hit.
-- **C) está correta:** Starvation é inanição por falta de atendimento.
-- **D) está errada:** Isso descreve deadlock, não starvation em geral.
-- **Conceito cobrado:** Starvation.
-- **Pegadinha usada:** Confundir starvation com deadlock e zumbi..
-- **Como pensar para acertar:** Starvation é falta de progresso por não ser escolhido/atendido.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 29
-
-- **Alternativa correta:** B.
-- **A) está errada:** Máquinas virtuais podem executar sistemas completos.
-- **B) está correta:** Virtualização abstrai hardware para ambientes isolados.
-- **C) está errada:** Hardware físico continua existindo.
-- **D) está errada:** São conceitos diferentes: VM de sistema e memória virtual.
-- **Conceito cobrado:** Virtualização.
-- **Pegadinha usada:** Confundir máquina virtual com memória virtual..
-- **Como pensar para acertar:** Ambas usam “virtual”, mas em níveis diferentes.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 30
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 - **Alternativa correta:** A.
-- **A) está correta:** Page fault ocorre quando a página necessária não está carregada.
-- **B) está errada:** Isso seria cenário de muitos hits, não page faults.
-- **C) está errada:** Falha de página é fenômeno de memória virtual/paginação.
-- **D) está errada:** Não se relaciona a chown/permissões.
-- **Conceito cobrado:** Falha de página.
-- **Pegadinha usada:** Achar que toda falha de página é erro fatal..
-- **Como pensar para acertar:** Falha de página pode ser tratável, mas em excesso degrada desempenho.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **A) está correta:** A espera decorre de política de prioridade, e aging combate a inanição elevando quem aguarda.
+- **B) está errada:** Sem ciclo de recursos, não há base para deadlock; journaling não altera prioridades.
+- **C) está errada:** O processo permanece pronto e não terminou, portanto não é zumbi nem precisa de reaping.
+- **D) está errada:** Não há sinais de pressão de memória, faltas de página ou troca excessiva.
+- **Conceito cobrado:** Starvation, ausência de ciclo e aging.
+- **Pegadinha usada:** Chamar qualquer espera longa de deadlock ou relacioná-la à memória.
+- **Como pensar para acertar:** Procure a causa da falta de progresso e verifique se existe ciclo de recursos retidos.
+
+### Comentário da Questão 29
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Virtualização e isolamento](semana_01_estudo.md#s1-d2-virtualizacao)
+
+- **Alternativa correta:** D.
+- **A) está errada:** Contêineres compartilham o kernel; uma VM pode possuir kernel convidado e outro custo operacional.
+- **B) está errada:** A alternativa inverte o compartilhamento de kernel e transforma um trade-off em superioridade universal.
+- **C) está errada:** Ambas dependem de recursos físicos e continuam exigindo backup, atualização e controle de acesso.
+- **D) está correta:** Distingue o que é compartilhado, o limite de isolamento e a tendência de menor sobrecarga do contêiner, sem torná-la absoluta.
+- **Conceito cobrado:** VM, contêiner, compartilhamento de kernel e isolamento.
+- **Pegadinha usada:** Escolher pela palavra “virtual” sem verificar camada compartilhada e custo aceito.
+- **Como pensar para acertar:** Aplique três filtros: kernel, falha que se deseja isolar e recurso operacional consumido.
+
+### Comentário da Questão 30
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
+
+- **Alternativa correta:** C.
+- **A) está errada:** Uma página válida apenas não residente pode ser carregada e não exige encerramento.
+- **B) está errada:** O SO verifica validade e proteção; endereço inválido não se torna carregável por estar no swap.
+- **C) está correta:** Ausência de página válida é tratável; acesso inválido ou não autorizado produz falha de proteção.
+- **D) está errada:** Paginação preserva controle de endereços e não autoriza executar acesso inválido diretamente.
+- **Conceito cobrado:** Page fault tratável e violação de endereço/proteção.
+- **Pegadinha usada:** Tratar todo page fault como fatal ou todo endereço como carregável.
+- **Como pensar para acertar:** Decida primeiro se o endereço é válido e autorizado; só depois verifique residência na RAM.
 
 ### Comentário da Questão 31
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Dispositivos, drivers e spooling](semana_01_estudo.md#s1-d2-dispositivos-spooling)
 
 - **Alternativa correta:** D.
 - **A) está errada:** Fila de impressão não implica deadlock por si só.
@@ -2787,11 +3455,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Linkedição é construção de programa.
 - **D) está correta:** Spooling enfileira trabalhos para dispositivo mais lento/compartilhado.
 - **Conceito cobrado:** Spooling.
-- **Pegadinha usada:** Confundir fila de E/S com bloqueio..
+- **Pegadinha usada:** Confundir fila de E/S com bloqueio.
 - **Como pensar para acertar:** Dispositivo compartilhado e fila de trabalhos sugerem spooling.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 32
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Windows e Linux](semana_01_estudo.md#s1-d2-windows-linux)
 
 - **Alternativa correta:** C.
 - **A) está errada:** Sistemas de arquivos organizam armazenamento, não registradores.
@@ -2799,11 +3469,13 @@ Extra Dia 2.20: C
 - **C) está correta:** NTFS é comum no Windows; ext4 é comum em Linux.
 - **D) está errada:** Escalonamento usa políticas como Round Robin, prioridade etc.
 - **Conceito cobrado:** Sistemas de arquivos.
-- **Pegadinha usada:** Confundir siglas de sistemas de arquivos com protocolos..
+- **Pegadinha usada:** Confundir siglas de sistemas de arquivos com protocolos.
 - **Como pensar para acertar:** Associe NTFS/ext4 à organização de arquivos no armazenamento.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 33
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Listagem de arquivos é função de ls.
@@ -2811,47 +3483,55 @@ Extra Dia 2.20: C
 - **C) está errada:** É comando de software, não remoção de hardware.
 - **D) está errada:** Isso é chmod.
 - **Conceito cobrado:** Sinais e processos Linux.
-- **Pegadinha usada:** Interpretar o nome do comando literalmente demais..
+- **Pegadinha usada:** Interpretar o nome do comando literalmente demais.
 - **Como pensar para acertar:** Em Unix/Linux, sinais são mecanismo de controle de processos.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 34
-
-- **Alternativa correta:** A.
-- **A) está correta:** Locks e esperas podem indicar deadlock ou contenção.
-- **B) está errada:** Questão de Português não diagnostica lock.
-- **C) está errada:** Pode haver banco envolvido, mas o cenário é de lock/processos.
-- **D) está errada:** Resolução do monitor não explica lock de processo.
-- **Conceito cobrado:** Locks e diagnóstico de concorrência.
-- **Pegadinha usada:** Olhar para elementos irrelevantes ao cenário..
-- **Como pensar para acertar:** Quando aparecer lock, procure região crítica, recurso e espera.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 35
-
-- **Alternativa correta:** D.
-- **A) está errada:** Journaling não substitui backup.
-- **B) está errada:** Backup deve cobrir dados relevantes e configuração conforme política.
-- **C) está errada:** Logs podem ser importantes para auditoria e diagnóstico.
-- **D) está correta:** Backup útil precisa ser recuperável e protegido.
-- **Conceito cobrado:** Backup em sistemas operacionais.
-- **Pegadinha usada:** Confundir consistência do FS com recuperação de dados..
-- **Como pensar para acertar:** Backup bom é aquele que pode ser restaurado quando necessário.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
-
-### Comentário da Questão 36
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** C.
-- **A) está errada:** Isolamento de processos e permissões de arquivos são controles distintos.
-- **B) está errada:** Autenticação continua necessária.
-- **C) está correta:** Espaços de endereçamento isolados protegem processos.
-- **D) está errada:** Comunicação pode existir via mecanismos controlados de IPC.
-- **Conceito cobrado:** Proteção e isolamento de processos.
-- **Pegadinha usada:** Tratar isolamento como ausência total de comunicação..
-- **Como pensar para acertar:** Isolamento protege; comunicação legítima ocorre por canais controlados.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **A) está errada:** Três processos podem formar ciclo; a ordem global atua sobre espera circular, e abortar P2 libera R2.
+- **B) está errada:** O cenário satisfaz o ciclo de deadlock, não mera starvation; aging não desfaz recursos já retidos.
+- **C) está correta:** O grafo fecha o ciclo, a ordem global previne nova circularidade e a liberação de R2 pode iniciar a recuperação.
+- **D) está errada:** A ordem não elimina exclusão mútua; preempção da CPU não libera locks, e o aborto indicado libera R2.
+- **Conceito cobrado:** Grafo de espera, condições de deadlock, prevenção e recuperação.
+- **Pegadinha usada:** Acertar o diagnóstico, mas atribuir à ação efeito sobre a condição ou aresta errada.
+- **Como pensar para acertar:** Desenhe as dependências, confira as quatro condições e teste qual ação rompe condição futura ou aresta atual.
+
+### Comentário da Questão 35
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
+
+- **Alternativa correta:** B.
+- **A) está errada:** Journal recupera consistência, mas não cria versão histórica imune à cifra.
+- **B) está correta:** Isolamento, retenção e teste de restauração cobrem falha simultânea e recuperabilidade.
+- **C) está errada:** Menor frequência amplia possível perda de dados e não impede propagação da corrupção.
+- **D) está errada:** Logs ajudam investigação; não contêm necessariamente o conteúdo necessário para restaurar arquivos.
+- **Conceito cobrado:** Backup isolado, retenção, restauração e journaling.
+- **Pegadinha usada:** Confundir existência de cópia ou journal com capacidade comprovada de recuperação.
+- **Como pensar para acertar:** Pergunte se a cópia sobrevive ao mesmo incidente e se sua restauração foi testada.
+
+### Comentário da Questão 36
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Mantém espaços privados e oferece comunicação deliberada por canal controlado e autorizado.
+- **B) está errada:** Autenticação não autoriza leitura arbitrária de memória nem substitui isolamento.
+- **C) está errada:** Desativar memória virtual reduz proteção, e registradores não são canal geral de IPC.
+- **D) está errada:** Isolamento impede acesso indevido, não a comunicação mediada pelo sistema operacional.
+- **Conceito cobrado:** Isolamento de endereçamento e IPC controlada.
+- **Pegadinha usada:** Tratar proteção e comunicação como escolhas mutuamente excludentes.
+- **Como pensar para acertar:** Separe acesso direto indevido de troca explícita por mecanismo autorizado.
 
 ### Comentário da Questão 37
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Arquivo relativo não classifica perfil de processo.
@@ -2859,23 +3539,27 @@ Extra Dia 2.20: C
 - **C) está errada:** I/O-bound esperaria muito por disco/rede, o que não foi descrito.
 - **D) está errada:** Zumbi não consome CPU de forma útil.
 - **Conceito cobrado:** CPU-bound.
-- **Pegadinha usada:** Confundir consumo de CPU com espera de E/S..
+- **Pegadinha usada:** Confundir consumo de CPU com espera de E/S.
 - **Como pensar para acertar:** Olhe o recurso que fica no limite.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 38
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
-- **Alternativa correta:** A.
-- **A) está correta:** I e III estão corretas; II é falsa porque bloqueio pode ser espera normal de E/S.
-- **B) está errada:** II é falsa e III é verdadeira.
-- **C) está errada:** I deveria ser verdadeira.
-- **D) está errada:** I deveria ser verdadeira.
-- **Conceito cobrado:** Deadlock.
-- **Pegadinha usada:** Bloqueado não é sinônimo de deadlock..
-- **Como pensar para acertar:** Deadlock exige padrão de dependência; bloqueio isolado pode ser normal.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **Alternativa correta:** B.
+- **A) está errada:** I é verdadeira, mas II também: recursos ainda podem exigir exclusão mútua.
+- **B) está correta:** A ordem rompe a espera circular e preserva possível exclusão mútua, sem garantir justiça.
+- **C) está errada:** I é verdadeira e III é falsa; ordem não assegura atendimento de todas as prioridades.
+- **D) está errada:** Prevenir o ciclo de deadlock não elimina automaticamente starvation.
+- **Conceito cobrado:** Condições de deadlock, prevenção por ordenação e efeito sobre starvation.
+- **Pegadinha usada:** Supor que atacar uma condição necessária resolve também exclusão mútua e justiça.
+- **Como pensar para acertar:** Avalie separadamente ciclo, compartilhamento do recurso e política de atendimento.
 
 ### Comentário da Questão 39
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** D.
 - **A) está errada:** A alternativa inverte os conceitos.
@@ -2883,11 +3567,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Autorização trata acesso a recursos em geral.
 - **D) está correta:** Primeiro identifica; depois decide o que pode fazer.
 - **Conceito cobrado:** Autenticação e autorização.
-- **Pegadinha usada:** Confundir identidade com permissão..
+- **Pegadinha usada:** Confundir identidade com permissão.
 - **Como pensar para acertar:** Pergunte: quem é o usuário? Depois: o que ele pode fazer?
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 40
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
 - **Alternativa correta:** C.
 - **A) está errada:** Interrupções ajudam multitarefa.
@@ -2895,11 +3581,13 @@ Extra Dia 2.20: C
 - **C) está correta:** Escalonamento e interrupções permitem compartilhamento da CPU.
 - **D) está errada:** Um núcleo pode alternar entre vários processos.
 - **Conceito cobrado:** Multitarefa.
-- **Pegadinha usada:** Achar que simultaneidade percebida exige núcleo por processo..
+- **Pegadinha usada:** Achar que simultaneidade percebida exige núcleo por processo.
 - **Como pensar para acertar:** Diferencie paralelismo real e concorrência por alternância.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 41
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Permissão não transforma arquivo em processo.
@@ -2907,11 +3595,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Sem permissão para outros, leitura não é garantida.
 - **D) está errada:** Permissões do proprietário são avaliadas separadamente.
 - **Conceito cobrado:** Permissões Linux.
-- **Pegadinha usada:** Ignorar a tríade usuário/grupo/outros..
+- **Pegadinha usada:** Ignorar a tríade usuário/grupo/outros.
 - **Como pensar para acertar:** Leia cada classe de permissão separadamente.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 42
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Conceito, kernel e chamadas de sistema](semana_01_estudo.md#s1-d2-so-kernel)
 
 - **Alternativa correta:** A.
 - **A) está correta:** O kernel centraliza controle, segurança e abstração.
@@ -2919,23 +3609,27 @@ Extra Dia 2.20: C
 - **C) está errada:** Sistemas de arquivos podem ter permissões; chamadas as respeitam.
 - **D) está errada:** Kernel é núcleo do SO, não apenas GUI.
 - **Conceito cobrado:** Kernel e chamadas de sistema.
-- **Pegadinha usada:** Não perceber a função de proteção/abstração do SO..
+- **Pegadinha usada:** Não perceber a função de proteção/abstração do SO.
 - **Como pensar para acertar:** SO protege recursos e fornece serviços padronizados.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 43
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Processos, threads e estados](semana_01_estudo.md#s1-d2-processos-estados)
 
-- **Alternativa correta:** D.
-- **A) está errada:** Isso define processo zumbi.
-- **B) está errada:** Isso não define órfão.
-- **C) está errada:** Liberação de mutex não define processo órfão.
-- **D) está correta:** Órfão perde o pai original, mas pode continuar executando.
-- **Conceito cobrado:** Processo órfão.
-- **Pegadinha usada:** Confundir órfão com zumbi..
-- **Como pensar para acertar:** Órfão perdeu o pai; zumbi já terminou e aguarda coleta.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **Alternativa correta:** B.
+- **A) está errada:** Enquanto executa após perder o pai, o filho é órfão, não zumbi.
+- **B) está correta:** A classificação muda de órfão adotado para zumbi quando termina e aguarda coleta.
+- **C) está errada:** Perda do pai não determina bloqueio, e processo terminado não retorna à fila de prontos.
+- **D) está errada:** Adoção não elimina o registro do término nem a necessidade de reaping.
+- **Conceito cobrado:** Transição entre órfão, adoção e zumbi.
+- **Pegadinha usada:** Fixar um único rótulo apesar da mudança de estado e do evento de término.
+- **Como pensar para acertar:** Monte a linha do tempo: pai termina, adoção ocorre, filho termina, status é coletado.
 
 ### Comentário da Questão 44
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Memória virtual, paginação e segmentação](semana_01_estudo.md#s1-d2-memoria-virtual)
 
 - **Alternativa correta:** B.
 - **Observação:** a questão pede a alternativa incorreta; portanto, o gabarito é a afirmação errada.
@@ -2944,23 +3638,27 @@ Extra Dia 2.20: C
 - **C) está correta como afirmação:** Correta: swap é usado como apoio.
 - **D) está correta como afirmação:** Correta: armazenamento secundário é mais lento que RAM.
 - **Conceito cobrado:** Swap e desempenho.
-- **Pegadinha usada:** Tratar swap como memória rápida..
+- **Pegadinha usada:** Tratar swap como memória rápida.
 - **Como pensar para acertar:** Swap ajuda capacidade, mas cobra preço de desempenho.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 45
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Serviços, comandos e logs](semana_01_estudo.md#s1-d2-servicos-logs)
 
-- **Alternativa correta:** B.
-- **A) está errada:** Além de perigoso, chown não é diagnóstico de serviço.
-- **B) está correta:** systemctl verifica serviços e journalctl consulta logs do systemd.
-- **C) está errada:** chmod altera permissões e não diagnostica serviço por si só.
-- **D) está errada:** Serviços do SO não são consultados por SQL comum.
-- **Conceito cobrado:** Administração Linux com systemd.
-- **Pegadinha usada:** Usar comando destrutivo ou fora do contexto..
-- **Como pensar para acertar:** Para serviço, procure systemctl; para logs, journalctl.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
+- **Alternativa correta:** C.
+- **A) está errada:** `status` sem unidade não substitui a listagem precisa, e `chmod 777` é alteração insegura sem diagnóstico.
+- **B) está errada:** Limpar logs destrói evidência; mudar donos recursivamente não identifica unidades em falha.
+- **C) está correta:** `--failed` lista as unidades; `status` e os logs contextualizam a unidade escolhida.
+- **D) está errada:** `ps` observa processos, mas não altera unidades; encerrar todos indiscriminadamente amplia o incidente.
+- **Conceito cobrado:** Sequência de diagnóstico de unidades em falha no systemd.
+- **Pegadinha usada:** Escolher comando relacionado, porém com escopo errado ou efeito destrutivo.
+- **Como pensar para acertar:** Primeiro liste o conjunto exato, depois aprofunde uma unidade e correlacione o horário.
 
 ### Comentário da Questão 46
+- **Nível:** Médio
+- **Uso:** Aprofundamento
+- **Referência:** [Autenticação, autorização e permissões](semana_01_estudo.md#s1-d2-seguranca-permissoes)
 
 - **Alternativa correta:** A.
 - **A) está correta:** NTFS permite controle de permissões no sistema de arquivos.
@@ -2968,11 +3666,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Permissões afetam acesso, não aparência.
 - **D) está errada:** FAT32 não tem o mesmo modelo robusto de permissões NTFS.
 - **Conceito cobrado:** Permissões NTFS.
-- **Pegadinha usada:** Confundir autenticação e autorização..
+- **Pegadinha usada:** Confundir autenticação e autorização.
 - **Como pensar para acertar:** Permissão responde “pode acessar?” depois de saber quem é o usuário.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 47
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Escalonamento, quantum e starvation](semana_01_estudo.md#s1-d2-escalonamento)
 
 - **Alternativa correta:** D.
 - **A) está errada:** CPU-bound exigiria processamento intenso, não espera de rede.
@@ -2980,11 +3680,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Não é tipo de interrupção; é perfil de processo.
 - **D) está correta:** O desempenho depende de entrada/saída, como rede.
 - **Conceito cobrado:** I/O-bound.
-- **Pegadinha usada:** Confundir espera de rede com processamento intensivo..
+- **Pegadinha usada:** Confundir espera de rede com processamento intensivo.
 - **Como pensar para acertar:** Se o processo espera dispositivo/rede/disco, pense em E/S.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 48
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** C.
 - **A) está errada:** Modos de endereçamento são outro tema.
@@ -2992,11 +3694,13 @@ Extra Dia 2.20: C
 - **C) está correta:** Todos aparecem no estudo de controle de acesso concorrente.
 - **D) está errada:** Sistemas de arquivos incluem NTFS, FAT32, ext4 etc.
 - **Conceito cobrado:** Sincronização.
-- **Pegadinha usada:** Confundir termos de concorrência com armazenamento..
+- **Pegadinha usada:** Confundir termos de concorrência com armazenamento.
 - **Como pensar para acertar:** Quando o tema é acesso compartilhado, pense em sincronização.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 49
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Sistemas de arquivos, journaling e backup](semana_01_estudo.md#s1-d2-arquivos-backup)
 
 - **Alternativa correta:** B.
 - **A) está errada:** Logs ajudam diagnóstico pós-incidente.
@@ -3004,11 +3708,13 @@ Extra Dia 2.20: C
 - **C) está errada:** Backups continuam necessários.
 - **D) está errada:** Permissões não devem ser removidas como solução genérica.
 - **Conceito cobrado:** Journaling e backup.
-- **Pegadinha usada:** Confundir recuperação de consistência com recuperação completa de dados..
+- **Pegadinha usada:** Confundir recuperação de consistência com recuperação completa de dados.
 - **Como pensar para acertar:** Depois de falha, diferencie estrutura íntegra de dados recuperáveis.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
 ### Comentário da Questão 50
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Concorrência, região crítica e deadlock](semana_01_estudo.md#s1-d2-concorrencia)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Região crítica protege recurso compartilhado contra interleavings indevidos.
@@ -3016,189 +3722,239 @@ Extra Dia 2.20: C
 - **C) está errada:** Não há relação com cadastro de usuários.
 - **D) está errada:** O escalonador continua existindo.
 - **Conceito cobrado:** Região crítica.
-- **Pegadinha usada:** Subestimar acesso concorrente..
+- **Pegadinha usada:** Subestimar acesso concorrente.
 - **Como pensar para acertar:** Se dois fluxos mexem no mesmo dado, pergunte como o acesso é protegido.
-- **Referência à apostila de estudo:** Dia 2 — Sistemas Operacionais.
 
-### Comentários das questões extras de revisão fixa do Dia 2
+### Comentários do banco complementar do Dia 2
 
 #### Comentário Extra Dia 2.1
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
-- **Alternativa correta:** B.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está correta:** A sigla LIMPE resume os princípios expressos mais cobrados.
-- **C) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **D) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **Conceito cobrado:** Princípios expressos da Administração Pública.
-- **Pegadinha usada:** Trocar princípio expresso por princípio implícito ou absoluto.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Alternativa correta:** C.
+- **A) está errada:** Eficiência opera dentro da legalidade e não cria autorização autônoma para ocultar resultado.
+- **B) está errada:** Publicidade admite restrições constitucionais e legais; não é divulgação irrestrita.
+- **C) está correta:** A busca por eficiência não afasta legalidade nem publicidade quando inexiste sigilo aplicável.
+- **D) está errada:** Impessoalidade combate promoção e favorecimento, mas não apaga a identificação institucional do ato.
+- **Conceito cobrado:** Convivência entre legalidade, publicidade e eficiência.
+- **Pegadinha usada:** Transformar um princípio em autorização para afastar os demais.
+- **Como pensar para acertar:** Verifique a regra jurídica, a existência de sigilo e o limite da eficiência no mesmo caso.
 
 #### Comentário Extra Dia 2.2
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 - **Alternativa correta:** A.
 - **A) está correta:** Favorecimento pessoal é incompatível com impessoalidade.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
+- **B) está errada:** Publicidade não exige transmissão ao vivo de toda escolha e não resolve o favorecimento descrito.
+- **C) está errada:** Eficiência não se reduz ao menor preço e não legitima preferência pessoal.
+- **D) está errada:** A conduta pode também afrontar moralidade, mas não deixa de atingir diretamente a impessoalidade.
 - **Conceito cobrado:** Impessoalidade.
-- **Pegadinha usada:** Confundir impessoalidade com ausência de identificação do agente.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Pegadinha usada:** Escolher um princípio relacionado como se ele excluísse o princípio diretamente acionado.
+- **Como pensar para acertar:** Procure favorecimento, promoção ou perseguição pessoal diante de critério objetivo.
 
 #### Comentário Extra Dia 2.3
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 - **Alternativa correta:** D.
-- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **B) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está correta:** A distinção principal é órgão sem personalidade própria versus entidade com personalidade jurídica.
+- **A) está errada:** Órgão não possui necessariamente personalidade; ele integra a estrutura de uma pessoa.
+- **B) está errada:** Personalidade própria e descentralização caracterizam entidade, não mera desconcentração interna.
+- **C) está errada:** Órgãos também existem na Administração Direta, e entidades podem integrar a Indireta.
+- **D) está correta:** A distinção decisiva é estrutura sem personalidade própria versus pessoa administrativa própria.
 - **Conceito cobrado:** Organização administrativa.
 - **Pegadinha usada:** Chamar autarquia de órgão da Administração Direta.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Como pensar para acertar:** Pergunte se existe pessoa jurídica própria ou apenas centro de competências dentro de outra pessoa.
 
 #### Comentário Extra Dia 2.4
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
-- **Alternativa correta:** C.
-- **A) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **B) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **C) está correta:** A apostila associa o CRA-PR à natureza autárquica e à fiscalização profissional.
-- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
+- **Alternativa correta:** B.
+- **A) está errada:** O CRA-PR não é associação privada comum; exerce fiscalização profissional como pessoa de direito público.
+- **B) está correta:** A natureza autárquica o situa na Administração Indireta e não elimina os limites de competência.
+- **C) está errada:** O CRA-PR possui personalidade e autonomia próprias; não é simples órgão interno do CFA.
+- **D) está errada:** Jurisdição estadual não o transforma em órgão da Administração Direta do Estado.
 - **Conceito cobrado:** Conselhos profissionais e autarquias.
-- **Pegadinha usada:** Tratar conselho profissional como associação privada comum.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Pegadinha usada:** Inferir a posição administrativa apenas pela área territorial de atuação.
+- **Como pensar para acertar:** Separe personalidade, natureza autárquica, autonomia e jurisdição.
 
 #### Comentário Extra Dia 2.5
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [LIMPE, organização administrativa e autarquia](semana_01_estudo.md#s1-d2-limpe-organizacao)
 
 - **Alternativa correta:** B.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está correta:** Esse é o ponto de prova mais direto sobre autarquias.
-- **C) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **D) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
+- **A) está errada:** Personalidade própria impede classificar a entidade como mero órgão desconcentrado.
+- **B) está correta:** Autarquia possui personalidade própria e resulta de descentralização administrativa.
+- **C) está errada:** A atividade continua pública, mas a nova pessoa integra a Administração Indireta.
+- **D) está errada:** Personalidade não converte automaticamente entidade pública em empresa privada.
 - **Conceito cobrado:** Autarquia.
 - **Pegadinha usada:** Achar que toda entidade pública é órgão sem personalidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Como pensar para acertar:** Relacione criação legal, personalidade própria e posição na Administração Indireta.
 
 #### Comentário Extra Dia 2.6
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
-- **Alternativa correta:** A.
-- **A) está correta:** Competência é o poder legalmente atribuído ao agente ou órgão para praticar o ato.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **D) está errada:** Competência decorre da lei e não é simples escolha pessoal.
+- **Alternativa correta:** D.
+- **A) está errada:** Forma e motivo não transferem competência a quem não recebeu atribuição legal.
+- **B) está errada:** Competência responde quem pode agir; finalidade responde para qual interesse o ato se dirige.
+- **C) está errada:** Discricionariedade permanece limitada pela competência e não sana ilegalidade por conveniência.
+- **D) está correta:** A falta compromete competência, e o controle deve tratar a ilegalidade, não um juízo de mérito.
 - **Conceito cobrado:** Elementos do ato administrativo.
-- **Pegadinha usada:** Confundir competência com motivo do ato.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Pegadinha usada:** Usar acertos em outros elementos para legitimar agente incompetente.
+- **Como pensar para acertar:** Identifique quem praticou o ato, qual norma atribui poder e se a escolha era juridicamente possível.
 
 #### Comentário Extra Dia 2.7
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
-- **Alternativa correta:** D.
-- **A) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **B) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está correta:** Finalidade pública é elemento obrigatório do ato administrativo.
+- **Alternativa correta:** A.
+- **A) está correta:** O poder foi usado para fim pessoal diverso daquele definido pela norma.
+- **B) está errada:** Finalidade não é escolha livre de mérito; interesse pessoal permanece controlável.
+- **C) está errada:** Nova publicação não altera o propósito persecutório que viciou o ato.
+- **D) está errada:** Eficiência não legitima perseguição nem substitui a finalidade pública.
 - **Conceito cobrado:** Finalidade pública.
 - **Pegadinha usada:** Considerar conveniência pessoal como finalidade administrativa legítima.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Como pensar para acertar:** Compare o fim previsto na norma com o resultado pessoal efetivamente buscado.
 
 #### Comentário Extra Dia 2.8
+- **Nível:** Difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Ato administrativo, competência, anulação e revogação](semana_01_estudo.md#s1-d2-atos-controle)
 
-- **Alternativa correta:** C.
-- **A) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **B) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **C) está correta:** Ato ilegal deve ser tratado pelo prisma da legalidade, não apenas da conveniência.
-- **D) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
+- **Alternativa correta:** B.
+- **A) está errada:** Inverte legalidade e mérito: ato ilegal é anulado, não revogado.
+- **B) está correta:** X exige anulação; Y admite revogação por mérito, observados os limites aplicáveis.
+- **C) está errada:** A Administração controla a legalidade dos próprios atos e pode anulá-los.
+- **D) está errada:** Inconveniência de ato válido não o transforma automaticamente em ilegal.
 - **Conceito cobrado:** Controle do ato administrativo.
 - **Pegadinha usada:** Confundir anulação por ilegalidade com revogação por mérito.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Como pensar para acertar:** Aplique dois filtros em ordem: validade jurídica e, se válido, conveniência/oportunidade.
 
 #### Comentário Extra Dia 2.9
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [LAI e LGPD](semana_01_estudo.md#s1-d2-lai-lgpd)
 
-- **Alternativa correta:** B.
-- **A) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **B) está correta:** Transparência pública convive com exceções justificadas.
-- **C) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **D) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
+- **Alternativa correta:** D.
+- **A) está errada:** A restrição deve alcançar o dado protegido, não necessariamente todo o documento.
+- **B) está errada:** Publicidade não elimina sigilo legal nem proteção de dados pessoais.
+- **C) está errada:** O órgão deve decidir e fundamentar; silêncio não é técnica regular de compatibilização.
+- **D) está correta:** Acesso parcial e ocultação justificada conciliam transparência com proteção da parcela restrita.
 - **Conceito cobrado:** LAI e publicidade.
 - **Pegadinha usada:** Tratar publicidade como exposição irrestrita de todo dado.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **Como pensar para acertar:** Separe conteúdo divulgável e protegido antes de decidir extensão e fundamento do acesso.
 
 #### Comentário Extra Dia 2.10
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Referência:** [LAI e LGPD](semana_01_estudo.md#s1-d2-lai-lgpd)
 
 - **Alternativa correta:** A.
-- **A) está correta:** A LGPD exige controle sobre por que e como dados pessoais são tratados.
-- **B) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **C) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **D) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **Conceito cobrado:** LGPD.
-- **Pegadinha usada:** Achar que órgão público pode tratar qualquer dado sem finalidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **A) está correta:** A solução identifica finalidade, separa parcelas, aplica necessidade e escolhe restrição ou anonimização fundamentada.
+- **B) está errada:** A presença de dado pessoal não torna automaticamente secreta a estatística pública separável.
+- **C) está errada:** LAI e LGPD coexistem; transparência não suspende necessidade e segurança.
+- **D) está errada:** Consentimento não é a única base jurídica e não impede produção legítima de estatística anônima.
+- **Conceito cobrado:** Compatibilização entre LAI, LGPD, finalidade, necessidade e segurança.
+- **Pegadinha usada:** Resolver o conflito aparente com negação total ou divulgação total, sem separar dados.
+- **Como pensar para acertar:** Identifique informação, dado pessoal, finalidade, parcela necessária e fundamento da decisão.
 
 #### Comentário Extra Dia 2.11
-
-- **Alternativa correta:** D.
-- **A) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **B) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **D) está correta:** A apostila reforça que erro administrativo não vira improbidade automaticamente.
-- **Conceito cobrado:** Improbidade administrativa.
-- **Pegadinha usada:** Equiparar ilegalidade simples a improbidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.12
-
-- **Alternativa correta:** C.
-- **A) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **B) está errada:** Improbidade exige enquadramento legal e requisitos próprios; erro formal não basta automaticamente.
-- **C) está correta:** Obter vantagem patrimonial indevida é o exemplo clássico de enriquecimento ilícito.
-- **D) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **Conceito cobrado:** Atos de improbidade.
-- **Pegadinha usada:** Confundir vantagem pessoal com mera falha formal.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.13
+- **Nível:** Difícil
+- **Uso:** Revisão
+- **Referência:** [Improbidade administrativa](semana_01_estudo.md#s1-d2-improbidade)
 
 - **Alternativa correta:** B.
-- **A) está errada:** Competência decorre da lei e não é simples escolha pessoal.
-- **B) está correta:** Edital vincula Administração e licitantes.
-- **C) está errada:** Eficiência deve atuar junto da legalidade; resultado não justifica violar a lei.
-- **D) está errada:** LAI e LGPD devem ser compatibilizadas; proteção de dados não anula automaticamente transparência pública.
-- **Conceito cobrado:** Vinculação ao edital.
-- **Pegadinha usada:** Achar que o edital é só orientação sem força vinculante.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
+- **A) está errada:** Anulação demonstra ilegalidade, não prova automaticamente dolo ou tipificação.
+- **B) está correta:** Improbidade exige conduta dolosa tipificada e os demais vínculos do caso; erro razoável isolado não basta.
+- **C) está errada:** Vantagem deliberada é mais grave em tese; a alternativa inverte a análise e ignora o tipo legal.
+- **D) está errada:** As esferas podem coexistir quando os requisitos próprios de cada uma estiverem presentes.
+- **Conceito cobrado:** Improbidade administrativa.
+- **Pegadinha usada:** Equiparar ilegalidade simples a improbidade.
+- **Como pensar para acertar:** Teste conduta, dolo, tipo e nexo; não comece apenas pelo resultado ou pela anulação.
 
-#### Comentário Extra Dia 2.14
-
-- **Alternativa correta:** A.
-- **A) está correta:** Essa diferença é uma das mais cobradas em noções de licitação.
-- **B) está errada:** Inexigibilidade ocorre quando a competição é inviável; competição possível com autorização legal remete à dispensa.
-- **C) está errada:** Finalidade pública é elemento essencial; interesse pessoal vicia o ato.
-- **D) está errada:** Publicidade é regra, mas admite restrições legais, como sigilo necessário e proteção de dados.
-- **Conceito cobrado:** Contratação direta.
-- **Pegadinha usada:** Inverter dispensa e inexigibilidade.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.15
-
-- **Alternativa correta:** D.
-- **A) está errada:** Mesmo na responsabilidade objetiva, são necessários dano e nexo causal.
-- **B) está errada:** Leilão é associado à alienação; pregão é usado para bens e serviços comuns.
-- **C) está errada:** Autarquia tem personalidade jurídica própria e integra a Administração Indireta.
-- **D) está correta:** Pregão é a modalidade típica para bens e serviços comuns.
-- **Conceito cobrado:** Modalidades de licitação.
-- **Pegadinha usada:** Trocar pregão por leilão ou concurso.
-- **Como pensar para acertar:** Localize o instituto pedido no comando e diferencie conceitos próximos antes de escolher a alternativa.
-
-#### Comentário Extra Dia 2.16
+#### Comentário Extra Dia 2.12
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Improbidade administrativa](semana_01_estudo.md#s1-d2-improbidade)
 
 - **Alternativa correta:** C.
-- **A) está errada:** Com sentido de existir, 'haver' é impessoal e fica no singular.
+- **A) está errada:** Vantagem incorporada dolosamente não é mera falha de forma.
+- **B) está errada:** Tipificação e prova continuam necessárias; a vantagem não autoriza presunções irrestritas.
+- **C) está correta:** Vantagem patrimonial indevida obtida pelo uso doloso do cargo remete, em tese, a enriquecimento ilícito.
+- **D) está errada:** A Lei de Improbidade contempla hipóteses de vantagem patrimonial nos limites do tipo legal.
+- **Conceito cobrado:** Atos de improbidade.
+- **Pegadinha usada:** Confundir vantagem pessoal com mera falha formal.
+- **Como pensar para acertar:** Identifique a natureza da vantagem, o vínculo com o cargo, o dolo e o enquadramento legal.
+
+#### Comentário Extra Dia 2.13
+- **Nível:** Difícil
+- **Uso:** Simulado
+- **Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
+
+- **Alternativa correta:** D.
+- **A) está errada:** Avaliação técnica deve respeitar critério válido e não dispensa motivação.
+- **B) está errada:** Eficiência não autoriza critério criado depois da abertura das propostas.
+- **C) está errada:** A vinculação alcança Administração e participantes.
+- **D) está correta:** Critérios publicados orientam o julgamento; mudança legítima exige procedimento, publicidade e motivação.
+- **Conceito cobrado:** Vinculação ao edital.
+- **Pegadinha usada:** Achar que o edital é só orientação sem força vinculante.
+- **Como pensar para acertar:** Compare o critério aplicado com o instrumento válido e verifique quando a mudança foi proposta.
+
+#### Comentário Extra Dia 2.14
+- **Nível:** Muito difícil
+- **Uso:** Aprofundamento
+- **Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Objeto comum e competição viável apontam para pregão; exclusividade comprovada pode inviabilizar competição, sem eliminar instrução.
+- **B) está errada:** Padrões objetivos favorecem comparação e não tornam ambos os objetos inexigíveis.
+- **C) está errada:** Dispensa depende de hipótese legal, e exclusividade não afasta processo e motivação.
+- **D) está errada:** Leilão não é solução para os dois objetos e ignora viabilidade de competição.
+- **Conceito cobrado:** Objeto comum, inviabilidade de competição e formalização da contratação direta.
+- **Pegadinha usada:** Escolher modalidade pelo nome do objeto sem examinar competição e dever processual.
+- **Como pensar para acertar:** Aplique três filtros: natureza do objeto, viabilidade da disputa e instrução/motivação remanescente.
+
+#### Comentário Extra Dia 2.15
+- **Nível:** Médio
+- **Uso:** Simulado
+- **Referência:** [Licitações, pregão, dispensa e inexigibilidade](semana_01_estudo.md#s1-d2-licitacoes)
+
+- **Alternativa correta:** B.
+- **A) está errada:** Concurso seleciona trabalho técnico, científico ou artístico mediante prêmio, não serviço comum ordinário.
+- **B) está correta:** Padrões objetivos e competição viável caracterizam o campo típico do pregão.
+- **C) está errada:** Leilão se relaciona à alienação, não à contratação descrita.
+- **D) está errada:** Inexigibilidade pressupõe competição inviável, afastada pelo próprio cenário.
+- **Conceito cobrado:** Modalidades de licitação.
+- **Pegadinha usada:** Trocar pregão por leilão ou concurso.
+- **Como pensar para acertar:** Classifique o objeto e verifique se a competição é viável antes de escolher modalidade ou contratação direta.
+
+#### Comentário Extra Dia 2.16
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Concordância e verbo haver impessoal](semana_01_estudo.md#s1-d2-portugues-concordancia)
+
+- **Alternativa correta:** A.
+- **A) está correta:** Com sentido de existir, 'haver' é impessoal e fica no singular.
 - **B) está errada:** Com 'existir', o verbo concorda: existiam muitos processos.
-- **C) está correta:** Verbo haver com sentido de existir permanece no singular.
+- **C) está errada:** Com sentido de existir, o verbo `haver` não deve ser flexionado no plural.
 - **D) está errada:** O particípio deve concordar: foram analisadas as planilhas.
 - **Conceito cobrado:** Concordância verbal.
 - **Pegadinha usada:** Flexionar indevidamente verbo impessoal.
 - **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
 
 #### Comentário Extra Dia 2.17
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Referência pronominal e uso de onde](semana_01_estudo.md#s1-d2-portugues-ambiguidade-onde)
 
 - **Alternativa correta:** B.
 - **A) está errada:** O verbo possui complemento indireto e oração completiva.
@@ -3210,6 +3966,9 @@ Extra Dia 2.20: C
 - **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
 
 #### Comentário Extra Dia 2.18
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Referência pronominal e uso de onde](semana_01_estudo.md#s1-d2-portugues-ambiguidade-onde)
 
 - **Alternativa correta:** A.
 - **A) está correta:** 'Onde' retoma lugar físico.
@@ -3221,6 +3980,9 @@ Extra Dia 2.20: C
 - **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
 
 #### Comentário Extra Dia 2.19
+- **Nível:** Médio
+- **Uso:** Revisão
+- **Referência:** [Pontuação e restrição de sentido](semana_01_estudo.md#s1-d2-portugues-pontuacao)
 
 - **Alternativa correta:** D.
 - **A) está errada:** A vírgula separa indevidamente sujeito e verbo.
@@ -3232,6 +3994,9 @@ Extra Dia 2.20: C
 - **Como pensar para acertar:** Volte ao texto ou à regra gramatical aplicada; não escolha a alternativa apenas por soar mais formal.
 
 #### Comentário Extra Dia 2.20
+- **Nível:** Médio
+- **Uso:** Essenciais
+- **Referência:** [Comando negativo e inferência literal](semana_01_estudo.md#s1-d2-portugues-comando)
 
 - **Alternativa correta:** C.
 - **A) está errada:** O texto diz o contrário: não elimina a necessidade.

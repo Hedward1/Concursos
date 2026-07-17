@@ -2,7 +2,7 @@
 
 ## Objetivo do documento
 
-Este arquivo passa a ser o plano central do projeto de estudos para o concurso CRA-PR 2026, cargo Analista de Sistemas. Ele organiza a cobertura do edital até a reta final, define a rotina diária de 6h líquidas e estabelece o padrão para criação das próximas apostilas semanais.
+Este arquivo passa a ser o plano central do projeto de estudos para o concurso CRA-PR 2026, cargo Analista de Sistemas. Ele organiza a cobertura do edital até a reta final, define a jornada de cada dia temático em sessões executáveis e estabelece o padrão para criação das próximas apostilas semanais.
 
 O objetivo é encerrar conteúdo novo e pesado até aproximadamente **10/09/2026**, deixando os últimos 2 ou 3 dias antes da prova apenas para revisão leve, leitura de marcações, questões erradas e descanso ativo.
 
@@ -30,18 +30,17 @@ O objetivo é encerrar conteúdo novo e pesado até aproximadamente **10/09/2026
 
 Conhecimentos do Cargo, Legislação CRA-PR/CFA e Língua Portuguesa somam **70 pontos da objetiva**. Por isso, o plano prioriza esses três blocos sem abandonar Administração Pública, RLM e Informática.
 
-## Rotina diária fixa - 6h líquidas
+## Jornada diária por sessões executáveis
 
-A rotina padrão de cada dia de estudo deve ser mantida, com adaptações apenas nas semanas de simulado e reta final.
+Cada `Dia X` da apostila é uma unidade temática. Sua primeira passagem deve caber em duas ou, quando o volume justificar, no máximo três sessões de 2h30 a 3h líquidas, com ponto de parada explícito. Não existe meta fixa de seis horas nem sessão adicional para zerar o banco.
 
-| Bloco | Tempo líquido | Atividade |
+| Sessão | Tempo líquido | Conteúdo e ponto de parada |
 |---|---:|---|
-| Bloco principal | 4h30 | Tema principal do dia, com teoria, exemplos e questões principais |
-| Revisão fixa | 40min | Legislação CRA/CFA, Administração Pública, Raciocínio Lógico-Matemático ou Informática, conforme a semana |
-| Português/discursiva | 30min | Interpretação, gramática aplicada, reescrita ou treino de discursiva |
-| Caderno de erros | 20min | Revisão ativa, flashcards, mapa mental curto e registro de lacunas |
+| A | 2h30 a 3h | abertura, objetivo, orientação e Bloco 1; encerrar após a entrega definida para os fundamentos |
+| B | 2h30 a 3h | Blocos 2 e 3; encerrar após o aprofundamento e a prática guiada, ainda sem antecipar o banco |
+| C, quando necessária | 2h30 a 3h | Blocos 4, 5 e 6, mini revisão, fixação, checklist, até 10 Essenciais, correção integral e caderno de erros |
 
-Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco principal e os blocos fixos. As 6h são líquidas; pausas não entram na contagem.
+Quando duas sessões forem suficientes, redistribua os mesmos passos sem alterar sua ordem. O saldo Essencial abre D+2; o Aprofundamento termina antes de D+7; a Revisão ocorre em D+7; o Simulado fica para o ciclo seguinte. Pausas de 5 a 15 minutos ficam fora do tempo líquido.
 
 ### Espinha dorsal dos blocos diários
 
@@ -51,18 +50,20 @@ Cada dia deve ter tema próprio, mas o método de execução precisa ser constan
 |---|---|---|
 | Bloco 1 | Base do tema principal | **Teoria explicada de forma didática**; conceitos centrais; definições; diferenças entre conceitos parecidos. |
 | Bloco 2 | Aprofundamento | **Teoria explicada de forma didática**; exemplos resolvidos; funcionamento na prática; pegadinhas de prova. |
-| Bloco 3 | Aplicação | **Teoria explicada de forma didática** dos pontos fracos; exercícios guiados; questões principais; correção imediata. |
-| Bloco 4 | Revisão fixa | **Teoria explicada de forma didática** da matéria revisada; leitura curta; questões extras; alerta de pegadinhas. |
+| Bloco 3 | Aplicação | **Teoria explicada de forma didática** dos pontos fracos; exemplos resolvidos; exercícios e prática guiada, ainda sem antecipar o banco. |
+| Bloco 4 | Revisão fixa | **Teoria explicada de forma didática** da matéria revisada; leitura curta; exemplos de aplicação; alerta de pegadinhas. O banco só é aberto no roteiro posterior ao checklist. |
 | Bloco 5 | Português/discursiva | **Teoria explicada de forma didática** do ponto linguístico; interpretação; reescrita; treino de parágrafo ou estrutura discursiva. |
 | Bloco 6 | Caderno de erros | **Sem conteúdo novo:** recuperar a teoria já estudada; registrar regra, causa do erro e contraexemplo; responder sem consulta; definir o próximo ciclo de revisão. |
 
-Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, inclusive quando o tema principal não for técnico. Cada questão dos Blocos 4–6 deve trazer Dia, Bloco, Matéria, Assunto, Nível e Referência; a referência deve apontar para teoria ensinada antes da cobrança. O Bloco 6 termina com entrega prática e jamais funciona como capítulo novo.
+Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, inclusive quando o tema principal não for técnico. A ordem física obrigatória é `abertura → Bloco 1 → Bloco 2 → Bloco 3 → Bloco 4 → Bloco 5 → Bloco 6 → mini revisão → fixação → checklist → roteiro do banco → correção`. O Bloco 6 termina com entrega prática, recupera apenas teoria anterior e jamais funciona como capítulo novo.
+
+Cada primeira passagem deve caber em duas ou, quando o volume justificar, no máximo três sessões de 2h30 a 3h líquidas. Nela são obrigatórias no máximo dez questões Essenciais, com correção integral. O saldo das Essenciais abre D+2; o Aprofundamento começa depois dessa correção e termina antes de D+7; a Revisão ocorre em D+7; o Simulado fica para o ciclo seguinte. Cada item deve receber, por sua função pedagógica individual, `Nível`, `Uso` e `Referência` precisa para teoria anterior e suficiente. A dificuldade decorre do raciocínio real, e não do tamanho do texto, da numeração ou de uma matriz estatística. A produção e a auditoria avançam em lotes de no máximo dois dias, com relatório e validação antes do lote seguinte.
 
 ## Plano Mestre de Cobertura do Edital
 
 ### Semana 1 - 13/07/2026 a 18/07/2026
 
-- **Status:** já criada.
+- **Status:** criada e em auditoria incremental. Os Dias 1–2 foram auditados e aprovados tecnicamente no lote próprio; os Dias 3–4 são o modelo aprovado e congelado; os Dias 5–6 ainda aguardam lote específico. A semana não está integralmente concluída.
 - **Arquivos:** `semana_01/semana_01_estudo.md` e `semana_01/semana_01_questoes.md`.
 - **Foco:** arquitetura e organização de computadores; sistemas operacionais; banco de dados base e SQL; legislação CRA/CFA; Português e discursiva; Administração Pública e RLM.
 - **Resultado esperado:** base técnica inicial, primeiras revisões fixas e 420 questões da Semana 1.
@@ -135,10 +136,10 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 
 | Semana | Dia | Tema principal | Revisão fixa | Disciplina do edital | Status | Arquivo esperado |
 |---|---|---|---|---|---|---|
-| Semana 1 | Dia 1 | Arquitetura e organização de computadores | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 1 | Dia 2 | Sistemas operacionais | Administração Pública + Português | Conhecimentos do Cargo | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 1 | Dia 3 | Banco de dados base e SQL | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
-| Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
+| Semana 1 | Dia 1 | Arquitetura e organização de computadores | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Lote auditado/aprovado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_1_2.md` |
+| Semana 1 | Dia 2 | Sistemas operacionais | Administração Pública + Português | Conhecimentos do Cargo | Lote auditado/aprovado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_1_2.md` |
+| Semana 1 | Dia 3 | Banco de dados base e SQL | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Modelo aprovado/congelado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
+| Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Modelo aprovado/congelado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
@@ -199,12 +200,12 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - seguir a divisão do Plano Mestre;
 - abrir com a versão do edital utilizada e fontes consultadas;
 - indicar a prioridade da semana dentro da pontuação da prova;
-- manter rotina de 6h líquidas;
+- fazer a primeira passagem em duas ou, quando necessário, no máximo três sessões de 2h30 a 3h líquidas, com pontos de parada;
 - conter teoria suficiente para responder às questões da própria semana;
 - trazer exemplos resolvidos, pegadinhas, tabela de revisão rápida e checklist por dia;
-- conter questões principais do tema do dia e questões extras dos blocos fixos;
+- conter questões principais do tema do dia e questões do banco complementar vinculadas aos Blocos 4–6;
 - manter os Blocos 4, 5 e 6 com suas funções fixas, ensinar antes de cobrar e proibir conteúdo novo no caderno de erros;
-- identificar em cada questão de Bloco 4–6 o Dia, Bloco, Matéria, Assunto, Nível e Referência;
+- identificar em cada questão de Bloco 4–6 o Dia, Bloco, Matéria, Assunto, Nível, Uso e Referência precisa;
 - usar quatro alternativas, A-D;
 - separar gabarito e comentários;
 - indicar quais tópicos do edital foram cobertos;
@@ -212,7 +213,7 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - não marcar questão como real sem fonte confirmada;
 - a informação de que as questões são autorais e no estilo Instituto Consulplan deve aparecer no cabeçalho da apostila de questões, não no título individual de cada questão;
 - manter o caderno de erros como entrega obrigatória do dia.
-- auditar a cobertura como coberta, parcial, não coberta, antecipada, inadequada ou ambígua antes de editar o banco;
+- auditar a cobertura como coberta, parcial, não coberta, cobrada antes de ser ensinada, inadequada para o bloco, ambígua, nível superestimado, nível subestimado ou uso operacional inadequado antes de editar o banco;
 - preencher a matriz de rastreabilidade entre tópico do edital, teoria, exemplos e questões;
 - submeter todas as questões à auditoria semântica individual, inclusive conferência independente do gabarito;
 - aplicar a rubrica de 100 pontos e somente aprovar a semana com nota mínima de 90 e nenhum critério eliminatório.
@@ -247,7 +248,7 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Lei Federal nº 4.769/1965. Base coberta na Semana 1.
 - [x] Decreto Federal nº 61.934/1967. Base coberta na Semana 1.
 - [x] Regimento Interno do CRA-PR. Base coberta na Semana 1.
-- [x] Código de Ética indicado no edital vigente conforme material v1.2. Base coberta na Semana 1.
+- [x] Código de Ética indicado no edital vigente e conferido em fonte oficial. Base coberta na Semana 1.
 - [x] Lei nº 12.514/2011 e objetos/relações cobrados das RNs CFA nº 546/2018, 589/2020, 626/2023, 649/2024, 670/2025 e 680/2025. Fontes oficiais confirmadas e base auditada no Dia 4 da Semana 1; aprofundamento literal permanece planejado.
 - [ ] Aprofundamento literal e por casos práticos das normas CRA/CFA. Planejado para Semana 6.
 - [ ] Simulados e revisão por erros em legislação específica. Planejado para Semanas 7 a 9.
