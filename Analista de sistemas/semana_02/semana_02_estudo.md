@@ -1,8 +1,10 @@
 # Apostila de Estudo - Semana 2
 
+> **Execução:** use `semana_02_jornada.md` como cronograma vigente. As tabelas de tempo abaixo permanecem como mapa histórico de distribuição temática e não substituem a ordem teoria → aplicação → revisão → questões → correção. A progressão textual está em `semana_02_dissertacoes.md`.
+
 ## CRA-PR 2026 - Analista de Sistemas
 
-**Versão 1.0**
+**Versão 2.0 — revisão auditada em 19/07/2026**
 
 Esta apostila organiza a segunda semana de preparação para o concurso do CRA-PR 2026. O foco principal é construir domínio operacional de redes de computadores, segurança de redes e sistemas operacionais avançados, sem abandonar as revisões recorrentes de Legislação CRA/CFA, Língua Portuguesa, Administração Pública e Raciocínio Lógico-Matemático.
 
@@ -157,7 +159,7 @@ São formatos compatíveis com o estilo de cobrança:
 Estratégia de leitura: identifique primeiro a função exigida pelo enunciado. Depois verifique qual informação o equipamento precisa examinar para executá-la — sinal, endereço MAC, endereço IP ou protocolo de aplicação.
 
 <a id="s2-d1-cronograma"></a>
-## Cronograma de 6h líquidas com pausas sugeridas
+## Distribuição temática original do Dia 1
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
@@ -172,23 +174,6 @@ Estratégia de leitura: identifique primeiro a função exigida pelo enunciado. 
 Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
 
 <a id="s2-d1-teoria"></a>
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d1-b4"></a>
-### Bloco 4 — Legislação CRA/CFA (40min)
-
-**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 1.1–1.15. Lei nº 4.769/1965 estrutura a profissão e o Sistema CFA/CRAs; Decreto nº 61.934/1967 regulamenta o exercício. CFA atua nacionalmente; CRA atua regionalmente com registro e fiscalização. **Exemplo:** diploma não substitui registro exigido. **Pegadinha:** trocar CRA por CFA. **Entrega:** quinze respostas corrigidas com norma-base e competência identificadas.
-
-<a id="s2-d1-b5"></a>
-### Bloco 5 — Português técnico (30min)
-
-**Função e matéria:** Português e interpretação, sustentando as Extras 1.16–1.20. Identifique comando, ideia central, inferência e conectores. “Pode” não equivale a “sempre”; “embora” indica concessão. **Exemplo:** switch pode encaminhar por MAC, mas não elimina todo broadcast. **Pegadinha:** escolher fato técnico verdadeiro que não responde ao comando. **Entrega:** cinco respostas justificadas pela relação lógica do texto.
-
-<a id="s2-d1-b6"></a>
-### Bloco 6 — Caderno de erros (20min)
-
-**Função:** recuperar e consolidar somente o que já foi estudado nos Blocos 1–5; este bloco não introduz conteúdo novo. Registre topologia, equipamento, métrica e conceito confundido. Diferencie hub/switch, colisão/broadcast e largura de banda/goodput. **Entrega:** lista de erros com regra correta, contraexemplo e data de nova tentativa.
 
 ## Teoria explicada de forma didática
 
@@ -599,6 +584,83 @@ São necessários 15 enlaces. Se existirem apenas conexões redundantes entre al
 | Domínio de colisão x broadcast | colisão envolve meio half-duplex compartilhado; broadcast envolve alcance de uma transmissão para toda a LAN ou VLAN |
 
 <a id="s2-d1-revisao-fixa"></a>
+## Prática guiada
+
+### Roteiro 1 — Mapear uma LAN de órgão público
+
+Desenhe uma rede com:
+
+- 12 estações;
+- 2 impressoras;
+- 2 access points;
+- 1 servidor;
+- 1 switch de acesso;
+- 1 roteador para a WAN.
+
+Depois, execute:
+
+1. Marque os hosts e os equipamentos intermediários.
+2. Identifique a estrela física formada no switch.
+3. Marque quais enlaces podem operar em full-duplex.
+4. Considere todos na mesma VLAN e anote 1 domínio de broadcast.
+5. Divida usuários e servidores em duas VLANs e anote 2 domínios de broadcast.
+6. Indique onde o roteamento entre VLANs deve ocorrer.
+
+### Roteiro 2 — Acompanhar um quadro
+
+Cenário: estação A envia dados à estação B na mesma VLAN.
+
+1. A NIC de A prepara o quadro com MAC de origem A e MAC de destino B.
+2. O switch aprende o MAC A na porta de entrada.
+3. Se B já estiver na tabela em porta diferente da entrada, encaminha apenas à porta de B; se o destino estiver aprendido na própria porta de entrada, filtra.
+4. Se B não estiver na tabela, inunda o unicast desconhecido dentro da VLAN.
+5. A resposta permite aprender o MAC B.
+
+Acrescente um hub ou outro segmento com dois hosts atrás da mesma porta. Se o switch receber por essa porta um quadro cujo MAC de destino também está aprendido nela, marque a ação **filtrar** — o quadro não deve ser devolvido à própria porta.
+
+Repita o roteiro colocando B em outra sub-rede. Agora A entrega o quadro ao MAC do gateway, e o roteador encaminha o pacote IP.
+
+### Roteiro 3 — Selecionar meio sem usar regra absoluta
+
+Preencha uma matriz com necessidade de alcance, interferência, mobilidade, capacidade, segurança física e custo. Compare:
+
+- mesa de usuário a 30 metros — par trançado é candidato natural;
+- backbone entre prédios — fibra é candidata forte;
+- tablets em sala de reunião — comunicação sem fio atende mobilidade;
+- ambiente com interferência — fibra reduz esse risco no enlace.
+
+Registre a justificativa, não apenas o nome do meio.
+
+### Roteiro 4 — Recuperação ativa da revisão fixa
+
+Sem consultar a teoria, escreva em até 10 minutos:
+
+- três diferenças entre CFA e CRA-PR;
+- a função das RN CFA nº 649, 651, 670 e 671;
+- quatro deveres éticos;
+- a diferença entre inferência e extrapolação;
+- três conectores e suas relações de sentido.
+
+Confira e corrija com outra cor.
+
+<a id="s2-d1-checklist"></a>
+## Blocos 4–6 programados do Dia 1
+
+<a id="s2-d1-b4"></a>
+### Revisão programada 4 — Legislação CRA/CFA
+
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 1.1–1.15. Lei nº 4.769/1965 estrutura a profissão e o Sistema CFA/CRAs; Decreto nº 61.934/1967 regulamenta o exercício. CFA atua nacionalmente; CRA atua regionalmente com registro e fiscalização. **Exemplo:** diploma não substitui registro exigido. **Pegadinha:** trocar CRA por CFA. **Entrega:** quinze respostas corrigidas com norma-base e competência identificadas.
+
+<a id="s2-d1-b5"></a>
+### Revisão programada 5 — Português técnico
+
+**Função e matéria:** Português e interpretação, sustentando as Extras 1.16–1.20. Identifique comando, ideia central, inferência e conectores. “Pode” não equivale a “sempre”; “embora” indica concessão. **Exemplo:** switch pode encaminhar por MAC, mas não elimina todo broadcast. **Pegadinha:** escolher fato técnico verdadeiro que não responde ao comando. **Entrega:** cinco respostas justificadas pela relação lógica do texto.
+
+<a id="s2-d1-b6"></a>
+### Recuperação programada 6 — Caderno de erros
+
+**Função:** recuperar e consolidar somente o que já foi estudado nos Blocos 1–5; este bloco não introduz conteúdo novo. Registre topologia, equipamento, métrica e conceito confundido. Diferencie hub/switch, colisão/broadcast e largura de banda/goodput. **Entrega:** lista de erros com regra correta, contraexemplo e data de nova tentativa.
+
 ## Revisão fixa do Dia 1
 
 **Distribuição das extras:** 15 questões de Legislação CRA/CFA e 5 questões de Português.
@@ -836,66 +898,6 @@ Pegadinhas prioritárias: inverter CFA e CRA-PR; transformar a Ouvidoria em órg
 - No Português, `contudo` indica oposição, não conclusão.
 
 <a id="s2-d1-pratica"></a>
-## Prática guiada
-
-### Roteiro 1 — Mapear uma LAN de órgão público
-
-Desenhe uma rede com:
-
-- 12 estações;
-- 2 impressoras;
-- 2 access points;
-- 1 servidor;
-- 1 switch de acesso;
-- 1 roteador para a WAN.
-
-Depois, execute:
-
-1. Marque os hosts e os equipamentos intermediários.
-2. Identifique a estrela física formada no switch.
-3. Marque quais enlaces podem operar em full-duplex.
-4. Considere todos na mesma VLAN e anote 1 domínio de broadcast.
-5. Divida usuários e servidores em duas VLANs e anote 2 domínios de broadcast.
-6. Indique onde o roteamento entre VLANs deve ocorrer.
-
-### Roteiro 2 — Acompanhar um quadro
-
-Cenário: estação A envia dados à estação B na mesma VLAN.
-
-1. A NIC de A prepara o quadro com MAC de origem A e MAC de destino B.
-2. O switch aprende o MAC A na porta de entrada.
-3. Se B já estiver na tabela em porta diferente da entrada, encaminha apenas à porta de B; se o destino estiver aprendido na própria porta de entrada, filtra.
-4. Se B não estiver na tabela, inunda o unicast desconhecido dentro da VLAN.
-5. A resposta permite aprender o MAC B.
-
-Acrescente um hub ou outro segmento com dois hosts atrás da mesma porta. Se o switch receber por essa porta um quadro cujo MAC de destino também está aprendido nela, marque a ação **filtrar** — o quadro não deve ser devolvido à própria porta.
-
-Repita o roteiro colocando B em outra sub-rede. Agora A entrega o quadro ao MAC do gateway, e o roteador encaminha o pacote IP.
-
-### Roteiro 3 — Selecionar meio sem usar regra absoluta
-
-Preencha uma matriz com necessidade de alcance, interferência, mobilidade, capacidade, segurança física e custo. Compare:
-
-- mesa de usuário a 30 metros — par trançado é candidato natural;
-- backbone entre prédios — fibra é candidata forte;
-- tablets em sala de reunião — comunicação sem fio atende mobilidade;
-- ambiente com interferência — fibra reduz esse risco no enlace.
-
-Registre a justificativa, não apenas o nome do meio.
-
-### Roteiro 4 — Recuperação ativa da revisão fixa
-
-Sem consultar a teoria, escreva em até 10 minutos:
-
-- três diferenças entre CFA e CRA-PR;
-- a função das RN CFA nº 649, 651, 670 e 671;
-- quatro deveres éticos;
-- a diferença entre inferência e extrapolação;
-- três conectores e suas relações de sentido.
-
-Confira e corrija com outra cor.
-
-<a id="s2-d1-checklist"></a>
 ## Checklist de domínio
 
 - [ ] Explico rede, host, nó, interface, enlace, protocolo e serviço.
@@ -1042,7 +1044,7 @@ Na resolução, separe três planos:
 3. **Cálculo:** quantos bits são de rede e quantos são de host.
 
 <a id="s2-d2-cronograma"></a>
-## Cronograma de 6h líquidas com pausas sugeridas
+## Distribuição temática original do Dia 2
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
@@ -1057,23 +1059,6 @@ Na resolução, separe três planos:
 Pausas sugeridas, fora das 6h líquidas: 10min após o Bloco 1, 15min após o Bloco 2, 10min após o Bloco 3 e 5min antes do caderno de erros.
 
 <a id="s2-d2-teoria"></a>
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d2-b4"></a>
-### Bloco 4 — Administração Pública (40min)
-
-**Função e matéria:** revisão fixa de Administração Pública, sustentando as Extras 2.1–2.15. Legalidade vincula a Administração; eficiência não autoriza ato ilegal. Órgão não possui personalidade; autarquia é entidade de direito público. Anulação combate ilegalidade; revogação trata de mérito. **Pegadinha:** motivo é pressuposto do ato, motivação é sua exposição. **Entrega:** quinze respostas corrigidas com princípio ou instituto decisivo identificado.
-
-<a id="s2-d2-b5"></a>
-### Bloco 5 — Português técnico (30min)
-
-**Função e matéria:** Português e interpretação de enunciados técnicos, sustentando as Extras 2.16–2.20. Em cálculo de rede, leia exatamente prefixo, máscara, rede, broadcast ou hosts solicitados. “Exceto” inverte o alvo. **Exemplo:** `/27` possui blocos de 32 endereços; não aplique fórmula de hosts sem tratar exceções. **Pegadinha:** responder host quando a pergunta pede endereço de rede. **Entrega:** cinco respostas justificadas pelo comando, pelo alcance e pela relação lógica.
-
-<a id="s2-d2-b6"></a>
-### Bloco 6 — Caderno de erros (20min)
-
-**Função:** recuperar os cálculos e conceitos já estudados, sem acrescentar teoria nova. Para cada erro, registre IP/prefixo, máscara, bloco, rede, broadcast e intervalo de hosts. Acrescente ARP local, gateway remoto e a diferença IPv4/IPv6. **Entrega:** memória de cálculo corrigida, causa do erro e nova tentativa sem consulta.
 
 ## Teoria explicada de forma didática
 
@@ -1756,6 +1741,110 @@ Na resolução de vizinho, um nó não envia `ff02::1` indiscriminadamente. Ele 
 | `/31` x `/32` | duas extremidades em enlace IPv4 ponto a ponto x um endereço ou rota de host |
 
 <a id="s2-d2-revisao-fixa"></a>
+## Prática guiada
+
+### Roteiro 1 — Decorar camadas por função, não só por nome
+
+Monte uma tabela em branco com as sete camadas. Para cada uma, preencha:
+
+- função principal;
+- uma PDU, quando houver nome específico;
+- um endereço ou identificador pertinente;
+- um protocolo ou tecnologia;
+- um equipamento associado, sem tratar a associação como exclusividade absoluta.
+
+Depois trace uma requisição da aplicação até a camada física e o retorno até a aplicação remota.
+
+### Roteiro 2 — Procedimento universal de cálculo IPv4
+
+Use o endereço `192.168.44.178/27`.
+
+1. Máscara: `/27 = 255.255.255.224`.
+2. Bits de host: `5`.
+3. Bloco: `256 - 224 = 32`.
+4. Inícios: 0, 32, 64, 96, 128, 160, 192 e 224.
+5. O valor 178 está no bloco 160 a 191.
+
+Conferência:
+
+- rede: `192.168.44.160`;
+- broadcast: `192.168.44.191`;
+- hosts: `.161` a `.190`;
+- hosts convencionais: 30.
+
+Repita o mesmo algoritmo para `10.10.14.3/23`:
+
+- máscara: `255.255.254.0`;
+- bloco no terceiro octeto: 2;
+- 14 está no bloco 14 a 15;
+- rede: `10.10.14.0`;
+- broadcast: `10.10.15.255`;
+- hosts: `10.10.14.1` a `10.10.15.254`;
+- hosts convencionais: `2^9 - 2 = 510`.
+
+### Roteiro 3 — Converter máscaras sem adivinhar
+
+Transforme cada octeto pela tabela de bits:
+
+- `255.255.248.0` — `8 + 8 + 5 = /21`;
+- `255.255.255.252` — `8 + 8 + 8 + 6 = /30`;
+- `/18` — `255.255.192.0`;
+- `/29` — `255.255.255.248`.
+
+Marque como inválida para CIDR normal a máscara `255.255.240.255`, pois os bits `1` não são contíguos.
+
+### Roteiro 4 — Entrega local e remota
+
+Desenhe host A, switch, roteador e host B remoto.
+
+- Na entrega local, escreva MAC e IP do destino local.
+- Na entrega remota, escreva MAC do gateway no quadro e IP de B no pacote.
+- Em cada roteador, risque o quadro antigo e desenhe o novo.
+- Anote que TTL ou Hop Limit é atualizado.
+
+### Roteiro 5 — Exceções e IPv6
+
+Crie três cartões de recuperação ativa:
+
+- `/31` — duas extremidades em enlace ponto a ponto, sem subtração de rede e broadcast;
+- `/32` — um endereço ou rota de host;
+- IPv6 — 128 bits e nenhum endereço de broadcast.
+
+No verso, escreva a fonte técnica: RFC 3021, RFC 4632 e RFC 4291.
+
+### Roteiro 6 — Revisões fixas
+
+Sem consulta, escreva:
+
+- LIMPE e uma aplicação concreta de cada princípio;
+- Administração Direta x Indireta;
+- órgão x entidade;
+- anulação x revogação x convalidação;
+- LAI x LGPD;
+- dispensa x inexigibilidade;
+- inferência x extrapolação;
+- oposição x concessão x conclusão.
+
+Corrija a lista com base nas seções correspondentes.
+
+<a id="s2-d2-checklist"></a>
+## Blocos 4–6 programados do Dia 2
+
+<a id="s2-d2-b4"></a>
+### Revisão programada 4 — Administração Pública
+
+**Função e matéria:** revisão fixa de Administração Pública, sustentando as Extras 2.1–2.15. Legalidade vincula a Administração; eficiência não autoriza ato ilegal. Órgão não possui personalidade; autarquia é entidade de direito público. Anulação combate ilegalidade; revogação trata de mérito. **Pegadinha:** motivo é pressuposto do ato, motivação é sua exposição. **Entrega:** quinze respostas corrigidas com princípio ou instituto decisivo identificado.
+
+<a id="s2-d2-b5"></a>
+### Revisão programada 5 — Português técnico
+
+**Função e matéria:** Português e interpretação de enunciados técnicos, sustentando as Extras 2.16–2.20. Em cálculo de rede, leia exatamente prefixo, máscara, rede, broadcast ou hosts solicitados. “Exceto” inverte o alvo. **Exemplo:** `/27` possui blocos de 32 endereços; não aplique fórmula de hosts sem tratar exceções. **Pegadinha:** responder host quando a pergunta pede endereço de rede. **Entrega:** cinco respostas justificadas pelo comando, pelo alcance e pela relação lógica.
+
+<a id="s2-d2-b6"></a>
+### Recuperação programada 6 — Caderno de erros
+
+**Função:** recuperar os cálculos e conceitos já estudados, sem acrescentar teoria nova. Para cada erro, registre IP/prefixo, máscara, bloco, rede, broadcast e intervalo de hosts. Acrescente ARP local, gateway remoto e a diferença IPv4/IPv6. **Entrega:** memória de cálculo corrigida, causa do erro e nova tentativa sem consulta.
+
 ## Revisão fixa do Dia 2
 
 **Distribuição das extras:** 15 questões de Administração Pública e 5 questões de Português.
@@ -2030,93 +2119,6 @@ Pegadinhas prioritárias: usar eficiência contra a lei; promover agente em publ
 - No Português, `embora` indica concessão e `entretanto` indica oposição.
 
 <a id="s2-d2-pratica"></a>
-## Prática guiada
-
-### Roteiro 1 — Decorar camadas por função, não só por nome
-
-Monte uma tabela em branco com as sete camadas. Para cada uma, preencha:
-
-- função principal;
-- uma PDU, quando houver nome específico;
-- um endereço ou identificador pertinente;
-- um protocolo ou tecnologia;
-- um equipamento associado, sem tratar a associação como exclusividade absoluta.
-
-Depois trace uma requisição da aplicação até a camada física e o retorno até a aplicação remota.
-
-### Roteiro 2 — Procedimento universal de cálculo IPv4
-
-Use o endereço `192.168.44.178/27`.
-
-1. Máscara: `/27 = 255.255.255.224`.
-2. Bits de host: `5`.
-3. Bloco: `256 - 224 = 32`.
-4. Inícios: 0, 32, 64, 96, 128, 160, 192 e 224.
-5. O valor 178 está no bloco 160 a 191.
-
-Conferência:
-
-- rede: `192.168.44.160`;
-- broadcast: `192.168.44.191`;
-- hosts: `.161` a `.190`;
-- hosts convencionais: 30.
-
-Repita o mesmo algoritmo para `10.10.14.3/23`:
-
-- máscara: `255.255.254.0`;
-- bloco no terceiro octeto: 2;
-- 14 está no bloco 14 a 15;
-- rede: `10.10.14.0`;
-- broadcast: `10.10.15.255`;
-- hosts: `10.10.14.1` a `10.10.15.254`;
-- hosts convencionais: `2^9 - 2 = 510`.
-
-### Roteiro 3 — Converter máscaras sem adivinhar
-
-Transforme cada octeto pela tabela de bits:
-
-- `255.255.248.0` — `8 + 8 + 5 = /21`;
-- `255.255.255.252` — `8 + 8 + 8 + 6 = /30`;
-- `/18` — `255.255.192.0`;
-- `/29` — `255.255.255.248`.
-
-Marque como inválida para CIDR normal a máscara `255.255.240.255`, pois os bits `1` não são contíguos.
-
-### Roteiro 4 — Entrega local e remota
-
-Desenhe host A, switch, roteador e host B remoto.
-
-- Na entrega local, escreva MAC e IP do destino local.
-- Na entrega remota, escreva MAC do gateway no quadro e IP de B no pacote.
-- Em cada roteador, risque o quadro antigo e desenhe o novo.
-- Anote que TTL ou Hop Limit é atualizado.
-
-### Roteiro 5 — Exceções e IPv6
-
-Crie três cartões de recuperação ativa:
-
-- `/31` — duas extremidades em enlace ponto a ponto, sem subtração de rede e broadcast;
-- `/32` — um endereço ou rota de host;
-- IPv6 — 128 bits e nenhum endereço de broadcast.
-
-No verso, escreva a fonte técnica: RFC 3021, RFC 4632 e RFC 4291.
-
-### Roteiro 6 — Revisões fixas
-
-Sem consulta, escreva:
-
-- LIMPE e uma aplicação concreta de cada princípio;
-- Administração Direta x Indireta;
-- órgão x entidade;
-- anulação x revogação x convalidação;
-- LAI x LGPD;
-- dispensa x inexigibilidade;
-- inferência x extrapolação;
-- oposição x concessão x conclusão.
-
-Corrija a lista com base nas seções correspondentes.
-
-<a id="s2-d2-checklist"></a>
 ## Checklist de domínio
 
 - [ ] Nomeio e explico as sete camadas do OSI.
@@ -2301,7 +2303,7 @@ O estilo esperado combina:
 
 Palavras como “sempre”, “somente”, “garante”, “substitui” e “é sinônimo” merecem atenção. Elas frequentemente transformam uma ideia parcialmente correta em alternativa errada.
 
-## Cronograma de 6h líquidas
+## Distribuição temática original do Dia 3
 
 As pausas não entram na soma. Sugestão: pausa de 10 a 15 minutos após cada bloco longo.
 
@@ -2315,23 +2317,6 @@ As pausas não entram na soma. Sugestão: pausa de 10 a 15 minutos após cada bl
 | 6 | Prática guiada, checklist e caderno de erros, sem conteúdo novo | 15 min |
 | **Total líquido** |  | **360 min** |
 
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d3-b4"></a>
-### Bloco 4 — Legislação CRA/CFA (30min)
-
-**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 3.1–3.15. Lei define a base profissional; Decreto regulamenta; Regimento organiza o CRA-PR; Código de Ética disciplina condutas. Antes de responder, identifique sujeito, competência e norma-base. **Pegadinha:** assinatura de fachada não equivale a responsabilidade técnica. **Entrega:** quinze respostas corrigidas com sujeito, competência e norma-base.
-
-<a id="s2-d3-b5"></a>
-### Bloco 5 — Português e interpretação (15min)
-
-**Função e matéria:** Português e interpretação, sustentando as Extras 3.16–3.20. Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP configura, TLS protege canal, HTTP realiza requisição. **Pegadinha:** trocar serviço de aplicação por protocolo de transporte ou modalidade por certeza. **Entrega:** cinco respostas justificadas pelo conector, referente ou regra gramatical decisiva.
-
-<a id="s2-d3-b6"></a>
-### Bloco 6 — Caderno de erros (15min)
-
-**Função:** recuperar e comparar somente protocolos e serviços já ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. **Entrega:** tabela de erros com regra correta, contraste e explicação de por que uma porta não prova segurança.
 
 ## Teoria explicada de forma didática
 
@@ -2678,6 +2663,8 @@ O proxy reverso fica diante dos servidores e recebe conexões em nome deles. Pod
 
 “Direto” e “reverso” descrevem o papel lógico visto pelos extremos, não um conjunto obrigatório de funções. Muitos proxies terminam ou compreendem um protocolo de aplicação; outros apenas retransmitem bytes ou criam túneis, como pode ocorrer com HTTP `CONNECT`, sem enxergar o conteúdo protegido ponta a ponta.
 
+Terminar TLS, filtrar ou autenticar na borda não substitui automaticamente a autorização da aplicação. O proxy pode transmitir uma identidade por mecanismo confiável previsto na arquitetura, mas o backend ainda precisa validar o contexto recebido e autorizar a operação sobre o recurso solicitado.
+
 Proxy não é sinônimo de NAT. Em geral, o proxy estabelece ou intermedeia comunicação em nome de um extremo, enquanto NAT traduz campos de endereçamento no tráfego encaminhado sem terminar a sessão de aplicação. A diferença deve ser usada como modelo conceitual, não como afirmação de que todo proxy sempre inspeciona semanticamente a aplicação.
 
 <a id="s2-d3-nat-pat"></a>
@@ -2849,6 +2836,59 @@ Esse fluxo mostra por que “a internet caiu” é diagnóstico insuficiente. A 
 | porta conhecida | protocolo efetivo | porta sugere convenção, mas não comprova conteúdo nem segurança |
 
 <a id="s2-d3-revisao-fixa"></a>
+## Prática guiada
+
+### Caso — Atendimento digital do CRA-PR
+
+Uma estação na VLAN de atendimento recebe 10.20.30.25/24, gateway 10.20.30.1 e DNS 10.20.10.53 por DHCP. O usuário acessa o nome reservado servicos.cra-pr.example. O nome resolve para 198.51.100.50. O firewall de borda aplica PAT, o portal é publicado por proxy reverso e os logs são enviados ao monitoramento.
+
+#### Etapa 1 — Reconstrução do fluxo
+
+Registre no caderno, nesta ordem:
+
+1. DHCPDISCOVER, DHCPOFFER, DHCPREQUEST e DHCPACK;
+2. consulta ao resolvedor DNS;
+3. encaminhamento ao gateway;
+4. tradução PAT;
+5. abertura TCP e negociação TLS;
+6. requisição HTTP protegida;
+7. recepção pelo proxy reverso;
+8. sincronização temporal necessária aos logs.
+
+#### Etapa 2 — Diagnóstico por sintoma
+
+Associe cada sintoma ao primeiro bloco de investigação:
+
+| Sintoma | Primeiro foco |
+|---|---|
+| endereço 169.254.x.x e ausência de gateway | concessão DHCP/relay/escopo |
+| IP responde, nome não resolve | DNS |
+| nome resolve, porta 443 não abre | rota, firewall, NAT/PAT ou serviço |
+| alerta de nome inválido no certificado | validação TLS/certificado/DNS |
+| horários divergentes nos logs | NTP e configuração de tempo |
+| página chega, mas login falha | aplicação, identidade e autorização |
+
+#### Etapa 3 — Resultado esperado
+
+O diagnóstico deve separar camada e serviço. Evite “culpar a internet” ou trocar DNS por DHCP. Registre evidências: endereço recebido, servidor consultado, resposta DNS, rota, estado da porta, certificado e horário.
+
+## Blocos 4–6 programados do Dia 3
+
+<a id="s2-d3-b4"></a>
+### Revisão programada 4 — Legislação CRA/CFA
+
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 3.1–3.15. Lei define a base profissional; Decreto regulamenta; Regimento organiza o CRA-PR; Código de Ética disciplina condutas. Antes de responder, identifique sujeito, competência e norma-base. **Pegadinha:** assinatura de fachada não equivale a responsabilidade técnica. **Entrega:** quinze respostas corrigidas com sujeito, competência e norma-base.
+
+<a id="s2-d3-b5"></a>
+### Revisão programada 5 — Português e interpretação
+
+**Função e matéria:** Português e interpretação, sustentando as Extras 3.16–3.20. Em protocolos, preserve a relação lógica do texto: DNS resolve nomes, DHCP configura, TLS protege canal, HTTP realiza requisição. **Pegadinha:** trocar serviço de aplicação por protocolo de transporte ou modalidade por certeza. **Entrega:** cinco respostas justificadas pelo conector, referente ou regra gramatical decisiva.
+
+<a id="s2-d3-b6"></a>
+### Recuperação programada 6 — Caderno de erros
+
+**Função:** recuperar e comparar somente protocolos e serviços já ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Anote serviço, transporte, porta usual e função: SMTP/IMAP, SFTP/SSH, SNMP, LDAP, proxy, NAT/PAT e NTP. **Entrega:** tabela de erros com regra correta, contraste e explicação de por que uma porta não prova segurança.
+
 ## Revisão fixa do Dia 3
 
 Este bloco fornece a base teórica das **15 questões extras de Legislação CRA/CFA** e das **5 questões extras de Língua Portuguesa** do Dia 3. Os identificadores e os títulos abaixo são estáveis: os comentários das questões devem citar o título da seção e, quando útil, o respectivo identificador.
@@ -3148,42 +3188,6 @@ Teste prático: troque o termo feminino por masculino. Se surgir `ao`, normalmen
 - NTP sincroniza tempo, não fuso horário.
 - Porta padrão é convenção, não vínculo obrigatório.
 
-## Prática guiada
-
-### Caso — Atendimento digital do CRA-PR
-
-Uma estação na VLAN de atendimento recebe 10.20.30.25/24, gateway 10.20.30.1 e DNS 10.20.10.53 por DHCP. O usuário acessa o nome reservado servicos.cra-pr.example. O nome resolve para 198.51.100.50. O firewall de borda aplica PAT, o portal é publicado por proxy reverso e os logs são enviados ao monitoramento.
-
-#### Etapa 1 — Reconstrução do fluxo
-
-Registre no caderno, nesta ordem:
-
-1. DHCPDISCOVER, DHCPOFFER, DHCPREQUEST e DHCPACK;
-2. consulta ao resolvedor DNS;
-3. encaminhamento ao gateway;
-4. tradução PAT;
-5. abertura TCP e negociação TLS;
-6. requisição HTTP protegida;
-7. recepção pelo proxy reverso;
-8. sincronização temporal necessária aos logs.
-
-#### Etapa 2 — Diagnóstico por sintoma
-
-Associe cada sintoma ao primeiro bloco de investigação:
-
-| Sintoma | Primeiro foco |
-|---|---|
-| endereço 169.254.x.x e ausência de gateway | concessão DHCP/relay/escopo |
-| IP responde, nome não resolve | DNS |
-| nome resolve, porta 443 não abre | rota, firewall, NAT/PAT ou serviço |
-| alerta de nome inválido no certificado | validação TLS/certificado/DNS |
-| horários divergentes nos logs | NTP e configuração de tempo |
-| página chega, mas login falha | aplicação, identidade e autorização |
-
-#### Etapa 3 — Resultado esperado
-
-O diagnóstico deve separar camada e serviço. Evite “culpar a internet” ou trocar DNS por DHCP. Registre evidências: endereço recebido, servidor consultado, resposta DNS, rota, estado da porta, certificado e horário.
-
 ## Checklist de domínio
 
 - [ ] Diferencio protocolo, serviço, porta e socket.
@@ -3341,7 +3345,7 @@ Formatos prováveis:
 - distinção entre backup, redundância e alta disponibilidade;
 - controle que reduz risco, sem eliminá-lo.
 
-## Cronograma de 6h líquidas
+## Distribuição temática original do Dia 4
 
 As pausas são adicionais e não entram na soma.
 
@@ -3355,23 +3359,6 @@ As pausas são adicionais e não entram na soma.
 | 6 | Prática guiada, checklist e caderno de erros, sem conteúdo novo | 20 min |
 | **Total líquido** |  | **360 min** |
 
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d4-b4"></a>
-### Bloco 4 — Administração Pública e RLM (40min)
-
-**Função e matérias:** revisão fixa de Administração Pública, nas Extras 4.1–4.10, e de Raciocínio Lógico-Matemático, nas Extras 4.11–4.15. Princípios do art. 37, ato administrativo, LAI/LGPD e responsabilidade devem ser lidos por finalidade e limite. Em RLM, negue quantificadores corretamente: negar “todos” produz “algum não”; negar “nenhum” produz “algum”. **Exemplo:** publicidade não autoriza promoção pessoal nem divulgação irrestrita de dado pessoal. **Pegadinhas:** anulação não é revogação; possibilidade não se transforma em universalidade. **Entrega:** quinze respostas corrigidas, com regra administrativa ou transformação lógica identificada.
-
-<a id="s2-d4-b5"></a>
-### Bloco 5 — Português (10min)
-
-**Função e matéria:** Português, sustentando as Extras 4.16–4.20. Mantenha referente, conector, pontuação e alcance na reescrita. **Pegadinha:** transformar possibilidade em universalidade ou trocar causa por oposição. **Entrega:** cinco respostas justificadas pela regra linguística decisiva.
-
-<a id="s2-d4-b6"></a>
-### Bloco 6 — Caderno de erros (20min)
-
-**Função:** recuperar e consolidar somente os conteúdos já ensinados nos Blocos 1–5; este bloco não introduz resposta a incidentes, continuidade, backup ou qualquer teoria nova. Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. **Entrega:** lista priorizada de erros, regra corretiva, etapa de incidente aplicável e data de revisão.
 
 ## Teoria explicada de forma didática
 
@@ -4345,6 +4332,69 @@ Se a restauração termina às 18h, a perda potencial é de oito horas de dados 
 | backup | redundância | recuperar passado × manter componente alternativo |
 | RPO | RTO | ponto temporal objetivo para recuperar dados × prazo objetivo para restabelecer serviço |
 
+## Prática guiada
+
+### Caso — Incidente no portal de fiscalização
+
+O portal público está em DMZ. A aplicação consulta banco interno. Às 8h20, o SIEM registra login administrativo de país incomum; às 8h23, há criação de conta privilegiada; às 8h30, grande volume de dados sai do servidor; às 8h40, compartilhamentos começam a ser cifrados. A conta usava apenas senha. O último backup offline validado terminou à 1h.
+
+#### Etapa 1 — Classificação
+
+- ameaça: agente externo;
+- vulnerabilidades: autenticação sem MFA, possível exposição de credencial e permissões amplas;
+- incidentes: conta privilegiada indevida, exfiltração e cifração;
+- CIA: confidencialidade, integridade e disponibilidade;
+- evidências: logs de identidade, firewall, proxy, aplicação, banco, endpoint e fluxo.
+
+#### Etapa 2 — Contenção inicial
+
+1. ativar equipe e autoridade;
+2. desabilitar/limitar contas comprometidas;
+3. isolar hosts afetados e bloquear indicadores;
+4. preservar evidências voláteis conforme playbook;
+5. impedir movimento da DMZ para segmentos internos;
+6. proteger infraestrutura de backup;
+7. comunicar áreas responsáveis.
+
+#### Etapa 3 — Erradicação
+
+1. identificar vetor inicial, persistência e todos os ativos afetados;
+2. remover malware, contas e tarefas persistentes;
+3. corrigir vulnerabilidades exploradas;
+4. rotacionar credenciais e chaves comprometidas;
+5. reconstruir componentes cujo estado não seja confiável;
+6. confirmar que os pontos de entrada conhecidos foram tratados.
+
+#### Etapa 4 — Recuperação
+
+1. selecionar e validar backup anterior ao comprometimento;
+2. restaurar serviços por prioridade em ambiente controlado;
+3. verificar integridade, função e controles antes da reconexão ampla;
+4. monitorar recorrência;
+5. revisar segmentação, MFA, privilégios e regras;
+6. registrar lições e cumprir obrigações de comunicação.
+
+#### Resultado esperado
+
+A solução não deve resumir-se a “ligar o firewall” ou “restaurar o backup”. Ela precisa combinar identidade, contenção, evidência, correção da causa, recuperação segura e melhoria dos controles.
+
+## Blocos 4–6 programados do Dia 4
+
+<a id="s2-d4-b4"></a>
+### Revisão programada 4 — Administração Pública e RLM
+
+**Função e matérias:** revisão fixa de Administração Pública, nas Extras 4.1–4.10, e de Raciocínio Lógico-Matemático, nas Extras 4.11–4.15. Princípios do art. 37, ato administrativo, LAI/LGPD e responsabilidade devem ser lidos por finalidade e limite. Em RLM, negue quantificadores corretamente: negar “todos” produz “algum não”; negar “nenhum” produz “algum”. **Exemplo:** publicidade não autoriza promoção pessoal nem divulgação irrestrita de dado pessoal. **Pegadinhas:** anulação não é revogação; possibilidade não se transforma em universalidade. **Entrega:** quinze respostas corrigidas, com regra administrativa ou transformação lógica identificada.
+
+<a id="s2-d4-b5"></a>
+### Revisão programada 5 — Português
+
+**Função e matéria:** Português, sustentando as Extras 4.16–4.20. Mantenha referente, conector, pontuação e alcance na reescrita. **Pegadinha:** transformar possibilidade em universalidade ou trocar causa por oposição. **Entrega:** cinco respostas justificadas pela regra linguística decisiva.
+
+<a id="s2-d4-b6"></a>
+### Recuperação programada 6 — Caderno de erros
+
+**Função:** recuperar e consolidar somente os conteúdos já ensinados nos Blocos 1–5; este bloco não introduz resposta a incidentes, continuidade, backup ou qualquer teoria nova. Registre ataque, ativo afetado, princípio CIA e controle: firewall, IDS, IPS, DMZ, VPN, cifra, hash, assinatura, backup, RPO e RTO. **Entrega:** lista priorizada de erros, regra corretiva, etapa de incidente aplicável e data de revisão.
+
 ## Revisão fixa do Dia 4
 
 <a id="rf4-visao-geral"></a>
@@ -5184,52 +5234,6 @@ Antes das questões extras, o estudante deve conseguir explicar sem consulta:
 - Controles reduzem risco; não prometem segurança absoluta.
 - Risco residual é o que resta após controles; evite tanto prometer risco zero quanto afirmar valor positivo mensurável em todo cenário.
 
-## Prática guiada
-
-### Caso — Incidente no portal de fiscalização
-
-O portal público está em DMZ. A aplicação consulta banco interno. Às 8h20, o SIEM registra login administrativo de país incomum; às 8h23, há criação de conta privilegiada; às 8h30, grande volume de dados sai do servidor; às 8h40, compartilhamentos começam a ser cifrados. A conta usava apenas senha. O último backup offline validado terminou à 1h.
-
-#### Etapa 1 — Classificação
-
-- ameaça: agente externo;
-- vulnerabilidades: autenticação sem MFA, possível exposição de credencial e permissões amplas;
-- incidentes: conta privilegiada indevida, exfiltração e cifração;
-- CIA: confidencialidade, integridade e disponibilidade;
-- evidências: logs de identidade, firewall, proxy, aplicação, banco, endpoint e fluxo.
-
-#### Etapa 2 — Contenção inicial
-
-1. ativar equipe e autoridade;
-2. desabilitar/limitar contas comprometidas;
-3. isolar hosts afetados e bloquear indicadores;
-4. preservar evidências voláteis conforme playbook;
-5. impedir movimento da DMZ para segmentos internos;
-6. proteger infraestrutura de backup;
-7. comunicar áreas responsáveis.
-
-#### Etapa 3 — Erradicação
-
-1. identificar vetor inicial, persistência e todos os ativos afetados;
-2. remover malware, contas e tarefas persistentes;
-3. corrigir vulnerabilidades exploradas;
-4. rotacionar credenciais e chaves comprometidas;
-5. reconstruir componentes cujo estado não seja confiável;
-6. confirmar que os pontos de entrada conhecidos foram tratados.
-
-#### Etapa 4 — Recuperação
-
-1. selecionar e validar backup anterior ao comprometimento;
-2. restaurar serviços por prioridade em ambiente controlado;
-3. verificar integridade, função e controles antes da reconexão ampla;
-4. monitorar recorrência;
-5. revisar segmentação, MFA, privilégios e regras;
-6. registrar lições e cumprir obrigações de comunicação.
-
-#### Resultado esperado
-
-A solução não deve resumir-se a “ligar o firewall” ou “restaurar o backup”. Ela precisa combinar identidade, contenção, evidência, correção da causa, recuperação segura e melhoria dos controles.
-
 ## Checklist de domínio
 
 - [ ] Explico confidencialidade, integridade e disponibilidade.
@@ -5382,7 +5386,7 @@ O edital autoriza cobrança de compreensão, aplicação e análise. Neste bloco
 
 Um método seguro é sublinhar no enunciado: recurso compartilhado, ordem das operações, possibilidade de preempção, número de instâncias, forma de espera e garantia pretendida. Essas palavras revelam o conceito testado.
 
-## Cronograma de 6h líquidas — 360 minutos
+## Distribuição temática original do Dia 5
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
@@ -5394,23 +5398,6 @@ Um método seguro é sublinhar no enunciado: recurso compartilhado, ordem das op
 | 6 | integrado aos Blocos 1–5 | Caderno de erros e recuperação ativa, sem conteúdo novo nem acréscimo ao total líquido |
 | **Total** | **360 min** | **6 horas líquidas** |
 
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d5-b4"></a>
-### Bloco 4 — Legislação CRA/CFA (20min)
-
-**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 5.1–5.15. Revise registro, fiscalização, Regimento e Código de Ética: sujeito, conduta, jurisdição e processo decidem o caso. **Pegadinha:** confundir RN de Regimento com Código ou supor sanção automática. **Entrega:** quinze respostas corrigidas com sujeito, competência, conduta e norma-base.
-
-<a id="s2-d5-b5"></a>
-### Bloco 5 — Português e interpretação (10min)
-
-**Função e matéria:** Português e interpretação, sustentando as Extras 5.16–5.20. Resolva conectores, referente pronominal e inferência sem acrescentar informação. **Exemplo:** “ainda que” mantém concessão; não vira causa. **Pegadinha:** pronome possessivo com dois antecedentes. **Entrega:** cinco respostas justificadas por conector, referente ou inferência.
-
-<a id="s2-d5-b6"></a>
-### Bloco 6 — Caderno de erros (integrado)
-
-**Função:** recuperar e comparar somente conceitos ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Classifique cada erro como processo/thread, corrida/sincronização, deadlock/starvation, polling/interrupção/DMA ou journaling/backup/permissão. **Entrega:** classificação do erro, regra correta, cenário de contraste e nova tentativa agendada.
 
 ## Teoria explicada de forma didática
 
@@ -5795,6 +5782,58 @@ Resolução: a saída evidencia múltiplos fluxos no processo; não significa ne
 | Permissão Linux × DACL Windows | Tríades básicas e ACL POSIX × ACEs em descritor de segurança e herança NTFS |
 
 <a id="s2-d5-revisao-fixa"></a>
+## Prática guiada
+
+### Atividade 1 — desenhar a corrida
+
+Use as três micro-operações ler, somar e gravar para dois workers incrementando um contador inicialmente igual a 7. Produza uma intercalação que termine em 8. Depois acrescente um mutex único envolvendo as três operações e verifique que qualquer ordem serial termina em 9.
+
+### Atividade 2 — mapa de recursos
+
+Desenhe dois nós de thread e dois nós de recurso. Represente T1 possuindo A e pedindo B; T2 possuindo B e pedindo A. Marque as quatro condições de Coffman no próprio desenho. Em seguida, imponha A < B como ordem global e elimine a aresta capaz de fechar o ciclo.
+
+### Atividade 3 — escolher sincronização
+
+Classifique três casos:
+
+- alteração de um cadastro único: mutex;
+- limite de vinte tarefas simultâneas: semáforo contador;
+- consumidor aguardando fila deixar de estar vazia: mutex + variável de condição.
+
+Registre por que as duas alternativas rejeitadas seriam menos expressivas em cada caso.
+
+### Atividade 4 — escalonamento manual
+
+Monte uma linha do tempo para A = 4, B = 2 e C = 3, todos chegando em zero, sob FCFS e Round Robin com quantum 1. Calcule resposta e conclusão. Compare: RR melhora o primeiro atendimento de B e C, mas insere mais trocas.
+
+### Atividade 5 — diagnóstico seguro
+
+Interprete, sem executar encerramentos:
+
+- ps -eLf: processos com threads;
+- tasklist: processos Windows;
+- systemctl status e Get-Service: estado de serviços;
+- ls -l e icacls: permissões.
+
+Para cada saída, anote o que ela permite concluir e o que não permite. Uma fotografia de CPU alta, por exemplo, não prova a causa raiz.
+
+## Blocos 4–6 programados do Dia 5
+
+<a id="s2-d5-b4"></a>
+### Revisão programada 4 — Legislação CRA/CFA
+
+**Função e matéria:** revisão fixa de Legislação CRA/CFA, sustentando as Extras 5.1–5.15. Revise registro, fiscalização, Regimento e Código de Ética: sujeito, conduta, jurisdição e processo decidem o caso. **Pegadinha:** confundir RN de Regimento com Código ou supor sanção automática. **Entrega:** quinze respostas corrigidas com sujeito, competência, conduta e norma-base.
+
+<a id="s2-d5-b5"></a>
+### Revisão programada 5 — Português e interpretação
+
+**Função e matéria:** Português e interpretação, sustentando as Extras 5.16–5.20. Resolva conectores, referente pronominal e inferência sem acrescentar informação. **Exemplo:** “ainda que” mantém concessão; não vira causa. **Pegadinha:** pronome possessivo com dois antecedentes. **Entrega:** cinco respostas justificadas por conector, referente ou inferência.
+
+<a id="s2-d5-b6"></a>
+### Recuperação programada 6 — Caderno de erros
+
+**Função:** recuperar e comparar somente conceitos ensinados nos Blocos 1–5; este bloco não introduz conteúdo novo. Classifique cada erro como processo/thread, corrida/sincronização, deadlock/starvation, polling/interrupção/DMA ou journaling/backup/permissão. **Entrega:** classificação do erro, regra correta, cenário de contraste e nova tentativa agendada.
+
 ## Revisão fixa do Dia 5
 
 Este bloco sustenta as **15 questões extras de Legislação CRA/CFA** e as **5 questões extras de Língua Portuguesa** do Dia 5. O foco é aprofundar organização e funcionamento do CRA-PR e aplicar com precisão a gradação ético-disciplinar, sem repetir os eixos centrais do Dia 3.
@@ -6120,41 +6159,6 @@ Evite comparação incompleta: “A competência do Plenário é maior **que a D
 19. kill -KILL não é a primeira opção administrativa normal.
 20. A norma ética vigente para este concurso é a RN CFA nº 671/2025, conforme Retificação I.
 
-## Prática guiada
-
-### Atividade 1 — desenhar a corrida
-
-Use as três micro-operações ler, somar e gravar para dois workers incrementando um contador inicialmente igual a 7. Produza uma intercalação que termine em 8. Depois acrescente um mutex único envolvendo as três operações e verifique que qualquer ordem serial termina em 9.
-
-### Atividade 2 — mapa de recursos
-
-Desenhe dois nós de thread e dois nós de recurso. Represente T1 possuindo A e pedindo B; T2 possuindo B e pedindo A. Marque as quatro condições de Coffman no próprio desenho. Em seguida, imponha A < B como ordem global e elimine a aresta capaz de fechar o ciclo.
-
-### Atividade 3 — escolher sincronização
-
-Classifique três casos:
-
-- alteração de um cadastro único: mutex;
-- limite de vinte tarefas simultâneas: semáforo contador;
-- consumidor aguardando fila deixar de estar vazia: mutex + variável de condição.
-
-Registre por que as duas alternativas rejeitadas seriam menos expressivas em cada caso.
-
-### Atividade 4 — escalonamento manual
-
-Monte uma linha do tempo para A = 4, B = 2 e C = 3, todos chegando em zero, sob FCFS e Round Robin com quantum 1. Calcule resposta e conclusão. Compare: RR melhora o primeiro atendimento de B e C, mas insere mais trocas.
-
-### Atividade 5 — diagnóstico seguro
-
-Interprete, sem executar encerramentos:
-
-- ps -eLf: processos com threads;
-- tasklist: processos Windows;
-- systemctl status e Get-Service: estado de serviços;
-- ls -l e icacls: permissões.
-
-Para cada saída, anote o que ela permite concluir e o que não permite. Uma fotografia de CPU alta, por exemplo, não prova a causa raiz.
-
 ## Checklist do Dia 5
 
 - [ ] Expliquei concorrência sem usar a palavra simultâneo como requisito.
@@ -6298,7 +6302,7 @@ Na revisão integrada, a banca pode apresentar:
 
 Ao ler um cenário, organize os fatos em cinco colunas: sintoma, camada, evidência, hipótese e teste. Não escolha a tecnologia apenas porque seu nome aparece no enunciado.
 
-## Cronograma de 6h líquidas — 360 minutos
+## Distribuição temática original do Dia 6
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
@@ -6310,23 +6314,6 @@ Ao ler um cenário, organize os fatos em cinco colunas: sintoma, camada, evidên
 | 6 | 15 min | Caderno de erros, checklist e três compromissos para a próxima semana |
 | **Total** | **360 min** | **6 horas líquidas** |
 
-
-## Conteúdo dos blocos de revisão e consolidação
-
-<a id="s2-d6-b4"></a>
-### Bloco 4 — Revisão mista programada (integrada ao Bloco 3)
-
-**Função e matérias:** recuperar Redes, endereçamento, protocolos, Segurança e Sistemas Operacionais já ensinados nos Dias 1–5, sustentando as Extras 6.11–6.20. O bloco usa o mapa de revisão mista e não acrescenta teoria. **Entrega:** dez respostas sem consulta, classificadas por núcleo e vinculadas à seção de origem.
-
-<a id="s2-d6-b5"></a>
-### Bloco 5 — Português técnico (15min)
-
-**Função e matéria:** Português aplicado, sustentando as Extras 6.1–6.10. Leia tese, inferência, coesão, pontuação e reescrita em relatos técnicos. **Exemplo:** ping bem-sucedido não prova saúde da aplicação; o texto deve preservar essa ressalva. **Pegadinha:** vírgula entre sujeito e verbo ou extrapolação de dado técnico. **Entrega:** dez respostas justificadas pela regra linguística decisiva.
-
-<a id="s2-d6-b6"></a>
-### Bloco 6 — Caderno de erros e fechamento (15min)
-
-**Função:** usar os resultados dos Blocos 4 e 5 para recuperar somente conteúdos já estudados; este bloco não introduz matéria nova. Classifique cada erro como enlace, camada, CIDR, protocolo, controle de segurança, continuidade, SO ou leitura linguística. **Entrega:** regra correta, contraexemplo, seção de origem, três perguntas de recuperação ativa e plano de nova tentativa em 24 horas e 7 dias.
 
 ## Teoria explicada de forma didática
 
@@ -6904,6 +6891,8 @@ Correções combinadas:
 
 Retry sem idempotência pode duplicar cobrança. A solução precisa incluir chave idempotente ou verificação transacional.
 
+<a id="s2-d6-recuperacao-dependencias"></a>
+
 ### Plano de continuidade priorizado
 
 1. preservar pessoas, evidências e serviços essenciais;
@@ -6913,8 +6902,9 @@ Retry sem idempotência pode duplicar cobrança. A solução precisa incluir cha
 5. consultar o mapa de dependências e definir o bootstrap, incluindo infraestrutura, tempo, armazenamento, DNS e identidade sem supor que uma ordem fixa serve para todo ambiente;
 6. validar a cópia antes de restaurar dados/SGBD e, então, subir aplicações, proxy e acesso de usuários conforme suas dependências;
 7. validar segurança e consistência em cada estágio antes de liberar fluxos;
-8. comunicar indisponibilidade com precisão, sem atribuir causa ainda não confirmada;
-9. medir e corrigir lacunas de RTO/RPO e do próprio mapa de dependências.
+8. definir responsáveis e critérios de aceite; executar retorno gradual e controlado, com possibilidade de reversão;
+9. comunicar indisponibilidade com precisão, sem atribuir causa ainda não confirmada;
+10. medir e corrigir lacunas de RTO/RPO e do próprio mapa de dependências.
 
 ## Diferenças entre conceitos parecidos
 
@@ -6943,6 +6933,63 @@ Retry sem idempotência pode duplicar cobrança. A solução precisa incluir cha
 | Falha de rede × deadlock | Caminho de comunicação falha × aplicação não progride apesar do caminho possível |
 
 <a id="s2-d6-revisao-fixa"></a>
+## Prática guiada
+
+### Atividade 1 — narrar o pacote
+
+Escolha um acesso HTTPS de uma estação a um portal remoto. Escreva, em ordem: DNS, decisão local/remota, ARP do próximo salto, quadro, pacote IP, conexão TCP, TLS e HTTP. Ao lado, indique equipamento e evidência observável. Compare com o roteiro da seção 1.
+
+### Atividade 2 — plano de sub-redes
+
+Parta de 10.50.0.0/24 e reserve, sem sobreposição:
+
+- /25 para usuários;
+- /27 para servidores;
+- /28 para administração;
+- /28 para backup.
+
+Uma solução válida:
+
+- usuários: 10.50.0.0/25, hosts 1–126, broadcast 127;
+- servidores: 10.50.0.128/27, hosts 129–158, broadcast 159;
+- administração: 10.50.0.160/28, hosts 161–174, broadcast 175;
+- backup: 10.50.0.176/28, hosts 177–190, broadcast 191.
+
+O espaço 192–255 permanece para expansão, desde que dividido corretamente.
+
+### Atividade 3 — matriz de firewall
+
+Monte tabela origem, destino, serviço, justificativa, responsável e validade. Comece negando tudo e acrescente somente os fluxos do estudo de caso. Evite regra baseada apenas em “é rede interna”.
+
+### Atividade 4 — separar dois incidentes
+
+Crie duas linhas do tempo: segurança e deadlock. Associe evidências exclusivas e compartilhadas. O objetivo é impedir que a equipe atribua todo timeout ao ransomware ou todo arquivo alterado ao deadlock.
+
+### Atividade 5 — restauração
+
+Escolha um RPO de 15 minutos e RTO de 2 horas. Descreva frequência de cópias, dependências, ordem de recuperação, validação de integridade e teste de negócio. Registre o que precisa estar fora do domínio administrativo comprometido.
+
+### Atividade 6 — recuperação do caderno de erros
+
+Selecione os cinco erros de maior prioridade. Sem consultar, explique cada um em 60 segundos. Consulte somente depois, marque lacunas e repita em formulação menor. Agende D1, D7 e D30.
+
+## Blocos 4–6 programados do Dia 6
+
+<a id="s2-d6-b4"></a>
+### Revisão programada 4 — Revisão mista
+
+**Função e matérias:** recuperar Redes, endereçamento, protocolos, Segurança e Sistemas Operacionais já ensinados nos Dias 1–5, sustentando as Extras 6.11–6.20. O bloco usa o mapa de revisão mista e não acrescenta teoria. **Entrega:** dez respostas sem consulta, classificadas por núcleo e vinculadas à seção de origem.
+
+<a id="s2-d6-b5"></a>
+### Revisão programada 5 — Português técnico
+
+**Função e matéria:** Português aplicado, sustentando as Extras 6.1–6.10. Leia tese, inferência, coesão, pontuação e reescrita em relatos técnicos. **Exemplo:** ping bem-sucedido não prova saúde da aplicação; o texto deve preservar essa ressalva. **Pegadinha:** vírgula entre sujeito e verbo ou extrapolação de dado técnico. **Entrega:** dez respostas justificadas pela regra linguística decisiva.
+
+<a id="s2-d6-b6"></a>
+### Recuperação programada 6 — Caderno de erros e fechamento
+
+**Função:** usar os resultados dos Blocos 4 e 5 para recuperar somente conteúdos já estudados; este bloco não introduz matéria nova. Classifique cada erro como enlace, camada, CIDR, protocolo, controle de segurança, continuidade, SO ou leitura linguística. **Entrega:** regra correta, contraexemplo, seção de origem, três perguntas de recuperação ativa e plano de nova tentativa em 24 horas e 7 dias.
+
 ## Revisão fixa do Dia 6
 
 Esta revisão sustenta as **20 questões extras do Dia 6**: 10 de Português e 10 de revisão mista dos conteúdos e dos erros dos Dias 1 a 5. Ela não cria um novo bloco técnico autônomo. Seu papel é recuperar regras, localizar rapidamente a teoria aprofundada e transformar erros da semana em contrastes verificáveis.
@@ -7501,46 +7548,6 @@ Pegadinhas finais do bloco:
 24. Isolar incidente não significa destruir evidência.
 25. No edital vigente, a RN CFA nº 671/2025 substitui a nº 640/2024.
 
-## Prática guiada
-
-### Atividade 1 — narrar o pacote
-
-Escolha um acesso HTTPS de uma estação a um portal remoto. Escreva, em ordem: DNS, decisão local/remota, ARP do próximo salto, quadro, pacote IP, conexão TCP, TLS e HTTP. Ao lado, indique equipamento e evidência observável. Compare com o roteiro da seção 1.
-
-### Atividade 2 — plano de sub-redes
-
-Parta de 10.50.0.0/24 e reserve, sem sobreposição:
-
-- /25 para usuários;
-- /27 para servidores;
-- /28 para administração;
-- /28 para backup.
-
-Uma solução válida:
-
-- usuários: 10.50.0.0/25, hosts 1–126, broadcast 127;
-- servidores: 10.50.0.128/27, hosts 129–158, broadcast 159;
-- administração: 10.50.0.160/28, hosts 161–174, broadcast 175;
-- backup: 10.50.0.176/28, hosts 177–190, broadcast 191.
-
-O espaço 192–255 permanece para expansão, desde que dividido corretamente.
-
-### Atividade 3 — matriz de firewall
-
-Monte tabela origem, destino, serviço, justificativa, responsável e validade. Comece negando tudo e acrescente somente os fluxos do estudo de caso. Evite regra baseada apenas em “é rede interna”.
-
-### Atividade 4 — separar dois incidentes
-
-Crie duas linhas do tempo: segurança e deadlock. Associe evidências exclusivas e compartilhadas. O objetivo é impedir que a equipe atribua todo timeout ao ransomware ou todo arquivo alterado ao deadlock.
-
-### Atividade 5 — restauração
-
-Escolha um RPO de 15 minutos e RTO de 2 horas. Descreva frequência de cópias, dependências, ordem de recuperação, validação de integridade e teste de negócio. Registre o que precisa estar fora do domínio administrativo comprometido.
-
-### Atividade 6 — recuperação do caderno de erros
-
-Selecione os cinco erros de maior prioridade. Sem consultar, explique cada um em 60 segundos. Consulte somente depois, marque lacunas e repita em formulação menor. Agende D1, D7 e D30.
-
 ## Checklist do Dia 6
 
 - [ ] Narrei uma requisição completa de DNS a aplicação.
@@ -7581,9 +7588,9 @@ Regra correta:
 Par que eu confundo:
 Evidência que separa os dois:
 Exemplo mínimo:
-Data D1:
-Data D7:
-Data D30:
+Data D+2:
+Data D+7:
+Data D+21:
 ~~~
 
 Crie ainda um “mapa de escalada”: camada física → enlace → IP → transporte → aplicação → processo → armazenamento → segurança. Posicione cada erro no mapa. Isso permite revisar pelo fluxo, não pela ordem em que o material foi escrito.

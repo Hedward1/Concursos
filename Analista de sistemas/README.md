@@ -9,13 +9,20 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `README.md`: visão geral do projeto.
 - `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
+- `planejamento/perfil_banca_consulplan.md`: contrato de aderência ao modo de cobrança do Instituto Consulplan para teoria, questões e simulados.
+- `questoes_oficiais/`: índices de questões reais da banca, resolvidas no caderno oficial e separadas do banco autoral.
 - `planejamento/padrao_semanal.md`: modelo oficial de criação, avaliação e aceite das semanas, com rubrica de 100 pontos, critérios eliminatórios e auditoria de teoria, exemplos, questões e comentários.
 - `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
 - `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
 - `semana_01/semana_01_estudo.md`: apostila teórica da Semana 1.
 - `semana_01/semana_01_questoes.md`: apostila de questões da Semana 1, com 300 questões principais e 120 questões extras de revisão fixa, totalizando 420 questões autorais no estilo Instituto Consulplan.
+- `semana_02/README.md`: ordem de uso e status da Semana 2.
+- `semana_02/semana_02_jornada.md`: cronograma operacional de 6h, pontos de parada e revisões espaçadas.
 - `semana_02/semana_02_estudo.md`: apostila teórica da Semana 2.
-- `semana_02/semana_02_questoes.md`: apostila de questões da Semana 2, com 300 questões principais e 120 questões extras de revisão fixa.
+- `semana_02/semana_02_dissertacoes.md`: progressão diária da discursiva e rubrica oficial.
+- `semana_02/semana_02_questoes.md`: 300 questões principais e 120 extras auditadas.
+- `semana_02/semana_02_super_simulado.md`: 60 questões suplementares, dez por dia.
+- `semana_02/relatorio_aceite.md`: inventário, auditoria e rubrica final da produção.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -41,15 +48,16 @@ A Semana 1 possui:
 
 ## Semana 2
 
-A Semana 2 está produzida e em migração para o padrão atual. Ela aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados, incluindo topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
+A Semana 2 foi produzida, recalibrada semanticamente e aprovada para execução no padrão atual. Ela aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados, incluindo topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
 
 Também possui:
 
 - 300 questões principais, distribuídas em 50 por dia;
 - 120 questões extras das revisões fixas de Legislação CRA/CFA, Administração Pública, RLM, Português e caderno de erros;
-- 420 questões autorais no total, todas com gabarito e comentário fundamentado na apostila.
+- 420 questões autorais no total, todas com gabarito, análise A-D e referência à apostila;
+- jornada executável, progressão discursiva e super simulado com 60 itens.
 
-As 120 extras tiveram a cobertura dos Blocos 4–6 auditada. A migração completa das 300 principais para níveis e comentários do padrão novo continua controlada por lotes de dois dias; por isso, a semana não deve ser tratada como integralmente aceita ainda.
+As 300 principais e as 120 extras tiveram cobertura, resposta única, dificuldade, alternativas, comentários e referências auditados. O material está pronto para uso, mas a execução do candidato, as correções e as revisões D+2/D+7/D+21 ainda precisam ser cumpridas antes de qualquer status `Concluído`.
 
 ## Organização
 
@@ -59,7 +67,7 @@ As versões antigas e materiais intermediários permanecem na pasta `old/`.
 
 ## Observações
 
-As questões da apostila são autorais e foram criadas no estilo de cobrança do Instituto Consulplan. Questões reais só devem ser usadas quando houver fonte confirmada.
+As questões da apostila são autorais e calibradas pelo perfil documentado do Instituto Consulplan. Itens reais permanecem identificados e separados no índice oficial e só são usados quando caderno, gabarito definitivo e situação dos recursos podem ser confirmados.
 
 O material foi preparado em Markdown para facilitar conversão futura para Google Docs ou PDF.
 

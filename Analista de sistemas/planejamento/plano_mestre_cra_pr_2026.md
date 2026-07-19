@@ -72,8 +72,8 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 - **Foco técnico:** redes de computadores; segurança da informação; sistemas operacionais avançado.
 - **Tópicos do edital:** topologias, componentes, meios de transmissão, LAN/WAN, ISO/OSI, TCP/IP, HTTP, SMTP, DHCP, DNS, LDAP, proxy, SNMP, switches, roteadores, gateways, redes sem fio, VPN, gerência de rede, ataques, firewall, DMZ, Windows/Linux, concorrência, sincronização, deadlock, dispositivos e sistemas de arquivos.
 - **Revisão fixa:** Legislação CRA/CFA, Português/interpretação e Administração Pública.
-- **Status:** em migração pelo padrão atual. A cobertura das 120 extras dos Blocos 4–6 foi verificada e a numeração dos blocos foi normalizada; permanece a migração geral dos níveis/comentários das 300 principais.
-- **Arquivos:** `semana_02/semana_02_estudo.md` e `semana_02/semana_02_questoes.md`.
+- **Status:** material aprovado para execução conforme `../semana_02/relatorio_aceite.md`; execução do candidato pendente.
+- **Arquivos:** `semana_02/README.md`, `semana_02/semana_02_jornada.md`, `semana_02/semana_02_estudo.md`, `semana_02/semana_02_dissertacoes.md`, `semana_02/semana_02_questoes.md`, `semana_02/semana_02_super_simulado.md` e `semana_02/relatorio_aceite.md`.
 - **Entrega:** redes de computadores, segurança de redes e sistemas operacionais avançados aprofundados; 300 questões principais e 120 extras.
 
 ### Semana 3 - 27/07/2026 a 01/08/2026
@@ -141,12 +141,12 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 | Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
@@ -258,7 +258,8 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [ ] Fonologia, encontros vocálicos, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia. Planejado para Semana 6.
 - [ ] Morfologia, estrutura e formação de palavras, classes de palavras e período composto. Planejado para Semana 6.
 - [ ] Reescrita, inferência, ambiguidade, conectores, uso dos porquês e linguagem administrativa. Reforço contínuo nas Semanas 2 a 9.
-- [ ] Discursiva completa com temas, estrutura, rubrica e autocorreção. Planejado para Semanas 6 a 8.
+- [x] Progressão discursiva com tema, modelo, treino diário, texto integral e rubrica oficial iniciada na Semana 2.
+- [ ] Novos temas completos, simulados e autocorreção acumulada. Planejado para Semanas 6 a 8.
 
 ### Administração Pública e Legislação Correlata
 
