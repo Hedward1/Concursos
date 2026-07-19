@@ -81,7 +81,9 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 - **Foco técnico:** banco de dados avançado, SQL, modelagem, normalização, transações e índices.
 - **Tópicos do edital:** administração de dados, independência de dados, dicionário de dados, arquitetura de BD, modelo relacional, álgebra relacional, modelagem, normalização, MER, mapeamento MER-relacional, SQL ANSI, Transact-SQL, SGBD, segurança, transações, concorrência, recuperação, integridade, stored procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL.
 - **Revisão fixa:** Legislação CRA/CFA, Português, RLM e primeira revisão curta de Informática: Google Documentos, Google Planilhas e conceitos básicos de internet.
-- **Entrega esperada:** Semana 3 com SQL prático, modelagem e questões com comandos reais.
+- **Status:** material aprovado para execução conforme `../semana_03/relatorio_aceite.md`; execução do candidato pendente.
+- **Arquivos:** `semana_03/README.md`, `semana_03/semana_03_jornada.md`, `semana_03/semana_03_estudo.md`, `semana_03/semana_03_dissertacoes.md`, `semana_03/semana_03_questoes.md`, `semana_03/semana_03_super_simulado.md` e `semana_03/relatorio_aceite.md`.
+- **Entrega:** Banco de Dados avançado, SQL, modelagem e BI cobertos; 300 questões principais, 120 extras e super simulado de 60 itens auditados.
 
 ### Semana 4 - 03/08/2026 a 08/08/2026
 
@@ -147,12 +149,12 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 | Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 4 | DML/DDL, Transact-SQL, views, procedures e triggers | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 5 | Transações, concorrência, recuperação, integridade e segurança | Legislação CRA/CFA + Português + Informática: internet | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 3 | Dia 6 | Índices, otimização, SQL Server, MySQL, PostgreSQL e BI | RLM + caderno de erros + revisão Google Docs/Planilhas/internet | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 4 | DML/DDL, Transact-SQL, views, procedures e triggers | Administração Pública + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 5 | Transações, concorrência, recuperação, integridade e segurança | Legislação CRA/CFA + Português + Informática: internet | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
+| Semana 3 | Dia 6 | Índices, otimização, SQL Server, MySQL, PostgreSQL e BI | RLM + caderno de erros + revisão Google Docs/Planilhas/internet | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 4 | Dia 1 | Requisitos, análise orientada a objetos e casos de uso | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
 | Semana 4 | Dia 2 | UML: classes, objetos, sequência, atividades e estados | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
 | Semana 4 | Dia 3 | Componentes, implementação e ferramentas de apoio | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
@@ -227,8 +229,8 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [x] Redes de computadores: conceitos, topologias, componentes, comunicação de dados, meios, LAN/WAN, ISO/OSI, TCP/IP, protocolos, equipamentos, Wi-Fi, VPN e gerência. Aprofundado na Semana 2.
 - [x] Segurança em redes: ataques, firewall, DMZ, políticas de acesso, resposta a incidentes e boas práticas. Aprofundado na Semana 2.
 - [x] Banco de dados base e SQL introdutório. Coberto na Semana 1.
-- [ ] Banco de dados avançado: administração de dados, independência, dicionário, arquitetura, modelo relacional, álgebra relacional, MER, normalização, mapeamento e BI. Planejado para Semana 3.
-- [ ] SQL avançado e SGBD: SQL ANSI, Transact-SQL, segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL. Planejado para Semana 3.
+- [x] Banco de dados avançado: administração de dados, independência, dicionário, arquitetura, modelo relacional, álgebra relacional, MER, normalização, mapeamento e BI. Coberto e auditado na Semana 3.
+- [x] SQL avançado e SGBD: SQL ANSI, Transact-SQL, segurança, transações, concorrência, recuperação, integridade, procedures, views, triggers, índices, otimização, transações distribuídas, SQL Server, MySQL e PostgreSQL. Coberto e auditado na Semana 3.
 - [ ] Algoritmos e estruturas de dados: complexidade, vetores, matrizes, listas, pilhas, árvores, B-trees, grafos, ordenação, pesquisa, hashing, arquivos e listas invertidas. Planejado para Semana 5.
 - [ ] Linguagens de programação: abstrações, passagem de parâmetros, escopo, tipos, vinculação, verificação de tipos, tipificação forte, POO, eventos e exceções. Planejado para Semana 5.
 - [ ] Integração de sistemas: XML, Web Services, WSDL, UDDI, SOAP e RESTful Web Services. Planejado para Semana 5.
@@ -283,15 +285,15 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 
 - [ ] Microcomputadores PC-hardware. Introdução curta na Semana 5, questões e mapa de erros na Semana 7, revisão final na Semana 8.
 - [ ] Windows. Contato técnico em Sistemas Operacionais na Semana 2, revisão curta de uso operacional na Semana 5, questões e mapa de erros na Semana 7, revisão final na Semana 8.
-- [ ] Google Documentos. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
-- [ ] Google Planilhas. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
-- [ ] Internet. Revisão curta na Semana 3, questões na Semana 7, revisão final na Semana 8.
+- [ ] Google Documentos. Primeira revisão curta coberta na Semana 3; questões na Semana 7 e revisão final na Semana 8.
+- [ ] Google Planilhas. Primeira revisão curta coberta na Semana 3; questões na Semana 7 e revisão final na Semana 8.
+- [ ] Internet. Primeira revisão curta coberta na Semana 3; questões na Semana 7 e revisão final na Semana 8.
 - [ ] Ferramentas de reunião: Teams, Google Meet e Zoom. Revisão curta na Semana 5, questões na Semana 7, revisão final na Semana 8.
 - [ ] Equipamentos e operacionalização de microcomputadores. Revisão curta na Semana 5, questões na Semana 7, revisão final na Semana 8.
 
 ## Regra de avanço semanal
 
-Uma semana só deve ser considerada concluída quando:
+Uma semana só deve ser considerada **material aprovado para execução** quando:
 
 - a apostila de estudo estiver criada e revisada;
 - a apostila de questões tiver questões principais e extras;
@@ -304,6 +306,8 @@ Uma semana só deve ser considerada concluída quando:
 - a avaliação prevista em `planejamento/padrao_semanal.md` atingir pelo menos 90/100, sem falha eliminatória;
 - o README estiver consistente com os arquivos mais recentes;
 - o material estiver salvo no repositório.
+
+O status **Concluído** exige, além desse aceite de produção, a execução real pelo candidato: estudo e filas D0, correção integral, revisões D+2/D+7/D+21, atividade discursiva, simulado previsto e registro dos resultados e erros. Material apenas produzido e auditado permanece como **Material aprovado para execução**.
 
 ## Observação final
 
