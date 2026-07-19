@@ -23,6 +23,13 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `semana_02/semana_02_questoes.md`: 300 questões principais e 120 extras auditadas.
 - `semana_02/semana_02_super_simulado.md`: 60 questões suplementares, dez por dia.
 - `semana_02/relatorio_aceite.md`: inventário, auditoria e rubrica final da produção.
+- `semana_03/README.md`: ordem de uso e status da Semana 3.
+- `semana_03/semana_03_jornada.md`: cronograma operacional de 6h, filas concorrentes e revisões espaçadas.
+- `semana_03/semana_03_estudo.md`: apostila de Banco de Dados avançado, SQL e BI.
+- `semana_03/semana_03_dissertacoes.md`: progressão diária da discursiva e rubrica oficial.
+- `semana_03/semana_03_questoes.md`: 300 questões principais e 120 extras auditadas.
+- `semana_03/semana_03_super_simulado.md`: 60 questões suplementares, dez por dia.
+- `semana_03/relatorio_aceite.md`: inventário, auditorias cruzadas e rubrica final da produção.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -59,9 +66,17 @@ Também possui:
 
 As 300 principais e as 120 extras tiveram cobertura, resposta única, dificuldade, alternativas, comentários e referências auditados. O material está pronto para uso, mas a execução do candidato, as correções e as revisões D+2/D+7/D+21 ainda precisam ser cumpridas antes de qualquer status `Concluído`.
 
+## Semana 3
+
+A Semana 3 foi produzida e aprovada para execução com Banco de Dados avançado, modelo e álgebra relacional, MER, normalização, SQL ANSI e Transact-SQL, views, procedures, triggers, transações, concorrência, recuperação, integridade, segurança, índices, otimização, SQL Server, MySQL, PostgreSQL e Business Intelligence.
+
+O lote contém 300 principais, 120 extras e um super simulado de 60 itens. As 420 questões do banco receberam leitura semântica em três lotes; dois gabaritos incorretos foram corrigidos antes do aceite, os níveis foram recalibrados sem cotas artificiais e os itens dependentes de produto passaram a indicar dialeto ou versão. A amostra oficial separada usa duas questões válidas e uma anulada do TJMA 2024 para treino no PDF original.
+
+O [relatório de aceite](semana_03/relatorio_aceite.md) registra nota 98/100 e zero falha eliminatória. O status é **Material aprovado para execução**; D0, D+2, D+7, D+21, discursiva e super simulado ainda dependem da execução do candidato.
+
 ## Organização
 
-Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, o planejamento em `planejamento/` e o edital em `edital/`.
+Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, `semana_02/` e `semana_03/`; o planejamento fica em `planejamento/` e o edital em `edital/`.
 
 As versões antigas e materiais intermediários permanecem na pasta `old/`.
 
