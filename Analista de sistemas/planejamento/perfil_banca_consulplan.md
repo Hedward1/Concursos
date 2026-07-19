@@ -11,7 +11,7 @@ Questões oficiais podem integrar a rotina por referência ao caderno original. 
 ## Base e limites da calibração
 
 - edital consolidado do CRA-PR 2026 e matriz de quatro alternativas A-D;
-- provas públicas da Instituto Consulplan para cargos de TI, quando a origem e o caderno puderem ser confirmados;
+- provas públicas do Instituto Consulplan para cargos de TI, quando a origem e o caderno puderem ser confirmados;
 - questões reais usadas apenas para análise agregada de forma, comando, contexto e operação cognitiva;
 - documentação técnica primária para validar o conteúdo das questões autorais;
 - data de revisão deste perfil: 19/07/2026.
@@ -29,9 +29,9 @@ O perfil deve ser recalibrado quando surgir prova oficial mais próxima do cargo
 7. **Cálculo executável:** CIDR, capacidade, desempenho, cardinalidade ou custo assintótico devem admitir resolução manual compatível com o tempo de prova.
 8. **Negação visível:** comandos com `INCORRETA`, `EXCETO` ou equivalentes devem usar destaque e não depender de dupla negação artificial.
 
-## Distribuição operacional por 50 questões principais de cada dia
+## Matriz inicial de planejamento por 50 questões principais
 
-O padrão do projeto permanece:
+Na produção inicial, o projeto usa a seguinte referência:
 
 | Nível | Quantidade | Função predominante |
 |---|---:|---|
@@ -39,7 +39,7 @@ O padrão do projeto permanece:
 | Difícil | 20 | cenário, múltiplas condições e comparação técnica |
 | Muito difícil | 10 | integração, exceção relevante e decisão composta |
 
-Essa é uma matriz pedagógica do projeto, não uma alegação de distribuição oficial fixa da banca. O banco adicional de 20 itens usa 8/8/4.
+Essa é uma matriz pedagógica de partida, não uma alegação de distribuição oficial fixa da banca nem uma cota para o aceite. O banco adicional de 20 itens parte de 8/8/4. Depois da leitura semântica individual, o rótulo final deve refletir o esforço cognitivo real; qualquer desvio da matriz é registrado com os IDs e motivos, sem inflar dificuldade para fechar contagem.
 
 ## Formatos a distribuir no banco
 
@@ -79,7 +79,7 @@ Antes do aceite de cada lote, registrar:
 - análise de comprimento das alternativas;
 - confirmação de que todas as referências apontam para teoria anterior;
 - leitura individual de todas as Muito difíceis e dos itens sinalizados;
-- comparação qualitativa com amostra oficial identificada, sem reproduzir texto;
+- comparação qualitativa com amostra oficial identificada, sem reproduzir texto; quando o conjunto verificável não estiver disponível, registrar a ausência e usar `calibração provisória`;
 - lista de questões oficiais indicadas, com origem, página e situação do gabarito confirmadas;
 - lista de ajustes realizados por aderência ao perfil.
 

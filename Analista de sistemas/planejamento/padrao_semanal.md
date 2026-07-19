@@ -13,7 +13,7 @@ Toda apostila deve passar pelo mesmo ciclo de qualidade:
 5. **Produzir as questões:** cobrar apenas conteúdos ensinados ou explicitamente classificados como revisão de semana anterior.
 6. **Comentar as respostas:** explicar a correta, cada alternativa errada, o conceito, a pegadinha e o caminho mental para chegar à resposta.
 7. **Auditar:** validar estrutura, conteúdo, fontes, gabarito, referências e alinhamento entre os dois arquivos.
-8. **Aprovar:** somente considerar a semana concluída quando não houver falha eliminatória e a nota da rubrica for igual ou superior a 90 pontos.
+8. **Aprovar:** somente considerar o material aprovado para execução quando não houver falha eliminatória e a nota da rubrica for igual ou superior a 90 pontos. O status `Concluído` depende também da execução pelo candidato.
 
 ### Critérios eliminatórios
 
@@ -42,7 +42,7 @@ A ocorrência de qualquer item abaixo reprova o material, independentemente da n
 | Cobertura e profundidade da teoria | 20 | Conceitos, funcionamento, diferenças, aplicação, memorização e pegadinhas suficientes para resolver as questões. |
 | Exemplos e prática guiada | 15 | No mínimo dois exemplos resolvidos por tópico importante, com raciocínio, solução e erro comum. |
 | Alinhamento entre estudo e questões | 15 | Toda questão aponta para seção real da teoria; nenhuma cobrança órfã; distribuição coerente com o dia. |
-| Qualidade das questões | 15 | Enunciados claros, níveis calibrados, distribuição 20/20/10 e 8/8/4, distratores plausíveis, variedade e apenas uma resposta correta. |
+| Qualidade das questões | 15 | Enunciados claros, níveis calibrados a partir da matriz inicial 20/20/10 e 8/8/4 ou exceção semântica documentada, distratores plausíveis, variedade e apenas uma resposta correta. |
 | Qualidade dos comentários | 15 | Correta justificada; A–D analisadas; conceito, pegadinha, estratégia de resolução e referência precisa. |
 | Organização e uso pedagógico | 5 | Cronograma, títulos, tabelas, checklist, revisão ativa e navegação consistentes. |
 | **Total** | **100** | **Aprovação mínima: 90 pontos e nenhuma falha eliminatória.** |
@@ -147,7 +147,7 @@ Antes da produção, a leitura da seção indicada deve ser suficiente para reso
 
 ## Super simulado semanal
 
-Ao concluir os seis dias, prepare um arquivo próprio chamado `semana_XX/semana_XX_super_simulado.md`, com **60 questões inéditas**: dez questões integradoras por dia, cobrindo também as revisões fixas quando pertinentes. Salvo justificativa registrada no plano da semana, distribua 24 questões médias, 24 difíceis e 12 muito difíceis. O simulado deve ser resolvido sem consulta, em tempo contínuo, e conter gabarito, nível, comentário individual de A–D, conceito, pegadinha, raciocínio e referência à teoria. Ele é material suplementar e não altera o total oficial de 420 itens da semana.
+Ao concluir os seis dias, prepare um arquivo próprio chamado `semana_XX/semana_XX_super_simulado.md`, com **60 questões inéditas**: dez questões integradoras por dia, cobrindo também as revisões fixas quando pertinentes. Use 24 médias, 24 difíceis e 12 muito difíceis como matriz inicial; a auditoria individual pode recalibrar a distribuição, desde que registre cada alteração e não infle o nível. O simulado deve ser resolvido sem consulta, em tempo contínuo, e conter gabarito, nível, comentário individual de A–D, conceito, pegadinha, raciocínio e referência à teoria. Ele é material suplementar e não altera o total oficial de 420 itens da semana.
 
 ## Estrutura mínima da apostila de questões
 
@@ -361,7 +361,7 @@ Ao finalizar, registre no fim da apostila de estudo ou em relatório de revisão
 | Comentários completos | 420 |
 | Referências válidas | 420 |
 | Super simulado | 60 |
-| Médio/Difícil/Muito difícil — super | matriz aplicada (padrão: 24/24/12) |
+| Médio/Difícil/Muito difícil — super | distribuição final auditada; matriz inicial: 24/24/12 |
 | Alternativas E | 0 |
 | Questões órfãs de teoria | 0 |
 | Gabaritos divergentes | 0 |
@@ -397,4 +397,4 @@ Neste ciclo de migração, a ordem é: padrões semanais; Semana 2 de Analista e
 ## Aplicação às semanas existentes
 
 - **Semana 1:** a estrutura de 300 principais, 120 extras e 420 comentários está completa. As 80 extras dos Blocos 4–6 nos Dias 3–6 permanecem aceitas no recorte da auditoria anterior. As 100 principais dos Dias 3–4 receberam auditoria semântica individual, teoria anterior suficiente, uso operacional e referência precisa; seus níveis foram recalibrados com exceção documentada no relatório do lote. Os Dias 1–2 permaneceram intactos e ainda não possuem classificação de nível; as 100 principais dos Dias 5–6 continuam fora deste aceite. Por isso, a semana conserva **conformidade parcial** fora dos recortes já auditados.
-- **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências está presente. As 120 extras dos Blocos 4–6 foram auditadas, receberam os seis metadados obrigatórios e níveis na matriz 48/48/24; os blocos foram normalizados, os comentários do Dia 6 foram individualizados e as divergências de cabeçalho da Questão 1 do Dia 1 e da Questão 3 do Dia 2 foram corrigidas. As 300 principais continuam no formato legado, sem níveis, e serão migradas em três lotes de dois dias; portanto, a semana segue **em migração** fora do recorte B4–B6 aceito.
+- **Semana 2:** a estrutura de 300 principais, 120 extras, 420 gabaritos, 420 comentários e 420 referências foi migrada e auditada integralmente. As 300 principais e as 120 extras receberam leitura semântica individual, níveis recalibrados, usos e referências; 144 principais e 65 extras foram reformuladas, quatro principais receberam aprofundamento multifiltro e o super simulado foi auditado com dez itens por dia. A distribuição final e as evidências estão em `../semana_02/relatorio_aceite.md`. O lote está **aprovado para execução**, com execução do candidato pendente.

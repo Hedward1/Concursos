@@ -28,4 +28,4 @@ Cada índice semanal deve usar a tabela:
 - correção pelo gabarito definitivo e registro no caderno de erros;
 - reabertura D+7 com novo item oficial ou autoral equivalente, sem memorizar apenas a alternativa.
 
-Os índices das Semanas 2 e 3 serão criados durante a respectiva auditoria de produção.
+Cada índice semanal deve ser criado ou atualizado durante a respectiva auditoria de produção, mesmo quando o resultado seja a ausência documentada de item oficial verificável.

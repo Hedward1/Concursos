@@ -15,7 +15,7 @@ Materiais de planejamento, teoria, questões e simulados para o cargo de Analist
 - [Visão geral da trilha](<Analista de sistemas/README.md>)
 - [Planejamento](<Analista de sistemas/planejamento/plano_mestre_cra_pr_2026.md>)
 - [Semana 1](<Analista de sistemas/semana_01/semana_01_estudo.md>)
-- [Semana 2](<Analista de sistemas/semana_02/semana_02_estudo.md>)
+- [Semana 2](<Analista de sistemas/semana_02/README.md>)
 
 ### Administrador
 

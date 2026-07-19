@@ -30,7 +30,7 @@ Todo material deve ser calibrado pelo modo de cobrança da banca Instituto Consu
 - atualizar o perfil quando houver nova prova oficial comparável;
 - reprovar lote com questões genéricas, monotônicas ou incompatíveis com o perfil documentado.
 
-Para Analista de Sistemas, consultar também o [Perfil de cobrança da Instituto Consulplan](<Analista de sistemas/planejamento/perfil_banca_consulplan.md>).
+Para Analista de Sistemas, consultar também o [Perfil de cobrança do Instituto Consulplan](<Analista de sistemas/planejamento/perfil_banca_consulplan.md>).
 
 ### Questões oficiais da banca
 
@@ -142,7 +142,7 @@ Uma semana futura só pode ser produzida depois de verificar:
 - os itens literais ainda não cobertos na matriz da trilha;
 - as revisões D+2, D+7 e D+21 que vencem naquela semana;
 - as pendências da semana anterior;
-- o status real: `Planejado`, `Em produção`, `Material aprovado para execução` ou `Concluído`;
+- o status real: `Planejado`, `Em produção`, `Revisão obrigatória`, `Material aprovado para execução` ou `Concluído`; `Revisão obrigatória` identifica lote com falha ainda não sanada;
 - a existência de fonte oficial atualizada para normas, jurisprudência e ferramentas sujeitas a mudança.
 
 `Material aprovado para execução` significa que o arquivo foi produzido e auditado. `Concluído` exige também execução do candidato, correções, revisões, discursiva e aceite operacional.
@@ -222,10 +222,10 @@ Preencher mentalmente ou no relatório do lote:
 | Como será medido o domínio? | Essenciais, confiança, correção e produto prático |
 | Qual é o critério de aceite? | padrão da trilha, sem falha eliminatória |
 
-## Estado-base registrado em 19/07/2026
+## Estado-base atualizado após a auditoria reparadora de 19/07/2026
 
 - **Administrador:** Semana 1 produzida e aprovada para execução; Semana 2 é o próximo lote planejado.
-- **Analista de Sistemas:** Semana 1 existente com conformidade parcial conforme relatórios; Semana 2 produzida e aprovada para execução em 19/07/2026.
+- **Analista de Sistemas:** Semana 1 existente com conformidade parcial conforme relatórios; Semana 2 produzida, recalibrada semanticamente e aprovada para execução em 19/07/2026, com execução do candidato pendente.
 - **Direito:** Semana 1 existente em formato legado e sujeita à migração/auditoria do padrão jurídico atual; Semana 2 permanece planejada.
 
 Este estado deve ser atualizado somente com evidência nos arquivos e relatórios. Nunca inferir que estudo foi executado apenas porque o material está pronto.

@@ -7,4 +7,4 @@ Antes de criar, ampliar, revisar ou auditar qualquer material semanal, leia `GUI
 - Use os Dias 3 a 6 da Semana 1 de Administrador como referência estrutural, sem transplantar conteúdo entre cargos.
 - Não altere material aprovado sem conferir o relatório de aceite e registrar nova auditoria proporcional à mudança.
 - Não trate `Material aprovado para execução` como `Concluído`.
-- Calibre teoria, questões e simulados pelo perfil documentado da Instituto Consulplan; nunca use “estilo da banca” para ampliar o edital nem copie questão real.
+- Calibre teoria, questões e simulados pelo perfil documentado do Instituto Consulplan; nunca use “estilo da banca” para ampliar o edital nem reproduza questão real no banco autoral. Quando caderno, gabarito definitivo e situação dos recursos forem verificáveis, indique o item no índice oficial e resolva-o no PDF original.

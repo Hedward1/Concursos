@@ -1,18 +1,18 @@
-# Apostila de Questões - Semana 2 - migração para o padrão atual
+# Apostila de Questões - Semana 2
 
 ## CRA-PR 2026 - Analista de Sistemas
 
 Arquivo de questões para acompanhar a `semana_02_estudo.md`.
 
-**Status:** Em migração. Consulte `relatorio_migracao.md`; a presença dos metadados não substitui a auditoria semântica nem autoriza o aceite integral.
+**Status:** Material aprovado para execução. A auditoria semântica e estrutural está registrada em `relatorio_aceite.md` e pode ser reproduzida com `python tools/audit_semana02.py`. A execução pelo candidato permanece pendente.
 
-**Critério de autoria:** todas as 300 questões principais e 120 questões extras desta apostila são autorais e foram elaboradas no estilo de cobrança do Instituto Consulplan. Provas públicas da banca foram consultadas apenas como referência de estilo. Nenhuma questão real foi reproduzida sem fonte confirmada.
+**Critério de autoria:** as 300 questões principais e as 120 extras são autorais e foram calibradas pelo perfil documentado do Instituto Consulplan. Nenhuma questão real foi reproduzida; o índice separado registra a busca e o grau de confirmação das amostras oficiais.
 
 **Formato:** todas as questões têm quatro alternativas, de A) a D), e exatamente uma resposta correta, em conformidade com o edital do CRA-PR 2026.
 
 **Total planejado:** 420 questões, sendo 300 principais (50 por dia) e 120 extras de revisão fixa (20 por dia).
 
-**Nível:** combinação de itens fáceis para fixação, predominância de dificuldade média e parcela difícil de integração. Os formatos incluem conceito direto, cenário prático, assertivas, alternativa correta/incorreta, comparação, cálculo CIDR, análise de incidente e interpretação de comandos.
+**Nível:** 252 itens Médios, 156 Difíceis e 12 Muito difíceis, conforme o esforço cognitivo verificado individualmente, sem preenchimento artificial de cotas. Os formatos incluem conceito aplicado, cenário prático, assertivas, alternativa correta/incorreta, comparação, cálculo CIDR, análise de incidente e interpretação de comandos.
 
 **Correção comentada:** cada comentário identifica a resposta, analisa as quatro alternativas, explicita conceito, pegadinha e estratégia de resolução e remete à subseção correspondente da apostila teórica.
 
@@ -33,7 +33,7 @@ Arquivo de questões para acompanhar a `semana_02_estudo.md`.
 - RN CFA nº 651/2024 - Regimento Interno do CRA-PR: https://documentos.cfa.org.br/?a=show&c=documento&id=955
 - RN CFA nº 671/2025 - Código de Ética: https://documentos.cfa.org.br/?a=show&c=documento&id=1038
 - Constituição Federal, art. 37: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
-- Provas públicas do Instituto Consulplan para cargos de Analista de Sistemas/TI foram usadas somente como referência de estilo, sem reprodução textual.
+- O [índice de questões oficiais](../questoes_oficiais/semana_02.md) documenta a amostra comparável em acompanhamento e a ausência, nesta versão, do conjunto verificável de caderno, gabarito definitivo e situação dos recursos.
 
 ---
 
@@ -119,9 +119,9 @@ III. Enlace Ethernet comutado em que os lados transmitem simultaneamente: full-d
 
 Está correto o que se afirma em:
 
-A) I, apenas.
+A) I, II e III.
 B) II e III, apenas.
-C) I, II e III.
+C) I, apenas.
 D) I e II, apenas.
 
 ### S2D1Q006 — Largura de banda, throughput e goodput
@@ -186,7 +186,7 @@ D) Jitter e perda são sinônimos, pois ambos medem a capacidade nominal do enla
 
 ### S2D1Q010 — Topologia física em contraste com topologia lógica
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -194,8 +194,8 @@ D) Jitter e perda são sinônimos, pois ambos medem a capacidade nominal do enla
 
 Quatro computadores estão ligados individualmente a um hub central. Quanto às topologias física e lógica, essa rede apresenta:
 
-A) malha física completa e estrela lógica com enlaces seletivos.
-B) estrela física e comportamento lógico de meio compartilhado semelhante a barramento.
+A) estrela física e comportamento lógico de meio compartilhado semelhante a barramento.
+B) malha física completa e estrela lógica com enlaces seletivos.
 C) barramento físico e anel lógico com passagem obrigatória de token.
 D) estrela física e lógica comutada, pois a presença de um equipamento central definiria ambos os comportamentos.
 
@@ -239,14 +239,14 @@ D) A topologia híbrida combina duas ou mais organizações topológicas.
 
 Determinada tecnologia conecta conceitualmente cada nó ao seguinte, formando um caminho fechado, e pode empregar passagem de token para ordenar o acesso. Trata-se de topologia em:
 
-A) barramento.
-B) anel.
-C) estrela.
-D) árvore comutada.
+A) topologia em barramento.
+B) topologia em anel.
+C) topologia em estrela.
+D) topologia em árvore.
 
 ### S2D1Q014 — Número de enlaces em malha completa
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -270,28 +270,31 @@ D) 21.
 Sobre malha completa e malha parcial, assinale a alternativa correta.
 
 A) Na malha parcial, cada nó possui ligação direta com os demais, mas apenas um enlace fica ativo.
-B) Na malha completa, todos os pares se ligam diretamente; na parcial, apenas alguns pares possuem ligação direta.
+B) A malha parcial trabalha com caminho único e, por isso, dispensa mecanismos de encaminhamento.
 C) A malha completa utiliza menos portas que uma estrela com a mesma quantidade de nós.
-D) A malha parcial trabalha com caminho único e, por isso, dispensa mecanismos de encaminhamento.
+D) Na malha completa, todos os pares se ligam diretamente; na parcial, apenas alguns pares possuem ligação direta.
 
-### S2D1Q016 — Topologia híbrida
+### S2D1Q016 — Combinação de topologias no acesso e no núcleo
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias).
+**Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias), especialmente o trecho que define a topologia híbrida pela combinação de organizações distintas.
 
-Uma organização adota estrelas de acesso em cada andar e interliga os switches centrais por enlaces redundantes que formam outra organização topológica. A rede resultante é classificada como:
+Em cada andar de um edifício, as estações formam uma estrela em torno de um switch de acesso. No núcleo, os switches centrais possuem enlaces redundantes organizados como malha parcial. Considerando a disposição física da rede como um todo, assinale a classificação correta.
 
-A) híbrida.
-B) malha parcial, pois a redundância do núcleo também define a topologia dos enlaces de acesso.
-C) estrela pura, pois a convergência nos andares impede outra classificação para o conjunto.
-D) anel, pois a interligação redundante entre equipamentos centrais determina um único ciclo para o conjunto.
+A) Estrela, pois a existência de um switch por andar impede outra classificação para a rede completa.
+
+B) Malha parcial, pois a redundância entre os switches centrais também transforma os acessos em malha.
+
+C) Híbrida, pois combina estrelas nos andares com uma malha parcial entre os switches centrais.
+
+D) Anel, pois qualquer caminho redundante entre switches centrais determina um circuito fechado único.
 
 ### S2D1Q017 — Independência relativa entre topologia física e lógica
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -307,8 +310,8 @@ Está correto o que se afirma em:
 
 A) I, apenas.
 B) II e III, apenas.
-C) I e III, apenas.
-D) I, II e III.
+C) I, II e III.
+D) I e III, apenas.
 
 ### S2D1Q018 — Rede de área pessoal
 
@@ -327,7 +330,7 @@ D) PAN.
 
 ### S2D1Q019 — WLAN como LAN independente do acesso à Internet
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -337,8 +340,8 @@ Durante uma falha do provedor, estações associam-se ao AP, obtêm acesso à im
 
 A) O acesso à impressora comprova a conectividade local e também confirma o funcionamento do enlace com o provedor.
 B) A falha externa altera o escopo da WLAN para PAN enquanto os clientes permanecem associados ao mesmo AP.
-C) A comunicação local demonstra que o AP roteou entre sub-redes, ainda que clientes e impressora estejam na mesma VLAN.
-D) O caminho local da WLAN pode funcionar sem Internet; o diagnóstico deve prosseguir no gateway, no enlace WAN ou no provedor.
+C) O caminho local da WLAN pode funcionar sem Internet; o diagnóstico deve prosseguir no gateway, no enlace WAN ou no provedor.
+D) A comunicação local demonstra que o AP roteou entre sub-redes, ainda que clientes e impressora estejam na mesma VLAN.
 
 ### S2D1Q020 — Rede de área metropolitana
 
@@ -357,7 +360,7 @@ D) barramento, pois utiliza infraestrutura compartilhada.
 
 ### S2D1Q021 — Rede de longa distância
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -372,7 +375,7 @@ D) MAN, porque pertencer a uma única organização prevalece sobre a distribui�
 
 ### S2D1Q022 — Meios guiados e não guiados
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -387,13 +390,13 @@ III. A comunicação por rádio é meio não guiado.
 Está correto o que se afirma em:
 
 A) I, apenas.
-B) I, II e III.
-C) II e III, apenas.
+B) II e III, apenas.
+C) I, II e III.
 D) I e III, apenas.
 
 ### S2D1Q023 — Par trançado UTP e versões blindadas
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -423,7 +426,7 @@ D) fibra óptica projetada para o enlace, pois não conduz o sinal como corrente
 
 ### S2D1Q025 — Fibra monomodo e multimodo
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -433,12 +436,12 @@ A respeito de fibras monomodo e multimodo, assinale a alternativa correta.
 
 A) Fibra multimodo é a opção indicada para longas distâncias, sem depender dos transceptores empregados.
 B) Fibra monomodo utiliza vários modos de propagação e, por definição, limita-se a enlaces internos curtos.
-C) Monomodo favorece distâncias maiores; multimodo é comum em enlaces internos, conforme o projeto.
-D) Ambas conduzem sinais elétricos e, por isso, sofrem a mesma interferência de um cabo de cobre.
+C) Ambas conduzem sinais elétricos e, por isso, sofrem a mesma interferência de um cabo de cobre.
+D) Monomodo favorece distâncias maiores; multimodo é comum em enlaces internos, conforme o projeto.
 
 ### S2D1Q026 — Cabo coaxial
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -446,10 +449,10 @@ D) Ambas conduzem sinais elétricos e, por isso, sofrem a mesma interferência d
 
 O meio guiado formado por condutor central, isolante e blindagem, historicamente empregado em formas de Ethernet em barramento, é o cabo:
 
-A) de fibra multimodo.
-B) de par trançado UTP.
-C) coaxial.
-D) óptico monomodo.
+A) cabo de fibra multimodo.
+B) cabo coaxial blindado.
+C) cabo de par trançado UTP.
+D) cabo de fibra monomodo.
 
 ### S2D1Q027 — Desempenho de comunicação sem fio
 
@@ -461,14 +464,14 @@ D) óptico monomodo.
 
 Em uma sala, os clientes exibem sinal Wi-Fi forte, mas a vazão é baixa nos horários de maior uso. A explicação tecnicamente adequada é:
 
-A) A intensidade do sinal basta para inferir goodput máximo, tornando suspeita a medição de baixa vazão.
+A) Interferência, contenção e densidade de clientes podem reduzir o throughput mesmo com sinal forte.
 B) Cada cliente recebe um canal exclusivo, razão pela qual a densidade de estações não reduz a vazão.
 C) A distância explica a baixa vazão, enquanto canais, obstáculos e interferência não alteram o resultado.
-D) Interferência, contenção e densidade de clientes podem reduzir o throughput mesmo com sinal forte.
+D) A intensidade do sinal basta para inferir goodput máximo, tornando suspeita a medição de baixa vazão.
 
 ### S2D1Q028 — Placa ou interface de rede
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -483,7 +486,7 @@ D) Separar os domínios de broadcast associados ao host sem exercer roteamento.
 
 ### S2D1Q029 — Multiplicidade de interfaces e alcance do endereço MAC
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -498,7 +501,7 @@ D) As interfaces de um mesmo servidor devem pertencer à mesma sub-rede e ao mes
 
 ### S2D1Q030 — Repetidor
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -513,7 +516,7 @@ D) repetidor.
 
 ### S2D1Q031 — Funcionamento do hub Ethernet clássico
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -572,14 +575,14 @@ D) substituir o endereço IP do pacote para permitir comunicação entre redes p
 
 Um switch recebe um quadro unicast cujo MAC de destino ainda não consta de sua tabela. Todos os enlaces pertencem à mesma VLAN. O switch deve:
 
-A) aprender o MAC de origem e inundar o quadro pelas portas pertinentes, exceto a porta de entrada.
-B) converter o quadro em broadcast, alterando o endereço MAC de destino para todos os bits iguais a 1.
+A) converter o quadro em broadcast, alterando o endereço MAC de destino para todos os bits iguais a 1.
+B) aprender o MAC de origem e inundar o quadro pelas portas pertinentes, exceto a porta de entrada.
 C) tratar o destino desconhecido como remoto e encaminhar o quadro ao roteador da VLAN.
 D) manter o quadro retido até que o destino se registre por um protocolo de controle da tabela MAC.
 
 ### S2D1Q035 — Filtragem de quadro na própria porta de entrada
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -594,7 +597,7 @@ D) enviá-lo ao gateway padrão com base apenas na ausência de outra porta de s
 
 ### S2D1Q036 — Propagação de broadcast por switch de camada 2
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -617,9 +620,9 @@ D) descarta o quadro porque switches não encaminham broadcasts.
 
 Sobre portas de switch e colisões em Ethernet moderna, assinale a alternativa correta.
 
-A) A porta isola o segmento; em full-duplex não há colisões, embora a contagem didática preserve essa segmentação.
+A) A ausência de colisões reúne as VLANs em um domínio de broadcast comum ao equipamento.
 B) Portas na mesma VLAN compartilham o meio half-duplex e o domínio de colisão, como em um hub.
-C) A ausência de colisões reúne as VLANs em um domínio de broadcast comum ao equipamento.
+C) A porta isola o segmento; em full-duplex não há colisões, embora a contagem didática preserve essa segmentação.
 D) Full-duplex permite transmissão em apenas um sentido por vez para prevenir colisões.
 
 ### S2D1Q038 — Diferença entre switch de camada 2 e switch multicamada
@@ -639,7 +642,7 @@ D) Desativar o roteamento de um switch multicamada não o transforma em hub; a c
 
 ### S2D1Q039 — Encaminhamento IP entre redes
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -669,7 +672,7 @@ D) gateway é contextual: pode indicar próximo salto ou intermediário que trad
 
 ### S2D1Q041 — Access point em modo bridge
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -684,7 +687,7 @@ D) integra as estações sem fio à rede de distribuição e não precisa exerce
 
 ### S2D1Q042 — Relação entre AP, SSID, VLAN e domínio de broadcast
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -705,7 +708,7 @@ D) I, II e III.
 
 ### S2D1Q043 — Contenção e acesso ao meio sem fio
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -720,7 +723,7 @@ D) A VLAN reserva intervalos exclusivos de transmissão e afasta a contenção n
 
 ### S2D1Q044 — Equipamento doméstico multifuncional
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -735,7 +738,7 @@ D) NAT e DHCP podem ser serviços adicionais do produto, sem definir isoladament
 
 ### S2D1Q045 — Contagem de broadcast e ressalva do full-duplex
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -750,7 +753,7 @@ D) Existem seis domínios de broadcast, pois a porta ligada ao roteador não par
 
 ### S2D1Q046 — VLAN e roteamento inter-VLAN
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -765,7 +768,7 @@ D) a criação de VLANs segmenta os enlaces, mas preserva um domínio de broadca
 
 ### S2D1Q047 — Contagem didática de segmentos de colisão e domínio de broadcast
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -778,30 +781,35 @@ B) 4 e 1.
 C) 6 e 4.
 D) 7 e 2.
 
-### S2D1Q048 — Independência lógica das VLANs no mesmo equipamento físico
+### S2D1Q048 — VLAN, bridge sem fio, roteamento e contenção
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
 
-**Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
+**Referência:** [Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap) e [Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios), nos trechos sobre bridge, SSID/VLAN, roteamento e contenção Wi-Fi.
 
-Um switch mantém usuários na VLAN 30 e servidores na VLAN 40. Um equipamento multicamada realiza a comunicação controlada entre elas. Analise as afirmativas.
+Um access point em bridge mapeia o SSID `Corporativo` para a VLAN 30 e o SSID `Visitantes` para a VLAN 40. Estações cabeadas também usam a VLAN 30, os enlaces Ethernet são full-duplex e uma política no roteador bloqueia o tráfego entre as duas VLANs. Analise as afirmações.
 
-I. Cada VLAN forma um domínio de broadcast distinto.
-II. O roteamento não propaga broadcasts locais de camada 2 entre as VLANs por padrão.
-III. Compartilhar o mesmo switch físico não reúne as duas VLANs em um único domínio de broadcast.
+I. Sem isolamento ou filtro adicional, broadcasts de enlace do SSID `Corporativo` podem alcançar as estações cabeadas da VLAN 30.
+
+II. A VLAN 40 forma outro domínio de broadcast, e a comunicação com a VLAN 30 depende de roteamento e de política que a autorize.
+
+III. A contenção no rádio da VLAN 30 não deve ser descrita como colisão Ethernet; nos enlaces cabeados full-duplex não ocorrem colisões.
 
 Está correto o que se afirma em:
 
 A) I, II e III.
-B) I, apenas.
-C) II e III, apenas.
-D) I e II, apenas.
+
+B) I e II, apenas.
+
+C) I e III, apenas.
+
+D) II e III, apenas.
 
 ### S2D1Q049 — Integração de broadcast cabeado e sem fio sem equiparar os meios
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -816,7 +824,7 @@ D) O AP pode estender o broadcast da VLAN, mas contenção Wi-Fi não equivale �
 
 ### S2D1Q050 — Internetwork e recurso compartilhado
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -838,35 +846,57 @@ D) I, II e III.
 ## Questões extras de revisão fixa do Dia 1
 
 #### Extra Dia 1.1
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** relação entre lei e decreto regulamentador.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal).
 
-Sobre a Lei nº 4.769/1965 e o Decreto nº 61.934/1967, assinale a alternativa correta.
+- **Referência:** [Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal), especialmente a função da Lei nº 4.769/1965, do Decreto nº 61.934/1967 e os limites das resoluções.
 
-A) A lei regula o exercício profissional e estrutura o Sistema CFA/CRAs, enquanto o decreto regulamenta a aplicação da lei.
-B) O decreto possui função de conselho regional e limita sua aplicação ao estado em que foi publicado.
-C) A lei trata apenas da organização interna do CRA-PR, e o decreto institui o Código de Ética vigente.
-D) A regulamentação por decreto substitui integralmente a lei e permite afastar seus requisitos.
+Ao explicar a base normativa do Sistema CFA/CRAs, um analista precisa distinguir a Lei nº 4.769/1965 do Decreto nº 61.934/1967. Assinale a alternativa correta.
+
+A) A lei disciplina o exercício profissional e estabelece o sistema, enquanto o decreto detalha sua aplicação sem substituir a norma legal.
+
+B) A lei disciplina apenas a rotina interna dos regionais, enquanto o decreto cria o exercício profissional e ocupa o lugar da norma legal.
+
+C) A lei e o decreto possuem a mesma função normativa, de modo que o texto regulamentar posterior prevalece sempre que houver diferença.
+
+D) A lei e o decreto tratam de matérias independentes, de modo que uma resolução do CFA pode afastar livremente os requisitos de ambos.
+
 #### Extra Dia 1.2
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** âmbito e função de CFA e CRA-PR.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
-Quanto à atuação do CFA e do CRA-PR no sistema profissional, assinale a alternativa correta.
+- **Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), na tabela de âmbito e função central de cada entidade.
 
-A) O CRA-PR formula normas nacionais vinculantes para os demais conselhos regionais.
-B) O CFA atua como conselho regional do Distrito Federal e não exerce orientação nacional.
-C) CFA e CRA-PR possuem a mesma jurisdição territorial, diferenciando-se apenas pela sede.
-D) O CFA exerce orientação e disciplina em âmbito nacional, e o CRA-PR executa, registra e fiscaliza em sua jurisdição.
+Uma demanda envolve a orientação geral do Sistema CFA/CRAs e, depois, o registro e a fiscalização de atividade realizada no Paraná. A distribuição coerente de atribuições é:
+
+A) O CRA-PR define a orientação nacional do sistema, e o CFA executa o registro e a fiscalização ordinária dentro do estado.
+
+B) O CFA concentra orientação, registro e fiscalização no Paraná, e o CRA-PR atua apenas como unidade consultiva sem competência própria.
+
+C) O CRA-PR realiza as duas etapas por o fato ocorrer no estado, e o CFA intervém somente como primeira instância dos processos regionais.
+
+D) O CFA exerce orientação e disciplina nacionais, e o CRA-PR executa diretrizes, mantém registros e fiscaliza em sua jurisdição.
+
 #### Extra Dia 1.3
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
@@ -879,8 +909,8 @@ D) O CFA exerce orientação e disciplina em âmbito nacional, e o CRA-PR execut
 De acordo com o Regimento aprovado pela RN CFA nº 651/2024, o CRA-PR é:
 
 A) associação privada sem autonomia financeira, subordinada administrativamente ao governo estadual.
-B) autarquia com personalidade jurídica de direito público e autonomia técnica, administrativa e financeira.
-C) órgão integrante da Administração Direta federal, sem personalidade jurídica própria.
+B) órgão integrante da Administração Direta federal, sem personalidade jurídica própria.
+C) autarquia com personalidade jurídica de direito público e autonomia técnica, administrativa e financeira.
 D) empresa pública estadual encarregada exclusivamente de arrecadar anuidades profissionais.
 #### Extra Dia 1.4
 - **Dia:** Dia 1
@@ -898,35 +928,57 @@ B) Sua sede pode ser fixada em qualquer município, e sua jurisdição limita-se
 C) Sua sede está na capital do Paraná, e sua jurisdição abrange todo o estado do Paraná.
 D) Sua sede é definida pelo governo estadual, e sua jurisdição é nacional para fins de fiscalização.
 #### Extra Dia 1.5
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** competências centrais do CRA-PR.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
-Entre as atribuições regimentais do CRA-PR, encontra-se:
+- **Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), nos itens sobre execução de diretrizes, registros, fiscalização e julgamento regional.
 
-A) editar leis federais sobre o exercício de todas as profissões regulamentadas.
-B) executar diretrizes do CFA, manter registros, fiscalizar atividades e julgar infrações em sua jurisdição.
-C) revisar decisões judiciais e aplicar sanções penais a quem exercer atividade irregular.
-D) substituir o CFA na formulação das diretrizes nacionais sempre que o fato ocorrer no Paraná.
+O CRA-PR recebe notícia de possível exercício irregular no Paraná e precisa verificar a situação registral e a conduta profissional. Assinale a atuação compatível com seu âmbito regimental.
+
+A) Encaminhar registro, fiscalização e julgamento diretamente ao CFA, pois o conselho regional exerce apenas orientação facultativa aos interessados.
+
+B) Executar as diretrizes do CFA, consultar e manter os registros, fiscalizar a atividade e julgar a infração nos limites de sua jurisdição.
+
+C) Suspender a diretriz nacional no Paraná e editar regra própria para todos os regionais antes de iniciar a apuração da atividade informada.
+
+D) Conferir apenas o registro e remeter qualquer julgamento à Ouvidoria, pois o Plenário regional não atua como primeira instância.
+
 #### Extra Dia 1.6
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** órgãos e estruturas do CRA-PR.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
-Assinale a alternativa que apresenta apenas órgãos ou estruturas previstos no Regimento do CRA-PR.
+- **Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), especialmente o rol estrutural, a posição do Plenário e a natureza mediadora da Ouvidoria.
 
-A) Plenário, Senado Federal, Ouvidoria e Tribunal de Contas do Estado.
-B) Diretoria Executiva, Ministério Público, Plenário e assembleia legislativa.
-C) Plenário, Diretoria Executiva, Ouvidoria, comissões e órgãos de representação.
-D) Ouvidoria, Poder Judiciário, grupos de trabalho e conselho municipal.
+Ao montar um mapa da estrutura regimental do CRA-PR, a equipe também registra a função do Plenário e o limite da Ouvidoria. Assinale a alternativa integralmente correta.
+
+A) Plenário, Diretoria Executiva, Ouvidoria, comissões e órgãos de representação integram a estrutura; o Plenário delibera e a Ouvidoria medeia.
+
+B) A Diretoria Executiva julga em primeira instância, e a Ouvidoria executa suas decisões; o Plenário atua somente como canal de mediação.
+
+C) O Plenário apenas aconselha a Diretoria, e a Ouvidoria decide reclamações; comissões e órgãos de representação ficam fora da estrutura.
+
+D) Comissões e órgãos de representação integram a estrutura, mas o Plenário é instância nacional e a Ouvidoria aplica penalidades regionais.
+
 #### Extra Dia 1.7
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
@@ -962,7 +1014,7 @@ D) Formula as diretrizes nacionais do sistema e revisa as normas expedidas pelo 
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** sujeitos alcançados pelo Código de Ética.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
@@ -973,41 +1025,52 @@ B) Aplica-se apenas a pessoas físicas, pois pessoas jurídicas não se submetem
 C) Alcança qualquer empresa brasileira, ainda que sua atividade não se relacione ao sistema profissional.
 D) Restringe-se aos conselheiros do CFA e dos CRAs durante o exercício de mandato eletivo.
 #### Extra Dia 1.10
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** deveres éticos dos profissionais de Administração.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
-Constitui conjunto compatível com os deveres éticos previstos na RN CFA nº 671/2025:
+- **Referência:** [Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica), nos deveres centrais e nas condutas de risco ético.
 
-A) publicidade irrestrita de informações, dependência técnica do contratante e recusa de aperfeiçoamento.
-B) defesa de vantagem própria, empréstimo do registro e ocultação de documentos da fiscalização.
-C) assinatura de documentos sem supervisão, divulgação de sigilo e tratamento hostil aos representantes do sistema.
-D) zelo, honestidade, independência técnica, aperfeiçoamento e colaboração com o Sistema CFA/CRAs.
+Quatro profissionais descrevem como conduzem seus serviços. Assinale a alternativa em que todas as práticas são compatíveis com os deveres éticos estudados.
+
+A) Preserva o sigilo e busca aperfeiçoamento, mas empresta o registro a parceiro de confiança para viabilizar serviço que ele não pode exercer.
+
+B) Mantém independência técnica e trata o cliente com zelo, mas assina relatório de terceiro sem orientação ou supervisão efetiva.
+
+C) Colabora com o Sistema CFA/CRAs e trata seus representantes com urbanidade, mas retarda documentos solicitados para proteger o contratante.
+
+D) Atua com zelo e honestidade, preserva o sigilo, mantém independência técnica, busca aperfeiçoamento e colabora com o sistema profissional.
+
 #### Extra Dia 1.11
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** dever de sigilo profissional.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Sobre o dever de sigilo profissional, assinale a alternativa correta.
 
-A) O profissional deve guardar informação conhecida em razão do exercício profissional lícito, ressalvada situação juridicamente justificável.
+A) O profissional pode divulgar informação sigilosa para obter vantagem, desde que não haja dano financeiro imediato.
 B) O dever alcança apenas informação recebida por escrito e termina automaticamente com o contrato.
-C) O profissional pode divulgar informação sigilosa para obter vantagem, desde que não haja dano financeiro imediato.
+C) O profissional deve guardar informação conhecida em razão do exercício profissional lícito, ressalvada situação juridicamente justificável.
 D) O sigilo impede o atendimento de qualquer obrigação legal ou determinação válida da autoridade competente.
 #### Extra Dia 1.12
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** responsabilidade por documento assinado.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
@@ -1018,20 +1081,31 @@ B) é obrigatória para preservar a continuidade do serviço contratado.
 C) representa conduta de risco ético por atribuir chancela profissional sem orientação ou supervisão efetiva.
 D) produz apenas consequência contratual, sem possível repercussão perante o sistema profissional.
 #### Extra Dia 1.13
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** espécies de sanção ética.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
-Assinale a alternativa que reúne as espécies de sanção previstas no Código de Ética estudado.
+- **Referência:** [Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica), no rol de sanções e na explicação de que a multa acompanha as sanções nas condições normativas.
 
-A) Recomendação verbal, multa administrativa isolada, prisão e perda de função pública.
-B) Advertência pública, censura reservada, interdição do estabelecimento e detenção.
-C) Censura privada, suspensão tributária, cancelamento empresarial e advertência oral.
+Assinale a alternativa que reproduz corretamente as quatro espécies de sanção apresentadas no Código de Ética estudado.
+
+A) Advertência escrita e pública, censura reservada, suspensão do registro e cancelamento temporário do exercício profissional.
+
+B) Advertência verbal e reservada, censura privada, suspensão do exercício e cancelamento temporário do registro profissional.
+
+C) Advertência escrita e reservada, censura pública, multa isolada como sanção autônoma e suspensão do exercício profissional.
+
 D) Advertência escrita e reservada, censura pública, suspensão do exercício e cancelamento do registro profissional.
+
 #### Extra Dia 1.14
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
@@ -1059,15 +1133,15 @@ D) A única consequência possível para pessoa jurídica é o cancelamento auto
 Em processo ético, a equipe identifica uma possível infração praticada por pessoa registrada. A conclusão adequada é:
 
 A) escolher imediatamente a sanção mais grave, pois a gravidade percebida dispensa enquadramento normativo.
-B) aplicar apenas multa, porque o Código não prevê sanções disciplinares acompanhadas de consequência pecuniária.
+B) realizar o enquadramento e observar o processo e as regras aplicáveis, inclusive a disciplina da multa que acompanha as sanções.
 C) arquivar o fato sempre que não houver prejuízo financeiro comprovado, independentemente da conduta.
-D) realizar o enquadramento e observar o processo e as regras aplicáveis, inclusive a disciplina da multa que acompanha as sanções.
+D) aplicar apenas multa, porque o Código não prevê sanções disciplinares acompanhadas de consequência pecuniária.
 #### Extra Dia 1.16
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** leitura de comando negativo.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Comando da questão](semana_02_estudo.md#s2-d1-revisao-comando).
 
@@ -1082,7 +1156,7 @@ D) selecionar a alternativa mais abrangente, ainda que extrapole o comando.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** inferência autorizada e extrapolação.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Inferência x extrapolação](semana_02_estudo.md#s2-d1-revisao-inferencia).
 
@@ -1093,26 +1167,37 @@ B) Toda instalação de fibra oferece maior velocidade que qualquer instalação
 C) A fibra dispensa transceptores, conectores e procedimentos de instalação.
 D) A ausência de interferência eletromagnética garante menor custo de implantação.
 #### Extra Dia 1.18
+
 - **Dia:** Dia 1
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** relação semântica de conectores.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa de Português e interpretação — Conectores](semana_02_estudo.md#s2-d1-revisao-conectores).
 
-No período “O switch segmenta os enlaces; contudo, mantém o broadcast dentro da mesma VLAN”, o conector “contudo” estabelece relação de:
+- **Referência:** [Conectores](semana_02_estudo.md#s2-d1-revisao-conectores), na linha que associa “mas”, “porém” e “contudo” à oposição e à quebra de expectativa.
 
-A) causa.
-B) oposição ou ressalva.
-C) conclusão.
-D) condição.
+No período “O enlace permanece ativo; contudo, o serviço não responde às requisições”, o conector destacado estabelece relação de:
+
+A) causa e explicação.
+
+B) oposição e ressalva.
+
+C) conclusão e consequência.
+
+D) condição e hipótese.
+
 #### Extra Dia 1.19
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** efeito lógico de palavras absolutas.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Palavras absolutas](semana_02_estudo.md#s2-d1-revisao-absolutas).
 
@@ -1127,7 +1212,7 @@ D) Elas indicam conclusão lógica e podem substituir conectores como “portant
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** interpretação integrada de uma ressalva técnica.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Prática breve de interpretação](semana_02_estudo.md#s2-d1-revisao-pratica-interpretacao).
 
@@ -1147,39 +1232,39 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 | 2 | C |
 | 3 | B |
 | 4 | D |
-| 5 | C |
+| 5 | A |
 | 6 | A |
 | 7 | D |
 | 8 | B |
 | 9 | C |
-| 10 | B |
+| 10 | A |
 | 11 | A |
 | 12 | C |
 | 13 | B |
 | 14 | C |
-| 15 | B |
-| 16 | A |
-| 17 | C |
+| 15 | D |
+| 16 | C |
+| 17 | D |
 | 18 | D |
-| 19 | D |
+| 19 | C |
 | 20 | B |
 | 21 | A |
-| 22 | B |
+| 22 | C |
 | 23 | C |
 | 24 | D |
-| 25 | C |
-| 26 | C |
-| 27 | D |
+| 25 | D |
+| 26 | B |
+| 27 | A |
 | 28 | A |
 | 29 | B |
 | 30 | D |
 | 31 | A |
 | 32 | D |
 | 33 | A |
-| 34 | A |
+| 34 | B |
 | 35 | C |
 | 36 | B |
-| 37 | A |
+| 37 | C |
 | 38 | B |
 | 39 | A |
 | 40 | D |
@@ -1200,19 +1285,19 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 |---:|:---:|
 | 1.1 | A |
 | 1.2 | D |
-| 1.3 | B |
+| 1.3 | C |
 | 1.4 | C |
 | 1.5 | B |
-| 1.6 | C |
+| 1.6 | A |
 | 1.7 | D |
 | 1.8 | B |
 | 1.9 | A |
 | 1.10 | D |
-| 1.11 | A |
+| 1.11 | C |
 | 1.12 | C |
 | 1.13 | D |
 | 1.14 | C |
-| 1.15 | D |
+| 1.15 | B |
 | 1.16 | B |
 | 1.17 | A |
 | 1.18 | B |
@@ -1314,13 +1399,13 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: C.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A afirmativa I está correta, mas II e III também estão.
+- **A)** Correta. Os exemplos representam, respectivamente, simplex, half-duplex e full-duplex.
 - **B)** Incorreta. II e III são verdadeiras, porém a transmissão unilateral do sensor torna I verdadeira.
-- **C)** Correta. Os exemplos representam, respectivamente, simplex, half-duplex e full-duplex.
+- **C)** Incorreta. A afirmativa I está correta, mas II e III também estão.
 - **D)** Incorreta. I e II estão corretas, mas o enlace com transmissão simultânea valida III.
 
 **Conceito:** direção da comunicação.
@@ -1421,15 +1506,15 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q010
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não há ligação direta entre todos os pares, requisito da malha completa.
-- **B)** Correta. Os cabos convergem para o hub, formando estrela física, mas o hub mantém o meio lógico compartilhado.
+- **A)** Correta. Os cabos convergem para o hub, formando estrela física, mas o hub mantém o meio lógico compartilhado.
+- **B)** Incorreta. Não há ligação direta entre todos os pares, requisito da malha completa.
 - **C)** Incorreta. O arranjo físico não é barramento e não há informação sobre token ou anel lógico.
 - **D)** Incorreta. Um equipamento central pode ser hub ou switch; sua presença não prova comutação lógica.
 
@@ -1478,6 +1563,8 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 - **C)** Incorreta quanto ao conteúdo e, por isso, é o gabarito. Enlace exclusivo com equipamento central descreve estrela, não barramento.
 - **D)** Correta quanto ao conteúdo. Uma topologia híbrida combina organizações distintas.
 
+**Observação:** o comando pede a alternativa **INCORRETA**; por isso, C é o gabarito ao atribuir ao barramento uma característica da estrela.
+
 **Conceito:** reconhecimento comparado das topologias.
 
 **Pegadinha:** saber a matéria e marcar uma afirmação verdadeira sem observar o comando negativo.
@@ -1510,7 +1597,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q014
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: C.**
@@ -1535,14 +1622,14 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Se cada nó se liga diretamente a todos, a malha é completa, não parcial.
-- **B)** Correta. A diferença é a presença de ligação direta em todos os pares ou apenas em parte deles.
+- **B)** Incorreta. Redundância cria caminhos alternativos e não dispensa decisões de encaminhamento.
 - **C)** Incorreta. Malha completa exige muito mais enlaces e portas que uma estrela, para quantidades usuais de nós.
-- **D)** Incorreta. Redundância cria caminhos alternativos e não dispensa decisões de encaminhamento.
+- **D)** Correta. A diferença é a presença de ligação direta em todos os pares ou apenas em parte deles.
 
 **Conceito:** malha completa e malha parcial.
 
@@ -1557,36 +1644,37 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O projeto reúne estrelas de acesso e outra organização no núcleo, formando topologia híbrida.
-- **B)** Incorreta. Redundância central não transforma os enlaces em estrela dos andares em malha parcial.
-- **C)** Incorreta. A classificação do conjunto não pode ignorar a organização diferente usada entre os centros.
-- **D)** Incorreta. Redundância não prova a formação de um único anel.
+- **A)** os switches de acesso formam estrelas locais, mas essa classificação não representa a organização diferente existente no núcleo.
+- **B)** a malha parcial descreve apenas o núcleo; ela não transforma os enlaces radiais dos andares em enlaces de malha.
+- **C)** a rede reúne estrelas no acesso e malha parcial no núcleo, portanto sua organização física combina mais de uma topologia.
+- **D)** redundância entre equipamentos não implica, por si só, um único caminho fechado que caracterize anel.
 
-**Conceito:** topologia híbrida.
+**Conceito:** topologia híbrida como combinação de duas ou mais organizações físicas na mesma rede.
 
-**Pegadinha:** deixar uma parte mais visível do desenho determinar o nome de toda a rede.
+**Pegadinha:** tomar a topologia de apenas uma parte do projeto como classificação suficiente para todo o conjunto.
 
-**Como pensar:** decomponha o projeto em acesso e núcleo; se as organizações diferem, considere a combinação.
+**Como pensar:** divida o desenho em acesso e núcleo; se cada parte segue uma organização distinta, classifique o conjunto como híbrido.
 
-**Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias).
+**Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias), especialmente o trecho que define a topologia híbrida pela combinação de organizações distintas.
 
 ### Comentário S2D1Q017
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. I é verdadeira, mas III também descreve uma divergência possível entre físico e lógico.
 - **B)** Incorreta. II é falsa: centro físico pode ser hub ou switch; III é verdadeira.
-- **C)** Correta. I e III são verdadeiras, enquanto II deduz indevidamente o comportamento lógico pelo centro.
-- **D)** Incorreta. A falsidade de II impede que as três estejam corretas.
+- **C)** Incorreta. A falsidade de II impede que as três estejam corretas.
+- **D)** Correta. I e III são verdadeiras, enquanto II deduz indevidamente o comportamento lógico pelo centro.
 
 **Conceito:** independência relativa entre topologia física e lógica.
 
@@ -1620,17 +1708,17 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q019
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Impressão local confirma parte da LAN, mas não comprova o enlace do provedor.
 - **B)** Incorreta. Uma falha externa não altera o escopo da WLAN para PAN.
-- **C)** Incorreta. Comunicação na mesma VLAN pode ocorrer por bridging, sem roteamento do AP.
-- **D)** Correta. O caminho local está operacional e a investigação deve avançar para gateway, WAN ou provedor.
+- **C)** Correta. O caminho local está operacional e a investigação deve avançar para gateway, WAN ou provedor.
+- **D)** Incorreta. Comunicação na mesma VLAN pode ocorrer por bridging, sem roteamento do AP.
 
 **Conceito:** WLAN como LAN independente do acesso à Internet.
 
@@ -1664,7 +1752,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q021
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: A.**
@@ -1686,16 +1774,16 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q022
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Afirmativa I é verdadeira, mas II e III também são.
-- **B)** Correta. Par trançado e fibra confinam o sinal a um meio físico; rádio se propaga pelo espaço.
-- **C)** Incorreta. Excluir I não se justifica, pois o par trançado é meio guiado.
+- **B)** Incorreta. Excluir I não se justifica, pois o par trançado é meio guiado.
+- **C)** Correta. Par trançado e fibra confinam o sinal a um meio físico; rádio se propaga pelo espaço.
 - **D)** Incorreta. I e III são verdadeiras, mas a luz percorre a fibra, tornando II verdadeira.
 
 **Conceito:** meios guiados e não guiados.
@@ -1708,7 +1796,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q023
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: C.**
@@ -1752,17 +1840,17 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q025
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Adequação a distância depende do tipo de fibra, ópticas e padrão; multimodo não é escolha automática para longas distâncias.
 - **B)** Incorreta. Monomodo não utiliza vários modos e costuma ser associada a maiores alcances.
-- **C)** Correta. A comparação respeita os usos típicos e preserva a ressalva do projeto.
-- **D)** Incorreta. Fibra transporta luz e é imune à interferência eletromagnética no enlace óptico.
+- **C)** Incorreta. Fibra transporta luz e é imune à interferência eletromagnética no enlace óptico.
+- **D)** Correta. A comparação respeita os usos típicos e preserva a ressalva do projeto.
 
 **Conceito:** fibra monomodo e multimodo.
 
@@ -1774,16 +1862,16 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q026
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Fibra multimodo possui núcleo e revestimentos ópticos, não condutor central metálico.
-- **B)** Incorreta. UTP utiliza pares de condutores trançados.
-- **C)** Correta. Condutor central, isolante e blindagem são a estrutura característica do coaxial.
+- **B)** Correta. Condutor central, isolante e blindagem são a estrutura característica do coaxial.
+- **C)** Incorreta. UTP utiliza pares de condutores trançados.
 - **D)** Incorreta. Monomodo também é fibra óptica e não corresponde à descrição metálica.
 
 **Conceito:** cabo coaxial.
@@ -1799,14 +1887,14 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Intensidade de sinal é apenas uma variável e não comprova goodput máximo.
+- **A)** Correta. O conjunto dessas variáveis explica throughput baixo mesmo com sinal forte.
 - **B)** Incorreta. Clientes do mesmo rádio disputam tempo no meio compartilhado.
 - **C)** Incorreta. Canal, interferência, obstáculos e contenção alteram a vazão além da distância.
-- **D)** Correta. O conjunto dessas variáveis explica throughput baixo mesmo com sinal forte.
+- **D)** Incorreta. Intensidade de sinal é apenas uma variável e não comprova goodput máximo.
 
 **Conceito:** desempenho de comunicação sem fio.
 
@@ -1818,7 +1906,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q028
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: A.**
@@ -1840,7 +1928,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q029
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: B.**
@@ -1862,7 +1950,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q030
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: D.**
@@ -1884,7 +1972,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q031
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: A.**
@@ -1953,12 +2041,12 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Difícil
 
 **Uso:** Revisão
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O switch aprende a origem e inunda o unicast desconhecido nas portas pertinentes da VLAN, menos a entrada.
-- **B)** Incorreta. Inundar não altera o MAC de destino nem transforma o quadro em broadcast.
+- **A)** Incorreta. Inundar não altera o MAC de destino nem transforma o quadro em broadcast.
+- **B)** Correta. O switch aprende a origem e inunda o unicast desconhecido nas portas pertinentes da VLAN, menos a entrada.
 - **C)** Incorreta. Desconhecido na tabela MAC não significa que o destino pertença a outra rede.
 - **D)** Incorreta. O switch não depende de registro manual do destino para tentar a entrega inicial.
 
@@ -1972,7 +2060,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q035
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: C.**
@@ -1994,7 +2082,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q036
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: B.**
@@ -2019,13 +2107,13 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Difícil
 
 **Uso:** Revisão
-**Alternativa correta: A.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. A porta segmenta o enlace, mas full-duplex elimina colisões efetivas; a contagem por porta é ressalva didática.
+- **A)** Incorreta. Colisão e broadcast são domínios distintos; ausência da primeira não reúne VLANs.
 - **B)** Incorreta. Mesma VLAN implica broadcast comum, não meio half-duplex comum entre portas do switch.
-- **C)** Incorreta. Colisão e broadcast são domínios distintos; ausência da primeira não reúne VLANs.
+- **C)** Correta. A porta segmenta o enlace, mas full-duplex elimina colisões efetivas; a contagem por porta é ressalva didática.
 - **D)** Incorreta. Full-duplex permite transmissão simultânea nos dois sentidos.
 
 **Conceito:** segmentação por portas e ausência de colisões em full-duplex.
@@ -2051,6 +2139,8 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 - **C)** Correta quanto ao conteúdo. Equipamento multicamada pode rotear quando compatível e configurado.
 - **D)** Correta quanto ao conteúdo. Desabilitar a camada 3 não apaga necessariamente a comutação de camada 2.
 
+**Observação:** o comando pede a alternativa **INCORRETA**; por isso, B é o gabarito ao confundir aprendizagem de MAC com roteamento.
+
 **Conceito:** diferença entre switch de camada 2 e switch multicamada.
 
 **Pegadinha:** confundir alcance do gateway aprendido em MAC com capacidade de consultar tabela de rotas.
@@ -2061,7 +2151,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q039
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: A.**
@@ -2105,7 +2195,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q041
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 **Alternativa correta: D.**
@@ -2127,7 +2217,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q042
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: A.**
@@ -2149,7 +2239,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q043
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 **Alternativa correta: C.**
@@ -2171,7 +2261,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q044
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -2184,6 +2274,8 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 - **C)** Correta quanto ao conteúdo. A função de roteamento pode encaminhar entre as interfaces LAN e WAN.
 - **D)** Correta quanto ao conteúdo. NAT e DHCP são serviços adicionais e não definem um AP isolado.
 
+**Observação:** o comando pede a associação **INCORRETA**; por isso, B é o gabarito ao trocar as funções do roteador e do access point.
+
 **Conceito:** equipamento doméstico multifuncional.
 
 **Pegadinha:** atribuir a função ao gabinete inteiro sem separar seus componentes lógicos.
@@ -2194,7 +2286,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q045
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: C.**
@@ -2216,7 +2308,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q046
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 **Alternativa correta: B.**
@@ -2238,7 +2330,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q047
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: B.**
@@ -2263,26 +2355,26 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Nível:** Muito difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. As três afirmativas descrevem corretamente a separação de broadcast por VLAN.
-- **B)** Incorreta. I é verdadeira, mas II e III também são.
-- **C)** Incorreta. II e III são verdadeiras, mas a combinação omite I.
-- **D)** Incorreta. I e II estão corretas, porém III também está.
+- **A)** as três afirmações preservam, respectivamente, o alcance do broadcast na VLAN em bridge, a separação e o roteamento entre VLANs e a diferença entre contenção Wi-Fi e colisão Ethernet.
+- **B)** I e II são verdadeiras, mas III também é; Wi-Fi compartilha tempo de transmissão sem se tornar um domínio de colisão Ethernet, e full-duplex elimina colisões nos enlaces cabeados.
+- **C)** I e III são verdadeiras, mas II também é; VLANs diferentes separam broadcasts e precisam de roteamento autorizado para se comunicar.
+- **D)** II e III são verdadeiras, mas I também é; o AP em bridge normalmente estende a VLAN 30 ao lado sem fio quando não há isolamento ou filtro.
 
-**Conceito:** independência lógica das VLANs no mesmo equipamento físico.
+**Conceito:** integração entre bridge do AP, VLAN, domínio de broadcast, roteamento e comportamento dos meios sem fio e cabeado.
 
-**Pegadinha:** imaginar que compartilhar o chassi do switch reúne novamente os broadcasts.
+**Pegadinha:** tratar SSID como fronteira automática, equiparar contenção Wi-Fi a colisão Ethernet ou imaginar que VLANs se comunicam apenas por estarem no mesmo equipamento.
 
-**Como pensar:** a fronteira relevante é o identificador da VLAN; o roteamento controla a passagem entre essas fronteiras.
+**Como pensar:** resolva três fronteiras separadamente: qual VLAN o AP estende, onde termina o broadcast e que mecanismo rege o acesso ao meio em cada enlace.
 
-**Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
-
+**Referência:** [Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap) e [Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios), nos trechos sobre bridge, SSID/VLAN, roteamento e contenção Wi-Fi.
 ### Comentário S2D1Q049
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: D.**
@@ -2304,7 +2396,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ### Comentário S2D1Q050
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: A.**
@@ -2325,6 +2417,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
 #### Comentário Extra Dia 1.1
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -2333,20 +2426,21 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Análise das alternativas:**
 
-- **A)** Correta. A Lei nº 4.769/1965 fornece a base legal do exercício profissional e do sistema, e o decreto a regulamenta.
-- **B)** Incorreta. Decreto federal não exerce função de conselho regional nem possui aplicação limitada dessa forma.
-- **C)** Incorreta. Regimento do CRA-PR e Código de Ética são objetos de normas próprias, não dessas descrições da lei e do decreto.
-- **D)** Incorreta. Regulamentar não significa substituir ou afastar a lei regulamentada.
+- **A)** a lei fornece a disciplina legal do exercício e do sistema, e o decreto a regulamenta sem ocupar sua posição hierárquica.
+- **B)** a alternativa reduz indevidamente o alcance da lei e atribui ao decreto a criação da base que ele apenas regulamenta.
+- **C)** lei e decreto não exercem a mesma função, e um regulamento não prevalece sobre a lei por ser posterior.
+- **D)** as normas se relacionam, e resolução do CFA deve respeitar lei e decreto, não afastá-los livremente.
 
-**Conceito:** relação entre lei e decreto regulamentador.
+**Conceito:** função da lei e do decreto regulamentador na base normativa do Sistema CFA/CRAs.
 
-**Pegadinha:** inverter a hierarquia e atribuir ao decreto poder de revogação material da lei.
+**Pegadinha:** inverter criação e regulamentação ou usar posterioridade para apagar a hierarquia normativa.
 
-**Como pensar:** localize a norma-base e identifique a função de detalhamento exercida pelo regulamento.
+**Como pensar:** identifique primeiro a norma legal que estabelece a disciplina e depois o ato que detalha sua execução dentro desses limites.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal).
+**Referência:** [Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal), especialmente a função da Lei nº 4.769/1965, do Decreto nº 61.934/1967 e os limites das resoluções.
 
 #### Comentário Extra Dia 1.2
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -2355,21 +2449,21 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. CRA-PR não edita normas nacionais para todos os regionais.
-- **B)** Incorreta. CFA possui atuação nacional e não se reduz a um conselho regional do Distrito Federal.
-- **C)** Incorreta. As jurisdições e os papéis institucionalmente atribuídos são diferentes.
-- **D)** Correta. CFA orienta e disciplina nacionalmente; CRA-PR executa, registra e fiscaliza no Paraná.
+- **A)** a formulação nacional pertence ao CFA, enquanto registro e fiscalização no Paraná integram a atuação regional.
+- **B)** o CRA-PR não é mera unidade consultiva; ele possui atribuições de execução, registro, fiscalização e julgamento em sua jurisdição.
+- **C)** a localização regional não transfere ao CRA-PR a orientação nacional, e o CFA não é primeira instância dos processos regionais.
+- **D)** a alternativa preserva a divisão entre orientação e disciplina nacionais e execução regional das diretrizes do sistema.
 
-**Conceito:** âmbito e função de CFA e CRA-PR.
+**Conceito:** repartição funcional e territorial entre CFA e CRA-PR.
 
-**Pegadinha:** trocar “federal” por uma região específica e “regional” por jurisdição nacional.
+**Pegadinha:** confundir o alcance nacional da orientação com a execução concreta de registro e fiscalização no estado.
 
-**Como pensar:** associe CFA a diretrizes do sistema e CRA à execução e fiscalização em seu estado.
+**Como pensar:** associe CFA ao plano nacional e CRA-PR à atuação executiva dentro da jurisdição paranaense.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
+**Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), na tabela de âmbito e função central de cada entidade.
 
 #### Comentário Extra Dia 1.3
-**Alternativa correta: B.**
+**Alternativa correta: C.**
 
 **Nível:** Médio
 
@@ -2378,8 +2472,8 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Análise das alternativas:**
 
 - **A)** Incorreta. O CRA-PR não é associação privada nem se subordina administrativamente ao governo estadual nos termos descritos.
-- **B)** Correta. A natureza autárquica, a personalidade de direito público e as três autonomias constam da revisão do Regimento.
-- **C)** Incorreta. Autarquia possui personalidade jurídica e integra a Administração Indireta, não a Direta.
+- **B)** Incorreta. Autarquia possui personalidade jurídica e integra a Administração Indireta, não a Direta.
+- **C)** Correta. A natureza autárquica, a personalidade de direito público e as três autonomias constam da revisão do Regimento.
 - **D)** Incorreta. O CRA-PR não é empresa pública nem possui a finalidade exclusiva indicada.
 
 **Conceito:** natureza jurídica e autonomia do CRA-PR.
@@ -2413,6 +2507,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.5
+
 **Alternativa correta: B.**
 
 **Nível:** Médio
@@ -2421,21 +2516,22 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Conselho regional não edita leis federais sobre todas as profissões.
-- **B)** Correta. A alternativa reúne execução de diretrizes, registro, fiscalização e julgamento regional de infrações.
-- **C)** Incorreta. CRA-PR não revisa decisões judiciais nem aplica sanções penais.
-- **D)** Incorreta. Competência regional não autoriza substituir o CFA na formulação nacional.
+- **A)** o CRA-PR exerce funções executivas próprias na jurisdição e não remete automaticamente toda atividade regional ao CFA.
+- **B)** registro, fiscalização e julgamento de infrações regionais integram suas atribuições, sempre dentro das normas e dos limites legais.
+- **C)** autonomia regional não autoriza suspender diretriz do CFA nem formular regra vinculante para os demais conselhos.
+- **D)** a Ouvidoria não possui caráter decisório, e o Plenário atua como primeira instância de julgamento na jurisdição.
 
-**Conceito:** competências centrais do CRA-PR.
+**Conceito:** competências executivas, registrais, fiscalizatórias e disciplinares do CRA-PR.
 
-**Pegadinha:** ampliar poder fiscalizatório e disciplinar administrativo para função legislativa, judicial ou penal.
+**Pegadinha:** converter autonomia em independência normativa nacional ou retirar do regional atribuições que o Regimento lhe confere.
 
-**Como pensar:** mantenha a resposta dentro da jurisdição profissional e dos limites legais do conselho.
+**Como pensar:** mantenha a resposta no plano regional e verifique se cada verbo pertence ao rol de executar, registrar, fiscalizar e julgar.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
+**Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), nos itens sobre execução de diretrizes, registros, fiscalização e julgamento regional.
 
 #### Comentário Extra Dia 1.6
-**Alternativa correta: C.**
+
+**Alternativa correta: A.**
 
 **Nível:** Médio
 
@@ -2443,18 +2539,18 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Senado e Tribunal de Contas não são órgãos regimentais internos do CRA-PR.
-- **B)** Incorreta. Ministério Público e assembleia legislativa são instituições externas ao rol.
-- **C)** Correta. Plenário, Diretoria, Ouvidoria, comissões e órgãos de representação integram a estrutura estudada.
-- **D)** Incorreta. Poder Judiciário e conselho municipal não compõem a organização regimental indicada.
+- **A)** a opção reúne estruturas ensinadas e preserva a diferença entre deliberação colegiada e mediação sem caráter decisório.
+- **B)** as funções foram deslocadas; Plenário e Ouvidoria não exercem os papéis descritos na alternativa.
+- **C)** o Plenário possui deliberação superior, a Ouvidoria não decide e as estruturas mencionadas integram o desenho regimental.
+- **D)** o Plenário pertence ao CRA-PR e atua regionalmente, enquanto a Ouvidoria não aplica penalidades.
 
-**Conceito:** órgãos e estruturas do CRA-PR.
+**Conceito:** componentes da estrutura regimental e distinção funcional entre Plenário e Ouvidoria.
 
-**Pegadinha:** inserir instituições públicas conhecidas em uma lista majoritariamente correta.
+**Pegadinha:** reconhecer nomes corretos, mas aceitar funções decisórias ou territoriais trocadas.
 
-**Como pensar:** verifique se cada elemento pertence internamente ao conselho; um único intruso invalida o conjunto.
+**Como pensar:** confira primeiro se a estrutura pertence ao CRA-PR e depois se o verbo atribuído a cada órgão combina com deliberação ou mediação.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
+**Referência:** [CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra), especialmente o rol estrutural, a posição do Plenário e a natureza mediadora da Ouvidoria.
 
 #### Comentário Extra Dia 1.7
 **Alternativa correta: D.**
@@ -2503,7 +2599,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 #### Comentário Extra Dia 1.9
 **Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -2523,39 +2619,40 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.10
+
 **Alternativa correta: D.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Publicidade irrestrita pode violar sigilo, e dependência técnica contraria a independência profissional.
-- **B)** Incorreta. Empréstimo de registro e obstrução da fiscalização são condutas incompatíveis.
-- **C)** Incorreta. Assinar sem supervisão, divulgar sigilo e agir sem urbanidade contrariam deveres estudados.
-- **D)** Correta. Zelo, honestidade, independência, aperfeiçoamento e colaboração integram o núcleo dos deveres.
+- **A)** sigilo e aperfeiçoamento são deveres, mas emprestar registro para facilitar exercício irregular permanece conduta incompatível.
+- **B)** independência e zelo não legitimam chancelar documento sem orientação ou supervisão técnica efetiva.
+- **C)** colaboração e urbanidade não coexistem, nesse caso, com a obstrução deliberada da fiscalização por retenção de documentos.
+- **D)** todas as práticas enumeradas pertencem ao núcleo de zelo, honestidade, sigilo, independência, atualização e colaboração.
 
-**Conceito:** deveres éticos dos profissionais de Administração.
+**Conceito:** deveres éticos avaliados em conjunto com condutas que não são neutralizadas por comportamentos corretos.
 
-**Pegadinha:** misturar um dever verdadeiro com comportamentos irregulares na mesma alternativa.
+**Pegadinha:** aceitar uma alternativa porque começa com dois deveres verdadeiros e ignorar a infração introduzida ao final.
 
-**Como pensar:** valide cada item da lista; em questão conjuntiva, um único comportamento vedado elimina a opção.
+**Como pensar:** teste todos os verbos da alternativa; em lista conjuntiva, uma única conduta incompatível elimina o conjunto.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
+**Referência:** [Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica), nos deveres centrais e nas condutas de risco ético.
 
 #### Comentário Extra Dia 1.11
-**Alternativa correta: A.**
+**Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Correta. O sigilo alcança informação conhecida no exercício profissional lícito, sem afastar hipóteses juridicamente justificadas.
+- **A)** Incorreta. Vantagem própria não constitui autorização para divulgar informação protegida.
 - **B)** Incorreta. O dever não depende apenas da forma escrita nem cessa automaticamente com o contrato.
-- **C)** Incorreta. Vantagem própria não constitui autorização para divulgar informação protegida.
+- **C)** Correta. O sigilo alcança informação conhecida no exercício profissional lícito, sem afastar hipóteses juridicamente justificadas.
 - **D)** Incorreta. Sigilo não impede, em termos absolutos, o cumprimento de obrigação legal válida.
 
 **Conceito:** dever de sigilo profissional.
@@ -2569,7 +2666,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 #### Comentário Extra Dia 1.12
 **Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -2589,26 +2686,27 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.13
+
 **Alternativa correta: D.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Prisão e perda de função pública não integram o rol ético apresentado.
-- **B)** Incorreta. Inverte publicidade e reserva e inclui medidas não previstas no conjunto.
-- **C)** Incorreta. As denominações e as espécies indicadas não reproduzem o Código.
-- **D)** Correta. A alternativa enumera advertência reservada, censura pública, suspensão e cancelamento profissional.
+- **A)** inverte publicidade e reserva e altera as denominações de suspensão e cancelamento previstas no rol.
+- **B)** o Código não apresenta advertência verbal nem censura privada, e os qualificadores temporais não reproduzem as espécies ensinadas.
+- **C)** acerta advertência e censura, mas transforma a multa associada em espécie autônoma e omite o cancelamento.
+- **D)** a sequência conserva advertência escrita e reservada, censura pública, suspensão do exercício e cancelamento do registro.
 
-**Conceito:** espécies de sanção ética.
+**Conceito:** espécies de sanção ética e posição da multa no regime estudado.
 
-**Pegadinha:** trocar os qualificadores “reservada” e “pública” ou inserir sanção penal no rol administrativo.
+**Pegadinha:** trocar os qualificadores “reservada” e “pública” ou inserir a multa como quinta espécie disciplinar isolada.
 
-**Como pensar:** memorize os quatro degraus pelo nome completo, sem misturar multa como se fosse uma quinta espécie isolada.
+**Como pensar:** confira nome e qualificador de cada degrau; depois verifique se multa foi indevidamente usada para substituir uma das quatro espécies.
 
-**Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
+**Referência:** [Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica), no rol de sanções e na explicação de que a multa acompanha as sanções nas condições normativas.
 
 #### Comentário Extra Dia 1.14
 **Alternativa correta: C.**
@@ -2633,7 +2731,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.15
-**Alternativa correta: D.**
+**Alternativa correta: B.**
 
 **Nível:** Difícil
 
@@ -2642,9 +2740,9 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Análise das alternativas:**
 
 - **A)** Incorreta. Percepção de gravidade não elimina enquadramento, motivação e processo.
-- **B)** Incorreta. A revisão prevê sanções disciplinares acompanhadas da multa nas condições normativas.
+- **B)** Correta. Enquadramento, procedimento e disciplina da multa devem ser observados em conjunto.
 - **C)** Incorreta. Ausência de prejuízo financeiro não torna irrelevante qualquer violação ética.
-- **D)** Correta. Enquadramento, procedimento e disciplina da multa devem ser observados em conjunto.
+- **D)** Incorreta. A revisão prevê sanções disciplinares acompanhadas da multa nas condições normativas.
 
 **Conceito:** aplicação processual e pecuniária das sanções.
 
@@ -2657,7 +2755,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 #### Comentário Extra Dia 1.16
 **Alternativa correta: B.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -2667,6 +2765,8 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 - **B)** Correta. “INCORRETA” inverte o critério e exige localizar a opção que foge à regra.
 - **C)** Incorreta. Ignorar a palavra negativa leva a responder ao comando oposto.
 - **D)** Incorreta. Abrangência não compensa extrapolação nem descumprimento do enunciado.
+
+**Observação:** este item é metalinguístico: B é o gabarito porque descreve corretamente como interpretar um comando negativo; não se está escolhendo uma afirmação materialmente falsa neste próprio item.
 
 **Conceito:** leitura de comando negativo.
 
@@ -2679,7 +2779,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 #### Comentário Extra Dia 1.17
 **Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -2699,31 +2799,32 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Português e interpretação — Inferência x extrapolação](semana_02_estudo.md#s2-d1-revisao-inferencia).
 
 #### Comentário Extra Dia 1.18
+
 **Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. “Contudo” não apresenta motivo para a primeira oração.
-- **B)** Correta. O conector introduz ressalva ou oposição ao efeito positivo antes mencionado.
-- **C)** Incorreta. Conclusão seria marcada por conectores como “portanto” ou “logo”.
-- **D)** Incorreta. Não há requisito condicional introduzido pelo conector.
+- **A)** a indisponibilidade do serviço não é apresentada como causa explicativa de o enlace permanecer ativo.
+- **B)** “contudo” contrapõe o estado do enlace ao resultado inesperado do serviço e introduz uma ressalva.
+- **C)** a segunda oração não conclui logicamente a primeira; ela quebra a expectativa criada por ela.
+- **D)** não há hipótese nem requisito do qual dependa a afirmação principal.
 
-**Conceito:** relação semântica de conectores.
+**Conceito:** relação adversativa expressa pelo conector “contudo”.
 
-**Pegadinha:** ler a segunda oração como consequência, quando ela limita a expectativa criada pela primeira.
+**Pegadinha:** interpretar a ordem das orações como causa ou conclusão e apagar a quebra de expectativa.
 
-**Como pensar:** substitua mentalmente por “porém”; se o sentido permanecer, a relação é adversativa.
+**Como pensar:** substitua “contudo” por “porém”; se o sentido se mantiver, a relação é de oposição ou ressalva.
 
-**Referência:** [Revisão fixa de Português e interpretação — Conectores](semana_02_estudo.md#s2-d1-revisao-conectores).
+**Referência:** [Conectores](semana_02_estudo.md#s2-d1-revisao-conectores), na linha que associa “mas”, “porém” e “contudo” à oposição e à quebra de expectativa.
 
 #### Comentário Extra Dia 1.19
 **Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -2745,7 +2846,7 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 #### Comentário Extra Dia 1.20
 **Alternativa correta: C.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -2797,8 +2898,8 @@ D) Aplicação, Apresentação, Sessão, Transporte, Rede, Enlace e Física.
 
 No modelo OSI, tradução de formatos, codificação, compressão e criptografia, em sentido funcional, são responsabilidades didaticamente associadas à camada de:
 
-A) apresentação.
-B) sessão.
+A) sessão.
+B) apresentação.
 C) transporte.
 D) rede.
 
@@ -2833,10 +2934,10 @@ D) I e II, apenas.
 
 Um repetidor recebe sinais em uma interface e os regenera em outra, sem examinar endereços. No modelo OSI, essa atuação pertence à camada física porque ela:
 
-A) seleciona rotas com base no endereço IP de destino.
+A) representa bits por sinais e não interpreta endereços MAC ou IP.
 B) organiza quadros e aprende endereços MAC de origem.
 C) estabelece sessões e pontos de sincronização entre aplicações.
-D) representa bits por sinais e não interpreta endereços MAC ou IP.
+D) seleciona rotas com base no endereço IP de destino.
 
 ### S2D2Q055 — Correspondência didática entre OSI e TCP/IP
 
@@ -2894,13 +2995,13 @@ D) Dados → segmento TCP → quadro Ethernet → pacote IP → bits.
 No receptor de uma comunicação Ethernet, IPv4 e TCP, o desencapsulamento ocorre, de forma simplificada, na seguinte ordem:
 
 A) bits → segmento TCP → quadro Ethernet → pacote IPv4 → dados.
-B) bits → quadro Ethernet → pacote IPv4 → segmento TCP → dados.
+B) pacote IPv4 → quadro Ethernet → bits → dados → segmento TCP.
 C) quadro Ethernet → bits → segmento TCP → pacote IPv4 → dados.
-D) pacote IPv4 → quadro Ethernet → bits → dados → segmento TCP.
+D) bits → quadro Ethernet → pacote IPv4 → segmento TCP → dados.
 
 ### S2D2Q059 — Campos que permanecem ou mudam a cada salto
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -2923,25 +3024,28 @@ D) endereços MAC e IP permanecem necessariamente idênticos, pois ambos identif
 
 Assinale a associação correta entre protocolo ou camada e sua PDU didática.
 
-A) TCP — quadro; IP — segmento; Ethernet — pacote; física — dados.
-B) TCP — segmento; IP — pacote ou datagrama; Ethernet — quadro; física — bits.
+A) TCP — segmento; IP — pacote ou datagrama; Ethernet — quadro; física — bits.
+B) TCP — quadro; IP — segmento; Ethernet — pacote; física — dados.
 C) TCP — pacote; IP — quadro; Ethernet — datagrama UDP; física — segmento.
 D) TCP — bits; IP — dados; Ethernet — segmento; física — pacote.
 
-### S2D2Q061 — Diferença entre datagrama UDP e datagrama IP
+### S2D2Q061 — Encapsulamento entre UDP e IP
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
+**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus), especialmente a tabela que associa o datagrama UDP ao Transporte e o datagrama IP à camada Rede/Internet.
 
-Sobre as expressões “datagrama UDP” e “datagrama IP”, assinale a alternativa correta.
+Ao analisar uma transmissão, um técnico identifica um datagrama UDP dentro de um datagrama IPv4. Considerando a camada de cada protocolo e a ordem de encapsulamento, assinale a alternativa correta.
 
-A) São sinônimos, pois UDP e IP pertencem à mesma camada.
-B) Datagrama UDP é uma PDU de enlace, enquanto datagrama IP é uma PDU física.
-C) Datagrama IP fica encapsulado no datagrama UDP durante o envio.
-D) Datagrama UDP é unidade de transporte e pode ser encapsulado em um datagrama IP, da camada Internet.
+A) O datagrama UDP e o datagrama IP são PDUs da camada Internet e diferem apenas pelos campos de controle.
+
+B) O datagrama UDP é uma PDU da Aplicação e encapsula o datagrama IP antes da transmissão pelo enlace.
+
+C) O datagrama UDP é uma PDU do Transporte e fica encapsulado como carga útil no datagrama IP.
+
+D) O datagrama IP é uma PDU do Transporte e fica encapsulado no datagrama UDP durante o envio.
 
 ### S2D2Q062 — Formato, escopo e administração do endereço MAC
 
@@ -2958,20 +3062,23 @@ B) Permanecem como origem e destino em todos os enlaces atravessados por um paco
 C) Endereços de 48 bits, escritos em seis octetos hexadecimais, são comuns, mas podem ser localmente administrados ou mutáveis.
 D) Substituem o endereço IP porque são necessariamente globais, únicos e imutáveis.
 
-### S2D2Q063 — Aprendizagem de endereços pelo switch
+### S2D2Q063 — Aprendizagem da origem pelo switch
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
+**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac), no item que estabelece que switches aprendem o MAC de origem observado na porta de entrada.
 
-Um switch recebe, pela porta 5, um quadro cujo MAC de origem ainda não consta em sua tabela. A ação de aprendizagem consiste em registrar:
+A tabela MAC de um switch está vazia. Pela porta 5, chega um quadro com MAC de origem `AA-AA-AA-AA-AA-AA` e MAC de destino `BB-BB-BB-BB-BB-BB`. Independentemente de o destino ser localizado depois, qual registro o switch pode aprender com essa chegada?
 
-A) o MAC de destino associado à porta 5, independentemente do local do destino.
-B) o endereço IP de origem associado à rota padrão do switch.
-C) o MAC de origem associado à porta 5.
-D) os números de porta TCP de origem e destino associados ao MAC do gateway.
+A) O MAC de destino associado à porta 5, pois esse campo indica por onde o quadro entrou no switch.
+
+B) O MAC de origem associado à porta de saída, definida depois da consulta ao endereço de destino.
+
+C) Os MACs de origem e destino associados à porta 5, pois ambos aparecem no quadro recebido.
+
+D) O MAC de origem associado à porta 5, pois essa é a localização observada para o emissor.
 
 ### S2D2Q064 — Tamanho e divisão lógica do endereço IPv4
 
@@ -2998,9 +3105,9 @@ D) 128 bits, representados por oito grupos hexadecimais.
 
 A máscara IPv4 `255.255.252.0` corresponde ao prefixo:
 
-A) `/20`.
+A) `/22`.
 B) `/21`.
-C) `/22`.
+C) `/20`.
 D) `/23`.
 
 ### S2D2Q066 — Conversão de prefixo CIDR para máscara decimal
@@ -3029,13 +3136,13 @@ D) `255.255.240.0`.
 Assinale a sequência que NÃO representa uma máscara CIDR IPv4 normal, pois contém bits `1` não contíguos.
 
 A) `255.255.255.192`.
-B) `255.255.254.0`.
+B) `255.255.240.128`.
 C) `255.248.0.0`.
-D) `255.255.240.128`.
+D) `255.255.254.0`.
 
 ### S2D2Q068 — Cálculo de rede e broadcast pelo tamanho do bloco
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -3043,14 +3150,14 @@ D) `255.255.240.128`.
 
 Para o host `192.168.40.158/26`, os endereços de rede e de broadcast dirigido da sub-rede são, respectivamente:
 
-A) `192.168.40.128` e `192.168.40.191`.
+A) `192.168.40.64` e `192.168.40.191`.
 B) `192.168.40.128` e `192.168.40.190`.
-C) `192.168.40.64` e `192.168.40.191`.
+C) `192.168.40.128` e `192.168.40.191`.
 D) `192.168.40.152` e `192.168.40.159`.
 
 ### S2D2Q069 — Determinação da faixa de hosts em uma sub-rede `/27`
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -3065,7 +3172,7 @@ D) `10.12.7.201` a `10.12.7.230`.
 
 ### S2D2Q070 — Cálculo de rede e broadcast quando a fronteira está no terceiro octeto
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -3073,14 +3180,14 @@ D) `10.12.7.201` a `10.12.7.230`.
 
 Considere o endereço `172.20.173.44/20`. Os endereços de rede e de broadcast dirigido são:
 
-A) `172.20.160.0` e `172.20.175.255`.
+A) `172.20.160.0` e `172.20.191.255`.
 B) `172.20.168.0` e `172.20.175.255`.
 C) `172.20.173.0` e `172.20.173.255`.
-D) `172.20.160.0` e `172.20.191.255`.
+D) `172.20.160.0` e `172.20.175.255`.
 
 ### S2D2Q071 — Quantidade convencional de hosts pelo prefixo
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -3095,7 +3202,7 @@ D) 16.
 
 ### S2D2Q072 — Exceção do prefixo `/31` em enlace IPv4 ponto a ponto
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -3103,29 +3210,32 @@ D) 16.
 
 O bloco `10.0.0.10/31` é empregado em um enlace IPv4 ponto a ponto compatível com a RFC 3021. Nesse contexto:
 
-A) apenas `10.0.0.10` pode ser usado, porque `10.0.0.11` é sempre broadcast.
+A) `10.0.0.10` e `10.0.0.11` podem representar as duas extremidades do enlace.
 B) nenhum dos endereços pode ser usado, pois a fórmula `2^h - 2` resulta em zero.
-C) `10.0.0.10` e `10.0.0.11` podem representar as duas extremidades do enlace.
+C) apenas `10.0.0.10` pode ser usado, porque `10.0.0.11` é sempre broadcast.
 D) o prefixo deve ser interpretado como uma rota para um único host.
 
-### S2D2Q073 — Semântica excepcional do prefixo IPv4 `/32`
+### S2D2Q073 — Rota de host IPv4 com prefixo `/32`
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos).
+**Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos), especificamente o Exemplo F, que define `/32` como um endereço único ou rota de host.
 
-Em IPv4, o prefixo `/32`:
+Uma tabela de roteamento contém a entrada `203.0.113.9/32`. No contexto de roteamento IPv4, qual conjunto de destinos essa entrada representa?
 
-A) identifica exatamente um endereço ou uma rota de host, sem faixa convencional de hosts e broadcast de sub-rede.
-B) reserva dois endereços utilizáveis para as extremidades de um enlace ponto a ponto.
-C) equivale à máscara `255.255.255.254`.
-D) fornece um endereço de rede, um broadcast e 254 hosts utilizáveis.
+A) Somente `203.0.113.9`, pois os 32 bits foram fixados e a entrada funciona como rota de host.
+
+B) Os endereços `203.0.113.8` e `.9`, pois o último bit permanece disponível para duas extremidades.
+
+C) O bloco de `203.0.113.0` a `.255`, pois `/32` informa apenas o tamanho total do endereço IPv4.
+
+D) Uma sub-rede com rede `.9` e broadcast `.10`, pois dois endereços são reservados em qualquer prefixo.
 
 ### S2D2Q074 — Limites dos blocos privados RFC 1918
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -3140,7 +3250,7 @@ D) `172.31.200.5`.
 
 ### S2D2Q075 — Endereços de loopback em IPv4 e IPv6
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -3148,40 +3258,46 @@ D) `172.31.200.5`.
 
 Sobre endereços de loopback, assinale a alternativa correta.
 
-A) O IPv4 reserva `127.0.0.0/8`, e o IPv6 usa `::1/128`.
-B) Apenas `127.0.0.1` é loopback; os demais endereços `127/8` são públicos.
+A) Apenas `127.0.0.1` é loopback; os demais endereços `127/8` são públicos.
+B) O IPv4 reserva `127.0.0.0/8`, e o IPv6 usa `::1/128`.
 C) Loopback identifica o gateway padrão que encaminha pacotes para a Internet.
 D) O IPv6 utiliza `fe80::1` como seu único endereço de loopback.
 
-### S2D2Q076 — Autoconfiguração IPv4 link-local/APIPA
+### S2D2Q076 — Alcance de um endereço APIPA
 
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
-
-**Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
-
-Um computador Windows configurado para DHCP atribuiu a si próprio `169.254.20.8/16` porque o servidor não respondeu. Essa configuração:
-
-A) é loopback e permite testar apenas a pilha interna do próprio host.
-B) pertence à RFC 1918 e, por isso, recebe automaticamente uma rota para a Internet.
-C) é um endereço público provisório fornecido pela IANA.
-D) é link-local/APIPA, está na faixa selecionável `169.254.1.0` a `169.254.254.255` com `/16`, pode permitir comunicação no enlace e costuma indicar falha de DHCP.
-
-### S2D2Q077 — Diferença entre “fora dos blocos privados da RFC 1918” e “unicast público utilizável”
-
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
+**Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais), nos trechos sobre a faixa `169.254/16`, alcance local e autoconfiguração após falha de DHCP.
 
-Um analista concluiu que todo IPv4 fora dos três blocos privados da RFC 1918 é necessariamente unicast público utilizável na Internet. Assinale a avaliação correta.
+Um computador Windows configurado para DHCP não recebe resposta do servidor e atribui a si mesmo `169.254.20.8/16`. Como essa configuração deve ser interpretada?
 
-A) A conclusão está correta, pois somente endereços privados têm finalidade especial.
-B) A conclusão está correta, desde que o endereço não termine em `.0` ou `.255`.
-C) A conclusão está incorreta: também existem blocos de loopback, link-local, documentação, multicast e outras finalidades especiais.
-D) A conclusão está incorreta apenas para endereços IPv4 com prefixo maior que `/24`.
+A) É endereço de loopback, portanto o host o usa apenas internamente e não transmite quadros no enlace.
+
+B) É endereço privado RFC 1918, portanto o host recebe rota padrão mesmo sem resposta do servidor DHCP.
+
+C) É endereço link-local/APIPA, portanto pode servir no enlace, mas não cria acesso roteado e sugere falha do DHCP.
+
+D) É endereço de documentação, portanto o host o escolhe provisoriamente para acessar redes externas.
+
+### S2D2Q077 — Blocos especiais fora da RFC 1918
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais), especialmente a ressalva de que estar fora da RFC 1918 não prova utilização unicast pública.
+
+Um inventário classifica como “unicast público utilizável” todo endereço IPv4 que não pertence aos três blocos privados da RFC 1918. Qual ajuste técnico é necessário nessa regra?
+
+A) Manter a regra, pois somente os blocos privados possuem restrições de alcance ou finalidade no IPv4.
+
+B) Excluir apenas endereços terminados em `.0` ou `.255`, pois o último octeto define toda finalidade especial.
+
+C) Consultar também os blocos especiais, pois loopback, link-local, documentação e multicast ficam fora da RFC 1918.
+
+D) Excluir apenas endereços com prefixo maior que `/24`, pois prefixos menores são sempre públicos e roteáveis.
 
 ### S2D2Q078 — Divisão uniforme de um prefixo em sub-redes menores
 
@@ -3200,7 +3316,7 @@ D) 16 sub-redes, cada uma com 16 endereços e 14 hosts convencionais.
 
 ### S2D2Q079 — Alinhamento e pertencimento a uma sub-rede `/23`
 
-**Nível:** Difícil
+**Nível:** Muito difícil
 
 **Uso:** Aprofundamento
 
@@ -3221,7 +3337,7 @@ D) I, II e III.
 
 ### S2D2Q080 — Identificação do bloco que contém um IPv4
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -3264,39 +3380,45 @@ B) o pacote conserva o IP do servidor como destino, enquanto o quadro usa o MAC 
 C) o quadro é enviado sem MAC de destino, pois o roteador toma a decisão apenas com a porta TCP.
 D) a estação descobre por ARP o MAC do servidor remoto através de todos os roteadores.
 
-### S2D2Q083 — Fluxo de resolução ARP para destino local
+### S2D2Q083 — Sequência de resolução ARP no enlace local
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp).
+**Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp), especialmente a decisão entre destino local e remoto e o fluxo ARP Request em broadcast seguido normalmente por ARP Reply em unicast.
 
-Dois hosts IPv4 estão no mesmo enlace Ethernet e o emissor não possui a associação do destino no cache ARP. Em condições normais, ele:
+O host A, `192.168.10.20/24`, enviará um pacote ao host B, `192.168.10.80/24`. O gateway é `192.168.10.1`, e A não possui a associação de B em seu cache ARP. Qual sequência descreve a resolução normal antes do primeiro quadro?
 
-A) transmite um ARP Request em broadcast de camada 2, e o proprietário do IPv4 responde normalmente por unicast com seu MAC.
-B) envia uma consulta ARP por TCP ao servidor DNS e recebe o endereço IP do destino.
-C) encaminha o pedido ao roteador, pois mensagens ARP não circulam no enlace local.
-D) envia um ICMP Echo Request para descobrir a porta física do switch.
+A) A transmite ARP Request em multicast perguntando por `.80`; B envia ARP Reply em broadcast a todos os hosts.
 
-### S2D2Q084 — ARP para o gateway quando o destino IP é remoto
+B) A transmite ARP Request em unicast ao gateway perguntando por `.80`; o gateway devolve o próprio MAC no ARP Reply.
 
-**Nível:** Difícil
+C) A transmite ARP Request em broadcast perguntando por `.80`; B envia ARP Reply normalmente em unicast com seu MAC.
+
+D) A transmite ARP Reply em broadcast anunciando `.80`; B confirma a associação com outro ARP Reply em unicast.
+
+### S2D2Q084 — MAC do próximo salto para destino remoto
+
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp).
+**Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp), no trecho que determina a resolução do MAC do gateway ou próximo salto, e não do servidor remoto.
 
-O host `192.168.10.20/24` enviará dados a `198.51.100.10` usando o gateway `192.168.10.1`. Nessa situação, o ARP do host procura:
+O host `192.168.10.20/24` enviará um pacote a `198.51.100.10` usando o gateway `192.168.10.1`. Qual endereço MAC o host precisa obter por ARP para montar o primeiro quadro Ethernet?
 
-A) o MAC de `198.51.100.10`, propagando a consulta por todos os roteadores.
-B) a porta TCP do gateway, pois ARP relaciona IPv4 e serviço de transporte.
-C) o endereço IPv6 equivalente ao servidor remoto.
-D) o MAC de `192.168.10.1`, que é o próximo salto no enlace local.
+A) O MAC do servidor remoto, pois ele permanece como destino do pacote IP durante todo o percurso.
+
+B) O MAC do roteador da rede remota, pois esse equipamento entregará o último quadro ao servidor.
+
+C) O MAC do switch de acesso, pois esse equipamento encaminhará o primeiro quadro dentro da LAN.
+
+D) O MAC do gateway local, pois ele é o próximo salto alcançável no enlace do host de origem.
 
 ### S2D2Q085 — Função e transporte das mensagens ICMP
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -3309,20 +3431,23 @@ B) Echo Request e Echo Reply podem ser empregados pelo comando `ping`.
 C) Time Exceeded e Destination Unreachable são exemplos de mensagens de controle ou erro.
 D) Filtrar indiscriminadamente todo ICMP pode prejudicar diagnóstico e funções da rede.
 
-### S2D2Q086 — Neighbor Discovery e mensagens NS/NA
+### S2D2Q086 — Mensagens de resolução de vizinhança no IPv6
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp).
+**Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp), nos trechos sobre resolução de endereço de enlace, multicast solicited-node e resposta Neighbor Advertisement.
 
-No IPv6, o Neighbor Discovery:
+Um host IPv6 conhece o endereço unicast de um vizinho no mesmo enlace, mas ainda precisa descobrir seu endereço de camada de enlace. Qual troca de mensagens atende normalmente a essa finalidade?
 
-A) usa o ARP tradicional e transmite toda solicitação ao broadcast IPv6.
-B) limita-se a converter nomes DNS em endereços IPv6.
-C) funciona sobre TCP e emprega portas para Neighbor Solicitation e Neighbor Advertisement.
-D) integra o ICMPv6, usa mensagens como NS e NA e também apoia descoberta e manutenção de vizinhança.
+A) Neighbor Solicitation para multicast solicited-node e Neighbor Advertisement com a informação de enlace.
+
+B) Router Solicitation em multicast e Router Advertisement em unicast, mesmo que o alvo não seja roteador.
+
+C) Echo Request em multicast e Echo Reply em unicast, usando o diagnóstico como resolução de endereço.
+
+D) ARP Request em broadcast e ARP Reply em unicast, preservando o mecanismo usado no IPv4.
 
 ### S2D2Q087 — Regras de abreviação textual de IPv6
 
@@ -3341,7 +3466,7 @@ D) `2001:db8:ff00:42:8329::`.
 
 ### S2D2Q088 — Ausência de broadcast no IPv6
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -3354,24 +3479,27 @@ B) `ff02::1` é o endereço de broadcast global de todos os dispositivos IPv6.
 C) Todo prefixo IPv6 reserva o último endereço para broadcast dirigido.
 D) O broadcast IPv6 existe apenas em sub-redes com prefixo `/64`.
 
-### S2D2Q089 — Unicast, multicast e anycast no IPv6
+### S2D2Q089 — Entrega unicast, multicast e anycast no IPv6
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
+**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6), especialmente as definições de entrega a uma interface, a um grupo e a uma dentre várias interfaces.
 
-Assinale a alternativa que descreve corretamente tipos de endereço IPv6.
+Em uma rede IPv6, X identifica uma única interface; Y identifica um grupo cujos participantes recebem uma cópia; e Z é atribuído a interfaces distintas, mas o roteamento entrega o pacote a uma delas. X, Y e Z são, respectivamente:
 
-A) Unicast entrega obrigatoriamente a todos os nós, enquanto multicast entrega a uma única interface.
-B) Anycast identifica um grupo e entrega uma cópia a todas as interfaces que possuem o endereço.
-C) Unicast identifica uma interface; multicast, um grupo; anycast pode ser atribuído a várias interfaces e ser entregue a uma delas.
-D) Multicast e broadcast são nomes equivalentes no IPv6.
+A) multicast, unicast e anycast.
+
+B) anycast, multicast e unicast.
+
+C) unicast, multicast e anycast.
+
+D) unicast, anycast e multicast.
 
 ### S2D2Q090 — Determinação de prefixo IPv6 em fronteira de grupo
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -3380,13 +3508,13 @@ D) Multicast e broadcast são nomes equivalentes no IPv6.
 Qual é o prefixo de rede do endereço `2001:db8:abcd:12ef:1234:5678:9abc:def0/64`?
 
 A) `2001:db8:abcd::/64`.
-B) `2001:db8:abcd:1200::/64`.
-C) `2001:db8:abcd:12ef::/64`.
+B) `2001:db8:abcd:12ef::/64`.
+C) `2001:db8:abcd:1200::/64`.
 D) `2001:db8:abcd:12ef:1234::/64`.
 
 ### S2D2Q091 — Blocos especiais e escopos do IPv6
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -3416,13 +3544,13 @@ III. Roteadores não devem encaminhar tráfego de escopo link-local para além d
 Está correto o que se afirma em:
 
 A) I, apenas.
-B) I, II e III.
+B) I e III, apenas.
 C) II e III, apenas.
-D) I e III, apenas.
+D) I, II e III.
 
 ### S2D2Q093 — Escolha do prefixo a partir de requisito de hosts e maximização de sub-redes
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -3430,14 +3558,14 @@ D) I e III, apenas.
 
 Uma rede `192.168.8.0/24` deve ser dividida em sub-redes iguais, buscando a maior quantidade possível de sub-redes, com pelo menos 50 hosts convencionais em cada uma. Qual solução atende ao requisito?
 
-A) Usar `/26`, obtendo 4 sub-redes com 62 hosts convencionais em cada uma.
-B) Usar `/27`, obtendo 8 sub-redes com 62 hosts convencionais em cada uma.
+A) Usar `/27`, obtendo 8 sub-redes com 62 hosts convencionais em cada uma.
+B) Usar `/26`, obtendo 4 sub-redes com 62 hosts convencionais em cada uma.
 C) Usar `/25`, obtendo 4 sub-redes com 126 hosts convencionais em cada uma.
 D) Usar `/28`, obtendo 16 sub-redes com 50 hosts convencionais em cada uma.
 
 ### S2D2Q094 — Alinhamento e não sobreposição em VLSM
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -3446,9 +3574,9 @@ D) Usar `/28`, obtendo 16 sub-redes com 50 hosts convencionais em cada uma.
 No bloco `10.0.0.0/24`, já foram alocados `10.0.0.0/26` e `10.0.0.128/27`. Qual prefixo adicional `/27` está corretamente alinhado e não se sobrepõe aos blocos existentes?
 
 A) `10.0.0.32/27`.
-B) `10.0.0.64/27`.
+B) `10.0.0.144/27`.
 C) `10.0.0.128/27`.
-D) `10.0.0.144/27`.
+D) `10.0.0.64/27`.
 
 ### S2D2Q095 — Decisão de localidade com máscaras divergentes
 
@@ -3467,7 +3595,7 @@ D) B considera A local, mas A considera B remoto, porque `/25` abrange mais ende
 
 ### S2D2Q096 — Cálculo integrado de rede, broadcast e hosts em `/21`
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -3482,7 +3610,7 @@ D) `10.34.173.0`, `10.34.173.255` e 254 hosts.
 
 ### S2D2Q097 — Localização ordinal de sub-rede e respectivas fronteiras
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -3516,20 +3644,23 @@ B) II e III, apenas.
 C) I e II, apenas.
 D) I, II e III.
 
-### S2D2Q099 — TTL, descarte e mensagem ICMP Time Exceeded
+### S2D2Q099 — Expiração do TTL e ICMP Time Exceeded
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
+**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp), especialmente os trechos sobre Time Exceeded, ausência de portas de transporte e inexistência de confiabilidade automática do IP.
 
-Um host envia a um servidor remoto um pacote IPv4 com TTL igual a 1. Ao processá-lo, o primeiro roteador reduz esse campo a zero. Assinale a consequência compatível com o funcionamento do IP e do ICMP.
+Um pacote IPv4 chega ao primeiro roteador com TTL igual a 1. Após reduzir o campo, o roteador obtém zero. Qual procedimento é compatível com IP e ICMP?
 
-A) O roteador encaminha o pacote e envia ICMP Echo Reply ao destino, pois o TTL só é validado pelo servidor final.
-B) O roteador descarta o pacote e pode enviar ICMP Time Exceeded à origem; a mensagem não usa porta TCP/UDP nem torna o IP confiável.
-C) O roteador retransmite o pacote original de forma confiável depois de abrir uma conexão TCP com a origem.
-D) O roteador converte o pacote em ARP Request e o difunde pelos enlaces restantes até localizar o servidor.
+A) Encaminhar o pacote com TTL zero e solicitar ao destino um ICMP Destination Unreachable para a origem.
+
+B) Restaurar o TTL ao valor inicial e encaminhar o pacote, registrando a mudança em uma mensagem ICMP Redirect.
+
+C) Descartar o pacote e poder enviar ICMP Time Exceeded à origem, sem usar porta TCP/UDP nem retransmitir os dados.
+
+D) Descartar o pacote e enviar ICMP Echo Reply à origem, que então refaz automaticamente a transmissão.
 
 ### S2D2Q100 — Integração entre roteamento, protocolos e comparação OSI/TCP/IP
 
@@ -3537,7 +3668,7 @@ D) O roteador converte o pacote em ARP Request e o difunde pelos enlaces restant
 
 **Uso:** Simulado
 
-**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip) e [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
+**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip), [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento) e [ARP](semana_02_estudo.md#s2-d2-arp).
 
 Analise as afirmativas.
 
@@ -3566,9 +3697,9 @@ D) III, apenas.
 Um gestor decide ignorar requisito legal porque acredita que o procedimento alternativo será mais rápido e econômico. À luz dos princípios do art. 37, assinale a alternativa correta.
 
 A) A eficiência autoriza afastar a legalidade sempre que houver redução de custos.
-B) A busca de eficiência não permite descumprir o ordenamento nem atuar fora da competência atribuída.
+B) A legalidade vincula apenas particulares, enquanto a Administração atua por liberdade geral.
 C) A conduta é válida se receber publicidade depois de praticada, ainda que permaneça contrária à lei.
-D) A legalidade vincula apenas particulares, enquanto a Administração atua por liberdade geral.
+D) A busca de eficiência não permite descumprir o ordenamento nem atuar fora da competência atribuída.
 #### Extra Dia 2.2
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
@@ -3625,10 +3756,10 @@ D) O CRA-PR é associação privada, pois conselhos profissionais não integram 
 
 Na revisão estudada, autarquia é definida como:
 
-A) pessoa jurídica de direito público criada por lei para desempenhar atividade administrativa típica.
+A) modalidade de empresa pública que deve possuir capital privado majoritário.
 B) órgão sem personalidade jurídica criado por ato interno para explorar atividade econômica.
 C) sociedade privada formada livremente por agentes públicos e sem vínculo com a Administração Indireta.
-D) modalidade de empresa pública que deve possuir capital privado majoritário.
+D) pessoa jurídica de direito público criada por lei para desempenhar atividade administrativa típica.
 #### Extra Dia 2.6
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
@@ -3645,26 +3776,37 @@ B) a forma, pois competência indica somente o modo pelo qual o ato se exteriori
 C) a competência, que responde à pergunta sobre quem pode praticar o ato.
 D) o motivo, que se confunde com a identidade funcional do agente responsável.
 #### Extra Dia 2.7
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** presunção de legitimidade, imperatividade e autoexecutoriedade.
-- **Nível:** Médio
+
+- **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
-Sobre os atributos do ato administrativo, assinale a alternativa correta.
+- **Referência:** [Elementos e atributos do ato administrativo](semana_02_estudo.md#s2-d2-revisao-atos), nos trechos sobre presunção relativa e hipóteses de autoexecutoriedade.
 
-A) A presunção de legitimidade e veracidade é relativa, e a autoexecutoriedade existe apenas quando admitida por lei ou por situação urgente.
-B) A presunção de legitimidade impede qualquer contestação administrativa ou judicial.
-C) A imperatividade está presente em todo ato e exige concordância prévia do destinatário.
-D) A autoexecutoriedade permite execução direta de qualquer ato, independentemente de previsão ou urgência.
+Ao revisar os atributos dos atos administrativos, um servidor compara a presunção de legitimidade e veracidade com a autoexecutoriedade. Assinale a alternativa correta.
+
+A) A presunção não admite prova em contrário, e a autoexecutoriedade acompanha todo ato, mesmo sem previsão ou urgência.
+
+B) A presunção não admite prova em contrário, e a autoexecutoriedade depende de previsão legal ou de situação urgente.
+
+C) A presunção admite prova em contrário, e a autoexecutoriedade acompanha todo ato, mesmo sem previsão ou urgência.
+
+D) A presunção admite prova em contrário, e a autoexecutoriedade depende de previsão legal ou de situação urgente.
+
 #### Extra Dia 2.8
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** distinção entre anulação e revogação.
-- **Nível:** Médio
+- **Nível:** Difícil
 - **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
@@ -3690,35 +3832,57 @@ B) há vício sanável e a correção não causa lesão ao interesse público ne
 C) qualquer ilegalidade é constatada, inclusive vício insanável, independentemente de consequências.
 D) ocorreu má-fé do destinatário e já transcorreu o prazo de cinco anos.
 #### Extra Dia 2.10
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** decadência do direito de anular ato favorável no art. 54.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
-No âmbito da Lei nº 9.784/1999, sobre a anulação de atos que geraram efeitos favoráveis aos destinatários, assinale a alternativa correta.
+- **Referência:** [Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento), no parágrafo sobre prazo de cinco anos, má-fé e primeiro pagamento em efeitos patrimoniais contínuos.
 
-A) O direito de anular nunca sofre limite temporal quando existe qualquer vício.
-B) O prazo é sempre contado do último pagamento, inclusive em efeitos patrimoniais contínuos.
-C) A decadência ocorre em dois anos e não admite consideração da má-fé.
-D) Em regra, o prazo é de cinco anos desde o ato; em efeitos patrimoniais contínuos, conta-se do primeiro pagamento, ressalvada comprovada má-fé.
+Sem má-fé comprovada, a Administração revê em 2/9/2025 dois atos favoráveis: I. ato de efeito único praticado em 1/8/2020; II. benefício de efeitos patrimoniais contínuos cujo primeiro pagamento ocorreu em 1/12/2020. À luz do art. 54 da Lei nº 9.784/1999, assinale a alternativa correta.
+
+A) Não ocorreu decadência em nenhum caso, pois vício de legalidade permite anulação a qualquer tempo, ainda que o destinatário esteja de boa-fé.
+
+B) Ocorreu decadência nos dois casos, pois o prazo do benefício contínuo é contado da prática do ato, sem relação com o primeiro pagamento.
+
+C) Ocorreu decadência no ato I, mas não no ato II, pois são cinco anos desde o ato ou, nos efeitos contínuos, desde o primeiro pagamento.
+
+D) Não ocorreu decadência no ato I, mas ocorreu no ato II, pois o prazo comum é bienal e se conta do último pagamento efetuado.
+
 #### Extra Dia 2.11
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** articulação entre LAI e LGPD.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão de Administração Pública — LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
 
-Quanto à relação entre LAI e LGPD, assinale a alternativa correta.
+- **Referência:** [LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd), especialmente a convivência entre acesso devido e proteção de dados pessoais.
 
-A) A LAI revoga a proteção de dados sempre que a informação estiver em documento público.
-B) A LGPD impede o Poder Público de tratar dados pessoais para finalidade pública.
-C) As duas leis convivem: acesso à informação não autoriza exposição irrestrita, e proteção de dados não cria sigilo automático.
-D) A aplicação de uma delas exclui necessariamente a outra no mesmo caso concreto.
+Um pedido de acesso alcança documento público que também contém dados pessoais não necessários à finalidade informativa. A relação adequada entre LAI e LGPD é:
+
+A) Aplicar somente a LAI e divulgar o documento integral, pois a presença em arquivo público afasta qualquer proteção de dado pessoal.
+
+B) Aplicar somente a LGPD e negar todo o documento, pois a presença de qualquer dado pessoal cria sigilo automático sobre o conteúdo.
+
+C) Escolher uma das duas leis conforme a preferência do órgão, pois transparência e proteção não podem incidir no mesmo caso.
+
+D) Compatibilizar as duas leis, fornecer o acesso devido e proteger os dados pessoais cuja exposição não seja necessária ou autorizada.
+
 #### Extra Dia 2.12
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
@@ -3739,97 +3903,130 @@ D) culpa leve e resultado inconveniente bastam, sem necessidade de conduta tipif
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** distinção entre dispensa e inexigibilidade.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 Uma contratação possui fornecedor exclusivo comprovado e competição inviável. Considerando apenas o núcleo estudado, a situação pode caracterizar:
 
-A) dispensa, porque toda contratação direta pressupõe competição inviável.
+A) inexigibilidade, desde que observados os requisitos legais aplicáveis.
 B) pregão, pois fornecedor exclusivo é critério de julgamento dessa modalidade.
 C) revogação da licitação, que elimina a necessidade de processo e motivação.
-D) inexigibilidade, desde que observados os requisitos legais aplicáveis.
+D) dispensa, porque toda contratação direta pressupõe competição inviável.
 #### Extra Dia 2.14
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** contratação direta e modalidades licitatórias.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
-Sobre licitação e contratação direta, assinale a alternativa correta.
+- **Referência:** [Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao), nos trechos sobre instrução da contratação direta e modalidades da Lei nº 14.133/2021.
 
-A) Dispensa e inexigibilidade eliminam processo, motivação, justificativa e controle.
-B) Critério de julgamento e modalidade são expressões equivalentes na Lei nº 14.133/2021.
-C) Contratação direta continua sujeita a processo e controle; pregão e diálogo competitivo estão entre as modalidades estudadas.
-D) Concurso e leilão não são modalidades, pois se aplicam apenas a relações privadas.
+Uma equipe revisa duas proposições: I. contratação direta continua sujeita a processo, motivação, justificativa e controle; II. pregão e diálogo competitivo são modalidades da Lei nº 14.133/2021. Assinale a alternativa correta.
+
+A) A proposição I está errada, e a II está errada, pois contratação direta dispensa processo e os dois institutos são critérios de julgamento.
+
+B) A proposição I está correta, e a II está errada, pois contratação direta exige processo, mas os dois institutos são critérios de julgamento.
+
+C) A proposição I está correta, e a II está correta, pois contratação direta exige instrução e os dois institutos integram o rol de modalidades.
+
+D) A proposição I está errada, e a II está correta, pois contratação direta dispensa instrução, embora os dois institutos sejam modalidades.
+
 #### Extra Dia 2.15
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** responsabilidade civil objetiva do Estado e ação regressiva.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão de Administração Pública — Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade).
 
-Na responsabilidade civil objetiva do Estado perante a vítima, conforme a revisão, assinale a alternativa correta.
+- **Referência:** [Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade), nos trechos sobre requisitos perante a vítima e regresso em caso de dolo ou culpa.
 
-A) A vítima é indenizada automaticamente, mesmo sem dano ou nexo causal.
-B) O direito de regresso contra o agente independe de dolo ou culpa.
-C) Apenas sociedades de economia mista respondem objetivamente por atos de seus agentes.
-D) Ainda se exigem conduta estatal, dano e nexo causal, assegurado regresso contra o agente em caso de dolo ou culpa.
+Ao analisar dano causado por agente público nessa qualidade, a equipe separa a pretensão da vítima contra o Estado da ação regressiva contra o agente. Assinale a alternativa correta.
+
+A) A vítima deve provar conduta, dano, nexo e culpa do agente, enquanto o regresso independe de dolo ou culpa.
+
+B) A vítima recebe indenização sem demonstrar dano ou nexo, enquanto o regresso depende de dolo ou culpa do agente.
+
+C) A vítima deve provar conduta, dano e nexo, enquanto o regresso contra o agente independe de dolo ou culpa.
+
+D) A vítima deve provar conduta, dano e nexo, sem provar culpa estatal, enquanto o regresso exige dolo ou culpa do agente.
+
 #### Extra Dia 2.16
+
 - **Dia:** Dia 2
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** quantificadores, modalidade e alcance do enunciado.
+
 - **Nível:** Difícil
+
 - **Uso:** Simulado
-- **Referência:** [Revisão de Português — Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores).
 
-Leia: “Em enlaces IPv4 ponto a ponto, um prefixo `/31` pode usar os dois endereços.” Assinale a interpretação fiel ao alcance da frase.
+- **Referência:** [Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores), especialmente a diferença entre possibilidade, obrigação e recorte ponto a ponto.
 
-A) Toda rede `/31` deve ser uma LAN multiacesso com dois hosts.
-B) O uso dos dois endereços é apresentado como possibilidade no contexto específico de enlace ponto a ponto.
-C) Nenhuma rede `/31` admite dois endereços, pois “pode” expressa proibição.
-D) O enunciado obriga qualquer implementação IPv4 a empregar `/31`.
+Leia: “Em enlaces IPv4 ponto a ponto, um prefixo /31 pode usar os dois endereços.” Assinale a interpretação que preserva simultaneamente o contexto e a força do verbo.
+
+A) A frase transforma o /31 em obrigação para qualquer rede IPv4 e elimina a restrição ao enlace ponto a ponto.
+
+B) A frase apresenta, apenas no contexto ponto a ponto, a possibilidade de empregar os dois endereços do /31.
+
+C) A frase apresenta, no contexto ponto a ponto, proibição de empregar os dois endereços, porque “pode” nega a operação.
+
+D) A frase atribui a toda implementação IPv4 o dever de adotar /31 sempre que existirem exatamente duas interfaces.
+
 #### Extra Dia 2.17
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** coesão referencial e relação adversativa.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [Revisão de Português — Coesão e relação lógica](semana_02_estudo.md#s2-d2-revisao-coesao).
 
 No período “O IPv6 amplia o espaço de endereçamento; entretanto, esse fato não elimina a necessidade de planejamento”, assinale a alternativa correta.
 
-A) “Entretanto” introduz causa, e “esse” antecipa uma informação ainda não apresentada.
+A) “Entretanto” marca oposição ou ressalva, e “esse fato” retoma a ampliação do espaço de endereçamento.
 B) “Entretanto” conclui o raciocínio, e “esse” retoma a necessidade de planejamento.
-C) “Entretanto” marca oposição ou ressalva, e “esse fato” retoma a ampliação do espaço de endereçamento.
+C) “Entretanto” introduz causa, e “esse” antecipa uma informação ainda não apresentada.
 D) O período permite inferir que o planejamento se tornou desnecessário.
 #### Extra Dia 2.18
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação de termos essenciais e expressões explicativas.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão de Português — Pontuação](semana_02_estudo.md#s2-d2-revisao-pontuacao).
 
 Assinale a alternativa com pontuação adequada.
 
 A) Os endereços privados, podem ser reutilizados por organizações diferentes.
-B) O gateway padrão encaminha, destinos remotos quando não há rota mais específica.
+B) O ARP, no IPv4 sobre Ethernet, resolve endereço IP em endereço MAC.
 C) O IPv6 que possui 128 bits não, utiliza endereço de broadcast.
-D) O ARP, no IPv4 sobre Ethernet, resolve endereço IP em endereço MAC.
+D) O gateway padrão encaminha, destinos remotos quando não há rota mais específica.
 #### Extra Dia 2.19
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** encontro entre preposição `a` e artigo feminino `a` ou `as`.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão de Português — Crase aplicada](semana_02_estudo.md#s2-d2-revisao-crase).
 
@@ -3844,7 +4041,7 @@ D) O analista entregou o relatório à revisar pelo gestor.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** equivalência em reescrita técnica.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [Revisão de Português — Reescrita técnica](semana_02_estudo.md#s2-d2-revisao-reescrita).
 
@@ -3861,78 +4058,78 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 | Questão | Resposta |
 |---:|:---:|
 | 1 | D |
-| 2 | A |
+| 2 | B |
 | 3 | D |
-| 4 | D |
+| 4 | A |
 | 5 | B |
 | 6 | C |
 | 7 | B |
-| 8 | B |
+| 8 | D |
 | 9 | A |
-| 10 | B |
-| 11 | D |
+| 10 | A |
+| 11 | C |
 | 12 | C |
-| 13 | C |
+| 13 | D |
 | 14 | B |
-| 15 | C |
+| 15 | A |
 | 16 | D |
-| 17 | D |
-| 18 | A |
+| 17 | B |
+| 18 | C |
 | 19 | B |
-| 20 | A |
+| 20 | D |
 | 21 | C |
-| 22 | C |
+| 22 | A |
 | 23 | A |
 | 24 | D |
-| 25 | A |
-| 26 | D |
+| 25 | B |
+| 26 | C |
 | 27 | C |
 | 28 | A |
 | 29 | B |
 | 30 | B |
 | 31 | D |
 | 32 | B |
-| 33 | A |
+| 33 | C |
 | 34 | D |
 | 35 | A |
-| 36 | D |
+| 36 | A |
 | 37 | C |
 | 38 | A |
 | 39 | C |
-| 40 | C |
+| 40 | B |
 | 41 | A |
-| 42 | B |
-| 43 | A |
-| 44 | B |
+| 42 | D |
+| 43 | B |
+| 44 | D |
 | 45 | C |
 | 46 | A |
 | 47 | B |
 | 48 | D |
-| 49 | B |
+| 49 | C |
 | 50 | C |
 
 ### Gabarito das questões extras
 
 | Extra | Resposta |
 |---:|:---:|
-| 2.1 | B |
+| 2.1 | D |
 | 2.2 | A |
 | 2.3 | B |
 | 2.4 | C |
-| 2.5 | A |
+| 2.5 | D |
 | 2.6 | C |
-| 2.7 | A |
+| 2.7 | D |
 | 2.8 | D |
 | 2.9 | B |
-| 2.10 | D |
-| 2.11 | C |
+| 2.10 | C |
+| 2.11 | D |
 | 2.12 | A |
-| 2.13 | D |
+| 2.13 | A |
 | 2.14 | C |
 | 2.15 | D |
 | 2.16 | B |
-| 2.17 | C |
-| 2.18 | D |
+| 2.17 | A |
+| 2.18 | B |
 | 2.19 | B |
 | 2.20 | A |
 
@@ -3965,12 +4162,12 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Apresentação cuida didaticamente da representação, codificação, compressão e proteção dos dados.
-- **B)** Incorreta. Sessão organiza diálogos, manutenção e sincronização, não a forma de representar os dados.
+- **A)** Incorreta. Sessão organiza diálogos, manutenção e sincronização, não a forma de representar os dados.
+- **B)** Correta. Apresentação cuida didaticamente da representação, codificação, compressão e proteção dos dados.
 - **C)** Incorreta. Transporte atende processos finais, usando recursos como portas, segmentação e controle conforme o protocolo.
 - **D)** Incorreta. Rede trata de endereçamento lógico e encaminhamento entre redes.
 
@@ -4009,14 +4206,14 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Escolher rota pelo IP é função de Rede, não de um repetidor físico.
+- **A)** Correta. A Física transmite bits como sinais sem interpretar endereços MAC ou IP.
 - **B)** Incorreta. Quadros e aprendizagem de MAC pertencem ao Enlace.
 - **C)** Incorreta. Diálogo e sincronização são funções conceituais da Sessão.
-- **D)** Correta. A Física transmite bits como sinais sem interpretar endereços MAC ou IP.
+- **D)** Incorreta. Escolher rota pelo IP é função de Rede, não de um repetidor físico.
 
 **Conceito:** atuação da camada Física e de repetidores.
 
@@ -4097,14 +4294,14 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. O receptor precisa reconhecer o quadro antes de alcançar o segmento encapsulado no pacote.
-- **B)** Correta. Bits formam o quadro, do qual se extrai o pacote IPv4, depois o segmento TCP e os dados.
+- **B)** Incorreta. A ordem começa pelas camadas inferiores, e o segmento precede a entrega dos dados à aplicação.
 - **C)** Incorreta. Bits não são processados depois do quadro; constituem sua representação no meio.
-- **D)** Incorreta. A ordem começa pelas camadas inferiores, e o segmento precede a entrega dos dados à aplicação.
+- **D)** Correta. Bits formam o quadro, do qual se extrai o pacote IPv4, depois o segmento TCP e os dados.
 
 **Conceito:** desencapsulamento ascendente no receptor.
 
@@ -4116,7 +4313,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q059
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: A.**
@@ -4141,12 +4338,12 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A opção troca as PDUs de TCP, IP e Ethernet e chama os bits de dados genéricos.
-- **B)** Correta. TCP usa segmento, IP pacote ou datagrama, Ethernet quadro e Física bits.
+- **A)** Correta. TCP usa segmento, IP pacote ou datagrama, Ethernet quadro e Física bits.
+- **B)** Incorreta. A opção troca as PDUs de TCP, IP e Ethernet e chama os bits de dados genéricos.
 - **C)** Incorreta. Pacote, quadro e datagrama UDP foram associados às camadas erradas.
 - **D)** Incorreta. Bits são da Física, não do TCP; pacote é da camada Internet, não da Física.
 
@@ -4163,22 +4360,23 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. UDP pertence ao Transporte e IP à camada Internet, portanto os termos não são sinônimos.
-- **B)** Incorreta. Nenhuma das duas unidades pertence à Física, e datagrama UDP não é quadro.
-- **C)** Incorreta. A relação de encapsulamento está invertida: IP envolve UDP.
-- **D)** Correta. O datagrama UDP de Transporte pode ser a carga de um datagrama IP.
+- **A)** UDP pertence ao Transporte, enquanto IP pertence à camada Internet; o uso da palavra “datagrama” não os coloca na mesma camada.
+- **B)** UDP não é protocolo da Aplicação e não encapsula IP; ele fornece a PDU que será carregada pelo datagrama IP.
+- **C)** o datagrama UDP é uma unidade de Transporte que pode compor a carga útil de um datagrama IP.
+- **D)** IP não pertence ao Transporte, e a alternativa inverte a ordem efetiva de encapsulamento.
 
-**Conceito:** diferença entre datagrama UDP e datagrama IP.
+**Conceito:** camada e relação de encapsulamento entre datagrama UDP e datagrama IP.
 
-**Pegadinha:** concluir que o mesmo substantivo “datagrama” indica a mesma camada.
+**Pegadinha:** interpretar o mesmo nome genérico de PDU como prova de que UDP e IP pertencem à mesma camada.
 
-**Como pensar:** identifique primeiro o protocolo que qualifica a PDU e depois sua posição no encapsulamento.
+**Como pensar:** identifique primeiro a camada de cada protocolo; depois coloque a PDU da camada superior dentro da PDU da camada inferior.
 
-**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
+**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus), especialmente a tabela que associa o datagrama UDP ao Transporte e o datagrama IP à camada Rede/Internet.
 
 ### Comentário S2D2Q062
 
@@ -4207,22 +4405,23 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O switch aprende pela origem observada, não presume que o destino esteja na porta de entrada.
-- **B)** Incorreta. A tabela de comutação de camada 2 relaciona MAC e porta, não IP e rota padrão.
-- **C)** Correta. O quadro recebido comprova que o MAC de origem é alcançável pela porta 5.
-- **D)** Incorreta. Números TCP não participam da aprendizagem de MAC do switch.
+- **A)** o endereço de destino orienta a decisão de encaminhamento, mas não demonstra que o destino seja alcançável pela porta de entrada.
+- **B)** o switch associa a origem à porta pela qual o quadro chegou, não à porta que eventualmente escolherá para encaminhá-lo.
+- **C)** a presença do destino no cabeçalho não revela sua localização; o switch só aprendeu diretamente a localização da origem.
+- **D)** a chegada do quadro pela porta 5 comprova que o MAC de origem é alcançável por essa porta naquele momento.
 
-**Conceito:** aprendizagem de endereços pelo switch.
+**Conceito:** aprendizagem da tabela de comutação pelo MAC de origem e pela porta de entrada.
 
-**Pegadinha:** trocar origem por destino ao descrever a atualização da tabela MAC.
+**Pegadinha:** trocar a informação aprendida sobre a origem pela decisão posterior de encaminhamento baseada no destino.
 
-**Como pensar:** o equipamento aprende com a informação cuja localização acabou de observar: a origem.
+**Como pensar:** pergunte qual localização o quadro acabou de demonstrar ao equipamento: a do emissor visto na porta de chegada.
 
-**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
+**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac), no item que estabelece que switches aprendem o MAC de origem observado na porta de entrada.
 
 ### Comentário S2D2Q064
 
@@ -4251,13 +4450,13 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. `/20` corresponderia a quatro bits 1 no terceiro octeto, cujo valor seria 240.
+- **A)** Correta. `255` fornece 8 bits, outro `255` mais 8 e `252` fornece 6: `8 + 8 + 6 = 22`.
 - **B)** Incorreta. `/21` usaria 248 no terceiro octeto, com cinco bits 1.
-- **C)** Correta. `255` fornece 8 bits, outro `255` mais 8 e `252` fornece 6: `8 + 8 + 6 = 22`.
+- **C)** Incorreta. `/20` corresponderia a quatro bits 1 no terceiro octeto, cujo valor seria 240.
 - **D)** Incorreta. `/23` exigiria sete bits 1 no terceiro octeto, isto é, 254.
 
 **Conceito:** conversão de máscara decimal para prefixo CIDR.
@@ -4295,14 +4494,16 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta como escolha. `255.255.255.192` tem 26 bits 1 contíguos e é máscara válida.
-- **B)** Incorreta como escolha. `255.255.254.0` representa `/23` com contiguidade preservada.
+- **B)** Correta. Em `255.255.240.128`, o terceiro octeto termina com zeros e o quarto reintroduz um bit 1.
 - **C)** Incorreta como escolha. `255.248.0.0` representa `/13` e não volta a apresentar bits 1 após zeros.
-- **D)** Correta. Em `255.255.240.128`, o terceiro octeto termina com zeros e o quarto reintroduz um bit 1.
+- **D)** Incorreta como escolha. `255.255.254.0` representa `/23` com contiguidade preservada.
+
+**Observação:** o comando pede a alternativa que NÃO representa uma máscara normal; por isso, B é o gabarito embora descreva a sequência inválida.
 
 **Conceito:** contiguidade dos bits da máscara CIDR IPv4.
 
@@ -4314,16 +4515,16 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q068
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. `/26` usa máscara final 192, bloco `256 - 192 = 64`; 158 está em 128–191.
+- **A)** Incorreta. `.64` inicia o bloco anterior, que termina em `.127`.
 - **B)** Incorreta. `.190` é host válido, mas o broadcast tem todos os seis bits de host em 1 e vale `.191`.
-- **C)** Incorreta. `.64` inicia o bloco anterior, que termina em `.127`.
+- **C)** Correta. `/26` usa máscara final 192, bloco `256 - 192 = 64`; 158 está em 128–191.
 - **D)** Incorreta. `.152` e `.159` não são as fronteiras de um bloco `/26`.
 
 **Conceito:** cálculo de rede e broadcast pelo tamanho do bloco.
@@ -4336,7 +4537,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q069
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: B.**
@@ -4358,17 +4559,17 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q070
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. `/20` tem máscara `255.255.240.0`, incremento 16 no terceiro octeto; 173 cai em 160–175.
+- **A)** Incorreta. O final 191 pertence a um bloco maior que o `/20` informado.
 - **B)** Incorreta. O início 168 não é múltiplo do bloco 16 exigido por `/20`.
 - **C)** Incorreta. Zerar apenas o quarto octeto equivaleria ao raciocínio de `/24`.
-- **D)** Incorreta. O final 191 pertence a um bloco maior que o `/20` informado.
+- **D)** Correta. `/20` tem máscara `255.255.240.0`, incremento 16 no terceiro octeto; 173 cai em 160–175.
 
 **Conceito:** cálculo de rede e broadcast quando a fronteira está no terceiro octeto.
 
@@ -4380,7 +4581,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q071
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: C.**
@@ -4402,16 +4603,16 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q072
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. No contexto RFC 3021, `.11` não é tratado como broadcast convencional do enlace.
+- **A)** Correta. Os dois endereços do bloco podem identificar as duas extremidades do enlace compatível.
 - **B)** Incorreta. Aplicar `2^h - 2` mecanicamente apagaria justamente a exceção do `/31` ponto a ponto.
-- **C)** Correta. Os dois endereços do bloco podem identificar as duas extremidades do enlace compatível.
+- **C)** Incorreta. No contexto RFC 3021, `.11` não é tratado como broadcast convencional do enlace.
 - **D)** Incorreta. Rota de um único host é a semântica de `/32`, não de `/31`.
 
 **Conceito:** exceção do prefixo `/31` em enlace IPv4 ponto a ponto.
@@ -4424,29 +4625,30 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q073
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. `/32` fixa os 32 bits e representa exatamente um endereço ou rota de host.
-- **B)** Incorreta. Duas extremidades é a aplicação especial de `/31`.
-- **C)** Incorreta. `255.255.255.254` corresponde a `/31`; `/32` usa todos os bits em 1.
-- **D)** Incorreta. A descrição de 254 hosts remete a `/24` convencional, não a `/32`.
+- **A)** o prefixo fixa todos os 32 bits do IPv4 e seleciona exatamente o endereço `203.0.113.9`.
+- **B)** o prefixo que deixa um bit disponível contém dois endereços e é `/31`, não `/32`.
+- **C)** o intervalo de `.0` a `.255` corresponde a um bloco `/24`; `/32` não descreve todo esse bloco.
+- **D)** não se aplicam rede, broadcast e faixa convencional de hosts quando a entrada seleciona um único endereço.
 
-**Conceito:** semântica excepcional do prefixo IPv4 `/32`.
+**Conceito:** semântica de `/32` como rota de host no IPv4.
 
-**Pegadinha:** tentar calcular rede, broadcast e faixa onde existe apenas uma rota de host.
+**Pegadinha:** aplicar mecanicamente a subtração de rede e broadcast a um prefixo sem bits de host.
 
-**Como pensar:** com zero bits de host, pare o método de sub-rede convencional e identifique o endereço único.
+**Como pensar:** calcule quantos bits restam para variar; com `32 - 32 = 0`, há somente uma combinação possível.
 
-**Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos).
+**Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos), especificamente o Exemplo F, que define `/32` como um endereço único ou rota de host.
 
 ### Comentário S2D2Q074
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: D.**
@@ -4468,15 +4670,15 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q075
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. IPv4 reserva todo o bloco `127/8`, e IPv6 define `::1/128` para loopback.
-- **B)** Incorreta. `127.0.0.1` é apenas o exemplo mais conhecido, não o único endereço do bloco.
+- **A)** Incorreta. `127.0.0.1` é apenas o exemplo mais conhecido, não o único endereço do bloco.
+- **B)** Correta. IPv4 reserva todo o bloco `127/8`, e IPv6 define `::1/128` para loopback.
 - **C)** Incorreta. Loopback representa o próprio host e não funciona como gateway para a Internet.
 - **D)** Incorreta. `fe80::/10` é link-local; o loopback IPv6 é `::1`.
 
@@ -4490,47 +4692,49 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q076
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
 
-**Análise das alternativas:**
-
-- **A)** Incorreta. `169.254/16` é link-local; loopback IPv4 pertence a `127/8`.
-- **B)** Incorreta. APIPA não integra os blocos privados RFC 1918 e não cria acesso roteado à Internet.
-- **C)** Incorreta. O endereço não é público nem foi atribuído como concessão global provisória.
-- **D)** Correta. `169.254.20.8` está na faixa selecionável APIPA e sugere que a configuração DHCP esperada não foi obtida.
-
-**Conceito:** autoconfiguração IPv4 link-local/APIPA.
-
-**Pegadinha:** confundir alcance local ao enlace com loopback ou com endereço privado roteável internamente.
-
-**Como pensar:** confira a faixa selecionável `169.254.1.0`–`169.254.254.255`, a máscara `/16` e a ausência de rota automática à Internet.
-
-**Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
-
-### Comentário S2D2Q077
-
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Há diversas finalidades especiais além dos três blocos privados.
-- **B)** Incorreta. A terminação decimal não determina se um endereço é globalmente utilizável, pois isso depende do prefixo e da finalidade do bloco.
-- **C)** Correta. Loopback, link-local, documentação, multicast e outras reservas impedem a conclusão automática.
-- **D)** Incorreta. A ressalva não depende apenas de o prefixo ser maior que `/24`.
+- **A)** loopback IPv4 pertence a `127.0.0.0/8`; um endereço APIPA pode ser usado em quadros no enlace local.
+- **B)** `169.254.0.0/16` não integra a RFC 1918 e não fornece automaticamente rota para redes externas.
+- **C)** a autoconfiguração link-local pode sustentar comunicação no mesmo enlace, mas não cria acesso à Internet e costuma sinalizar falha do DHCP esperado.
+- **D)** blocos de documentação possuem outras faixas, e APIPA não torna o endereço utilizável para acesso roteado externo.
 
-**Conceito:** diferença entre “fora dos blocos privados da RFC 1918” e “unicast público utilizável”.
+**Conceito:** natureza, alcance e significado operacional de um endereço IPv4 link-local/APIPA.
 
-**Pegadinha:** usar um teste negativo de privacidade como prova suficiente de publicidade.
+**Pegadinha:** confundir link-local com loopback, endereço privado RFC 1918 ou endereço público provisório.
 
-**Como pensar:** primeiro exclua os blocos privados e depois verifique todas as categorias de finalidade especial.
+**Como pensar:** reconheça `169.254/16`, limite seu alcance ao enlace e relacione sua atribuição automática à ausência de resposta DHCP.
 
-**Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
+**Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais), nos trechos sobre a faixa `169.254/16`, alcance local e autoconfiguração após falha de DHCP.
+
+### Comentário S2D2Q077
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** o espaço IPv4 inclui diversas faixas de finalidade especial que não pertencem aos blocos privados.
+- **B)** o papel de um endereço depende do prefixo e da destinação do bloco, não apenas do valor decimal final.
+- **C)** excluir somente a RFC 1918 deixa passar loopback, link-local, documentação, multicast e outras reservas.
+- **D)** o tamanho do prefixo, isoladamente, não determina se um bloco é público ou possui finalidade especial.
+
+**Conceito:** diferença entre não pertencer à RFC 1918 e ser unicast público utilizável.
+
+**Pegadinha:** transformar um teste necessário de não privacidade em prova suficiente de alcance global.
+
+**Como pensar:** depois de excluir os blocos privados, verifique também o registro de endereços especiais antes de concluir que o endereço é público.
+
+**Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais), especialmente a ressalva de que estar fora da RFC 1918 não prova utilização unicast pública.
 
 ### Comentário S2D2Q078
 
@@ -4556,7 +4760,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q079
 
-**Nível:** Difícil
+**Nível:** Muito difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: B.**
@@ -4578,7 +4782,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q080
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: B.**
@@ -4647,48 +4851,50 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Difícil
 
 **Uso:** Revisão
-**Alternativa correta: A.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O ARP Request é broadcast no enlace, e o detentor do IPv4 informa seu MAC normalmente por unicast.
-- **B)** Incorreta. ARP não usa TCP nem DNS e parte de um IPv4 já conhecido.
-- **C)** Incorreta. Para vizinho local, a consulta circula justamente no enlace e não depende de roteamento.
-- **D)** Incorreta. ICMP Echo não descobre a porta física do switch nem substitui a resolução ARP.
+- **A)** o ARP Request IPv4 usa broadcast de camada 2, não multicast, e a resposta solicitada normalmente é unicast.
+- **B)** o gateway não é o próximo salto para um destino da mesma sub-rede, e devolver seu próprio MAC encaminharia o primeiro quadro ao dispositivo errado.
+- **C)** a máscara mostra que B está no enlace local; A pergunta em broadcast quem possui `.80`, e B informa seu MAC normalmente por unicast.
+- **D)** quem desconhece a associação inicia um Request; um Reply não substitui a pergunta nem precisa ser confirmado por outro Reply.
 
-**Conceito:** fluxo de resolução ARP para destino local.
+**Conceito:** decisão de localidade e sequência Request/Reply na resolução ARP para um vizinho IPv4.
 
-**Pegadinha:** confundir resolução de nome por DNS com resolução de IPv4 em MAC por ARP.
+**Pegadinha:** envolver o gateway em tráfego local ou trocar Request por Reply e broadcast por multicast.
 
-**Como pensar:** se o IP é local e falta a associação, procure no enlace quem possui esse endereço.
+**Como pensar:** compare primeiro os prefixos; sendo o destino local, procure seu próprio MAC com Request em broadcast e receba a resposta diretamente.
 
-**Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp).
+**Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp), especialmente a decisão entre destino local e remoto e o fluxo ARP Request em broadcast seguido normalmente por ARP Reply em unicast.
 
 ### Comentário S2D2Q084
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A consulta ARP não é encaminhada por roteadores até o servidor remoto.
-- **B)** Incorreta. ARP associa endereço de protocolo e hardware, sem usar porta TCP.
-- **C)** Incorreta. Não se procura um “IPv6 equivalente” para encaminhar esse pacote IPv4.
-- **D)** Correta. O próximo salto local é `192.168.10.1`, por isso seu MAC é necessário no primeiro quadro.
+- **A)** o servidor continua como destino IP, mas seu MAC não é alcançável nem resolvido por ARP através de roteadores.
+- **B)** o host de origem não participa do enlace remoto e não precisa conhecer o MAC do roteador que fará a entrega final.
+- **C)** um switch transparente encaminha o quadro com base no MAC de destino, mas seu próprio MAC não é usado como destino desse tráfego.
+- **D)** como o servidor está fora de `192.168.10.0/24`, o primeiro quadro deve ser entregue ao gateway `192.168.10.1` no enlace local.
 
-**Conceito:** ARP para o gateway quando o destino IP é remoto.
+**Conceito:** resolução ARP do próximo salto quando o destino IP pertence a outra sub-rede.
 
-**Pegadinha:** procurar o MAC do destino final em vez do dispositivo alcançável no enlace atual.
+**Pegadinha:** confundir o destino fim a fim do pacote IP com o destino local do primeiro quadro Ethernet.
 
-**Como pensar:** determine localidade com a máscara; se o destino for remoto, resolva o endereço de enlace do gateway.
+**Como pensar:** determine a sub-rede antes do ARP; se o destino é remoto, procure o MAC do gateway configurado na interface local.
 
-**Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp).
+**Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp), no trecho que determina a resolução do MAC do gateway ou próximo salto, e não do servidor remoto.
 
 ### Comentário S2D2Q085
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: A.**
@@ -4700,6 +4906,8 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 - **C)** Incorreta como escolha. Time Exceeded e Destination Unreachable pertencem ao conjunto de controle e erro.
 - **D)** Incorreta como escolha. Bloqueio indiscriminado pode prejudicar diagnóstico e mecanismos necessários.
 
+**Observação:** a questão pede a afirmação **INCORRETA**; por isso, A é o gabarito, pois ICMP não usa portas TCP ou UDP.
+
 **Conceito:** função e transporte das mensagens ICMP.
 
 **Pegadinha:** ignorar o comando negativo ou atribuir número de porta a todo protocolo conhecido.
@@ -4710,25 +4918,26 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q086
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: D.**
+
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. IPv6 não usa ARP tradicional e não possui broadcast.
-- **B)** Incorreta. Converter nomes é função de DNS, muito mais estreita que Neighbor Discovery.
-- **C)** Incorreta. NS e NA são mensagens ICMPv6, não serviços de porta TCP.
-- **D)** Correta. Neighbor Discovery inclui resolução de endereço de enlace, descoberta e acompanhamento de vizinhos por ICMPv6.
+- **A)** uma NS pode ser enviada ao multicast solicited-node do alvo, e uma NA fornece a informação de vizinhança solicitada.
+- **B)** RS e RA apoiam descoberta de roteadores e parâmetros do enlace, não a resolução comum do endereço de outro host.
+- **C)** Echo Request e Echo Reply servem ao diagnóstico; não substituem as mensagens específicas do Neighbor Discovery.
+- **D)** IPv6 não usa ARP para essa função e não possui broadcast equivalente ao ARP Request do IPv4.
 
-**Conceito:** Neighbor Discovery e mensagens NS/NA.
+**Conceito:** resolução de endereço de enlace pelo Neighbor Discovery baseado em ICMPv6.
 
-**Pegadinha:** chamar o mecanismo de “ARP do IPv6” e transportar para ele broadcast e portas.
+**Pegadinha:** transportar integralmente o ARP do IPv4 para o IPv6 ou trocar NS/NA por outras duplas do ICMPv6.
 
-**Como pensar:** associe IPv4 a ARP e IPv6 a um conjunto mais amplo baseado em ICMPv6.
+**Como pensar:** associe resolução IPv6 a Neighbor Solicitation e Neighbor Advertisement, dentro do conjunto mais amplo de Neighbor Discovery.
 
-**Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp).
+**Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp), nos trechos sobre resolução de endereço de enlace, multicast solicited-node e resposta Neighbor Advertisement.
 
 ### Comentário S2D2Q087
 
@@ -4754,7 +4963,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q088
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: A.**
@@ -4776,38 +4985,39 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q089
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A opção inverte unicast e multicast.
-- **B)** Incorreta. Anycast entrega a uma das interfaces, não cópia a todas.
-- **C)** Correta. A alternativa distingue destino individual, grupo e uma interface escolhida entre várias.
-- **D)** Incorreta. IPv6 não possui broadcast, e multicast mantém identidade própria.
+- **A)** X descreve destino individual, portanto é unicast, e não multicast.
+- **B)** X não representa várias interfaces e Z não descreve destino individual fixo.
+- **C)** unicast identifica uma interface, multicast entrega ao grupo e anycast seleciona uma entre as interfaces que compartilham o endereço.
+- **D)** Y requer entrega aos participantes do grupo, enquanto Z requer seleção de uma entre várias interfaces.
 
-**Conceito:** unicast, multicast e anycast no IPv6.
+**Conceito:** semântica de entrega dos endereços IPv6 unicast, multicast e anycast.
 
-**Pegadinha:** entender “mesmo endereço em várias interfaces” como entrega simultânea a todas.
+**Pegadinha:** confundir “mesmo endereço em várias interfaces” com entrega de uma cópia a todas elas.
 
-**Como pensar:** associe “um”, “grupo” e “uma dentre várias” aos três tipos, nessa ordem.
+**Como pensar:** associe as expressões “uma interface”, “grupo” e “uma dentre várias” a unicast, multicast e anycast, nessa ordem.
 
-**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
+**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6), especialmente as definições de entrega a uma interface, a um grupo e a uma dentre várias interfaces.
 
 ### Comentário S2D2Q090
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: C.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Eliminar o quarto grupo preservaria apenas 48 bits, não os 64 informados.
-- **B)** Incorreta. `/64` conserva integralmente `12ef`; não se zera sua parte final como em um prefixo menor.
-- **C)** Correta. Quatro grupos de 16 bits totalizam 64, resultando em `2001:db8:abcd:12ef::/64`.
+- **B)** Correta. Quatro grupos de 16 bits totalizam 64, resultando em `2001:db8:abcd:12ef::/64`.
+- **C)** Incorreta. `/64` conserva integralmente `12ef`; não se zera sua parte final como em um prefixo menor.
 - **D)** Incorreta. Preservar parte do quinto grupo ultrapassaria os 64 bits de prefixo.
 
 **Conceito:** determinação de prefixo IPv6 em fronteira de grupo.
@@ -4820,7 +5030,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q091
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: A.**
@@ -4845,14 +5055,14 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
-**Alternativa correta: B.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Além da I, as afirmativas II e III também descrevem corretamente o escopo e a resolução de vizinho.
-- **B)** Correta. `ff02::1` é multicast link-local; NS usa solicited-node e o roteador respeita o limite desse escopo.
+- **B)** Incorreta. A II também é verdadeira: a resolução inicial não consulta indiscriminadamente todos os nós.
 - **C)** Incorreta. Excluir a I chamaria implicitamente de falsa uma distinção expressa entre multicast e broadcast.
-- **D)** Incorreta. A II também é verdadeira: a resolução inicial não consulta indiscriminadamente todos os nós.
+- **D)** Correta. `ff02::1` é multicast link-local; NS usa solicited-node e o roteador respeita o limite desse escopo.
 
 **Conceito:** multicast IPv6, escopo link-local e solicited-node no Neighbor Discovery.
 
@@ -4864,15 +5074,15 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q093
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. São necessários 6 bits de host, pois `2^6 - 2 = 62 ≥ 50`; assim, o maior prefixo é `/26`, produzindo `2^(26-24) = 4` sub-redes.
-- **B)** Incorreta. `/27` deixa 5 bits e oferece apenas `2^5 - 2 = 30` hosts.
+- **A)** Incorreta. `/27` deixa 5 bits e oferece apenas `2^5 - 2 = 30` hosts.
+- **B)** Correta. São necessários 6 bits de host, pois `2^6 - 2 = 62 ≥ 50`; assim, o maior prefixo é `/26`, produzindo `2^(26-24) = 4` sub-redes.
 - **C)** Incorreta. `/25` oferece 126 hosts, mas gera somente 2 sub-redes, não 4, e não maximiza a quantidade.
 - **D)** Incorreta. `/28` fornece `2^4 - 2 = 14` hosts, muito abaixo de 50.
 
@@ -4886,17 +5096,17 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q094
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: B.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Embora `.32` seja fronteira `/27`, o bloco 32–63 está contido no `/26` já alocado, 0–63.
-- **B)** Correta. `.64/27` ocupa 64–95, respeita incremento 32 e não toca 0–63 nem 128–159.
+- **B)** Incorreta. `.144` não é múltiplo de 32; normalizá-lo levaria ao bloco 128–159, também ocupado.
 - **C)** Incorreta. `.128/27` é exatamente um dos blocos já alocados.
-- **D)** Incorreta. `.144` não é múltiplo de 32; normalizá-lo levaria ao bloco 128–159, também ocupado.
+- **D)** Correta. `.64/27` ocupa 64–95, respeita incremento 32 e não toca 0–63 nem 128–159.
 
 **Conceito:** alinhamento e não sobreposição em VLSM.
 
@@ -4930,7 +5140,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q096
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: A.**
@@ -4952,7 +5162,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q097
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: B.**
@@ -4996,25 +5206,26 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ### Comentário S2D2Q099
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Roteadores validam e reduzem TTL; Echo Reply não é mecanismo para encaminhar pacote expirado.
-- **B)** Correta. Ao chegar a zero, o pacote é descartado e pode provocar Time Exceeded, sem portas ou garantia de entrega.
-- **C)** Incorreta. ICMP não abre conexão TCP nem retransmite de modo confiável o pacote original.
-- **D)** Incorreta. ARP tem escopo local e não substitui o tratamento do TTL ao longo da rota.
+- **A)** um roteador não encaminha o pacote quando o TTL chega a zero, e a mensagem associada à expiração é Time Exceeded.
+- **B)** o roteador não reinicia o TTL para prolongar indefinidamente o pacote, e ICMP Redirect possui outra finalidade.
+- **C)** o pacote expirado é descartado, e o roteador pode notificar a origem com ICMP Time Exceeded, sem criar conexão ou recuperar os dados perdidos.
+- **D)** Echo Reply responde a Echo Request e não ordena retransmissão automática de um pacote expirado.
 
-**Conceito:** TTL, descarte e mensagem ICMP Time Exceeded.
+**Conceito:** decremento do TTL, descarte no valor zero e possível notificação ICMP Time Exceeded.
 
-**Pegadinha:** interpretar mensagem de erro como correção automática ou retransmissão do tráfego perdido.
+**Pegadinha:** interpretar mensagens ICMP como mecanismos de encaminhamento, correção ou retransmissão automática.
 
-**Como pensar:** se o TTL zerou, encerre o encaminhamento; a resposta possível apenas informa a origem sobre o evento.
+**Como pensar:** siga a ordem: decrementar TTL, descartar se zerar e apenas então considerar a mensagem de erro enviada à origem.
 
-**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
+**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp), especialmente os trechos sobre Time Exceeded, ausência de portas de transporte e inexistência de confiabilidade automática do IP.
 
 ### Comentário S2D2Q100
 
@@ -5036,10 +5247,10 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Como pensar:** valide cada plano separadamente: quadro no enlace, IP/ICMP na Internet e funções superiores na Aplicação TCP/IP.
 
-**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip) e [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
+**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip), [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento) e [ARP](semana_02_estudo.md#s2-d2-arp).
 
 #### Comentário Extra Dia 2.1
-**Alternativa correta: B.**
+**Alternativa correta: D.**
 
 **Nível:** Médio
 
@@ -5048,9 +5259,9 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Eficiência busca bons resultados e uso adequado de recursos, mas não autoriza afastar a lei.
-- **B)** Correta. Legalidade exige atuação conforme o ordenamento e dentro da competência, mesmo quando outro caminho pareça mais rápido.
+- **B)** Incorreta. Para a Administração, legalidade não significa liberdade geral de fazer o que não foi proibido.
 - **C)** Incorreta. Publicidade posterior não sana, por si, uma atuação contrária ao ordenamento.
-- **D)** Incorreta. Para a Administração, legalidade não significa liberdade geral de fazer o que não foi proibido.
+- **D)** Correta. Legalidade exige atuação conforme o ordenamento e dentro da competência, mesmo quando outro caminho pareça mais rápido.
 
 **Conceito:** convivência entre legalidade e eficiência no art. 37.
 
@@ -5127,7 +5338,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Administração Direta e Indireta](semana_02_estudo.md#s2-d2-revisao-organizacao).
 
 #### Comentário Extra Dia 2.5
-**Alternativa correta: A.**
+**Alternativa correta: D.**
 
 **Nível:** Médio
 
@@ -5135,10 +5346,10 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Análise das alternativas:**
 
-- **A)** Correta. A definição reúne personalidade de direito público, criação por lei e atividade administrativa típica.
+- **A)** Incorreta. Autarquia não é modalidade de empresa pública nem depende de capital privado.
 - **B)** Incorreta. Órgão sem personalidade não é autarquia, e exploração econômica não é a função descrita no núcleo.
 - **C)** Incorreta. Autarquia pertence à Administração Indireta, não surge como associação privada livre.
-- **D)** Incorreta. Autarquia não é modalidade de empresa pública nem depende de capital privado.
+- **D)** Correta. A definição reúne personalidade de direito público, criação por lei e atividade administrativa típica.
 
 **Conceito:** definição de autarquia.
 
@@ -5171,31 +5382,32 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
 #### Comentário Extra Dia 2.7
-**Alternativa correta: A.**
 
-**Nível:** Médio
+**Alternativa correta: D.**
+
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
-- **A)** Correta. A presunção admite prova contrária, e execução direta depende de hipótese legal ou urgência.
-- **B)** Incorreta. Presunção relativa não impede controle ou contestação.
-- **C)** Incorreta. Imperatividade impõe obrigações quando cabível justamente sem depender de concordância.
-- **D)** Incorreta. Autoexecutoriedade não acompanha todo ato administrativo.
+- **A)** torna absolutos os dois atributos e ignora tanto a contestabilidade quanto os limites da execução direta.
+- **B)** acerta a condição da autoexecutoriedade, mas transforma a presunção relativa em impedimento absoluto de contestação.
+- **C)** acerta a possibilidade de prova contrária, mas estende autoexecutoriedade a todo ato sem a condição necessária.
+- **D)** a presunção é relativa e pode ser afastada, enquanto a execução direta exige autorização legal ou urgência.
 
-**Conceito:** presunção de legitimidade, imperatividade e autoexecutoriedade.
+**Conceito:** limites distintos da presunção de legitimidade e da autoexecutoriedade.
 
-**Pegadinha:** converter atributos condicionados ou relativos em poderes absolutos.
+**Pegadinha:** acertar um dos dois atributos e aceitar a mesma alternativa sem conferir a segunda regra.
 
-**Como pensar:** desconfie de “todo”, “qualquer” e “impede”; confira as ressalvas ensinadas para cada atributo.
+**Como pensar:** resolva como matriz de dois testes: a presunção é relativa e a execução direta não acompanha automaticamente todo ato.
 
-**Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
+**Referência:** [Elementos e atributos do ato administrativo](semana_02_estudo.md#s2-d2-revisao-atos), nos trechos sobre presunção relativa e hipóteses de autoexecutoriedade.
 
 #### Comentário Extra Dia 2.8
 **Alternativa correta: D.**
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -5237,7 +5449,8 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 #### Comentário Extra Dia 2.10
-**Alternativa correta: D.**
+
+**Alternativa correta: C.**
 
 **Nível:** Difícil
 
@@ -5245,40 +5458,41 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A Lei nº 9.784/1999 estabelece limite temporal para atos favoráveis, ressalvada má-fé.
-- **B)** Incorreta. Em efeitos patrimoniais contínuos, o marco ensinado é o primeiro pagamento.
-- **C)** Incorreta. O prazo indicado na revisão é de cinco anos e a má-fé constitui ressalva.
-- **D)** Correta. A opção reúne prazo, termo inicial comum, regra para efeitos contínuos e exceção de má-fé.
+- **A)** para atos favoráveis, a lei prevê decadência quinquenal quando não há má-fé comprovada.
+- **B)** o ato I já ultrapassou cinco anos, mas no benefício contínuo o marco específico é o primeiro pagamento, ocorrido em dezembro.
+- **C)** em setembro de 2025 já passaram cinco anos desde agosto de 2020, mas ainda não desde o primeiro pagamento de dezembro de 2020.
+- **D)** inverte os resultados e usa prazo e termo inicial que não correspondem ao art. 54 estudado.
 
-**Conceito:** decadência do direito de anular ato favorável no art. 54.
+**Conceito:** decadência do direito de anular e termo inicial específico para efeitos patrimoniais contínuos.
 
-**Pegadinha:** aderir à frase absoluta de que todo ato ilegal pode ser anulado a qualquer tempo.
+**Pegadinha:** contar todos os casos da prática do ato, usar o último pagamento ou ignorar a ressalva de má-fé.
 
-**Como pensar:** identifique efeito favorável, conte cinco anos do ato ou do primeiro pagamento e verifique má-fé comprovada.
+**Como pensar:** confirme boa-fé, identifique o tipo de efeito, escolha o marco correto e só então conte os cinco anos em cada caso.
 
-**Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
+**Referência:** [Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento), no parágrafo sobre prazo de cinco anos, má-fé e primeiro pagamento em efeitos patrimoniais contínuos.
 
 #### Comentário Extra Dia 2.11
-**Alternativa correta: C.**
 
-**Nível:** Difícil
+**Alternativa correta: D.**
+
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Acesso à informação não revoga os deveres de proteção de dados.
-- **B)** Incorreta. A LGPD admite tratamento pelo Poder Público orientado a finalidade e interesse públicos.
-- **C)** Correta. Transparência e proteção coexistem, afastando tanto exposição irrestrita quanto sigilo automático.
-- **D)** Incorreta. Um caso pode demandar aplicação harmonizada das duas leis.
+- **A)** publicidade não elimina finalidade, necessidade e proteção quando o documento contém dados pessoais.
+- **B)** dado pessoal exige tratamento adequado, mas não transforma automaticamente todo o documento público em conteúdo inacessível.
+- **C)** as duas leis podem incidir de forma harmônica, e a escolha não depende de preferência administrativa.
+- **D)** a análise preserva a transparência cabível e limita somente a exposição pessoal sem fundamento ou necessidade.
 
-**Conceito:** articulação entre LAI e LGPD.
+**Conceito:** aplicação compatível da LAI e da LGPD em documento público com dados pessoais.
 
-**Pegadinha:** apresentar as leis como comandos mutuamente excludentes.
+**Pegadinha:** resolver a convivência normativa por um absoluto, divulgação total ou sigilo total.
 
-**Como pensar:** localize a informação pública devida e proteja os dados pessoais além do necessário para essa finalidade.
+**Como pensar:** identifique o acesso público devido e, dentro dele, separe o dado pessoal que precisa de proteção proporcional.
 
-**Referência:** [Revisão de Administração Pública — LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
+**Referência:** [LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd), especialmente a convivência entre acesso devido e proteção de dados pessoais.
 
 #### Comentário Extra Dia 2.12
 **Alternativa correta: A.**
@@ -5303,18 +5517,18 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Improbidade administrativa](semana_02_estudo.md#s2-d2-revisao-improbidade).
 
 #### Comentário Extra Dia 2.13
-**Alternativa correta: D.**
+**Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Na dispensa, a competição é possível em tese, embora a lei autorize contratação direta.
+- **A)** Correta. Inviabilidade de competição caracteriza o núcleo da inexigibilidade, observados os requisitos legais.
 - **B)** Incorreta. Pregão é modalidade, e exclusividade não é critério de julgamento.
 - **C)** Incorreta. Retirar uma licitação não elimina processo, motivação e controle da contratação.
-- **D)** Correta. Inviabilidade de competição caracteriza o núcleo da inexigibilidade, observados os requisitos legais.
+- **D)** Incorreta. Na dispensa, a competição é possível em tese, embora a lei autorize contratação direta.
 
 **Conceito:** distinção entre dispensa e inexigibilidade.
 
@@ -5325,6 +5539,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 #### Comentário Extra Dia 2.14
+
 **Alternativa correta: C.**
 
 **Nível:** Difícil
@@ -5333,20 +5548,21 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Contratação direta não significa ausência de instrução, justificativa ou controle.
-- **B)** Incorreta. Modalidade organiza o procedimento; critério de julgamento não é seu sinônimo.
-- **C)** Correta. A alternativa preserva o processo e cita duas modalidades previstas no rol estudado.
-- **D)** Incorreta. Concurso e leilão também aparecem entre as modalidades da Lei nº 14.133/2021.
+- **A)** contratação direta não elimina o processo, e pregão e diálogo competitivo não são critérios de julgamento.
+- **B)** acerta a necessidade de instrução, mas erra ao retirar os dois institutos do rol de modalidades.
+- **C)** preserva tanto os requisitos processuais da contratação direta quanto a classificação legal de pregão e diálogo competitivo.
+- **D)** acerta a classificação dos institutos, mas erra ao dispensar instrução e controle da contratação direta.
 
-**Conceito:** contratação direta e modalidades licitatórias.
+**Conceito:** distinção entre contratação direta, modalidade e critério de julgamento.
 
-**Pegadinha:** confundir ausência de competição no certame com ausência de procedimento administrativo.
+**Pegadinha:** resolver corretamente uma das proposições e deixar de testar a classificação apresentada na outra.
 
-**Como pensar:** separe três caixas: hipótese de contratação direta, modalidade e critério de julgamento.
+**Como pensar:** avalie as proposições separadamente: contratação direta mantém processo; pregão e diálogo competitivo são modalidades.
 
-**Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
+**Referência:** [Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao), nos trechos sobre instrução da contratação direta e modalidades da Lei nº 14.133/2021.
 
 #### Comentário Extra Dia 2.15
+
 **Alternativa correta: D.**
 
 **Nível:** Difícil
@@ -5355,20 +5571,21 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Responsabilidade objetiva não elimina a necessidade de dano e nexo causal.
-- **B)** Incorreta. O regresso contra o agente exige dolo ou culpa segundo o núcleo constitucional revisado.
-- **C)** Incorreta. A regra alcança pessoas jurídicas de direito público e prestadoras de serviço público, não apenas uma espécie societária.
-- **D)** Correta. Conduta estatal, dano e nexo sustentam a pretensão da vítima, com regresso nas condições indicadas.
+- **A)** a responsabilidade estatal perante a vítima é objetiva, e o regresso não dispensa dolo ou culpa do agente.
+- **B)** acerta a condição subjetiva do regresso, mas responsabilidade objetiva não elimina dano nem nexo causal.
+- **C)** acerta os elementos da pretensão da vítima, mas transforma indevidamente o regresso em responsabilidade objetiva do agente.
+- **D)** a vítima demonstra conduta estatal, dano e nexo sem provar culpa do Estado, e o regresso exige dolo ou culpa do agente.
 
-**Conceito:** responsabilidade civil objetiva do Estado e ação regressiva.
+**Conceito:** diferença entre responsabilidade objetiva perante a vítima e responsabilidade subjetiva na ação regressiva.
 
-**Pegadinha:** traduzir “objetiva” como pagamento automático sem elementos causais.
+**Pegadinha:** retirar dano e nexo por causa da palavra “objetiva” ou transportar essa objetividade para o regresso.
 
-**Como pensar:** retire apenas a necessidade de provar culpa estatal perante a vítima, não conduta, dano ou nexo.
+**Como pensar:** resolva em duas relações: vítima contra Estado sem prova de culpa; Estado contra agente somente com dolo ou culpa.
 
-**Referência:** [Revisão de Administração Pública — Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade).
+**Referência:** [Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade), nos trechos sobre requisitos perante a vítima e regresso em caso de dolo ou culpa.
 
 #### Comentário Extra Dia 2.16
+
 **Alternativa correta: B.**
 
 **Nível:** Difícil
@@ -5377,31 +5594,31 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A frase limita o contexto a ponto a ponto e usa possibilidade, não obrigação para toda rede.
-- **B)** Correta. A interpretação conserva o alcance de “em enlaces” e a modalidade expressa por “pode”.
-- **C)** Incorreta. “Pode” não indica proibição; expressa possibilidade ou permissão.
-- **D)** Incorreta. O enunciado não transforma uma aplicação possível em dever universal.
+- **A)** troca possibilidade por obrigação e estende a afirmação a qualquer rede, removendo o contexto expresso.
+- **B)** conserva o recorte dos enlaces ponto a ponto e a modalidade de possibilidade indicada por “pode”.
+- **C)** mantém o contexto, mas inverte a força modal; “pode” não expressa proibição.
+- **D)** generaliza para toda implementação e cria um dever que não aparece no enunciado.
 
-**Conceito:** quantificadores, modalidade e alcance do enunciado.
+**Conceito:** preservação de contexto e modalidade verbal na interpretação técnica.
 
-**Pegadinha:** trocar “pode” por “deve” e retirar a condição ponto a ponto.
+**Pegadinha:** corrigir um dos dois filtros e ainda trocar “pode” por “deve” ou retirar a condição ponto a ponto.
 
-**Como pensar:** sublinhe contexto, quantificador e força verbal antes de avaliar cada paráfrase.
+**Como pensar:** sublinhe primeiro o recorte contextual e depois classifique a força do verbo antes de comparar as paráfrases.
 
-**Referência:** [Revisão de Português — Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores).
+**Referência:** [Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores), especialmente a diferença entre possibilidade, obrigação e recorte ponto a ponto.
 
 #### Comentário Extra Dia 2.17
-**Alternativa correta: C.**
+**Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. “Entretanto” não indica causa, e “esse” recupera conteúdo anterior.
+- **A)** Correta. Há ressalva entre maior espaço e manutenção do planejamento, com retomada coesiva adequada.
 - **B)** Incorreta. O conector não conclui; o pronome retoma a ampliação, não o planejamento.
-- **C)** Correta. Há ressalva entre maior espaço e manutenção do planejamento, com retomada coesiva adequada.
+- **C)** Incorreta. “Entretanto” não indica causa, e “esse” recupera conteúdo anterior.
 - **D)** Incorreta. O trecho afirma expressamente que a necessidade não foi eliminada.
 
 **Conceito:** coesão referencial e relação adversativa.
@@ -5413,18 +5630,18 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Português — Coesão e relação lógica](semana_02_estudo.md#s2-d2-revisao-coesao).
 
 #### Comentário Extra Dia 2.18
-**Alternativa correta: D.**
+**Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. A vírgula separa indevidamente o sujeito “Os endereços privados” do verbo “podem”.
-- **B)** Incorreta. A vírgula rompe o vínculo entre “encaminha” e seu complemento “destinos remotos”.
+- **B)** Correta. As vírgulas isolam a expressão explicativa “no IPv4 sobre Ethernet”.
 - **C)** Incorreta. A vírgula foi posicionada entre a negação e o verbo, sem função sintática legítima.
-- **D)** Correta. As vírgulas isolam a expressão explicativa “no IPv4 sobre Ethernet”.
+- **D)** Incorreta. A vírgula rompe o vínculo entre “encaminha” e seu complemento “destinos remotos”.
 
 **Conceito:** pontuação de termos essenciais e expressões explicativas.
 
@@ -5437,7 +5654,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 #### Comentário Extra Dia 2.19
 **Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -5459,7 +5676,7 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 #### Comentário Extra Dia 2.20
 **Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -5491,14 +5708,17 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Uso:** Essenciais
 
-**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta), especialmente os parágrafos sobre demultiplexação e a quíntupla de uma conexão TCP.
 
-Sobre protocolo, porta e socket, assinale a afirmativa correta.
+Um servidor mantém várias aplicações de rede e recebe um segmento TCP destinado à porta 443. A respeito da entrega ao processo correto e da identificação da conexão, assinale a alternativa correta.
 
-A) A porta de transporte é um identificador de 16 bits usado por TCP ou UDP para que o sistema operacional entregue os dados à aplicação adequada.
-B) Uma porta de transporte é um conector físico pertencente ao roteador de borda.
-C) Uma porta só pode ser usada por processos servidores; clientes não possuem portas de origem.
-D) Um socket é identificado somente pelo endereço IP de destino, sem relação com porta ou transporte.
+A) A porta de destino participa da demultiplexação, e a conexão TCP é distinguida pelos endereços e portas das duas extremidades e pelo protocolo.
+
+B) A porta de destino identifica o host na Internet, e a conexão TCP é distinguida apenas pelo endereço IP utilizado pelo cliente.
+
+C) A porta de origem identifica sempre o processo servidor, e a conexão TCP é distinguida apenas pelas duas portas de transporte envolvidas.
+
+D) A porta de destino identifica o conteúdo da aplicação, e a conexão TCP é distinguida apenas pelo protocolo de transporte empregado.
 
 ### S2D3Q102 — Alcance da confiabilidade e das confirmações do TCP
 
@@ -5521,14 +5741,17 @@ D) o servidor concluiu que o usuário está autorizado a realizar a operação.
 
 **Uso:** Essenciais
 
-**Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp).
+**Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp), especialmente a lista de garantias não oferecidas nativamente e o parágrafo sobre mecanismos implementados pela aplicação.
 
-Assinale a alternativa correta acerca do UDP.
+Uma aplicação de telemetria envia datagramas por UDP e pretende acrescentar confirmações e reenvio seletivo em seu próprio protocolo. Considerando a divisão de responsabilidades entre transporte e aplicação, assinale a alternativa correta.
 
-A) O UDP ordena e retransmite datagramas automaticamente antes de entregá-los à aplicação.
-B) O UDP não oferece conexão, confirmação ou retransmissão nativas, embora a aplicação possa construir mecanismos próprios.
-C) O UDP inicia cada comunicação com o handshake SYN, SYN-ACK e ACK.
-D) Nenhuma aplicação sobre UDP pode oferecer entrega confiável.
+A) O UDP já ordena e retransmite os datagramas, de modo que a aplicação só pode definir o formato das mensagens trocadas.
+
+B) O UDP impede confirmações na camada de aplicação, pois cada datagrama deve permanecer independente dos datagramas anteriores.
+
+C) O UDP confirma a entrega sem ordenar os datagramas, e a aplicação pode implementar ordenação, mas não retransmissão.
+
+D) O UDP não fornece conexão, confirmação nem retransmissão nativas, mas a aplicação pode implementar esses mecanismos sobre os datagramas.
 
 ### S2D3Q104 — Ausência de estado obrigatório no protocolo HTTP
 
@@ -5536,14 +5759,17 @@ D) Nenhuma aplicação sobre UDP pode oferecer entrega confiável.
 
 **Uso:** Essenciais
 
-**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https), no parágrafo que define stateless e cita cookies, tokens e sessões no servidor.
 
-Ao afirmar que HTTP é stateless, pretende-se dizer que:
+Uma aplicação web usa um cookie de sessão para relacionar requisições sucessivas do mesmo usuário. Essa implementação é compatível com a descrição do HTTP como stateless porque:
 
-A) uma requisição HTTP não pode conter cabeçalhos nem corpo.
-B) HTTP não pode ser empregado com autenticação de usuários.
-C) o servidor deve apagar todo dado da aplicação ao responder a uma requisição.
-D) o protocolo não exige manter sessão entre requisições, embora a aplicação possa criar estado com cookies, tokens ou sessões.
+A) o servidor fica proibido de armazenar dados de sessão, mas o navegador pode manter qualquer estado necessário à aplicação.
+
+B) cada conexão TCP admite uma única requisição, embora várias conexões possam compartilhar o mesmo cookie de sessão.
+
+C) o cookie torna o protocolo de transporte stateful, sem que o servidor precise interpretar as requisições recebidas.
+
+D) cada requisição possui semântica própria no HTTP, embora a aplicação possa correlacioná-las por cookies, tokens ou estado no servidor.
 
 ### S2D3Q105 — Garantias e limites do HTTPS
 
@@ -5551,14 +5777,17 @@ D) o protocolo não exige manter sessão entre requisições, embora a aplicaç�
 
 **Uso:** Essenciais
 
-**Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https), incluindo as garantias do TLS em trânsito e a lista de garantias que não decorrem do HTTPS.
 
-Assinale a afirmativa tecnicamente correta sobre HTTPS.
+Um usuário acessa um portal por HTTPS, e o navegador valida corretamente o certificado apresentado pelo servidor. Qual conclusão é tecnicamente adequada?
 
-A) HTTPS garante que todo conteúdo publicado é verdadeiro e livre de vulnerabilidades.
-B) HTTPS corresponde a HTTP protegido por TLS; a validação adequada do certificado ajuda a autenticar o servidor, sem garantir a qualidade do conteúdo da aplicação.
-C) HTTPS substitui o controle de autorização da aplicação, pois o certificado identifica qualquer usuário.
-D) HTTPS usa obrigatoriamente UDP e não pode operar sobre TCP.
+A) O canal protegido comprova que as informações publicadas são verdadeiras e que a aplicação não contém vulnerabilidades exploráveis.
+
+B) O TLS protege dados em trânsito e auxilia a autenticar o servidor, mas não substitui autorização nem correções de segurança da aplicação.
+
+C) O certificado validado comprova que o usuário pode acessar todos os recursos e que seu dispositivo está livre de software malicioso.
+
+D) A sessão HTTPS fornece criptografia ponta a ponta do conteúdo armazenado e impede a observação de todos os metadados de rede.
 
 ### S2D3Q106 — Métodos HTTP e classes de códigos de estado
 
@@ -5587,12 +5816,12 @@ No DNS, qual registro indica os servidores de correio de um domínio?
 
 A) A
 B) AAAA
-C) CNAME
-D) MX
+C) MX
+D) CNAME
 
 ### S2D3Q108 — Consulta recursiva, iteração, cache e TTL no DNS
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -5611,14 +5840,17 @@ D) transforma automaticamente qualquer registro A em um registro MX.
 
 **Uso:** Essenciais
 
-**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns), nos trechos que registram 53/UDP, 53/TCP e o uso de TCP em transferências de zona.
 
-Sobre o transporte do DNS clássico, assinale a alternativa correta.
+Um firewall permite consultas DNS em 53/UDP, mas uma transferência de zona entre servidores autoritativos não é concluída. Qual explicação deve orientar a revisão da regra?
 
-A) DNS utiliza exclusivamente 53/UDP, inclusive em transferências de zona.
-B) DNS utiliza exclusivamente 53/TCP, pois consultas não podem ser datagramas.
-C) DNS clássico utiliza 53/UDP e 53/TCP; TCP pode ser necessário, por exemplo, em transferências de zona ou em determinadas respostas.
-D) DNS clássico exige 443/TCP para consultas de nomes.
+A) Transferências de zona usam datagramas em 53/UDP, e a falha indica necessariamente bloqueio de fragmentos IP pelo firewall.
+
+B) Transferências de zona usam DNS sobre TLS em 853/TCP, ainda que nenhum transporte DNS criptografado tenha sido configurado.
+
+C) O TCP é reservado ao DNS sobre HTTPS em 443/TCP, enquanto todo intercâmbio do DNS clássico permanece em 53/UDP.
+
+D) O DNS clássico também usa 53/TCP, inclusive em transferências de zona, por isso permitir apenas 53/UDP é insuficiente.
 
 ### S2D3Q110 — DNS sobre TLS e DNS sobre HTTPS
 
@@ -5626,14 +5858,17 @@ D) DNS clássico exige 443/TCP para consultas de nomes.
 
 **Uso:** Essenciais
 
-**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns), no parágrafo final que contrasta DNS clássico, DoT em 853 e DoH sobre HTTPS.
 
-Quanto a formas encapsuladas de DNS, assinale a afirmativa correta.
+Uma política de saída deve distinguir DNS sobre TLS (DoT) de DNS sobre HTTPS (DoH) pelas convenções usuais de transporte. Assinale a associação correta.
 
-A) DNS sobre TLS elimina o uso de TLS e opera necessariamente em 53/UDP.
-B) DNS sobre HTTPS é sinônimo de transferência de zona por TCP.
-C) Todo DNS, sem exceção, deve usar a porta 53 para ser válido.
-D) DNS sobre TLS usa, por padrão, a porta 853, e DNS sobre HTTPS usa HTTPS, normalmente na porta 443.
+A) DoT utiliza TLS em 53/TCP, enquanto DoH utiliza HTTP sem TLS em 853/TCP.
+
+B) DoT utiliza HTTPS em 443/TCP, enquanto DoH utiliza TLS diretamente em 853/TCP.
+
+C) DoT utiliza TLS em 853/TCP, enquanto DoH utiliza HTTPS, normalmente na porta 443.
+
+D) DoT e DoH utilizam exclusivamente 53/UDP, diferenciando-se apenas pelo formato da consulta.
 
 ### S2D3Q111 — Sequência inicial de concessão DHCP
 
@@ -5656,29 +5891,35 @@ D) DHCPDISCOVER, DHCPACK, DHCPOFFER e DHCPREQUEST.
 
 **Uso:** Aprofundamento
 
-**Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp), na lista de portas clássicas imediatamente após a sequência DORA.
 
-Sobre as portas clássicas do DHCP, assinale a alternativa correta.
+Na captura da obtenção inicial de configuração por DHCPv4, considere as portas clássicas atribuídas ao cliente e ao servidor. Qual fluxo está corretamente descrito?
 
-A) O servidor DHCP usa 68/TCP e o cliente usa 67/TCP.
-B) O servidor DHCP usa 67/UDP e o cliente usa 68/UDP.
-C) Cliente e servidor DHCP usam 53/UDP, pois o serviço resolve nomes.
-D) O cliente DHCP recebe a concessão em 443/TCP, dentro de HTTPS.
+A) O cliente envia de 67/UDP para 68/UDP, e o servidor responde de 68/UDP para 67/UDP.
+
+B) O cliente envia de 68/UDP para 67/UDP, e o servidor responde de 67/UDP para 68/UDP.
+
+C) O cliente envia de 68/TCP para 67/TCP, e o servidor responde de 67/TCP para 68/TCP.
+
+D) O cliente envia de 67/TCP para 68/TCP, e o servidor responde de 68/TCP para 67/TCP.
 
 ### S2D3Q113 — Uso de DHCP relay entre segmentos roteados
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp), especialmente a explicação de que o relay encaminha mensagens entre segmentos e viabiliza o servidor central.
 
-Em uma organização, o servidor DHCP está na VLAN 10 e os clientes da VLAN 20 não recebem endereços. Mantido o roteamento entre as VLANs, a medida compatível com a arquitetura é:
+Um servidor DHCP central está na VLAN 10, e os clientes da VLAN 20 iniciam o DORA por broadcast. O roteamento entre as VLANs funciona, mas não se deseja estender o domínio de broadcast. Qual configuração atende ao cenário e permite selecionar o escopo correto?
 
-A) substituir o DHCP por um registro DNS A em cada estação.
-B) configurar um proxy reverso para encaminhar broadcasts DHCP.
-C) aplicar PAT no firewall para converter DHCP em HTTPS.
-D) configurar um DHCP relay na rede dos clientes e um escopo compatível no servidor central.
+A) Configurar o relay apenas na interface da VLAN 10 e manter para os clientes da VLAN 20 o mesmo escopo usado pelos servidores.
+
+B) Encaminhar o broadcast por uma ponte entre as VLANs e escolher o escopo exclusivamente pelo endereço MAC de cada estação cliente.
+
+C) Aplicar tradução de endereço na interface da VLAN 20 e selecionar para todos os pedidos um único escopo baseado no endereço traduzido.
+
+D) Configurar o relay na interface de camada 3 da VLAN 20 e manter no servidor um escopo compatível com a rede desses clientes.
 
 ### S2D3Q114 — Divisão de funções entre SMTP, POP3 e IMAP
 
@@ -5686,14 +5927,17 @@ D) configurar um DHCP relay na rede dos clientes e um escopo compatível no serv
 
 **Uso:** Aprofundamento
 
-**Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email).
+**Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email), incluindo as subseções 6.1 a 6.4 sobre envio e acesso à caixa postal.
 
-Assinale a associação correta entre protocolos de correio eletrônico.
+Em uma arquitetura convencional de correio eletrônico, é necessário distinguir o envio da mensagem do acesso posterior à caixa postal. Assinale a distribuição correta das funções.
 
-A) POP3 é o protocolo típico para transferência de mensagens entre servidores de correio.
-B) SMTP é usado na submissão e na transferência de mensagens, enquanto POP3 e IMAP são usados para acesso à caixa postal.
-C) IMAP é o protocolo que resolve registros MX antes do envio de e-mail.
-D) SMTP é destinado exclusivamente à leitura sincronizada de pastas pelo destinatário.
+A) POP3 realiza submissão e transferência entre servidores, enquanto SMTP e IMAP realizam acesso à caixa postal.
+
+B) SMTP realiza submissão e transferência entre servidores, enquanto POP3 e IMAP realizam acesso à caixa postal.
+
+C) IMAP realiza submissão e transferência entre servidores, enquanto SMTP e POP3 realizam acesso à caixa postal.
+
+D) POP3 realiza transferência entre servidores e acesso sincronizado, enquanto IMAP realiza submissão pelo cliente.
 
 ### S2D3Q115 — Portas de submissão e transferência SMTP
 
@@ -5701,14 +5945,17 @@ D) SMTP é destinado exclusivamente à leitura sincronizada de pastas pelo desti
 
 **Uso:** Aprofundamento
 
-**Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email).
+**Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email), na lista de portas 25/TCP, 587/TCP e 465/TCP e seus respectivos papéis.
 
-Em relação às portas de SMTP, a associação correta é:
+Uma organização separará a submissão autenticada feita pelos clientes da transferência SMTP realizada entre seus servidores de correio e outros MTAs. Qual configuração segue as convenções usuais?
 
-A) 25/TCP é a porta de acesso POP3 e 110/TCP é a de relay SMTP.
-B) 587/UDP é a porta padrão de consultas SNMP.
-C) 587/TCP é usada tipicamente para submissão pelo cliente, e 25/TCP para transferência entre servidores.
-D) 465/UDP é a porta obrigatória de toda transferência entre servidores SMTP.
+A) Reservar 25/TCP à submissão autenticada dos clientes e 587/TCP exclusivamente à transferência entre MTAs.
+
+B) Reservar 465/TCP à transferência entre MTAs e iniciar STARTTLS obrigatório depois de abrir o canal com TLS implícito.
+
+C) Usar tipicamente 587/TCP para submissão pelos clientes e 25/TCP para transferência de mensagens entre MTAs.
+
+D) Usar 25/UDP para transferência entre MTAs e 587/UDP para submissão autenticada pelos clientes.
 
 ### S2D3Q116 — Modelo de acesso e sincronização do IMAP
 
@@ -5731,29 +5978,35 @@ D) Telnet.
 
 **Uso:** Aprofundamento
 
-**Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email).
+**Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email), em conjunto com [6.3 IMAP](semana_02_estudo.md#s2-d3-email).
 
-Uma pessoa redige uma mensagem, envia-a ao servidor de correio e depois a consulta em dois dispositivos, preservando o estado da caixa postal. A combinação coerente é:
+Uma usuária envia uma mensagem pelo serviço de sua organização. Mais tarde, acessa a caixa postal pelo telefone e pelo notebook, mantendo pastas e marcações sincronizadas. Qual combinação atende às duas etapas?
 
-A) SMTP para submissão/transferência e IMAP para acesso sincronizado à caixa postal.
-B) POP3 para submissão e SMTP para sincronização de pastas.
-C) DNS para submissão e DHCP para leitura das mensagens.
-D) IMAP para transferência entre servidores e FTP para leitura da caixa postal.
+A) SMTP para submissão e acesso à caixa postal; POP3 para sincronização de pastas entre os clientes.
+
+B) POP3 para submissão e transferência da mensagem; SMTP para acesso sincronizado à caixa postal.
+
+C) IMAP para submissão e transferência da mensagem; POP3 para acesso sincronizado à caixa postal.
+
+D) SMTP para submissão e transferência da mensagem; IMAP para acesso sincronizado à caixa postal.
 
 ### S2D3Q118 — Arquitetura de canais e modos do FTP
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota), nos parágrafos sobre conexão de controle, conexão de dados e porta informada pelo servidor no modo passivo.
 
-Sobre o FTP clássico, assinale a alternativa correta.
+Em um servidor FTP, o login e os comandos funcionam, mas listagens e transferências falham no modo passivo. O firewall libera somente 21/TCP. Qual diagnóstico e ajuste são coerentes com a arquitetura do protocolo?
 
-A) FTP protege automaticamente credenciais e conteúdo com TLS em qualquer modo.
-B) FTP usa uma única conexão, obrigatoriamente em 21/TCP, tanto para controle quanto para dados.
-C) FTP usa apenas UDP para reduzir latência de transferências.
-D) FTP separa a conexão de controle, normalmente em 21/TCP, da conexão de dados; no modo passivo, a porta de dados é informada pelo servidor.
+A) Controle e dados compartilham 21/TCP; deve-se apenas ampliar o tempo limite da conexão já liberada no firewall.
+
+B) Controle e dados usam conexões separadas; deve-se permitir ao cliente alcançar a faixa passiva anunciada pelo servidor.
+
+C) Dados usam uma sessão UDP negociada pelo controle; deve-se liberar portas UDP altas em ambos os sentidos.
+
+D) Dados partem sempre de 20/TCP no servidor; deve-se permitir essa origem mesmo quando foi negociado o modo passivo.
 
 ### S2D3Q119 — Funcionamento do modo passivo do FTP
 
@@ -5761,29 +6014,35 @@ D) FTP separa a conexão de controle, normalmente em 21/TCP, da conexão de dado
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota), especificamente a descrição do modo passivo e da conexão de dados iniciada pelo cliente.
 
-No modo passivo de FTP, é correto afirmar que:
+Depois de solicitar modo passivo em uma sessão FTP, o cliente recebe do servidor o endereço e a porta destinados à transferência. O que deve ocorrer em seguida?
 
-A) o servidor sempre inicia a conexão de dados a partir de 20/TCP para o cliente.
-B) o cliente inicia a conexão de dados para uma porta informada pelo servidor; por isso, a transferência não fica limitada à porta 20.
-C) a conexão de controle deixa de existir e é substituída por DNS.
-D) o tráfego de dados passa obrigatoriamente a usar UDP/21.
+A) O servidor inicia outra conexão TCP, usando 20 como origem e a porta recebida do cliente como destino.
+
+B) O cliente inicia outra conexão TCP para o endereço e a porta informados pelo servidor, mantendo o canal de controle.
+
+C) O servidor reutiliza a conexão de controle para os dados e separa internamente comandos e conteúdo transferido.
+
+D) O cliente aguarda que o servidor abra a conexão de dados para sua porta de origem usada no controle.
 
 ### S2D3Q120 — Negociação e proteção dos canais no FTPS explícito
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota), no parágrafo sobre FTPS explícito, `AUTH TLS`, `PBSZ 0`, `PROT P` e `PROT C`.
 
-Uma equipe precisa configurar FTPS explícito com proteção também para o canal de dados. Qual procedimento está correto?
+Uma política exige FTPS explícito e confidencialidade tanto no canal de controle quanto nas conexões de dados. Qual sequência atende ao requisito antes da transferência?
 
-A) Conectar-se por SSH na porta 22, pois FTPS é o mesmo protocolo que SFTP.
-B) Abrir 990/TCP e assumir que não haverá conexão de dados separada.
-C) Iniciar o controle em 21/TCP, negociar `AUTH TLS` e usar `PBSZ 0` seguido de `PROT P` para solicitar proteção privada dos dados.
-D) Usar apenas `PROT P` em 53/UDP, pois DNS fornece a criptografia do FTP.
+A) Abrir 22/TCP, enviar `AUTH TLS`, negociar o controle e selecionar `PROT C` para proteger os dados.
+
+B) Abrir 990/TCP com TLS implícito, enviar `AUTH TLS` e selecionar `PBSZ 1` antes de `PROT P`.
+
+C) Abrir 21/TCP, enviar `AUTH TLS`, negociar TLS e então enviar `PBSZ 0` seguido de `PROT P`.
+
+D) Abrir 21/TCP, enviar `PROT P` antes de negociar TLS e deixar `AUTH TLS` para depois dos dados.
 
 ### S2D3Q121 — FTPS implícito, portas registradas e separação dos canais
 
@@ -5791,59 +6050,71 @@ D) Usar apenas `PROT P` em 53/UDP, pois DNS fornece a criptografia do FTP.
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota), nos parágrafos sobre FTPS implícito, registros 990/989 e negociação de portas nos modos ativo e passivo; e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
-Sobre FTPS implícito, assinale a afirmativa tecnicamente adequada.
+Ao publicar um serviço FTPS implícito atrás de firewall, a equipe considera as portas registradas e a arquitetura herdada do FTP. Qual afirmação está correta?
 
-A) É outro nome para SFTP e, portanto, usa obrigatoriamente 22/TCP.
-B) Transfere todos os dados somente por 989/TCP, independentemente de o modo ser ativo ou passivo.
-C) A IANA registra 990/TCP para o controle e 989/TCP para dados, mas FTPS preserva canais separados e portas de dados podem ser negociadas conforme o modo e a configuração.
-D) Exige `AUTH TLS` após a abertura de 21/TCP, exatamente como definição de FTPS implícito.
+A) O TLS começa na abertura do controle em 990/TCP, mas conexões de dados continuam separadas e podem usar portas negociadas.
+
+B) FTPS implícito começa em 21/TCP com `AUTH TLS`, e toda conexão de dados deve usar obrigatoriamente 989/TCP.
+
+C) FTPS implícito é um subsistema SSH em 22/TCP e transporta controle e dados pela mesma conexão criptografada.
+
+D) O TLS começa na abertura do controle em 990/TCP, e todos os dados trafegam dentro dessa mesma conexão de controle.
 
 ### S2D3Q122 — SFTP como protocolo de arquivos sobre SSH
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota), especialmente a definição como SSH File Transfer Protocol e a regra “SFTP não é FTP sobre TLS”.
 
-Uma rotina de transferência de arquivos deve reutilizar uma infraestrutura SSH já configurada com autenticação por chave pública. A escolha coerente é:
+Uma automação precisa transferir arquivos aproveitando o serviço SSH e as chaves públicas já administradas nos servidores. Qual descrição identifica corretamente o SFTP nesse cenário?
 
-A) SFTP, pois é o SSH File Transfer Protocol sobre SSH, normalmente em 22/TCP.
-B) FTP clássico, pois já cifra os arquivos por padrão.
-C) FTPS explícito, pois é o subsistema de arquivos do SSH.
-D) Telnet, pois fornece canal criptografado para arquivos.
+A) É um protocolo de transferência sobre SSH, normalmente em 22/TCP, que pode reutilizar a autenticação oferecida pelo SSH.
+
+B) É o FTP com TLS explícito, normalmente em 21/TCP, que reutiliza diretamente as chaves públicas cadastradas no SSH.
+
+C) É o FTP com TLS implícito, normalmente em 990/TCP, que transforma certificados TLS em chaves de autenticação SSH.
+
+D) É uma modalidade de FTPS que usa 22/TCP no controle e mantém conexões FTP separadas para transportar os dados.
 
 ### S2D3Q123 — Administração remota segura com SSH
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota), incluindo os serviços oferecidos pelo SSH e os cuidados com chave do host e chaves privadas.
 
-Para administração remota de um servidor com autenticação, integridade e confidencialidade do canal, deve-se preferir:
+Um administrador precisa executar comandos em um servidor remoto por um canal com autenticação, integridade e confidencialidade. Qual solução e cuidado operacional atendem diretamente ao requisito?
 
-A) HTTP na porta 80/TCP, pois substitui terminal remoto.
-B) DNS em 53/UDP, pois registra o endereço do servidor.
-C) Telnet em 23/TCP, pois cifra as credenciais nativamente.
-D) SSH, normalmente em 22/TCP, com validação da chave do host e proteção das chaves privadas.
+A) Usar Telnet em 23/TCP e confiar na senha do usuário para cifrar toda a sessão de terminal.
+
+B) Usar SFTP em 22/TCP e tratar o subsistema de arquivos como uma sessão interativa de comandos do sistema.
+
+C) Usar FTPS em 990/TCP e transportar os comandos do terminal pelo canal de controle do protocolo de arquivos.
+
+D) Usar SSH em 22/TCP, validar a chave do host e proteger as chaves privadas empregadas na autenticação.
 
 ### S2D3Q124 — Função, porta e limitação de segurança do Telnet
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota), que o define como terminal remoto em 23/TCP sem a proteção criptográfica esperada.
 
-Assinale a afirmativa correta sobre Telnet.
+Durante o inventário, foi encontrado um equipamento legado que oferece Telnet sem túnel ou proteção adicional. Qual descrição combina corretamente função, transporte e limitação desse serviço?
 
-A) Telnet é um protocolo de transferência de arquivos protegido por TLS.
-B) Telnet oferece terminal remoto, mas não fornece a proteção criptográfica esperada para credenciais e conteúdo; sua porta padrão é 23/TCP.
-C) Telnet é a versão segura de LDAP em 636/TCP.
-D) Telnet sincroniza relógios por 123/UDP.
+A) Oferece terminal remoto em 23/TCP e cifra nativamente credenciais e conteúdo após a autenticação do usuário.
+
+B) Oferece transferência de arquivos em 23/TCP e protege somente as credenciais, mantendo o conteúdo em claro.
+
+C) Oferece terminal remoto em 23/TCP e não fornece proteção criptográfica nativa para credenciais e conteúdo.
+
+D) Oferece terminal remoto em 23/UDP e garante integridade das mensagens, mas não confidencialidade do conteúdo.
 
 ### S2D3Q125 — Gerente, agente, MIB, OID e notificações SNMP
 
@@ -5851,14 +6122,17 @@ D) Telnet sincroniza relógios por 123/UDP.
 
 **Uso:** Aprofundamento
 
-**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp).
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nos trechos que definem gerente, agente, MIB, OID, GET, TRAP e INFORM.
 
-Na arquitetura SNMP, assinale a alternativa correta.
+Uma plataforma central consulta periodicamente o contador de interfaces dos roteadores e também recebe avisos espontâneos quando um enlace muda de estado. No modelo SNMP, qual descrição dos papéis e operações está correta?
 
-A) O agente consulta periodicamente o gerente para obter as regras de navegação web.
-B) O gerente pode consultar objetos de um agente por meio de MIB/OID, e o agente pode emitir uma trap como notificação.
-C) A MIB é a conexão de dados do FTP, e OID é a porta de origem do cliente.
-D) Uma trap é, por definição, uma resposta confirmada a toda consulta GET.
+A) O agente envia operações GET ao gerente, que localiza cada contador em sua própria MIB e responde com uma trap.
+
+B) O gerente consulta no agente objetos identificados por OID, e o agente pode enviar uma trap ao gerente quando ocorre um evento.
+
+C) O gerente expõe os objetos da MIB aos agentes, que alteram os contadores remotos por GET e confirmam cada leitura com trap.
+
+D) O agente consulta objetos por OID no gerente, enquanto o gerente usa trap como pedido confirmado de leitura ao equipamento.
 
 ### S2D3Q126 — Portas tradicionais e níveis de proteção do SNMP
 
@@ -5866,29 +6140,35 @@ D) Uma trap é, por definição, uma resposta confirmada a toda consulta GET.
 
 **Uso:** Aprofundamento
 
-**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nos trechos sobre 161/UDP, 162/UDP e proteção das versões; e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
-Sobre SNMP, assinale a alternativa correta.
+Uma equipe configurará consultas periódicas aos agentes e recebimento de notificações pelo gerente, com autenticação e privacidade quando suportadas. Qual desenho está tecnicamente correto?
 
-A) Consultas a agentes ocorrem tipicamente em 162/TCP, e traps chegam em 161/TCP.
-B) SNMPv1 e SNMPv2c oferecem, obrigatoriamente, a mesma proteção criptográfica de um SNMPv3 bem configurado.
-C) SNMP serve apenas para transferir arquivos entre gerente e agente.
-D) Consultas e respostas ao agente usam tradicionalmente 161/UDP, notificações chegam ao gerente em 162/UDP, e o SNMPv3 pode prover autenticação e privacidade conforme a configuração.
+A) Agentes recebem consultas em 162/TCP, o gerente recebe traps em 161/TCP, e SNMPv2c fornece autenticação e privacidade obrigatórias.
+
+B) Agentes recebem consultas em 161/UDP, o gerente recebe traps em 162/UDP, e SNMPv2c fornece proteção equivalente ao SNMPv3 configurado.
+
+C) Agentes recebem consultas em 162/UDP, o gerente recebe traps em 161/UDP, e SNMPv3 fornece privacidade sem qualquer possibilidade de autenticação.
+
+D) Agentes recebem consultas em 161/UDP, o gerente recebe notificações em 162/UDP, e SNMPv3 pode fornecer autenticação e privacidade conforme configurado.
 
 ### S2D3Q127 — Estrutura e operações de um diretório LDAP
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap), na definição de hierarquia, DN, atributos e operações bind e search.
 
-Sobre LDAP, assinale a alternativa correta.
+Um cliente LDAP precisa localizar a entrada de uma servidora em um diretório corporativo e ler seus atributos. Qual descrição dos elementos e das operações está correta?
 
-A) LDAP é um protocolo de banco relacional que exige consultas SQL.
-B) LDAP resolve nomes de domínio por registros A e AAAA.
-C) LDAP acessa diretórios hierárquicos com entradas identificadas por DN e atributos, permitindo operações como bind e search.
-D) LDAP é um protocolo de sincronização de relógio sobre UDP.
+A) O DN identifica apenas a conexão com o servidor, e a operação bind devolve todas as entradas abaixo da raiz pesquisada.
+
+B) O DN identifica um atributo isolado, e a operação search autentica o cliente antes de remover a entrada encontrada.
+
+C) O DN identifica uma entrada na hierarquia, seus dados são atributos, e operações como bind e search integram o LDAP.
+
+D) O DN identifica o esquema inteiro do diretório, e a operação bind altera atributos enquanto search negocia o canal TLS.
 
 ### S2D3Q128 — Proteção do LDAP e distinção entre autenticação e autorização
 
@@ -5896,18 +6176,21 @@ D) LDAP é um protocolo de sincronização de relógio sobre UDP.
 
 **Uso:** Aprofundamento
 
-**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap), especialmente os parágrafos sobre 389/STARTTLS, 636/LDAPS e participação do diretório em autenticação sem concentrar toda autorização.
 
-Assinale a afirmativa correta sobre LDAP e proteção do acesso.
+Uma aplicação valida a identidade de usuários em um diretório LDAP, mas mantém localmente os papéis que autorizam cada operação. A conexão ao diretório também deve ser protegida. Qual afirmação está correta?
 
-A) LDAP pode participar de um fluxo de autenticação, mas não decide isoladamente toda a autorização; LDAP em 389/TCP pode usar STARTTLS e LDAPS usa usualmente 636/TCP.
-B) LDAP em 389/TCP é sempre cifrado, mesmo sem negociação TLS.
-C) LDAPS em 636/UDP é a única forma de consultar diretórios.
-D) A existência de uma conta LDAP autoriza automaticamente qualquer ação em toda aplicação.
+A) LDAP pode participar da autenticação sem decidir toda autorização; 389/TCP admite STARTTLS e 636/TCP é usual no LDAPS.
+
+B) Um bind bem-sucedido concede autorização total na aplicação; 389/TCP fornece TLS implícito sem negociação adicional.
+
+C) O diretório deve decidir todos os papéis da aplicação; 636/UDP é o único transporte protegido permitido pelo LDAP.
+
+D) STARTTLS transforma autenticação em autorização automática; LDAPS usa 389/TCP após o cliente validar a conta existente.
 
 ### S2D3Q129 — Proxy direto
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -5922,18 +6205,21 @@ D) proxy direto.
 
 ### S2D3Q130 — Proxy reverso
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy).
+**Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy), na definição do extremo representado e na lista de terminação TLS, balanceamento e ocultação da topologia.
 
-Um portal público coloca um componente diante dos servidores de aplicação para terminar TLS, distribuir carga e ocultar a topologia interna. Trata-se de:
+Um componente recebe as conexões destinadas a um portal público, termina TLS, distribui requisições entre servidores internos e evita expor diretamente esses servidores. Como ele deve ser classificado?
 
-A) proxy reverso.
-B) proxy direto.
-C) DHCP relay.
-D) resolvedor DNS recursivo.
+A) Proxy reverso, pois recebe conexões em nome dos servidores de origem e pode aplicar funções na publicação da aplicação.
+
+B) Proxy direto, pois recebe conexões em nome dos servidores de origem e controla a navegação realizada pelos usuários externos.
+
+C) Proxy direto, pois a terminação de TLS define o extremo representado, independentemente da posição diante dos servidores.
+
+D) Proxy reverso somente se cada navegador o configurar explicitamente como intermediário de suas conexões de saída.
 
 ### S2D3Q131 — Diferença entre proxy e NAT
 
@@ -5941,29 +6227,35 @@ D) resolvedor DNS recursivo.
 
 **Uso:** Revisão
 
-**Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
+**Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy), no parágrafo que contrasta representação de um extremo pelo proxy com tradução de campos pelo NAT.
 
-Qual alternativa diferencia corretamente proxy e NAT?
+Em uma arquitetura, um proxy recebe uma conexão do cliente e intermedeia a comunicação com o destino, enquanto um equipamento NAT encaminha pacotes após reescrever campos de endereçamento. Qual distinção está correta?
 
-A) NAT cria e interpreta obrigatoriamente sessões HTTP, enquanto proxy apenas troca endereços IP.
-B) Um proxy pode intermediar a comunicação em nome de um extremo, enquanto NAT traduz campos de endereçamento no tráfego encaminhado sem necessariamente encerrar a sessão de aplicação.
-C) Proxy e NAT são sinônimos e fornecem sempre a mesma proteção.
-D) NAT cifra o conteúdo, enquanto proxy apenas converte nomes em endereços IP.
+A) NAT sempre cria uma nova requisição de aplicação, enquanto o proxy se limita a recalcular endereços e somas de verificação.
+
+B) Proxy atua em nome de um extremo, enquanto NAT pode traduzir endereços e portas sem terminar a sessão de aplicação.
+
+C) Proxy e NAT operam somente nos campos IP e de transporte, sem representar qualquer extremo ou compreender a aplicação.
+
+D) Proxy necessariamente decifra todo conteúdo, enquanto NAT preserva sempre endereços e portas visíveis nos pacotes encaminhados.
 
 ### S2D3Q132 — NAT básico versus PAT/NAPT
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
+**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat), nos dois itens que definem NAT básico e NAPT e no parágrafo sobre o contraste usado em prova.
 
-Em uma questão que contrapõe NAT básico e PAT/NAPT, a diferença decisiva é que:
+Quando uma questão usa os termos no sentido estrito do RFC 2663 e contrapõe NAT básico a PAT/NAPT, qual é a diferença determinante?
 
-A) NAT básico resolve nomes e PAT/NAPT entrega endereços via broadcast.
-B) PAT/NAPT opera somente em IPv6, enquanto NAT básico opera somente em IPv4.
-C) NAT básico traduz endereços IP sem traduzir identificadores de transporte, enquanto PAT/NAPT também traduz portas para multiplexar fluxos.
-D) PAT/NAPT substitui a necessidade de gateway padrão.
+A) NAT básico traduz endereço e porta de transporte, enquanto PAT/NAPT altera somente o endereço IP do fluxo.
+
+B) NAT básico traduz endereços sem traduzir portas, enquanto PAT/NAPT também usa portas para multiplexar os fluxos.
+
+C) NAT básico e PAT/NAPT traduzem sempre endereço e porta, diferenciando-se apenas pelo fabricante do equipamento.
+
+D) NAT básico admite apenas mapeamento estático e PAT/NAPT apenas mapeamento dinâmico, sem alterar portas em nenhum caso.
 
 ### S2D3Q133 — Tabela de tradução e multiplexação do PAT/NAPT
 
@@ -5971,18 +6263,21 @@ D) PAT/NAPT substitui a necessidade de gateway padrão.
 
 **Uso:** Revisão
 
-**Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat).
+**Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat), incluindo a tabela de mapeamentos com portas públicas diferentes.
 
-Dois hosts privados usam a mesma porta de origem 52000 para acessar o mesmo site externo, mas compartilham um único endereço público. Como o PAT/NAPT pode distinguir os retornos?
+Os hosts 10.0.0.10:52000 e 10.0.0.20:52000 iniciam conexões ao mesmo servidor e à mesma porta, compartilhando o endereço público 203.0.113.8. Como o PAT mantém os retornos separados?
 
-A) Eliminando as portas de origem de ambos os fluxos antes de sair da rede.
-B) Convertendo o endereço público em um registro MX para cada host.
-C) Criando mapeamentos com portas públicas distintas e associando cada retorno ao fluxo interno correspondente.
-D) Fazendo o resolvedor DNS escolher um endereço IPv6 privado para cada host.
+A) Conserva 203.0.113.8:52000 nos dois fluxos e usa apenas o destino externo idêntico para escolher o host interno.
+
+B) Conserva a mesma tupla pública nos dois fluxos e alterna cada resposta entre os hosts segundo sua ordem de chegada.
+
+C) Aloca portas públicas distintas e registra em sua tabela qual combinação pública corresponde a cada origem interna.
+
+D) Altera a porta de destino do servidor em cada fluxo e mantém uma única porta pública de origem sem mapeamento individual.
 
 ### S2D3Q134 — Limites de segurança do NAT/PAT
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -5997,18 +6292,21 @@ D) NAT básico é um sinônimo de proxy reverso de aplicação.
 
 ### S2D3Q135 — Finalidade, porta e limite do NTP
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp).
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos trechos sobre 123/UDP, importância para logs e certificados, diferença para fuso e proteção das fontes.
 
-Para corrigir horários divergentes em logs distribuídos e evitar problemas ligados à validade temporal de certificados, o serviço mais diretamente relacionado é:
+Os relógios de três servidores apresentam desvios que dificultam correlacionar logs e verificar a validade temporal de certificados. Qual medida trata diretamente a causa sem confundir referência de tempo com exibição local?
 
-A) NTP em 123/UDP, que sincroniza relógios, sem definir por si só o fuso horário exibido.
-B) DNS em 53/UDP, que escolhe a hora do servidor autoritativo.
-C) DHCP em 67/TCP, que determina o horário de verão.
-D) FTP em 21/TCP, que transfere arquivos de log em ordem temporal.
+A) Sincronizar os relógios por NTP em 123/UDP e manter fuso horário e horário de verão como configurações locais.
+
+B) Distribuir o fuso horário por NTP em 123/TCP e deixar que cada servidor mantenha sua própria referência de relógio.
+
+C) Sincronizar os relógios por NTP em 161/UDP e usar o estrato para definir o fuso horário exibido pelos sistemas.
+
+D) Sincronizar por NTP em 123/UDP e considerar qualquer fonte automaticamente confiável, sem proteção ou validação operacional.
 
 ### S2D3Q136 — Alcance das associações de portas registradas pela IANA
 
@@ -6018,42 +6316,51 @@ D) FTP em 21/TCP, que transfere arquivos de log em ordem temporal.
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-Sobre portas conhecidas e o registro da IANA, assinale a alternativa correta.
+Um inventário identifica conexões para 22/TCP, 443/TCP e 8080/TCP. Sem inspecionar os protocolos ou a configuração dos hosts, qual conclusão é válida sobre esses números de porta?
 
-A) Um serviço HTTP não pode ser configurado na porta 8080, porque a IANA impede a abertura dessa porta.
-B) Todo tráfego na porta 443 é necessariamente legítimo e criptografado de forma correta.
-C) A porta 22 identifica de modo infalível SSH, independentemente da configuração do host.
-D) O registro da IANA define associações convencionais de nomes e portas, mas serviços podem ser configurados em outras portas e a porta isolada não comprova conteúdo, legitimidade ou segurança.
+A) 22/TCP comprova SSH e 443/TCP comprova HTTPS corretamente configurado, pois aplicações não podem trocar suas portas registradas.
+
+B) 8080/TCP não pode transportar HTTP, pois somente a porta bem conhecida 80/TCP admite esse protocolo de aplicação.
+
+C) Um sistema compatível com o registro da IANA recusa serviços fora da porta convencional e impede outros protocolos nela.
+
+D) As portas sugerem associações convencionais, mas a configuração pode divergir e o número isolado não prova protocolo, conteúdo ou segurança.
 
 ### S2D3Q137 — Ordem do fluxo integrado de acesso à rede
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado), começando pela entrega de IP, prefixo, gateway e DNS pelo DHCP.
 
-Uma estação recém-conectada depende de DHCP e acessará um portal pelo nome. Qual etapa deve ocorrer primeiro para que ela obtenha IP, prefixo, gateway e servidor DNS automaticamente?
+Uma estação depende de configuração automática e acabou de ser conectada à rede. Qual sequência respeita a primeira dependência para que depois ela acesse um portal pelo nome?
 
-A) A concessão DHCP.
-B) A tradução PAT no firewall de borda.
-C) A negociação TLS com o portal.
-D) A consulta ao servidor autoritativo DNS externo.
+A) Negociar TLS com o portal; depois obter a concessão DHCP, resolver o nome e escolher o gateway.
+
+B) Resolver o nome no DNS; depois obter a concessão DHCP, descobrir o gateway e iniciar o transporte.
+
+C) Obter a concessão DHCP; depois resolver o nome, encaminhar o tráfego e negociar a proteção do portal.
+
+D) Criar o mapeamento PAT na borda; depois obter a concessão DHCP e configurar o servidor DNS local.
 
 ### S2D3Q138 — Diagnóstico de falha de resolução DNS
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns), especialmente o raciocínio que compara os dois testes.
 
-Uma estação consegue abrir `https://198.51.100.40`, mas falha ao tentar acessar `portal.example` porque o nome não é resolvido. O primeiro bloco de investigação mais indicado é:
+Uma estação alcança o endereço IP do portal, mas a tentativa pelo nome falha antes de obter qualquer endereço para a conexão. Qual frente deve ser verificada primeiro?
 
-A) NTP, pois o IP de destino foi alcançado.
-B) FTP passivo, pois o navegador usa duas conexões.
-C) DNS, verificando servidor configurado, respostas, cache e registros.
-D) IMAP, verificando a sincronização de mensagens.
+A) A negociação TLS, verificando certificado e algoritmos antes de confirmar qual endereço o nome deveria produzir.
+
+B) O roteamento IP, substituindo a rota funcional usada no teste direto antes de examinar a consulta de nomes.
+
+C) A tabela PAT, recriando o mapeamento que já permitiu alcançar o mesmo destino pelo endereço IP.
+
+D) A resolução DNS, verificando servidor configurado, resposta recebida, cache e registros publicados para o nome.
 
 ### S2D3Q139 — Diagnóstico por etapas após a resolução DNS
 
@@ -6061,14 +6368,17 @@ D) IMAP, verificando a sincronização de mensagens.
 
 **Uso:** Revisão
 
-**Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado), em conjunto com as etapas posteriores à resolução.
 
-Em um diagnóstico, o nome do portal é resolvido corretamente, mas a conexão tradicional para 443/TCP não é estabelecida. A conclusão inicial mais adequada é:
+O resolvedor retorna o endereço correto do portal, mas os segmentos SYN enviados a 443/TCP não recebem SYN-ACK. Qual é a próxima linha de investigação tecnicamente adequada?
 
-A) o DHCP é necessariamente o único componente defeituoso.
-B) o registro MX do domínio está incorreto.
-C) o DNS não conseguiu converter o nome em endereço.
-D) devem ser verificados rota, firewall, NAT/PAT ou o próprio serviço, sem atribuir a falha automaticamente ao DNS.
+A) Limpar apenas o cache DNS e republicar o registro, pois uma resolução bem-sucedida impede falhas nas etapas seguintes.
+
+B) Validar primeiro o certificado do portal, pois o servidor o envia antes de aceitar a abertura da conexão TCP.
+
+C) Analisar primeiro a resposta HTTP da aplicação, pois seus códigos de estado antecedem a negociação da conexão TCP.
+
+D) Verificar rota, filtragem, tradução e serviço em escuta, pois a falha ocorre depois do DNS e antes de TLS ou HTTP.
 
 ### S2D3Q140 — Sequência de HTTPS com proxy reverso
 
@@ -6076,63 +6386,75 @@ D) devem ser verificados rota, firewall, NAT/PAT ou o próprio serviço, sem atr
 
 **Uso:** Revisão
 
-**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado), que ordena TCP, TLS, HTTP e proxy reverso.
 
-Considere o acesso tradicional a um portal HTTPS publicado por proxy reverso. Após a resolução do nome, a sequência tecnicamente compatível é:
+O nome de um portal já foi resolvido, e o cliente usará HTTPS tradicional para alcançar um proxy reverso que publica a aplicação. Qual ordenação descreve o fluxo até o servidor interno?
 
-A) HTTP em claro na porta 80, seguido de DHCPACK e, por fim, troca de endereço DNS.
-B) abertura de TCP para 443, negociação TLS, tráfego HTTP dentro do canal protegido e possível encaminhamento pelo proxy reverso ao servidor de aplicação.
-C) envio de uma trap SNMP, seguido de DHCPOFFER e abertura de Telnet.
-D) negociação de FTP passivo, que substitui o TLS e o HTTP.
+A) Negociar TLS; abrir TCP para 443; enviar HTTP protegido; o proxy encaminhar a requisição ao servidor interno.
+
+B) Abrir TCP para 443; negociar TLS; enviar HTTP protegido; o proxy encaminhar a requisição ao servidor interno.
+
+C) Enviar HTTP protegido; negociar TLS; abrir TCP para 443; o proxy encaminhar a requisição ao servidor interno.
+
+D) Abrir TCP para 443; enviar HTTP protegido; negociar TLS; o proxy encaminhar a requisição ao servidor interno.
 
 ### S2D3Q141 — Identificação de conexões por seus extremos e protocolo
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta), na lista dos cinco componentes usados para identificar uma conexão TCP.
 
-Dois clientes podem acessar simultaneamente o mesmo servidor em 443/TCP porque:
+Um servidor em 203.0.113.10:443 mantém duas conexões TCP vindas de 198.51.100.20, uma da porta 51000 e outra da 51001. Qual informação permite distingui-las corretamente?
 
-A) a porta 443 só pode receber uma conexão por vez, e os clientes dividem o mesmo socket.
-B) os clientes usam combinações distintas de IP e/ou porta de origem, que compõem com destino e protocolo a identificação da conexão TCP.
-C) o servidor elimina os números de porta de origem antes de aceitar as conexões.
-D) TCP identifica conexões somente pelo nome DNS consultado pelo cliente.
+A) IP e porta de origem, IP e porta de destino e protocolo, que formam combinações distintas para as conexões.
+
+B) Apenas o endereço e a porta de destino, pois uma porta de escuta cria uma identificação exclusiva para cada cliente.
+
+C) Apenas o endereço de origem e o nome DNS consultado, pois as portas deixam de identificar o fluxo após o handshake.
+
+D) Apenas o número inicial de sequência escolhido pelo cliente, sem considerar endereços, portas ou protocolo de transporte.
 
 ### S2D3Q142 — Porta como indício, não como prova do protocolo
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-Um analista observa pacotes destinados à porta 443. A inferência correta é:
+Uma captura sem decodificação da aplicação mostra tráfego TCP destinado à porta 443. Qual inferência respeita o alcance dessa evidência?
 
-A) há prova de que a aplicação está livre de vulnerabilidades.
-B) está comprovado que todo conteúdo é legítimo e que o certificado foi validado pelo cliente.
-C) o tráfego é obrigatoriamente HTTP/2 sobre TCP.
-D) a porta sugere uma convenção de HTTPS, mas não prova sozinha o protocolo efetivo, a legitimidade do conteúdo nem a segurança da aplicação.
+A) O tráfego é HTTPS com certificado válido, e a aplicação de destino foi verificada como livre de vulnerabilidades.
+
+B) O tráfego é necessariamente HTTP/2, e o cliente aceitou corretamente toda a cadeia apresentada pelo servidor.
+
+C) O conteúdo está cifrado e é legítimo, pois nenhum outro protocolo ou serviço pode usar 443/TCP.
+
+D) A porta sugere a convenção de HTTPS, mas protocolo efetivo, validação, conteúdo e segurança exigem outras evidências.
 
 ### S2D3Q143 — Transporte do HTTP/3
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https), nos trechos que registram HTTP/3 sobre QUIC/UDP em 443 e preservação da proteção criptográfica.
 
-Sobre HTTP/3, assinale a alternativa correta.
+Uma equipe migra um serviço de HTTP/2 para HTTP/3 e precisa ajustar a política de transporte sem remover a proteção criptográfica. Qual descrição está correta?
 
-A) HTTP/3 utiliza QUIC sobre UDP, normalmente associado à porta 443, diferindo do uso de TCP por HTTP/1.1 e HTTP/2.
-B) HTTP/3 é apenas FTP com outro nome e usa 21/TCP.
-C) HTTP/3 elimina a necessidade de TLS ao usar UDP.
-D) HTTP/3 só pode funcionar após uma concessão SNMP.
+A) HTTP/3 usa QUIC sobre UDP, normalmente em 443, e integra a proteção TLS ao estabelecimento da conexão QUIC.
+
+B) HTTP/3 inicia QUIC em UDP, mas transfere o fluxo para TCP depois do primeiro datagrama e só então negocia TLS.
+
+C) HTTP/3 usa TCP como HTTP/2, enquanto QUIC define apenas o formato dos cabeçalhos HTTP acima desse transporte.
+
+D) HTTP/3 usa QUIC sobre UDP sem TLS, pois os mecanismos de recuperação de perda também autenticam o servidor.
 
 ### S2D3Q144 — Registro PTR e resolução DNS reversa
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -6147,37 +6469,43 @@ D) TXT
 
 ### S2D3Q145 — Servidor autoritativo, resolvedor e TTL de cache
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns), nas definições de servidor autoritativo, resolvedor recursivo, cache e TTL.
 
-Assinale a afirmativa correta sobre autoridade e cache DNS.
+Um registro foi alterado na zona autoritativa, mas um resolvedor ainda possui a resposta anterior dentro do TTL recebido. Qual comportamento e interpretação estão corretos?
 
-A) Um servidor autoritativo só pode responder com registros obtidos do cache de outro servidor.
-B) O TTL define a data de expiração do domínio e a disponibilidade do servidor autoritativo.
-C) Um servidor autoritativo responde pelos dados publicados na zona sob sua autoridade; um resolvedor pode reutilizar dados em cache durante o TTL aplicável.
-D) Qualquer resposta armazenada em cache é automaticamente autoritativa para toda a Internet.
+A) A alteração no autoritativo invalida imediatamente todas as cópias em cache, mesmo sem comunicação com os resolvedores.
+
+B) O resolvedor deve descartar a resposta porque TTL determina a disponibilidade atual do servidor e a existência do domínio.
+
+C) O autoritativo serve os dados publicados na zona, enquanto o resolvedor pode reutilizar a resposta anterior até terminar seu TTL aplicável.
+
+D) A resposta armazenada transforma o resolvedor em autoridade da zona e permite renovar indefinidamente o TTL sem nova consulta.
 
 ### S2D3Q146 — Diagnóstico de falha na concessão DHCP
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp), incluindo os parâmetros concedidos, DORA, relay e escopo.
 
-Uma estação apresenta endereço 169.254.x.x, não possui gateway configurado e deveria receber configuração automaticamente. O primeiro foco de diagnóstico é:
+Uma estação configurada para obtenção automática apresenta endereço 169.254.34.8, sem gateway e sem parâmetros válidos da rede corporativa. Qual deve ser o primeiro foco de diagnóstico?
 
-A) a concessão DHCP, incluindo alcance do servidor/relay e escopo disponível.
-B) a transferência de zona DNS por TCP.
-C) a configuração de TLS implícito no IMAP.
-D) o modo passivo do FTP.
+A) Alterar apenas os registros DNS do host, pois a resolução de nomes é responsável por conceder endereço e gateway.
+
+B) Verificar o intercâmbio DHCP, o alcance do servidor ou relay e a disponibilidade de endereços no escopo correto.
+
+C) Configurar apenas um gateway estático e manter o endereço link-local como se fosse uma concessão válida da rede corporativa.
+
+D) Limpar apenas a tabela ARP, pois o protocolo ARP atribui prefixo, gateway e duração da concessão automática.
 
 ### S2D3Q147 — Critérios para escolha de UDP
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -6192,48 +6520,66 @@ D) Um sistema precisa que a camada de transporte preserve necessariamente as fro
 
 ### S2D3Q148 — Garantias e limites do TCP
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
+**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp), nos pontos sobre fluxo de bytes, ordenação, confirmações, fronteiras de mensagens e significado limitado do ACK.
 
-Assinale a propriedade corretamente atribuída ao TCP.
+Uma aplicação envia duas mensagens por uma conexão TCP, mas o receptor precisa reconstruir suas fronteiras e confirmar separadamente o sucesso da operação de negócio. Qual propriedade explica essa necessidade?
 
-A) O TCP envia datagramas independentes sem estado de conexão e sem confirmações.
-B) O TCP garante que uma operação de negócio, como pagamento, foi gravada definitivamente no banco de dados.
-C) O TCP é incompatível com controle de fluxo e de congestionamento.
-D) O TCP fornece fluxo de bytes ordenado e confiável, usando sequência, confirmações, temporizadores e retransmissões, mas não preserva fronteiras de mensagens da aplicação.
+A) TCP entrega mensagens ordenadas preservando cada escrita, e seu ACK confirma que a operação foi aceita pela aplicação remota.
+
+B) TCP entrega bytes ordenados sem controle de fluxo, e cada ACK delimita a mensagem de aplicação correspondente no receptor.
+
+C) TCP entrega datagramas independentes com controle de congestionamento, e a aplicação só precisa confirmar sua gravação definitiva.
+
+D) TCP entrega fluxo de bytes confiável e ordenado, mas não preserva fronteiras de mensagens nem confirma a semântica da aplicação.
 
 ### S2D3Q149 — Impacto operacional da sincronização NTP
 
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos usos para logs e validade de certificados; e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
+
+Eventos relacionados aparecem com diferença de vários minutos nos logs de dois servidores, e um deles rejeita um certificado ainda válido segundo a hora correta. Qual ação é prioritária?
+
+A) Verificar estado de sincronização, servidores NTP selecionados e fontes de tempo usadas pelas duas máquinas.
+
+B) Alterar somente o fuso horário exibido, sem verificar a referência temporal mantida pelos relógios dos sistemas.
+
+C) Reduzir o TTL dos registros DNS, para que os relógios sejam atualizados a cada nova resolução de nome.
+
+D) Renovar somente o certificado rejeitado, sem corrigir o desvio também observado na correlação dos logs.
+
+### S2D3Q150 — Fluxo do cliente ao backend publicado
+
 **Nível:** Muito difícil
 
 **Uso:** Simulado
 
-**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp) e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [Fluxo integrado de acesso a um portal](semana_02_estudo.md#s2-d3-fluxo-integrado), com apoio de [NAT e PAT](semana_02_estudo.md#s2-d3-nat-pat) e [Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 
-Em uma investigação, os logs de dois servidores têm horários incompatíveis e certificados passam a parecer inválidos em uma das máquinas. A ação mais diretamente relacionada ao problema é:
+Uma estação recém-conectada recebe configuração automática e acessa, por nome, um portal remoto. Na borda, vários clientes compartilham um endereço público por PAT; no destino, um proxy reverso publica a aplicação. Analise as afirmações.
 
-A) verificar a sincronização NTP e as fontes de tempo, pois NTP mantém referência temporal coerente para logs e validações dependentes de horário.
-B) trocar o fuso horário no DNS para que os registros A sejam recalculados.
-C) substituir DHCP por POP3, pois ambos usam mensagens de confirmação.
-D) habilitar FTP ativo para ordenar os eventos registrados.
+I. O DHCP pode fornecer endereço, prefixo, gateway e resolvedor, mas a resolução do nome do portal pertence ao DNS.
 
-### S2D3Q150 — Integração dos serviços no acesso a um portal publicado
+II. Para destino remoto, o pacote mantém o IP do servidor enquanto o quadro local usa o próximo salto; na borda, o PAT pode traduzir a tupla de origem.
 
-**Nível:** Muito difícil
+III. Depois do transporte e da proteção TLS, o proxy reverso pode terminar a conexão externa e iniciar outra para o backend, sem substituir DNS, roteamento ou autorização da aplicação.
 
-**Uso:** Simulado
+Está correto o que se afirma em:
 
-**Referência:** [14. Fluxo integrado de acesso a um portal](semana_02_estudo.md#s2-d3-fluxo-integrado).
+A) I e II, apenas.
 
-Uma estação recém-conectada acessa um portal externo cujo endereço público é compartilhado por vários usuários internos e cuja publicação usa proxy reverso. Considerando o fluxo principal, assinale a sequência compatível.
+B) I, II e III.
 
-A) DNS entrega IP e gateway; SMTP traduz portas; FTP negocia TLS; NTP publica o portal.
-B) DHCP entrega parâmetros; DNS resolve o nome; o gateway encaminha o tráfego e o PAT pode traduzir IP/porta; TLS protege HTTP, que pode ser recebido por um proxy reverso.
-C) IMAP entrega a máscara; LDAP resolve o nome; Telnet cifra o HTTP; NAT organiza a caixa postal.
-D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy reverso.
+C) I e III, apenas.
+
+D) II e III, apenas.
+
 ## Gabarito do Dia 3
 
 ### Gabarito das questões principais
@@ -6242,28 +6588,28 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 |---:|:---:|
 | 1 | A |
 | 2 | C |
-| 3 | B |
+| 3 | D |
 | 4 | D |
 | 5 | B |
 | 6 | A |
-| 7 | D |
+| 7 | C |
 | 8 | C |
-| 9 | C |
-| 10 | D |
+| 9 | D |
+| 10 | C |
 | 11 | A |
 | 12 | B |
 | 13 | D |
 | 14 | B |
 | 15 | C |
 | 16 | A |
-| 17 | A |
-| 18 | D |
+| 17 | D |
+| 18 | B |
 | 19 | B |
 | 20 | C |
-| 21 | C |
+| 21 | A |
 | 22 | A |
 | 23 | D |
-| 24 | B |
+| 24 | C |
 | 25 | B |
 | 26 | D |
 | 27 | C |
@@ -6271,25 +6617,50 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 | 29 | D |
 | 30 | A |
 | 31 | B |
-| 32 | C |
+| 32 | B |
 | 33 | C |
 | 34 | B |
 | 35 | A |
 | 36 | D |
-| 37 | A |
-| 38 | C |
+| 37 | C |
+| 38 | D |
 | 39 | D |
 | 40 | B |
-| 41 | B |
+| 41 | A |
 | 42 | D |
 | 43 | A |
 | 44 | C |
 | 45 | C |
-| 46 | A |
+| 46 | B |
 | 47 | B |
 | 48 | D |
 | 49 | A |
 | 50 | B |
+
+### Gabarito das questões extras
+
+| Extra | Resposta |
+|---:|:---:|
+| 3.1 | C |
+| 3.2 | B |
+| 3.3 | D |
+| 3.4 | B |
+| 3.5 | C |
+| 3.6 | A |
+| 3.7 | D |
+| 3.8 | C |
+| 3.9 | C |
+| 3.10 | A |
+| 3.11 | B |
+| 3.12 | D |
+| 3.13 | A |
+| 3.14 | C |
+| 3.15 | D |
+| 3.16 | B |
+| 3.17 | A |
+| 3.18 | C |
+| 3.19 | B |
+| 3.20 | D |
 
 ## Comentários do Dia 3
 
@@ -6298,22 +6669,23 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. TCP e UDP usam portas de 16 bits para permitir a entrega dos dados ao processo adequado no host.
-- **B)** Incorreta. Porta de transporte é um identificador lógico, não um conector físico de roteador.
-- **C)** Incorreta. Clientes também usam portas de origem, em geral escolhidas dinamicamente pelo sistema operacional.
-- **D)** Incorreta. Um socket envolve endereço, porta e protocolo de transporte; não se reduz ao IP de destino.
+- **A)** a porta permite ao sistema operacional encaminhar o segmento à aplicação, enquanto a conexão TCP é individualizada por IP e porta de origem, IP e porta de destino e protocolo.
+- **B)** quem identifica o host na camada de rede é o endereço IP; além disso, somente o IP do cliente não distingue conexões simultâneas.
+- **C)** clientes normalmente usam portas de origem dinâmicas, e apenas o par de portas não identifica de modo completo uma conexão entre hosts.
+- **D)** o número da porta não certifica qual conteúdo trafega nela, e o protocolo isolado não diferencia as várias conexões TCP existentes.
 
-**Conceito:** porta de transporte, demultiplexação e identificação de sockets.
+**Conceito:** demultiplexação por portas e identificação de uma conexão TCP pela combinação de suas extremidades.
 
-**Pegadinha:** confundir porta lógica TCP/UDP com interface física ou omitir os identificadores da origem.
+**Pegadinha:** atribuir à porta funções próprias do endereço IP ou tratá-la como prova do conteúdo transportado.
 
-**Como pensar:** se a questão trata da entrega a uma aplicação, procure IP, protocolo de transporte e porta, não conectores do equipamento.
+**Como pensar:** separe três perguntas: o IP localiza o host, a porta direciona o tráfego ao processo e a quíntupla distingue a conexão.
 
-**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta), especialmente os parágrafos sobre demultiplexação e a quíntupla de uma conexão TCP.
 
 ### Comentário S2D3Q102
 
@@ -6342,66 +6714,69 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. UDP não oferece ordenação nem retransmissão automáticas.
-- **B)** Correta. O protocolo envia datagramas sem conexão e sem confirmação nativa, mas a aplicação pode acrescentar esses mecanismos.
-- **C)** Incorreta. SYN, SYN-ACK e ACK formam o handshake clássico do TCP, não do UDP.
-- **D)** Incorreta. Uma aplicação sobre UDP pode implementar confiabilidade acima do transporte.
+- **A)** ordenação e retransmissão não são serviços nativos do UDP; se necessárias, devem ser providas acima dele.
+- **B)** a independência dos datagramas no transporte não limita a lógica mantida pelo protocolo de aplicação.
+- **C)** o UDP também não confirma entrega nativamente, e a aplicação pode implementar tanto ordenação quanto retransmissão.
+- **D)** a ausência dessas garantias no UDP não impede que o protocolo da aplicação implemente confirmação, controle de perda e reenvio.
 
-**Conceito:** características do UDP e responsabilidades da aplicação.
+**Conceito:** serviços ausentes no UDP e possibilidade de a aplicação construir confiabilidade acima do transporte.
 
-**Pegadinha:** transformar a ausência de confiabilidade nativa em impossibilidade de obter confiabilidade na aplicação.
+**Pegadinha:** transformar “o UDP não oferece” em “uma aplicação sobre UDP não pode oferecer”.
 
-**Como pensar:** separe o que o UDP fornece diretamente do que pode ser implementado em uma camada superior.
+**Como pensar:** identifique primeiro o que pertence ao cabeçalho e ao funcionamento do UDP; depois verifique o que pode ser acrescentado pela aplicação.
 
-**Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp).
+**Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp), especialmente a lista de garantias não oferecidas nativamente e o parágrafo sobre mecanismos implementados pela aplicação.
 
 ### Comentário S2D3Q104
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Requisições HTTP podem conter cabeçalhos e, quando aplicável, corpo.
-- **B)** Incorreta. Aplicações HTTP podem usar autenticação e manter estado por mecanismos próprios.
-- **C)** Incorreta. Stateless não exige apagar dados da aplicação após cada resposta.
-- **D)** Correta. HTTP não exige sessão persistente entre requisições, embora cookies, tokens e sessões possam manter estado.
+- **A)** o caráter stateless do HTTP não proíbe a aplicação de manter sessão ou outros dados no servidor.
+- **B)** persistência ou quantidade de requisições em uma conexão TCP não define o caráter stateless do protocolo HTTP.
+- **C)** cookie é mecanismo da aplicação/HTTP e não altera a natureza do protocolo de transporte nem dispensa processamento no servidor.
+- **D)** o HTTP não exige uma sessão de usuário entre requisições, mas a aplicação pode construir e correlacionar esse estado.
 
-**Conceito:** ausência de estado obrigatório no protocolo HTTP.
+**Conceito:** ausência de estado obrigatório no HTTP e criação de estado pela aplicação.
 
-**Pegadinha:** interpretar stateless como proibição absoluta de sessão ou de armazenamento pela aplicação.
+**Pegadinha:** interpretar stateless como proibição absoluta de sessão ou como limitação da conexão TCP.
 
-**Como pensar:** diferencie a semântica independente das requisições HTTP do estado criado pela aplicação.
+**Como pensar:** diferencie a semântica de cada requisição HTTP dos mecanismos adicionais usados pela aplicação para reconhecer uma sequência de interações.
 
-**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https), no parágrafo que define stateless e cita cookies, tokens e sessões no servidor.
 
 ### Comentário S2D3Q105
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. TLS protege o canal, mas não comprova a veracidade do conteúdo nem elimina vulnerabilidades da aplicação.
-- **B)** Correta. HTTPS é HTTP sobre TLS, e a validação adequada do certificado ajuda a autenticar o servidor.
-- **C)** Incorreta. Certificado do servidor não identifica automaticamente o usuário nem substitui autorização.
-- **D)** Incorreta. HTTP/1.1 e HTTP/2 sobre HTTPS usam normalmente TCP; HTTP/3 é a exceção baseada em QUIC/UDP.
+- **A)** TLS não atesta a veracidade do conteúdo nem elimina falhas existentes no código ou na configuração da aplicação.
+- **B)** a validação do certificado contribui para autenticar o servidor, e o TLS fornece confidencialidade e integridade em trânsito, dentro desse escopo.
+- **C)** autorização é decidida pela aplicação, e um certificado do servidor nada prova sobre a integridade do dispositivo cliente.
+- **D)** HTTPS protege a comunicação, não necessariamente o dado armazenado ou cada trecho fora do canal, e não oculta todos os metadados.
 
-**Conceito:** garantias e limites do HTTPS.
+**Conceito:** propriedades de segurança oferecidas pelo HTTPS e limites do escopo de proteção do TLS.
 
-**Pegadinha:** tratar canal criptografado como prova de legitimidade integral do conteúdo ou autorização do usuário.
+**Pegadinha:** ampliar segurança do canal para garantias sobre conteúdo, autorização, endpoint e armazenamento.
 
-**Como pensar:** associe TLS a autenticação do servidor, confidencialidade e integridade em trânsito, respeitando seus limites.
+**Como pensar:** delimite o objeto protegido: dados em trânsito no canal TLS e identidade do servidor sob validação correta; não toda a aplicação.
 
-**Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https), incluindo as garantias do TLS em trânsito e a lista de garantias que não decorrem do HTTPS.
 
 ### Comentário S2D3Q106
 
@@ -6430,14 +6805,14 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. O registro A associa um nome a um endereço IPv4.
 - **B)** Incorreta. O registro AAAA associa um nome a um endereço IPv6.
-- **C)** Incorreta. CNAME define um alias para outro nome canônico.
-- **D)** Correta. MX indica os servidores responsáveis pelo correio de um domínio.
+- **C)** Correta. MX indica os servidores responsáveis pelo correio de um domínio.
+- **D)** Incorreta. CNAME define um alias para outro nome canônico.
 
 **Conceito:** tipos de registros DNS.
 
@@ -6449,7 +6824,7 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ### Comentário S2D3Q108
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: C.**
@@ -6474,44 +6849,46 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: C.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DNS clássico não usa exclusivamente UDP; transferências de zona empregam TCP.
-- **B)** Incorreta. Consultas e respostas curtas usam frequentemente UDP.
-- **C)** Correta. DNS clássico admite 53/UDP e 53/TCP, conforme a operação e as condições da resposta.
-- **D)** Incorreta. A porta 443 é associada ao DNS sobre HTTPS, não ao DNS clássico.
+- **A)** a transferência de zona é um caso clássico de uso de TCP pelo DNS; não se deve presumir que ela ocorrerá em datagramas UDP.
+- **B)** DoT é uma forma específica de DNS protegido, não o transporte obrigatório de uma transferência de zona clássica.
+- **C)** TCP não é exclusivo do DoH; faz parte do DNS clássico, enquanto DoH encapsula DNS em HTTPS.
+- **D)** o DNS clássico possui operações em UDP e em TCP na porta 53, e uma política que autorize somente UDP interrompe operações que exigem TCP.
 
-**Conceito:** transportes do DNS clássico.
+**Conceito:** coexistência de UDP e TCP no DNS clássico e uso de 53/TCP para transferência de zona.
 
-**Pegadinha:** decorar “DNS é UDP” e ignorar TCP, especialmente em transferência de zona ou resposta que o exija.
+**Pegadinha:** reduzir a associação frequente “DNS–53/UDP” a uma regra exclusiva.
 
-**Como pensar:** associe consultas usuais a UDP, mas mantenha TCP como parte obrigatória do repertório DNS.
+**Como pensar:** diante de “somente UDP”, procure operações DNS que exigem TCP, sobretudo transferência de zona e situações de resposta que demandam esse transporte.
 
-**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns), nos trechos que registram 53/UDP, 53/TCP e o uso de TCP em transferências de zona.
 
 ### Comentário S2D3Q110
 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DNS sobre TLS usa TLS e tem como porta padrão 853, não 53/UDP.
-- **B)** Incorreta. DNS sobre HTTPS encapsula consultas DNS em HTTPS e não é transferência de zona.
-- **C)** Incorreta. DoT e DoH demonstram que DNS não está universalmente limitado à porta 53.
-- **D)** Correta. DoT usa por padrão a porta 853, enquanto DoH utiliza HTTPS, normalmente na 443.
+- **A)** a porta padrão de DoT é 853, e DoH não é HTTP sem TLS nem usa 853 como sua convenção normal.
+- **B)** a alternativa inverte as associações usuais; HTTPS caracteriza DoH, ao passo que TLS direto em 853 caracteriza DoT.
+- **C)** DoT usa TLS diretamente, por padrão em 853/TCP, e DoH transporta as mensagens por HTTPS, normalmente em 443.
+- **D)** 53/UDP é comum no DNS clássico, mas não descreve os transportes encapsulados indicados no enunciado.
 
-**Conceito:** DNS sobre TLS e DNS sobre HTTPS.
+**Conceito:** distinção entre os transportes e portas usuais de DoT e DoH.
 
-**Pegadinha:** aplicar a porta 53 do DNS clássico a todas as formas de transporte DNS.
+**Pegadinha:** aplicar a porta 53 a toda forma de DNS ou trocar os encapsulamentos de DoT e DoH.
 
-**Como pensar:** primeiro identifique se o enunciado trata de DNS clássico, DoT ou DoH; depois associe o transporte e a porta.
+**Como pensar:** expanda as siglas: “sobre TLS” aponta para TLS direto em 853; “sobre HTTPS” herda a convenção de HTTPS em 443.
 
-**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns), no parágrafo final que contrasta DNS clássico, DoT em 853 e DoH sobre HTTPS.
 
 ### Comentário S2D3Q111
 
@@ -6540,88 +6917,92 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Além de inverter cliente e servidor, atribui TCP a um serviço que usa UDP nessas portas.
-- **B)** Correta. O servidor DHCP usa 67/UDP e o cliente usa 68/UDP.
-- **C)** Incorreta. A porta 53 pertence ao DNS, cuja função é distinta da atribuição de configuração.
-- **D)** Incorreta. DHCP não entrega concessões por HTTPS em 443/TCP.
+- **A)** preserva UDP, mas troca as portas atribuídas ao cliente e ao servidor.
+- **B)** no fluxo clássico, o cliente DHCP usa 68/UDP e envia ao serviço do servidor em 67/UDP; a resposta faz o percurso inverso.
+- **C)** as numerações estão associadas aos papéis corretos, porém o DHCPv4 clássico usa UDP, não TCP.
+- **D)** além de escolher TCP, a alternativa inverte as portas de cliente e servidor.
 
-**Conceito:** portas e transporte do DHCP.
+**Conceito:** associação de 67/UDP ao servidor DHCP e de 68/UDP ao cliente DHCP.
 
-**Pegadinha:** inverter 67 e 68 ou misturar DHCP com as portas de DNS e HTTPS.
+**Pegadinha:** trocar os papéis das portas ou preservar os números e alterar indevidamente o protocolo de transporte.
 
-**Como pensar:** memorize o sentido do serviço: servidor em 67/UDP e cliente em 68/UDP.
+**Como pensar:** fixe o par completo, não apenas os números: servidor 67/UDP e cliente 68/UDP.
 
-**Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp), na lista de portas clássicas imediatamente após a sequência DORA.
 
 ### Comentário S2D3Q113
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Registro DNS A associa nome a IPv4 e não substitui a concessão de parâmetros DHCP.
-- **B)** Incorreta. Proxy reverso representa servidores de aplicação; não encaminha broadcasts DHCP entre VLANs.
-- **C)** Incorreta. PAT traduz endereços e portas, mas não converte DHCP em HTTPS.
-- **D)** Correta. O relay encaminha as mensagens da VLAN dos clientes ao servidor, que deve possuir escopo compatível com essa rede.
+- **A)** o relay deve receber o broadcast no segmento dos clientes, e o escopo precisa fornecer parâmetros válidos para a rede da VLAN 20.
+- **B)** unir as VLANs em camada 2 contraria a manutenção dos domínios separados, e o MAC não substitui a identificação da sub-rede atendida.
+- **C)** NAT não é o mecanismo de encaminhamento do DHCP entre segmentos e ainda ocultaria a informação necessária para escolher redes distintas.
+- **D)** o relay na interface da VLAN dos clientes recebe o broadcast e o encaminha ao servidor, que deve possuir escopo correspondente àquela sub-rede.
 
-**Conceito:** uso de DHCP relay entre segmentos roteados.
+**Conceito:** posicionamento do DHCP relay e compatibilidade entre a sub-rede cliente e o escopo no servidor central.
 
-**Pegadinha:** tentar resolver uma limitação de broadcast com serviços de aplicação ou tradução de endereços.
+**Pegadinha:** propor mecanismos de camada 2 ou tradução de endereços para resolver uma limitação de broadcast entre redes roteadas.
 
-**Como pensar:** se clientes e servidor DHCP estão em VLANs distintas, procure um relay no segmento dos clientes e um escopo correspondente.
+**Como pensar:** localize onde nasce o broadcast, posicione ali o agente que o transforma em comunicação roteável e confira de qual rede devem vir os parâmetros concedidos.
 
-**Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp), especialmente a explicação de que o relay encaminha mensagens entre segmentos e viabiliza o servidor central.
 
 ### Comentário S2D3Q114
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A transferência típica entre servidores de correio usa SMTP, não POP3.
-- **B)** Correta. SMTP realiza submissão e transferência; POP3 e IMAP dão acesso à caixa postal.
-- **C)** Incorreta. A consulta a registros MX pertence ao DNS, não ao IMAP.
-- **D)** Incorreta. SMTP envia mensagens e não é o protocolo de leitura sincronizada de pastas.
+- **A)** POP3 é protocolo de acesso, e SMTP não é empregado para leitura e organização da caixa postal.
+- **B)** SMTP movimenta mensagens na submissão e entre servidores; POP3 e IMAP permitem ao destinatário acessar as mensagens armazenadas.
+- **C)** IMAP é protocolo de acesso e sincronização, enquanto SMTP não exerce a função de acesso à caixa.
+- **D)** POP3 não transfere mensagens entre servidores, e IMAP não é protocolo de submissão de correio.
 
-**Conceito:** divisão de funções entre SMTP, POP3 e IMAP.
+**Conceito:** separação entre protocolos de envio/transferência e protocolos de acesso ao e-mail.
 
-**Pegadinha:** confundir o protocolo de envio com os protocolos de acesso à caixa postal.
+**Pegadinha:** associar qualquer protocolo ligado a e-mail indistintamente a todas as etapas do fluxo.
 
-**Como pensar:** siga o fluxo: SMTP movimenta a mensagem; POP3 ou IMAP permite ao destinatário acessá-la.
+**Como pensar:** divida o percurso em duas fases: SMTP para mover a mensagem; POP3 ou IMAP para o destinatário consultar a caixa.
 
-**Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email).
+**Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email), incluindo as subseções 6.1 a 6.4 sobre envio e acesso à caixa postal.
 
 ### Comentário S2D3Q115
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. 25/TCP é referência de SMTP entre servidores, enquanto 110/TCP é POP3.
-- **B)** Incorreta. A submissão SMTP usa 587/TCP; SNMP utiliza tradicionalmente 161/UDP e 162/UDP.
-- **C)** Correta. 587/TCP é típica para submissão pelo cliente e 25/TCP para transferência entre servidores.
-- **D)** Incorreta. 465 usa TCP e se associa à submissão com TLS implícito, não a toda transferência entre servidores.
+- **A)** troca os papéis convencionais das portas 25 e 587; esta última é a referência usual de submissão pelo cliente.
+- **B)** 465/TCP é associada à submissão com TLS implícito, e por isso não se inicia ali em claro para depois aplicar STARTTLS.
+- **C)** 587/TCP é a convenção típica de submissão autenticada, enquanto 25/TCP permanece associada à transferência SMTP entre servidores.
+- **D)** as duas convenções SMTP apresentadas usam TCP, não UDP.
 
-**Conceito:** portas de submissão e transferência SMTP.
+**Conceito:** distinção funcional entre 587/TCP para submissão e 25/TCP para transferência entre servidores.
 
-**Pegadinha:** trocar 25 e 587 ou atribuir UDP às portas do SMTP.
+**Pegadinha:** decorar os números sem relacioná-los ao papel do cliente e do MTA ou alterar o transporte para UDP.
 
-**Como pensar:** diferencie o cliente submetendo mensagem, normalmente em 587, do servidor entregando a outro servidor em 25.
+**Como pensar:** pergunte quem inicia a etapa: usuário submetendo ao seu serviço aponta para 587; MTA entregando a outro MTA aponta para 25.
 
-**Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email).
+**Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email), na lista de portas 25/TCP, 587/TCP e 465/TCP e seus respectivos papéis.
 
 ### Comentário S2D3Q116
 
@@ -6650,268 +7031,280 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
 
-**Análise das alternativas:**
-
-- **A)** Correta. SMTP cuida do envio, e IMAP mantém o acesso sincronizado à caixa postal em vários dispositivos.
-- **B)** Incorreta. POP3 não é protocolo de submissão, e SMTP não sincroniza pastas.
-- **C)** Incorreta. DNS resolve e publica dados de nomes; DHCP entrega configuração de rede.
-- **D)** Incorreta. IMAP acessa a caixa postal, enquanto FTP não é protocolo de leitura de e-mail.
-
-**Conceito:** fluxo integrado de submissão, transferência e acesso ao e-mail.
-
-**Pegadinha:** atribuir a um único protocolo todas as etapas ou inverter envio e acesso.
-
-**Como pensar:** decomponha a jornada da mensagem: submissão e transferência por SMTP; leitura sincronizada por IMAP.
-
-**Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email).
-
-### Comentário S2D3Q118
-
-**Nível:** Médio
-
-**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. FTP clássico não cifra automaticamente credenciais ou conteúdo; a proteção por TLS caracteriza FTPS.
-- **B)** Incorreta. FTP mantém conexão de controle e conexão de dados separadas.
-- **C)** Incorreta. O FTP clássico usa TCP, não apenas UDP.
-- **D)** Correta. O controle usa normalmente 21/TCP e, no modo passivo, o servidor informa a porta à qual o cliente abrirá a conexão de dados.
+- **A)** SMTP não é protocolo de acesso à caixa, e o modelo típico do POP3 não fornece a sincronização solicitada.
+- **B)** POP3 não realiza submissão ou transferência entre servidores, e SMTP não oferece acesso sincronizado à caixa postal.
+- **C)** IMAP é usado no acesso à caixa, não no envio; POP3 tampouco é o protocolo indicado para sincronizar pastas e marcações.
+- **D)** SMTP atende à movimentação da mensagem, e IMAP mantém no servidor o estado necessário para acesso coerente por múltiplos dispositivos.
 
-**Conceito:** arquitetura de canais e modos do FTP.
+**Conceito:** composição do fluxo de envio por SMTP com acesso sincronizado por IMAP.
 
-**Pegadinha:** reduzir FTP a uma única conexão em 21/TCP ou presumir criptografia nativa.
+**Pegadinha:** inverter os protocolos de envio e de acesso ou atribuir a um deles todas as etapas do correio eletrônico.
 
-**Como pensar:** sempre procure dois papéis distintos no FTP: controle persistente e dados em conexão separada.
+**Como pensar:** acompanhe a mensagem no tempo: primeiro ela é movimentada por SMTP; depois a caixa permanece no servidor e é sincronizada por IMAP.
 
-**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email), em conjunto com [6.3 IMAP](semana_02_estudo.md#s2-d3-email).
+
+### Comentário S2D3Q118
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Alternativa correta: B.**
+
+**Análise das alternativas:**
+
+- **A)** a sessão de controle pode estar saudável em 21/TCP enquanto a conexão separada de dados permanece bloqueada.
+- **B)** no modo passivo, o servidor informa uma porta de dados e o cliente inicia uma segunda conexão TCP, que precisa ser compatível com as regras do firewall.
+- **C)** FTP clássico usa TCP tanto no controle quanto na conexão de dados; o modo passivo não muda o transporte para UDP.
+- **D)** a associação tradicional do lado servidor à porta 20 pertence ao modo ativo e não descreve o fluxo passivo indicado.
+
+**Conceito:** separação entre canais FTP e efeito do modo passivo sobre iniciativa e porta da conexão de dados.
+
+**Pegadinha:** concluir que o sucesso do controle em 21/TCP garante o tráfego de dados ou aplicar ao modo passivo a regra tradicional do modo ativo.
+
+**Como pensar:** traduza o sintoma: comandos funcionam significa controle liberado; listagem falha significa que a segunda conexão, a de dados, não foi estabelecida.
+
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota), nos parágrafos sobre conexão de controle, conexão de dados e porta informada pelo servidor no modo passivo.
 
 ### Comentário S2D3Q119
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A iniciativa do servidor a partir da porta 20 é associada ao modo ativo, não ao passivo.
-- **B)** Correta. No modo passivo, o cliente inicia a conexão de dados para a porta indicada pelo servidor.
-- **C)** Incorreta. A conexão de controle permanece ativa e não é substituída por DNS.
-- **D)** Incorreta. FTP usa TCP, e a porta 21 é do controle, não um canal UDP obrigatório para dados.
+- **A)** conexão iniciada pelo servidor, tradicionalmente a partir de 20/TCP, caracteriza o funcionamento ativo, não o passivo.
+- **B)** o servidor fica à escuta na porta que anunciou e o cliente abre para ela uma segunda conexão TCP, sem eliminar o controle.
+- **C)** FTP mantém separados o canal de controle e a conexão usada para cada transferência de dados.
+- **D)** esperar uma abertura iniciada pelo servidor novamente descreve a lógica do modo ativo.
 
-**Conceito:** funcionamento do modo passivo do FTP.
+**Conceito:** iniciativa do cliente e porta anunciada pelo servidor no modo passivo do FTP.
 
-**Pegadinha:** aplicar ao modo passivo a porta 20 e a iniciativa do servidor próprias do modelo ativo tradicional.
+**Pegadinha:** trocar os sentidos das conexões ativa e passiva ou presumir que os dados percorrem o canal de controle.
 
-**Como pensar:** no passivo, o servidor informa onde está ouvindo e o cliente inicia também a conexão de dados.
+**Como pensar:** no passivo, ambos os fluxos são abertos pelo cliente: primeiro o controle; depois os dados no destino informado pelo servidor.
 
-**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota), especificamente a descrição do modo passivo e da conexão de dados iniciada pelo cliente.
 
 ### Comentário S2D3Q120
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. SFTP opera sobre SSH; FTPS é FTP protegido por TLS.
-- **B)** Incorreta. 990/TCP se associa ao FTPS implícito, e a arquitetura ainda mantém conexão de dados separada.
-- **C)** Correta. FTPS explícito começa em 21/TCP, negocia `AUTH TLS` e usa `PBSZ 0` seguido de `PROT P` para pedir proteção privada dos dados.
-- **D)** Incorreta. `PROT P` é comando do FTPS e não depende de DNS nem opera em 53/UDP.
+- **A)** 22/TCP é a convenção do SSH/SFTP, e `PROT C` deixa a conexão de dados em claro.
+- **B)** abrir TLS imediatamente em 990 descreve a modalidade implícita, não a explícita, e o valor padronizado antes de `PROT` é `PBSZ 0`.
+- **C)** no FTPS explícito, a sessão começa no controle FTP em 21/TCP, sobe para TLS com `AUTH TLS` e solicita privacidade dos dados com `PBSZ 0` e `PROT P`.
+- **D)** os comandos de proteção dependem do canal de controle já protegido; negociar TLS depois da transferência não protege os dados anteriores.
 
-**Conceito:** negociação e proteção dos canais no FTPS explícito.
+**Conceito:** ordem de negociação do FTPS explícito e proteção independente do canal de dados.
 
-**Pegadinha:** confundir FTPS com SFTP ou imaginar que proteger o controle protege automaticamente os dados.
+**Pegadinha:** confundir FTPS com SFTP, trocar os modos explícito e implícito ou supor que proteger o controle protege automaticamente os dados.
 
-**Como pensar:** identifique o FTPS explícito por 21/TCP e `AUTH TLS`; depois confirme a proteção do canal de dados com `PROT P`.
+**Como pensar:** procure três etapas em ordem: controle FTP em 21, subida do controle para TLS e solicitação explícita de privacidade para os dados.
 
-**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota), no parágrafo sobre FTPS explícito, `AUTH TLS`, `PBSZ 0`, `PROT P` e `PROT C`.
 
 ### Comentário S2D3Q121
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
 
-**Análise das alternativas:**
-
-- **A)** Incorreta. SFTP é um protocolo sobre SSH e não outro nome para FTPS implícito.
-- **B)** Incorreta. O registro 989/TCP não obriga toda conexão de dados, pois os modos ativo e passivo podem negociar outras portas.
-- **C)** Correta. A IANA associa 990/TCP ao controle e 989/TCP aos dados, sem eliminar os canais separados nem a negociação de portas.
-- **D)** Incorreta. `AUTH TLS` após conexão em 21/TCP caracteriza FTPS explícito; no implícito, TLS começa imediatamente.
-
-**Conceito:** FTPS implícito, portas registradas e separação dos canais.
-
-**Pegadinha:** transformar portas registradas em uso obrigatório para toda conexão de dados ou confundir os modos implícito e explícito.
-
-**Como pensar:** no implícito, TLS começa na abertura; ainda assim, preserve mentalmente a arquitetura FTP de controle e dados separados.
-
-**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
-
-### Comentário S2D3Q122
-
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. SFTP é o SSH File Transfer Protocol, normalmente em 22/TCP, e pode reutilizar autenticação por chave pública do SSH.
-- **B)** Incorreta. FTP clássico não cifra arquivos e credenciais por padrão.
-- **C)** Incorreta. FTPS explícito protege FTP com TLS e não constitui subsistema do SSH.
-- **D)** Incorreta. Telnet não fornece canal criptografado nem é protocolo apropriado de transferência de arquivos.
+- **A)** na convenção implícita, TLS começa imediatamente no controle em 990/TCP, mas a arquitetura ainda prevê conexões de dados separadas e negociadas.
+- **B)** começar em 21 e negociar `AUTH TLS` define a modalidade explícita, e a porta registrada 989 não é obrigatória para todo modo de dados.
+- **C)** o protocolo de arquivos sobre SSH é SFTP; FTPS permanece FTP protegido por TLS e conserva a separação de canais.
+- **D)** criptografar desde a abertura não funde dados e controle em uma única conexão TCP.
 
-**Conceito:** SFTP como protocolo de arquivos sobre SSH.
+**Conceito:** diferença entre FTPS implícito e explícito, portas registradas e preservação dos canais separados do FTP.
 
-**Pegadinha:** considerar SFTP e FTPS nomes diferentes para a mesma tecnologia.
+**Pegadinha:** confundir FTPS com SFTP ou interpretar 989/TCP como caminho fixo de toda transferência implícita.
 
-**Como pensar:** se a infraestrutura e as chaves são de SSH, escolha o protocolo de transferência que funciona sobre SSH.
+**Como pensar:** trate “implícito” como o momento em que TLS começa; depois aplique normalmente a arquitetura FTP de controle e dados separados.
 
-**Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota), nos parágrafos sobre FTPS implícito, registros 990/989 e negociação de portas nos modos ativo e passivo; e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
+
+### Comentário S2D3Q122
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** SFTP opera como protocolo/subsistema sobre um transporte SSH e pode usar a infraestrutura de autenticação por chave pública já disponível.
+- **B)** FTP com TLS explícito é FTPS explícito, tecnologia distinta do SFTP e normalmente iniciada em 21/TCP.
+- **C)** FTP com TLS implícito também pertence ao FTPS, e certificados TLS não se convertem automaticamente em chaves SSH.
+- **D)** SFTP não é modalidade de FTPS nem herda a arquitetura FTP de canais separados de controle e dados.
+
+**Conceito:** identidade do SFTP como protocolo de arquivos sobre SSH, distinto de FTP e FTPS.
+
+**Pegadinha:** expandir informalmente SFTP como “secure FTP” e concluir que ele é apenas FTP protegido por TLS.
+
+**Como pensar:** localize a tecnologia base: se o protocolo funciona sobre SSH e aproveita suas chaves, trata-se de SFTP, não de uma variante FTPS.
+
+**Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota), especialmente a definição como SSH File Transfer Protocol e a regra “SFTP não é FTP sobre TLS”.
 
 ### Comentário S2D3Q123
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. HTTP entrega recursos de aplicação e não substitui um protocolo de terminal remoto seguro.
-- **B)** Incorreta. DNS auxilia na resolução do nome, mas não fornece sessão administrativa protegida.
-- **C)** Incorreta. Telnet não cifra nativamente credenciais e conteúdo.
-- **D)** Correta. SSH oferece autenticação, integridade e confidencialidade, normalmente em 22/TCP, desde que chaves e validações sejam protegidas.
+- **A)** autenticar por senha não acrescenta ao Telnet a criptografia nativa que falta à sessão.
+- **B)** SFTP é o protocolo de transferência de arquivos sobre SSH; não é, por si, o serviço de terminal interativo solicitado.
+- **C)** FTPS protege operações FTP com TLS, mas seu canal de controle não se torna um terminal de administração do sistema.
+- **D)** SSH foi projetado para administração remota protegida, e a segurança depende também de validar o host e resguardar as chaves privadas.
 
-**Conceito:** administração remota segura com SSH.
+**Conceito:** uso do SSH para administração remota segura e controles necessários sobre as chaves.
 
-**Pegadinha:** escolher Telnet por sua função de terminal e ignorar a ausência de proteção criptográfica.
+**Pegadinha:** escolher outro protocolo protegido apenas porque ele usa TLS ou a mesma porta, sem verificar a função oferecida.
 
-**Como pensar:** para administração sensível, exija canal autenticado, íntegro e confidencial e verifique a chave do host.
+**Como pensar:** combine função e propriedades: terminal remoto mais autenticação, integridade e confidencialidade aponta para SSH; depois confira a confiança nas chaves.
 
-**Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota), incluindo os serviços oferecidos pelo SSH e os cuidados com chave do host e chaves privadas.
 
 ### Comentário S2D3Q124
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Telnet é protocolo de terminal remoto e não transferência de arquivos protegida por TLS.
-- **B)** Correta. Telnet usa por padrão 23/TCP e não fornece a proteção criptográfica esperada para credenciais e conteúdo.
-- **C)** Incorreta. 636/TCP é associada a LDAPS, não a uma versão segura de Telnet.
-- **D)** Incorreta. A sincronização de relógios é função do NTP, normalmente em 123/UDP.
+- **A)** acerta função, porta e transporte, mas atribui ao Telnet uma cifragem nativa que ele não fornece.
+- **B)** Telnet não é protocolo de transferência de arquivos nem protege nativamente somente uma parte da sessão.
+- **C)** Telnet oferece terminal remoto, usa convencionalmente 23/TCP e expõe credenciais e conteúdo quando não há proteção externa.
+- **D)** a convenção é TCP, e o protocolo não oferece a garantia criptográfica de integridade descrita.
 
-**Conceito:** função, porta e limitação de segurança do Telnet.
+**Conceito:** função de terminal remoto, porta 23/TCP e ausência de proteção criptográfica nativa no Telnet.
 
-**Pegadinha:** reconhecer o terminal remoto e concluir, sem fundamento, que o protocolo protege a sessão.
+**Pegadinha:** reconhecer corretamente o serviço e a porta, mas acrescentar uma propriedade de segurança inexistente.
 
-**Como pensar:** associe Telnet a 23/TCP e texto sem a proteção criptográfica que torna SSH preferível.
+**Como pensar:** recupere o trio inseparável cobrado em prova: Telnet, terminal remoto, 23/TCP em claro; para proteção moderna, compare com SSH.
 
-**Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota).
+**Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota), que o define como terminal remoto em 23/TCP sem a proteção criptográfica esperada.
 
 ### Comentário S2D3Q125
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O gerente consulta o agente para monitoramento; regras de navegação web não definem essa arquitetura.
-- **B)** Correta. O gerente consulta objetos identificados por OIDs na MIB do agente, que também pode iniciar uma trap.
-- **C)** Incorreta. MIB e OID pertencem ao modelo de gerenciamento SNMP, não aos canais ou portas do FTP.
-- **D)** Incorreta. Trap é notificação iniciada pelo agente e, no modelo clássico, não exige confirmação; INFORM é a modalidade confirmada.
+- **A)** GET é normalmente iniciado pelo gerente contra o agente, e trap é notificação, não resposta do gerente a uma leitura.
+- **B)** o gerente lê objetos expostos pelo agente e identificados por OIDs na estrutura da MIB; o agente pode iniciar uma trap diante de evento.
+- **C)** os objetos monitorados são expostos pelo agente do equipamento, GET é leitura e trap não confirma cada consulta realizada.
+- **D)** inverte gerente e agente e ainda trata trap como pedido confirmado, função incompatível com a notificação clássica.
 
-**Conceito:** gerente, agente, MIB, OID e notificações SNMP.
+**Conceito:** papéis de gerente e agente, identificação MIB/OID e diferença entre consulta e notificação SNMP.
 
-**Pegadinha:** inverter os papéis de gerente e agente ou confundir trap com resposta confirmada a GET.
+**Pegadinha:** inverter o sentido das operações e confundir trap com resposta ou notificação confirmada.
 
-**Como pensar:** associe consultas ao gerente, objetos ao agente por MIB/OID e eventos espontâneos a traps.
+**Como pensar:** acompanhe quem toma a iniciativa: o gerente pergunta por GET; o agente responde e, diante de evento, pode avisar por trap; INFORM é a alternativa confirmada.
 
-**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp).
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nos trechos que definem gerente, agente, MIB, OID, GET, TRAP e INFORM.
 
 ### Comentário S2D3Q126
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. As portas e o transporte estão trocados: consultas e respostas usam tradicionalmente 161/UDP, enquanto notificações chegam ao gerente em 162/UDP.
-- **B)** Incorreta. SNMPv1 e SNMPv2c usam community strings e não oferecem, obrigatoriamente, autenticação e privacidade equivalentes às de um SNMPv3 bem configurado.
-- **C)** Incorreta. SNMP gerencia e monitora objetos de equipamentos; não é protocolo de transferência de arquivos.
-- **D)** Correta. A alternativa associa corretamente 161/UDP ao agente, 162/UDP às notificações e a proteção configurável do SNMPv3.
+- **A)** inverte as portas, troca UDP por TCP e ainda atribui ao SNMPv2c garantias criptográficas que community strings não oferecem.
+- **B)** acerta portas e transporte, mas SNMPv2c não equivale a um SNMPv3 corretamente configurado com autenticação e privacidade.
+- **C)** troca os destinos das portas e nega indevidamente a capacidade de autenticação existente no SNMPv3.
+- **D)** consultas e respostas usam tradicionalmente o agente em 161/UDP, notificações chegam ao gerente em 162/UDP e a proteção do SNMPv3 depende do nível e da configuração.
 
-**Conceito:** portas tradicionais e níveis de proteção do SNMP.
+**Conceito:** portas, direção das mensagens e diferença de proteção entre versões do SNMP.
 
-**Pegadinha:** inverter 161 e 162 ou supor que toda versão do SNMP possui criptografia equivalente.
+**Pegadinha:** apresentar uma opção parcialmente correta nas portas, mas errada ao equiparar SNMPv2c e SNMPv3.
 
-**Como pensar:** separe o destino da comunicação: consultas vão ao agente em 161/UDP; traps e informs chegam ao gerente em 162/UDP.
+**Como pensar:** verifique em três passos independentes: destino da consulta, destino da notificação e garantias efetivamente configuráveis em cada versão.
 
-**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nos trechos sobre 161/UDP, 162/UDP e proteção das versões; e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
 ### Comentário S2D3Q127
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. LDAP acessa serviços de diretório hierárquicos; não é um banco relacional dependente de SQL.
-- **B)** Incorreta. A resolução de nomes por registros A e AAAA é função do DNS.
-- **C)** Correta. Entradas organizadas hierarquicamente, DN, atributos, bind e search são elementos típicos do LDAP.
-- **D)** Incorreta. A sincronização de relógios em rede é função do NTP.
+- **A)** DN identifica uma entrada do diretório, e bind está relacionado ao estabelecimento/autenticação da sessão, não à listagem da subárvore.
+- **B)** DN não identifica um atributo isolado, search realiza pesquisa e não remove a entrada localizada.
+- **C)** LDAP organiza entradas hierarquicamente, identifica cada uma por DN, armazena seus atributos e oferece operações como bind e search.
+- **D)** bind não é operação de alteração de atributos, e search não é o mecanismo que negocia TLS.
 
-**Conceito:** estrutura e operações de um diretório LDAP.
+**Conceito:** estrutura hierárquica de um diretório LDAP e finalidade geral de DN, atributos, bind e search.
 
-**Pegadinha:** tratar diretório como banco relacional ou confundir LDAP com DNS.
+**Pegadinha:** reutilizar termos reais do LDAP, mas trocar o objeto identificado e a finalidade das operações.
 
-**Como pensar:** procure os termos que caracterizam diretório: entrada, DN, atributo, bind e search.
+**Como pensar:** associe primeiro DN à entrada; depois diferencie autenticar/estabelecer contexto com bind de pesquisar entradas com search.
 
-**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap), na definição de hierarquia, DN, atributos e operações bind e search.
 
 ### Comentário S2D3Q128
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. LDAP pode integrar a autenticação, mas a autorização depende também de políticas e aplicações; 389/TCP admite STARTTLS e 636/TCP é a porta usual do LDAPS.
-- **B)** Incorreta. O uso de 389/TCP não cifra automaticamente a sessão; é necessário negociar TLS, por exemplo com STARTTLS.
-- **C)** Incorreta. LDAPS usa usualmente 636/TCP, e não é a única forma de acesso protegido ao diretório.
-- **D)** Incorreta. A existência da identidade no diretório não concede autorização irrestrita nas aplicações.
+- **A)** a aplicação pode autenticar uma identidade com apoio do LDAP e decidir permissões separadamente; o canal pode usar STARTTLS em 389/TCP ou TLS implícito em 636/TCP.
+- **B)** autenticação bem-sucedida não concede todas as permissões, e a porta 389 não implica cifragem sem a negociação apropriada.
+- **C)** autorização pode permanecer na aplicação, e o LDAPS usa convencionalmente TCP, não UDP; STARTTLS também oferece uma forma protegida.
+- **D)** TLS protege o canal, não converte identidade em autorização, e a convenção do LDAPS com TLS implícito é 636/TCP.
 
-**Conceito:** proteção do LDAP e distinção entre autenticação e autorização.
+**Conceito:** separação entre autenticação e autorização e formas usuais de proteger a sessão LDAP.
 
-**Pegadinha:** presumir que a porta 389 já implica TLS ou que uma conta autenticada recebe qualquer permissão.
+**Pegadinha:** combinar uma porta correta com uma conclusão indevida de autorização ou tratar TLS como política de acesso.
 
-**Como pensar:** examine separadamente identidade, decisão de acesso e proteção do canal.
+**Como pensar:** responda separadamente quem comprova a identidade, quem decide a permissão e como o canal LDAP recebe proteção criptográfica.
 
-**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap), especialmente os parágrafos sobre 389/STARTTLS, 636/LDAPS e participação do diretório em autenticação sem concentrar toda autorização.
 
 ### Comentário S2D3Q129
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: D.**
@@ -6933,95 +7326,99 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ### Comentário S2D3Q130
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Proxy reverso fica diante dos servidores e pode terminar TLS, distribuir carga e ocultar a topologia interna.
-- **B)** Incorreta. Proxy direto representa clientes em seus acessos a destinos externos.
-- **C)** Incorreta. DHCP relay encaminha mensagens DHCP entre segmentos e não publica aplicações web.
-- **D)** Incorreta. Resolvedor DNS recursivo busca dados de nomes; não termina TLS nem distribui requisições entre servidores de aplicação.
+- **A)** o componente está diante dos servidores e aceita conexões em nome deles, papel definidor do proxy reverso.
+- **B)** proxy direto representa clientes em seus acessos de saída, ainda que possa aplicar políticas de navegação.
+- **C)** terminar TLS é uma capacidade possível, mas a classificação direto/reverso decorre do extremo representado.
+- **D)** configuração explícita no navegador é característica possível de proxy direto, não condição para classificar um proxy reverso.
 
-**Conceito:** proxy reverso.
+**Conceito:** identificação do proxy reverso pela representação dos servidores publicados.
 
-**Pegadinha:** associar a palavra “proxy” ao cliente sem observar qual extremo está sendo representado.
+**Pegadinha:** definir o tipo de proxy por uma função acessória, como TLS, em vez de observar qual extremo ele representa.
 
-**Como pensar:** se o componente está na frente do portal e recebe conexões em nome dos servidores, é reverso.
+**Como pensar:** localize o intermediário no fluxo: diante dos clientes e em nome deles é direto; diante dos servidores e em nome deles é reverso.
 
-**Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy).
+**Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy), na definição do extremo representado e na lista de terminação TLS, balanceamento e ocultação da topologia.
 
 ### Comentário S2D3Q131
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A afirmação inverte os papéis: NAT traduz campos de endereçamento, enquanto um proxy pode compreender ou intermediar a aplicação.
-- **B)** Correta. Proxy atua em nome de um extremo; NAT pode traduzir o tráfego encaminhado sem encerrar a sessão de aplicação.
-- **C)** Incorreta. São mecanismos distintos e nenhum deles garante sempre a mesma proteção.
-- **D)** Incorreta. NAT não cifra conteúdo por definição, e resolução de nomes não é a função definidora de proxy.
+- **A)** inverte os papéis; NAT altera campos de endereçamento, enquanto um proxy pode criar/intermediar comunicação em nome de um extremo.
+- **B)** a distinção conceitual está no papel de representante exercido pelo proxy e na tradução feita pelo NAT no tráfego encaminhado.
+- **C)** a descrição pode aproximar-se do NAT, mas elimina justamente a característica de representação que define o proxy.
+- **D)** nem todo proxy consegue ler conteúdo protegido ponta a ponta, e a função do NAT é alterar campos como endereço e, no PAT, porta.
 
-**Conceito:** diferença entre proxy e NAT.
+**Conceito:** diferença entre intermediação em nome de um extremo e tradução de endereçamento no encaminhamento.
 
-**Pegadinha:** considerar ambos sinônimos apenas porque podem ocultar endereços internos.
+**Pegadinha:** concluir que proxy e NAT são equivalentes porque ambos podem ocultar endereços internos.
 
-**Como pensar:** pergunte se há representação de um extremo ou tradução de cabeçalhos no encaminhamento.
+**Como pensar:** pergunte se o componente representa um participante da aplicação ou se apenas encaminha o fluxo com cabeçalhos traduzidos.
 
-**Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
+**Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy), no parágrafo que contrasta representação de um extremo pelo proxy com tradução de campos pelo NAT.
 
 ### Comentário S2D3Q132
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: C.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Resolver nomes é função do DNS, e entregar configuração por broadcast pode integrar o DHCP; isso não diferencia NAT e PAT.
-- **B)** Incorreta. NAT básico e PAT/NAPT são conceitos associados principalmente à tradução no IPv4; a distinção não é uma separação IPv4 × IPv6.
-- **C)** Correta. NAT básico traduz endereços IP; PAT/NAPT também traduz identificadores de transporte, como portas.
-- **D)** Incorreta. PAT/NAPT não substitui o gateway usado para encaminhar tráfego a outras redes.
+- **A)** troca as definições; a extensão para identificadores de transporte é característica do PAT/NAPT.
+- **B)** NAT básico traduz endereços IP, enquanto PAT/NAPT acrescenta a tradução de portas e permite multiplexar fluxos em um endereço externo.
+- **C)** no contraste técnico pedido, os termos não são sinônimos nem dependem do fabricante.
+- **D)** estático versus dinâmico não é a distinção decisiva, e PAT/NAPT efetivamente pode alterar portas.
 
-**Conceito:** NAT básico versus PAT/NAPT.
+**Conceito:** tradução somente de endereço no NAT básico versus tradução de endereço e porta no PAT/NAPT.
 
-**Pegadinha:** usar NAT como termo guarda-chuva e ignorar a distinção específica pedida pela banca.
+**Pegadinha:** aplicar o uso cotidiano de “NAT” como termo guarda-chuva quando o enunciado exige a distinção estrita.
 
-**Como pensar:** quando houver oposição expressa, associe NAT básico a endereço e PAT/NAPT a endereço mais porta.
+**Como pensar:** se a banca contrapôs expressamente os termos, associe “básico” a endereço e “port” em PAT a endereço mais porta.
 
-**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
+**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat), nos dois itens que definem NAT básico e NAPT e no parágrafo sobre o contraste usado em prova.
 
 ### Comentário S2D3Q133
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Eliminar as portas impediria distinguir adequadamente os fluxos TCP ou UDP multiplexados.
-- **B)** Incorreta. Registro MX identifica servidores de correio de um domínio e não cria mapeamentos de tradução.
-- **C)** Correta. Portas públicas distintas permitem que a tabela PAT associe cada resposta ao host e fluxo internos corretos.
-- **D)** Incorreta. Resolução DNS e escolha de endereço IPv6 privado não realizam a demultiplexação do retorno pelo PAT.
+- **A)** como destino e porta pública também seriam iguais, faltaria uma associação única para demultiplexar os retornos entre os hosts.
+- **B)** ordem de chegada não identifica de modo confiável a qual conexão pertence cada segmento de resposta.
+- **C)** portas externas diferentes tornam únicos os mapeamentos e permitem à tabela restaurar a origem privada correspondente em cada retorno.
+- **D)** mudar a porta de destino alteraria o serviço procurado no servidor e não substitui o estado de tradução por fluxo.
 
-**Conceito:** tabela de tradução e multiplexação do PAT/NAPT.
+**Conceito:** multiplexação de conexões por portas públicas e uso da tabela de estado do PAT/NAPT.
 
-**Pegadinha:** imaginar que a coincidência das portas privadas impede o compartilhamento do mesmo endereço público.
+**Pegadinha:** imaginar que portas privadas iguais impedem o compartilhamento ou que a ordem dos pacotes basta para desfazer a tradução.
 
-**Como pensar:** acompanhe cada fluxo pela associação entre origem interna, origem pública traduzida e destino.
+**Como pensar:** escreva as duas linhas da tabela e procure o campo que o tradutor pode tornar distinto sem mudar o servidor de destino: a porta pública de origem.
 
-**Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat).
+**Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat), incluindo a tabela de mapeamentos com portas públicas diferentes.
 
 ### Comentário S2D3Q134
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 **Alternativa correta: B.**
@@ -7043,205 +7440,214 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ### Comentário S2D3Q135
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. NTP sincroniza referências de tempo em 123/UDP, favorecendo logs coerentes e validações temporais, sem definir o fuso exibido localmente.
-- **B)** Incorreta. DNS publica e resolve dados de nomes; não escolhe a hora do servidor autoritativo.
-- **C)** Incorreta. DHCP usa 67/UDP no servidor e entrega configuração de rede, não regras de horário de verão.
-- **D)** Incorreta. FTP transfere arquivos e não sincroniza relógios nem ordena temporalmente os eventos registrados.
+- **A)** NTP sincroniza a referência temporal pela porta convencional 123/UDP; fuso e horário de verão continuam pertencendo à configuração local.
+- **B)** NTP sincroniza relógios, não distribui apenas fusos, e sua associação típica é com UDP, não TCP.
+- **C)** 161/UDP é a porta tradicional do agente SNMP, e estrato não define o fuso exibido.
+- **D)** acerta protocolo e porta, mas fontes falsas ou mal protegidas podem introduzir desvios e precisam de controle operacional.
 
-**Conceito:** finalidade, porta e limite do NTP.
+**Conceito:** finalidade, porta e limites do NTP em relação a fuso e confiabilidade da fonte.
 
-**Pegadinha:** confundir sincronização da referência temporal com configuração de fuso horário.
+**Pegadinha:** aceitar uma alternativa com 123/UDP que transforma sincronização em garantia automática de confiança.
 
-**Como pensar:** problemas de coerência entre relógios, logs e certificados apontam primeiro para NTP e fontes de tempo.
+**Como pensar:** procure a opção que reúna relógio coerente, 123/UDP e separação entre referência temporal e regras locais de exibição.
 
-**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp).
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos trechos sobre 123/UDP, importância para logs e certificados, diferença para fuso e proteção das fontes.
 
 ### Comentário S2D3Q136
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A associação registrada é convencional; um administrador pode configurar HTTP em 8080 ou em outra porta adequada.
-- **B)** Incorreta. A porta 443 não comprova legitimidade, configuração criptográfica correta nem conteúdo seguro.
-- **C)** Incorreta. Um serviço pode usar porta não convencional, e outro processo pode escutar na 22; a porta isolada não identifica infalivelmente o protocolo.
-- **D)** Correta. O registro orienta associações padronizadas, mas não impede outras configurações nem prova o conteúdo efetivo do tráfego.
+- **A)** portas registradas orientam convenções, mas serviços podem escutar em outros números e um processo diferente pode usar uma porta conhecida.
+- **B)** HTTP pode ser configurado em 8080 ou em outra porta; 80/TCP é a associação padrão, não uma imposição do protocolo.
+- **C)** o registro da IANA não é um mecanismo de bloqueio do sistema operacional nem certifica o processo em escuta.
+- **D)** os números ajudam a formular hipóteses, mas confirmação exige evidências do transporte, handshake, aplicação e configuração.
 
-**Conceito:** alcance das associações de portas registradas pela IANA.
+**Conceito:** valor indiciário, e não probatório, das associações convencionais de portas.
 
-**Pegadinha:** transformar uma convenção de porta em garantia técnica ou de segurança.
+**Pegadinha:** transformar padronização administrativa em imposição técnica ou selo de legitimidade e segurança.
 
-**Como pensar:** use a porta como indício inicial e confirme protocolo, configuração e conteúdo por outras evidências.
+**Como pensar:** use a porta para iniciar a investigação, nunca para encerrá-la; confirme o serviço efetivo por evidências adicionais.
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 ### Comentário S2D3Q137
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: A.**
 
-**Análise das alternativas:**
-
-- **A)** Correta. A concessão DHCP fornece os parâmetros necessários antes das etapas normais de resolução do nome e acesso ao portal.
-- **B)** Incorreta. A tradução PAT na borda pressupõe que a estação já consiga encaminhar tráfego ao gateway.
-- **C)** Incorreta. A negociação TLS ocorre após haver configuração de rede, resolução ou endereço de destino e conectividade de transporte.
-- **D)** Incorreta. Para consultar DNS externo, a estação dependente de configuração automática precisa antes conhecer IP, prefixo, gateway e servidor DNS.
-
-**Conceito:** ordem do fluxo integrado de acesso à rede.
-
-**Pegadinha:** começar pelo protocolo visível ao usuário e esquecer a configuração inicial do host.
-
-**Como pensar:** siga as dependências: configuração local, resolução do nome, encaminhamento, transporte, TLS e aplicação.
-
-**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado).
-
-### Comentário S2D3Q138
-
-**Nível:** Difícil
-
-**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. NTP trata de tempo; o acesso por IP demonstra conectividade ao destino e direciona a investigação para a resolução do nome.
-- **B)** Incorreta. O modo passivo do FTP não participa do acesso HTTPS nem da resolução DNS.
-- **C)** Correta. A diferença entre sucesso por IP e falha por nome indica verificar primeiro servidor DNS configurado, respostas, cache e registros.
-- **D)** Incorreta. IMAP sincroniza caixas postais e não resolve nomes de portais.
+- **A)** TLS pressupõe endereço de destino e conectividade de transporte, etapas posteriores à configuração local.
+- **B)** a estação que depende de DHCP ainda não recebeu os parâmetros necessários para realizar normalmente a consulta externa.
+- **C)** a concessão entrega os parâmetros básicos de rede dos quais dependem consulta DNS, encaminhamento, transporte e TLS.
+- **D)** PAT ocorre quando tráfego já configurado alcança a borda e não precede a obtenção dos parâmetros pela estação.
 
-**Conceito:** diagnóstico de falha de resolução DNS.
+**Conceito:** dependência inicial do DHCP no fluxo de uma estação sem configuração.
 
-**Pegadinha:** interpretar qualquer falha de acesso como perda total de conectividade.
+**Pegadinha:** começar pelo protocolo mais visível ao usuário e ignorar os pré-requisitos locais de rede.
 
-**Como pensar:** compare o que muda entre os testes: se o IP funciona e apenas o nome falha, isole a etapa DNS.
+**Como pensar:** ordene por dependência: configurar o host, resolver o destino, encaminhar, estabelecer transporte e proteger a aplicação.
 
-**Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado), começando pela entrega de IP, prefixo, gateway e DNS pelo DHCP.
+
+### Comentário S2D3Q138
+
+**Nível:** Médio
+
+**Uso:** Revisão
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** sem um endereço resultante da resolução, a sessão de transporte e a negociação TLS ainda não começaram.
+- **B)** o sucesso pelo IP demonstra que existe um caminho funcional ao destino e desloca o foco para o elemento que mudou entre os testes.
+- **C)** o teste direto já exigiu encaminhamento ao mesmo endereço, por isso recriar PAT não explica prioritariamente a diferença ligada ao nome.
+- **D)** quando apenas o nome falha, servidor DNS, respostas, cache e dados publicados formam o primeiro bloco lógico de diagnóstico.
+
+**Conceito:** isolamento da etapa DNS pela comparação entre acesso por endereço e acesso por nome.
+
+**Pegadinha:** tratar qualquer falha de portal como problema de rota, TLS ou tradução sem localizar a última etapa bem-sucedida.
+
+**Como pensar:** compare as duas tentativas e investigue o único requisito adicional da que falhou: converter o nome em endereço.
+
+**Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns), especialmente o raciocínio que compara os dois testes.
 
 ### Comentário S2D3Q139
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A resolução correta e a tentativa de conexão não permitem atribuir a falha exclusivamente ao DHCP.
-- **B)** Incorreta. Registro MX orienta correio eletrônico e não a conexão HTTPS do portal.
-- **C)** Incorreta. O enunciado informa que o nome foi resolvido corretamente.
-- **D)** Correta. Após o sucesso do DNS, a falha em 443/TCP deve ser localizada em etapas como rota, firewall, NAT/PAT ou serviço remoto.
+- **A)** o endereço correto já foi obtido, e esse sucesso não garante funcionamento de rota, filtro, NAT/PAT ou serviço de destino.
+- **B)** certificado é apresentado durante TLS, que só ocorre depois de a conexão TCP estar estabelecida.
+- **C)** resposta HTTP depende de transporte e, no HTTPS, de TLS; não pode anteceder o SYN-ACK ausente.
+- **D)** o sintoma delimita a falha entre a resolução concluída e a abertura TCP, direcionando a análise à conectividade e ao listener.
 
-**Conceito:** diagnóstico por etapas após a resolução DNS.
+**Conceito:** diagnóstico sequencial após DNS e antes das camadas TLS e HTTP.
 
-**Pegadinha:** culpar o DNS por toda falha que envolve um nome de domínio, mesmo quando a resolução já ocorreu.
+**Pegadinha:** voltar a uma etapa já comprovada ou saltar para certificado e aplicação antes de estabelecer o transporte.
 
-**Como pensar:** marque a última etapa comprovadamente bem-sucedida e investigue os componentes seguintes do fluxo.
+**Como pensar:** marque DNS como concluído e TCP como incompleto; investigue somente os componentes situados entre esses dois marcos.
 
-**Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado), em conjunto com as etapas posteriores à resolução.
 
 ### Comentário S2D3Q140
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DHCPACK integra a concessão inicial e não sucede normalmente o HTTP em claro como etapa do acesso HTTPS descrito.
-- **B)** Correta. No HTTPS tradicional, abre-se TCP para 443, negocia-se TLS e transporta-se HTTP protegido; o proxy reverso pode encaminhar a requisição ao servidor interno.
-- **C)** Incorreta. Trap SNMP, DHCPOFFER e Telnet não compõem o fluxo normal de publicação HTTPS.
-- **D)** Incorreta. FTP passivo é mecanismo de transferência de arquivos e não substitui HTTP nem TLS.
+- **A)** TLS necessita de um transporte previamente estabelecido e não pode anteceder a abertura TCP tradicional descrita.
+- **B)** o cliente estabelece TCP, negocia o canal TLS, envia HTTP dentro dele e o proxy pode então encaminhar a requisição ao backend.
+- **C)** HTTP protegido pressupõe tanto o transporte quanto o canal TLS, apresentados depois na alternativa.
+- **D)** enviar HTTP antes da negociação TLS deixaria de seguir o fluxo HTTPS indicado no enunciado.
 
-**Conceito:** sequência de HTTPS com proxy reverso.
+**Conceito:** dependência e ordem funcional entre TCP, TLS, HTTP e proxy reverso.
 
-**Pegadinha:** misturar protocolos válidos, mas pertencentes a fluxos diferentes.
+**Pegadinha:** reconhecer todos os componentes corretos, mas aceitar uma sequência que usa a camada superior antes de preparar a inferior.
 
-**Como pensar:** depois do DNS, siga transporte TCP, proteção TLS, protocolo HTTP e eventual intermediação do servidor.
+**Como pensar:** monte a pilha de baixo para cima: transporte TCP, proteção TLS, mensagem HTTP e intermediação da aplicação.
 
-**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado), que ordena TCP, TLS, HTTP e proxy reverso.
 
 ### Comentário S2D3Q141
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: B.**
+
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Um servidor pode manter muitas conexões simultâneas na mesma porta de escuta; elas não compartilham um único socket de conexão.
-- **B)** Correta. IP e porta de origem, IP e porta de destino e protocolo distinguem as conexões TCP.
-- **C)** Incorreta. As portas de origem participam da identificação dos fluxos e não são eliminadas para aceitar conexões.
-- **D)** Incorreta. O nome DNS não integra a identificação da conexão TCP depois de obtido o endereço de destino.
+- **A)** a combinação de endereços, portas e TCP é diferente porque as portas de origem são 51000 e 51001.
+- **B)** o destino é igual nos dois fluxos e identifica o serviço de escuta, não cada conexão aceita individualmente.
+- **C)** nome DNS não integra a identificação mantida pelo TCP, enquanto as portas continuam relevantes durante a conexão.
+- **D)** número de sequência participa do controle do fluxo, mas não substitui a identificação das extremidades e do protocolo.
 
-**Conceito:** identificação de conexões por seus extremos e protocolo.
+**Conceito:** identificação de conexões TCP pela quíntupla de origem, destino e protocolo.
 
-**Pegadinha:** imaginar que uma porta de servidor aceita somente um cliente por vez.
+**Pegadinha:** confundir a porta comum de escuta com o socket individual de cada conexão estabelecida.
 
-**Como pensar:** a porta de destino pode ser igual; são as combinações completas de origem, destino e protocolo que se diferenciam.
+**Como pensar:** escreva lado a lado as cinco partes dos dois fluxos e localize o campo que muda, sem recorrer ao nome DNS.
 
-**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta), na lista dos cinco componentes usados para identificar uma conexão TCP.
 
 ### Comentário S2D3Q142
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O número da porta não avalia vulnerabilidades da aplicação.
-- **B)** Incorreta. Observar tráfego na 443 não prova legitimidade do conteúdo nem validação do certificado pelo cliente.
-- **C)** Incorreta. A porta 443 pode transportar diferentes usos; mesmo em HTTP, não comprova HTTP/2, e HTTP/3 usa QUIC sobre UDP.
-- **D)** Correta. A porta sugere a convenção de HTTPS, mas não determina sozinha protocolo efetivo, legitimidade ou segurança.
+- **A)** porta de destino não demonstra que houve TLS, validação de certificado ou avaliação de vulnerabilidades da aplicação.
+- **B)** 443/TCP não determina a versão HTTP nem registra a decisão tomada pelo cliente diante da cadeia de certificados.
+- **C)** um processo pode usar porta convencionalmente associada a outro serviço, e o número não atesta cifra ou legitimidade.
+- **D)** a associação com HTTPS é uma hipótese inicial que precisa ser confirmada pelo handshake e pelo comportamento do protocolo.
 
-**Conceito:** porta como indício, não como prova do protocolo.
+**Conceito:** limite probatório da porta de destino observada em uma captura.
 
-**Pegadinha:** inferir segurança ou versão da aplicação apenas pela porta de destino.
+**Pegadinha:** inferir propriedades do certificado, do conteúdo e da aplicação a partir de um único metadado de transporte.
 
-**Como pensar:** trate a porta como metadado de triagem e procure evidências adicionais no transporte, handshake e aplicação.
+**Como pensar:** formule a hipótese pela porta e procure confirmação em TLS e na aplicação antes de concluir qual protocolo ou segurança existe.
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 ### Comentário S2D3Q143
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. HTTP/3 usa QUIC sobre UDP, normalmente na porta 443, enquanto HTTP/1.1 e HTTP/2 usam TCP em seus usos usuais.
-- **B)** Incorreta. HTTP/3 e FTP são protocolos distintos; 21/TCP é a porta clássica de controle do FTP.
-- **C)** Incorreta. QUIC incorpora proteção criptográfica; o uso de UDP não elimina TLS do modelo de segurança do HTTP/3.
-- **D)** Incorreta. Concessão é função do DHCP, e SNMP não constitui pré-requisito específico para HTTP/3.
+- **A)** HTTP/3 é transportado por QUIC sobre UDP, usualmente em 443, e QUIC incorpora a negociação criptográfica baseada em TLS.
+- **B)** a conexão HTTP/3 permanece em QUIC/UDP; não migra o fluxo para TCP após um datagrama inicial.
+- **C)** usar TCP caracteriza os transportes usuais de HTTP/1.1 e HTTP/2, não a arquitetura de HTTP/3.
+- **D)** recuperação de perdas e autenticação são propriedades distintas, e HTTP/3 não elimina a proteção TLS.
 
-**Conceito:** transporte do HTTP/3.
+**Conceito:** HTTP/3 sobre QUIC/UDP e continuidade da proteção criptográfica.
 
-**Pegadinha:** concluir que todo HTTPS usa TCP ou que UDP significa ausência de proteção criptográfica.
+**Pegadinha:** concluir que o uso de UDP elimina TLS ou que QUIC é apenas uma negociação preliminar antes do TCP.
 
-**Como pensar:** memorize a exceção moderna: HTTP/3 usa QUIC/UDP; HTTP/1.1 e HTTP/2 usam TCP.
+**Como pensar:** memorize o conjunto, não termos isolados: HTTP/3, QUIC, UDP, normalmente 443 e TLS integrado.
 
-**Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
+**Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https), nos trechos que registram HTTP/3 sobre QUIC/UDP em 443 e preservação da proteção criptográfica.
 
 ### Comentário S2D3Q144
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 **Alternativa correta: C.**
@@ -7263,51 +7669,53 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ### Comentário S2D3Q145
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O autoritativo responde pelos dados publicados na zona sob sua autoridade, e não apenas por cache alheio.
-- **B)** Incorreta. TTL limita o reaproveitamento do registro em cache; não é data de expiração do domínio nem garantia de disponibilidade.
-- **C)** Correta. A alternativa distingue a origem autoritativa dos dados de seu reaproveitamento temporário por um resolvedor.
-- **D)** Incorreta. Uma resposta em cache não torna o resolvedor autoridade da zona nem a resposta autoritativa para toda a Internet.
+- **A)** o DNS não possui invalidação instantânea universal de caches quando o administrador altera os dados da zona.
+- **B)** TTL limita o reaproveitamento da resposta em cache e não representa existência do domínio nem disponibilidade do servidor.
+- **C)** autoridade decorre da responsabilidade pela zona, enquanto o resolvedor pode servir temporariamente a cópia válida mantida em cache.
+- **D)** cache não confere autoridade, e a vigência não pode ser renovada indefinidamente sem obter nova resposta.
 
-**Conceito:** servidor autoritativo, resolvedor e TTL de cache.
+**Conceito:** distinção entre autoridade da zona, cache do resolvedor e duração determinada pelo TTL.
 
-**Pegadinha:** interpretar “autoritativo” como “sempre correto” ou TTL como prazo de existência do domínio.
+**Pegadinha:** interpretar TTL como validade do domínio ou imaginar propagação por invalidação imediata de todo cache.
 
-**Como pensar:** separe quem publica a zona de quem busca e reutiliza temporariamente a resposta.
+**Como pensar:** separe origem e cópia: o autoritativo publica; o resolvedor reutiliza apenas pelo tempo remanescente autorizado no registro recebido.
 
-**Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns).
+**Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns), nas definições de servidor autoritativo, resolvedor recursivo, cache e TTL.
 
 ### Comentário S2D3Q146
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
-**Alternativa correta: A.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Endereço 169.254.x.x e ausência de gateway são indícios de que a concessão automática falhou; servidor ou relay alcançável e escopo disponível são os primeiros pontos a verificar.
-- **B)** Incorreta. Transferência de zona DNS não fornece endereço, prefixo ou gateway ao cliente.
-- **C)** Incorreta. TLS implícito no IMAP pertence à aplicação de correio e pressupõe conectividade de rede.
-- **D)** Incorreta. FTP passivo trata da conexão de dados de uma transferência e não corrige configuração IP ausente.
+- **A)** DNS resolve e publica dados de nomes, mas não concede IP, prefixo e gateway ao cliente.
+- **B)** endereço link-local e ausência de gateway indicam que a configuração automática esperada não foi obtida, direcionando a análise ao DHCP.
+- **C)** um gateway isolado não transforma o endereço link-local em parâmetro válido da sub-rede corporativa nem corrige a concessão.
+- **D)** ARP resolve endereços de enlace na rede local; não entrega a configuração fornecida pelo DHCP.
 
-**Conceito:** diagnóstico de falha na concessão DHCP.
+**Conceito:** reconhecimento de falha DHCP por endereço link-local e ausência dos parâmetros de rede.
 
-**Pegadinha:** iniciar a análise por protocolos de aplicação quando a estação ainda não possui configuração básica utilizável.
+**Pegadinha:** tentar corrigir uma etapa posterior ou um único parâmetro quando a concessão básica inteira falhou.
 
-**Como pensar:** valide primeiro IP, prefixo, gateway e DNS; um endereço link-local sem gateway direciona a investigação ao DHCP.
+**Como pensar:** antes de DNS, rota externa ou aplicação, valide se o host recebeu por DORA um endereço da rede, prefixo, gateway e DNS.
 
-**Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp).
+**Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp), incluindo os parâmetros concedidos, DORA, relay e escopo.
 
 ### Comentário S2D3Q147
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: B.**
@@ -7329,104 +7737,126 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ### Comentário S2D3Q148
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Datagramas independentes, sem conexão e sem confirmações nativas caracterizam UDP.
-- **B)** Incorreta. Confirmação no transporte não garante a conclusão semântica de uma operação no banco de dados.
-- **C)** Incorreta. TCP possui mecanismos de controle de fluxo e de congestionamento.
-- **D)** Correta. TCP entrega fluxo confiável e ordenado por meio de sequência, ACKs, temporizadores e retransmissões, sem preservar fronteiras de mensagens.
+- **A)** TCP não preserva as fronteiras de cada escrita e um ACK de transporte não confirma aceitação pela lógica de negócio.
+- **B)** TCP possui controle de fluxo, e ACKs se referem ao fluxo de bytes, não à delimitação das mensagens da aplicação.
+- **C)** datagramas independentes caracterizam UDP; TCP apresenta à aplicação um fluxo de bytes conectado.
+- **D)** confiabilidade e ordenação pertencem ao fluxo de bytes, enquanto enquadramento das mensagens e confirmação semântica permanecem responsabilidades da aplicação.
 
-**Conceito:** garantias e limites do TCP.
+**Conceito:** garantias do fluxo TCP e limites quanto a framing e sucesso da operação de aplicação.
 
-**Pegadinha:** extrapolar confiabilidade de transporte para sucesso da aplicação ou preservação de mensagens.
+**Pegadinha:** estender ACK e ordenação do transporte a fronteiras de mensagens ou à conclusão do negócio.
 
-**Como pensar:** liste exatamente o que TCP garante no fluxo de bytes e mantenha fora dessa lista a semântica da aplicação.
+**Como pensar:** faça duas colunas: TCP cuida da entrega ordenada dos bytes; a aplicação delimita mensagens e confirma o resultado lógico.
 
-**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
+**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp), nos pontos sobre fluxo de bytes, ordenação, confirmações, fronteiras de mensagens e significado limitado do ACK.
 
 ### Comentário S2D3Q149
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. NTP e suas fontes de tempo são o foco direto quando relógios divergentes prejudicam correlação de logs e validações de certificados.
-- **B)** Incorreta. DNS não configura fuso horário nem recalcula registros A com base no relógio local.
-- **C)** Incorreta. DHCP fornece configuração de rede, enquanto POP3 acessa mensagens; nenhum substitui o outro nem resolve sincronização temporal.
-- **D)** Incorreta. O modo ativo do FTP não ordena eventos registrados em servidores distintos.
+- **A)** ambos os sintomas dependem de relógios coerentes e apontam diretamente para sincronização NTP e qualidade das fontes utilizadas.
+- **B)** fuso altera a apresentação local, mas não corrige necessariamente o instante de referência incorreto do sistema.
+- **C)** TTL DNS controla reaproveitamento de respostas em cache e não sincroniza o relógio do host.
+- **D)** substituir o certificado pode mascarar um sintoma, mas deixa sem solução o desvio temporal que também corrompe os logs.
 
-**Conceito:** impacto operacional da sincronização NTP.
+**Conceito:** impacto da sincronização de tempo sobre correlação de eventos e validações temporais.
 
-**Pegadinha:** tentar corrigir apenas a exibição do horário ou usar um protocolo sem relação com a fonte temporal.
+**Pegadinha:** tratar isoladamente certificado ou exibição de horário em vez de investigar a fonte comum dos dois sintomas.
 
-**Como pensar:** quando o mesmo evento aparece em instantes incompatíveis ou certificados falham por horário, verifique relógios e fontes NTP.
+**Como pensar:** quando logs e validade temporal falham juntos, procure primeiro o relógio do sistema e sua referência NTP.
 
-**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp) e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos usos para logs e validade de certificados; e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 ### Comentário S2D3Q150
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DNS não entrega gateway; SMTP não traduz portas; FTP não é a etapa de TLS do portal; NTP não publica aplicações.
-- **B)** Correta. A sequência reúne concessão DHCP, resolução DNS, encaminhamento e PAT, proteção TLS do HTTP e recepção eventual por proxy reverso.
-- **C)** Incorreta. IMAP não entrega máscara, LDAP não resolve nomes DNS, Telnet não cifra HTTP e NAT não organiza caixa postal.
-- **D)** Incorreta. SNMP não atribui IP, POP3 não roteia e FTP não substitui proxy reverso.
+- **A)** I e II são verdadeiras, mas III também é; o proxy reverso representa os servidores publicados e pode estabelecer um fluxo separado até o backend.
+- **B)** as três afirmações mantêm as fronteiras entre configuração, resolução, próximo salto, tradução, proteção do canal e publicação da aplicação.
+- **C)** I e III são verdadeiras, mas II também é; o quadro aponta para o próximo salto sem trocar o IP remoto, e o PAT pode alterar a origem na borda.
+- **D)** II e III são verdadeiras, mas I também é; DHCP pode informar o resolvedor, porém não executa a resolução do nome do portal.
 
-**Conceito:** integração dos serviços no acesso a um portal publicado.
+**Conceito:** dependências e limites de DHCP, DNS, gateway, PAT, TCP/TLS/HTTP e proxy reverso no mesmo acesso.
 
-**Pegadinha:** aceitar uma sequência porque contém protocolos reais, embora suas funções estejam trocadas.
+**Pegadinha:** atribuir a um componente a função do seguinte ou supor que proxy, PAT ou porta conhecida substitui as demais etapas.
 
-**Como pensar:** acompanhe o fluxo pela dependência funcional: configurar, resolver, encaminhar/traduzir, proteger e entregar à aplicação.
+**Como pensar:** percorra configuração, resolução, encaminhamento/tradução, transporte/proteção e publicação, perguntando em cada etapa o que muda e o que permanece.
 
-**Referência:** [14. Fluxo integrado de acesso a um portal](semana_02_estudo.md#s2-d3-fluxo-integrado).
-
----
-
+**Referência:** [Fluxo integrado de acesso a um portal](semana_02_estudo.md#s2-d3-fluxo-integrado), com apoio de [NAT e PAT](semana_02_estudo.md#s2-d3-nat-pat) e [Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 ## Questões extras de revisão fixa do Dia 3
 
 #### Extra Dia 3.1
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** função da Lei, do Decreto, do Regimento e do Código de Ética.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Sobre as quatro bases normativas da revisão do Dia 3, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao), no quadro que separa Lei, Decreto, Regimento do CRA-PR e Código de Ética.
 
-A) A RN CFA nº 651/2024 aprova o Código de Ética, enquanto a RN CFA nº 671/2025 organiza internamente o CRA-PR.
-B) O Decreto nº 61.934/1967 revoga a Lei nº 4.769/1965 sempre que detalha o exercício profissional.
-C) A Lei nº 4.769/1965 disciplina o exercício e estrutura o sistema; o Decreto a regulamenta; o Regimento organiza o CRA-PR; e a RN CFA nº 671/2025 aprova o Código de Ética.
-D) Lei, Decreto, Regimento e Código possuem o mesmo objeto e podem ser usados indistintamente para definir qualquer competência.
+Considerando a função das quatro bases normativas estudadas para o Sistema CFA/CRAs, assinale a alternativa correta.
+
+A) A Lei organiza internamente o CRA-PR; o Decreto aprova o Código de Ética; a RN nº 651 regulamenta a profissão; e a RN nº 671 cria os Conselhos.
+
+B) A Lei aprova o Código de Ética; o Decreto cria o Sistema CFA/CRAs; a RN nº 651 disciplina o exercício; e a RN nº 671 organiza o CRA-PR.
+
+C) A Lei disciplina o exercício e o Sistema; o Decreto regulamenta a Lei; a RN nº 651 aprova o Regimento do CRA-PR; e a RN nº 671 aprova o Código de Ética.
+
+D) A Lei regulamenta norma anterior; o Decreto organiza o CRA-PR; a RN nº 651 cria a profissão; e a RN nº 671 define a estrutura legal dos Conselhos.
+
 #### Extra Dia 3.2
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** campo da atividade profissional no art. 2º da Lei nº 4.769/1965.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-De acordo com o art. 2º da Lei nº 4.769/1965, integra o campo da atividade profissional estudada:
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente a síntese do art. 2º sobre documentos, funções e trabalhos nos campos da Administração.
 
-A) a elaboração de pareceres, relatórios, planos, projetos, arbitragens e laudos, a assessoria em geral, a chefia intermediária, a direção superior e trabalhos de pesquisa, planejamento, implantação, coordenação e controle nos campos da Administração.
-B) exclusivamente a direção superior de órgãos públicos federais, vedadas a assessoria, a pesquisa e a atuação em organizações privadas.
-C) apenas a assinatura de documentos contábeis, sem atividades de planejamento, organização ou controle.
-D) toda e qualquer atividade técnica existente, ainda que não guarde conexão com os campos da Administração.
+À luz do art. 2º da Lei nº 4.769/1965, assinale a afirmação correta sobre o campo da atividade profissional.
+
+A) Chefia intermediária e pesquisa integram o campo apenas em órgãos federais, pois a Lei exclui organizações privadas e administrações estaduais ou municipais.
+
+B) Assessoria, pareceres e coordenação de projetos integram o campo quando relacionados aos campos da Administração e a seus desdobramentos ou conexões.
+
+C) Planejamento e controle integram o campo somente quando resultam em documento contábil, pois as demais atividades dependem de outra profissão regulamentada.
+
+D) Qualquer atividade técnica integra o campo por sua simples complexidade, ainda que não mantenha relação com a Administração nem com seus desdobramentos.
+
 #### Extra Dia 3.3
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
@@ -7458,206 +7888,349 @@ B) constituem, em conjunto, autarquia dotada de personalidade jurídica de direi
 C) integram a Administração Direta estadual e dependem de autorização do governador para exercer fiscalização.
 D) formam empresa pública federal destinada exclusivamente à expedição de carteiras profissionais.
 #### Extra Dia 3.5
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** competências do CFA.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Assinale a alternativa que apresenta competência atribuída pela Lei nº 4.769/1965 ao CFA.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao), no contraste entre orientação federal, exame de regimentos e última instância versus execução regional.
 
-A) Expedir ordinariamente as carteiras profissionais de todos os inscritos no CRA-PR e exercer a primeira instância regional.
-B) Elaborar o Regimento do CRA-PR sem participação do próprio Conselho Regional.
-C) Examinar, modificar e aprovar regimentos internos dos Regionais, julgar em última instância recursos de penalidades e votar e alterar o Código de Deontologia Administrativa.
-D) Fiscalizar exclusivamente o exercício profissional no Paraná, sem função de orientação nacional.
+Assinale a alternativa que reúne duas competências atribuídas ao CFA, e não aos Conselhos Regionais, pela Lei nº 4.769/1965.
+
+A) Expedir carteiras aos inscritos da jurisdição e julgar, em primeira instância, as infrações profissionais ocorridas no respectivo estado.
+
+B) Manter o registro regional dos profissionais e fiscalizar diretamente o exercício da profissão dentro da respectiva jurisdição territorial.
+
+C) Examinar e aprovar os regimentos dos Regionais e julgar, em última instância, os recursos contra penalidades aplicadas por esses Conselhos.
+
+D) Elaborar o próprio regimento regional e executar, na respectiva jurisdição, as diretrizes formuladas pelo Conselho Federal.
+
 #### Extra Dia 3.6
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** finalidades dos Conselhos Regionais.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Constitui núcleo de finalidades legais dos Conselhos Regionais de Administração:
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os verbos executar, fiscalizar, registrar, julgar e expedir.
 
-A) executar diretrizes do CFA, fiscalizar na respectiva jurisdição, manter registros, julgar infrações, impor penalidades legais, expedir carteiras e elaborar seu regimento para exame e aprovação pelo CFA.
-B) votar leis federais sobre profissões regulamentadas e rever decisões judiciais em última instância.
-C) modificar unilateralmente o Código nacional e aprovar definitivamente o próprio regimento, sem exame do CFA.
-D) limitar-se à arrecadação de anuidades, sem competência para registro, fiscalização ou julgamento.
+Em relação às finalidades legais dos Conselhos Regionais de Administração, assinale a alternativa correta.
+
+A) Executam as diretrizes do CFA, mantêm registros, fiscalizam a profissão na jurisdição, julgam infrações e expedem carteiras aos profissionais inscritos.
+
+B) Fixam a orientação normativa nacional, alteram o Código de Ética e julgam em última instância os recursos contra penalidades de todos os Regionais.
+
+C) Executam as diretrizes do CFA e mantêm registros, mas remetem toda fiscalização e todo julgamento de primeira instância diretamente ao Conselho Federal.
+
+D) Fiscalizam a profissão na jurisdição e expedem carteiras, mas não podem manter registros nem aplicar as penalidades legalmente previstas aos inscritos.
+
 #### Extra Dia 3.7
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** registro e carteira profissional.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Sobre registro e carteira profissional no art. 14 da Lei nº 4.769/1965, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao), na síntese do art. 14 sobre exigência do registro e funções da carteira.
 
-A) O diploma substitui o registro, e a carteira tem validade apenas no estado em que foi emitida.
-B) A falta de registro produz somente irregularidade cadastral, sem repercussão sobre a legalidade do exercício.
-C) A carteira é expedida pelo CFA e não pode servir como documento de identidade.
-D) O exercício exige registro; sua falta o torna ilegal e punível, e a carteira profissional serve como prova do exercício, como identidade e tem fé em todo o território nacional.
+Segundo o art. 14 da Lei nº 4.769/1965, assinale a alternativa correta sobre registro e carteira profissional.
+
+A) O exercício depende de registro, mas a carteira é expedida pelo CFA, vale somente no estado emissor e não constitui documento de identidade.
+
+B) O diploma substitui o registro, embora a carteira expedida pelo CRA sirva como identidade e produza fé em todo o território nacional.
+
+C) A ausência de registro gera apenas pendência cadastral, e a carteira comprova a formação acadêmica sem provar o exercício da profissão.
+
+D) O exercício depende de registro, cuja falta o torna ilegal e punível; a carteira prova o exercício, serve como identidade e tem fé nacional.
+
 #### Extra Dia 3.8
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** registro de organizações e penalidades legais.
-- **Nível:** Médio
+
+- **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Quanto aos arts. 15 e 16 da Lei nº 4.769/1965, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao), no trecho sobre registro de organizações, penalidades legais e reincidência da mesma infração em cinco anos.
 
-A) Empresas que explorem atividades profissionais nunca se sujeitam a registro, pois somente pessoas físicas são fiscalizadas.
-B) Empresas, entidades e escritórios técnicos que explorem as atividades previstas estão sujeitos a registro; a Lei prevê multa e suspensões e, na reincidência da mesma infração dentro de cinco anos após a primeira, multa em dobro e cancelamento do registro.
-C) A Lei prevê apenas advertência escrita e censura pública, sem multa, suspensão ou regra de reincidência.
-D) O cancelamento legal é automático na primeira infração e dispensa ampla defesa ou enquadramento.
+Analise as afirmações sobre os arts. 15 e 16 da Lei nº 4.769/1965 e assinale a alternativa correta.
+
+A) O registro alcança apenas pessoas físicas; na primeira infração da organização, aplicam-se multa em dobro e cancelamento automático do registro.
+
+B) O registro alcança somente entidades públicas; advertência e censura são as únicas penalidades legais, sem consequência especial para reincidência.
+
+C) Organizações que explorem as atividades previstas sujeitam-se a registro; a Lei prevê multa e suspensões e agrava a reincidência específica em cinco anos.
+
+D) Organizações são dispensadas de registro se houver sócio inscrito; o cancelamento ocorre na primeira infração e independe de defesa ou enquadramento.
+
 #### Extra Dia 3.9
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** detalhamento regulamentar da atividade profissional.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-O art. 3º do Decreto nº 61.934/1967 detalha a atividade profissional. Assinale a alternativa compatível com esse dispositivo.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os grupos de documentos, trabalhos, cargos, consultoria e magistério do art. 3º.
 
-A) O campo se restringe ao magistério, excluindo chefia, consultoria e documentos técnicos.
-B) Funções de direção ou assessoramento nunca integram a atividade profissional, mesmo quando exigem técnicas de Administração.
-C) O campo abrange documentos técnicos, pesquisas, planejamento, implantação, coordenação e controle, além de funções e cargos técnicos, chefia, direção, assessoramento, consultoria e magistério pertinente.
-D) O Decreto trata somente da composição eleitoral dos Conselhos e não descreve atividades profissionais.
+De acordo com o art. 3º do Decreto nº 61.934/1967, assinale a alternativa correta sobre a atividade profissional.
+
+A) O magistério pertinente pode integrar a atividade, mas o dispositivo exclui consultoria, assessoramento e funções técnicas de direção ou chefia.
+
+B) A elaboração de documentos técnicos integra a atividade, mas pesquisas, planejamento, implantação e controle pertencem a campo estranho ao Decreto.
+
+C) Documentos e trabalhos técnicos podem integrar a atividade, assim como cargos de chefia, direção, consultoria e magistério que exijam conhecimentos de Administração.
+
+D) Funções de assessoramento podem integrar a atividade, mas cargos de chefia e direção ficam excluídos mesmo quando exigem técnicas de Administração.
+
 #### Extra Dia 3.10
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** elaboração e assinatura de documentos profissionais.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Sobre documentos profissionais nos arts. 6º e 7º do Decreto nº 61.934/1967, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente as regras e ressalvas dos arts. 6º e 7º do Decreto nº 61.934/1967.
 
-A) Os documentos do art. 3º devem ser elaborados e assinados por profissional registrado, ressalvado o exercício de cargo público na forma do art. 6º; o número de registro deve constar após a assinatura, e o art. 7º ressalva o documento oficial assinado pelo ocupante do respectivo cargo público.
-B) A citação do número de registro é facultativa, ainda que o documento esteja sujeito à regra do art. 6º.
-C) Empresas privadas estão proibidas de exigir assinatura de profissional registrado em documentos técnicos.
-D) Qualquer assinatura posterior regulariza documento elaborado por pessoa não registrada, independentemente das demais condições normativas.
+Considerando conjuntamente os arts. 6º e 7º do Decreto nº 61.934/1967, assinale a alternativa correta.
+
+A) Documento do art. 3º deve ser elaborado e assinado por registrado, salvo o exercício de cargo público; cita-se o registro após a assinatura, ressalvado no art. 7º o documento oficial do ocupante do cargo.
+
+B) Documento do art. 3º exige assinatura de registrado até no exercício de cargo público; cita-se o registro antes da assinatura, ressalvado no art. 7º todo documento produzido por empresa privada.
+
+C) Documento do art. 3º pode ser elaborado por não registrado se receber assinatura posterior; a citação do registro é facultativa, ressalvado no art. 7º apenas o documento de autoridade federal.
+
+D) Documento do art. 3º exige registrado apenas quando for laudo; autoridades não precisam cobrar assinatura regular, ressalvado no art. 7º todo documento apresentado por órgão público.
+
 #### Extra Dia 3.11
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** exercício, registro e fiscalização no Decreto.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Considerando os arts. 9º a 11 do Decreto nº 61.934/1967, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao), no trecho que articula carteira, direitos sociais, falta de registro e fiscalização pelo CRA e pelo CFA.
 
-A) Para exercer a profissão basta apresentar diploma, sem carteira, registro ou prova de direitos sociais.
-B) O exercício exige a Carteira de Identidade Profissional e prova do pleno gozo dos direitos sociais; a falta de registro torna o exercício ilegal e punível, e a fiscalização cabe ao CRA competente e ao CFA.
-C) A fiscalização compete exclusivamente ao CFA, sendo vedada a atuação do CRA da jurisdição.
-D) A falta de registro é sanada automaticamente pela experiência prática, sem providência perante o Conselho.
+À luz dos arts. 9º a 11 do Decreto nº 61.934/1967, assinale a alternativa correta.
+
+A) Exige-se apenas a carteira, sem prova dos direitos sociais; a experiência supre registro ausente, e a fiscalização cabe exclusivamente ao CFA.
+
+B) Exigem-se carteira e prova do gozo dos direitos sociais; a falta de registro torna o exercício ilegal e punível, e CRA e CFA fiscalizam.
+
+C) Exige-se apenas o diploma, pois a carteira é facultativa; a falta de registro gera advertência, e a fiscalização cabe exclusivamente ao CRA.
+
+D) Exigem-se carteira e direitos sociais apenas do autônomo; o servidor atua sem registro, e a fiscalização cabe ao órgão público empregador.
+
 #### Extra Dia 3.12
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** natureza e organização básica do CRA-PR.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Segundo o Regimento aprovado pela RN CFA nº 651/2024, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao), nos arts. 1º, 2º e 4º sintetizados sobre natureza, sede, jurisdição e Plenário.
 
-A) O CRA-PR possui jurisdição nacional e o Plenário exerce função apenas consultiva.
-B) O CRA-PR é associação privada, e a Ouvidoria constitui sua primeira instância de julgamento.
-C) A autonomia do CRA-PR o dispensa de executar diretrizes do CFA e de submeter seu Regimento ao Conselho Federal.
-D) O CRA-PR é autarquia de direito público, tem sede na capital e jurisdição em todo o Paraná; seu Plenário é órgão colegiado de deliberação superior e primeira instância de julgamento regional.
+Segundo o Regimento aprovado pela RN CFA nº 651/2024, assinale a descrição correta do CRA-PR e de seu Plenário.
+
+A) É autarquia de direito público com jurisdição apenas na capital; seu Plenário atua como órgão consultivo sem competência de julgamento regional.
+
+B) É associação privada com jurisdição em todo o Paraná; seu Plenário exerce administração cotidiana e julga apenas recursos contra decisões do CFA.
+
+C) É autarquia de direito público com jurisdição nacional; seu Plenário constitui segunda instância federal e pode afastar as diretrizes emanadas do CFA.
+
+D) É autarquia de direito público com sede na capital e jurisdição estadual; seu Plenário delibera em nível superior e julga a primeira instância regional.
+
 #### Extra Dia 3.13
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** âmbito subjetivo e material do Código de Ética.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Quanto ao âmbito de aplicação do Código aprovado pela RN CFA nº 671/2025, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente o art. 4º, §§ 2º e 3º, sobre pessoas registradas e mandato eletivo.
 
-A) O Código alcança pessoas físicas e jurídicas registradas no CRA da respectiva jurisdição, no exercício das atividades abrangidas pela Lei e pelo Decreto, observadas as especificidades da pessoa jurídica; mandato eletivo no CFA ou nos CRAs também é considerado atividade profissional para esse fim.
-B) O Código alcança qualquer trabalhador de tecnologia da informação, ainda que não registrado e fora das atividades profissionais abrangidas.
-C) Pessoas jurídicas estão integralmente excluídas, pois somente pessoa natural pode praticar infração ética.
-D) O exercício de mandato eletivo no Sistema é expressamente excluído da incidência do Código.
+Considere as afirmações sobre o âmbito do Código aprovado pela RN CFA nº 671/2025: I. alcança a pessoa física registrada quando exerce atividade abrangida; II. pode alcançar a pessoa jurídica registrada, observadas suas especificidades; III. considera o mandato eletivo no CFA ou nos CRAs atividade profissional para esse fim. Assinale a opção correta.
+
+A) Estão corretas I, II e III, sem exclusão de nenhuma afirmação.
+
+B) Estão corretas apenas I e II, ficando excluída a afirmação III.
+
+C) Estão corretas apenas I e III, ficando excluída a afirmação II.
+
+D) Estão corretas apenas II e III, ficando excluída a afirmação I.
+
 #### Extra Dia 3.14
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** distinção entre dever e direito ético.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-Assinale a alternativa que relaciona corretamente um dever e um direito previstos na RN CFA nº 671/2025.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao), no contraste entre comunicação cadastral, apontamento de falhas e condutas infracionais.
 
-A) É dever divulgar informação sigilosa por conveniência comercial, e é direito dificultar a fiscalização do CRA.
-B) É direito ceder o registro a terceiro não habilitado, e é dever aceitar condições degradantes de trabalho.
-C) É dever comunicar imediatamente ao CRA alterações de domicílio ou endereço relevantes ao controle profissional; é direito apontar falhas institucionais consideradas indignas do exercício ou prejudiciais, dirigindo-se ao Sistema CFA/CRAs.
-D) É dever abdicar da independência técnica quando houver vínculo de emprego, e é direito publicar em nome próprio trabalho de que não participou.
+Assinale a alternativa que classifica corretamente a primeira conduta como dever e a segunda como direito na RN CFA nº 671/2025.
+
+A) Dever: apontar falhas institucionais prejudiciais; direito: comunicar imediatamente ao CRA mudança relevante de endereço.
+
+B) Dever: comunicar imediatamente mudança de endereço; direito: permitir que terceiro use o registro onde o profissional não atua.
+
+C) Dever: comunicar imediatamente mudança de endereço; direito: apontar ao Sistema falhas institucionais indignas ou prejudiciais.
+
+D) Dever: manter independência técnica; direito: assinar documento de terceiro sem orientação ou supervisão efetiva.
+
 #### Extra Dia 3.15
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** infrações, sanções, multa, processo e pessoa jurídica.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
-À luz da RN CFA nº 671/2025, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os arts. 6º, 13, 18, 22 e 23 sintetizados na revisão.
 
-A) A sanção pode ser aplicada antes do trânsito em julgado administrativo quando a infração parecer grave.
-B) Assinar documento de terceiro sem orientação ou supervisão constitui infração; sanções são acompanhadas de multa e dependem do processo e do trânsito em julgado, e suspensão e cancelamento não se aplicam à pessoa jurídica.
-C) A violação de sigilo é infração mesmo quando existe justa causa reconhecida pela norma.
-D) Pessoa jurídica registrada não se submete a dever, infração, advertência, censura ou multa ética alguma.
+Considere as afirmações sobre a RN CFA nº 671/2025: I. assinar documento de terceiro sem orientação ou supervisão é infração; II. a sanção vem acompanhada da multa aplicável e depende de processo e trânsito administrativo; III. suspensão e cancelamento não se aplicam à pessoa jurídica; IV. a pessoa jurídica registrada fica fora de toda disciplina ética. Assinale a opção correta.
+
+A) Estão corretas apenas I e II, ficando excluídas III e IV.
+
+B) Estão corretas apenas I, III e IV, ficando excluída II.
+
+C) Estão corretas apenas II e IV, ficando excluídas I e III.
+
+D) Estão corretas apenas I, II e III, ficando excluída IV.
+
 #### Extra Dia 3.16
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** relação adversativa de conectores.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues).
 
-Leia: “O CRA-PR possui autonomia administrativa; contudo, deve executar as diretrizes do CFA.” O conector “contudo” estabelece relação de:
+- **Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues), no quadro de relações de sentido que classifica “contudo” como adversativo.
 
-A) causa.
-B) conclusão.
-C) finalidade.
-D) oposição ou ressalva.
+Em “O CRA-PR possui autonomia administrativa; contudo, deve executar as diretrizes do CFA”, o conector destacado introduz uma relação de:
+
+A) explicação causal.
+
+B) oposição adversativa.
+
+C) finalidade projetada.
+
+D) conclusão lógica.
+
 #### Extra Dia 3.17
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** coesão referencial e ambiguidade pronominal.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues).
 
-No período “O diretor entregou ao conselheiro seu relatório”, assinale a alternativa correta.
+- **Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues), no trecho sobre possessivo com dois antecedentes nominais compatíveis.
 
-A) O pronome “seu” pode retomar “diretor” ou “conselheiro”; para eliminar a ambiguidade, deve-se explicitar “o relatório do diretor” ou “o relatório do conselheiro”, conforme o sentido pretendido.
-B) “Seu” retoma obrigatoriamente o termo mais próximo, sem possibilidade de outra leitura.
-C) A frase é agramatical porque pronomes possessivos não podem retomar pessoas.
-D) A ambiguidade desaparece se “seu” for retirado: “O diretor entregou ao conselheiro relatório”, sem necessidade de definir a posse.
+No período “O diretor entregou ao conselheiro seu relatório”, assinale a análise correta da referência do pronome possessivo.
+
+A) “Seu” admite os dois antecedentes; a posse deve ser explicitada como “relatório do diretor” ou “relatório do conselheiro”, conforme a intenção.
+
+B) “Seu” admite somente “conselheiro” por proximidade; deslocar o pronome para antes do substantivo elimina qualquer outra interpretação possível.
+
+C) “Seu” admite somente “diretor” por exercer função de sujeito; trocar “entregou” por “encaminhou” resolve a referência sem indicar o possuidor.
+
+D) “Seu” não admite antecedente pessoal nessa construção; retirar o possessivo torna inequívoco que o relatório pertence ao diretor.
+
 #### Extra Dia 3.18
 - **Dia:** Dia 3
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** concordância com `haver`, `existir` e `fazer`.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: haver, existir e concordância](semana_02_estudo.md#s2-d3-revisao-portugues).
 
@@ -7668,56 +8241,77 @@ B) Fazem dois anos que o processo começou e houveram novas manifestações.
 C) Deve haver providências, existiam inconsistências no relatório e faz dois anos que o processo começou.
 D) Devem haver providências, existia três inconsistências e fazem dois anos desde a decisão.
 #### Extra Dia 3.19
+
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** fusão da preposição `a` com artigo feminino.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues).
 
-Assinale a alternativa em que o emprego da crase está correto.
+- **Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues), especialmente o teste da fusão entre preposição e artigo e as vedações antes de verbo, termo masculino e certos pronomes.
 
-A) O conselheiro começou à analisar o processo recebido.
-B) O cidadão encaminhou a manifestação à Ouvidoria do CRA-PR.
-C) O CRA-PR submeteu o Regimento à CFA para exame.
-D) A equipe entregou o relatório à revisar pelo diretor.
+Assinale a alternativa em que todos os empregos do acento grave obedecem à norma-padrão.
+
+A) A comissão começou à examinar os autos e voltou à atuar durante a sessão.
+
+B) A servidora dirigiu-se à unidade e entregou o ofício à gerente responsável.
+
+C) O parecer foi remetido à um conselheiro e ficou disponível à qualquer interessado.
+
+D) A equipe compareceu à cada setor e permaneceu face à face com os responsáveis.
+
 #### Extra Dia 3.20
 
 - **Dia:** Dia 3
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** pontuação de termos essenciais, oração deslocada e aposto.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 3 — Português: pontuação](semana_02_estudo.md#s2-d3-revisao-portugues).
 
-Assinale a alternativa com pontuação adequada.
+- **Referência:** [Revisão fixa do Dia 3 — Português: pontuação](semana_02_estudo.md#s2-d3-revisao-portugues), no contraste entre vírgula de termo deslocado ou aposto e separação indevida de termos essenciais.
 
-A) Os membros do Plenário, deliberaram sobre o processo.
-B) O Presidente encaminhou, o relatório ao colegiado.
-C) Embora o CRA-PR possua autonomia administrativa o Regimento, deve ser submetido ao CFA.
-D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em primeira instância regional.
+Assinale a alternativa cuja pontuação está integralmente de acordo com a norma-padrão.
+
+A) Durante a sessão, os conselheiros, analisaram o recurso administrativo.
+
+B) A relatora apresentou, os fundamentos ao Plenário durante a reunião.
+
+C) O parecer que havia sido revisado, recebeu a aprovação unânime do colegiado.
+
+D) A relatora, responsável pelo parecer, apresentou sua conclusão ao Plenário.
+
 ## Gabarito das questões extras do Dia 3
 
 | Extra | Resposta |
 |---:|:---:|
 | 3.1 | C |
-| 3.2 | A |
+| 3.2 | B |
 | 3.3 | D |
 | 3.4 | B |
 | 3.5 | C |
 | 3.6 | A |
 | 3.7 | D |
-| 3.8 | B |
+| 3.8 | C |
 | 3.9 | C |
 | 3.10 | A |
 | 3.11 | B |
 | 3.12 | D |
 | 3.13 | A |
 | 3.14 | C |
-| 3.15 | B |
-| 3.16 | D |
+| 3.15 | D |
+| 3.16 | B |
 | 3.17 | A |
 | 3.18 | C |
 | 3.19 | B |
@@ -7726,6 +8320,7 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 ## Comentários das questões extras do Dia 3
 
 #### Comentário Extra Dia 3.1
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -7734,21 +8329,22 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A RN CFA nº 651/2024 aprova o Regimento do CRA-PR; a RN CFA nº 671/2025 aprova o Código de Ética.
-- **B)** Incorreta. Decreto regulamentar detalha a aplicação da Lei, mas não a revoga nem a substitui.
-- **C)** Correta. A alternativa associa cada base ao respectivo objeto estudado.
-- **D)** Incorreta. As quatro bases se relacionam, mas possuem funções normativas diferentes.
+- **A)** a Lei não organiza internamente o CRA-PR, o Decreto não aprova o Código e as duas resoluções tiveram seus objetos trocados.
+- **B)** a alternativa redistribui incorretamente os objetos das quatro bases e atribui ao Decreto a criação legal do Sistema.
+- **C)** cada norma foi associada à sua função própria, da disciplina legal do exercício à aprovação do Código de Ética.
+- **D)** o Decreto regulamenta a Lei, o Regimento é aprovado pela RN nº 651 e nenhuma das resoluções cria a profissão ou a estrutura legal dos Conselhos.
 
-**Conceito:** função da Lei, do Decreto, do Regimento e do Código de Ética.
+**Conceito:** função distinta e complementar da Lei, do Decreto, do Regimento e do Código de Ética.
 
-**Pegadinha:** trocar as RNs nº 651 e nº 671 ou tratar regulamentação como revogação.
+**Pegadinha:** trocar os objetos das RNs nº 651 e nº 671 e confundir regulamentação com criação legal.
 
-**Como pensar:** associe Lei à estrutura, Decreto à execução, Regimento à organização regional e Código à conduta ética.
+**Como pensar:** associe cada documento a um verbo: a Lei disciplina, o Decreto regulamenta, o Regimento organiza e o Código orienta a conduta.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao), no quadro que separa Lei, Decreto, Regimento do CRA-PR e Código de Ética.
 
 #### Comentário Extra Dia 3.2
-**Alternativa correta: A.**
+
+**Alternativa correta: B.**
 
 **Nível:** Médio
 
@@ -7756,18 +8352,18 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Correta. A opção reúne atividades e níveis funcionais expressamente sintetizados a partir do art. 2º.
-- **B)** Incorreta. A atividade não se limita à direção de órgãos federais nem exclui assessoria, pesquisa ou organizações privadas.
-- **C)** Incorreta. O campo não se reduz a documentos contábeis e inclui planejamento, implantação, coordenação e controle.
-- **D)** Incorreta. A Lei trata dos campos da Administração e de seus desdobramentos ou conexões, não de toda atividade técnica imaginável.
+- **A)** o campo profissional não se restringe à esfera federal nem exclui, por esse motivo, a atuação em organizações privadas.
+- **B)** o artigo inclui assessoria, documentos técnicos e trabalhos de coordenação ligados aos campos da Administração e a suas conexões.
+- **C)** planejamento e controle são atividades contempladas e não dependem de se converterem em documento contábil.
+- **D)** a complexidade técnica isolada não basta; a atividade precisa manter o vínculo material definido pela Lei.
 
-**Conceito:** campo da atividade profissional no art. 2º da Lei nº 4.769/1965.
+**Conceito:** alcance material das atividades previstas no art. 2º da Lei nº 4.769/1965.
 
-**Pegadinha:** reduzir o campo a uma tarefa ou ampliá-lo sem qualquer conexão com Administração.
+**Pegadinha:** restringir o campo por setor ou ampliá-lo para toda tarefa técnica sem conexão com Administração.
 
-**Como pensar:** reconheça três grupos: documentos técnicos, funções de assessoria/chefia/direção e trabalhos de análise e gestão.
+**Como pensar:** verifique primeiro a atividade e depois o vínculo dela com os campos da Administração, seus desdobramentos ou conexões.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente a síntese do art. 2º sobre documentos, funções e trabalhos nos campos da Administração.
 
 #### Comentário Extra Dia 3.3
 **Alternativa correta: D.**
@@ -7814,6 +8410,7 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: natureza do Sistema](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.5
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -7822,20 +8419,21 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Expedição ordinária de carteiras e primeira instância regional pertencem ao âmbito do CRA.
-- **B)** Incorreta. O CRA elabora seu Regimento, que é examinado pelo CFA; o Conselho Federal não substitui integralmente a iniciativa regional.
-- **C)** Correta. Examinar, modificar e aprovar regimentos, julgar recursos e votar ou alterar o Código estão no núcleo do art. 7º.
-- **D)** Incorreta. O CFA possui orientação sistêmica nacional, não fiscalização exclusiva no Paraná.
+- **A)** expedição ordinária de carteiras e julgamento em primeira instância são atribuições regionais.
+- **B)** manutenção de registro e fiscalização na jurisdição integram o núcleo de atuação dos CRAs.
+- **C)** exame de regimentos regionais e julgamento de recursos em última instância pertencem ao CFA.
+- **D)** elaboração do regimento próprio e execução territorial de diretrizes são tarefas do Conselho Regional.
 
-**Conceito:** competências do CFA.
+**Conceito:** separação de competências entre o CFA e os Conselhos Regionais.
 
-**Pegadinha:** inverter competência nacional e execução regional.
+**Pegadinha:** apresentar atribuições verdadeiras do Sistema, mas situá-las no nível federativo errado.
 
-**Como pensar:** verbos de uniformização, exame de regimentos e última instância apontam para o CFA.
+**Como pensar:** associe uniformização e última instância ao CFA; associe registro, fiscalização e primeira instância ao CRA.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao), no contraste entre orientação federal, exame de regimentos e última instância versus execução regional.
 
 #### Comentário Extra Dia 3.6
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -7844,20 +8442,21 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Correta. A alternativa reúne as finalidades regionais dos arts. 8º da Lei e 39 do Decreto.
-- **B)** Incorreta. Conselhos Regionais não exercem função legislativa federal nem revisão judicial.
-- **C)** Incorreta. Alteração nacional do Código não é competência unilateral do CRA, e seu Regimento segue para exame e aprovação do CFA.
-- **D)** Incorreta. Registro, fiscalização, julgamento e carteira integram expressamente as funções regionais.
+- **A)** a opção reúne funções regionais previstas na Lei e detalhadas no Decreto.
+- **B)** orientação nacional, alteração do Código e última instância recursal pertencem ao CFA.
+- **C)** fiscalização e julgamento regional de primeira instância não são transferidos integralmente ao Conselho Federal.
+- **D)** os CRAs mantêm registros e podem impor as penalidades previstas no âmbito de suas competências.
 
-**Conceito:** finalidades dos Conselhos Regionais.
+**Conceito:** núcleo funcional dos Conselhos Regionais de Administração.
 
-**Pegadinha:** reduzir o CRA a arrecadação ou transferir-lhe atribuições nacionais e judiciais.
+**Pegadinha:** deslocar atribuições entre o nível federal e o regional ou retirar parte do rol regional.
 
-**Como pensar:** associe o Regional aos verbos executar, fiscalizar, registrar, julgar e expedir.
+**Como pensar:** procure a alternativa que mantenha juntos os verbos regionais executar, fiscalizar, registrar, julgar e expedir.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os verbos executar, fiscalizar, registrar, julgar e expedir.
 
 #### Comentário Extra Dia 3.7
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -7866,21 +8465,45 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Diploma e registro cumprem funções diferentes, e a carteira tem fé em todo o território nacional.
-- **B)** Incorreta. A própria Lei caracteriza como ilegal e punível o exercício sem registro.
-- **C)** Incorreta. A carteira é expedida pelo Conselho Regional e também serve como identidade.
-- **D)** Correta. A opção reúne os efeitos do registro e as funções legais da carteira.
+- **A)** a carteira é expedida pelo Conselho Regional, tem fé nacional e também funciona como documento de identidade.
+- **B)** diploma e registro cumprem funções diferentes, de modo que o primeiro não substitui o segundo.
+- **C)** a falta de registro torna ilegal e punível o exercício, e a carteira é prova do exercício profissional.
+- **D)** a opção preserva tanto o efeito jurídico do registro quanto as três funções legais da carteira.
 
-**Conceito:** registro e carteira profissional.
+**Conceito:** exigência de registro e eficácia jurídica da carteira profissional.
 
-**Pegadinha:** limitar territorialmente a fé da carteira ou permitir que diploma substitua inscrição.
+**Pegadinha:** trocar o órgão expedidor, limitar a fé territorial ou fazer o diploma substituir a inscrição.
 
-**Como pensar:** registro habilita; carteira comprova e identifica.
+**Como pensar:** separe habilitação acadêmica, registro profissional e documento comprobatório; cada elemento possui função própria.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao), na síntese do art. 14 sobre exigência do registro e funções da carteira.
 
 #### Comentário Extra Dia 3.8
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Análise das alternativas:**
+
+- **A)** organizações abrangidas também se sujeitam a registro, e a primeira infração não produz automaticamente a consequência agravada descrita.
+- **B)** o registro não se limita a entidades públicas, e advertência e censura pertencem ao catálogo ético, não esgotam as penalidades da Lei.
+- **C)** a alternativa combina o registro da pessoa jurídica, as penalidades legais e a regra de agravamento da reincidência específica.
+- **D)** a inscrição de um sócio não gera a dispensa indicada, e cancelamento não decorre automaticamente de qualquer primeira infração.
+
+**Conceito:** registro de organizações e disciplina legal das penalidades e da reincidência.
+
+**Pegadinha:** confundir as sanções da Lei com as do Código de Ética e antecipar a consequência da reincidência.
+
+**Como pensar:** confira três blocos sucessivos: quem se registra, quais penalidades a Lei prevê e quando incide o agravamento.
+
+**Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao), no trecho sobre registro de organizações, penalidades legais e reincidência da mesma infração em cinco anos.
+
+#### Comentário Extra Dia 3.9
+
+**Alternativa correta: C.**
 
 **Nível:** Médio
 
@@ -7888,42 +8511,21 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O art. 15 prevê registro de empresas, entidades e escritórios técnicos que explorem as atividades alcançadas.
-- **B)** Correta. A alternativa combina registro da pessoa jurídica com o catálogo legal de penalidades e a regra específica de reincidência.
-- **C)** Incorreta. Advertência e censura pertencem ao catálogo ético; a Lei também prevê multa e suspensões.
-- **D)** Incorreta. O cancelamento do art. 16 não é automático na primeira infração, e a ampla defesa é expressamente assegurada na hipótese de incapacidade técnica.
+- **A)** o artigo não exclui consultoria, assessoramento nem cargos técnicos de direção e chefia.
+- **B)** pesquisa, planejamento, implantação, coordenação e controle fazem parte do detalhamento regulamentar.
+- **C)** a opção reúne os principais grupos do dispositivo e preserva o vínculo com conhecimentos de Administração.
+- **D)** chefia e direção podem integrar a atividade quando exigem a aplicação de técnicas próprias do campo profissional.
 
-**Conceito:** registro de organizações e penalidades legais.
+**Conceito:** alcance das atividades profissionais detalhadas no art. 3º do Decreto.
 
-**Pegadinha:** misturar o art. 16 da Lei com a gradação própria do Código de Ética.
+**Pegadinha:** aceitar um exemplo verdadeiro e, na mesma alternativa, excluir outros grupos expressamente previstos.
 
-**Como pensar:** mantenha duas caixas: penalidades da Lei e sanções ético-disciplinares da RN CFA nº 671/2025.
+**Como pensar:** rejeite opções que tratem um dos grupos do artigo como se ele excluísse documentos, gestão, consultoria ou ensino pertinente.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao).
-
-#### Comentário Extra Dia 3.9
-**Alternativa correta: C.**
-
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
-
-**Análise das alternativas:**
-
-- **A)** Incorreta. Magistério é uma das possibilidades, não o limite do campo.
-- **B)** Incorreta. Chefia, direção, assessoramento e consultoria podem integrar a atividade quando exigem conhecimentos de Administração.
-- **C)** Correta. A opção sintetiza os grupos de atividades detalhados no art. 3º do Decreto.
-- **D)** Incorreta. O Decreto descreve expressamente o campo e a atividade profissional.
-
-**Conceito:** detalhamento regulamentar da atividade profissional.
-
-**Pegadinha:** selecionar apenas um exemplo do artigo e tratá-lo como rol exclusivo.
-
-**Como pensar:** o Decreto operacionaliza a Lei mediante documentos, estudos, gestão, cargos e ensino pertinente.
-
-**Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os grupos de documentos, trabalhos, cargos, consultoria e magistério do art. 3º.
 
 #### Comentário Extra Dia 3.10
+
 **Alternativa correta: A.**
 
 **Nível:** Difícil
@@ -7932,20 +8534,21 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Correta. A opção separa as regras dos arts. 6º e 7º e inclui a indicação obrigatória do registro após a assinatura.
-- **B)** Incorreta. O parágrafo único do art. 6º torna obrigatória a citação do número de registro.
-- **C)** Incorreta. O art. 7º dirige a exigência também às empresas privadas.
-- **D)** Incorreta. A simples aposição posterior de assinatura não apaga exigências de elaboração, registro, responsabilidade e ressalvas aplicáveis.
+- **A)** a opção preserva a elaboração e assinatura por registrado, a ressalva do cargo público, a posição do número de registro e a exceção do documento oficial.
+- **B)** ignora a ressalva do art. 6º, desloca o número para antes da assinatura e inventa exceção geral para empresas privadas.
+- **C)** assinatura posterior não substitui a elaboração regular, o número é obrigatório e a ressalva não se limita a autoridade federal.
+- **D)** a exigência não se restringe a laudos, e autoridades e empresas privadas devem cobrar a assinatura nas condições do art. 7º.
 
-**Conceito:** elaboração e assinatura de documentos profissionais.
+**Conceito:** elaboração, assinatura, número de registro e ressalvas aplicáveis aos documentos profissionais.
 
-**Pegadinha:** fundir as ressalvas dos arts. 6º e 7º ou esquecer o número de registro.
+**Pegadinha:** fundir os dois artigos, ampliar suas exceções ou tratar assinatura posterior como regularização automática.
 
-**Como pensar:** art. 6º disciplina documento e assinatura; art. 7º exige que autoridades e empresas cobrem a assinatura regular.
+**Como pensar:** confira separadamente quem elabora e assina, onde aparece o registro, quem deve exigir a assinatura e qual documento oficial é ressalvado.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente as regras e ressalvas dos arts. 6º e 7º do Decreto nº 61.934/1967.
 
 #### Comentário Extra Dia 3.11
+
 **Alternativa correta: B.**
 
 **Nível:** Difícil
@@ -7954,42 +8557,44 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O art. 9º exige carteira e prova do pleno gozo dos direitos sociais.
-- **B)** Correta. A alternativa articula corretamente os arts. 9º, 10 e 11 do Decreto.
-- **C)** Incorreta. A fiscalização também cabe ao CRA competente.
-- **D)** Incorreta. Experiência não produz regularização cadastral automática.
+- **A)** o Decreto também exige prova do gozo dos direitos sociais, não admite experiência como registro e não reserva a fiscalização ao CFA.
+- **B)** a alternativa integra corretamente os requisitos do art. 9º, o efeito do art. 10 e a competência fiscalizatória do art. 11.
+- **C)** diploma não substitui carteira e registro, o exercício sem registro é ilegal e o CFA também participa da fiscalização.
+- **D)** as regras não criam a dispensa geral indicada para servidor, nem entregam a fiscalização ao órgão empregador.
 
-**Conceito:** exercício, registro e fiscalização no Decreto.
+**Conceito:** requisitos do exercício profissional, consequência da falta de registro e órgãos fiscalizadores.
 
-**Pegadinha:** retirar o CRA da fiscalização ou reduzir a exigência ao diploma.
+**Pegadinha:** fazer diploma ou experiência substituir registro e atribuir a fiscalização a um único órgão.
 
-**Como pensar:** carteira e direitos sociais habilitam a comprovação; registro ausente torna o exercício ilegal; CRA e CFA fiscalizam.
+**Como pensar:** vincule cada artigo a uma etapa: art. 9º comprovação, art. 10 irregularidade do exercício e art. 11 fiscalização.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao), no trecho que articula carteira, direitos sociais, falta de registro e fiscalização pelo CRA e pelo CFA.
 
 #### Comentário Extra Dia 3.12
+
 **Alternativa correta: D.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A jurisdição do CRA-PR é estadual, e o Plenário possui deliberação e julgamento.
-- **B)** Incorreta. O CRA-PR é autarquia de direito público, e a Ouvidoria não é instância julgadora.
-- **C)** Incorreta. Autonomia não equivale a soberania; o Regional executa diretrizes e submete seu Regimento ao CFA.
-- **D)** Correta. A alternativa reúne natureza, sede, jurisdição e posição regimental do Plenário.
+- **A)** a jurisdição alcança todo o Paraná, e o Plenário possui competência deliberativa e julgadora.
+- **B)** o CRA-PR é autarquia de direito público, e o Plenário não se reduz à administração cotidiana nem julga recursos do CFA.
+- **C)** a jurisdição é estadual, a primeira instância é regional e a autonomia não afasta as diretrizes federais.
+- **D)** a descrição reúne corretamente natureza, sede, alcance territorial e posição regimental do Plenário.
 
-**Conceito:** natureza e organização básica do CRA-PR.
+**Conceito:** natureza e organização institucional básica do CRA-PR.
 
-**Pegadinha:** transformar autonomia em independência normativa ou Ouvidoria em órgão decisório.
+**Pegadinha:** confundir autonomia com soberania, ampliar a jurisdição ou trocar a instância ocupada pelo Plenário.
 
-**Como pensar:** fixe quatro dados: autarquia, capital, Paraná e Plenário como deliberação superior/primeira instância.
+**Como pensar:** fixe quatro chaves contíguas: autarquia pública, sede na capital, jurisdição paranaense e Plenário como deliberação superior e primeira instância.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao), nos arts. 1º, 2º e 4º sintetizados sobre natureza, sede, jurisdição e Plenário.
 
 #### Comentário Extra Dia 3.13
+
 **Alternativa correta: A.**
 
 **Nível:** Difícil
@@ -7998,20 +8603,21 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Correta. A opção preserva registro, jurisdição, atividade abrangida, especificidades da pessoa jurídica e mandato eletivo.
-- **B)** Incorreta. Trabalho em TI, sozinho, não basta para atrair o Código fora de seu âmbito subjetivo e material.
-- **C)** Incorreta. Pessoas jurídicas registradas podem ser alcançadas, observadas suas particularidades.
-- **D)** Incorreta. O art. 4º, § 3º, inclui o mandato eletivo no CFA e nos CRAs.
+- **A)** as três afirmações reproduzem aspectos complementares do âmbito subjetivo e material do Código.
+- **B)** o mandato eletivo exercido no CFA ou nos CRAs também é considerado atividade profissional para a incidência ética.
+- **C)** pessoas jurídicas registradas podem ser alcançadas, desde que se observem suas especificidades.
+- **D)** a pessoa física registrada no exercício de atividade abrangida constitui sujeito típico do Código.
 
-**Conceito:** âmbito subjetivo e material do Código de Ética.
+**Conceito:** incidência do Código sobre pessoas físicas, pessoas jurídicas e titulares de mandato no Sistema.
 
-**Pegadinha:** universalizar o Código para toda atividade tecnológica ou excluir pessoa jurídica e mandatário.
+**Pegadinha:** excluir uma das três hipóteses expressamente contempladas ou tratar o alcance como restrito à pessoa natural.
 
-**Como pensar:** confira três filtros: registro, jurisdição e exercício de atividade abrangida; depois verifique a regra do mandato.
+**Como pensar:** valide separadamente registro e atividade, especificidades da pessoa jurídica e regra própria do mandato eletivo.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente o art. 4º, §§ 2º e 3º, sobre pessoas registradas e mandato eletivo.
 
 #### Comentário Extra Dia 3.14
+
 **Alternativa correta: C.**
 
 **Nível:** Difícil
@@ -8020,21 +8626,22 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Divulgação indevida e obstrução da fiscalização são incompatíveis com o Código.
-- **B)** Incorreta. Cessão de registro não é direito, e o Código permite recusar condições degradantes.
-- **C)** Correta. Comunicação cadastral imediata é dever; apontar determinadas falhas ao Sistema é direito.
-- **D)** Incorreta. O vínculo de emprego não elimina a independência técnica, e publicar trabalho alheio constitui infração.
+- **A)** as condutas existem no Código, mas suas categorias foram invertidas; apontar falhas é direito e comunicar endereço é dever.
+- **B)** a primeira classificação está correta, porém permitir uso do registro onde não atua constitui infração, não direito.
+- **C)** a comunicação cadastral imediata é dever, e o apontamento qualificado de falhas ao Sistema é direito.
+- **D)** independência técnica é dever, mas assinar documento de terceiro sem orientação ou supervisão é infração.
 
-**Conceito:** distinção entre dever e direito ético.
+**Conceito:** diferença funcional entre dever, direito e infração no Código de Ética.
 
-**Pegadinha:** apresentar infração como prerrogativa ou inverter direito e obrigação.
+**Pegadinha:** inverter categorias de condutas lícitas ou apresentar uma infração como prerrogativa profissional.
 
-**Como pensar:** dever manda agir; direito protege uma faculdade; infração tipifica conduta proibida.
+**Como pensar:** pergunte se o Código manda agir, protege uma faculdade ou tipifica uma proibição antes de classificar cada conduta.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao), no contraste entre comunicação cadastral, apontamento de falhas e condutas infracionais.
 
 #### Comentário Extra Dia 3.15
-**Alternativa correta: B.**
+
+**Alternativa correta: D.**
 
 **Nível:** Difícil
 
@@ -8042,67 +8649,69 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O art. 23 exige trânsito em julgado administrativo antes da sanção.
-- **B)** Correta. A alternativa reúne infração expressa, multa conjunta, garantia processual e limite das sanções à pessoa jurídica.
-- **C)** Incorreta. O Código tipifica a violação de sigilo sem justa causa, não toda revelação em qualquer circunstância.
-- **D)** Incorreta. Pessoa jurídica pode estar no âmbito do Código e receber advertência, censura e multa compatíveis.
+- **A)** a afirmação III também está correta, pois suspensão e cancelamento são incompatíveis com pessoa jurídica.
+- **B)** II é verdadeira e IV é falsa; gravidade aparente não dispensa o processo nem o trânsito em julgado administrativo.
+- **C)** I e III são verdadeiras, enquanto IV é falsa porque a pessoa jurídica registrada pode submeter-se à disciplina compatível.
+- **D)** I descreve infração, II preserva multa e garantias processuais, III limita sanções incompatíveis e IV universaliza uma exclusão inexistente.
 
-**Conceito:** infrações, sanções, multa, processo e pessoa jurídica.
+**Conceito:** articulação entre tipificação, devido processo, multa e sanções aplicáveis à pessoa jurídica.
 
-**Pegadinha:** confundir incidência do Código com compatibilidade de suspensão e cancelamento.
+**Pegadinha:** confundir a incompatibilidade de duas sanções com exclusão completa da pessoa jurídica do Código.
 
-**Como pensar:** siga a ordem fato → inciso → processo → trânsito → sanção compatível e multa.
+**Como pensar:** siga a sequência conduta tipificada, processo, trânsito, sanção e compatibilidade com a natureza do sujeito.
 
-**Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao).
+**Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao), especialmente os arts. 6º, 13, 18, 22 e 23 sintetizados na revisão.
 
 #### Comentário Extra Dia 3.16
-**Alternativa correta: D.**
 
-**Nível:** Difícil
+**Alternativa correta: B.**
+
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. “Contudo” não apresenta motivo para a autonomia.
-- **B)** Incorreta. Conclusão seria marcada por “portanto” ou “logo”.
-- **C)** Incorreta. Finalidade seria introduzida por expressão como “para que”.
-- **D)** Correta. O conector introduz ressalva à possível leitura de autonomia como independência absoluta.
+- **A)** a segunda oração não apresenta a causa da autonomia administrativa.
+- **B)** a segunda oração estabelece ressalva ou contraste em relação à expectativa de independência sugerida pela primeira.
+- **C)** não há propósito introduzido, que poderia ser marcado por “para que” ou expressão equivalente.
+- **D)** “contudo” não extrai uma conclusão; conectores conclusivos seriam “portanto” ou “logo”.
 
-**Conceito:** relação adversativa de conectores.
+**Conceito:** valor semântico adversativo de conectores.
 
-**Pegadinha:** interpretar a segunda oração como consequência, em vez de limite à expectativa criada pela primeira.
+**Pegadinha:** interpretar a obrigação como consequência da autonomia, em vez de limite à leitura absoluta dessa autonomia.
 
-**Como pensar:** substitua por “porém”; preservado o sentido, a relação é de oposição ou ressalva.
+**Como pensar:** substitua “contudo” por “porém”; se o sentido central permanecer, a relação é adversativa.
 
-**Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues).
+**Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues), no quadro de relações de sentido que classifica “contudo” como adversativo.
 
 #### Comentário Extra Dia 3.17
+
 **Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Correta. Há dois antecedentes masculinos possíveis, e a explicitação da posse elimina a ambiguidade.
-- **B)** Incorreta. Pronome possessivo não retoma obrigatoriamente o antecedente mais próximo.
-- **C)** Incorreta. O uso de possessivo com referente pessoal é gramatical.
-- **D)** Incorreta. Retirar o possessivo deixa indefinida a relação de posse e não garante o sentido pretendido.
+- **A)** diretor e conselheiro são antecedentes masculinos possíveis, e a explicitação nominal seleciona a leitura pretendida.
+- **B)** proximidade linear não cria regra de retomada obrigatória, e a posição do possessivo não identifica por si só o possuidor.
+- **C)** a função de sujeito não garante exclusividade referencial, e a mera troca do verbo mantém os dois candidatos.
+- **D)** o possessivo pode retomar pessoa, e sua retirada deixa a posse indefinida em vez de atribuí-la ao diretor.
 
-**Conceito:** coesão referencial e ambiguidade pronominal.
+**Conceito:** coesão referencial e resolução de ambiguidade pronominal.
 
-**Pegadinha:** adotar proximidade linear como regra absoluta de referência.
+**Pegadinha:** tratar proximidade ou função sintática como regra automática de antecedência.
 
-**Como pensar:** substitua o pronome por cada antecedente possível; se ambas as leituras funcionarem, explicite o referente.
+**Como pensar:** teste o possessivo com cada nome compatível; se ambas as leituras funcionarem, nomeie expressamente o possuidor.
 
-**Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues).
+**Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues), no trecho sobre possessivo com dois antecedentes nominais compatíveis.
 
 #### Comentário Extra Dia 3.18
 **Alternativa correta: C.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -8122,70 +8731,72 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Português: haver, existir e concordância](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 #### Comentário Extra Dia 3.19
+
 **Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não ocorre crase antes do infinitivo “analisar”.
-- **B)** Correta. A preposição exigida por “encaminhar a” encontra o artigo feminino de “a Ouvidoria”, formando “à”.
-- **C)** Incorreta. Diante da sigla masculina CFA, usa-se “ao CFA”.
-- **D)** Incorreta. “Revisar” é verbo e não admite artigo feminino formador de crase.
+- **A)** não ocorre crase antes dos infinitivos “examinar” e “atuar”.
+- **B)** “dirigir-se” e “entregar” exigem preposição, e os nomes femininos determinados admitem os artigos que formam “à unidade” e “à gerente”.
+- **C)** não se usa crase diante do artigo masculino “um” nem, nesse contexto, diante do pronome indefinido “qualquer”.
+- **D)** “cada” não admite o artigo feminino necessário, e a locução cristalizada é “face a face”, sem crase.
 
-**Conceito:** fusão da preposição `a` com artigo feminino.
+**Conceito:** fusão da preposição “a” com artigo feminino em complementos regidos.
 
-**Pegadinha:** empregar acento grave antes de verbo ou de termo masculino.
+**Pegadinha:** aplicar o acento grave diante de verbo, termo masculino, pronome indefinido ou expressão repetida.
 
-**Como pensar:** substitua o termo feminino por “Plenário”; “ao Plenário” confirma “à Ouvidoria”.
+**Como pensar:** verifique primeiro a regência e depois a presença do artigo; só a coexistência dos dois elementos produz crase.
 
-**Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues).
+**Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues), especialmente o teste da fusão entre preposição e artigo e as vedações antes de verbo, termo masculino e certos pronomes.
 
 #### Comentário Extra Dia 3.20
+
 **Alternativa correta: D.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A vírgula separa indevidamente o sujeito “Os membros do Plenário” do verbo “deliberaram”.
-- **B)** Incorreta. A vírgula separa o verbo “encaminhou” de seus complementos.
-- **C)** Incorreta. Falta vírgula depois da oração concessiva deslocada, e a vírgula inserida separa o sujeito “o Regimento” do verbo.
-- **D)** Correta. As vírgulas isolam o aposto explicativo “órgão colegiado de deliberação superior”.
+- **A)** a segunda vírgula separa indevidamente o sujeito “os conselheiros” do verbo “analisaram”.
+- **B)** a vírgula separa o verbo “apresentou” de seu objeto direto “os fundamentos”.
+- **C)** a vírgula colocada depois da oração restritiva separa o sujeito completo do predicado.
+- **D)** as duas vírgulas isolam adequadamente o aposto explicativo “responsável pelo parecer”.
 
-**Conceito:** pontuação de termos essenciais, oração deslocada e aposto.
+**Conceito:** emprego da vírgula em aposto e proibição de separar termos essenciais.
 
-**Pegadinha:** reproduzir pausas de fala que rompem sujeito, verbo e complemento.
+**Pegadinha:** inserir pausa gráfica entre sujeito e verbo ou entre verbo e complemento.
 
-**Como pensar:** preserve o esqueleto sujeito–verbo–complemento e isole apenas trechos explicativos ou deslocados.
+**Como pensar:** identifique o núcleo do sujeito e os complementos do verbo; depois isole apenas o segmento explicativo intercalado.
 
-**Referência:** [Revisão fixa do Dia 3 — Português: pontuação](semana_02_estudo.md#s2-d3-revisao-portugues).
-
-
----
+**Referência:** [Revisão fixa do Dia 3 — Português: pontuação](semana_02_estudo.md#s2-d3-revisao-portugues), no contraste entre vírgula de termo deslocado ou aposto e separação indevida de termos essenciais.
 
 # Dia 4 — Segurança da Informação e Redes
 
 ## Questões principais
 
-### S2D4Q151 — Segurança da informação como processo contínuo de gestão de riscos
+### S2D4Q151 — Gestão contínua do risco após a implantação de um controle
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
+**Referência:** [1. Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco), especialmente as seis etapas do processo e o tratamento do risco residual.
 
-Uma equipe afirma que a aquisição de uma ferramenta de segurança tornará o portal institucional definitivamente seguro. À luz da gestão de riscos, assinale a alternativa correta.
+Depois de implantar um WAF no portal institucional, a equipe propõe encerrar a análise porque considera o ambiente definitivamente seguro. À luz da gestão de riscos, assinale a alternativa correta.
 
-A) Segurança é um estado binário alcançado quando todos os ativos recebem o mesmo conjunto de controles.
-B) A segurança exige identificar ativos, ameaças e vulnerabilidades, estimar probabilidade e impacto, selecionar controles proporcionais e monitorar sua eficácia.
-C) A seleção de um controle eficaz elimina a necessidade de reavaliar mudanças no ambiente e no perfil de ameaças.
-D) A gestão de riscos se limita a corrigir vulnerabilidades técnicas, pois pessoas, processos e fornecedores não alteram o risco.
+A) Encerrar a análise após o WAF, registrar o risco como eliminado e reabrir a avaliação somente se ocorrer um incidente no portal.
+
+B) Aplicar a mesma configuração a todos os ativos, registrar conformidade uniforme e substituir a reavaliação por varreduras periódicas.
+
+C) Revisar ativos, ameaças e vulnerabilidades, estimar probabilidade e impacto, acompanhar o controle e decidir sobre o risco residual.
+
+D) Restringir a análise a falhas técnicas do portal, mantendo pessoas, processos, fornecedores e mudanças operacionais fora do risco.
 
 ### S2D4Q152 — Risco residual e decisão de tratamento após a aplicação de controles
 
@@ -8197,10 +8808,10 @@ D) A gestão de riscos se limita a corrigir vulnerabilidades técnicas, pois pes
 
 Após implantar MFA, segmentação e monitoramento, uma organização reavalia o risco de acesso indevido. Sobre o risco residual, assinale a alternativa correta.
 
-A) Corresponde ao risco calculado antes da aplicação dos controles e deixa de existir assim que uma medida preventiva é implantada.
+A) É o risco que permanece após os controles e deve ser reavaliado para aceitação ou tratamento adicional conforme o contexto.
 B) Deve ser obrigatoriamente igual a zero para que o serviço possa permanecer em operação.
 C) Deve ser sempre transferido a terceiro, ainda que seja compatível com os critérios de aceitação da organização.
-D) É o risco que permanece após os controles e deve ser reavaliado para aceitação ou tratamento adicional conforme o contexto.
+D) Corresponde ao risco calculado antes da aplicação dos controles e deixa de existir assim que uma medida preventiva é implantada.
 
 ### S2D4Q153 — Confidencialidade como prevenção da divulgação não autorizada
 
@@ -8219,7 +8830,7 @@ D) autenticidade.
 
 ### S2D4Q154 — Um único incidente pode comprometer simultaneamente os três objetivos da tríade CIA
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -8235,8 +8846,8 @@ Está correto o que se afirma em:
 
 A) I, apenas.
 B) III, apenas.
-C) I e II, apenas.
-D) I, II e III.
+C) I, II e III.
+D) I e II, apenas.
 
 ### S2D4Q155 — Autenticação comprova identidade; autorização determina ações permitidas
 
@@ -8268,39 +8879,45 @@ B) Duas senhas distintas cadastradas pelo mesmo usuário.
 C) Impressão digital e reconhecimento facial.
 D) Senha pessoal e token criptográfico sob posse do usuário.
 
-### S2D4Q157 — Autorização baseada em atributos, em contraste com autorização baseada em papéis
+### S2D4Q157 — Decisão de acesso por atributos de sujeito, recurso, ação e contexto
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.2 Autorização](semana_02_estudo.md#s2-d4-identidade-auditoria), nos trechos que distinguem RBAC, ABAC, listas de controle de acesso e accounting.
 
-Uma política libera determinado relatório somente quando os atributos do usuário, do recurso, da ação, do dispositivo e do horário satisfazem as condições definidas. Esse modelo é característico de:
+Uma política permite exportar um relatório somente quando departamento do usuário, classificação do recurso, ação solicitada, estado do dispositivo e horário atendem às condições definidas. O modelo predominante é:
 
-A) ABAC.
-B) RBAC baseado exclusivamente no nome do cargo.
-C) autenticação biométrica.
-D) accounting de sessões.
+A) ACL estrita, porque cada decisão depende apenas de uma entrada fixa entre uma identidade e um recurso, sem outros atributos.
 
-### S2D4Q158 — AAA significa Authentication, Authorization e Accounting
+B) RBAC, porque qualquer característica do usuário transforma todas as condições contextuais em um único papel funcional.
+
+C) ABAC, porque a decisão combina atributos do sujeito, do recurso, da ação e do contexto em que a solicitação ocorre.
+
+D) Accounting, porque o registro posterior da sessão avalia os atributos e concede a autorização antes de cada operação.
+
+### S2D4Q158 — Função do accounting no modelo AAA
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.3 Auditoria e accounting](semana_02_estudo.md#s2-d4-identidade-auditoria) e [3.5 Modelo AAA](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente a diferença entre produzir registros e examiná-los.
 
-No modelo técnico tradicional AAA, o terceiro A corresponde a accounting. Assinale a interpretação correta desse componente.
+Um concentrador registra início e término das sessões, volume consumido e operações realizadas por cada identidade. No modelo AAA, essa função deve ser classificada como:
 
-A) Ele comprova a identidade alegada antes do acesso e substitui a autenticação.
-B) Ele define, sozinho, todas as permissões associadas ao papel do usuário.
-C) Ele registra consumo, sessões e ações para responsabilização e controle, fornecendo insumos para auditoria sem ser sinônimo de todo o processo de auditoria.
-D) Ele produz não repúdio forte apenas por manter qualquer registro local, mesmo sem proteção ou contexto.
+A) Authentication, pois o registro da sessão é suficiente para comprovar novamente a identidade que iniciou o acesso.
+
+B) Authorization, pois os dados de consumo definem por si sós os recursos que o usuário poderá acessar na sessão.
+
+C) Accounting, pois registra sessões, consumo e ações para controle e responsabilização e fornece insumos à auditoria.
+
+D) Auditoria, pois a produção automática de qualquer log já constitui exame completo de controles e conformidade.
 
 ### S2D4Q159 — Não repúdio apoiado por assinatura digital e por uma cadeia adequada de evidências
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -8313,24 +8930,27 @@ B) Empregar assinatura digital, com proteção da chave privada, vínculo confi�
 C) Cifrar o documento com uma chave simétrica compartilhada entre todos os envolvidos, pois qualquer detentor da chave identifica exclusivamente o autor.
 D) Registrar o nome declarado pelo usuário em arquivo de texto sem controle de integridade.
 
-### S2D4Q160 — Requisitos de registros úteis para accounting, auditoria e investigação
+### S2D4Q160 — Contexto, integridade e correlação temporal dos registros
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.3 Auditoria e accounting](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente os campos de contexto e os requisitos de sincronização, retenção, acesso, integridade e análise.
 
-Para que registros de segurança apoiem responsabilização e investigação, é adequado:
+Uma investigação precisa correlacionar ações entre portal, proxy e diretório. Hoje os relógios divergem, alguns eventos não identificam origem nem resultado e os operadores podem editar os arquivos locais. Qual plano produz registros mais úteis e confiáveis?
 
-A) registrar somente o horário, pois identidade, origem e resultado podem ser inferidos posteriormente.
-B) permitir alteração dos logs pelos mesmos administradores cujas ações serão examinadas, para facilitar correções.
-C) coletar o maior volume possível e dispensar retenção, sincronização de relógios e análise.
-D) registrar contexto como quem fez o quê, quando, de onde, sobre qual recurso e com qual resultado, além de proteger a integridade e sincronizar os relógios.
+A) Registrar quem fez o quê, quando, de onde, sobre qual recurso e com qual resultado, sincronizar relógios, restringir alterações e definir retenção e análise.
+
+B) Sincronizar os relógios e centralizar os eventos, registrar apenas ações bem-sucedidas e dispensar proteção de integridade para reduzir o volume armazenado.
+
+C) Registrar ação e resultado e proteger os arquivos, substituir a identidade pelo IP da estação e eliminar os eventos assim que terminar a coleta diária.
+
+D) Registrar identidade e recurso, manter os relógios locais sem correlação e permitir que os operadores ajustem eventos antigos quando notarem divergências.
 
 ### S2D4Q161 — Distinção operacional entre ativo, ameaça, vulnerabilidade, evento e incidente
 
-**Nível:** Médio
+**Nível:** Muito difícil
 
 **Uso:** Aprofundamento
 
@@ -8355,12 +8975,12 @@ Um serviço exposto utiliza versão de software com falha explorável. A equipe 
 
 A) a falha explorável já é, por definição, um incidente confirmado.
 B) a chance de exploração isolada é o ativo, e o impacto é a ameaça.
-C) a falha é uma vulnerabilidade, enquanto o risco considera probabilidade e impacto adverso.
-D) vulnerabilidade e risco são sinônimos, pois ambos existem antes do ataque.
+C) vulnerabilidade e risco são sinônimos, pois ambos existem antes do ataque.
+D) a falha é uma vulnerabilidade, enquanto o risco considera probabilidade e impacto adverso.
 
 ### S2D4Q163 — Evento observado em contraste com incidente de segurança confirmado
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -8373,54 +8993,63 @@ B) Tanto o alerta quanto a cópia confirmada são apenas vulnerabilidades.
 C) A cópia não autorizada é uma ameaça potencial, mas não um incidente enquanto o atacante não for identificado.
 D) O alerta é uma ocorrência observável a ser analisada; a cópia indevida confirmada caracteriza incidente.
 
-### S2D4Q164 — Controle como medida de modificação do risco e sua relação com ameaça e vulnerabilidade
+### S2D4Q164 — Relação entre ameaça, vulnerabilidade e controle
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
+**Referência:** [4. Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco), na tabela de conceitos e no exemplo do gateway VPN.
 
-Em relação aos conceitos de ameaça, vulnerabilidade e controle, assinale a alternativa correta.
+Um grupo criminoso pode explorar uma falha conhecida no gateway VPN; a equipe avalia aplicar a correção e exigir MFA. Assinale a classificação correta dos três elementos.
 
-A) Um criminoso externo é vulnerabilidade porque explora sistemas, enquanto uma falha sem correção é ameaça.
-B) Um criminoso capaz de causar dano é ameaça, uma falha explorável é vulnerabilidade e a aplicação de correção ou MFA pode atuar como controle.
-C) Um controle é qualquer evento observado, mesmo que não modifique o risco.
-D) A existência de vulnerabilidade implica que o dano já ocorreu e transforma automaticamente o risco em incidente.
+A) O grupo é vulnerabilidade, a falha é controle e a correção com MFA representa a ameaça ao serviço.
 
-### S2D4Q165 — Distinção entre vírus dependente de hospedeiro e worm com propagação automática
+B) O grupo é ameaça, a falha é vulnerabilidade e a correção com MFA representa controles que modificam o risco.
 
-**Nível:** Médio
+C) O grupo é incidente, a falha é ameaça e a correção com MFA representa o ativo protegido pelo gateway.
 
-**Uso:** Aprofundamento
+D) O grupo é risco, a falha é incidente e a correção com MFA representa o evento observado pela equipe.
 
-**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
-
-Sobre vírus e worm, assinale a alternativa correta.
-
-A) O vírus se vincula a arquivo ou programa hospedeiro e depende de execução ou propagação associada; o worm pode se propagar automaticamente por redes ou sistemas.
-B) O worm exige sempre que o usuário execute um arquivo hospedeiro, enquanto o vírus obrigatoriamente se propaga sem interação.
-C) Ambos os termos designam qualquer software malicioso e podem ser usados como sinônimos.
-D) A diferença está apenas no objetivo: vírus coleta informações, e worm cifra arquivos para extorsão.
-
-### S2D4Q166 — Cavalo de Troia definido pelo disfarce e pela indução à execução
+### S2D4Q165 — Mecanismo de propagação de vírus e worm
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
+**Referência:** [5.1 Vírus e 5.2 Worm](semana_02_estudo.md#s2-d4-malware), nos trechos que distinguem vínculo a hospedeiro e propagação automática por redes ou sistemas.
 
-Um programa se apresenta como atualizador legítimo e induz o usuário a executá-lo. Depois de instalado, abre acesso remoto, mas não possui mecanismo obrigatório de autorreplicação. Essa descrição corresponde principalmente a:
+Em laboratório, a amostra X insere código em um executável e se dissemina quando o hospedeiro infectado é executado; a amostra Y procura outros sistemas e envia cópias de si sem depender de arquivo hospedeiro. A conclusão correta é:
 
-A) worm.
-B) vírus de setor de inicialização.
-C) cavalo de Troia.
-D) ataque DDoS.
+A) X apresenta comportamento de vírus, e Y, de worm; o critério decisivo é vínculo ao hospedeiro versus propagação automática.
+
+B) X apresenta comportamento de worm, e Y, de vírus; a dependência de um executável caracteriza autorreplicação pela rede.
+
+C) X e Y apresentam comportamento de worm; compartilhar cópias torna irrelevante a dependência de programa hospedeiro.
+
+D) X e Y apresentam comportamento de vírus; toda amostra maliciosa recebe essa classificação, qualquer que seja sua propagação.
+
+### S2D4Q166 — Disfarce e execução induzida em cavalo de Troia
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5.3 Cavalo de Troia](semana_02_estudo.md#s2-d4-malware), em contraste com os mecanismos de vírus, worm e spyware descritos na mesma seção.
+
+Um arquivo oferecido como atualização legítima é executado pelo usuário e instala acesso remoto oculto, sem infectar outro programa nem procurar automaticamente novos sistemas. A classificação principal é:
+
+A) worm, porque a abertura de acesso remoto demonstra que o código possui mecanismo de propagação automática.
+
+B) vírus, porque apresentar-se como atualização implica necessariamente inserir código em um arquivo hospedeiro.
+
+C) cavalo de Troia, porque o disfarce induz a execução e a categoria não exige autorreplicação obrigatória.
+
+D) spyware, porque qualquer acesso remoto oculto tem como finalidade exclusiva coletar informações do usuário.
 
 ### S2D4Q167 — Alcance do ransomware e sobreposição de categorias e efeitos de malware
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -8430,8 +9059,8 @@ Uma campanha maliciosa copia documentos, cifra compartilhamentos e interrompe o 
 
 A) Trata-se necessariamente de spyware, porque ransomware afeta somente a disponibilidade.
 B) O backup elimina a necessidade de conter o atacante e investigar eventual exfiltração.
-C) A cifração autorizada pelo atacante preserva a integridade, pois o conteúdo original ainda pode existir em backup.
-D) Ransomware pode combinar exfiltração, alteração ou cifração e interrupção, atingindo confidencialidade, integridade e disponibilidade.
+C) Ransomware pode combinar exfiltração, alteração ou cifração e interrupção, atingindo confidencialidade, integridade e disponibilidade.
+D) A cifração autorizada pelo atacante preserva a integridade, pois o conteúdo original ainda pode existir em backup.
 
 ### S2D4Q168 — Spyware, rootkit, bot e botnet como categorias distintas de malware
 
@@ -8448,24 +9077,27 @@ B) Spyware: coleta informações; rootkit: busca ocultar presença ou manter pri
 C) Bot: arquivo hospedeiro que só se propaga após execução manual; vírus: dispositivo comprometido controlado remotamente.
 D) Spyware: cifra arquivos para extorsão; rootkit: mensagem fraudulenta enviada por SMS; botnet: falha de configuração.
 
-### S2D4Q169 — Variações de phishing segundo alvo e canal
+### S2D4Q169 — Classificação de phishing por alvo e canal
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
+**Referência:** [6. Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing), na lista que distingue alvo específico, pessoa de alta relevância, SMS ou mensagem e voz.
 
-Sobre as variações de phishing, assinale a alternativa correta.
+Considere quatro campanhas: I. mensagem SMS leva servidores a uma página falsa; II. ligação de voz solicita um código de acesso; III. e-mail personalizado mira um analista específico; IV. e-mail elaborado mira a presidência do órgão. A associação correta é:
 
-A) Smishing utiliza exclusivamente chamadas de voz, enquanto vishing usa mensagens SMS.
-B) Whaling designa qualquer campanha genérica enviada em massa, sem considerar o perfil do alvo.
-C) Spear phishing é direcionado a alvo específico; whaling mira pessoa de alta relevância; smishing usa mensagem ou SMS; e vishing usa voz.
-D) Phishing exige sempre arquivo malicioso e não pode buscar somente credenciais ou pagamento.
+A) I–vishing; II–smishing; III–spear phishing; IV–whaling.
+
+B) I–smishing; II–vishing; III–spear phishing; IV–whaling.
+
+C) I–smishing; II–vishing; III–whaling; IV–spear phishing.
+
+D) I–whaling; II–spear phishing; III–smishing; IV–vishing.
 
 ### S2D4Q170 — Manipulação por autoridade, urgência e pretexto, com verificação por canal independente
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -8493,35 +9125,41 @@ B) MFA protege a conta mesmo quando o atacante captura uma sessão autenticada o
 C) Dois segredos do tipo senha constituem MFA e neutralizam qualquer reutilização de credenciais.
 D) MFA reduz o impacto do roubo de senha, mas certos ataques podem capturar sessão, induzir aprovação ou explorar a recuperação da conta.
 
-### S2D4Q172 — Spoofing como falsificação de identidade ou origem aparente
+### S2D4Q172 — Spoofing de IP e limite do caminho de retorno
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
+**Referência:** [7.1 Spoofing](semana_02_estudo.md#s2-d4-ataques-rede), especialmente a definição de falsificação de origem e a ressalva sobre o retorno em IP spoofing.
 
-Assinale a alternativa que caracteriza corretamente spoofing.
+Um sensor registra datagramas com endereço IP de origem pertencente a terceiros. O serviço envia as respostas a esses endereços, e não há evidência de sessão bidirecional com o emissor. Assinale a análise correta.
 
-A) Consiste apenas na captura passiva de pacotes, sem falsificação de identidade ou origem.
-B) Consiste na falsificação de identidade ou origem aparente; seus efeitos variam conforme o protocolo, e IP spoofing não garante o recebimento das respostas.
-C) Exige sempre o comprometimento prévio de uma autoridade certificadora.
-D) É sinônimo de DDoS, pois depende necessariamente de múltiplas origens distribuídas.
+A) O caso caracteriza sniffing, pois a simples captura passiva permite escolher a origem e receber todas as respostas do serviço.
 
-### S2D4Q173 — Captura por sniffing em contraste com interceptação ativa on-path ou man-in-the-middle (MITM)
+B) O caso é compatível com spoofing, pois a origem pode ter sido falsificada; essa falsificação, isoladamente, não garante ao emissor o retorno das respostas.
+
+C) O caso comprova ataque on-path, pois todo endereço de origem falsificado coloca o emissor no caminho e lhe entrega o tráfego de retorno.
+
+D) O caso comprova DDoS, pois a falsificação de origem demonstra múltiplos sistemas comprometidos e controle bidirecional das conexões.
+
+### S2D4Q173 — Captura passiva e interceptação ativa no caminho
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
+**Referência:** [7.2 Sniffing e 7.3 Man-in-the-middle ou ataque on-path](semana_02_estudo.md#s2-d4-ataques-rede), incluindo a ressalva sobre criptografia com validação correta.
 
-Sobre sniffing e ataque on-path, também denominado man-in-the-middle (MITM), assinale a alternativa correta.
+Em teste autorizado, a equipe usa espelhamento de porta para copiar quadros sem alterar o fluxo. Em outro caso, um invasor redireciona o tráfego pelo próprio equipamento e apresenta certificado falso, rejeitado pelo cliente. A interpretação correta é:
 
-A) Sniffing é captura e análise de tráfego e pode ser passivo ou autorizado; no ataque on-path, o adversário se posiciona no caminho e pode observar e alterar a comunicação.
-B) Sniffing sempre altera os pacotes capturados, enquanto o ataque on-path apenas registra metadados.
-C) A presença de qualquer criptografia impede ataque on-path, mesmo quando o cliente aceita certificado falso.
-D) Em rede com switches, a captura por agente malicioso é fisicamente impossível.
+A) O primeiro caso é sniffing; o segundo é ataque on-path, e a validação correta do certificado pode impedir que o cliente aceite o endpoint substituído.
+
+B) O primeiro caso é on-path; o segundo é sniffing, e a rejeição do certificado demonstra que nenhum posicionamento intermediário ocorreu.
+
+C) Os dois casos são sniffing, pois ataque on-path só existe depois que o invasor consegue alterar com sucesso o conteúdo da aplicação.
+
+D) Os dois casos são on-path, pois qualquer observação de quadros exige encaminhamento ativo e torna irrelevante a validação do certificado.
 
 ### S2D4Q174 — Força bruta, dicionário, password spraying e credential stuffing
 
@@ -8538,22 +9176,23 @@ B) ataque de dicionário; credential stuffing falsifica o endereço IP de origem
 C) password spraying; credential stuffing reutiliza pares de credenciais obtidos em vazamentos.
 D) phishing; credential stuffing explora exclusivamente falhas de memória.
 
-### S2D4Q175 — DDoS e limites de controles instalados depois do ponto de saturação
+### S2D4Q175 — Mitigação antes do ponto de saturação em DDoS
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
+**Referência:** [7.5 DoS e DDoS](semana_02_estudo.md#s2-d4-ataques-rede), nos trechos sobre saturação de banda, mitigação a montante e limite do firewall local depois do gargalo.
 
-Uma botnet envia tráfego suficiente para saturar o enlace de Internet do órgão antes que os pacotes alcancem o firewall local. Assinale a alternativa correta.
+Uma botnet satura o enlace do órgão antes de o tráfego alcançar o firewall local. O portal continua saudável em testes internos, e o firewall apresenta baixa utilização. Qual resposta atua no ponto tecnicamente adequado?
 
-A) Trata-se de DoS obrigatoriamente originado por um único sistema, e o firewall local sempre absorverá o volume.
-B) A distribuição das origens aumenta apenas a confidencialidade e não afeta a disponibilidade.
-C) A troca do firewall por um IDS fora de banda restitui, por si só, a capacidade já esgotada do enlace.
-D) Trata-se de cenário compatível com DDoS; a mitigação pode exigir capacidade e filtragem a montante, serviço anti-DDoS, CDN ou coordenação com o provedor.
+A) Ampliar apenas as regras do firewall local e manter o mesmo enlace, pois o descarte posterior recupera a capacidade já consumida a montante.
 
+B) Trocar o firewall por um IDS fora de banda e manter o mesmo enlace, pois a detecção local interrompe o volume antes de sua chegada.
 
+C) Escalar apenas os servidores do portal e manter o mesmo enlace, pois capacidade de aplicação compensa a saturação ocorrida no acesso.
+
+D) Coordenar filtragem ou limpeza a montante com o provedor e avaliar serviço anti-DDoS, CDN ou capacidade anterior ao gargalo.
 
 ### S2D4Q176 — Classificação de controles por natureza e por função
 
@@ -8596,193 +9235,229 @@ D) o backup torna irrelevantes a segmentação e a proteção de identidade, poi
 Sobre firewalls, assinale a afirmativa correta.
 
 A) Um firewall sem estado acompanha toda a sessão e decide com base no histórico completo da conexão.
-B) Permitir uma porta conhecida garante que o conteúdo transportado por ela seja legítimo e que a aplicação esteja sem vulnerabilidades.
+B) Um firewall stateful acompanha o estado das conexões, mas ainda depende de política adequada e não corrige vulnerabilidades da aplicação.
 C) Um firewall de borda observa necessariamente todo ataque interno, mesmo quando o tráfego não cruza o ponto em que ele está instalado.
-D) Um firewall stateful acompanha o estado das conexões, mas ainda depende de política adequada e não corrige vulnerabilidades da aplicação.
+D) Permitir uma porta conhecida garante que o conteúdo transportado por ela seja legítimo e que a aplicação esteja sem vulnerabilidades.
 
-### S2D4Q179 — Elaboração e manutenção de política de firewall
-
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
-
-**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
-
-Uma equipe revisará as regras do firewall que protege um serviço institucional. Qual conduta está mais alinhada a uma política segura?
-
-A) Liberar qualquer origem para qualquer destino em portas altas, porque somente portas conhecidas oferecem risco.
-B) Permitir apenas origens, destinos e serviços necessários, documentar e revisar regras, registrar eventos relevantes e reconhecer que a cifração pode reduzir a visibilidade do controle.
-C) Desabilitar o controle de saída, pois apenas conexões iniciadas da internet podem causar incidente.
-D) Considerar toda regra permanente depois do primeiro teste, para evitar que revisões afetem a disponibilidade.
-
-### S2D4Q180 — Posicionamento e função de um IDS
+### S2D4Q179 — Ciclo de vida das regras de firewall
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
+**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall), especialmente os trechos sobre mínimo necessário, documentação, revisão, registros e limites de visibilidade sobre tráfego cifrado.
 
-Durante uma fase inicial de observação, a organização deseja receber cópia do tráfego e gerar alertas sem inserir o sensor no caminho direto nem permitir bloqueios automáticos. O controle mais compatível é:
+Uma equipe revisa as regras do firewall de um serviço institucional. Considere as práticas a seguir.
 
-A) um IDS fora de banda.
-B) um IPS em linha com descarte automático.
-C) um firewall stateful configurado como servidor de backup.
-D) uma VPN site-to-site sem mecanismos de detecção.
+A) I, apenas.
 
-### S2D4Q181 — Falsos positivos, falsos negativos e impacto operacional de IPS
+B) I e II, apenas.
 
-**Nível:** Difícil
+C) II e III, apenas.
 
-**Uso:** Revisão
+D) I, II e III.
 
-**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
+### S2D4Q180 — IDS fora do caminho de encaminhamento
 
-Um IPS passou a bloquear requisições legítimas após uma regra nova classificá-las como maliciosas. Esse caso demonstra que:
+**Nível:** Médio
 
-A) todo alerta do IPS confirma um incidente e deve ser tratado como prova definitiva.
-B) um IPS não pode afetar a disponibilidade, pois sua atuação é exclusivamente detectiva.
-C) a ocorrência prova um falso negativo, porque o tráfego legítimo deixou de alcançar o serviço.
-D) um falso positivo em controle preventivo em linha pode bloquear tráfego legítimo e prejudicar a disponibilidade, razão pela qual regras exigem ajuste e monitoramento.
+**Uso:** Aprofundamento
 
-### S2D4Q182 — DMZ como segmento intermediário e contenção da exposição
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), nos trechos que contrastam detecção fora de banda com prevenção em linha.
 
-**Nível:** Difícil
+A organização quer analisar uma cópia do tráfego, gerar alertas e evitar que o sensor participe do caminho obrigatório de encaminhamento. Qual combinação de controle e posicionamento atende diretamente ao requisito?
 
-**Uso:** Revisão
+A) IDS fora de banda, recebendo cópias por porta espelhada ou TAP e emitindo alertas.
 
-**Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz).
+B) IDS em linha, encaminhando todo o tráfego e descartando cada correspondência detectada.
 
-Um portal público consulta uma aplicação que, por sua vez, acessa uma base interna sensível. Qual desenho melhor aplica o conceito de DMZ?
+C) IPS fora de banda, recebendo cópias e bloqueando os pacotes no mesmo caminho de dados.
 
-A) Colocar portal, aplicação e banco na mesma DMZ e liberar qualquer comunicação entre eles.
-B) Manter o componente exposto na DMZ, separar aplicação e banco em segmentos mais restritos e permitir somente os fluxos necessários entre as camadas.
-C) Instalar o banco diretamente na internet e usar a DMZ apenas para estações administrativas.
-D) Tratar todo servidor da DMZ como confiável, dispensando monitoramento das conexões para a rede interna.
+D) IPS em linha, inspecionando o tráfego e aplicando bloqueio preventivo às correspondências.
 
-### S2D4Q183 — Benefícios e limites de uma VPN de acesso remoto
+### S2D4Q181 — Falso positivo de IPS e disponibilidade
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), especialmente a matriz de falsos positivos e falsos negativos e o impacto de bloqueios preventivos em linha.
 
-Um empregado acessa a rede institucional por VPN a partir de um notebook já comprometido por malware. Assinale a alternativa correta.
+Depois de uma atualização de assinatura, um IPS em linha classifica requisições legítimas como ataque e passa a bloqueá-las. Como se classificam a decisão do controle e seu possível efeito?
 
-A) A VPN remove o malware do notebook assim que o túnel é estabelecido.
-B) A cifração do túnel autoriza automaticamente o empregado a acessar qualquer segmento interno.
-C) A VPN pode proteger o tráfego no percurso, mas não torna o endpoint confiável; postura do dispositivo, MFA, menor privilégio, segmentação e monitoramento continuam necessários.
-D) O túnel impede que credenciais roubadas sejam usadas, ainda que não exista MFA e o gateway esteja desatualizado.
+A) Verdadeiro positivo, pois a regra detectou tráfego malicioso e preservou a disponibilidade do serviço.
 
-### S2D4Q184 — VPN site-to-site, VPN de acesso remoto e tecnologias de proteção
+B) Verdadeiro negativo, pois o tráfego legítimo foi liberado e a regra permaneceu sem atuação preventiva.
 
-**Nível:** Difícil
+C) Falso negativo, pois a regra deixou de detectar um ataque que continuou chegando normalmente à aplicação.
 
-**Uso:** Revisão
+D) Falso positivo, pois tráfego legítimo foi bloqueado e a disponibilidade do serviço pode ser prejudicada.
 
-**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
-
-Uma organização precisa conectar permanentemente as redes de duas unidades pela internet e, separadamente, permitir que analistas individuais trabalhem fora do escritório. Qual associação está correta?
-
-A) Acesso remoto conecta as duas redes, enquanto site-to-site serve apenas a um usuário individual.
-B) IPsec só pode proteger aplicações Web, e soluções baseadas em TLS operam obrigatoriamente na camada IP.
-C) Qualquer dos modelos concede acesso irrestrito a toda a rede interna depois que o túnel é criado.
-D) VPN site-to-site é apropriada para interligar redes; VPN de acesso remoto atende usuários ou dispositivos, e ambas exigem autenticação, correção do gateway e política de acesso.
-
-### S2D4Q185 — Segmentação de camada 2 e controle do movimento lateral roteado
+### S2D4Q182 — Separação de portal, aplicação e banco por DMZ
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao).
+**Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz), especialmente o posicionamento do componente exposto e a filtragem mínima para segmentos internos mais restritos.
 
-Uma empresa separou usuários e servidores em VLANs diferentes, mas configurou o roteamento inter-VLAN para permitir qualquer fluxo nos dois sentidos. A conclusão correta é:
+Um portal público encaminha solicitações a uma aplicação, que acessa um banco de dados sensível. Qual desenho reduz melhor a exposição e o movimento lateral entre essas camadas?
 
-A) a separação por VLAN impede, sozinha, todo movimento lateral, inclusive o roteado.
-B) as VLANs separam domínios de camada 2 e de broadcast, mas ACLs ou firewalls internos ainda devem limitar o tráfego roteado entre os segmentos.
-C) VLAN e firewall interno são controles idênticos, por isso aplicar ambos cria necessariamente um conflito.
-D) a única forma de segmentar é instalar redes físicas sem qualquer roteamento entre elas.
+A) Colocar o portal na DMZ, separar aplicação e banco e liberar somente os fluxos exigidos entre as camadas.
 
-### S2D4Q186 — Menor privilégio aplicado a contas de serviço e fluxos entre segmentos
+B) Colocar portal, aplicação e banco na DMZ e permitir livre comunicação entre os três componentes.
 
-**Nível:** Difícil
+C) Colocar portal e banco na DMZ, manter a aplicação interna e permitir acesso direto do portal aos dados.
 
-**Uso:** Revisão
+D) Colocar o portal na DMZ, reunir aplicação e banco com usuários e liberar da DMZ qualquer fluxo interno.
 
-**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
-
-Para aplicar menor privilégio ao acesso de uma aplicação ao banco de dados, a equipe deve:
-
-A) conceder à conta de serviço somente as operações e os objetos necessários, restringir origem e contexto e revisar periodicamente a permissão.
-B) usar uma única conta administrativa compartilhada entre usuários, aplicações e rotinas de backup.
-C) autorizar toda identidade autenticada, pois autenticação bem-sucedida já demonstra necessidade funcional.
-D) liberar qualquer porta entre os segmentos, desde que cada servidor esteja em uma VLAN diferente.
-
-### S2D4Q187 — Chaves, eficiência e aplicações da criptografia simétrica e assimétrica
+### S2D4Q183 — VPN de acesso remoto e endpoint comprometido
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia).
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn), nos trechos sobre proteção do canal, confiança no endpoint, autenticação e política de acesso.
 
-Sobre criptografia simétrica e assimétrica, assinale a alternativa correta.
+Um empregado estabelece uma VPN de acesso remoto a partir de um notebook já comprometido por malware. Qual avaliação delimita corretamente a proteção oferecida pelo túnel?
 
-A) A criptografia simétrica usa obrigatoriamente um par de chaves pública e privada e é a opção mais custosa para grandes volumes.
-B) A criptografia assimétrica usa uma única chave secreta compartilhada e não pode apoiar assinaturas.
-C) Cifras simétricas, como AES, são eficientes para grande volume, enquanto mecanismos assimétricos usam um par de chaves e podem apoiar assinatura, autenticação ou estabelecimento de chaves.
-D) Toda operação feita com chave privada fornece confidencialidade, independentemente do algoritmo e da finalidade.
+A) O túnel cifra o percurso e neutraliza o malware no notebook, dispensando EDR e verificação de postura.
 
-### S2D4Q188 — Criptografia híbrida e divisão de funções no TLS
+B) O túnel autentica a conta e torna o notebook confiável, dispensando segmentação e limitação de privilégios.
 
-**Nível:** Difícil
+C) O túnel protege o percurso, mas não saneia o notebook; postura, MFA, segmentação e menor privilégio continuam necessários.
 
-**Uso:** Revisão
+D) O túnel impede credencial roubada e exploração do gateway, mesmo sem MFA, correções e monitoramento.
 
-**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls).
-
-Em um protocolo criptográfico híbrido, como ocorre conceitualmente no TLS, é correto afirmar que:
-
-A) todos os dados da sessão são cifrados diretamente com a chave privada do servidor.
-B) mecanismos assimétricos ou uma PSK podem participar da autenticação e do estabelecimento de segredos, enquanto chaves simétricas de sessão protegem o tráfego volumoso.
-C) o hash substitui a troca de chaves e fornece, sozinho, confidencialidade ao canal.
-D) a parte simétrica é dispensada sempre que o servidor possui certificado digital.
-
-### S2D4Q189 — Uso de hash para detectar alteração e necessidade de referência confiável
+### S2D4Q184 — Modelos de VPN e política de acesso
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn), especialmente a distinção entre site-to-site e acesso remoto e os controles que permanecem necessários ao redor do túnel.
 
-Um fornecedor publica um arquivo de atualização e, na mesma página comprometida, publica o hash correspondente ao arquivo adulterado. Por que a simples comparação dos dois valores não detecta o ataque?
+Uma organização precisa interligar continuamente as redes de duas unidades e também conectar analistas individuais que trabalham fora delas. Assinale a alternativa correta sobre os modelos de VPN e seus limites.
 
-A) Porque funções hash só podem ser calculadas com a chave privada do fornecedor.
-B) Porque um hash sempre cifra o arquivo e impede que ele seja substituído.
-C) Porque hashes de arquivos diferentes são obrigatoriamente iguais quando têm o mesmo tamanho.
-D) Porque o atacante conseguiu substituir tanto o arquivo quanto a referência; o resumo precisa vir de fonte confiável, ser autenticado ou estar assinado.
+A) Site-to-site atende as redes e acesso remoto atende os analistas, mas ambos concedem automaticamente todas as rotas internas.
 
-### S2D4Q190 — HMAC como código de autenticação de mensagem com segredo compartilhado
+B) Acesso remoto atende as redes e site-to-site atende os analistas, desde que cada túnel tenha uma política de autorização.
+
+C) Site-to-site atende as redes e acesso remoto atende os analistas, mas IPsec protege apenas Web e TLS atua apenas na camada IP.
+
+D) Site-to-site atende as redes e acesso remoto atende os analistas, sem substituir autenticação, correção e política de acesso.
+
+### S2D4Q185 — VLAN e controle do tráfego inter-VLAN
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao), nos trechos que separam domínios de camada 2 e controle dos fluxos roteados por ACL ou firewall.
 
-Dois sistemas que compartilham um segredo precisam verificar integridade e autenticidade das mensagens trocadas. Não há requisito de não repúdio entre eles. O mecanismo mais diretamente adequado é:
+Usuários e servidores foram colocados em VLANs diferentes, mas o equipamento de camada 3 permite qualquer tráfego entre elas. Qual diagnóstico e medida são tecnicamente adequados?
 
-A) hash simples sem segredo, publicado ao lado da mensagem.
-B) criptografia reversível da senha usada pelos operadores.
-C) HMAC com chave secreta compartilhada.
-D) certificado digital sem prova de posse de chave e sem validação.
+A) A VLAN já bloqueia o movimento roteado, por isso a política permissiva não produz comunicação entre os segmentos.
+
+B) A VLAN separa a camada 2, mas o caminho roteado permanece; ACL ou firewall deve limitar os fluxos necessários.
+
+C) O roteamento inter-VLAN reúne novamente os broadcasts, por isso somente a remoção total do roteamento cria segmentação.
+
+D) O identificador da VLAN aplica automaticamente a política de camada 3, por isso basta revisar os enlaces trunk.
+
+### S2D4Q186 — Menor privilégio para conta de serviço
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente sujeito, ação, objeto, contexto e revisão de privilégios.
+
+Uma aplicação precisa consultar duas visões e executar dois procedimentos no banco, sempre a partir de seus servidores. Qual configuração melhor aplica menor privilégio à conta de serviço?
+
+A) Conta exclusiva, somente as operações e os objetos exigidos, origem restrita aos servidores e revisão periódica.
+
+B) Conta de proprietário compartilhada, origem restrita aos servidores e auditoria anual das operações executadas.
+
+C) Papel comum a usuários autenticados, acesso ao esquema inteiro e rotação periódica da senha compartilhada.
+
+D) Conta administrativa por servidor, todas as operações liberadas e confiança baseada apenas na VLAN de origem.
+
+### S2D4Q187 — Divisão de funções entre criptografia simétrica e assimétrica
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia), nos trechos sobre eficiência, quantidade de chaves, assinatura e estabelecimento de segredos.
+
+Um sistema precisa proteger grande volume de dados e também verificar assinaturas de pacotes de atualização. Qual divisão de mecanismos é tecnicamente adequada?
+
+A) Usar o par assimétrico para cifrar todo o volume e uma chave simétrica compartilhada para produzir assinatura pública.
+
+B) Usar a chave simétrica para cifrar o volume e a mesma chave compartilhada para provar autoria perante qualquer terceiro.
+
+C) Usar cifra simétrica no volume e mecanismo assimétrico para assinatura, verificação ou estabelecimento de chaves.
+
+D) Usar a chave privada para cifrar o volume e a chave pública para recuperar os dados e ocultar a identidade do emissor.
+
+### S2D4Q188 — Criptografia híbrida em uma sessão TLS
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls), especialmente a separação entre autenticação/estabelecimento e proteção simétrica do tráfego.
+
+Em uma construção criptográfica híbrida como a usada conceitualmente no TLS, quais funções cabem aos mecanismos de estabelecimento e às chaves da sessão?
+
+A) O mecanismo assimétrico cifra cada registro da aplicação, e a chave simétrica valida sozinha o certificado do servidor.
+
+B) Mecanismo assimétrico ou PSK participa da autenticação e dos segredos, e chaves simétricas protegem os registros.
+
+C) A função hash estabelece confidencialidade dos registros, e a chave assimétrica serve apenas para compactar o handshake.
+
+D) O certificado cifra todo o fluxo com a chave pública, e a chave simétrica é usada somente antes da negociação.
+
+### S2D4Q189 — Hash publicado junto de arquivo comprometido
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas), no trecho sobre referência confiável, autenticação do resumo e substituição conjunta de arquivo e hash.
+
+Um invasor substitui um instalador e também o hash exibido na mesma página de download. Qual procedimento permite avaliar a integridade sem confiar novamente no recurso já comprometido?
+
+A) Comparar o arquivo com o hash da página, pois resistência a colisões autentica a origem mesmo se ambos forem trocados.
+
+B) Publicar um segundo algoritmo de hash na mesma página, pois dois resumos impedem substituição simultânea pelo invasor.
+
+C) Baixar duas cópias do mesmo servidor e comparar seus hashes, pois igualdade entre elas comprova a versão do fornecedor.
+
+D) Verificar manifesto assinado ou resumo obtido de fonte independente autenticada antes de aceitar o instalador.
+
+### S2D4Q190 — HMAC entre sistemas com segredo compartilhado
+
+**Nível:** Médio
+
+**Uso:** Revisão
+
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas), especialmente a definição de HMAC, o uso de segredo compartilhado e o limite de não repúdio.
+
+Dois sistemas compartilham um segredo e precisam detectar alterações e autenticar mensagens entre si, sem requisito de não repúdio perante terceiros. Qual mecanismo atende diretamente ao caso?
+
+A) Calcular SHA-256 sem chave e enviar o resumo no mesmo canal usado para transportar a mensagem.
+
+B) Cifrar a mensagem com AES-CTR sem etiqueta de autenticação e comparar apenas o texto recuperado.
+
+C) Aplicar uma função de senha com salt público à mensagem e tratar o resultado como assinatura digital.
+
+D) Calcular HMAC-SHA-256 com o segredo compartilhado e verificar o código junto da mensagem.
 
 ### S2D4Q191 — Armazenamento seguro de senhas com função de derivação, salt e custo
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -8795,147 +9470,167 @@ B) Cifrar reversivelmente todas as senhas com uma chave fixa compartilhada pela 
 C) Usar hash genérico rápido, sem salt, para reduzir o tempo disponível ao atacante.
 D) Armazenar a senha em texto claro e proteger apenas o nome da coluna no banco.
 
-### S2D4Q192 — Geração, verificação e propriedades da assinatura digital
+### S2D4Q192 — Chaves e propriedades da assinatura digital
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado), nos trechos sobre geração com chave privada, verificação com chave pública e ausência de confidencialidade automática.
+
+Um órgão assina digitalmente um documento e o distribui em formato legível para verificação pública. No modelo simplificado de assinatura assimétrica, assinale a alternativa correta.
+
+A) O signatário usa a chave pública e o verificador usa a privada; a operação comprova origem sem ocultar o conteúdo.
+
+B) O signatário usa a chave privada e o verificador usa a pública; a operação também cifra o conteúdo para o verificador.
+
+C) O signatário usa a chave privada e o verificador usa a pública; a operação apoia origem e integridade, não sigilo.
+
+D) O signatário publica um hash sem chave e o verificador o recalcula; a igualdade identifica necessariamente o autor.
+
+### S2D4Q193 — Validação do certificado de um servidor TLS
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado), especialmente cadeia de confiança, assinaturas, validade, nome, uso da chave e revogação contextual.
+
+Um cliente acessa `api.cra-pr.exemplo` e recebe um certificado X.509 do servidor. Qual procedimento reúne as verificações pertinentes antes de confiar na identidade apresentada?
+
+A) Validar cadeia, assinaturas e datas, mas ignorar nome esperado, uso da chave e revogação se a cifra negociada for forte.
+
+B) Validar nome, uso da chave e revogação, mas aceitar o certificado apresentado como sua própria âncora sem verificar a cadeia.
+
+C) Validar cadeia e assinaturas até âncora confiável, datas, nome esperado, uso da chave e revogação conforme o contexto.
+
+D) Validar porta 443, reputação comercial da emissora e tamanho da chave, sem conferir cadeia, nome ou período de validade.
+
+### S2D4Q194 — Etapas conceituais do TLS 1.3
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls), nos trechos sobre negociação, derivação de segredos, autenticação do servidor, Finished e proteção autenticada com chaves de sessão.
+
+Em uma conexão TLS 1.3 com autenticação do servidor por certificado, qual sequência representa adequadamente o handshake e a proteção posterior dos dados?
+
+A) Validar a porta do serviço, usar a chave pública do certificado em todos os registros e dispensar chaves de sessão.
+
+B) Negociar parâmetros, derivar segredos, validar o servidor e usar chaves simétricas autenticadas nos registros da aplicação.
+
+C) Extrair o segredo apenas do certificado, ignorar o nome do servidor e usar Finished como substituto da cadeia de confiança.
+
+D) Corrigir os endpoints durante o handshake, proteger os dados armazenados e dispensar controles de segurança na aplicação.
+
+### S2D4Q195 — WPA3-Personal, SAE e modo de transição
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), especialmente SAE, limites diante de senha fraca e ataque online e comportamento do modo de transição.
+
+Considere as afirmações sobre WPA2-Personal e WPA3-Personal.
+
+A) I, II e III.
+
+B) I e II, apenas.
+
+C) I e III, apenas.
+
+D) II e III, apenas.
+
+### S2D4Q196 — Identidade individual em Wi-Fi institucional
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), nos trechos sobre modo Enterprise, 802.1X, identidade individual, validação do servidor e limites de segredos coletivos.
+
+Uma rede Wi-Fi institucional precisa autenticar usuários individualmente, revogar um acesso sem trocar o segredo de todos e registrar cada autenticação. Qual desenho atende melhor a esses requisitos?
+
+A) WPA3-Personal com segredo coletivo, rotação trimestral e associação dos registros ao endereço MAC de cada cliente.
+
+B) WPA2-Personal com segredo por setor, portal individual e revogação feita pela troca da senha de todo o setor.
+
+C) WPA3-Personal em transição, segredo coletivo e presunção de que todo cliente negociou SAE ao associar.
+
+D) WPA2/WPA3-Enterprise com 802.1X, identidades individuais, validação do servidor e registros de autenticação.
+
+### S2D4Q197 — Ordem e objetivos da resposta a incidentes
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes), especialmente análise, contenção, preservação de evidências, erradicação e recuperação validada.
+
+Após alertas de ransomware em várias estações, a equipe precisa avançar do indício até o retorno controlado do serviço. Qual sequência preserva os objetivos distintos da resposta a incidentes?
+
+A) Validar e delimitar, restaurar imediatamente, apagar os registros, conter somente se o comprometimento reaparecer.
+
+B) Validar e delimitar, conter preservando evidências, erradicar causas e recuperar para estado conhecido e monitorado.
+
+C) Tratar todo alerta como confirmado, desligar indiscriminadamente, restaurar e encerrar quando o serviço responder.
+
+D) Analisar o indício, erradicar antes de conter, recuperar e coletar evidências somente depois das alterações.
+
+### S2D4Q198 — Cadeias de restauração, RPO e RTO
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
 
-**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos sobre restauração incremental e diferencial e sobre os significados temporais de RPO e RTO.
 
-No modelo simplificado de assinatura digital, assinale a afirmativa correta.
+Considere as afirmações sobre backup e objetivos de recuperação.
 
-A) O signatário usa a chave pública para assinar, e qualquer verificador precisa conhecer a chave privada.
-B) A assinatura torna a mensagem confidencial e impede que o destinatário leia seu conteúdo.
-C) Um hash isolado equivale a uma assinatura, porque identifica necessariamente quem o calculou.
-D) O signatário usa sua chave privada no algoritmo de assinatura, e a chave pública permite verificar origem e integridade; a assinatura, sozinha, não cifra o conteúdo.
+A) Apenas as afirmações I e II.
 
-### S2D4Q193 — Validação de certificado X.509 usado por servidor
+B) Apenas as afirmações I e III.
 
-**Nível:** Muito difícil
+C) Apenas as afirmações II e III.
 
-**Uso:** Simulado
+D) As afirmações I, II e III.
 
-**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
+### S2D4Q199 — Backups resistentes a ransomware
 
-Ao validar o certificado apresentado por um servidor TLS, o cliente deve verificar:
-
-A) apenas se o certificado contém uma chave pública, independentemente do nome e do prazo.
-B) somente se a empresa emissora do site é comercialmente conhecida e não possui reclamações.
-C) cadeia até uma âncora confiável, assinaturas, validade, nome esperado, uso de chave e situação de revogação conforme o contexto.
-D) apenas se a conexão usa a porta 443, pois a porta garante a identidade do servidor.
-
-### S2D4Q194 — Fluxo conceitual e propriedades do TLS 1.3
-
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls).
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), especialmente isolamento, credenciais separadas, imutabilidade ou versões e validação periódica de restauração.
 
-Sobre o TLS 1.3 em nível conceitual, assinale a alternativa correta.
+Considere as medidas para reduzir a chance de um ransomware comprometer simultaneamente produção e recuperação.
 
-A) O protocolo protege automaticamente dados antes de entrarem no canal e depois de saírem dele, mesmo em endpoint comprometido.
-B) Cliente e servidor negociam parâmetros e derivam segredos; o cliente valida a identidade apresentada e, após o handshake, dados da aplicação usam chaves simétricas de sessão e proteção autenticada.
-C) O certificado cifra diretamente todo o conteúdo da aplicação com a chave privada do servidor.
-D) As mensagens Finished são backups do certificado e substituem a verificação do nome do servidor.
+A) I, II e III.
 
-### S2D4Q195 — Diferença entre WPA2-Personal e WPA3-Personal com SAE
+B) I e II, apenas.
 
-**Nível:** Muito difícil
+C) I e III, apenas.
 
-**Uso:** Simulado
+D) II e III, apenas.
 
-**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
+### S2D4Q200 — Alta disponibilidade e recuperação histórica
 
-Sobre WPA2-Personal e WPA3-Personal, assinale a alternativa correta.
-
-A) WPA3-Personal usa SAE; isso dificulta o reaproveitamento de uma captura passiva para tentativas offline como no WPA2-Personal, mas não elimina senha fraca, tentativa online, engenharia social ou falha de implementação.
-B) WPA2-Personal usa obrigatoriamente identidade individual por 802.1X e nunca emprega segredo compartilhado.
-C) WPA3 elimina a necessidade de atualizar firmware e proteger a administração do ponto de acesso.
-D) Qualquer cliente em modo de transição negocia necessariamente WPA3, de modo que o suporte a WPA2 não altera as garantias.
-
-### S2D4Q196 — Segurança Wi-Fi institucional em modo Enterprise
-
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos que distinguem redundância ou alta disponibilidade de backup versionado para recuperação de estado anterior.
 
-Em uma rede Wi-Fi institucional com muitos usuários, qual medida melhora a responsabilização individual sem criar uma promessa de invulnerabilidade?
+Um portal deve continuar operando após a falha de um servidor e recuperar uma versão anterior depois de exclusão ou cifração maliciosa. Qual arquitetura atende aos dois objetivos?
 
-A) Compartilhar uma única senha WPA2-Personal permanente entre todos e desabilitar registros de autenticação.
-B) Manter WEP para dispositivos antigos, pois sua compatibilidade compensa a proteção mais fraca.
-C) Usar WPA2/WPA3-Enterprise com 802.1X, identidades individuais e validação correta do servidor de autenticação, além de segmentação, atualização e monitoramento.
-D) Ativar modo de transição e considerar todos os clientes protegidos exclusivamente por SAE.
+A) Dois nós ativos com replicação síncrona do estado atual, sem cópia histórica separada ou protegida.
 
-### S2D4Q197 — Objetivos distintos no ciclo de resposta a incidentes
+B) Espelhamento RAID no servidor e replicação síncrona do estado atual, sem retenção de versões em backup.
 
-**Nível:** Muito difícil
+C) Backups completos e incrementais frequentes, sem servidor alternativo capaz de assumir a carga durante uma falha.
 
-**Uso:** Simulado
-
-**Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes).
-
-Após detectar indícios de ransomware em várias estações, qual sequência expressa corretamente objetivos distintos da resposta a incidentes?
-
-A) Restaurar imediatamente todos os backups, apagar os logs e depois verificar se havia persistência.
-B) Validar e delimitar o incidente, conter sua expansão preservando evidências quando apropriado, erradicar causas e persistência e recuperar para estado conhecido e monitorado.
-C) Considerar todo alerta um incidente confirmado, desligar indiscriminadamente o ambiente e encerrar o caso após o bloqueio inicial.
-D) Tratar contenção e erradicação como sinônimos e dispensar lições aprendidas quando o serviço voltar.
-
-### S2D4Q198 — Backup incremental e diferencial, RPO e RTO
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
-
-Considere duas afirmações sobre recuperação:
-
-I. Na restauração típica, backups incrementais exigem o último completo e a cadeia de incrementais posteriores; backups diferenciais exigem o último completo e o último diferencial.
-II. Se um incidente ocorre às 14h, RPO de 30 minutos aponta para recuperação até um ponto não anterior a 13h30, enquanto RTO de 4 horas define a meta de restabelecimento do serviço, e não a frequência das cópias.
-
-Assinale a alternativa correta.
-
-A) Somente I está correta, pois RPO mede o tempo de restauração.
-B) Somente II está correta, pois incremental e diferencial possuem a mesma cadeia de restauração.
-C) As duas estão incorretas, pois RPO e RTO são valores observados apenas depois do incidente.
-D) I e II estão corretas.
-
-### S2D4Q199 — Proteção de backups contra ransomware e validação de restauração
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
-
-Uma equipe quer tornar sua estratégia de cópias de segurança mais resistente a ransomware. Qual conjunto de medidas é o mais adequado?
-
-A) Manter ao menos uma cópia offline ou logicamente isolada do domínio de produção, usar credenciais separadas e imutabilidade quando adequada, preservar versões e testar periodicamente a restauração.
-B) Manter as três cópias on-line sob a mesma credencial administrativa, pois a quantidade impede alteração simultânea.
-C) Substituir testes de restauração por comparação do tamanho dos arquivos, já que cópia existente é cópia recuperável.
-D) Replicar instantaneamente toda exclusão para as três cópias e eliminar retenção de versões.
-
-### S2D4Q200 — Diferença e complementaridade entre backup, redundância e alta disponibilidade
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
-
-Um portal não pode parar diante da falha de um único servidor e também precisa recuperar versões anteriores após exclusão acidental ou cifração maliciosa. Qual solução atende corretamente aos dois objetivos?
-
-A) Combinar arquitetura redundante ou de alta disponibilidade para reduzir a interrupção com backups versionados, protegidos e testados para recuperar estado anterior.
-B) Usar apenas RAID, pois redundância de disco preserva necessariamente qualquer versão excluída ou cifrada.
-C) Usar apenas backup semanal, pois a existência de uma cópia garante continuidade sem interrupção e qualquer RTO.
-D) Usar somente replicação síncrona, pois ela impede que exclusões e corrupção sejam propagadas ao segundo nó.
-
-
+D) Serviço redundante com failover e backups versionados, protegidos e testados para restaurar estados anteriores.
 
 ## Gabarito do Dia 4
 
@@ -8944,25 +9639,25 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 | Questão | Resposta |
 |---:|:---:|
-| 1 | B |
-| 2 | D |
+| 1 | C |
+| 2 | A |
 | 3 | A |
-| 4 | C |
+| 4 | D |
 | 5 | B |
 | 6 | D |
-| 7 | A |
+| 7 | C |
 | 8 | C |
 | 9 | B |
-| 10 | D |
+| 10 | A |
 | 11 | A |
-| 12 | C |
+| 12 | D |
 | 13 | D |
 | 14 | B |
 | 15 | A |
 | 16 | C |
-| 17 | D |
+| 17 | C |
 | 18 | B |
-| 19 | C |
+| 19 | B |
 | 20 | A |
 | 21 | D |
 | 22 | B |
@@ -8979,11 +9674,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 |---:|:---:|
 | 26 | C |
 | 27 | A |
-| 28 | D |
+| 28 | B |
 | 29 | B |
 | 30 | A |
 | 31 | D |
-| 32 | B |
+| 32 | A |
 | 33 | C |
 | 34 | D |
 | 35 | B |
@@ -8991,18 +9686,42 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 | 37 | C |
 | 38 | B |
 | 39 | D |
-| 40 | C |
+| 40 | D |
 | 41 | A |
-| 42 | D |
+| 42 | C |
 | 43 | C |
 | 44 | B |
 | 45 | A |
-| 46 | C |
+| 46 | D |
 | 47 | B |
 | 48 | D |
 | 49 | A |
-| 50 | A |
+| 50 | D |
 
+### Gabarito das questões extras
+
+| Extra | Resposta |
+|---:|:---:|
+| 4.1 | B |
+| 4.2 | D |
+| 4.3 | A |
+| 4.4 | C |
+| 4.5 | C |
+| 4.6 | D |
+| 4.7 | A |
+| 4.8 | C |
+| 4.9 | B |
+| 4.10 | A |
+| 4.11 | C |
+| 4.12 | C |
+| 4.13 | B |
+| 4.14 | D |
+| 4.15 | A |
+| 4.16 | C |
+| 4.17 | B |
+| 4.18 | D |
+| 4.19 | A |
+| 4.20 | D |
 
 
 ## Comentários do Dia 4
@@ -9013,36 +9732,37 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Segurança não é estado binário, e ativos com funções, exposições e impactos diferentes não recebem necessariamente controles idênticos.
-- **B)** Correta. A alternativa reúne as etapas essenciais: conhecer ativos e missão, reconhecer ameaças e vulnerabilidades, avaliar probabilidade e impacto, tratar e monitorar o risco.
-- **C)** Incorreta. Mudanças tecnológicas, operacionais e no cenário de ameaças exigem reavaliação contínua dos controles.
-- **D)** Incorreta. Pessoas, processos, arquitetura, fornecedores e governança também influenciam o risco; ele não se reduz a falhas técnicas.
+- **A)** um controle reduz risco dentro de determinado contexto, mas não converte segurança em estado definitivo nem dispensa monitoramento.
+- **B)** ativos com funções, exposições e impactos diferentes exigem análise contextual; conformidade e varredura não substituem todo o processo.
+- **C)** a gestão permanece cíclica, combinando identificação, análise, tratamento, verificação da eficácia e decisão consciente sobre o risco que restou.
+- **D)** pessoas, processos, fornecedores e mudanças operacionais também podem alterar probabilidade e impacto, não apenas falhas técnicas.
 
-**Conceito:** segurança da informação como processo contínuo de gestão de riscos.
+**Conceito:** segurança da informação como processo contínuo de gestão e monitoramento de riscos.
 
-**Pegadinha:** acreditar em produto mágico ou aplicar a mesma proteção a todo ativo sem considerar contexto e impacto.
+**Pegadinha:** tratar a aquisição de um controle relevante como prova de risco zero ou como encerramento permanente da avaliação.
 
-**Como pensar:** procure a alternativa que descreva um ciclo de identificação, análise, tratamento e monitoramento, sem prometer segurança absoluta.
+**Como pensar:** procure a alternativa que percorre contexto, análise, tratamento, monitoramento e decisão sobre risco residual sem prometer segurança absoluta.
 
-**Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
+**Referência:** [1. Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco), especialmente as seis etapas do processo e o tratamento do risco residual.
 
 ### Comentário S2D4Q152
 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O risco anterior aos controles é o risco inerente ou inicial no modelo considerado; residual é o que permanece depois do tratamento.
+- **A)** Correta. O risco remanescente precisa ser reavaliado para decidir entre aceitação, tratamento adicional, transferência ou outra resposta cabível.
 - **B)** Incorreta. Controles modificam o risco, mas a gestão não deve prometer risco zero como condição universal de operação.
 - **C)** Incorreta. Transferência é uma opção de tratamento, não destino obrigatório; um risco compatível com os critérios organizacionais pode ser aceito.
-- **D)** Correta. O risco remanescente precisa ser reavaliado para decidir entre aceitação, tratamento adicional, transferência ou outra resposta cabível.
+- **D)** Incorreta. O risco anterior aos controles é o risco inerente ou inicial no modelo considerado; residual é o que permanece depois do tratamento.
 
 **Conceito:** risco residual e decisão de tratamento após a aplicação de controles.
 
@@ -9076,17 +9796,17 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 ### Comentário S2D4Q154
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. A afirmativa I é verdadeira, mas a II também é: cifração não autorizada altera o estado dos arquivos e pode impedir seu uso.
 - **B)** Incorreta. A III é falsa. Backup apoia recuperação, porém não impede exfiltração nem garante que não haverá interrupção inicial.
-- **C)** Correta. Exfiltração afeta confidencialidade; alteração ou cifração indevida pode afetar integridade e disponibilidade.
-- **D)** Incorreta. Inclui a afirmativa III, que exagera o alcance do backup.
+- **C)** Incorreta. Inclui a afirmativa III, que exagera o alcance do backup.
+- **D)** Correta. Exfiltração afeta confidencialidade; alteração ou cifração indevida pode afetar integridade e disponibilidade.
 
 **Conceito:** um único incidente pode comprometer simultaneamente os três objetivos da tríade CIA.
 
@@ -9145,48 +9865,50 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: A.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. ABAC toma decisões com base em atributos do sujeito, recurso, ação e contexto, como dispositivo e horário.
-- **B)** Incorreta. RBAC associa permissões a papéis ou funções; a política descrita ultrapassa o uso exclusivo do cargo.
-- **C)** Incorreta. Biometria é mecanismo possível de autenticação e não o modelo de autorização apresentado.
-- **D)** Incorreta. Accounting registra sessões e ações; não é o mecanismo que decide o acesso pelos atributos mencionados.
+- **A)** uma ACL pode participar do controle, mas a decisão do enunciado não se limita a uma associação fixa entre identidade e objeto.
+- **B)** RBAC concentra a autorização em papéis ou funções; a presença de departamento não apaga as condições de recurso, ação, dispositivo e horário.
+- **C)** ABAC avalia atributos do sujeito, do objeto, da ação e do ambiente, exatamente as dimensões usadas pela política descrita.
+- **D)** accounting registra sessões, consumo e ações; ele não substitui o mecanismo que decide se a operação deve ser autorizada.
 
-**Conceito:** autorização baseada em atributos, em contraste com autorização baseada em papéis.
+**Conceito:** autorização baseada em atributos em contraste com papel, lista de acesso e registro de atividade.
 
-**Pegadinha:** chamar qualquer decisão vinculada ao usuário de RBAC, mesmo quando o contexto e os atributos do recurso participam da política.
+**Pegadinha:** reconhecer um atributo ligado ao cargo e concluir RBAC, ignorando que recurso, ação e contexto também integram a decisão.
 
-**Como pensar:** se a decisão combina várias características do sujeito, objeto, ação e ambiente, reconheça ABAC; se gira em torno da função, pense em RBAC.
+**Como pensar:** identifique quais elementos alimentam a política; múltiplos atributos do sujeito, objeto, ação e ambiente apontam para ABAC.
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.2 Autorização](semana_02_estudo.md#s2-d4-identidade-auditoria), nos trechos que distinguem RBAC, ABAC, listas de controle de acesso e accounting.
 
 ### Comentário S2D4Q158
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Confirmar identidade é função de Authentication, o primeiro A.
-- **B)** Incorreta. Aplicar permissões é função de Authorization, o segundo A.
-- **C)** Correta. Accounting registra consumo, sessões e ações e pode alimentar a auditoria, que é atividade mais ampla de exame de registros, controles e conformidade.
-- **D)** Incorreta. Um registro local desprotegido não produz, por si só, não repúdio; são necessários integridade, identidade, tempo e contexto confiáveis.
+- **A)** authentication confirma a identidade por evidências apropriadas; a existência de um registro de sessão não refaz essa comprovação.
+- **B)** authorization aplica permissões e políticas; o consumo já registrado não define, sozinho, o que a identidade pode acessar.
+- **C)** accounting documenta consumo, sessões e ações para controle e responsabilização, gerando material que pode ser examinado pela auditoria.
+- **D)** auditoria é atividade mais ampla de análise de registros, controles e conformidade; produzir logs não completa automaticamente esse exame.
 
-**Conceito:** AAA significa Authentication, Authorization e Accounting.
+**Conceito:** accounting como terceiro componente do AAA e como fonte de evidências para auditoria.
 
-**Pegadinha:** traduzir o terceiro A simplesmente como auditoria e tratar accounting e auditoria como sinônimos perfeitos.
+**Pegadinha:** traduzir o terceiro A como se accounting fosse sinônimo perfeito de autenticação, autorização ou de todo o processo de auditoria.
 
-**Como pensar:** associe os três verbos: identificar, permitir e registrar; depois lembre que auditoria analisa os registros e os controles.
+**Como pensar:** associe os três verbos do AAA: autenticar identifica, autorizar permite e accounting registra; a auditoria analisa esse material.
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.3 Auditoria e accounting](semana_02_estudo.md#s2-d4-identidade-auditoria) e [3.5 Modelo AAA](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente a diferença entre produzir registros e examiná-los.
 
 ### Comentário S2D4Q159
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: B.**
@@ -9208,29 +9930,30 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 ### Comentário S2D4Q160
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Horário isolado não permite atribuir a ação nem compreender origem, recurso e resultado.
-- **B)** Incorreta. Permitir alteração irrestrita pelos próprios examinados compromete a integridade e o valor probatório dos registros.
-- **C)** Incorreta. Volume sem sincronização, retenção, contexto e capacidade de análise não gera rastreabilidade eficaz.
-- **D)** Correta. Logs úteis devem combinar contexto suficiente, relógios sincronizados, retenção, proteção de acesso e integridade, além de monitoramento ou análise.
+- **A)** o plano reúne contexto suficiente, tempo correlacionável, controle de alteração, retenção e capacidade de análise, cobrindo as lacunas do cenário.
+- **B)** sincronização e centralização favorecem correlação, porém falhas e negações também importam, e os registros precisam de proteção contra alteração.
+- **C)** ação, resultado e integridade são úteis, mas IP não substitui identidade confiável e descarte imediato inviabiliza retenção e investigação posterior.
+- **D)** identidade e recurso ajudam, mas relógios divergentes impedem ordenar fontes, e edição livre pelos examinados compromete a confiabilidade.
 
-**Conceito:** requisitos de registros úteis para accounting, auditoria e investigação.
+**Conceito:** requisitos complementares para logs sustentarem accounting, auditoria e investigação.
 
-**Pegadinha:** supor que registrar tudo basta, mesmo que os dados não possam ser correlacionados ou tenham sido alterados.
+**Pegadinha:** aceitar uma solução parcialmente correta que sincroniza, contextualiza ou protege os registros, mas deixa outra dimensão essencial sem tratamento.
 
-**Como pensar:** verifique se o log responde quem, o quê, quando, de onde, sobre qual recurso e com qual resultado, preservando sua confiabilidade.
+**Como pensar:** aplique três filtros sucessivos: o evento explica a ação, pode ser correlacionado no tempo e permanece íntegro e disponível para análise.
 
-**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [3.3 Auditoria e accounting](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente os campos de contexto e os requisitos de sincronização, retenção, acesso, integridade e análise.
 
 ### Comentário S2D4Q161
 
-**Nível:** Médio
+**Nível:** Muito difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: A.**
@@ -9255,14 +9978,14 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. A presença de uma falha explorável não demonstra que houve exploração ou comprometimento.
 - **B)** Incorreta. O serviço é o ativo; a chance e o impacto são componentes usados na avaliação do risco.
-- **C)** Correta. A versão falha constitui vulnerabilidade, e o risco depende da combinação contextual de probabilidade e impacto adverso.
-- **D)** Incorreta. Vulnerabilidade é a fraqueza; risco é a possibilidade avaliada de dano, e os conceitos não são sinônimos.
+- **C)** Incorreta. Vulnerabilidade é a fraqueza; risco é a possibilidade avaliada de dano, e os conceitos não são sinônimos.
+- **D)** Correta. A versão falha constitui vulnerabilidade, e o risco depende da combinação contextual de probabilidade e impacto adverso.
 
 **Conceito:** vulnerabilidade como fraqueza e risco como combinação de probabilidade e impacto.
 
@@ -9274,7 +9997,7 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 ### Comentário S2D4Q163
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: D.**
@@ -9299,80 +10022,83 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A alternativa troca os conceitos: o agente capaz de causar dano é ameaça, e a falha explorável é vulnerabilidade.
-- **B)** Correta. O criminoso representa ameaça, a falha representa vulnerabilidade e a correção ou o MFA são medidas que modificam o risco.
-- **C)** Incorreta. Evento é ocorrência observada; controle precisa atuar para modificar o risco, ainda que tenha funções variadas.
-- **D)** Incorreta. Vulnerabilidade pode existir sem exploração; o incidente exige ocorrência concreta que comprometa ou ameace comprometer a segurança.
+- **A)** o agente capaz de causar dano é a ameaça, enquanto a fraqueza explorável é a vulnerabilidade; correção e MFA não são ameaça.
+- **B)** o criminoso representa a fonte potencial de dano, a falha oferece a condição explorável e os controles reduzem probabilidade, impacto ou ambos.
+- **C)** incidente exige ocorrência concreta que comprometa ou ameace a segurança, e a medida aplicada não se transforma no ativo protegido.
+- **D)** risco combina probabilidade e impacto, incidente é ocorrência concreta e evento não corresponde ao conjunto de medidas de proteção.
 
-**Conceito:** controle como medida de modificação do risco e sua relação com ameaça e vulnerabilidade.
+**Conceito:** classificação operacional de ameaça, vulnerabilidade e controle dentro de um cenário de risco.
 
-**Pegadinha:** confundir a causa potencial, a fraqueza e a medida de proteção por todos participarem do mesmo cenário.
+**Pegadinha:** trocar os papéis dos elementos porque todos aparecem na mesma cadeia causal de um possível incidente.
 
-**Como pensar:** leia o cenário como cadeia: ameaça explora vulnerabilidade; controles reduzem probabilidade, impacto ou ambos.
+**Como pensar:** pergunte quem pode causar dano, qual fraqueza pode ser explorada e qual medida procura alterar a probabilidade ou o impacto.
 
-**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
+**Referência:** [4. Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco), na tabela de conceitos e no exemplo do gateway VPN.
 
 ### Comentário S2D4Q165
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O vírus se associa a hospedeiro e à execução correspondente, enquanto o worm possui capacidade característica de autopropagação.
-- **B)** Incorreta. Inverte as características centrais de vírus e worm.
-- **C)** Incorreta. Malware é a categoria ampla; vírus e worm são categorias com comportamentos distintos, embora uma amostra possa combinar técnicas.
-- **D)** Incorreta. Coleta de informações descreve spyware, e cifração extorsiva remete a ransomware; não são as diferenças definidoras entre vírus e worm.
+- **A)** X depende do executável hospedeiro, característica do vírus, enquanto Y se autopropaga entre sistemas, comportamento típico de worm.
+- **B)** a alternativa inverte os mecanismos; dependência de hospedeiro não define worm, e propagação automática não define vírus.
+- **C)** a disseminação de X continua vinculada ao arquivo e à sua execução; esse detalhe impede classificar as duas amostras do mesmo modo.
+- **D)** malware é a categoria ampla, e vírus é uma categoria específica; o modo de propagação permanece discriminador.
 
-**Conceito:** distinção entre vírus dependente de hospedeiro e worm com propagação automática.
+**Conceito:** distinção entre vírus e worm pelo mecanismo de vinculação e propagação.
 
-**Pegadinha:** chamar todo malware de vírus ou definir as categorias apenas pela carga executada depois da infecção.
+**Pegadinha:** classificar pelo dano ou pelo simples fato de a amostra gerar cópias, ignorando como essas cópias alcançam outros sistemas.
 
-**Como pensar:** observe o mecanismo de propagação: vínculo a arquivo ou programa aponta para vírus; autopropagação pela rede aponta para worm.
+**Como pensar:** procure primeiro o hospedeiro; se a propagação depende dele, pense em vírus, e se ocorre automaticamente entre sistemas, pense em worm.
 
-**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
+**Referência:** [5.1 Vírus e 5.2 Worm](semana_02_estudo.md#s2-d4-malware), nos trechos que distinguem vínculo a hospedeiro e propagação automática por redes ou sistemas.
 
 ### Comentário S2D4Q166
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Worm tem como característica marcante a propagação automática; o cenário enfatiza disfarce e indução à execução.
-- **B)** Incorreta. Não há referência a infecção de setor de inicialização ou vínculo viral a hospedeiro.
-- **C)** Correta. Cavalo de Troia se apresenta como software legítimo ou desejável para levar a vítima a executá-lo, sem exigir autorreplicação.
-- **D)** Incorreta. DDoS é ataque distribuído à disponibilidade, não um programa disfarçado instalado pelo usuário.
+- **A)** acesso remoto é uma possível carga maliciosa, mas worm exige a característica de propagação automática ausente no cenário.
+- **B)** o rótulo de atualização é o disfarce; nada informa que o código se vinculou a outro arquivo ou programa hospedeiro.
+- **C)** apresentação enganosa e execução induzida são os traços centrais do cavalo de Troia, sem necessidade de autorreplicação.
+- **D)** spyware se caracteriza pela coleta de informações; acesso remoto oculto pode ter outras finalidades e não prova coleta exclusiva.
 
-**Conceito:** cavalo de Troia definido pelo disfarce e pela indução à execução.
+**Conceito:** cavalo de Troia definido pelo disfarce e pela indução da vítima à execução.
 
-**Pegadinha:** classificar qualquer programa que abre acesso remoto como worm, ainda que não exista autopropagação.
+**Pegadinha:** classificar a amostra apenas pela carga instalada, sem observar o mecanismo usado para chegar e executar no sistema.
 
-**Como pensar:** identifique a característica escolhida pelo enunciado: aparência legítima e execução induzida são sinais de Troia.
+**Como pensar:** separe entrega, propagação e carga; neste caso, disfarce e execução voluntária induzida decidem a categoria principal.
 
-**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
+**Referência:** [5.3 Cavalo de Troia](semana_02_estudo.md#s2-d4-malware), em contraste com os mecanismos de vírus, worm e spyware descritos na mesma seção.
 
 ### Comentário S2D4Q167
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Spyware foca coleta de informações, e ransomware moderno não se limita à disponibilidade.
 - **B)** Incorreta. Backup pode apoiar a recuperação, mas não contém o invasor, não remove persistência e não desfaz a exfiltração.
-- **C)** Incorreta. A existência de outra cópia não torna autorizada a alteração dos arquivos em produção nem preserva sua integridade naquele ambiente.
-- **D)** Correta. Campanhas de ransomware podem combinar roubo, alteração, cifração e interrupção, comprometendo toda a tríade CIA.
+- **C)** Correta. Campanhas de ransomware podem combinar roubo, alteração, cifração e interrupção, comprometendo toda a tríade CIA.
+- **D)** Incorreta. A existência de outra cópia não torna autorizada a alteração dos arquivos em produção nem preserva sua integridade naquele ambiente.
 
 **Conceito:** alcance do ransomware e sobreposição de categorias e efeitos de malware.
 
@@ -9406,29 +10132,30 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 ### Comentário S2D4Q169
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Inverte os canais: smishing emprega SMS ou mensagem; vishing emprega voz.
-- **B)** Incorreta. Whaling é direcionado a pessoa de alta relevância, e não simples campanha genérica.
-- **C)** Correta. A alternativa relaciona corretamente especificidade do alvo, relevância da vítima e canais usados.
-- **D)** Incorreta. Phishing pode buscar credenciais, pagamento ou outra ação sem anexar ou executar malware.
+- **A)** troca os canais das campanhas I e II; SMS caracteriza smishing e voz caracteriza vishing.
+- **B)** I e II são classificados pelo canal, enquanto III e IV são distinguidos pela especificidade e pela relevância hierárquica do alvo.
+- **C)** acerta os canais de I e II, mas troca os alvos de III e IV; analista específico indica spear phishing, e presidência indica whaling.
+- **D)** atribui categorias de alvo às campanhas definidas pelo canal e categorias de canal às campanhas definidas pelo perfil da vítima.
 
-**Conceito:** variações de phishing segundo alvo e canal.
+**Conceito:** variações de phishing classificadas pelas dimensões canal e alvo.
 
-**Pegadinha:** trocar smishing por vishing ou definir phishing pela presença obrigatória de arquivo malicioso.
+**Pegadinha:** resolver apenas metade da associação ou misturar categorias que descrevem o meio de contato com categorias que descrevem a vítima.
 
-**Como pensar:** separe duas dimensões: spear e whaling descrevem o alvo; smishing e vishing destacam o canal.
+**Como pensar:** primeiro marque SMS e voz; depois separe alvo específico de pessoa de alta relevância e confira as quatro posições.
 
-**Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
+**Referência:** [6. Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing), na lista que distingue alvo específico, pessoa de alta relevância, SMS ou mensagem e voz.
 
 ### Comentário S2D4Q170
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: A.**
@@ -9475,44 +10202,46 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Captura de pacotes descreve sniffing; spoofing envolve falsificação de identidade ou origem aparente.
-- **B)** Correta. Spoofing pode atingir IP, ARP, DNS, e-mail e outros identificadores, com efeitos dependentes do protocolo.
-- **C)** Incorreta. O ataque não exige comprometimento de autoridade certificadora e pode ocorrer em protocolos sem certificados.
-- **D)** Incorreta. DDoS caracteriza distribuição das origens e objetivo de indisponibilidade; não é sinônimo de falsificação.
+- **A)** sniffing captura e analisa tráfego; ele não concede, por definição, a capacidade de falsificar o campo de origem ou controlar o retorno.
+- **B)** a divergência é compatível com IP spoofing, e os pacotes de resposta seguem o endereço declarado, salvo outra condição que dê ao emissor acesso ao caminho.
+- **C)** falsificação não prova posicionamento intermediário; um atacante on-path pode observar o retorno, mas essa condição não decorre apenas do IP forjado.
+- **D)** DDoS requer ataque distribuído à disponibilidade; origem falsificada, sozinha, não prova botnet nem controle bidirecional.
 
-**Conceito:** spoofing como falsificação de identidade ou origem aparente.
+**Conceito:** spoofing como falsificação de origem e limite operacional do caminho de resposta no IP spoofing.
 
-**Pegadinha:** confundir falsificação com observação do tráfego ou supor que um IP de origem falso assegura o recebimento das respostas.
+**Pegadinha:** inferir que falsificar a origem automaticamente coloca o emissor no caminho ou lhe assegura receber as respostas.
 
-**Como pensar:** procure o elemento enganoso do endereço ou da identidade apresentada; depois avalie o efeito conforme o protocolo envolvido.
+**Como pensar:** separe dois testes: há identidade aparente falsificada e existe condição independente para observar o caminho de retorno?.
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
+**Referência:** [7.1 Spoofing](semana_02_estudo.md#s2-d4-ataques-rede), especialmente a definição de falsificação de origem e a ressalva sobre o retorno em IP spoofing.
 
 ### Comentário S2D4Q173
 
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Sniffing captura e analisa tráfego, inclusive legitimamente; o atacante on-path ocupa o caminho e pode observar e modificar a troca.
-- **B)** Incorreta. Sniffing pode ser passivo, e o ataque on-path não se limita a metadados.
-- **C)** Incorreta. Criptografia mal validada pode falhar, como quando o cliente aceita certificado falso ou uma chave foi comprometida.
-- **D)** Incorreta. Switches dificultam a escuta indiscriminada, mas um agente com posição privilegiada, spoofing, espelhamento indevido ou equipamento comprometido ainda pode capturar tráfego.
+- **A)** copiar tráfego caracteriza sniffing, enquanto redirecioná-lo pelo equipamento do invasor cria posição on-path; rejeitar o certificado bloqueia a confiança no endpoint falso.
+- **B)** as classificações foram invertidas, e a rejeição mostra que a validação atuou, não que o adversário deixou de estar no caminho.
+- **C)** o posicionamento on-path existe pela capacidade de intermediar a comunicação, ainda que uma tentativa concreta de alteração seja detectada e rejeitada.
+- **D)** espelhamento permite observação sem encaminhamento pelo analisador, e autenticação correta do canal continua relevante contra substituição.
 
-**Conceito:** captura por sniffing em contraste com interceptação ativa on-path ou man-in-the-middle (MITM).
+**Conceito:** diferença entre captura de tráfego, posicionamento on-path e efeito da validação criptográfica.
 
-**Pegadinha:** afirmar que sniffing sempre altera dados ou que a mera presença de criptografia resolve validação e confiança.
+**Pegadinha:** definir o ataque somente pelo resultado final e confundir tentativa bloqueada com ausência de posição ou de capacidade de interceptação.
 
-**Como pensar:** diferencie observar de ocupar o caminho; em seguida, verifique se o canal criptográfico também autentica corretamente o par.
+**Como pensar:** identifique primeiro quem apenas recebe uma cópia e quem participa do caminho; depois avalie se a credencial apresentada foi validada.
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
+**Referência:** [7.2 Sniffing e 7.3 Man-in-the-middle ou ataque on-path](semana_02_estudo.md#s2-d4-ataques-rede), incluindo a ressalva sobre criptografia com validação correta.
 
 ### Comentário S2D4Q174
 
@@ -9541,23 +10270,23 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DDoS utiliza múltiplas origens, e um firewall local não recupera um enlace que já chegou saturado.
-- **B)** Incorreta. Negação de serviço compromete disponibilidade; distribuição das origens não aumenta confidencialidade.
-- **C)** Incorreta. IDS fora de banda pode detectar e alertar, mas não cria capacidade no enlace nem bloqueia, sozinho, o volume a montante.
-- **D)** Correta. Uma botnet caracteriza origem distribuída, e a mitigação pode precisar ocorrer no provedor ou em infraestrutura com capacidade anterior ao gargalo.
+- **A)** o firewall recebe o tráfego somente depois do enlace saturado; descartar nesse ponto não devolve a capacidade consumida antes dele.
+- **B)** IDS fora de banda pode detectar e alertar, mas não bloqueia o fluxo a montante nem cria banda no enlace já esgotado.
+- **C)** servidores adicionais tratam capacidade da aplicação, enquanto o sintoma e os indicadores localizam o gargalo no enlace de acesso.
+- **D)** filtragem, limpeza ou capacidade antes do gargalo impede que todo o volume atravesse o enlace; provedor, anti-DDoS e CDN podem participar dessa arquitetura.
 
-**Conceito:** DDoS e limites de controles instalados depois do ponto de saturação.
+**Conceito:** seleção do ponto de mitigação de DDoS conforme a localização da saturação.
 
-**Pegadinha:** acreditar que qualquer firewall local absorve tráfego que já esgotou o enlace de acesso.
+**Pegadinha:** escolher um controle válido em outro cenário, mas instalado depois do recurso que já foi esgotado.
 
-**Como pensar:** localize o gargalo e o ponto de controle: se a saturação acontece antes do perímetro local, a resposta precisa começar a montante.
+**Como pensar:** localize primeiro o gargalo e só depois escolha o controle; a mitigação eficaz precisa atuar antes ou no próprio ponto de saturação.
 
-**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
-
+**Referência:** [7.5 DoS e DDoS](semana_02_estudo.md#s2-d4-ataques-rede), nos trechos sobre saturação de banda, mitigação a montante e limite do firewall local depois do gargalo.
 
 ### Comentário S2D4Q176
 
@@ -9608,14 +10337,14 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. A filtragem sem estado avalia pacotes individualmente; acompanhar o estado da conexão é característica do firewall stateful.
-- **B)** Incorreta. Porta permitida pode transportar conteúdo malicioso, e o firewall não corrige falhas da aplicação.
+- **B)** Correta. Stateful descreve o acompanhamento da conexão, sem transformar o controle em garantia contra toda vulnerabilidade ou política ruim.
 - **C)** Incorreta. Uma ameaça interna pode não atravessar o ponto observado pelo firewall de borda.
-- **D)** Correta. Stateful descreve o acompanhamento da conexão, sem transformar o controle em garantia contra toda vulnerabilidade ou política ruim.
+- **D)** Incorreta. Porta permitida pode transportar conteúdo malicioso, e o firewall não corrige falhas da aplicação.
 
 **Conceito:** filtragem stateful e limites do firewall.
 
@@ -9630,268 +10359,280 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Portas altas também podem transportar ataques; origem, destino, protocolo e necessidade devem orientar a regra.
-- **B)** Correta. A alternativa reúne negação por padrão quando adequada, mínimo necessário, documentação, revisão, logs e consciência do limite de visibilidade.
-- **C)** Incorreta. Controle de saída pode limitar comunicação indevida e exfiltração; ataques não se restringem a conexões iniciadas externamente.
-- **D)** Incorreta. Regras precisam de revisão periódica e testes após mudanças; torná-las permanentes favorece excesso de permissão.
+- **A)** a afirmação I é correta, mas o acompanhamento previsto na afirmação II também integra o ciclo de vida seguro da regra.
+- **B)** mínimo necessário, justificativa, responsável, revisão e registros reduzem permissões excessivas e regras esquecidas.
+- **C)** a afirmação II é correta, porém cifra não elimina risco, não torna a regra permanente e não dispensa controle de saída.
+- **D)** a afirmação III contraria a necessidade de revisar regras e de controlar comunicações iniciadas para fora.
 
-**Conceito:** elaboração e manutenção de política de firewall.
+**Conceito:** elaboração e manutenção de política de firewall ao longo do ciclo de vida das regras.
 
-**Pegadinha:** confiar na numeração da porta ou no primeiro teste em vez de avaliar necessidade e ciclo de vida da regra.
+**Pegadinha:** tratar tráfego cifrado como automaticamente legítimo ou confundir uma liberação inicial com autorização permanente.
 
-**Como pensar:** valide quem fala com quem, por qual serviço, por qual necessidade, com qual registro e por quanto tempo.
+**Como pensar:** verifique necessidade, escopo, responsável, evidência de uso e prazo de revisão; nenhuma porta ou cifra substitui essas decisões.
 
-**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
+**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall), especialmente os trechos sobre mínimo necessário, documentação, revisão, registros e limites de visibilidade sobre tráfego cifrado.
 
 ### Comentário S2D4Q180
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Um IDS de rede pode receber cópia do tráfego fora do caminho direto e gerar alertas sem bloquear a produção.
-- **B)** Incorreta. IPS em linha atua em posição preventiva e pode descartar ou interromper tráfego.
-- **C)** Incorreta. Firewall aplica política de fluxo; configurá-lo como backup não cria o sensor descrito.
-- **D)** Incorreta. VPN protege um túnel, mas não cumpre por si a função de detecção solicitada.
+- **A)** o IDS pode receber cópia por SPAN ou TAP, analisar fora do caminho de produção e gerar alertas sem encaminhar os pacotes.
+- **B)** encaminhamento obrigatório com descarte corresponde à atuação preventiva em linha, não ao IDS fora de banda solicitado.
+- **C)** um sensor que recebe apenas cópia não ocupa o mesmo caminho dos pacotes e não os descarta diretamente nesse caminho.
+- **D)** o IPS em linha pode bloquear tráfego, mas participa justamente do caminho que o enunciado manda evitar.
 
-**Conceito:** posicionamento e função de um IDS.
+**Conceito:** função e posicionamento de IDS fora de banda em contraste com IPS em linha.
 
-**Pegadinha:** confundir qualquer ferramenta que inspeciona tráfego com um controle de bloqueio em linha.
+**Pegadinha:** separar incorretamente o nome do controle de sua posição e de sua capacidade de intervir no fluxo.
 
-**Como pensar:** a expressão “receber cópia e alertar sem bloquear” aponta diretamente para detecção fora de banda.
+**Como pensar:** procure a combinação completa “cópia do tráfego + alerta + fora do caminho”; ela descreve IDS fora de banda.
 
-**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), nos trechos que contrastam detecção fora de banda com prevenção em linha.
 
 ### Comentário S2D4Q181
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Alerta ou classificação automatizada não constitui prova definitiva de incidente.
-- **B)** Incorreta. Como atua em linha, um IPS pode afetar disponibilidade ao bloquear tráfego legítimo.
-- **C)** Incorreta. Classificar tráfego legítimo como malicioso é falso positivo; falso negativo ocorre quando um ataque não é detectado ou impedido.
-- **D)** Correta. A regra produziu falso positivo e o bloqueio preventivo atingiu a disponibilidade do serviço.
+- **A)** o tráfego era legítimo, portanto a classificação como ataque não constitui verdadeiro positivo.
+- **B)** um verdadeiro negativo exigiria tráfego legítimo corretamente liberado, mas o IPS o bloqueou.
+- **C)** falso negativo ocorre quando um ataque real não é detectado ou impedido, situação oposta à descrita.
+- **D)** o controle marcou como malicioso um evento legítimo e, por estar em linha, pode tornar o serviço indisponível para usuários válidos.
 
-**Conceito:** falsos positivos, falsos negativos e impacto operacional de IPS.
+**Conceito:** falso positivo, falso negativo e impacto operacional de um IPS em linha.
 
-**Pegadinha:** trocar falso positivo por falso negativo ou imaginar que prevenção automática não tem custo de disponibilidade.
+**Pegadinha:** classificar o resultado pela ação de bloquear, sem comparar a decisão do sensor com a natureza real do tráfego.
 
-**Como pensar:** pergunte primeiro se o evento era ataque; depois compare a realidade com a decisão do controle.
+**Como pensar:** monte duas colunas — realidade e decisão — e depois avalie o efeito do bloqueio sobre a disponibilidade.
 
-**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), especialmente a matriz de falsos positivos e falsos negativos e o impacto de bloqueios preventivos em linha.
 
 ### Comentário S2D4Q182
 
 **Nível:** Difícil
 
 **Uso:** Revisão
-**Alternativa correta: B.**
+
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Reunir banco e serviço exposto no mesmo segmento amplia o impacto de um comprometimento.
-- **B)** Correta. O componente público fica na DMZ, enquanto aplicação e banco recebem proteção adicional e somente fluxos necessários são liberados.
-- **C)** Incorreta. Base interna sensível não deve ser publicada diretamente na internet; a DMZ destina-se aos serviços expostos.
-- **D)** Incorreta. Deve-se presumir que o serviço exposto pode ser comprometido e monitorar rigorosamente seus fluxos para dentro.
+- **A)** somente o componente necessário fica exposto na DMZ, e novas barreiras limitam portal, aplicação e banco aos fluxos indispensáveis.
+- **B)** reunir banco e serviço exposto amplia o alcance de um comprometimento e elimina barreiras entre as camadas.
+- **C)** publicar o banco e permitir acesso direto do portal contorna a camada de aplicação e expõe o ativo mais sensível.
+- **D)** acesso irrestrito da DMZ à rede interna transforma o componente exposto em caminho amplo para movimento lateral.
 
-**Conceito:** DMZ como segmento intermediário e contenção da exposição.
+**Conceito:** DMZ como segmento intermediário e filtragem entre camadas de uma aplicação publicada.
 
-**Pegadinha:** interpretar DMZ como rede confiável, livre de controles ou apropriada para todos os componentes da aplicação.
+**Pegadinha:** considerar a DMZ uma rede confiável ou colocar nela todos os componentes apenas porque pertencem ao mesmo serviço.
 
-**Como pensar:** aproxime da internet apenas o indispensável e imponha nova barreira antes dos dados sensíveis.
+**Como pensar:** aproxime da Internet apenas o componente indispensável e crie uma decisão de acesso mínima em cada travessia seguinte.
 
-**Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz).
+**Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz), especialmente o posicionamento do componente exposto e a filtragem mínima para segmentos internos mais restritos.
 
 ### Comentário S2D4Q183
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O túnel não remove malware nem corrige o estado do equipamento remoto.
-- **B)** Incorreta. Confidencialidade do canal não equivale a autorização irrestrita dentro da organização.
-- **C)** Correta. A VPN protege o percurso, mas precisa ser combinada com identidade, postura, segmentação, privilégio mínimo e monitoramento.
-- **D)** Incorreta. Credenciais podem ser roubadas, e gateway vulnerável pode ser explorado; MFA e correção continuam relevantes.
+- **A)** a VPN protege dados no percurso, mas não remove processos maliciosos nem substitui controles no dispositivo.
+- **B)** autenticar uma identidade não comprova a integridade do equipamento nem autoriza acesso irrestrito aos segmentos internos.
+- **C)** o canal pode estar protegido enquanto o endpoint permanece hostil, por isso postura, MFA, segmentação e menor privilégio continuam necessários.
+- **D)** credenciais ainda podem ser roubadas e gateways vulneráveis continuam exploráveis sem correções e monitoramento.
 
-**Conceito:** benefícios e limites de uma VPN de acesso remoto.
+**Conceito:** alcance da VPN de acesso remoto e separação entre segurança do canal, endpoint, identidade e autorização.
 
-**Pegadinha:** transferir a confiança criptográfica do túnel para o endpoint ou para todas as ações do usuário.
+**Pegadinha:** transferir a confiança criptográfica do túnel para o dispositivo ou para todas as ações do usuário.
 
-**Como pensar:** divida o cenário em canal, endpoint, identidade e autorização; a VPN resolve apenas parte desses problemas.
+**Como pensar:** avalie separadamente percurso, endpoint, identidade e privilégio; a VPN resolve principalmente o primeiro componente.
 
-**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn), nos trechos sobre proteção do canal, confiança no endpoint, autenticação e política de acesso.
 
 ### Comentário S2D4Q184
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Os modelos foram invertidos: site-to-site conecta redes; acesso remoto atende usuário ou dispositivo.
-- **B)** Incorreta. IPsec protege na camada IP, enquanto soluções TLS VPN têm escopo definido pela solução; a alternativa troca essas características.
-- **C)** Incorreta. Criar túnel não elimina autorização, segmentação ou menor privilégio.
-- **D)** Correta. A associação dos modelos está correta e reconhece os controles necessários ao redor do túnel.
+- **A)** a associação dos modelos está correta, mas um túnel autenticado não concede automaticamente acesso a todas as redes e ações.
+- **B)** os modelos foram invertidos; site-to-site liga redes, enquanto acesso remoto atende usuários ou dispositivos.
+- **C)** a associação dos modelos está correta, porém a alternativa troca o escopo usual de IPsec e de soluções baseadas em TLS.
+- **D)** cada necessidade recebe o modelo apropriado, e o túnel continua dependente de autenticação, correções e autorização mínima.
 
-**Conceito:** VPN site-to-site, VPN de acesso remoto e tecnologias de proteção.
+**Conceito:** VPN site-to-site, VPN de acesso remoto e limites de autorização do túnel.
 
-**Pegadinha:** confundir alcance do túnel com autorização total ou inverter IPsec e TLS.
+**Pegadinha:** acertar os extremos do túnel, mas atribuir acesso irrestrito ou inverter as tecnologias de proteção.
 
-**Como pensar:** identifique primeiro os extremos: rede com rede indica site-to-site; usuário ou dispositivo com organização indica acesso remoto.
+**Como pensar:** primeiro identifique “rede com rede” ou “dispositivo com organização”; depois verifique identidade, integridade e escopo autorizado.
 
-**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn), especialmente a distinção entre site-to-site e acesso remoto e os controles que permanecem necessários ao redor do túnel.
 
 ### Comentário S2D4Q185
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A VLAN restringe ataques locais de camada 2, mas não impede tráfego que o roteamento inter-VLAN autoriza.
-- **B)** Correta. VLANs criam separação operacional e de broadcast; ACLs ou firewalls internos aplicam a política aos fluxos roteados.
-- **C)** Incorreta. Os controles têm funções complementares, não idênticas, e podem ser usados em conjunto.
-- **D)** Incorreta. Segmentação pode empregar VLANs, sub-redes, ACLs, VRFs, firewalls internos e microsegmentação.
+- **A)** VLAN separa o domínio de camada 2, mas não bloqueia o tráfego que a função de roteamento autoriza entre sub-redes.
+- **B)** a separação de broadcast permanece, porém o movimento lateral roteado precisa de política explícita em ACL ou firewall.
+- **C)** roteamento não funde os domínios de broadcast, e a segmentação pode permitir somente os fluxos necessários sem remover toda comunicação.
+- **D)** o identificador de VLAN não expressa sozinho a política de camada 3, e trunk trata transporte de VLANs, não autorização inter-VLAN.
 
-**Conceito:** segmentação de camada 2 e controle do movimento lateral roteado.
+**Conceito:** diferença entre separação de camada 2 por VLAN e filtragem do tráfego roteado.
 
-**Pegadinha:** transformar a separação de broadcast em bloqueio automático de toda comunicação entre redes.
+**Pegadinha:** transformar isolamento de broadcast em bloqueio automático de toda comunicação entre os segmentos.
 
-**Como pensar:** acompanhe o pacote: se há roteamento entre VLANs, verifique qual política limita esse novo caminho.
+**Como pensar:** siga o pacote depois da VLAN; se existe roteamento, procure o controle que decide quais fluxos podem atravessá-lo.
 
-**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao).
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao), nos trechos que separam domínios de camada 2 e controle dos fluxos roteados por ACL ou firewall.
 
 ### Comentário S2D4Q186
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Menor privilégio limita operação, recurso, origem e contexto ao necessário e requer revisão ao longo do tempo.
-- **B)** Incorreta. Conta administrativa compartilhada amplia impacto, dificulta responsabilização e viola separação de funções.
-- **C)** Incorreta. Autenticação comprova identidade; autorização ainda deve decidir o que essa identidade pode fazer.
-- **D)** Incorreta. Estar em VLAN separada não justifica liberar portas e fluxos sem necessidade.
+- **A)** a configuração limita identidade, ações, objetos e origem ao necessário e ainda prevê revisão ao longo do tempo.
+- **B)** restringir a origem não compensa o privilégio de proprietário nem a falta de responsabilização causada por conta compartilhada.
+- **C)** autenticação e rotação de senha não justificam conceder o esquema inteiro nem compartilhar a mesma autorização com usuários.
+- **D)** identidade por servidor melhora rastreabilidade, mas privilégio administrativo amplo e confiança exclusiva na VLAN violam o mínimo necessário.
 
-**Conceito:** menor privilégio aplicado a contas de serviço e fluxos entre segmentos.
+**Conceito:** menor privilégio aplicado à conta de serviço e ao fluxo entre aplicação e banco.
 
-**Pegadinha:** presumir que autenticação ou separação lógica já conceda qualquer permissão necessária.
+**Pegadinha:** aceitar um controle verdadeiro — origem, rotação ou conta separada — como compensação para permissões excessivas.
 
-**Como pensar:** restrinja simultaneamente sujeito, ação, objeto e contexto ao mínimo exigido pela missão.
+**Como pensar:** confira quatro limites em conjunto: quem acessa, qual ação executa, sobre qual objeto e a partir de qual contexto.
 
-**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria), especialmente sujeito, ação, objeto, contexto e revisão de privilégios.
 
 ### Comentário S2D4Q187
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Uma cifra simétrica usa segredo compartilhado e costuma ser eficiente para dados volumosos.
-- **B)** Incorreta. Par de chaves caracteriza criptografia assimétrica, que pode apoiar assinaturas.
-- **C)** Correta. AES exemplifica cifra simétrica; mecanismos assimétricos empregam chaves pública e privada e atendem finalidades como assinatura e estabelecimento.
-- **D)** Incorreta. O efeito depende do algoritmo e do esquema; assinar com chave privada não torna o conteúdo confidencial.
+- **A)** mecanismos assimétricos são mais custosos para grande volume, e segredo compartilhado não produz assinatura verificável publicamente.
+- **B)** cifra simétrica é adequada ao volume, mas uma chave conhecida por várias partes não identifica exclusivamente qual delas produziu o resultado.
+- **C)** cifras simétricas são eficientes para dados volumosos, enquanto pares assimétricos atendem assinatura, verificação e estabelecimento de chaves.
+- **D)** operação com chave privada não é regra genérica de confidencialidade, e verificação pública não oculta a identidade do emissor.
 
-**Conceito:** chaves, eficiência e aplicações da criptografia simétrica e assimétrica.
+**Conceito:** chaves, eficiência e aplicações dos mecanismos simétricos e assimétricos.
 
-**Pegadinha:** associar mecanicamente chave privada a confidencialidade ou trocar a quantidade de chaves dos modelos.
+**Pegadinha:** associar mecanicamente chave privada a confidencialidade ou segredo compartilhado a assinatura pública.
 
-**Como pensar:** para volume, lembre a eficiência simétrica; para identidade, assinatura ou estabelecimento, avalie o par assimétrico.
+**Como pensar:** separe desempenho do volume de dados das funções de identidade e estabelecimento; cada família resolve uma parte diferente.
 
-**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia).
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia), nos trechos sobre eficiência, quantidade de chaves, assinatura e estabelecimento de segredos.
 
 ### Comentário S2D4Q188
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. TLS não cifra todo o tráfego diretamente com a chave privada do servidor.
-- **B)** Correta. O desenho híbrido aproveita mecanismos assimétricos ou PSK para autenticação e estabelecimento e cifras simétricas para a sessão.
-- **C)** Incorreta. Hash não é reversível e não fornece confidencialidade por si só.
-- **D)** Incorreta. Certificado não elimina o uso eficiente de chaves simétricas após o handshake.
+- **A)** TLS não aplica a chave assimétrica a cada registro, e uma chave simétrica não valida por si o vínculo de identidade do certificado.
+- **B)** mecanismos assimétricos ou PSK ajudam a autenticar e estabelecer segredos, dos quais derivam chaves simétricas eficientes para os registros.
+- **C)** hash isolado não fornece confidencialidade, e mecanismo assimétrico não é técnica de compactação do handshake.
+- **D)** certificado não cifra diretamente todo o fluxo, e as chaves simétricas são usadas depois da negociação para proteger a sessão.
 
-**Conceito:** criptografia híbrida e divisão de funções no TLS.
+**Conceito:** divisão de funções na criptografia híbrida e no TLS.
 
-**Pegadinha:** imaginar que a chave do certificado cifra diretamente cada byte da aplicação.
+**Pegadinha:** imaginar que a chave do certificado cifra cada byte ou que hash isolado substitui a cifra da sessão.
 
-**Como pensar:** separe a fase de estabelecer confiança e segredos da fase de transportar grande volume de dados.
+**Como pensar:** separe a fase de obter confiança e segredos da fase de proteger eficientemente o volume de dados.
 
-**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls).
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls), especialmente a separação entre autenticação/estabelecimento e proteção simétrica do tráfego.
 
 ### Comentário S2D4Q189
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Funções hash comuns podem ser calculadas sem chave privada.
-- **B)** Incorreta. Hash produz resumo e não cifra nem impede a substituição do arquivo.
-- **C)** Incorreta. Tamanho igual de entrada não obriga hashes iguais; resistência a colisões é propriedade desejada.
-- **D)** Correta. Se arquivo e referência são adulterados juntos, a comparação coincide; a referência precisa de origem confiável ou proteção autenticada.
+- **A)** a comparação só prova igualdade com a referência apresentada; se ambos foram trocados, o valor adulterado também coincidirá.
+- **B)** quem controla a página pode recalcular e substituir resumos de vários algoritmos junto com o arquivo.
+- **C)** duas cópias fornecidas pela mesma origem comprometida podem ser idênticas e igualmente maliciosas.
+- **D)** assinatura ou canal independente autenticado protege a referência contra a mesma capacidade que alterou o arquivo.
 
-**Conceito:** uso de hash para detectar alteração e necessidade de referência confiável.
+**Conceito:** hash para integridade e necessidade de uma referência autêntica e independente.
 
-**Pegadinha:** tratar a publicação do resumo ao lado do arquivo como prova autônoma de integridade.
+**Pegadinha:** confundir resistência criptográfica do algoritmo com confiança na origem que publicou o resumo.
 
-**Como pensar:** antes de confiar no resultado da comparação, pergunte quem protegeu o valor de referência.
+**Como pensar:** antes de comparar valores, pergunte se o atacante capaz de trocar o arquivo também consegue trocar a referência.
 
-**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas), no trecho sobre referência confiável, autenticação do resumo e substituição conjunta de arquivo e hash.
 
 ### Comentário S2D4Q190
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: C.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Hash sem segredo pode detectar alteração diante de referência confiável, mas não autentica por si a origem da mensagem.
-- **B)** Incorreta. Armazenamento reversível de senha não é o mecanismo de autenticação de mensagem solicitado.
-- **C)** Correta. HMAC combina função hash e segredo compartilhado para oferecer integridade e autenticação entre quem conhece a chave.
-- **D)** Incorreta. Certificado sem validação e sem prova de posse não satisfaz o requisito descrito.
+- **A)** qualquer parte pode recalcular um hash sem chave após alterar a mensagem, portanto ele não autentica a origem por si só.
+- **B)** modo de cifra sem autenticação pode preservar confidencialidade, mas não fornece a verificação de integridade solicitada.
+- **C)** salt público e função de senha não criam assinatura nem autenticam a mensagem perante quem conhece um segredo comum.
+- **D)** HMAC combina a mensagem com o segredo compartilhado para oferecer integridade e autenticação entre quem conhece a chave.
 
-**Conceito:** HMAC como código de autenticação de mensagem com segredo compartilhado.
+**Conceito:** HMAC como código de autenticação de mensagem baseado em segredo compartilhado.
 
-**Pegadinha:** atribuir a hash simples autenticação de origem ou a HMAC não repúdio forte entre as partes.
+**Pegadinha:** atribuir autenticação a hash simples, cifra sem etiqueta ou função de armazenamento de senhas.
 
-**Como pensar:** havendo segredo compartilhado e necessidade de autenticar a mensagem, procure MAC ou HMAC; não repúdio exigiria outra estrutura.
+**Como pensar:** quando há segredo comum e se deseja autenticar a mensagem, procure MAC ou HMAC; não repúdio exige outra estrutura.
 
-**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas), especialmente a definição de HMAC, o uso de segredo compartilhado e o limite de não repúdio.
 
 ### Comentário S2D4Q191
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 **Alternativa correta: A.**
@@ -9913,252 +10654,291 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 ### Comentário S2D4Q192
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: D.**
 
-**Análise das alternativas:**
-
-- **A)** Incorreta. No modelo apresentado, o signatário usa a chave privada e o verificador usa a pública.
-- **B)** Incorreta. Assinatura protege origem e integridade, mas não fornece confidencialidade sozinha.
-- **C)** Incorreta. Qualquer pessoa pode calcular hash sem segredo; o resumo isolado não identifica o autor.
-- **D)** Correta. A alternativa descreve corretamente as chaves e limita o alcance da assinatura.
-
-**Conceito:** geração, verificação e propriedades da assinatura digital.
-
-**Pegadinha:** inverter as chaves ou confundir assinatura de dados com cifração do conteúdo.
-
-**Como pensar:** assinatura responde “quem vinculou sua chave privada a estes dados e eles mudaram?”, não “quem consegue lê-los?”.
-
-**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
-
-### Comentário S2D4Q193
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A mera presença de chave pública não valida identidade, prazo nem finalidade do certificado.
-- **B)** Incorreta. Certificado não atesta honestidade comercial; ele vincula identidade ou nome à chave segundo a validação realizada.
-- **C)** Correta. Cadeia, assinatura, validade, nome, uso da chave e revogação contextual compõem a validação de certificado X.509.
-- **D)** Incorreta. Porta 443 é convenção de serviço, não prova criptográfica da identidade do servidor.
+- **A)** a alternativa inverte as chaves; no modelo apresentado, a chave privada assina e a pública verifica.
+- **B)** as chaves estão corretamente associadas, mas assinatura não cifra automaticamente o documento nem restringe sua leitura ao verificador.
+- **C)** a assinatura vincula a chave privada aos dados, e a chave pública permite verificar origem e integridade sem esconder o conteúdo.
+- **D)** qualquer pessoa pode calcular hash sem segredo; a igualdade apoia integridade perante uma referência confiável, não identifica o autor.
 
-**Conceito:** validação de certificado X.509 usado por servidor.
+**Conceito:** geração, verificação e propriedades da assinatura digital assimétrica.
 
-**Pegadinha:** validar apenas a cadeia e esquecer o nome esperado, ou atribuir ao certificado uma garantia sobre comportamento comercial.
+**Pegadinha:** inverter as chaves ou acrescentar confidencialidade a uma operação destinada a origem e integridade.
 
-**Como pensar:** confira quem assinou, para qual nome, em qual período, para qual uso e se a credencial continua aceitável.
+**Como pensar:** separe assinatura de cifração: a primeira usa a chave privada do signatário e pode ser verificada publicamente.
 
-**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado), nos trechos sobre geração com chave privada, verificação com chave pública e ausência de confidencialidade automática.
+
+### Comentário S2D4Q193
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** cifra forte não compensa certificado emitido para outro nome, uso incompatível ou credencial que deixou de ser aceitável.
+- **B)** conferir campos da folha não basta se o cliente transforma arbitrariamente o próprio certificado recebido em âncora confiável.
+- **C)** a validação combina caminho confiável, assinaturas, período, identidade esperada, finalidade da chave e estado de revogação aplicável.
+- **D)** porta e reputação comercial não substituem as verificações criptográficas e semânticas do certificado.
+
+**Conceito:** validação completa de certificado X.509 apresentado por servidor.
+
+**Pegadinha:** validar apenas parte dos campos ou substituir confiança criptográfica por porta, marca da emissora ou força da cifra.
+
+**Como pensar:** pergunte quem assinou, para qual nome, durante qual período, para qual uso e se a credencial continua aceitável.
+
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado), especialmente cadeia de confiança, assinaturas, validade, nome, uso da chave e revogação contextual.
 
 ### Comentário S2D4Q194
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. TLS protege o canal; não corrige o endpoint nem protege automaticamente dados fora desse canal.
-- **B)** Correta. A alternativa resume negociação, derivação de segredos, validação de identidade e proteção simétrica autenticada dos dados.
-- **C)** Incorreta. Certificado apresenta vínculo e chave para autenticação; ele não cifra diretamente todo o conteúdo com a chave privada.
-- **D)** Incorreta. Finished confirma integridade do handshake, mas não substitui a validação do nome e da cadeia.
+- **A)** porta não autentica servidor, e TLS não cifra todos os registros diretamente com a chave pública do certificado.
+- **B)** o handshake negocia e deriva material secreto, autentica o servidor e produz chaves simétricas para proteger os registros da aplicação.
+- **C)** certificado não entrega sozinho o segredo da sessão, Finished não substitui cadeia e nome, e essas verificações não podem ser ignoradas.
+- **D)** TLS protege o canal; não corrige endpoints, não protege automaticamente armazenamento e não elimina falhas da aplicação.
 
-**Conceito:** fluxo conceitual e propriedades do TLS 1.3.
+**Conceito:** fluxo conceitual e limites de proteção do TLS 1.3.
 
-**Pegadinha:** reduzir TLS a certificado ou estender a proteção do canal aos endpoints e à aplicação inteira.
+**Pegadinha:** reduzir o protocolo ao certificado ou ampliar a proteção do canal para endpoints, armazenamento e código da aplicação.
 
-**Como pensar:** percorra o handshake: negociar, derivar, autenticar, confirmar e então transportar com chaves de sessão.
+**Como pensar:** percorra as fases em ordem: negociar, derivar, autenticar, confirmar e então transportar com chaves simétricas autenticadas.
 
-**Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls).
+**Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls), nos trechos sobre negociação, derivação de segredos, autenticação do servidor, Finished e proteção autenticada com chaves de sessão.
 
 ### Comentário S2D4Q195
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. SAE muda a troca autenticada por senha e dificulta o uso passivo de captura como verificador offline, sem criar invulnerabilidade.
-- **B)** Incorreta. WPA2-Personal usa segredo pré-compartilhado; identidade individual por 802.1X caracteriza o modo Enterprise.
-- **C)** Incorreta. WPA3 não elimina falhas de firmware, configuração ou administração.
-- **D)** Incorreta. No modo de transição, clientes legados ainda podem negociar WPA2-Personal.
+- **A)** as três afirmações delimitam a melhoria de SAE, os riscos que permanecem e a possível negociação WPA2 no modo de transição.
+- **B)** I e II são verdadeiras, mas III também é; compatibilidade com cliente legado pode manter associações WPA2-Personal.
+- **C)** I e III são verdadeiras, mas II também é; SAE não produz invulnerabilidade a todos os ataques ou falhas.
+- **D)** II e III são verdadeiras, mas I também é; resistência à verificação offline por captura é uma diferença importante de SAE.
 
-**Conceito:** diferença entre WPA2-Personal e WPA3-Personal com SAE.
+**Conceito:** diferença entre WPA2-Personal e WPA3-Personal, alcance de SAE e limites do modo de transição.
 
-**Pegadinha:** concluir que SAE torna senha fraca segura ou que o modo de transição equivale a WPA3 puro.
+**Pegadinha:** transformar uma melhoria específica contra captura passiva em proteção absoluta ou presumir que todo cliente negociou WPA3.
 
-**Como pensar:** identifique o modo realmente negociado e depois avalie senha, implementação, endpoint e configuração.
+**Como pensar:** separe três perguntas: qual troca é usada, qual ataque ela dificulta e qual modo foi realmente negociado pelo cliente.
 
-**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), especialmente SAE, limites diante de senha fraca e ataque online e comportamento do modo de transição.
 
 ### Comentário S2D4Q196
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: C.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Segredo permanente compartilhado dificulta revogação e responsabilização individual.
-- **B)** Incorreta. WEP é legado e não deve ser mantido como solução de segurança.
-- **C)** Correta. Enterprise com 802.1X e identidades individuais melhora controle e rastreabilidade, desde que a validação e os demais controles sejam corretos.
-- **D)** Incorreta. Modo de transição pode negociar WPA2 com cliente legado; não garante SAE em toda associação.
+- **A)** segredo coletivo não autentica cada pessoa, e MAC pode ser alterado ou compartilhado, sem substituir identidade individual.
+- **B)** segredo por setor reduz o grupo afetado, mas ainda não permite revogar um único usuário sem alterar a credencial coletiva.
+- **C)** modo de transição pode admitir associação WPA2, e segredo coletivo continua sem responsabilização individual suficiente.
+- **D)** Enterprise com 802.1X permite identidades individuais, revogação e registros, desde que o servidor de autenticação seja validado corretamente.
 
-**Conceito:** segurança Wi-Fi institucional em modo Enterprise.
+**Conceito:** segurança Wi-Fi institucional com 802.1X e identidades individuais.
 
-**Pegadinha:** confundir compatibilidade com segurança ou presumir que o nome WPA3 no ponto de acesso revela o modo de todos os clientes.
+**Pegadinha:** confundir identificação de dispositivo ou segredo de grupo com autenticação individual revogável.
 
-**Como pensar:** para muitos usuários, procure identidade individual, validação do servidor e capacidade de revogar acesso sem trocar segredo coletivo.
+**Como pensar:** procure uma identidade por usuário, validação do servidor e capacidade de revogar uma conta sem redistribuir segredo coletivo.
 
-**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), nos trechos sobre modo Enterprise, 802.1X, identidade individual, validação do servidor e limites de segredos coletivos.
 
 ### Comentário S2D4Q197
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Restaurar antes de conter e erradicar pode reinfectar o ambiente, e apagar logs destrói evidências.
-- **B)** Correta. A sequência distingue detecção e análise, contenção, erradicação e recuperação validada, preservando evidência conforme o caso.
-- **C)** Incorreta. Alerta não é incidente confirmado, e desligamento indiscriminado pode destruir evidência ou ampliar o impacto operacional.
-- **D)** Incorreta. Contenção limita expansão; erradicação remove causa e persistência; lições aprendidas retroalimentam os controles.
+- **A)** restaurar antes de conter e erradicar favorece reinfecção, e apagar registros destrói material de investigação.
+- **B)** a sequência confirma e delimita, limita expansão, remove causa e persistência e retorna em condição validada e monitorada.
+- **C)** alerta exige análise, desligamento indiscriminado pode ampliar impacto ou perder evidência, e resposta não termina com mera disponibilidade.
+- **D)** erradicar antes de conter permite expansão, e evidências relevantes devem ser preservadas antes de alterações destrutivas.
 
-**Conceito:** objetivos distintos no ciclo de resposta a incidentes.
+**Conceito:** objetivos e ordenação das fases de resposta a incidentes.
 
-**Pegadinha:** tratar bloqueio temporário como remoção completa ou restaurar apenas porque há backup.
+**Pegadinha:** antecipar restauração ou erradicação e tratar disponibilidade aparente como validação suficiente do retorno.
 
-**Como pensar:** pergunte em ordem: o que ocorreu, como limitar, como remover a causa e como voltar com confiança.
+**Como pensar:** siga as perguntas em ordem: o que ocorreu, como limitar, como remover a causa e como voltar com confiança.
 
-**Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes).
+**Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes), especialmente análise, contenção, preservação de evidências, erradicação e recuperação validada.
 
 ### Comentário S2D4Q198
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A afirmação II também está correta; RPO trata do ponto de recuperação e da janela tolerada de perda.
-- **B)** Incorreta. A cadeia típica difere: incrementais dependem de todos os incrementais posteriores ao completo; diferencial usa o mais recente.
-- **C)** Incorreta. RPO e RTO são objetivos definidos previamente, usados depois para avaliar o resultado observado.
-- **D)** Correta. As duas afirmações descrevem adequadamente restauração típica e os significados de RPO e RTO.
+- **A)** I e II descrevem corretamente as cadeias, mas III também aplica corretamente RPO e RTO ao horário dado.
+- **B)** I e III são corretas, mas II também é; o diferencial mais recente já acumula mudanças desde o completo.
+- **C)** II e III são corretas, mas I também é; a restauração incremental depende da sequência posterior ao completo.
+- **D)** as três afirmações distinguem adequadamente as duas cadeias e os dois objetivos de recuperação.
 
-**Conceito:** backup incremental e diferencial, RPO e RTO.
+**Conceito:** restauração incremental e diferencial, ponto de recuperação por RPO e prazo de retorno por RTO.
 
-**Pegadinha:** confundir a quantidade de conjuntos de restauração, chamar RPO de duração ou chamar RTO de frequência de cópia.
+**Pegadinha:** trocar a quantidade de conjuntos da cadeia ou tratar RPO como duração e RTO como frequência de cópia.
 
-**Como pensar:** RPO olha para trás, ao ponto aceitável dos dados; RTO olha para a frente, ao prazo de retorno do serviço.
+**Como pensar:** resolva quatro filtros separadamente: cadeia incremental, cadeia diferencial, ponto aceitável dos dados e prazo aceitável do serviço.
 
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos sobre restauração incremental e diferencial e sobre os significados temporais de RPO e RTO.
 
 ### Comentário S2D4Q199
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Cópia offline ou isolada, credenciais separadas, imutabilidade adequada, versionamento e testes reduzem a chance de perder simultaneamente produção e recuperação.
-- **B)** Incorreta. A mesma credencial e exposição on-line constituem falha comum capaz de comprometer todas as cópias.
-- **C)** Incorreta. Existência e tamanho não provam que a restauração seja íntegra, completa e operacional.
-- **D)** Incorreta. Replicação pode propagar exclusão ou cifração; retenção de versões é importante para retornar a estado anterior.
+- **A)** as três medidas reduzem falha comum administrativa, preservam estados anteriores e comprovam que a cópia pode voltar a operar.
+- **B)** I e II são corretas, mas sem III a existência da cópia não demonstra restauração íntegra, completa e funcional.
+- **C)** I e III são corretas, mas II também é necessária para preservar histórico contra exclusão ou cifra propagada.
+- **D)** II e III são corretas, mas I reduz a chance de credenciais e alcance de produção destruírem todas as cópias.
 
-**Conceito:** proteção de backups contra ransomware e validação de restauração.
+**Conceito:** proteção de backups contra ransomware e validação da capacidade de restauração.
 
-**Pegadinha:** contar cópias sem avaliar isolamento administrativo, mutabilidade, histórico e capacidade real de restaurar.
+**Pegadinha:** contar cópias ou versões sem avaliar isolamento administrativo e teste real de recuperação.
 
-**Como pensar:** imagine o atacante com credenciais de produção e pergunte quais cópias ele ainda não consegue alterar ou excluir.
+**Como pensar:** imagine o atacante com privilégios de produção e verifique quais cópias ainda resistem, qual histórico permanece e se ele pode ser restaurado.
 
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), especialmente isolamento, credenciais separadas, imutabilidade ou versões e validação periódica de restauração.
 
 ### Comentário S2D4Q200
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: A.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Alta disponibilidade ou redundância atende à continuidade diante de falha; backup versionado atende à recuperação de estado anterior.
-- **B)** Incorreta. RAID pode tolerar certas falhas de disco, mas replica exclusão e cifração e não preserva necessariamente versões.
-- **C)** Incorreta. Backup semanal não evita a interrupção inicial nem garante qualquer RTO; frequência também pode ser incompatível com o RPO.
-- **D)** Incorreta. Replicação síncrona pode copiar imediatamente corrupção ou exclusão para o segundo nó.
+- **A)** dois nós aumentam disponibilidade, mas a replicação do estado atual pode copiar o dano para ambos sem oferecer versão anterior.
+- **B)** RAID e replicação podem tolerar falhas físicas, mas também podem propagar exclusão ou cifra e não preservam histórico por si.
+- **C)** backups podem recuperar dados, porém não fornecem componente em execução para assumir imediatamente a carga do servidor falho.
+- **D)** redundância e failover sustentam continuidade diante da falha, enquanto backups versionados recuperam um estado anterior íntegro.
 
-**Conceito:** diferença e complementaridade entre backup, redundância e alta disponibilidade.
+**Conceito:** complementaridade entre alta disponibilidade, redundância e backup versionado.
 
-**Pegadinha:** usar uma tecnologia de continuidade como se ela também preservasse histórico recuperável.
+**Pegadinha:** usar uma solução de continuidade presente como se ela também preservasse histórico recuperável.
 
-**Como pensar:** disponibilidade presente pede componente alternativo; recuperação do passado pede cópia versionada e protegida.
+**Como pensar:** associe falha de componente a failover e dano lógico ou exclusão a uma cópia anterior protegida e testada.
 
-**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
-
-
----
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos que distinguem redundância ou alta disponibilidade de backup versionado para recuperação de estado anterior.
 
 ## Questões extras de revisão fixa do Dia 4
 
 #### Extra Dia 4.1
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** aplicação conjunta de legalidade e eficiência.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01).
 
-Um gestor elimina uma etapa exigida por lei porque acredita que o procedimento ficará mais rápido e econômico. À luz dos princípios do art. 37, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01), especialmente a compatibilização entre produtividade e atuação conforme a lei.
 
-A) A eficiência prevalece sobre a legalidade sempre que houver economia de recursos.
-B) A eficiência orienta a busca de qualidade e produtividade dentro da legalidade, sem autorizar o descumprimento de requisito legal.
-C) A publicidade posterior convalida automaticamente a medida ilegal.
-D) A legalidade confere ao agente público a mesma liberdade geral de atuação atribuída ao particular.
+Um gestor identifica uma etapa legalmente obrigatória que torna o procedimento lento. Considerando legalidade e eficiência, assinale a conduta compatível com o art. 37 da Constituição.
+
+A) Suprimir imediatamente a etapa, desde que demonstre economia e registre por escrito as razões gerenciais que justificaram a decisão.
+
+B) Buscar ganhos nas etapas permitidas e propor a alteração da regra pelos meios próprios, sem descumprir a obrigação enquanto ela vigorar.
+
+C) Suprimir a etapa e publicar o ato posteriormente, pois transparência e redução de custo convalidam a inobservância do requisito legal.
+
+D) Tratar a obrigação como facultativa, pois o agente público possui a mesma liberdade geral do particular para escolher como deve atuar.
+
 #### Extra Dia 4.2
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** publicidade institucional e impessoalidade.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02).
 
-Uma campanha oficial apresenta foto, nome e slogan pessoal de determinada autoridade, com destaque destinado a associar a ela uma obra pública. Considerando o art. 37, § 1º, da Constituição, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02), no trecho sobre finalidades permitidas e vedação de promoção pessoal de autoridade ou servidor.
 
-A) A campanha é válida porque toda publicidade de obra pública admite promoção pessoal.
-B) A identificação do órgão é proibida, ainda que necessária à orientação do cidadão.
-C) A veracidade das informações impede qualquer violação à impessoalidade.
-D) A publicidade institucional deve ter caráter educativo, informativo ou de orientação social e não pode caracterizar promoção pessoal de autoridade ou servidor.
+Uma campanha oficial sobre nova obra destaca o nome, a fotografia e um slogan eleitoral da autoridade responsável. À luz do art. 37, § 1º, assinale a alternativa correta.
+
+A) A campanha é válida se as informações sobre a obra forem verdadeiras, pois a veracidade afasta eventual promoção pessoal da autoridade.
+
+B) A campanha é inválida porque a Constituição proíbe até a identificação do órgão público responsável pela informação de interesse coletivo.
+
+C) A campanha é válida se também apresentar conteúdo educativo, pois essa finalidade permite associar a realização pública à imagem do gestor.
+
+D) A campanha deve servir à educação, à informação ou à orientação social, sem nomes, símbolos ou imagens que promovam agentes públicos.
+
 #### Extra Dia 4.3
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** órgão, entidade, autarquia e desconcentração.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03).
 
-Sobre órgão, entidade e autarquia, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03), especialmente a distinção entre desconcentração interna e criação legal de entidade autárquica.
 
-A) Órgão é centro de competências sem personalidade própria; autarquia é entidade de direito público da Administração Indireta, criada diretamente por lei específica.
-B) Órgão e entidade possuem necessariamente personalidade jurídica própria e patrimônio autônomo.
-C) A criação de departamentos dentro de um ministério constitui descentralização para nova pessoa jurídica.
-D) Autarquia é empresa privada autorizada por decreto e subordinada hierarquicamente a um ministério.
+Um ministério cria internamente um novo departamento, enquanto lei específica cria uma autarquia para executar atividade administrativa. Assinale a classificação correta.
+
+A) O departamento é órgão sem personalidade, surgido por desconcentração; a autarquia é entidade pública da Administração Indireta.
+
+B) O departamento é entidade com personalidade, surgida por descentralização; a autarquia é órgão interno da Administração Direta.
+
+C) O departamento e a autarquia são órgãos sem personalidade, pois ambos permanecem subordinados à pessoa política que os instituiu.
+
+D) O departamento e a autarquia são entidades privadas, pois a execução especializada retira de ambos a natureza de direito público.
+
 #### Extra Dia 4.4
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
@@ -10175,56 +10955,89 @@ B) finalidade; todo erro sobre fatos corresponde necessariamente a desvio de fin
 C) motivo; motivo é o suporte fático e jurídico do ato, enquanto motivação é a exposição desses fundamentos.
 D) competência; fato inexistente transforma automaticamente a atribuição legal da autoridade.
 #### Extra Dia 4.5
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** presunção e autoexecutoriedade.
-- **Nível:** Médio
+
+- **Nível:** Difícil
+
 - **Uso:** Essenciais
-- **Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05).
 
-Quanto aos atributos do ato administrativo, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05), nos trechos sobre presunção relativa e condições da autoexecutoriedade.
 
-A) A presunção de legitimidade é absoluta e impede controle administrativo ou judicial.
-B) A presunção de legitimidade e veracidade é relativa; a autoexecutoriedade depende de hipótese admitida em lei ou de urgência reconhecida pelo ordenamento.
-C) A imperatividade está presente em todo ato e exige concordância do destinatário.
-D) A autoexecutoriedade permite executar qualquer decisão sem base jurídica e sem controle posterior.
+Considere as afirmações sobre atributos do ato administrativo: I. a presunção de legitimidade e veracidade admite prova em contrário; II. a autoexecutoriedade depende de previsão legal ou de urgência admitida pelo ordenamento; III. a autoexecutoriedade acompanha todo ato e impede controle posterior. Assinale a opção correta.
+
+A) Está correta apenas I, ficando excluídas as afirmações II e III.
+
+B) Estão corretas apenas II e III, ficando excluída a afirmação I.
+
+C) Estão corretas apenas I e II, ficando excluída a afirmação III.
+
+D) Estão corretas apenas I e III, ficando excluída a afirmação II.
+
 #### Extra Dia 4.6
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** anulação, revogação, convalidação e decadência.
-- **Nível:** Médio
+
+- **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06).
 
-Assinale a alternativa correta sobre anulação, revogação, convalidação e decadência na Lei nº 9.784/1999.
+- **Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06), especialmente os arts. 53, 54 e 55 da Lei nº 9.784/1999 sintetizados na seção.
 
-A) Revogação corrige ilegalidade e pode ser determinada pelo Judiciário com base em conveniência administrativa.
-B) Todo vício é convalidável, ainda que haja lesão ao interesse público ou prejuízo a terceiro.
-C) O direito de anular ato favorável nunca sofre limite temporal, mesmo diante de boa-fé comprovada.
-D) A Administração anula ato ilegal e pode revogar ato válido por mérito; defeito sanável pode ser convalidado sem lesão ou prejuízo, e o art. 54 prevê decadência de cinco anos para anular ato favorável, salvo má-fé.
+Considere as afirmações à luz da Lei nº 9.784/1999: I. ato ilegal deve ser anulado; II. ato válido pode ser revogado por mérito; III. defeito sanável pode ser convalidado sem lesão ao interesse público ou prejuízo a terceiro; IV. o direito de anular ato favorável decai em cinco anos, salvo má-fé. Assinale a opção correta.
+
+A) Estão corretas somente I e II, com exclusão das afirmações III e IV.
+
+B) Estão corretas somente I, III e IV, com exclusão da afirmação II.
+
+C) Estão corretas somente II, III e IV, com exclusão da afirmação I.
+
+D) Estão corretas I, II, III e IV, sem exclusão de nenhuma afirmação.
+
 #### Extra Dia 4.7
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** compatibilização entre transparência e proteção de dados.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07).
 
-Sobre a relação entre LAI e LGPD no Poder Público, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07), no trecho sobre análise contextual, acesso parcial e afastamento dos absolutos de divulgação total e sigilo total.
 
-A) Transparência e proteção de dados devem ser compatibilizadas segundo finalidade, necessidade, interesse público e eventuais restrições legais, sem divulgação total ou sigilo total automáticos.
-B) A presença de qualquer dado pessoal torna todo documento público sigiloso por cem anos.
-C) A LAI elimina os princípios de finalidade e necessidade sempre que houver interesse jornalístico.
-D) A LGPD proíbe o tratamento de dados pessoais pelo Poder Público para executar competência legal.
+Um pedido de acesso alcança documento com gastos públicos e dados pessoais sem relação necessária com a fiscalização da despesa. Considerando LAI e LGPD, assinale a alternativa correta.
+
+A) O órgão deve avaliar finalidade, necessidade, interesse público e restrições legais, permitindo o acesso à parte pública e protegendo dados pessoais quando cabível.
+
+B) O órgão deve negar integralmente o pedido, pois a presença de qualquer dado pessoal transforma todo o documento em informação sigilosa pelo prazo máximo.
+
+C) O órgão deve divulgar integralmente o documento, pois a existência de gasto público elimina a incidência dos princípios de finalidade e necessidade sobre os dados pessoais.
+
+D) O órgão deve eliminar previamente todos os dados pessoais, pois a LGPD impede seu tratamento pelo Poder Público até para cumprir competência ou atribuição legal.
+
 #### Extra Dia 4.8
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** dolo e tipicidade na improbidade administrativa.
-- **Nível:** Médio
+- **Nível:** Difícil
 - **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-08 — Improbidade administrativa](semana_02_estudo.md#rf4-adm-08).
 
@@ -10235,49 +11048,71 @@ B) A voluntariedade do ato substitui o dolo e a tipicidade exigidos pela lei.
 C) Mera ilegalidade não basta: o enquadramento por improbidade exige conduta dolosa tipificada e os demais requisitos legais.
 D) A ausência de dano ao erário exclui qualquer modalidade de improbidade, mesmo quando exista outro tipo doloso.
 #### Extra Dia 4.9
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** modalidades, dispensa e inexigibilidade.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09).
 
-À luz da Lei nº 14.133/2021 e da revisão fixa, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09), especialmente os arts. 28, 33, 72, 74 e 75 da Lei nº 14.133/2021 sintetizados na seção.
 
-A) Menor preço, maior desconto e técnica e preço são modalidades de licitação.
-B) Pregão, concorrência, concurso, leilão e diálogo competitivo são modalidades; dispensa decorre de hipótese legal e inexigibilidade de competição inviável, sem afastar processo e motivação.
-C) Dispensa e inexigibilidade são sinônimos e eliminam a instrução do processo de contratação.
-D) Tomada de preços e convite integram o rol de modalidades da Lei nº 14.133/2021.
+Considere as afirmações sobre a Lei nº 14.133/2021: I. pregão, concorrência, concurso, leilão e diálogo competitivo são modalidades; II. menor preço e técnica e preço são critérios de julgamento, não modalidades; III. dispensa decorre de hipótese legal e inexigibilidade de competição inviável, sem afastar instrução e motivação. Assinale a opção correta.
+
+A) Estão corretas apenas I e II, ficando excluída a afirmação III.
+
+B) Estão corretas I, II e III, sem exclusão de nenhuma afirmação.
+
+C) Estão corretas apenas I e III, ficando excluída a afirmação II.
+
+D) Estão corretas apenas II e III, ficando excluída a afirmação I.
+
 #### Extra Dia 4.10
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Administração Pública
+
 - **Assunto:** responsabilidade objetiva e direito de regresso.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10).
 
-Na responsabilidade civil objetiva prevista no art. 37, § 6º, da Constituição, assinale a alternativa correta.
+- **Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10), no contraste entre responsabilidade objetiva perante a vítima e elemento subjetivo exigido no direito de regresso.
 
-A) A vítima deve provar necessariamente dolo do agente para obter reparação do Estado.
-B) Responsabilidade objetiva significa indenização sem dano ou nexo causal.
-C) O direito de regresso contra o agente também é objetivo e independe de dolo ou culpa.
-D) Perante a vítima, exigem-se conduta estatal, dano e nexo causal, sem prova de culpa; o regresso contra o agente depende de dolo ou culpa.
+Durante o serviço, um agente causa dano a terceiro com veículo público. Provados a conduta estatal, o dano e o nexo causal, assinale a alternativa correta sobre a reparação e eventual regresso.
+
+A) A vítima não precisa provar culpa para responsabilizar o Estado; no regresso, porém, deve ser demonstrado dolo ou culpa do agente.
+
+B) O Estado indeniza mesmo sem dano ou nexo causal; depois do pagamento, o regresso decorre automaticamente do vínculo funcional do agente.
+
+C) A vítima deve demandar primeiro o agente e provar sua culpa; o Estado responde apenas de forma subsidiária se ele não tiver patrimônio.
+
+D) O Estado só indeniza se a vítima provar dolo do agente; depois do pagamento, o regresso dispensa prova de dolo ou culpa do responsável.
+
 #### Extra Dia 4.11
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** negação da conjunção.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [RF4-RLM-01 — Negação de conjunção e disjunção](semana_02_estudo.md#rf4-rlm-01).
 
 Considere as proposições P: “o firewall bloqueou a origem” e Q: “o IPS conteve o ataque”. A negação de “P e Q” é:
 
-A) “não P ou não Q”.
+A) “P ou Q”.
 B) “não P e não Q”.
-C) “P ou Q”.
+C) “não P ou não Q”.
 D) “P se, e somente se, Q”.
 #### Extra Dia 4.12
 - **Dia:** Dia 4
@@ -10299,7 +11134,7 @@ D) A negação de “P implica Q” é “P ou Q”, e a de “todo” é “alg
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** princípio da inclusão-exclusão.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [RF4-RLM-03 — Princípio da inclusão-exclusão](semana_02_estudo.md#rf4-rlm-03).
 
@@ -10314,7 +11149,7 @@ D) 24.
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** porcentagem reversa.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [RF4-RLM-04 — Porcentagem reversa](semana_02_estudo.md#rf4-rlm-04).
 
@@ -10329,7 +11164,7 @@ D) R$ 300,00.
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** proporção inversa e produtividade.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [RF4-RLM-05 — Proporção e produtividade](semana_02_estudo.md#rf4-rlm-05).
 
@@ -10344,7 +11179,7 @@ D) 27 horas.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** relações de sentido dos conectores.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [RF4-PT-01 — Conectores](semana_02_estudo.md#rf4-pt-01).
 
@@ -10359,7 +11194,7 @@ D) conclusão e concessão.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** referência anafórica e inferência autorizada.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [RF4-PT-02 — Inferência e referência](semana_02_estudo.md#rf4-pt-02).
 
@@ -10370,26 +11205,37 @@ B) “Essa medida” retoma o isolamento do servidor, e o texto não autoriza co
 C) O trecho permite inferir que todos os servidores foram isolados e restaurados.
 D) A contenção do tráfego comprova necessariamente a eliminação da causa do incidente.
 #### Extra Dia 4.18
+
 - **Dia:** Dia 4
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** concordância de `haver` e `existir`.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03).
 
-Assinale a alternativa redigida de acordo com a norma-padrão.
+- **Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03), especialmente a impessoalidade de “haver” existencial e a concordância pessoal de “existir”.
 
-A) Haviam vulnerabilidades e devem haver controles adicionais.
-B) Houveram dois incidentes e existe várias evidências.
-C) Deve existirem alternativas e havia sido registradas falhas.
-D) Deve haver controles adicionais, e existem registros suficientes para a análise.
+Assinale a alternativa integralmente redigida de acordo com a norma-padrão de concordância.
+
+A) Devem haver falhas no inventário, e existia registros ainda sem revisão.
+
+B) Houveram falhas no inventário, e deve existir registros ainda sem revisão.
+
+C) Havia falhas no inventário, e deve existirem registros ainda sem revisão.
+
+D) Pode haver falhas no inventário, e existem registros ainda sem revisão.
+
 #### Extra Dia 4.19
 - **Dia:** Dia 4
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação e crase.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [RF4-PT-04 — Pontuação e crase](semana_02_estudo.md#rf4-pt-04).
 
@@ -10405,7 +11251,7 @@ D) A equipe começou à restaurar o serviço, e o gestor à acompanhou.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** reescrita com preservação de causa e consequência.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [RF4-PT-05 — Reescrita e clareza](semana_02_estudo.md#rf4-pt-05).
 
@@ -10413,8 +11259,8 @@ Original: “Como havia risco imediato, a equipe isolou o servidor.” Assinale 
 
 A) Embora não houvesse risco, a equipe isolou necessariamente todos os servidores.
 B) A equipe isolou o servidor; contudo, havia risco imediato como consequência.
-C) Havia risco imediato; por isso, a equipe isolou o servidor.
-D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
+C) Se a equipe isolou o servidor, então não poderia haver risco imediato.
+D) Havia risco imediato; por isso, a equipe isolou o servidor.
 
 ### Gabarito das questões extras do Dia 4
 
@@ -10424,13 +11270,13 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 | 4.2 | D |
 | 4.3 | A |
 | 4.4 | C |
-| 4.5 | B |
+| 4.5 | C |
 | 4.6 | D |
 | 4.7 | A |
 | 4.8 | C |
 | 4.9 | B |
-| 4.10 | D |
-| 4.11 | A |
+| 4.10 | A |
+| 4.11 | C |
 | 4.12 | C |
 | 4.13 | B |
 | 4.14 | D |
@@ -10439,11 +11285,12 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 | 4.17 | B |
 | 4.18 | D |
 | 4.19 | A |
-| 4.20 | C |
+| 4.20 | D |
 
 ### Comentários das questões extras do Dia 4
 
 #### Comentário Extra Dia 4.1
+
 **Alternativa correta: B.**
 
 **Nível:** Médio
@@ -10452,20 +11299,21 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Eficiência não possui superioridade abstrata sobre a legalidade.
-- **B)** Correta. Qualidade e economia devem ser buscadas nos limites autorizados pelo ordenamento.
-- **C)** Incorreta. Publicidade não corrige automaticamente vício de legalidade.
-- **D)** Incorreta. O agente público atua conforme competência e autorização jurídica, não por liberdade geral.
+- **A)** vantagem econômica e motivação não autorizam o agente a afastar requisito legal vigente.
+- **B)** eficiência orienta a otimização possível, mas a mudança da obrigação precisa ocorrer pela via juridicamente competente.
+- **C)** publicidade posterior não sana automaticamente a violação da legalidade.
+- **D)** o agente público atua segundo competências e autorizações jurídicas, e não pela liberdade geral reservada ao particular.
 
-**Conceito:** aplicação conjunta de legalidade e eficiência.
+**Conceito:** aplicação conjunta dos princípios da legalidade e da eficiência.
 
-**Pegadinha:** invocar um princípio verdadeiro para afastar outro princípio obrigatório.
+**Pegadinha:** transformar eficiência, economia ou publicidade em autorização para descumprir a lei.
 
-**Como pensar:** primeiro verifique se a atuação é juridicamente permitida; depois avalie sua eficiência.
+**Como pensar:** verifique primeiro os limites jurídicos; dentro deles, escolha a solução de melhor qualidade e produtividade.
 
-**Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01).
+**Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01), especialmente a compatibilização entre produtividade e atuação conforme a lei.
 
 #### Comentário Extra Dia 4.2
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -10474,20 +11322,21 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Obra real não autoriza usar publicidade institucional para prestígio pessoal.
-- **B)** Incorreta. Identificação institucional necessária não se confunde com promoção do agente.
-- **C)** Incorreta. Informação verdadeira ainda pode ser apresentada com caráter promocional.
-- **D)** Correta. A alternativa reproduz finalidade e vedação do art. 37, § 1º.
+- **A)** uma mensagem verdadeira ainda pode violar a impessoalidade ao promover pessoalmente a autoridade.
+- **B)** identificação institucional necessária à orientação do cidadão não se confunde com promoção do agente.
+- **C)** finalidade educativa não autoriza nome, fotografia ou slogan que personalize a realização administrativa.
+- **D)** a opção preserva as finalidades constitucionais e a proibição de elementos caracterizadores de promoção pessoal.
 
-**Conceito:** publicidade institucional e impessoalidade.
+**Conceito:** finalidade e limites impessoais da publicidade institucional.
 
-**Pegadinha:** confundir informação sobre ato público com propaganda pessoal da autoridade.
+**Pegadinha:** supor que veracidade ou conteúdo educativo neutralizam automaticamente a personalização da campanha.
 
-**Como pensar:** observe o foco da mensagem: orientar o cidadão ou exaltar determinada pessoa.
+**Como pensar:** separe informação sobre a atuação do órgão de propaganda centrada na imagem de quem ocupa o cargo.
 
-**Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02).
+**Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02), no trecho sobre finalidades permitidas e vedação de promoção pessoal de autoridade ou servidor.
 
 #### Comentário Extra Dia 4.3
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -10496,18 +11345,18 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Correta. Órgão não possui personalidade própria; autarquia é pessoa jurídica de direito público criada por lei.
-- **B)** Incorreta. A ausência de personalidade própria é característica usual do órgão.
-- **C)** Incorreta. Departamentos na mesma pessoa jurídica representam desconcentração.
-- **D)** Incorreta. Autarquia não é empresa privada e vinculação não equivale a subordinação hierárquica.
+- **A)** departamento interno é centro de competências sem personalidade, enquanto a autarquia é pessoa jurídica pública da Administração Indireta.
+- **B)** a alternativa inverte personalidade, técnica organizacional e posição administrativa das duas estruturas.
+- **C)** a autarquia possui personalidade jurídica própria, embora permaneça vinculada à finalidade legal e sujeita a controle.
+- **D)** especialização administrativa não transforma departamento nem autarquia em entidade de direito privado.
 
-**Conceito:** órgão, entidade, autarquia e desconcentração.
+**Conceito:** diferença entre órgão, entidade autárquica, desconcentração e descentralização.
 
-**Pegadinha:** transformar distribuição interna de competências em criação de nova pessoa jurídica.
+**Pegadinha:** equiparar criação de unidade interna à criação de nova pessoa jurídica.
 
-**Como pensar:** pergunte se surgiu personalidade jurídica nova; se não, há organização interna.
+**Como pensar:** pergunte se surgiu uma nova personalidade jurídica; sem ela há órgão e desconcentração, com autarquia há entidade e descentralização.
 
-**Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03).
+**Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03), especialmente a distinção entre desconcentração interna e criação legal de entidade autárquica.
 
 #### Comentário Extra Dia 4.4
 **Alternativa correta: C.**
@@ -10532,50 +11381,53 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-04 — Elementos do ato administrativo](semana_02_estudo.md#rf4-adm-04).
 
 #### Comentário Extra Dia 4.5
-**Alternativa correta: B.**
 
-**Nível:** Médio
+**Alternativa correta: C.**
+
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A presunção é relativa e admite prova em contrário.
-- **B)** Correta. A alternativa apresenta os limites de ambos os atributos.
-- **C)** Incorreta. Nem todo ato possui imperatividade, que independe da concordância quando presente.
-- **D)** Incorreta. Autoexecutoriedade não elimina base legal nem controle.
+- **A)** a afirmação II também é correta, pois autoexecutoriedade não é atributo incondicionado.
+- **B)** I é verdadeira e III é falsa; execução direta não elimina controle administrativo ou judicial posterior.
+- **C)** I reconhece o caráter relativo da presunção, II expressa as hipóteses de execução direta e III formula um absoluto falso.
+- **D)** II é verdadeira e III é falsa; nem todo ato pode ser executado coercitivamente sem ordem judicial.
 
-**Conceito:** presunção e autoexecutoriedade.
+**Conceito:** limites da presunção de legitimidade e da autoexecutoriedade.
 
-**Pegadinha:** transformar atributos condicionados ou relativos em poderes absolutos.
+**Pegadinha:** converter atributos relativos ou condicionados em poderes absolutos e imunes a controle.
 
-**Como pensar:** desconfie de “todo”, “qualquer” e “impede controle”.
+**Como pensar:** avalie separadamente a possibilidade de prova contrária e a existência de fundamento para execução direta.
 
-**Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05).
+**Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05), nos trechos sobre presunção relativa e condições da autoexecutoriedade.
 
 #### Comentário Extra Dia 4.6
+
 **Alternativa correta: D.**
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Ilegalidade conduz à anulação; Judiciário não revoga ato alheio por mérito.
-- **B)** Incorreta. Só defeito sanável pode ser convalidado, sem lesão ao interesse público nem prejuízo a terceiro.
-- **C)** Incorreta. O art. 54 estabelece decadência quinquenal para ato favorável, ressalvada má-fé.
-- **D)** Correta. A opção diferencia os institutos e inclui os limites legais.
+- **A)** III e IV também são verdadeiras, pois a Lei prevê convalidação condicionada e decadência com ressalva de má-fé.
+- **B)** II é verdadeira; a Administração pode revogar ato válido por conveniência ou oportunidade, respeitados os limites jurídicos.
+- **C)** I é verdadeira; ilegalidade conduz à anulação, e não à revogação por mérito.
+- **D)** as quatro afirmações preservam, respectivamente, legalidade, mérito, condições de saneamento e limite temporal do poder de anular.
 
-**Conceito:** anulação, revogação, convalidação e decadência.
+**Conceito:** distinção e condições de anulação, revogação, convalidação e decadência administrativa.
 
-**Pegadinha:** usar revogação para ilegalidade ou tratar convalidação como cura universal.
+**Pegadinha:** trocar ilegalidade por mérito, universalizar a convalidação ou ignorar o limite temporal do ato favorável.
 
-**Como pensar:** ilegalidade → anulação; mérito de ato válido → revogação; vício sanável → possível convalidação.
+**Como pensar:** classifique primeiro o problema como ilegalidade, mérito ou vício sanável; depois verifique prejuízo, boa-fé e prazo.
 
-**Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06).
+**Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06), especialmente os arts. 53, 54 e 55 da Lei nº 9.784/1999 sintetizados na seção.
 
 #### Comentário Extra Dia 4.7
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -10584,23 +11436,23 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Correta. LAI e LGPD coexistem e exigem análise concreta de finalidade e necessidade.
-- **B)** Incorreta. Dado pessoal no documento não produz sigilo integral automático.
-- **C)** Incorreta. Acesso público não apaga finalidade, boa-fé e proteção necessária.
-- **D)** Incorreta. A LGPD admite tratamento público para finalidade e competência legais.
+- **A)** transparência e proteção de dados devem ser compatibilizadas, inclusive mediante acesso à parcela pública e resguardo do conteúdo protegido.
+- **B)** dado pessoal não torna automaticamente sigiloso todo o documento nem determina, por si só, prazo máximo de restrição.
+- **C)** interesse no gasto público não elimina finalidade, necessidade e demais limites incidentes sobre dados pessoais.
+- **D)** a LGPD permite tratamento pelo Poder Público para finalidade pública e execução de competência ou atribuição legal.
 
-**Conceito:** compatibilização entre transparência e proteção de dados.
+**Conceito:** convivência entre transparência pública e proteção juridicamente adequada de dados pessoais.
 
-**Pegadinha:** procurar uma lei que sempre anule a outra.
+**Pegadinha:** substituir a análise contextual por sigilo total, divulgação total ou proibição total de tratamento.
 
-**Como pensar:** identifique interesse público, dado pessoal, finalidade, necessidade e eventual restrição.
+**Como pensar:** identifique a finalidade do acesso, separe a informação pública do dado protegido e aplique a restrição apenas na medida necessária.
 
-**Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07).
+**Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07), no trecho sobre análise contextual, acesso parcial e afastamento dos absolutos de divulgação total e sigilo total.
 
 #### Comentário Extra Dia 4.8
 **Alternativa correta: C.**
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -10620,6 +11472,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-08 — Improbidade administrativa](semana_02_estudo.md#rf4-adm-08).
 
 #### Comentário Extra Dia 4.9
+
 **Alternativa correta: B.**
 
 **Nível:** Difícil
@@ -10628,21 +11481,22 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Os itens citados são critérios de julgamento, não modalidades.
-- **B)** Correta. A opção reúne as cinco modalidades atuais e distingue as contratações diretas sem eliminar processo.
-- **C)** Incorreta. Dispensa e inexigibilidade possuem fundamentos diferentes e exigem instrução.
-- **D)** Incorreta. Convite e tomada de preços não integram o rol da Lei nº 14.133/2021.
+- **A)** a afirmação III também é verdadeira; contratação direta não elimina processo e motivação.
+- **B)** as três afirmações separam modalidades, critérios e fundamentos distintos de contratação direta.
+- **C)** a afirmação II é verdadeira, pois menor preço e técnica e preço pertencem ao rol de critérios de julgamento.
+- **D)** a afirmação I é verdadeira e reproduz as cinco modalidades previstas na nova Lei de Licitações.
 
-**Conceito:** modalidades, dispensa e inexigibilidade.
+**Conceito:** distinção entre modalidade, critério de julgamento, dispensa e inexigibilidade.
 
-**Pegadinha:** confundir modalidade com critério ou contratação direta com ausência de processo.
+**Pegadinha:** chamar critérios de modalidades ou tratar contratação direta como ausência de instrução processual.
 
-**Como pensar:** competição inviável aponta para inexigibilidade; hipótese legal com competição viável em tese aponta, em regra, para dispensa.
+**Como pensar:** monte três caixas antes de responder: formas do procedimento, critérios para julgar propostas e fundamentos da contratação direta.
 
-**Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09).
+**Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09), especialmente os arts. 28, 33, 72, 74 e 75 da Lei nº 14.133/2021 sintetizados na seção.
 
 #### Comentário Extra Dia 4.10
-**Alternativa correta: D.**
+
+**Alternativa correta: A.**
 
 **Nível:** Difícil
 
@@ -10650,31 +11504,31 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A vítima não precisa provar culpa ou dolo estatal na responsabilidade objetiva.
-- **B)** Incorreta. Objetividade não elimina dano e nexo causal.
-- **C)** Incorreta. A ação regressiva exige dolo ou culpa do agente.
-- **D)** Correta. A alternativa separa corretamente a relação Estado-vítima da relação regressiva.
+- **A)** perante a vítima, a culpa é dispensada; perante o agente, a pretensão regressiva requer dolo ou culpa.
+- **B)** dano e nexo causal continuam necessários, e o vínculo funcional sozinho não basta para a ação regressiva.
+- **C)** o regime constitucional não torna a responsabilidade estatal meramente subsidiária nas condições descritas.
+- **D)** a vítima não precisa provar dolo ou culpa para a responsabilidade objetiva, mas o regresso depende de um desses elementos.
 
-**Conceito:** responsabilidade objetiva e direito de regresso.
+**Conceito:** requisitos distintos da responsabilidade objetiva estatal e do direito de regresso.
 
-**Pegadinha:** interpretar “objetiva” como indenização automática ou estendê-la ao regresso.
+**Pegadinha:** transportar a objetividade da relação Estado-vítima para a relação regressiva contra o agente.
 
-**Como pensar:** perante a vítima, retire apenas a prova de culpa; mantenha conduta, dano e nexo.
+**Como pensar:** separe as duas relações jurídicas e pergunte, em cada uma, quais fatos precisam ser demonstrados.
 
-**Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10).
+**Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10), no contraste entre responsabilidade objetiva perante a vítima e elemento subjetivo exigido no direito de regresso.
 
 #### Comentário Extra Dia 4.11
-**Alternativa correta: A.**
+**Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Correta. Pela lei de De Morgan, nega-se cada parcela e troca-se `e` por `ou`.
+- **A)** Incorreta. Mantém as proposições positivas e não nega a conjunção.
 - **B)** Incorreta. Exige que ambas sejam falsas, condição mais forte que a negação da conjunção.
-- **C)** Incorreta. Mantém as proposições positivas e não nega a conjunção.
+- **C)** Correta. Pela lei de De Morgan, nega-se cada parcela e troca-se `e` por `ou`.
 - **D)** Incorreta. Bicondicional expressa equivalência, não a negação pedida.
 
 **Conceito:** negação da conjunção.
@@ -10710,7 +11564,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 #### Comentário Extra Dia 4.13
 **Alternativa correta: B.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -10732,7 +11586,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 #### Comentário Extra Dia 4.14
 **Alternativa correta: D.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -10754,7 +11608,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 #### Comentário Extra Dia 4.15
 **Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -10776,7 +11630,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 #### Comentário Extra Dia 4.16
 **Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -10798,7 +11652,7 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 #### Comentário Extra Dia 4.17
 **Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -10818,31 +11672,32 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-02 — Inferência e referência](semana_02_estudo.md#rf4-pt-02).
 
 #### Comentário Extra Dia 4.18
+
 **Alternativa correta: D.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. `Haver` existencial é impessoal: `havia` e `deve haver`.
-- **B)** Incorreta. O correto seria `houve dois incidentes` e `existem várias evidências`.
-- **C)** Incorreta. Com `existir`, a locução concorda: `devem existir`; a segunda concordância também está inadequada.
-- **D)** Correta. `Deve haver` permanece no singular, enquanto `existem` concorda com `registros`.
+- **A)** a locução com “haver” existencial deve ficar no singular, e “existia” deveria concordar com “registros”.
+- **B)** “houveram” deve permanecer no singular, e a locução com “existir” deve concordar no plural com “registros”.
+- **C)** “havia falhas” está correto, mas o auxiliar de “existir” deve ir ao plural em “devem existir registros”.
+- **D)** “pode haver” permanece no singular e “existem” concorda com o sujeito plural “registros”.
 
-**Conceito:** concordância de `haver` e `existir`.
+**Conceito:** impessoalidade de “haver” existencial e concordância do verbo “existir”.
 
-**Pegadinha:** tratar o complemento de `haver` como sujeito.
+**Pegadinha:** flexionar “haver” como se tivesse sujeito ou manter “existir” no singular diante de sujeito plural.
 
-**Como pensar:** `haver` existencial fica no singular; `existir` procura sujeito e concorda.
+**Como pensar:** se puder trocar por “existir”, mantenha “haver” e seu auxiliar no singular; com “existir”, localize o sujeito.
 
-**Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03).
+**Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03), especialmente a impessoalidade de “haver” existencial e a concordância pessoal de “existir”.
 
 #### Comentário Extra Dia 4.19
 **Alternativa correta: A.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -10862,9 +11717,9 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-04 — Pontuação e crase](semana_02_estudo.md#rf4-pt-04).
 
 #### Comentário Extra Dia 4.20
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -10872,8 +11727,8 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 
 - **A)** Incorreta. Altera causa para concessão, nega o risco e amplia um servidor para todos.
 - **B)** Incorreta. `Contudo` cria oposição e inverte a relação causal original.
-- **C)** Correta. `Por isso` apresenta a consequência da causa expressa na primeira oração.
-- **D)** Incorreta. Cria uma condicional e uma negação de risco inexistentes no original.
+- **C)** Incorreta. Cria uma condicional e uma negação de risco inexistentes no original.
+- **D)** Correta. `Por isso` apresenta a consequência da causa expressa na primeira oração.
 
 **Conceito:** reescrita com preservação de causa e consequência.
 
@@ -10939,7 +11794,7 @@ D) terminado, pois deixou de executar instruções no processador.
 
 ### S2D5Q204 — Troca de contexto viabiliza a multiplexação, mas tem custo; o quantum equilibra resposta e sobrecarga
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -10952,24 +11807,27 @@ B) transformar o algoritmo em FCFS, pois os processos passarão a executar até 
 C) melhorar a responsividade em alguns cenários, ao custo de mais trocas de contexto e maior sobrecarga.
 D) fazer com que threads bloqueadas por E/S se tornem prontas a cada expiração do quantum.
 
-### S2D5Q205 — Condição de corrida ocorre quando o resultado depende da ordem não controlada de acessos concorrentes conflitantes
+### S2D5Q205 — Condição de corrida e atualização perdida
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
+**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade), no exemplo que decompõe atualização em leitura, cálculo e escrita e identifica a atualização perdida.
 
-Duas threads executam, sem sincronização, a operação lógica `contador = contador + 1` sobre um contador inicialmente igual a 40. Ambas leem 40 antes de qualquer gravação e, depois, cada uma grava 41. O resultado observado caracteriza
+Duas threads executam sem sincronização `contador = contador + 1`, partindo de 40. Ambas leem 40, calculam 41 e gravam 41. Como deve ser classificado esse resultado?
 
-A) deadlock, pois nenhuma thread concluiu sua operação.
-B) starvation, pois uma das threads foi definitivamente impedida de usar a CPU.
-C) livelock, pois as threads desfizeram repetidamente o trabalho uma da outra.
-D) condição de corrida com atualização perdida, causada pela intercalação de leitura, cálculo e escrita.
+A) Deadlock, pois cada thread mantém um recurso exclusivo e espera indefinidamente que a outra libere o recurso necessário.
+
+B) Starvation, pois o escalonador favorece continuamente uma thread e impede que a outra conclua sua operação sobre o contador.
+
+C) Condição de corrida com atualização perdida, pois ambas calculam sobre o mesmo valor antigo e uma gravação encobre o outro incremento.
+
+D) Livelock, pois as threads reagem e repetem o incremento indefinidamente, permanecendo ativas sem concluir a operação lógica.
 
 ### S2D5Q206 — Atomicidade, visibilidade e ordenação são propriedades relacionadas, mas distintas
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -10992,29 +11850,32 @@ D) Atomicidade e exclusão mútua garantem, por si sós, que toda gravação sej
 
 Um mutex protege o saldo de uma conta compartilhada. Para que o protocolo de exclusão seja efetivo, é correto afirmar que
 
-A) todos os participantes que acessam o saldo devem respeitar o mesmo protocolo de aquisição e liberação do mutex.
-B) basta uma das threads usar o mutex, pois o sistema operacional bloqueará automaticamente acessos não cooperantes.
+A) basta uma das threads usar o mutex, pois o sistema operacional bloqueará automaticamente acessos não cooperantes.
+B) todos os participantes que acessam o saldo devem respeitar o mesmo protocolo de aquisição e liberação do mutex.
 C) o mutex torna atômicas todas as operações do processo, inclusive as que não usam esse mecanismo.
 D) a thread que adquiriu o mutex pode delegar livremente sua liberação a qualquer fluxo, pois mutex não expressa propriedade.
 
-### S2D5Q208 — Semáforo contador controla N unidades equivalentes; mutex modela exclusão e propriedade
+### S2D5Q208 — Semáforo contador para unidades equivalentes
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição — semáforo binário e contador](semana_02_estudo.md#s2-d5-sincronizacao), no trecho que relaciona o contador a N unidades do recurso.
 
-Um servidor dispõe de oito conexões equivalentes em um pool e deve permitir, no máximo, oito usuários simultâneos desse recurso. O mecanismo mais diretamente adequado é
+Um pool possui oito conexões equivalentes, e cada cliente deve ocupar exatamente uma delas enquanto realiza sua operação. Qual primitiva representa diretamente a disponibilidade do pool?
 
-A) uma variável de condição sem estado e sem qualquer predicado associado.
-B) um spinlock mantido durante toda a utilização externa de cada conexão.
-C) um semáforo contador inicializado com oito unidades, decrementado na aquisição e incrementado na devolução.
-D) um mutex único que permita a oito threads serem proprietárias simultaneamente.
+A) Um semáforo binário iniciado em um, decrementado na aquisição e incrementado quando qualquer uma das oito conexões é devolvida.
+
+B) Um mutex único que admite oito proprietários simultâneos e transfere sua propriedade a cada cliente que entra no pool.
+
+C) Um semáforo contador iniciado em oito, decrementado na aquisição e incrementado quando a conexão ocupada é devolvida.
+
+D) Uma variável de condição sem contador associado, cuja notificação representa permanentemente cada conexão ainda disponível no pool.
 
 ### S2D5Q209 — Variável de condição coordena a espera por um predicado associado a estado protegido por mutex
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -11029,7 +11890,7 @@ D) verificar o predicado em laço; a espera libera atomicamente o mutex e o read
 
 ### S2D5Q210 — Spinlock usa espera ativa e depende de uma expectativa de retenção muito curta
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
@@ -11037,14 +11898,14 @@ D) verificar o predicado em laço; a espera libera atomicamente o mutex e o read
 
 Sobre spinlocks, assinale a alternativa correta.
 
-A) São indicados para esperas longas por E/S, pois a espera ativa economiza ciclos de CPU.
-B) Podem ser úteis em trechos muito curtos, especialmente em multiprocessadores, mas desperdiçam CPU quando a espera se prolonga.
+A) Podem ser úteis em trechos muito curtos, especialmente em multiprocessadores, mas desperdiçam CPU quando a espera se prolonga.
+B) São indicados para esperas longas por E/S, pois a espera ativa economiza ciclos de CPU.
 C) Colocam obrigatoriamente a thread para dormir até que o recurso seja liberado.
 D) São sempre a melhor escolha em um único núcleo não preemptível, mesmo se o detentor do lock ainda precisar executar.
 
 ### S2D5Q211 — Memória compartilhada favorece throughput e transfere ao projeto a responsabilidade pela sincronização
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -11059,7 +11920,7 @@ D) impede que os processos alterem a mesma região, preservando o isolamento int
 
 ### S2D5Q212 — Mecanismos de IPC diferem em localidade, estrutura dos dados, direção, persistência e custo de cópia
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -11072,35 +11933,41 @@ B) Pipe anônimo — necessariamente acessível por nome global; memória compar
 C) Fila de mensagens — preserva unidades de mensagem; socket — pode atender comunicação local ou em rede.
 D) FIFO — exige que os processos sejam pai e filho; RPC — elimina falhas de transporte e serialização.
 
-### S2D5Q213 — Deadlock é um impasse conjunto formado por dependências que impedem o progresso
+### S2D5Q213 — Deadlock como impasse conjunto
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock), no parágrafo inicial que define o conjunto bloqueado por dependências internas de recursos ou eventos.
 
-Um deadlock ocorre quando
+Quatro processos deixaram de progredir. Qual cenário caracteriza propriamente um deadlock do conjunto?
 
-A) uma thread pronta perde a CPU uma única vez para outra de prioridade superior.
-B) processos executam em paralelo e disputam uma variável, ainda que todos concluam normalmente.
-C) um processo aguarda E/S externa que, embora lenta, continua avançando.
-D) um conjunto permanece bloqueado porque cada integrante espera recurso ou evento que outro integrante do conjunto deve produzir ou liberar.
+A) Um processo pronto é continuamente ultrapassado por outros, embora todos os demais continuem concluindo suas execuções normalmente.
 
-### S2D5Q214 — As quatro condições de Coffman precisam coexistir no deadlock clássico de recursos reutilizáveis
+B) Os processos alteram repetidamente suas ações em resposta uns aos outros, permanecendo ativos sem produzir avanço útil.
+
+C) Todos aguardam uma operação de disco lenta, mas o dispositivo continua processando pedidos e sinalizará cada conclusão.
+
+D) Cada processo aguarda um recurso mantido por outro integrante bloqueado, formando dependências fechadas que nenhum deles pode desfazer.
+
+### S2D5Q214 — Condições necessárias de Coffman
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Deadlock — condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — as quatro condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock), na lista numerada das condições e em sua aplicação conjunta.
 
-No modelo clássico de Coffman para recursos reutilizáveis, as condições que devem coexistir para possibilitar deadlock são
+No modelo clássico de recursos reutilizáveis, qual conjunto contém exatamente as quatro condições necessárias de Coffman que, coexistindo, possibilitam deadlock?
 
-A) paralelismo, preempção, memória compartilhada e escalonamento por prioridade.
-B) exclusão mútua, posse e espera, não preempção e espera circular.
-C) seção crítica, semáforo contador, inversão de prioridade e ausência de quantum.
-D) espera ativa, comunicação síncrona, múltiplos núcleos e fila de mensagens.
+A) Exclusão mútua, posse e espera, preempção compulsória e espera circular.
+
+B) Exclusão mútua, posse e espera, não preempção e espera circular.
+
+C) Exclusão mútua, posse e espera, não preempção e espera acíclica.
+
+D) Exclusão mútua, liberação antecipada, não preempção e espera circular.
 
 ### S2D5Q215 — Prevenção rompe deliberadamente ao menos uma condição necessária; ordenação global rompe espera circular
 
@@ -11132,24 +11999,27 @@ B) a não preempção, pois o sistema retira recursos já concedidos a qualquer 
 C) a posse e espera, embora possa reduzir a utilização dos recursos.
 D) a espera circular, sem produzir qualquer impacto sobre a eficiência.
 
-### S2D5Q217 — Evitação concede pedidos somente quando o estado resultante conserva uma sequência segura
+### S2D5Q217 — Estado seguro na evitação de deadlock
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock), na definição de sequência segura e na ressalva de que estado inseguro não significa deadlock já ocorrido.
 
-Na evitação de deadlock, um estado é considerado seguro quando
+Um algoritmo de evitação avalia o estado que resultaria da concessão de um pedido. Qual critério distingue corretamente estado seguro de estado inseguro?
 
-A) não há recurso alocado naquele instante, ainda que nenhuma demanda futura seja conhecida.
-B) todos os processos conseguem concluir simultaneamente, sem precisar aguardar liberações.
-C) não existe exclusão mútua para nenhum dos recursos utilizados pelo sistema.
-D) existe ao menos uma sequência de conclusão que permite atender todos os participantes; estado inseguro não significa deadlock já ocorrido.
+A) O estado é seguro somente sem recursos alocados; o estado inseguro significa que um ciclo já bloqueia todos os participantes.
+
+B) O estado é seguro somente se todas as demandas puderem ser atendidas simultaneamente; o estado inseguro comprova deadlock atual.
+
+C) O estado é seguro quando algum processo pode concluir imediatamente; o estado inseguro significa indisponibilidade permanente de todo recurso.
+
+D) O estado é seguro se existe uma sequência de conclusão para todos; o estado inseguro perde essa garantia, sem provar deadlock atual.
 
 ### S2D5Q218 — O algoritmo do banqueiro evita estados inseguros com base em demanda máxima conhecida e disponibilidade
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -11162,24 +12032,27 @@ B) as demandas máximas declaradas, as alocações correntes e os recursos dispo
 C) somente um grafo de espera com exatamente uma instância de cada recurso.
 D) a interrupção compulsória de qualquer processo sempre que houver uma nova solicitação.
 
-### S2D5Q219 — A suficiência de um ciclo para detectar deadlock depende do número de instâncias de cada tipo de recurso
+### S2D5Q219 — Ciclos e número de instâncias na detecção de deadlock
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
-**Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock), no contraste entre grafo com instância única e análise de disponíveis, alocados e pedidos quando há múltiplas instâncias.
 
-Na detecção de deadlock por grafos e matrizes, é correto afirmar que
+Ao analisar ciclos em um grafo de espera, como o número de instâncias de cada tipo de recurso afeta a conclusão sobre deadlock?
 
-A) com uma instância de cada tipo de recurso, ciclo no grafo de espera caracteriza deadlock; com várias instâncias, o ciclo isolado pode não ser suficiente.
-B) com várias instâncias, qualquer ciclo prova deadlock, sem necessidade de considerar recursos disponíveis e alocados.
-C) a ausência de ciclo prova deadlock quando existe apenas uma instância de cada recurso.
-D) ciclos são irrelevantes; basta haver ao menos um processo no estado bloqueado.
+A) Com uma instância por tipo, o ciclo é necessário e suficiente; com várias, as quantidades importam e o ciclo isolado não basta.
+
+B) Com uma instância por tipo, o ciclo é apenas necessário; com várias, qualquer ciclo basta, sem considerar as quantidades disponíveis.
+
+C) Com uma ou várias instâncias por tipo, todo ciclo é necessário e suficiente, independentemente das quantidades de recursos ainda disponíveis.
+
+D) Com uma instância por tipo, a ausência de ciclo confirma deadlock; com várias, qualquer processo bloqueado basta, mesmo havendo recursos disponíveis.
 
 ### S2D5Q220 — Recuperação pode abortar, preemptar quando possível ou restaurar estado, sempre respeitando consistência e custo
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
@@ -11194,7 +12067,7 @@ D) aumentar a prioridade de todos os processos, o que libera compulsoriamente os
 
 ### S2D5Q221 — Starvation afeta um participante continuamente preterido enquanto o sistema como um todo pode progredir
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -11209,7 +12082,7 @@ D) starvation e aging gradual da prioridade de quem espera.
 
 ### S2D5Q222 — Livelock é atividade contínua sem avanço útil, muitas vezes produzida por respostas simétricas
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -11217,8 +12090,8 @@ D) starvation e aging gradual da prioridade de quem espera.
 
 Duas threads detectam conflito, liberam seus recursos, tentam novamente ao mesmo tempo e repetem indefinidamente esse comportamento. Elas continuam ativas, mas não concluem trabalho útil. Trata-se de
 
-A) starvation, necessariamente causada por uma fila de prioridade estrita.
-B) livelock, que pode ser mitigado por backoff aleatório para romper a simetria.
+A) livelock, que pode ser mitigado por backoff aleatório para romper a simetria.
+B) starvation, necessariamente causada por uma fila de prioridade estrita.
 C) deadlock, pois ambas permanecem bloqueadas sem mudar de estado.
 D) paralelismo, que se resolve substituindo threads por programas passivos.
 
@@ -11232,8 +12105,8 @@ D) paralelismo, que se resolve substituindo threads por programas passivos.
 
 Uma thread de alta prioridade aguarda um mutex mantido por uma thread de baixa prioridade. Threads de prioridade intermediária preemptam repetidamente a detentora, retardando a liberação do mutex. O cenário descreve
 
-A) inversão de prioridade, mitigável por herança temporária da prioridade pela detentora do mutex.
-B) starvation da thread de baixa prioridade, resolvida necessariamente por aumentar o quantum de todas as threads.
+A) starvation da thread de baixa prioridade, resolvida necessariamente por aumentar o quantum de todas as threads.
+B) inversão de prioridade, mitigável por herança temporária da prioridade pela detentora do mutex.
 C) deadlock clássico, pois as quatro condições de Coffman estão demonstradas no enunciado.
 D) livelock, pois a thread de alta prioridade permanece executando e alterando o mutex.
 
@@ -11255,8 +12128,8 @@ As situações I, II e III correspondem, respectivamente, a
 
 A) starvation, deadlock e condição de corrida.
 B) livelock, inversão de prioridade e deadlock.
-C) deadlock, starvation e livelock.
-D) condição de corrida, livelock e starvation.
+C) condição de corrida, livelock e starvation.
+D) deadlock, starvation e livelock.
 
 ### S2D5Q225 — Locks devem proteger o menor estado coerente possível; retenção durante E/S amplia contenção e risco de dependências
 
@@ -11310,8 +12183,8 @@ Três processos A, B e C chegam no instante zero com bursts de CPU iguais a 7, 4
 
 A) a ordem será A, B, C, pois SJF preserva a ordem de chegada quando todos chegam juntos.
 B) a ordem será C, A, B, e a espera média será 8/3 unidades.
-C) a ordem será B, C, A, e a espera média será 3 unidades.
-D) a ordem será C, B, A, e a espera média será 2 unidades.
+C) a ordem será C, B, A, e a espera média será 2 unidades.
+D) a ordem será B, C, A, e a espera média será 3 unidades.
 
 ### S2D5Q228 — SRTF, preempção e tempo restante
 
@@ -11338,18 +12211,21 @@ D) C executa primeiro no instante zero, porque possui o menor burst, ainda que s
 
 ### S2D5Q229 — Starvation em escalonamento por prioridade e aging
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
+**Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock), no parágrafo que define starvation e aging; e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-Em um escalonador por prioridade, tarefas de alta prioridade chegam continuamente e uma tarefa pronta de baixa prioridade permanece sem CPU por tempo indefinido. A medida diretamente voltada a esse problema é:
+Em um escalonador por prioridade, chegadas contínuas de tarefas mais prioritárias mantêm uma tarefa pronta de baixa prioridade sem CPU por tempo indefinido. Qual ajuste combate diretamente o fenômeno?
 
-A) aumentar indefinidamente o quantum apenas das tarefas de alta prioridade.
-B) substituir toda interrupção de hardware por polling.
-C) aplicar aging, elevando gradualmente a prioridade da tarefa conforme seu tempo de espera.
-D) impor que a tarefa de baixa prioridade aguarde bloqueada por E/S.
+A) Elevar a prioridade inicial de cada nova tarefa de alta prioridade, para que ela conclua antes de ampliar a fila.
+
+B) Aplicar aging, aumentando gradualmente a prioridade da tarefa pronta conforme cresce seu tempo de espera na fila.
+
+C) Reduzir gradualmente a prioridade da tarefa que já esperou, reservando a CPU aos fluxos que chegaram mais recentemente.
+
+D) Manter prioridades estáticas e usar FCFS apenas para desempatar tarefas que já possuem exatamente o mesmo nível.
 
 ### S2D5Q230 — Round Robin, quantum, conclusão e resposta
 
@@ -11387,14 +12263,17 @@ D) O tamanho do quantum não afeta tempo de resposta nem sobrecarga, apenas a pr
 
 **Uso:** Revisão
 
-**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
+**Referência:** [8. Escalonamento de CPU — algoritmos clássicos](semana_02_estudo.md#s2-d5-escalonamento), na caracterização de FCFS, SJF, SRTF, prioridade e Round Robin.
 
-Quanto à preempção nos algoritmos clássicos de escalonamento, assinale a alternativa correta.
+Considerando as definições clássicas de FCFS, SJF, SRTF, escalonamento por prioridade e Round Robin, qual classificação quanto à preempção está correta?
 
-A) FCFS e SRTF são necessariamente não preemptivos.
-B) SJF e Round Robin somente preemptam quando chega uma tarefa de prioridade superior.
-C) Prioridade é necessariamente não preemptiva, enquanto FCFS é necessariamente preemptivo.
-D) FCFS e SJF clássicos são não preemptivos; SRTF é preemptivo; prioridade pode ser preemptiva ou não; Round Robin preempta ao fim do quantum.
+A) FCFS e SJF são não preemptivos; SRTF também não preempta; prioridade sempre preempta; Round Robin troca somente em bloqueio.
+
+B) FCFS preempta em cada chegada; SJF não preempta; SRTF preempta; prioridade é sempre não preemptiva; Round Robin usa quantum.
+
+C) FCFS não preempta; SJF preempta por menor burst; SRTF não preempta; prioridade admite variantes; Round Robin não usa preempção.
+
+D) FCFS e SJF são não preemptivos; SRTF preempta; prioridade admite ambas as variantes; Round Robin preempta ao fim do quantum.
 
 ### S2D5Q233 — Camadas de controle de dispositivos e papel do driver
 
@@ -11413,18 +12292,21 @@ D) Driver e controlador são nomes equivalentes para o mecanismo que escalona pr
 
 ### S2D5Q234 — Polling e seu custo operacional
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — polling](semana_02_estudo.md#s2-d5-dispositivos-e-s), na definição da consulta repetida e no contraste entre espera curta e longa.
 
-Sobre polling na entrada/saída, assinale a alternativa correta.
+Um driver pode consultar um registrador de estado em laço até o dispositivo terminar. Em que situação e com qual custo esse polling é adequadamente caracterizado?
 
-A) Consiste em consultar repetidamente o estado do dispositivo; pode ser adequado para espera curtíssima ou evento muito frequente, mas desperdiça ciclos em espera longa.
-B) É uma notificação iniciada exclusivamente pelo dispositivo e, por isso, não consome ciclos de consulta.
-C) Transfere blocos entre dispositivo e memória sem configuração pela CPU.
-D) É sempre sinônimo de E/S síncrona e nunca pode coexistir com interrupções no mesmo driver.
+A) É consulta repetida, aceitável em espera curtíssima ou evento muito frequente, mas consome ciclos se a espera se prolongar.
+
+B) É notificação iniciada pelo dispositivo, adequada a esperas longas porque a CPU permanece dormindo sem realizar consultas periódicas.
+
+C) É transferência autônoma de blocos pelo controlador, adequada quando se quer dispensar a CPU de mover cada unidade de dados.
+
+D) É espera necessariamente síncrona, incompatível com qualquer driver que também utilize interrupções em outras fases da operação.
 
 ### S2D5Q235 — Interrupção e desenho de rotina de serviço curta
 
@@ -11432,29 +12314,35 @@ D) É sempre sinônimo de E/S síncrona e nunca pode coexistir com interrupçõe
 
 **Uso:** Revisão
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — interrupções](semana_02_estudo.md#s2-d5-dispositivos-e-s), no trecho sobre reconhecimento, estado mínimo, processamento diferido e retorno rápido da ISR.
 
-Um dispositivo gera uma interrupção ao concluir uma operação. Segundo o tratamento adequado, a rotina de serviço de interrupção deve, em regra:
+Um dispositivo sinaliza por interrupção que uma operação terminou e há processamento demorado a realizar sobre o resultado. Qual desenho da ISR é o mais adequado em regra?
 
-A) executar todo o processamento demorado antes de devolver a CPU, ainda que bloqueie outras interrupções.
-B) reiniciar o sistema para garantir que os registradores do dispositivo estejam consistentes.
-C) copiar obrigatoriamente cada byte para a memória sem participação de controlador ou DMA.
-D) reconhecer o dispositivo, salvar o mínimo necessário e diferir o trabalho demorado para contexto apropriado, retornando rapidamente.
+A) Manter a ISR até concluir todo o processamento, inclusive operações que possam dormir, e reconhecer o dispositivo somente ao final.
+
+B) Retornar sem reconhecer a origem, deixando que novas interrupções repitam o sinal até uma thread comum consultar o dispositivo.
+
+C) Copiar na ISR todo o bloco byte a byte, ainda que uma transferência DMA já tenha colocado os dados na memória.
+
+D) Reconhecer o dispositivo, preservar o mínimo necessário, agendar o trabalho demorado em contexto apropriado e retornar rapidamente.
 
 ### S2D5Q236 — DMA e limites da expressão transferência direta
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s), na sequência de configuração pela CPU, transferência do bloco e sinalização de conclusão.
 
-Uma controladora recebeu da CPU a origem, o destino, o tamanho e a direção de uma cópia de 8 MiB. Em seguida, transferiu o bloco do dispositivo para a memória e sinalizou a conclusão. O mecanismo predominante de transferência foi:
+A CPU configura origem, destino, tamanho e direção; depois, a controladora transfere um bloco entre dispositivo e memória e sinaliza o término. Qual mecanismo predomina?
 
-A) polling, porque a CPU precisou fornecer parâmetros antes da cópia.
-B) DMA, que reduz a participação da CPU em cada unidade transferida, sem eliminar configuração e tratamento de término.
-C) journaling, porque houve registro prévio de origem e destino.
-D) Round Robin, porque o bloco foi dividido entre dispositivo e memória.
+A) E/S programada, porque fornecer os parâmetros significa que a CPU também moveu cada palavra do bloco entre os extremos.
+
+B) DMA, porque a controladora move o bloco após a configuração da CPU, que ainda participa da preparação e da conclusão.
+
+C) Polling, porque toda configuração inicial implica que a CPU consultou repetidamente o estado durante a transferência inteira.
+
+D) E/S dirigida por interrupção sem DMA, porque o aviso final comprova que a CPU realizou cada unidade transferida.
 
 ### S2D5Q237 — Composição de polling, interrupção e DMA
 
@@ -11462,29 +12350,35 @@ D) Round Robin, porque o bloco foi dividido entre dispositivo e memória.
 
 **Uso:** Revisão
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — comparação operacional](semana_02_estudo.md#s2-d5-dispositivos-e-s), especialmente a afirmação de que os três mecanismos não são mutuamente exclusivos.
 
-Polling, interrupção e DMA são empregados em operações de E/S. Assinale a alternativa correta.
+Um driver prepara uma transferência em bloco, acompanha uma fase inicial e recebe aviso de conclusão. Qual relação entre polling, interrupção e DMA é tecnicamente válida?
 
-A) A presença de interrupção prova que DMA não participou da operação.
-B) Um driver que usa DMA fica impedido de consultar o dispositivo por polling em qualquer fase.
-C) O driver pode configurar DMA para transferir dados e receber uma interrupção de conclusão; os mecanismos não são mutuamente exclusivos.
-D) DMA e interrupção têm a mesma função: ambos transferem todos os dados para a memória.
+A) Se o bloco usa DMA, a conclusão não pode gerar interrupção e precisa ser descoberta exclusivamente por polling.
 
-### S2D5Q238 — Abstrações de nome, metadados, abertura e montagem em sistemas de arquivos
+B) A interrupção move o bloco para a memória, enquanto DMA serve somente para avisar à CPU que a operação terminou.
+
+C) O driver pode configurar DMA, usar polling em alguma fase e receber interrupção ao final; os mecanismos podem coexistir.
+
+D) Ao escolher polling em uma fase, o driver fica impedido de empregar DMA ou interrupção na mesma operação.
+
+### S2D5Q238 — Abstrações de nome, metadados e abertura em sistemas de arquivos
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), na lista que distingue diretório, inode ou equivalente, descritor/handle e montagem.
 
-Sobre abstrações de sistemas de arquivos, assinale a afirmativa correta.
+Ao resolver um caminho e abrir um arquivo, o sistema percorre estruturas persistentes e cria uma referência utilizável pelo processo. Qual associação entre as abstrações está correta?
 
-A) O diretório relaciona nomes a objetos; inode ou registro equivalente guarda metadados e referência ao conteúdo; descritor ou handle é uma referência aberta pertencente a um processo.
-B) O inode é apenas o texto que forma o nome do arquivo e deixa de existir quando o arquivo é aberto.
-C) Montagem significa copiar integralmente todos os arquivos para o diretório escolhido.
-D) Um descritor aberto pertence necessariamente a todos os processos do sistema e independe de controle de acesso.
+A) Diretório relaciona nome a objeto; inode guarda metadados e referência ao conteúdo; descritor representa a abertura no processo.
+
+B) Diretório guarda descritores por processo; inode relaciona nomes a objetos; descritor mantém os metadados persistentes do arquivo.
+
+C) Diretório armazena apenas blocos de conteúdo; inode representa a abertura do processo; descritor relaciona o nome ao objeto.
+
+D) Diretório copia o sistema montado; inode contém somente o texto do nome; descritor é referência global de todos os processos.
 
 ### S2D5Q239 — Commit e replay de transações do journal
 
@@ -11501,172 +12395,211 @@ B) tratá-la como incompleta e descartá-la, enquanto transações confirmadas p
 C) restaurar automaticamente uma cópia histórica de todos os arquivos alterados.
 D) converter a transação em backup completo antes de montar o sistema de arquivos.
 
-### S2D5Q240 — Diferenças entre data=ordered, data=journal e data=writeback no ext4
+### S2D5Q240 — Modos de journaling do ext4
 
 **Nível:** Difícil
 
 **Uso:** Revisão
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), especialmente as diferenças entre `data=ordered`, `data=journal` e `data=writeback`.
 
-Acerca dos modos de journaling do ext4 apresentados na teoria, assinale a alternativa correta.
+Considere as afirmações sobre os modos de journaling do ext4.
 
-A) No modo data=ordered, todos os dados e metadados passam obrigatoriamente pelo journal antes de chegar ao destino final.
-B) No modo data=journal, somente os metadados entram no journal, e os dados podem ser gravados depois sem ordenação.
-C) O modo data=writeback oferece ordenação mais forte que data=journal e equivale a backup.
-D) No padrão data=ordered, metadados são registrados no journal e os blocos de dados associados vão ao sistema principal antes do commit dos metadados; data=journal registra dados e metadados, com maior custo de escrita.
+A) I e II, apenas.
 
-### S2D5Q241 — Journaling versus backup
+B) I e III, apenas.
+
+C) II e III, apenas.
+
+D) I, II e III.
+
+### S2D5Q241 — Journaling e recuperação de versão excluída
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), nos trechos que diferenciam recuperação de consistência e recuperação histórica por backup.
+
+Um arquivo foi excluído legitimamente e a ausência só foi percebida dias depois. O volume permaneceu consistente e utiliza journaling. Qual conclusão é tecnicamente adequada?
+
+A) O journal conserva todas as versões do arquivo e permite escolher qualquer estado anterior sem outra cópia.
+
+B) A consistência do volume comprova que o conteúdo excluído continua recuperável no próprio sistema de arquivos.
+
+C) O journal ajuda a recuperar consistência após falhas, mas recuperar versão anterior exige estratégia de backup.
+
+D) A presença do journal implica replicação automática dos arquivos em uma mídia independente e histórica.
+
+### S2D5Q242 — Conversão do modo Linux `750`
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente a decomposição octal `r=4`, `w=2`, `x=1` e a ordem proprietário, grupo e outros.
+
+Em um arquivo regular Linux, qual representação simbólica corresponde ao modo octal `750`, na ordem proprietário, grupo e outros?
+
+A) proprietário `rwx`, grupo `r--`, outros `---`.
+
+B) proprietário `rw-`, grupo `r-x`, outros `--x`.
+
+C) proprietário `rwx`, grupo `rw-`, outros `---`.
+
+D) proprietário `rwx`, grupo `r-x`, outros `---`.
+
+### S2D5Q243 — Semântica de permissões em diretórios Linux
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), nos trechos sobre listagem por `r`, travessia por `x` e alteração de entradas com `w` e `x`.
+
+Considere as afirmações sobre bits de permissão aplicados a um diretório Linux.
+
+A) I e II, apenas.
+
+B) I e III, apenas.
+
+C) I, II e III.
+
+D) II e III, apenas.
+
+### S2D5Q244 — Comandos Linux para modo, proprietário e ACL
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente `chmod`, `chown`, `getfacl` e `setfacl`.
+
+Um administrador precisa, nessa ordem, alterar os bits de modo de um arquivo existente, trocar seu proprietário e inspecionar sua ACL estendida. Qual sequência é adequada?
+
+A) `umask`, `chgrp` e `setfacl`.
+
+B) `chmod`, `chown` e `getfacl`.
+
+C) `setfacl`, `chgrp` e `getfacl`.
+
+D) `chattr`, `chown` e `setfacl`.
+
+### S2D5Q245 — Permissões Linux e Windows em três camadas
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente a semântica de `rwx` em arquivo e diretório, DACL/ACE e combinação entre compartilhamento e NTFS.
 
-Uma pessoa excluiu de forma autorizada um relatório e, dias depois, percebeu que precisava da versão anterior. O volume usa journaling e permaneceu estruturalmente consistente. É correto concluir que:
+Considere permissões em Linux e Windows.
 
-A) o journal necessariamente mantém todas as versões anteriores e dispensa retenção de backup.
-B) a consistência estrutural prova que o arquivo excluído continua recuperável no mesmo volume.
-C) journaling auxilia a recuperação de consistência após falhas, mas não substitui backup nem garante versão histórica após exclusão, ransomware ou perda da mídia.
-D) todo sistema com journal replica automaticamente os dados em uma mídia independente.
+I. Em um arquivo Linux com modo `750`, o grupo pode ler e executar, mas não gravar.
 
-### S2D5Q242 — Notação octal das permissões Linux em arquivo regular
+II. Em um diretório Linux com modo `640`, o grupo pode ler a lista de nomes, mas a ausência de `x` impede atravessar o caminho e acessar normalmente as entradas.
 
-**Nível:** Muito difícil
+III. No acesso remoto do Windows, permissões de compartilhamento e NTFS podem atuar em conjunto; a DACL reúne ACEs aplicáveis e a permissão efetiva não é simplesmente a mais ampla.
 
-**Uso:** Simulado
+Está correto o que se afirma em:
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+A) I, apenas.
 
-Em um arquivo regular Linux, o modo 750 concede:
+B) II e III, apenas.
 
-A) leitura, gravação e execução ao proprietário; leitura e execução ao grupo; nenhuma permissão aos outros.
-B) leitura e gravação ao proprietário; somente execução ao grupo; leitura aos outros.
-C) controle total ao grupo e somente leitura ao proprietário.
-D) leitura, gravação e execução a todos, porque os três algarismos devem ser somados.
+C) I, II e III.
 
-### S2D5Q243 — Semântica de r, w e x em diretórios Linux
+D) I e III, apenas.
 
-**Nível:** Muito difícil
+### S2D5Q246 — Finalidade do `icacls`
+
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), nos trechos sobre DACL e finalidade do `icacls`.
 
-No modelo clássico de permissões Linux, os bits aplicados a diretórios possuem efeitos próprios. Assinale a alternativa correta.
+Um administrador Windows precisa exibir e modificar ACEs, herança e permissões de arquivos e diretórios. Qual utilitário atende diretamente a essa tarefa?
 
-A) Leitura em diretório autoriza executar qualquer arquivo nele, independentemente das permissões do arquivo.
-B) Escrita em diretório altera automaticamente o conteúdo de todos os arquivos existentes.
-C) Execução em diretório significa iniciar o diretório como se fosse um programa.
-D) Leitura permite listar nomes, enquanto execução permite atravessar ou pesquisar componentes do caminho; criar ou remover entradas depende de escrita combinada com acesso adequado.
+A) `attrib`, usado para exibir ou alterar atributos como oculto e somente leitura.
 
-### S2D5Q244 — Comandos Linux relacionados a permissões e ACLs
+B) `takeown`, usado para assumir a propriedade de arquivo cujo acesso foi negado.
 
-**Nível:** Muito difícil
+C) `icacls`, usado para exibir ou modificar ACEs, herança e permissões de acesso.
 
-**Uso:** Simulado
+D) `cipher`, usado para administrar cifração EFS em arquivos e diretórios.
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+### S2D5Q247 — Observação pontual e contínua de processos Linux
 
-Um administrador Linux precisa, respectivamente, alterar os bits de modo, trocar o proprietário e inspecionar uma ACL estendida. Quais comandos correspondem a essas finalidades?
-
-A) ps, top e journalctl.
-B) chmod, chown e getfacl.
-C) ip, ss e systemctl.
-D) df, findmnt e free.
-
-### S2D5Q245 — DACLs, ACEs, herança e permissões efetivas no Windows
-
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), especialmente `ps -eLf` para observação pontual e `top` para atualização contínua.
 
-Sobre permissões no Windows, assinale a afirmativa correta.
+Uma equipe precisa primeiro obter uma fotografia de processos e threads Linux e depois acompanhar continuamente o consumo por thread. Qual par de comandos é o mais pertinente?
 
-A) A DACL armazena somente o nome do proprietário e não contém entradas de permissão ou negação.
-B) Uma ACE herdada nunca participa da permissão efetiva de um objeto filho.
-C) A DACL contém ACEs, inclusive permissões ou negações e possíveis regras herdadas; no acesso remoto, compartilhamento e NTFS podem atuar em conjunto.
-D) A permissão efetiva no acesso remoto é sempre a mais alta encontrada entre compartilhamento e NTFS.
+A) `ps -eLf` para a fotografia e `top -H` para a visão dinâmica.
 
-### S2D5Q246 — Finalidade do icacls no Windows
+B) `pgrep -a` para a fotografia e `nice` para a visão dinâmica.
 
-**Nível:** Muito difícil
+C) `pstree -p` para a fotografia e `renice` para a visão dinâmica.
 
-**Uso:** Simulado
+D) `jobs -l` para a fotografia e `kill` para a visão dinâmica.
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+### S2D5Q248 — Consulta de serviços e logs em Linux e Windows
 
-No Windows, o comando icacls é utilizado para:
-
-A) listar processos e suas threads, substituindo Get-Process.
-B) exibir ou modificar DACLs de arquivos e diretórios; ele substitui o antigo cacls, hoje depreciado.
-C) acompanhar continuamente consumo de CPU como o top.
-D) consultar rotas e endereços IP, substituindo ipconfig.
-
-### S2D5Q247 — Observação pontual e contínua de processos e threads no Linux
-
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), nos trechos sobre `systemctl`, `journalctl`, `Get-Service` e `Get-WinEvent`.
 
-Uma equipe deseja primeiro obter uma fotografia dos processos e threads Linux e depois acompanhar continuamente o consumo de recursos. A associação adequada é:
+O analista precisa, nessa ordem, consultar o estado de um serviço Linux, seus eventos, o estado de um serviço Windows e eventos relacionados. Qual sequência usa ferramentas de observação adequadas?
 
-A) ps -eLf para a visão pontual de processos e threads, e top para atualização contínua.
-B) top para alterar DACLs, e ps -eLf para reiniciar serviços.
-C) journalctl para enumerar threads, e chmod para medir consumo de CPU.
-D) ip route para listar processos, e ss -tulpn para escaloná-los.
+A) `journalctl`; `systemctl status`; `Get-WinEvent`; `Get-Service`.
 
-### S2D5Q248 — Comandos de serviços e logs no Linux e no Windows
+B) `systemctl status`; `journalctl`; `Get-Service`; `Get-WinEvent`.
 
-**Nível:** Muito difícil
+C) `ps -ef`; `dmesg --follow`; `Get-Process`; `Get-Content C:\Logs\app.log`.
 
-**Uso:** Simulado
+D) `systemctl restart`; `journalctl --vacuum`; `Restart-Service`; `Clear-EventLog`.
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+### S2D5Q249 — Endereços, rotas e sockets no Linux
 
-Para verificar o estado de um serviço e consultar eventos de log relacionados, sem confundir observação com encerramento de processos, a associação correta é:
-
-A) Linux: chmod e chown; Windows: icacls e Get-Acl.
-B) Linux: ip addr e ss; Windows: Get-Process e Stop-Process.
-C) Linux: kill -KILL e top; Windows: taskkill e Get-Service.
-D) Linux: systemctl status NOME e journalctl; Windows: Get-Service e Get-WinEvent.
-
-### S2D5Q249 — Comandos Linux de diagnóstico de configuração e sockets de rede
-
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), especialmente `ip addr`, `ip route` e `ss -tulpn`.
 
-Durante um diagnóstico Linux, é necessário verificar endereços e rotas e, em seguida, observar sockets de escuta associados a processos. A sequência mais pertinente é:
+Em um diagnóstico Linux, é preciso verificar endereços das interfaces, tabela de rotas e sockets de escuta associados a processos. Qual conjunto atende diretamente às três consultas?
 
-A) chmod, chown e getfacl.
-B) ps, kill e free.
-C) ip addr/ip route e ss -tulpn.
-D) systemctl, journalctl e findmnt.
+A) `ip -br link`, `ip neigh` e `ping`.
 
-### S2D5Q250 — Associação entre finalidade e comandos administrativos no Windows
+B) `dig`, `traceroute` e `tcpdump -n`.
 
-**Nível:** Muito difícil
+C) `ethtool eth0`, `arp -n` e `nmap -sV localhost`.
+
+D) `ip addr`, `ip route` e `ss -tulpn`.
+
+### S2D5Q250 — Sequência de comandos administrativos no Windows
+
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente `Get-Process`, `Get-Service`, `ipconfig`, `Get-NetTCPConnection` e `icacls`.
 
-Em uma estação Windows, o analista precisa, nessa ordem, listar processos, consultar serviços, inspecionar a configuração IP, examinar conexões de rede e verificar permissões NTFS. Qual conjunto associa corretamente as finalidades?
+Em uma estação Windows, o analista deve, nessa ordem, listar processos, consultar serviços, exibir a configuração IP, examinar conexões TCP e verificar permissões NTFS. Qual sequência corresponde às finalidades?
 
-A) Get-Service; Get-Process; icacls; taskkill; journalctl.
-B) Get-Process; Get-Service; ipconfig; Get-NetTCPConnection; icacls.
-C) top; systemctl; ip addr; ss; chmod.
-D) Stop-Process; sc delete; route delete; taskkill; cacls.
+A) `Get-Process`; `Get-Service`; `ipconfig`; `Get-NetTCPConnection`; `icacls`.
 
+B) `Get-Service`; `Get-Process`; `ipconfig`; `Get-NetTCPConnection`; `icacls`.
 
+C) `Get-Process`; `Get-Service`; `Get-NetAdapter`; `Test-NetConnection`; `takeown`.
+
+D) `tasklist`; `sc.exe query`; `ipconfig`; `netstat -ano`; `attrib`.
 
 ## Gabarito do Dia 5
 
@@ -11679,12 +12612,12 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 | 2 | D |
 | 3 | A |
 | 4 | C |
-| 5 | D |
+| 5 | C |
 | 6 | B |
-| 7 | A |
+| 7 | B |
 | 8 | C |
 | 9 | D |
-| 10 | B |
+| 10 | A |
 | 11 | A |
 | 12 | C |
 | 13 | D |
@@ -11696,9 +12629,9 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 | 19 | A |
 | 20 | C |
 | 21 | D |
-| 22 | B |
-| 23 | A |
-| 24 | C |
+| 22 | A |
+| 23 | B |
+| 24 | D |
 | 25 | D |
 
 
@@ -11709,9 +12642,9 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 | Questão | Gabarito |
 |---:|:---:|
 | 26 | B |
-| 27 | D |
+| 27 | C |
 | 28 | A |
-| 29 | C |
+| 29 | B |
 | 30 | B |
 | 31 | A |
 | 32 | D |
@@ -11724,16 +12657,40 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 | 39 | B |
 | 40 | D |
 | 41 | C |
-| 42 | A |
-| 43 | D |
+| 42 | D |
+| 43 | C |
 | 44 | B |
 | 45 | C |
-| 46 | B |
+| 46 | C |
 | 47 | A |
-| 48 | D |
-| 49 | C |
-| 50 | B |
+| 48 | B |
+| 49 | D |
+| 50 | A |
 
+### Gabarito das questões extras
+
+| Extra | Resposta |
+|---:|:---:|
+| 5.1 | C |
+| 5.2 | A |
+| 5.3 | D |
+| 5.4 | B |
+| 5.5 | C |
+| 5.6 | A |
+| 5.7 | D |
+| 5.8 | B |
+| 5.9 | C |
+| 5.10 | A |
+| 5.11 | D |
+| 5.12 | D |
+| 5.13 | C |
+| 5.14 | A |
+| 5.15 | A |
+| 5.16 | B |
+| 5.17 | C |
+| 5.18 | B |
+| 5.19 | D |
+| 5.20 | B |
 
 
 ## Comentários do Dia 5
@@ -11807,7 +12764,7 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q204
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: C.**
@@ -11832,26 +12789,27 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. As threads concluem; não há conjunto permanentemente bloqueado por dependências recíprocas.
-- **B)** Incorreta. Ambas executam, portanto nenhuma sofre adiamento indefinido.
-- **C)** Incorreta. Não há atividade repetitiva sem progresso, mas uma intercalação que produz valor incorreto.
-- **D)** Correta. As duas operações usam o mesmo valor antigo e uma gravação sobrescreve o efeito da outra.
+- **A)** as threads não formam espera circular nem permanecem bloqueadas; ambas chegam a executar a gravação.
+- **B)** nenhuma thread é adiada indefinidamente pelo escalonador, pois as duas executam e concluem seus passos.
+- **C)** as duas operações usam a mesma leitura inicial, e a segunda gravação substitui um resultado igual sem incorporar os dois incrementos.
+- **D)** não há repetição ativa sem progresso; ocorre uma única intercalação que produz valor final incorreto.
 
-**Conceito:** condição de corrida ocorre quando o resultado depende da ordem não controlada de acessos concorrentes conflitantes.
+**Conceito:** dependência do resultado em uma ordem concorrente não controlada e perda de atualização em read-modify-write.
 
-**Pegadinha:** tratar toda falha de concorrência como deadlock ou presumir que uma expressão de alto nível seja indivisível.
+**Pegadinha:** chamar toda falha de concorrência de deadlock, starvation ou livelock sem verificar bloqueio, adiamento ou repetição.
 
-**Como pensar:** decomponha o incremento em ler, calcular e gravar; depois intercale os passos das threads.
+**Como pensar:** decomponha a expressão em três ações e intercale T1 e T2; se ambas calculam a partir de 40, só um incremento aparece no resultado.
 
-**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
+**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade), no exemplo que decompõe atualização em leitura, cálculo e escrita e identifica a atualização perdida.
 
 ### Comentário S2D5Q206
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: B.**
@@ -11876,12 +12834,12 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O mutex ordena os participantes que cooperam usando o mesmo protocolo para o estado protegido.
-- **B)** Incorreta. Um acesso que ignora o mutex não é automaticamente bloqueado pelo sistema operacional.
+- **A)** Incorreta. Um acesso que ignora o mutex não é automaticamente bloqueado pelo sistema operacional.
+- **B)** Correta. O mutex ordena os participantes que cooperam usando o mesmo protocolo para o estado protegido.
 - **C)** Incorreta. A proteção não se estende magicamente a operações alheias ao mutex.
 - **D)** Incorreta. No uso convencional, mutex expressa propriedade: quem adquire deve liberar.
 
@@ -11898,26 +12856,27 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Variável de condição acompanha um predicado protegido; sozinha não contabiliza oito permissões.
-- **B)** Incorreta. Esperar ativamente durante o uso potencialmente longo de uma conexão desperdiçaria CPU.
-- **C)** Correta. O contador representa exatamente as oito unidades disponíveis e bloqueia novas aquisições quando chega a zero.
-- **D)** Incorreta. Mutex representa propriedade exclusiva, não oito proprietários simultâneos.
+- **A)** um contador restrito a zero e um representa apenas uma permissão, não as oito unidades disponíveis.
+- **B)** mutex expressa propriedade exclusiva e, no modelo convencional, não possui oito proprietários simultâneos.
+- **C)** o valor do semáforo acompanha o número de conexões livres, bloqueando nova aquisição quando as oito estiverem ocupadas.
+- **D)** variável de condição coordena espera por um predicado, mas não mantém sozinha o estado permanente de oito permissões.
 
-**Conceito:** semáforo contador controla N unidades equivalentes; mutex modela exclusão e propriedade.
+**Conceito:** uso de semáforo contador para controlar N instâncias equivalentes de um recurso.
 
-**Pegadinha:** considerar semáforo e mutex sempre idênticos só porque ambos podem bloquear fluxos.
+**Pegadinha:** escolher uma primitiva que também bloqueia threads, mas não modela a cardinalidade nem a propriedade exigida.
 
-**Como pensar:** conte as instâncias disponíveis: uma região exclusiva sugere mutex; N unidades sugerem semáforo contador.
+**Como pensar:** conte as permissões simultâneas: uma unidade exclusiva sugere mutex; oito unidades intercambiáveis sugerem contador inicializado em oito.
 
-**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição — semáforo binário e contador](semana_02_estudo.md#s2-d5-sincronizacao), no trecho que relaciona o contador a N unidades do recurso.
 
 ### Comentário S2D5Q209
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 **Alternativa correta: D.**
@@ -11939,15 +12898,15 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q210
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
-**Alternativa correta: B.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Espera ativa consome ciclos e é inadequada para latências longas de E/S.
-- **B)** Correta. Quando a espera será curtíssima, girar pode custar menos que dormir e despertar; se ela se prolonga, o custo cresce.
+- **A)** Correta. Quando a espera será curtíssima, girar pode custar menos que dormir e despertar; se ela se prolonga, o custo cresce.
+- **B)** Incorreta. Espera ativa consome ciclos e é inadequada para latências longas de E/S.
 - **C)** Incorreta. Dormir é justamente o oposto do comportamento de um spinlock, que testa repetidamente.
 - **D)** Incorreta. Em um núcleo não preemptível, girar pode impedir que o detentor execute e libere o lock.
 
@@ -11961,7 +12920,7 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q211
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: A.**
@@ -11983,7 +12942,7 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q212
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: C.**
@@ -12008,44 +12967,46 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Uma preempção isolada é comportamento normal de escalonamento.
-- **B)** Incorreta. Disputa com conclusão normal pode envolver corrida ou contenção, mas não define deadlock.
-- **C)** Incorreta. Uma E/S lenta que continua avançando é espera por evento externo, não dependência fechada entre integrantes.
-- **D)** Correta. No deadlock, o conjunto não progride porque cada participante depende de ação de outro participante bloqueado.
+- **A)** adiamento indefinido de um participante enquanto outros progridem caracteriza starvation.
+- **B)** atividade contínua sem progresso útil caracteriza livelock, não o bloqueio conjunto do deadlock.
+- **C)** uma E/S demorada que segue avançando constitui espera normal por evento externo.
+- **D)** o conjunto está fechado em dependências recíprocas, e quem poderia liberar cada recurso também não consegue avançar.
 
-**Conceito:** deadlock é um impasse conjunto formado por dependências que impedem o progresso.
+**Conceito:** deadlock como estado de impasse de um conjunto, e não como qualquer espera ou falta de progresso.
 
-**Pegadinha:** chamar qualquer bloqueio, lentidão ou falha de concorrência de deadlock.
+**Pegadinha:** confundir deadlock com starvation, livelock ou bloqueio temporário por operação externa ainda ativa.
 
-**Como pensar:** procure um conjunto fechado: quem poderia liberar cada recurso também está esperando dentro do conjunto?
+**Como pensar:** pergunte se existe alguém fora do conjunto capaz de produzir o evento esperado; se toda liberação depende de outro bloqueado interno, há impasse.
 
-**Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock), no parágrafo inicial que define o conjunto bloqueado por dependências internas de recursos ou eventos.
 
 ### Comentário S2D5Q214
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Paralelismo e prioridade não integram a lista de Coffman, e preempção contradiz a condição de não preempção.
-- **B)** Correta. As quatro condições clássicas são exclusão mútua, posse e espera, não preempção e espera circular.
-- **C)** Incorreta. A lista mistura mecanismos e outros problemas de progresso.
-- **D)** Incorreta. Nenhum desses quatro elementos forma o conjunto necessário definido por Coffman.
+- **A)** a condição canônica é não preempção; retirada compulsória possível rompe uma das bases do impasse clássico.
+- **B)** recursos exclusivos, manutenção de um recurso enquanto outro é solicitado, ausência de retirada compulsória e ciclo de espera compõem a lista.
+- **C)** espera acíclica é justamente o oposto da espera circular necessária ao conjunto de Coffman.
+- **D)** liberação antecipada evita que o processo conserve um recurso enquanto espera outro e, portanto, não substitui posse e espera.
 
-**Conceito:** as quatro condições de Coffman precisam coexistir no deadlock clássico de recursos reutilizáveis.
+**Conceito:** identificação exata das quatro condições necessárias de Coffman.
 
-**Pegadinha:** considerar uma condição isolada, como exclusão mútua, prova suficiente de deadlock.
+**Pegadinha:** trocar apenas um termo da lista por sua negação ou por uma política que rompe a condição correspondente.
 
-**Como pensar:** memorize a cadeia lógica: recurso exclusivo, processo mantém um enquanto pede outro, recurso não é retirado e a espera fecha um ciclo.
+**Como pensar:** reconstrua a cena: recurso exclusivo, alguém o possui e pede outro, ninguém o retira e as dependências fecham um ciclo.
 
-**Referência:** [Deadlock — condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — as quatro condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock), na lista numerada das condições e em sua aplicação conjunta.
 
 ### Comentário S2D5Q215
 
@@ -12093,29 +13054,30 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q217
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Pode haver estado seguro com recursos alocados, desde que exista sequência viável de liberações e conclusões.
-- **B)** Incorreta. A sequência pode ser serial e depender de recursos liberados por quem conclui antes.
-- **C)** Incorreta. Segurança não exige abolir todos os recursos exclusivos.
-- **D)** Correta. Basta existir alguma ordem em que todos possam terminar; inseguro significa perda dessa garantia, não impasse consumado.
+- **A)** estados seguros podem possuir recursos alocados, e insegurança não equivale necessariamente à existência de ciclo bloqueado.
+- **B)** os processos podem concluir em sequência, reutilizando recursos liberados, sem que todas as demandas sejam atendidas ao mesmo tempo.
+- **C)** um primeiro processo concluível não basta se suas liberações não permitirem completar os demais, e insegurança não significa indisponibilidade permanente.
+- **D)** basta existir ao menos uma ordem viável para todos terminarem; perder essa ordem garantida aumenta o risco, mas não comprova impasse consumado.
 
-**Conceito:** evitação concede pedidos somente quando o estado resultante conserva uma sequência segura.
+**Conceito:** sequência segura e diferença entre estado inseguro e deadlock já existente.
 
-**Pegadinha:** igualar estado inseguro a deadlock já existente.
+**Pegadinha:** exigir conclusão simultânea ou tratar a perda de garantia preventiva como diagnóstico de impasse atual.
 
-**Como pensar:** tente construir uma ordem de conclusão usando os disponíveis e as liberações sucessivas; se alguma ordem funciona, o estado é seguro.
+**Como pensar:** simule liberações sucessivas: escolha quem pode terminar, devolva seus recursos e repita até todos concluírem; uma ordem completa torna o estado seguro.
 
-**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock), na definição de sequência segura e na ressalva de que estado inseguro não significa deadlock já ocorrido.
 
 ### Comentário S2D5Q218
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: B.**
@@ -12137,29 +13099,30 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q219
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Com uma instância por tipo, o ciclo no grafo de espera é necessário e suficiente; com múltiplas, é preciso considerar quantidades.
-- **B)** Incorreta. Uma instância livre adicional pode permitir que um processo conclua e desfaça o ciclo aparente.
-- **C)** Incorreta. No caso de instância única, a ausência de ciclo afasta o deadlock representado pelo grafo.
-- **D)** Incorreta. Um processo pode estar bloqueado por E/S normal sem integrar qualquer impasse.
+- **A)** no caso de instância única o ciclo fecha a dependência sem saída; com múltiplas, outra unidade disponível pode permitir conclusão e desfazer o ciclo.
+- **B)** inverte a suficiência; ela vale no modelo de instância única e deixa de valer para o ciclo isolado no modelo múltiplo.
+- **C)** disponibilidade e quantidade de instâncias são decisivas quando um mesmo tipo de recurso possui mais de uma unidade.
+- **D)** ausência de ciclo afasta o impasse representado no caso simples, e um bloqueio isolado pode ser espera normal.
 
-**Conceito:** a suficiência de um ciclo para detectar deadlock depende do número de instâncias de cada tipo de recurso.
+**Conceito:** condição de suficiência do ciclo conforme a cardinalidade dos recursos.
 
-**Pegadinha:** transportar automaticamente a regra do caso de instância única para múltiplas instâncias.
+**Pegadinha:** transportar a regra correta do grafo de instância única sem verificar se existem unidades adicionais do recurso.
 
-**Como pensar:** antes de concluir pelo ciclo, pergunte se existe outra unidade do recurso capaz de liberar algum participante.
+**Como pensar:** antes de concluir pelo ciclo, pergunte se outra instância livre pode permitir que um participante termine e libere as demais.
 
-**Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock).
+**Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock), no contraste entre grafo com instância única e análise de disponíveis, alocados e pedidos quando há múltiplas instâncias.
 
 ### Comentário S2D5Q220
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 **Alternativa correta: C.**
@@ -12181,7 +13144,7 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q221
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 **Alternativa correta: D.**
@@ -12203,15 +13166,15 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q222
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O enunciado mostra as duas threads ativas, não uma delas indefinidamente preterida.
-- **B)** Correta. Há mudanças de estado e tentativas contínuas, porém nenhuma produz progresso útil; o backoff dessincroniza novas tentativas.
+- **A)** Correta. Há mudanças de estado e tentativas contínuas, porém nenhuma produz progresso útil; o backoff dessincroniza novas tentativas.
+- **B)** Incorreta. O enunciado mostra as duas threads ativas, não uma delas indefinidamente preterida.
 - **C)** Incorreta. No deadlock, os participantes permanecem bloqueados; aqui eles agem e reagem repetidamente.
 - **D)** Incorreta. Paralelismo descreve simultaneidade, não falha de progresso, e programa passivo não soluciona o protocolo.
 
@@ -12228,12 +13191,12 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. A prioridade efetiva fica invertida pela dependência do lock; herança permite que a detentora execute e o libere mais cedo.
-- **B)** Incorreta. A baixa sofre preempções, mas o fenômeno central é a alta depender dela enquanto intermediárias interferem; quantum geral não é solução necessária.
+- **A)** Incorreta. A baixa sofre preempções, mas o fenômeno central é a alta depender dela enquanto intermediárias interferem; quantum geral não é solução necessária.
+- **B)** Correta. A prioridade efetiva fica invertida pela dependência do lock; herança permite que a detentora execute e o libere mais cedo.
 - **C)** Incorreta. Não foram demonstradas espera circular nem todas as condições de Coffman.
 - **D)** Incorreta. A alta está bloqueada pelo mutex, e não ativa alterando estados sem progresso.
 
@@ -12250,14 +13213,14 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. A situação I contém espera circular, e a III envolve atividade, não simples corrida por resultado.
 - **B)** Incorreta. I não apresenta atividade contínua; II não informa uma dependência de prioridades por lock.
-- **C)** Correta. I é impasse circular, II é adiamento indefinido individual e III é atividade recíproca sem avanço.
-- **D)** Incorreta. I descreve dependência de locks, II não tem reações ativas e III não é mero preterimento.
+- **C)** Incorreta. I descreve dependência de locks, II não tem reações ativas e III não é mero preterimento.
+- **D)** Correta. I é impasse circular, II é adiamento indefinido individual e III é atividade recíproca sem avanço.
 
 **Conceito:** deadlock, starvation e livelock têm causas e padrões de progresso distintos.
 
@@ -12317,14 +13280,14 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
 - **A)** Incorreta. Com todos disponíveis no instante zero, SJF escolhe o menor próximo burst, não a ordem nominal A, B, C.
 - **B)** Incorreta. Depois de C, o burst de B é menor que o de A; logo, C, A, B não é a ordem SJF.
-- **C)** Incorreta. Escolher B antes de C viola o critério de menor burst entre os processos prontos.
-- **D)** Correta. A execução é C de 0 a 1, B de 1 a 5 e A de 5 a 12. As esperas são 0, 1 e 5; a média é 2.
+- **C)** Correta. A execução é C de 0 a 1, B de 1 a 5 e A de 5 a 12. As esperas são 0, 1 e 5; a média é 2.
+- **D)** Incorreta. Escolher B antes de C viola o critério de menor burst entre os processos prontos.
 
 **Conceito:** SJF não preemptivo e minimização da espera média sob hipóteses ideais.
 
@@ -12358,25 +13321,26 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q229
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: C.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Favorecer ainda mais as tarefas de alta prioridade agrava o adiamento da tarefa de baixa prioridade.
-- **B)** Incorreta. Polling e interrupção tratam comunicação com dispositivos, não corrigem a política de prioridade da fila de prontos.
-- **C)** Correta. Aging aumenta gradualmente a prioridade de quem espera e reduz o risco de starvation.
-- **D)** Incorreta. Bloquear a tarefa por E/S retira-a da fila de prontos e não garante que receberá CPU quando voltar.
+- **A)** favorecer ainda mais as novas tarefas prioritárias mantém ou agrava o adiamento da tarefa já prejudicada.
+- **B)** aging faz o tempo de espera influenciar a prioridade e cria uma oportunidade crescente de escalonamento para a tarefa adiada.
+- **C)** reduzir a prioridade de quem espera reforça a preferência que originou o starvation.
+- **D)** desempate somente dentro do mesmo nível não ajuda uma tarefa que permanece abaixo das chegadas sucessivas.
 
-**Conceito:** starvation em escalonamento por prioridade e aging.
+**Conceito:** starvation por prioridade e sua mitigação direta mediante aging.
 
-**Pegadinha:** confundir starvation com bloqueio por evento ou tentar resolver o problema concedendo mais recursos a quem já é favorecido.
+**Pegadinha:** propor ajustes que melhoram a vazão das tarefas já favorecidas sem alterar a chance de quem espera indefinidamente.
 
-**Como pensar:** observe que outros processos continuam progredindo enquanto um pronto é adiado indefinidamente; isso caracteriza starvation, e a resposta deve alterar a preferência ao longo da espera.
+**Como pensar:** identifique quem continua pronto enquanto outros progridem e procure uma política que aumente sua preferência à medida que o tempo passa.
 
-**Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
+**Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock), no parágrafo que define starvation e aging; e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 ### Comentário S2D5Q230
 
@@ -12427,22 +13391,23 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. FCFS é não preemptivo no modelo clássico, mas SRTF é preemptivo.
-- **B)** Incorreta. SJF clássico não preempta; Round Robin preempta ao fim do quantum, independentemente da chegada de prioridade superior.
-- **C)** Incorreta. Prioridade pode ter versões preemptiva e não preemptiva, enquanto FCFS clássico não preempta.
-- **D)** Correta. A alternativa classifica cada algoritmo de acordo com a definição apresentada na teoria.
+- **A)** SRTF é a versão preemptiva do SJF, prioridade não possui apenas uma variante e Round Robin preempta pelo quantum.
+- **B)** FCFS clássico não preempta por nova chegada, e escalonamento por prioridade pode ser preemptivo ou não.
+- **C)** SJF clássico não preempta, SRTF preempta quando surge menor tempo restante e Round Robin utiliza preempção periódica.
+- **D)** a alternativa preserva as duas políticas clássicas não preemptivas, a versão preemptiva por menor restante, as variantes de prioridade e a fatia do RR.
 
-**Conceito:** preempção nos algoritmos clássicos de CPU.
+**Conceito:** classificação completa dos principais algoritmos quanto à retirada da CPU.
 
-**Pegadinha:** inferir a preempção pelo nome do algoritmo ou tratar uma política que admite variantes como se tivesse somente uma forma.
+**Pegadinha:** acertar parte da lista e errar justamente um algoritmo de nome semelhante, como SJF versus SRTF.
 
-**Como pensar:** pergunte qual evento retira a CPU do processo: FCFS/SJF aguardam bloqueio ou término; SRTF reage a menor restante; RR usa o fim do quantum; prioridade depende da variante.
+**Como pensar:** associe cada retirada a seu gatilho: menor restante no SRTF, fim do quantum no RR e chegada prioritária somente na variante preemptiva de prioridade.
 
-**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
+**Referência:** [8. Escalonamento de CPU — algoritmos clássicos](semana_02_estudo.md#s2-d5-escalonamento), na caracterização de FCFS, SJF, SRTF, prioridade e Round Robin.
 
 ### Comentário S2D5Q233
 
@@ -12468,113 +13433,118 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 ### Comentário S2D5Q234
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Polling é consulta ativa e repetida; sua conveniência depende da frequência e da duração esperada, pois esperar muito dessa forma consome CPU.
-- **B)** Incorreta. Notificação iniciada pelo dispositivo descreve interrupção, não polling.
-- **C)** Incorreta. Transferência de blocos com menor participação por palavra descreve DMA, que ainda requer configuração.
-- **D)** Incorreta. Polling não é sinônimo obrigatório de E/S síncrona e mecanismos diferentes podem coexistir no mesmo driver.
+- **A)** polling mantém CPU ou driver verificando o estado e pode ser eficiente apenas quando o custo esperado da espera ativa é pequeno.
+- **B)** sinal iniciado pelo dispositivo e suspensão da CPU descrevem a lógica de interrupção, não de polling.
+- **C)** movimentação de bloco com menor intervenção por unidade descreve DMA, embora um driver possa combinar os mecanismos.
+- **D)** polling não determina sozinho sincronia da E/S e pode coexistir com interrupção no mesmo driver ou em fases diferentes.
 
-**Conceito:** polling e seu custo operacional.
+**Conceito:** iniciativa da consulta no polling e custo da espera ativa conforme sua duração.
 
-**Pegadinha:** definir polling pelos conceitos vizinhos de interrupção ou DMA, ou convertê-lo em uma classificação rígida de sincronismo.
+**Pegadinha:** definir polling pelas propriedades de interrupção ou DMA ou transformá-lo em escolha exclusiva de arquitetura.
 
-**Como pensar:** procure quem inicia a verificação: no polling, CPU ou driver pergunta repetidamente; na interrupção, o dispositivo sinaliza.
+**Como pensar:** pergunte quem verifica o término e quantos ciclos são gastos: no polling, a CPU pergunta repetidamente; quanto maior a demora, maior o desperdício.
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — polling](semana_02_estudo.md#s2-d5-dispositivos-e-s), na definição da consulta repetida e no contraste entre espera curta e longa.
 
 ### Comentário S2D5Q235
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Manter uma ISR em processamento demorado eleva latência e pode prejudicar outros eventos; o trabalho extenso deve ser diferido.
-- **B)** Incorreta. Reiniciar o sistema não é procedimento normal de reconhecimento de uma interrupção.
-- **C)** Incorreta. A ISR pode tratar a conclusão de uma transferência feita por DMA; ela não precisa copiar pessoalmente cada byte.
-- **D)** Correta. A rotina reconhece a origem, preserva o mínimo necessário, agenda o restante e retorna rapidamente.
+- **A)** trabalho extenso ou bloqueante dentro da ISR aumenta latência e pode impedir o atendimento tempestivo de outros eventos.
+- **B)** não reconhecer a fonte pode causar nova sinalização contínua e não constitui protocolo adequado de tratamento.
+- **C)** se DMA transferiu o bloco, a ISR trata a conclusão; não precisa repetir a cópia de cada byte.
+- **D)** a parte urgente e mínima fica na ISR, enquanto o processamento pesado é diferido para ambiente onde possa executar com segurança.
 
-**Conceito:** interrupção e desenho de rotina de serviço curta.
+**Conceito:** divisão entre resposta imediata ao hardware e trabalho posterior no tratamento de interrupções.
 
-**Pegadinha:** confundir a notificação da conclusão com todo o trabalho de transferência ou processamento posterior.
+**Pegadinha:** confundir “tratar a interrupção” com realizar toda a operação e todo o processamento dentro da ISR.
 
-**Como pensar:** separe resposta urgente ao hardware de trabalho demorado: a primeira fica na ISR; o segundo segue para contexto apropriado.
+**Como pensar:** separe o que precisa cessar/registrar o evento agora do que pode ser agendado; a ISR deve liberar rapidamente o caminho de interrupções.
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — interrupções](semana_02_estudo.md#s2-d5-dispositivos-e-s), no trecho sobre reconhecimento, estado mínimo, processamento diferido e retorno rápido da ISR.
 
 ### Comentário S2D5Q236
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Fornecer parâmetros é configuração da transferência e não transforma DMA em polling.
-- **B)** Correta. DMA move o bloco entre dispositivo e memória com menor intervenção da CPU por unidade; a CPU ainda configura, protege e trata o término.
-- **C)** Incorreta. Journaling registra transações do sistema de arquivos para recuperação de consistência, não executa a cópia descrita.
-- **D)** Incorreta. Round Robin é uma política de escalonamento de CPU, sem relação com o mecanismo de transferência do bloco.
+- **A)** configurar descritores não significa que a CPU execute a movimentação de cada unidade de dados.
+- **B)** a característica decisiva é a transferência em bloco feita pelo mecanismo/controladora, com menor participação da CPU por palavra.
+- **C)** polling exige consultas repetidas ao estado; uma configuração inicial não demonstra que isso ocorreu durante toda a cópia.
+- **D)** uma interrupção pode apenas anunciar que o DMA terminou e não prova transferência palavra a palavra pela CPU.
 
-**Conceito:** DMA e limites da expressão transferência direta.
+**Conceito:** divisão de responsabilidades entre configuração/conclusão pela CPU e transferência em bloco por DMA.
 
-**Pegadinha:** interpretar menor participação da CPU como ausência total de CPU ou confundir parâmetros de DMA com consulta repetida.
+**Pegadinha:** interpretar “direta” como ausência total de CPU ou tomar a interrupção de término como mecanismo que moveu os dados.
 
-**Como pensar:** identifique quem move os dados em massa. Se a controladora transfere o bloco após configuração e avisa ao final, o núcleo é DMA com possível interrupção de conclusão.
+**Como pensar:** identifique quem percorre o bloco: se a controladora faz a cópia depois de receber parâmetros, trata-se de DMA mesmo com CPU no início e no fim.
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s), na sequência de configuração pela CPU, transferência do bloco e sinalização de conclusão.
 
 ### Comentário S2D5Q237
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A interrupção pode anunciar justamente que uma transferência DMA terminou.
-- **B)** Incorreta. Um driver pode combinar estratégias e usar polling em uma fase e interrupções ou DMA em outra.
-- **C)** Correta. DMA transfere o bloco, enquanto a interrupção pode notificar a conclusão; ambos podem integrar a mesma operação.
-- **D)** Incorreta. Interrupção sinaliza ou transfere controle para tratamento; DMA é o mecanismo de transferência de dados em bloco.
+- **A)** uma interrupção é forma comum de anunciar justamente a conclusão de uma transferência DMA.
+- **B)** DMA move os dados; interrupção transfere o controle à rotina de tratamento para sinalizar ou processar o evento.
+- **C)** os mecanismos possuem funções diferentes e podem compor fases da mesma operação conforme o desenho do driver.
+- **D)** consultar estado em certo momento não proíbe utilizar transferência DMA e notificação por interrupção em outros momentos.
 
-**Conceito:** composição de polling, interrupção e DMA.
+**Conceito:** composição funcional, em vez de exclusão, entre polling, interrupção e DMA.
 
-**Pegadinha:** tratar mecanismos com funções diferentes como alternativas mutuamente exclusivas.
+**Pegadinha:** tratar tecnologias vizinhas como modos globais incompatíveis ou trocar os verbos “consultar”, “avisar” e “transferir”.
 
-**Como pensar:** atribua um verbo a cada conceito: polling consulta, interrupção avisa, DMA transfere. Verbos diferentes podem aparecer no mesmo fluxo.
+**Como pensar:** atribua uma função a cada mecanismo: polling consulta, interrupção avisa, DMA transfere; funções distintas podem integrar um único fluxo.
 
-**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA — comparação operacional](semana_02_estudo.md#s2-d5-dispositivos-e-s), especialmente a afirmação de que os três mecanismos não são mutuamente exclusivos.
 
 ### Comentário S2D5Q238
 
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. O diretório associa um nome ao objeto, o inode ou estrutura equivalente registra metadados e localização do conteúdo, e o descritor ou handle referencia uma abertura feita por um processo.
-- **B)** Incorreta. O nome pertence à relação mantida pelo diretório; inode não é simplesmente o texto do nome nem desaparece por causa da abertura.
-- **C)** Incorreta. Montar associa uma instância de sistema de arquivos a um ponto do namespace; não significa copiar seu conteúdo.
-- **D)** Incorreta. Descritores e handles pertencem ao contexto de processos e não anulam proteção ou controle de acesso.
+- **A)** o namespace associa o nome ao objeto, a estrutura persistente descreve o arquivo e a abertura fornece ao processo uma referência operacional.
+- **B)** diretório não armazena a tabela privada de descritores, e inode não é a relação textual de nomes mantida pelo diretório.
+- **C)** diretório organiza nomes, inode persiste metadados/referências e descritor é a referência da abertura, não o vínculo do nome.
+- **D)** montagem associa namespaces sem copiar todo o conteúdo, inode não se reduz ao nome e descritores pertencem a contextos de processo.
 
-**Conceito:** abstrações de nome, metadados, abertura e montagem em sistemas de arquivos.
+**Conceito:** separação entre nome no diretório, metadados/referência persistente no inode e estado aberto no descritor.
 
-**Pegadinha:** fundir nome, inode e descritor como se fossem uma única estrutura ou interpretar montagem como cópia física.
+**Pegadinha:** fundir três abstrações que aparecem na mesma operação de abertura ou trocar a persistente pela referência de processo.
 
-**Como pensar:** separe três momentos: o diretório localiza pelo nome, a estrutura persistente descreve o objeto e a abertura entrega ao processo uma referência de trabalho.
+**Como pensar:** percorra três etapas: localizar pelo nome, obter o objeto persistente e criar uma referência aberta para aquele processo.
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), na lista que distingue diretório, inode ou equivalente, descritor/handle e montagem.
 
 ### Comentário S2D5Q239
 
@@ -12603,479 +13573,651 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Nível:** Difícil
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A descrição de dados e metadados passando pelo journal corresponde a data=journal, não ao padrão data=ordered.
-- **B)** Incorreta. data=journal inclui dados e metadados no journal; a alternativa o confunde com uma política mais fraca.
-- **C)** Incorreta. data=writeback possui ordenação mais fraca, e nenhum modo de journaling equivale a backup.
-- **D)** Correta. data=ordered registra metadados e ordena a gravação dos dados no destino principal antes do commit correspondente; data=journal registra ambos, com maior custo.
+- **A)** I e II são verdadeiras, mas III também descreve corretamente a ordenação mais fraca de `data=writeback`.
+- **B)** I e III são verdadeiras, mas II também é; `data=ordered` ordena os dados associados antes do commit dos metadados.
+- **C)** II e III são verdadeiras, mas I também é; `data=journal` registra dados e metadados no journal.
+- **D)** as três afirmações distinguem o conteúdo registrado e a ordem de escrita de cada modo.
 
-**Conceito:** diferenças entre data=ordered, data=journal e data=writeback no ext4.
+**Conceito:** diferenças entre `data=ordered`, `data=journal` e `data=writeback` no ext4.
 
-**Pegadinha:** supor que a palavra ordered signifique registrar todo o conteúdo no journal ou classificar writeback como a garantia mais forte.
+**Pegadinha:** interpretar “ordered” como registro de todos os dados no journal ou atribuir a `writeback` a ordenação mais forte.
 
-**Como pensar:** pergunte duas coisas: o que entra no journal e qual ordem existe entre dados no destino principal e commit de metadados.
+**Como pensar:** avalie separadamente o que entra no journal e quando os dados chegam ao destino principal em relação ao commit.
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), especialmente as diferenças entre `data=ordered`, `data=journal` e `data=writeback`.
 
 ### Comentário S2D5Q241
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Journal não mantém necessariamente versões anteriores e não dispensa cópia recuperável independente.
-- **B)** Incorreta. Consistência estrutural não implica preservação de conteúdo que foi excluído de maneira válida.
-- **C)** Correta. Journaling reduz inconsistência após falha, mas não atende sozinho a versionamento, exclusão, ransomware, incêndio ou perda simultânea da mídia.
-- **D)** Incorreta. Replicação para mídia independente não é uma consequência automática da existência de journal.
+- **A)** journal registra operações para consistência e não funciona necessariamente como repositório de todas as versões anteriores.
+- **B)** estrutura consistente pode refletir corretamente uma exclusão válida, sem preservar o conteúdo que o usuário deseja recuperar.
+- **C)** journaling auxilia o retorno estrutural após falha, enquanto versão histórica depende de cópia retida por uma estratégia de backup.
+- **D)** journaling no volume não cria, por si só, outra mídia nem histórico independente dos arquivos.
 
-**Conceito:** journaling versus backup.
+**Conceito:** diferença entre journaling e backup.
 
-**Pegadinha:** confundir recuperação das estruturas do sistema de arquivos com recuperação do estado histórico desejado pelo usuário.
+**Pegadinha:** confundir consistência do sistema de arquivos com preservação do estado histórico desejado.
 
-**Como pensar:** formule a pergunta de recuperação: é preciso tornar o volume consistente após queda ou restaurar uma versão anterior a partir de outra cópia? O segundo objetivo exige estratégia de backup.
+**Como pensar:** pergunte se o objetivo é corrigir estruturas após uma queda ou recuperar dados de outro momento; o segundo exige backup.
 
-**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos), nos trechos que diferenciam recuperação de consistência e recuperação histórica por backup.
 
 ### Comentário S2D5Q242
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
-**Alternativa correta: A.**
 
-**Análise das alternativas:**
-
-- **A)** Correta. Sete corresponde a 4+2+1, ou rwx; cinco corresponde a 4+1, ou r-x; zero não concede qualquer bit.
-- **B)** Incorreta. A decomposição proposta corresponderia a outros algarismos e ainda atribui permissão inexistente aos demais.
-- **C)** Incorreta. A primeira tríade é do proprietário e a segunda do grupo; 5 não representa controle total.
-- **D)** Incorreta. Cada algarismo deve ser decomposto dentro de sua própria tríade, e não somado aos demais.
-
-**Conceito:** notação octal das permissões Linux em arquivo regular.
-
-**Pegadinha:** somar algarismos entre sujeitos ou trocar a ordem proprietário, grupo e outros.
-
-**Como pensar:** leia da esquerda para a direita por sujeito e decomponha cada dígito com r=4, w=2 e x=1.
-
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
-
-### Comentário S2D5Q243
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Leitura do diretório relaciona-se à listagem de nomes e não concede execução sobre os arquivos contidos.
-- **B)** Incorreta. Escrita no diretório atua sobre entradas; não reescreve automaticamente o conteúdo de todos os arquivos.
-- **C)** Incorreta. Em diretório, x significa travessia ou pesquisa de componentes, não executar o diretório como programa.
-- **D)** Correta. A alternativa distingue listagem, travessia e alteração de entradas, lembrando que as combinações e permissões do caminho importam.
+- **A)** `r--` para o grupo vale 4 e omite a execução representada pelo valor 1 de `5`.
+- **B)** `rw-` vale 6 e `--x` vale 1, portanto a sequência descrita não corresponde a `750`.
+- **C)** `rw-` para o grupo vale 6, enquanto o segundo algarismo do modo é 5.
+- **D)** `7=4+2+1` produz `rwx`, `5=4+1` produz `r-x` e `0` não concede bits.
 
-**Conceito:** semântica de r, w e x em diretórios Linux.
+**Conceito:** notação octal e simbólica das permissões de arquivo no Linux.
 
-**Pegadinha:** transportar sem adaptação a semântica dos bits em arquivo regular para um diretório.
+**Pegadinha:** trocar um bit dentro da tríade ou perder a ordem proprietário, grupo e outros.
 
-**Como pensar:** em diretório, associe r a ver nomes, x a alcançar objetos pelo caminho e w a modificar a relação de entradas, sempre considerando os demais acessos necessários.
+**Como pensar:** decomponha cada algarismo separadamente com 4, 2 e 1 e só então escreva sua tríade simbólica.
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente a decomposição octal `r=4`, `w=2`, `x=1` e a ordem proprietário, grupo e outros.
+
+### Comentário S2D5Q243
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** I e II são verdadeiras, mas III também descreve a combinação normalmente necessária para alterar entradas.
+- **B)** I e III são verdadeiras, mas II também é; execução em diretório representa travessia ou pesquisa.
+- **C)** as três afirmações distinguem listagem, travessia e modificação de entradas no diretório.
+- **D)** II e III são verdadeiras, mas I também é; leitura se relaciona à listagem dos nomes.
+
+**Conceito:** semântica de `r`, `w` e `x` em diretórios Linux.
+
+**Pegadinha:** transportar sem adaptação a semântica dos mesmos bits em arquivos regulares.
+
+**Como pensar:** associe `r` a ver nomes, `x` a percorrer o caminho e `w+x` a modificar a relação de entradas.
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), nos trechos sobre listagem por `r`, travessia por `x` e alteração de entradas com `w` e `x`.
 
 ### Comentário S2D5Q244
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. ps e top observam processos; journalctl consulta logs.
-- **B)** Correta. chmod altera bits de modo, chown muda titularidade e getfacl inspeciona ACL estendida.
-- **C)** Incorreta. ip e ss apoiam diagnóstico de rede, enquanto systemctl administra ou consulta serviços.
-- **D)** Incorreta. df e findmnt tratam espaço e montagem; free observa memória.
+- **A)** `umask` influencia permissões iniciais, `chgrp` troca o grupo e `setfacl` modifica, em vez de apenas inspecionar, a ACL.
+- **B)** `chmod` altera bits de modo, `chown` troca o proprietário e `getfacl` exibe a ACL estendida.
+- **C)** `setfacl` altera ACL em vez dos bits básicos solicitados, e `chgrp` troca grupo, não proprietário.
+- **D)** `chattr` trata atributos especiais, e `setfacl` modifica a ACL em vez de cumprir a inspeção pedida.
 
-**Conceito:** comandos Linux relacionados a permissões e ACLs.
+**Conceito:** comandos Linux relacionados a permissões, titularidade e ACLs.
 
-**Pegadinha:** escolher um trio de comandos reais, mas pertencentes a outra finalidade administrativa.
+**Pegadinha:** escolher ferramentas da mesma área administrativa, mas trocar o objeto ou o sentido de consulta e alteração.
 
-**Como pensar:** associe o verbo principal ao nome do comando: mode em chmod, owner em chown e ACL em getfacl.
+**Como pensar:** associe literalmente mode a `chmod`, owner a `chown` e consulta de ACL a `getfacl`.
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente `chmod`, `chown`, `getfacl` e `setfacl`.
 
 ### Comentário S2D5Q245
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Uma DACL reúne ACEs que concedem ou negam direitos; não se limita ao proprietário.
-- **B)** Incorreta. ACEs podem ser herdadas de pastas e participar da autorização do objeto filho.
-- **C)** Correta. A alternativa descreve DACL, ACE, herança e a atuação conjunta de permissões de compartilhamento e NTFS no acesso remoto.
-- **D)** Incorreta. A permissão efetiva não é simplesmente a maior entre os dois conjuntos; ambos podem restringir a operação.
+- **A)** I é verdadeira, mas II e III também são; os bits mudam de efeito operacional em diretórios, e o acesso remoto do Windows atravessa mais de uma camada de autorização.
+- **B)** II e III são verdadeiras, mas I também é; o algarismo `5` representa `r-x`, sem permissão de gravação para o grupo.
+- **C)** as três afirmações aplicam corretamente a tríade em dois tipos de objeto Linux e a composição de autorização no Windows.
+- **D)** I e III são verdadeiras, mas II também é; `r` permite listar nomes, enquanto a falta de `x` impede a travessia normal do diretório.
 
-**Conceito:** DACLs, ACEs, herança e permissões efetivas no Windows.
+**Conceito:** diferenças da tríade `rwx` por tipo de objeto e composição de DACL, compartilhamento e NTFS.
 
-**Pegadinha:** reduzir DACL à propriedade do objeto ou aplicar a regra intuitiva de que sempre prevalece a permissão mais ampla.
+**Pegadinha:** transportar a semântica de arquivo para diretório ou tratar a permissão mais ampla do Windows como resultado automático.
 
-**Como pensar:** identifique a identidade efetiva, reúna ACEs aplicáveis e depois verifique todas as camadas de autorização atravessadas pelo acesso remoto.
+**Como pensar:** identifique primeiro o objeto Linux e a tríade da classe aplicável; depois, no Windows, confira todas as camadas de autorização atravessadas.
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
-
+**Referência:** [Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente a semântica de `rwx` em arquivo e diretório, DACL/ACE e combinação entre compartilhamento e NTFS.
 ### Comentário S2D5Q246
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Get-Process e tasklist observam processos; icacls atua sobre controle de acesso a arquivos e diretórios.
-- **B)** Correta. icacls pode exibir e modificar DACLs e é o substituto atual do antigo cacls depreciado.
-- **C)** Incorreta. Acompanhamento contínuo de recursos é função de ferramentas de processos, não de um utilitário de ACL.
-- **D)** Incorreta. Configuração de rede é consultada por comandos próprios, como ipconfig e ferramentas PowerShell de rede.
+- **A)** `attrib` trata atributos de arquivo e não administra as ACEs que compõem a lista de controle de acesso.
+- **B)** `takeown` altera a propriedade para recuperar controle, mas não é a ferramenta geral de edição da DACL.
+- **C)** `icacls` exibe e modifica permissões, ACEs e propriedades de herança em arquivos e diretórios.
+- **D)** `cipher` administra EFS e não substitui o utilitário de permissões e herança.
 
-**Conceito:** finalidade do icacls no Windows.
+**Conceito:** finalidade do comando `icacls` no Windows.
 
-**Pegadinha:** inferir a função apenas porque o comando é administrativo ou confundir ACL com processos e rede.
+**Pegadinha:** confundir ferramentas próximas de administração de arquivos que atuam em atributos, propriedade, cifra e controle de acesso.
 
-**Como pensar:** o fragmento acl no nome ajuda a lembrar que o objeto do comando é a lista de controle de acesso.
+**Como pensar:** identifique qual estrutura deve mudar; para ACL e ACE, procure o utilitário cujo nome contém `acls`.
 
-**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), nos trechos sobre DACL e finalidade do `icacls`.
 
 ### Comentário S2D5Q247
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. ps oferece uma fotografia do estado, e ps -eLf evidencia processos e threads; top atualiza a visão continuamente.
-- **B)** Incorreta. top não altera DACL, e ps não reinicia serviços.
-- **C)** Incorreta. journalctl consulta eventos, enquanto chmod altera permissões; nenhum cumpre as duas finalidades pedidas.
-- **D)** Incorreta. ip route observa rotas, e ss observa sockets; esses comandos não escalonam nem enumeram processos em geral.
+- **A)** `ps -eLf` produz uma fotografia que inclui threads, e `top -H` atualiza a observação por thread continuamente.
+- **B)** `pgrep` localiza processos por critérios, enquanto `nice` inicia processo com prioridade ajustada e não cria visão dinâmica.
+- **C)** `pstree` mostra hierarquia, mas `renice` altera prioridade de processo existente em vez de monitorar consumo.
+- **D)** `jobs` limita-se aos trabalhos do shell atual, e `kill` envia sinais em vez de acompanhar recursos.
 
-**Conceito:** observação pontual e contínua de processos e threads no Linux.
+**Conceito:** ferramentas Linux para fotografia e acompanhamento contínuo de processos e threads.
 
-**Pegadinha:** reconhecer nomes válidos de comandos sem conferir o objeto que cada um observa ou modifica.
+**Pegadinha:** escolher comandos relacionados a processos que alteram prioridade ou estado em vez de observar continuamente.
 
-**Como pensar:** associe ps a process snapshot e top à tela dinâmica de consumo; depois verifique se a opção escolhida expõe threads.
+**Como pensar:** associe `ps` a process snapshot e `top` à tela atualizada; depois confirme a opção de exibir threads.
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), especialmente `ps -eLf` para observação pontual e `top` para atualização contínua.
 
 ### Comentário S2D5Q248
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
-**Alternativa correta: D.**
 
-**Análise das alternativas:**
-
-- **A)** Incorreta. Os pares atuam em permissões, não em estado de serviço e eventos.
-- **B)** Incorreta. ip addr e ss são ferramentas de rede, e Stop-Process altera o estado de um processo.
-- **C)** Incorreta. kill e taskkill encerram processos; não são instrumentos de mera consulta a serviço e log.
-- **D)** Correta. systemctl status e Get-Service consultam serviços; journalctl e Get-WinEvent consultam registros de eventos nos respectivos sistemas.
-
-**Conceito:** comandos de serviços e logs no Linux e no Windows.
-
-**Pegadinha:** misturar comandos de observação com comandos de encerramento ou formar pares de sistemas operacionais diferentes.
-
-**Como pensar:** divida o pedido em duas colunas, serviço e log, e só depois escolha a ferramenta correspondente em cada plataforma.
-
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
-
-### Comentário S2D5Q249
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-**Alternativa correta: C.**
-
-**Análise das alternativas:**
-
-- **A)** Incorreta. O trio atua sobre permissões e ACLs, não sobre configuração e sockets de rede.
-- **B)** Incorreta. ps e kill tratam processos, e free observa memória.
-- **C)** Correta. ip addr e ip route mostram endereços e rotas; ss -tulpn ajuda a relacionar sockets de escuta a protocolos e processos.
-- **D)** Incorreta. systemctl e journalctl tratam serviços e logs, e findmnt mostra sistemas montados.
-
-**Conceito:** comandos Linux de diagnóstico de configuração e sockets de rede.
-
-**Pegadinha:** selecionar comandos administrativos conhecidos, mas que respondem a perguntas operacionais diferentes.
-
-**Como pensar:** formule a pergunta antes do comando: onde está o endereço e a rota aponta para onde? Quais sockets estão escutando e qual processo os mantém?
-
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
-
-### Comentário S2D5Q250
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A ordem não corresponde às finalidades, taskkill altera processo e journalctl pertence ao Linux.
-- **B)** Correta. Get-Process lista processos; Get-Service consulta serviços; ipconfig exibe a configuração IP; Get-NetTCPConnection examina conexões; icacls inspeciona ou modifica permissões NTFS.
-- **C)** Incorreta. O conjunto reúne comandos Linux e não atende ao cenário Windows.
-- **D)** Incorreta. A sequência contém ações destrutivas ou de alteração e usa o cacls depreciado, além de não corresponder às consultas pedidas.
+- **A)** todas são ferramentas de consulta, mas a sequência troca serviço e eventos em ambas as plataformas.
+- **B)** `systemctl status` e `Get-Service` consultam serviços; `journalctl` e `Get-WinEvent` consultam eventos nas plataformas correspondentes.
+- **C)** os comandos mostram processos, mensagens do kernel ou conteúdo genérico, sem cumprir a associação pedida para serviços e eventos.
+- **D)** os quatro comandos alteram estado, retenção ou conteúdo, contrariando a necessidade de mera observação.
 
-**Conceito:** associação entre finalidade e comandos administrativos no Windows.
+**Conceito:** comandos de consulta de serviços e logs em Linux e Windows.
 
-**Pegadinha:** confundir listar com encerrar, misturar plataformas ou preferir ferramenta depreciada quando existe substituta atual.
+**Pegadinha:** inverter a ordem de ferramentas corretas ou aceitar comandos de alteração quando o pedido é somente observar.
 
-**Como pensar:** associe um substantivo a cada utilitário: processo, serviço, configuração IP, conexão e ACL; descarte imediatamente comandos de remoção ou encerramento quando o pedido é inspeção.
+**Como pensar:** monte duas colunas, serviço e log, e preencha cada uma primeiro para Linux e depois para Windows.
 
-**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), nos trechos sobre `systemctl`, `journalctl`, `Get-Service` e `Get-WinEvent`.
 
+### Comentário S2D5Q249
 
----
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Alternativa correta: D.**
+
+**Análise das alternativas:**
+
+- **A)** os comandos tratam estado de enlace, vizinhança e alcançabilidade, mas não entregam as três consultas solicitadas.
+- **B)** o conjunto consulta DNS, caminho e captura de pacotes, não a configuração local completa e os sockets por processo.
+- **C)** o conjunto aborda interface física, cache ARP e varredura, sem substituir as três visões locais pedidas.
+- **D)** `ip addr` mostra endereços, `ip route` mostra rotas e `ss -tulpn` relaciona sockets de escuta a protocolos e processos.
+
+**Conceito:** comandos Linux para configuração IP, rotas e sockets de rede.
+
+**Pegadinha:** escolher ferramentas legítimas de rede que respondem a perguntas operacionais diferentes.
+
+**Como pensar:** transforme cada substantivo em uma consulta: endereço com `ip addr`, rota com `ip route` e socket com `ss`.
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), especialmente `ip addr`, `ip route` e `ss -tulpn`.
+
+### Comentário S2D5Q250
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** a sequência associa cada consulta ao utilitário correspondente e termina com a ferramenta de permissões NTFS.
+- **B)** os utilitários são pertinentes, mas os dois primeiros estão invertidos em relação a processos e serviços.
+- **C)** `Get-NetAdapter` não exibe sozinho toda a configuração pedida, `Test-NetConnection` testa conectividade e `takeown` altera propriedade.
+- **D)** os quatro primeiros podem apoiar as respectivas consultas, mas `attrib` trata atributos e não verifica a DACL NTFS.
+
+**Conceito:** associação entre finalidades administrativas e comandos Windows.
+
+**Pegadinha:** trocar a ordem de comandos corretos ou confundir adaptação, teste, propriedade e atributos com as consultas solicitadas.
+
+**Como pensar:** associe, na ordem, processo, serviço, IP, conexão e ACL; depois descarte qualquer ferramenta que altere objeto diferente.
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), especialmente `Get-Process`, `Get-Service`, `ipconfig`, `Get-NetTCPConnection` e `icacls`.
 
 ## Questões extras de revisão fixa do Dia 5
 
 #### Extra Dia 5.1
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** delimitação normativa e controle de versão.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo).
 
-Considerando o escopo de Legislação CRA/CFA adotado para o cargo de Analista de Sistemas após a Retificação I, assinale a alternativa correta.
+- **Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo), especialmente o núcleo de quatro fontes e a substituição da RN nº 640/2024 pela RN nº 671/2025.
 
-A) A RN CFA nº 640/2024 permanece como Código vigente no edital, e a RN nº 671/2025 trata do Regimento do CRA-PR.
-B) As RNs nº 589/2020, nº 649/2024 e nº 670/2025 constituem o núcleo autônomo das quinze extras do Dia 5.
-C) O núcleo é formado pela Lei nº 4.769/1965, pelo Decreto nº 61.934/1967, pelo Regimento/RN nº 651/2024 e pelo Código/RN nº 671/2025; as demais normas citadas no bloco ficam apenas como contexto externo.
-D) Somente o Regimento pode fundamentar as extras, pois Lei, Decreto e Código possuem aplicação nacional.
+Ao revisar as fontes que podem fundamentar as questões extras de Legislação CRA/CFA, a equipe deve aplicar o recorte do cargo após a Retificação I. Assinale o conjunto correto.
+
+A) Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento/RN nº 651/2024 e Código/RN nº 640/2024, mantido pela Retificação I.
+
+B) Lei nº 4.769/1965, RNs nº 589/2020, nº 649/2024 e nº 670/2025 e Lei nº 12.514/2011, todas como núcleo material das extras.
+
+C) Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento/RN nº 651/2024 e Código/RN nº 671/2025, conforme a Retificação I.
+
+D) Lei nº 4.769/1965, Decreto nº 61.934/1967, Regimento/RN nº 671/2025 e Código/RN nº 651/2024, com as funções normativas invertidas.
+
 #### Extra Dia 5.2
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** natureza e jurisdição do CRA-PR.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Regimento — órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
-Sobre natureza, autonomia e jurisdição do CRA-PR, assinale a alternativa correta.
+- **Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), nos arts. 1º e 2º resumidos na seção.
 
-A) É autarquia de direito público, com autonomia técnica, administrativa e financeira, sede na capital e jurisdição em todo o Paraná nas matérias de sua competência; autonomia não significa soberania.
-B) É associação privada com jurisdição nacional e independência normativa absoluta do CFA.
-C) É órgão sem personalidade da Administração Direta estadual e atua apenas no município da sede.
-D) A autonomia permite ao CRA-PR deixar de executar diretrizes do CFA e aprovar definitivamente o próprio Regimento.
+Um relatório institucional precisa registrar, sem transformar autonomia em soberania, a natureza jurídica, a sede e a jurisdição do CRA-PR. Assinale a redação correta.
+
+A) É autarquia de direito público, com autonomia técnica, administrativa e financeira, sede na capital e jurisdição no Paraná nas matérias de sua competência.
+
+B) É autarquia de direito privado, com autonomia apenas administrativa, sede na capital e jurisdição nacional para editar diretrizes destinadas a todos os CRAs.
+
+C) É órgão da Administração Direta estadual, com autonomia técnica e financeira, sede na capital e jurisdição restrita aos serviços prestados pelo governo paranaense.
+
+D) É autarquia de direito público, com autonomia técnica, administrativa e financeira, sede na capital e independência para afastar diretrizes nacionais do CFA.
+
 #### Extra Dia 5.3
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** órgãos do CRA-PR.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Regimento — art. 3º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
-Assinale a alternativa que contém apenas órgãos ou estruturas enumerados no art. 3º do Regimento do CRA-PR.
+- **Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), no resumo do art. 3º.
 
-A) Plenário, Tribunal de Contas, Ouvidoria e Ministério Público.
-B) Diretoria Executiva, Assembleia Legislativa, Ouvidoria e Poder Judiciário.
-C) Plenário, Diretoria Executiva, Secretaria Estadual e conselho municipal.
-D) Plenário, Diretoria Executiva, Ouvidoria, Comissões Permanentes e Especiais e Grupos de Trabalho, além dos Órgãos de Representação.
+Para montar o organograma regimental, a equipe deve usar apenas as categorias enumeradas no art. 3º do Regimento do CRA-PR. Assinale a lista integralmente compatível.
+
+A) Plenário; Diretoria Executiva; Presidência; Ouvidoria; Comissões Permanentes, Especiais e Grupos de Trabalho.
+
+B) Plenário; Diretoria Executiva; Ouvidoria; Conselheiros efetivos e suplentes; Órgãos de Representação.
+
+C) Plenário; Diretoria Executiva; Ouvidoria; setores administrativos; Comissões Permanentes e Especiais.
+
+D) Plenário; Diretoria Executiva; Ouvidoria; Comissões Permanentes, Especiais e Grupos de Trabalho; Órgãos de Representação.
+
 #### Extra Dia 5.4
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** finalidade do Plenário.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Regimento — Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
-No Regimento do CRA-PR, o Plenário é:
+- **Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), especialmente o art. 4º e a diferença entre primeira e última instância.
 
-A) unidade exclusivamente consultiva, sem competência de julgamento.
-B) órgão colegiado de deliberação superior e primeira instância de julgamento no âmbito da jurisdição regional.
-C) órgão executivo subordinado à Ouvidoria.
-D) última instância nacional para recursos de todos os Conselhos Regionais.
+Ao classificar o Plenário no desenho institucional do CRA-PR, qual descrição preserva simultaneamente sua posição e sua função de julgamento?
+
+A) Órgão consultivo da Diretoria, sem competência deliberativa e sem atuação no julgamento de processos regionais.
+
+B) Órgão colegiado de deliberação superior e primeira instância de julgamento no âmbito da jurisdição regional.
+
+C) Órgão executivo responsável pela administração cotidiana e pela execução isolada de todas as decisões do Conselho.
+
+D) Órgão recursal nacional encarregado da revisão final dos processos julgados por todos os Conselhos Regionais.
+
 #### Extra Dia 5.5
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** composição e mandato do Plenário.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Regimento — arts. 5º e 6º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
-Sobre composição e mandato do Plenário, assinale a alternativa correta.
+- **Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), nos resumos dos arts. 5º e 6º.
 
-A) É formado por cinco Diretores, todos com mandato anual sem reeleição.
-B) Possui nove membros sem suplentes, renovados integralmente a cada quatro anos.
-C) É composto por nove Conselheiros Efetivos e respectivos Suplentes; renova-se a cada dois anos em um terço e dois terços alternadamente, e o mandato é de quatro anos, permitida uma reeleição.
-D) Seus membros possuem mandato de dois anos, idêntico ao da Diretoria, e reeleições ilimitadas.
+Assinale a alternativa que combina corretamente composição, forma de renovação e duração do mandato dos Conselheiros do CRA-PR.
+
+A) Nove Conselheiros Efetivos e respectivos Suplentes; renovação bienal alternada em um terço e dois terços; mandato de dois anos, permitida uma reeleição.
+
+B) Nove Conselheiros Efetivos, sem respectivos Suplentes; renovação bienal alternada em um terço e dois terços; mandato de quatro anos, permitida uma reeleição.
+
+C) Nove Conselheiros Efetivos e respectivos Suplentes; renovação bienal alternada em um terço e dois terços; mandato de quatro anos, permitida uma reeleição.
+
+D) Nove Conselheiros Efetivos e respectivos Suplentes; renovação integral ao fim de quatro anos; mandato de quatro anos, permitidas reeleições ilimitadas.
+
 #### Extra Dia 5.6
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** competências do Plenário.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Regimento — competência do Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
-Constitui competência do Plenário do CRA-PR:
+- **Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), no rol resumido do art. 8º.
 
-A) aprovar os Planos Anuais de Fiscalização e de Trabalho, eleger membros da Diretoria e das Comissões Permanentes e julgar, em primeira instância, infrações profissionais.
-B) apenas receber manifestações e encaminhá-las, sem poder deliberar.
-C) exercer sozinho toda a administração cotidiana, sem participação da Diretoria.
-D) instituir Comissão Especial sem ouvir a Diretoria e dispensar posterior homologação.
+Os conjuntos abaixo reúnem atos regimentais atribuídos predominantemente a uma estrutura do CRA-PR. Qual conjunto pertence ao Plenário?
+
+A) Aprovar os Planos Anuais, eleger a Diretoria e as Comissões Permanentes e julgar infrações profissionais em primeira instância.
+
+B) Analisar os Planos Anuais, encaminhá-los à apreciação superior e homologar Comissões Especiais e Grupos de Trabalho.
+
+C) Representar legalmente o Conselho, convocar as reuniões colegiadas e instituir Comissões Especiais, ouvida a Diretoria.
+
+D) Receber, tratar e encaminhar manifestações dos usuários, acompanhar as respostas e avaliar a satisfação com os serviços.
+
 #### Extra Dia 5.7
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** composição da Diretoria Executiva.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
-Nos termos do Regimento, a Diretoria Executiva é composta por:
+- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), especialmente o art. 18 resumido na seção.
 
-A) Presidente, Ouvidor, três representantes estaduais e um membro do CFA.
-B) nove Conselheiros Efetivos e seus nove Suplentes.
-C) Presidente, Secretário-Geral e representantes de cada município paranaense.
+Qual alternativa reproduz os cinco cargos que compõem a Diretoria Executiva do CRA-PR segundo o art. 18 do Regimento?
+
+A) Presidente, Vice-Presidente, Ouvidor, Diretor de Administração e Finanças e Diretor de Fiscalização e Registro.
+
+B) Presidente, Vice-Presidente, Secretário-Geral, Diretor de Tecnologia e Diretor de Relações Institucionais.
+
+C) Presidente, Vice-Presidente, Diretor de Administração e Finanças, Diretor de Ética e Diretor Eleitoral.
+
 D) Presidente, Vice-Presidente, Diretor de Administração e Finanças, Diretor de Fiscalização e Registro e Diretor de Relações Institucionais.
+
 #### Extra Dia 5.8
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** Diretoria Executiva × Plenário.
-- **Nível:** Médio
+
+- **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
-Assinale a alternativa que diferencia corretamente Diretoria Executiva e Plenário.
+- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), nos arts. 23 e 25 e na tabela Plenário × Diretoria × Presidente.
 
-A) A Diretoria aprova definitivamente os Planos Anuais, enquanto o Plenário apenas os protocola.
-B) A Diretoria analisa os Planos e os encaminha à apreciação do Plenário, que os aprova; a Diretoria também homologa a instituição e composição de Comissões Especiais e Grupos de Trabalho.
-C) O Plenário executa sozinho todas as decisões, e a Diretoria funciona como canal de Ouvidoria.
-D) Diretoria e Plenário são nomes alternativos do mesmo órgão e possuem competências indistintas.
+Na tramitação dos Planos Anuais e na criação de Comissões Especiais ou Grupos de Trabalho, qual sequência respeita a distribuição regimental de competências?
+
+A) A Diretoria aprova os Planos, o Plenário apenas os protocola e o Presidente homologa sozinho as estruturas temporárias.
+
+B) A Diretoria analisa e encaminha os Planos, o Plenário os aprova e a Diretoria homologa a instituição e a composição das estruturas temporárias.
+
+C) O Presidente analisa e encaminha os Planos, a Diretoria os aprova e o Plenário homologa a composição das estruturas temporárias.
+
+D) O Plenário analisa e encaminha os Planos, a Diretoria os aprova e a Ouvidoria homologa a instituição das estruturas temporárias.
+
 #### Extra Dia 5.9
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** competências presidenciais e `ad referendum`.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
-Quanto às competências do Presidente do CRA-PR, assinale a alternativa correta.
+- **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), especialmente o art. 25 e a explicação do inciso XVIII.
 
-A) O Presidente não representa legalmente o Conselho e não pode convocar reuniões.
-B) O Presidente homologa sozinho toda decisão do Plenário, sem controle colegiado.
-C) O Presidente representa o CRA-PR, convoca e preside reuniões, distribui processos e institui Comissões Especiais e Grupos de Trabalho, ouvida a Diretoria; decisão urgente `ad referendum` depende de posterior apreciação.
-D) A decisão `ad referendum` transfere definitivamente ao Presidente a competência do colegiado.
+Ao descrever os poderes do Presidente, o parecer deve preservar a participação da Diretoria e o controle colegiado de providência urgente. Assinale a alternativa correta.
+
+A) O Presidente representa e convoca, institui Comissão Especial após ouvir a Diretoria, mas seu ato urgente `ad referendum` dispensa apreciação posterior.
+
+B) O Presidente representa e convoca, institui Comissão Especial apenas após votação do Plenário e submete o ato `ad referendum` à decisão final da Ouvidoria.
+
+C) O Presidente representa e convoca, institui Comissão Especial após ouvir a Diretoria e submete o ato urgente `ad referendum` ao colegiado competente.
+
+D) O Presidente representa e convoca, institui Comissão Especial sem ouvir a Diretoria e submete o ato `ad referendum` exclusivamente ao CFA.
+
 #### Extra Dia 5.10
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** reuniões e quórum.
+
 - **Nível:** Difícil
+
 - **Uso:** Aprofundamento
-- **Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes).
 
-Sobre reuniões e quórum no Regimento do CRA-PR, assinale a alternativa correta.
+- **Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes), nos resumos dos arts. 30 a 33.
 
-A) Plenário e Diretoria reúnem-se ordinariamente de uma a quatro vezes por mês; reunião extraordinária exige justificativa e pauta prévia, admite-se videoconferência, e o quórum de instalação e funcionamento é a maioria absoluta dos membros.
-B) Reuniões ordinárias podem ocorrer no máximo uma vez por ano, e videoconferência é proibida.
-C) Maioria absoluta é calculada somente sobre os membros presentes na sessão.
-D) Reunião extraordinária dispensa pauta e só pode ser convocada por órgão externo.
+Uma minuta reúne quatro regras sobre reuniões do Plenário e da Diretoria. Qual versão está integralmente de acordo com o Regimento?
+
+A) Reuniões ordinárias ocorrem de uma a quatro vezes por mês; a extraordinária exige justificativa e pauta; admite-se videoconferência; o quórum é maioria absoluta do total.
+
+B) Reuniões ordinárias ocorrem de uma a quatro vezes por ano; a extraordinária dispensa pauta; admite-se videoconferência; o quórum é maioria simples dos presentes.
+
+C) Reuniões ordinárias ocorrem de uma a quatro vezes por mês; a extraordinária exige justificativa e pauta; admite-se videoconferência; o quórum é maioria dos presentes.
+
+D) Reuniões ordinárias ocorrem de uma a quatro vezes por mês; a extraordinária exige justificativa e pauta; exige-se presença física; o quórum é dois terços do total.
+
 #### Extra Dia 5.11
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** Ouvidoria do CRA-PR.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
-A respeito da Ouvidoria do CRA-PR, assinale a alternativa correta.
+- **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes), especialmente os arts. 43 a 46 resumidos na seção.
 
-A) Julga infrações profissionais em primeira instância e aplica penalidades.
-B) Substitui a Diretoria Executiva na administração financeira.
-C) Seu titular pode ser qualquer terceiro não vinculado ao Plenário, com mandato independente.
-D) O Ouvidor é eleito pelo Plenário entre Conselheiros Efetivos; a unidade é mediadora, recebe, trata, encaminha e acompanha manifestações, sem caráter executivo, deliberativo ou decisório.
+Um usuário pede à Ouvidoria que anule uma decisão do Plenário. Ao responder, o CRA-PR também precisa explicar como o titular da unidade é escolhido. Assinale a orientação correta.
+
+A) O Ouvidor é escolhido pela Diretoria entre profissionais registrados e pode anular a decisão quando identificar falha no atendimento ao usuário.
+
+B) O Ouvidor é nomeado pelo Presidente entre terceiros e pode substituir a Diretoria na execução das providências decorrentes da manifestação.
+
+C) O Ouvidor é eleito pelo Plenário entre Conselheiros Efetivos e pode rever o mérito da decisão, pois a mediação inclui poder deliberativo.
+
+D) O Ouvidor é eleito pelo Plenário entre Conselheiros Efetivos e pode tratar, encaminhar e acompanhar o pedido, mas não anular a decisão.
+
 #### Extra Dia 5.12
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** Comissões e Grupos de Trabalho.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
-Sobre Comissões e Grupos de Trabalho, assinale a alternativa correta.
+- **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes), nos arts. 49 a 54 resumidos na seção.
 
-A) Toda Comissão Permanente possui cinco membros, e integrante da Diretoria deve coordenar a Comissão de Análise de Contas.
-B) Salvo norma específica, Comissões Permanentes têm três membros; membro da Diretoria não integra a Comissão de Análise de Contas; Comissões Especiais e Grupos de Trabalho têm no máximo cinco membros e caráter específico ou temporário.
-C) Comissões Especiais são permanentes e seus atos não precisam indicar prazo.
-D) Grupos de Trabalho exercem julgamento definitivo e não se limitam ao estudo de temas.
+Ao verificar a composição de estruturas auxiliares, o controle interno compara regra geral das Comissões Permanentes, impedimento na Análise de Contas e limite das estruturas temporárias. Assinale a síntese correta.
+
+A) Permanentes têm cinco membros; Diretor deve integrar a Análise de Contas; Especiais e GTs têm até três membros e duração permanente.
+
+B) Permanentes têm três membros em qualquer hipótese; Diretor não integra comissão alguma; Especiais e GTs têm até cinco membros e caráter permanente.
+
+C) Permanentes têm três membros, salvo regra específica; Diretor pode coordenar a Análise de Contas; Especiais e GTs não possuem limite nem prazo.
+
+D) Permanentes têm três membros, salvo regra específica; Diretor não integra a Análise de Contas; Especiais e GTs têm até cinco membros e caráter temporário.
+
 #### Extra Dia 5.13
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** contagem de prazo e casos omissos.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes).
 
-Segundo as disposições gerais do Regimento, assinale a alternativa correta.
+- **Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes), nos resumos dos arts. 58 e 60.
 
-A) Incluem-se o dia inicial e exclui-se o vencimento em qualquer prazo.
-B) Todo caso omisso é resolvido exclusivamente pelo Presidente ou pela Ouvidoria.
-C) Salvo disposição contrária, exclui-se o dia do início e inclui-se o do vencimento; o prazo inicia ou vence em dia de expediente normal, e os casos omissos são resolvidos pelo Plenário.
-D) O prazo corre mesmo quando o termo inicial e o vencimento recaem em dia sem expediente, sem qualquer ajuste.
+Uma unidade precisa calcular prazo regimental e encaminhar uma omissão não disciplinada. Qual procedimento reúne corretamente as três regras gerais?
+
+A) Inclui o dia inicial, exclui o vencimento, mantém os termos em dia sem expediente e envia a omissão ao Presidente.
+
+B) Exclui o dia inicial, inclui o vencimento, mantém os termos em dia sem expediente e envia a omissão ao CFA.
+
+C) Exclui o dia inicial, inclui o vencimento, exige expediente normal no início e no fim e envia a omissão ao Plenário.
+
+D) Inclui o dia inicial e o vencimento, exige expediente normal apenas no fim e envia a omissão à Ouvidoria.
+
 #### Extra Dia 5.14
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** catálogo de infrações e gradação.
+
 - **Nível:** Difícil
+
 - **Uso:** Revisão
-- **Referência:** [Código — deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes).
 
-Um profissional de Administração utiliza artifício enganoso para obter vantagem indevida, conduta do art. 6º, XVIII, do Código. Para pessoa física, a sanção-base prevista é:
+- **Referência:** [Código: deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes) e [Sanções, PF × PJ, multas e garantias processuais](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
 
-A) suspensão de seis meses a um ano, acompanhada da multa aplicável e observadas as garantias processuais.
-B) advertência oral sem registro e sem multa.
-C) censura reservada, aplicada antes da defesa.
-D) cancelamento automático e imediato, independentemente de trânsito em julgado.
+Uma pessoa física registrada usa artifício enganoso para obter vantagem indevida, enquadrando-se no art. 6º, XVIII. Qual consequência-base preserva sanção, multa e momento de aplicação?
+
+A) Suspensão de seis meses a um ano, com a multa aplicável em conjunto e imposição somente após o trânsito em julgado administrativo.
+
+B) Censura pública, com a multa substituindo a sanção e imposição antes da conclusão do processo administrativo.
+
+C) Suspensão de um a cinco anos, com multa facultativa e imposição logo após a decisão inicial do Conselho Regional.
+
+D) Cancelamento do registro, com multa conjunta e execução imediata antes da apreciação dos recursos administrativos.
+
 #### Extra Dia 5.15
+
 - **Dia:** Dia 5
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Legislação CRA/CFA
+
 - **Assunto:** sanções, PF × PJ, multa e trânsito em julgado.
-- **Nível:** Difícil
+
+- **Nível:** Muito difícil
+
 - **Uso:** Revisão
-- **Referência:** [Sanções, PF × PJ, multas e garantias](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
 
-Sobre sanções, pessoa jurídica, multa e processo na RN CFA nº 671/2025, assinale a alternativa correta.
+- **Referência:** [Sanções, PF × PJ, multas e garantias processuais](semana_02_estudo.md#s2-d5-rf-etica-sancoes), especialmente os arts. 13, § 3º, 18 e 23.
 
-A) Suspensão e cancelamento aplicam-se da mesma forma a pessoa física e jurídica.
-B) Advertência reservada é obrigatoriamente publicada no DOU, ao contrário da censura.
-C) A multa substitui a sanção disciplinar, e ambas podem ser aplicadas antes do trânsito em julgado administrativo.
-D) Suspensão e cancelamento não se aplicam à pessoa jurídica; a multa acompanha a sanção, e sanção somente pode ser aplicada após trânsito em julgado administrativo.
+Em processo ético contra pessoa jurídica registrada, a decisão cogita suspensão, multa e execução antes do fim dos recursos. Assinale a alternativa que resolve corretamente os três pontos.
+
+A) Suspensão e cancelamento não se aplicam à pessoa jurídica; a multa acompanha a sanção; a execução exige trânsito administrativo.
+
+B) Suspensão e cancelamento não se aplicam à pessoa jurídica; a multa substitui a sanção; a execução exige trânsito administrativo.
+
+C) Suspensão e cancelamento não se aplicam à pessoa jurídica; a multa acompanha a sanção; a execução pode preceder o trânsito administrativo.
+
+D) Suspensão e cancelamento aplicam-se à pessoa jurídica; a multa substitui a sanção; a execução pode preceder o trânsito administrativo.
+
 #### Extra Dia 5.16
 - **Dia:** Dia 5
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** modalidade e alcance.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Português — inferência e quantificadores](semana_02_estudo.md#s2-d5-rf-portugues).
 
@@ -13090,7 +14232,7 @@ D) somente reuniões extraordinárias admitem videoconferência.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** reescrita e relação concessiva/adversativa.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Português — reescrita](semana_02_estudo.md#s2-d5-rf-portugues).
 
@@ -13105,14 +14247,14 @@ D) A Ouvidoria não decide; portanto, não pode mediar.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** regência do relativo e crase.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [Português — regência do relativo e crase](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Assinale a alternativa correta quanto à regência do pronome relativo e à crase.
 
-A) “A Ouvidoria à qual o cidadão se dirigiu recebeu a manifestação.”
-B) “A decisão que o usuário discordou foi revista.”
+A) “A decisão que o usuário discordou foi revista.”
+B) “A Ouvidoria à qual o cidadão se dirigiu recebeu a manifestação.”
 C) “A comissão cujos os membros foram eleitos reuniu-se.”
 D) “O tema aonde a Comissão se manifestou exigia parecer.”
 #### Extra Dia 5.19
@@ -13120,7 +14262,7 @@ D) “O tema aonde a Comissão se manifestou exigia parecer.”
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** oração adjetiva restritiva × explicativa.
-- **Nível:** Muito difícil
+- **Nível:** Difícil
 - **Uso:** Simulado
 - **Referência:** [Português — pontuação e sentido](semana_02_estudo.md#s2-d5-rf-portugues).
 
@@ -13136,7 +14278,7 @@ D) Sem vírgulas, a oração adjetiva pode selecionar um subconjunto; com vírgu
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** paralelismo e clareza comparativa.
-- **Nível:** Muito difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Português — paralelismo e clareza](semana_02_estudo.md#s2-d5-rf-portugues).
 
@@ -13162,19 +14304,20 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 | 5.9 | C |
 | 5.10 | A |
 | 5.11 | D |
-| 5.12 | B |
+| 5.12 | D |
 | 5.13 | C |
 | 5.14 | A |
-| 5.15 | D |
+| 5.15 | A |
 | 5.16 | B |
 | 5.17 | C |
-| 5.18 | A |
+| 5.18 | B |
 | 5.19 | D |
 | 5.20 | B |
 
 ### Comentários das questões extras do Dia 5
 
 #### Comentário Extra Dia 5.1
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -13183,20 +14326,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A Retificação I adotou a RN nº 671/2025 como Código; a RN nº 651/2024 aprova o Regimento.
-- **B)** Incorreta. Essas normas aparecem somente como contexto externo no bloco do Analista.
-- **C)** Correta. A alternativa identifica as quatro bases materiais delimitadas para as extras.
-- **D)** Incorreta. Lei, Decreto e Código também integram expressamente o escopo.
+- **A)** a Retificação I não manteve a RN nº 640/2024 como Código vigente; ela passou a indicar a RN nº 671/2025.
+- **B)** essas resoluções e a Lei nº 12.514/2011 ficam como contexto externo e não formam o núcleo material das extras.
+- **C)** reúne Lei, Decreto, Regimento/RN nº 651/2024 e Código/RN nº 671/2025 no recorte efetivamente adotado.
+- **D)** inverte Regimento e Código; a RN nº 651/2024 é o Regimento e a RN nº 671/2025 aprova o Código.
 
-**Conceito:** delimitação normativa e controle de versão.
+**Conceito:** delimitação normativa e controle de versão após a retificação do edital.
 
-**Pegadinha:** usar norma de outro cargo ou trocar Regimento e Código.
+**Pegadinha:** manter a resolução substituída ou trocar os números do Regimento e do Código.
 
-**Como pensar:** fixe 4769, 61934, 651 e 671; as demais não fundamentam estas extras.
+**Como pensar:** identifique primeiro a função de cada fonte e só depois confira o número vigente de cada resolução.
 
-**Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo).
+**Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo), especialmente o núcleo de quatro fontes e a substituição da RN nº 640/2024 pela RN nº 671/2025.
 
 #### Comentário Extra Dia 5.2
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -13205,20 +14349,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Correta. A opção reúne natureza, autonomia, sede, jurisdição e o limite sistêmico.
-- **B)** Incorreta. O CRA-PR não é associação privada nem possui jurisdição nacional.
-- **C)** Incorreta. É autarquia com personalidade e jurisdição estadual.
-- **D)** Incorreta. Autonomia não elimina diretrizes do CFA nem a aprovação federal do Regimento.
+- **A)** preserva natureza autárquica pública, três autonomias, sede na capital e jurisdição estadual limitada às competências do Conselho.
+- **B)** o CRA-PR não é autarquia de direito privado nem possui competência normativa nacional sobre os demais regionais.
+- **C)** o Conselho tem personalidade autárquica própria e não integra a Administração Direta do Estado do Paraná.
+- **D)** autonomia não significa soberania nem autoriza afastar as diretrizes nacionais do CFA.
 
-**Conceito:** natureza e jurisdição do CRA-PR.
+**Conceito:** natureza jurídica, autonomia, sede e alcance territorial do CRA-PR.
 
-**Pegadinha:** converter autonomia em soberania.
+**Pegadinha:** converter autonomia em independência sistêmica ou confundir autarquia com órgão da Administração Direta.
 
-**Como pensar:** autonomia permite gestão própria dentro do Sistema e das competências legais.
+**Como pensar:** valide separadamente natureza, autonomias, sede e limite material da jurisdição.
 
-**Referência:** [Regimento — órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
+**Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), nos arts. 1º e 2º resumidos na seção.
 
 #### Comentário Extra Dia 5.3
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -13227,20 +14372,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Tribunal de Contas e Ministério Público não integram a lista regimental de órgãos do CRA-PR.
-- **B)** Incorreta. Assembleia Legislativa e Judiciário são externos ao Conselho.
-- **C)** Incorreta. Secretaria estadual e conselho municipal não aparecem no art. 3º.
-- **D)** Correta. A alternativa reproduz as cinco categorias regimentais.
+- **A)** a Presidência não aparece como categoria autônoma no rol do art. 3º, embora o Presidente possua competências próprias.
+- **B)** Conselheiros efetivos e suplentes compõem o Plenário, mas não são apresentados como órgão separado nesse rol.
+- **C)** “setores administrativos” não substitui a categoria regimental dos Órgãos de Representação nem completa o rol.
+- **D)** reproduz as cinco categorias enumeradas na seção teórica correspondente ao art. 3º.
 
-**Conceito:** órgãos do CRA-PR.
+**Conceito:** órgãos e estruturas regimentais do CRA-PR.
 
-**Pegadinha:** inserir instituição pública real, mas externa ao Conselho.
+**Pegadinha:** transformar cargo, integrante ou setor interno em órgão autônomo do rol.
 
-**Como pensar:** memorize Plenário, Diretoria, Ouvidoria, Comissões/GT e Representação.
+**Como pensar:** compare categorias institucionais, sem confundir quem exerce função com o órgão ao qual pertence.
 
-**Referência:** [Regimento — art. 3º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
+**Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), no resumo do art. 3º.
 
 #### Comentário Extra Dia 5.4
+
 **Alternativa correta: B.**
 
 **Nível:** Médio
@@ -13249,20 +14395,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O Plenário possui deliberação e julgamento.
-- **B)** Correta. Essa é a função definida no art. 4º do Regimento.
-- **C)** Incorreta. Ouvidoria não dirige o Plenário nem executa decisões.
-- **D)** Incorreta. A última instância sistêmica recursal não pertence ao Regional.
+- **A)** o Plenário delibera e julga matérias regionais, não se limita a aconselhar a Diretoria.
+- **B)** reúne a posição colegiada superior e a atuação como primeira instância na jurisdição do CRA-PR.
+- **C)** direção administrativa e execução cotidiana pertencem predominantemente à Diretoria, dentro de suas competências.
+- **D)** o Plenário é regional e de primeira instância; a função recursal nacional atribuída por lei pertence ao CFA.
 
-**Conceito:** finalidade do Plenário.
+**Conceito:** natureza colegiada, deliberação superior e julgamento regional pelo Plenário.
 
-**Pegadinha:** trocar primeira instância regional por última instância nacional.
+**Pegadinha:** trocar deliberação por execução ou primeira instância regional por última instância nacional.
 
-**Como pensar:** Plenário decide no Regional; CFA ocupa a posição recursal prevista.
+**Como pensar:** separe posição institucional, âmbito territorial e grau de julgamento antes de escolher.
 
-**Referência:** [Regimento — Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
+**Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), especialmente o art. 4º e a diferença entre primeira e última instância.
 
 #### Comentário Extra Dia 5.5
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -13271,20 +14418,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Confunde Plenário com Diretoria e altera mandato.
-- **B)** Incorreta. Há suplentes e renovação parcial alternada.
-- **C)** Correta. A opção reúne composição, renovação, duração e limite de reeleição.
-- **D)** Incorreta. O mandato do Conselheiro é de quatro anos, com apenas uma reeleição.
+- **A)** acerta composição e renovação, mas reduz indevidamente o mandato de Conselheiro para dois anos.
+- **B)** o Plenário inclui respectivos Suplentes; eles não podem ser retirados da composição.
+- **C)** preserva os nove pares, a renovação bienal alternada e o mandato quadrienal com uma reeleição.
+- **D)** a renovação não é integral e a possibilidade de reeleição não é ilimitada.
 
-**Conceito:** composição e mandato do Plenário.
+**Conceito:** composição do Plenário, renovação alternada e mandato dos Conselheiros.
 
-**Pegadinha:** usar os dois anos da Diretoria para o mandato dos Conselheiros.
+**Pegadinha:** transportar o mandato bienal da Diretoria para os Conselheiros ou eliminar os Suplentes.
 
-**Como pensar:** Plenário: nove, suplentes, quatro anos; renovação parcial a cada dois.
+**Como pensar:** confira em três colunas: composição, ciclo de renovação e mandato com limite de reeleição.
 
-**Referência:** [Regimento — arts. 5º e 6º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
+**Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), nos resumos dos arts. 5º e 6º.
 
 #### Comentário Extra Dia 5.6
+
 **Alternativa correta: A.**
 
 **Nível:** Médio
@@ -13293,20 +14441,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aprovação de planos, eleições internas e primeira instância estão no art. 8º.
-- **B)** Incorreta. Essa descrição aproxima-se da Ouvidoria, não do Plenário.
-- **C)** Incorreta. A Diretoria exerce direção e gestão executiva.
-- **D)** Incorreta. Instituição e homologação de Comissão/GT seguem competências distintas.
+- **A)** aprovação dos Planos, eleição dos membros e julgamento regional em primeira instância integram as competências do Plenário.
+- **B)** análise e encaminhamento dos Planos, assim como a homologação indicada, pertencem à Diretoria Executiva.
+- **C)** representação, convocação e instituição dessas estruturas são atribuições do Presidente, nos limites regimentais.
+- **D)** o conjunto descreve a atuação mediadora e de acompanhamento da Ouvidoria.
 
-**Conceito:** competências do Plenário.
+**Conceito:** distribuição de competências entre Plenário, Diretoria, Presidente e Ouvidoria.
 
-**Pegadinha:** atribuir ao órgão deliberativo toda execução cotidiana.
+**Pegadinha:** reconhecer atos verdadeiros do CRA-PR, mas atribuí-los ao órgão errado.
 
-**Como pensar:** Plenário aprova e julga; Diretoria administra e encaminha.
+**Como pensar:** associe cada verbo ao responsável predominante antes de avaliar o conjunto completo.
 
-**Referência:** [Regimento — competência do Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
+**Referência:** [Regimento/RN CFA nº 651/2024: órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos), no rol resumido do art. 8º.
 
 #### Comentário Extra Dia 5.7
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -13315,42 +14464,44 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Ouvidor e representantes não compõem a Diretoria desse modo.
-- **B)** Incorreta. Essa quantidade se refere ao Plenário e seus suplentes.
-- **C)** Incorreta. A composição não usa representação municipal.
-- **D)** Correta. São as cinco funções previstas no art. 18.
+- **A)** o Ouvidor não ocupa uma das cinco Diretorias enumeradas no art. 18.
+- **B)** Secretário-Geral e Diretor de Tecnologia não substituem os cargos regimentais de Administração e Finanças e de Fiscalização e Registro.
+- **C)** Diretor de Ética e Diretor Eleitoral não integram a composição listada para a Diretoria Executiva.
+- **D)** apresenta Presidência, Vice-Presidência e as três Diretorias setoriais previstas no Regimento.
 
-**Conceito:** composição da Diretoria Executiva.
+**Conceito:** composição regimental da Diretoria Executiva.
 
-**Pegadinha:** misturar cargos de outros órgãos na Diretoria.
+**Pegadinha:** inserir funções ou áreas existentes no ambiente institucional como se fossem cargos da Diretoria.
 
-**Como pensar:** Presidente e Vice + três Diretorias temáticas.
+**Como pensar:** confirme a dupla Presidente/Vice e depois as três Diretorias: Administração e Finanças, Fiscalização e Registro e Relações Institucionais.
 
-**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
+**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), especialmente o art. 18 resumido na seção.
 
 #### Comentário Extra Dia 5.8
+
 **Alternativa correta: B.**
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A aprovação dos Planos pertence ao Plenário.
-- **B)** Correta. A Diretoria analisa/encaminha e homologa Comissão/GT; o Plenário aprecia e aprova os Planos.
-- **C)** Incorreta. A opção troca gestão executiva e mediação.
-- **D)** Incorreta. São órgãos diferentes com competências próprias.
+- **A)** a aprovação dos Planos cabe ao Plenário, e a homologação regimental não é ato isolado do Presidente.
+- **B)** preserva análise e encaminhamento pela Diretoria, aprovação pelo Plenário e homologação das estruturas pela Diretoria.
+- **C)** desloca as etapas dos Planos e entrega ao Plenário a homologação atribuída à Diretoria.
+- **D)** inverte Plenário e Diretoria e atribui poder homologatório à Ouvidoria, que não decide.
 
-**Conceito:** Diretoria Executiva × Plenário.
+**Conceito:** encadeamento de competências nos Planos Anuais e nas estruturas temporárias.
 
-**Pegadinha:** trocar `analisar e encaminhar` por `aprovar`.
+**Pegadinha:** reconhecer os verbos corretos, mas trocá-los entre Diretoria, Plenário, Presidente e Ouvidoria.
 
-**Como pensar:** acompanhe os verbos regimentais, não apenas o assunto do ato.
+**Como pensar:** resolva em duas trilhas: Diretoria analisa/encaminha e Plenário aprova; Presidente institui e Diretoria homologa.
 
-**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
+**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), nos arts. 23 e 25 e na tabela Plenário × Diretoria × Presidente.
 
 #### Comentário Extra Dia 5.9
+
 **Alternativa correta: C.**
 
 **Nível:** Difícil
@@ -13359,20 +14510,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Representação, convocação e presidência são competências expressas.
-- **B)** Incorreta. O Presidente não substitui o colegiado nem controla sozinho todas as decisões.
-- **C)** Correta. A opção reúne atribuições e o caráter provisório do `ad referendum`.
-- **D)** Incorreta. A providência urgente volta à apreciação competente.
+- **A)** `ad referendum` exige apreciação posterior e não transforma a providência urgente em decisão definitiva do Presidente.
+- **B)** a instituição é feita pelo Presidente, ouvida a Diretoria, e a Ouvidoria não exerce decisão final sobre o ato.
+- **C)** conserva representação e convocação, oitiva da Diretoria e retorno da providência urgente ao colegiado competente.
+- **D)** elimina indevidamente a oitiva e cria submissão exclusiva ao CFA, não prevista como regra geral do instituto.
 
-**Conceito:** competências presidenciais e `ad referendum`.
+**Conceito:** competências do Presidente, oitiva da Diretoria e natureza provisória do `ad referendum`.
 
-**Pegadinha:** transformar decisão sujeita a confirmação em competência definitiva.
+**Pegadinha:** confundir decisão urgente com transferência definitiva da competência colegiada.
 
-**Como pensar:** urgência antecipa a providência, não elimina o colegiado.
+**Como pensar:** confirme quem age de imediato, quem deve ser ouvido e quem reaprecia a medida depois.
 
-**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
+**Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente), especialmente o art. 25 e a explicação do inciso XVIII.
 
 #### Comentário Extra Dia 5.10
+
 **Alternativa correta: A.**
 
 **Nível:** Difícil
@@ -13381,20 +14533,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Correta. A opção sintetiza os arts. 30 a 33.
-- **B)** Incorreta. A frequência e a possibilidade de videoconferência estão invertidas.
-- **C)** Incorreta. Maioria absoluta considera o total de membros.
-- **D)** Incorreta. Extraordinária exige justificativa e pauta e também pode decorrer de requerimento da maioria absoluta.
+- **A)** combina periodicidade mensal, pauta e justificativa, possibilidade de videoconferência e maioria absoluta do total de membros.
+- **B)** troca mês por ano, dispensa pauta e calcula quórum por maioria simples dos presentes.
+- **C)** acerta as três primeiras regras, mas maioria absoluta toma como base o total de membros, não somente os presentes.
+- **D)** o Regimento admite videoconferência e não fixa dois terços como quórum geral de instalação e funcionamento.
 
-**Conceito:** reuniões e quórum.
+**Conceito:** periodicidade, reunião extraordinária, videoconferência e maioria absoluta.
 
-**Pegadinha:** calcular maioria absoluta sobre os presentes.
+**Pegadinha:** preservar quase toda a regra e alterar apenas a base de cálculo do quórum.
 
-**Como pensar:** separe total do órgão, presentes e votos efetivamente dados.
+**Como pensar:** audite as quatro proposições separadamente; uma única troca invalida a alternativa inteira.
 
-**Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes).
+**Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes), nos resumos dos arts. 30 a 33.
 
 #### Comentário Extra Dia 5.11
+
 **Alternativa correta: D.**
 
 **Nível:** Difícil
@@ -13403,21 +14556,22 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Julgamento pertence ao Plenário, não à Ouvidoria.
-- **B)** Incorreta. A unidade não possui caráter executivo ou administrativo.
-- **C)** Incorreta. O Ouvidor é eleito entre Conselheiros Efetivos.
-- **D)** Correta. A opção descreve escolha, finalidade e limites da Ouvidoria.
+- **A)** a escolha não cabe à Diretoria nem recai genericamente sobre profissionais registrados, e a unidade não anula decisões.
+- **B)** o titular não é terceiro livremente nomeado e a Ouvidoria não substitui a Diretoria na execução administrativa.
+- **C)** acerta eleição e elegibilidade, mas mediação não confere poder deliberativo nem revisão de mérito.
+- **D)** o Plenário elege o Ouvidor entre Conselheiros Efetivos, e a unidade recebe, trata, encaminha e acompanha sem decidir.
 
-**Conceito:** Ouvidoria do CRA-PR.
+**Conceito:** escolha do Ouvidor e ausência de caráter executivo, deliberativo ou decisório.
 
-**Pegadinha:** confundir encaminhar e acompanhar com decidir.
+**Pegadinha:** acertar a forma de eleição e, na mesma alternativa, ampliar indevidamente os poderes da unidade.
 
-**Como pensar:** Ouvidoria é ponte de comunicação, não instância julgadora.
+**Como pensar:** resolva dois filtros independentes: quem pode ser eleito e quais verbos a Ouvidoria pode praticar.
 
-**Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
+**Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes), especialmente os arts. 43 a 46 resumidos na seção.
 
 #### Comentário Extra Dia 5.12
-**Alternativa correta: B.**
+
+**Alternativa correta: D.**
 
 **Nível:** Difícil
 
@@ -13425,20 +14579,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Permanentes têm, em regra, três membros, e Diretor não integra a Comissão de Análise de Contas.
-- **B)** Correta. A alternativa distingue corretamente composição e duração das estruturas.
-- **C)** Incorreta. Comissão Especial atende demanda específica e transitória.
-- **D)** Incorreta. GT coleta dados e estuda tema; não julga definitivamente.
+- **A)** inverte os quantitativos, exige participação vedada na Análise de Contas e transforma estruturas temporárias em permanentes.
+- **B)** elimina a ressalva normativa, amplia o impedimento para toda comissão e atribui permanência a estruturas específicas ou temporárias.
+- **C)** membro da Diretoria não pode integrar a Comissão de Análise de Contas, e o ato temporário deve indicar limite e prazo.
+- **D)** preserva a regra de três membros, o impedimento específico e o máximo de cinco nas estruturas temporárias.
 
-**Conceito:** Comissões e Grupos de Trabalho.
+**Conceito:** composição e limites das Comissões e dos Grupos de Trabalho.
 
-**Pegadinha:** aplicar o máximo de cinco das estruturas temporárias às Comissões Permanentes.
+**Pegadinha:** generalizar um impedimento específico ou trocar o número de membros e a natureza temporal.
 
-**Como pensar:** Permanente: três, salvo regra; Especial/GT: até cinco e prazo definido.
+**Como pensar:** confira separadamente regra geral, exceção da Análise de Contas e teto das estruturas temporárias.
 
-**Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
+**Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes), nos arts. 49 a 54 resumidos na seção.
 
 #### Comentário Extra Dia 5.13
+
 **Alternativa correta: C.**
 
 **Nível:** Difícil
@@ -13447,20 +14602,21 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A regra geral faz exatamente o inverso.
-- **B)** Incorreta. Casos omissos cabem ao Plenário.
-- **C)** Correta. Reúne a contagem, expediente e competência para omissões.
-- **D)** Incorreta. A norma considera dia de expediente normal para início e vencimento.
+- **A)** inverte inclusão e exclusão, ignora o expediente normal e atribui a omissão ao Presidente.
+- **B)** acerta os termos incluído e excluído, mas erra o expediente e transfere ao CFA a competência do Plenário.
+- **C)** exclui o início, inclui o vencimento, exige expediente normal nos termos e leva a omissão ao Plenário.
+- **D)** inclui indevidamente o dia inicial, trata o expediente de modo incompleto e atribui decisão à Ouvidoria.
 
-**Conceito:** contagem de prazo e casos omissos.
+**Conceito:** contagem de prazo, expediente normal e competência para casos omissos.
 
-**Pegadinha:** inverter inclusão/exclusão dos termos ou atribuir omissão ao Presidente.
+**Pegadinha:** acertar uma parte da contagem e errar a condição de expediente ou o órgão competente.
 
-**Como pensar:** exclua início, inclua fim e confira expediente; omissão vai ao Plenário.
+**Como pensar:** aplique em ordem: termo excluído, termo incluído, calendário útil e autoridade para a omissão.
 
-**Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes).
+**Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes), nos resumos dos arts. 58 e 60.
 
 #### Comentário Extra Dia 5.14
+
 **Alternativa correta: A.**
 
 **Nível:** Difícil
@@ -13469,45 +14625,46 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Análise das alternativas:**
 
-- **A)** Correta. O inciso XVIII integra a faixa de suspensão de seis meses a um ano para pessoa física.
-- **B)** Incorreta. Advertência é escrita e reservada, além de não corresponder a essa faixa.
-- **C)** Incorreta. A censura é pública e não pode anteceder o processo.
-- **D)** Incorreta. Cancelamento não é automático nem a sanção-base do inciso XVIII.
+- **A)** o inciso XVIII leva à suspensão de seis meses a um ano, acompanhada de multa e aplicada após o trânsito administrativo.
+- **B)** censura não é a sanção-base do inciso XVIII, a multa não substitui a sanção e o processo deve terminar.
+- **C)** a faixa de um a cinco anos pertence a outro grupo de infrações, e a multa não é facultativa nem a decisão inicial basta.
+- **D)** cancelamento não é a consequência-base dessa conduta e não pode ser executado antes do trânsito administrativo.
 
-**Conceito:** catálogo de infrações e gradação.
+**Conceito:** tipificação do art. 6º, XVIII, faixa de suspensão, multa conjunta e garantia processual.
 
-**Pegadinha:** escolher sanção pela impressão subjetiva de gravidade.
+**Pegadinha:** localizar a natureza da sanção, mas trocar sua faixa ou antecipar a aplicação.
 
-**Como pensar:** localize primeiro o inciso; depois aplique a faixa dos arts. 19 a 22.
+**Como pensar:** faça a sequência inciso → sanção/faixa → multa conjunta → trânsito em julgado administrativo.
 
-**Referência:** [Código — deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes).
+**Referência:** [Código: deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes) e [Sanções, PF × PJ, multas e garantias processuais](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
 
 #### Comentário Extra Dia 5.15
-**Alternativa correta: D.**
 
-**Nível:** Difícil
+**Alternativa correta: A.**
+
+**Nível:** Muito difícil
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O art. 13, § 3º, exclui suspensão e cancelamento para PJ.
-- **B)** Incorreta. Advertência é reservada; censura, suspensão e cancelamento aparecem na regra de publicação.
-- **C)** Incorreta. Multa acompanha, não substitui, e o trânsito administrativo é exigido.
-- **D)** Correta. A opção reúne limites subjetivos, cumulação e garantia processual.
+- **A)** preserva simultaneamente a incompatibilidade das duas sanções, a multa conjunta e a garantia processual.
+- **B)** acerta sujeito e momento processual, mas afirma incorretamente que a multa substitui a sanção.
+- **C)** acerta sujeito e relação da multa, mas antecipa a aplicação para antes do trânsito em julgado administrativo.
+- **D)** as duas sanções não se aplicam à pessoa jurídica, a multa é conjunta e a aplicação exige trânsito administrativo.
 
-**Conceito:** sanções, PF × PJ, multa e trânsito em julgado.
+**Conceito:** regime sancionador da pessoa jurídica, relação entre multa e sanção e trânsito administrativo.
 
-**Pegadinha:** deduzir que PJ fica fora do Código ou que multa é sanção substitutiva.
+**Pegadinha:** construir alternativas próximas que falham em apenas um dos três filtros jurídicos.
 
-**Como pensar:** identifique sujeito, inciso, processo, sanção compatível e multa.
+**Como pensar:** avalie independentemente sujeito, efeito pecuniário e momento processual; aceite apenas a opção que passa nos três.
 
-**Referência:** [Sanções, PF × PJ, multas e garantias](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
+**Referência:** [Sanções, PF × PJ, multas e garantias processuais](semana_02_estudo.md#s2-d5-rf-etica-sancoes), especialmente os arts. 13, § 3º, 18 e 23.
 
 #### Comentário Extra Dia 5.16
 **Alternativa correta: B.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -13529,7 +14686,7 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 #### Comentário Extra Dia 5.17
 **Alternativa correta: C.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -13549,16 +14706,16 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Português — reescrita](semana_02_estudo.md#s2-d5-rf-portugues).
 
 #### Comentário Extra Dia 5.18
-**Alternativa correta: A.**
+**Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Correta. `Dirigir-se a` exige preposição, que se funde com `a qual`.
-- **B)** Incorreta. `Discordar` exige `de`: “de que”.
+- **A)** Incorreta. `Discordar` exige `de`: “de que”.
+- **B)** Correta. `Dirigir-se a` exige preposição, que se funde com `a qual`.
 - **C)** Incorreta. `Cujo` não admite artigo depois.
 - **D)** Incorreta. A regência pede “sobre o qual”; `aonde` indica movimento a lugar.
 
@@ -13573,7 +14730,7 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 #### Comentário Extra Dia 5.19
 **Alternativa correta: D.**
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
 
@@ -13595,7 +14752,7 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 #### Comentário Extra Dia 5.20
 **Alternativa correta: B.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -13626,29 +14783,32 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+**Referência:** [Comunicação de dados e medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados), com recuperação em [D6-RF-MX-01](semana_02_estudo.md#s2-d6-rf-mx-01)
 
 Em um enlace de 1 Gbit/s, a aplicação recebe 700 Mbit/s de dados úteis. A medida de 1 Gbit/s é largura de banda e a de 700 Mbit/s é:
 
 A) latência.
 B) jitter.
-C) goodput.
-D) perda.
+C) perda.
+D) goodput.
 
-### S2D6Q252 — Switch e domínios
+### S2D6Q252 — Switch Ethernet e domínios
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+**Referência:** [Bridges e switches](semana_02_estudo.md#s2-d1-bridge-switch), nos comportamentos de aprendizagem e encaminhamento; e [Domínios de colisão e broadcast](semana_02_estudo.md#s2-d1-dominios).
 
-Sobre um switch Ethernet, assinale a correta.
+Quatro hosts estão ligados a um switch de camada 2 na mesma VLAN. Sobre aprendizagem, encaminhamento e domínios Ethernet, assinale a alternativa correta.
 
-A) Atua apenas como repetidor multiporta.
-B) Encaminha sempre todos os quadros a todas as portas.
-C) Elimina qualquer broadcast.
-D) Aprende endereços MAC e separa domínios de colisão por porta.
+A) O switch aprende MAC de origem, encaminha unicast conhecido seletivamente e isola colisões por porta, sem eliminar broadcasts da VLAN.
+
+B) O switch aprende MAC apenas pelo destino dos quadros e impede que broadcasts alcancem outras portas da mesma VLAN.
+
+C) O switch aprende MAC de origem e encaminha unicast conhecido seletivamente, mas todas as portas permanecem no mesmo domínio de colisão.
+
+D) O switch repete bits por todas as portas, não aprende endereços e mantém um único domínio de colisão compartilhado.
 
 ### S2D6Q253 — Encapsulamento por salto
 
@@ -13656,7 +14816,7 @@ D) Aprende endereços MAC e separa domínios de colisão por porta.
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
+**Referência:** [Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento), com recuperação em [D6-RF-MX-02](semana_02_estudo.md#s2-d6-rf-mx-02)
 
 No encaminhamento de um pacote IPv4 por um roteador, normalmente:
 
@@ -13667,11 +14827,11 @@ D) a aplicação recebe diretamente os bits do enlace.
 
 ### S2D6Q254 — CIDR e broadcast
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
+**Referência:** [Rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts) e [Cálculos resolvidos de CIDR](semana_02_estudo.md#s2-d2-calculos)
 
 Para `10.0.5.130/26`, a rede e o broadcast são, respectivamente:
 
@@ -13686,7 +14846,7 @@ D) `10.0.5.130` e `10.0.5.192`.
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+**Referência:** [Gateway padrão](semana_02_estudo.md#s2-d2-gateway) e [ARP](semana_02_estudo.md#s2-d2-arp)
 
 Um host IPv4 precisa alcançar endereço fora da própria sub-rede. Antes de transmitir, ele normalmente obtém por ARP o MAC:
 
@@ -13695,28 +14855,31 @@ B) do DNS autoritativo.
 C) do switch de acesso.
 D) do gateway local.
 
-### S2D6Q256 — IPv6 e ND
+### S2D6Q256 — IPv6 e Neighbor Discovery
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+**Referência:** [ICMP e ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp) e [IPv6](semana_02_estudo.md#s2-d2-ipv6), incluindo a ausência de broadcast no IPv6.
 
-No IPv6, a descoberta de vizinhos é apoiada principalmente por:
+Um host IPv6 precisa descobrir o endereço de enlace de um vizinho e verificar sua alcançabilidade no segmento local. Qual mecanismo atende a essas funções?
 
-A) broadcast ARP.
-B) DNS recursivo.
-C) TCP.
-D) ICMPv6/Neighbor Discovery.
+A) ARP por broadcast, com mensagens Request e Reply idênticas às utilizadas na resolução de vizinhos IPv4.
+
+B) Neighbor Discovery sobre ICMPv6, com mensagens como Neighbor Solicitation e Neighbor Advertisement e uso apropriado de multicast.
+
+C) DHCPv6 por concessão, com mensagens do servidor destinadas a testar continuamente a alcançabilidade entre os vizinhos.
+
+D) DNS por consulta recursiva, com registros AAAA usados para obter diretamente o endereço de enlace do vizinho.
 
 ### S2D6Q257 — TCP e UDP
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [TCP e UDP](semana_02_estudo.md#s2-d3-tcp-udp), com síntese em [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05)
 
 Analise as assertivas sobre TCP e UDP.
 
@@ -13737,59 +14900,71 @@ D) I, II e III.
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [HTTP e HTTPS](semana_02_estudo.md#s2-d3-http-https), nos trechos que distinguem HTTP/1.1 e HTTP/2 em TCP de HTTP/3 sobre QUIC/UDP; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-Um navegador usa HTTP/3 para acesso HTTPS. A associação usual é:
+Ao liberar um portal para navegadores que negociam HTTP/3, a equipe precisa reconhecer o transporte e a porta usual desse acesso HTTPS. Qual associação está correta?
 
-A) HTTP/3 sobre TCP/80.
-B) HTTP/3 sem transporte.
-C) HTTP/3 sobre QUIC, normalmente em UDP/443.
-D) HTTP/3 sobre SMTP/25.
+A) HTTP/3 usa TCP em 443, e QUIC participa apenas da compactação dos cabeçalhos acima do transporte.
 
-### S2D6Q259 — DHCPv4
+B) HTTP/3 usa QUIC sobre UDP em 80, sem a proteção criptográfica exigida no acesso HTTPS descrito.
 
-**Nível:** Médio
+C) HTTP/3 usa QUIC sobre UDP, normalmente em 443, com os recursos de transporte e proteção integrados ao QUIC.
 
-**Uso:** Essenciais
+D) HTTP/3 usa UDP diretamente sem QUIC, enquanto a confiabilidade permanece delegada a uma conexão TCP paralela.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
-
-Na inicialização IPv4 por DHCP, a sequência DORA corresponde a:
-
-A) Discover, Offer, Request e ACK.
-B) DNS, Offer, Route e ARP.
-C) Deliver, Open, Resolve e Accept.
-D) Discover, Order, Reply e Audit.
-
-### S2D6Q260 — DNS
+### S2D6Q259 — Sequência DORA no DHCPv4
 
 **Nível:** Médio
 
 **Uso:** Essenciais
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [DHCP — sequência DORA](semana_02_estudo.md#s2-d3-dhcp), na lista ordenada das mensagens; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-Assinale a alternativa correta sobre DNS.
+Na obtenção inicial de configuração por DHCPv4, qual alternativa apresenta as quatro mensagens da sequência DORA em sua ordem lógica?
 
-A) Atribui máscara e gateway ao cliente.
-B) Resolve ou publica dados de nomes e pode usar UDP ou TCP.
-C) Substitui TLS na autenticação de servidor.
-D) Funciona somente por broadcast.
+A) DHCPDISCOVER, DHCPOFFER, DHCPREQUEST e DHCPACK.
 
-### S2D6Q261 — Correio eletrônico
+B) DHCPOFFER, DHCPDISCOVER, DHCPACK e DHCPREQUEST.
+
+C) DHCPDISCOVER, DHCPREQUEST, DHCPOFFER e DHCPACK.
+
+D) DHCPREQUEST, DHCPOFFER, DHCPDISCOVER e DHCPACK.
+
+### S2D6Q260 — Função e transportes do DNS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [DNS](semana_02_estudo.md#s2-d3-dns), nas subseções de componentes, registros, cache/TTL e transportes; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
+
+A respeito da função, da hierarquia e dos transportes do DNS, assinale a alternativa tecnicamente correta.
+
+A) DNS publica somente endereços IPv4 e usa exclusivamente 53/UDP, inclusive para toda transferência de zona.
+
+B) DNS resolve e publica diferentes dados por registros; no modo clássico, utiliza 53/UDP e também 53/TCP.
+
+C) Todo resolvedor é autoritativo para os dados consultados e deve ignorar cache, TTL e referências recebidas na hierarquia.
+
+D) DNSSEC cifra consultas e respostas para confidencialidade e torna desnecessário o suporte a TCP no DNS clássico.
+
+### S2D6Q261 — Envio e acesso sincronizado ao correio eletrônico
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Correio eletrônico — SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email), nas subseções de funções e fluxo integrado; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-Para enviar uma mensagem e manter cópia sincronizada no servidor, a combinação apropriada é:
+Uma usuária precisa submeter uma mensagem ao serviço de correio e depois manter pastas, marcações e leitura sincronizadas entre dois dispositivos. Qual combinação é adequada?
 
-A) SMTP para envio e IMAP para acesso à caixa.
-B) POP3 para envio e SMTP para sincronização.
-C) SNMP para envio e LDAP para leitura.
-D) SFTP para envio e NTP para leitura.
+A) SMTP para sincronização da caixa; POP3 para transferência entre servidores e preservação das pastas compartilhadas.
+
+B) IMAP para submissão e transferência da mensagem; SMTP para acesso sincronizado à caixa mantida no servidor.
+
+C) POP3 para submissão da mensagem; IMAP para transferência entre servidores e manutenção da fila de entrega.
+
+D) SMTP para submissão e transferência da mensagem; IMAP para acesso sincronizado à caixa mantida no servidor.
 
 ### S2D6Q262 — SFTP e SSH
 
@@ -13797,59 +14972,71 @@ D) SFTP para envio e NTP para leitura.
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [FTP, FTPS, SFTP, SSH e Telnet](semana_02_estudo.md#s2-d3-transferencia-remota), especialmente as subseções SFTP e SSH e a distinção para FTPS; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-Qual associação está correta?
+Uma rotina de arquivos deve aproveitar a autenticação por chave e o serviço SSH já disponíveis no servidor. Qual relação entre os protocolos está correta?
 
-A) FTPS é SFTP com outro nome.
-B) Telnet cifra o terminal por padrão.
-C) SFTP transfere arquivos sobre SSH.
-D) SSH é protocolo de recebimento de correio.
+A) SFTP é FTP protegido por TLS explícito e inicia sua negociação no canal de controle em 21/TCP.
 
-### S2D6Q263 — SNMP
+B) FTPS é o subsistema de arquivos do SSH e reutiliza diretamente a sessão criptografada normalmente aberta em 22/TCP.
 
-**Nível:** Médio
+C) SFTP é um protocolo de transferência sobre SSH e pode reutilizar sua autenticação, normalmente pela porta 22/TCP.
 
-**Uso:** Aprofundamento
+D) Telnet é a modalidade interativa do SSH e fornece a mesma proteção criptográfica de canal normalmente em 23/TCP.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
-
-Em uma inspeção de equipamentos, SNMP é usado principalmente para:
-
-A) resolver nomes.
-B) gerenciar e consultar objetos definidos em MIB/OID.
-C) atribuir endereços IPv4.
-D) cifrar tráfego web.
-
-### S2D6Q264 — NAT e PAT
+### S2D6Q263 — MIB e OID no SNMP
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nas definições de gerente, agente, MIB, OID e operações; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-NAT e PAT se distinguem porque PAT:
+Um gerente SNMP precisa consultar no agente o contador de octetos de uma interface. Qual relação entre MIB e OID permite localizar o objeto gerenciado?
 
-A) substitui o roteamento IP.
-B) cifra todos os pacotes.
-C) atua apenas em IPv6.
-D) também traduz portas para multiplexar fluxos.
+A) MIB é o endereço do gerente, e OID é a community string usada como credencial de qualquer versão do SNMP.
 
-### S2D6Q265 — NTP
+B) MIB organiza os objetos gerenciados, e OID identifica um objeto específico nessa estrutura para operações do protocolo.
+
+C) MIB identifica somente um objeto, e OID representa toda a hierarquia e substitui as operações GET e SET.
+
+D) MIB e OID são chaves de autenticação, usadas pelo SNMPv3 para substituir usuários, algoritmos e políticas de acesso.
+
+### S2D6Q264 — NAT básico e PAT/NAPT
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat), nas definições e no exemplo da tabela com portas públicas diferentes; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-Um log apresenta horários inconsistentes entre servidores. O serviço mais diretamente relacionado é:
+Em uma comparação estrita entre NAT básico e PAT/NAPT, qual característica permite a vários fluxos internos compartilhar um único endereço público?
 
-A) NTP.
-B) LDAP.
-C) FTP.
-D) ARP.
+A) PAT preserva as portas e altera somente o endereço IP, enquanto NAT básico traduz também cada identificador de transporte.
+
+B) PAT cria apenas associação individual entre endereços, sem manter qualquer distinção de portas entre fluxos simultâneos.
+
+C) PAT traduz somente a porta de destino, nunca o endereço, e dispensa tabela para desfazer a tradução dos retornos.
+
+D) PAT traduz endereço e também portas de transporte, mantendo mapeamentos que distinguem os fluxos no endereço compartilhado.
+
+### S2D6Q265 — NTP e coerência temporal
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos trechos sobre 123/UDP, correlação de logs e diferença entre referência e fuso; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
+
+Logs de servidores registram o mesmo evento com vários minutos de diferença, embora a exibição de fuso esteja configurada. Qual afirmação aponta o serviço e o escopo corretos?
+
+A) NTP sincroniza a referência dos relógios, normalmente em 123/UDP, enquanto fuso e horário de verão são configurações locais.
+
+B) NTP distribui somente o fuso em 123/TCP e não altera a referência temporal mantida pelo relógio do sistema.
+
+C) NTP usa o TTL do DNS para reajustar os relógios sempre que uma resposta de nome expira no cache.
+
+D) NTP ordena os registros depois de coletados, mas não sincroniza os relógios que geraram os eventos originais.
 
 ### S2D6Q266 — Vulnerabilidade, ameaça e risco
 
@@ -13857,112 +15044,130 @@ D) ARP.
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+**Referência:** [Conceitos de risco](semana_02_estudo.md#s2-d4-conceitos-risco), com recuperação em [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07)
 
 Uma falha de validação explorável é uma vulnerabilidade; o agente capaz de explorá-la é uma ameaça; a combinação de probabilidade e impacto expressa:
 
-A) disponibilidade.
-B) auditoria.
-C) risco.
-D) não repúdio.
+A) um requisito de disponibilidade.
+B) um registro de auditoria.
+C) uma medida de risco.
+D) uma garantia de não repúdio.
 
-### S2D6Q267 — AAA
-
-**Nível:** Médio
-
-**Uso:** Aprofundamento
-
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
-
-Autenticação e autorização significam, respectivamente:
-
-A) registrar evento e restaurar cópia.
-B) provar identidade e verificar permissão para uma ação.
-C) cifrar conteúdo e gerar hash.
-D) detectar ataque e bloqueá-lo.
-
-### S2D6Q268 — Ataques de rede
+### S2D6Q267 — Autenticação e autorização
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria), nas subseções 3.1 e 3.2; e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-Sobre sniffing, spoofing e ataque on-path, assinale a correta.
+Em um sistema, a pessoa apresenta credenciais válidas, mas a tentativa de aprovar pagamento é negada por sua função. Qual associação descreve as duas decisões?
 
-A) Sniffing necessariamente altera o conteúdo.
-B) Spoofing é sinônimo de indisponibilidade.
-C) On-path apenas mede latência.
-D) Spoofing falsifica identidade; on-path pode interceptar e alterar tráfego.
+A) Autenticação verifica a permissão para pagar, e autorização comprova a identidade apresentada pelas credenciais.
 
-### S2D6Q269 — IDS
+B) Autenticação estabelece confiança na identidade, e autorização verifica se essa identidade pode executar o pagamento.
+
+C) Autenticação registra a ação para auditoria, e autorização garante que o usuário não possa negar o evento.
+
+D) Autenticação atribui o papel funcional, e autorização valida a senha usada para entrar no sistema.
+
+### S2D6Q268 — Sniffing, spoofing e ataque on-path
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede), nas subseções de spoofing, sniffing e ataque on-path; e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
+
+Ao classificar técnicas de ataque à comunicação de rede, qual alternativa distingue corretamente spoofing e ataque on-path sem atribuir ao sniffing uma alteração obrigatória?
+
+A) Sniffing pode observar passivamente, mas spoofing exige interceptar e modificar todos os pacotes entre os dois extremos.
+
+B) Spoofing falsifica identidade ou origem; on-path se posiciona no caminho para interceptar e pode também alterar o tráfego.
+
+C) Sniffing altera ativamente o conteúdo, enquanto on-path se limita a falsificar o endereço de origem sem interceptar comunicação.
+
+D) Spoofing falsifica identidade ou origem, mas um atacante on-path somente observa e nunca consegue modificar o tráfego.
+
+### S2D6Q269 — IDS para detecção sem bloqueio obrigatório
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), nas subseções que contrastam monitoramento/alerta com prevenção em linha; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Uma equipe deseja detectar tráfego suspeito sem necessariamente interrompê-lo. O controle mais compatível é:
+Uma equipe quer analisar cópias do tráfego, gerar alertas sobre padrões suspeitos e evitar que o controle precise bloquear os fluxos observados. Qual arquitetura atende ao requisito?
 
-A) IDS.
-B) IPS obrigatoriamente em linha.
-C) RAID.
-D) NAT.
+A) IDS, que pode monitorar fora do caminho direto e alertar sem possuir a obrigação de interromper cada fluxo.
 
-### S2D6Q270 — DMZ
+B) IPS passivo, que recebe somente cópia do tráfego e por definição não possui capacidade de prevenção em linha.
+
+C) IDS em linha, que necessariamente descarta todo pacote classificado como suspeito antes de emitir qualquer alerta.
+
+D) IDS ou IPS indistintamente, pois ambos operam sempre fora de linha e garantem o mesmo bloqueio dos ataques.
+
+### S2D6Q270 — Publicação de portal em DMZ
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [DMZ](semana_02_estudo.md#s2-d4-dmz), nos princípios de exposição intermediária, fluxo mínimo e presunção de possível comprometimento; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Ao publicar um portal acessível externamente, a arquitetura mais adequada é posicioná-lo:
+Um portal acessível pela internet precisa consultar um serviço interno específico, sem expor diretamente a rede de dados sensíveis. Qual desenho segue o princípio da DMZ?
 
-A) na mesma VLAN dos bancos internos, sem filtros.
-B) na DMZ, com regras estritas para os serviços internos necessários.
-C) atrás de qualquer estação usuária.
-D) fora de todo firewall.
+A) Colocar portal e serviço interno na mesma VLAN e liberar todos os fluxos para evitar falhas de integração.
+
+B) Colocar o portal fora do perímetro de filtragem e permitir que ele alcance diretamente qualquer endereço da rede interna.
+
+C) Colocar o portal na DMZ e considerar confiável qualquer conexão originada nesse segmento para todos os serviços internos.
+
+D) Colocar o portal na DMZ e autorizar para a rede interna somente os fluxos indispensáveis, explicitamente filtrados e monitorados.
 
 ### S2D6Q271 — Limites da VPN
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [VPN](semana_02_estudo.md#s2-d4-vpn), com contraste em [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08)
 
-Uma VPN reduz o risco de interceptação no caminho, mas não garante que:
+Uma VPN foi corretamente configurada com cifra e autenticação dos extremos, e seu túnel está operacional. Ainda assim, qual propriedade permanece fora do escopo direto da VPN?
 
-A) o túnel possa proteger tráfego entre extremos.
-B) haja confidencialidade no canal configurado.
-C) o endpoint remoto esteja sem malware ou autorizado a toda ação.
-D) exista autenticação dos extremos conforme a configuração.
+A) Proteger, no túnel, o tráfego em trânsito entre os extremos configurados.
 
-### S2D6Q272 — Hash
+B) Autenticar os extremos para o estabelecimento do túnel, conforme o mecanismo adotado.
 
-**Nível:** Difícil
+C) Assegurar que o dispositivo remoto esteja sem malware e autorizar cada ação dentro das aplicações acessadas.
+
+D) Aplicar proteção criptográfica de integridade aos dados transportados no túnel, conforme a suíte negociada.
+
+### S2D6Q272 — Hash como resumo de integridade
+
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [Hash, MAC e armazenamento de senhas — hash](semana_02_estudo.md#s2-d4-hash-hmac-senhas), incluindo o uso de referência confiável e os limites de confidencialidade/autenticação; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Em criptografia, um hash é usado principalmente para:
+Uma equipe recebe um arquivo e um valor de referência por canal confiável, calcula novamente a função hash e compara os resultados. Qual propriedade e limite descrevem o procedimento?
 
-A) confidencialidade reversível por chave.
-B) produzir resumo de integridade, não recuperar o original.
-C) encaminhar pacotes entre redes.
-D) substituir certificado digital.
+A) O hash cifra o arquivo de forma reversível, e uma chave de decifragem permite recuperar integralmente a entrada original.
+
+B) O hash produz um resumo para verificar alteração contra referência confiável, sem permitir recuperar normalmente o original pelo resumo.
+
+C) O hash fornece sozinho confidencialidade e autenticação de origem, mesmo quando atacante pode substituir arquivo e resumo juntos.
+
+D) O hash garante ausência absoluta de colisões e permite reconstruir qualquer entrada que tenha produzido o valor publicado.
 
 ### S2D6Q273 — Assinatura digital
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [Assinatura digital e certificado](semana_02_estudo.md#s2-d4-assinatura-certificado), com contraste em [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08)
 
 Assinale a correta sobre assinatura digital.
 
@@ -13971,163 +15176,193 @@ B) Oculta necessariamente todo o documento.
 C) É criada com a chave privada e verificada com a pública.
 D) É idêntica a uma senha compartilhada.
 
-### S2D6Q274 — TLS
+### S2D6Q274 — Papel e limites do TLS
 
-**Nível:** Difícil
-
-**Uso:** Aprofundamento
-
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
-
-O principal papel do TLS em HTTPS é:
-
-A) proteger o canal entre cliente e servidor, conforme autenticação e configuração.
-B) garantir que todo conteúdo publicado seja verdadeiro.
-C) eliminar vulnerabilidades da aplicação.
-D) substituir DNS e roteamento.
-
-### S2D6Q275 — WPA3
-
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [TLS](semana_02_estudo.md#s2-d4-tls), nas propriedades pretendidas e na lista de elementos fora do canal; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Sobre WPA3-Personal, assinale a correta.
+Um cliente HTTPS valida corretamente o certificado do servidor e conclui o handshake TLS. Qual conclusão permanece dentro do escopo técnico desse canal?
 
-A) Dispensa senha forte e atualização do AP.
-B) Usa apenas WEP.
-C) Elimina toda necessidade de segmentação.
-D) Usa SAE, mas configuração e credenciais continuam relevantes.
+A) TLS pode autenticar o servidor e proteger confidencialidade e integridade em trânsito, conforme validação, algoritmos e configuração.
 
-### S2D6Q276 — Contenção
+B) TLS comprova que todo conteúdo publicado é verdadeiro e autoriza o usuário a executar qualquer operação na aplicação.
 
-**Nível:** Difícil
+C) TLS protege somente dados armazenados após a sessão e não oferece confidencialidade ou integridade durante o transporte.
+
+D) TLS garante que os dois endpoints estejam livres de malware e oculta todos os metadados observáveis na rede.
+
+### S2D6Q275 — WPA3-Personal e SAE
+
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), nas subseções WPA3, modo de transição e boas práticas; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Na resposta a incidente, a contenção tem por objetivo imediato:
+Uma organização migra a rede sem fio de WPA2-Personal para WPA3-Personal. Qual afirmação sobre o mecanismo e os cuidados restantes está correta?
 
-A) apagar toda evidência.
-B) limitar propagação e impacto antes da erradicação e recuperação.
-C) restaurar sem investigar persistência.
-D) publicar relatório antes de analisar.
+A) SAE elimina a necessidade de senha forte, atualização de firmware e proteção da administração do ponto de acesso.
+
+B) SAE permite reutilizar passivamente a captura da associação para tentativas offline exatamente como no WPA2-Personal baseado em PSK.
+
+C) O modo de transição garante que todos os clientes negociem WPA3 e recebam as mesmas propriedades do perfil mais novo.
+
+D) WPA3-Personal usa SAE, mas credenciais, firmware, configuração, modo negociado e segmentação continuam relevantes à segurança.
+
+### S2D6Q276 — Objetivo imediato da contenção
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Resposta a incidentes — resposta e contenção](semana_02_estudo.md#s2-d4-resposta-incidentes), no contraste com erradicação e recuperação; e [D6-RF-MX-09](semana_02_estudo.md#s2-d6-rf-mx-09).
+
+Após confirmar um incidente em propagação, a equipe inicia a contenção antes de erradicar persistência e recuperar os serviços. Qual ação expressa o objetivo imediato dessa fase?
+
+A) Apagar artefatos e logs dos hosts afetados para impedir que evidências sejam usadas durante a investigação posterior.
+
+B) Isolar ou restringir ativos e fluxos para limitar propagação e impacto, preservando condições para as etapas seguintes.
+
+C) Remover toda persistência, corrigir o vetor explorado e rotacionar credenciais, concluindo definitivamente a causa do incidente.
+
+D) Restaurar todos os serviços ao estado validado, confirmar o funcionamento e encerrar o monitoramento de recorrência.
 
 ### S2D6Q277 — RPO
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup) e [D6-RF-MX-09 — Resposta, continuidade e objetivos de recuperação](semana_02_estudo.md#s2-d6-rf-mx-09)
 
-Com RPO de 30 minutos e incidente às 14h, o ponto recuperado deve ser, no máximo, de:
+Com RPO de 30 minutos e incidente às 14h, qual é o horário mais antigo ainda aceitável para o ponto de recuperação?
 
-A) 12h.
-B) 13h30.
-C) 14h30.
-D) qualquer horário, se houver RAID.
+A) 13h, subtraindo uma hora do instante do incidente.
+
+B) 14h30, somando o RPO ao instante do incidente.
+
+C) 14h, pois o RPO exige sempre perda igual a zero.
+
+D) 13h30, subtraindo a janela máxima de perda tolerada.
 
 ### S2D6Q278 — Redundância e backup
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Backup e disponibilidade — backup × redundância × alta disponibilidade](semana_02_estudo.md#s2-d4-backup), incluindo o limite de RAID e replicação; e [D6-RF-MX-09](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-Redundância e backup diferem porque:
+Um serviço usa dois componentes em failover e também mantém cópias isoladas e versionadas dos dados. Qual distinção entre os dois controles está correta?
 
-A) redundância reduz interrupção; backup permite recuperar estado ou versões anteriores.
-B) backup impede automaticamente indisponibilidade.
-C) RAID substitui cópia externa versionada.
-D) ambos têm exatamente a mesma finalidade.
+A) Redundância oferece alternativa para reduzir interrupção; backup permite restaurar dados ou versões anteriores após perda ou corrupção.
 
-### S2D6Q279 — Concorrência
+B) Backup assume automaticamente a carga em tempo real durante falha; redundância preserva versões históricas para restauração posterior.
 
-**Nível:** Difícil
+C) RAID fornece cópia externa versionada contra exclusão; backup serve somente para trocar imediatamente um componente defeituoso.
 
-**Uso:** Aprofundamento
+D) Redundância e backup têm a mesma finalidade, o mesmo ponto de recuperação e o mesmo tempo de retorno.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+### S2D6Q279 — Concorrência sem paralelismo
 
-Concorrência é diferente de paralelismo porque concorrência:
-
-A) exige sempre dois núcleos físicos.
-B) nunca compartilha recursos.
-C) pode ocorrer por intercalação sem execução simultânea real.
-D) elimina condições de corrida.
-
-### S2D6Q280 — Condição de corrida
-
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho que distingue intercalação concorrente de execução simultânea paralela.
 
-Uma condição de corrida ocorre quando:
+Em um processador de núcleo único, o sistema alterna rapidamente as tarefas A e B. Ambas avançam durante o intervalo observado, mas apenas uma executa em cada instante. Como se classifica o cenário?
 
-A) a CPU entra em deadlock.
-B) o resultado depende de intercalações não controladas sobre estado compartilhado.
-C) uma thread termina antes das demais.
-D) há apenas um processo no sistema.
+A) Paralelismo sem concorrência, porque as tarefas compartilham o intervalo de processamento.
 
-### S2D6Q281 — Mutex
+B) Ausência de concorrência, porque a execução simultânea exige pelo menos dois núcleos.
 
-**Nível:** Difícil
+C) Concorrência sem paralelismo, porque há intercalação sem execução simultânea real.
 
-**Uso:** Revisão
+D) Concorrência com paralelismo, porque cada troca de contexto cria simultaneidade entre as tarefas.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+### S2D6Q280 — Atualização perdida por condição de corrida
 
-O mutex é apropriado quando se deseja:
+**Nível:** Médio
 
-A) permitir vários titulares simultâneos na seção crítica.
-B) substituir toda estratégia de escalonamento.
-C) armazenar mensagens persistentes.
-D) exclusão mútua de uma seção crítica.
+**Uso:** Aprofundamento
 
-### S2D6Q282 — Deadlock
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente condição de corrida e atualização perdida em operação composta.
 
-**Nível:** Difícil
+Duas threads executam sem sincronização `saldo = saldo + 10`. Ambas leem o saldo inicial de 100 e depois gravam 110, embora o resultado esperado fosse 120. O comportamento caracteriza:
 
-**Uso:** Revisão
+A) deadlock, porque as duas threads acessaram o mesmo recurso e nenhuma atualização foi válida.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+B) condição de corrida, porque a sequência de leitura, cálculo e escrita permitiu atualização perdida.
 
-No caso clássico de deadlock, as condições de Coffman devem:
+C) starvation, porque uma das threads ficou definitivamente impedida de executar no processador.
 
-A) coexistir.
-B) ocorrer em momentos independentes.
-C) ser substituídas por starvation.
-D) ser ignoradas se houver semáforo.
+D) livelock, porque as duas threads desfizeram repetidamente a operação executada pela outra.
 
-### S2D6Q283 — Starvation
+### S2D6Q281 — Mutex e propriedade da seção crítica
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre exclusão mútua e propriedade do mutex.
 
-Starvation descreve situação em que:
+Uma seção crítica deve admitir apenas uma thread por vez, e a thread que adquirir o controle deve liberá-lo ao sair. Qual mecanismo modela diretamente esse requisito?
 
-A) nenhum participante pode avançar por espera circular.
-B) um participante pode ser adiado indefinidamente, enquanto outros progridem.
-C) todos os recursos são liberados automaticamente.
-D) uma thread executa em paralelo.
+A) Semáforo contador iniciado em oito, permitindo oito titulares simultâneos da seção.
+
+B) Variável de condição usada sem mutex, tratando a notificação como propriedade exclusiva.
+
+C) Barreira de sincronização, liberando todas as threads quando o mesmo ponto for alcançado.
+
+D) Mutex compartilhado pelos participantes, com aquisição e liberação ao redor da seção crítica.
+
+### S2D6Q282 — Condições necessárias de Coffman
+
+**Nível:** Médio
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente as quatro condições necessárias de Coffman.
+
+No modelo clássico de deadlock com recursos reutilizáveis, qual conjunto apresenta as quatro condições necessárias de Coffman?
+
+A) Exclusão mútua, posse e espera, não preempção e espera circular.
+
+B) Exclusão mútua, posse e espera, preempção obrigatória e espera circular.
+
+C) Exclusão mútua, aquisição sem retenção, não preempção e espera circular.
+
+D) Exclusão mútua, posse e espera, não preempção e ordem acíclica.
+
+### S2D6Q283 — Starvation em prioridade estrita
+
+**Nível:** Médio
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), nos trechos sobre starvation, aging e diferenças para outros problemas de progresso.
+
+Em um escalonador de prioridade estrita, uma tarefa de baixa prioridade permanece pronta, mas novas tarefas de alta prioridade sempre a ultrapassam. As demais concluem normalmente. O fenômeno e uma mitigação são:
+
+A) deadlock e ordenação global de locks, pois nenhum participante consegue avançar.
+
+B) livelock e backoff, pois a tarefa executa repetidamente sem produzir resultado útil.
+
+C) starvation e aging, pois a tarefa pode ser adiada indefinidamente enquanto outras avançam.
+
+D) inversão de prioridade e herança, pois uma tarefa alta aguarda lock mantido pela baixa.
 
 ### S2D6Q284 — Round Robin
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10)
 
 Em Round Robin, reduzir demais o quantum tende a:
 
@@ -14138,56 +15373,65 @@ D) aumentar overhead de trocas de contexto.
 
 ### S2D6Q285 — Polling e interrupção
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente a diferença entre consulta repetida por polling e sinalização por interrupção.
 
-Polling e interrupção diferem porque:
+Polling e interrupção são formas de coordenar a CPU com um dispositivo de entrada e saída. Assinale a alternativa que distingue corretamente os mecanismos.
 
-A) polling consulta repetidamente; interrupção sinaliza a CPU quando necessário.
-B) interrupção transfere dados sem CPU, como DMA.
-C) polling cifra dispositivos.
-D) ambos são sinônimos.
+A) No polling, a CPU consulta o estado; na interrupção, o dispositivo sinaliza quando requer tratamento.
 
-### S2D6Q286 — DMA
+B) No polling, o dispositivo sinaliza a CPU; na interrupção, a CPU consulta periodicamente o estado.
 
-**Nível:** Difícil
+C) Nos dois mecanismos, a CPU consulta em intervalos fixos; muda apenas a prioridade atribuída ao driver.
 
-**Uso:** Revisão
+D) Na interrupção, o dispositivo transfere todo o bloco; no polling, ele apenas informa a conclusão.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+### S2D6Q286 — Transferência em bloco por DMA
 
-O DMA contribui para desempenho ao:
-
-A) eliminar a necessidade de memória.
-B) permitir transferência de blocos com menor intervenção da CPU por unidade.
-C) substituir drivers.
-D) impedir interrupções.
-
-### S2D6Q287 — Journaling
-
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre DMA, configuração pela CPU e menor intervenção por unidade transferida.
 
-Journaling em sistema de arquivos serve principalmente para:
+A CPU informa endereço, direção e tamanho à controladora. Ela transfere um bloco entre dispositivo e memória e sinaliza a conclusão, sem a CPU copiar cada unidade. O mecanismo predominante é:
 
-A) ser cópia externa histórica.
-B) manter credenciais cifradas.
-C) auxiliar recuperação de consistência após falha.
-D) substituir permissões.
+A) E/S programada, em que a CPU executa instruções para copiar cada palavra entre registrador e memória.
+
+B) DMA, em que a controladora move o bloco com menor intervenção da CPU por unidade transferida.
+
+C) E/S por interrupção, em que cada evento chama uma rotina para a CPU copiar individualmente a próxima palavra.
+
+D) Polling, em que a CPU consulta o estado e transfere diretamente cada unidade quando o dispositivo fica pronto.
+
+### S2D6Q287 — Commit e replay no journaling
+
+**Nível:** Médio
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente commit, replay e limite do journaling perante histórico e falha física.
+
+Após uma queda de energia, o sistema de arquivos examina o journal antes de montar o volume. Qual conduta representa a recuperação típica de consistência?
+
+A) Reproduzir todas as transações, inclusive as que não possuem commit, para preservar o estado mais recente.
+
+B) Reverter toda exclusão registrada e restaurar automaticamente cada versão anterior do conteúdo afetado.
+
+C) Reproduzir transações confirmadas e ignorar as incompletas, recuperando a consistência das estruturas.
+
+D) Reconstruir setores fisicamente ilegíveis a partir do journal, mesmo sem outra cópia dos dados do volume.
 
 ### S2D6Q288 — Permissões Linux
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10)
 
 Em Linux, a permissão `640` indica:
 
@@ -14196,133 +15440,157 @@ B) todos leem e escrevem.
 C) dono executa, grupo escreve, outros leem.
 D) nenhuma permissão para o dono.
 
-### S2D6Q289 — DACL
+### S2D6Q289 — ACEs em uma DACL do Windows
 
-**Nível:** Difícil
-
-**Uso:** Revisão
-
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
-
-No Windows, uma DACL é relevante para:
-
-A) calcular CIDR.
-B) armazenar rotas BGP.
-C) definir ACEs de permissões e negações sobre objeto.
-D) sincronizar relógio.
-
-### S2D6Q290 — Diagnóstico de serviço
-
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre DACL, ACEs de permissão ou negação e herança.
 
-Em um caso CRA, um portal deixa de responder, mas `ping` ao servidor funciona. A conclusão correta é:
+No modelo de controle de acesso do Windows, qual alternativa descreve corretamente uma DACL associada a um objeto?
 
-A) a aplicação está necessariamente saudável.
-B) o DNS está necessariamente correto.
-C) o firewall está necessariamente aberto.
-D) conectividade IP isolada não prova saúde do serviço ou da aplicação.
+A) Contém somente ACEs de auditoria; permissões e negações ficam exclusivamente na SACL.
 
-### S2D6Q291 — NTP e logs
+B) Contém apenas ACEs de permissão; uma negação explícita não pode integrar essa lista.
 
-**Nível:** Muito difícil
+C) Contém ACEs de permissão ou negação, inclusive entradas herdadas conforme a configuração.
 
-**Uso:** Simulado
+D) Contém somente o SID do proprietário; as ACEs ficam armazenadas apenas no compartilhamento.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+### S2D6Q290 — Alcance diagnóstico de um `ping` bem-sucedido
 
-Em uma investigação, logs com hora incorreta prejudicam principalmente:
+**Nível:** Médio
 
-A) correlação temporal de eventos.
-B) cálculo de permissões NTFS.
-C) tamanho de quadros Ethernet.
-D) resolução ARP.
+**Uso:** Revisão
 
-### S2D6Q292 — Defesa em profundidade
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), no trecho sobre diagnóstico em camadas e limites do `ping` perante transporte e aplicação.
 
-**Nível:** Muito difícil
+Um portal HTTPS não responde, mas `ping` enviado diretamente ao endereço IP do servidor recebe respostas. Qual conclusão orienta corretamente o próximo diagnóstico?
 
-**Uso:** Simulado
+A) A aplicação está saudável, portanto a falha deve estar exclusivamente no cache do navegador cliente.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+B) A resolução DNS está correta, portanto não é necessário consultar o nome usado para acessar o portal.
 
-Uma organização deve combinar segmentação, MFA, atualização e monitoramento porque:
+C) A porta TCP 443 está acessível, portanto o firewall e o processo HTTPS já foram integralmente validados.
 
-A) um controle único elimina todo risco.
-B) defesa em profundidade reduz dependência de uma única barreira.
-C) IDS substitui autenticação.
-D) VPN substitui correção de vulnerabilidades.
+D) Há alguma conectividade IP e ICMP, mas ainda é preciso testar porta, TLS, processo e aplicação.
 
-### S2D6Q293 — Fluxo web
+### S2D6Q291 — Sincronização temporal e correlação de logs
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), especialmente NTP, consistência de horários e correlação temporal entre registros.
 
-Qual sequência descreve melhor um acesso web seguro após inicialização do cliente?
+Durante uma investigação, os relógios de três servidores apresentam diferenças de vários minutos. Qual atividade fica mais diretamente prejudicada por essa inconsistência?
 
-A) DNS, DHCP, SMTP, ARP, TLS.
-B) DHCP, FTP, LDAP, NAT, HTTP.
-C) DHCP, DNS, transporte, TLS e HTTP.
-D) NTP, IMAP, ICMP, SSH e HTTP.
+A) Comparar o hash de um arquivo com um resumo confiável para detectar alteração de conteúdo.
 
-### S2D6Q294 — Proxy reverso
+B) Ordenar e correlacionar eventos dos servidores para reconstruir a linha do tempo do incidente.
 
-**Nível:** Muito difícil
+C) Identificar a conta registrada explicitamente no campo de usuário de cada evento coletado.
 
-**Uso:** Simulado
+D) Interpretar o código de severidade e o texto gravado pela fonte em cada registro local.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+### S2D6Q292 — Independência das camadas de defesa
 
-Um proxy reverso normalmente representa:
-
-A) clientes internos perante qualquer site externo.
-B) somente o gateway IPv4.
-C) agentes SNMP.
-D) servidores publicados perante clientes.
-
-### S2D6Q295 — LDAP
-
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08), no trecho sobre controles complementares e defesa em profundidade.
 
-Sobre LDAP, assinale a correta.
+Uma organização combina atualização, MFA, segmentação, monitoramento e backup. Qual princípio justifica manter controles diferentes e complementares?
 
-A) É protocolo de acesso a serviços de diretório.
-B) É mecanismo de tradução de portas.
-C) É protocolo de transferência de arquivos.
-D) É algoritmo de criptografia.
+A) Um único controle bem configurado elimina o risco residual, e as demais camadas servem apenas para auditoria.
 
-### S2D6Q296 — Porta e segurança
+B) A defesa em profundidade reduz a dependência de uma única barreira quando um controle falha ou é contornado.
 
-**Nível:** Muito difícil
+C) As camadas devem compartilhar fabricante e credencial administrativa para que uma decisão se propague a todas.
+
+D) O backup substitui prevenção e detecção, pois qualquer comprometimento pode ser desfeito sem impacto adicional.
+
+### S2D6Q293 — Dependências de um acesso HTTPS por HTTP/2
+
+**Nível:** Difícil
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), especialmente DHCP, DNS, estabelecimento do transporte, TLS e HTTP.
 
-Em um laudo técnico, afirmar que “porta 443 prova que o conteúdo é seguro” é incorreto porque:
+Uma estação IPv4 recém-inicializada, sem configuração estática, acessará por nome um portal HTTPS usando HTTP/2 sobre TCP. Qual ordem representa as dependências principais até a requisição?
 
-A) HTTPS nunca usa 443.
-B) a porta é convenção; segurança depende de protocolo, TLS, validação e endpoint.
-C) TLS só existe em UDP.
-D) DNS define a porta por criptografia.
+A) DHCP, conexão TCP, requisição HTTP, resolução DNS e handshake TLS.
+
+B) Resolução DNS, DHCP, handshake TLS, conexão TCP e requisição HTTP.
+
+C) DHCP, resolução DNS, conexão TCP, handshake TLS e requisição HTTP.
+
+D) DHCP, resolução DNS, handshake TLS, requisição HTTP e conexão TCP.
+
+### S2D6Q294 — Papel de um proxy reverso
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), no trecho que diferencia proxy direto e proxy reverso.
+
+Um intermediário recebe requisições de clientes externos destinadas a um portal, seleciona um servidor interno e devolve a resposta sem expor diretamente o backend. Esse papel corresponde a:
+
+A) proxy direto, que representa clientes internos perante os servidores externos escolhidos por eles.
+
+B) proxy transparente de saída, que intercepta tráfego de clientes sem configuração explícita no navegador.
+
+C) proxy de cache de saída, que armazena respostas externas para reutilização por usuários internos.
+
+D) proxy reverso, que representa os servidores publicados perante os clientes e encaminha ao backend.
+
+### S2D6Q295 — Acesso a serviço de diretório por LDAP
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), especialmente a finalidade de LDAP em serviços de diretório.
+
+Uma aplicação precisa consultar entradas hierárquicas de usuários, grupos e atributos mantidas em um serviço de diretório. Qual protocolo é diretamente associado a essa operação?
+
+A) LDAP, usado para consultar e modificar entradas organizadas em serviço de diretório.
+
+B) Kerberos, usado principalmente para emitir tíquetes de autenticação entre participantes.
+
+C) RADIUS, usado principalmente em autenticação, autorização e accounting de acesso à rede.
+
+D) DNS, usado para publicar e resolver nomes e outros registros distribuídos de recursos.
+
+### S2D6Q296 — Porta convencional e prova de segurança
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), no trecho que trata porta como associação convencional, e não prova de protocolo ou segurança.
+
+Um laudo afirma que um serviço é seguro apenas porque aceita conexões na porta TCP 443. Qual avaliação técnica está correta?
+
+A) A porta 443 força HTTPS e valida certificado automaticamente, independentemente do software que atende a conexão.
+
+B) TLS só oferece proteção quando usa a porta 443, e qualquer porta alternativa impede autenticação e cifração.
+
+C) A porta é uma convenção; é preciso verificar protocolo, TLS, certificado, configuração e segurança do endpoint.
+
+D) A regra de firewall para a porta 443 encapsula em TLS qualquer conteúdo em claro enviado pela aplicação.
 
 ### S2D6Q297 — DDoS
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+**Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia), [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede) e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07)
 
 Assinale a situação que caracteriza mais diretamente indisponibilidade.
 
@@ -14331,50 +15599,64 @@ B) Divulgação de documento sigiloso.
 C) Associação errada entre usuário e grupo.
 D) DDoS que satura o enlace do órgão.
 
-### S2D6Q298 — Evidência
+### S2D6Q298 — Preservação de imagem forense
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09), especialmente preservação de evidências antes de ações de erradicação.
 
-Ao preservar uma imagem de disco antes de erradicar malware, a equipe prioriza:
+Antes de erradicar malware, a equipe cria imagem bit a bit do disco, calcula hashes e registra a cadeia de custódia. Qual objetivo predomina nessa atividade?
 
-A) autenticação.
-B) compactação.
-C) preservação de evidência para análise.
-D) desfragmentação.
+A) Contenção, porque a criação da imagem bloqueia automaticamente toda comunicação do host comprometido.
+
+B) Erradicação, porque a cópia bit a bit remove malware e persistência do equipamento original.
+
+C) Preservação de evidência, porque hashes e custódia apoiam integridade e análise posterior reproduzível.
+
+D) Recuperação, porque a imagem forense devolve automaticamente o host a um estado conhecido e limpo.
 
 ### S2D6Q299 — Comandos de observação
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10)
 
 Qual ação é de observação, e não de alteração de processo?
 
-A) `taskkill`.
+A) `Get-Process`.
 B) `Stop-Process`.
 C) `kill`.
-D) `Get-Process`.
+D) `taskkill`.
 
-### S2D6Q300 — Validação de continuidade
+### S2D6Q300 — RPO, RTO, dependências e continuidade efetiva
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Recuperação por dependências e validação ponta a ponta](semana_02_estudo.md#s2-d6-recuperacao-dependencias) e [Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos sobre RPO, RTO, dependências e validação do negócio.
 
-Considere a afirmação: “A restauração foi concluída; logo, o plano de continuidade foi validado.” Ela é insuficiente porque:
+Um incidente ocorre às 14h. O banco é restaurado ao ponto consistente das 13h35 e a infraestrutura volta às 16h30, mas a fila de pagamentos permanece incompatível e o serviço de autenticação necessário está indisponível. O plano define RPO de 30 minutos e RTO de 4 horas. Analise as afirmações.
 
-A) restauração nunca deve ser testada.
-B) é preciso também validar integridade, dependências e funcionamento de negócio.
-C) backup substitui qualquer teste.
-D) RTO e RPO deixam de importar após a cópia.
+I. O ponto das 13h35 atende ao RPO, mas esse resultado isolado não comprova a recuperação do serviço.
+
+II. O horário das 16h30 está dentro da janela de RTO; contudo, enquanto fila e autenticação impedirem a transação de ponta a ponta, o serviço ainda não foi efetivamente restabelecido.
+
+III. O teste de continuidade deve validar integridade, dependências, responsabilidades, comunicação e retorno controlado; a existência do backup não substitui essas verificações.
+
+Está correto o que se afirma em:
+
+A) I e II, apenas.
+
+B) I, II e III.
+
+C) I e III, apenas.
+
+D) II e III, apenas.
 
 ## Questões extras de revisão fixa do Dia 6
 #### Extra Dia 6.1
@@ -14393,20 +15675,31 @@ B) controles são complementares.
 C) segmentação impede todo ataque.
 D) segurança é binária.
 #### Extra Dia 6.2
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** inferência.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-02).
 
-De “UDP não retransmite nativamente” infere-se que:
+- **Referência:** [D6-RF-PT-02 — Inferência](semana_02_estudo.md#s2-d6-rf-pt-02), aplicada à ausência de garantias nativas do UDP.
 
-A) UDP nunca pode transportar aplicação confiável.
-B) toda perda é corrigida por TCP.
-C) a aplicação pode implementar recuperação própria.
-D) DNS substitui UDP.
+A documentação afirma: “UDP não oferece retransmissão nativa”. Qual inferência respeita o alcance dessa afirmação?
+
+A) A aplicação fica impedida de criar confirmações, temporizadores ou retransmissões para os próprios dados.
+
+B) Qualquer perda será corrigida automaticamente pela camada de transporte antes de alcançar a aplicação.
+
+C) A aplicação pode criar confirmações, temporizadores ou retransmissões quando o serviço precisar deles.
+
+D) A ausência de retransmissão nativa garante que cada datagrama será entregue uma única vez ao destino.
+
 #### Extra Dia 6.3
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
@@ -14423,50 +15716,83 @@ B) causa e finalidade.
 C) conclusão e oposição.
 D) condição e explicação.
 #### Extra Dia 6.4
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** ambiguidade.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-04).
 
-Em “A analista informou à gerente que seu acesso expirou”, para eliminar ambiguidade deve-se:
+- **Referência:** [D6-RF-PT-04 — Ambiguidade](semana_02_estudo.md#s2-d6-rf-pt-04), na orientação de explicitar o referente.
 
-A) retirar “seu”.
-B) assumir o termo mais próximo.
-C) usar plural.
-D) explicitar “acesso da analista” ou “da gerente”.
+Em “A analista informou à gerente que seu acesso expirou”, o possessivo admite duas referentes. Qual intervenção elimina efetivamente a ambiguidade?
+
+A) Retirar “seu” e escrever apenas “o acesso expirou”, sem identificar a pessoa a quem o acesso pertence.
+
+B) Deslocar “seu” para depois de “expirou”, mantendo analista e gerente como antecedentes possíveis.
+
+C) Flexionar o possessivo no plural e conservar as duas pessoas no período, sem indicar a titular do acesso.
+
+D) Substituir “seu acesso” por “o acesso da analista” ou “o acesso da gerente”, conforme o sentido pretendido.
+
 #### Extra Dia 6.5
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** modalidade.
+
 - **Nível:** Médio
+
 - **Uso:** Essenciais
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-05).
 
-Da frase “o IDS pode alertar”, conclui-se que:
+- **Referência:** [D6-RF-PT-05 — Modalidade](semana_02_estudo.md#s2-d6-rf-pt-05), na distinção entre possibilidade, obrigação e garantia.
 
-A) alerta é garantia universal de detecção.
-B) IDS bloqueia sempre.
-C) IDS substitui firewall.
-D) alerta é possibilidade ou capacidade, não garantia universal de detecção.
+No relatório consta que “o IDS pode alertar sobre o evento”. Qual leitura conserva a força modal do verbo empregado?
+
+A) O verbo assegura que o IDS detectará e alertará sobre todos os eventos, sem exceção operacional.
+
+B) O verbo expressa possibilidade ou capacidade de alertar, sem prometer detecção universal dos eventos.
+
+C) O verbo afirma que o IDS sempre bloqueará o evento antes de qualquer alerta aos responsáveis.
+
+D) O verbo impõe ao IDS a obrigação de emitir alerta e torna impossível a ausência de detecção.
+
 #### Extra Dia 6.6
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 5
+
 - **Matéria:** Língua Portuguesa
+
 - **Assunto:** reescrita.
+
 - **Nível:** Médio
+
 - **Uso:** Aprofundamento
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-06).
 
-A reescrita que preserva “Ainda que o backup esteja íntegro, teste a restauração” é:
+- **Referência:** [D6-RF-PT-06 — Reescrita](semana_02_estudo.md#s2-d6-rf-pt-06), na preservação da concessão e da orientação principal.
 
-A) Backup íntegro proíbe teste.
-B) Teste somente se houver corrupção.
-C) Mesmo íntegro, o backup exige teste de restauração.
-D) Testar torna o backup íntegro.
+Qual alternativa preserva o sentido de “Ainda que o backup esteja íntegro, teste a restauração”?
+
+A) Como o backup está íntegro, o teste de restauração deve ser dispensado pela equipe responsável.
+
+B) O teste de restauração deve ocorrer somente quando houver indício anterior de corrupção no backup.
+
+C) Mesmo que o backup esteja íntegro, a equipe deve realizar o teste de restauração previsto.
+
+D) A realização do teste torna o backup íntegro e substitui a verificação posterior da restauração.
+
 #### Extra Dia 6.7
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
@@ -14502,22 +15828,22 @@ D) Obedeceu à política e começou a analisar registros.
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-09).
 
 Assinale a pontuação adequada.
 
-A) Os administradores, revogaram credenciais.
+A) Após a contenção, a equipe preservou os registros.
 B) A equipe preservou, registros essenciais.
-C) Após a contenção, a equipe preservou os registros.
+C) Os administradores, revogaram credenciais.
 D) Os servidores vulneráveis, foram isolados.
 #### Extra Dia 6.10
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** paralelismo.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-10).
 
@@ -14528,41 +15854,63 @@ B) Isolar hosts, revogar credenciais e a preservação de logs.
 C) Isolar hosts, que credenciais sejam revogadas e logs.
 D) Isolar hosts, revogar credenciais e preservar logs.
 #### Extra Dia 6.11
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Redes de Computadores
+
 - **Assunto:** métricas.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
-Em enlace de 1 Gbit/s, throughput de 700 Mbit/s e goodput de 620 Mbit/s, a variação do atraso é:
+- **Referência:** [D6-RF-MX-01 — Recuperação ativa de redes e métricas](semana_02_estudo.md#s2-d6-rf-mx-01), na distinção entre latência, jitter, throughput, goodput e largura de banda.
 
-A) jitter.
-B) largura de banda.
-C) broadcast.
-D) CIDR.
+Em quatro medições consecutivas, a latência de um fluxo foi de 20 ms, 35 ms, 18 ms e 42 ms. Qual métrica descreve a oscilação observada entre esses atrasos?
+
+A) Jitter, porque mede a variação do atraso entre as medições do fluxo.
+
+B) Throughput, porque mede a quantidade total de bits transmitida por unidade de tempo.
+
+C) Goodput, porque mede a parcela de dados úteis entregue à aplicação no intervalo.
+
+D) Largura de banda, porque mede a capacidade nominal disponível no enlace utilizado.
+
 #### Extra Dia 6.12
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Redes de Computadores
+
 - **Assunto:** encapsulamento.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
 
-Ao rotear para novo enlace Ethernet, o equipamento:
+- **Referência:** [D6-RF-MX-02 — Camadas, encapsulamento e evidência](semana_02_estudo.md#s2-d6-rf-mx-02), na renovação do quadro a cada enlace roteado.
 
-A) preserva o quadro origem intacto.
-B) recria o quadro para o próximo enlace.
-C) converte IP em DNS.
-D) elimina o pacote IP.
+Um roteador recebe um quadro Ethernet e deve encaminhar o pacote IP por outro enlace Ethernet. Qual operação descreve corretamente essa passagem?
+
+A) Reutiliza o quadro recebido e mantém os endereços MAC de origem e destino durante todo o caminho IP.
+
+B) Remove o quadro recebido, examina o pacote IP e cria um novo quadro adequado ao próximo enlace.
+
+C) Remove também o pacote IP e encaminha somente a carga da aplicação dentro do mesmo quadro recebido.
+
+D) Mantém o quadro de enlace intacto e troca os endereços IP do pacote a cada salto percorrido.
+
 #### Extra Dia 6.13
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** CIDR.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
 
@@ -14577,7 +15925,7 @@ D) `192.168.10.77`.
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** gateway.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
@@ -14588,26 +15936,37 @@ B) do destino remoto.
 C) do DNS.
 D) do NAT.
 #### Extra Dia 6.15
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Redes de Computadores
+
 - **Assunto:** fluxo de protocolos.
-- **Nível:** Difícil
+
+- **Nível:** Médio
+
 - **Uso:** Revisão
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-DHCP, DNS, TLS e HTTP têm, respectivamente, funções de:
+- **Referência:** [D6-RF-MX-05 — Protocolos: transporte, Web, nomes e configuração](semana_02_estudo.md#s2-d6-rf-mx-05), na regra de integração entre os quatro protocolos.
 
-A) correio, arquivos, roteamento e tempo.
-B) configuração, nomes, proteção do canal e aplicação web.
-C) diretório, autenticação, backup e banco.
-D) gerência, NAT, Wi-Fi e arquivo.
+Em uma sequência simplificada de acesso Web, qual alternativa associa corretamente DHCP, DNS, TLS e HTTP às respectivas funções?
+
+A) DHCP resolve nomes; DNS configura o cliente; TLS expressa a aplicação Web; HTTP protege criptograficamente o canal.
+
+B) DHCP configura o cliente; DNS resolve nomes; TLS protege o canal; HTTP expressa a aplicação Web.
+
+C) DHCP protege o canal; DNS expressa a aplicação Web; TLS configura o cliente; HTTP resolve nomes.
+
+D) DHCP expressa a aplicação Web; DNS protege o canal; TLS resolve nomes; HTTP configura o cliente.
+
 #### Extra Dia 6.16
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** serviços de rede.
-- **Nível:** Difícil
+- **Nível:** Médio
 - **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
@@ -14618,104 +15977,148 @@ B) NTP entrega IP; SNMP resolve nomes.
 C) SMTP envia; IMAP acessa caixa; SFTP usa SSH.
 D) LDAP traduz portas; PAT lista diretórios.
 #### Extra Dia 6.17
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Segurança da Informação
+
 - **Assunto:** risco.
-- **Nível:** Muito difícil
+
+- **Nível:** Médio
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-Uma falha explorável, código malicioso e probabilidade/impacto representam:
+- **Referência:** [D6-RF-MX-07 — Segurança: objetivo, identidade, risco e ataque](semana_02_estudo.md#s2-d6-rf-mx-07), nas definições de vulnerabilidade, ameaça e risco.
 
-A) vulnerabilidade, ameaça e risco.
-B) ativo, CIA e backup.
-C) firewall, IDS e IPS.
-D) evento, NTP e VPN.
+Uma biblioteca contém falha explorável; um código malicioso pode explorá-la; a organização avalia a probabilidade e o impacto dessa exploração. Os três elementos são, respectivamente:
+
+A) vulnerabilidade, risco e ameaça.
+
+B) ameaça, risco e vulnerabilidade.
+
+C) risco, vulnerabilidade e ameaça.
+
+D) vulnerabilidade, ameaça e risco.
+
 #### Extra Dia 6.18
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Segurança da Informação
+
 - **Assunto:** controles.
-- **Nível:** Muito difícil
+
+- **Nível:** Difícil
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-Assinale a correta.
+- **Referência:** [D6-RF-MX-08 — Controles, criptografia e Wi-Fi](semana_02_estudo.md#s2-d6-rf-mx-08), nas distinções firewall × IDS × IPS e HMAC × assinatura digital.
 
-A) Hash cifra reversivelmente.
-B) IPS em linha pode bloquear, e HMAC usa chave secreta para integridade/autenticidade.
-C) WPA3 dispensa senha forte.
-D) VLAN substitui firewall.
+Uma arquitetura usa IPS em linha e HMAC nas mensagens entre dois serviços. Assinale a alternativa que descreve corretamente os dois controles.
+
+A) O IPS em linha pode bloquear tráfego; o HMAC usa par de chaves pública e privada como uma assinatura digital.
+
+B) O IPS em linha pode bloquear tráfego; o HMAC usa segredo compartilhado para verificar integridade e autenticidade.
+
+C) O IPS em linha apenas alerta, sem atuar no fluxo; o HMAC usa segredo compartilhado para verificar integridade e autenticidade.
+
+D) O IPS em linha substitui qualquer firewall; o HMAC cifra reversivelmente a mensagem com o segredo compartilhado.
+
 #### Extra Dia 6.19
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Continuidade de Serviços
+
 - **Assunto:** RPO e RTO.
-- **Nível:** Muito difícil
+
+- **Nível:** Difícil
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-Com incidente às 14h, RPO 30 min e RTO 2h, é correto:
+- **Referência:** [D6-RF-MX-09 — Resposta, continuidade e objetivos de recuperação](semana_02_estudo.md#s2-d6-rf-mx-09), nas definições e no exemplo de RPO e RTO.
 
-A) recuperar ponto não anterior a 13h30 e restabelecer até 2h.
-B) RPO é prazo de serviço.
-C) RTO é perda máxima de dados.
-D) RAID substitui backup.
+Um incidente começa às 14h. O serviço possui RPO de 30 minutos e RTO de 2 horas. Qual resultado atende simultaneamente aos dois objetivos?
+
+A) Recuperar dados de um ponto não anterior a 13h30 e restabelecer o serviço até as 16h.
+
+B) Recuperar dados de um ponto às 13h e restabelecer o serviço até as 14h30.
+
+C) Recuperar dados de um ponto não anterior a 13h30 e restabelecer o serviço até as 17h.
+
+D) Recuperar dados de um ponto não anterior a 12h e restabelecer o serviço até as 14h30.
+
 #### Extra Dia 6.20
+
 - **Dia:** Dia 6
+
 - **Bloco:** Bloco 4
+
 - **Matéria:** Sistemas Operacionais
+
 - **Assunto:** E/S e journaling.
-- **Nível:** Muito difícil
+
+- **Nível:** Difícil
+
 - **Uso:** Simulado
-- **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-Assinale a correta sobre SO.
+- **Referência:** [D6-RF-MX-10 — Sistemas operacionais: progresso, E/S e persistência](semana_02_estudo.md#s2-d6-rf-mx-10), nas linhas polling/interrupção/DMA e sistema de arquivos/journaling.
 
-A) DMA copia cada byte pela CPU e journaling é backup.
-B) Deadlock e starvation são sinônimos.
-C) Mutex permite todos na seção crítica.
-D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling auxilia consistência.
+Ao documentar entrada/saída e recuperação do sistema de arquivos, a equipe compara interrupção, DMA e journaling. Qual síntese está correta?
+
+A) A interrupção exige polling contínuo; o DMA transfere cada byte pela CPU; o journaling funciona como cópia histórica dos arquivos.
+
+B) A interrupção sinaliza eventos; o DMA reduz intervenção da CPU; o journaling garante ausência de perda e substitui o backup.
+
+C) A interrupção sinaliza eventos; o DMA elimina toda atuação da CPU; o journaling auxilia a recuperar consistência após falha.
+
+D) A interrupção evita polling contínuo; o DMA reduz intervenção da CPU; o journaling auxilia a recuperar consistência após falha.
+
 ## Gabarito do Dia 6
 
 ### Questões principais
 
 | Questão | Resposta |
 |---:|:---:|
-| 1 | C |
-| 2 | D |
+| 1 | D |
+| 2 | A |
 | 3 | A |
 | 4 | C |
 | 5 | D |
-| 6 | D |
+| 6 | B |
 | 7 | A |
 | 8 | C |
 | 9 | A |
 | 10 | B |
-| 11 | A |
+| 11 | D |
 | 12 | C |
 | 13 | B |
 | 14 | D |
 | 15 | A |
 | 16 | C |
 | 17 | B |
-| 18 | D |
+| 18 | B |
 | 19 | A |
-| 20 | B |
+| 20 | D |
 | 21 | C |
 | 22 | B |
 | 23 | C |
 | 24 | A |
 | 25 | D |
 | 26 | B |
-| 27 | B |
+| 27 | D |
 | 28 | A |
 | 29 | C |
 | 30 | B |
 | 31 | D |
 | 32 | A |
-| 33 | B |
+| 33 | C |
 | 34 | D |
 | 35 | A |
 | 36 | B |
@@ -14723,15 +16126,15 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 | 38 | A |
 | 39 | C |
 | 40 | D |
-| 41 | A |
+| 41 | B |
 | 42 | B |
 | 43 | C |
 | 44 | D |
 | 45 | A |
-| 46 | B |
+| 46 | C |
 | 47 | D |
 | 48 | C |
-| 49 | D |
+| 49 | A |
 | 50 | B |
 
 ### Questões extras
@@ -14742,11 +16145,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 | 6.2 | C |
 | 6.3 | A |
 | 6.4 | D |
-| 6.5 | D |
+| 6.5 | B |
 | 6.6 | C |
 | 6.7 | B |
 | 6.8 | D |
-| 6.9 | C |
+| 6.9 | A |
 | 6.10 | D |
 | 6.11 | A |
 | 6.12 | B |
@@ -14754,7 +16157,7 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 | 6.14 | A |
 | 6.15 | B |
 | 6.16 | C |
-| 6.17 | A |
+| 6.17 | D |
 | 6.18 | B |
 | 6.19 | A |
 | 6.20 | D |
@@ -14767,1103 +16170,1137 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: C.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Aplica a regra de métricas de rede exigida no cenário.
-- **C)** Correta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** latência é o tempo de atraso entre envio e recebimento, normalmente medido em unidades de tempo; não é a taxa de dados úteis entregue à aplicação.
+- **B)** jitter é a variação da latência entre entregas sucessivas, e não uma vazão expressa em Mbit/s.
+- **C)** perda representa dados que não chegaram ao destino, por quantidade ou proporção; não denomina a taxa útil recebida.
+- **D)** goodput mede a taxa efetivamente útil percebida pela aplicação, depois de descontadas sobrecargas como cabeçalhos e retransmissões. Por isso, os 700 Mbit/s de dados úteis são goodput, enquanto 1 Gbit/s é a capacidade nominal do enlace.
 
-**Conceito:** métricas de rede.
+**Conceito:** largura de banda, throughput, goodput, latência, jitter e perda.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** tratar toda medida de desempenho como “velocidade” e ignorar tanto a unidade quanto o ponto em que ela é observada.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** classifique primeiro a grandeza: capacidade nominal é largura de banda; taxa transportada é throughput; parcela útil recebida pela aplicação é goodput; tempo é latência; variação do tempo é jitter.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
-
+**Referência:** [Comunicação de dados e medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados), com recuperação em [D6-RF-MX-01](semana_02_estudo.md#s2-d6-rf-mx-01).
 ### Comentário S2D6Q252
 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+
+**Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de switch e domínios exigida no cenário.
+- **A)** o switch associa MAC de origem à porta, seleciona saídas para unicast conhecido e separa segmentos, enquanto a VLAN permanece domínio de broadcast.
+- **B)** a aprendizagem usa o MAC de origem, e broadcast continua sendo inundado nas portas pertinentes da mesma VLAN.
+- **C)** acerta aprendizagem e unicast conhecido, mas cada porta segmenta o enlace em relação às demais, não conserva um domínio de colisão único.
+- **D)** repetição de bits sem tabela MAC e meio de colisão compartilhado descrevem um hub Ethernet legado.
 
-**Conceito:** switch e domínios.
+**Conceito:** aprendizagem da tabela MAC e diferença entre segmentação de colisão e propagação de broadcast.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** transferir automaticamente ao domínio de broadcast a separação que o switch produz entre segmentos de colisão.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** compare três equipamentos: hub repete bits, switch decide por MAC e roteador separa redes; depois trate colisão e broadcast separadamente.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+**Referência:** [Bridges e switches](semana_02_estudo.md#s2-d1-bridge-switch), nos comportamentos de aprendizagem e encaminhamento; e [Domínios de colisão e broadcast](semana_02_estudo.md#s2-d1-dominios).
 
 ### Comentário S2D6Q253
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de encapsulamento por salto exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** ao receber o quadro, o roteador remove o encapsulamento do enlace de entrada, examina o pacote IP e o encapsula em um novo quadro adequado ao próximo enlace.
+- **B)** rotear um pacote não converte automaticamente o protocolo de transporte. Um segmento TCP permanece associado ao TCP salvo atuação específica de outro mecanismo, que o enunciado não descreve.
+- **C)** endereços MAC identificam os extremos do enlace atual; eles mudam quando o pacote é reenquadrado para outro salto e não são preservados fim a fim.
+- **D)** a aplicação recebe dados depois do processamento e do desencapsulamento pelas camadas da pilha; não recebe diretamente sinais ou bits brutos do enlace.
 
-**Conceito:** encapsulamento por salto.
+**Conceito:** encapsulamento por camada e recriação do quadro a cada enlace roteado.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** confundir o pacote IP, que atravessa a rota com ajustes próprios, com o quadro de enlace, cuja validade é local.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** separe as unidades: quadro/MAC no enlace, pacote/IP entre redes e segmento ou datagrama no transporte. Ao mudar de enlace, o quadro precisa mudar.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
-
+**Referência:** [Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento), com recuperação em [D6-RF-MX-02](semana_02_estudo.md#s2-d6-rf-mx-02).
 ### Comentário S2D6Q254
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de CIDR e broadcast exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** rede `.0` e broadcast `.255` correspondem ao bloco /24 inteiro, não ao /26 indicado.
+- **B)** `.64` a `.127` é o bloco /26 anterior. O último octeto 130 já pertence ao bloco iniciado em 128.
+- **C)** /26 corresponde à máscara 255.255.255.192, cujo tamanho de bloco é `256 − 192 = 64`. Os blocos começam em 0, 64, 128 e 192; 130 cai em 128–191, logo rede é `.128` e broadcast é `.191`.
+- **D)** `.130` é um host do bloco, não seu endereço de rede; `.192` é o início do bloco seguinte, não o broadcast do bloco atual.
 
-**Conceito:** CIDR e broadcast.
+**Conceito:** cálculo de rede e broadcast em sub-rede IPv4 CIDR.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** usar o próximo múltiplo como broadcast, sem subtrair um, ou tomar o próprio IP como endereço de rede.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** converta /26 em 255.255.255.192, calcule bloco 64, localize o intervalo que contém 130 e use início como rede e próximo início menos um como broadcast.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
-
+**Referência:** [Rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts) e [Cálculos resolvidos de CIDR](semana_02_estudo.md#s2-d2-calculos).
 ### Comentário S2D6Q255
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Aplica a regra de gateway e ARP exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** o servidor está fora da sub-rede; seu MAC não é descoberto através dos roteadores. O endereço IP continua sendo do destino remoto, mas o primeiro quadro é dirigido ao próximo salto local.
+- **B)** DNS autoritativo publica dados da zona e não fornece o endereço MAC necessário ao enlace local.
+- **C)** o switch encaminha o quadro de forma transparente; o host não usa o MAC do switch de acesso como próximo salto IP.
+- **D)** após concluir que o destino é remoto, o host consulta ou usa o cache ARP para associar o IPv4 do gateway ao MAC da interface local do roteador e envia o quadro a esse endereço.
 
-**Conceito:** gateway e ARP.
+**Conceito:** decisão de entrega remota e resolução ARP do próximo salto.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** procurar o MAC do destino final, em vez do MAC do gateway que é alcançável no enlace local.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** compare destino e prefixo local. Se forem redes diferentes, mantenha o IP remoto no pacote, mas obtenha por ARP o MAC do gateway para o primeiro quadro.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
-
+**Referência:** [Gateway padrão](semana_02_estudo.md#s2-d2-gateway) e [ARP](semana_02_estudo.md#s2-d2-arp).
 ### Comentário S2D6Q256
 
 **Nível:** Médio
 
 **Uso:** Essenciais
-**Alternativa correta: D.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de IPv6 e ND exigida no cenário.
+- **A)** IPv6 não usa o ARP do IPv4 nem possui broadcast; a resolução de vizinhança integra o ND.
+- **B)** ND pertence ao ICMPv6 e usa NS/NA, além de multicast específico, para resolução e manutenção da vizinhança.
+- **C)** DHCPv6 pode fornecer configuração, mas não substitui as funções de descoberta e alcançabilidade de vizinhos.
+- **D)** registro AAAA fornece endereço IPv6 associado a nome, não o endereço de enlace de um vizinho local.
 
-**Conceito:** IPv6 e ND.
+**Conceito:** Neighbor Discovery como mecanismo ICMPv6 para descoberta de enlace e alcançabilidade.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** transportar ARP e broadcast do IPv4 ao IPv6 ou confundir endereço IP obtido por DNS com endereço de enlace.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** ao ler “vizinho IPv6”, associe imediatamente ND, ICMPv6, NS/NA e multicast solicited-node.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
+**Referência:** [ICMP e ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp) e [IPv6](semana_02_estudo.md#s2-d2-ipv6), incluindo a ausência de broadcast no IPv6.
 
 ### Comentário S2D6Q257
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Essenciais
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de TCP e UDP exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** I é verdadeira porque o TCP oferece confirmação, retransmissão e entrega ordenada do fluxo; III também é verdadeira porque uma aplicação sobre UDP pode acrescentar confirmações, controle de perda e ordenação próprios.
+- **B)** inclui II, que é falsa: UDP não fornece retransmissão nativa.
+- **C)** mantém a falsa II e exclui I, embora confirmação e ordenação sejam propriedades do TCP.
+- **D)** considera verdadeira a assertiva II; a ausência de garantias nativas é precisamente uma característica do UDP.
 
-**Conceito:** TCP e UDP.
+**Conceito:** garantias de transporte do TCP, ausência de garantias nativas do UDP e responsabilidades da aplicação.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** transformar “UDP não retransmite nativamente” em “nenhuma aplicação sobre UDP pode ser confiável”.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** julgue cada assertiva isoladamente e separe o que o protocolo oferece do que a aplicação pode construir sobre ele: I verdadeira, II falsa, III verdadeira.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
-
+**Referência:** [TCP e UDP](semana_02_estudo.md#s2-d3-tcp-udp), com síntese em [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 ### Comentário S2D6Q258
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de HTTP/3 e QUIC exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** HTTP/3 muda o transporte para QUIC sobre UDP; TCP é a associação usual de HTTP/1.1 e HTTP/2.
+- **B)** acerta QUIC/UDP, mas o acesso HTTPS usa normalmente 443 e mantém proteção criptográfica.
+- **C)** QUIC opera sobre UDP e provê à conexão HTTP/3 os mecanismos necessários, normalmente na porta 443.
+- **D)** QUIC não é dispensado nem existe uma conexão TCP paralela obrigatória para fornecer a confiabilidade do HTTP/3.
 
-**Conceito:** HTTP/3 e QUIC.
+**Conceito:** associação entre HTTP/3, QUIC, UDP e porta usual 443.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** aplicar a regra histórica “HTTP usa TCP” ou imaginar que UDP elimine confiabilidade e proteção da pilha superior.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** recupere o conjunto completo: HTTP/3 → QUIC → UDP → normalmente 443.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [HTTP e HTTPS](semana_02_estudo.md#s2-d3-http-https), nos trechos que distinguem HTTP/1.1 e HTTP/2 em TCP de HTTP/3 sobre QUIC/UDP; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 ### Comentário S2D6Q259
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de DHCPv4 exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** o cliente primeiro descobre servidores, recebe oferta, solicita formalmente a escolhida e recebe a confirmação da concessão.
+- **B)** servidor não oferece antes de o cliente anunciar a descoberta, e a confirmação não antecede a solicitação.
+- **C)** o cliente precisa receber uma oferta antes de enviar o pedido referente à concessão escolhida.
+- **D)** uma solicitação não inicia a sequência clássica antes da descoberta e da oferta correspondente.
 
-**Conceito:** DHCPv4.
+**Conceito:** expansão e ordem cronológica de DORA no DHCPv4.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** reconhecer as quatro mensagens verdadeiras, mas aceitar uma permutação incompatível com o diálogo cliente-servidor.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** conte a conversa: cliente procura, servidor oferece, cliente pede e servidor confirma.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [DHCP — sequência DORA](semana_02_estudo.md#s2-d3-dhcp), na lista ordenada das mensagens; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 ### Comentário S2D6Q260
 
 **Nível:** Médio
 
 **Uso:** Essenciais
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de DNS exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** DNS publica vários tipos de dados e usa TCP, por exemplo, em transferências de zona e outras condições que o exijam.
+- **B)** o sistema distribuído trabalha com registros diversos, e seu transporte clássico contempla tanto UDP quanto TCP na porta 53.
+- **C)** resolvedor recursivo não se torna autoridade da zona e pode reutilizar cache enquanto o TTL permanecer válido.
+- **D)** DNSSEC busca autenticidade e integridade dos dados, não confidencialidade, e não elimina TCP do DNS clássico.
 
-**Conceito:** DNS.
+**Conceito:** finalidade do DNS e coexistência de UDP e TCP no transporte clássico.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** reduzir DNS a nome→IPv4 e 53/UDP ou atribuir confidencialidade ao DNSSEC.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** lembre três dimensões independentes: tipos de registro, papel de autoridade/recursão/cache e transporte UDP mais TCP.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [DNS](semana_02_estudo.md#s2-d3-dns), nas subseções de componentes, registros, cache/TTL e transportes; e [D6-RF-MX-05](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 ### Comentário S2D6Q261
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: A.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de correio eletrônico exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** SMTP não oferece sincronização de caixa, e POP3 não é o mecanismo de transferência entre MTAs nem preserva pastas compartilhadas.
+- **B)** inverte os papéis; IMAP acessa a caixa, enquanto SMTP não sincroniza pastas do usuário.
+- **C)** POP3 não é protocolo de submissão, e IMAP não transfere mensagens entre servidores de correio.
+- **D)** SMTP movimenta a mensagem na submissão e entrega, e IMAP mantém no servidor o estado necessário ao acesso por vários clientes.
 
-**Conceito:** correio eletrônico.
+**Conceito:** separação entre envio por SMTP e acesso sincronizado por IMAP.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** atribuir a qualquer protocolo de e-mail todas as etapas ou trocar movimentação da mensagem por acesso à caixa.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** divida a necessidade em verbos: enviar/submeter aponta para SMTP; acessar e sincronizar no servidor aponta para IMAP.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Correio eletrônico — SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email), nas subseções de funções e fluxo integrado; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 ### Comentário S2D6Q262
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de SFTP e SSH exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** FTP acrescido de TLS explícito é FTPS; SFTP pertence à família SSH e não inicia como FTP em 21/TCP.
+- **B)** FTPS preserva o protocolo FTP e usa TLS, não é o subsistema de arquivos do SSH.
+- **C)** SFTP opera sobre transporte SSH, normalmente em 22/TCP, e pode aproveitar as chaves e políticas de autenticação desse serviço.
+- **D)** Telnet é protocolo distinto e não fornece a proteção criptográfica nativa oferecida pelo SSH.
 
-**Conceito:** SFTP e SSH.
+**Conceito:** SFTP como protocolo de transferência sobre SSH, distinto de FTPS e Telnet.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** interpretar a letra “S” como simples versão TLS do FTP ou fundir protocolos que oferecem acesso remoto.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** mantenha as famílias: SFTP/SSH usam 22; FTPS é FTP+TLS; Telnet é terminal sem a proteção esperada.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [FTP, FTPS, SFTP, SSH e Telnet](semana_02_estudo.md#s2-d3-transferencia-remota), especialmente as subseções SFTP e SSH e a distinção para FTPS; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 ### Comentário S2D6Q263
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de SNMP exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** MIB não é endereço de rede, e OID identifica objeto; community string é outro elemento usado em versões como v1/v2c.
+- **B)** a MIB descreve a organização lógica dos objetos, e o OID fornece o identificador do contador consultado.
+- **C)** inverte estrutura e identificador, além de confundir OID com as operações realizadas sobre o objeto.
+- **D)** MIB/OID descrevem o que é gerenciado e não substituem mecanismos de autenticação, privacidade e autorização do SNMPv3.
 
-**Conceito:** SNMP.
+**Conceito:** finalidade complementar da MIB e do OID na gerência SNMP.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** trocar hierarquia por identificador ou transformar metadados de gerenciamento em credenciais de segurança.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** leia MIB como catálogo/estrutura e OID como o endereço lógico de uma entrada específica nesse catálogo.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp), nas definições de gerente, agente, MIB, OID e operações; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 ### Comentário S2D6Q264
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de NAT e PAT exigida no cenário.
+- **A)** inverte a distinção; NAT básico traduz endereço, e PAT acrescenta os identificadores de transporte.
+- **B)** sem portas ou outro identificador único, fluxos iguais no mesmo endereço público não poderiam ser demultiplexados adequadamente.
+- **C)** PAT normalmente inclui tradução de endereço e depende de estado/mapeamento para encaminhar cada retorno ao host correto.
+- **D)** portas públicas diferentes permitem multiplexar as conexões e relacionar cada resposta à origem interna correspondente.
 
-**Conceito:** NAT e PAT.
+**Conceito:** tradução adicional de portas e multiplexação de fluxos pelo PAT/NAPT.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** usar NAT como termo amplo e esquecer a diferença específica pedida ou imaginar tradução sem tabela de retorno.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure o campo extra que torna únicas conexões sob o mesmo IP público: a porta de transporte traduzida.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat), nas definições e no exemplo da tabela com portas públicas diferentes; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 ### Comentário S2D6Q265
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de NTP exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** NTP alinha a referência temporal usada pelos sistemas, enquanto a apresentação local depende de fuso e regras de horário.
+- **B)** o protocolo sincroniza relógios e usa convencionalmente UDP, não apenas distribuição de fuso por TCP.
+- **C)** TTL controla o reaproveitamento de dados DNS em cache e não serve como fonte de tempo para NTP.
+- **D)** NTP atua nos relógios dos hosts; não é ferramenta posterior de reordenação dos arquivos de log.
 
-**Conceito:** NTP.
+**Conceito:** finalidade e porta do NTP e distinção entre sincronização temporal e fuso local.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** tentar corrigir apenas a forma de exibição ou relacionar TTL de registros à referência do relógio.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** diferencie instante e apresentação: NTP sincroniza o instante; fuso determina como esse instante aparece ao usuário.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp), nos trechos sobre 123/UDP, correlação de logs e diferença entre referência e fuso; e [D6-RF-MX-06](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 ### Comentário S2D6Q266
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de vulnerabilidade, ameaça e risco exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** disponibilidade é a propriedade de acesso oportuno ao serviço ou dado, não a combinação entre chance de exploração e consequência.
+- **B)** auditoria examina registros, controles e conformidade; não denomina a exposição resultante de ameaça, vulnerabilidade e impacto.
+- **C)** no modelo operacional estudado, risco expressa a possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto; probabilidade e impacto sustentam sua análise e priorização.
+- **D)** não repúdio é a capacidade de produzir evidência contra a negação falsa de uma ação, e não uma medida de risco.
 
-**Conceito:** vulnerabilidade, ameaça e risco.
+**Conceito:** distinção entre vulnerabilidade, ameaça, impacto e risco.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** trocar um conceito de gestão de risco por uma propriedade de segurança ou por um mecanismo de controle.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** identifique os papéis: vulnerabilidade é fraqueza; ameaça é causa potencial; impacto é consequência; a combinação analisada para decidir tratamento é risco.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
-
+**Referência:** [Conceitos de risco](semana_02_estudo.md#s2-d4-conceitos-risco), com recuperação em [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
 ### Comentário S2D6Q267
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de AAA exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** troca as perguntas; identidade pertence à autenticação, e permissão pertence à autorização.
+- **B)** credenciais válidas permitem autenticar, mas a política de função pode negar a ação durante a autorização.
+- **C)** registro e exame de ações pertencem a accounting/auditoria; não repúdio é propriedade distinta.
+- **D)** validação de credencial é autenticação, enquanto a atribuição/uso de papéis participa da decisão de autorização.
 
-**Conceito:** AAA.
+**Conceito:** diferença lógica entre provar quem é o sujeito e decidir o que ele pode fazer.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** presumir que login bem-sucedido concede automaticamente toda ação ou inverter os componentes AAA.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** faça duas perguntas em ordem: “quem é?” para autenticação; “pode fazer isso?” para autorização.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria), nas subseções 3.1 e 3.2; e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 ### Comentário S2D6Q268
 
-**Nível:** Médio
+**Nível:** Difícil
 
 **Uso:** Aprofundamento
-**Alternativa correta: D.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de ataques de rede exigida no cenário.
+- **A)** a primeira parte admite corretamente captura passiva, mas spoofing é definido pela falsificação e não exige controlar todos os pacotes do caminho.
+- **B)** mantém os verbos definidores separados — falsificar no spoofing e interpor-se, interceptar e possivelmente alterar no on-path.
+- **C)** sniffing não requer alteração, e on-path descreve posição/intermediação no fluxo, não apenas falsificação de origem fora dele.
+- **D)** acerta spoofing, porém um atacante on-path pode observar e potencialmente modificar a comunicação interceptada.
 
-**Conceito:** ataques de rede.
+**Conceito:** distinção entre falsificação de identidade, captura de tráfego e interposição ativa no caminho.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** tratar técnicas que podem ser combinadas como sinônimos ou tornar alteração requisito de toda observação.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** associe um verbo a cada técnica: sniffing captura, spoofing falsifica e on-path interpõe-se no fluxo.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede), nas subseções de spoofing, sniffing e ataque on-path; e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 ### Comentário S2D6Q269
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de IDS exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** IDS pode receber tráfego espelhado, detectar e alertar sem ocupar posição capaz ou obrigada a bloquear.
+- **B)** a descrição funcional é de IDS; IPS caracteriza-se pela capacidade preventiva em linha ou posição equivalente.
+- **C)** bloqueio necessário de pacotes é comportamento de prevenção, não requisito definidor de um IDS.
+- **D)** IDS e IPS possuem posições e capacidades diferentes e nenhum deles garante detectar ou bloquear todo ataque.
 
-**Conceito:** IDS.
+**Conceito:** diferença operacional entre detecção/alerta por IDS e prevenção em linha por IPS.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** selecionar o controle mais interventivo sem observar que o requisito exclui bloqueio obrigatório.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** destaque os verbos: “detectar e alertar” aponta para IDS; “interromper em linha” apontaria para IPS.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips), nas subseções que contrastam monitoramento/alerta com prevenção em linha; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 ### Comentário S2D6Q270
 
 **Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de DMZ exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** unir exposição pública e ativos internos amplia movimento lateral e elimina uma barreira de segmentação importante.
+- **B)** retirar o portal do perímetro e liberar qualquer destino elimina controles justamente onde a exposição é maior.
+- **C)** DMZ é zona de exposição controlada e não fonte automaticamente confiável para acesso irrestrito à rede interna.
+- **D)** a DMZ recebe o serviço exposto, enquanto regras mínimas e explícitas limitam o que um eventual comprometimento alcançaria internamente.
 
-**Conceito:** DMZ.
+**Conceito:** DMZ como segmento intermediário com comunicação interna estritamente necessária.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** interpretar DMZ como rede sem filtros ou como justificativa para confiar no serviço exposto.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** presuma o portal comprometível e pergunte qual opção reduz o caminho até os dados ao mínimo funcional documentado.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [DMZ](semana_02_estudo.md#s2-d4-dmz), nos princípios de exposição intermediária, fluxo mínimo e presunção de possível comprometimento; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 ### Comentário S2D6Q271
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de limites da VPN exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** na questão, a VPN está corretamente configurada e operacional; proteger o tráfego em trânsito dentro do escopo do túnel é justamente uma de suas funções.
+- **B)** a autenticação usada para estabelecer o túnel pode integrar a solução VPN e foi dada como configurada no cenário; isso não equivale a autorizar todas as operações nas aplicações.
+- **C)** a VPN protege o canal, mas não remove malware do endpoint nem substitui os controles de autorização de cada sistema. Um dispositivo comprometido pode usar um túnel criptograficamente válido.
+- **D)** proteção de integridade dos dados em trânsito é uma propriedade esperada da suíte criptográfica do túnel corretamente configurado, dentro do escopo descrito.
 
-**Conceito:** limites da VPN.
+**Conceito:** diferença entre proteção do túnel VPN, postura do endpoint e autorização na aplicação.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** estender a segurança do canal ao dispositivo e aos privilégios de negócio exercidos depois que o tráfego chega.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** delimite o escopo: VPN protege dados em trânsito e autentica conforme o mecanismo; antimalware, correções do endpoint e autorização de ações permanecem controles separados.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
-
+**Referência:** [VPN](semana_02_estudo.md#s2-d4-vpn), com contraste em [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 ### Comentário S2D6Q272
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de hash exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** reversibilidade por chave caracteriza criptografia, enquanto hash é projetado como transformação unidirecional.
+- **B)** comparar o resumo calculado com referência protegida ajuda a detectar alteração, mas não oferece caminho normal de recuperação da entrada.
+- **C)** hash sem segredo não cifra nem autentica origem; se ambos os valores puderem ser trocados, a comparação perde a confiança.
+- **D)** funções têm saídas finitas e colisões existem matematicamente; a segurança busca torná-las impraticáveis, não impossíveis.
 
-**Conceito:** hash.
+**Conceito:** uso de hash para integridade e distinção para cifra reversível e autenticação.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** usar informalmente “codificar” como se o resumo pudesse ser decifrado ou lhe atribuir garantias que exigem HMAC/assinatura.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure três elementos: resumo de tamanho fixo, comparação com referência confiável e ausência de operação inversa por chave.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [Hash, MAC e armazenamento de senhas — hash](semana_02_estudo.md#s2-d4-hash-hmac-senhas), incluindo o uso de referência confiável e os limites de confidencialidade/autenticação; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 ### Comentário S2D6Q273
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de assinatura digital exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** inverte os papéis do par de chaves: a chave privada do signatário cria a assinatura, enquanto a chave pública correspondente permite verificá-la.
+- **B)** assinatura digital não tem como objetivo ocultar o documento; confidencialidade exige criptografia apropriada e é propriedade distinta.
+- **C)** no modelo de assinatura assimétrica, o titular usa a chave privada para assinar, e terceiros usam a chave pública correspondente para verificar integridade e autenticidade conforme o esquema.
+- **D)** senha compartilhada é um segredo simétrico; não oferece a mesma verificabilidade pública e separação entre chave privada e pública.
 
-**Conceito:** assinatura digital.
+**Conceito:** criação e verificação de assinatura digital por criptografia assimétrica.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** aplicar à assinatura a direção usada para confidencialidade ou confundir assinatura com cifragem de todo o conteúdo.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte quem precisa poder produzir e quem precisa poder verificar: somente o titular controla a privada; verificadores usam a pública.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
-
+**Referência:** [Assinatura digital e certificado](semana_02_estudo.md#s2-d4-assinatura-certificado), com contraste em [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 ### Comentário S2D6Q274
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de TLS exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** autenticação do servidor, confidencialidade e integridade dos dados em trânsito são propriedades pretendidas quando o TLS é validado e configurado adequadamente.
+- **B)** segurança do canal não atesta veracidade do conteúdo nem substitui a autorização de cada ação pela aplicação.
+- **C)** TLS protege justamente dados durante o transporte; proteção de armazenamento exige mecanismos próprios.
+- **D)** endpoint comprometido está fora do escopo direto, e alguns metadados continuam observáveis apesar da cifra.
 
-**Conceito:** TLS.
+**Conceito:** propriedades do TLS e limite entre proteção do canal, endpoint e aplicação.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** ampliar a autenticação do servidor e a cifra em trânsito para garantias absolutas sobre conteúdo, permissão ou endpoint.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** delimite fisicamente o canal: TLS protege o que transita entre os extremos configurados, não tudo o que existe antes, depois ou dentro da aplicação.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [TLS](semana_02_estudo.md#s2-d4-tls), nas propriedades pretendidas e na lista de elementos fora do canal; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 ### Comentário S2D6Q275
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de WPA3 exigida no cenário.
+- **A)** SAE melhora a troca autenticada, mas não corrige senha fraca, firmware vulnerável ou administração exposta.
+- **B)** SAE foi desenhado para evitar que a captura passiva forneça o mesmo verificador reutilizável em ataques offline do modelo PSK.
+- **C)** clientes legados podem negociar WPA2 no modo de transição, de modo que a proteção depende do modo realmente utilizado.
+- **D)** SAE é a marca técnica do WPA3-Personal, mas a segurança continua sendo resultado da configuração e de controles complementares.
 
-**Conceito:** WPA3.
+**Conceito:** uso de SAE no WPA3-Personal e permanência de requisitos operacionais de segurança.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** interpretar a adoção de padrão mais novo como eliminação automática de senha forte, atualização e segmentação.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** aceite a alternativa que combine a melhoria específica, SAE, com limites realistas; rejeite promessas de invulnerabilidade.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi), nas subseções WPA3, modo de transição e boas práticas; e [D6-RF-MX-08](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 ### Comentário S2D6Q276
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de contenção exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** apagar registros compromete investigação e cadeia de custódia; conter não significa destruir evidência.
+- **B)** restrição temporária reduz o dano em curso e ganha tempo para remover a causa e restaurar de modo controlado.
+- **C)** remover persistência e corrigir o ponto de entrada são objetivos de erradicação, posteriores ou parcialmente sobrepostos à contenção.
+- **D)** restabelecer ativos validados e acompanhar recorrência pertencem à recuperação, não ao objetivo imediato de limitar expansão.
 
-**Conceito:** contenção.
+**Conceito:** contenção como limitação da propagação e do impacto antes da erradicação e recuperação.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** confundir fases que podem se sobrepor operacionalmente, mas possuem finalidades diferentes.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** associe cada verbo à fase: conter limita, erradicar remove a causa e recuperar restaura/valida a operação.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Resposta a incidentes — resposta e contenção](semana_02_estudo.md#s2-d4-resposta-incidentes), no contraste com erradicação e recuperação; e [D6-RF-MX-09](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 ### Comentário S2D6Q277
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
-**Alternativa correta: B.**
+
+**Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de RPO exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** um ponto das 13h implicaria perda potencial de uma hora, excedendo o RPO de 30 minutos.
+- **B)** somar a janela produz um horário posterior ao incidente, que não representa o limite de perda de dados anterior à interrupção.
+- **C)** um ponto das 14h seria melhor que o limite e também recuperável, mas não é o **mais antigo** ainda aceitável; RPO de 30 minutos não exige perda zero.
+- **D)** `14h − 30 minutos = 13h30`; esse é o limite temporal mais antigo que ainda mantém a perda dentro do objetivo definido.
 
-**Conceito:** RPO.
+**Conceito:** cálculo e interpretação operacional do RPO.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** somar em vez de subtrair a janela ou confundir “ponto aceitável” com “ponto mais antigo aceitável”.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** trate o RPO como a distância máxima para trás a partir do incidente: instante do incidente menos RPO.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
-
+**Referência:** [Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup) e [D6-RF-MX-09 — Resposta, continuidade e objetivos de recuperação](semana_02_estudo.md#s2-d6-rf-mx-09).
 ### Comentário S2D6Q278
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de redundância e backup exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** redundância prioriza continuidade diante da falha de componente, enquanto backup conserva estado recuperável e histórico.
+- **B)** inverte as finalidades; backup normalmente exige restauração, e redundância fornece componente ou caminho alternativo.
+- **C)** RAID pode tolerar falha física específica, mas replica corrupção/exclusão e não equivale a cópia isolada versionada.
+- **D)** os controles são complementares e podem possuir objetivos, tempos e pontos de recuperação diferentes.
 
-**Conceito:** redundância e backup.
+**Conceito:** continuidade por redundância versus recuperação histórica por backup.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** tratar replicação ou RAID como backup e confundir serviço ainda disponível com dado recuperável de versão anterior.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte se o controle mantém a operação agora ou permite voltar no tempo; a primeira função é redundância, a segunda é backup.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Backup e disponibilidade — backup × redundância × alta disponibilidade](semana_02_estudo.md#s2-d4-backup), incluindo o limite de RAID e replicação; e [D6-RF-MX-09](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 ### Comentário S2D6Q279
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de concorrência exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** compartilhar um intervalo não significa executar no mesmo instante, portanto não há paralelismo.
+- **B)** concorrência pode existir com uma única CPU por meio de intercalação e progresso de várias tarefas.
+- **C)** as tarefas concorrem pelo processador e avançam de forma intercalada, sem simultaneidade física.
+- **D)** troca de contexto alterna a tarefa em execução e não cria dois fluxos executando ao mesmo tempo.
 
-**Conceito:** concorrência.
+**Conceito:** diferença entre concorrência e paralelismo.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** interpretar progresso no mesmo intervalo como execução simultânea no mesmo instante.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte se as tarefas podem avançar alternadamente e, em seguida, se executam exatamente ao mesmo tempo.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho que distingue intercalação concorrente de execução simultânea paralela.
 
 ### Comentário S2D6Q280
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de condição de corrida exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** ambas as threads executaram e concluíram; não existe espera circular que impeça o progresso.
+- **B)** o resultado dependeu da intercalação de uma operação não atômica e uma gravação sobrescreveu o efeito da outra.
+- **C)** nenhuma thread foi adiada indefinidamente; o defeito ocorreu mesmo com as duas executando.
+- **D)** não houve reação repetida sem avanço, mas uma única intercalação que perdeu atualização.
 
-**Conceito:** condição de corrida.
+**Conceito:** condição de corrida e atualização perdida.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** confundir erro de valor compartilhado com problemas de ausência de progresso.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** decomponha a atribuição em leitura, soma e escrita e observe se uma thread pode usar um valor desatualizado.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente condição de corrida e atualização perdida em operação composta.
 
 ### Comentário S2D6Q281
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de mutex exigida no cenário.
+- **A)** um contador em oito controla múltiplas unidades e não impõe um único titular na seção crítica.
+- **B)** variável de condição coordena espera por predicado e depende de estado protegido, não substituindo o mutex.
+- **C)** barreira alinha fases de várias threads, mas não concede propriedade exclusiva sobre uma seção.
+- **D)** o mutex expressa exclusão e propriedade, desde que todos os participantes respeitem aquisição e liberação.
 
-**Conceito:** mutex.
+**Conceito:** finalidade do mutex na proteção de seção crítica.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** escolher outro mecanismo de sincronização apenas porque também coordena threads.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure o mecanismo cuja regra central é um titular por vez e liberação pelo fluxo que o adquiriu.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre exclusão mútua e propriedade do mutex.
 
 ### Comentário S2D6Q282
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de deadlock exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** deadlock clássico requer coexistência de exclusão mútua, posse e espera, não preempção e espera circular.
+- **B)** preempção obrigatória rompe uma das condições; a condição necessária é a impossibilidade de retirar o recurso compulsoriamente.
+- **C)** aquisição sem conservar recursos enquanto espera rompe justamente a condição de posse e espera.
+- **D)** ordem acíclica elimina a espera circular em vez de constituí-la.
 
-**Conceito:** deadlock.
+**Conceito:** condições necessárias de Coffman para deadlock.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** substituir uma condição por uma técnica que a rompe e, portanto, previne o impasse.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure quatro restrições que possam coexistir e sustentar um ciclo, não medidas de prevenção.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente as quatro condições necessárias de Coffman.
 
 ### Comentário S2D6Q283
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
-**Alternativa correta: B.**
+
+**Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de starvation exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** o sistema continua concluindo tarefas e não existe ciclo de espera entre participantes.
+- **B)** no livelock, os participantes permanecem ativos reagindo sem avanço útil, o que não ocorre no cenário.
+- **C)** starvation permite progresso global enquanto uma tarefa é preterida; aging eleva gradualmente sua prioridade.
+- **D)** inversão exige uma tarefa prioritária aguardando recurso mantido por outra de prioridade menor.
 
-**Conceito:** starvation.
+**Conceito:** starvation por prioridade e mitigação por aging.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** confundir o adiamento de um participante com impasse, atividade sem progresso ou inversão por lock.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** observe quem progride: se o sistema avança, mas um participante pode esperar para sempre, procure starvation.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), nos trechos sobre starvation, aging e diferenças para outros problemas de progresso.
 
 ### Comentário S2D6Q284
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de Round Robin exigida no cenário.
+- **A)** quantum pequeno faz a fatia expirar mais vezes e tende a aumentar, não eliminar, as trocas de contexto.
+- **B)** é o quantum muito grande que aproxima Round Robin de FCFS, porque cada processo tende a executar por longos intervalos antes da preempção.
+- **C)** Round Robin é preemptivo; reduzir o quantum torna a preempção por fim de fatia mais frequente.
+- **D)** fatias curtas elevam o número de preempções e o custo administrativo de salvar e restaurar contextos.
 
-**Conceito:** Round Robin.
+**Conceito:** efeito do tamanho do quantum no Round Robin.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** inverter os efeitos de quantum pequeno e quantum grande.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** imagine uma mesma carga dividida em fatias: quanto menores as fatias, mais fronteiras e trocas; quanto maiores, mais o comportamento se aproxima de FCFS.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
-
+**Referência:** [Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10).
 ### Comentário S2D6Q285
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de polling e interrupção exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** polling parte de consultas iniciadas pela CPU, enquanto interrupção permite ao dispositivo notificar a ocorrência do evento.
+- **B)** a alternativa inverte as iniciativas que caracterizam cada mecanismo.
+- **C)** interrupção não exige consulta periódica para descobrir cada evento; a sinalização é sua diferença central.
+- **D)** interrupção notifica e não define quem transfere todo o bloco; transferência em bloco remete a DMA.
 
-**Conceito:** polling e interrupção.
+**Conceito:** diferença operacional entre polling e interrupção.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** inverter quem inicia a verificação ou atribuir à interrupção a função de transferir dados.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte se a CPU precisa perguntar repetidamente ou se o dispositivo pode chamar sua atenção quando necessário.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente a diferença entre consulta repetida por polling e sinalização por interrupção.
 
 ### Comentário S2D6Q286
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de DMA exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** o cenário afasta a cópia de cada palavra pela CPU, característica da E/S programada.
+- **B)** a CPU prepara a operação, mas a controladora realiza a transferência do bloco e depois sinaliza a conclusão.
+- **C)** interrupção pode comunicar conclusão, porém a alternativa descreve a CPU copiando cada unidade, o que não ocorreu.
+- **D)** polling envolve consulta repetida e, como descrito, mantém a CPU responsável por cada transferência.
 
-**Conceito:** DMA.
+**Conceito:** funcionamento e limite da expressão transferência direta por DMA.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** concluir que configuração inicial ou interrupção final elimina a participação do DMA.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** identifique quem move o bloco; se a controladora transfere e a CPU apenas configura e trata o fim, procure DMA.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre DMA, configuração pela CPU e menor intervenção por unidade transferida.
 
 ### Comentário S2D6Q287
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de journaling exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** ausência de commit indica transação incompleta, que não deve ser consolidada como concluída no replay.
+- **B)** journal não é repositório obrigatório de todas as versões nem desfaz automaticamente exclusões válidas.
+- **C)** transações confirmadas podem ser repetidas, enquanto as incompletas são descartadas para recuperar coerência estrutural.
+- **D)** journaling não substitui redundância ou backup quando a mídia deixa de fornecer os blocos físicos.
 
-**Conceito:** journaling.
+**Conceito:** recuperação de consistência por commit e replay do journal.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** transformar journal em versionamento, backup ou mecanismo de reconstrução física da mídia.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure a evidência de commit; ela separa a transação confirmada da operação incompleta durante a recuperação.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), especialmente commit, replay e limite do journaling perante histórico e falha física.
 
 ### Comentário S2D6Q288
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de permissões Linux exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** `6 = 4 + 2 = rw-` para o dono; `4 = r--` para o grupo; `0 = ---` para outros.
+- **B)** leitura e escrita para todos seria `666`, não `640`.
+- **C)** a opção mistura bits entre as tríades; `640` não concede execução ao dono, escrita ao grupo nem leitura a outros.
+- **D)** o primeiro dígito é 6, portanto o dono possui leitura e escrita.
 
-**Conceito:** permissões Linux.
+**Conceito:** interpretação de modo octal Unix por proprietário, grupo e outros.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** somar bits entre classes diferentes ou esquecer a ordem proprietário/grupo/outros.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** leia cada dígito separadamente usando `r=4`, `w=2`, `x=1`: `6→rw-`, `4→r--`, `0→---`.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
-
+**Referência:** [Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10).
 ### Comentário S2D6Q289
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de DACL exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** SACL está ligada à auditoria; a DACL é que reúne ACEs usadas para permitir ou negar acesso.
+- **B)** ACE de negação pode integrar a DACL e participar da decisão efetiva.
+- **C)** a DACL contém ACEs de permissão ou negação, que podem ser explícitas ou herdadas conforme a configuração.
+- **D)** propriedade e DACL são componentes distintos, e ACEs não ficam restritas à configuração de compartilhamento.
 
-**Conceito:** DACL.
+**Conceito:** composição de uma DACL no Windows.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** trocar DACL por SACL, limitar a lista a permissões ou confundi-la com propriedade e compartilhamento.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** associe DACL à decisão de acesso e ACE às entradas que concedem ou negam direitos ao objeto.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10), no trecho sobre DACL, ACEs de permissão ou negação e herança.
 
 ### Comentário S2D6Q290
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de diagnóstico de serviço exigida no cenário.
+- **A)** resposta ICMP não consulta o processo do portal e não comprova a saúde da aplicação.
+- **B)** o teste foi feito por endereço IP e pode funcionar mesmo quando a resolução do nome está incorreta.
+- **C)** ICMP não testa a porta TCP 443, o handshake TLS nem a disponibilidade do processo servidor.
+- **D)** o resultado demonstra alcance IP para ICMP, mas deixa abertas hipóteses nas camadas de transporte, TLS e aplicação.
 
-**Conceito:** diagnóstico de serviço.
+**Conceito:** alcance e limite diagnóstico do `ping`.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** ampliar uma evidência de conectividade de rede para conclusões sobre DNS, porta e aplicação.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** registre exatamente o que foi testado e avance por camadas sem transformar um sucesso parcial em prova do serviço completo.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), no trecho sobre diagnóstico em camadas e limites do `ping` perante transporte e aplicação.
 
 ### Comentário S2D6Q291
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
-**Alternativa correta: A.**
+
+**Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de NTP e logs exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** a comparação criptográfica do conteúdo não depende diretamente de os hosts concordarem sobre o horário.
+- **B)** relógios divergentes podem inverter a ordem aparente dos fatos e dificultar a reconstrução conjunta da sequência do incidente.
+- **C)** um identificador de conta já gravado permanece legível, embora o momento atribuído à ação possa estar incorreto.
+- **D)** severidade e mensagem podem ser interpretadas, mas sua posição correta na linha do tempo fica comprometida.
 
-**Conceito:** NTP e logs.
+**Conceito:** importância da sincronização temporal para correlação de logs.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** confundir campos ainda legíveis no evento com a capacidade de ordenar eventos de fontes diferentes.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** imagine três relógios discordando e pergunte qual análise depende de saber o que ocorreu antes e depois.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), especialmente NTP, consistência de horários e correlação temporal entre registros.
 
 ### Comentário S2D6Q292
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de defesa em profundidade exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** nenhum controle elimina todo risco, e as demais camadas exercem funções preventivas, detectivas e de recuperação.
+- **B)** controles complementares limitam o impacto da falha ou evasão de uma barreira isolada.
+- **C)** credencial e dependência comuns podem criar um único ponto capaz de enfraquecer várias camadas ao mesmo tempo.
+- **D)** backup apoia recuperação, mas não evita exfiltração, indisponibilidade inicial ou persistência do atacante.
 
-**Conceito:** defesa em profundidade.
+**Conceito:** defesa em profundidade e redução de dependências comuns.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** contar produtos como garantia absoluta ou tratar recuperação como substituta de prevenção e detecção.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte o que ainda limita o ataque se uma das barreiras for vencida; essa é a função das camadas complementares.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08), no trecho sobre controles complementares e defesa em profundidade.
 
 ### Comentário S2D6Q293
 
-**Nível:** Muito difícil
+**Nível:** Difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de fluxo web exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** a estação precisa resolver o nome antes de abrir a conexão, e a requisição HTTPS ocorre depois do handshake TLS.
+- **B)** sem configuração estática, DHCP precede a resolução, e TLS sobre HTTP/2 depende da conexão TCP já estabelecida.
+- **C)** a estação obtém configuração, resolve o nome, estabelece TCP, negocia TLS e só então envia a requisição HTTP protegida.
+- **D)** handshake TLS e requisição HTTP não antecedem a conexão TCP que os transporta no cenário especificado.
 
-**Conceito:** fluxo web.
+**Conceito:** encadeamento funcional de DHCP, DNS, TCP, TLS e HTTP/2.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** reconhecer todos os protocolos, mas ignorar a dependência temporal existente entre eles.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte em ordem: como obter configuração, como localizar o servidor, como criar o canal e quando enviar a requisição.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), especialmente DHCP, DNS, estabelecimento do transporte, TLS e HTTP.
 
 ### Comentário S2D6Q294
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de proxy reverso exigida no cenário.
+- **A)** proxy direto atua em nome dos clientes que acessam destinos, e não em nome do serviço publicado.
+- **B)** transparência de saída muda a forma de configuração do cliente, mas continua mediando o lado dos usuários.
+- **C)** cache de saída atende clientes internos que consomem conteúdo externo, direção oposta à do cenário.
+- **D)** o proxy reverso recebe em nome do serviço e escolhe o backend que atenderá a solicitação externa.
 
-**Conceito:** proxy reverso.
+**Conceito:** diferença entre proxy direto e proxy reverso.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** classificar todo intermediário HTTP como proxy de clientes sem observar quem ele representa.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** identifique o lado ocultado e representado: clientes indicam proxy direto; servidores publicados indicam proxy reverso.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), no trecho que diferencia proxy direto e proxy reverso.
 
 ### Comentário S2D6Q295
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
 
-- **A)** Correta. Aplica a regra de LDAP exigida no cenário.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** LDAP fornece operações para consultar e modificar entradas e atributos de um diretório.
+- **B)** Kerberos trata autenticação baseada em tíquetes e não é o protocolo geral de consulta das entradas descritas.
+- **C)** RADIUS apoia AAA de acesso à rede, embora possa integrar-se a uma fonte de identidades separada.
+- **D)** DNS resolve nomes e publica registros, mas não substitui a estrutura hierárquica de usuários e grupos de LDAP.
 
-**Conceito:** LDAP.
+**Conceito:** finalidade do protocolo LDAP.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** escolher outro protocolo ligado a identidade ou nomes sem conferir a operação de diretório solicitada.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** procure o protocolo cujo objeto são entradas e atributos organizados em uma árvore de diretório.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06), especialmente a finalidade de LDAP em serviços de diretório.
 
 ### Comentário S2D6Q296
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
-**Alternativa correta: B.**
 
-**Análise das alternativas:**
-
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de porta e segurança exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-
-**Conceito:** porta e segurança.
-
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
-
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
-
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
-
-### Comentário S2D6Q297
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-**Alternativa correta: D.**
-
-**Análise das alternativas:**
-
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de DDoS exigida no cenário.
-
-**Conceito:** DDoS.
-
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
-
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
-
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
-
-### Comentário S2D6Q298
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Correta. Aplica a regra de evidência exigida no cenário.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** qualquer processo pode escutar a porta, e o número não executa handshake nem valida certificado.
+- **B)** TLS pode operar em outras portas quando configurado, sem perder suas propriedades apenas por causa da numeração.
+- **C)** porta sugere um serviço esperado, mas a segurança depende do protocolo real, da validação, da configuração e dos endpoints.
+- **D)** firewall permite ou bloqueia fluxos; ele não transforma automaticamente protocolo em claro em sessão TLS.
 
-**Conceito:** evidência.
+**Conceito:** diferença entre associação de porta, protocolo efetivo e garantias de segurança.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** tratar convenção operacional como mecanismo criptográfico ou evidência conclusiva do conteúdo.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** use a porta como indício inicial e confirme handshake, certificado, parâmetros e estado dos endpoints antes de concluir.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05), no trecho que trata porta como associação convencional, e não prova de protocolo ou segurança.
 
-### Comentário S2D6Q299
+### Comentário S2D6Q297
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
+
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Correta. Aplica a regra de comandos de observação exigida no cenário.
+- **A)** alteração não autorizada afeta diretamente a integridade do dado.
+- **B)** divulgação de informação sigilosa compromete a confidencialidade.
+- **C)** associação indevida entre usuário e grupo representa falha de identidade ou autorização e pode produzir outros impactos, mas não descreve diretamente indisponibilidade.
+- **D)** saturar o enlace por DDoS impede ou degrada o acesso oportuno ao serviço, atingindo diretamente a disponibilidade.
 
-**Conceito:** comandos de observação.
+**Conceito:** classificação do efeito de um DDoS na tríade CIA.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** classificar pelo mecanismo genérico “ataque” em vez do efeito imediato sobre o ativo.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** pergunte o que aconteceu com o dado ou serviço: foi exposto, alterado ou ficou inacessível? Saturação aponta para disponibilidade.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia), [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede) e [D6-RF-MX-07](semana_02_estudo.md#s2-d6-rf-mx-07).
+### Comentário S2D6Q298
 
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Alternativa correta: C.**
+
+**Análise das alternativas:**
+
+- **A)** conter exige limitar comunicação ou propagação; a aquisição da imagem não isola o host por si só.
+- **B)** copiar o conteúdo preserva inclusive vestígios maliciosos e não remove a persistência do original.
+- **C)** imagem, hashes e cadeia de custódia permitem demonstrar integridade e repetir a análise sem alterar a fonte.
+- **D)** imagem forense preserva o estado investigado, que pode estar comprometido, e não equivale a recuperação limpa.
+
+**Conceito:** preservação de evidência digital antes da erradicação.
+
+**Pegadinha:** confundir aquisição forense com ações que isolam, removem o agente ou restauram o serviço.
+
+**Como pensar:** observe que a equipe está congelando e documentando o estado para análise, não tentando torná-lo operacional.
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09), especialmente preservação de evidências antes de ações de erradicação.
+
+### Comentário S2D6Q299
+
+**Nível:** Médio
+
+**Uso:** Simulado
+
+**Alternativa correta: A.**
+
+**Análise das alternativas:**
+
+- **A)** `Get-Process` consulta e lista informações de processos no PowerShell sem encerrá-los por si só.
+- **B)** `Stop-Process` encerra processos pelo PowerShell; não é comando meramente consultivo.
+- **C)** `kill` envia sinal a um processo em sistemas Unix-like; conforme o sinal, solicita término ou outra alteração de estado.
+- **D)** `taskkill` solicita ou força o encerramento de processo no Windows e, portanto, altera o estado do sistema.
+
+**Conceito:** separação entre observação e ação na administração de processos.
+
+**Pegadinha:** presumir que todo comando cujo nome menciona processo apenas lista ou, ao contrário, que a listagem já encerra o alvo.
+
+**Como pensar:** classifique pelo verbo: `Get` observa; `Stop`, `kill` e `taskkill` solicitam mudança de estado.
+
+**Referência:** [Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos), com recuperação em [D6-RF-MX-10](semana_02_estudo.md#s2-d6-rf-mx-10).
 ### Comentário S2D6Q300
 
 **Nível:** Muito difícil
 
 **Uso:** Simulado
+
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **B)** Correta. Aplica a regra de validação de continuidade exigida no cenário.
-- **C)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
-- **D)** Incorreta. Não preserva a regra ou a relação técnica indicada no enunciado.
+- **A)** I e II são verdadeiras, mas III também é; continuidade exige testar componentes organizacionais e técnicos além do ponto e do horário de restauração.
+- **B)** as três afirmações calculam os objetivos temporais e preservam a diferença entre infraestrutura disponível e serviço de negócio funcional.
+- **C)** I e III são verdadeiras, mas II também é; 16h30 fica duas horas e meia após o incidente, embora as dependências ainda impeçam declarar recuperação.
+- **D)** II e III são verdadeiras, mas I também é; recuperar 13h35 em incidente às 14h implica perda potencial de 25 minutos, dentro do RPO de 30.
 
-**Conceito:** validação de continuidade.
+**Conceito:** avaliação conjunta de RPO, RTO, dependências e critérios de continuidade efetiva.
 
-**Pegadinha:** trocar a função do componente por outra função de protocolo, controle ou mecanismo próximo.
+**Pegadinha:** declarar sucesso pelo relógio ou pelo backup sem validar a transação completa e as dependências do serviço.
 
-**Como pensar:** identifique primeiro o objetivo técnico solicitado e descarte opções que mudam camada, finalidade ou garantia.
+**Como pensar:** calcule perda e indisponibilidade, depois teste dados, integrações, pessoas e operação; objetivo temporal atendido não encerra sozinho a recuperação.
 
-**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
-
-## Comentários das questões extras do Dia 6
-
+**Referência:** [Recuperação por dependências e validação ponta a ponta](semana_02_estudo.md#s2-d6-recuperacao-dependencias) e [Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup), nos trechos sobre RPO, RTO, dependências e validação do negócio.
 #### Comentário Extra Dia 6.1
 **Alternativa correta: B.**
 
@@ -15887,6 +17324,7 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-01).
 
 #### Comentário Extra Dia 6.2
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -15895,18 +17333,18 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A ausência de retransmissão nativa no UDP não impede que a própria aplicação implemente confirmação, ordenação ou recuperação.
-- **B)** Incorreta. Um fluxo UDP não passa a ter suas perdas corrigidas automaticamente pelo TCP, que é outro protocolo de transporte.
-- **C)** Correta. A aplicação pode acrescentar os mecanismos de confiabilidade que o UDP não fornece por si só.
-- **D)** Incorreta. DNS é um serviço de aplicação que pode usar UDP ou TCP; ele não substitui o protocolo de transporte.
+- **A)** uma ausência nativa no transporte não proíbe a aplicação de implementar mecanismo próprio.
+- **B)** o UDP não corrige automaticamente toda perda antes da entrega à aplicação.
+- **C)** confirmações, temporizadores e novas tentativas podem ser implementados na camada de aplicação conforme a necessidade.
+- **D)** o UDP não garante entrega nem unicidade de cada datagrama recebido.
 
-**Conceito:** inferência.
+**Conceito:** inferência válida e limite da expressão “não oferece nativamente”.
 
-**Pegadinha:** converter “não oferece nativamente” em “é impossível oferecer em qualquer camada”.
+**Pegadinha:** transformar ausência de recurso nativo em proibição de implementá-lo ou em garantia oposta.
 
-**Como pensar:** separe a garantia oferecida pelo transporte da garantia que pode ser construída pela aplicação.
+**Como pensar:** separe o que o protocolo fornece por si do que a aplicação pode acrescentar acima dele.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-02).
+**Referência:** [D6-RF-PT-02 — Inferência](semana_02_estudo.md#s2-d6-rf-pt-02), aplicada à ausência de garantias nativas do UDP.
 
 #### Comentário Extra Dia 6.3
 **Alternativa correta: A.**
@@ -15931,6 +17369,7 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-03).
 
 #### Comentário Extra Dia 6.4
+
 **Alternativa correta: D.**
 
 **Nível:** Médio
@@ -15939,21 +17378,22 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Retirar “seu” elimina o possessivo, mas não informa de quem era o acesso e ainda prejudica a construção da frase.
-- **B)** Incorreta. A proximidade de “gerente” não garante o referente do possessivo; o contexto admite as duas pessoas.
-- **C)** Incorreta. Alterar o número não identifica a titularidade do acesso e pode mudar indevidamente o sentido.
-- **D)** Correta. Nomear “acesso da analista” ou “acesso da gerente” fixa expressamente o antecedente pretendido.
+- **A)** a retirada do possessivo não informa se o acesso pertence à analista ou à gerente.
+- **B)** mudar a posição do possessivo não elimina automaticamente os dois antecedentes compatíveis.
+- **C)** a flexão não identifica a titular e ainda cria incompatibilidade com o acesso singular do exemplo.
+- **D)** o complemento nominal explícito seleciona uma das duas referentes conforme a intenção comunicativa.
 
-**Conceito:** ambiguidade.
+**Conceito:** ambiguidade pronominal e explicitação do referente.
 
-**Pegadinha:** supor que o antecedente mais próximo resolve automaticamente todo possessivo ambíguo.
+**Pegadinha:** alterar forma ou posição do pronome sem resolver a dupla possibilidade de referência.
 
-**Como pensar:** substitua o pronome pelo nome de cada possível referente; se ambas as leituras forem possíveis, explicite a relação.
+**Como pensar:** pergunte “acesso de quem?” e escolha a redação que responde isso dentro do próprio período.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-04).
+**Referência:** [D6-RF-PT-04 — Ambiguidade](semana_02_estudo.md#s2-d6-rf-pt-04), na orientação de explicitar o referente.
 
 #### Comentário Extra Dia 6.5
-**Alternativa correta: D.**
+
+**Alternativa correta: B.**
 
 **Nível:** Médio
 
@@ -15961,20 +17401,21 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. “Pode” indica possibilidade ou capacidade, e não garantia de que todo evento será detectado e alertado.
-- **B)** Incorreta. Alertar não equivale a bloquear; um IDS pode operar fora de linha e apenas produzir detecção e aviso.
-- **C)** Incorreta. IDS e firewall exercem funções diferentes e complementares, sem relação de substituição expressa na frase.
-- **D)** Correta. A alternativa conserva o valor modal de “pode” e limita a conclusão à possibilidade ou capacidade de alerta.
+- **A)** “pode” não converte detecção e alerta em garantia universal.
+- **B)** preserva a possibilidade ou capacidade e rejeita uma promessa absoluta de detecção.
+- **C)** o verbo não cria bloqueio, e IDS não se torna IPS pela modalidade empregada.
+- **D)** possibilidade ou capacidade não equivale a obrigação nem exclui falhas de detecção.
 
-**Conceito:** modalidade.
+**Conceito:** modalidade verbal e alcance de afirmações técnicas.
 
-**Pegadinha:** trocar possibilidade por certeza e detecção por bloqueio automático.
+**Pegadinha:** substituir “pode” por “deve”, “sempre” ou “garante”.
 
-**Como pensar:** identifique primeiro a modalidade do verbo e depois diferencie o papel de IDS, IPS e firewall.
+**Como pensar:** classifique a força do verbo antes de avaliar qualquer conclusão técnica adicionada.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-05).
+**Referência:** [D6-RF-PT-05 — Modalidade](semana_02_estudo.md#s2-d6-rf-pt-05), na distinção entre possibilidade, obrigação e garantia.
 
 #### Comentário Extra Dia 6.6
+
 **Alternativa correta: C.**
 
 **Nível:** Médio
@@ -15983,18 +17424,18 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O período original recomenda testar mesmo diante da integridade; não afirma que a integridade proíba o teste.
-- **B)** Incorreta. A orientação não condiciona o teste à existência de corrupção; ela vale apesar de o backup parecer íntegro.
-- **C)** Correta. “Mesmo íntegro” preserva a concessão de “ainda que”, e a necessidade do teste de restauração permanece.
-- **D)** Incorreta. A frase original não diz que o teste produz integridade, mas que a integridade aparente não dispensa validar a restauração.
+- **A)** transforma a integridade aparente em causa para dispensar exatamente a ação recomendada.
+- **B)** cria uma condição restritiva que não aparece no enunciado original.
+- **C)** “mesmo que” mantém a concessão e a necessidade de testar a restauração.
+- **D)** inverte a relação lógica e atribui ao teste o poder de produzir a integridade do backup.
 
-**Conceito:** reescrita.
+**Conceito:** equivalência semântica em reescrita concessiva.
 
-**Pegadinha:** inverter causa e efeito ou transformar uma concessão em condição.
+**Pegadinha:** trocar concessão por causa, condição exclusiva ou relação de resultado.
 
-**Como pensar:** compare o obstáculo admitido — backup íntegro — e a orientação que continua válida — testar a restauração.
+**Como pensar:** preserve simultaneamente a ressalva sobre integridade e a orientação de executar o teste.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-06).
+**Referência:** [D6-RF-PT-06 — Reescrita](semana_02_estudo.md#s2-d6-rf-pt-06), na preservação da concessão e da orientação principal.
 
 #### Comentário Extra Dia 6.7
 **Alternativa correta: B.**
@@ -16041,17 +17482,17 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-08).
 
 #### Comentário Extra Dia 6.9
-**Alternativa correta: C.**
+**Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. A vírgula separa indevidamente o sujeito `Os administradores` do verbo `revogaram`.
+- **A)** Correta. A vírgula delimita adequadamente o adjunto adverbial deslocado `Após a contenção`.
 - **B)** Incorreta. A vírgula rompe a ligação entre o verbo `preservou` e seu objeto direto `registros essenciais`.
-- **C)** Correta. A vírgula delimita adequadamente o adjunto adverbial deslocado `Após a contenção`.
+- **C)** Incorreta. A vírgula separa indevidamente o sujeito `Os administradores` do verbo `revogaram`.
 - **D)** Incorreta. A vírgula separa o sujeito `Os servidores vulneráveis` da locução verbal `foram isolados`.
 
 **Conceito:** pontuação.
@@ -16065,7 +17506,7 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 #### Comentário Extra Dia 6.10
 **Alternativa correta: D.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Aprofundamento
 
@@ -16085,53 +17526,55 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-10).
 
 #### Comentário Extra Dia 6.11
+
 **Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Correta. Jitter é a variação da latência ao longo do tempo, exatamente a grandeza perguntada.
-- **B)** Incorreta. Largura de banda é a capacidade nominal do enlace, representada no cenário por 1 Gbit/s.
-- **C)** Incorreta. Broadcast é uma forma de entrega a múltiplos destinos no domínio, não uma métrica de atraso.
-- **D)** Incorreta. CIDR expressa prefixos e divisão de redes IP; não mede variação temporal.
+- **A)** jitter é a variação da latência, exatamente o comportamento mostrado pelas medições.
+- **B)** throughput mede vazão efetivamente transmitida, não oscilação temporal do atraso.
+- **C)** goodput mede carga útil entregue, excluindo sobrecargas conforme o recorte da medição.
+- **D)** largura de banda representa capacidade nominal ou disponível, não variação da latência.
 
-**Conceito:** métricas.
+**Conceito:** distinção entre métricas de capacidade, vazão útil e atraso.
 
-**Pegadinha:** confundir capacidade, vazão útil, atraso e variação do atraso porque todos aparecem no diagnóstico de rede.
+**Pegadinha:** escolher uma métrica de desempenho verdadeira, mas que mede outra grandeza.
 
-**Como pensar:** associe cada termo à sua unidade ou função: bits por segundo para vazão; tempo para latência; variação desse tempo para jitter.
+**Como pensar:** identifique primeiro a grandeza que varia; atraso que oscila aponta para jitter.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
+**Referência:** [D6-RF-MX-01 — Recuperação ativa de redes e métricas](semana_02_estudo.md#s2-d6-rf-mx-01), na distinção entre latência, jitter, throughput, goodput e largura de banda.
 
 #### Comentário Extra Dia 6.12
+
 **Alternativa correta: B.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. O quadro vale para o enlace local e é removido no roteador; seus endereços de enlace não seguem intactos até o destino.
-- **B)** Correta. Depois de examinar o pacote IP, o roteador o encapsula em um novo quadro adequado ao próximo enlace Ethernet.
-- **C)** Incorreta. DNS resolve nomes e registros; não é uma conversão realizada para encaminhar quadros.
-- **D)** Incorreta. O pacote IP não é simplesmente eliminado: ele é encaminhado após ajustes próprios do roteamento, como TTL, e novo encapsulamento.
+- **A)** endereços MAC pertencem ao enlace e não permanecem como identidade fim a fim por todos os roteadores.
+- **B)** o roteador desencapsula o quadro local, consulta o pacote IP e o encapsula em novo quadro para o próximo enlace.
+- **C)** o pacote IP é preservado para o encaminhamento; o roteador não envia apenas a carga de aplicação.
+- **D)** o quadro muda no salto, enquanto os endereços IP fim a fim não são simplesmente trocados a cada roteador.
 
-**Conceito:** encapsulamento.
+**Conceito:** relação entre pacote IP e quadro de enlace durante o roteamento.
 
-**Pegadinha:** tratar o quadro de enlace como identidade fim a fim e confundi-lo com o pacote IP transportado.
+**Pegadinha:** tratar endereço MAC como fim a fim ou retirar a camada IP no equipamento intermediário.
 
-**Como pensar:** separe as unidades: o quadro muda a cada enlace; o pacote sustenta o encaminhamento entre redes.
+**Como pensar:** acompanhe separadamente o pacote que cruza redes e o quadro que vale apenas no enlace atual.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
+**Referência:** [D6-RF-MX-02 — Camadas, encapsulamento e evidência](semana_02_estudo.md#s2-d6-rf-mx-02), na renovação do quadro a cada enlace roteado.
 
 #### Comentário Extra Dia 6.13
 **Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -16153,7 +17596,7 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 #### Comentário Extra Dia 6.14
 **Alternativa correta: A.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
@@ -16173,31 +17616,32 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
 #### Comentário Extra Dia 6.15
+
 **Alternativa correta: B.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Revisão
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. Correio, transferência de arquivos, roteamento e sincronização de tempo pertencem a outros protocolos e não correspondem à sequência dada.
-- **B)** Correta. DHCP fornece configuração, DNS resolve nomes, TLS protege o canal e HTTP realiza a comunicação da aplicação web.
-- **C)** Incorreta. Diretório, autenticação, backup e banco de dados não descrevem as funções de DHCP, DNS, TLS e HTTP nessa ordem.
-- **D)** Incorreta. Gerência, tradução, acesso sem fio e arquivo correspondem a funções de SNMP, NAT/PAT, Wi-Fi e protocolos de transferência, não à lista do enunciado.
+- **A)** troca configuração e resolução e atribui aplicação e proteção aos protocolos opostos.
+- **B)** DHCP fornece configuração, DNS resolve/publica nomes, TLS protege o canal e HTTP realiza a interação Web.
+- **C)** cada uma das quatro funções foi associada a um protocolo de papel diferente.
+- **D)** DHCP não é protocolo de aplicação Web, DNS não protege o canal, TLS não resolve nomes e HTTP não configura o cliente.
 
-**Conceito:** fluxo de protocolos.
+**Conceito:** papel funcional de protocolos em um fluxo de acesso Web.
 
-**Pegadinha:** reconhecer os nomes dos protocolos, mas aceitar uma sequência em que todas as funções foram deslocadas.
+**Pegadinha:** permutar funções verdadeiras entre protocolos conhecidos.
 
-**Como pensar:** acompanhe o acesso ao portal: configurar o host, resolver o nome, proteger o canal e trocar requisições/respostas web.
+**Como pensar:** leia a cadeia como configuração → nomes → proteção do canal → requisição/resposta Web.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
+**Referência:** [D6-RF-MX-05 — Protocolos: transporte, Web, nomes e configuração](semana_02_estudo.md#s2-d6-rf-mx-05), na regra de integração entre os quatro protocolos.
 
 #### Comentário Extra Dia 6.16
 **Alternativa correta: C.**
 
-**Nível:** Difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
@@ -16217,94 +17661,96 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 #### Comentário Extra Dia 6.17
-**Alternativa correta: A.**
 
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Análise das alternativas:**
-
-- **A)** Correta. A fraqueza explorável é vulnerabilidade, o código malicioso representa ameaça, e a combinação de probabilidade e impacto caracteriza risco.
-- **B)** Incorreta. Ativo é algo de valor, CIA reúne objetivos de segurança, e backup é uma cópia recuperável; não formam a sequência pedida.
-- **C)** Incorreta. Firewall, IDS e IPS são controles ou mecanismos de proteção e detecção, não vulnerabilidade, ameaça e risco.
-- **D)** Incorreta. Evento é uma ocorrência observável, NTP sincroniza tempo e VPN protege um túnel; os termos não correspondem ao cenário.
-
-**Conceito:** risco.
-
-**Pegadinha:** confundir a fraqueza existente, a causa potencial que a explora e a avaliação da consequência.
-
-**Como pensar:** organize a cadeia: há uma fraqueza; uma ameaça pode explorá-la; probabilidade e impacto determinam o risco.
-
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
-
-#### Comentário Extra Dia 6.18
-**Alternativa correta: B.**
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Análise das alternativas:**
-
-- **A)** Incorreta. Hash produz resumo unidirecional; não é uma cifra reversível mediante chave.
-- **B)** Correta. Um IPS em linha pode interromper tráfego detectado, e HMAC usa segredo compartilhado para verificar integridade e autenticidade.
-- **C)** Incorreta. WPA3 melhora mecanismos de autenticação, mas ainda exige credenciais e configuração adequadas.
-- **D)** Incorreta. VLAN segmenta logicamente a rede; firewall aplica política sobre fluxos e não é substituído pela segmentação de camada 2.
-
-**Conceito:** controles.
-
-**Pegadinha:** tratar resumo como criptografia, detecção como garantia absoluta ou segmentação como política completa de acesso.
-
-**Como pensar:** diferencie o objetivo de cada controle: resumir, autenticar, detectar/bloquear, segmentar ou autorizar tráfego.
-
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
-
-#### Comentário Extra Dia 6.19
-**Alternativa correta: A.**
-
-**Nível:** Muito difícil
-
-**Uso:** Simulado
-
-**Análise das alternativas:**
-
-- **A)** Correta. Com RPO de 30 minutos às 14h, o ponto recuperado não deve ser anterior a 13h30; o RTO exige restabelecimento em até duas horas.
-- **B)** Incorreta. RPO trata da perda de dados tolerada e do ponto de recuperação, não do prazo para devolver o serviço.
-- **C)** Incorreta. RTO é o tempo-alvo de restabelecimento; a janela de perda máxima pertence ao RPO.
-- **D)** Incorreta. RAID oferece redundância contra certas falhas, mas não preserva necessariamente versões históricas nem substitui backup recuperável.
-
-**Conceito:** RPO e RTO.
-
-**Pegadinha:** trocar o relógio dos dados, definido pelo RPO, pelo cronômetro da indisponibilidade, definido pelo RTO.
-
-**Como pensar:** marque dois eixos: “até que ponto posso perder dados?” e “em quanto tempo o serviço deve voltar?”.
-
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
-
-#### Comentário Extra Dia 6.20
 **Alternativa correta: D.**
 
-**Nível:** Muito difícil
+**Nível:** Médio
 
 **Uso:** Simulado
 
 **Análise das alternativas:**
 
-- **A)** Incorreta. DMA transfere blocos com menor intervenção da CPU por unidade, e journaling ajuda na consistência; nenhum deles equivale às descrições dadas.
-- **B)** Incorreta. Deadlock é um impasse conjunto por dependências; starvation é o adiamento indefinido de um participante enquanto outros podem avançar.
-- **C)** Incorreta. Mutex implementa exclusão mútua e permite, em regra, um titular por vez na seção crítica protegida.
-- **D)** Correta. Interrupções evitam consulta contínua, DMA reduz participação da CPU na transferência, e journaling auxilia a recuperação de consistência.
+- **A)** acerta a vulnerabilidade, mas troca ameaça e risco nas duas posições finais.
+- **B)** a falha não é ameaça, e o agente potencial não corresponde à avaliação de risco.
+- **C)** risco é o resultado da análise, não a fraqueza inicial do componente.
+- **D)** falha explorável é vulnerabilidade, causa potencial é ameaça e probabilidade combinada ao impacto forma o risco.
 
-**Conceito:** E/S e journaling.
+**Conceito:** distinção entre fraqueza, causa potencial e avaliação de risco.
 
-**Pegadinha:** igualar mecanismos próximos de E/S, progresso e persistência que resolvem problemas diferentes.
+**Pegadinha:** permutar conceitos próximos preservando os mesmos três termos nas opções.
 
-**Como pensar:** associe cada mecanismo ao seu objetivo: sinalizar evento, mover dados, excluir concorrência ou recuperar consistência estrutural.
+**Como pensar:** associe fraqueza ao sistema, possibilidade de exploração à ameaça e probabilidade/impacto ao risco.
 
-**Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
+**Referência:** [D6-RF-MX-07 — Segurança: objetivo, identidade, risco e ataque](semana_02_estudo.md#s2-d6-rf-mx-07), nas definições de vulnerabilidade, ameaça e risco.
 
----
+#### Comentário Extra Dia 6.18
+
+**Alternativa correta: B.**
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Análise das alternativas:**
+
+- **A)** acerta a capacidade do IPS, mas atribui ao HMAC a estrutura assimétrica de uma assinatura digital.
+- **B)** o IPS em linha pode tentar bloquear, e o HMAC usa segredo compartilhado para integridade e autenticidade.
+- **C)** acerta o HMAC, mas reduz o IPS em linha ao papel passivo de alerta típico de um IDS.
+- **D)** IPS não substitui todo firewall, e HMAC autentica um resumo; não cifra reversivelmente a mensagem.
+
+**Conceito:** função de prevenção em linha e autenticação simétrica de mensagens.
+
+**Pegadinha:** acertar um dos dois controles e trocar o outro por conceito criptográfico próximo.
+
+**Como pensar:** resolva em dois filtros: ação possível no tráfego e tipo de chave usado para autenticar a mensagem.
+
+**Referência:** [D6-RF-MX-08 — Controles, criptografia e Wi-Fi](semana_02_estudo.md#s2-d6-rf-mx-08), nas distinções firewall × IDS × IPS e HMAC × assinatura digital.
+
+#### Comentário Extra Dia 6.19
+
+**Alternativa correta: A.**
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Análise das alternativas:**
+
+- **A)** o RPO admite no máximo trinta minutos de perda, e o RTO fixa duas horas para restabelecimento após as 14h.
+- **B)** o ponto das 13h excede a perda tolerada, embora o horário de restabelecimento esteja dentro do RTO.
+- **C)** o ponto de dados atende ao RPO, mas as 17h ultrapassam o RTO em uma hora.
+- **D)** o restabelecimento é rápido, porém o ponto das 12h viola largamente o RPO.
+
+**Conceito:** cálculo conjunto do ponto de recuperação e do tempo de restabelecimento.
+
+**Pegadinha:** cumprir apenas um objetivo e induzir a aceitação do resultado completo.
+
+**Como pensar:** calcule primeiro 14h − 30 min para o dado e depois 14h + 2 h para o serviço.
+
+**Referência:** [D6-RF-MX-09 — Resposta, continuidade e objetivos de recuperação](semana_02_estudo.md#s2-d6-rf-mx-09), nas definições e no exemplo de RPO e RTO.
+
+#### Comentário Extra Dia 6.20
+
+**Alternativa correta: D.**
+
+**Nível:** Difícil
+
+**Uso:** Simulado
+
+**Análise das alternativas:**
+
+- **A)** interrupção é alternativa ao polling contínuo, DMA reduz trabalho por unidade e journal não é backup histórico.
+- **B)** acerta interrupção e DMA, mas journaling não garante ausência de perda nem substitui backup.
+- **C)** DMA reduz a intervenção por unidade transferida, mas não elimina toda participação ou configuração pela CPU.
+- **D)** descreve adequadamente sinalização por interrupção, transferência por DMA e recuperação de consistência pelo journal.
+
+**Conceito:** diferenças entre mecanismos de E/S e de consistência do sistema de arquivos.
+
+**Pegadinha:** aceitar absolutos como “elimina toda atuação” ou transformar journal em garantia e cópia histórica.
+
+**Como pensar:** associe cada mecanismo ao seu efeito limitado, sem convertê-lo em substituto completo de CPU ou backup.
+
+**Referência:** [D6-RF-MX-10 — Sistemas operacionais: progresso, E/S e persistência](semana_02_estudo.md#s2-d6-rf-mx-10), nas linhas polling/interrupção/DMA e sistema de arquivos/journaling.
 
 ## Temas de discursiva da Semana 2
 

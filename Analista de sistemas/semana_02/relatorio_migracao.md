@@ -1,51 +1,75 @@
 # Relatório de Migração - Semana 2 - Analista de Sistemas
 
-Data: **19/07/2026**.
+**Data de conclusão:** 19/07/2026.
 
-**Situação posterior:** migração concluída e substituída pelo aceite registrado em `relatorio_aceite.md`. Os bloqueios abaixo documentam o diagnóstico intermediário e foram sanados antes do aceite.
+## Situação
 
-## Escopo
+A migração estrutural e a auditoria semântica foram concluídas. O veredito vigente está em `relatorio_aceite.md`: **Material aprovado para execução**, com execução do candidato pendente.
 
-Migração da Semana 2 ao padrão vigente, em lotes D1-D2, D3-D4 e D5-D6, com preservação da teoria e dos gabaritos enquanto não houver correção semântica documentada.
+Este documento preserva a diferença entre três etapas que não podem ser confundidas:
 
-## Resultado estrutural do banco semanal
+1. baseline legado;
+2. migração mecânica;
+3. auditoria semântica e reparação final.
 
-| Item | Resultado |
-|---|---:|
-| Questões principais | 300 |
-| Comentários principais | 300 |
-| Questões extras | 120 |
-| Comentários extras | 120 |
-| Identificadores principais | S2D1Q001 a S2D6Q300 |
-| Níveis no banco | 168 Médias / 168 Difíceis / 84 Muito difíceis |
-| Usos no banco | 90 Essenciais / 150 Aprofundamento / 90 Revisão / 90 Simulado |
+## Baseline e migração mecânica
 
-Os números de níveis e usos acima contam questões, não a repetição dos metadados nos comentários.
+A primeira migração acrescentou IDs, níveis, usos e referências às 300 principais e normalizou as 120 extras. A distribuição `168 Médias / 168 Difíceis / 84 Muito difíceis` era apenas a aplicação mecânica das matrizes iniciais 20/20/10 e 8/8/4. Ela nunca constituiu classificação semântica final.
 
-## Alterações realizadas
+Também foi adotado o uso operacional de 90 Essenciais, 150 Aprofundamento, 90 Revisão e 90 Simulado. Uso indica quando resolver; não define dificuldade.
 
-- títulos principais deixaram de ser apenas `Questão N` e passaram a usar identificador único e conceito do próprio comentário;
-- todas as principais receberam `Nível`, `Uso` e `Referência` antes do enunciado;
-- todos os comentários principais repetem `Nível` e `Uso`;
-- todas as extras receberam `Uso`, preservando Dia, Bloco, Matéria, Assunto, Nível e Referência;
-- a matriz diária passou a 20/20/10 nas principais e 8/8/4 nas extras;
-- a distribuição diária passou a 15 Essenciais, 25 Aprofundamento, 15 Revisão e 15 Simulado;
-- nenhum gabarito foi alterado nesta etapa mecânica;
-- o formato excepcional dos títulos de comentários do Dia 4 foi normalizado.
+## Diagnóstico posterior
 
-## Aderência à banca
+A auditoria ampliada demonstrou que a migração mecânica ainda possuía:
 
-O contrato `../planejamento/perfil_banca_consulplan.md` passou a reger a semana. Questões oficiais ficam separadas do banco autoral e serão resolvidas no caderno original, com origem e gabarito definitivo confirmados.
+- dificuldade superestimada por preenchimento de matriz;
+- alternativas corretas destacadas pelo comprimento em parte do banco;
+- distratores alheios ou pouco discriminadores;
+- duplicatas entre extras;
+- referências corretas como âncora, mas imprecisas em conteúdo em casos pontuais;
+- comentários genéricos e referências semanticamente erradas no super;
+- cobertura desequilibrada do super entre os seis dias;
+- prática guiada posicionada depois dos Blocos 4–6;
+- fila das 30 extras Essenciais sem identificação explícita no D+7.
 
-## Bloqueios para o aceite
+Por isso, o aceite intermediário foi suspenso e não é usado como evidência final.
 
-- releitura semântica final das 300 principais ainda não registrada item a item;
-- níveis atribuídos pela progressão do banco ainda precisam de confirmação semântica individual;
-- super simulado possui 60 questões, mas seus comentários usam justificativas genéricas repetidas e precisam ser individualizados;
-- referências do super simulado ainda são genéricas e precisam apontar para âncoras específicas;
-- índice de questões oficiais da Semana 2 depende de cadernos e gabaritos oficiais verificáveis;
-- relatório de aceite e rubrica final ainda não emitidos.
+## Reparação concluída
 
-## Veredito atual
+- as 300 principais e as 120 extras foram classificadas item a item;
+- 144 principais e 65 extras foram reformuladas; quatro principais receberam aprofundamento multifiltro final;
+- duplicatas, pistas de comprimento e distratores fracos foram eliminados;
+- 110 permutações no banco foram sincronizadas entre alternativa, comentário e tabelas para obter equilíbrio A-D por nível, sem mudar a resposta substantiva;
+- o super recebeu nove substituições de cobertura, seis refinamentos adicionais e nova leitura integral;
+- a dificuldade do super foi recalibrada sem cotas, preservando somente quatro itens Muito difíceis;
+- o super passou a conter exatamente dez itens de cada dia;
+- jornada, ordem física, D+2/D+7/D+21 e progressão discursiva foram normalizadas;
+- o auditor passou a verificar comprimento, duplicatas, motivos de gabarito, equilíbrio por nível, comandos negativos, cobertura 10 × 6, ordem física, filas e âncoras semânticas críticas.
 
-**Diagnóstico intermediário superado.** Consulte `relatorio_aceite.md` para o veredito final.
+## Distribuição final
+
+| Conjunto | Médio | Difícil | Muito difícil | Total |
+|---|---:|---:|---:|---:|
+| Principais | 173 | 116 | 11 | 300 |
+| Extras | 79 | 40 | 1 | 120 |
+| Banco | 252 | 156 | 12 | 420 |
+| Super | 16 | 40 | 4 | 60 |
+
+Essa distribuição substitui integralmente a fotografia mecânica 168/168/84. Nenhum rótulo foi mantido apenas para fechar quota.
+
+## Questões oficiais
+
+A ausência de item oficial integrado não é apresentada como “bloqueio sanado”. A busca de 19/07/2026 não confirmou simultaneamente caderno específico, gabarito definitivo e situação dos recursos para uma amostra aderente. A ausência e o concurso comparável em acompanhamento estão registrados em `../questoes_oficiais/semana_02.md`.
+
+## Evidência final
+
+```text
+python tools/audit_semana02.py
+OK: 420 questões + 60 do super simulado; metadados, alternativas, comentários, gabaritos e âncoras validados.
+Principais: Médio=173, Difícil=116, Muito difícil=11
+Extras: Médio=79, Difícil=40, Muito difícil=1
+Banco: Médio=252, Difícil=156, Muito difícil=12
+Super: Médio=16, Difícil=40, Muito difícil=4
+```
+
+O diagnóstico intermediário está encerrado. Para nota, rubrica, limites e pendências operacionais, prevalece `relatorio_aceite.md`.

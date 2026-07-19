@@ -73,7 +73,7 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 - **Tópicos do edital:** topologias, componentes, meios de transmissão, LAN/WAN, ISO/OSI, TCP/IP, HTTP, SMTP, DHCP, DNS, LDAP, proxy, SNMP, switches, roteadores, gateways, redes sem fio, VPN, gerência de rede, ataques, firewall, DMZ, Windows/Linux, concorrência, sincronização, deadlock, dispositivos e sistemas de arquivos.
 - **Revisão fixa:** Legislação CRA/CFA, Português/interpretação e Administração Pública.
 - **Status:** material aprovado para execução conforme `../semana_02/relatorio_aceite.md`; execução do candidato pendente.
-- **Arquivos:** `semana_02/semana_02_estudo.md` e `semana_02/semana_02_questoes.md`.
+- **Arquivos:** `semana_02/README.md`, `semana_02/semana_02_jornada.md`, `semana_02/semana_02_estudo.md`, `semana_02/semana_02_dissertacoes.md`, `semana_02/semana_02_questoes.md`, `semana_02/semana_02_super_simulado.md` e `semana_02/relatorio_aceite.md`.
 - **Entrega:** redes de computadores, segurança de redes e sistemas operacionais avançados aprofundados; 300 questões principais e 120 extras.
 
 ### Semana 3 - 27/07/2026 a 01/08/2026
@@ -258,7 +258,8 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [ ] Fonologia, encontros vocálicos, dígrafos, ortoépia, divisão silábica, prosódia, acentuação e ortografia. Planejado para Semana 6.
 - [ ] Morfologia, estrutura e formação de palavras, classes de palavras e período composto. Planejado para Semana 6.
 - [ ] Reescrita, inferência, ambiguidade, conectores, uso dos porquês e linguagem administrativa. Reforço contínuo nas Semanas 2 a 9.
-- [ ] Discursiva completa com temas, estrutura, rubrica e autocorreção. Planejado para Semanas 6 a 8.
+- [x] Progressão discursiva com tema, modelo, treino diário, texto integral e rubrica oficial iniciada na Semana 2.
+- [ ] Novos temas completos, simulados e autocorreção acumulada. Planejado para Semanas 6 a 8.
 
 ### Administração Pública e Legislação Correlata
 
