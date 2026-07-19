@@ -1,8 +1,10 @@
-# Apostila de Questões - Semana 2 v1.0
+# Apostila de Questões - Semana 2 - migração para o padrão atual
 
 ## CRA-PR 2026 - Analista de Sistemas
 
 Arquivo de questões para acompanhar a `semana_02_estudo.md`.
+
+**Status:** Em migração. Consulte `relatorio_migracao.md`; a presença dos metadados não substitui a auditoria semântica nem autoriza o aceite integral.
 
 **Critério de autoria:** todas as 300 questões principais e 120 questões extras desta apostila são autorais e foram elaboradas no estilo de cobrança do Instituto Consulplan. Provas públicas da banca foram consultadas apenas como referência de estilo. Nenhuma questão real foi reproduzida sem fonte confirmada.
 
@@ -41,7 +43,13 @@ Base usada: `semana_02/semana_02_estudo.md`, seção `# Dia 1 - Redes: topologia
 
 ## Questões principais
 
-### Questão 1
+### S2D1Q001 — Elementos fundamentais de redes e interligação de redes
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
 Em relação aos elementos fundamentais de uma rede de computadores, assinale a alternativa correta.
 
@@ -50,7 +58,13 @@ B) Host é equipamento intermediário que encaminha tráfego sem originar nem co
 C) Enlace é o conjunto de regras que define formato e sequência das mensagens trocadas entre aplicações.
 D) Host é sistema final, interface o liga ao enlace e roteadores podem reunir redes em uma internetwork.
 
-### Questão 2
+### S2D1Q002 — Distinção entre rede, Internet e Web
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Conceitos fundamentais de redes — Rede, Internet e Web](semana_02_estudo.md#s2-d1-fundamentos).
 
 O serviço de correio eletrônico do CRA-PR permanece disponível, embora o portal institucional esteja indisponível. A situação é compatível com a afirmação de que:
 
@@ -59,7 +73,13 @@ B) a Internet corresponde à infraestrutura física, enquanto a Web corresponde 
 C) a Web é um serviço de aplicação utilizado sobre a Internet, que também pode transportar correio, voz e arquivos.
 D) Internet e Web são denominações equivalentes quando o acesso ocorre em uma rede pública.
 
-### Questão 3
+### S2D1Q003 — Protocolo em comparação com serviço
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
 Assinale a alternativa que diferencia corretamente protocolo de serviço.
 
@@ -68,7 +88,13 @@ B) Protocolo define regras de comunicação, enquanto serviço é uma capacidade
 C) Serviço existe apenas na camada de aplicação, enquanto protocolo existe apenas nas camadas física e de enlace.
 D) Protocolo e serviço tornam-se conceitos equivalentes quando os dispositivos utilizam a suíte TCP/IP.
 
-### Questão 4
+### S2D1Q004 — Emissor, receptor, mensagem, meio e protocolo na comunicação de dados
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Duas estações foram conectadas por um enlace funcional, mas não conseguem trocar informações porque utilizam parâmetros incompatíveis. Considerando os elementos da comunicação de dados, assinale a alternativa correta.
 
@@ -77,7 +103,13 @@ B) Emissor e receptor são necessários apenas em full-duplex; em simplex, o mei
 C) Mensagem e meio podem ser tratados como o mesmo elemento quando o conteúdo transmitido é digital.
 D) Conectividade física não assegura comunicação quando protocolos ou parâmetros são incompatíveis.
 
-### Questão 5
+### S2D1Q005 — Direção da comunicação
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados — Direção da comunicação](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Analise as associações a seguir.
 
@@ -92,7 +124,13 @@ B) II e III, apenas.
 C) I, II e III.
 D) I e II, apenas.
 
-### Questão 6
+### S2D1Q006 — Largura de banda, throughput e goodput
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Um enlace possui capacidade nominal de 100 Mbit/s. Em uma janela de 10 segundos, foram transportados 900 Mbit, dos quais 720 Mbit correspondiam ao conteúdo útil recebido pela aplicação. Desconsidere variações dentro da janela. Assinale os valores de largura de banda, throughput e goodput, respectivamente.
 
@@ -101,7 +139,13 @@ B) 90 Mbit/s, 100 Mbit/s e 72 Mbit/s.
 C) 100 Mbit/s, 72 Mbit/s e 90 Mbit/s.
 D) 90 Mbit/s, 72 Mbit/s e 100 Mbit/s.
 
-### Questão 7
+### S2D1Q007 — Diferença entre vazão total e vazão útil
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Durante a transferência de um arquivo, a aplicação recebe 480 MB úteis, enquanto a rede transporta também cabeçalhos, confirmações e retransmissões. Nesse contexto, assinale a alternativa correta.
 
@@ -110,7 +154,13 @@ B) Throughput corresponde à capacidade nominal do enlace, enquanto goodput corr
 C) Retransmissões bem-sucedidas integram o goodput porque, ao final, seus dados também alcançam o receptor.
 D) Goodput corresponde à parcela útil percebida pela aplicação e tende a ser menor ou igual ao throughput.
 
-### Questão 8
+### S2D1Q008 — Latência
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Um sistema remoto responde de forma estável, mas cada interação leva cerca de 180 ms para percorrer o caminho e retornar. A medida diretamente associada a esse atraso é:
 
@@ -119,7 +169,13 @@ B) latência.
 C) goodput.
 D) perda.
 
-### Questão 9
+### S2D1Q009 — Jitter e perda em tráfego sensível a tempo
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
 Em uma chamada de voz, os pacotes chegam com intervalos muito variáveis e alguns não chegam ao destino. Assinale a descrição correta.
 
@@ -128,7 +184,13 @@ B) A variação dos intervalos é perda, e a ausência de pacotes é latência.
 C) Jitter é variação da latência, enquanto perda é ausência de dados esperados.
 D) Jitter e perda são sinônimos, pois ambos medem a capacidade nominal do enlace.
 
-### Questão 10
+### S2D1Q010 — Topologia física em contraste com topologia lógica
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
 Quatro computadores estão ligados individualmente a um hub central. Quanto às topologias física e lógica, essa rede apresenta:
 
@@ -137,7 +199,13 @@ B) estrela física e comportamento lógico de meio compartilhado semelhante a ba
 C) barramento físico e anel lógico com passagem obrigatória de token.
 D) estrela física e lógica comutada, pois a presença de um equipamento central definiria ambos os comportamentos.
 
-### Questão 11
+### S2D1Q011 — Organização e pontos de falha da topologia em estrela
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica — Estrela](semana_02_estudo.md#s2-d1-topologias).
 
 Em uma topologia física em estrela, é correto afirmar que:
 
@@ -146,7 +214,13 @@ B) os nós compartilham um cabo linear principal, e o ponto central serve apenas
 C) cada nó mantém ligação direta com os demais, usando o equipamento central somente para redundância.
 D) o tráfego deve percorrer um caminho fechado em um único sentido.
 
-### Questão 12
+### S2D1Q012 — Reconhecimento comparado das topologias
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
 Sobre as topologias de rede, assinale a alternativa INCORRETA.
 
@@ -155,7 +229,13 @@ B) No anel, os nós formam conceitualmente um caminho fechado.
 C) No barramento, cada nó possui enlace exclusivo com um equipamento central.
 D) A topologia híbrida combina duas ou mais organizações topológicas.
 
-### Questão 13
+### S2D1Q013 — Topologia em anel
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica — Anel](semana_02_estudo.md#s2-d1-topologias).
 
 Determinada tecnologia conecta conceitualmente cada nó ao seguinte, formando um caminho fechado, e pode empregar passagem de token para ordenar o acesso. Trata-se de topologia em:
 
@@ -164,7 +244,13 @@ B) anel.
 C) estrela.
 D) árvore comutada.
 
-### Questão 14
+### S2D1Q014 — Número de enlaces em malha completa
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica — Malha](semana_02_estudo.md#s2-d1-topologias).
 
 Um projeto possuía malha completa entre sete roteadores, com um enlace ponto a ponto para cada par. Após a remoção de exatamente um desses enlaces, sem criação de outro, assinale a quantidade de ligações diretas que permanece.
 
@@ -173,7 +259,13 @@ B) 18.
 C) 20.
 D) 21.
 
-### Questão 15
+### S2D1Q015 — Malha completa e malha parcial
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica — Malha](semana_02_estudo.md#s2-d1-topologias).
 
 Sobre malha completa e malha parcial, assinale a alternativa correta.
 
@@ -182,7 +274,13 @@ B) Na malha completa, todos os pares se ligam diretamente; na parcial, apenas al
 C) A malha completa utiliza menos portas que uma estrela com a mesma quantidade de nós.
 D) A malha parcial trabalha com caminho único e, por isso, dispensa mecanismos de encaminhamento.
 
-### Questão 16
+### S2D1Q016 — Topologia híbrida
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias).
 
 Uma organização adota estrelas de acesso em cada andar e interliga os switches centrais por enlaces redundantes que formam outra organização topológica. A rede resultante é classificada como:
 
@@ -191,7 +289,13 @@ B) malha parcial, pois a redundância do núcleo também define a topologia dos 
 C) estrela pura, pois a convergência nos andares impede outra classificação para o conjunto.
 D) anel, pois a interligação redundante entre equipamentos centrais determina um único ciclo para o conjunto.
 
-### Questão 17
+### S2D1Q017 — Independência relativa entre topologia física e lógica
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
 Analise as afirmativas sobre topologia física e lógica.
 
@@ -206,7 +310,13 @@ B) II e III, apenas.
 C) I e III, apenas.
 D) I, II e III.
 
-### Questão 18
+### S2D1Q018 — Rede de área pessoal
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
 Um relógio inteligente troca dados diretamente com o celular de seu usuário por tecnologia de curto alcance. Esse conjunto exemplifica, tipicamente, uma:
 
@@ -215,7 +325,13 @@ B) MAN.
 C) LAN metropolitana.
 D) PAN.
 
-### Questão 19
+### S2D1Q019 — WLAN como LAN independente do acesso à Internet
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
 Durante uma falha do provedor, estações associam-se ao AP, obtêm acesso à impressora da mesma VLAN e não alcançam destinos externos. Assinale o diagnóstico conceitualmente correto.
 
@@ -224,7 +340,13 @@ B) A falha externa altera o escopo da WLAN para PAN enquanto os clientes permane
 C) A comunicação local demonstra que o AP roteou entre sub-redes, ainda que clientes e impressora estejam na mesma VLAN.
 D) O caminho local da WLAN pode funcionar sem Internet; o diagnóstico deve prosseguir no gateway, no enlace WAN ou no provedor.
 
-### Questão 20
+### S2D1Q020 — Rede de área metropolitana
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
 Um conselho interliga três unidades localizadas em diferentes bairros da mesma região metropolitana por infraestrutura de operadora. Quanto ao escopo típico, essa rede é melhor caracterizada como:
 
@@ -233,7 +355,13 @@ B) MAN.
 C) LAN limitada a uma sala.
 D) barramento, pois utiliza infraestrutura compartilhada.
 
-### Questão 21
+### S2D1Q021 — Rede de longa distância
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
 A sede de um órgão em Curitiba é interligada a unidades em estados distintos por redes de longa distância. A classificação mais adequada é:
 
@@ -242,7 +370,13 @@ B) PAN.
 C) WLAN, ainda que nenhum enlace seja sem fio.
 D) MAN, porque pertencer a uma única organização prevalece sobre a distribuição entre estados.
 
-### Questão 22
+### S2D1Q022 — Meios guiados e não guiados
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados](semana_02_estudo.md#s2-d1-meios).
 
 Analise as afirmativas sobre meios de transmissão.
 
@@ -257,7 +391,13 @@ B) I, II e III.
 C) II e III, apenas.
 D) I e III, apenas.
 
-### Questão 23
+### S2D1Q023 — Par trançado UTP e versões blindadas
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados — Par trançado](semana_02_estudo.md#s2-d1-meios).
 
 Sobre cabos de par trançado UTP e versões blindadas, assinale a alternativa correta.
 
@@ -266,7 +406,13 @@ B) A blindagem torna irrelevantes o aterramento e a instalação, pois atua inde
 C) Variantes blindadas podem reduzir interferência, mas exigem instalação e aterramento adequados; o cobre não se torna imune.
 D) UTP é adequado apenas a redes half-duplex e não permite negociação de velocidade.
 
-### Questão 24
+### S2D1Q024 — Seleção de meio por requisitos do cenário
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados — Fibra óptica](semana_02_estudo.md#s2-d1-meios).
 
 Um órgão precisa interligar dois prédios com alta capacidade, e o trajeto possui forte interferência eletromagnética. A solução tecnicamente mais coerente, desde que ópticas e distâncias sejam compatíveis, é:
 
@@ -275,7 +421,13 @@ B) par trançado blindado escolhido sem avaliar distância e aterramento, pois a
 C) enlace Wi-Fi escolhido pela taxa nominal e pela intensidade do sinal, desconsiderando interferência e planejamento de canal.
 D) fibra óptica projetada para o enlace, pois não conduz o sinal como corrente elétrica.
 
-### Questão 25
+### S2D1Q025 — Fibra monomodo e multimodo
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados — Fibra óptica](semana_02_estudo.md#s2-d1-meios).
 
 A respeito de fibras monomodo e multimodo, assinale a alternativa correta.
 
@@ -284,7 +436,13 @@ B) Fibra monomodo utiliza vários modos de propagação e, por definição, limi
 C) Monomodo favorece distâncias maiores; multimodo é comum em enlaces internos, conforme o projeto.
 D) Ambas conduzem sinais elétricos e, por isso, sofrem a mesma interferência de um cabo de cobre.
 
-### Questão 26
+### S2D1Q026 — Cabo coaxial
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados — Cabo coaxial](semana_02_estudo.md#s2-d1-meios).
 
 O meio guiado formado por condutor central, isolante e blindagem, historicamente empregado em formas de Ethernet em barramento, é o cabo:
 
@@ -293,7 +451,13 @@ B) de par trançado UTP.
 C) coaxial.
 D) óptico monomodo.
 
-### Questão 27
+### S2D1Q027 — Desempenho de comunicação sem fio
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Meios guiados e não guiados — Comunicação sem fio](semana_02_estudo.md#s2-d1-meios).
 
 Em uma sala, os clientes exibem sinal Wi-Fi forte, mas a vazão é baixa nos horários de maior uso. A explicação tecnicamente adequada é:
 
@@ -302,7 +466,13 @@ B) Cada cliente recebe um canal exclusivo, razão pela qual a densidade de esta�
 C) A distância explica a baixa vazão, enquanto canais, obstáculos e interferência não alteram o resultado.
 D) Interferência, contenção e densidade de clientes podem reduzir o throughput mesmo com sinal forte.
 
-### Questão 28
+### S2D1Q028 — Placa ou interface de rede
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [6. Placa de rede](semana_02_estudo.md#s2-d1-nic).
 
 Assinale a alternativa que apresenta uma função compatível com a placa de rede de um host.
 
@@ -311,7 +481,13 @@ B) Selecionar as rotas IP da organização a partir de uma tabela mantida pela p
 C) Traduzir protocolos de aplicação antes de encapsular os dados em quadros.
 D) Separar os domínios de broadcast associados ao host sem exercer roteamento.
 
-### Questão 29
+### S2D1Q029 — Multiplicidade de interfaces e alcance do endereço MAC
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [6. Placa de rede](semana_02_estudo.md#s2-d1-nic).
 
 Um servidor possui duas interfaces físicas e uma interface virtual. A respeito dessas interfaces e de seus endereços, assinale a alternativa correta.
 
@@ -320,7 +496,13 @@ B) Cada interface pode ter endereçamento próprio; o MAC identifica a interface
 C) Interfaces virtuais não participam de redes porque não correspondem a uma placa removível.
 D) As interfaces de um mesmo servidor devem pertencer à mesma sub-rede e ao mesmo enlace.
 
-### Questão 30
+### S2D1Q030 — Repetidor
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7. Repetidores e hubs — Repetidor](semana_02_estudo.md#s2-d1-repetidor-hub).
 
 Um equipamento regenera o sinal para ampliar o alcance de um enlace compatível, sem aprender endereços MAC nem escolher rotas IP. Esse equipamento é um:
 
@@ -329,7 +511,13 @@ B) gateway de aplicação.
 C) switch de camada 3.
 D) repetidor.
 
-### Questão 31
+### S2D1Q031 — Funcionamento do hub Ethernet clássico
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [7. Repetidores e hubs — Hub](semana_02_estudo.md#s2-d1-repetidor-hub).
 
 Sobre o hub Ethernet clássico, assinale a alternativa correta.
 
@@ -338,7 +526,13 @@ B) Aprende os endereços MAC de origem e encaminha unicast conhecido pela porta 
 C) Separa domínios de broadcast por porta e executa roteamento entre eles.
 D) Mantém uma tabela IP para selecionar o próximo salto de cada quadro.
 
-### Questão 32
+### S2D1Q032 — Efeitos da troca de hub por switch
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Diferenças entre conceitos parecidos — Hub x switch](semana_02_estudo.md#s2-d1-diferencas).
 
 Um setor substituiu um hub por um switch de camada 2 e manteve todos os dispositivos na mesma VLAN. Analise as afirmativas.
 
@@ -353,7 +547,13 @@ B) II e III, apenas.
 C) III, apenas.
 D) I e II, apenas.
 
-### Questão 33
+### S2D1Q033 — Aprendizagem e decisão de uma bridge
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Bridge](semana_02_estudo.md#s2-d1-bridge-switch).
 
 Uma bridge recebe um quadro por determinado segmento. O procedimento compatível com sua operação é:
 
@@ -362,7 +562,13 @@ B) aprender o endereço IP de destino e descartar unicast cujo destino ainda nã
 C) regenerar os bits nas portas de saída sem examinar endereços de enlace.
 D) substituir o endereço IP do pacote para permitir comunicação entre redes privadas e públicas.
 
-### Questão 34
+### S2D1Q034 — Tratamento de unicast desconhecido
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
 Um switch recebe um quadro unicast cujo MAC de destino ainda não consta de sua tabela. Todos os enlaces pertencem à mesma VLAN. O switch deve:
 
@@ -371,7 +577,13 @@ B) converter o quadro em broadcast, alterando o endereço MAC de destino para to
 C) tratar o destino desconhecido como remoto e encaminhar o quadro ao roteador da VLAN.
 D) manter o quadro retido até que o destino se registre por um protocolo de controle da tabela MAC.
 
-### Questão 35
+### S2D1Q035 — Filtragem de quadro na própria porta de entrada
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
 Um switch recebe por uma porta um quadro cujo MAC de destino conhecido está associado à própria porta de entrada. A ação adequada é:
 
@@ -380,7 +592,13 @@ B) encaminhar o quadro de volta pela mesma porta, duplicando sua entrega no segm
 C) filtrar o quadro, pois não há motivo para devolvê-lo ao segmento de onde veio.
 D) enviá-lo ao gateway padrão com base apenas na ausência de outra porta de saída.
 
-### Questão 36
+### S2D1Q036 — Propagação de broadcast por switch de camada 2
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
 Ao receber um quadro de broadcast em uma porta de um switch de camada 2, sem filtros adicionais, o equipamento normalmente:
 
@@ -389,7 +607,13 @@ B) inunda o quadro pelas portas pertinentes da mesma VLAN, exceto a de entrada.
 C) entrega o quadro somente à porta que contém o MAC de destino em sua tabela.
 D) descarta o quadro porque switches não encaminham broadcasts.
 
-### Questão 37
+### S2D1Q037 — Segmentação por portas e ausência de colisões em full-duplex
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
 Sobre portas de switch e colisões em Ethernet moderna, assinale a alternativa correta.
 
@@ -398,7 +622,13 @@ B) Portas na mesma VLAN compartilham o meio half-duplex e o domínio de colisão
 C) A ausência de colisões reúne as VLANs em um domínio de broadcast comum ao equipamento.
 D) Full-duplex permite transmissão em apenas um sentido por vez para prevenir colisões.
 
-### Questão 38
+### S2D1Q038 — Diferença entre switch de camada 2 e switch multicamada
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
 A respeito de switches de camada 2 e de camada 3, assinale a alternativa INCORRETA.
 
@@ -407,7 +637,13 @@ B) Um switch de camada 2 pode rotear entre sub-redes depois de aprender o MAC do
 C) Um switch multicamada compatível pode rotear quando essa função está habilitada e configurada.
 D) Desativar o roteamento de um switch multicamada não o transforma em hub; a comutação de camada 2 pode permanecer.
 
-### Questão 39
+### S2D1Q039 — Encaminhamento IP entre redes
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Roteadores, gateways e access points — Roteador](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 Uma estação envia dados a um servidor localizado em outra sub-rede. O equipamento responsável por selecionar o próximo salto com base no endereço IP e na tabela de rotas é o:
 
@@ -416,7 +652,13 @@ B) hub.
 C) repetidor.
 D) access point em bridge.
 
-### Questão 40
+### S2D1Q040 — Significados contextuais de gateway
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Roteadores, gateways e access points — Gateway](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 O termo gateway aparece em dois documentos: no primeiro, indica o próximo salto usado por uma estação; no segundo, indica um sistema que traduz protocolos de aplicação. A conclusão correta é:
 
@@ -425,7 +667,13 @@ B) gateway e hub são equivalentes quando o equipamento possui mais de uma porta
 C) gateway pertence à camada de enlace e não pode designar uma interface de roteador.
 D) gateway é contextual: pode indicar próximo salto ou intermediário que traduz protocolos.
 
-### Questão 41
+### S2D1Q041 — Access point em modo bridge
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 Um access point corporativo opera em modo bridge e conecta clientes IEEE 802.11 à LAN Ethernet. Nessa situação, o AP:
 
@@ -434,7 +682,13 @@ B) assume a escolha de rotas entre as sub-redes alcançadas pela rede de distrib
 C) retransmite outro sinal Wi-Fi e dispensa conexão à rede de distribuição.
 D) integra as estações sem fio à rede de distribuição e não precisa exercer roteamento, NAT ou DHCP.
 
-### Questão 42
+### S2D1Q042 — Relação entre AP, SSID, VLAN e domínio de broadcast
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 Estações sem fio associadas a um SSID e computadores cabeados pertencem à mesma VLAN. O AP opera em bridge. Analise as afirmativas.
 
@@ -449,7 +703,13 @@ B) II, apenas.
 C) I e II, apenas.
 D) I, II e III.
 
-### Questão 43
+### S2D1Q043 — Contenção e acesso ao meio sem fio
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 Quanto ao acesso ao meio em redes Wi-Fi, assinale a alternativa correta.
 
@@ -458,7 +718,13 @@ B) Cada estação recebe um meio físico exclusivo e, por isso, não existe cont
 C) O rádio é compartilhado e o acesso é associado didaticamente a CSMA/CA, não ao CSMA/CD do Ethernet legado.
 D) A VLAN reserva intervalos exclusivos de transmissão e afasta a contenção no canal de rádio.
 
-### Questão 44
+### S2D1Q044 — Equipamento doméstico multifuncional
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Exemplos práticos e resolvidos — Exemplo 5, equipamento doméstico multifuncional](semana_02_estudo.md#s2-d1-exemplos).
 
 Um equipamento doméstico possui porta WAN, quatro portas LAN e rádio Wi-Fi, além de oferecer NAT e DHCP. Assinale a associação funcional INCORRETA.
 
@@ -467,7 +733,13 @@ B) O access point realiza o NAT entre WAN e LAN, enquanto o roteador apenas cont
 C) A função de roteador pode interligar a rede LAN à interface WAN.
 D) NAT e DHCP podem ser serviços adicionais do produto, sem definir isoladamente a função de access point.
 
-### Questão 45
+### S2D1Q045 — Contagem de broadcast e ressalva do full-duplex
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [10. Domínio de colisão e domínio de broadcast — Exemplo de contagem](semana_02_estudo.md#s2-d1-dominios).
 
 Seis computadores estão ligados diretamente a um switch, todos na VLAN 10, e uma sétima porta de acesso da VLAN 10 liga o switch a uma interface de roteador. Todos os enlaces operam em full-duplex. Assinale a alternativa correta.
 
@@ -476,7 +748,13 @@ B) O switch passa a compartilhar um domínio de colisão entre os computadores p
 C) Existe um domínio de broadcast, sete enlaces isolados e nenhuma colisão nos enlaces full-duplex.
 D) Existem seis domínios de broadcast, pois a porta ligada ao roteador não participa da VLAN.
 
-### Questão 46
+### S2D1Q046 — VLAN e roteamento inter-VLAN
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
 Três computadores foram colocados na VLAN 10 e outros três na VLAN 20, no mesmo switch. Para que os grupos se comuniquem entre si, é correto afirmar que:
 
@@ -485,7 +763,13 @@ B) existem dois domínios de broadcast, e a comunicação entre eles exige rotea
 C) existem seis domínios de broadcast, um para cada porta de acesso.
 D) a criação de VLANs segmenta os enlaces, mas preserva um domínio de broadcast comum aos grupos.
 
-### Questão 47
+### S2D1Q047 — Contagem didática de segmentos de colisão e domínio de broadcast
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
 Em uma única VLAN, um switch conecta diretamente dois computadores, um roteador e um hub que atende três outros computadores. Para esta questão, adote a convenção didática tradicional: cada segmento isolado por uma porta do switch é contado como domínio de colisão, enquanto todos os equipamentos permanecem no mesmo domínio de broadcast. Assinale, respectivamente, as quantidades desses domínios.
 
@@ -494,7 +778,13 @@ B) 4 e 1.
 C) 6 e 4.
 D) 7 e 2.
 
-### Questão 48
+### S2D1Q048 — Independência lógica das VLANs no mesmo equipamento físico
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
 Um switch mantém usuários na VLAN 30 e servidores na VLAN 40. Um equipamento multicamada realiza a comunicação controlada entre elas. Analise as afirmativas.
 
@@ -509,7 +799,13 @@ B) I, apenas.
 C) II e III, apenas.
 D) I e II, apenas.
 
-### Questão 49
+### S2D1Q049 — Integração de broadcast cabeado e sem fio sem equiparar os meios
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
 Um AP em bridge conecta clientes sem fio à mesma VLAN de estações cabeadas. Assinale a alternativa tecnicamente precisa.
 
@@ -518,7 +814,13 @@ B) O AP em bridge contém o broadcast na fronteira sem fio mesmo quando não há
 C) A associação ao AP mapeia cada cliente para uma VLAN e uma sub-rede próprias.
 D) O AP pode estender o broadcast da VLAN, mas contenção Wi-Fi não equivale à colisão Ethernet de um hub.
 
-### Questão 50
+### S2D1Q050 — Internetwork e recurso compartilhado
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
 Um órgão interliga por roteadores a LAN administrativa, a rede de um datacenter e uma unidade remota, oferecendo armazenamento aos usuários. Analise as afirmativas.
 
@@ -536,12 +838,12 @@ D) I, II e III.
 ## Questões extras de revisão fixa do Dia 1
 
 #### Extra Dia 1.1
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** relação entre lei e decreto regulamentador.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal).
 
 Sobre a Lei nº 4.769/1965 e o Decreto nº 61.934/1967, assinale a alternativa correta.
@@ -551,12 +853,12 @@ B) O decreto possui função de conselho regional e limita sua aplicação ao es
 C) A lei trata apenas da organização interna do CRA-PR, e o decreto institui o Código de Ética vigente.
 D) A regulamentação por decreto substitui integralmente a lei e permite afastar seus requisitos.
 #### Extra Dia 1.2
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** âmbito e função de CFA e CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 Quanto à atuação do CFA e do CRA-PR no sistema profissional, assinale a alternativa correta.
@@ -566,12 +868,12 @@ B) O CFA atua como conselho regional do Distrito Federal e não exerce orientaç
 C) CFA e CRA-PR possuem a mesma jurisdição territorial, diferenciando-se apenas pela sede.
 D) O CFA exerce orientação e disciplina em âmbito nacional, e o CRA-PR executa, registra e fiscaliza em sua jurisdição.
 #### Extra Dia 1.3
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** natureza jurídica e autonomia do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 De acordo com o Regimento aprovado pela RN CFA nº 651/2024, o CRA-PR é:
@@ -581,12 +883,12 @@ B) autarquia com personalidade jurídica de direito público e autonomia técnic
 C) órgão integrante da Administração Direta federal, sem personalidade jurídica própria.
 D) empresa pública estadual encarregada exclusivamente de arrecadar anuidades profissionais.
 #### Extra Dia 1.4
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** sede e jurisdição do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 Sobre sede e jurisdição do CRA-PR, assinale a alternativa correta.
@@ -596,12 +898,12 @@ B) Sua sede pode ser fixada em qualquer município, e sua jurisdição limita-se
 C) Sua sede está na capital do Paraná, e sua jurisdição abrange todo o estado do Paraná.
 D) Sua sede é definida pelo governo estadual, e sua jurisdição é nacional para fins de fiscalização.
 #### Extra Dia 1.5
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** competências centrais do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 Entre as atribuições regimentais do CRA-PR, encontra-se:
@@ -611,12 +913,12 @@ B) executar diretrizes do CFA, manter registros, fiscalizar atividades e julgar 
 C) revisar decisões judiciais e aplicar sanções penais a quem exercer atividade irregular.
 D) substituir o CFA na formulação das diretrizes nacionais sempre que o fato ocorrer no Paraná.
 #### Extra Dia 1.6
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** órgãos e estruturas do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 Assinale a alternativa que apresenta apenas órgãos ou estruturas previstos no Regimento do CRA-PR.
@@ -626,12 +928,12 @@ B) Diretoria Executiva, Ministério Público, Plenário e assembleia legislativa
 C) Plenário, Diretoria Executiva, Ouvidoria, comissões e órgãos de representação.
 D) Ouvidoria, Poder Judiciário, grupos de trabalho e conselho municipal.
 #### Extra Dia 1.7
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** posição regimental do Plenário.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 No âmbito do CRA-PR, o Plenário é caracterizado como:
@@ -641,12 +943,12 @@ B) órgão consultivo externo que apenas recomenda decisões à Diretoria Execut
 C) instância recursal nacional responsável por uniformizar decisões de todos os CRAs.
 D) órgão colegiado de deliberação superior e primeira instância de julgamento em sua jurisdição.
 #### Extra Dia 1.8
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** natureza e limites da Ouvidoria.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 A respeito da Ouvidoria do CRA-PR, assinale a alternativa correta.
@@ -656,12 +958,12 @@ B) Exerce função mediadora e não possui caráter administrativo, executivo, d
 C) Atua como primeira instância de julgamento disciplinar e aplica diretamente as penalidades.
 D) Formula as diretrizes nacionais do sistema e revisa as normas expedidas pelo CFA.
 #### Extra Dia 1.9
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** sujeitos alcançados pelo Código de Ética.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Quanto ao alcance do Código de Ética aprovado pela RN CFA nº 671/2025, assinale a alternativa correta.
@@ -671,12 +973,12 @@ B) Aplica-se apenas a pessoas físicas, pois pessoas jurídicas não se submetem
 C) Alcança qualquer empresa brasileira, ainda que sua atividade não se relacione ao sistema profissional.
 D) Restringe-se aos conselheiros do CFA e dos CRAs durante o exercício de mandato eletivo.
 #### Extra Dia 1.10
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** deveres éticos dos profissionais de Administração.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Constitui conjunto compatível com os deveres éticos previstos na RN CFA nº 671/2025:
@@ -686,12 +988,12 @@ B) defesa de vantagem própria, empréstimo do registro e ocultação de documen
 C) assinatura de documentos sem supervisão, divulgação de sigilo e tratamento hostil aos representantes do sistema.
 D) zelo, honestidade, independência técnica, aperfeiçoamento e colaboração com o Sistema CFA/CRAs.
 #### Extra Dia 1.11
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** dever de sigilo profissional.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Sobre o dever de sigilo profissional, assinale a alternativa correta.
@@ -701,12 +1003,12 @@ B) O dever alcança apenas informação recebida por escrito e termina automatic
 C) O profissional pode divulgar informação sigilosa para obter vantagem, desde que não haja dano financeiro imediato.
 D) O sigilo impede o atendimento de qualquer obrigação legal ou determinação válida da autoridade competente.
 #### Extra Dia 1.12
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** responsabilidade por documento assinado.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Um profissional assina relatório preparado por terceiro sem ter orientado nem supervisionado efetivamente o trabalho. Segundo o núcleo ético estudado, essa conduta:
@@ -716,12 +1018,12 @@ B) é obrigatória para preservar a continuidade do serviço contratado.
 C) representa conduta de risco ético por atribuir chancela profissional sem orientação ou supervisão efetiva.
 D) produz apenas consequência contratual, sem possível repercussão perante o sistema profissional.
 #### Extra Dia 1.13
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** espécies de sanção ética.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Assinale a alternativa que reúne as espécies de sanção previstas no Código de Ética estudado.
@@ -731,12 +1033,12 @@ B) Advertência pública, censura reservada, interdição do estabelecimento e d
 C) Censura privada, suspensão tributária, cancelamento empresarial e advertência oral.
 D) Advertência escrita e reservada, censura pública, suspensão do exercício e cancelamento do registro profissional.
 #### Extra Dia 1.14
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** aplicação de sanções à pessoa jurídica.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Em relação às pessoas jurídicas registradas e às sanções éticas, assinale a alternativa correta.
@@ -746,12 +1048,12 @@ B) Pessoas jurídicas recebem suspensão do exercício profissional nos mesmos t
 C) Suspensão e cancelamento profissional não se aplicam à pessoa jurídica, que permanece sujeita às sanções compatíveis e à multa prevista.
 D) A única consequência possível para pessoa jurídica é o cancelamento automático de sua inscrição, sem processo.
 #### Extra Dia 1.15
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** aplicação processual e pecuniária das sanções.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 Em processo ético, a equipe identifica uma possível infração praticada por pessoa registrada. A conclusão adequada é:
@@ -761,12 +1063,12 @@ B) aplicar apenas multa, porque o Código não prevê sanções disciplinares ac
 C) arquivar o fato sempre que não houver prejuízo financeiro comprovado, independentemente da conduta.
 D) realizar o enquadramento e observar o processo e as regras aplicáveis, inclusive a disciplina da multa que acompanha as sanções.
 #### Extra Dia 1.16
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** leitura de comando negativo.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Comando da questão](semana_02_estudo.md#s2-d1-revisao-comando).
 
 Um enunciado determina: “Assinale a alternativa INCORRETA”. Para responder adequadamente, o candidato deve:
@@ -776,12 +1078,12 @@ B) identificar a opção que contraria o texto ou a regra, tratando-a como a exc
 C) desconsiderar a palavra destacada e procurar a síntese do conteúdo estudado.
 D) selecionar a alternativa mais abrangente, ainda que extrapole o comando.
 #### Extra Dia 1.17
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** inferência autorizada e extrapolação.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Inferência x extrapolação](semana_02_estudo.md#s2-d1-revisao-inferencia).
 
 Leia o trecho: “A fibra reduz a exposição à interferência eletromagnética no enlace óptico, mas sua implantação exige componentes compatíveis.” Assinale a inferência autorizada.
@@ -791,12 +1093,12 @@ B) Toda instalação de fibra oferece maior velocidade que qualquer instalação
 C) A fibra dispensa transceptores, conectores e procedimentos de instalação.
 D) A ausência de interferência eletromagnética garante menor custo de implantação.
 #### Extra Dia 1.18
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** relação semântica de conectores.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Conectores](semana_02_estudo.md#s2-d1-revisao-conectores).
 
 No período “O switch segmenta os enlaces; contudo, mantém o broadcast dentro da mesma VLAN”, o conector “contudo” estabelece relação de:
@@ -806,12 +1108,12 @@ B) oposição ou ressalva.
 C) conclusão.
 D) condição.
 #### Extra Dia 1.19
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** efeito lógico de palavras absolutas.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Palavras absolutas](semana_02_estudo.md#s2-d1-revisao-absolutas).
 
 Sobre palavras como “sempre”, “nunca”, “todos” e “necessariamente” em uma alternativa, assinale a orientação correta.
@@ -821,12 +1123,12 @@ B) Elas tornam a alternativa falsa em qualquer contexto, mesmo quando reproduzem
 C) Elas devem ser ignoradas, pois não interferem no sentido nem no alcance da proposição.
 D) Elas indicam conclusão lógica e podem substituir conectores como “portanto” e “logo”.
 #### Extra Dia 1.20
-
 - **Dia:** Dia 1
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** interpretação integrada de uma ressalva técnica.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa de Português e interpretação — Prática breve de interpretação](semana_02_estudo.md#s2-d1-revisao-pratica-interpretacao).
 
 Leia: “O switch reduz a propagação de colisões entre seus segmentos; contudo, não separa broadcasts entre portas da mesma VLAN.” A interpretação correta é:
@@ -919,8 +1221,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 ## Comentários do Dia 1
 
-### Comentário da Questão 1
+### Comentário S2D1Q001
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -938,8 +1243,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
-### Comentário da Questão 2
+### Comentário S2D1Q002
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -957,8 +1265,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [1. Conceitos fundamentais de redes — Rede, Internet e Web](semana_02_estudo.md#s2-d1-fundamentos).
 
-### Comentário da Questão 3
+### Comentário S2D1Q003
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -976,8 +1287,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
-### Comentário da Questão 4
+### Comentário S2D1Q004
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -995,8 +1309,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 5
+### Comentário S2D1Q005
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1014,8 +1331,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados — Direção da comunicação](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 6
+### Comentário S2D1Q006
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1033,8 +1353,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 7
+### Comentário S2D1Q007
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1052,8 +1375,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 8
+### Comentário S2D1Q008
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1071,8 +1397,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 9
+### Comentário S2D1Q009
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1090,8 +1419,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [2. Comunicação de dados — Medidas de desempenho](semana_02_estudo.md#s2-d1-comunicacao-dados).
 
-### Comentário da Questão 10
+### Comentário S2D1Q010
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1109,8 +1441,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 11
+### Comentário S2D1Q011
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1128,9 +1463,13 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica — Estrela](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 12
+### Comentário S2D1Q012
 
-**Alternativa correta: C, pois o comando solicita a alternativa INCORRETA.**
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Alternativa correta: C.** O comando solicita a alternativa **INCORRETA**.
 
 **Análise das alternativas:**
 
@@ -1147,8 +1486,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 13
+### Comentário S2D1Q013
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1166,8 +1508,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica — Anel](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 14
+### Comentário S2D1Q014
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1185,8 +1530,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica — Malha](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 15
+### Comentário S2D1Q015
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1204,8 +1552,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica — Malha](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 16
+### Comentário S2D1Q016
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1223,8 +1574,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica — Híbrida](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 17
+### Comentário S2D1Q017
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1242,8 +1596,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [3. Topologia física e topologia lógica](semana_02_estudo.md#s2-d1-topologias).
 
-### Comentário da Questão 18
+### Comentário S2D1Q018
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1261,8 +1618,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
-### Comentário da Questão 19
+### Comentário S2D1Q019
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1280,8 +1640,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
-### Comentário da Questão 20
+### Comentário S2D1Q020
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1299,8 +1662,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
-### Comentário da Questão 21
+### Comentário S2D1Q021
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1318,8 +1684,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [4. PAN, LAN, MAN e WAN](semana_02_estudo.md#s2-d1-alcance).
 
-### Comentário da Questão 22
+### Comentário S2D1Q022
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1337,8 +1706,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 23
+### Comentário S2D1Q023
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1356,8 +1728,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados — Par trançado](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 24
+### Comentário S2D1Q024
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1375,8 +1750,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados — Fibra óptica](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 25
+### Comentário S2D1Q025
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1394,8 +1772,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados — Fibra óptica](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 26
+### Comentário S2D1Q026
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1413,8 +1794,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados — Cabo coaxial](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 27
+### Comentário S2D1Q027
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1432,8 +1816,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [5. Meios guiados e não guiados — Comunicação sem fio](semana_02_estudo.md#s2-d1-meios).
 
-### Comentário da Questão 28
+### Comentário S2D1Q028
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1451,8 +1838,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [6. Placa de rede](semana_02_estudo.md#s2-d1-nic).
 
-### Comentário da Questão 29
+### Comentário S2D1Q029
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1470,8 +1860,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [6. Placa de rede](semana_02_estudo.md#s2-d1-nic).
 
-### Comentário da Questão 30
+### Comentário S2D1Q030
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1489,8 +1882,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [7. Repetidores e hubs — Repetidor](semana_02_estudo.md#s2-d1-repetidor-hub).
 
-### Comentário da Questão 31
+### Comentário S2D1Q031
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1508,8 +1904,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [7. Repetidores e hubs — Hub](semana_02_estudo.md#s2-d1-repetidor-hub).
 
-### Comentário da Questão 32
+### Comentário S2D1Q032
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1527,8 +1926,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [Diferenças entre conceitos parecidos — Hub x switch](semana_02_estudo.md#s2-d1-diferencas).
 
-### Comentário da Questão 33
+### Comentário S2D1Q033
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1546,8 +1948,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Bridge](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 34
+### Comentário S2D1Q034
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1565,8 +1970,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 35
+### Comentário S2D1Q035
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1584,8 +1992,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 36
+### Comentário S2D1Q036
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1603,8 +2014,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 37
+### Comentário S2D1Q037
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1622,9 +2036,13 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 38
+### Comentário S2D1Q038
 
-**Alternativa correta: B, pois o comando solicita a alternativa INCORRETA.**
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Alternativa correta: B.** O comando solicita a alternativa **INCORRETA**.
 
 **Análise das alternativas:**
 
@@ -1641,8 +2059,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [8. Bridges e switches — Switch](semana_02_estudo.md#s2-d1-bridge-switch).
 
-### Comentário da Questão 39
+### Comentário S2D1Q039
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1660,8 +2081,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Roteador](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 40
+### Comentário S2D1Q040
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1679,8 +2103,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Gateway](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 41
+### Comentário S2D1Q041
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1698,8 +2125,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 42
+### Comentário S2D1Q042
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1717,8 +2147,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 43
+### Comentário S2D1Q043
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1736,9 +2169,13 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 44
+### Comentário S2D1Q044
 
-**Alternativa correta: B, pois o comando solicita a associação INCORRETA.**
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Alternativa correta: B.** O comando solicita a associação **INCORRETA**.
 
 **Análise das alternativas:**
 
@@ -1755,8 +2192,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [Exemplos práticos e resolvidos — Exemplo 5, equipamento doméstico multifuncional](semana_02_estudo.md#s2-d1-exemplos).
 
-### Comentário da Questão 45
+### Comentário S2D1Q045
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -1774,8 +2214,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [10. Domínio de colisão e domínio de broadcast — Exemplo de contagem](semana_02_estudo.md#s2-d1-dominios).
 
-### Comentário da Questão 46
+### Comentário S2D1Q046
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1793,8 +2236,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
-### Comentário da Questão 47
+### Comentário S2D1Q047
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -1812,8 +2258,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
-### Comentário da Questão 48
+### Comentário S2D1Q048
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1831,8 +2280,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [10. Domínio de colisão e domínio de broadcast](semana_02_estudo.md#s2-d1-dominios).
 
-### Comentário da Questão 49
+### Comentário S2D1Q049
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -1850,8 +2302,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 
 **Referência:** [9. Roteadores, gateways e access points — Access point](semana_02_estudo.md#s2-d1-roteador-gateway-ap).
 
-### Comentário da Questão 50
+### Comentário S2D1Q050
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -1870,10 +2325,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [1. Conceitos fundamentais de redes](semana_02_estudo.md#s2-d1-fundamentos).
 
 #### Comentário Extra Dia 1.1
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -1891,10 +2347,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Base legal e relação entre as normas](semana_02_estudo.md#s2-d1-revisao-base-legal).
 
 #### Comentário Extra Dia 1.2
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -1912,10 +2369,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.3
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -1933,10 +2391,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.4
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -1954,10 +2413,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.5
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -1975,10 +2435,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.6
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -1996,10 +2457,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.7
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -2017,10 +2479,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.8
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -2038,10 +2501,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — CFA x CRA-PR](semana_02_estudo.md#s2-d1-revisao-cfa-cra).
 
 #### Comentário Extra Dia 1.9
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -2059,10 +2523,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.10
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -2080,10 +2545,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.11
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -2101,10 +2567,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.12
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -2122,10 +2589,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.13
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -2143,10 +2611,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.14
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -2164,10 +2633,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.15
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -2185,10 +2655,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Legislação CRA/CFA — Código de Ética vigente](semana_02_estudo.md#s2-d1-revisao-etica).
 
 #### Comentário Extra Dia 1.16
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -2206,10 +2677,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Português e interpretação — Comando da questão](semana_02_estudo.md#s2-d1-revisao-comando).
 
 #### Comentário Extra Dia 1.17
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -2227,10 +2699,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Português e interpretação — Inferência x extrapolação](semana_02_estudo.md#s2-d1-revisao-inferencia).
 
 #### Comentário Extra Dia 1.18
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -2248,10 +2721,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Português e interpretação — Conectores](semana_02_estudo.md#s2-d1-revisao-conectores).
 
 #### Comentário Extra Dia 1.19
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -2269,10 +2743,11 @@ D) O conector introduz conclusão de que o switch executa roteamento entre as po
 **Referência:** [Revisão fixa de Português e interpretação — Palavras absolutas](semana_02_estudo.md#s2-d1-revisao-absolutas).
 
 #### Comentário Extra Dia 1.20
-
 **Alternativa correta: C.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -2297,7 +2772,13 @@ Base usada: `semana_02/semana_02_estudo.md`, seção `# Dia 2 - Modelos OSI e TC
 
 ## Questões principais
 
-### Questão 1
+### S2D2Q051 — Ordem e organização funcional do modelo OSI
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Modelo OSI e suas sete camadas](semana_02_estudo.md#s2-d2-osi).
 
 Da camada mais próxima do usuário para a camada responsável pela transmissão de sinais, a ordem correta das sete camadas do modelo OSI é:
 
@@ -2306,7 +2787,13 @@ B) Aplicação, Apresentação, Transporte, Sessão, Rede, Física e Enlace.
 C) Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação.
 D) Aplicação, Apresentação, Sessão, Transporte, Rede, Enlace e Física.
 
-### Questão 2
+### S2D2Q052 — Função da camada de Apresentação
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Modelo OSI — Camada 6, Apresentação](semana_02_estudo.md#s2-d2-osi).
 
 No modelo OSI, tradução de formatos, codificação, compressão e criptografia, em sentido funcional, são responsabilidades didaticamente associadas à camada de:
 
@@ -2315,7 +2802,13 @@ B) sessão.
 C) transporte.
 D) rede.
 
-### Questão 3
+### S2D2Q053 — Distinção entre as funções das camadas de Transporte e Rede
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Modelo OSI — Camadas 4 e 3](semana_02_estudo.md#s2-d2-osi).
 
 Analise as afirmativas sobre as camadas do modelo OSI.
 
@@ -2330,7 +2823,13 @@ B) II e III, apenas.
 C) I, II e III.
 D) I e II, apenas.
 
-### Questão 4
+### S2D2Q054 — Atuação da camada Física e de repetidores
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Modelo OSI — Camada 1, Física](semana_02_estudo.md#s2-d2-osi).
 
 Um repetidor recebe sinais em uma interface e os regenera em outra, sem examinar endereços. No modelo OSI, essa atuação pertence à camada física porque ela:
 
@@ -2339,7 +2838,13 @@ B) organiza quadros e aprende endereços MAC de origem.
 C) estabelece sessões e pontos de sincronização entre aplicações.
 D) representa bits por sinais e não interpreta endereços MAC ou IP.
 
-### Questão 5
+### S2D2Q055 — Correspondência didática entre OSI e TCP/IP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip).
 
 Na comparação didática entre o OSI e o modelo TCP/IP de quatro camadas, assinale a alternativa correta.
 
@@ -2348,7 +2853,13 @@ B) Aplicação, apresentação e sessão do OSI correspondem à camada de aplica
 C) A camada de enlace do OSI corresponde à camada de transporte do TCP/IP.
 D) Física e enlace permanecem obrigatoriamente separadas no modelo TCP/IP de quatro camadas.
 
-### Questão 6
+### S2D2Q056 — Variações didáticas de quatro e cinco camadas do TCP/IP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip).
 
 Alguns livros apresentam a arquitetura TCP/IP em cinco camadas, separando física e enlace, enquanto outros a apresentam em quatro. Essa diferença significa que:
 
@@ -2357,7 +2868,13 @@ B) o modelo de quatro camadas não contempla meios físicos nem redes locais.
 C) a suíte permanece a mesma; muda a forma pedagógica de agrupar as funções.
 D) a versão de cinco camadas passa a ter correspondência perfeita com as sete camadas do OSI.
 
-### Questão 7
+### S2D2Q057 — Encapsulamento descendente no emissor
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3. Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
 Em uma comunicação que usa TCP, IP e Ethernet, qual sequência representa corretamente o encapsulamento no emissor?
 
@@ -2366,7 +2883,13 @@ B) Dados → segmento TCP → pacote IP → quadro Ethernet → bits.
 C) Dados → quadro Ethernet → pacote IP → segmento TCP → bits.
 D) Dados → segmento TCP → quadro Ethernet → pacote IP → bits.
 
-### Questão 8
+### S2D2Q058 — Desencapsulamento ascendente no receptor
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3. Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
 No receptor de uma comunicação Ethernet, IPv4 e TCP, o desencapsulamento ocorre, de forma simplificada, na seguinte ordem:
 
@@ -2375,7 +2898,13 @@ B) bits → quadro Ethernet → pacote IPv4 → segmento TCP → dados.
 C) quadro Ethernet → bits → segmento TCP → pacote IPv4 → dados.
 D) pacote IPv4 → quadro Ethernet → bits → dados → segmento TCP.
 
-### Questão 9
+### S2D2Q059 — Campos que permanecem ou mudam a cada salto
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3. Encapsulamento — O que muda a cada salto](semana_02_estudo.md#s2-d2-encapsulamento).
 
 Uma estação envia um pacote IPv4 a um servidor remoto por meio de dois roteadores, sem NAT. Durante o percurso:
 
@@ -2384,7 +2913,13 @@ B) o endereço MAC do servidor permanece como destino de todos os quadros, e os 
 C) os endereços IP mudam em todo roteador, enquanto os endereços MAC permanecem inalterados até o servidor.
 D) endereços MAC e IP permanecem necessariamente idênticos, pois ambos identificam o destino final.
 
-### Questão 10
+### S2D2Q060 — Nomenclatura específica das PDUs
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
 
 Assinale a associação correta entre protocolo ou camada e sua PDU didática.
 
@@ -2393,7 +2928,13 @@ B) TCP — segmento; IP — pacote ou datagrama; Ethernet — quadro; física �
 C) TCP — pacote; IP — quadro; Ethernet — datagrama UDP; física — segmento.
 D) TCP — bits; IP — dados; Ethernet — segmento; física — pacote.
 
-### Questão 11
+### S2D2Q061 — Diferença entre datagrama UDP e datagrama IP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
 
 Sobre as expressões “datagrama UDP” e “datagrama IP”, assinale a alternativa correta.
 
@@ -2402,7 +2943,13 @@ B) Datagrama UDP é uma PDU de enlace, enquanto datagrama IP é uma PDU física.
 C) Datagrama IP fica encapsulado no datagrama UDP durante o envio.
 D) Datagrama UDP é unidade de transporte e pode ser encapsulado em um datagrama IP, da camada Internet.
 
-### Questão 12
+### S2D2Q062 — Formato, escopo e administração do endereço MAC
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
 
 Em relação aos endereços MAC usados em redes IEEE 802, assinale a alternativa correta.
 
@@ -2411,7 +2958,13 @@ B) Permanecem como origem e destino em todos os enlaces atravessados por um paco
 C) Endereços de 48 bits, escritos em seis octetos hexadecimais, são comuns, mas podem ser localmente administrados ou mutáveis.
 D) Substituem o endereço IP porque são necessariamente globais, únicos e imutáveis.
 
-### Questão 13
+### S2D2Q063 — Aprendizagem de endereços pelo switch
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
 
 Um switch recebe, pela porta 5, um quadro cujo MAC de origem ainda não consta em sua tabela. A ação de aprendizagem consiste em registrar:
 
@@ -2420,7 +2973,13 @@ B) o endereço IP de origem associado à rota padrão do switch.
 C) o MAC de origem associado à porta 5.
 D) os números de porta TCP de origem e destino associados ao MAC do gateway.
 
-### Questão 14
+### S2D2Q064 — Tamanho e divisão lógica do endereço IPv4
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [6. IPv4](semana_02_estudo.md#s2-d2-ipv4).
 
 Um endereço IPv4 possui:
 
@@ -2429,7 +2988,13 @@ B) 32 bits, e o prefixo informa quantos bits iniciais pertencem à parte de rede
 C) 64 bits, dos quais os quatro primeiros octetos identificam a rede.
 D) 128 bits, representados por oito grupos hexadecimais.
 
-### Questão 15
+### S2D2Q065 — Conversão de máscara decimal para prefixo CIDR
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
 A máscara IPv4 `255.255.252.0` corresponde ao prefixo:
 
@@ -2438,7 +3003,13 @@ B) `/21`.
 C) `/22`.
 D) `/23`.
 
-### Questão 16
+### S2D2Q066 — Conversão de prefixo CIDR para máscara decimal
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
 Qual máscara decimal pontuada corresponde ao prefixo IPv4 `/20`?
 
@@ -2447,7 +3018,13 @@ B) `255.255.248.0`.
 C) `255.255.255.240`.
 D) `255.255.240.0`.
 
-### Questão 17
+### S2D2Q067 — Contiguidade dos bits da máscara CIDR IPv4
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
 Assinale a sequência que NÃO representa uma máscara CIDR IPv4 normal, pois contém bits `1` não contíguos.
 
@@ -2456,7 +3033,13 @@ B) `255.255.254.0`.
 C) `255.248.0.0`.
 D) `255.255.240.128`.
 
-### Questão 18
+### S2D2Q068 — Cálculo de rede e broadcast pelo tamanho do bloco
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
 Para o host `192.168.40.158/26`, os endereços de rede e de broadcast dirigido da sub-rede são, respectivamente:
 
@@ -2465,7 +3048,13 @@ B) `192.168.40.128` e `192.168.40.190`.
 C) `192.168.40.64` e `192.168.40.191`.
 D) `192.168.40.152` e `192.168.40.159`.
 
-### Questão 19
+### S2D2Q069 — Determinação da faixa de hosts em uma sub-rede `/27`
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Exemplos de IPv4 e CIDR — Bloco /27](semana_02_estudo.md#s2-d2-calculos).
 
 O endereço `10.12.7.222/27` pertence a uma sub-rede cuja faixa convencional de hosts válidos é:
 
@@ -2474,7 +3063,13 @@ B) `10.12.7.193` a `10.12.7.222`.
 C) `10.12.7.193` a `10.12.7.223`.
 D) `10.12.7.201` a `10.12.7.230`.
 
-### Questão 20
+### S2D2Q070 — Cálculo de rede e broadcast quando a fronteira está no terceiro octeto
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Exemplos de IPv4 e CIDR — Prefixo no terceiro octeto](semana_02_estudo.md#s2-d2-calculos).
 
 Considere o endereço `172.20.173.44/20`. Os endereços de rede e de broadcast dirigido são:
 
@@ -2483,7 +3078,13 @@ B) `172.20.168.0` e `172.20.175.255`.
 C) `172.20.173.0` e `172.20.173.255`.
 D) `172.20.160.0` e `172.20.191.255`.
 
-### Questão 21
+### S2D2Q071 — Quantidade convencional de hosts pelo prefixo
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
 Quantos endereços IPv4 de host são convencionalmente utilizáveis em uma sub-rede `/28`?
 
@@ -2492,7 +3093,13 @@ B) 12.
 C) 14.
 D) 16.
 
-### Questão 22
+### S2D2Q072 — Exceção do prefixo `/31` em enlace IPv4 ponto a ponto
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Exemplos de IPv4 e CIDR — /31 ponto a ponto](semana_02_estudo.md#s2-d2-calculos).
 
 O bloco `10.0.0.10/31` é empregado em um enlace IPv4 ponto a ponto compatível com a RFC 3021. Nesse contexto:
 
@@ -2501,7 +3108,13 @@ B) nenhum dos endereços pode ser usado, pois a fórmula `2^h - 2` resulta em ze
 C) `10.0.0.10` e `10.0.0.11` podem representar as duas extremidades do enlace.
 D) o prefixo deve ser interpretado como uma rota para um único host.
 
-### Questão 23
+### S2D2Q073 — Semântica excepcional do prefixo IPv4 `/32`
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos).
 
 Em IPv4, o prefixo `/32`:
 
@@ -2510,7 +3123,13 @@ B) reserva dois endereços utilizáveis para as extremidades de um enlace ponto 
 C) equivale à máscara `255.255.255.254`.
 D) fornece um endereço de rede, um broadcast e 254 hosts utilizáveis.
 
-### Questão 24
+### S2D2Q074 — Limites dos blocos privados RFC 1918
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. Redes públicas, privadas e endereços especiais](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
 Qual dos endereços abaixo pertence a um bloco privado definido pela RFC 1918?
 
@@ -2519,7 +3138,13 @@ B) `172.32.0.10`.
 C) `192.169.10.20`.
 D) `172.31.200.5`.
 
-### Questão 25
+### S2D2Q075 — Endereços de loopback em IPv4 e IPv6
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. Redes públicas, privadas e endereços especiais — Loopback](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
 Sobre endereços de loopback, assinale a alternativa correta.
 
@@ -2528,7 +3153,13 @@ B) Apenas `127.0.0.1` é loopback; os demais endereços `127/8` são públicos.
 C) Loopback identifica o gateway padrão que encaminha pacotes para a Internet.
 D) O IPv6 utiliza `fe80::1` como seu único endereço de loopback.
 
-### Questão 26
+### S2D2Q076 — Autoconfiguração IPv4 link-local/APIPA
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
 Um computador Windows configurado para DHCP atribuiu a si próprio `169.254.20.8/16` porque o servidor não respondeu. Essa configuração:
 
@@ -2537,7 +3168,13 @@ B) pertence à RFC 1918 e, por isso, recebe automaticamente uma rota para a Inte
 C) é um endereço público provisório fornecido pela IANA.
 D) é link-local/APIPA, está na faixa selecionável `169.254.1.0` a `169.254.254.255` com `/16`, pode permitir comunicação no enlace e costuma indicar falha de DHCP.
 
-### Questão 27
+### S2D2Q077 — Diferença entre “fora dos blocos privados da RFC 1918” e “unicast público utilizável”
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
 Um analista concluiu que todo IPv4 fora dos três blocos privados da RFC 1918 é necessariamente unicast público utilizável na Internet. Assinale a avaliação correta.
 
@@ -2546,7 +3183,13 @@ B) A conclusão está correta, desde que o endereço não termine em `.0` ou `.2
 C) A conclusão está incorreta: também existem blocos de loopback, link-local, documentação, multicast e outras finalidades especiais.
 D) A conclusão está incorreta apenas para endereços IPv4 com prefixo maior que `/24`.
 
-### Questão 28
+### S2D2Q078 — Divisão uniforme de um prefixo em sub-redes menores
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Exemplos de IPv4 e CIDR — Divisão de /24 em /27](semana_02_estudo.md#s2-d2-calculos).
 
 Ao dividir integralmente `192.168.50.0/24` em sub-redes `/27` iguais, obtêm-se:
 
@@ -2555,7 +3198,13 @@ B) 4 sub-redes, cada uma com 64 endereços e 62 hosts convencionais.
 C) 8 sub-redes, cada uma com 30 endereços e 28 hosts convencionais.
 D) 16 sub-redes, cada uma com 16 endereços e 14 hosts convencionais.
 
-### Questão 29
+### S2D2Q079 — Alinhamento e pertencimento a uma sub-rede `/23`
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [11. Sub-redes — Verificação de pertencimento](semana_02_estudo.md#s2-d2-subredes).
 
 Considere A=`192.168.10.250/23`, B=`192.168.11.200/23` e C=`192.168.12.1/23`. Analise as afirmativas.
 
@@ -2570,7 +3219,13 @@ B) I e II, apenas.
 C) II e III, apenas.
 D) I, II e III.
 
-### Questão 30
+### S2D2Q080 — Identificação do bloco que contém um IPv4
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Rede, broadcast e hosts — Tamanho do bloco](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
 Qual bloco `/26` contém o endereço `203.0.113.205`?
 
@@ -2579,7 +3234,13 @@ B) `203.0.113.192/26`.
 C) `203.0.113.200/26`.
 D) `203.0.113.205/26`.
 
-### Questão 31
+### S2D2Q081 — Alcançabilidade e validade do gateway dentro da sub-rede
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [12. Gateway padrão](semana_02_estudo.md#s2-d2-gateway).
 
 Um host usa `192.168.70.78/27`. Sem mecanismos adicionais, qual endereço pode ser configurado como gateway válido e diretamente alcançável nessa sub-rede?
 
@@ -2588,7 +3249,13 @@ B) `192.168.70.95`.
 C) `192.168.70.97`.
 D) `192.168.70.94`.
 
-### Questão 32
+### S2D2Q082 — Uso do gateway como próximo salto e separação entre IP e MAC
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [12. Gateway padrão](semana_02_estudo.md#s2-d2-gateway).
 
 Uma estação IPv4 Ethernet precisa enviar um pacote a um servidor fora de sua sub-rede e possui uma rota padrão válida. No primeiro enlace:
 
@@ -2597,7 +3264,13 @@ B) o pacote conserva o IP do servidor como destino, enquanto o quadro usa o MAC 
 C) o quadro é enviado sem MAC de destino, pois o roteador toma a decisão apenas com a porta TCP.
 D) a estação descobre por ARP o MAC do servidor remoto através de todos os roteadores.
 
-### Questão 33
+### S2D2Q083 — Fluxo de resolução ARP para destino local
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp).
 
 Dois hosts IPv4 estão no mesmo enlace Ethernet e o emissor não possui a associação do destino no cache ARP. Em condições normais, ele:
 
@@ -2606,7 +3279,13 @@ B) envia uma consulta ARP por TCP ao servidor DNS e recebe o endereço IP do des
 C) encaminha o pedido ao roteador, pois mensagens ARP não circulam no enlace local.
 D) envia um ICMP Echo Request para descobrir a porta física do switch.
 
-### Questão 34
+### S2D2Q084 — ARP para o gateway quando o destino IP é remoto
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp).
 
 O host `192.168.10.20/24` enviará dados a `198.51.100.10` usando o gateway `192.168.10.1`. Nessa situação, o ARP do host procura:
 
@@ -2615,7 +3294,13 @@ B) a porta TCP do gateway, pois ARP relaciona IPv4 e serviço de transporte.
 C) o endereço IPv6 equivalente ao servidor remoto.
 D) o MAC de `192.168.10.1`, que é o próximo salto no enlace local.
 
-### Questão 35
+### S2D2Q085 — Função e transporte das mensagens ICMP
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
 
 Sobre o ICMP, assinale a alternativa INCORRETA.
 
@@ -2624,7 +3309,13 @@ B) Echo Request e Echo Reply podem ser empregados pelo comando `ping`.
 C) Time Exceeded e Destination Unreachable são exemplos de mensagens de controle ou erro.
 D) Filtrar indiscriminadamente todo ICMP pode prejudicar diagnóstico e funções da rede.
 
-### Questão 36
+### S2D2Q086 — Neighbor Discovery e mensagens NS/NA
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp).
 
 No IPv6, o Neighbor Discovery:
 
@@ -2633,7 +3324,13 @@ B) limita-se a converter nomes DNS em endereços IPv6.
 C) funciona sobre TCP e emprega portas para Neighbor Solicitation e Neighbor Advertisement.
 D) integra o ICMPv6, usa mensagens como NS e NA e também apoia descoberta e manutenção de vizinhança.
 
-### Questão 37
+### S2D2Q087 — Regras de abreviação textual de IPv6
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. IPv6 — Regras de abreviação](semana_02_estudo.md#s2-d2-ipv6).
 
 Qual é a abreviação válida de `2001:0db8:0000:0000:0000:ff00:0042:8329`?
 
@@ -2642,7 +3339,13 @@ B) `2001:db8:0:0:ff00::42:8329`.
 C) `2001:db8::ff00:42:8329`.
 D) `2001:db8:ff00:42:8329::`.
 
-### Questão 38
+### S2D2Q088 — Ausência de broadcast no IPv6
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
 
 Em relação ao broadcast no IPv6, assinale a alternativa correta.
 
@@ -2651,7 +3354,13 @@ B) `ff02::1` é o endereço de broadcast global de todos os dispositivos IPv6.
 C) Todo prefixo IPv6 reserva o último endereço para broadcast dirigido.
 D) O broadcast IPv6 existe apenas em sub-redes com prefixo `/64`.
 
-### Questão 39
+### S2D2Q089 — Unicast, multicast e anycast no IPv6
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
 
 Assinale a alternativa que descreve corretamente tipos de endereço IPv6.
 
@@ -2660,7 +3369,13 @@ B) Anycast identifica um grupo e entrega uma cópia a todas as interfaces que po
 C) Unicast identifica uma interface; multicast, um grupo; anycast pode ser atribuído a várias interfaces e ser entregue a uma delas.
 D) Multicast e broadcast são nomes equivalentes no IPv6.
 
-### Questão 40
+### S2D2Q090 — Determinação de prefixo IPv6 em fronteira de grupo
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. IPv6 — Prefixo IPv6](semana_02_estudo.md#s2-d2-ipv6).
 
 Qual é o prefixo de rede do endereço `2001:db8:abcd:12ef:1234:5678:9abc:def0/64`?
 
@@ -2669,7 +3384,13 @@ B) `2001:db8:abcd:1200::/64`.
 C) `2001:db8:abcd:12ef::/64`.
 D) `2001:db8:abcd:12ef:1234::/64`.
 
-### Questão 41
+### S2D2Q091 — Blocos especiais e escopos do IPv6
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [15. IPv6 — Blocos especiais importantes](semana_02_estudo.md#s2-d2-ipv6).
 
 Sobre blocos especiais do IPv6, assinale a alternativa correta.
 
@@ -2678,7 +3399,13 @@ B) `fc00::/7` é link-local, equivale a `fe80::/10` e nunca pode ser roteado ent
 C) `::/128` identifica todos os roteadores do enlace.
 D) `2001:db8::/32` é a faixa obrigatória de endereços públicos de produção.
 
-### Questão 42
+### S2D2Q092 — Multicast IPv6, escopo link-local e solicited-node no Neighbor Discovery
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [15. IPv6 — Escopo multicast](semana_02_estudo.md#s2-d2-ipv6) e [14. ICMPv6 — Neighbor Discovery](semana_02_estudo.md#s2-d2-icmp).
 
 Analise as afirmativas sobre multicast e descoberta de vizinhos no IPv6.
 
@@ -2693,7 +3420,13 @@ B) I, II e III.
 C) II e III, apenas.
 D) I e III, apenas.
 
-### Questão 43
+### S2D2Q093 — Escolha do prefixo a partir de requisito de hosts e maximização de sub-redes
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
 Uma rede `192.168.8.0/24` deve ser dividida em sub-redes iguais, buscando a maior quantidade possível de sub-redes, com pelo menos 50 hosts convencionais em cada uma. Qual solução atende ao requisito?
 
@@ -2702,7 +3435,13 @@ B) Usar `/27`, obtendo 8 sub-redes com 62 hosts convencionais em cada uma.
 C) Usar `/25`, obtendo 4 sub-redes com 126 hosts convencionais em cada uma.
 D) Usar `/28`, obtendo 16 sub-redes com 50 hosts convencionais em cada uma.
 
-### Questão 44
+### S2D2Q094 — Alinhamento e não sobreposição em VLSM
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
 No bloco `10.0.0.0/24`, já foram alocados `10.0.0.0/26` e `10.0.0.128/27`. Qual prefixo adicional `/27` está corretamente alinhado e não se sobrepõe aos blocos existentes?
 
@@ -2711,7 +3450,13 @@ B) `10.0.0.64/27`.
 C) `10.0.0.128/27`.
 D) `10.0.0.144/27`.
 
-### Questão 45
+### S2D2Q095 — Decisão de localidade com máscaras divergentes
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Sub-redes — Verificação de pertencimento](semana_02_estudo.md#s2-d2-subredes).
 
 O host A usa `192.168.1.10/24`, e o host B usa `192.168.1.200/25`. Considerando a decisão local de cada host e desconsiderando mecanismos adicionais, assinale a alternativa correta.
 
@@ -2720,7 +3465,13 @@ B) Ambos consideram o outro remoto, pois os prefixos configurados são diferente
 C) A considera B local, mas B considera A remoto, o que pode produzir alcance assimétrico.
 D) B considera A local, mas A considera B remoto, porque `/25` abrange mais endereços que `/24`.
 
-### Questão 46
+### S2D2Q096 — Cálculo integrado de rede, broadcast e hosts em `/21`
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
 Para o endereço `10.34.173.205/21`, assinale a alternativa que apresenta rede, broadcast dirigido e quantidade convencional de hosts utilizáveis.
 
@@ -2729,7 +3480,13 @@ B) `10.34.172.0`, `10.34.175.255` e 1022 hosts.
 C) `10.34.168.0`, `10.34.183.255` e 4094 hosts.
 D) `10.34.173.0`, `10.34.173.255` e 254 hosts.
 
-### Questão 47
+### S2D2Q097 — Localização ordinal de sub-rede e respectivas fronteiras
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
 A rede `192.168.60.0/24` foi dividida integralmente em sub-redes `/28`. Contando `192.168.60.0/28` como a primeira, quais são rede, broadcast e faixa de hosts da décima sub-rede?
 
@@ -2738,7 +3495,13 @@ B) Rede `.144`, broadcast `.159`, hosts `.145` a `.158`.
 C) Rede `.160`, broadcast `.175`, hosts `.161` a `.174`.
 D) Rede `.144`, broadcast `.160`, hosts `.145` a `.159`.
 
-### Questão 48
+### S2D2Q098 — Limites de aplicação da fórmula `2^h - 2`
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [8. Endereço de rede, broadcast e hosts válidos — Exceções](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
 Analise as afirmativas sobre prefixos e exceções de endereçamento.
 
@@ -2753,7 +3516,13 @@ B) II e III, apenas.
 C) I e II, apenas.
 D) I, II e III.
 
-### Questão 49
+### S2D2Q099 — TTL, descarte e mensagem ICMP Time Exceeded
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
 
 Um host envia a um servidor remoto um pacote IPv4 com TTL igual a 1. Ao processá-lo, o primeiro roteador reduz esse campo a zero. Assinale a consequência compatível com o funcionamento do IP e do ICMP.
 
@@ -2762,7 +3531,13 @@ B) O roteador descarta o pacote e pode enviar ICMP Time Exceeded à origem; a me
 C) O roteador retransmite o pacote original de forma confiável depois de abrir uma conexão TCP com a origem.
 D) O roteador converte o pacote em ARP Request e o difunde pelos enlaces restantes até localizar o servidor.
 
-### Questão 50
+### S2D2Q100 — Integração entre roteamento, protocolos e comparação OSI/TCP/IP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip) e [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
 Analise as afirmativas.
 
@@ -2780,12 +3555,12 @@ D) III, apenas.
 ## Questões extras de revisão fixa do Dia 2
 
 #### Extra Dia 2.1
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** convivência entre legalidade e eficiência no art. 37.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão de Administração Pública — Princípios do art. 37](semana_02_estudo.md#s2-d2-revisao-principios).
 
 Um gestor decide ignorar requisito legal porque acredita que o procedimento alternativo será mais rápido e econômico. À luz dos princípios do art. 37, assinale a alternativa correta.
@@ -2795,12 +3570,12 @@ B) A busca de eficiência não permite descumprir o ordenamento nem atuar fora d
 C) A conduta é válida se receber publicidade depois de praticada, ainda que permaneça contrária à lei.
 D) A legalidade vincula apenas particulares, enquanto a Administração atua por liberdade geral.
 #### Extra Dia 2.2
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** princípio da impessoalidade e vedação à promoção pessoal.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão de Administração Pública — Princípios do art. 37](semana_02_estudo.md#s2-d2-revisao-principios).
 
 Uma autoridade utiliza campanha institucional para destacar seu nome, imagem e realizações pessoais. O princípio mais diretamente comprometido é o da:
@@ -2810,12 +3585,12 @@ B) eficiência, porque toda publicidade institucional reduz necessariamente a qu
 C) legalidade, exclusivamente porque o agente se identificou perante os cidadãos.
 D) moralidade, entendida apenas como opinião subjetiva sobre o comportamento da autoridade.
 #### Extra Dia 2.3
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** publicidade administrativa em harmonia com proteção de dados.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão de Administração Pública — Princípios do art. 37 e LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
 
 Sobre publicidade administrativa e proteção de dados pessoais, assinale a alternativa correta.
@@ -2825,12 +3600,12 @@ B) Transparência é a regra, mas convive com sigilo legal, finalidade, necessid
 C) A LGPD transforma automaticamente toda informação pública em informação sigilosa.
 D) A LAI deixa de produzir efeitos sempre que um documento contém qualquer dado pessoal.
 #### Extra Dia 2.4
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** Administração Direta, Indireta, órgão, entidade e autarquia.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão de Administração Pública — Administração Direta e Indireta](semana_02_estudo.md#s2-d2-revisao-organizacao).
 
 Assinale a alternativa que diferencia corretamente órgão e entidade e classifica o CRA-PR.
@@ -2840,12 +3615,12 @@ B) Órgão é pessoa jurídica autônoma; entidade é centro de competências se
 C) Órgão não possui personalidade jurídica própria; entidade possui, e o CRA-PR é autarquia da Administração Indireta.
 D) O CRA-PR é associação privada, pois conselhos profissionais não integram a Administração Pública.
 #### Extra Dia 2.5
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** definição de autarquia.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão de Administração Pública — Administração Direta e Indireta](semana_02_estudo.md#s2-d2-revisao-organizacao).
 
 Na revisão estudada, autarquia é definida como:
@@ -2855,12 +3630,12 @@ B) órgão sem personalidade jurídica criado por ato interno para explorar ativ
 C) sociedade privada formada livremente por agentes públicos e sem vínculo com a Administração Indireta.
 D) modalidade de empresa pública que deve possuir capital privado majoritário.
 #### Extra Dia 2.6
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** elementos clássicos do ato administrativo.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
 Servidor sem atribuição legal para decidir determinado processo pratica o ato mesmo assim. O elemento do ato administrativo diretamente afetado é:
@@ -2870,12 +3645,12 @@ B) a forma, pois competência indica somente o modo pelo qual o ato se exteriori
 C) a competência, que responde à pergunta sobre quem pode praticar o ato.
 D) o motivo, que se confunde com a identidade funcional do agente responsável.
 #### Extra Dia 2.7
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** presunção de legitimidade, imperatividade e autoexecutoriedade.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
 Sobre os atributos do ato administrativo, assinale a alternativa correta.
@@ -2885,12 +3660,12 @@ B) A presunção de legitimidade impede qualquer contestação administrativa ou
 C) A imperatividade está presente em todo ato e exige concordância prévia do destinatário.
 D) A autoexecutoriedade permite execução direta de qualquer ato, independentemente de previsão ou urgência.
 #### Extra Dia 2.8
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** distinção entre anulação e revogação.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 A Administração identifica dois atos: o primeiro é ilegal; o segundo é válido, mas deixou de ser conveniente. A providência adequada, quanto à retirada de cada ato, é:
@@ -2900,12 +3675,12 @@ B) anular ambos, pois todo ato inconveniente passa a ser ilegal.
 C) convalidar necessariamente o primeiro e anular o segundo.
 D) anular o primeiro e, respeitados os direitos adquiridos, revogar o segundo.
 #### Extra Dia 2.9
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** pressupostos da convalidação.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 A convalidação de ato administrativo é cabível, segundo o núcleo revisado, quando:
@@ -2915,12 +3690,12 @@ B) há vício sanável e a correção não causa lesão ao interesse público ne
 C) qualquer ilegalidade é constatada, inclusive vício insanável, independentemente de consequências.
 D) ocorreu má-fé do destinatário e já transcorreu o prazo de cinco anos.
 #### Extra Dia 2.10
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** decadência do direito de anular ato favorável no art. 54.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 No âmbito da Lei nº 9.784/1999, sobre a anulação de atos que geraram efeitos favoráveis aos destinatários, assinale a alternativa correta.
@@ -2930,12 +3705,12 @@ B) O prazo é sempre contado do último pagamento, inclusive em efeitos patrimon
 C) A decadência ocorre em dois anos e não admite consideração da má-fé.
 D) Em regra, o prazo é de cinco anos desde o ato; em efeitos patrimoniais contínuos, conta-se do primeiro pagamento, ressalvada comprovada má-fé.
 #### Extra Dia 2.11
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** articulação entre LAI e LGPD.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
 
 Quanto à relação entre LAI e LGPD, assinale a alternativa correta.
@@ -2945,12 +3720,12 @@ B) A LGPD impede o Poder Público de tratar dados pessoais para finalidade públ
 C) As duas leis convivem: acesso à informação não autoriza exposição irrestrita, e proteção de dados não cria sigilo automático.
 D) A aplicação de uma delas exclui necessariamente a outra no mesmo caso concreto.
 #### Extra Dia 2.12
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** dolo e tipicidade na improbidade administrativa.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — Improbidade administrativa](semana_02_estudo.md#s2-d2-revisao-improbidade).
 
 Um agente comete irregularidade formal, mas não há demonstração de dolo nem enquadramento nas condutas tipificadas. Com base na revisão sobre improbidade, é correto afirmar que:
@@ -2960,12 +3735,12 @@ B) toda irregularidade administrativa configura automaticamente ato de improbida
 C) a ausência de dano ao erário torna impossível qualquer espécie de improbidade, ainda que exista outro tipo legal doloso.
 D) culpa leve e resultado inconveniente bastam, sem necessidade de conduta tipificada.
 #### Extra Dia 2.13
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** distinção entre dispensa e inexigibilidade.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 Uma contratação possui fornecedor exclusivo comprovado e competição inviável. Considerando apenas o núcleo estudado, a situação pode caracterizar:
@@ -2975,12 +3750,12 @@ B) pregão, pois fornecedor exclusivo é critério de julgamento dessa modalidad
 C) revogação da licitação, que elimina a necessidade de processo e motivação.
 D) inexigibilidade, desde que observados os requisitos legais aplicáveis.
 #### Extra Dia 2.14
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** contratação direta e modalidades licitatórias.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 Sobre licitação e contratação direta, assinale a alternativa correta.
@@ -2990,12 +3765,12 @@ B) Critério de julgamento e modalidade são expressões equivalentes na Lei nº
 C) Contratação direta continua sujeita a processo e controle; pregão e diálogo competitivo estão entre as modalidades estudadas.
 D) Concurso e leilão não são modalidades, pois se aplicam apenas a relações privadas.
 #### Extra Dia 2.15
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** responsabilidade civil objetiva do Estado e ação regressiva.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão de Administração Pública — Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade).
 
 Na responsabilidade civil objetiva do Estado perante a vítima, conforme a revisão, assinale a alternativa correta.
@@ -3005,12 +3780,12 @@ B) O direito de regresso contra o agente independe de dolo ou culpa.
 C) Apenas sociedades de economia mista respondem objetivamente por atos de seus agentes.
 D) Ainda se exigem conduta estatal, dano e nexo causal, assegurado regresso contra o agente em caso de dolo ou culpa.
 #### Extra Dia 2.16
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** quantificadores, modalidade e alcance do enunciado.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão de Português — Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores).
 
 Leia: “Em enlaces IPv4 ponto a ponto, um prefixo `/31` pode usar os dois endereços.” Assinale a interpretação fiel ao alcance da frase.
@@ -3020,12 +3795,12 @@ B) O uso dos dois endereços é apresentado como possibilidade no contexto espec
 C) Nenhuma rede `/31` admite dois endereços, pois “pode” expressa proibição.
 D) O enunciado obriga qualquer implementação IPv4 a empregar `/31`.
 #### Extra Dia 2.17
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** coesão referencial e relação adversativa.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão de Português — Coesão e relação lógica](semana_02_estudo.md#s2-d2-revisao-coesao).
 
 No período “O IPv6 amplia o espaço de endereçamento; entretanto, esse fato não elimina a necessidade de planejamento”, assinale a alternativa correta.
@@ -3035,12 +3810,12 @@ B) “Entretanto” conclui o raciocínio, e “esse” retoma a necessidade de 
 C) “Entretanto” marca oposição ou ressalva, e “esse fato” retoma a ampliação do espaço de endereçamento.
 D) O período permite inferir que o planejamento se tornou desnecessário.
 #### Extra Dia 2.18
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação de termos essenciais e expressões explicativas.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão de Português — Pontuação](semana_02_estudo.md#s2-d2-revisao-pontuacao).
 
 Assinale a alternativa com pontuação adequada.
@@ -3050,12 +3825,12 @@ B) O gateway padrão encaminha, destinos remotos quando não há rota mais espec
 C) O IPv6 que possui 128 bits não, utiliza endereço de broadcast.
 D) O ARP, no IPv4 sobre Ethernet, resolve endereço IP em endereço MAC.
 #### Extra Dia 2.19
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** encontro entre preposição `a` e artigo feminino `a` ou `as`.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão de Português — Crase aplicada](semana_02_estudo.md#s2-d2-revisao-crase).
 
 Assinale a alternativa em que o emprego da crase está correto.
@@ -3065,12 +3840,12 @@ B) A regra se aplica às sub-redes IPv4 convencionais.
 C) O pacote chegou à transmitir dados depois da configuração.
 D) O analista entregou o relatório à revisar pelo gestor.
 #### Extra Dia 2.20
-
 - **Dia:** Dia 2
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** equivalência em reescrita técnica.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão de Português — Reescrita técnica](semana_02_estudo.md#s2-d2-revisao-reescrita).
 
 Original: “Embora o endereço esteja fora dos blocos privados definidos pela RFC 1918, ele pode pertencer a um bloco especial.” Assinale a reescrita que preserva o sentido técnico e linguístico.
@@ -3163,8 +3938,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ## Comentários do Dia 2
 
-### Comentário da Questão 1
+### Comentário S2D2Q051
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3182,8 +3960,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [1. Modelo OSI e suas sete camadas](semana_02_estudo.md#s2-d2-osi).
 
-### Comentário da Questão 2
+### Comentário S2D2Q052
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3201,8 +3982,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [1. Modelo OSI — Camada 6, Apresentação](semana_02_estudo.md#s2-d2-osi).
 
-### Comentário da Questão 3
+### Comentário S2D2Q053
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3220,8 +4004,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [1. Modelo OSI — Camadas 4 e 3](semana_02_estudo.md#s2-d2-osi).
 
-### Comentário da Questão 4
+### Comentário S2D2Q054
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3239,8 +4026,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [1. Modelo OSI — Camada 1, Física](semana_02_estudo.md#s2-d2-osi).
 
-### Comentário da Questão 5
+### Comentário S2D2Q055
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3258,8 +4048,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip).
 
-### Comentário da Questão 6
+### Comentário S2D2Q056
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3277,8 +4070,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip).
 
-### Comentário da Questão 7
+### Comentário S2D2Q057
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3296,8 +4092,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [3. Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
-### Comentário da Questão 8
+### Comentário S2D2Q058
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3315,8 +4114,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [3. Encapsulamento e desencapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
-### Comentário da Questão 9
+### Comentário S2D2Q059
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3334,8 +4136,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [3. Encapsulamento — O que muda a cada salto](semana_02_estudo.md#s2-d2-encapsulamento).
 
-### Comentário da Questão 10
+### Comentário S2D2Q060
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3353,8 +4158,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
 
-### Comentário da Questão 11
+### Comentário S2D2Q061
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3372,8 +4180,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [4. PDUs](semana_02_estudo.md#s2-d2-pdus).
 
-### Comentário da Questão 12
+### Comentário S2D2Q062
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3391,8 +4202,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
 
-### Comentário da Questão 13
+### Comentário S2D2Q063
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3410,8 +4224,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [5. Endereço MAC](semana_02_estudo.md#s2-d2-mac).
 
-### Comentário da Questão 14
+### Comentário S2D2Q064
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3429,8 +4246,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [6. IPv4](semana_02_estudo.md#s2-d2-ipv4).
 
-### Comentário da Questão 15
+### Comentário S2D2Q065
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3448,8 +4268,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
-### Comentário da Questão 16
+### Comentário S2D2Q066
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3467,8 +4290,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
-### Comentário da Questão 17
+### Comentário S2D2Q067
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3486,8 +4312,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [7. Máscara de rede e prefixo CIDR](semana_02_estudo.md#s2-d2-mascara).
 
-### Comentário da Questão 18
+### Comentário S2D2Q068
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3505,8 +4334,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
-### Comentário da Questão 19
+### Comentário S2D2Q069
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3524,8 +4356,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [9. Exemplos de IPv4 e CIDR — Bloco /27](semana_02_estudo.md#s2-d2-calculos).
 
-### Comentário da Questão 20
+### Comentário S2D2Q070
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3543,8 +4378,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [9. Exemplos de IPv4 e CIDR — Prefixo no terceiro octeto](semana_02_estudo.md#s2-d2-calculos).
 
-### Comentário da Questão 21
+### Comentário S2D2Q071
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3562,8 +4400,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
-### Comentário da Questão 22
+### Comentário S2D2Q072
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3581,8 +4422,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [9. Exemplos de IPv4 e CIDR — /31 ponto a ponto](semana_02_estudo.md#s2-d2-calculos).
 
-### Comentário da Questão 23
+### Comentário S2D2Q073
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3600,8 +4444,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [9. Exemplos de IPv4 e CIDR — /32](semana_02_estudo.md#s2-d2-calculos).
 
-### Comentário da Questão 24
+### Comentário S2D2Q074
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3619,8 +4466,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [10. Redes públicas, privadas e endereços especiais](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
-### Comentário da Questão 25
+### Comentário S2D2Q075
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3638,8 +4488,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [10. Redes públicas, privadas e endereços especiais — Loopback](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
-### Comentário da Questão 26
+### Comentário S2D2Q076
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3657,8 +4510,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [10. Redes especiais — IPv4 link-local e APIPA](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
-### Comentário da Questão 27
+### Comentário S2D2Q077
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3676,8 +4532,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [10. Redes especiais — IPv4 público](semana_02_estudo.md#s2-d2-publicos-privados-especiais).
 
-### Comentário da Questão 28
+### Comentário S2D2Q078
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3695,8 +4554,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [9. Exemplos de IPv4 e CIDR — Divisão de /24 em /27](semana_02_estudo.md#s2-d2-calculos).
 
-### Comentário da Questão 29
+### Comentário S2D2Q079
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3714,8 +4576,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [11. Sub-redes — Verificação de pertencimento](semana_02_estudo.md#s2-d2-subredes).
 
-### Comentário da Questão 30
+### Comentário S2D2Q080
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3733,8 +4598,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [8. Rede, broadcast e hosts — Tamanho do bloco](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
-### Comentário da Questão 31
+### Comentário S2D2Q081
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3752,8 +4620,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [12. Gateway padrão](semana_02_estudo.md#s2-d2-gateway).
 
-### Comentário da Questão 32
+### Comentário S2D2Q082
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3771,8 +4642,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [12. Gateway padrão](semana_02_estudo.md#s2-d2-gateway).
 
-### Comentário da Questão 33
+### Comentário S2D2Q083
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3790,8 +4664,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [13. ARP](semana_02_estudo.md#s2-d2-arp).
 
-### Comentário da Questão 34
+### Comentário S2D2Q084
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3809,8 +4686,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [13. ARP — Destino remoto](semana_02_estudo.md#s2-d2-arp).
 
-### Comentário da Questão 35
+### Comentário S2D2Q085
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3828,8 +4708,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
 
-### Comentário da Questão 36
+### Comentário S2D2Q086
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -3847,8 +4730,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [14. ICMPv6 — Neighbor Discovery, NS e NA](semana_02_estudo.md#s2-d2-icmp).
 
-### Comentário da Questão 37
+### Comentário S2D2Q087
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3866,8 +4752,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Regras de abreviação](semana_02_estudo.md#s2-d2-ipv6).
 
-### Comentário da Questão 38
+### Comentário S2D2Q088
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3885,8 +4774,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
 
-### Comentário da Questão 39
+### Comentário S2D2Q089
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3904,8 +4796,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Tipos de endereço](semana_02_estudo.md#s2-d2-ipv6).
 
-### Comentário da Questão 40
+### Comentário S2D2Q090
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -3923,8 +4818,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Prefixo IPv6](semana_02_estudo.md#s2-d2-ipv6).
 
-### Comentário da Questão 41
+### Comentário S2D2Q091
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3942,8 +4840,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Blocos especiais importantes](semana_02_estudo.md#s2-d2-ipv6).
 
-### Comentário da Questão 42
+### Comentário S2D2Q092
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3961,8 +4862,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [15. IPv6 — Escopo multicast](semana_02_estudo.md#s2-d2-ipv6) e [14. ICMPv6 — Neighbor Discovery](semana_02_estudo.md#s2-d2-icmp).
 
-### Comentário da Questão 43
+### Comentário S2D2Q093
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -3980,8 +4884,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
-### Comentário da Questão 44
+### Comentário S2D2Q094
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -3999,8 +4906,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
-### Comentário da Questão 45
+### Comentário S2D2Q095
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -4018,8 +4928,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [11. Sub-redes — Verificação de pertencimento](semana_02_estudo.md#s2-d2-subredes).
 
-### Comentário da Questão 46
+### Comentário S2D2Q096
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -4037,8 +4950,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [8. Endereço de rede, broadcast e hosts válidos](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
-### Comentário da Questão 47
+### Comentário S2D2Q097
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -4056,8 +4972,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [11. Sub-redes e planejamento de prefixos](semana_02_estudo.md#s2-d2-subredes).
 
-### Comentário da Questão 48
+### Comentário S2D2Q098
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -4075,8 +4994,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [8. Endereço de rede, broadcast e hosts válidos — Exceções](semana_02_estudo.md#s2-d2-rede-broadcast-hosts).
 
-### Comentário da Questão 49
+### Comentário S2D2Q099
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -4094,8 +5016,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 **Referência:** [14. ICMP e ICMPv6](semana_02_estudo.md#s2-d2-icmp).
 
-### Comentário da Questão 50
+### Comentário S2D2Q100
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -4114,10 +5039,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [2. Modelo TCP/IP](semana_02_estudo.md#s2-d2-tcpip) e [3. Encapsulamento](semana_02_estudo.md#s2-d2-encapsulamento).
 
 #### Comentário Extra Dia 2.1
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -4135,10 +5061,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Princípios do art. 37](semana_02_estudo.md#s2-d2-revisao-principios).
 
 #### Comentário Extra Dia 2.2
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -4156,10 +5083,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Princípios do art. 37](semana_02_estudo.md#s2-d2-revisao-principios).
 
 #### Comentário Extra Dia 2.3
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -4177,10 +5105,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Princípios do art. 37 e LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
 
 #### Comentário Extra Dia 2.4
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -4198,10 +5127,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Administração Direta e Indireta](semana_02_estudo.md#s2-d2-revisao-organizacao).
 
 #### Comentário Extra Dia 2.5
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -4219,10 +5149,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Administração Direta e Indireta](semana_02_estudo.md#s2-d2-revisao-organizacao).
 
 #### Comentário Extra Dia 2.6
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -4240,10 +5171,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
 #### Comentário Extra Dia 2.7
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -4261,10 +5193,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Elementos e atributos do ato](semana_02_estudo.md#s2-d2-revisao-atos).
 
 #### Comentário Extra Dia 2.8
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -4282,10 +5215,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 #### Comentário Extra Dia 2.9
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -4303,10 +5237,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 #### Comentário Extra Dia 2.10
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -4324,10 +5259,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Anulação, revogação e convalidação](semana_02_estudo.md#s2-d2-revisao-desfazimento).
 
 #### Comentário Extra Dia 2.11
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -4345,10 +5281,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — LAI x LGPD](semana_02_estudo.md#s2-d2-revisao-lai-lgpd).
 
 #### Comentário Extra Dia 2.12
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -4366,10 +5303,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Improbidade administrativa](semana_02_estudo.md#s2-d2-revisao-improbidade).
 
 #### Comentário Extra Dia 2.13
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -4387,10 +5325,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 #### Comentário Extra Dia 2.14
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -4408,10 +5347,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Licitação e contratação direta](semana_02_estudo.md#s2-d2-revisao-licitacao).
 
 #### Comentário Extra Dia 2.15
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -4429,10 +5369,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Administração Pública — Responsabilidade civil do Estado](semana_02_estudo.md#s2-d2-revisao-responsabilidade).
 
 #### Comentário Extra Dia 2.16
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -4450,10 +5391,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Português — Quantificadores e alcance](semana_02_estudo.md#s2-d2-revisao-quantificadores).
 
 #### Comentário Extra Dia 2.17
-
 **Alternativa correta: C.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -4471,10 +5413,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Português — Coesão e relação lógica](semana_02_estudo.md#s2-d2-revisao-coesao).
 
 #### Comentário Extra Dia 2.18
-
 **Alternativa correta: D.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -4492,10 +5435,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Português — Pontuação](semana_02_estudo.md#s2-d2-revisao-pontuacao).
 
 #### Comentário Extra Dia 2.19
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -4513,10 +5457,11 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 **Referência:** [Revisão de Português — Crase aplicada](semana_02_estudo.md#s2-d2-revisao-crase).
 
 #### Comentário Extra Dia 2.20
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -4540,7 +5485,13 @@ D) Se o endereço estiver em bloco especial, então necessariamente pertence à 
 
 ## Questões principais
 
-### Questão 1
+### S2D3Q101 — Porta de transporte, demultiplexação e identificação de sockets
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 Sobre protocolo, porta e socket, assinale a afirmativa correta.
 
@@ -4549,7 +5500,13 @@ B) Uma porta de transporte é um conector físico pertencente ao roteador de bor
 C) Uma porta só pode ser usada por processos servidores; clientes não possuem portas de origem.
 D) Um socket é identificado somente pelo endereço IP de destino, sem relação com porta ou transporte.
 
-### Questão 2
+### S2D3Q102 — Alcance da confiabilidade e das confirmações do TCP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
 
 Em uma compra realizada por meio de uma aplicação web, o cliente recebe um ACK TCP após enviar dados. Esse ACK significa que:
 
@@ -4558,7 +5515,13 @@ B) a aplicação preservará obrigatoriamente as fronteiras de cada mensagem env
 C) o transporte confirmou o recebimento de bytes, mas não a aprovação semântica da compra pela aplicação.
 D) o servidor concluiu que o usuário está autorizado a realizar a operação.
 
-### Questão 3
+### S2D3Q103 — Características do UDP e responsabilidades da aplicação
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp).
 
 Assinale a alternativa correta acerca do UDP.
 
@@ -4567,7 +5530,13 @@ B) O UDP não oferece conexão, confirmação ou retransmissão nativas, embora 
 C) O UDP inicia cada comunicação com o handshake SYN, SYN-ACK e ACK.
 D) Nenhuma aplicação sobre UDP pode oferecer entrega confiável.
 
-### Questão 4
+### S2D3Q104 — Ausência de estado obrigatório no protocolo HTTP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
 
 Ao afirmar que HTTP é stateless, pretende-se dizer que:
 
@@ -4576,7 +5545,13 @@ B) HTTP não pode ser empregado com autenticação de usuários.
 C) o servidor deve apagar todo dado da aplicação ao responder a uma requisição.
 D) o protocolo não exige manter sessão entre requisições, embora a aplicação possa criar estado com cookies, tokens ou sessões.
 
-### Questão 5
+### S2D3Q105 — Garantias e limites do HTTPS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
 
 Assinale a afirmativa tecnicamente correta sobre HTTPS.
 
@@ -4585,7 +5560,13 @@ B) HTTPS corresponde a HTTP protegido por TLS; a validação adequada do certifi
 C) HTTPS substitui o controle de autorização da aplicação, pois o certificado identifica qualquer usuário.
 D) HTTPS usa obrigatoriamente UDP e não pode operar sobre TCP.
 
-### Questão 6
+### S2D3Q106 — Métodos HTTP e classes de códigos de estado
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
 
 Sobre métodos e respostas HTTP, assinale a alternativa correta.
 
@@ -4594,7 +5575,13 @@ B) POST é reservado exclusivamente para obter uma representação, sem submeter
 C) Códigos 4xx indicam, necessariamente, falha interna do servidor.
 D) Códigos 3xx significam sempre que o recurso foi removido definitivamente.
 
-### Questão 7
+### S2D3Q107 — Tipos de registros DNS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [4.3 Registros frequentes](semana_02_estudo.md#s2-d3-dns).
 
 No DNS, qual registro indica os servidores de correio de um domínio?
 
@@ -4603,7 +5590,13 @@ B) AAAA
 C) CNAME
 D) MX
 
-### Questão 8
+### S2D3Q108 — Consulta recursiva, iteração, cache e TTL no DNS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [4.2 Recursão, iteração e cache](semana_02_estudo.md#s2-d3-dns).
 
 Uma estação envia uma consulta recursiva ao seu resolvedor DNS. Nessa situação, é correto afirmar que o resolvedor:
 
@@ -4612,7 +5605,13 @@ B) devolve ao cliente apenas a lista de servidores raiz, sem buscar resposta.
 C) pode responder com dados válidos do cache, respeitado o TTL, ou buscar a resposta final usando referências iterativas.
 D) transforma automaticamente qualquer registro A em um registro MX.
 
-### Questão 9
+### S2D3Q109 — Transportes do DNS clássico
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
 
 Sobre o transporte do DNS clássico, assinale a alternativa correta.
 
@@ -4621,7 +5620,13 @@ B) DNS utiliza exclusivamente 53/TCP, pois consultas não podem ser datagramas.
 C) DNS clássico utiliza 53/UDP e 53/TCP; TCP pode ser necessário, por exemplo, em transferências de zona ou em determinadas respostas.
 D) DNS clássico exige 443/TCP para consultas de nomes.
 
-### Questão 10
+### S2D3Q110 — DNS sobre TLS e DNS sobre HTTPS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
 
 Quanto a formas encapsuladas de DNS, assinale a afirmativa correta.
 
@@ -4630,7 +5635,13 @@ B) DNS sobre HTTPS é sinônimo de transferência de zona por TCP.
 C) Todo DNS, sem exceção, deve usar a porta 53 para ser válido.
 D) DNS sobre TLS usa, por padrão, a porta 853, e DNS sobre HTTPS usa HTTPS, normalmente na porta 443.
 
-### Questão 11
+### S2D3Q111 — Sequência inicial de concessão DHCP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5.1 Sequência DORA](semana_02_estudo.md#s2-d3-dhcp).
 
 Um cliente sem configuração de rede inicia a obtenção dinâmica de parâmetros por DHCP. A sequência clássica DORA é:
 
@@ -4639,7 +5650,13 @@ B) DHCPREQUEST, DHCPACK, DHCPDISCOVER e DHCPOFFER.
 C) DHCPOFFER, DHCPDISCOVER, DHCPACK e DHCPREQUEST.
 D) DHCPDISCOVER, DHCPACK, DHCPOFFER e DHCPREQUEST.
 
-### Questão 12
+### S2D3Q112 — Portas e transporte do DHCP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp).
 
 Sobre as portas clássicas do DHCP, assinale a alternativa correta.
 
@@ -4648,7 +5665,13 @@ B) O servidor DHCP usa 67/UDP e o cliente usa 68/UDP.
 C) Cliente e servidor DHCP usam 53/UDP, pois o serviço resolve nomes.
 D) O cliente DHCP recebe a concessão em 443/TCP, dentro de HTTPS.
 
-### Questão 13
+### S2D3Q113 — Uso de DHCP relay entre segmentos roteados
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp).
 
 Em uma organização, o servidor DHCP está na VLAN 10 e os clientes da VLAN 20 não recebem endereços. Mantido o roteamento entre as VLANs, a medida compatível com a arquitetura é:
 
@@ -4657,7 +5680,13 @@ B) configurar um proxy reverso para encaminhar broadcasts DHCP.
 C) aplicar PAT no firewall para converter DHCP em HTTPS.
 D) configurar um DHCP relay na rede dos clientes e um escopo compatível no servidor central.
 
-### Questão 14
+### S2D3Q114 — Divisão de funções entre SMTP, POP3 e IMAP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email).
 
 Assinale a associação correta entre protocolos de correio eletrônico.
 
@@ -4666,7 +5695,13 @@ B) SMTP é usado na submissão e na transferência de mensagens, enquanto POP3 e
 C) IMAP é o protocolo que resolve registros MX antes do envio de e-mail.
 D) SMTP é destinado exclusivamente à leitura sincronizada de pastas pelo destinatário.
 
-### Questão 15
+### S2D3Q115 — Portas de submissão e transferência SMTP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email).
 
 Em relação às portas de SMTP, a associação correta é:
 
@@ -4675,7 +5710,13 @@ B) 587/UDP é a porta padrão de consultas SNMP.
 C) 587/TCP é usada tipicamente para submissão pelo cliente, e 25/TCP para transferência entre servidores.
 D) 465/UDP é a porta obrigatória de toda transferência entre servidores SMTP.
 
-### Questão 16
+### S2D3Q116 — Modelo de acesso e sincronização do IMAP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [6.3 IMAP](semana_02_estudo.md#s2-d3-email).
 
 Um usuário precisa ler suas mensagens no telefone e no notebook, mantendo pastas e marcações sincronizadas no servidor. O protocolo mais adequado é:
 
@@ -4684,7 +5725,13 @@ B) SMTP.
 C) FTP.
 D) Telnet.
 
-### Questão 17
+### S2D3Q117 — Fluxo integrado de submissão, transferência e acesso ao e-mail
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email).
 
 Uma pessoa redige uma mensagem, envia-a ao servidor de correio e depois a consulta em dois dispositivos, preservando o estado da caixa postal. A combinação coerente é:
 
@@ -4693,7 +5740,13 @@ B) POP3 para submissão e SMTP para sincronização de pastas.
 C) DNS para submissão e DHCP para leitura das mensagens.
 D) IMAP para transferência entre servidores e FTP para leitura da caixa postal.
 
-### Questão 18
+### S2D3Q118 — Arquitetura de canais e modos do FTP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 Sobre o FTP clássico, assinale a alternativa correta.
 
@@ -4702,7 +5755,13 @@ B) FTP usa uma única conexão, obrigatoriamente em 21/TCP, tanto para controle 
 C) FTP usa apenas UDP para reduzir latência de transferências.
 D) FTP separa a conexão de controle, normalmente em 21/TCP, da conexão de dados; no modo passivo, a porta de dados é informada pelo servidor.
 
-### Questão 19
+### S2D3Q119 — Funcionamento do modo passivo do FTP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 No modo passivo de FTP, é correto afirmar que:
 
@@ -4711,7 +5770,13 @@ B) o cliente inicia a conexão de dados para uma porta informada pelo servidor; 
 C) a conexão de controle deixa de existir e é substituída por DNS.
 D) o tráfego de dados passa obrigatoriamente a usar UDP/21.
 
-### Questão 20
+### S2D3Q120 — Negociação e proteção dos canais no FTPS explícito
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 Uma equipe precisa configurar FTPS explícito com proteção também para o canal de dados. Qual procedimento está correto?
 
@@ -4720,7 +5785,13 @@ B) Abrir 990/TCP e assumir que não haverá conexão de dados separada.
 C) Iniciar o controle em 21/TCP, negociar `AUTH TLS` e usar `PBSZ 0` seguido de `PROT P` para solicitar proteção privada dos dados.
 D) Usar apenas `PROT P` em 53/UDP, pois DNS fornece a criptografia do FTP.
 
-### Questão 21
+### S2D3Q121 — FTPS implícito, portas registradas e separação dos canais
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
 Sobre FTPS implícito, assinale a afirmativa tecnicamente adequada.
 
@@ -4729,7 +5800,13 @@ B) Transfere todos os dados somente por 989/TCP, independentemente de o modo ser
 C) A IANA registra 990/TCP para o controle e 989/TCP para dados, mas FTPS preserva canais separados e portas de dados podem ser negociadas conforme o modo e a configuração.
 D) Exige `AUTH TLS` após a abertura de 21/TCP, exatamente como definição de FTPS implícito.
 
-### Questão 22
+### S2D3Q122 — SFTP como protocolo de arquivos sobre SSH
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 Uma rotina de transferência de arquivos deve reutilizar uma infraestrutura SSH já configurada com autenticação por chave pública. A escolha coerente é:
 
@@ -4738,7 +5815,13 @@ B) FTP clássico, pois já cifra os arquivos por padrão.
 C) FTPS explícito, pois é o subsistema de arquivos do SSH.
 D) Telnet, pois fornece canal criptografado para arquivos.
 
-### Questão 23
+### S2D3Q123 — Administração remota segura com SSH
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 Para administração remota de um servidor com autenticação, integridade e confidencialidade do canal, deve-se preferir:
 
@@ -4747,7 +5830,13 @@ B) DNS em 53/UDP, pois registra o endereço do servidor.
 C) Telnet em 23/TCP, pois cifra as credenciais nativamente.
 D) SSH, normalmente em 22/TCP, com validação da chave do host e proteção das chaves privadas.
 
-### Questão 24
+### S2D3Q124 — Função, porta e limitação de segurança do Telnet
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota).
 
 Assinale a afirmativa correta sobre Telnet.
 
@@ -4756,7 +5845,13 @@ B) Telnet oferece terminal remoto, mas não fornece a proteção criptográfica 
 C) Telnet é a versão segura de LDAP em 636/TCP.
 D) Telnet sincroniza relógios por 123/UDP.
 
-### Questão 25
+### S2D3Q125 — Gerente, agente, MIB, OID e notificações SNMP
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp).
 
 Na arquitetura SNMP, assinale a alternativa correta.
 
@@ -4765,7 +5860,13 @@ B) O gerente pode consultar objetos de um agente por meio de MIB/OID, e o agente
 C) A MIB é a conexão de dados do FTP, e OID é a porta de origem do cliente.
 D) Uma trap é, por definição, uma resposta confirmada a toda consulta GET.
 
-### Questão 26
+### S2D3Q126 — Portas tradicionais e níveis de proteção do SNMP
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
 Sobre SNMP, assinale a alternativa correta.
 
@@ -4774,7 +5875,13 @@ B) SNMPv1 e SNMPv2c oferecem, obrigatoriamente, a mesma proteção criptográfic
 C) SNMP serve apenas para transferir arquivos entre gerente e agente.
 D) Consultas e respostas ao agente usam tradicionalmente 161/UDP, notificações chegam ao gerente em 162/UDP, e o SNMPv3 pode prover autenticação e privacidade conforme a configuração.
 
-### Questão 27
+### S2D3Q127 — Estrutura e operações de um diretório LDAP
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
 
 Sobre LDAP, assinale a alternativa correta.
 
@@ -4783,7 +5890,13 @@ B) LDAP resolve nomes de domínio por registros A e AAAA.
 C) LDAP acessa diretórios hierárquicos com entradas identificadas por DN e atributos, permitindo operações como bind e search.
 D) LDAP é um protocolo de sincronização de relógio sobre UDP.
 
-### Questão 28
+### S2D3Q128 — Proteção do LDAP e distinção entre autenticação e autorização
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
 
 Assinale a afirmativa correta sobre LDAP e proteção do acesso.
 
@@ -4792,7 +5905,13 @@ B) LDAP em 389/TCP é sempre cifrado, mesmo sem negociação TLS.
 C) LDAPS em 636/UDP é a única forma de consultar diretórios.
 D) A existência de uma conta LDAP autoriza automaticamente qualquer ação em toda aplicação.
 
-### Questão 29
+### S2D3Q129 — Proxy direto
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10.1 Proxy direto](semana_02_estudo.md#s2-d3-proxy).
 
 Em uma rede corporativa, um componente recebe solicitações dos navegadores dos empregados e aplica política de navegação, autenticação e cache em nome desses clientes. Esse componente é um:
 
@@ -4801,7 +5920,13 @@ B) NAT básico.
 C) proxy reverso.
 D) proxy direto.
 
-### Questão 30
+### S2D3Q130 — Proxy reverso
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 
 Um portal público coloca um componente diante dos servidores de aplicação para terminar TLS, distribuir carga e ocultar a topologia interna. Trata-se de:
 
@@ -4810,7 +5935,13 @@ B) proxy direto.
 C) DHCP relay.
 D) resolvedor DNS recursivo.
 
-### Questão 31
+### S2D3Q131 — Diferença entre proxy e NAT
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 
 Qual alternativa diferencia corretamente proxy e NAT?
 
@@ -4819,7 +5950,13 @@ B) Um proxy pode intermediar a comunicação em nome de um extremo, enquanto NAT
 C) Proxy e NAT são sinônimos e fornecem sempre a mesma proteção.
 D) NAT cifra o conteúdo, enquanto proxy apenas converte nomes em endereços IP.
 
-### Questão 32
+### S2D3Q132 — NAT básico versus PAT/NAPT
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
 
 Em uma questão que contrapõe NAT básico e PAT/NAPT, a diferença decisiva é que:
 
@@ -4828,7 +5965,13 @@ B) PAT/NAPT opera somente em IPv6, enquanto NAT básico opera somente em IPv4.
 C) NAT básico traduz endereços IP sem traduzir identificadores de transporte, enquanto PAT/NAPT também traduz portas para multiplexar fluxos.
 D) PAT/NAPT substitui a necessidade de gateway padrão.
 
-### Questão 33
+### S2D3Q133 — Tabela de tradução e multiplexação do PAT/NAPT
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat).
 
 Dois hosts privados usam a mesma porta de origem 52000 para acessar o mesmo site externo, mas compartilham um único endereço público. Como o PAT/NAPT pode distinguir os retornos?
 
@@ -4837,7 +5980,13 @@ B) Convertendo o endereço público em um registro MX para cada host.
 C) Criando mapeamentos com portas públicas distintas e associando cada retorno ao fluxo interno correspondente.
 D) Fazendo o resolvedor DNS escolher um endereço IPv6 privado para cada host.
 
-### Questão 34
+### S2D3Q134 — Limites de segurança do NAT/PAT
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
 
 Assinale a afirmativa correta sobre NAT/PAT.
 
@@ -4846,7 +5995,13 @@ B) NAT/PAT não autentica usuários, não criptografa o tráfego e não substitu
 C) PAT/NAPT impede, por definição, todo acesso indevido vindo da Internet.
 D) NAT básico é um sinônimo de proxy reverso de aplicação.
 
-### Questão 35
+### S2D3Q135 — Finalidade, porta e limite do NTP
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp).
 
 Para corrigir horários divergentes em logs distribuídos e evitar problemas ligados à validade temporal de certificados, o serviço mais diretamente relacionado é:
 
@@ -4855,7 +6010,13 @@ B) DNS em 53/UDP, que escolhe a hora do servidor autoritativo.
 C) DHCP em 67/TCP, que determina o horário de verão.
 D) FTP em 21/TCP, que transfere arquivos de log em ordem temporal.
 
-### Questão 36
+### S2D3Q136 — Alcance das associações de portas registradas pela IANA
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 Sobre portas conhecidas e o registro da IANA, assinale a alternativa correta.
 
@@ -4864,7 +6025,13 @@ B) Todo tráfego na porta 443 é necessariamente legítimo e criptografado de fo
 C) A porta 22 identifica de modo infalível SSH, independentemente da configuração do host.
 D) O registro da IANA define associações convencionais de nomes e portas, mas serviços podem ser configurados em outras portas e a porta isolada não comprova conteúdo, legitimidade ou segurança.
 
-### Questão 37
+### S2D3Q137 — Ordem do fluxo integrado de acesso à rede
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 Uma estação recém-conectada depende de DHCP e acessará um portal pelo nome. Qual etapa deve ocorrer primeiro para que ela obtenha IP, prefixo, gateway e servidor DNS automaticamente?
 
@@ -4873,7 +6040,13 @@ B) A tradução PAT no firewall de borda.
 C) A negociação TLS com o portal.
 D) A consulta ao servidor autoritativo DNS externo.
 
-### Questão 38
+### S2D3Q138 — Diagnóstico de falha de resolução DNS
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns).
 
 Uma estação consegue abrir `https://198.51.100.40`, mas falha ao tentar acessar `portal.example` porque o nome não é resolvido. O primeiro bloco de investigação mais indicado é:
 
@@ -4882,7 +6055,13 @@ B) FTP passivo, pois o navegador usa duas conexões.
 C) DNS, verificando servidor configurado, respostas, cache e registros.
 D) IMAP, verificando a sincronização de mensagens.
 
-### Questão 39
+### S2D3Q139 — Diagnóstico por etapas após a resolução DNS
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 Em um diagnóstico, o nome do portal é resolvido corretamente, mas a conexão tradicional para 443/TCP não é estabelecida. A conclusão inicial mais adequada é:
 
@@ -4891,7 +6070,13 @@ B) o registro MX do domínio está incorreto.
 C) o DNS não conseguiu converter o nome em endereço.
 D) devem ser verificados rota, firewall, NAT/PAT ou o próprio serviço, sem atribuir a falha automaticamente ao DNS.
 
-### Questão 40
+### S2D3Q140 — Sequência de HTTPS com proxy reverso
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 Considere o acesso tradicional a um portal HTTPS publicado por proxy reverso. Após a resolução do nome, a sequência tecnicamente compatível é:
 
@@ -4900,7 +6085,13 @@ B) abertura de TCP para 443, negociação TLS, tráfego HTTP dentro do canal pro
 C) envio de uma trap SNMP, seguido de DHCPOFFER e abertura de Telnet.
 D) negociação de FTP passivo, que substitui o TLS e o HTTP.
 
-### Questão 41
+### S2D3Q141 — Identificação de conexões por seus extremos e protocolo
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 Dois clientes podem acessar simultaneamente o mesmo servidor em 443/TCP porque:
 
@@ -4909,7 +6100,13 @@ B) os clientes usam combinações distintas de IP e/ou porta de origem, que comp
 C) o servidor elimina os números de porta de origem antes de aceitar as conexões.
 D) TCP identifica conexões somente pelo nome DNS consultado pelo cliente.
 
-### Questão 42
+### S2D3Q142 — Porta como indício, não como prova do protocolo
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
 Um analista observa pacotes destinados à porta 443. A inferência correta é:
 
@@ -4918,7 +6115,13 @@ B) está comprovado que todo conteúdo é legítimo e que o certificado foi vali
 C) o tráfego é obrigatoriamente HTTP/2 sobre TCP.
 D) a porta sugere uma convenção de HTTPS, mas não prova sozinha o protocolo efetivo, a legitimidade do conteúdo nem a segurança da aplicação.
 
-### Questão 43
+### S2D3Q143 — Transporte do HTTP/3
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
 
 Sobre HTTP/3, assinale a alternativa correta.
 
@@ -4927,7 +6130,13 @@ B) HTTP/3 é apenas FTP com outro nome e usa 21/TCP.
 C) HTTP/3 elimina a necessidade de TLS ao usar UDP.
 D) HTTP/3 só pode funcionar após uma concessão SNMP.
 
-### Questão 44
+### S2D3Q144 — Registro PTR e resolução DNS reversa
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [4.3 Registros frequentes do DNS](semana_02_estudo.md#s2-d3-dns).
 
 Qual registro DNS é empregado tipicamente para resolução reversa, isto é, de um endereço para um nome?
 
@@ -4936,7 +6145,13 @@ B) SOA
 C) PTR
 D) TXT
 
-### Questão 45
+### S2D3Q145 — Servidor autoritativo, resolvedor e TTL de cache
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns).
 
 Assinale a afirmativa correta sobre autoridade e cache DNS.
 
@@ -4945,7 +6160,13 @@ B) O TTL define a data de expiração do domínio e a disponibilidade do servido
 C) Um servidor autoritativo responde pelos dados publicados na zona sob sua autoridade; um resolvedor pode reutilizar dados em cache durante o TTL aplicável.
 D) Qualquer resposta armazenada em cache é automaticamente autoritativa para toda a Internet.
 
-### Questão 46
+### S2D3Q146 — Diagnóstico de falha na concessão DHCP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp).
 
 Uma estação apresenta endereço 169.254.x.x, não possui gateway configurado e deveria receber configuração automaticamente. O primeiro foco de diagnóstico é:
 
@@ -4954,7 +6175,13 @@ B) a transferência de zona DNS por TCP.
 C) a configuração de TLS implícito no IMAP.
 D) o modo passivo do FTP.
 
-### Questão 47
+### S2D3Q147 — Critérios para escolha de UDP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [2.3 Escolha do transporte](semana_02_estudo.md#s2-d3-tcp-udp).
 
 Qual cenário justifica de modo mais adequado a escolha de UDP, sem reduzir a decisão à frase “UDP é mais rápido”?
 
@@ -4963,7 +6190,13 @@ B) Uma aplicação troca mensagens curtas e independentes, valoriza baixa latên
 C) Um serviço exige handshake SYN, SYN-ACK e ACK antes de cada datagrama.
 D) Um sistema precisa que a camada de transporte preserve necessariamente as fronteiras de todas as mensagens em um fluxo TCP.
 
-### Questão 48
+### S2D3Q148 — Garantias e limites do TCP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
 
 Assinale a propriedade corretamente atribuída ao TCP.
 
@@ -4972,7 +6205,13 @@ B) O TCP garante que uma operação de negócio, como pagamento, foi gravada def
 C) O TCP é incompatível com controle de fluxo e de congestionamento.
 D) O TCP fornece fluxo de bytes ordenado e confiável, usando sequência, confirmações, temporizadores e retransmissões, mas não preserva fronteiras de mensagens da aplicação.
 
-### Questão 49
+### S2D3Q149 — Impacto operacional da sincronização NTP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp) e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 Em uma investigação, os logs de dois servidores têm horários incompatíveis e certificados passam a parecer inválidos em uma das máquinas. A ação mais diretamente relacionada ao problema é:
 
@@ -4981,7 +6220,13 @@ B) trocar o fuso horário no DNS para que os registros A sejam recalculados.
 C) substituir DHCP por POP3, pois ambos usam mensagens de confirmação.
 D) habilitar FTP ativo para ordenar os eventos registrados.
 
-### Questão 50
+### S2D3Q150 — Integração dos serviços no acesso a um portal publicado
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [14. Fluxo integrado de acesso a um portal](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
 Uma estação recém-conectada acessa um portal externo cujo endereço público é compartilhado por vários usuários internos e cuja publicação usa proxy reverso. Considerando o fluxo principal, assinale a sequência compatível.
 
@@ -5048,8 +6293,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 ## Comentários do Dia 3
 
-### Comentário da Questão 1
+### Comentário S2D3Q101
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5067,8 +6315,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-### Comentário da Questão 2
+### Comentário S2D3Q102
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5086,8 +6337,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
 
-### Comentário da Questão 3
+### Comentário S2D3Q103
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5105,8 +6359,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [2.2 UDP: datagramas sem conexão](semana_02_estudo.md#s2-d3-tcp-udp).
 
-### Comentário da Questão 4
+### Comentário S2D3Q104
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5124,8 +6381,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
 
-### Comentário da Questão 5
+### Comentário S2D3Q105
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5143,8 +6403,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
 
-### Comentário da Questão 6
+### Comentário S2D3Q106
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5162,8 +6425,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [3.1 HTTP](semana_02_estudo.md#s2-d3-http-https).
 
-### Comentário da Questão 7
+### Comentário S2D3Q107
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5181,8 +6447,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.3 Registros frequentes](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 8
+### Comentário S2D3Q108
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5200,8 +6469,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.2 Recursão, iteração e cache](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 9
+### Comentário S2D3Q109
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5219,8 +6491,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 10
+### Comentário S2D3Q110
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5238,8 +6513,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.4 Transportes do DNS clássico](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 11
+### Comentário S2D3Q111
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5257,8 +6535,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [5.1 Sequência DORA](semana_02_estudo.md#s2-d3-dhcp).
 
-### Comentário da Questão 12
+### Comentário S2D3Q112
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5276,8 +6557,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [5. DHCP — atribuição dinâmica de configuração](semana_02_estudo.md#s2-d3-dhcp).
 
-### Comentário da Questão 13
+### Comentário S2D3Q113
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5295,8 +6579,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [5.1 Sequência DORA — DHCP relay](semana_02_estudo.md#s2-d3-dhcp).
 
-### Comentário da Questão 14
+### Comentário S2D3Q114
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5314,8 +6601,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [6. Correio eletrônico: SMTP, POP3 e IMAP](semana_02_estudo.md#s2-d3-email).
 
-### Comentário da Questão 15
+### Comentário S2D3Q115
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5333,8 +6623,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [6.1 SMTP](semana_02_estudo.md#s2-d3-email).
 
-### Comentário da Questão 16
+### Comentário S2D3Q116
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5352,8 +6645,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [6.3 IMAP](semana_02_estudo.md#s2-d3-email).
 
-### Comentário da Questão 17
+### Comentário S2D3Q117
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5371,8 +6667,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [6.4 Fluxo integrado de e-mail](semana_02_estudo.md#s2-d3-email).
 
-### Comentário da Questão 18
+### Comentário S2D3Q118
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5390,8 +6689,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 19
+### Comentário S2D3Q119
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5409,8 +6711,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.1 FTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 20
+### Comentário S2D3Q120
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5428,8 +6733,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 21
+### Comentário S2D3Q121
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5447,8 +6755,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.2 FTPS](semana_02_estudo.md#s2-d3-transferencia-remota) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
-### Comentário da Questão 22
+### Comentário S2D3Q122
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5466,8 +6777,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.3 SFTP](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 23
+### Comentário S2D3Q123
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5485,8 +6799,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.4 SSH](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 24
+### Comentário S2D3Q124
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5504,8 +6821,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [7.5 Telnet](semana_02_estudo.md#s2-d3-transferencia-remota).
 
-### Comentário da Questão 25
+### Comentário S2D3Q125
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5523,8 +6843,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp).
 
-### Comentário da Questão 26
+### Comentário S2D3Q126
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5542,8 +6865,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [8. SNMP — gerenciamento e monitoramento](semana_02_estudo.md#s2-d3-snmp) e [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas).
 
-### Comentário da Questão 27
+### Comentário S2D3Q127
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5561,8 +6887,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
 
-### Comentário da Questão 28
+### Comentário S2D3Q128
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5580,8 +6909,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [9. LDAP — acesso a diretórios](semana_02_estudo.md#s2-d3-ldap).
 
-### Comentário da Questão 29
+### Comentário S2D3Q129
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5599,8 +6931,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [10.1 Proxy direto](semana_02_estudo.md#s2-d3-proxy).
 
-### Comentário da Questão 30
+### Comentário S2D3Q130
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5618,8 +6953,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [10.2 Proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 
-### Comentário da Questão 31
+### Comentário S2D3Q131
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5637,8 +6975,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [10. Proxy direto e proxy reverso](semana_02_estudo.md#s2-d3-proxy).
 
-### Comentário da Questão 32
+### Comentário S2D3Q132
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5656,8 +6997,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
 
-### Comentário da Questão 33
+### Comentário S2D3Q133
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5675,8 +7019,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [11. NAT básico e PAT/NAPT — Exemplo resolvido 3: Dois usuários compartilham um IP público](semana_02_estudo.md#s2-d3-nat-pat).
 
-### Comentário da Questão 34
+### Comentário S2D3Q134
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5694,8 +7041,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [11. NAT básico e PAT/NAPT](semana_02_estudo.md#s2-d3-nat-pat).
 
-### Comentário da Questão 35
+### Comentário S2D3Q135
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5713,8 +7063,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp).
 
-### Comentário da Questão 36
+### Comentário S2D3Q136
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5732,8 +7085,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-### Comentário da Questão 37
+### Comentário S2D3Q137
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5751,8 +7107,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [14. Fluxo integrado de acesso a um portal — etapas 1 a 4](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
-### Comentário da Questão 38
+### Comentário S2D3Q138
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5770,8 +7129,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4. DNS — Exemplo resolvido 1: Nome não resolve, mas o IP responde](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 39
+### Comentário S2D3Q139
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5789,8 +7151,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [14. Fluxo integrado de acesso a um portal — diagnóstico por sintoma](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
-### Comentário da Questão 40
+### Comentário S2D3Q140
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5808,8 +7173,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [14. Fluxo integrado de acesso a um portal — etapas 7 a 10](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
-### Comentário da Questão 41
+### Comentário S2D3Q141
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5827,8 +7195,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [1. Protocolo, serviço, porta e socket](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-### Comentário da Questão 42
+### Comentário S2D3Q142
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5846,8 +7217,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [13. Portas conhecidas mais cobradas](semana_02_estudo.md#s2-d3-portas) e [1. Protocolo, serviço, porta e socket — Portas conhecidas não são uma garantia](semana_02_estudo.md#s2-d3-protocolo-porta).
 
-### Comentário da Questão 43
+### Comentário S2D3Q143
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5865,8 +7239,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [3.1 HTTP e 3.2 HTTPS](semana_02_estudo.md#s2-d3-http-https).
 
-### Comentário da Questão 44
+### Comentário S2D3Q144
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5884,8 +7261,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.3 Registros frequentes do DNS](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 45
+### Comentário S2D3Q145
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -5903,8 +7283,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [4.1 Componentes e 4.2 Recursão, iteração e cache do DNS](semana_02_estudo.md#s2-d3-dns).
 
-### Comentário da Questão 46
+### Comentário S2D3Q146
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5922,8 +7305,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [5. DHCP — atribuição dinâmica de configuração e diagnóstico por sintoma](semana_02_estudo.md#s2-d3-dhcp).
 
-### Comentário da Questão 47
+### Comentário S2D3Q147
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -5941,8 +7327,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [2.3 Escolha do transporte](semana_02_estudo.md#s2-d3-tcp-udp).
 
-### Comentário da Questão 48
+### Comentário S2D3Q148
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -5960,8 +7349,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [2.1 TCP: orientado à conexão e confiável](semana_02_estudo.md#s2-d3-tcp-udp).
 
-### Comentário da Questão 49
+### Comentário S2D3Q149
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -5979,8 +7371,11 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 
 **Referência:** [12. NTP — sincronização de tempo](semana_02_estudo.md#s2-d3-ntp) e [14. Fluxo integrado de acesso a um portal — etapa 11](semana_02_estudo.md#s2-d3-fluxo-integrado).
 
-### Comentário da Questão 50
+### Comentário S2D3Q150
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -6003,12 +7398,12 @@ D) SNMP atribui endereço IP; POP3 faz o roteamento; FTP substitui o proxy rever
 ## Questões extras de revisão fixa do Dia 3
 
 #### Extra Dia 3.1
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** função da Lei, do Decreto, do Regimento e do Código de Ética.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Sobre as quatro bases normativas da revisão do Dia 3, assinale a alternativa correta.
@@ -6018,12 +7413,12 @@ B) O Decreto nº 61.934/1967 revoga a Lei nº 4.769/1965 sempre que detalha o ex
 C) A Lei nº 4.769/1965 disciplina o exercício e estrutura o sistema; o Decreto a regulamenta; o Regimento organiza o CRA-PR; e a RN CFA nº 671/2025 aprova o Código de Ética.
 D) Lei, Decreto, Regimento e Código possuem o mesmo objeto e podem ser usados indistintamente para definir qualquer competência.
 #### Extra Dia 3.2
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** campo da atividade profissional no art. 2º da Lei nº 4.769/1965.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 De acordo com o art. 2º da Lei nº 4.769/1965, integra o campo da atividade profissional estudada:
@@ -6033,12 +7428,12 @@ B) exclusivamente a direção superior de órgãos públicos federais, vedadas a
 C) apenas a assinatura de documentos contábeis, sem atividades de planejamento, organização ou controle.
 D) toda e qualquer atividade técnica existente, ainda que não guarde conexão com os campos da Administração.
 #### Extra Dia 3.3
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** diferença entre requisito de formação e procedimento de provimento.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: habilitação, diploma e concurso](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Um candidato apresenta o diploma exigido para o provimento de cargo técnico de Administração e afirma que, por isso, está dispensado do concurso previsto em lei. À luz da Lei nº 4.769/1965 e do Decreto nº 61.934/1967, a afirmação é:
@@ -6048,12 +7443,12 @@ B) correta, desde que o candidato ainda não possua registro no CRA.
 C) incorreta apenas se o cargo estiver em empresa privada, pois concurso não se aplica à Administração Pública.
 D) incorreta, porque a apresentação do diploma não dispensa a prestação de concurso quando este for exigido.
 #### Extra Dia 3.4
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** natureza do Sistema CFA/CRAs na Lei nº 4.769/1965.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: natureza do Sistema](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Nos termos do art. 6º da Lei nº 4.769/1965, o CFA e os CRAs:
@@ -6063,12 +7458,12 @@ B) constituem, em conjunto, autarquia dotada de personalidade jurídica de direi
 C) integram a Administração Direta estadual e dependem de autorização do governador para exercer fiscalização.
 D) formam empresa pública federal destinada exclusivamente à expedição de carteiras profissionais.
 #### Extra Dia 3.5
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** competências do CFA.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Assinale a alternativa que apresenta competência atribuída pela Lei nº 4.769/1965 ao CFA.
@@ -6078,12 +7473,12 @@ B) Elaborar o Regimento do CRA-PR sem participação do próprio Conselho Region
 C) Examinar, modificar e aprovar regimentos internos dos Regionais, julgar em última instância recursos de penalidades e votar e alterar o Código de Deontologia Administrativa.
 D) Fiscalizar exclusivamente o exercício profissional no Paraná, sem função de orientação nacional.
 #### Extra Dia 3.6
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** finalidades dos Conselhos Regionais.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Constitui núcleo de finalidades legais dos Conselhos Regionais de Administração:
@@ -6093,12 +7488,12 @@ B) votar leis federais sobre profissões regulamentadas e rever decisões judici
 C) modificar unilateralmente o Código nacional e aprovar definitivamente o próprio regimento, sem exame do CFA.
 D) limitar-se à arrecadação de anuidades, sem competência para registro, fiscalização ou julgamento.
 #### Extra Dia 3.7
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** registro e carteira profissional.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Sobre registro e carteira profissional no art. 14 da Lei nº 4.769/1965, assinale a alternativa correta.
@@ -6108,12 +7503,12 @@ B) A falta de registro produz somente irregularidade cadastral, sem repercussão
 C) A carteira é expedida pelo CFA e não pode servir como documento de identidade.
 D) O exercício exige registro; sua falta o torna ilegal e punível, e a carteira profissional serve como prova do exercício, como identidade e tem fé em todo o território nacional.
 #### Extra Dia 3.8
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** registro de organizações e penalidades legais.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Quanto aos arts. 15 e 16 da Lei nº 4.769/1965, assinale a alternativa correta.
@@ -6123,12 +7518,12 @@ B) Empresas, entidades e escritórios técnicos que explorem as atividades previ
 C) A Lei prevê apenas advertência escrita e censura pública, sem multa, suspensão ou regra de reincidência.
 D) O cancelamento legal é automático na primeira infração e dispensa ampla defesa ou enquadramento.
 #### Extra Dia 3.9
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** detalhamento regulamentar da atividade profissional.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 O art. 3º do Decreto nº 61.934/1967 detalha a atividade profissional. Assinale a alternativa compatível com esse dispositivo.
@@ -6138,12 +7533,12 @@ B) Funções de direção ou assessoramento nunca integram a atividade profissio
 C) O campo abrange documentos técnicos, pesquisas, planejamento, implantação, coordenação e controle, além de funções e cargos técnicos, chefia, direção, assessoramento, consultoria e magistério pertinente.
 D) O Decreto trata somente da composição eleitoral dos Conselhos e não descreve atividades profissionais.
 #### Extra Dia 3.10
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** elaboração e assinatura de documentos profissionais.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Sobre documentos profissionais nos arts. 6º e 7º do Decreto nº 61.934/1967, assinale a alternativa correta.
@@ -6153,12 +7548,12 @@ B) A citação do número de registro é facultativa, ainda que o documento este
 C) Empresas privadas estão proibidas de exigir assinatura de profissional registrado em documentos técnicos.
 D) Qualquer assinatura posterior regulariza documento elaborado por pessoa não registrada, independentemente das demais condições normativas.
 #### Extra Dia 3.11
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** exercício, registro e fiscalização no Decreto.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Considerando os arts. 9º a 11 do Decreto nº 61.934/1967, assinale a alternativa correta.
@@ -6168,12 +7563,12 @@ B) O exercício exige a Carteira de Identidade Profissional e prova do pleno goz
 C) A fiscalização compete exclusivamente ao CFA, sendo vedada a atuação do CRA da jurisdição.
 D) A falta de registro é sanada automaticamente pela experiência prática, sem providência perante o Conselho.
 #### Extra Dia 3.12
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** natureza e organização básica do CRA-PR.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Segundo o Regimento aprovado pela RN CFA nº 651/2024, assinale a alternativa correta.
@@ -6183,12 +7578,12 @@ B) O CRA-PR é associação privada, e a Ouvidoria constitui sua primeira instâ
 C) A autonomia do CRA-PR o dispensa de executar diretrizes do CFA e de submeter seu Regimento ao Conselho Federal.
 D) O CRA-PR é autarquia de direito público, tem sede na capital e jurisdição em todo o Paraná; seu Plenário é órgão colegiado de deliberação superior e primeira instância de julgamento regional.
 #### Extra Dia 3.13
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** âmbito subjetivo e material do Código de Ética.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Quanto ao âmbito de aplicação do Código aprovado pela RN CFA nº 671/2025, assinale a alternativa correta.
@@ -6198,12 +7593,12 @@ B) O Código alcança qualquer trabalhador de tecnologia da informação, ainda 
 C) Pessoas jurídicas estão integralmente excluídas, pois somente pessoa natural pode praticar infração ética.
 D) O exercício de mandato eletivo no Sistema é expressamente excluído da incidência do Código.
 #### Extra Dia 3.14
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** distinção entre dever e direito ético.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 Assinale a alternativa que relaciona corretamente um dever e um direito previstos na RN CFA nº 671/2025.
@@ -6213,12 +7608,12 @@ B) É direito ceder o registro a terceiro não habilitado, e é dever aceitar co
 C) É dever comunicar imediatamente ao CRA alterações de domicílio ou endereço relevantes ao controle profissional; é direito apontar falhas institucionais consideradas indignas do exercício ou prejudiciais, dirigindo-se ao Sistema CFA/CRAs.
 D) É dever abdicar da independência técnica quando houver vínculo de emprego, e é direito publicar em nome próprio trabalho de que não participou.
 #### Extra Dia 3.15
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** infrações, sanções, multa, processo e pessoa jurídica.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 À luz da RN CFA nº 671/2025, assinale a alternativa correta.
@@ -6228,12 +7623,12 @@ B) Assinar documento de terceiro sem orientação ou supervisão constitui infra
 C) A violação de sigilo é infração mesmo quando existe justa causa reconhecida pela norma.
 D) Pessoa jurídica registrada não se submete a dever, infração, advertência, censura ou multa ética alguma.
 #### Extra Dia 3.16
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** relação adversativa de conectores.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 Leia: “O CRA-PR possui autonomia administrativa; contudo, deve executar as diretrizes do CFA.” O conector “contudo” estabelece relação de:
@@ -6243,12 +7638,12 @@ B) conclusão.
 C) finalidade.
 D) oposição ou ressalva.
 #### Extra Dia 3.17
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** coesão referencial e ambiguidade pronominal.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 No período “O diretor entregou ao conselheiro seu relatório”, assinale a alternativa correta.
@@ -6258,12 +7653,12 @@ B) “Seu” retoma obrigatoriamente o termo mais próximo, sem possibilidade de
 C) A frase é agramatical porque pronomes possessivos não podem retomar pessoas.
 D) A ambiguidade desaparece se “seu” for retirado: “O diretor entregou ao conselheiro relatório”, sem necessidade de definir a posse.
 #### Extra Dia 3.18
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** concordância com `haver`, `existir` e `fazer`.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: haver, existir e concordância](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 Assinale a alternativa redigida de acordo com as regras de concordância estudadas.
@@ -6273,12 +7668,12 @@ B) Fazem dois anos que o processo começou e houveram novas manifestações.
 C) Deve haver providências, existiam inconsistências no relatório e faz dois anos que o processo começou.
 D) Devem haver providências, existia três inconsistências e fazem dois anos desde a decisão.
 #### Extra Dia 3.19
-
 - **Dia:** Dia 3
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** fusão da preposição `a` com artigo feminino.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 Assinale a alternativa em que o emprego da crase está correto.
@@ -6294,6 +7689,7 @@ D) A equipe entregou o relatório à revisar pelo diretor.
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação de termos essenciais, oração deslocada e aposto.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 3 — Português: pontuação](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 Assinale a alternativa com pontuação adequada.
@@ -6330,10 +7726,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 ## Comentários das questões extras do Dia 3
 
 #### Comentário Extra Dia 3.1
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -6351,10 +7748,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: relação entre as normas](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.2
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -6372,10 +7770,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: Lei nº 4.769/1965](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.3
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -6393,10 +7792,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: habilitação, diploma e concurso](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.4
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -6414,10 +7814,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: natureza do Sistema](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.5
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -6435,10 +7836,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: CFA × CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.6
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -6456,10 +7858,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: competências dos CRAs](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.7
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -6477,10 +7880,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: registro e carteira](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.8
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -6498,10 +7902,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 15 e 16 da Lei](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.9
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -6519,10 +7924,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: Decreto nº 61.934/1967](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.10
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -6540,10 +7946,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: documentos profissionais](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.11
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -6561,10 +7968,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: arts. 9º a 11 do Decreto](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.12
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -6582,10 +7990,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: Regimento do CRA-PR](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.13
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -6603,10 +8012,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: sujeitos do Código](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.14
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -6624,10 +8034,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: dever × direito × infração](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.15
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -6645,10 +8056,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Legislação: infrações e sanções](semana_02_estudo.md#s2-d3-revisao-legislacao).
 
 #### Comentário Extra Dia 3.16
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -6666,10 +8078,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Português: conectores](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 #### Comentário Extra Dia 3.17
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -6687,10 +8100,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Português: referência e ambiguidade](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 #### Comentário Extra Dia 3.18
-
 **Alternativa correta: C.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -6708,10 +8122,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Português: haver, existir e concordância](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 #### Comentário Extra Dia 3.19
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -6729,10 +8144,11 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 **Referência:** [Revisão fixa do Dia 3 — Português: crase](semana_02_estudo.md#s2-d3-revisao-portugues).
 
 #### Comentário Extra Dia 3.20
-
 **Alternativa correta: D.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -6756,7 +8172,13 @@ D) O Plenário, órgão colegiado de deliberação superior, decidiu o caso em p
 
 ## Questões principais
 
-### Questão 1
+### S2D4Q151 — Segurança da informação como processo contínuo de gestão de riscos
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
 
 Uma equipe afirma que a aquisição de uma ferramenta de segurança tornará o portal institucional definitivamente seguro. À luz da gestão de riscos, assinale a alternativa correta.
 
@@ -6765,7 +8187,13 @@ B) A segurança exige identificar ativos, ameaças e vulnerabilidades, estimar p
 C) A seleção de um controle eficaz elimina a necessidade de reavaliar mudanças no ambiente e no perfil de ameaças.
 D) A gestão de riscos se limita a corrigir vulnerabilidades técnicas, pois pessoas, processos e fornecedores não alteram o risco.
 
-### Questão 2
+### S2D4Q152 — Risco residual e decisão de tratamento após a aplicação de controles
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
 
 Após implantar MFA, segmentação e monitoramento, uma organização reavalia o risco de acesso indevido. Sobre o risco residual, assinale a alternativa correta.
 
@@ -6774,7 +8202,13 @@ B) Deve ser obrigatoriamente igual a zero para que o serviço possa permanecer e
 C) Deve ser sempre transferido a terceiro, ainda que seja compatível com os critérios de aceitação da organização.
 D) É o risco que permanece após os controles e deve ser reavaliado para aceitação ou tratamento adicional conforme o contexto.
 
-### Questão 3
+### S2D4Q153 — Confidencialidade como prevenção da divulgação não autorizada
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia).
 
 Durante o transporte, foi perdido um disco de backup não cifrado que continha dados pessoais. Não há evidência de modificação ou destruição dos arquivos. O objetivo de segurança diretamente ameaçado é a:
 
@@ -6783,7 +8217,13 @@ B) integridade.
 C) disponibilidade.
 D) autenticidade.
 
-### Questão 4
+### S2D4Q154 — Um único incidente pode comprometer simultaneamente os três objetivos da tríade CIA
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia) e [Malware](semana_02_estudo.md#s2-d4-malware).
 
 Considere as afirmativas sobre um incidente de ransomware.
 
@@ -6798,7 +8238,13 @@ B) III, apenas.
 C) I e II, apenas.
 D) I, II e III.
 
-### Questão 5
+### S2D4Q155 — Autenticação comprova identidade; autorização determina ações permitidas
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Em um sistema do conselho, o usuário apresenta sua senha e um token válido. Depois, o sistema consulta o papel funcional para decidir se ele pode alterar um cadastro. As duas etapas correspondem, respectivamente, a:
 
@@ -6807,7 +8253,13 @@ B) autenticação e autorização.
 C) accounting e não repúdio.
 D) auditoria e accounting.
 
-### Questão 6
+### S2D4Q156 — MFA requer fatores pertencentes a categorias diferentes de autenticação
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Assinale a alternativa que apresenta autenticação multifator, considerando que os fatores devem pertencer a categorias diferentes.
 
@@ -6816,7 +8268,13 @@ B) Duas senhas distintas cadastradas pelo mesmo usuário.
 C) Impressão digital e reconhecimento facial.
 D) Senha pessoal e token criptográfico sob posse do usuário.
 
-### Questão 7
+### S2D4Q157 — Autorização baseada em atributos, em contraste com autorização baseada em papéis
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Uma política libera determinado relatório somente quando os atributos do usuário, do recurso, da ação, do dispositivo e do horário satisfazem as condições definidas. Esse modelo é característico de:
 
@@ -6825,7 +8283,13 @@ B) RBAC baseado exclusivamente no nome do cargo.
 C) autenticação biométrica.
 D) accounting de sessões.
 
-### Questão 8
+### S2D4Q158 — AAA significa Authentication, Authorization e Accounting
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 No modelo técnico tradicional AAA, o terceiro A corresponde a accounting. Assinale a interpretação correta desse componente.
 
@@ -6834,7 +8298,13 @@ B) Ele define, sozinho, todas as permissões associadas ao papel do usuário.
 C) Ele registra consumo, sessões e ações para responsabilização e controle, fornecendo insumos para auditoria sem ser sinônimo de todo o processo de auditoria.
 D) Ele produz não repúdio forte apenas por manter qualquer registro local, mesmo sem proteção ou contexto.
 
-### Questão 9
+### S2D4Q159 — Não repúdio apoiado por assinatura digital e por uma cadeia adequada de evidências
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Um documento eletrônico precisa oferecer evidência que dificulte a negação falsa da autoria perante terceiro. Qual alternativa descreve a solução mais adequada?
 
@@ -6843,7 +8313,13 @@ B) Empregar assinatura digital, com proteção da chave privada, vínculo confi�
 C) Cifrar o documento com uma chave simétrica compartilhada entre todos os envolvidos, pois qualquer detentor da chave identifica exclusivamente o autor.
 D) Registrar o nome declarado pelo usuário em arquivo de texto sem controle de integridade.
 
-### Questão 10
+### S2D4Q160 — Requisitos de registros úteis para accounting, auditoria e investigação
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Para que registros de segurança apoiem responsabilização e investigação, é adequado:
 
@@ -6852,7 +8328,13 @@ B) permitir alteração dos logs pelos mesmos administradores cujas ações ser�
 C) coletar o maior volume possível e dispensar retenção, sincronização de relógios e análise.
 D) registrar contexto como quem fez o quê, quando, de onde, sobre qual recurso e com qual resultado, além de proteger a integridade e sincronizar os relógios.
 
-### Questão 11
+### S2D4Q161 — Distinção operacional entre ativo, ameaça, vulnerabilidade, evento e incidente
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
 Em um cenário de segurança, o portal de serviços tem valor para a missão; um grupo criminoso pode atacá-lo; o gateway possui falha conhecida ainda não corrigida; milhares de tentativas de login são observadas; e um acesso indevido é confirmado. A classificação correta é:
 
@@ -6861,7 +8343,13 @@ B) portal: ameaça; grupo criminoso: vulnerabilidade; falha não corrigida: risc
 C) portal: controle; grupo criminoso: ativo; falha não corrigida: incidente; tentativas observadas: risco; acesso indevido: ameaça.
 D) portal: vulnerabilidade; grupo criminoso: evento; falha não corrigida: ativo; tentativas observadas: controle; acesso indevido: risco.
 
-### Questão 12
+### S2D4Q162 — Vulnerabilidade como fraqueza e risco como combinação de probabilidade e impacto
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
 Um serviço exposto utiliza versão de software com falha explorável. A equipe ainda está estimando a chance de exploração e o impacto sobre dados e operação. Nesse caso:
 
@@ -6870,7 +8358,13 @@ B) a chance de exploração isolada é o ativo, e o impacto é a ameaça.
 C) a falha é uma vulnerabilidade, enquanto o risco considera probabilidade e impacto adverso.
 D) vulnerabilidade e risco são sinônimos, pois ambos existem antes do ataque.
 
-### Questão 13
+### S2D4Q163 — Evento observado em contraste com incidente de segurança confirmado
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
 Um sensor gera alerta de tráfego incomum. Após correlação com registros de identidade e aplicação, confirma-se que uma conta foi usada para copiar dados sem autorização. Assinale a alternativa correta.
 
@@ -6879,7 +8373,13 @@ B) Tanto o alerta quanto a cópia confirmada são apenas vulnerabilidades.
 C) A cópia não autorizada é uma ameaça potencial, mas não um incidente enquanto o atacante não for identificado.
 D) O alerta é uma ocorrência observável a ser analisada; a cópia indevida confirmada caracteriza incidente.
 
-### Questão 14
+### S2D4Q164 — Controle como medida de modificação do risco e sua relação com ameaça e vulnerabilidade
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
 Em relação aos conceitos de ameaça, vulnerabilidade e controle, assinale a alternativa correta.
 
@@ -6888,7 +8388,13 @@ B) Um criminoso capaz de causar dano é ameaça, uma falha explorável é vulner
 C) Um controle é qualquer evento observado, mesmo que não modifique o risco.
 D) A existência de vulnerabilidade implica que o dano já ocorreu e transforma automaticamente o risco em incidente.
 
-### Questão 15
+### S2D4Q165 — Distinção entre vírus dependente de hospedeiro e worm com propagação automática
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
 Sobre vírus e worm, assinale a alternativa correta.
 
@@ -6897,7 +8403,13 @@ B) O worm exige sempre que o usuário execute um arquivo hospedeiro, enquanto o 
 C) Ambos os termos designam qualquer software malicioso e podem ser usados como sinônimos.
 D) A diferença está apenas no objetivo: vírus coleta informações, e worm cifra arquivos para extorsão.
 
-### Questão 16
+### S2D4Q166 — Cavalo de Troia definido pelo disfarce e pela indução à execução
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
 Um programa se apresenta como atualizador legítimo e induz o usuário a executá-lo. Depois de instalado, abre acesso remoto, mas não possui mecanismo obrigatório de autorreplicação. Essa descrição corresponde principalmente a:
 
@@ -6906,7 +8418,13 @@ B) vírus de setor de inicialização.
 C) cavalo de Troia.
 D) ataque DDoS.
 
-### Questão 17
+### S2D4Q167 — Alcance do ransomware e sobreposição de categorias e efeitos de malware
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware) e [Tríade CIA](semana_02_estudo.md#s2-d4-cia).
 
 Uma campanha maliciosa copia documentos, cifra compartilhamentos e interrompe o portal. Sobre a classificação e os controles envolvidos, assinale a alternativa correta.
 
@@ -6915,7 +8433,13 @@ B) O backup elimina a necessidade de conter o atacante e investigar eventual exf
 C) A cifração autorizada pelo atacante preserva a integridade, pois o conteúdo original ainda pode existir em backup.
 D) Ransomware pode combinar exfiltração, alteração ou cifração e interrupção, atingindo confidencialidade, integridade e disponibilidade.
 
-### Questão 18
+### S2D4Q168 — Spyware, rootkit, bot e botnet como categorias distintas de malware
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
 Assinale a associação correta entre categorias de malware.
 
@@ -6924,7 +8448,13 @@ B) Spyware: coleta informações; rootkit: busca ocultar presença ou manter pri
 C) Bot: arquivo hospedeiro que só se propaga após execução manual; vírus: dispositivo comprometido controlado remotamente.
 D) Spyware: cifra arquivos para extorsão; rootkit: mensagem fraudulenta enviada por SMS; botnet: falha de configuração.
 
-### Questão 19
+### S2D4Q169 — Variações de phishing segundo alvo e canal
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
 Sobre as variações de phishing, assinale a alternativa correta.
 
@@ -6933,7 +8463,13 @@ B) Whaling designa qualquer campanha genérica enviada em massa, sem considerar 
 C) Spear phishing é direcionado a alvo específico; whaling mira pessoa de alta relevância; smishing usa mensagem ou SMS; e vishing usa voz.
 D) Phishing exige sempre arquivo malicioso e não pode buscar somente credenciais ou pagamento.
 
-### Questão 20
+### S2D4Q170 — Manipulação por autoridade, urgência e pretexto, com verificação por canal independente
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
 Um servidor recebe mensagem urgente, aparentemente enviada pela presidência, pedindo alteração imediata dos dados bancários de um fornecedor. A ação mais adequada é:
 
@@ -6942,7 +8478,13 @@ B) atender imediatamente, pois mensagens de alta autoridade dispensam confirmaç
 C) responder à própria mensagem pedindo confirmação, pois isso garante que o remetente aparente controla a conta.
 D) considerar a mensagem legítima se não houver anexo executável, já que engenharia social depende de malware.
 
-### Questão 21
+### S2D4Q171 — Alcance e limites do MFA diante de phishing
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
 Quanto ao uso de MFA contra phishing, assinale a alternativa correta.
 
@@ -6951,7 +8493,13 @@ B) MFA protege a conta mesmo quando o atacante captura uma sessão autenticada o
 C) Dois segredos do tipo senha constituem MFA e neutralizam qualquer reutilização de credenciais.
 D) MFA reduz o impacto do roubo de senha, mas certos ataques podem capturar sessão, induzir aprovação ou explorar a recuperação da conta.
 
-### Questão 22
+### S2D4Q172 — Spoofing como falsificação de identidade ou origem aparente
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
 Assinale a alternativa que caracteriza corretamente spoofing.
 
@@ -6960,7 +8508,13 @@ B) Consiste na falsificação de identidade ou origem aparente; seus efeitos var
 C) Exige sempre o comprometimento prévio de uma autoridade certificadora.
 D) É sinônimo de DDoS, pois depende necessariamente de múltiplas origens distribuídas.
 
-### Questão 23
+### S2D4Q173 — Captura por sniffing em contraste com interceptação ativa on-path ou man-in-the-middle (MITM)
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
 Sobre sniffing e ataque on-path, também denominado man-in-the-middle (MITM), assinale a alternativa correta.
 
@@ -6969,7 +8523,13 @@ B) Sniffing sempre altera os pacotes capturados, enquanto o ataque on-path apena
 C) A presença de qualquer criptografia impede ataque on-path, mesmo quando o cliente aceita certificado falso.
 D) Em rede com switches, a captura por agente malicioso é fisicamente impossível.
 
-### Questão 24
+### S2D4Q174 — Força bruta, dicionário, password spraying e credential stuffing
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
 Uma campanha testa a mesma pequena lista de senhas comuns em milhares de contas, evitando muitas tentativas consecutivas em uma única conta. Essa técnica e a distinção para credential stuffing estão corretamente descritas em:
 
@@ -6978,7 +8538,13 @@ B) ataque de dicionário; credential stuffing falsifica o endereço IP de origem
 C) password spraying; credential stuffing reutiliza pares de credenciais obtidos em vazamentos.
 D) phishing; credential stuffing explora exclusivamente falhas de memória.
 
-### Questão 25
+### S2D4Q175 — DDoS e limites de controles instalados depois do ponto de saturação
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
 Uma botnet envia tráfego suficiente para saturar o enlace de Internet do órgão antes que os pacotes alcancem o firewall local. Assinale a alternativa correta.
 
@@ -6989,7 +8555,13 @@ D) Trata-se de cenário compatível com DDoS; a mitigação pode exigir capacida
 
 
 
-### Questão 26
+### S2D4Q176 — Classificação de controles por natureza e por função
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Controles e defesa em profundidade](semana_02_estudo.md#s2-d4-controles), [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips) e [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
 Um órgão adotou treinamento periódico contra phishing, um IDS para alertar sobre tráfego suspeito e cópias de segurança testadas para restaurar dados. Quanto à natureza e à função predominante desses controles, assinale a alternativa correta.
 
@@ -6998,7 +8570,13 @@ B) Os três controles são exclusivamente técnicos e preventivos, pois todos at
 C) O treinamento é administrativo e predominantemente preventivo; o IDS é técnico e detectivo; o backup exerce função de recuperação.
 D) O IDS é controle físico de recuperação, enquanto o treinamento e o backup são exclusivamente compensatórios.
 
-### Questão 27
+### S2D4Q177 — Independência e complementaridade das camadas de defesa em profundidade
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Controles e defesa em profundidade](semana_02_estudo.md#s2-d4-controles).
 
 Uma arquitetura possui filtro de e-mail, MFA, segmentação, EDR e backup, mas todas essas camadas são administradas por uma única credencial compartilhada e sem proteção adicional. À luz da defesa em profundidade, é correto afirmar que:
 
@@ -7007,7 +8585,13 @@ B) a presença de cinco controles elimina o risco residual, ainda que todos depe
 C) defesa em profundidade exige que todas as camadas sejam do mesmo fabricante e tenham a mesma dependência administrativa.
 D) o backup torna irrelevantes a segmentação e a proteção de identidade, pois permite desfazer qualquer incidente.
 
-### Questão 28
+### S2D4Q178 — Filtragem stateful e limites do firewall
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
 
 Sobre firewalls, assinale a afirmativa correta.
 
@@ -7016,7 +8600,13 @@ B) Permitir uma porta conhecida garante que o conteúdo transportado por ela sej
 C) Um firewall de borda observa necessariamente todo ataque interno, mesmo quando o tráfego não cruza o ponto em que ele está instalado.
 D) Um firewall stateful acompanha o estado das conexões, mas ainda depende de política adequada e não corrige vulnerabilidades da aplicação.
 
-### Questão 29
+### S2D4Q179 — Elaboração e manutenção de política de firewall
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
 
 Uma equipe revisará as regras do firewall que protege um serviço institucional. Qual conduta está mais alinhada a uma política segura?
 
@@ -7025,7 +8615,13 @@ B) Permitir apenas origens, destinos e serviços necessários, documentar e revi
 C) Desabilitar o controle de saída, pois apenas conexões iniciadas da internet podem causar incidente.
 D) Considerar toda regra permanente depois do primeiro teste, para evitar que revisões afetem a disponibilidade.
 
-### Questão 30
+### S2D4Q180 — Posicionamento e função de um IDS
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
 
 Durante uma fase inicial de observação, a organização deseja receber cópia do tráfego e gerar alertas sem inserir o sensor no caminho direto nem permitir bloqueios automáticos. O controle mais compatível é:
 
@@ -7034,7 +8630,13 @@ B) um IPS em linha com descarte automático.
 C) um firewall stateful configurado como servidor de backup.
 D) uma VPN site-to-site sem mecanismos de detecção.
 
-### Questão 31
+### S2D4Q181 — Falsos positivos, falsos negativos e impacto operacional de IPS
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
 
 Um IPS passou a bloquear requisições legítimas após uma regra nova classificá-las como maliciosas. Esse caso demonstra que:
 
@@ -7043,7 +8645,13 @@ B) um IPS não pode afetar a disponibilidade, pois sua atuação é exclusivamen
 C) a ocorrência prova um falso negativo, porque o tráfego legítimo deixou de alcançar o serviço.
 D) um falso positivo em controle preventivo em linha pode bloquear tráfego legítimo e prejudicar a disponibilidade, razão pela qual regras exigem ajuste e monitoramento.
 
-### Questão 32
+### S2D4Q182 — DMZ como segmento intermediário e contenção da exposição
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz).
 
 Um portal público consulta uma aplicação que, por sua vez, acessa uma base interna sensível. Qual desenho melhor aplica o conceito de DMZ?
 
@@ -7052,7 +8660,13 @@ B) Manter o componente exposto na DMZ, separar aplicação e banco em segmentos 
 C) Instalar o banco diretamente na internet e usar a DMZ apenas para estações administrativas.
 D) Tratar todo servidor da DMZ como confiável, dispensando monitoramento das conexões para a rede interna.
 
-### Questão 33
+### S2D4Q183 — Benefícios e limites de uma VPN de acesso remoto
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
 
 Um empregado acessa a rede institucional por VPN a partir de um notebook já comprometido por malware. Assinale a alternativa correta.
 
@@ -7061,7 +8675,13 @@ B) A cifração do túnel autoriza automaticamente o empregado a acessar qualque
 C) A VPN pode proteger o tráfego no percurso, mas não torna o endpoint confiável; postura do dispositivo, MFA, menor privilégio, segmentação e monitoramento continuam necessários.
 D) O túnel impede que credenciais roubadas sejam usadas, ainda que não exista MFA e o gateway esteja desatualizado.
 
-### Questão 34
+### S2D4Q184 — VPN site-to-site, VPN de acesso remoto e tecnologias de proteção
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
 
 Uma organização precisa conectar permanentemente as redes de duas unidades pela internet e, separadamente, permitir que analistas individuais trabalhem fora do escritório. Qual associação está correta?
 
@@ -7070,7 +8690,13 @@ B) IPsec só pode proteger aplicações Web, e soluções baseadas em TLS operam
 C) Qualquer dos modelos concede acesso irrestrito a toda a rede interna depois que o túnel é criado.
 D) VPN site-to-site é apropriada para interligar redes; VPN de acesso remoto atende usuários ou dispositivos, e ambas exigem autenticação, correção do gateway e política de acesso.
 
-### Questão 35
+### S2D4Q185 — Segmentação de camada 2 e controle do movimento lateral roteado
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao).
 
 Uma empresa separou usuários e servidores em VLANs diferentes, mas configurou o roteamento inter-VLAN para permitir qualquer fluxo nos dois sentidos. A conclusão correta é:
 
@@ -7079,7 +8705,13 @@ B) as VLANs separam domínios de camada 2 e de broadcast, mas ACLs ou firewalls 
 C) VLAN e firewall interno são controles idênticos, por isso aplicar ambos cria necessariamente um conflito.
 D) a única forma de segmentar é instalar redes físicas sem qualquer roteamento entre elas.
 
-### Questão 36
+### S2D4Q186 — Menor privilégio aplicado a contas de serviço e fluxos entre segmentos
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
 Para aplicar menor privilégio ao acesso de uma aplicação ao banco de dados, a equipe deve:
 
@@ -7088,7 +8720,13 @@ B) usar uma única conta administrativa compartilhada entre usuários, aplicaç�
 C) autorizar toda identidade autenticada, pois autenticação bem-sucedida já demonstra necessidade funcional.
 D) liberar qualquer porta entre os segmentos, desde que cada servidor esteja em uma VLAN diferente.
 
-### Questão 37
+### S2D4Q187 — Chaves, eficiência e aplicações da criptografia simétrica e assimétrica
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia).
 
 Sobre criptografia simétrica e assimétrica, assinale a alternativa correta.
 
@@ -7097,7 +8735,13 @@ B) A criptografia assimétrica usa uma única chave secreta compartilhada e não
 C) Cifras simétricas, como AES, são eficientes para grande volume, enquanto mecanismos assimétricos usam um par de chaves e podem apoiar assinatura, autenticação ou estabelecimento de chaves.
 D) Toda operação feita com chave privada fornece confidencialidade, independentemente do algoritmo e da finalidade.
 
-### Questão 38
+### S2D4Q188 — Criptografia híbrida e divisão de funções no TLS
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls).
 
 Em um protocolo criptográfico híbrido, como ocorre conceitualmente no TLS, é correto afirmar que:
 
@@ -7106,7 +8750,13 @@ B) mecanismos assimétricos ou uma PSK podem participar da autenticação e do e
 C) o hash substitui a troca de chaves e fornece, sozinho, confidencialidade ao canal.
 D) a parte simétrica é dispensada sempre que o servidor possui certificado digital.
 
-### Questão 39
+### S2D4Q189 — Uso de hash para detectar alteração e necessidade de referência confiável
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
 Um fornecedor publica um arquivo de atualização e, na mesma página comprometida, publica o hash correspondente ao arquivo adulterado. Por que a simples comparação dos dois valores não detecta o ataque?
 
@@ -7115,7 +8765,13 @@ B) Porque um hash sempre cifra o arquivo e impede que ele seja substituído.
 C) Porque hashes de arquivos diferentes são obrigatoriamente iguais quando têm o mesmo tamanho.
 D) Porque o atacante conseguiu substituir tanto o arquivo quanto a referência; o resumo precisa vir de fonte confiável, ser autenticado ou estar assinado.
 
-### Questão 40
+### S2D4Q190 — HMAC como código de autenticação de mensagem com segredo compartilhado
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
 Dois sistemas que compartilham um segredo precisam verificar integridade e autenticidade das mensagens trocadas. Não há requisito de não repúdio entre eles. O mecanismo mais diretamente adequado é:
 
@@ -7124,7 +8780,13 @@ B) criptografia reversível da senha usada pelos operadores.
 C) HMAC com chave secreta compartilhada.
 D) certificado digital sem prova de posse de chave e sem validação.
 
-### Questão 41
+### S2D4Q191 — Armazenamento seguro de senhas com função de derivação, salt e custo
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
 Qual prática é mais adequada para armazenar senhas de usuários?
 
@@ -7133,7 +8795,13 @@ B) Cifrar reversivelmente todas as senhas com uma chave fixa compartilhada pela 
 C) Usar hash genérico rápido, sem salt, para reduzir o tempo disponível ao atacante.
 D) Armazenar a senha em texto claro e proteger apenas o nome da coluna no banco.
 
-### Questão 42
+### S2D4Q192 — Geração, verificação e propriedades da assinatura digital
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
 
 No modelo simplificado de assinatura digital, assinale a afirmativa correta.
 
@@ -7142,7 +8810,13 @@ B) A assinatura torna a mensagem confidencial e impede que o destinatário leia 
 C) Um hash isolado equivale a uma assinatura, porque identifica necessariamente quem o calculou.
 D) O signatário usa sua chave privada no algoritmo de assinatura, e a chave pública permite verificar origem e integridade; a assinatura, sozinha, não cifra o conteúdo.
 
-### Questão 43
+### S2D4Q193 — Validação de certificado X.509 usado por servidor
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
 
 Ao validar o certificado apresentado por um servidor TLS, o cliente deve verificar:
 
@@ -7151,7 +8825,13 @@ B) somente se a empresa emissora do site é comercialmente conhecida e não poss
 C) cadeia até uma âncora confiável, assinaturas, validade, nome esperado, uso de chave e situação de revogação conforme o contexto.
 D) apenas se a conexão usa a porta 443, pois a porta garante a identidade do servidor.
 
-### Questão 44
+### S2D4Q194 — Fluxo conceitual e propriedades do TLS 1.3
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls).
 
 Sobre o TLS 1.3 em nível conceitual, assinale a alternativa correta.
 
@@ -7160,7 +8840,13 @@ B) Cliente e servidor negociam parâmetros e derivam segredos; o cliente valida 
 C) O certificado cifra diretamente todo o conteúdo da aplicação com a chave privada do servidor.
 D) As mensagens Finished são backups do certificado e substituem a verificação do nome do servidor.
 
-### Questão 45
+### S2D4Q195 — Diferença entre WPA2-Personal e WPA3-Personal com SAE
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
 
 Sobre WPA2-Personal e WPA3-Personal, assinale a alternativa correta.
 
@@ -7169,7 +8855,13 @@ B) WPA2-Personal usa obrigatoriamente identidade individual por 802.1X e nunca e
 C) WPA3 elimina a necessidade de atualizar firmware e proteger a administração do ponto de acesso.
 D) Qualquer cliente em modo de transição negocia necessariamente WPA3, de modo que o suporte a WPA2 não altera as garantias.
 
-### Questão 46
+### S2D4Q196 — Segurança Wi-Fi institucional em modo Enterprise
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
 
 Em uma rede Wi-Fi institucional com muitos usuários, qual medida melhora a responsabilização individual sem criar uma promessa de invulnerabilidade?
 
@@ -7178,7 +8870,13 @@ B) Manter WEP para dispositivos antigos, pois sua compatibilidade compensa a pro
 C) Usar WPA2/WPA3-Enterprise com 802.1X, identidades individuais e validação correta do servidor de autenticação, além de segmentação, atualização e monitoramento.
 D) Ativar modo de transição e considerar todos os clientes protegidos exclusivamente por SAE.
 
-### Questão 47
+### S2D4Q197 — Objetivos distintos no ciclo de resposta a incidentes
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes).
 
 Após detectar indícios de ransomware em várias estações, qual sequência expressa corretamente objetivos distintos da resposta a incidentes?
 
@@ -7187,7 +8885,13 @@ B) Validar e delimitar o incidente, conter sua expansão preservando evidências
 C) Considerar todo alerta um incidente confirmado, desligar indiscriminadamente o ambiente e encerrar o caso após o bloqueio inicial.
 D) Tratar contenção e erradicação como sinônimos e dispensar lições aprendidas quando o serviço voltar.
 
-### Questão 48
+### S2D4Q198 — Backup incremental e diferencial, RPO e RTO
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
 Considere duas afirmações sobre recuperação:
 
@@ -7201,7 +8905,13 @@ B) Somente II está correta, pois incremental e diferencial possuem a mesma cade
 C) As duas estão incorretas, pois RPO e RTO são valores observados apenas depois do incidente.
 D) I e II estão corretas.
 
-### Questão 49
+### S2D4Q199 — Proteção de backups contra ransomware e validação de restauração
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
 Uma equipe quer tornar sua estratégia de cópias de segurança mais resistente a ransomware. Qual conjunto de medidas é o mais adequado?
 
@@ -7210,7 +8920,13 @@ B) Manter as três cópias on-line sob a mesma credencial administrativa, pois a
 C) Substituir testes de restauração por comparação do tamanho dos arquivos, já que cópia existente é cópia recuperável.
 D) Replicar instantaneamente toda exclusão para as três cópias e eliminar retenção de versões.
 
-### Questão 50
+### S2D4Q200 — Diferença e complementaridade entre backup, redundância e alta disponibilidade
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
 Um portal não pode parar diante da falha de um único servidor e também precisa recuperar versões anteriores após exclusão acidental ou cifração maliciosa. Qual solução atende corretamente aos dois objetivos?
 
@@ -7292,8 +9008,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 ## Comentários do Dia 4
 
 
-#### Comentário da Questão 1
+### Comentário S2D4Q151
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7311,8 +9030,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
 
-#### Comentário da Questão 2
+### Comentário S2D4Q152
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7330,8 +9052,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Segurança como gestão de risco](semana_02_estudo.md#s2-d4-gestao-risco).
 
-#### Comentário da Questão 3
+### Comentário S2D4Q153
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7349,8 +9074,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia).
 
-#### Comentário da Questão 4
+### Comentário S2D4Q154
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7368,8 +9096,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Tríade CIA](semana_02_estudo.md#s2-d4-cia) e [Malware](semana_02_estudo.md#s2-d4-malware).
 
-#### Comentário da Questão 5
+### Comentário S2D4Q155
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7387,8 +9118,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 6
+### Comentário S2D4Q156
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7406,8 +9140,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 7
+### Comentário S2D4Q157
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7425,8 +9162,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 8
+### Comentário S2D4Q158
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7444,8 +9184,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 9
+### Comentário S2D4Q159
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7463,8 +9206,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 10
+### Comentário S2D4Q160
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7482,8 +9228,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-#### Comentário da Questão 11
+### Comentário S2D4Q161
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7501,8 +9250,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
-#### Comentário da Questão 12
+### Comentário S2D4Q162
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7520,8 +9272,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
-#### Comentário da Questão 13
+### Comentário S2D4Q163
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7539,8 +9294,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
-#### Comentário da Questão 14
+### Comentário S2D4Q164
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7558,8 +9316,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ativo, ameaça, vulnerabilidade, risco, evento e incidente](semana_02_estudo.md#s2-d4-conceitos-risco).
 
-#### Comentário da Questão 15
+### Comentário S2D4Q165
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7577,8 +9338,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
-#### Comentário da Questão 16
+### Comentário S2D4Q166
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7596,8 +9360,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
-#### Comentário da Questão 17
+### Comentário S2D4Q167
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7615,8 +9382,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Malware](semana_02_estudo.md#s2-d4-malware) e [Tríade CIA](semana_02_estudo.md#s2-d4-cia).
 
-#### Comentário da Questão 18
+### Comentário S2D4Q168
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7634,8 +9404,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Malware](semana_02_estudo.md#s2-d4-malware).
 
-#### Comentário da Questão 19
+### Comentário S2D4Q169
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7653,8 +9426,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
-#### Comentário da Questão 20
+### Comentário S2D4Q170
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7672,8 +9448,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
-#### Comentário da Questão 21
+### Comentário S2D4Q171
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7691,8 +9470,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Phishing e engenharia social](semana_02_estudo.md#s2-d4-phishing).
 
-#### Comentário da Questão 22
+### Comentário S2D4Q172
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7710,8 +9492,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
-#### Comentário da Questão 23
+### Comentário S2D4Q173
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7729,8 +9514,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
-#### Comentário da Questão 24
+### Comentário S2D4Q174
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7748,8 +9536,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
-#### Comentário da Questão 25
+### Comentário S2D4Q175
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7768,8 +9559,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 **Referência:** [Ataques de rede](semana_02_estudo.md#s2-d4-ataques-rede).
 
 
-### Comentário da Questão 26
+### Comentário S2D4Q176
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7787,8 +9581,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [8. Controles e defesa em profundidade](semana_02_estudo.md#s2-d4-controles), [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips) e [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
-### Comentário da Questão 27
+### Comentário S2D4Q177
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7806,8 +9603,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [8. Controles e defesa em profundidade](semana_02_estudo.md#s2-d4-controles).
 
-### Comentário da Questão 28
+### Comentário S2D4Q178
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7825,8 +9625,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
 
-### Comentário da Questão 29
+### Comentário S2D4Q179
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7844,8 +9647,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [9. Firewall](semana_02_estudo.md#s2-d4-firewall).
 
-### Comentário da Questão 30
+### Comentário S2D4Q180
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7863,8 +9669,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
 
-### Comentário da Questão 31
+### Comentário S2D4Q181
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7882,8 +9691,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [10. IDS × IPS](semana_02_estudo.md#s2-d4-ids-ips).
 
-### Comentário da Questão 32
+### Comentário S2D4Q182
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7901,8 +9713,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [11. DMZ](semana_02_estudo.md#s2-d4-dmz).
 
-### Comentário da Questão 33
+### Comentário S2D4Q183
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7920,8 +9735,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
 
-### Comentário da Questão 34
+### Comentário S2D4Q184
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -7939,8 +9757,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [12. VPN](semana_02_estudo.md#s2-d4-vpn).
 
-### Comentário da Questão 35
+### Comentário S2D4Q185
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -7958,8 +9779,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao).
 
-### Comentário da Questão 36
+### Comentário S2D4Q186
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -7977,8 +9801,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [13. Segmentação e controle de acesso](semana_02_estudo.md#s2-d4-segmentacao) e [3. Autenticação, autorização, auditoria e não repúdio](semana_02_estudo.md#s2-d4-identidade-auditoria).
 
-### Comentário da Questão 37
+### Comentário S2D4Q187
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -7996,8 +9823,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia).
 
-### Comentário da Questão 38
+### Comentário S2D4Q188
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -8015,8 +9845,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [14. Criptografia simétrica e assimétrica](semana_02_estudo.md#s2-d4-criptografia) e [17. TLS](semana_02_estudo.md#s2-d4-tls).
 
-### Comentário da Questão 39
+### Comentário S2D4Q189
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -8034,8 +9867,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
-### Comentário da Questão 40
+### Comentário S2D4Q190
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -8053,8 +9889,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
-### Comentário da Questão 41
+### Comentário S2D4Q191
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -8072,8 +9911,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [15. Hash, MAC e armazenamento de senhas](semana_02_estudo.md#s2-d4-hash-hmac-senhas).
 
-### Comentário da Questão 42
+### Comentário S2D4Q192
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -8091,8 +9933,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
 
-### Comentário da Questão 43
+### Comentário S2D4Q193
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -8110,8 +9955,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [16. Assinatura digital e certificado digital](semana_02_estudo.md#s2-d4-assinatura-certificado).
 
-### Comentário da Questão 44
+### Comentário S2D4Q194
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -8129,8 +9977,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [17. TLS](semana_02_estudo.md#s2-d4-tls).
 
-### Comentário da Questão 45
+### Comentário S2D4Q195
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -8148,8 +9999,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
 
-### Comentário da Questão 46
+### Comentário S2D4Q196
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -8167,8 +10021,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [18. Segurança Wi-Fi: WPA2 e WPA3](semana_02_estudo.md#s2-d4-wifi).
 
-### Comentário da Questão 47
+### Comentário S2D4Q197
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -8186,8 +10043,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [19. Resposta a incidentes](semana_02_estudo.md#s2-d4-resposta-incidentes).
 
-### Comentário da Questão 48
+### Comentário S2D4Q198
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -8205,8 +10065,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
-### Comentário da Questão 49
+### Comentário S2D4Q199
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -8224,8 +10087,11 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 
 **Referência:** [20. Backup e disponibilidade](semana_02_estudo.md#s2-d4-backup).
 
-### Comentário da Questão 50
+### Comentário S2D4Q200
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -8249,12 +10115,12 @@ D) Usar somente replicação síncrona, pois ela impede que exclusões e corrup�
 ## Questões extras de revisão fixa do Dia 4
 
 #### Extra Dia 4.1
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** aplicação conjunta de legalidade e eficiência.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01).
 
 Um gestor elimina uma etapa exigida por lei porque acredita que o procedimento ficará mais rápido e econômico. À luz dos princípios do art. 37, assinale a alternativa correta.
@@ -8264,12 +10130,12 @@ B) A eficiência orienta a busca de qualidade e produtividade dentro da legalida
 C) A publicidade posterior convalida automaticamente a medida ilegal.
 D) A legalidade confere ao agente público a mesma liberdade geral de atuação atribuída ao particular.
 #### Extra Dia 4.2
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** publicidade institucional e impessoalidade.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02).
 
 Uma campanha oficial apresenta foto, nome e slogan pessoal de determinada autoridade, com destaque destinado a associar a ela uma obra pública. Considerando o art. 37, § 1º, da Constituição, assinale a alternativa correta.
@@ -8279,12 +10145,12 @@ B) A identificação do órgão é proibida, ainda que necessária à orientaç�
 C) A veracidade das informações impede qualquer violação à impessoalidade.
 D) A publicidade institucional deve ter caráter educativo, informativo ou de orientação social e não pode caracterizar promoção pessoal de autoridade ou servidor.
 #### Extra Dia 4.3
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** órgão, entidade, autarquia e desconcentração.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03).
 
 Sobre órgão, entidade e autarquia, assinale a alternativa correta.
@@ -8294,12 +10160,12 @@ B) Órgão e entidade possuem necessariamente personalidade jurídica própria e
 C) A criação de departamentos dentro de um ministério constitui descentralização para nova pessoa jurídica.
 D) Autarquia é empresa privada autorizada por decreto e subordinada hierarquicamente a um ministério.
 #### Extra Dia 4.4
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** motivo e motivação do ato administrativo.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [RF4-ADM-04 — Elementos do ato administrativo](semana_02_estudo.md#rf4-adm-04).
 
 Uma autoridade aplica sanção afirmando que houve inspeção em certa data, mas a inspeção jamais ocorreu. O vício central e a distinção correta são:
@@ -8309,12 +10175,12 @@ B) finalidade; todo erro sobre fatos corresponde necessariamente a desvio de fin
 C) motivo; motivo é o suporte fático e jurídico do ato, enquanto motivação é a exposição desses fundamentos.
 D) competência; fato inexistente transforma automaticamente a atribuição legal da autoridade.
 #### Extra Dia 4.5
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** presunção e autoexecutoriedade.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05).
 
 Quanto aos atributos do ato administrativo, assinale a alternativa correta.
@@ -8324,12 +10190,12 @@ B) A presunção de legitimidade e veracidade é relativa; a autoexecutoriedade 
 C) A imperatividade está presente em todo ato e exige concordância do destinatário.
 D) A autoexecutoriedade permite executar qualquer decisão sem base jurídica e sem controle posterior.
 #### Extra Dia 4.6
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** anulação, revogação, convalidação e decadência.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06).
 
 Assinale a alternativa correta sobre anulação, revogação, convalidação e decadência na Lei nº 9.784/1999.
@@ -8339,12 +10205,12 @@ B) Todo vício é convalidável, ainda que haja lesão ao interesse público ou 
 C) O direito de anular ato favorável nunca sofre limite temporal, mesmo diante de boa-fé comprovada.
 D) A Administração anula ato ilegal e pode revogar ato válido por mérito; defeito sanável pode ser convalidado sem lesão ou prejuízo, e o art. 54 prevê decadência de cinco anos para anular ato favorável, salvo má-fé.
 #### Extra Dia 4.7
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** compatibilização entre transparência e proteção de dados.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07).
 
 Sobre a relação entre LAI e LGPD no Poder Público, assinale a alternativa correta.
@@ -8354,12 +10220,12 @@ B) A presença de qualquer dado pessoal torna todo documento público sigiloso p
 C) A LAI elimina os princípios de finalidade e necessidade sempre que houver interesse jornalístico.
 D) A LGPD proíbe o tratamento de dados pessoais pelo Poder Público para executar competência legal.
 #### Extra Dia 4.8
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** dolo e tipicidade na improbidade administrativa.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-08 — Improbidade administrativa](semana_02_estudo.md#rf4-adm-08).
 
 Um agente pratica irregularidade administrativa, mas não há demonstração de dolo nem enquadramento em conduta tipificada na Lei de Improbidade. Assinale a alternativa correta.
@@ -8369,12 +10235,12 @@ B) A voluntariedade do ato substitui o dolo e a tipicidade exigidos pela lei.
 C) Mera ilegalidade não basta: o enquadramento por improbidade exige conduta dolosa tipificada e os demais requisitos legais.
 D) A ausência de dano ao erário exclui qualquer modalidade de improbidade, mesmo quando exista outro tipo doloso.
 #### Extra Dia 4.9
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** modalidades, dispensa e inexigibilidade.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09).
 
 À luz da Lei nº 14.133/2021 e da revisão fixa, assinale a alternativa correta.
@@ -8384,12 +10250,12 @@ B) Pregão, concorrência, concurso, leilão e diálogo competitivo são modalid
 C) Dispensa e inexigibilidade são sinônimos e eliminam a instrução do processo de contratação.
 D) Tomada de preços e convite integram o rol de modalidades da Lei nº 14.133/2021.
 #### Extra Dia 4.10
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Administração Pública
 - **Assunto:** responsabilidade objetiva e direito de regresso.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10).
 
 Na responsabilidade civil objetiva prevista no art. 37, § 6º, da Constituição, assinale a alternativa correta.
@@ -8399,12 +10265,12 @@ B) Responsabilidade objetiva significa indenização sem dano ou nexo causal.
 C) O direito de regresso contra o agente também é objetivo e independe de dolo ou culpa.
 D) Perante a vítima, exigem-se conduta estatal, dano e nexo causal, sem prova de culpa; o regresso contra o agente depende de dolo ou culpa.
 #### Extra Dia 4.11
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** negação da conjunção.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [RF4-RLM-01 — Negação de conjunção e disjunção](semana_02_estudo.md#rf4-rlm-01).
 
 Considere as proposições P: “o firewall bloqueou a origem” e Q: “o IPS conteve o ataque”. A negação de “P e Q” é:
@@ -8414,12 +10280,12 @@ B) “não P e não Q”.
 C) “P ou Q”.
 D) “P se, e somente se, Q”.
 #### Extra Dia 4.12
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** negação da condicional e do quantificador universal.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [RF4-RLM-02 — Condicional e quantificadores](semana_02_estudo.md#rf4-rlm-02).
 
 Assinale a alternativa que apresenta corretamente a negação de uma condicional e de um quantificador universal.
@@ -8429,12 +10295,12 @@ B) A negação de “P implica Q” é “não P e Q”, e a de “todo” prese
 C) A negação de “P implica Q” é “P e não Q”, e a de “todo servidor tem backup” é “existe pelo menos um servidor que não tem backup”.
 D) A negação de “P implica Q” é “P ou Q”, e a de “todo” é “algum”, sem negar o predicado.
 #### Extra Dia 4.13
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** princípio da inclusão-exclusão.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [RF4-RLM-03 — Princípio da inclusão-exclusão](semana_02_estudo.md#rf4-rlm-03).
 
 Em uma auditoria, 42 ativos possuem o controle A, 35 possuem o controle B e 17 possuem ambos. Quantos possuem pelo menos um dos dois controles?
@@ -8444,12 +10310,12 @@ B) 60.
 C) 94.
 D) 24.
 #### Extra Dia 4.14
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** porcentagem reversa.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [RF4-RLM-04 — Porcentagem reversa](semana_02_estudo.md#rf4-rlm-04).
 
 Após desconto de 20%, uma licença passou a custar R$ 240,00. Qual era o preço anterior ao desconto?
@@ -8459,12 +10325,12 @@ B) R$ 260,00.
 C) R$ 288,00.
 D) R$ 300,00.
 #### Extra Dia 4.15
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 4
 - **Matéria:** Raciocínio Lógico-Matemático
 - **Assunto:** proporção inversa e produtividade.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [RF4-RLM-05 — Proporção e produtividade](semana_02_estudo.md#rf4-rlm-05).
 
 Se 6 analistas, com a mesma produtividade, concluem uma revisão em 12 horas, em quanto tempo 9 analistas concluiriam o mesmo trabalho, mantidas as demais condições?
@@ -8474,12 +10340,12 @@ B) 18 horas.
 C) 6 horas.
 D) 27 horas.
 #### Extra Dia 4.16
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** relações de sentido dos conectores.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [RF4-PT-01 — Conectores](semana_02_estudo.md#rf4-pt-01).
 
 Leia: “Embora o controle reduzisse o risco, ocorreu um incidente; portanto, o plano de resposta foi acionado.” Os conectores destacados exprimem, respectivamente:
@@ -8489,12 +10355,12 @@ B) condição e finalidade.
 C) concessão e conclusão.
 D) conclusão e concessão.
 #### Extra Dia 4.17
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** referência anafórica e inferência autorizada.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [RF4-PT-02 — Inferência e referência](semana_02_estudo.md#rf4-pt-02).
 
 Leia: “A equipe isolou apenas o servidor comprometido. Essa medida conteve o tráfego, mas não comprovou a erradicação da ameaça.” Assinale a alternativa correta.
@@ -8504,12 +10370,12 @@ B) “Essa medida” retoma o isolamento do servidor, e o texto não autoriza co
 C) O trecho permite inferir que todos os servidores foram isolados e restaurados.
 D) A contenção do tráfego comprova necessariamente a eliminação da causa do incidente.
 #### Extra Dia 4.18
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** concordância de `haver` e `existir`.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03).
 
 Assinale a alternativa redigida de acordo com a norma-padrão.
@@ -8519,12 +10385,12 @@ B) Houveram dois incidentes e existe várias evidências.
 C) Deve existirem alternativas e havia sido registradas falhas.
 D) Deve haver controles adicionais, e existem registros suficientes para a análise.
 #### Extra Dia 4.19
-
 - **Dia:** Dia 4
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação e crase.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [RF4-PT-04 — Pontuação e crase](semana_02_estudo.md#rf4-pt-04).
 
 Assinale a alternativa com pontuação e emprego da crase adequados.
@@ -8540,6 +10406,7 @@ D) A equipe começou à restaurar o serviço, e o gestor à acompanhou.
 - **Matéria:** Língua Portuguesa
 - **Assunto:** reescrita com preservação de causa e consequência.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [RF4-PT-05 — Reescrita e clareza](semana_02_estudo.md#rf4-pt-05).
 
 Original: “Como havia risco imediato, a equipe isolou o servidor.” Assinale a reescrita que preserva o sentido e a correção.
@@ -8577,10 +10444,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 ### Comentários das questões extras do Dia 4
 
 #### Comentário Extra Dia 4.1
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -8598,10 +10466,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-01 — Princípios do art. 37: LIMPE](semana_02_estudo.md#rf4-adm-01).
 
 #### Comentário Extra Dia 4.2
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -8619,10 +10488,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-02 — Publicidade institucional](semana_02_estudo.md#rf4-adm-02).
 
 #### Comentário Extra Dia 4.3
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -8640,10 +10510,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-03 — Órgão, entidade e autarquia](semana_02_estudo.md#rf4-adm-03).
 
 #### Comentário Extra Dia 4.4
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -8661,10 +10532,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-04 — Elementos do ato administrativo](semana_02_estudo.md#rf4-adm-04).
 
 #### Comentário Extra Dia 4.5
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -8682,10 +10554,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-05 — Atributos do ato administrativo](semana_02_estudo.md#rf4-adm-05).
 
 #### Comentário Extra Dia 4.6
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -8703,10 +10576,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-06 — Anulação, revogação, convalidação e art. 54](semana_02_estudo.md#rf4-adm-06).
 
 #### Comentário Extra Dia 4.7
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -8724,10 +10598,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-07 — LAI e LGPD](semana_02_estudo.md#rf4-adm-07).
 
 #### Comentário Extra Dia 4.8
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -8745,10 +10620,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-08 — Improbidade administrativa](semana_02_estudo.md#rf4-adm-08).
 
 #### Comentário Extra Dia 4.9
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -8766,10 +10642,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-09 — Modalidades, dispensa e inexigibilidade](semana_02_estudo.md#rf4-adm-09).
 
 #### Comentário Extra Dia 4.10
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -8787,10 +10664,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-ADM-10 — Responsabilidade civil do Estado](semana_02_estudo.md#rf4-adm-10).
 
 #### Comentário Extra Dia 4.11
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -8808,10 +10686,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-RLM-01 — Negação de conjunção e disjunção](semana_02_estudo.md#rf4-rlm-01).
 
 #### Comentário Extra Dia 4.12
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -8829,10 +10708,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-RLM-02 — Condicional e quantificadores](semana_02_estudo.md#rf4-rlm-02).
 
 #### Comentário Extra Dia 4.13
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -8850,10 +10730,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-RLM-03 — Princípio da inclusão-exclusão](semana_02_estudo.md#rf4-rlm-03).
 
 #### Comentário Extra Dia 4.14
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -8871,10 +10752,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-RLM-04 — Porcentagem reversa](semana_02_estudo.md#rf4-rlm-04).
 
 #### Comentário Extra Dia 4.15
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -8892,10 +10774,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-RLM-05 — Proporção e produtividade](semana_02_estudo.md#rf4-rlm-05).
 
 #### Comentário Extra Dia 4.16
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -8913,10 +10796,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-01 — Conectores](semana_02_estudo.md#rf4-pt-01).
 
 #### Comentário Extra Dia 4.17
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -8934,10 +10818,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-02 — Inferência e referência](semana_02_estudo.md#rf4-pt-02).
 
 #### Comentário Extra Dia 4.18
-
 **Alternativa correta: D.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -8955,10 +10840,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-03 — Haver existencial e existir](semana_02_estudo.md#rf4-pt-03).
 
 #### Comentário Extra Dia 4.19
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -8976,10 +10862,11 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 **Referência:** [RF4-PT-04 — Pontuação e crase](semana_02_estudo.md#rf4-pt-04).
 
 #### Comentário Extra Dia 4.20
-
 **Alternativa correta: C.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -9005,7 +10892,13 @@ D) Se a equipe isolou o servidor, então não poderia haver risco imediato.
 ## Questões principais
 
 
-### Questão 1
+### S2D5Q201 — Concorrência é organização temporal com possíveis intercalações; paralelismo é execução simultânea
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Concorrência e paralelismo](semana_02_estudo.md#s2-d5-concorrencia-paralelismo).
 
 Em um computador com um único núcleo, o sistema operacional alterna a execução das tarefas A e B ao longo de certo intervalo, de modo que ambas avançam, embora apenas uma execute a cada instante. Nesse caso, ocorre
 
@@ -9014,7 +10907,13 @@ B) concorrência sem paralelismo, pois há progresso intercalado, mas não execu
 C) paralelismo e concorrência, pois toda alternância de contexto equivale à simultaneidade.
 D) ausência de concorrência, pois ela exige pelo menos dois núcleos físicos.
 
-### Questão 2
+### S2D5Q202 — Programa é passivo, processo é instância em execução e thread é fluxo escalonável dentro do processo
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Programa, processo e thread](semana_02_estudo.md#s2-d5-processo-thread).
 
 Sobre programa, processo e thread, assinale a afirmativa correta.
 
@@ -9023,7 +10922,13 @@ B) Threads distintas de um mesmo processo possuem espaços de endereçamento tot
 C) Processo é apenas o arquivo executável armazenado, sem estado ou recursos associados à execução.
 D) Threads do mesmo processo normalmente compartilham código, dados e recursos abertos, mas mantêm pilhas e registradores próprios.
 
-### Questão 3
+### S2D5Q203 — Pronto aguarda CPU; bloqueado aguarda evento, E/S, lock ou tempo
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Programa, processo e thread — estados conceituais](semana_02_estudo.md#s2-d5-processo-thread).
 
 Uma thread solicitou a leitura de um bloco em disco e aguarda a conclusão da operação. Enquanto o evento não ocorre, ela se encontra conceitualmente no estado
 
@@ -9032,7 +10937,13 @@ B) pronto, pois toda thread que não está usando a CPU disputa imediatamente o 
 C) executando, pois a operação de disco foi iniciada em seu nome.
 D) terminado, pois deixou de executar instruções no processador.
 
-### Questão 4
+### S2D5Q204 — Troca de contexto viabiliza a multiplexação, mas tem custo; o quantum equilibra resposta e sobrecarga
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Programa, processo e thread — troca de contexto](semana_02_estudo.md#s2-d5-processo-thread).
 
 Em um sistema que usa Round Robin, a equipe reduz bastante o quantum, mantendo inalteradas as demais condições. Um efeito plausível dessa decisão é
 
@@ -9041,7 +10952,13 @@ B) transformar o algoritmo em FCFS, pois os processos passarão a executar até 
 C) melhorar a responsividade em alguns cenários, ao custo de mais trocas de contexto e maior sobrecarga.
 D) fazer com que threads bloqueadas por E/S se tornem prontas a cada expiração do quantum.
 
-### Questão 5
+### S2D5Q205 — Condição de corrida ocorre quando o resultado depende da ordem não controlada de acessos concorrentes conflitantes
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
 
 Duas threads executam, sem sincronização, a operação lógica `contador = contador + 1` sobre um contador inicialmente igual a 40. Ambas leem 40 antes de qualquer gravação e, depois, cada uma grava 41. O resultado observado caracteriza
 
@@ -9050,7 +10967,13 @@ B) starvation, pois uma das threads foi definitivamente impedida de usar a CPU.
 C) livelock, pois as threads desfizeram repetidamente o trabalho uma da outra.
 D) condição de corrida com atualização perdida, causada pela intercalação de leitura, cálculo e escrita.
 
-### Questão 6
+### S2D5Q206 — Atomicidade, visibilidade e ordenação são propriedades relacionadas, mas distintas
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
 
 Quanto à atomicidade em programas concorrentes, assinale a afirmativa correta.
 
@@ -9059,7 +10982,13 @@ B) A atomicidade de uma operação isolada não torna atômica uma sequência; v
 C) Uma atribuição escrita em uma única linha de linguagem de alto nível é necessariamente indivisível para todas as threads.
 D) Atomicidade e exclusão mútua garantem, por si sós, que toda gravação seja imediatamente visível em qualquer arquitetura.
 
-### Questão 7
+### S2D5Q207 — Mutex implementa exclusão mútua cooperativa e propriedade exclusiva do lock
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
 Um mutex protege o saldo de uma conta compartilhada. Para que o protocolo de exclusão seja efetivo, é correto afirmar que
 
@@ -9068,7 +10997,13 @@ B) basta uma das threads usar o mutex, pois o sistema operacional bloqueará aut
 C) o mutex torna atômicas todas as operações do processo, inclusive as que não usam esse mecanismo.
 D) a thread que adquiriu o mutex pode delegar livremente sua liberação a qualquer fluxo, pois mutex não expressa propriedade.
 
-### Questão 8
+### S2D5Q208 — Semáforo contador controla N unidades equivalentes; mutex modela exclusão e propriedade
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
 Um servidor dispõe de oito conexões equivalentes em um pool e deve permitir, no máximo, oito usuários simultâneos desse recurso. O mecanismo mais diretamente adequado é
 
@@ -9077,7 +11012,13 @@ B) um spinlock mantido durante toda a utilização externa de cada conexão.
 C) um semáforo contador inicializado com oito unidades, decrementado na aquisição e incrementado na devolução.
 D) um mutex único que permita a oito threads serem proprietárias simultaneamente.
 
-### Questão 9
+### S2D5Q209 — Variável de condição coordena a espera por um predicado associado a estado protegido por mutex
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
 Uma consumidora retira itens de uma fila protegida por mutex e aguarda quando a fila está vazia. No padrão correto com variável de condição, a consumidora deve
 
@@ -9086,7 +11027,13 @@ B) testar a fila uma única vez com `if`, pois notificações eliminam despertar
 C) liberar o mutex, aguardar e continuar sem readquiri-lo, para evitar qualquer contenção.
 D) verificar o predicado em laço; a espera libera atomicamente o mutex e o readquire antes de retornar.
 
-### Questão 10
+### S2D5Q210 — Spinlock usa espera ativa e depende de uma expectativa de retenção muito curta
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição — spinlock](semana_02_estudo.md#s2-d5-sincronizacao).
 
 Sobre spinlocks, assinale a alternativa correta.
 
@@ -9095,7 +11042,13 @@ B) Podem ser úteis em trechos muito curtos, especialmente em multiprocessadores
 C) Colocam obrigatoriamente a thread para dormir até que o recurso seja liberado.
 D) São sempre a melhor escolha em um único núcleo não preemptível, mesmo se o detentor do lock ainda precisar executar.
 
-### Questão 11
+### S2D5Q211 — Memória compartilhada favorece throughput e transfere ao projeto a responsabilidade pela sincronização
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Comunicação entre processos — IPC](semana_02_estudo.md#s2-d5-ipc).
 
 Dois processos locais precisam trocar grande volume de dados com baixa sobrecarga de cópia. A equipe escolhe memória compartilhada. Essa escolha
 
@@ -9104,7 +11057,13 @@ B) elimina condições de corrida, pois o sistema serializa automaticamente toda
 C) preserva unidades de mensagem e ordenação por prioridade de forma inerente, como uma fila de mensagens.
 D) impede que os processos alterem a mesma região, preservando o isolamento integral entre eles.
 
-### Questão 12
+### S2D5Q212 — Mecanismos de IPC diferem em localidade, estrutura dos dados, direção, persistência e custo de cópia
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Comunicação entre processos — IPC](semana_02_estudo.md#s2-d5-ipc).
 
 Considere mecanismos de comunicação entre processos. Assinale a associação correta.
 
@@ -9113,7 +11072,13 @@ B) Pipe anônimo — necessariamente acessível por nome global; memória compar
 C) Fila de mensagens — preserva unidades de mensagem; socket — pode atender comunicação local ou em rede.
 D) FIFO — exige que os processos sejam pai e filho; RPC — elimina falhas de transporte e serialização.
 
-### Questão 13
+### S2D5Q213 — Deadlock é um impasse conjunto formado por dependências que impedem o progresso
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock).
 
 Um deadlock ocorre quando
 
@@ -9122,7 +11087,13 @@ B) processos executam em paralelo e disputam uma variável, ainda que todos conc
 C) um processo aguarda E/S externa que, embora lenta, continua avançando.
 D) um conjunto permanece bloqueado porque cada integrante espera recurso ou evento que outro integrante do conjunto deve produzir ou liberar.
 
-### Questão 14
+### S2D5Q214 — As quatro condições de Coffman precisam coexistir no deadlock clássico de recursos reutilizáveis
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock).
 
 No modelo clássico de Coffman para recursos reutilizáveis, as condições que devem coexistir para possibilitar deadlock são
 
@@ -9131,7 +11102,13 @@ B) exclusão mútua, posse e espera, não preempção e espera circular.
 C) seção crítica, semáforo contador, inversão de prioridade e ausência de quantum.
 D) espera ativa, comunicação síncrona, múltiplos núcleos e fila de mensagens.
 
-### Questão 15
+### S2D5Q215 — Prevenção rompe deliberadamente ao menos uma condição necessária; ordenação global rompe espera circular
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — prevenção](semana_02_estudo.md#s2-d5-deadlock).
 
 Uma aplicação impõe a regra de que todos os fluxos devem adquirir os locks `L1`, `L2` e `L3` sempre nessa ordem crescente, inclusive nos caminhos de erro. Essa é uma técnica de prevenção que atua diretamente contra a condição de
 
@@ -9140,7 +11117,13 @@ B) exclusão mútua.
 C) não preempção.
 D) posse e espera.
 
-### Questão 16
+### S2D5Q216 — Aquisição integral antecipada é prevenção por ruptura da condição de posse e espera
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — prevenção](semana_02_estudo.md#s2-d5-deadlock).
 
 Um sistema exige que cada processo solicite, antes de iniciar, todos os recursos de que precisará; se o conjunto completo não estiver disponível, nenhum deles é concedido. A estratégia previne o deadlock principalmente por romper
 
@@ -9149,7 +11132,13 @@ B) a não preempção, pois o sistema retira recursos já concedidos a qualquer 
 C) a posse e espera, embora possa reduzir a utilização dos recursos.
 D) a espera circular, sem produzir qualquer impacto sobre a eficiência.
 
-### Questão 17
+### S2D5Q217 — Evitação concede pedidos somente quando o estado resultante conserva uma sequência segura
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
 
 Na evitação de deadlock, um estado é considerado seguro quando
 
@@ -9158,7 +11147,13 @@ B) todos os processos conseguem concluir simultaneamente, sem precisar aguardar 
 C) não existe exclusão mútua para nenhum dos recursos utilizados pelo sistema.
 D) existe ao menos uma sequência de conclusão que permite atender todos os participantes; estado inseguro não significa deadlock já ocorrido.
 
-### Questão 18
+### S2D5Q218 — O algoritmo do banqueiro evita estados inseguros com base em demanda máxima conhecida e disponibilidade
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
 
 O algoritmo do banqueiro é um exemplo clássico de evitação de deadlock. Para decidir se uma concessão preserva um estado seguro, ele pressupõe, entre outros dados,
 
@@ -9167,7 +11162,13 @@ B) as demandas máximas declaradas, as alocações correntes e os recursos dispo
 C) somente um grafo de espera com exatamente uma instância de cada recurso.
 D) a interrupção compulsória de qualquer processo sempre que houver uma nova solicitação.
 
-### Questão 19
+### S2D5Q219 — A suficiência de um ciclo para detectar deadlock depende do número de instâncias de cada tipo de recurso
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock).
 
 Na detecção de deadlock por grafos e matrizes, é correto afirmar que
 
@@ -9176,7 +11177,13 @@ B) com várias instâncias, qualquer ciclo prova deadlock, sem necessidade de co
 C) a ausência de ciclo prova deadlock quando existe apenas uma instância de cada recurso.
 D) ciclos são irrelevantes; basta haver ao menos um processo no estado bloqueado.
 
-### Questão 20
+### S2D5Q220 — Recuperação pode abortar, preemptar quando possível ou restaurar estado, sempre respeitando consistência e custo
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Deadlock — recuperação](semana_02_estudo.md#s2-d5-deadlock).
 
 Após detectar um deadlock em operações transacionais, o sistema precisa recuperar o progresso preservando a consistência. Uma ação tecnicamente adequada é
 
@@ -9185,7 +11192,13 @@ B) ignorar o ciclo, pois a detecção já rompe automaticamente uma das condiç�
 C) escolher vítima por critérios de custo e, quando suportado, abortar ou restaurar um checkpoint consistente.
 D) aumentar a prioridade de todos os processos, o que libera compulsoriamente os recursos mantidos.
 
-### Questão 21
+### S2D5Q221 — Starvation afeta um participante continuamente preterido enquanto o sistema como um todo pode progredir
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
 Em um escalonador de prioridade estrita, tarefas de baixa prioridade permanecem prontas, mas são continuamente ultrapassadas por novas tarefas de alta prioridade. O problema e uma mitigação compatível são, respectivamente,
 
@@ -9194,7 +11207,13 @@ B) livelock e redução do número de núcleos.
 C) condição de corrida e uso de memória compartilhada.
 D) starvation e aging gradual da prioridade de quem espera.
 
-### Questão 22
+### S2D5Q222 — Livelock é atividade contínua sem avanço útil, muitas vezes produzida por respostas simétricas
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
 Duas threads detectam conflito, liberam seus recursos, tentam novamente ao mesmo tempo e repetem indefinidamente esse comportamento. Elas continuam ativas, mas não concluem trabalho útil. Trata-se de
 
@@ -9203,7 +11222,13 @@ B) livelock, que pode ser mitigado por backoff aleatório para romper a simetria
 C) deadlock, pois ambas permanecem bloqueadas sem mudar de estado.
 D) paralelismo, que se resolve substituindo threads por programas passivos.
 
-### Questão 23
+### S2D5Q223 — Inversão de prioridade é a espera indireta de uma thread alta por uma baixa que mantém recurso necessário
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
 Uma thread de alta prioridade aguarda um mutex mantido por uma thread de baixa prioridade. Threads de prioridade intermediária preemptam repetidamente a detentora, retardando a liberação do mutex. O cenário descreve
 
@@ -9212,7 +11237,13 @@ B) starvation da thread de baixa prioridade, resolvida necessariamente por aumen
 C) deadlock clássico, pois as quatro condições de Coffman estão demonstradas no enunciado.
 D) livelock, pois a thread de alta prioridade permanece executando e alterando o mutex.
 
-### Questão 24
+### S2D5Q224 — Deadlock, starvation e livelock têm causas e padrões de progresso distintos
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
 Analise as situações.
 
@@ -9227,7 +11258,13 @@ B) livelock, inversão de prioridade e deadlock.
 C) deadlock, starvation e livelock.
 D) condição de corrida, livelock e starvation.
 
-### Questão 25
+### S2D5Q225 — Locks devem proteger o menor estado coerente possível; retenção durante E/S amplia contenção e risco de dependências
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
 Uma thread adquire um mutex, inicia uma operação de rede potencialmente longa e mantém o lock até receber a resposta. À luz das boas práticas de sincronização, essa decisão
 
@@ -9238,7 +11275,13 @@ D) pode ampliar a contenção e participar de ciclos de dependência; convém pr
 
 
 
-### Questão 26
+### S2D5Q226 — FCFS e cálculo de espera e retorno
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Considere três processos submetidos ao escalonamento FCFS, sem custo de troca de contexto:
 
@@ -9255,7 +11298,13 @@ B) 11/3 e 20/3 unidades de tempo.
 C) 13/3 e 7 unidades de tempo.
 D) 5 e 20/3 unidades de tempo.
 
-### Questão 27
+### S2D5Q227 — SJF não preemptivo e minimização da espera média sob hipóteses ideais
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Três processos A, B e C chegam no instante zero com bursts de CPU iguais a 7, 4 e 1, respectivamente. Aplicando SJF não preemptivo, sem custo de troca, é correto afirmar que:
 
@@ -9264,7 +11313,13 @@ B) a ordem será C, A, B, e a espera média será 8/3 unidades.
 C) a ordem será B, C, A, e a espera média será 3 unidades.
 D) a ordem será C, B, A, e a espera média será 2 unidades.
 
-### Questão 28
+### S2D5Q228 — SRTF, preempção e tempo restante
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Considere o escalonamento SRTF dos processos abaixo, sem custo de troca de contexto:
 
@@ -9281,7 +11336,13 @@ B) A executa até terminar, pois SRTF não permite preempção; as esperas são 
 C) A executa de 0 a 1; B, de 1 a 5; C, de 5 a 7; e A, de 7 a 14. As esperas são 6, 0 e 3.
 D) C executa primeiro no instante zero, porque possui o menor burst, ainda que só chegue no instante 2.
 
-### Questão 29
+### S2D5Q229 — Starvation em escalonamento por prioridade e aging
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Em um escalonador por prioridade, tarefas de alta prioridade chegam continuamente e uma tarefa pronta de baixa prioridade permanece sem CPU por tempo indefinido. A medida diretamente voltada a esse problema é:
 
@@ -9290,7 +11351,13 @@ B) substituir toda interrupção de hardware por polling.
 C) aplicar aging, elevando gradualmente a prioridade da tarefa conforme seu tempo de espera.
 D) impor que a tarefa de baixa prioridade aguarde bloqueada por E/S.
 
-### Questão 30
+### S2D5Q230 — Round Robin, quantum, conclusão e resposta
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Três processos chegam no instante zero, na ordem A, B e C, com bursts 5, 3 e 1. Em Round Robin com quantum 2 e custo de troca desprezado, assinale a alternativa correta.
 
@@ -9299,7 +11366,13 @@ B) C, B e A terminam nos instantes 5, 8 e 9; os tempos de resposta de A, B e C s
 C) B, C e A terminam nos instantes 6, 7 e 9; o quantum não utilizado por C é transferido a A.
 D) C, A e B terminam nos instantes 1, 6 e 9, pois o menor burst sempre recebe a CPU primeiro.
 
-### Questão 31
+### S2D5Q231 — Compromisso entre responsividade e sobrecarga no Round Robin
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [2. Programa, processo e thread](semana_02_estudo.md#s2-d5-processo-thread) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Sobre o tamanho do quantum no Round Robin, assinale a afirmativa correta.
 
@@ -9308,7 +11381,13 @@ B) Quantum muito pequeno elimina o custo de troca de contexto e transforma o alg
 C) Quantum muito grande melhora necessariamente o primeiro atendimento de todas as tarefas interativas.
 D) O tamanho do quantum não afeta tempo de resposta nem sobrecarga, apenas a prioridade estática.
 
-### Questão 32
+### S2D5Q232 — Preempção nos algoritmos clássicos de CPU
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
 Quanto à preempção nos algoritmos clássicos de escalonamento, assinale a alternativa correta.
 
@@ -9317,7 +11396,13 @@ B) SJF e Round Robin somente preemptam quando chega uma tarefa de prioridade sup
 C) Prioridade é necessariamente não preemptiva, enquanto FCFS é necessariamente preemptivo.
 D) FCFS e SJF clássicos são não preemptivos; SRTF é preemptivo; prioridade pode ser preemptiva ou não; Round Robin preempta ao fim do quantum.
 
-### Questão 33
+### S2D5Q233 — Camadas de controle de dispositivos e papel do driver
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
 Em uma operação de entrada/saída, qual descrição distingue corretamente controlador e driver?
 
@@ -9326,7 +11411,13 @@ B) O aplicativo precisa conhecer os registradores elétricos de cada dispositivo
 C) O controlador contém lógica e registradores do dispositivo; o driver traduz operações do sistema operacional, administra filas, buffers, erros e conclusão.
 D) Driver e controlador são nomes equivalentes para o mecanismo que escalona processos na CPU.
 
-### Questão 34
+### S2D5Q234 — Polling e seu custo operacional
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
 Sobre polling na entrada/saída, assinale a alternativa correta.
 
@@ -9335,7 +11426,13 @@ B) É uma notificação iniciada exclusivamente pelo dispositivo e, por isso, n�
 C) Transfere blocos entre dispositivo e memória sem configuração pela CPU.
 D) É sempre sinônimo de E/S síncrona e nunca pode coexistir com interrupções no mesmo driver.
 
-### Questão 35
+### S2D5Q235 — Interrupção e desenho de rotina de serviço curta
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
 Um dispositivo gera uma interrupção ao concluir uma operação. Segundo o tratamento adequado, a rotina de serviço de interrupção deve, em regra:
 
@@ -9344,7 +11441,13 @@ B) reiniciar o sistema para garantir que os registradores do dispositivo estejam
 C) copiar obrigatoriamente cada byte para a memória sem participação de controlador ou DMA.
 D) reconhecer o dispositivo, salvar o mínimo necessário e diferir o trabalho demorado para contexto apropriado, retornando rapidamente.
 
-### Questão 36
+### S2D5Q236 — DMA e limites da expressão transferência direta
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
 Uma controladora recebeu da CPU a origem, o destino, o tamanho e a direção de uma cópia de 8 MiB. Em seguida, transferiu o bloco do dispositivo para a memória e sinalizou a conclusão. O mecanismo predominante de transferência foi:
 
@@ -9353,7 +11456,13 @@ B) DMA, que reduz a participação da CPU em cada unidade transferida, sem elimi
 C) journaling, porque houve registro prévio de origem e destino.
 D) Round Robin, porque o bloco foi dividido entre dispositivo e memória.
 
-### Questão 37
+### S2D5Q237 — Composição de polling, interrupção e DMA
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
 Polling, interrupção e DMA são empregados em operações de E/S. Assinale a alternativa correta.
 
@@ -9362,7 +11471,13 @@ B) Um driver que usa DMA fica impedido de consultar o dispositivo por polling em
 C) O driver pode configurar DMA para transferir dados e receber uma interrupção de conclusão; os mecanismos não são mutuamente exclusivos.
 D) DMA e interrupção têm a mesma função: ambos transferem todos os dados para a memória.
 
-### Questão 38
+### S2D5Q238 — Abstrações de nome, metadados, abertura e montagem em sistemas de arquivos
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
 Sobre abstrações de sistemas de arquivos, assinale a afirmativa correta.
 
@@ -9371,7 +11486,13 @@ B) O inode é apenas o texto que forma o nome do arquivo e deixa de existir quan
 C) Montagem significa copiar integralmente todos os arquivos para o diretório escolhido.
 D) Um descritor aberto pertence necessariamente a todos os processos do sistema e independe de controle de acesso.
 
-### Questão 39
+### S2D5Q239 — Commit e replay de transações do journal
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
 Após uma queda de energia, o journal de um sistema de arquivos contém uma transação sem registro de commit válido. No replay, a conduta compatível com a teoria de journaling é:
 
@@ -9380,7 +11501,13 @@ B) tratá-la como incompleta e descartá-la, enquanto transações confirmadas p
 C) restaurar automaticamente uma cópia histórica de todos os arquivos alterados.
 D) converter a transação em backup completo antes de montar o sistema de arquivos.
 
-### Questão 40
+### S2D5Q240 — Diferenças entre data=ordered, data=journal e data=writeback no ext4
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
 Acerca dos modos de journaling do ext4 apresentados na teoria, assinale a alternativa correta.
 
@@ -9389,7 +11516,13 @@ B) No modo data=journal, somente os metadados entram no journal, e os dados pode
 C) O modo data=writeback oferece ordenação mais forte que data=journal e equivale a backup.
 D) No padrão data=ordered, metadados são registrados no journal e os blocos de dados associados vão ao sistema principal antes do commit dos metadados; data=journal registra dados e metadados, com maior custo de escrita.
 
-### Questão 41
+### S2D5Q241 — Journaling versus backup
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
 Uma pessoa excluiu de forma autorizada um relatório e, dias depois, percebeu que precisava da versão anterior. O volume usa journaling e permaneceu estruturalmente consistente. É correto concluir que:
 
@@ -9398,7 +11531,13 @@ B) a consistência estrutural prova que o arquivo excluído continua recuperáve
 C) journaling auxilia a recuperação de consistência após falhas, mas não substitui backup nem garante versão histórica após exclusão, ransomware ou perda da mídia.
 D) todo sistema com journal replica automaticamente os dados em uma mídia independente.
 
-### Questão 42
+### S2D5Q242 — Notação octal das permissões Linux em arquivo regular
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
 Em um arquivo regular Linux, o modo 750 concede:
 
@@ -9407,7 +11546,13 @@ B) leitura e gravação ao proprietário; somente execução ao grupo; leitura a
 C) controle total ao grupo e somente leitura ao proprietário.
 D) leitura, gravação e execução a todos, porque os três algarismos devem ser somados.
 
-### Questão 43
+### S2D5Q243 — Semântica de r, w e x em diretórios Linux
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
 No modelo clássico de permissões Linux, os bits aplicados a diretórios possuem efeitos próprios. Assinale a alternativa correta.
 
@@ -9416,7 +11561,13 @@ B) Escrita em diretório altera automaticamente o conteúdo de todos os arquivos
 C) Execução em diretório significa iniciar o diretório como se fosse um programa.
 D) Leitura permite listar nomes, enquanto execução permite atravessar ou pesquisar componentes do caminho; criar ou remover entradas depende de escrita combinada com acesso adequado.
 
-### Questão 44
+### S2D5Q244 — Comandos Linux relacionados a permissões e ACLs
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
 Um administrador Linux precisa, respectivamente, alterar os bits de modo, trocar o proprietário e inspecionar uma ACL estendida. Quais comandos correspondem a essas finalidades?
 
@@ -9425,7 +11576,13 @@ B) chmod, chown e getfacl.
 C) ip, ss e systemctl.
 D) df, findmnt e free.
 
-### Questão 45
+### S2D5Q245 — DACLs, ACEs, herança e permissões efetivas no Windows
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
 Sobre permissões no Windows, assinale a afirmativa correta.
 
@@ -9434,7 +11591,13 @@ B) Uma ACE herdada nunca participa da permissão efetiva de um objeto filho.
 C) A DACL contém ACEs, inclusive permissões ou negações e possíveis regras herdadas; no acesso remoto, compartilhamento e NTFS podem atuar em conjunto.
 D) A permissão efetiva no acesso remoto é sempre a mais alta encontrada entre compartilhamento e NTFS.
 
-### Questão 46
+### S2D5Q246 — Finalidade do icacls no Windows
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
 No Windows, o comando icacls é utilizado para:
 
@@ -9443,7 +11606,13 @@ B) exibir ou modificar DACLs de arquivos e diretórios; ele substitui o antigo c
 C) acompanhar continuamente consumo de CPU como o top.
 D) consultar rotas e endereços IP, substituindo ipconfig.
 
-### Questão 47
+### S2D5Q247 — Observação pontual e contínua de processos e threads no Linux
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
 Uma equipe deseja primeiro obter uma fotografia dos processos e threads Linux e depois acompanhar continuamente o consumo de recursos. A associação adequada é:
 
@@ -9452,7 +11621,13 @@ B) top para alterar DACLs, e ps -eLf para reiniciar serviços.
 C) journalctl para enumerar threads, e chmod para medir consumo de CPU.
 D) ip route para listar processos, e ss -tulpn para escaloná-los.
 
-### Questão 48
+### S2D5Q248 — Comandos de serviços e logs no Linux e no Windows
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
 Para verificar o estado de um serviço e consultar eventos de log relacionados, sem confundir observação com encerramento de processos, a associação correta é:
 
@@ -9461,7 +11636,13 @@ B) Linux: ip addr e ss; Windows: Get-Process e Stop-Process.
 C) Linux: kill -KILL e top; Windows: taskkill e Get-Service.
 D) Linux: systemctl status NOME e journalctl; Windows: Get-Service e Get-WinEvent.
 
-### Questão 49
+### S2D5Q249 — Comandos Linux de diagnóstico de configuração e sockets de rede
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
 Durante um diagnóstico Linux, é necessário verificar endereços e rotas e, em seguida, observar sockets de escuta associados a processos. A sequência mais pertinente é:
 
@@ -9470,7 +11651,13 @@ B) ps, kill e free.
 C) ip addr/ip route e ss -tulpn.
 D) systemctl, journalctl e findmnt.
 
-### Questão 50
+### S2D5Q250 — Associação entre finalidade e comandos administrativos no Windows
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
 Em uma estação Windows, o analista precisa, nessa ordem, listar processos, consultar serviços, inspecionar a configuração IP, examinar conexões de rede e verificar permissões NTFS. Qual conjunto associa corretamente as finalidades?
 
@@ -9552,8 +11739,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 ## Comentários do Dia 5
 
 
-### Comentário da Questão 1
+### Comentário S2D5Q201
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9571,8 +11761,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Concorrência e paralelismo](semana_02_estudo.md#s2-d5-concorrencia-paralelismo).
 
-### Comentário da Questão 2
+### Comentário S2D5Q202
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9590,8 +11783,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Programa, processo e thread](semana_02_estudo.md#s2-d5-processo-thread).
 
-### Comentário da Questão 3
+### Comentário S2D5Q203
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9609,8 +11805,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Programa, processo e thread — estados conceituais](semana_02_estudo.md#s2-d5-processo-thread).
 
-### Comentário da Questão 4
+### Comentário S2D5Q204
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -9628,8 +11827,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Programa, processo e thread — troca de contexto](semana_02_estudo.md#s2-d5-processo-thread).
 
-### Comentário da Questão 5
+### Comentário S2D5Q205
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9647,8 +11849,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
 
-### Comentário da Questão 6
+### Comentário S2D5Q206
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9666,8 +11871,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Seção crítica, condição de corrida e atomicidade](semana_02_estudo.md#s2-d5-corrida-atomicidade).
 
-### Comentário da Questão 7
+### Comentário S2D5Q207
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9685,8 +11893,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
-### Comentário da Questão 8
+### Comentário S2D5Q208
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -9704,8 +11915,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
-### Comentário da Questão 9
+### Comentário S2D5Q209
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9723,8 +11937,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
-### Comentário da Questão 10
+### Comentário S2D5Q210
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9742,8 +11959,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Mutex, semáforos, monitores e variáveis de condição — spinlock](semana_02_estudo.md#s2-d5-sincronizacao).
 
-### Comentário da Questão 11
+### Comentário S2D5Q211
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9761,8 +11981,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Comunicação entre processos — IPC](semana_02_estudo.md#s2-d5-ipc).
 
-### Comentário da Questão 12
+### Comentário S2D5Q212
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -9780,8 +12003,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Comunicação entre processos — IPC](semana_02_estudo.md#s2-d5-ipc).
 
-### Comentário da Questão 13
+### Comentário S2D5Q213
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9799,8 +12025,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 14
+### Comentário S2D5Q214
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9818,8 +12047,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — condições necessárias de Coffman](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 15
+### Comentário S2D5Q215
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9837,8 +12069,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — prevenção](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 16
+### Comentário S2D5Q216
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -9856,8 +12091,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — prevenção](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 17
+### Comentário S2D5Q217
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9875,8 +12113,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 18
+### Comentário S2D5Q218
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9894,8 +12135,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — evitação](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 19
+### Comentário S2D5Q219
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9913,8 +12157,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — detecção](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 20
+### Comentário S2D5Q220
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -9932,8 +12179,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Deadlock — recuperação](semana_02_estudo.md#s2-d5-deadlock).
 
-### Comentário da Questão 21
+### Comentário S2D5Q221
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -9951,8 +12201,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
-### Comentário da Questão 22
+### Comentário S2D5Q222
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -9970,8 +12223,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
-### Comentário da Questão 23
+### Comentário S2D5Q223
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -9989,8 +12245,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
-### Comentário da Questão 24
+### Comentário S2D5Q224
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10008,8 +12267,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock).
 
-### Comentário da Questão 25
+### Comentário S2D5Q225
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10028,8 +12290,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 **Referência:** [Mutex, semáforos, monitores e variáveis de condição](semana_02_estudo.md#s2-d5-sincronizacao).
 
 
-### Comentário da Questão 26
+### Comentário S2D5Q226
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10047,8 +12312,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 27
+### Comentário S2D5Q227
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10066,8 +12334,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 28
+### Comentário S2D5Q228
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10085,8 +12356,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 29
+### Comentário S2D5Q229
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10104,8 +12378,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [7. Starvation, livelock e inversão de prioridade](semana_02_estudo.md#s2-d5-starvation-livelock) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 30
+### Comentário S2D5Q230
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10123,8 +12400,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 31
+### Comentário S2D5Q231
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10142,8 +12422,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [2. Programa, processo e thread](semana_02_estudo.md#s2-d5-processo-thread) e [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 32
+### Comentário S2D5Q232
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10161,8 +12444,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [8. Escalonamento de CPU](semana_02_estudo.md#s2-d5-escalonamento).
 
-### Comentário da Questão 33
+### Comentário S2D5Q233
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10180,8 +12466,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
-### Comentário da Questão 34
+### Comentário S2D5Q234
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10199,8 +12488,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
-### Comentário da Questão 35
+### Comentário S2D5Q235
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10218,8 +12510,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
-### Comentário da Questão 36
+### Comentário S2D5Q236
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10237,8 +12532,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
-### Comentário da Questão 37
+### Comentário S2D5Q237
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10256,8 +12554,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [9. Dispositivos, drivers, interrupções, polling e DMA](semana_02_estudo.md#s2-d5-dispositivos-e-s).
 
-### Comentário da Questão 38
+### Comentário S2D5Q238
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10275,8 +12576,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
-### Comentário da Questão 39
+### Comentário S2D5Q239
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10294,8 +12598,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
-### Comentário da Questão 40
+### Comentário S2D5Q240
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10313,8 +12620,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
-### Comentário da Questão 41
+### Comentário S2D5Q241
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10332,8 +12642,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [10. Sistemas de arquivos e journaling](semana_02_estudo.md#s2-d5-sistemas-arquivos).
 
-### Comentário da Questão 42
+### Comentário S2D5Q242
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10351,8 +12664,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
-### Comentário da Questão 43
+### Comentário S2D5Q243
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10370,8 +12686,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
-### Comentário da Questão 44
+### Comentário S2D5Q244
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10389,8 +12708,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos) e [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
-### Comentário da Questão 45
+### Comentário S2D5Q245
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10408,8 +12730,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes).
 
-### Comentário da Questão 46
+### Comentário S2D5Q246
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10427,8 +12752,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [11. Permissões em Linux e Windows](semana_02_estudo.md#s2-d5-permissoes) e [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
-### Comentário da Questão 47
+### Comentário S2D5Q247
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -10446,8 +12774,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
-### Comentário da Questão 48
+### Comentário S2D5Q248
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -10465,8 +12796,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
-### Comentário da Questão 49
+### Comentário S2D5Q249
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -10484,8 +12818,11 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 
 **Referência:** [12. Windows e Linux — comandos pertinentes](semana_02_estudo.md#s2-d5-comandos).
 
-### Comentário da Questão 50
+### Comentário S2D5Q250
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -10509,12 +12846,12 @@ D) Stop-Process; sc delete; route delete; taskkill; cacls.
 ## Questões extras de revisão fixa do Dia 5
 
 #### Extra Dia 5.1
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** delimitação normativa e controle de versão.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo).
 
 Considerando o escopo de Legislação CRA/CFA adotado para o cargo de Analista de Sistemas após a Retificação I, assinale a alternativa correta.
@@ -10524,12 +12861,12 @@ B) As RNs nº 589/2020, nº 649/2024 e nº 670/2025 constituem o núcleo autôno
 C) O núcleo é formado pela Lei nº 4.769/1965, pelo Decreto nº 61.934/1967, pelo Regimento/RN nº 651/2024 e pelo Código/RN nº 671/2025; as demais normas citadas no bloco ficam apenas como contexto externo.
 D) Somente o Regimento pode fundamentar as extras, pois Lei, Decreto e Código possuem aplicação nacional.
 #### Extra Dia 5.2
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** natureza e jurisdição do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Regimento — órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 Sobre natureza, autonomia e jurisdição do CRA-PR, assinale a alternativa correta.
@@ -10539,12 +12876,12 @@ B) É associação privada com jurisdição nacional e independência normativa 
 C) É órgão sem personalidade da Administração Direta estadual e atua apenas no município da sede.
 D) A autonomia permite ao CRA-PR deixar de executar diretrizes do CFA e aprovar definitivamente o próprio Regimento.
 #### Extra Dia 5.3
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** órgãos do CRA-PR.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Regimento — art. 3º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 Assinale a alternativa que contém apenas órgãos ou estruturas enumerados no art. 3º do Regimento do CRA-PR.
@@ -10554,12 +12891,12 @@ B) Diretoria Executiva, Assembleia Legislativa, Ouvidoria e Poder Judiciário.
 C) Plenário, Diretoria Executiva, Secretaria Estadual e conselho municipal.
 D) Plenário, Diretoria Executiva, Ouvidoria, Comissões Permanentes e Especiais e Grupos de Trabalho, além dos Órgãos de Representação.
 #### Extra Dia 5.4
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** finalidade do Plenário.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Regimento — Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 No Regimento do CRA-PR, o Plenário é:
@@ -10569,12 +12906,12 @@ B) órgão colegiado de deliberação superior e primeira instância de julgamen
 C) órgão executivo subordinado à Ouvidoria.
 D) última instância nacional para recursos de todos os Conselhos Regionais.
 #### Extra Dia 5.5
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** composição e mandato do Plenário.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Regimento — arts. 5º e 6º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 Sobre composição e mandato do Plenário, assinale a alternativa correta.
@@ -10584,12 +12921,12 @@ B) Possui nove membros sem suplentes, renovados integralmente a cada quatro anos
 C) É composto por nove Conselheiros Efetivos e respectivos Suplentes; renova-se a cada dois anos em um terço e dois terços alternadamente, e o mandato é de quatro anos, permitida uma reeleição.
 D) Seus membros possuem mandato de dois anos, idêntico ao da Diretoria, e reeleições ilimitadas.
 #### Extra Dia 5.6
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** competências do Plenário.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Regimento — competência do Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 Constitui competência do Plenário do CRA-PR:
@@ -10599,12 +12936,12 @@ B) apenas receber manifestações e encaminhá-las, sem poder deliberar.
 C) exercer sozinho toda a administração cotidiana, sem participação da Diretoria.
 D) instituir Comissão Especial sem ouvir a Diretoria e dispensar posterior homologação.
 #### Extra Dia 5.7
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** composição da Diretoria Executiva.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 Nos termos do Regimento, a Diretoria Executiva é composta por:
@@ -10614,12 +12951,12 @@ B) nove Conselheiros Efetivos e seus nove Suplentes.
 C) Presidente, Secretário-Geral e representantes de cada município paranaense.
 D) Presidente, Vice-Presidente, Diretor de Administração e Finanças, Diretor de Fiscalização e Registro e Diretor de Relações Institucionais.
 #### Extra Dia 5.8
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** Diretoria Executiva × Plenário.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 Assinale a alternativa que diferencia corretamente Diretoria Executiva e Plenário.
@@ -10629,12 +12966,12 @@ B) A Diretoria analisa os Planos e os encaminha à apreciação do Plenário, qu
 C) O Plenário executa sozinho todas as decisões, e a Diretoria funciona como canal de Ouvidoria.
 D) Diretoria e Plenário são nomes alternativos do mesmo órgão e possuem competências indistintas.
 #### Extra Dia 5.9
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** competências presidenciais e `ad referendum`.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 Quanto às competências do Presidente do CRA-PR, assinale a alternativa correta.
@@ -10644,12 +12981,12 @@ B) O Presidente homologa sozinho toda decisão do Plenário, sem controle colegi
 C) O Presidente representa o CRA-PR, convoca e preside reuniões, distribui processos e institui Comissões Especiais e Grupos de Trabalho, ouvida a Diretoria; decisão urgente `ad referendum` depende de posterior apreciação.
 D) A decisão `ad referendum` transfere definitivamente ao Presidente a competência do colegiado.
 #### Extra Dia 5.10
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** reuniões e quórum.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes).
 
 Sobre reuniões e quórum no Regimento do CRA-PR, assinale a alternativa correta.
@@ -10659,12 +12996,12 @@ B) Reuniões ordinárias podem ocorrer no máximo uma vez por ano, e videoconfer
 C) Maioria absoluta é calculada somente sobre os membros presentes na sessão.
 D) Reunião extraordinária dispensa pauta e só pode ser convocada por órgão externo.
 #### Extra Dia 5.11
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** Ouvidoria do CRA-PR.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
 A respeito da Ouvidoria do CRA-PR, assinale a alternativa correta.
@@ -10674,12 +13011,12 @@ B) Substitui a Diretoria Executiva na administração financeira.
 C) Seu titular pode ser qualquer terceiro não vinculado ao Plenário, com mandato independente.
 D) O Ouvidor é eleito pelo Plenário entre Conselheiros Efetivos; a unidade é mediadora, recebe, trata, encaminha e acompanha manifestações, sem caráter executivo, deliberativo ou decisório.
 #### Extra Dia 5.12
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** Comissões e Grupos de Trabalho.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
 Sobre Comissões e Grupos de Trabalho, assinale a alternativa correta.
@@ -10689,12 +13026,12 @@ B) Salvo norma específica, Comissões Permanentes têm três membros; membro da
 C) Comissões Especiais são permanentes e seus atos não precisam indicar prazo.
 D) Grupos de Trabalho exercem julgamento definitivo e não se limitam ao estudo de temas.
 #### Extra Dia 5.13
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** contagem de prazo e casos omissos.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes).
 
 Segundo as disposições gerais do Regimento, assinale a alternativa correta.
@@ -10704,12 +13041,12 @@ B) Todo caso omisso é resolvido exclusivamente pelo Presidente ou pela Ouvidori
 C) Salvo disposição contrária, exclui-se o dia do início e inclui-se o do vencimento; o prazo inicia ou vence em dia de expediente normal, e os casos omissos são resolvidos pelo Plenário.
 D) O prazo corre mesmo quando o termo inicial e o vencimento recaem em dia sem expediente, sem qualquer ajuste.
 #### Extra Dia 5.14
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** catálogo de infrações e gradação.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Código — deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes).
 
 Um profissional de Administração utiliza artifício enganoso para obter vantagem indevida, conduta do art. 6º, XVIII, do Código. Para pessoa física, a sanção-base prevista é:
@@ -10719,12 +13056,12 @@ B) advertência oral sem registro e sem multa.
 C) censura reservada, aplicada antes da defesa.
 D) cancelamento automático e imediato, independentemente de trânsito em julgado.
 #### Extra Dia 5.15
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 4
 - **Matéria:** Legislação CRA/CFA
 - **Assunto:** sanções, PF × PJ, multa e trânsito em julgado.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Sanções, PF × PJ, multas e garantias](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
 
 Sobre sanções, pessoa jurídica, multa e processo na RN CFA nº 671/2025, assinale a alternativa correta.
@@ -10734,12 +13071,12 @@ B) Advertência reservada é obrigatoriamente publicada no DOU, ao contrário da
 C) A multa substitui a sanção disciplinar, e ambas podem ser aplicadas antes do trânsito em julgado administrativo.
 D) Suspensão e cancelamento não se aplicam à pessoa jurídica; a multa acompanha a sanção, e sanção somente pode ser aplicada após trânsito em julgado administrativo.
 #### Extra Dia 5.16
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** modalidade e alcance.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [Português — inferência e quantificadores](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Da frase “As reuniões podem ocorrer por videoconferência”, infere-se corretamente que:
@@ -10749,12 +13086,12 @@ B) a videoconferência é uma possibilidade, não uma obrigação universal.
 C) nenhuma reunião pode ser presencial.
 D) somente reuniões extraordinárias admitem videoconferência.
 #### Extra Dia 5.17
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** reescrita e relação concessiva/adversativa.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Português — reescrita](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Original: “Embora seja mediadora, a Ouvidoria não decide.” Assinale a reescrita que preserva o sentido.
@@ -10764,12 +13101,12 @@ B) Se for mediadora, a Ouvidoria decidirá necessariamente.
 C) A Ouvidoria é mediadora, mas não decide.
 D) A Ouvidoria não decide; portanto, não pode mediar.
 #### Extra Dia 5.18
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** regência do relativo e crase.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Português — regência do relativo e crase](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Assinale a alternativa correta quanto à regência do pronome relativo e à crase.
@@ -10779,12 +13116,12 @@ B) “A decisão que o usuário discordou foi revista.”
 C) “A comissão cujos os membros foram eleitos reuniu-se.”
 D) “O tema aonde a Comissão se manifestou exigia parecer.”
 #### Extra Dia 5.19
-
 - **Dia:** Dia 5
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** oração adjetiva restritiva × explicativa.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Português — pontuação e sentido](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Assinale a alternativa correta sobre o efeito das vírgulas.
@@ -10800,6 +13137,7 @@ D) Sem vírgulas, a oração adjetiva pode selecionar um subconjunto; com vírgu
 - **Matéria:** Língua Portuguesa
 - **Assunto:** paralelismo e clareza comparativa.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Português — paralelismo e clareza](semana_02_estudo.md#s2-d5-rf-portugues).
 
 Assinale a alternativa que mantém paralelismo e clareza.
@@ -10837,10 +13175,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 ### Comentários das questões extras do Dia 5
 
 #### Comentário Extra Dia 5.1
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -10858,10 +13197,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Escopo e controle de versão](semana_02_estudo.md#s2-d5-rf-escopo).
 
 #### Comentário Extra Dia 5.2
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -10879,10 +13219,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Regimento — órgãos e Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 #### Comentário Extra Dia 5.3
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -10900,10 +13241,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Regimento — art. 3º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 #### Comentário Extra Dia 5.4
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -10921,10 +13263,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Regimento — Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 #### Comentário Extra Dia 5.5
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -10942,10 +13285,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Regimento — arts. 5º e 6º](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 #### Comentário Extra Dia 5.6
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -10963,10 +13307,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Regimento — competência do Plenário](semana_02_estudo.md#s2-d5-rf-regimento-orgaos).
 
 #### Comentário Extra Dia 5.7
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -10984,10 +13329,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 #### Comentário Extra Dia 5.8
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -11005,10 +13351,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 #### Comentário Extra Dia 5.9
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -11026,10 +13373,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Diretoria Executiva e Presidente](semana_02_estudo.md#s2-d5-rf-diretoria-presidente).
 
 #### Comentário Extra Dia 5.10
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -11047,10 +13395,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Reuniões e quórum](semana_02_estudo.md#s2-d5-rf-reunioes).
 
 #### Comentário Extra Dia 5.11
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -11068,10 +13417,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
 #### Comentário Extra Dia 5.12
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -11089,10 +13439,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Ouvidoria, Comissões e Grupos de Trabalho](semana_02_estudo.md#s2-d5-rf-ouvidoria-comissoes).
 
 #### Comentário Extra Dia 5.13
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -11110,10 +13461,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Contagem de prazo e casos omissos](semana_02_estudo.md#s2-d5-rf-prazos-omissoes).
 
 #### Comentário Extra Dia 5.14
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -11131,10 +13483,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Código — deveres e catálogo de infrações](semana_02_estudo.md#s2-d5-rf-etica-deveres-infracoes).
 
 #### Comentário Extra Dia 5.15
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -11152,10 +13505,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Sanções, PF × PJ, multas e garantias](semana_02_estudo.md#s2-d5-rf-etica-sancoes).
 
 #### Comentário Extra Dia 5.16
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -11173,10 +13527,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Português — inferência e quantificadores](semana_02_estudo.md#s2-d5-rf-portugues).
 
 #### Comentário Extra Dia 5.17
-
 **Alternativa correta: C.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -11194,10 +13549,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Português — reescrita](semana_02_estudo.md#s2-d5-rf-portugues).
 
 #### Comentário Extra Dia 5.18
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -11215,10 +13571,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Português — regência do relativo e crase](semana_02_estudo.md#s2-d5-rf-portugues).
 
 #### Comentário Extra Dia 5.19
-
 **Alternativa correta: D.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -11236,10 +13593,11 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 **Referência:** [Português — pontuação e sentido](semana_02_estudo.md#s2-d5-rf-portugues).
 
 #### Comentário Extra Dia 5.20
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -11262,7 +13620,13 @@ D) O plano busca reduzir falhas, a aceleração das respostas e que dados sejam 
 
 ## Questões principais
 
-### Questão 1
+### S2D6Q251 — Métricas de rede
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
 Em um enlace de 1 Gbit/s, a aplicação recebe 700 Mbit/s de dados úteis. A medida de 1 Gbit/s é largura de banda e a de 700 Mbit/s é:
 
@@ -11271,7 +13635,13 @@ B) jitter.
 C) goodput.
 D) perda.
 
-### Questão 2
+### S2D6Q252 — Switch e domínios
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
 Sobre um switch Ethernet, assinale a correta.
 
@@ -11280,7 +13650,13 @@ B) Encaminha sempre todos os quadros a todas as portas.
 C) Elimina qualquer broadcast.
 D) Aprende endereços MAC e separa domínios de colisão por porta.
 
-### Questão 3
+### S2D6Q253 — Encapsulamento por salto
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
 
 No encaminhamento de um pacote IPv4 por um roteador, normalmente:
 
@@ -11289,7 +13665,13 @@ B) o segmento TCP vira obrigatoriamente datagrama UDP.
 C) o endereço MAC de origem é mantido até o destino final.
 D) a aplicação recebe diretamente os bits do enlace.
 
-### Questão 4
+### S2D6Q254 — CIDR e broadcast
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
 
 Para `10.0.5.130/26`, a rede e o broadcast são, respectivamente:
 
@@ -11298,7 +13680,13 @@ B) `10.0.5.64` e `10.0.5.127`.
 C) `10.0.5.128` e `10.0.5.191`.
 D) `10.0.5.130` e `10.0.5.192`.
 
-### Questão 5
+### S2D6Q255 — Gateway e ARP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
 Um host IPv4 precisa alcançar endereço fora da própria sub-rede. Antes de transmitir, ele normalmente obtém por ARP o MAC:
 
@@ -11307,7 +13695,13 @@ B) do DNS autoritativo.
 C) do switch de acesso.
 D) do gateway local.
 
-### Questão 6
+### S2D6Q256 — IPv6 e ND
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
 No IPv6, a descoberta de vizinhos é apoiada principalmente por:
 
@@ -11316,7 +13710,13 @@ B) DNS recursivo.
 C) TCP.
 D) ICMPv6/Neighbor Discovery.
 
-### Questão 7
+### S2D6Q257 — TCP e UDP
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Analise as assertivas sobre TCP e UDP.
 
@@ -11331,7 +13731,13 @@ B) I e II, apenas.
 C) II e III, apenas.
 D) I, II e III.
 
-### Questão 8
+### S2D6Q258 — HTTP/3 e QUIC
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Um navegador usa HTTP/3 para acesso HTTPS. A associação usual é:
 
@@ -11340,7 +13746,13 @@ B) HTTP/3 sem transporte.
 C) HTTP/3 sobre QUIC, normalmente em UDP/443.
 D) HTTP/3 sobre SMTP/25.
 
-### Questão 9
+### S2D6Q259 — DHCPv4
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Na inicialização IPv4 por DHCP, a sequência DORA corresponde a:
 
@@ -11349,7 +13761,13 @@ B) DNS, Offer, Route e ARP.
 C) Deliver, Open, Resolve e Accept.
 D) Discover, Order, Reply e Audit.
 
-### Questão 10
+### S2D6Q260 — DNS
+
+**Nível:** Médio
+
+**Uso:** Essenciais
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Assinale a alternativa correta sobre DNS.
 
@@ -11358,7 +13776,13 @@ B) Resolve ou publica dados de nomes e pode usar UDP ou TCP.
 C) Substitui TLS na autenticação de servidor.
 D) Funciona somente por broadcast.
 
-### Questão 11
+### S2D6Q261 — Correio eletrônico
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Para enviar uma mensagem e manter cópia sincronizada no servidor, a combinação apropriada é:
 
@@ -11367,7 +13791,13 @@ B) POP3 para envio e SMTP para sincronização.
 C) SNMP para envio e LDAP para leitura.
 D) SFTP para envio e NTP para leitura.
 
-### Questão 12
+### S2D6Q262 — SFTP e SSH
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Qual associação está correta?
 
@@ -11376,7 +13806,13 @@ B) Telnet cifra o terminal por padrão.
 C) SFTP transfere arquivos sobre SSH.
 D) SSH é protocolo de recebimento de correio.
 
-### Questão 13
+### S2D6Q263 — SNMP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Em uma inspeção de equipamentos, SNMP é usado principalmente para:
 
@@ -11385,7 +13821,13 @@ B) gerenciar e consultar objetos definidos em MIB/OID.
 C) atribuir endereços IPv4.
 D) cifrar tráfego web.
 
-### Questão 14
+### S2D6Q264 — NAT e PAT
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 NAT e PAT se distinguem porque PAT:
 
@@ -11394,7 +13836,13 @@ B) cifra todos os pacotes.
 C) atua apenas em IPv6.
 D) também traduz portas para multiplexar fluxos.
 
-### Questão 15
+### S2D6Q265 — NTP
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Um log apresenta horários inconsistentes entre servidores. O serviço mais diretamente relacionado é:
 
@@ -11403,7 +13851,13 @@ B) LDAP.
 C) FTP.
 D) ARP.
 
-### Questão 16
+### S2D6Q266 — Vulnerabilidade, ameaça e risco
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 Uma falha de validação explorável é uma vulnerabilidade; o agente capaz de explorá-la é uma ameaça; a combinação de probabilidade e impacto expressa:
 
@@ -11412,7 +13866,13 @@ B) auditoria.
 C) risco.
 D) não repúdio.
 
-### Questão 17
+### S2D6Q267 — AAA
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 Autenticação e autorização significam, respectivamente:
 
@@ -11421,7 +13881,13 @@ B) provar identidade e verificar permissão para uma ação.
 C) cifrar conteúdo e gerar hash.
 D) detectar ataque e bloqueá-lo.
 
-### Questão 18
+### S2D6Q268 — Ataques de rede
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 Sobre sniffing, spoofing e ataque on-path, assinale a correta.
 
@@ -11430,7 +13896,13 @@ B) Spoofing é sinônimo de indisponibilidade.
 C) On-path apenas mede latência.
 D) Spoofing falsifica identidade; on-path pode interceptar e alterar tráfego.
 
-### Questão 19
+### S2D6Q269 — IDS
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Uma equipe deseja detectar tráfego suspeito sem necessariamente interrompê-lo. O controle mais compatível é:
 
@@ -11439,7 +13911,13 @@ B) IPS obrigatoriamente em linha.
 C) RAID.
 D) NAT.
 
-### Questão 20
+### S2D6Q270 — DMZ
+
+**Nível:** Médio
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Ao publicar um portal acessível externamente, a arquitetura mais adequada é posicioná-lo:
 
@@ -11448,7 +13926,13 @@ B) na DMZ, com regras estritas para os serviços internos necessários.
 C) atrás de qualquer estação usuária.
 D) fora de todo firewall.
 
-### Questão 21
+### S2D6Q271 — Limites da VPN
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Uma VPN reduz o risco de interceptação no caminho, mas não garante que:
 
@@ -11457,7 +13941,13 @@ B) haja confidencialidade no canal configurado.
 C) o endpoint remoto esteja sem malware ou autorizado a toda ação.
 D) exista autenticação dos extremos conforme a configuração.
 
-### Questão 22
+### S2D6Q272 — Hash
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Em criptografia, um hash é usado principalmente para:
 
@@ -11466,7 +13956,13 @@ B) produzir resumo de integridade, não recuperar o original.
 C) encaminhar pacotes entre redes.
 D) substituir certificado digital.
 
-### Questão 23
+### S2D6Q273 — Assinatura digital
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Assinale a correta sobre assinatura digital.
 
@@ -11475,7 +13971,13 @@ B) Oculta necessariamente todo o documento.
 C) É criada com a chave privada e verificada com a pública.
 D) É idêntica a uma senha compartilhada.
 
-### Questão 24
+### S2D6Q274 — TLS
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 O principal papel do TLS em HTTPS é:
 
@@ -11484,7 +13986,13 @@ B) garantir que todo conteúdo publicado seja verdadeiro.
 C) eliminar vulnerabilidades da aplicação.
 D) substituir DNS e roteamento.
 
-### Questão 25
+### S2D6Q275 — WPA3
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Sobre WPA3-Personal, assinale a correta.
 
@@ -11493,7 +14001,13 @@ B) Usa apenas WEP.
 C) Elimina toda necessidade de segmentação.
 D) Usa SAE, mas configuração e credenciais continuam relevantes.
 
-### Questão 26
+### S2D6Q276 — Contenção
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Na resposta a incidente, a contenção tem por objetivo imediato:
 
@@ -11502,7 +14016,13 @@ B) limitar propagação e impacto antes da erradicação e recuperação.
 C) restaurar sem investigar persistência.
 D) publicar relatório antes de analisar.
 
-### Questão 27
+### S2D6Q277 — RPO
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Com RPO de 30 minutos e incidente às 14h, o ponto recuperado deve ser, no máximo, de:
 
@@ -11511,7 +14031,13 @@ B) 13h30.
 C) 14h30.
 D) qualquer horário, se houver RAID.
 
-### Questão 28
+### S2D6Q278 — Redundância e backup
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Redundância e backup diferem porque:
 
@@ -11520,7 +14046,13 @@ B) backup impede automaticamente indisponibilidade.
 C) RAID substitui cópia externa versionada.
 D) ambos têm exatamente a mesma finalidade.
 
-### Questão 29
+### S2D6Q279 — Concorrência
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Concorrência é diferente de paralelismo porque concorrência:
 
@@ -11529,7 +14061,13 @@ B) nunca compartilha recursos.
 C) pode ocorrer por intercalação sem execução simultânea real.
 D) elimina condições de corrida.
 
-### Questão 30
+### S2D6Q280 — Condição de corrida
+
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Uma condição de corrida ocorre quando:
 
@@ -11538,7 +14076,13 @@ B) o resultado depende de intercalações não controladas sobre estado comparti
 C) uma thread termina antes das demais.
 D) há apenas um processo no sistema.
 
-### Questão 31
+### S2D6Q281 — Mutex
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 O mutex é apropriado quando se deseja:
 
@@ -11547,7 +14091,13 @@ B) substituir toda estratégia de escalonamento.
 C) armazenar mensagens persistentes.
 D) exclusão mútua de uma seção crítica.
 
-### Questão 32
+### S2D6Q282 — Deadlock
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 No caso clássico de deadlock, as condições de Coffman devem:
 
@@ -11556,7 +14106,13 @@ B) ocorrer em momentos independentes.
 C) ser substituídas por starvation.
 D) ser ignoradas se houver semáforo.
 
-### Questão 33
+### S2D6Q283 — Starvation
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Starvation descreve situação em que:
 
@@ -11565,7 +14121,13 @@ B) um participante pode ser adiado indefinidamente, enquanto outros progridem.
 C) todos os recursos são liberados automaticamente.
 D) uma thread executa em paralelo.
 
-### Questão 34
+### S2D6Q284 — Round Robin
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Em Round Robin, reduzir demais o quantum tende a:
 
@@ -11574,7 +14136,13 @@ B) tornar FCFS.
 C) impedir preempção.
 D) aumentar overhead de trocas de contexto.
 
-### Questão 35
+### S2D6Q285 — Polling e interrupção
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Polling e interrupção diferem porque:
 
@@ -11583,7 +14151,13 @@ B) interrupção transfere dados sem CPU, como DMA.
 C) polling cifra dispositivos.
 D) ambos são sinônimos.
 
-### Questão 36
+### S2D6Q286 — DMA
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 O DMA contribui para desempenho ao:
 
@@ -11592,7 +14166,13 @@ B) permitir transferência de blocos com menor intervenção da CPU por unidade.
 C) substituir drivers.
 D) impedir interrupções.
 
-### Questão 37
+### S2D6Q287 — Journaling
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Journaling em sistema de arquivos serve principalmente para:
 
@@ -11601,7 +14181,13 @@ B) manter credenciais cifradas.
 C) auxiliar recuperação de consistência após falha.
 D) substituir permissões.
 
-### Questão 38
+### S2D6Q288 — Permissões Linux
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Em Linux, a permissão `640` indica:
 
@@ -11610,7 +14196,13 @@ B) todos leem e escrevem.
 C) dono executa, grupo escreve, outros leem.
 D) nenhuma permissão para o dono.
 
-### Questão 39
+### S2D6Q289 — DACL
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 No Windows, uma DACL é relevante para:
 
@@ -11619,7 +14211,13 @@ B) armazenar rotas BGP.
 C) definir ACEs de permissões e negações sobre objeto.
 D) sincronizar relógio.
 
-### Questão 40
+### S2D6Q290 — Diagnóstico de serviço
+
+**Nível:** Difícil
+
+**Uso:** Revisão
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Em um caso CRA, um portal deixa de responder, mas `ping` ao servidor funciona. A conclusão correta é:
 
@@ -11628,7 +14226,13 @@ B) o DNS está necessariamente correto.
 C) o firewall está necessariamente aberto.
 D) conectividade IP isolada não prova saúde do serviço ou da aplicação.
 
-### Questão 41
+### S2D6Q291 — NTP e logs
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Em uma investigação, logs com hora incorreta prejudicam principalmente:
 
@@ -11637,7 +14241,13 @@ B) cálculo de permissões NTFS.
 C) tamanho de quadros Ethernet.
 D) resolução ARP.
 
-### Questão 42
+### S2D6Q292 — Defesa em profundidade
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Uma organização deve combinar segmentação, MFA, atualização e monitoramento porque:
 
@@ -11646,7 +14256,13 @@ B) defesa em profundidade reduz dependência de uma única barreira.
 C) IDS substitui autenticação.
 D) VPN substitui correção de vulnerabilidades.
 
-### Questão 43
+### S2D6Q293 — Fluxo web
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Qual sequência descreve melhor um acesso web seguro após inicialização do cliente?
 
@@ -11655,7 +14271,13 @@ B) DHCP, FTP, LDAP, NAT, HTTP.
 C) DHCP, DNS, transporte, TLS e HTTP.
 D) NTP, IMAP, ICMP, SSH e HTTP.
 
-### Questão 44
+### S2D6Q294 — Proxy reverso
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Um proxy reverso normalmente representa:
 
@@ -11664,7 +14286,13 @@ B) somente o gateway IPv4.
 C) agentes SNMP.
 D) servidores publicados perante clientes.
 
-### Questão 45
+### S2D6Q295 — LDAP
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Sobre LDAP, assinale a correta.
 
@@ -11673,7 +14301,13 @@ B) É mecanismo de tradução de portas.
 C) É protocolo de transferência de arquivos.
 D) É algoritmo de criptografia.
 
-### Questão 46
+### S2D6Q296 — Porta e segurança
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 Em um laudo técnico, afirmar que “porta 443 prova que o conteúdo é seguro” é incorreto porque:
 
@@ -11682,7 +14316,13 @@ B) a porta é convenção; segurança depende de protocolo, TLS, validação e e
 C) TLS só existe em UDP.
 D) DNS define a porta por criptografia.
 
-### Questão 47
+### S2D6Q297 — DDoS
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 Assinale a situação que caracteriza mais diretamente indisponibilidade.
 
@@ -11691,7 +14331,13 @@ B) Divulgação de documento sigiloso.
 C) Associação errada entre usuário e grupo.
 D) DDoS que satura o enlace do órgão.
 
-### Questão 48
+### S2D6Q298 — Evidência
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Ao preservar uma imagem de disco antes de erradicar malware, a equipe prioriza:
 
@@ -11700,7 +14346,13 @@ B) compactação.
 C) preservação de evidência para análise.
 D) desfragmentação.
 
-### Questão 49
+### S2D6Q299 — Comandos de observação
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Qual ação é de observação, e não de alteração de processo?
 
@@ -11709,7 +14361,13 @@ B) `Stop-Process`.
 C) `kill`.
 D) `Get-Process`.
 
-### Questão 50
+### S2D6Q300 — Validação de continuidade
+
+**Nível:** Muito difícil
+
+**Uso:** Simulado
+
+**Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Considere a afirmação: “A restauração foi concluída; logo, o plano de continuidade foi validado.” Ela é insuficiente porque:
 
@@ -11720,12 +14378,12 @@ D) RTO e RPO deixam de importar após a cópia.
 
 ## Questões extras de revisão fixa do Dia 6
 #### Extra Dia 6.1
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** ideia central.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-01).
 
 No trecho “A segmentação ajuda, mas não substitui MFA”, a ideia central é que:
@@ -11735,12 +14393,12 @@ B) controles são complementares.
 C) segmentação impede todo ataque.
 D) segurança é binária.
 #### Extra Dia 6.2
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** inferência.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-02).
 
 De “UDP não retransmite nativamente” infere-se que:
@@ -11750,12 +14408,12 @@ B) toda perda é corrigida por TCP.
 C) a aplicação pode implementar recuperação própria.
 D) DNS substitui UDP.
 #### Extra Dia 6.3
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** conectores.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-03).
 
 Em “Embora o host responda, o serviço falhou porque houve deadlock”, os conectores indicam:
@@ -11765,12 +14423,12 @@ B) causa e finalidade.
 C) conclusão e oposição.
 D) condição e explicação.
 #### Extra Dia 6.4
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** ambiguidade.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-04).
 
 Em “A analista informou à gerente que seu acesso expirou”, para eliminar ambiguidade deve-se:
@@ -11780,12 +14438,12 @@ B) assumir o termo mais próximo.
 C) usar plural.
 D) explicitar “acesso da analista” ou “da gerente”.
 #### Extra Dia 6.5
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** modalidade.
 - **Nível:** Médio
+- **Uso:** Essenciais
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-05).
 
 Da frase “o IDS pode alertar”, conclui-se que:
@@ -11795,12 +14453,12 @@ B) IDS bloqueia sempre.
 C) IDS substitui firewall.
 D) alerta é possibilidade ou capacidade, não garantia universal de detecção.
 #### Extra Dia 6.6
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** reescrita.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-06).
 
 A reescrita que preserva “Ainda que o backup esteja íntegro, teste a restauração” é:
@@ -11810,12 +14468,12 @@ B) Teste somente se houver corrupção.
 C) Mesmo íntegro, o backup exige teste de restauração.
 D) Testar torna o backup íntegro.
 #### Extra Dia 6.7
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** concordância.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-07).
 
 Assinale a frase correta.
@@ -11825,12 +14483,12 @@ B) Havia falhas e existem controles.
 C) Houveram falhas e existe controles.
 D) Haviam falhas e existia controles.
 #### Extra Dia 6.8
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** crase.
 - **Nível:** Médio
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-08).
 
 Assinale o emprego correto de regência e crase.
@@ -11840,12 +14498,12 @@ B) Obedeceu a política e começou à analisar registros.
 C) Referiu-se as regras e à todos.
 D) Obedeceu à política e começou a analisar registros.
 #### Extra Dia 6.9
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** pontuação.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-09).
 
 Assinale a pontuação adequada.
@@ -11855,12 +14513,12 @@ B) A equipe preservou, registros essenciais.
 C) Após a contenção, a equipe preservou os registros.
 D) Os servidores vulneráveis, foram isolados.
 #### Extra Dia 6.10
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 5
 - **Matéria:** Língua Portuguesa
 - **Assunto:** paralelismo.
 - **Nível:** Difícil
+- **Uso:** Aprofundamento
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-10).
 
 Há paralelismo adequado em:
@@ -11870,12 +14528,12 @@ B) Isolar hosts, revogar credenciais e a preservação de logs.
 C) Isolar hosts, que credenciais sejam revogadas e logs.
 D) Isolar hosts, revogar credenciais e preservar logs.
 #### Extra Dia 6.11
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** métricas.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
 Em enlace de 1 Gbit/s, throughput de 700 Mbit/s e goodput de 620 Mbit/s, a variação do atraso é:
@@ -11885,12 +14543,12 @@ B) largura de banda.
 C) broadcast.
 D) CIDR.
 #### Extra Dia 6.12
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** encapsulamento.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
 
 Ao rotear para novo enlace Ethernet, o equipamento:
@@ -11900,12 +14558,12 @@ B) recria o quadro para o próximo enlace.
 C) converte IP em DNS.
 D) elimina o pacote IP.
 #### Extra Dia 6.13
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** CIDR.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
 
 Para `192.168.10.77/27`, a rede é:
@@ -11915,12 +14573,12 @@ B) `192.168.10.32`.
 C) `192.168.10.64`.
 D) `192.168.10.77`.
 #### Extra Dia 6.14
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** gateway.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
 Para destino IPv4 remoto, o host resolve por ARP o MAC:
@@ -11930,12 +14588,12 @@ B) do destino remoto.
 C) do DNS.
 D) do NAT.
 #### Extra Dia 6.15
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** fluxo de protocolos.
 - **Nível:** Difícil
+- **Uso:** Revisão
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 DHCP, DNS, TLS e HTTP têm, respectivamente, funções de:
@@ -11945,12 +14603,12 @@ B) configuração, nomes, proteção do canal e aplicação web.
 C) diretório, autenticação, backup e banco.
 D) gerência, NAT, Wi-Fi e arquivo.
 #### Extra Dia 6.16
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Redes de Computadores
 - **Assunto:** serviços de rede.
 - **Nível:** Difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 Assinale a associação correta.
@@ -11960,12 +14618,12 @@ B) NTP entrega IP; SNMP resolve nomes.
 C) SMTP envia; IMAP acessa caixa; SFTP usa SSH.
 D) LDAP traduz portas; PAT lista diretórios.
 #### Extra Dia 6.17
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Segurança da Informação
 - **Assunto:** risco.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 Uma falha explorável, código malicioso e probabilidade/impacto representam:
@@ -11975,12 +14633,12 @@ B) ativo, CIA e backup.
 C) firewall, IDS e IPS.
 D) evento, NTP e VPN.
 #### Extra Dia 6.18
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Segurança da Informação
 - **Assunto:** controles.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 Assinale a correta.
@@ -11990,12 +14648,12 @@ B) IPS em linha pode bloquear, e HMAC usa chave secreta para integridade/autenti
 C) WPA3 dispensa senha forte.
 D) VLAN substitui firewall.
 #### Extra Dia 6.19
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Continuidade de Serviços
 - **Assunto:** RPO e RTO.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 Com incidente às 14h, RPO 30 min e RTO 2h, é correto:
@@ -12005,12 +14663,12 @@ B) RPO é prazo de serviço.
 C) RTO é perda máxima de dados.
 D) RAID substitui backup.
 #### Extra Dia 6.20
-
 - **Dia:** Dia 6
 - **Bloco:** Bloco 4
 - **Matéria:** Sistemas Operacionais
 - **Assunto:** E/S e journaling.
 - **Nível:** Muito difícil
+- **Uso:** Simulado
 - **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
 Assinale a correta sobre SO.
@@ -12104,8 +14762,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 ## Comentários do Dia 6
 
-### Comentário da Questão 1
+### Comentário S2D6Q251
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12123,8 +14784,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
-### Comentário da Questão 2
+### Comentário S2D6Q252
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12142,8 +14806,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
-### Comentário da Questão 3
+### Comentário S2D6Q253
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12161,8 +14828,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
 
-### Comentário da Questão 4
+### Comentário S2D6Q254
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12180,8 +14850,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
 
-### Comentário da Questão 5
+### Comentário S2D6Q255
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12199,8 +14872,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
-### Comentário da Questão 6
+### Comentário S2D6Q256
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12218,8 +14894,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
-### Comentário da Questão 7
+### Comentário S2D6Q257
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12237,8 +14916,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 8
+### Comentário S2D6Q258
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12256,8 +14938,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 9
+### Comentário S2D6Q259
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12275,8 +14960,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 10
+### Comentário S2D6Q260
 
+**Nível:** Médio
+
+**Uso:** Essenciais
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12294,8 +14982,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 11
+### Comentário S2D6Q261
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12313,8 +15004,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 12
+### Comentário S2D6Q262
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12332,8 +15026,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 13
+### Comentário S2D6Q263
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12351,8 +15048,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 14
+### Comentário S2D6Q264
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12370,8 +15070,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 15
+### Comentário S2D6Q265
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12389,8 +15092,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 16
+### Comentário S2D6Q266
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12408,8 +15114,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-### Comentário da Questão 17
+### Comentário S2D6Q267
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12427,8 +15136,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-### Comentário da Questão 18
+### Comentário S2D6Q268
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12446,8 +15158,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-### Comentário da Questão 19
+### Comentário S2D6Q269
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12465,8 +15180,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 20
+### Comentário S2D6Q270
 
+**Nível:** Médio
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12484,8 +15202,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 21
+### Comentário S2D6Q271
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12503,8 +15224,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 22
+### Comentário S2D6Q272
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12522,8 +15246,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 23
+### Comentário S2D6Q273
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12541,8 +15268,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 24
+### Comentário S2D6Q274
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12560,8 +15290,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 25
+### Comentário S2D6Q275
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12579,8 +15312,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 26
+### Comentário S2D6Q276
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12598,8 +15334,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-### Comentário da Questão 27
+### Comentário S2D6Q277
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12617,8 +15356,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-### Comentário da Questão 28
+### Comentário S2D6Q278
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12636,8 +15378,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-### Comentário da Questão 29
+### Comentário S2D6Q279
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12655,8 +15400,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 30
+### Comentário S2D6Q280
 
+**Nível:** Difícil
+
+**Uso:** Aprofundamento
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12674,8 +15422,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 31
+### Comentário S2D6Q281
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12693,8 +15444,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 32
+### Comentário S2D6Q282
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12712,8 +15466,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 33
+### Comentário S2D6Q283
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12731,8 +15488,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 34
+### Comentário S2D6Q284
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12750,8 +15510,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 35
+### Comentário S2D6Q285
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12769,8 +15532,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 36
+### Comentário S2D6Q286
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12788,8 +15554,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 37
+### Comentário S2D6Q287
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12807,8 +15576,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 38
+### Comentário S2D6Q288
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12826,8 +15598,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 39
+### Comentário S2D6Q289
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12845,8 +15620,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 40
+### Comentário S2D6Q290
 
+**Nível:** Difícil
+
+**Uso:** Revisão
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12864,8 +15642,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 41
+### Comentário S2D6Q291
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12883,8 +15664,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 42
+### Comentário S2D6Q292
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12902,8 +15686,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
-### Comentário da Questão 43
+### Comentário S2D6Q293
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -12921,8 +15708,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 44
+### Comentário S2D6Q294
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12940,8 +15730,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 45
+### Comentário S2D6Q295
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: A.**
 
 **Análise das alternativas:**
@@ -12959,8 +15752,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
-### Comentário da Questão 46
+### Comentário S2D6Q296
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -12978,8 +15774,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
-### Comentário da Questão 47
+### Comentário S2D6Q297
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -12997,8 +15796,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
-### Comentário da Questão 48
+### Comentário S2D6Q298
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: C.**
 
 **Análise das alternativas:**
@@ -13016,8 +15818,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
-### Comentário da Questão 49
+### Comentário S2D6Q299
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: D.**
 
 **Análise das alternativas:**
@@ -13035,8 +15840,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 
 **Referência:** [Mapa de revisão do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-10).
 
-### Comentário da Questão 50
+### Comentário S2D6Q300
 
+**Nível:** Muito difícil
+
+**Uso:** Simulado
 **Alternativa correta: B.**
 
 **Análise das alternativas:**
@@ -13057,10 +15865,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 ## Comentários das questões extras do Dia 6
 
 #### Comentário Extra Dia 6.1
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -13078,10 +15887,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-01).
 
 #### Comentário Extra Dia 6.2
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -13099,10 +15909,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-02).
 
 #### Comentário Extra Dia 6.3
-
 **Alternativa correta: A.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -13120,10 +15931,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-03).
 
 #### Comentário Extra Dia 6.4
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -13141,10 +15953,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-04).
 
 #### Comentário Extra Dia 6.5
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Essenciais
 
 **Análise das alternativas:**
 
@@ -13162,10 +15975,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-05).
 
 #### Comentário Extra Dia 6.6
-
 **Alternativa correta: C.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -13183,10 +15997,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-06).
 
 #### Comentário Extra Dia 6.7
-
 **Alternativa correta: B.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -13204,10 +16019,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-07).
 
 #### Comentário Extra Dia 6.8
-
 **Alternativa correta: D.**
 
 **Nível:** Médio
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -13225,10 +16041,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-08).
 
 #### Comentário Extra Dia 6.9
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -13246,10 +16063,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-09).
 
 #### Comentário Extra Dia 6.10
-
 **Alternativa correta: D.**
 
 **Nível:** Difícil
+
+**Uso:** Aprofundamento
 
 **Análise das alternativas:**
 
@@ -13267,10 +16085,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-pt-10).
 
 #### Comentário Extra Dia 6.11
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -13288,10 +16107,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-01).
 
 #### Comentário Extra Dia 6.12
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -13309,10 +16129,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-02).
 
 #### Comentário Extra Dia 6.13
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -13330,10 +16151,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-03).
 
 #### Comentário Extra Dia 6.14
-
 **Alternativa correta: A.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -13351,10 +16173,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-04).
 
 #### Comentário Extra Dia 6.15
-
 **Alternativa correta: B.**
 
 **Nível:** Difícil
+
+**Uso:** Revisão
 
 **Análise das alternativas:**
 
@@ -13372,10 +16195,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-05).
 
 #### Comentário Extra Dia 6.16
-
 **Alternativa correta: C.**
 
 **Nível:** Difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -13393,10 +16217,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-06).
 
 #### Comentário Extra Dia 6.17
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -13414,10 +16239,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-07).
 
 #### Comentário Extra Dia 6.18
-
 **Alternativa correta: B.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -13435,10 +16261,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-08).
 
 #### Comentário Extra Dia 6.19
-
 **Alternativa correta: A.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 
@@ -13456,10 +16283,11 @@ D) Interrupção evita polling contínuo; DMA reduz intervenção; journaling au
 **Referência:** [Revisão fixa do Dia 6](semana_02_estudo.md#s2-d6-rf-mx-09).
 
 #### Comentário Extra Dia 6.20
-
 **Alternativa correta: D.**
 
 **Nível:** Muito difícil
+
+**Uso:** Simulado
 
 **Análise das alternativas:**
 

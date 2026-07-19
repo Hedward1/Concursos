@@ -9,6 +9,8 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `README.md`: visão geral do projeto.
 - `edital/edital_cra_pr_2026_analista_sistemas_retificacao_1.pdf`: edital oficial usado como base.
 - `planejamento/plano_mestre_cra_pr_2026.md`: Plano Mestre de Cobertura do Edital, com rotina de 6h líquidas, cronograma até a reta final e controle de cobertura.
+- `planejamento/perfil_banca_consulplan.md`: contrato de aderência ao modo de cobrança da Instituto Consulplan para teoria, questões e simulados.
+- `questoes_oficiais/`: índices de questões reais da banca, resolvidas no caderno oficial e separadas do banco autoral.
 - `planejamento/padrao_semanal.md`: modelo oficial de criação, avaliação e aceite das semanas, com rubrica de 100 pontos, critérios eliminatórios e auditoria de teoria, exemplos, questões e comentários.
 - `planejamento/relatorio_auditoria_blocos_4_5_6.md`: diagnóstico e evidências da correspondência entre teoria e questões dos blocos recorrentes.
 - `planejamento/relatorio_auditoria_semana_01_dias_3_4.md`: auditoria semântica das 100 questões principais dos Dias 3 e 4, reorganização pedagógica, fontes oficiais e carga por sessão.
@@ -41,7 +43,7 @@ A Semana 1 possui:
 
 ## Semana 2
 
-A Semana 2 está produzida e em migração para o padrão atual. Ela aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados, incluindo topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
+A Semana 2 está produzida e aprovada para execução no padrão atual. Ela aprofunda Redes de Computadores, Segurança da Informação e Sistemas Operacionais Avançados, incluindo topologias e equipamentos, OSI/TCP-IP, IPv4/IPv6 e CIDR, protocolos e serviços, ataques e controles de segurança, resposta a incidentes, concorrência, sincronização, deadlock, E/S, sistemas de arquivos e permissões Windows/Linux.
 
 Também possui:
 

@@ -2,6 +2,10 @@
 
 Repositório de preparação para o concurso CRA-PR 2026, organizado em três trilhas independentes e em um método compartilhado de estudo.
 
+## Guia central
+
+- [Guia Mestre do Projeto](GUIA_MESTRE_DO_PROJETO.md): ponto de entrada obrigatório para consultar matérias comuns, conteúdos específicos, cronograma integrado até a prova, padrão de produção e estado das trilhas.
+
 ## Trilhas
 
 ### Analista de Sistemas

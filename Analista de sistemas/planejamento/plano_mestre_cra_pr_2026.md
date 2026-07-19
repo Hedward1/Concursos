@@ -72,7 +72,7 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 - **Foco técnico:** redes de computadores; segurança da informação; sistemas operacionais avançado.
 - **Tópicos do edital:** topologias, componentes, meios de transmissão, LAN/WAN, ISO/OSI, TCP/IP, HTTP, SMTP, DHCP, DNS, LDAP, proxy, SNMP, switches, roteadores, gateways, redes sem fio, VPN, gerência de rede, ataques, firewall, DMZ, Windows/Linux, concorrência, sincronização, deadlock, dispositivos e sistemas de arquivos.
 - **Revisão fixa:** Legislação CRA/CFA, Português/interpretação e Administração Pública.
-- **Status:** em migração pelo padrão atual. A cobertura das 120 extras dos Blocos 4–6 foi verificada e a numeração dos blocos foi normalizada; permanece a migração geral dos níveis/comentários das 300 principais.
+- **Status:** material aprovado para execução conforme `../semana_02/relatorio_aceite.md`; execução do candidato pendente.
 - **Arquivos:** `semana_02/semana_02_estudo.md` e `semana_02/semana_02_questoes.md`.
 - **Entrega:** redes de computadores, segurança de redes e sistemas operacionais avançados aprofundados; 300 questões principais e 120 extras.
 
@@ -141,12 +141,12 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 | Semana 1 | Dia 4 | Legislação CRA-PR/CFA | Administração Pública + Português + RLM | Legislação CRA/CFA | Auditado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md`; `planejamento/relatorio_auditoria_semana_01_dias_3_4.md` |
 | Semana 1 | Dia 5 | Língua Portuguesa e discursiva | Legislação CRA/CFA + Administração Pública | Língua Portuguesa | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
 | Semana 1 | Dia 6 | Administração Pública, RLM e revisão | Legislação CRA/CFA + caderno de erros | Administração Pública / RLM | Criado | `semana_01/semana_01_estudo.md`; `semana_01/semana_01_questoes.md` |
-| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
-| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Em migração | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 1 | Redes: topologias, LAN/WAN, equipamentos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 2 | Modelo OSI, TCP/IP, endereçamento e CIDR | Administração Pública + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 3 | Protocolos: HTTP, DNS, DHCP, SMTP, SNMP, LDAP, proxy | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 4 | Segurança de redes: ataques, firewall, DMZ, VPN, Wi-Fi | Administração Pública + RLM | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 5 | SO avançado: sincronização, deadlock, dispositivos, arquivos | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
+| Semana 2 | Dia 6 | Revisão redes/SO/segurança com estudo de caso CRA | Português + caderno de erros | Conhecimentos do Cargo | Material aprovado para execução | `semana_02/semana_02_estudo.md`; `semana_02/semana_02_questoes.md` |
 | Semana 3 | Dia 1 | Arquitetura de BD, independência, dicionário e administração de dados | Legislação CRA/CFA + Português + Informática: Google Documentos | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 2 | MER, mapeamento relacional e normalização | Administração Pública + Português + Informática: Google Planilhas | Conhecimentos do Cargo / Informática | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 3 | SQL ANSI: SELECT, JOIN, WHERE, GROUP BY, HAVING | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
