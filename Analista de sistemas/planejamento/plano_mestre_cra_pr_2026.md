@@ -32,7 +32,7 @@ Conhecimentos do Cargo, Legislação CRA-PR/CFA e Língua Portuguesa somam **70 
 
 ## Rotina diária fixa - 6h líquidas
 
-A rotina padrão de cada dia de estudo deve ser mantida, com adaptações apenas nas semanas de simulado e reta final.
+A rotina padrão de cada dia de estudo deve ser mantida. A jornada semanal pode redistribuir minutos internamente nas semanas de simulado, reta final ou colisão programada de D+2, D+7 e D+21, desde que preserve as 6 horas líquidas, não crie sessão adicional e documente a adaptação.
 
 | Bloco | Tempo líquido | Atividade |
 |---|---:|---|
@@ -40,6 +40,8 @@ A rotina padrão de cada dia de estudo deve ser mantida, com adaptações apenas
 | Revisão fixa | 40min | Legislação CRA/CFA, Administração Pública, Raciocínio Lógico-Matemático ou Informática, conforme a semana |
 | Português/discursiva | 30min | Interpretação, gramática aplicada, reescrita ou treino de discursiva |
 | Caderno de erros | 20min | Revisão ativa, flashcards, mapa mental curto e registro de lacunas |
+
+Na camada executável, os **360 minutos diários** devem aparecer como `Sessão A 170 + Sessão B 170 + consolidação 20`. A tabela macro acima organiza finalidades; a jornada semanal governa a distribuição exata e não constitui uma segunda carga a ser somada. Na Semana 4, a coincidência entre D+21 da Semana 1, D+7 da Semana 3 e D+2 da própria semana foi absorvida dentro desse total.
 
 Pausas sugeridas: 10min a cada 90min de estudo e uma pausa maior entre o bloco principal e os blocos fixos. As 6h são líquidas; pausas não entram na contagem.
 
@@ -88,9 +90,15 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 ### Semana 4 - 03/08/2026 a 08/08/2026
 
 - **Foco técnico:** engenharia de software, análise de requisitos, UML, testes, qualidade e manutenção de sistemas.
-- **Tópicos do edital:** análise e projeto orientado a objetos, UML, casos de uso, classes/objetos, estados, colaboração/comunicação, sequência, atividades, componentes, implementação, ferramentas de apoio à análise/projeto/codificação, engenharia de software, cascata, espiral, reuso, prototipação, RAD, evolutivo, incremental, fases de concepção, elaboração, construção e transição, gerenciamento de projetos em noções iniciais, ITIL e COBIT em noções iniciais.
-- **Revisão fixa:** Legislação CRA/CFA e Português.
-- **Entrega esperada:** Semana 4 com teoria aplicada a cenários de órgão público e questões de requisitos/UML/testes.
+- **Item 13 do edital:** análise e projeto orientados a objetos com UML; casos de uso; classes e objetos; estados; colaboração/comunicação; sequência; atividades; componentes; implementação.
+- **Item 14 do edital:** ferramentas de suporte à análise, ao projeto e à codificação orientados a objetos.
+- **Item 15 do edital:** engenharia de software; ciclos de vida em cascata, espiral, reuso, prototipação, RAD, evolucionário e incremental; fases de processo de concepção, elaboração, construção e transição.
+- **Item 16 do edital:** gerenciamento de projetos; conceitos, planejamento, acompanhamento e controle; áreas de gerenciamento; fases de projeto; escopo, WBS, tempo, custos, qualidade, recursos humanos, comunicação, riscos, compras/subcontratação e integração; PMBOK sem edição presumida.
+- **Item 17 do edital:** GED, workflow, BPM, ERP, CRM, ITIL e COBIT.
+- **Revisão fixa:** Legislação CRA/CFA, Português, Administração Pública e RLM, conforme o dia.
+- **Status:** material aprovado para execução conforme `../semana_04/relatorio_aceite.md`; execução do candidato pendente.
+- **Arquivos:** `semana_04/README.md`, `semana_04/semana_04_jornada.md`, `semana_04/semana_04_estudo.md`, `semana_04/semana_04_dissertacoes.md`, `semana_04/semana_04_questoes.md`, `semana_04/semana_04_super_simulado.md`, `semana_04/relatorio_aceite.md`, `questoes_oficiais/semana_04.md` e relatórios de auditoria em `semana_04/`.
+- **Entrega:** teoria aplicada a cenários de órgão público, progressão discursiva de tema geral, 300 questões principais, 120 extras e super simulado suplementar produzidos e auditados; execução do candidato pendente.
 
 ### Semana 5 - 10/08/2026 a 15/08/2026
 
@@ -155,12 +163,12 @@ Esse padrão deve aparecer nas próximas apostilas semanais para todos os dias, 
 | Semana 3 | Dia 4 | DML/DDL, Transact-SQL, views, procedures e triggers | Administração Pública + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 5 | Transações, concorrência, recuperação, integridade e segurança | Legislação CRA/CFA + Português + Informática: internet | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
 | Semana 3 | Dia 6 | Índices, otimização, SQL Server, MySQL, PostgreSQL e BI | RLM + caderno de erros + revisão Google Docs/Planilhas/internet | Conhecimentos do Cargo / Informática | Material aprovado para execução | `semana_03/semana_03_estudo.md`; `semana_03/semana_03_questoes.md` |
-| Semana 4 | Dia 1 | Requisitos, análise orientada a objetos e casos de uso | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 2 | UML: classes, objetos, sequência, atividades e estados | Administração Pública + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 3 | Componentes, implementação e ferramentas de apoio | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 4 | Engenharia de software, ciclos de vida e gerenciamento de projetos inicial | Administração Pública + RLM | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 5 | Testes, qualidade, manutenção e processos de desenvolvimento | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
-| Semana 4 | Dia 6 | Revisão de engenharia/UML + noções iniciais de ITIL e COBIT | Português + caderno de erros | Conhecimentos do Cargo | Pendente | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 1 | Requisitos, análise orientada a objetos e casos de uso | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 2 | UML: classes, objetos, sequência, comunicação, atividades e estados | Administração Pública + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 3 | Componentes, implementação/implantação e ferramentas de apoio | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 4 | Engenharia de software, ciclos de vida e gerenciamento de projetos | Administração Pública + RLM | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 5 | Testes, qualidade, manutenção e fases do processo de desenvolvimento | Legislação CRA/CFA + Português | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
+| Semana 4 | Dia 6 | Integração de engenharia/UML; GED, workflow, BPM, ERP, CRM, ITIL e COBIT | Português + caderno de erros | Conhecimentos do Cargo | Material aprovado para execução | `semana_04/semana_04_estudo.md`; `semana_04/semana_04_questoes.md` |
 | Semana 5 | Dia 1 | Complexidade, vetores, matrizes, listas e pilhas | Legislação CRA/CFA + Português + Informática: Windows | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
 | Semana 5 | Dia 2 | Árvores, B-trees, grafos, ordenação, busca e hashing | Administração Pública + Português + Informática: microcomputadores PC-hardware | Conhecimentos do Cargo / Informática | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
 | Semana 5 | Dia 3 | Linguagens: escopo, tipos, passagem de parâmetros e exceções | Legislação CRA/CFA + RLM | Conhecimentos do Cargo | Pendente | `semana_05/semana_05_estudo.md`; `semana_05/semana_05_questoes.md` |
@@ -236,10 +244,11 @@ Consulte também `planejamento/padrao_semanal.md` antes de iniciar, revisar ou c
 - [ ] Integração de sistemas: XML, Web Services, WSDL, UDDI, SOAP e RESTful Web Services. Planejado para Semana 5.
 - [ ] Cloud Computing e backup. Introdução na Semana 5, revisão/questões na Semana 7 e revisão final na Semana 8.
 - [ ] IA generativa, governança e ética em IA. Introdução na Semana 5, revisão/questões na Semana 7 e revisão final na Semana 8.
-- [ ] Análise e projeto de sistemas: UML, casos de uso, classes, objetos, estados, comunicação, sequência, atividades, componentes e implementação. Planejado para Semana 4.
-- [ ] Engenharia de software: modelos de ciclo de vida, processos e fases. Planejado para Semana 4.
-- [ ] Gerenciamento de projetos: planejamento, acompanhamento, controle, áreas do PMBOK, escopo, WBS, tempo, custos, qualidade, recursos humanos, comunicação, risco, compras e integração. Introdução na Semana 4 e revisão/questões na Semana 7.
-- [ ] Gestão e recursos informacionais: GED, workflow, BPM, ERP, CRM, ITIL e COBIT. Noções iniciais de ITIL/COBIT na Semana 4 e revisão/questões na Semana 7.
+- [x] Análise e projeto de sistemas: UML, casos de uso, classes, objetos, estados, comunicação, sequência, atividades, componentes e implementação. Base produzida na Semana 4; revisão/questões na Semana 7.
+- [x] Ferramentas de suporte à análise, ao projeto e à codificação orientados a objetos. Base produzida na Semana 4; revisão/questões na Semana 7.
+- [x] Engenharia de software: modelos de ciclo de vida, processos e fases de concepção, elaboração, construção e transição. Base produzida na Semana 4; revisão/questões na Semana 7.
+- [x] Gerenciamento de projetos: conceitos, fases, planejamento, acompanhamento, controle, áreas, escopo, WBS, tempo, custos, qualidade, recursos humanos, comunicação, risco, compras/subcontratação, integração e PMBOK sem edição presumida. Base produzida na Semana 4; revisão/questões na Semana 7.
+- [x] Gestão e recursos informacionais: GED, workflow, BPM, ERP, CRM, ITIL e COBIT. Base produzida na Semana 4; revisão/questões na Semana 7.
 - [ ] Desenvolvimento web, frameworks Python, Django, testes, deploy, produção, DevOps, controle de versão e containers. Planejado para Semana 5, com revisão/questões na Semana 7.
 - [ ] Licitações e contratações de TIC: contratações de TIC, Lei 14.133/2021 aplicada a TIC, IN SGD/ME 94/2022, ETP, TR e artefatos de planejamento. Introdução na Semana 6, revisão/questões na Semana 7 e revisão final na Semana 8.
 - [ ] Noções de inglês técnico. Introdução na Semana 6, revisão/questões na Semana 7 e revisão final na Semana 8.

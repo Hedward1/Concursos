@@ -17,6 +17,7 @@ Materiais de planejamento, teoria, questões e simulados para o cargo de Analist
 - [Semana 1](<Analista de sistemas/semana_01/semana_01_estudo.md>)
 - [Semana 2](<Analista de sistemas/semana_02/README.md>)
 - [Semana 3](<Analista de sistemas/semana_03/README.md>)
+- [Semana 4](<Analista de sistemas/semana_04/README.md>)
 
 ### Administrador
 
@@ -57,6 +58,7 @@ CRA_PARANA/
 │   ├── semana_01/
 │   ├── semana_02/
 │   ├── semana_03/
+│   ├── semana_04/
 │   └── old/
 ├── Direito/
 │   ├── edital/

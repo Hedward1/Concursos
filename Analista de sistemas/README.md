@@ -30,6 +30,13 @@ O objetivo deste repositório é organizar um plano de preparação com foco em 
 - `semana_03/semana_03_questoes.md`: 300 questões principais e 120 extras auditadas.
 - `semana_03/semana_03_super_simulado.md`: 60 questões suplementares, dez por dia.
 - `semana_03/relatorio_aceite.md`: inventário, auditorias cruzadas e rubrica final da produção.
+- `semana_04/README.md`: ordem de uso e status da Semana 4.
+- `semana_04/semana_04_jornada.md`: cronograma de 6h, filas concorrentes e revisões espaçadas.
+- `semana_04/semana_04_estudo.md`: requisitos, UML, engenharia de software, projetos e gestão de recursos informacionais.
+- `semana_04/semana_04_dissertacoes.md`: progressão diária integrada ao Bloco 5 e rubrica oficial.
+- `semana_04/semana_04_questoes.md`: 300 questões principais e 120 extras auditadas.
+- `semana_04/semana_04_super_simulado.md`: 60 questões suplementares, dez por dia.
+- `semana_04/relatorio_aceite.md`: inventário, auditorias cruzadas e rubrica final da produção.
 - `old/`: versões antigas e materiais intermediários.
 
 ## Semana 1
@@ -74,9 +81,17 @@ O lote contém 300 principais, 120 extras e um super simulado de 60 itens. As 42
 
 O [relatório de aceite](semana_03/relatorio_aceite.md) registra nota 98/100 e zero falha eliminatória. O status é **Material aprovado para execução**; D0, D+2, D+7, D+21, discursiva e super simulado ainda dependem da execução do candidato.
 
+## Semana 4
+
+A Semana 4 foi produzida e aprovada para execução com requisitos, análise orientada a objetos, casos de uso, UML estrutural e comportamental, componentes e implantação, ferramentas de apoio, engenharia de software, ciclos de vida, testes, qualidade, manutenção, fases e áreas de gerenciamento de projetos, GED, workflow, BPM, ERP, CRM, ITIL e COBIT.
+
+O lote contém 300 principais, 120 extras e super simulado de 60 itens. Os 420 itens do banco receberam leitura semântica em lotes independentes, e o super passou por duas revisões; nenhuma resposta semântica precisou ser trocada. Distratores, níveis e referências foram recalibrados, e as posições A–D foram balanceadas somente depois do congelamento semântico. Quatro questões reais da Consulplan foram indexadas em caderno separado, sem reprodução no banco autoral.
+
+O [relatório de aceite](semana_04/relatorio_aceite.md) registra nota 98/100 e zero falha eliminatória. O status é **Material aprovado para execução**; D0, D+2, D+7, D+21, discursiva e super simulado ainda dependem da execução do candidato.
+
 ## Organização
 
-Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, `semana_02/` e `semana_03/`; o planejamento fica em `planejamento/` e o edital em `edital/`.
+Na raiz ficam apenas este README e as pastas principais do projeto. Os documentos atuais de estudo ficam em `semana_01/`, `semana_02/`, `semana_03/` e `semana_04/`; o planejamento fica em `planejamento/` e o edital em `edital/`.
 
 As versões antigas e materiais intermediários permanecem na pasta `old/`.
 

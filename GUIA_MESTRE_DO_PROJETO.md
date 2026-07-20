@@ -225,7 +225,7 @@ Preencher mentalmente ou no relatório do lote:
 ## Estado-base atualizado após a auditoria reparadora de 19/07/2026
 
 - **Administrador:** Semana 1 produzida e aprovada para execução; Semana 2 é o próximo lote planejado.
-- **Analista de Sistemas:** Semana 1 existente com conformidade parcial conforme relatórios; Semanas 2 e 3 produzidas, recalibradas semanticamente e aprovadas para execução em 19/07/2026, com execução do candidato pendente.
+- **Analista de Sistemas:** Semana 1 existente com conformidade parcial conforme relatórios; Semanas 2, 3 e 4 produzidas, recalibradas semanticamente e aprovadas para execução em 19/07/2026, com execução do candidato pendente.
 - **Direito:** Semana 1 existente em formato legado e sujeita à migração/auditoria do padrão jurídico atual; Semana 2 permanece planejada.
 
 Este estado deve ser atualizado somente com evidência nos arquivos e relatórios. Nunca inferir que estudo foi executado apenas porque o material está pronto.
