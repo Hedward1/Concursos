@@ -160,7 +160,11 @@ A carga física não integra as 6h teóricas. Frequência, volume e intensidade 
 5. RLM básico e Realidade do Paraná: proposições, conjuntos, porcentagem, formação territorial e geografia.
 6. Legislação institucional introdutória e integração semanal.
 
-**Arquivo inicial:** `semana_01/semana_01_indice.md`.
+**Arquivos produzidos:**
+
+- `semana_01/semana_01_indice.md`;
+- `semana_01/semana_01_estudo.md`;
+- `semana_01/semana_01_questoes.md`.
 
 ### Semana 2 - 03/08 a 08/08
 
@@ -459,6 +463,7 @@ Cada semana deve:
 - [x] Padrão semanal adaptado para FGV e A-E.
 - [x] Índice da Semana 1 aprovado pelo usuário.
 - [x] Apostila de estudo da Semana 1 produzida.
-- [ ] Apostila de estudo da Semana 1 aprovada pelo usuário.
-- [ ] Apostila de questões da Semana 1 produzida.
+- [x] Apostila de estudo da Semana 1 aprovada pelo usuário.
+- [x] Apostila de questões da Semana 1 produzida.
+- [ ] Apostila de questões da Semana 1 aprovada pelo usuário.
 - [ ] Simulado da Semana 1 produzido.

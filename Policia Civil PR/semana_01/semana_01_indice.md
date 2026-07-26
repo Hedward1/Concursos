@@ -6,7 +6,7 @@
 **Carga:** 6 horas liquidas por dia, sem contar pausas  
 **Banca:** Fundacao Getulio Vargas - FGV  
 **Versao do documento:** 1.0  
-**Situacao:** aprovado em 26/07/2026 para producao da apostila de estudo
+**Situacao:** indice e apostila de estudo aprovados; apostila de questoes produzida e aguardando aprovacao
 
 ## Base oficial
 

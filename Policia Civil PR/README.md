@@ -11,7 +11,7 @@ Projeto de preparação para o concurso público da Polícia Civil do Estado do 
 - **Prova objetiva:** 11/10/2026, das 13h às 18h, conforme o edital vigente.
 - **Cargo-alvo:** Agente de Polícia Judiciária.
 - **Rotina-base:** seis dias por semana, 6h líquidas por dia, com preparação física separada.
-- **Status editorial:** Plano Mestre e índice da Semana 1 aprovados; apostila de estudo produzida e aguardando aprovação; apostila de questões ainda não gerada.
+- **Status editorial:** Plano Mestre, índice e apostila de estudo da Semana 1 aprovados; apostila de questões produzida e aguardando aprovação.
 
 ## Arquivos
 
@@ -22,6 +22,17 @@ Projeto de preparação para o concurso público da Polícia Civil do Estado do 
 - [Perfil da banca FGV](planejamento/perfil_banca_fgv.md)
 - [Índice da Semana 1](semana_01/semana_01_indice.md)
 - [Apostila de estudo da Semana 1](semana_01/semana_01_estudo.md)
+- [Apostila de questões da Semana 1](semana_01/semana_01_questoes.md)
+
+## Banco da Semana 1
+
+- 300 questões principais;
+- 120 questões extras de revisão fixa;
+- 420 questões no total;
+- cinco alternativas por item, de A a E;
+- gabarito separado por dia;
+- comentário de todas as alternativas;
+- autoria declarada no cabeçalho, sem repetição nos títulos individuais.
 
 ## Regra de separação
 
