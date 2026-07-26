@@ -2,6 +2,12 @@
 
 Antes de criar, ampliar, revisar ou auditar qualquer material, identifique primeiro o projeto.
 
+## Publicação no GitHub
+
+- Toda entrega concluída e validada deve ser integrada à `main`.
+- Uma publicação somente em branch de trabalho não encerra a tarefa.
+- Quando houver branch ou Pull Request, confirme a integração e a presença dos arquivos na `main` antes de informar a conclusão.
+
 ## CRA-PR
 
 Para arquivos de `Administrador/`, `Analista de sistemas/` ou `Direito/`, leia `GUIA_MESTRE_DO_PROJETO.md` e os documentos da trilha indicados nele.
