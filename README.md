@@ -1,6 +1,21 @@
-# Concursos - CRA-PR 2026
+# Concursos 2026
 
-Repositório de preparação para o concurso CRA-PR 2026, organizado em três trilhas independentes e em um método compartilhado de estudo.
+Repositório de preparação para concursos públicos, com projetos independentes por órgão, cargo, edital e banca.
+
+## Projetos
+
+### CRA-PR 2026
+
+O projeto CRA-PR está organizado em três trilhas: Analista de Sistemas, Administrador e Direito. Seu guia central permanece em [Guia Mestre do Projeto CRA-PR](GUIA_MESTRE_DO_PROJETO.md).
+
+### Polícia Civil do Paraná 2026
+
+Projeto destinado ao cargo de Agente de Polícia Judiciária, com edital próprio, banca FGV, planejamento até a prova objetiva de 11/10/2026 e padrão adaptado para questões A-E.
+
+- [Visão geral PCPR](<Policia Civil PR/README.md>)
+- [Guia Mestre PCPR](<Policia Civil PR/GUIA_MESTRE_PCPR_2026.md>)
+- [Plano Mestre PCPR](<Policia Civil PR/planejamento/plano_mestre_pcpr_2026_agente.md>)
+- [Índice detalhado da Semana 1](<Policia Civil PR/semana_01/semana_01_indice.md>)
 
 ## Guia central
 
@@ -63,8 +78,12 @@ CRA_PARANA/
 │   ├── fontes/
 │   ├── planejamento/
 │   └── semana_01/
+├── Policia Civil PR/
+│   ├── edital/
+│   ├── planejamento/
+│   └── semana_01/
 ├── Método de Preparação para Concursos.pdf
 └── README.md
 ```
 
-Os editais, retificações e atos posteriores da banca devem ser conferidos nas páginas oficiais antes de cada novo ciclo de produção.
+Os projetos são independentes. Conteúdo, banca, quantidade de alternativas, cronograma e fontes de um concurso não podem ser transferidos automaticamente para outro. Editais, retificações e atos posteriores devem ser conferidos nas páginas oficiais antes de cada novo ciclo de produção.
