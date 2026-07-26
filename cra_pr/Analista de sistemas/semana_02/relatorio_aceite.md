@@ -64,7 +64,7 @@ A primeira passagem abre seis principais Essenciais por dia, com teto de dez som
 O verificador final foi executado com:
 
 ```text
-python tools/audit_semana02.py
+python cra_pr/tools/audit_semana02.py
 OK: 420 questões + 60 do super simulado; metadados, alternativas, comentários, gabaritos e âncoras validados.
 Principais: Médio=173, Difícil=116, Muito difícil=11
 Extras: Médio=79, Difícil=40, Muito difícil=1

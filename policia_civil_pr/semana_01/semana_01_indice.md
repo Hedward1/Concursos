@@ -14,7 +14,7 @@
 - **Cargo:** Agente de Policia Judiciaria.
 - **Pagina oficial:** https://conhecimento.fgv.br/concursos/pcpr26
 - **PDF oficial:** https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao.docx-1.pdf
-- **Arquivo local:** `Policia Civil PR/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
+- **Arquivo local:** `policia_civil_pr/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
 - **Itens do edital iniciados nesta semana:** Conhecimentos Gerais 1.1 a 1.4, 2.1 a 2.4 e 3.1 a 3.3; Conhecimentos Especificos 1.1, 1.2 e 5.2 a 5.5.
 - **Ponto de controle:** a pagina oficial deve ser novamente consultada antes da redacao da apostila para identificar eventual retificacao.
 

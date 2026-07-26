@@ -85,7 +85,7 @@ Os enunciados oficiais não foram copiados para as 420 questões autorais. A res
 
 ## Resultado da verificação mecânica
 
-O verificador `tools/audit_semana03.py` confere contagens, IDs, quatro alternativas, quatro análises, metadados, usos, âncoras, tabelas, sequência de respostas, equilíbrio por nível, comandos negativos, títulos das filas, links, carga e regras discursivas. A execução final deve produzir `OK` sem exceção não documentada.
+O verificador `cra_pr/tools/audit_semana03.py` confere contagens, IDs, quatro alternativas, quatro análises, metadados, usos, âncoras, tabelas, sequência de respostas, equilíbrio por nível, comandos negativos, títulos das filas, links, carga e regras discursivas. A execução final deve produzir `OK` sem exceção não documentada.
 
 Na execução final, o verificador retornou:
 

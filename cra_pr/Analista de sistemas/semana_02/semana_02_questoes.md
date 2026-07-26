@@ -4,7 +4,7 @@
 
 Arquivo de questões para acompanhar a `semana_02_estudo.md`.
 
-**Status:** Material aprovado para execução. A auditoria semântica e estrutural está registrada em `relatorio_aceite.md` e pode ser reproduzida com `python tools/audit_semana02.py`. A execução pelo candidato permanece pendente.
+**Status:** Material aprovado para execução. A auditoria semântica e estrutural está registrada em `relatorio_aceite.md` e pode ser reproduzida com `python cra_pr/tools/audit_semana02.py`. A execução pelo candidato permanece pendente.
 
 **Critério de autoria:** as 300 questões principais e as 120 extras são autorais e foram calibradas pelo perfil documentado do Instituto Consulplan. Nenhuma questão real foi reproduzida; o índice separado registra a busca e o grau de confirmação das amostras oficiais.
 

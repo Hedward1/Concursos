@@ -10,7 +10,7 @@ Antes de criar, ampliar, revisar ou auditar qualquer material, identifique prime
 
 ## CRA-PR
 
-Para arquivos de `Administrador/`, `Analista de sistemas/` ou `Direito/`, leia `GUIA_MESTRE_DO_PROJETO.md` e os documentos da trilha indicados nele.
+Para arquivos de `cra_pr/Administrador/`, `cra_pr/Analista de sistemas/` ou `cra_pr/Direito/`, leia `cra_pr/GUIA_MESTRE_DO_PROJETO.md` e os documentos da trilha indicados nele.
 
 - Respeite o cronograma, a cobertura literal do edital e o estado real dos materiais existentes.
 - Organize Português, Legislação CFA/CRA, produção discursiva e método como núcleo comum; mantenha o conteúdo próprio de cada cargo em sua trilha.
@@ -21,12 +21,12 @@ Para arquivos de `Administrador/`, `Analista de sistemas/` ou `Direito/`, leia `
 
 ## Polícia Civil do Paraná
 
-Para arquivos de `Policia Civil PR/`, leia, nesta ordem:
+Para arquivos de `policia_civil_pr/`, leia, nesta ordem:
 
-1. `Policia Civil PR/GUIA_MESTRE_PCPR_2026.md`;
-2. `Policia Civil PR/planejamento/plano_mestre_pcpr_2026_agente.md`;
-3. `Policia Civil PR/planejamento/padrao_semanal_pcpr_2026.md`;
-4. `Policia Civil PR/planejamento/perfil_banca_fgv.md`;
+1. `policia_civil_pr/GUIA_MESTRE_PCPR_2026.md`;
+2. `policia_civil_pr/planejamento/plano_mestre_pcpr_2026_agente.md`;
+3. `policia_civil_pr/planejamento/padrao_semanal_pcpr_2026.md`;
+4. `policia_civil_pr/planejamento/perfil_banca_fgv.md`;
 5. o edital oficial local e a página de acompanhamento da FGV.
 
 - Use exclusivamente o conteúdo do Edital PCPR nº 01/2026 e de retificação oficial posteriormente confirmada.

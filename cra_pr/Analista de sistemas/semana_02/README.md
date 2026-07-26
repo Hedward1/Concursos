@@ -27,4 +27,4 @@ Cobrir os itens 2 e 5 do conteúdo de Analista de Sistemas relacionados a sistem
 
 ## Status
 
-**Material aprovado para execução.** A revisão reparadora foi concluída e validada por `python tools/audit_semana02.py`. A execução pelo candidato permanece pendente; por isso, a semana ainda não está `Concluída`.
+**Material aprovado para execução.** A revisão reparadora foi concluída e validada por `python cra_pr/tools/audit_semana02.py`. A execução pelo candidato permanece pendente; por isso, a semana ainda não está `Concluída`.

@@ -23,7 +23,7 @@ Projeto de preparação para o concurso público da Polícia Civil do Estado do 
 - [Índice da Semana 1](semana_01/semana_01_indice.md)
 - [Apostila de estudo da Semana 1](semana_01/semana_01_estudo.md)
 - [Apostila de questões da Semana 1](semana_01/semana_01_questoes.md)
-- [Download direto da apostila de questões](https://raw.githubusercontent.com/Hedward1/Concursos/main/Policia%20Civil%20PR/semana_01/semana_01_questoes.md)
+- [Download direto da apostila de questões](https://raw.githubusercontent.com/Hedward1/Concursos/main/policia_civil_pr/semana_01/semana_01_questoes.md)
 
 ## Banco da Semana 1
 

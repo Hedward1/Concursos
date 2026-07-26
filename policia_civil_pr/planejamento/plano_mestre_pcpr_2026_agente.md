@@ -12,7 +12,7 @@ O conteúdo novo pesado deve terminar até 03/10/2026. Entre 05 e 08/10 serão p
 - **Cargo:** Agente de Polícia Judiciária.
 - **Banca:** Fundação Getulio Vargas - FGV.
 - **Edital:** nº 01/2026, publicado em 06/07/2026.
-- **Arquivo local:** `Policia Civil PR/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
+- **Arquivo local:** `policia_civil_pr/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
 - **Página oficial:** https://conhecimento.fgv.br/concursos/pcpr26
 - **PDF oficial:** https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao.docx-1.pdf
 - **Conferência deste plano:** 26/07/2026.

@@ -64,7 +64,7 @@ A ausência de item oficial integrado não é apresentada como “bloqueio sanad
 ## Evidência final
 
 ```text
-python tools/audit_semana02.py
+python cra_pr/tools/audit_semana02.py
 OK: 420 questões + 60 do super simulado; metadados, alternativas, comentários, gabaritos e âncoras validados.
 Principais: Médio=173, Difícil=116, Muito difícil=11
 Extras: Médio=79, Difícil=40, Muito difícil=1

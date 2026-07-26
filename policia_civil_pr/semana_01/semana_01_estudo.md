@@ -16,7 +16,7 @@
 - **Edital:** nº 01/2026, publicado em 06/07/2026.
 - **Página oficial:** https://conhecimento.fgv.br/concursos/pcpr26
 - **PDF oficial:** https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao.docx-1.pdf
-- **Arquivo local:** `Policia Civil PR/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
+- **Arquivo local:** `policia_civil_pr/edital/edital_pcpr_2026_agente_policia_judiciaria.pdf`.
 - **Data da última conferência:** 26/07/2026.
 - **Situação observada:** a página oficial apresentava o edital original e a inscrição, sem retificação visível.
 
