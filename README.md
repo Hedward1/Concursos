@@ -16,6 +16,9 @@ Projeto destinado ao cargo de Agente de Polícia Judiciária, com edital própri
 - [Guia Mestre PCPR](<Policia Civil PR/GUIA_MESTRE_PCPR_2026.md>)
 - [Plano Mestre PCPR](<Policia Civil PR/planejamento/plano_mestre_pcpr_2026_agente.md>)
 - [Índice detalhado da Semana 1](<Policia Civil PR/semana_01/semana_01_indice.md>)
+- [Apostila de estudo da Semana 1](<Policia Civil PR/semana_01/semana_01_estudo.md>)
+- [Apostila de questões da Semana 1](<Policia Civil PR/semana_01/semana_01_questoes.md>)
+- [Download direto da apostila de questões](https://raw.githubusercontent.com/Hedward1/Concursos/main/Policia%20Civil%20PR/semana_01/semana_01_questoes.md)
 
 ## Guia central
 
